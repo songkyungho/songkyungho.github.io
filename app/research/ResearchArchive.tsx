@@ -22,15 +22,23 @@ export default function ResearchArchive() {
       </div>
       <p className="result-count">{shown.length}개의 연구성과</p>
       <div className="archive-list">
-        {shown.map((item) => (
-          <div className="archive-row" key={`${item.year}-${item.slug}`}>
-            <div className="archive-year">{item.year}</div>
-            <div>
-              <span className="type-chip">{item.kind}</span>
-              <h2>{item.text}</h2>
-            </div>
-          </div>
-        ))}
+        {shown.map((item) => {
+          const content = (
+            <>
+              <div className="archive-year">{item.year}</div>
+              <div>
+                <span className="type-chip">{item.kind}</span>
+                <h2>{item.text}</h2>
+              </div>
+              {item.url && <span className="arrow" aria-hidden="true">↗</span>}
+            </>
+          );
+          return item.url ? (
+            <a className="archive-row" href={item.url} key={`${item.year}-${item.slug}`}>{content}</a>
+          ) : (
+            <div className="archive-row" key={`${item.year}-${item.slug}`}>{content}</div>
+          );
+        })}
       </div>
     </section>
   );

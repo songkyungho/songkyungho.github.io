@@ -723,6 +723,26 @@
   },
   {
     "logNo": null,
+    "slug": "col-yinks-157",
+    "title": "최근 북한 「로동신문」의 인권관련 보도 경향",
+    "rawTitle": "최근 북한 「로동신문」의 인권관련 보도 경향",
+    "publication": "연세대 통일연구원 이슈브리프",
+    "issue": null,
+    "year": "2023",
+    "naverCategory": null,
+    "section": "이슈브리프",
+    "sourceUrl": "https://www.yinks.or.kr/post/제157호-송경호-전문연구원-최근-북한-「로동신문」의-인권관련-보도-경향",
+    "naverImportedAt": null,
+    "image": null,
+    "imageSource": null,
+    "body": [
+      "최근 북한 언론에서 '인권'은 어떤 맥락에서 어떤 방식으로 다루어지고 있을까?"
+    ],
+    "kind": "post",
+    "migrationStatus": "외부 링크만 (전문 미이전)"
+  },
+  {
+    "logNo": null,
     "slug": "press-kyosu-2023-1",
     "title": "편향된 '신자유주의 비판'…\"디지털 대응은 소홀\"",
     "rawTitle": "편향된 '신자유주의 비판'…\"디지털 대응은 소홀\"",
@@ -791,26 +811,6 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
-    "migrationStatus": "외부 링크만 (전문 미이전)"
-  },
-  {
-    "logNo": null,
-    "slug": "col-yinks-157",
-    "title": "최근 북한 「로동신문」의 인권관련 보도 경향",
-    "rawTitle": "최근 북한 「로동신문」의 인권관련 보도 경향",
-    "publication": "연세대 통일연구원 이슈브리프",
-    "issue": null,
-    "year": "2022",
-    "naverCategory": null,
-    "section": "이슈브리프",
-    "sourceUrl": "https://www.yinks.or.kr/post/제157호-송경호-전문연구원-최근-북한-로동신문의-인권관련-보도-경향",
-    "naverImportedAt": null,
-    "image": null,
-    "imageSource": null,
-    "body": [
-      "최근 북한 언론에서 '인권'은 어떤 맥락에서 어떤 방식으로 다루어지고 있을까?"
-    ],
-    "kind": "post",
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {

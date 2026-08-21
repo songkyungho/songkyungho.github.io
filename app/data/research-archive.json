@@ -7,7 +7,8 @@
     "title": null,
     "text": "2026. 7. 16. <EU 인공지능법 범용인공지능(GPAI) 실천강령(CoP) 한글 안내서>",
     "kind": "보고서",
-    "slug": "2026-001"
+    "slug": "2026-001",
+    "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/114?mno=&pageIndex=1&searchCondition=&searchKeyword="
   },
   {
     "tag": "보고서",
@@ -17,7 +18,8 @@
     "title": null,
     "text": "<[AI 안전 동향 분석 시리즈] (26-01) AI사고 정의 및 보고체계 국제동향>",
     "kind": "보고서",
-    "slug": "2026-002"
+    "slug": "2026-002",
+    "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/102?mno=&pageIndex=2&searchCondition=&searchKeyword="
   },
   {
     "tag": "등재/단독",
@@ -27,7 +29,8 @@
     "title": "AI 이후의 민주주의: 기술적 가능성과 참여의 역설.",
     "text": "송경호. 2025. “AI 이후의 민주주의: 기술적 가능성과 참여의 역설.” 『입법과정책』 통권 제41호(제17권 제2호) pp.39-72",
     "kind": "논문",
-    "slug": "2025-001"
+    "slug": "2025-001",
+    "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003236884"
   },
   {
     "tag": "등재/공동",
@@ -37,7 +40,8 @@
     "title": "계산하는 기계는 돌보는 기계가 될 수 있을까?— 일본의 개호로봇과 돌봄의 다층적 재구성.",
     "text": "김태진, 송경호. 2025. “계산하는 기계는 돌보는 기계가 될 수 있을까?— 일본의 개호로봇과 돌봄의 다층적 재구성.”  『日本思想』  제51호, pp.1-28",
     "kind": "논문",
-    "slug": "2025-002"
+    "slug": "2025-002",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003276447"
   },
   {
     "tag": "저서/공동",
@@ -47,7 +51,8 @@
     "title": "대형언어모델의 편향: 공통감각의 부재와 기술적 한계",
     "text": "송경호. 2025. “대형언어모델의 편향: 공통감각의 부재와 기술적 한계” 조화순 편. 『무엇이 한국사회를 분열시키나』  서울: 박영사",
     "kind": "저서·역서",
-    "slug": "2025-003"
+    "slug": "2025-003",
+    "url": "https://product.kyobobook.co.kr/detail/S000217463205"
   },
   {
     "tag": "저서/공동",
@@ -57,7 +62,8 @@
     "title": "기후적응 리빙랩을 위한 의사결정 지원시스템: 사례와 시사점.",
     "text": "송경호, 양성빈. 2025. “기후적응 리빙랩을 위한 의사결정 지원시스템: 사례와 시사점.” 이태동, 신상범 편. 『리빙랩: 지속가능한 발전을 위한 공동창조와 실험』  서울: 사회평론아카데미.",
     "kind": "저서·역서",
-    "slug": "2025-004"
+    "slug": "2025-004",
+    "url": "https://product.kyobobook.co.kr/detail/S000218729474"
   },
   {
     "tag": "보고서",
@@ -67,7 +73,8 @@
     "title": "AI 환각의 기술-사회적 구조와 대응방안",
     "text": "송경호. 2025. “AI 환각의 기술-사회적 구조와 대응방안” <공론화 기반 AI 정책 보고서: AI와 환각>",
     "kind": "보고서",
-    "slug": "2025-005"
+    "slug": "2025-005",
+    "url": null
   },
   {
     "tag": "등재/공동",
@@ -77,7 +84,8 @@
     "title": "한국 대학 학부 정치학 교육 생태계의 변화: 2008~2023년 교육통계자료에 대한 분석을 중심으로",
     "text": "김현, 송경호, 백우열. 2024. \"한국 대학 학부 정치학 교육 생태계의 변화: 2008~2023년 교육통계자료에 대한 분석을 중심으로\" 『시민과세계』 2024년 하반기호(통권 45호) pp.181-225",
     "kind": "논문",
-    "slug": "2024-001"
+    "slug": "2024-001",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003153554"
   },
   {
     "tag": "SCOPUS/단독",
@@ -87,7 +95,8 @@
     "title": "North Korea’s Concept of Human Rights and Its Characteristics:  An LDA-NLP Analysis on the CHRRA Report and Rodong Sinmun",
     "text": "Kyungho Song. 2024. \"North Korea’s Concept of Human Rights and Its Characteristics:  An LDA-NLP Analysis on the CHRRA Report and Rodong Sinmun\" North Korean Review. 20(2), pp.37-66",
     "kind": "논문",
-    "slug": "2024-002"
+    "slug": "2024-002",
+    "url": "https://www.jstor.org/stable/27372578"
   },
   {
     "tag": "등재/공동",
@@ -97,7 +106,8 @@
     "title": "‘북한동포’는 누구인가? : 대통령 연설문(1948-2017)을 통해 본 시민적·종족적 북한동포관의 경합.",
     "text": "김현ㆍ송경호. 2023. “‘북한동포’는 누구인가? : 대통령 연설문(1948-2017)을 통해 본 시민적·종족적 북한동포관의 경합.”  『정치사상연구』 제29권 제1호. pp.82-114",
     "kind": "논문",
-    "slug": "2023-001"
+    "slug": "2023-001",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002962170"
   },
   {
     "tag": "A&HCI/SCOPUS/공동",
@@ -107,7 +117,8 @@
     "title": "How Democracy Became Minjujuui: A Conceptual History of Democracy in Modern Korea with Focus on the Generalization Process of Minjujuui.",
     "text": "Kim, Hyun & Song, Kyungho. 2023. “How Democracy Became Minjujuui: A Conceptual History of Democracy in Modern Korea with Focus on the Generalization Process of Minjujuui.” Korea Journal 63(1), 36-65",
     "kind": "논문",
-    "slug": "2023-002"
+    "slug": "2023-002",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002941098"
   },
   {
     "tag": "등재/공동",
@@ -117,7 +128,8 @@
     "title": "한국 대학원 인문·사회계열 박사과정생의 현실: 연구환경, 연구자 네트워크, 연구자 정체성과 연구력.",
     "text": "송경호ㆍ김현. 2023. \"한국 대학원 인문·사회계열 박사과정생의 현실: 연구환경, 연구자 네트워크, 연구자 정체성과 연구력.” 『역사비평』 2023년 가을호(통권 제144호). pp.216-250",
     "kind": "논문",
-    "slug": "2023-003"
+    "slug": "2023-003",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002994813"
   },
   {
     "tag": "저서/공동",
@@ -127,7 +139,8 @@
     "title": "(동아시아 교양총서 4) 근현대 동아시아 지식장과 정치변동",
     "text": "박은영 , 손민석 , 김태진 , 김도형 , 김현 , 소진형 , 박삼헌 , 정주아 , 이헌미 , 송경호 , 홍철기 , 이관후 저. 2023. 『(동아시아 교양총서 4) 근현대 동아시아 지식장과 정치변동』. 서울: 성균관대학교출판부",
     "kind": "저서·역서",
-    "slug": "2023-004"
+    "slug": "2023-004",
+    "url": "https://product.kyobobook.co.kr/detail/S000201581336"
   },
   {
     "tag": "등재/공동",
@@ -137,7 +150,8 @@
     "title": "마리아 루스호 사건을 통해 본 메이지 일본에서의 인권 개념 수용.",
     "text": "송경호. 2022. “마리아 루스호 사건을 통해 본 메이지 일본에서의 인권 개념 수용.” 『한국동양정치사상사연구』 제21권 제1호. pp.39-75",
     "kind": "논문",
-    "slug": "2022-001"
+    "slug": "2022-001",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002827670"
   },
   {
     "tag": "저서/공동",
@@ -147,7 +161,8 @@
     "title": "역사화해의 이정표 3: 역사적 콘텍스트와 근대성을 중심으로",
     "text": "이병택 편. 이병택, 이동수 , 민원정 , 소진형 , 송경호 , 이동욱 , 신현선, 곽진오 저. 2022. 『역사화해의 이정표 3: 역사적 콘텍스트와 근대성을 중심으로』. 서울: 동북아역사재단",
     "kind": "저서·역서",
-    "slug": "2022-002"
+    "slug": "2022-002",
+    "url": "https://product.kyobobook.co.kr/detail/S000201237202"
   },
   {
     "tag": "SSCI/공동",
@@ -157,7 +172,8 @@
     "title": "Matching and Mismatching of Green Jobs: A Big Data Analysis of Job Recruiting and Searching.",
     "text": "Song, Kyungho; Kim, Hyun; Cha, Jisoo; Lee, Taedong. 2021. \"Matching and Mismatching of Green Jobs: A Big Data Analysis of Job Recruiting and Searching.\" Sustainability 13(7): 4074",
     "kind": "논문",
-    "slug": "2021-001"
+    "slug": "2021-001",
+    "url": "https://www.mdpi.com/2071-1050/13/7/4074"
   },
   {
     "tag": "우수등재/공동",
@@ -167,7 +183,8 @@
     "title": "근대적 기본개념으로서 ‘민주주의(民主主義)’의 개념사: 19-20세기 일본에서의 번역어 성립과 사용의 일반화 과정을 중심으로.",
     "text": "송경호ㆍ김현. 2021. “근대적 기본개념으로서 ‘민주주의(民主主義)’의 개념사: 19-20세기 일본에서의 번역어 성립과 사용의 일반화 과정을 중심으로.” 『한국정치학회보』 제55집 2호, pp.5-32",
     "kind": "논문",
-    "slug": "2021-002"
+    "slug": "2021-002",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002730821"
   },
   {
     "tag": "등재/공동",
@@ -177,7 +194,8 @@
     "title": "코로나19와 한국 민족주의의 분화: ‘국뽕’ 유튜브의 사례를 중심으로.",
     "text": "장휘ㆍ송경호. 2021. \"코로나19와 한국 민족주의의 분화: ‘국뽕’ 유튜브의 사례를 중심으로.\" 『시민과세계』 통권 39호. pp.1-41",
     "kind": "논문",
-    "slug": "2021-003"
+    "slug": "2021-003",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002793793"
   },
   {
     "tag": "역서/공동",
@@ -187,7 +205,8 @@
     "title": "서양을 번역하다: 문명개화 시대의 자유, 권리, 주권, 사회",
     "text": "더글라스 하울랜드 저. 김현, 박은영, 소진형, 손민석, 송경호, 이헌미, 홍철기 공동번역. 2021. 『서양을 번역하다: 문명개화 시대의 자유, 권리, 주권, 사회』. 서울: 성균관대학교 출판부",
     "kind": "저서·역서",
-    "slug": "2021-004"
+    "slug": "2021-004",
+    "url": "http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791155504697&orderClick=LAG&Kc="
   },
   {
     "tag": "역서/공동",
@@ -197,7 +216,8 @@
     "title": "(완역) 서양사정",
     "text": "후쿠자와 유키치 저. 송경호, 김현, 김숭배, 나카무라 슈토 공동번역. 2021. 『(완역) 서양사정』. 파주: 여문책",
     "kind": "저서·역서",
-    "slug": "2021-005"
+    "slug": "2021-005",
+    "url": "http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187700418&orderClick=LAG&Kc="
   },
   {
     "tag": "우수등재/공동",
@@ -207,7 +227,8 @@
     "title": "시큐리티(security)는 어떻게 ‘안보’가 되었을까?",
     "text": "김현ㆍ송경호. 2020. “시큐리티(security)는 어떻게 ‘안보’가 되었을까?”: ‘안전’, ‘안전보장’, ‘안보’로의 전환 과정을 중심으로.” 『국제정치논총』 제60집 4호, pp.1-37",
     "kind": "논문",
-    "slug": "2020-001"
+    "slug": "2020-001",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002658169"
   },
   {
     "tag": "학위논문/박사",
@@ -217,7 +238,8 @@
     "title": "19세기 동아시아의 인권 수용과 가토 히로유키(加藤弘之) 천부인권론의 역설 - 天賦人權에서 得有權利로의 主義 의 변화를 중심으로 -",
     "text": "송경호. 2020. 『19세기 동아시아의 인권 수용과 가토 히로유키(加藤弘之) 천부인권론의 역설 - 天賦人權에서 得有權利로의 主義 의 변화를 중심으로 -』. 연세대학교 대학원 정치학과 박사학위 논문",
     "kind": "학위논문",
-    "slug": "2020-002"
+    "slug": "2020-002",
+    "url": "https://library.yonsei.ac.kr/search/detail/CAT000001996393?briefLink=/main/searchBrief?q=%EC%86%A1%EA%B2%BD%ED%98%B8"
   },
   {
     "tag": "등재/공동",
@@ -227,7 +249,8 @@
     "title": "북한급변사태에 관한 이론적 논의: 선제공격론과 인도주의적 개입을 중심으로,",
     "text": "허재영ㆍ송경호. 2016. “북한급변사태에 관한 이론적 논의: 선제공격론과 인도주의적 개입을 중심으로,” 『현대북한연구』 제19집 2호, pp.37-82",
     "kind": "논문",
-    "slug": "2016-001"
+    "slug": "2016-001",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002137117"
   },
   {
     "tag": "등재/단독",
@@ -237,7 +260,8 @@
     "title": "아시아, 인권침해 이미지의 재해석: 존 롤스의 『만민법",
     "text": "송경호. 2012. “아시아, 인권침해 이미지의 재해석: 존 롤스의 『만민법』 기획을 중심으로”, 『민주주의와 인권』 제12권 2호, pp.133~171",
     "kind": "논문",
-    "slug": "2012-001"
+    "slug": "2012-001",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001685974"
   },
   {
     "tag": "역서/공동",
@@ -247,7 +271,8 @@
     "title": "다문화주의 시민권",
     "text": "윌 킴리카 저. 장동진 책임번역. 황민혁ㆍ송경호ㆍ변영환 공동번역. 2010. 11. 『다문화주의 시민권』. 서울: 동명사.",
     "kind": "저서·역서",
-    "slug": "2010-001"
+    "slug": "2010-001",
+    "url": "http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788941171119&orderClick=LEa&Kc="
   },
   {
     "tag": "A&HCI/공동",
@@ -257,7 +282,8 @@
     "title": "China's Northeast Project and Contemporary Korean Nationalism",
     "text": "Dong-Jin JANG, Kyung-Ho SONG, and Min-Hyuk HWANG. “China's Northeast Project and Contemporary Korean Nationalism”. Korea Journal 49(1) Spring (Jan.), 2009. pp.120~153",
     "kind": "논문",
-    "slug": "2009-001"
+    "slug": "2009-001",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001335928"
   },
   {
     "tag": "등재후보/공동",
@@ -267,7 +293,8 @@
     "title": "경국대전과 유교국가 조선의 예치: 예의 형식화 과정을 중심으로",
     "text": "최연식ㆍ송경호. 2007. 봄. “경국대전과 유교국가 조선의 예치: 예의 형식화 과정을 중심으로”, 『사회과학논집』 제38권 1호, pp.43~62.",
     "kind": "논문",
-    "slug": "2007-001"
+    "slug": "2007-001",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001519989"
   },
   {
     "tag": "학위논문/석사",
@@ -277,7 +304,8 @@
     "title": "인권의 보편성과 인도주의적 개입의 한계: 존 롤스의 『만민법",
     "text": "송경호. 2007. 『인권의 보편성과 인도주의적 개입의 한계: 존 롤스의 『만민법』에 나타난 논의를 중심으로』. 연세대학교 대학원 정치학과 석사학위 논문.",
     "kind": "학위논문",
-    "slug": "2007-002"
+    "slug": "2007-002",
+    "url": "https://library.yonsei.ac.kr/search/detail/CAT000000160182?briefLink=/main/searchBrief?q=%EC%86%A1%EA%B2%BD%ED%98%B8"
   },
   {
     "tag": "등재후보/공동",
@@ -287,6 +315,7 @@
     "title": "심의민주주의의 주체에 대하여: 대표자, 위원회, 시민사회를 중심으로",
     "text": "장동진ㆍ송경호. 2006. 가을. “심의민주주의의 주체에 대하여: 대표자, 위원회, 시민사회를 중심으로”, 『사회과학논집』 제37권 2호, pp.49~64.",
     "kind": "논문",
-    "slug": "2006-001"
+    "slug": "2006-001",
+    "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001520275"
   }
 ]

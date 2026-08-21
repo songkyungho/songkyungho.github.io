@@ -77,8 +77,8 @@ NEW_ENTRIES = [
          excerpt="인공지능 기술의 발전은 우리의 삶을 근본적으로 변화시키고 있다. 정치 역시 예외는 아니다."),
     # -- 통일연구원 이슈브리프 (신규 4건, 149호는 이미 마이그레이션됨) --
     dict(slug="col-yinks-157", title="최근 북한 「로동신문」의 인권관련 보도 경향",
-         publication="연세대 통일연구원 이슈브리프", year="2022", section="이슈브리프", kind="post",
-         sourceUrl="https://www.yinks.or.kr/post/제157호-송경호-전문연구원-최근-북한-로동신문의-인권관련-보도-경향",
+         publication="연세대 통일연구원 이슈브리프", year="2023", section="이슈브리프", kind="post",
+         sourceUrl="https://www.yinks.or.kr/post/제157호-송경호-전문연구원-최근-북한-「로동신문」의-인권관련-보도-경향",
          excerpt="최근 북한 언론에서 '인권'은 어떤 맥락에서 어떤 방식으로 다루어지고 있을까?"),
     dict(slug="col-yinks-161", title="대통령 연설문에 나타난 '북한동포' 인식의 변화",
          publication="연세대 통일연구원 이슈브리프", year="2023", section="이슈브리프", kind="post",
