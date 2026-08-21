@@ -10,8 +10,8 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; line-height: 1.7; }
+html { scroll-behavior: smooth; font-size: 110%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Pretendard, "Apple SD Gothic Neo", "Noto Sans KR", -apple-system, BlinkMacSystemFont, sans-serif; font-size: 1rem; line-height: 1.7; }
 a { color: inherit; text-decoration: none; }
 main { min-height: calc(100vh - 68px); }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
@@ -159,7 +159,7 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 .footer-links a { text-decoration: underline; text-underline-offset: 3px; }
 
 @media (max-width: 760px) {
-  body { font-size: 15px; }
+  body { font-size: 16.5px; }
   .masthead { min-height: 68px; height: auto; grid-template-columns: 1fr auto; padding: 16px 20px 12px; row-gap: 10px; }
   .wordmark-en { display: none; }
   .masthead nav { grid-column: 1 / 3; grid-row: 2; gap: 19px; overflow-x: auto; font-size: .72rem; }
