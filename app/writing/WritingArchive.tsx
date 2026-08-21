@@ -3,16 +3,16 @@
 import { useMemo, useState } from "react";
 
 type WritingSummary = {
-  logNo: string;
   slug: string;
   title: string;
   publication: string;
   issue: string | null;
   year: string | null;
   section: string;
+  kind: string;
 };
 
-const filters = ["전체", "이슈브리프", "칼럼", "에세이"];
+const filters = ["전체", "이슈브리프", "칼럼", "에세이", "보도"];
 
 export default function WritingArchive({ archive }: { archive: WritingSummary[] }) {
   const [filter, setFilter] = useState("전체");
@@ -24,10 +24,10 @@ export default function WritingArchive({ archive }: { archive: WritingSummary[] 
   }), [filter, query]);
 
   return (
-    <section className="archive-block" aria-labelledby="naver-archive-heading">
+    <section className="archive-block" aria-labelledby="writing-archive-heading">
       <div className="section-line archive-section-line">
-        <h2 id="naver-archive-heading">기고와 에세이</h2>
-        <span>90</span>
+        <h2 id="writing-archive-heading">기고, 에세이와 언론 보도</h2>
+        <span>{archive.length}</span>
       </div>
       <div className="archive-tools writing-tools">
         <div className="filter-row" aria-label="글 분류">
@@ -46,10 +46,13 @@ export default function WritingArchive({ archive }: { archive: WritingSummary[] 
       <div className="writing-list archive-writing-list">
         {items.map((item) => {
           return (
-            <a className="writing-row" href={`/writing/archive/${item.slug}`} key={item.logNo}>
+            <a className="writing-row" href={`/writing/archive/${item.slug}`} key={item.slug}>
               <span>{item.year}</span>
               <div>
-                <p className="writing-meta">{item.publication}{item.issue ? ` ${item.issue}호` : ""} · {item.section}</p>
+                <p className="writing-meta">
+                  {item.kind === "press" && <span className="ribbon">[보도]</span>}
+                  {item.publication}{item.issue ? ` ${item.issue}호` : ""} · {item.section}
+                </p>
                 <h3>{item.title}</h3>
               </div>
               <span aria-hidden="true">→</span>

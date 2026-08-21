@@ -91,7 +91,7 @@ main { min-height: calc(100vh - 68px); }
 .archive-row:hover h2 { color: var(--accent); }
 
 .talks-list, .writing-list { padding: 28px 0 42px; }
-.featured-writing { padding-top: 34px; }
+.ribbon { display: inline-block; margin-right: 4px; color: var(--accent); font-size: .66rem; font-weight: 650; }
 .featured-writing .writing-list { padding-bottom: 16px; }
 .talk-row { display: grid; grid-template-columns: 92px 76px minmax(0, 1fr); gap: 18px; padding: 19px 0; border-bottom: 1px solid var(--line); }
 .talk-row:first-child, .writing-row:first-child { border-top: 1px solid var(--line); }

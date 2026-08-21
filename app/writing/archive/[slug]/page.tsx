@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import archive from "../../../data/naver-archive.json";
+import archive from "../../../data/writing-archive.json";
 import { SITE_URL } from "../../../../site.config";
 
 type Params = { slug: string };
@@ -33,7 +33,7 @@ export default async function ArchivedWritingPage({ params }: { params: Promise<
     <main className="article-page">
       <article>
         <header className="article-header">
-          <p className="eyebrow">{item.section.toUpperCase()}</p>
+          <p className="eyebrow">{item.kind === "press" ? "보도" : item.section.toUpperCase()}</p>
           <h1>{item.title}</h1>
           <dl className="article-meta">
             <div><dt>매체</dt><dd>{item.publication}</dd></div>
@@ -45,6 +45,11 @@ export default async function ArchivedWritingPage({ params }: { params: Promise<
         <div className="article-body">
           {item.body.map((paragraph, index) => /^#\d+\.?$/.test(paragraph) ? <h2 key={`${paragraph}-${index}`}>{paragraph}</h2> : <p key={`${paragraph.slice(0, 24)}-${index}`}>{paragraph}</p>)}
         </div>
+        {item.sourceUrl && (
+          <p className="article-source">
+            <a href={item.sourceUrl}>{item.kind === "press" ? "원문 기사 보기" : "원문에서 전체 보기"} ↗</a>
+          </p>
+        )}
       </article>
       <nav className="article-back" aria-label="글 목록"><a href="/writing">← 글 아카이브로 돌아가기</a></nav>
     </main>
