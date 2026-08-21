@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import archive from "../../../data/naver-archive.json";
 import { SITE_URL } from "../../../../site.config";
 
@@ -47,7 +46,7 @@ export default async function ArchivedWritingPage({ params }: { params: Promise<
           {item.body.map((paragraph, index) => /^#\d+\.?$/.test(paragraph) ? <h2 key={`${paragraph}-${index}`}>{paragraph}</h2> : <p key={`${paragraph.slice(0, 24)}-${index}`}>{paragraph}</p>)}
         </div>
       </article>
-      <nav className="article-back" aria-label="글 목록"><Link href="/writing">← 글 아카이브로 돌아가기</Link></nav>
+      <nav className="article-back" aria-label="글 목록"><a href="/writing">← 글 아카이브로 돌아가기</a></nav>
     </main>
   );
 }

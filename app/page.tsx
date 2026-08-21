@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const recent = [
   { date: "2026.08.19", type: "발표", title: "정치 분야 AI Systemic Risk 소개", detail: "한국정치학회 하계학술대회", href: "/talks" },
   { date: "2026.08.18", type: "발표", title: "정치적 공정성을 한국어로 측정하기: KPE 벤치마크 설계와 방법", detail: "한국정치학회 하계학술대회", href: "/talks" },
@@ -23,7 +21,7 @@ export default function Home() {
           <div><dt>방법</dt><dd>정치사상 · 개념사 · 디지털 인문학</dd></div>
         </dl>
         <div className="profile-links">
-          <Link href="/about">상세 소개</Link>
+          <a href="/about">상세 소개</a>
           <a href="https://scholar.google.com/citations?user=AE9lR2wAAAAJ&hl=ko">Google Scholar ↗</a>
         </div>
       </aside>
@@ -35,18 +33,18 @@ export default function Home() {
         </header>
         <div className="index-list">
           {recent.map((item) => (
-            <Link className="index-row" href={item.href} key={`${item.date}-${item.title}`}>
+            <a className="index-row" href={item.href} key={`${item.date}-${item.title}`}>
               <time>{item.date}</time>
               <span className="index-type">{item.type}</span>
               <div><h2>{item.title}</h2><p>{item.detail}</p></div>
               <span aria-hidden="true">↗</span>
-            </Link>
+            </a>
           ))}
         </div>
         <nav className="archive-shortcuts" aria-label="전체 자료 바로가기">
-          <Link href="/research">연구 전체 보기</Link>
-          <Link href="/talks">발표 전체 보기</Link>
-          <Link href="/writing">글 전체 보기</Link>
+          <a href="/research">연구 전체 보기</a>
+          <a href="/talks">발표 전체 보기</a>
+          <a href="/writing">글 전체 보기</a>
         </nav>
       </section>
     </main>
