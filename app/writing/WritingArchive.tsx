@@ -47,7 +47,7 @@ export default function WritingArchive({ archive }: { archive: WritingSummary[] 
       <div className="writing-list archive-writing-list">
         {items.map((item) => {
           return (
-            <Link className="writing-row" href={`/writing/archive/${item.slug}/`} key={item.logNo}>
+            <Link className="writing-row" href={`/writing/archive/${item.slug}`} key={item.logNo}>
               <span>{item.year}</span>
               <div>
                 <p className="writing-meta">{item.publication}{item.issue ? ` ${item.issue}호` : ""} · {item.section}</p>

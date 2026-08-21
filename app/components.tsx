@@ -8,11 +8,11 @@ export function SiteHeader() {
         <span className="wordmark-en">KYUNGHO DAVID SONG</span>
       </Link>
       <nav aria-label="주요 메뉴">
-        <Link href="/about/">소개</Link>
-        <Link href="/research/">연구</Link>
-        <Link href="/talks/">발표</Link>
-        <Link href="/writing/">글</Link>
-        <Link href="/media/">미디어</Link>
+        <Link href="/about">소개</Link>
+        <Link href="/research">연구</Link>
+        <Link href="/talks">발표</Link>
+        <Link href="/writing">글</Link>
+        <Link href="/media">미디어</Link>
       </nav>
       <span className="language" aria-label="한국어 사이트">KO</span>
     </header>
