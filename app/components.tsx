@@ -1,16 +1,18 @@
+import Link from "next/link";
+
 export function SiteHeader() {
   return (
     <header className="masthead">
-      <a className="wordmark" href="/" aria-label="홈으로 이동">
+      <Link className="wordmark" href="/" aria-label="홈으로 이동">
         <span className="wordmark-ko">송경호</span>
         <span className="wordmark-en">KYUNGHO DAVID SONG</span>
-      </a>
+      </Link>
       <nav aria-label="주요 메뉴">
-        <a href="/about/">소개</a>
-        <a href="/research/">연구</a>
-        <a href="/talks/">발표</a>
-        <a href="/writing/">글</a>
-        <a href="/media/">미디어</a>
+        <Link href="/about/">소개</Link>
+        <Link href="/research/">연구</Link>
+        <Link href="/talks/">발표</Link>
+        <Link href="/writing/">글</Link>
+        <Link href="/media/">미디어</Link>
       </nav>
       <span className="language" aria-label="한국어 사이트">KO</span>
     </header>

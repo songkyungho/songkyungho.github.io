@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 type WritingSummary = {
@@ -46,14 +47,14 @@ export default function WritingArchive({ archive }: { archive: WritingSummary[] 
       <div className="writing-list archive-writing-list">
         {items.map((item) => {
           return (
-            <a className="writing-row" href={`/writing/archive/${item.slug}/`} key={item.logNo}>
+            <Link className="writing-row" href={`/writing/archive/${item.slug}/`} key={item.logNo}>
               <span>{item.year}</span>
               <div>
                 <p className="writing-meta">{item.publication}{item.issue ? ` ${item.issue}호` : ""} · {item.section}</p>
                 <h3>{item.title}</h3>
               </div>
               <span aria-hidden="true">→</span>
-            </a>
+            </Link>
           );
         })}
       </div>
