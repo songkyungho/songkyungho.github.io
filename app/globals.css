@@ -60,6 +60,7 @@ main { min-height: calc(100vh - 68px); }
 .about-lead > div > h2 { margin: 0; font-size: 1rem; line-height: 1.55; }
 .about-lead > div > h2 span { color: var(--muted); font: .73rem/1.5 Georgia, serif; font-weight: 400; }
 .role-tagline { margin: 10px 0 0; color: var(--accent); font-size: .74rem; font-weight: 620; letter-spacing: -.01em; }
+.about-tagline { margin: 8px 0 0; color: var(--muted); font-size: .74rem; }
 .about-section-title h2 { margin: 0; font-size: 1rem; }
 .plain-numbered { margin: 0; padding: 0; list-style: none; counter-reset: fields; border-top: 1px solid var(--line); }
 .plain-numbered li { counter-increment: fields; display: grid; grid-template-columns: 46px 1fr; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: .88rem; }

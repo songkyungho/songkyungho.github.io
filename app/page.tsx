@@ -15,7 +15,7 @@ export default function Home() {
       <aside className="profile-rail">
         <p className="profile-name">송경호 <span>Kyungho David Song, Ph.D.</span></p>
         <p className="profile-role">인공지능안전연구소 선임연구원</p>
-        <p className="profile-summary">AI 안전과 거버넌스, 정치이론, 디지털 개념사를 연구합니다.</p>
+        <p className="profile-summary">정치학자, 개념사학자, AI 안전 연구자</p>
         <dl>
           <div><dt>연구</dt><dd>AI 안전 · 민주주의 · 규범정치이론</dd></div>
           <div><dt>방법</dt><dd>정치사상 · 개념사 · 디지털 인문학</dd></div>

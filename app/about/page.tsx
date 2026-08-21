@@ -98,7 +98,8 @@ export default function AboutPage() {
       <section className="about-lead">
         <div>
           <h2>송경호<br /><span lang="en">Kyungho David Song, Ph.D.</span></h2>
-          <p className="role-tagline">정치학자, 개념사학자, AI 안전 연구자</p>
+          <p className="role-tagline">인공지능안전연구소 선임연구원</p>
+          <p className="about-tagline">정치학자, 개념사학자, AI 안전 연구자</p>
         </div>
       </section>
 
