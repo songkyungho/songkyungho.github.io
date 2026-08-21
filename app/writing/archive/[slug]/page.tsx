@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import archive from "../../../data/naver-archive.json";
-import { BASE_PATH, SITE_URL } from "../../../../site.config";
+import { SITE_URL } from "../../../../site.config";
 
 type Params = { slug: string };
 
@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const item = records.find((record) => record.slug === slug);
   if (!item) return { title: "글을 찾을 수 없습니다 | 송경호" };
   const description = `${item.publication}${item.issue ? ` ${item.issue}호` : ""}에 실린 송경호의 글, 「${item.title}」.`;
-  const image = item.image ? `${SITE_URL}${BASE_PATH}${item.image}` : undefined;
+  const image = item.image ? `${SITE_URL}${item.image}` : undefined;
   return {
     title: `${item.title} | 송경호`,
     description,
@@ -42,7 +42,7 @@ export default async function ArchivedWritingPage({ params }: { params: Promise<
             {item.year && <div><dt>발행</dt><dd>{item.year}</dd></div>}
           </dl>
         </header>
-        {item.image && <figure className="article-hero"><img alt={`「${item.title}」 대표 이미지`} src={`${BASE_PATH}${item.image}`} /><figcaption>당시 게재 이미지</figcaption></figure>}
+        {item.image && <figure className="article-hero"><img alt={`「${item.title}」 대표 이미지`} src={item.image} /><figcaption>당시 게재 이미지</figcaption></figure>}
         <div className="article-body">
           {item.body.map((paragraph, index) => /^#\d+\.?$/.test(paragraph) ? <h2 key={`${paragraph}-${index}`}>{paragraph}</h2> : <p key={`${paragraph.slice(0, 24)}-${index}`}>{paragraph}</p>)}
         </div>
