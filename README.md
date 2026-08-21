@@ -2,7 +2,7 @@
 
 정치학자 송경호의 연구, 논문, 발표, 칼럼과 미디어 활동을 모은 개인 연구 아카이브입니다.
 
-- 현재 사이트: <https://kyungho-song.kr-aisi-4531.chatgpt.site>
+- 현재 사이트: <https://songkyungho.github.io/>
 - 언어: 한국어 중심, 공식 영문 제목·초록 병기
 - 글 아카이브: 이슈브리프, 칼럼, 에세이 90편
 
@@ -29,4 +29,7 @@ pnpm dev
 pnpm build
 ```
 
-현재 사이트는 vinext와 OpenAI Sites 환경을 사용합니다. GitHub Pages용 정적 배포 설정은 별도로 추가할 예정입니다.
+## 배포
+
+`main`에 push하면 [GitHub Actions](.github/workflows/deploy-pages.yml)가 `vinext build`로
+정적 파일(`output: "export"`)을 만들어 GitHub Pages에 자동 배포합니다.
