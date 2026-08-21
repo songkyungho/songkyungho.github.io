@@ -28,7 +28,7 @@ const awards = [
 
 const education = [
   ["Ph.D.", "정치학 박사", "연세대학교 정치학과 · 2007–2020"],
-  ["CNDC", "박사과정 교류 프로그램", "Tohoku University (Cross National Doctoral Course Program) · 2013–2014"],
+  ["CNDC", "공동박사학위 프로그램", "Tohoku University (Cross National Doctoral Course Program) · 2013–2014"],
   ["M.A.", "정치학 석사", "연세대학교 정치학과 · 2005–2007"],
   ["B.A.", "정치외교학·경제학 학사", "연세대학교 · 2001–2005"],
   ["고등학교", "일본어과", "부산외국어고등학교 · 1998–2001"],
