@@ -50,7 +50,7 @@ export default function ResearchArchive() {
             </>
           );
           return item.url ? (
-            <a className="archive-row" href={item.url} key={`${item.year}-${item.slug}`}>{content}</a>
+            <a className="archive-row" href={item.url} target="_blank" rel="noopener noreferrer" key={`${item.year}-${item.slug}`}>{content}</a>
           ) : (
             <div className="archive-row" key={`${item.year}-${item.slug}`}>{content}</div>
           );

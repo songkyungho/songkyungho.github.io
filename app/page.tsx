@@ -22,7 +22,7 @@ export default function Home() {
         </dl>
         <div className="profile-links">
           <a href="/about">상세 소개</a>
-          <a href="https://scholar.google.com/citations?user=AE9lR2wAAAAJ&hl=ko">Google Scholar ↗</a>
+          <a href="https://scholar.google.com/citations?user=AE9lR2wAAAAJ&hl=ko" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
         </div>
       </aside>
 
@@ -33,7 +33,12 @@ export default function Home() {
         </header>
         <div className="index-list">
           {recent.map((item) => (
-            <a className="index-row" href={item.href} key={`${item.date}-${item.title}`}>
+            <a
+              className="index-row"
+              href={item.href}
+              key={`${item.date}-${item.title}`}
+              {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            >
               <time>{item.date}</time>
               <span className="index-type">{item.type}</span>
               <div><h2>{item.title}</h2><p>{item.detail}</p></div>

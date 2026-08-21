@@ -24,6 +24,25 @@ FEATURED = {
     "222107544175": ("university-tomorrow-657-song-taeseop", "/images/writing/university-tomorrow/657-song-taeseop.jpg"),
 }
 
+# addDate is when the post was added to the Naver blog, not necessarily
+# when the piece was originally published (many older/reposted pieces were
+# bulk-imported on the same day) - so it isn't trustworthy for day-level
+# precision by default. These four are cross-posts of 프레시안 시민정치시평
+# columns whose real publish date is recoverable from the original
+# pressian.com URL (see notion-raw/column-essay.txt) - keyed by logNo.
+DATE_OVERRIDES = {
+    "222108390052": ("2020", "7", "16"),
+    "222164090739": ("2020", "12", "2"),
+    "222317884312": ("2021", "3", "26"),
+    "222462598364": ("2021", "7", "30"),
+}
+
+# one-off correction: this Naver post is an interview with him, not a
+# column he wrote - see conversation
+SECTION_OVERRIDES = {
+    "222108370483": ("보도", "press"),
+}
+
 IMAGE_MAP_PATH = WORK / "naver-image-map.json"
 
 
@@ -103,6 +122,12 @@ def main() -> None:
         paragraphs, remote_image = extract_post(log_no)
         featured = FEATURED.get(log_no)
         saved_image = image_map.get(log_no)
+        section = classify(publication, item["categoryNo"])
+        kind = "post"
+        if log_no in SECTION_OVERRIDES:
+            section, kind = SECTION_OVERRIDES[log_no]
+        override = DATE_OVERRIDES.get(log_no)
+        month, day = (override[1], override[2]) if override else (None, None)
         archive.append({
             "logNo": log_no,
             "slug": featured[0] if featured else f"writing-{log_no}",
@@ -111,13 +136,16 @@ def main() -> None:
             "publication": publication,
             "issue": issue,
             "year": year,
+            "month": month,
+            "day": day,
             "naverCategory": "칼럼" if item["categoryNo"] == "93" else "에세이",
-            "section": classify(publication, item["categoryNo"]),
+            "section": section,
             "sourceUrl": f"https://blog.naver.com/ecopower/{log_no}",
             "naverImportedAt": item["addDate"],
             "image": featured[1] if featured else (saved_image or {}).get("local"),
             "imageSource": (saved_image or {}).get("source", remote_image),
             "body": paragraphs,
+            "kind": kind,
             "migrationStatus": "상세 페이지 완료" if paragraphs else "본문 확인 필요",
         })
 

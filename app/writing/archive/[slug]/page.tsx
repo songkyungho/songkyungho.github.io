@@ -38,16 +38,21 @@ export default async function ArchivedWritingPage({ params }: { params: Promise<
           <dl className="article-meta">
             <div><dt>매체</dt><dd>{item.publication}</dd></div>
             {item.issue && <div><dt>호수</dt><dd>{item.issue}호</dd></div>}
-            {item.year && <div><dt>발행</dt><dd>{item.year}</dd></div>}
+            {item.year && (
+              <div>
+                <dt>발행</dt>
+                <dd>{item.month && item.day ? `${item.year}.${String(item.month).padStart(2, "0")}.${String(item.day).padStart(2, "0")}` : item.year}</dd>
+              </div>
+            )}
           </dl>
         </header>
         {item.image && <figure className="article-hero"><img alt={`「${item.title}」 대표 이미지`} src={item.image} /><figcaption>당시 게재 이미지</figcaption></figure>}
         <div className="article-body">
           {item.body.map((paragraph, index) => /^#\d+\.?$/.test(paragraph) ? <h2 key={`${paragraph}-${index}`}>{paragraph}</h2> : <p key={`${paragraph.slice(0, 24)}-${index}`}>{paragraph}</p>)}
         </div>
-        {item.sourceUrl && (
+        {item.sourceUrl && item.migrationStatus !== "상세 페이지 완료" && (
           <p className="article-source">
-            <a href={item.sourceUrl}>{item.kind === "press" ? "원문 기사 보기" : "원문에서 전체 보기"} ↗</a>
+            <a href={item.sourceUrl} target="_blank" rel="noopener noreferrer">{item.kind === "press" ? "원문 기사 보기" : "원문에서 전체 보기"} ↗</a>
           </p>
         )}
       </article>

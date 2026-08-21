@@ -33,6 +33,13 @@ KIND_OVERRIDES = {
     "慶應義塾大學": "학술발표",
 }
 
+# 돌깨TV filmed this talk (the Jesuit center colloquium) - link the
+# recording on the talk entry itself rather than filing it as a
+# standalone media interview, since that's what it actually is
+VIDEO_OVERRIDES = {
+    "나는 내가 믿고 싶은 것을 믿는다": "https://youtu.be/_oPWn3JEm9U",
+}
+
 YEAR_HEADER_RE = re.compile(r"^(\d{4})(–\d{4})?$")
 TAG_LINE_RE = re.compile(r"^\[([^\]]+)\]\s*(.*)$")
 DATE_RE = re.compile(r"(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.?")
@@ -164,6 +171,10 @@ def main():
             prefix = region_prefix(tag)
             if kind in ("학술발표", "발표") and prefix:
                 entry["detail"] = f"[{prefix}] {entry['detail']}"
+            for needle, video_url in VIDEO_OVERRIDES.items():
+                if needle in rest:
+                    entry["videoUrl"] = video_url
+                    break
             counter = talk_counter
             bucket = talks
 

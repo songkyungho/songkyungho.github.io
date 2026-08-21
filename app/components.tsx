@@ -25,8 +25,8 @@ export function SiteFooter() {
         <p>개인 연구 아카이브 · 서울, 대한민국</p>
       </div>
       <div className="footer-links">
-        <a href="https://scholar.google.com/citations?user=AE9lR2wAAAAJ&hl=ko">Google Scholar</a>
-        <a href="https://github.com/songkyungho">GitHub</a>
+        <a href="https://scholar.google.com/citations?user=AE9lR2wAAAAJ&hl=ko" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+        <a href="https://github.com/songkyungho" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </footer>
   );

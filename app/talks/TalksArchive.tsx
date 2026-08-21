@@ -32,7 +32,10 @@ export default function TalksArchive() {
           <article className="talk-row" key={item.slug}>
             <time>{formatDate(item)}</time>
             <span className="type-chip">{item.kind}</span>
-            <div><h2>{item.detail}</h2></div>
+            <div>
+              <h2>{item.detail}</h2>
+              {item.videoUrl && <a className="venue" href={item.videoUrl} target="_blank" rel="noopener noreferrer">영상 보기 ↗</a>}
+            </div>
           </article>
         ))}
       </div>

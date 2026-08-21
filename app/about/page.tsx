@@ -15,7 +15,7 @@ function linkifyAffiliation(text: string) {
     return (
       <>
         {text.slice(0, idx)}
-        <a href={url}>{needle}</a>
+        <a href={url} target="_blank" rel="noopener noreferrer">{needle}</a>
         {text.slice(idx + needle.length)}
       </>
     );
@@ -74,10 +74,10 @@ const labs = [
 
 const lectures = [
   ["연세대학교", "사회과학대학·통일학협동과정·정치외교학과·UIC — Theories of Democracy, Human Rights and Cosmopolitanism, Foundations of Modern International Thought, 국제인권체제와 북한인권, Contemporary Political Thought, Theories of International Justice"],
-  ["숭실대학교", "사회과학대학 정치외교학과 — 동아시아 국제관계, 동아시아 정치사상"],
-  ["단국대학교", "교양학부 — 고전 읽기: 사회, 자유론"],
-  ["연세대학교", "글로벌융합대학 국제관계학전공 — 국제정치경제, 국제기구론, 외교정책론, 한국의 국제관계"],
-  ["외교부", "외교사료관 — 청소년 외교관학교(고등부)"],
+  ["숭실대학교", "사회과학대학 정치외교학과 — East Asian International Relations, East Asian Political Thought"],
+  ["단국대학교", "교양학부 — Reading the Classics: Society, On Liberty"],
+  ["연세대학교", "글로벌융합대학 국제관계학전공 — International Political Economy, International Organizations, Foreign Policy Analysis, Korea's International Relations"],
+  ["외교부", "외교사료관 — Youth Diplomat Academy (High School Program)"],
 ];
 
 const others = [
@@ -140,7 +140,7 @@ export default function AboutPage() {
             <p>{entries.map(([name, url], index) => (
               <span key={name}>
                 {index > 0 && " · "}
-                <a href={url}>{name}</a>
+                <a href={url} target="_blank" rel="noopener noreferrer">{name}</a>
               </span>
             ))}</p>
           </div>

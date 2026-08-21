@@ -7,6 +7,8 @@
     "publication": "고려대학교 경제기술안보연구원",
     "issue": null,
     "year": "2026",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "이슈브리프",
     "sourceUrl": "https://iets.korea.ac.kr/iets/books/publication.do?mode=view&articleNo=808225",
@@ -15,6 +17,7 @@
     "imageSource": null,
     "body": [],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -25,6 +28,8 @@
     "publication": "연세대 통일연구원 이슈브리프",
     "issue": null,
     "year": "2026",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "이슈브리프",
     "sourceUrl": "https://www.yinks.or.kr/post/제183호-송경호-전문연구원-프론티어-없는-위협-북한의-인공지능-역량-검증의-사각지대",
@@ -35,6 +40,7 @@
       "북한의 인공지능(AI) 역량은 최근 몇 년 사이 북한·안보 연구의 핵심 주제로 부상했다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -45,6 +51,8 @@
     "publication": "네이트뉴스",
     "issue": null,
     "year": "2025",
+    "month": "6",
+    "day": "29",
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://news.nate.com/view/20250629n04222",
@@ -53,6 +61,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -63,6 +72,8 @@
     "publication": "가톨릭뉴스",
     "issue": null,
     "year": "2025",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.catholicnews.co.kr/news/articleView.html?idxno=34375",
@@ -71,6 +82,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -81,6 +93,8 @@
     "publication": "가톨릭타임즈",
     "issue": null,
     "year": "2025",
+    "month": "5",
+    "day": "18",
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.catholictimes.org/article/20250518500016",
@@ -89,6 +103,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -99,6 +114,8 @@
     "publication": "뉴스디에이아이",
     "issue": null,
     "year": "2025",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.newstheai.com/news/articleView.html?idxno=9497",
@@ -107,6 +124,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -117,6 +135,8 @@
     "publication": "UNDP Digital, AI and Innovation Hub",
     "issue": null,
     "year": "2025",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.undp.org/digital/blog/building-safer-ai-all-languages-collective-pathway-inclusive-human-development",
@@ -127,6 +147,10 @@
       "Dr. Kyungho Song & Dr. Jiyeon Cho (Korea AI Safety Institute)와 UNDP Digital, AI and Innovation Hub의 공동 기고."
     ],
     "kind": "post",
+    "note": {
+      "text": "국문 번역",
+      "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/95?ptSignature=myq8exWppBvlsub5Sr8a78bbxNkUKo%2FOOa%2BANLitP%2BRowKOb42MhFxHrU0ICe2q3LdIPbqDkrRvJdrTsOsGp9dnU11bqw0oMz45R%2FI9IYLDzXT6qglQn6l1onjnE29oiEv8nRNgTLWhnXaSC9Es%2FmmMJGpdzRzCBZOlC0j%2BazP4dITmIZzhvti5pxvJNK0MtAU2DH7rZuWZAq7ixMWupri8LXwk6UA%2Bi%2Bk0vO39Dc9CE3TpQgizHo6bogvNJseNkQ0MhgRjeEvYesH0QCgy2IwY0AC%2FL5%2Fbu%2B4Wc9bkI4aLECV7CTFUKKerHXWy%2FDminxGowg4JOTGGaG60D3IAWVqHkTOhk%2FhWX54x3e7xI1G7qcE8LIEOacSfqILj0gi0AcNczEDeoQl%2BjvStpZj5Qog%3D%3D&csSignature=otfgVv%2FgBQVw2Shwj0QlXA%3D%3D&mno=&pageIndex=3&searchCondition=&searchKeyword="
+    },
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -137,6 +161,8 @@
     "publication": "Henkaku Center",
     "issue": null,
     "year": "2025",
+    "month": "8",
+    "day": "11",
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.henkaku.center/en/news/reports/2025-08-11/workshop-2025-07-05-AI-Safety/",
@@ -145,6 +171,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -155,6 +182,8 @@
     "publication": "한국국제정치학회 Korea on Point",
     "issue": null,
     "year": "2025",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "이슈브리프",
     "sourceUrl": "https://koreaonpoint.org/view.php?idx=390",
@@ -165,6 +194,7 @@
       "As autonomous weapon systems (AWS) based on AI are increasingly integrated into military operations worldwide, international cooperation needs to establish ethical norms, and the legal framework..."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -175,6 +205,8 @@
     "publication": "연세대학교 디지털사회과학센터 [디지털사회]",
     "issue": null,
     "year": "2025",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "이슈브리프",
     "sourceUrl": "http://cdss.yonsei.ac.kr/index.php/issue-brief/?uid=205&mod=document&pageid=1",
@@ -185,6 +217,7 @@
       "게이머들이 단순히 게임을 통해 여가를 즐기는 집단을 넘어 중요한 사회적, 정치적 행위자로 부상하고 있다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -195,6 +228,8 @@
     "publication": "프레시안 특집 [신년특별기고 - 송경호의 'AI 정치']",
     "issue": null,
     "year": "2024",
+    "month": "1",
+    "day": "3",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://m.pressian.com/m/pages/articles/2024010317042031233",
@@ -205,6 +240,7 @@
       "인공지능 기술의 발전은 우리의 삶을 근본적으로 변화시키고 있다. 정치 역시 예외는 아니다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -215,6 +251,8 @@
     "publication": "프레시안 특집 [이세계 민주주의 교실]",
     "issue": null,
     "year": "2024",
+    "month": "2",
+    "day": "8",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://m.pressian.com/m/pages/articles/2024020814440909082",
@@ -225,6 +263,7 @@
       "지구가 아닌 이세계에서 눈을 뜬 당신 앞에 주어진 과제는 '마법으로 드래곤 사냥하기'가 아닌, 평범한 사람들이 모여 공동의 문제를 해결할 '도구'로서의 정치체제를 만드는 것이었다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -235,6 +274,8 @@
     "publication": "프레시안 특집 [신년특별기고 - 송경호의 'AI 정치']",
     "issue": null,
     "year": "2024",
+    "month": "1",
+    "day": "3",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://m.pressian.com/m/pages/articles/2024010317072429864",
@@ -245,6 +286,7 @@
       "인공지능 기술의 발전은 우리의 삶을 근본적으로 변화시키고 있다. 정치 역시 예외는 아니다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -255,6 +297,8 @@
     "publication": "프레시안 특집",
     "issue": null,
     "year": "2024",
+    "month": "9",
+    "day": "12",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.pressian.com/pages/articles/2024091218534053511",
@@ -265,6 +309,7 @@
       "2024년 11월 5일, 60번째 미국 대통령 선거가 치러진다. 한국의 언론 보도나 기사 댓글, 인터넷 커뮤니티 게시물을 살펴보면, 우리 대선 못지 않게 미국 대선에 대한 관심이 뜨겁다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -275,6 +320,8 @@
     "publication": "프레시안 특집 [이세계 민주주의 교실]",
     "issue": null,
     "year": "2024",
+    "month": "2",
+    "day": "8",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://m.pressian.com/m/pages/articles/2024020814521279229",
@@ -285,6 +332,7 @@
       "지구가 아닌 이세계에서 눈을 뜬 당신 앞에 주어진 과제는 '마법으로 드래곤 사냥하기'가 아닌, 평범한 사람들이 모여 공동의 문제를 해결할 '도구'로서의 정치체제를 만드는 것이었다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -295,6 +343,8 @@
     "publication": "프레시안 특집 [신년특별기고 - 송경호의 'AI 정치']",
     "issue": null,
     "year": "2024",
+    "month": "1",
+    "day": "3",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://m.pressian.com/m/pages/articles/2024010317011669947",
@@ -305,6 +355,7 @@
       "인공지능 기술의 발전은 우리의 삶을 근본적으로 변화시키고 있다. 정치 역시 예외는 아니다. 인간의 정치에 인공지능을 활용하는 것을 넘어, 인공지능에게 정치를 맡긴다면 어떻게 될까?"
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -315,6 +366,8 @@
     "publication": "전자신문",
     "issue": null,
     "year": "2024",
+    "month": "5",
+    "day": "16",
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.etnews.com/20240516000324",
@@ -323,6 +376,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -333,6 +387,8 @@
     "publication": "교수신문",
     "issue": null,
     "year": "2024",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.kyosu.net/news/articleView.html?idxno=128899",
@@ -341,6 +397,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -351,6 +408,8 @@
     "publication": "프레시안 특집 [이세계 민주주의 교실]",
     "issue": null,
     "year": "2024",
+    "month": "2",
+    "day": "8",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://m.pressian.com/m/pages/articles/2024020814370080497",
@@ -361,6 +420,7 @@
       "지구가 아닌 이세계에서 눈을 뜬 당신 앞에 주어진 과제는 '마법으로 드래곤 사냥하기'가 아닌, 평범한 사람들이 모여 공동의 문제를 해결할 '도구'로서의 정치체제를 만드는 것이었다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -371,6 +431,8 @@
     "publication": "연세대 통일연구원 이슈브리프",
     "issue": null,
     "year": "2024",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "이슈브리프",
     "sourceUrl": "https://www.yinks.or.kr/post/제169호-송경호-전문연구원-북한을-탈출한-사람들은-어떻게-명명되었는가-1990-2024년-빅카인즈-데이터에-대한-기초-분석",
@@ -381,6 +443,7 @@
       "2024년 2월 21일, 대통령직속 국민통합위원회는 「북배경주민과의 동행」 특별위원회 출범식을 열었다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -391,6 +454,8 @@
     "publication": "프레시안 특집 [이세계 민주주의 교실]",
     "issue": null,
     "year": "2024",
+    "month": "2",
+    "day": "8",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://m.pressian.com/m/pages/articles/2024020814560006080",
@@ -401,6 +466,28 @@
       "지구가 아닌 이세계에서 눈을 뜬 당신 앞에 주어진 과제는 '마법으로 드래곤 사냥하기'가 아닌, 평범한 사람들이 모여 공동의 문제를 해결할 '도구'로서의 정치체제를 만드는 것이었다."
     ],
     "kind": "post",
+    "note": null,
+    "migrationStatus": "외부 링크만 (전문 미이전)"
+  },
+  {
+    "logNo": null,
+    "slug": "col-point-2024-03",
+    "title": "중경삼림: 자유가 없는 권력은 폭력에 불과하다",
+    "rawTitle": "중경삼림: 자유가 없는 권력은 폭력에 불과하다",
+    "publication": "PO.INT 2024년 3월호",
+    "issue": null,
+    "year": "2024",
+    "month": "3",
+    "day": null,
+    "naverCategory": null,
+    "section": "에세이",
+    "sourceUrl": "http://www.kpsa.or.kr/contents/bbs/bbs_content.html?bbs_cls_cd=002002002&cid=24040817095362&bbs_type=B",
+    "naverImportedAt": null,
+    "image": null,
+    "imageSource": null,
+    "body": [],
+    "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -411,6 +498,8 @@
     "publication": "프레시안 특집 [이세계 민주주의 교실]",
     "issue": null,
     "year": "2024",
+    "month": "2",
+    "day": "8",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://m.pressian.com/m/pages/articles/2024020810512758680",
@@ -421,6 +510,7 @@
       "당신은 트럭에 치여 이세계(異世界)에서 눈을 떴다. 주위를 둘러보니 혼자는 아니다. 수십 명의 지구인과 함께 있다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -431,6 +521,8 @@
     "publication": "교수신문",
     "issue": null,
     "year": "2023",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.kyosu.net/news/articleView.html?idxno=108548",
@@ -439,6 +531,28 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
+    "migrationStatus": "외부 링크만 (전문 미이전)"
+  },
+  {
+    "logNo": null,
+    "slug": "col-miri518-2023",
+    "title": "5·18국제연구원에 바란다: 자유, 정의, 민주, 인권, 평화 연구로 확장해 가자",
+    "rawTitle": "5·18국제연구원에 바란다: 자유, 정의, 민주, 인권, 평화 연구로 확장해 가자",
+    "publication": "MIRI REPORT 2023",
+    "issue": null,
+    "year": "2023",
+    "month": null,
+    "day": null,
+    "naverCategory": null,
+    "section": "칼럼",
+    "sourceUrl": "https://miri518.or.kr/index.do?command=view&wr_id=120&contentId=dc9bc9de795f22cee75061dc2d0b5d9cafe1c32e9e6c7660e57e30b197505d2d",
+    "naverImportedAt": null,
+    "image": null,
+    "imageSource": null,
+    "body": [],
+    "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -449,6 +563,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "12",
+    "day": "19",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202312192019015",
@@ -459,6 +575,7 @@
       "벌써 몇년 된 일이다. 일본에서 고장난 로봇 강아지 아이보(aibo)를 위한 합동 장례식이 열렸다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -469,6 +586,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "8",
+    "day": "29",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202308292030015",
@@ -479,6 +598,7 @@
       "우리 애들은 간판과 현수막으로 한글을 깨쳤다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -489,6 +609,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "6",
+    "day": "7",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202306070300065",
@@ -499,6 +621,7 @@
       "우리 집에는 많은 규칙이 있다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -509,6 +632,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "11",
+    "day": "21",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202311212040015",
@@ -519,6 +644,7 @@
       "둘째가 밤새 기침하는 통에 잠을 설쳤다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -529,6 +655,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "3",
+    "day": "15",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202303150300035",
@@ -539,6 +667,7 @@
       "대표가 위기다. 거대 양당은 하루가 멀다 하고 상대 당대표를 공격한다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -549,6 +678,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "2",
+    "day": "15",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202302150300045",
@@ -559,6 +690,7 @@
       "베트남 냐짱에 왔다. 밤늦게 출발해 새벽에 도착하는 고된 비행 일정이었다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -569,6 +701,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "9",
+    "day": "26",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202309262023015",
@@ -579,6 +713,7 @@
       "지난 주말, 한국에서 공부하는 미국·일본·중국 대학원생들과 부산에 다녀왔다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -589,6 +724,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "5",
+    "day": "10",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202305100300065",
@@ -599,6 +736,7 @@
       "아침부터 첫째 아이를 혼냈다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -609,6 +747,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "8",
+    "day": "1",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202308012031005",
@@ -619,6 +759,7 @@
       "초등학교 4학년 첫째의 꿈은 요리사다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -629,6 +770,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "7",
+    "day": "5",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202307050300065",
@@ -639,6 +782,7 @@
       "잠자리에 누웠던 첫째가 대성통곡했다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -649,6 +793,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "10",
+    "day": "24",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202310242027015",
@@ -659,6 +805,7 @@
       "우리 집에는 매일 전투가 벌어진다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -669,6 +816,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "4",
+    "day": "12",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202304120300065",
@@ -679,6 +828,7 @@
       "\"정치학 전공하면 나중에 정치할 건가?\" 숱하게 받아온 질문이다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -689,6 +839,8 @@
     "publication": "경향신문 [공감]",
     "issue": null,
     "year": "2023",
+    "month": "1",
+    "day": "18",
     "naverCategory": null,
     "section": "칼럼",
     "sourceUrl": "https://www.khan.co.kr/opinion/column/article/202301180300065",
@@ -699,6 +851,7 @@
       "온갖 포퓰리즘이 난무한다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -709,6 +862,8 @@
     "publication": "연세대 통일연구원 이슈브리프",
     "issue": null,
     "year": "2023",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "이슈브리프",
     "sourceUrl": "https://www.yinks.or.kr/post/제161호-송경호-전문연구원-대통령-연설문에-나타난-북한동포-인식의-변화",
@@ -719,6 +874,7 @@
       "과거 우리 사회에서 북한사람들은 '동포(同胞)'로 표현됐다."
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -729,6 +885,8 @@
     "publication": "연세대 통일연구원 이슈브리프",
     "issue": null,
     "year": "2023",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "이슈브리프",
     "sourceUrl": "https://www.yinks.or.kr/post/제157호-송경호-전문연구원-최근-북한-「로동신문」의-인권관련-보도-경향",
@@ -739,6 +897,7 @@
       "최근 북한 언론에서 '인권'은 어떤 맥락에서 어떤 방식으로 다루어지고 있을까?"
     ],
     "kind": "post",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -749,6 +908,8 @@
     "publication": "교수신문",
     "issue": null,
     "year": "2023",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.kyosu.net/news/articleView.html?idxno=108807",
@@ -757,6 +918,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -767,6 +929,8 @@
     "publication": "교수신문",
     "issue": null,
     "year": "2022",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.kyosu.net/news/articleView.html?idxno=84364",
@@ -775,6 +939,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -785,6 +950,8 @@
     "publication": "교수신문",
     "issue": null,
     "year": "2022",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.kyosu.net/news/articleView.html?idxno=89320",
@@ -793,6 +960,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -803,6 +971,8 @@
     "publication": "교수신문",
     "issue": null,
     "year": "2022",
+    "month": null,
+    "day": null,
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.kyosu.net/news/articleView.html?idxno=89798",
@@ -811,6 +981,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -821,6 +992,8 @@
     "publication": "프레시안 시민정치시평",
     "issue": null,
     "year": "2021",
+    "month": "7",
+    "day": "30",
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222462598364",
@@ -844,8 +1017,9 @@
       "\"이런 설문조사를 어떻게 이해하면 좋을까?\" \"그로부터 1년도 더 지난 지금 시점에서 국가 인식은 또 어떻게 변화했을까?\" \"팬데믹 종식 이후에 우리는 과거의 '노멀'로 돌아가게 될까, 아니면 '뉴노멀'을 정상으로 여기며 살아가게 될까?\" 마음속에 이런 질문을 품고 있다면 이제 코로나19 팬데믹이 가져온 국가 인식 변화와 이에 관한 질문들에 대해 동료 시민과 함께 함께 고민해 보는 시간을 가져보는 건 어떨까. 8월 18일 수요일 4시, 거리두기 4단계에 따라 비대면으로 치러지는 이번 포럼에 많은 관심과 성원 부탁드린다.",
       "https://www.pressian.com/pages/articles/2021073016225795192"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222317884312",
@@ -855,6 +1029,8 @@
     "publication": "프레시안 시민정치시평",
     "issue": null,
     "year": "2021",
+    "month": "3",
+    "day": "26",
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222317884312",
@@ -887,8 +1063,9 @@
       "이런 맥락에서, \"국제사회는 왜 미얀마 상황에 적극적으로 개입하지 않는 것일까?\"라는 질문은 \"과연 우리는 보호의 책임을 질 준비가 되었는가?\"라는 질문과 무관하지 않다. 미얀마의 상황, 그리고 인도주의적 개입의 딜레마는 바로 이 지점에 있다.",
       "https://www.pressian.com/pages/articles/2021032611152727989"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222462606782",
@@ -898,6 +1075,8 @@
     "publication": "연세대 통일연구원 이슈브리프",
     "issue": null,
     "year": "2021",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "이슈브리프",
     "sourceUrl": "https://blog.naver.com/ecopower/222462606782",
@@ -922,8 +1101,9 @@
       "또한 [그림 2]를 보면 ‘인권’이 집중적으로 등장했던 시기를 7개로 구분할 수 있는데, 이에 대한 직접적인 내용분석과 함께 위 [그림 3]에서처럼 북한 관련 U.N. 문건, ‘인권’포함 북한 연속간행물, ‘북한인권’포함 대한민국 연구논문과 뉴스기사의 연도별 분포를 함께 검토하면 북한 언론에서 인권이 다루어 진 맥락을 보다 풍부하게 이해할 수 있을 것이다(이와 관련된 구체적인 내용은 향후 연구를 통해 발표할 예정이다).",
       "이처럼 짧은 사례를 통해서도 확인할 수 있는 바와 같이, 북한의 연속간행물은 장기간에 걸친 북한 사회의 변화와 지속을 살펴볼 수 있는 매우 훌륭한 연구 자료로 간주될 수 있다. 그러나 앞서 언급한 두 가지 부담들로 인해 개인 연구자들은 이 자료들을 전반적으로 소화해내기 힘든 현실적 한계에 직면하고 있다. 광범위하게 획득된 자료가 존재하고 북한에 대한 많은 관심이 여전히 큰 상황임에도 불구하고 집중적으로 연구되지 못하는 이유가 여기에 있다고 해도 과언이 아닌 것이다. 관계 부처와 연구자들의 관심이 필요한 시점이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": null,
@@ -933,6 +1113,8 @@
     "publication": "뉴시스",
     "issue": null,
     "year": "2020",
+    "month": "5",
+    "day": "26",
     "naverCategory": null,
     "section": "보도",
     "sourceUrl": "https://www.newsis.com/view/?id=NISX20200526_0001037801",
@@ -941,6 +1123,7 @@
     "imageSource": null,
     "body": [],
     "kind": "press",
+    "note": null,
     "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
@@ -951,6 +1134,8 @@
     "publication": "연세대 통일연구원 이슈브리프",
     "issue": null,
     "year": "2020",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "이슈브리프",
     "sourceUrl": "https://blog.naver.com/ecopower/222124292658",
@@ -975,8 +1160,9 @@
       "4) 김영삼, 1978, “北韓 憲法上 基本的 人權: 北韓體制에 있어서 憲法規範과 憲法現實에 나타난 基本權規制를 中心으로,” 연세대학교 대학원 법학과 석사학위논문.",
       "5) 지역적으로는 서울 소재 대학이 61편으로 절반 이상을 차지하고 있으며, 구체적으로 연세대학교가 13편, 고려대학교가 9편, 한국외국어대학교가 7편으로 가장 많았고, 서강대학교, 이화여자대학교, 한국교원대학교가 각각 5편이었다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222164090739",
@@ -986,6 +1172,8 @@
     "publication": "프레시안 시민정치시평",
     "issue": null,
     "year": "2020",
+    "month": "12",
+    "day": "2",
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222164090739",
@@ -1023,8 +1211,9 @@
       "시민정치시평은 참여연대 부설 참여사회연구소와 <프레시안>이 공동 기획, 연재합니다.",
       "출처: https://www.pressian.com/pages/articles/2020120217341532115"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222111993470",
@@ -1034,6 +1223,8 @@
     "publication": "카카오같이가치",
     "issue": null,
     "year": "2020",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "에세이",
     "sourceUrl": "https://blog.naver.com/ecopower/222111993470",
@@ -1052,8 +1243,9 @@
       "http://www.peoplepower21.org/Research/1729088",
       "https://together.kakao.com/fundraisings/78839"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108390052",
@@ -1063,6 +1255,8 @@
     "publication": "프레시안 시민정치시평",
     "issue": null,
     "year": "2020",
+    "month": "7",
+    "day": "16",
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108390052",
@@ -1086,8 +1280,9 @@
       "이러한 상황에서 더 이상 중국이 '일국양제'의 원칙을 유지할 수 없을 것이라고 주장하는 사람도 있고, 원칙 자체가 아니라 그 작동 방식에 문제가 있을 뿐이라는 주장도 제기된다. 어찌되었건 중국 정부가 50년이 지나지 않았음에도 1984년의 약속을 어기고 있다는 점은 분명하다. 2017년 홍콩 주권 반환 20주년에 중국 루캉(陸慷) 외교부 대변인이 1984년의 선언에 대해 \"더는 아무런 현실적인 의미가 없는\" \"역사적 문서\"라고 언급한 것은 중국 정부가 애초에 약속을 지킬 의지가 없었다는 의심을 뒷받침한다.",
       "유효기한이 끝난 것은 홍콩의 자유일까, 아니면 일국양제일까? 1997년의 홍콩과 달리, 2047년의 홍콩이 예고된 파국을 피해가기를 간절히 희망한다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108388785",
@@ -1097,6 +1292,8 @@
     "publication": "Seoul Japan Club",
     "issue": null,
     "year": "2019",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108388785",
@@ -1114,8 +1311,9 @@
       "ヨンヒ館の右側には、ソンアム館、左側にはユオクギョム記念館、その後ろには左からピンスンホール、ウェソル館、ウイダン館、ビリングズリー館等の人文・社会科学大学の建物が集まっていますし、ヨンヒ館の後ろにはデウ館等の経済・経営大学の建物が位置されています。そのデウ館を通って丘を登って北門に行けば山の中にムアク寮があります。そしてヨンヒ館の右側にある細い道に沿って東門に行けば延世の人々が愛する松林、チョンソンデ（聴松台）に進入することができます。このチョンソンデを挟んで続けて歩いていくと新千年館、国際大学院、語学堂等があり、延世グローバルな面を直接確認することもできます。",
       "今まで延世大学の新村キャンパスを東西南北見学してみました。ベクヤンロをはじめ、キャンパスのあちこちを歩いていると宝のような場所が隠されていることもおわかりになると思います。延世歴史の庭やユンドンジュ詩碑のように有名なものもあって、少数の人だけが知っている秘密な場所もあります。特に先に紹介したアンダーウッド館とヨンヒ館の周辺は四季、昼と夜、そして天候に応じて、その姿を変える場所ですので、見るたびに新しい鑑賞を与えてくれます。「真理はあなたがたに自由を得させるであろう」という延世大学建学の精神のように、延世大学新村キャンパスを歩きながら煩雑なソウル都心の中で真理と自由を感じてみるのはいかがでしょうか。"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221281819582",
@@ -1125,6 +1323,8 @@
     "publication": "일상에세이",
     "issue": null,
     "year": "2018",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "에세이",
     "sourceUrl": "https://blog.naver.com/ecopower/221281819582",
@@ -1140,8 +1340,9 @@
       "아무튼 그렇게 현금과, 생계와, 그것에 기대고 있는 가정의 평화를 집어던지고 '삶'을 찾아왔다. 아니 '가정의 평화'까지는 아직 집어던지지 않고 손에 쥐고 있다. 평화에는 돈이 들지만, 돈이 있다고 평화가 보장되는 건 아니라는 생각으로, 돈이 적게 드는 평화를 찾아보고 있다. 도서관에서 빌린 책을 보고, 오래된 노트북으로 글을 쓰고, 거실에서 속옷만 입고 운동하고, 시장에서 산 재료들로 새로운 요리에 도전하고, 동네 빵집에서 산 빵으로 샌드위치 도시락을 싸고, 하루 세 통씩 물을 마시고, 커피보다 차를 즐기려고 노력하고, 맑은 날에는 햇살을, 비 오는 날에는 빗소리를 베란다에서 감상하고, 예쁘고 즐거운 것을 많이 찾아보고, 아이들과 화내지 않고 놀아주고, 미세먼지가 없는 날은 다 같이 산책도 나가는... \"가난한 삶\", 아니, \"가난하지만 존엄한 삶\".",
       "오랫동안 전당포에 맡겨두고 찾아가지 않은 물건마냥, 되찾아온 나의 삶은 어딘가 구깃구깃하고 여기저기 때가 타있는 어색한 모습이다. 하지만 바로 이 삶이 13,000일도 넘은 내 인생에 다시 한 번 찾아온 \"Day 1\". 지금부터 조금씩 제 무게를 찾아갈 '내 삶'이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108349714",
@@ -1151,6 +1352,8 @@
     "publication": "대학내일",
     "issue": null,
     "year": "2016",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108349714",
@@ -1180,8 +1383,9 @@
       "정치적으로 옳지 않은 막말과 함께 평범한 사람들의 언어로 의외의 해법을 제시하는 트럼프와 ‘깨시민’의 언어로 온건하고 올바른 원칙을 고수하는 힐러리 사이에는 그렇게 점차 뚜렷한 경계선이 그려지게 된다.",
       "그리고 그 경계선이 ‘정알못’과 정치 전문가를 구분하는 선이 아니라, 아웃사이더와 기득권을 구분하는 선이라고 인식하게 만든 것이 트럼프의 성공 요인이었던 셈이다. 정치를 모르는 줄 알았던 사람들이 무엇을 원하고 있었는지, 정치 엘리트들은 간과했다. 트럼프는 그 빈틈을 놓치지 않았다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108370483",
@@ -1191,8 +1395,10 @@
     "publication": "미디어경청",
     "issue": null,
     "year": "2016",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
-    "section": "칼럼",
+    "section": "보도",
     "sourceUrl": "https://blog.naver.com/ecopower/222108370483",
     "naverImportedAt": "2020. 10. 6.",
     "image": "/images/writing/archive/222108370483.png",
@@ -1221,8 +1427,9 @@
       "‘정의란 무엇인가?’, ‘좋은 정치란 무엇인가?’, ‘민주주의란 무엇인가?’ 등 이런 질문들에 관심이 있는 학생이라면, 정외과에 진학해서 정치사상 과목을 수강하기 바랍니다. 매우 어렵겠지만, 가장 재미있습니다. 마지막으로 정외과에 진학해서 과목을 선택하는 팁을 주자면 이렇습니다. 대학에 가면 학점을 잘 주는 과목, 상대적으로 덜 힘든 과목을 선택하고 싶은 유혹을 받을 겁니다만, 그 유혹을 과감히 뿌리치시길 바랍니다. 강의계획서를 찾아 훑어보고 ‘잘 모르겠지만 재밌겠다.’ 싶은 것들을 선택하는 것이 좋습니다. 흥미만 있다면 얼마든지 배울 수 있습니다. 문제는 흥미 없는 과목을 단지 학점 때문에 듣는 경우, 대부분은 배운 것도 적고 학점도 낮게 받게 됩니다.",
       "무엇보다, 은퇴를 앞둔 노교수님의 수업은 무조건 한 번은 들어보시길 추천합니다."
     ],
+    "kind": "press",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108376126",
@@ -1232,6 +1439,8 @@
     "publication": "경향신문",
     "issue": null,
     "year": "2015",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108376126",
@@ -1246,8 +1455,9 @@
       "그러니 “안녕들하십니까?”라는 말에는 “우리가 안녕할 수 없는 세태를 애써 무시하고 있었던 것은 아닐까”하는 씁쓸한 죄책감뿐만 아니라, “우리의 안녕을 보전하기 위해 고용된 정부가 마땅히 해야 할 일을 하고 있지 않은 것은 아닐까”하는 비판 의식이 처음부터 내포되어 있었던 셈이다. “안녕들하십니까?”라는 물음이 “당신의 정부가 해야 할 일을 하고 있지 않은 것은 아닙니까?”라는 의심으로 이어지는 것은 너무나도 자연스러운 결과라는 말이다. 여담이지만, 여기에 비추어 볼 때, 우리 헌법에서 안녕이라는 말이 “국민의 안녕과 행복”이 아니라 “국가의 안전보장 또는 공공의 안녕질서”의 맥락으로만 사용되고 있다는 점 역시 시사점을 갖는다.",
       "“안녕”이라는 말이 비로소 국민의 손으로 돌아와 제자리를 되찾은 오늘, 서로의 안녕을 묻는 “안녕하세요?”라는 인사말이 더 반갑게, 그리고 가슴 벅차게 들린다. 이런 마음을 담아 평소보다 조금 더 밝고 활기찬 목소리로 인사해 보는 것은 어떨까. “여러분, 안녕들하십니까?”"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108341736",
@@ -1257,6 +1467,8 @@
     "publication": "대학내일",
     "issue": "723",
     "year": "2015",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108341736",
@@ -1286,8 +1498,9 @@
       "“그저 완벽한 하루. 너로 인해 나는 내 자신을 잊어버리고, 다른 사람이라고 생각할 수 있었지. 어떤 좋은 사람(Just a perfect day. You made me forget myself. I thought I was someone else. Someone good.).” - Lou Reed",
       "퇴근길에 지나친 레코드 가게는 아직 철문이 굳게 내려져 있었다. ‘실례지만, 우리 가게는 그런 곳이 아닙니다’라고 항변하는 것처럼 철문 사이로 비친 쇼윈도에는 아이돌 가수의 포스터만 덕지덕지 붙어있었다. 그날 이후, 나는 여전히 지루함의 원인을 찾았고 끝내 밝혀내지는 못했지만, 그것을 해결하는 법은 하나 발견했다. ‘그러든지 말든지.’ 손님이건 사장님이건 간에 이런 생각으로 대했고, 지루함에 대한 격렬한 감정이 거짓말같이 잦아들었다. 얼마 지나지 않아 아르바이트를 그만두게 된 건 둘째치고서 말이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108368684",
@@ -1297,6 +1510,8 @@
     "publication": "개인 에세이",
     "issue": null,
     "year": "2015",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "에세이",
     "sourceUrl": "https://blog.naver.com/ecopower/222108368684",
@@ -1320,8 +1535,9 @@
       "사람들은 다시 종로와 남대문으로 나왔다. 불과 며칠 전 “황제폐하의 성덕에 보답하고 나라를 오래 부강하게 하자”며 ‘국민통합’을 외쳤던 바로 그 사람들이었다. 그들은 ‘사건의 경위를 해명’하고 ‘약속을 지키라’고 요구했다. 상인들도 이에 호응하며 시장을 물렸다. 11월 10일 정부는 하는 수 없이 체포된 11명 전원을 석방했다. 그러나 황제는 <헌의 6조>에 대한 약속을 지키지 않았고, 민중의 요구가 계속되자 근왕파 대신들은 황국협회 소속 보부상들을 시켜 이들을 무력으로 해산시켰다.",
       "1896년 12월 “한 한국 귀족 청년”는 불과 2년 뒤인 1898년 11월의 상황을 보면서 어떤 생각을 했을까? 아마도 이렇게 되물었을 것이다. 정부는 얼마나 ‘야만’과 ‘무법’에서 벗어났는가? 우리는 얼마나 ‘미개’를 극복하였는가? “자유의 교육”을 받은 학생들은 얼마나 사회에 기여하고 있는가? 그리고 어떤 희망이 보이는가? 다시 한 번 강조하건 데, 2015년 4월을 살고 있는 우리에게는 별 의미 없는 옛날이야기다. 정치적인 의미 따위 1도 없는 아주 오래된 이야기."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108346299",
@@ -1331,6 +1547,8 @@
     "publication": "대학내일",
     "issue": "734",
     "year": "2015",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108346299",
@@ -1363,8 +1581,9 @@
       "코끼리는 잊지 않는다. 그 기억은 부모에게서 자식에게로, 다시 그 자식에게로 이어진다. 잊지 않는다는 것이, 기억한다는 것이, 곧 가혹한 가뭄같은 세상에서도 우리의 아이들을지켜내는 방법임을 본능적으로 알고있었다. 그래서 잊히지 않는 슬픔으로, 잊지 않겠다는 울부짖음으로, 서로의 위치를 확인하며 나아갔다. “쿵. 쿵. 쿵.”우직하게 걸었다.",
       "투어 버스에 탄 관광객처럼, 나는 TV와 SNS 로 그 장면을 지켜볼 뿐이었다. 고개를 들 수없었고, 부끄러움에 욕지기가 나왔다. 그사이코끼리들이 서로 만났다. 무리를 이룬 그들에게 어울리지 않는 족쇄도, 선명한 상처도 문제되지 않았다. 코끼리들이 함께한 그곳이 초원이었다. 그래, 시끄러운 댓글놀이 따윈 잊어버리자. 대신 우리 모두가 잊지 말아야 할것을, 기억해야 할 것을, 분명히 하자. 당신도, 나도, 코끼리임을 잊지 말자."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108356310",
@@ -1374,6 +1593,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108356310",
@@ -1390,8 +1611,9 @@
       "그 뿐이 아니다. ‘우리 이웃’을 대상으로 시작된 반찬두레는 자연스레 직접 지역사회에 나눔을 실천하고 있었다. 예를 들어 강동구의 ‘착한 밥상 맛깔손’은 매주 다문화센터에서 결혼이민자를 위한 무료 요리강좌를 열고 있고, 성미산의 ‘동네부엌’은 저소득층 아이들과 독거노인들에게 반찬을 제공하고 있다.",
       "최고의 음식인 어머니의 반찬에 그것을 함께 나누려는 노력이 더해진 ‘반찬두레’. 반찬두레는 이제 ‘식탁의 혁신’을 불러일으키고 있다. 그것은 내 가족만이 아닌 우리 이웃, 그리고 마을 공동체 전체에 좋은 영향을 미치는 ‘생활 속의 혁신’이다. 그리고 이 모든 혁신은 ‘반찬’과 ‘두레’ 사이의 ‘작은 더하기(+)’에서 시작된 것이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108352183",
@@ -1401,6 +1623,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108352183",
@@ -1418,8 +1642,9 @@
       "곱하기(x)의 문화, 브라질 특유의 “창조적인 수용력”의 결과물인 보사노바는 정열과 열정의 이파네마 해변에 우하하고 지적인 분위기를 한층 더해 주고 있습니다. 조빙은 명곡 <이파네마의 소녀 (Garota de Ipanema)>에서 이렇게 읊조립니다.",
       "“이파네마의 태양에 그을린 황금빛 피부의 소녀. 그 유혹은 한 편의 시보다 더하고 내가 보았던 어떤 것보다도 아름답네. 아, 나는 왜 홀로 있을까? 아, 왜 모든 것이 이다지도 슬픈 것일까? 아, 존재하는 저 아름다움. 나만의 아름다움이 아니지만 그녀 역시 홀로 지나가네.”"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108361382",
@@ -1429,6 +1654,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108361382",
@@ -1448,8 +1675,9 @@
       "시장의 반응은 어땠을까요? 4년 동안 총 22만 여대가 팔리면서 나노는 ‘인도의 국민차’로 불리게 됩니다. 3년의 개발 끝에 내 놓은 제품이었지만 처음부터 반응이 좋기만 했던 것은 아닙니다. 가볍고 약한 재질로 만들어져 품질과 안전성이 떨어질 거라는 우려가 특히 많았습니다. 하지만 영국 MIRA(Motor Industry Research Association) 테스트센터에서 실시된 충돌 테스트를 통과하면서 유렵, 베트남 등 세계시장의 주목을 받기 시작했습니다.",
       "자동차에서 옵션을 빼면서(-) 시작된 타타 나노의 혁신은 이제 새로운 혁신으로 옮아가고 있습니다. 단순히 저렴하기만 한 경차가 아니라 고급스럽고 아름다운 경차, 진기로만 약 90km를 이동할 수 있는 경차, 픽셀(Pixel)과 메가픽셀(Megapixel)이 바로 그것입니다. 타타의 자동차 혁신은 현재진행형이라고 할 수 있을 것입니다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108354829",
@@ -1459,6 +1687,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108354829",
@@ -1477,8 +1707,9 @@
       "두 가지 다른 현실의 차이(-)에 주목함으로써 초현실주의라는 미술의 혁신을 이룩한 달리. 남들과 다른 눈을 가지고 광인같은 삶을 살았던 그는 우리 기억 속에 ‘광인’이 아니라 미술의 혁신을 이룩한 ‘천재’로 남을 것입니다. “광기 아니면 삶! 나는 언제나 이렇게 말한다. 늙어 죽을 때까지 생생히 살아 있을 나와 광인의 차이는 내가 광인이 아니라는 점이다.”라는 그의 말처럼 말입니다.",
       "그의 지나친 자화자찬이 밉지만은 않은 것도 이 때문이 아닐까요? “모든 교회의 종들을 울릴지어다! 허리를 구부리고 밭에서 일하는 농부들이여, 지중해의 북풍에 뒤틀린 올리브나무처럼 굽은 허리를 바로 세울지어다! 그리고 경건한 명상의 자세로 못박힌 손바닥에 뺨을 기댈지어다. 보라 살바도르 달리가 태어났도다.”"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108359401",
@@ -1488,6 +1719,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108359401",
@@ -1505,8 +1738,9 @@
       "생산 비용 절감을 위해 DIY 가구를 만든 것이었는데, 소비자들이 이것을 불편하게 여기기는커녕 오히려 이것을 즐거워했다는 결론에 도달하게 된 것입니다. 이케아의 성장과 함께 DIY 가구가 널리 보급되자, 이제는 디자인이 특별하거나 비용이 아주 저렴하지 않더라도 여러 가지 이유로 DIY 가구를 찾는 소비자들이 늘어나고 있다고 합니다.",
       "요약하면, 이케아 효과는 가구에서 제조, 유통, 보관 비용을 줄이기(-) 위해 시작된 혁신이 의도하지 않게 만들어낸 또 하나의 혁신인 셈입니다. 혁신의 가능성은 이처럼 우리가 의도하지 않은 어떤 것에서 발견될 수 있는 것은 아닐까요?"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108321644",
@@ -1516,6 +1750,8 @@
     "publication": "대학내일",
     "issue": "686",
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108321644",
@@ -1538,8 +1774,9 @@
       "상투적이라면 상투적이겠지만 죽을 뻔한 경험 이후소년에겐 앞으로 남은 삶이 보너스처럼 여겨졌다. 기왕이면 행복해지자고, 좋은 사람들, 좋은 것들을많이 만나고 즐기자고 생각했다. 더 “죄송합니다”라며 고개 숙이기보다 “감사합니다”라며 활짝 웃어줄수 있는 사람이 되자고 생각했다. 소년은 이제 더이상 가난하다는 이유로 죄송하다 말하지 않는 청년이 됐다. 대신 누구도 죄송하다 말하지 않아도 되는 세상을 향해 한 걸음씩 내딛고 있다. 이미 눈치챘겠지만 바로 그 청년이 지금 이 글을 쓰고 있다. 누구에게나 나의 2월 26일 같은 평범한 삶이 주어지기를 희망하면서 말이다.",
       "‘우리의 삶에는 시간의 점이 있다. 이 선명한 점에는 재생의 힘이 있어 이 힘으로 우리를 파고들어 우리가 높이 있을 땐 더 높이 오를 수 있게 하며, 떨어졌을 때는 다시 일으켜 세운다.’ -윌리엄 워즈워스-"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108363171",
@@ -1549,6 +1786,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108363171",
@@ -1566,8 +1805,9 @@
       "기존의 구호품 패키지에 적정디자인을 더하자(+)는 작은 아이디어 하나, 그리고 ‘공익을 위해 재능을 사용하자’는 두 디자이너의 의기투합(+) 하나가 만들어낸 혁신 <드림볼 프로젝트>. <드림볼 프로젝트>는 빈곤 국가의 아이들이 ‘꿈을 차올리고 희망을 패스할 수 있게’ 돕고 있습니다.",
       "세상을 바꾸는 혁신은 기존에 있던 것에 작은 아이디어 하나를 더하고 그것을 실현하기 위해 힘을 합하는 것에서 시작되는 것은 아닐까요? 작은 더하기(+) 하나가 생각을 바꾸고 또 세상을 바꿀 수 있습니다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108336345",
@@ -1577,6 +1817,8 @@
     "publication": "대학내일",
     "issue": "701",
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108336345",
@@ -1602,8 +1844,9 @@
       "이토록 고생해 봤자 소용없다. 몇 년 후 아이는 엄마·아빠보다 ‘달님반 아인이’를 좋아할 것이다. 한때 당신만 찾던 아이는 이제 친구들과 노는 게 더 재밌다며 떠나갈 것이다. 그 모든 걸 알면서도 최선을 다하는 수밖에 없다. 그렇지 않으면 언젠가 “못난 애비를 둔 딸에게 정말 미안하다!!!” 손을 쭉 뻗으며 소리쳐야 할 날이 올 테니까.",
       "공포영화 속 주인공이 늘 그렇듯 나 역시 다가오는 공포를 전혀 알아차리지 못했다. 불과 몇 년 안에 내 삶에서 가장 중요한 문제가 될 육아에 대해 단 한 순간도 고민해보지 않았다. 잊지 마시라. 육아의 공포는 생각보다 가까운 곳에서 당신을 기다리고 있으니."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108364051",
@@ -1613,6 +1856,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108364051",
@@ -1630,8 +1875,9 @@
       "커다란 변화가 반드시 커다란 행동으로부터 시작되어야 하는 것은 아닙니다. 자기가 느낀 불편함을 자기가 할 수 있는 선에서 해소하려는 작은 노력이 큰 편리함을 낳을 수도 있습니다. 버스 노선표에 작은 화살표 하나를 더한(+) 이민호씨가 그와 같은 길치인 사람들과 스마트폰에 익숙하지 않은 어르신, 그리고 자기의 삶에 커다란 혁신을 불러일으킨 것을 보면 말이죠.",
       "이것 하나만 기억하세요. 작은 더하기 하나가 상상, 그 이상의 혁신을 이루어낼 수 있다는 사실을."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108324106",
@@ -1641,6 +1887,8 @@
     "publication": "대학내일",
     "issue": "689",
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108324106",
@@ -1662,8 +1910,9 @@
       "협회의 정신적 지주이기도 한 만화가 우스타 쿄스케가 명작 <삐리리 불어봐! 재규어>에서 말했다. “오늘은 모두가 무척 충실하고 쓸데없는 시간을 보냈다.” 상상해보라, 쓸데없는 일을 땀 흘려 성실하게 하고 났을 때의 뿌듯함을! 쓸모 있는 일을 억지로 할 때는 느껴보지 못한 환희를! <대한구슬치기협회>의 문은 성실하게 구슬치기에 임할 청년들에게 활짝 열려 있다. 다시 한 번 강조하건대, 성실이야말로 지고지순의 미덕이니까.",
       "PS. 페이스북에서 ‘대한구슬치기협회’를 검색하세요!"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108353442",
@@ -1673,6 +1922,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108353442",
@@ -1690,8 +1941,9 @@
       "독특한 화풍으로 미술의 혁신을 이룩한 반 고흐. ‘역사상 최고의 예술가’로 손꼽히는 그이지만, 시대를 앞서간 독특한 화풍의 이면에는 동양과 서양의 교류가 확대되고 있던 19세기 말, 동양(일본의 우키요에)과 서양(인상파와 신인상파)의 콜라보레이션(x)이 있었던 것입니다.",
       "(덧붙임) 반 고흐의 작품들은 그의 생애 동안에는 빛을 보지 못했지만, 오늘날 이러한 배경에 힘입어 전 세계, 특히 일본에서 엄청난 인기를 누리고 있습니다. 1990년 당시 일본 다이쇼와제지 명예회장이던 사이토 료에이는 반 고흐의 <가셰 박사의 초상(Portret van Dr. Gachet, 1890)>을 무려 8,250만 달러에 구입하기도 했지요. 이 때 세워진 최고가 기록은 무려 15년 동안 깨지지 않았다고 합니다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108365740",
@@ -1701,6 +1953,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108365740",
@@ -1718,8 +1972,9 @@
       "예를 들어, 마이클 잭슨 스스로가 팝의 황제임 선언하기 전인 1989년 이전에는 조선 사대부의 초상화처럼 호피를 깐 나무 의자에 앉아 화문석 족좌대에 발을 얹고 있는 반면, 그 이후에는 왕의 초상에서나 볼 수 있는 황금색 용머리가 장식된 붉은 의자에 앉아있는 식이지요. 적절하지 않나요?",
       "이처럼 손동현 화가의 작품은 기존의 방식으로는 충분히 표현해내지 못했던 어떤 새로운 의미와 새로운 세계를 표현해내고 있습니다. 그로 인해 우리가 한국전통회화의 매력을 다시 보게 된 것은 물론이고요. 이런 의미에서 손동현 화가의 작품은 단순한 만남(+)이 아니라 동서양의 콜라보레이션(x) 혹은 전통과 현대의 콜라보레이션(x)을 통해 탄생한 혁신이라고 할 수 있을 것입니다. 손동현 화가의 작품들처럼, 혁신의 가능성은 외국이나 미래로부터 뿐만 아니라 우리의 전통 그리고 과거에서도 발견될 수 있는 것 아닐까요?"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108216997",
@@ -1729,6 +1984,8 @@
     "publication": "대학내일",
     "issue": "681",
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108216997",
@@ -1752,8 +2009,9 @@
       "비슷한 생각을 가진 사람들이 쉽게 이합집산 할 수 있는 인터넷 세계에서는 친구집단보다 훨씬 더 쉽게 극단의 문화가 형성되고 또 성장한다. ‘각 구역의 미친놈’들이 모인 커뮤니티의 경우, 웬만해서는 ‘용자’가 될 수 없기에 경쟁적으로 극단을 추구하기 때 문이다. 서로가 서로를 욕하고 바깥에서 자신들을 욕하는 것을 알면서도 더욱더 심한 ‘극단의 문화’가 만들어지는 것이다.",
       "그 결과는 <에픽 밀 타임>일 수도 있고 <잭애스>일 수도 있다. 극단적인 인종차별주의일 수도 있고 극렬한 민족주의일 수도 있다. ‘그들’의 극단은 어떤 방향성을 가지고 있느냐가 아니다. 그들은 사실 극단 자체를 추구한다. 결국 ‘그들’의 극단에 또 다른 극단으로 반응하는 쪽 역시 ‘극단의 문화’를 지탱하는 적대적 동반자일 뿐이다. 오늘도 ‘극단의 문화’는 무럭무럭 커가고 있다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108332584",
@@ -1763,6 +2021,8 @@
     "publication": "대학내일",
     "issue": "696",
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108332584",
@@ -1785,8 +2045,9 @@
       "나를 분노케 하는 모든 일에 이런 방식을 적용하기 시작하면서 점차 분노 자체를 조절할 수 있게 되었다. 마음에 안 들수록, 화가 날수록, 더 친절하고 공손하게 웃는 얼굴로 반응하면서 인간관계에서 많은 부분이 편안해졌고, 화낼 일도 줄어들었다. 완벽하진 않지만, 그와 함께 친절하고 온화한 태도가 조금씩 자리 잡기 시작한 것이다. 김어준 <딴지일보> 총수가 말한 것처럼, 자신의 분노를 객관적인 시각에서 볼 수 있게 되었기 때문일 것이다. “분노로는 아무것도 할 수 없다”지만, 역설적이게도 지금의 나를 만든 것은 팔 할이 분노였던 셈이다.",
       "분노할 것이 많은 세상에서 분노를 억누르라는 쪽도, 가슴을 찢으며 분노를 표출하라는 쪽도 정답은 아닐 수 있겠다는 생각을 해본다. 문제는 ‘분노의 감자’를 잘 요리하는 것에 있다. 여러 가지 방식으로 분노의 감자를 마음대로 요리할 수 있게 되었을 때, 비로소 헛소리와 분노로 가득 차 있고 결국 아무런 의미도 없는 인생에 작은 의미가 발견될 수 있지 않을까?"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108327316",
@@ -1796,6 +2057,8 @@
     "publication": "대학내일",
     "issue": "690",
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108327316",
@@ -1815,8 +2078,9 @@
       "반면 블랙데이는 단 하루일지언정 이 시스템에서의 탈피를 의미한다. 솔로임을 당당히 자인할 때 우리는 우리 자신을 꾸미기 위해 시스템의 노예에서 벗어날 수 있다. 그리고 블랙데이는 인간은 인생에서 혼자라는 슬프지만 타당한 진실을 직시하게 해준다. 이것이야말로 블렉데이의 정신(Spirit of Blackday)인 것이다.",
       "솔로들이여. 블랙데이의 정신을 지키는 것은 단순히 “솔로가 편해!” 수준이 아니다. 시스템에 대한 적극적 저항이다. 솔로라면 당당하게 블랙데이를 기념할 필요, 아니 반드시 그렇게 해야 할 의무가 있다. 어두컴컴한 세상을 구원하는 길은 여러분의 검은 짜장면에 달려 있는지도 모른다. 솔로들이여, 건투를 빈다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108330040",
@@ -1826,6 +2090,8 @@
     "publication": "대학내일",
     "issue": "693",
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108330040",
@@ -1852,8 +2118,9 @@
       "P.S",
       "<사일런트 웨딩>의 결말, 조용한 결혼 잔치가 무르익을 때쯤 소련군 탱크가 들이닥친다. 마을 남자들은 끌려가며 남은 여자들은 속수무책으로 그 장면을 바라봐야 할 뿐이다. 덧붙이면 이 영화는 실화다. 소련이 지배한 공산주의 루마니아 시절 이 마을 사람들을 포함해 7만 명이 넘는 루마니아인이 목숨을 잃었다. 루마니아 국민 배우 호라티우 말라엘은 자신이 감독한 첫 영화 <사일런트 웨딩>에서 이 거대한 슬픔을 유머로 애도한다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108358246",
@@ -1863,6 +2130,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108358246",
@@ -1879,8 +2148,9 @@
       "“생활공간을 여행자와 나눈다(÷)”는 아이디어에서 시작된 에어비앤비는 숙소의 혁신을 넘어 경제 관념 자체에도 혁신을 불러일으키고 있습니다. 이런 의미에서 전문가들은 에어비앤비가 소유, 자원고갈, 이윤창출, 경쟁, 과잉소비로 요약되는 전통경제가 아니라 공유, 자원절약, 가치창출, 신뢰, 협력적 소비를 특징으로 하는 공유경제 서비스라고 지적합니다.",
       "이번 여름 휴가로 배낭여행을 계획하고 있으시다면, 에어비앤비의 나눔의 혁신(÷)을 경험해보시는 건 어떨까요? 마치 여행지의 동네 주민이 된 듯한 기분을 느낄 수 있을지도 모르니까요."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108357497",
@@ -1890,6 +2160,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108357497",
@@ -1907,8 +2179,9 @@
       "인체에는 전혀 무해하면서 병원성 세균과 바이러스류에 대해서는 살균력이 검증된 아쿠아탭스는 유니세프, 세계보건기구(WHO), 적십자사 등 국제 원조기관 및 구호단체에서 필수품목으로 지정되어 있습니다. 아쿠아탭스는 개인위생, 감염관리, 긴급구호 등 광범위한 영역에서 그 역할을 톡톡히 하고 있습니다.",
       "오염된 물을 알약으로 분해한다(/)는 간단한 아이디어에서 탄생한 아쿠아탭스는 ‘정수의 혁신’이면서 동시에 수 많은 사람들의 건강과 생명을 보호하는 ‘구호(나눔)의 혁신’을 불러일으키고 있습니다. 이것이 진정한 나누기의 혁신이 아닐까요?"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108362154",
@@ -1918,6 +2191,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108362154",
@@ -1936,8 +2211,9 @@
       "1990년대 이후 오늘날 다시 전기차가 주목 받고 있는 것은 오랜 혁신 과정이 있었기 때문이라고 보는 것이 합당할 것입니다. 오늘날의 전기차는 과거 약점으로 지적되어 온 문제들을 하나 둘 극복해온 결과물인 것입니다. 그 중심에는 가볍고 작으면서 빠르게 충전되는 배터리가 있고요. 결국 전기차는 기존의 전기차에서 약점을 뺀(-) 기술 혁신의 집합체라고도 할 수 있을 것입니다.",
       "물론 모든 과제가 해결된 것은 아닙니다. 지난 2012년 4월 16일 UCS (Union of Concerned Scientists)는 화력발전 의존도가 높은 지역의 경우 전기차가 오히려 지구 온난화 물질을 많이 배출하는 역설이 나타날 수 있다는 연구결과를 발표한 바 있습니다. 전기차를 탄생시킨 빼기의 혁신은 이제 전기차 자체의 성능 및 연비를 제고하는 영역을 넘어, 전기 생산과정에서 환경오염을 빼는(-) 방향으로 이어지고 있습니다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108364877",
@@ -1947,6 +2223,8 @@
     "publication": "SK이노베이션 블로그",
     "issue": null,
     "year": "2014",
+    "month": null,
+    "day": null,
     "naverCategory": "칼럼",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108364877",
@@ -1965,8 +2243,9 @@
       "<트리플래닛>은 2010년 9월에 법인을 설립하고 11월에 G20 서울정상회의 공식 앱(App)으로 선정 및 전시 된 이후, 서울 강남과 강동, DMZ뿐만 아니라 인도네시아, 몽골, 남수단, 중국에 이르기까지 식목 범위와 규모를 빠르게 키워나가고 있습니다.",
       "커다란 기술 혁신이 아니라 작은 아이디어의 혁신으로 환경의 혁신을 이룩한 <트리플래닛>. 그 이면에는 ‘게임에 기부를 더한다(+)’는 아이디어, 그리고 ‘한 사람의 힘으로 해결하기 어려워 보이던 환경문제를 70만명의 이용자와 기업이 힘을 합쳐(+) 해결한다’는 아이디어가 있었습니다. 벌써 전 세계에 46만그루의 나무를 심었지만 “나무로 가득한 초록별을 만들기까지 멈추지 않습니다”라는 그들의 비전처럼, 더하기(+)의 혁신이 멈추지 않기를 바라면서, <트리플래닛>에 여러분의 힘을 하나 더해(+)보는 건 어떨까요?"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107543102",
@@ -1976,6 +2255,8 @@
     "publication": "대학내일",
     "issue": "655",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222107543102",
@@ -1992,8 +2273,9 @@
       "누군가의 탓으로 돌리는 것은 쉽지만, 그것에서 변화를 만들어내기는 어렵다. 밀양 송전탑 사태는 할머니들과 정부 간의문제도 아니고, 우리가 0.00000028%만큼의 책임만 갖는 문제도 아니다. 이건 공동체의 문제, 우리들의 문제다. 수많은철탑과 전깃줄이 이미 우리들을 이어주고 있는데도, 우리는 그 사실을 너무 쉽게 잊어버린다. 할머니들의 고향 땅에 철탑을 박는 건, 그들이 아니라 우리의 더 나은 삶을 위한 것이다. 무엇보다 쉽게 잊히는 건, 할머니들 역시 더 나은 삶을 바라는 우리 공동체 구성원이라는 당연한 사실이다.",
       "개인은 국가 전기 생산량의 극히 일부를 사용할 뿐이다. 개인은 전기 문제 같은 건 잘 모른다. 원전 같은 건 전문가에게 맡겨놓으면 된다고 생각한다 그렇게 후쿠시마 원전은 폭발했다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107525940",
@@ -2003,6 +2285,8 @@
     "publication": "킬러코드",
     "issue": null,
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "에세이",
     "sourceUrl": "https://blog.naver.com/ecopower/222107525940",
@@ -2019,8 +2303,9 @@
       "7. 글을 이만큼이나 썼는데 “KILLER CODE, 그게 뭔데?”에 대한 대답이 된 것 같진 않다. 사실 제대로 된 대답 근처에도 못가고 있다. 진정한 “유구냉무”다. 여러분, 그럼 “KILLER CODE, 그게 뭔데?” 2편에서 만나요. 벌써 새벽 한 시야. 피곤하니, 이정도 선에서 합의합시다.",
       "+. 그나저나, 이걸 읽고 KILLER CODE가 정말 분식집이라고 생각하는 사람은 없겠지?"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107526498",
@@ -2030,6 +2315,8 @@
     "publication": "킬러코드",
     "issue": null,
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "에세이",
     "sourceUrl": "https://blog.naver.com/ecopower/222107526498",
@@ -2045,8 +2332,9 @@
       "6. KILLER CODE는 “우리가 트렌드 세터”라고 말하지 않는다. 우리는 ‘힙’하고 ‘핫’하거나 ‘잇’한 것들과는 거리가 있는, 그냥 우리가 좋아하는 것들을 좋아할 뿐이다. KILLER CODE는 신간보다 구간을 좋아하고, 최신영화보다 다시 볼 필요가 있는 영화를 좋아하는 사람들이다. 고등학교 반에서 0.7명쯤 있는 그런 친구들 말이다. 우연과 필연이 겹쳐 그런 친구들이모였다. 서로 비슷하면서도 다른 취향을 가지고 있다 보니, 평일 낮에 만나면 수다가 커피 한두 잔으로 끝나지 않는다.",
       "7. 무엇보다, KILLER CODE는 ‘뜨거운 것’을 싫어한다. 막 내려서 입천장을 다 데일 것 같은 아메리카노가 딱 맛있어지는, 그 시점의 미적지근함을 좋아한다. 다시 강조하건 데, 우리의 취향이 ‘더 좋다’고 주장하고 싶은 생각도 없고, 우리의 취향을 ‘더 좋아하라’고 강요하고 싶은 생각도 없다. 그냥 우리와 같은 취향을 가진 사람들, 고등학교 때 반에서 0.7명쯤 존재하던 그 사람들이 함께하길 바랄 뿐이다. “고객님, 딱 맛있는 온도의 아메리카노를 좋아하는 ‘취향 공동체’ KILLER CODE에오신 것을 환영합니다.”"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108201812",
@@ -2056,6 +2344,8 @@
     "publication": "대학내일",
     "issue": "663",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108201812",
@@ -2079,8 +2369,9 @@
       "아쉬운 점이 없었던 건 아니다. 무엇보다 너무 더웠고, 여러모로 시간이 겹쳐서 놓친 뮤지션이 많았다. 관객도 한국만큼 미친 듯이 놀지는 않았다. 좀 미쳐줘야 함께 미치는데. 그래도 관객들의 공연 관람 매너는 확실히 수준 높았다. 게다가 똑똑한 공연장 배치, 수준 높은 무대장치, 편리한 부대시설, 그리고 운영요원의 능숙함까지 더해져 행사 자체는 거의 만점에가까운 점수를 줄 만했다. 덕분에 개인적으로는 평생기억에 남을 추억을 얻었다.",
       "돌아가는 버스를 향해 검게 그을린 얼굴로 “감사합니다. 안녕히 가세요”를 외치며 손 흔드는 운영 요원을보면서 왠지 울컥했다. “이쪽이야말로, 덕분에 즐거웠어요. 수고하셨어요.”"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380574450",
@@ -2090,6 +2381,8 @@
     "publication": "대학내일",
     "issue": "638",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380574450",
@@ -2104,8 +2397,9 @@
       "힐러의 배신 “그래, 이제 긍정적인 마음으로 다시 전투에 나가자!”이렇게 마음먹었건만, 저 커다랗고 사나운 괴물에게 한 방 세게 맞으면 다시 아무 생각이 없어진다.“진정해! 긍정적 마인드!” 욕실 거울을 바라보면서 자기 최면을 걸어봐야 효과는 그리 길지 않다. 그 괴물은 한심한 성적표, 쥐꼬리만 한 시급, 불합격 통지서, 어깨를 툭 치고 지나가는 낯선이 의욕설 등으로 계속 공격을 퍼붓는다. 피해 입은 내 몸을 치료해 주고, 때로는 괴물의 강력한 공격으로부터 나를 보호해주는 게임 속힐러들과 달리, 현실의 힐러들은 버튼을 누르면 “알라뷰~”소리를 내는 곰 인형처럼 “넌 할 수 있어, 다시 일어서!”라고 반복할 뿐이다. ‘힐링이 안 되는 건 내 탓이다. 내가 충분히 긍정적이지 않기 때문이다’라고 생각할 수도 있다. 그런데 이쯤가면 병이다. 정말 그렇게 생각한다면 중증 우울증을 의심해봐야 한다. 기껏 전문 힐러라고 시간과 돈을 써가며 귀 기울였더니, 힐링은커녕 충분히 긍정적이지 못한 자신에 대한 죄책감까지 더해줬다고 분노해야 마땅하다. 혼자서 사색을 하고 자기 자신을 돌아보고 항상 긍정적인 생각을 할 수 있으면 왜 힐러를 찾겠는가? 아니, 애초에 긍정적 마인드만으로 해결 안되는 문제였기 때문에 힐러를 찾은 것아니었나? 미국의 사회비평가 바버라에런 라이크(Barbara Ehrenreich)는 그의 책 『긍정의배신』에서 이런 긍정 이데올로기가 자본주의와 철저한 공생 관계를 맺고 있으며,긍정주의가 실패의 책임을 개인에게 돌림으로써 시장경제의 잔인함을 변호하고 있다고 주장한다. 에런라이크의 지적은 지금 유행하고 있는 힐링의 단면을 노골적으로 지적한다.“지금 당장 가능한 것은 현실에 대한 인식을 바꾸는 것뿐이다. 현실을 기껍게 받아들이고 아주 긍정적으로 바라보는 것이다. 이것이야말로 기업이 해고된 노동자들과 과로에 시달리며 아직 버티고 있는 직원들에게 주는 최대의 선물, 곧 긍정적인 사고다.”",
       "파티를 맺어라 내가 충분히 노력했다면, 혼자 고군분투해봤다면, 이제 질문의 방향을 바꿔볼 필요가 있다. 전투를 통해 얻은 피로와 우울증은 정말 내 탓일까? 저 괴물이 원래 저렇게 커다랗고 사나웠었나? 저 괴물과는 혼자 맞서는 수밖에 없는 걸까? 괴물과 싸우는 것만이 아니라 그것을 길들이거나 함께 살아가는 방법은 없을까? 물론, 이런 의문에 명확한 답을 구할 수 있을 거라 생각하긴 힘들다. 그러나 이러한 비판적 의문을 통해 무조건적 긍정이 갖는 무력감으로부터 벗어날 수는 있다. 긍정이데올로기가 말하는 괴물과의 전투가 그저 때리면 맞고, 맞아서 생긴 상처를 핥는 것에 불과했다면, 비판적 의문은 진지하게 공략법을 모색하는 것을 의미한다. 게임 속 괴물 공략은 파티를 맺는 것에서 시작한다.함께 싸울 동료를 구해야 한다는 말이다. 그 중 가장 중요한 사람이 힐러다. 게임이든 현실이든, 뒤에 숨어서 “니들이 레벨/스펙이 낮아서 그래”라든가 “원래 그런 거니까 잘버텨봐”라고 말하는 가짜 힐러 말고, 진짜 힐러를 구하는 건 정말 힘든 일이다. 나를 부추기고 내게 책임을 돌리지 않고, 내 옆에서 함께 고락을 같이하며 괴물의 공략법을 고민하는 사람이어야 한다. 그런 친구야말로 진짜 힐러다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108102420",
@@ -2115,6 +2409,8 @@
     "publication": "대학내일",
     "issue": "662",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108102420",
@@ -2135,8 +2431,9 @@
       "아무리 자기가 좋아하는 것이라도 남에게 민폐를 끼치면 안 되는 건 당연하다. 그러니 목청껏 노래를 부르는 것도, 마음껏 기타를 치는 것도, 기분가는 대로 춤을 추는 것도, 노래방이나 클럽에서 ‘이웃에게 방해가 되지 않는 선’에서 해결할 수 있지 않으냐고 되물을지 모르겠다. 그러나 그건 예술적 충동의 발산이라기보다 그런 충동을 다른 방식으로 만족시켜주는 것에 불과하다. 좀 더 노골적으로 말하자면, 예술적 충동을 예술로 승화시키는 것이 아니라 남이 만든 음악과 남이 알려준 춤을 충동적으로 소비하는 것에 지나지 않는것이다. 존 레넌에게 “노래방이나 가!”라고 말할 수는 없는 노릇이다.",
       "오늘날 우리 사회에서 조르바들은 멸종위기에 처했다. 어떤 천재적인 조르바가 사라졌기 때문이 아니라, 나와 당신, 우리 안에 있는 조르바를 우리 스스로가 질식시키고 있기 때문이다. 가끔 내 안의 조르바를 꺼내보았다가도 혹여 이웃에게 방해가 될까 황급히 다시 집어넣곤 하는 걸 보면, 어쩌면 서로가 서로의 조르바를 감시하고 있는 것일지도 모르겠다. 아주 조금만 더 조르바들이 숨 쉴 수 있는 공간을, 그‘이웃에게 방해가 되지 않는 선’을 조금 늘려주는 건 어떨까?"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108211104",
@@ -2146,6 +2443,8 @@
     "publication": "대학내일",
     "issue": "677",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108211104",
@@ -2167,8 +2466,9 @@
       "이 한마디는 그동안 당연하다고 생각한 모든 것에 의문을 던지는 씨앗이 됐다. 상급 무사가 하급 무사를 마음대로 죽이는 게 당연한 일인가? 왜 세상에는 신분이 존재하는 것일까? 내 조국, 토사국과 일본은 어떤 모습이어야 하는가? 의문이 꼬리를 물고 사람들 사이에 퍼져 나가면서 결국 일본의 봉건 사회는 막을 내렸다. 만인이 법적으로 평등한 새로운 세상이 등장했다.",
       "우리 역사도 다르지 않다. ‘나의 조국은 어떤 모습 이어야 하는가?’ 끊임없이 되물었던 신채호 선생 같은 분들에 의해 수백 년간 이어져 온 신분제의 사슬이 끊어졌고 마침내 광복을 맞이했으며 눈부신 경제 발전과 민주화를 이룰 수 있었다. 이 모든 과정에서 가장 큰 적은 조국에 대한 생각이 다른 누군가가아니었다. ‘원래 그런 거다. 생각할 필요 없다’고 말한자들, 주류와 생각이 다르다는 이유로 매국노라 몰 아붙이는 이들이야말로 우리를 고통에 붙잡아 놓은 적들이었다. “조국이 의심스럽다”고 말하는 진짜 의심스러운 그들 말이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107534406",
@@ -2178,6 +2478,8 @@
     "publication": "대학내일",
     "issue": "646",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222107534406",
@@ -2201,8 +2503,9 @@
       "아무튼 리락쿠마처럼 살아가기를 원하는 사람들이라면 누구나 리락쿠마교의 신자가 될 수 있다. 리락쿠마교의 교리를 실천하는 것도 전혀 어렵지 않다. 그냥, 지금 릴랙스하면 된다. 그러면 조만간 “뭐 좋은 일이 그렇게 많지 않은 게 세상일이긴합니다만. 나쁜 일이 없는것만으로 다행이라고 생각하죠”라고 담담하게 말할 수 있는 여유가 당신을 찾아올지도 모른다.",
       "릴랙스!"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107532193",
@@ -2212,6 +2515,8 @@
     "publication": "킬러코드",
     "issue": null,
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "에세이",
     "sourceUrl": "https://blog.naver.com/ecopower/222107532193",
@@ -2233,8 +2538,9 @@
       "5. 마교수 복선설: 마교수는 사실, 일부러 유치하게 “너, 책 샀어? 안 샀어?”라고 따져 물었다. 공론화되지만 않았다면, 회초리를 들었을지도 모를 일이다. 그는 대학의 수준이 이정도로 전락한 것이 학생들의 책임만이 아니라고 항변하고 있었다. 즉, 대학 교육의 전반적인 수준저하에는 이처럼 유치하게 행동하는 교수들의 책임도 있다는 것을 몸소 보여주고자 했던 것이다. 혹은 육성회비를 안냈다고 교실에서 쫓겨나서 뒷산에 앉아 눈물을 훔쳐야만했던 시절, 책을 안 챙겨오면 선생이 싸다구를 왕복으로 날리던 그 엄혹한 ‘박통’ 시절이 다시금 도래했음을 경고하는 그만의 처절한 몸부림이었을 지도 모른다. 어쨌거나, 마교수가 문학이 아니라 행위예술의 형태로 표현한 것도 모르고, 학생들이 ‘찐따’ 인증을 한 것이다.",
       "하아. 이만큼이나 헛소리를 했는데 씁쓸한 마음이 가시지 않는다. 무엇보다 한 시대를 풍미한 노교수가 오늘날 이런 이야기로 논란이 되고 있다는 게 ‘거시기’하다. 자신만의 기준을 갖고 마교수를 보이콧할 학생들이었다면 굳이 그의 강의를 신청하지도 않았을 테고, 대학의 수준저하와 시대의 엄혹함에 경고를 날리기 위해서였다면 마교수가 굳이 그런 방법을 사용하지 않았을 것이라는 걸, 당신도 나도 알고 있기 때문일 것이다. 이번 논란을 기회로 삼아, 마교수가 <즐거운 사라>의 새후속작을 집필해주길 바랄 뿐이다. 대학생들이 즐거운 마음으로 책을 사는 날이 오길 바라면서, 제목은 <즐겁게 사라>쯤으로 하고."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107542053",
@@ -2244,6 +2550,8 @@
     "publication": "대학내일",
     "issue": "654",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222107542053",
@@ -2268,8 +2576,9 @@
       "who? 은둔형 외톨이",
       "외톨이에게도 장점은 있다. 친구도 모임도 없다 보니 맘 내키는 대로 음식물을 섭취할 수 있다. 이들이야말로 ‘덜 먹고 덜운동하기’를 실천할 수 있는 최상의 조건을 갖춘 셈이다. 그렇다면 영화 <매트릭스>의 인류처럼 가만히 누워 있는 거다. 주인공 네오처럼 머릿속으로 쿵후하는 모습을 상상해도 좋겠다. 그게 무슨 운동이 되냐고? 왜 ‘이미지 프랙티스(image practice)’나 ‘플라시보 효과’라는 말도 있지 않은가."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108209378",
@@ -2279,6 +2588,8 @@
     "publication": "대학내일",
     "issue": "669",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108209378",
@@ -2301,8 +2612,9 @@
       "그런데 드래곤볼 시리즈의 뒷이야기라 할 수 있는<드래곤볼 GT>는 손오공과 크리링의 대련 장면으로 막을 내렸다. 대단원의 마지막이 그 둘의 대련이라는 점은 크리링이 여전히 손오공의 라이벌이자 절친으로서 중요한 위치를 차지하고 있음을 방증한다. 소년만화의 3대 요소인 노력, 우정, 승리 중에 역시우정이 가장 중요하다는 의미로 이해할 수도 있다.",
       "그런데 손오공은 어째서 크리링을 여전히 함께 대련할 수 있는 존재로 여길 수 있는 것일까? 크리링은어째서 여전히 손오공의 절친으로 남아있을 수 있는것일까? 이제는 너무나 큰 차이를 보이는 둘 사이에어떻게 우정이 유지될 수 있는 것일까? 그리고 우리는 어떻게 그 둘의 우정을 납득할 수 있는 것일까? 조금만 입장이 달라져도 너무나도 자연스럽게 한때의 동료를 하나둘 잃어가는 우리에게 손오공과 크리링의 우정은 얼마나 특별한가."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107544175",
@@ -2312,6 +2624,8 @@
     "publication": "대학내일",
     "issue": "657",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222107544175",
@@ -2328,8 +2642,9 @@
       "이처럼 경쟁을 적극적으로 옹호하던 사람들조차 그 치열한 자연계의 생존 투쟁, 그리고 인간 세상에서의 경쟁이 결코 약육강식이 아니라고 말했다. 그런데 우리는 아직도 흔히 경쟁을 약육강식에 비유한다. 소년 만화는 더하다. 다른 만화였다면, 송태섭은 상대적으로 우위에 있는 빠른 발을 무기삼아 점점 더 강자가 되어 경쟁자들을 압도해 나갔을 것이다. 그러나 「슬램덩크」의 송태섭은 그렇지 않았다. 그는 천재나 강자가 아니기에 할 수 있는 패스 플레이로, 교체나 부상도 없이 북산의부족한 2%를 채워주었다. 그리고 그것으로 당당하게 살아남았다. 오늘도 삶이 당신을 피곤하게 하는 건, 재능 없는 내가저런 천재들과의 경쟁 속에서 어떻게 살아남을 수 있을지를 걱정하고, 그래서 강자가 되고 승자가 되기 위해 무리하고 있기 때문은 아닐까? 그렇다면, 「슬램덩크」를 펼쳐 들고 송태섭의 플레이를 감상하는 건 어떨까? 자신을 필요로 하는 곳에서자신이 할 수 있는 것을 충실히 해내면 충분하다는, 평범한 진실을 깨달을 수 있을지도 모르니까.",
       "오늘도 삶이 당신을 피곤하게 하는 건 재능 없는 내가 저런 천재들과의 경쟁 속에서 어떻게 살아남을 수 있을 지를 걱정하고 그래서 강자가 되고 승자가 되기 위해 무리하고 있기 때문은 아닐까?"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107535495",
@@ -2339,6 +2654,8 @@
     "publication": "대학내일",
     "issue": "645",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222107535495",
@@ -2352,8 +2669,9 @@
       "그러고 보면, 야간 편의점은 가난한 대학생에겐 사색을 위한 최고의 장소였다. 밝고 쾌적한 환경과 풍부한 먹을거리가 제공되면서, 졸려도 잘 수 없었으니, 사색 외엔 달리 할 것도 없었다. 술 한모금 안마시고 한 밤중에 깨어있으면 ‘걔는 왜 나한테 그런 문자를 보냈을까?’에서 ‘인간의 존재 이유는 무엇일까?’에 이르기까지 온갖 생각이 들기 마련이다. “봉투에 넣어드릴까요?” “적립카드 있으세요?” 따위는 뇌를 거치지 않고도 말 할 수 있었기에, 일을 하면서도 사고의 흐름을 이어갈 수 있었다. 이벤트처럼 중간 중간 등장하는 진상 손님만 없었다면, 우주 삼라만상의 이치를 깨달았을지도 모른다.",
       "칸트는 그의 고향 쾨니히스베르크를 산책하면서 <순수이성비판>을 썼고, 아인슈타인은 베른의 특허 사무소 심사관으로 일하면서 양자역학과 특수상대성이론에 관한 논문을 완성했다. 오늘밤, 전국의 야간 편의점 아르바이트생 중 누군가는 칸트와 아인슈타인의 뒤를 잇고 있을 수도 있다. “젠장, 그렇게 좋은 아르바이트가 있었다니! 나는 칸트나 아인슈타인이 될수 있는 기회를 빼앗겼어!”라고 낙담할 필요는 없다. 편의점은 아르바이트생의 편의를 위한 곳이 아니라, 우리의 편의를위해 그들에게 ‘불편’을 강요하는 곳이기에, 아마도 그런 일은 없을 테니까."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107527459",
@@ -2363,6 +2681,8 @@
     "publication": "킬러코드",
     "issue": null,
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "에세이",
     "sourceUrl": "https://blog.naver.com/ecopower/222107527459",
@@ -2379,8 +2699,9 @@
       "5. <사회가학연구소(오타아님)>의 최근 설문조사 결과에 따르면, 킬러코드 멤버들은 한 달 평균 2.5번 치킨을 먹는다. 보다 구체적인 임상실험 결과, 킬러코드 멤버들은 암묵적으로 2주에 한 번 꼴로 ‘치킨회동’을 가져왔으며, 지난주 금요일에계획되어 있던 치맥 일정을 발행인이 일방적으로 월요일로 변경하자 충성도가 급격하게 낮아지는 등의 행태를 보였다.",
       "6. 치킨부족증이 심각해질 경우, 그리고 그것이 집단화 할 경우, 피실험자들이 어느 정도의 폭력성을 보일 것인지에 대한연구는 지나치게 위험한 관계로, <사회가학연구소(오타아님)>에서는 시행하지 않겠다. 다만, <사회가학연구소(오타아님)>는 전방GP를 비롯한 국가기관에서 여전히 이처럼 잔인한 임상실험(‘장기치킨부족증과 폭력성의 상관관계’에 대한 연구)이 계속되고 있다는 충격적인 제보를 확보해두었음을 밝혀둔다. 호머 심슨의 말씀은 구구절절이 옳다. “평화와 치킨!”+ 스파게티 괴물 교회(Church of the Flying Spaghetti Monster)"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107528811",
@@ -2390,6 +2711,8 @@
     "publication": "킬러코드",
     "issue": null,
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "에세이",
     "sourceUrl": "https://blog.naver.com/ecopower/222107528811",
@@ -2409,8 +2732,9 @@
       "한 때 KFC의 아성에 도전했던 파파이스는 2012년 기준으로 당기순이익이 –10억 4747만원 수준까지 떨어져서, 현재 지점이 전국에 100여개 밖에 남지 않은 상황이다. 한편, 2013년 1월 중순에는 KFC의 한국사업부를 운영하고 있는 SRS코리아(두산 계열사)에 대한 매각 입찰이 단행되었다. 2월 중순 쯤 커피체인업체 할리스와 아시아계 투자펀드 한 곳이 개별협상을 진행하고 있다는 소식까지만 들었는데, KFC의 점포당 수익이 낮은 반면, 미국 본사 염 브랜즈(Yum! Brands)가과도한 프랜차이즈 계약을 요구하고 있다는 점이 주요 안건이라고 했다.",
       "우리 어릴 적, 80년대 KFC와 파파이스의 위상을 생각하면, 이건 분명 엄청난 변화다. 1977년 탄생한 한국 최초의 프랜차이즈 치킨, 림스치킨의 몰락도 같은 맥락에서 되짚어볼 필요가 있다. 이제 커넬 할아버지는 치킨 슬레이어(Chicken Slayer)의 자리에서 밀려났고, 바야흐로 그 자리를 차지하기 위한 왕좌의 게임이 본격화되었다. 국내 최고의 닭고기 권위지 <월간 닭고기>에서 이 문제를 심각하게 다루어 줄지 알 수 없기 때문에, 다음 시간에 이 문제에 대해 ‘전혀’ 과학적인 방식으로 접근해보도록 하겠다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107530846",
@@ -2420,6 +2744,8 @@
     "publication": "대학내일",
     "issue": "642",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222107530846",
@@ -2447,8 +2773,9 @@
       "지금 요약 보고서를 만들고 있는 사람들도 언젠가 높으신 분이 되면, 마찬가지로 누군가가 만들어 준 요약문만 앵무새처럼외우게 될 것이다. 유행성 요약 강박증은 우리사회 전반에 걸쳐 유행하고 있다. 서두에 언급했듯이, 우리는 스스로 해석하고 요약하 는 것보다 남이 요약해준 것을 섭취하는데 익숙해져 있다. 긴 글은 읽기도 싫고 드라마는 신문기사로 내용만 파악하면 된다. 말이 조금만 길어져도 “핵심만 말해!”라며 짜증 섞인 불평이 터져 나오기 일쑤다. 매체들(대학내일도 포함)은계속해서 요약된 정보를 제공하고 사람들은 점점 요약만 원하는 악순환이 계속되고 있는 것이다.",
       "유행성 요약 강박증이 의심된다면, 스스로에게 이런 질문을 던져보길 바란다. 우리가 안보고도 본 척, 안 읽고도 읽은 척할 수 있게 해주는 온갖 서평, 요약문, 단신, 한 장짜리 보고서는 정말 잘된 요약일까? 스스로 핵심을 파악하지 않는 상황, 내용과 맥락을 제대로 이해하고 있지 않은 상황에서 과연 어떤 기준으로 그 ‘요약’을 믿을 수 있는 것일까?"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107537752",
@@ -2458,6 +2785,8 @@
     "publication": "대학내일",
     "issue": "650",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222107537752",
@@ -2478,8 +2807,9 @@
       "그런데 그가 과감히 업종 변경을 선언했다. 양념치킨을 들고 나타난 것이다. 그것도 KFC 할아버지도 감동시킬 수 있을 정도로 맛있는 양념치킨을 말이다. 사실 조용필의 이번 앨범은 서구 음악을 하면서도 한국인의 입맛을 고려해왔던 수십 년의내공이 응집된 결과물이다. 어쩌면 그는 지금까지 해온 것을 다시 한 것뿐일지 모른다. 하지만 그런 부분 역시 존경스럽긴마찬가지다. 아무튼 양념치킨은 과거의 경양식을 추억하는 부모님도, 정통 서구 음악에 익숙해져 입맛이 까다로운 청년도만족시킬 수 있는 선택이었다. 그리고 당연한 말이지만, 양념치킨을 싫어하는 어린이가 있던가?",
       "조용필은 그렇게 보란 듯이 '컴백’했다. 그리고 한 가지 더. 요즘 외국인들이 한국에 가서 가장 먹어보고 싶은 음식을 물어보면, 대개 양념치킨을 꼽는다고 한다. 음식을 음악으로 바꾼다면, 양념치킨의 자리에 조용필이라는 이름을 채워 넣어도충분하지 않을까? KFC나 파파이스, 아니 엠씨 해머(Mc Hammer)나 데이비드 보위(David Bowie)도 부럽지 않을 것이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107539932",
@@ -2489,6 +2819,8 @@
     "publication": "대학내일",
     "issue": "653",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222107539932",
@@ -2506,8 +2838,9 @@
       "일본의 진격을 외치는 논리의 근저에는‘평화를 위한 무력의 사용은 긍정될 수 있다’는 논리가 깔려 있다. 국제 질서를 어지럽히고 있는 거인들(예를 들어 중국)을 물리치기 위해 일본이 거인화해야 한다고 주장한다. 100여 년 전의 주장과 어딘가닮아있지 않는가? 만화 속에서 자기도 모르는 사이 아버지에 의해 거인화라는 힘을 갖게 된 엘런과 마찬가지로, 지금의 일본은 언제든 거인이 될 수 있는 힘을 가지고 있다. 그리고 그런 힘을 갖게 해준 일본의 아버지는 과거 제국주의 일본의 패망 가운데 살아남은 자민당 세력이라고 해석할 수 있을지 모른다. 그렇게 힘을 가진 일본은 진격할 것인가? 『진격의 거인』속 이야기는 엘런에게 그 힘을 어떻게 사용할 것인지, 통제하기 어려운 그 힘의 본질적 의미는 무엇인지를 끊임없이 되묻는다. 86년생인 작가 이사야마 하지메는 엘런을 통해 동년배 일본인들에게 똑같은 질문을 던지고 있는 것일지도 모른다. “이 힘을 어떻게 사용해야 할까? 거인을 죽이기 위해서라면 거인이 되어도 좋은 것일까? 우리가 이것을 통제할 수 있는 것일까?”",
       "『진격의 거인』은 우경화에 의문을 던지는 우화로 이해될 수도 있다. 스토리가 어떻게 진행될지는 몰라도, 엘런이 잠자코 아버지의 숨겨진 목적을 따를 것으로 보이진 않는다. 마찬가지로 일본 젊은이들이 아베와 똑같은 답변을 내놓을 것이라고 생각하지 않는다. 지금 일본을 살아가는 엘런들에게 주어진 과제는 그들의 잘못된 과거를 되풀이하는 것이 아니라 그것을 극복하는 데 있다는 사실을 스스로 잘 알고 있을 것이라 믿기 때문이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222107514126",
@@ -2517,6 +2850,8 @@
     "publication": "대학내일",
     "issue": "640",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222107514126",
@@ -2544,8 +2879,9 @@
       "취향(趣向)이란 본래 ‘여럿 가운데 특별히가려서 좋아하는 경향’을 말한다. 그러니 취향을 말하기 위해서는 먼저 ‘여럿’, 즉 다양한 선택지가 존재해야 한다. 취향의 양극화를 강요하는 사회라면 선택지를 다양하게 하는 것부터 시작해야 한다. 그러려면 오히려 대중적 인기와 전문가의 평가 따위로부터 스스로를 어느 정도 격리시킬 필요가 있다. 방송 채널 달랑 3개에 인터넷도 없던 80~90년대엔 어두운 미로를 손으로더듬어가는 것처럼 취향을 발전시켜나갔다. 자기 귀에 좋은 노래, 우연히 알게 된 좋은 장소. 결국 누구나 조금은 남다른 취향을 갖게 됐다.",
       "이 방법을 현대에 차용한다면? 책도 자기가 직접 서점을 들쑤시며 찾고, 음악도 자기 귀로만 판단해보고. 그렇게 하나하나 쌓아나가면 자신만의 색깔을 갖게 되지 않을까? 존중해줄 만한 당신 취향은 그렇게 만들어질 게 분명하다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "222108206030",
@@ -2555,6 +2891,8 @@
     "publication": "대학내일",
     "issue": "665",
     "year": "2013",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/222108206030",
@@ -2578,8 +2916,9 @@
       "비범한 일이다. 참새의 삶은 특히 공작에게 비범한것이다. 거북이는 물속에서 빠르게 헤엄칠 수 있으면서도, 지상에서 갑갑할 정도로 느릿느릿 움직인다. 그런데 잘 생각해보면, 거북이의 움직임이 누구에게 갑갑하다는 것일까? 거북이가 ‘의외로’ 빨리 헤엄친다는 사실을 아는 사람은 거북이가 아니라 거북이를 밖에서 관찰하는 존재일 수밖에 없다. 간단히말해, 평범하지 않은 쪽이야말로 평범한 삶이 얼마나 어려운지, 또 그것이 얼마나 대단한 것인지 잘 알수 있다. 실제로 영화 속에서 참새는 속으로 공작의삶을 부러워하지만, 정작 위태롭게 모험에 가까운인생을 사는 공작은 참새를 진심으로 부러워했다.",
       "다시 처음의 마사 그레이엄의 이야기로 돌아가자. “평범함은 죄악”이라고 말했던 그녀 말이다. 사후에발표된 다큐멘터리에서 그녀는 자신의 삶에 대해이런 소회를 남겼다. “저는 제 삶의 전부를 춤과 무용가가 되는 일에 바쳤어요. 그건 인생으로 하여금대단히 강도 높은 방식으로 스스로를 활용케 하는것이죠. 때로는 즐겁지 않았어요. 때로는 고통스럽기까지 했죠. 하지만 어쩔 수 없는 것이었어요.” 참새의 삶이란, 공작에게 얼마나 소중하고 또 어려운일인가!"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380569292",
@@ -2589,6 +2928,8 @@
     "publication": "대학내일",
     "issue": "592",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380569292",
@@ -2604,8 +2945,9 @@
       "+ + + + + 책 ‘정치저작선’ – 막스 베버(Max Weber) 투표의 계절이 다가온다. 위기의 시대, 당신이 선택한 비상대책위원회의 구성원은 누구인가? 그전에, 막스 베버 ‘정치저작선’ 중 ‘제2장. 관료 지배와 정치적 리더십’부분은 꼭 한번 읽어보자. 우리에게는 새로운 문제이지만, 사실 오래된 글에서 답을 찾을 수 있는 경우도 많다.",
       "+ + + + + 책 ‘완득이’ – 김려령 청소년 권장도서다. 뻔하다면 뻔하고, 유치하다면 유치하다. 읽다가 닭이 될지도 모른다. 그래도 끝까지 읽고 눈물이 날 뻔했다면 당신은 합격. 내가 말하는 감수성은 이렇게 뻔하고 유치한 거다. 그런데 ‘중요한 일’ 하시는 분들에게서는 좀처럼 찾아보기 어려운 덕목이다. 참."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380573991",
@@ -2615,6 +2957,8 @@
     "publication": "대학내일",
     "issue": "632",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380573991",
@@ -2630,8 +2974,9 @@
       "그러나, 과학자는 중립적일까? 과학이 그 연구 방법의 측면에서 중립성을 가지며, 또 가져야 한다는 점은 분명하다. 그러나 행위자, 즉 과학자가 어떤 주제를 탐구대상으로 삼을 것인지, 어떤 목적으로 연구하는 것인지는 중립성을 따질 수 없는 부분이다. 과학자가 연구 주제를 선택하는 행위에는 자의든 타의든 어떤 동기, 관점 혹은 의도 등이 있기 마련이다. 하버마스는 가장 순수한 과학의 형태로 일컬어지는 자연과학에서조차 ‘이 기술이 유용한 것인지에 대한 관심’이 기본적으로 깔려있다고 말한다. 과학의 중립성이 곧 과학자의 중립성을 의미하는 것은 아니다. 그럼에도 우리는 지금껏 과학기술을 사용한 결과로 발생한 악을 과학자의 책임으로 돌릴 수는 없다고 배워왔다. 과학에 대한 탐구 혹은 과학기술은 중립성을 가지기 때문에 과학기술 그 자체에 대해 책임을 물을 수 없다고는 말할 수 있다. 다이너마이트가 전쟁에 사용되어 많은 사람이 죽게 된 것이 다이너마이트의 책임은 아니다. 그러나 다이너마이트를 발명한 노벨은? 지클론 B가 아우슈비츠 대학살에 사용되었지만 그 화학약품을 개발한 프리츠 하버 그리고 이란과 북한에서 핵폭탄을 개발하고 있는 과학자들 역시 책임이 없다고 말할 수 있을까? 제프 맥마한(Jeff McMahan)은 그의 책 Killing in War』(2009)에서 다음과 같은 흥미로운 질문을 던진다. “법무관이나 의무병은 인명의 손실을 최소화하기 위해서 노력하지만 군복을 입었기 때문에 전투원(combatant)으로 분류되고, 무기를 개발하는 과학자나 무기 공장에서 일하는 근로자는 군복을 입고 있지 않다는 이유로 비전투원으로 분류된다. 전자는 전투원이기 때문에 전시 살상의 대상이 되지만 후자는 민간인(civilian)이기 때문에 보호의 대상이 된다. 그러나 전쟁의 파괴적 양상에 더 큰 영향력을 미친 쪽은 누구인가? 그리고 그 결과에 더 큰 책임을 갖는 쪽은 누구인가?”",
       "아인슈타인 반성하다 과학 발명의 결과를 모두 과학자 책임으로 돌릴 순 없다. 하지만 순전히 과학적 호기심에서 시작된 연구일지라도, 그 연구의 의미가 무엇인지, 연구를 통해 도출된 과학적 발견이 초래할 영향력이 어떤 것인지 생각할 필요도 없다고 주장하는 것 역시 안 된다. “과학자들은 어떠한 가치판단도 해서는 안 된다”는 말은 과학의 중립성을 곡해하는 논리다. 아인슈타인은 제2차 세계대전 당시 미국의 핵무기 개발을 촉구하는 서한에 서명했다. 파시즘의 지배를 막기 위해 파괴적인 무기가 필요하다 생각했기 때문이다. 그의 이론이 핵무기 개발의 기초를 제공했다고도 한다. 하지만 핵무기의 참상을 목격한 후 그는 1955년 7월 9일 ‘반전 반핵운동의 정신적 기원’이라고 일컬어지는 「러셀-아인슈타인 선언(The Russell-Einstein Manifesto)」을 발표했다. 그는 과학의 중립성이라는 그늘에 숨어서 “나는 다만 할 일을 했을 뿐”이라고 변명하지 않기로 결정했다. 선진국들은 이미 과학의 가치문제를 논의하기 시작했는데도, 영원한 선진국 워너비 대한민국만은 독실하게 과학의 중립성을 신봉하고 있으니 아이러니다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380572141",
@@ -2641,6 +2986,8 @@
     "publication": "대학내일",
     "issue": "611",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380572141",
@@ -2655,8 +3002,9 @@
       "군비 경쟁과 영입 경쟁의 비극 당연한 이야기지만, 과도한 군비경쟁의 앞에는 비극적 결말이 기다리고 있다. 군비경쟁은 단기적으로는 합리적 선택일 수 있으나, 장기적으로 보면 패권국과 도전국, 그리고 그와 관계된 모두를 힘들게 하는 불합리한 행위다. 무엇보다 군비경쟁 그 자체가 전쟁의 가능성을 높인다는 점에서 ‘군축(Reduction of Armaments)’은 언제나 국제정치의 핵심 과제로 거론되어 왔다. 축구계의 과도한 영입 경쟁이 불러온 비극도 마찬가지다. 영국만 해도 리즈 유나이티드, 포츠머스 등 파산 이후 끝 모를 추락을 거듭하는 팀들이 많다. 축구계 역시 과도한 지출 경쟁에 우려를 표명하며 축구판 군축을 시도하고 있다. 프리미어리그 등에서는 2013년도부터 직접적으로 클럽의 재정적자 규모를 제한하는 ‘파이낸셜 페어플레이(Financial Fairplay)’ 제도를 도입할 예정이다. 더욱 근본적인 해결책으로, ‘6+5 룰’(FIFA)이나 ‘홈-그로운 쿼터(Home-grown Quarter)’(UEFA) 같은 제도 역시 마련되고 있다. 이러한 조치는 직접적으로 재정 지출을 제한하는 것은 아니지만, 클럽 선수 가운데 자국 국적 선수의 비율을 높이도록 강제함으로써 외국인 선수에 대한 과도한 영입경쟁을 간접적으로 제한하려는 것이다. 이것이 얼마나 실효성을 가질지 아직 확실치 않고, 벌써부터 일부 클럽들은 이러한 규제를 우회하는 방법을 시도하고 있는 듯하다. 축구계가 국제정치의 비극을 답습하지 않을지 좀 더 지켜볼 일이다.",
       "선수 영입 경쟁에 수십 억원 씩 쏟아붓는 유럽 축구 클럽들 전세계 군비 경쟁을 통해 보는 축구 클럽들의 머니 게임"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380571714",
@@ -2666,6 +3014,8 @@
     "publication": "대학내일",
     "issue": "613",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380571714",
@@ -2680,8 +3030,9 @@
       "스스로 생각할 수 있는 힘 최장집 교수는 일찍이 ‘민주화 이후의 민주주의’ 문제를 제기하면서 한국 민주주의에서의 시민에 주목해왔다. 그는 『한국 민주주의 무엇이 문제인가』라는 책에서 “이번 촛불집회가 가지는 중요한 의미 가운데 하나는 시민들이 민주화라는 큰 얘기가 아니라, 그들의 실생활과 직결되는 구체적인 사회 경제적 정책 문제에 대해 목소리를 내기 시작했다는 사실이다. 이것은 중요한 전환이다”라고 지적했다. 촛불을 들고 있는 것뿐만 아니라 이제 서로 ‘심의’할 수 있다면 이것 역시 중요한 전환이 될 것이다. 그리고 전환을 가능케 할 우리 사회의 잠재력을 보여주었다는 점에서 마이클 샌델 교수에게 진심 어린 찬사를 보낸다.",
       "마이클 샌델의 강의에서 중요한 건 내용이 아니다 정치적인 것, 윤리적인 것에 대해 이야기나눌 수 있다는 가능성이다"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380573757",
@@ -2691,6 +3042,8 @@
     "publication": "대학내일",
     "issue": "628",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380573757",
@@ -2704,8 +3057,9 @@
       "성군이 아닌 성실한 일꾼 그러나 성군이라도 만인지상(萬人之上)의 왕이라는 점엔 변함이 없다. 모든 것이 왕의 소유이기 때문에, 백성 역시 왕의 소유물이며 지배의 대상에 불과하다. 성군이 아니라면, 굳이 폭군이 아니라 단지 무능한 왕이어도 백성은 불행할 것이다. 그래도 피지배자들에 불과한 백성에겐 민의를 살피고 선정을 베풀어 줄 왕을 바라는 것, 즉 성군을 바라는 것 외에는 별다른 수가 없다. 매번 성군이 나오는 것도 아니고, 어떤 왕은 성군이었다가 폭군으로 변하기도 한다. 성군이라도 한 사람을 반병신이 되도록 고문할 수 있고, 또 말 한마디로 그를 사면할 수 있다. 이것을 법치(法治)에 반대되는 인치(人治)라고 한다. 인치가 얼마나 자의적이며, 예측 불가능하고 불안정한 것인지, 또 견제받지 않는 권력이 얼마나 위험한 것인지에 대해서는 더 설명할 필요가 없다. 오늘날 입헌민주주의는 바로 그러한 상태에서 벗어나기 위한 저항과 투쟁의 결과물이다. 개인의 성품이 아니라 법에 따라 통치되는 법치를 쟁취한 것이다. 우리는 통치의 대상인 백성이 아니라 주권자인 국민이며, 대통령이라 할지라도 그가 가진 모든 권력은 원칙적으로 국민으로부터 위임받은 것에 불과한 것이라고 헌법에 명시해 두고 있다. 이제 더 이상 성군이 나타나기를 기도할 필요가 없으며, 그러한 덕목과 자질을 갖춘 사람을 대통령으로 선출하고 또 대통령에게 ‘똑바로 하라고’ 당당하게 요구할 수 있다. 정치가가 공공선을 추구하고 또 국민의 상식 수준에서 ‘납득’할 수 있는 정치를 수행하기를 바라는 것은 자연스러운 일이다. 그러나 그것이 곧 광해나 세종대왕과 같은 성군, 그러니까 우리를 굽어살펴주실 지배자를 의미하는 것이 아니라는 점 역시 분명히 강조되어야 할 필요가 있다. 우리에게 필요한 것은 성군이 아니라 ‘성실한 일꾼’이다. 굽어살펴주실 지배자가 아니라 보다 나은 방향으로 이끌어줄 지도자가 필요할 뿐이다. 오늘날 과거의 독재자를 칭송하는 사람들은 대개 이러한 차이를 간과하고 있다. 지난 5년간 현직 대통령이 추진했던 일 중에 우리가 막을 수 있던 게 무엇 하나 있었나? 21세기 대한민국의 폭군은 대통령을 대왕으로 여기는 우리 국민에게서 탄생했다",
       "제왕적 대통령의 탄생 혹자는 오늘날 대한민국의 대통령이 마치 조선 시대 왕처럼 제한받지 않는 권력을 행사하고 있다며 ‘제왕적 대통령제’라는 표현을 사용한다. 최장집 교수는 “현실에서 대통령이 설사 권위주의적 통치 스타일을 가졌다 하더라도 정당과 정치인들에 의해 제도적으로 견제된다면, 그러한 개인적 스타일은 그대로 현실화될 수는 없다”고 지적한 바 있다. 현실은 제도적으로도 실질적으로도 제대로 된 견제가 이루어지고 있지 않다. 지난 5년간 현직 대통령이 추진하고자 했던 일들 가운데, 무엇을 막을 수 있었는지를 생각해보라. 누가 이런 상황을 야기했을까? 사적 이익을 위해 권력을 사용하는 간신배들? 모든 것을 바꾸어주기를 기대하며 대통령에게 막강한 권력을 쥐여준 사람은 누구인가? 국민들, 바로 우리 자신이다. 희망도 대통령에게 걸고, 불만도 대통령을 향해서만 외쳐대는 국민들이다. 민의를 반영한 치세를 펼쳐 달라고, 성군을 바라듯 그렇게 기대하고 있는 국민 말이다. 통일된 민의라는 존재할 수도 없고 또 존재해서도 안 되는 상황에서, 대통령은 자신이 민의라고 굳게 믿는 것을 위해 막강한 권력을 휘두르게 된다. 최장집 교수가 지적했듯이, “막강한 국가 최고 수반의 권력과 권한이 사인화 및 개인화되는 부작용”이 나타나는 것이다. 대통령을 잘 뽑으면 모든 문제가 해결될 것이라고 믿는 것은 조선 시대 백성이 성군을 바라는 마음과 다르지 않고, 성군으로서 박정희를 추억하는 것이나 성군으로서 문재인 혹은 안철수를 바라는 것 역시 별반 다르지 않다. 결국 “이게 다 노무현 때문이다”가 “이게 다 이명박 때문이다”가 된 것처럼, “이게 다 대통령 때문이다”라는 푸념 역시 반복될 수밖에 없을 것이다. 우리에겐 도덕적 지배자가 아니라 도덕적 지도자가 필요하다. 성군 타령은 이제 그만. 성실한 일꾼을 뽑을 차례다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380571460",
@@ -2715,6 +3069,8 @@
     "publication": "대학내일",
     "issue": "609",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380571460",
@@ -2729,8 +3085,9 @@
       "아시아, 문명개화론을 전수받다 어른과 어린이의 예로 들어 보자. 어린이는 무언가를 가르쳐줘야 할 대상이다. 어느 꼬마가 산수를 배우지 않겠다고 선언하더라도 그건 인정되지 않는다. 어린아이의 판단력은 미약하니까 말이다. 서구에게 비서구는 어린아이와 마찬가지였다. 그래서 계몽이라는 명분을 내걸고 침략이 자행되기도 했다. 이 부분은 세계사 시간에 다 배웠던 것일 테니 넘어가고, 진짜 문제는 서구가 떠난 후에 일어났다. 아이러니하게도 문명개화론의 희생양이었던 동양이 서구의 논리를 적극적으로 수용했다는 점이다. 동아시아 3국 중 서구식 ‘문명화’에 가장 기민하게 반응했던 일본은 ‘탈아입구(脫亞入歐, 아시아를 벗어나 서구 사회를 지향한다)’를 내세우며 본격적으로 ‘문명을 향한 속도전’에 돌입하게 되며, 후일 중국과 조선의 문명화를 선도하겠다며 침략을 시작했다. 1915년 조선총독부가 경복궁에서 개최한 ‘공진회(共進會)’ 역시 일종의 박람회였다. “총독부에서 새로운 정치를 시행한 지 다섯 해 된 기념으로 공진회를 개최하니, 공진회는 여러 가지 신기한 물건을 벌여놓고 모든 사람으로 하여금 구경하게 하는 것이거니와…”라는 안국선의 글에서 볼 수 있듯이, 공진회는 속도전에서의 승리와 그들의 우월함을 자랑하고 그들의 지배를 정당화하는 자리였다. 아시아 국가들의 문명화 중독은 차례로 이어졌다. 제국주의 일본과 미군정의 영향을 받은 한국, 뒤늦게 성장지상주의에 빠진 중국 등.",
       "동아시아의 박람회 열풍 최근 세계박람회의 메카는 동아시아가 아닌가 싶다. 1970년 오사카 만국박람회를 시작으로, 75년 오키나와, 85년 쓰쿠바에서 3회에 걸쳐 세계박람회를 개최한 이래, 93년 대전, 2010년 상하이, 12년 여수에 이어 2018년 방콕, 22년 칭다오에 이르기까지 속도전에 열을 올리며 경쟁적으로 세계박람회 유치에 힘쓰고 있다. 지금의 동아시아에서 벌어지고 있는 세계박람회 개최 경쟁은 19세기 유럽의 모습과 겹쳐진다. 다른 점도 있다. 19세기 서구의 세계박람회가 우월감을 자랑한 것이라면, 21세기 동아시아에서 열리고 있는 세계박람회에는 열등감이 더 크게 느껴진다. ‘우리 이만큼 열심히 했으니 이제 인정해 달라!’ 문명화 논리가 불러온 속도전은 결국 두 번의 세계대전으로 막을 내렸다. 서구도 더 이상 자신들의 논리를 보편적인 것으로 강요하지 않는다. 아니 오히려 그것을 자성하는 시점이다. 이런 시기에 여전히 발전을 외치며 문명개화를 주장하는 동아시아 국가들이야말로 ‘문명’에 중독된 폐인들이 아닐까."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380569626",
@@ -2740,6 +3097,8 @@
     "publication": "대학내일",
     "issue": "595",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380569626",
@@ -2754,8 +3113,32 @@
       "홈즈는 천재적인 추리 능력에 바탕해 경찰 수사에 조언을 제공한다. 그의 추리 능력이 너무 뛰어나 가끔은 경찰이 무능력해 보이기까지 하지만, 범인을 체포해 ‘법적으로’ 응징하겠다는 목표를 가지고 있기 때문에, 크게 문제될 것은 없었다. 홈즈는 경찰조차 해결하지 못한 난해한 문제를 풀어내는 과정에서 즐거움을 느끼고, 또 경찰은 홈즈의 도움을 받아 범인을 체포할 수 있기 때문에 누이 좋고 매부 좋은 상황인 셈이다. 그러나 모든 것을 관찰과 분석의 대상으로 삼는 그의 모습이 ‘인간적’으로 비칠리 없다. 때로는 ‘편집성 인격장애’를 의심하게 된다. 문득, 표면상 경찰을 돕는다는 사실만 제외하면, 홈즈에게 ‘정의감’이 있는 것일까 의문도 든다. 이러한 의심은 합리성과 도덕성 간의 관계에 대한 의문에서 비롯된 것이다. ‘한 사람 한 사람이 합리적 개인으로 자각할 때 도덕성을 확보할 수 있을 것’이라는 믿음에 균열이 발생했다. 홈즈와 그의 숙적 모리아티 교수와의 관계는 ‘합리적이라고 해서 반드시 도덕적이지는 않다’는 인식을 반영하는 전형적인 사례이다. 풀기 어려운 문제를 내는 쪽이나 그 문제를 풀려고 노력하는 쪽이나 서로 대적하고 있을 뿐, 그 범죄 상황을 즐기고 있다는 점에서 본질적으로 동일하기 때문이다. 드라마 ‘셜록’에서는 경찰이 홈즈를 범인으로 의심하는 상황이 벌어지기도 한다. 니체가 ‘신은 죽었다’라고 선언하는 시점에서 이 세계의 영웅도 죽었다.",
       "합리적 영웅의 최후 합리성이 개인의 도덕성을 보장할 수 없는 상황에서, 개인이 차지하고 있던 영웅의 자리는 ‘시스템’이 차지한다. 합리적 개인을 합리적 시스템으로 대체하면, 개인의 도덕성과 관계없이 시스템 자체가 (법률이 정한) 정의로운 목적에 봉사하도록 강제할 수 있기 때문이다. 세계 최초의 탐정기관이었던 ‘보스트리트 러너(Bowstreet Runner)’가 스코틀랜드 야드(런던 경시청)에 흡수된 것 역시 이러한 맥락에서 이해될 수 있다. 소설이나 영화에서도 비슷한 현상이 발생하는데, 초기에는 홈즈 같은 능력을 가진 인물이 차츰 연방 수사국(F.B.I.), 중앙정보국(C.I.A.), C.S.I. 과학수사대 같은 정부 기관 직원으로 바뀌게 된다. 예나 지금이나 홈즈처럼 추리 하나로 사건을 해결해내는 사립탐정의 모습을 기대하긴 어렵다. 특이 요즘 같은 세상에 홈즈같이 행동하면 오히려 범죄자 취급받기 십상이다. 그러나 우리는 주술에서 깨어난 자유롭고 합리적인 개인의 상징으로, 때로는 공권력을 웃음거리로 만들기도 하고 마약에 빠지기도 했지만, 다른 한편으로 범죄해결을 위해 노력함으로써 공공의 이익에 봉사한 이 세계의 마지막 영웅을 기억해야 한다. 이 영웅이 지금도 계속 회자되는 건, ‘시스템이라고 해서 반드시 도덕적이지는 않다’는 인식을 반영하는 건 아닐까. 더 읽을 거리 + + + + + 책. ‘주홍색 연구’ (아서 코난 도일) 셜록 홈즈라면 그 얼굴이 떠오를 정도로 익숙한 이름이겠지만, 어린이용 요약본이 아니라 완역본을 읽어본 사람은 많지 않았다. 황당한 추리소설이 아니라 우리 시대를 대표하는 영웅으로서 셜록 홈즈에 관심이 생겼다면, 셜록 홈즈 시리즈 중 가장 먼저 발표된 이 작품부터 읽어보기 바란다. + + + + + 책. ‘추리소설의 논리’ (토마 나르스작) 프랑스의 추리소설 연구가인 토마 나르스작의 저서. 추리소설은 기본적인 흐름이 정해져 있다는 점에서 일반소설과 구분된다. 추리소설의 도덕적 가치, 추리소설과 민주주의, 추리소설과 종교, 추리소설의 작용 등의 내용이 흥미롭다. 다만 번역이 매끄럽지 못해 적극적으로 추천하지는 않는다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
+  },
+  {
+    "logNo": null,
+    "slug": "col-naeil-2012",
+    "title": "손가락이 아닌 달을 보라",
+    "rawTitle": "손가락이 아닌 달을 보라",
+    "publication": "내일신문",
+    "issue": null,
+    "year": "2012",
+    "month": null,
+    "day": null,
+    "naverCategory": null,
+    "section": "칼럼",
+    "sourceUrl": "https://n.news.naver.com/mnews/article/086/0002113868?sid=110",
+    "naverImportedAt": null,
+    "image": null,
+    "imageSource": null,
+    "body": [
+      "얼마 전 마이클 샌델 교수가 내한했다. 자의 반 타의 반으로 그의 강연을 보게 되었는데 엄청난 인파에 놀랐다."
+    ],
+    "kind": "post",
+    "note": null,
+    "migrationStatus": "외부 링크만 (전문 미이전)"
   },
   {
     "logNo": "221380570689",
@@ -2765,6 +3148,8 @@
     "publication": "대학내일",
     "issue": "602",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380570689",
@@ -2779,8 +3164,9 @@
       "낙관주의와 욕망이 춤추는 무도회장 애초에 핵무기를 폐기하자는 주장과 핵으로 발전하자는 주장이 공존할 수 있었던 것은 ‘기술과 과학은 가치중립적이다’라는 생각이 일반화돼 있었기 때문이다. 이 가치 중립성으로부터 ‘악용하지 않으면(핵무기가 아니면) 평화적 이용은(핵 발전은) 괜찮다’라는 식의 낙관주의가 싹트게 된다. 이러한 낙관주의의 이면에는 ‘비록 우리를 파괴한 것이지만, 그 엄청난 힘을 우리 것으로 만들고 싶다’는 욕망이 있다. 이런 점에서 보면, 핵무기를 꿈꾸는 북한, 핵 발전에 의존하는 일본과 한국 모두는 크게 다르지 않다. 일본에게 핵 발전소가 수단에 불과하듯 북한에게는 핵무기도 그저 수단일 따름이다. 녹색연합은 후쿠시마 핵 발전소 사고 1주기 성명에서 “체르노빌과 후쿠시마를 통해 핵 발전소가 결코 평화적인 에너지가 아님을, 생명과 미래를 한순간에 죽일 수 있는 핵무기와 전혀 다르지 않음을 경험하였다”고 지적한다. 반면 최근의 핵안보정상회의에서는 “원자력 시설의 방호와 방사능 비상사태 대응에 있어 핵안보와 원자력 안전 측면의 통합적인 고려”라는 두루뭉술한 내용의 ‘서울 코뮈니케’를 만장일치로 채택했다. TV에 나오는 각국 정상들의 모임은 마치 낙관주의와 욕망이 불안하게 춤추고 있는 것 같은 느낌이었다. 1979년 3월 28일, 1986년 4월 26일, 그리고 2011년 3월 11일. 핵 발전소 사고가 발생한 날짜다. 기술 낙관주의가 비극적 현실을 낳은 날들이기도 하다. 피폭은 70여 년 전의 이야기가 아니라 불과 43년 전, 26년 전, 그리고 1년 전의 일이다. 후쿠시마 사태는 인간의 힘으로 어떻게 할 수 없는 자연재해인 동시에, 기술과 과학에 대한 낙관주의와 욕망이 만들어 낸 인재이기도 하다.",
       "덧붙임 데즈카 오사무가 핵을 옹호하는 입장에서 만화를 그렸다는 뜻이 아니다. 그는 『아톰의 눈물』이라는 에세이집에서 “나는 자연과 인간성을 외면한 채 오직 진보만을 추구하며 질주하는 과학기술이 사회에 알마나 깊은 균열과 왜곡을 가져오고 얼마나 많은 차별을 낳는지, 또 인간과 모든 생명에게 얼마나 무참한 상흔을 남기는지를 그리고 싶었습니다”라고 말했다. 그러고 보니 아톰은 하늘을 날고, 엉덩이에서 기관총이 나오고, 60개 국어를 구사하는 것 외에 선한 사람을 돕는 착한 로봇이다. 안타깝게도 핵이 사방에 널려 있는 현실 세계에선 아톰이 존재하지 않는다는 게 인류의 슬픔이겠다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380569880",
@@ -2790,6 +3176,8 @@
     "publication": "대학내일",
     "issue": "600",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380569880",
@@ -2804,8 +3192,9 @@
       "유대감의 상실, 세상은 원래 정글이잖아 언론은 일진이란 무시무시한 존재를 밝혀냈다며 호들갑을 떨지만 ‘일진 발견 사태’는 교사의 절대적 폭력에 가려져 있던 학생들 간의 위계 관계가 드러난 것에 불과하다. 심하지만 않다면 이것 역시 친구를 사귀어가는 과정으로 볼 수도 있다. 본질적인 문제는 학교폭력의 외형이 아니라 이면에 깔린 생각이다. 최근 학교폭력 사례에서 볼 수 있는 최대 문제점은 유대감이 비집고 들어갈 틈이 전혀 없다는 점이다. 화해의 여지가 없는 현실이 만화나 게임보다 훨씬 잔인하다. 상대방을 파괴하고 자기 이익을 최대한 뽑아내려다 보니 폭력의 의도는 사악하고 정도도 과격하다. 요즘 벌어지고 있는 학교폭력엔 사회진화론의 이념이 숨어 있다. “걔는 찌질하잖아요. 제가 때릴 수 있잖아요.” “그렇게 까부는 애를 놔두면 제가 OO 취급받아요.” 언론이 잡아낸 일진 아이들의 목소리다. 이들이 왕따를 괴롭히는 모습은 마치 계급사회에서 귀족이 천민을 대하는 모습과 흡사하다. 귀족은 불가촉천민을 함부로 대하지만 연민을 느끼지 않고, 나머지는 그 광경에 관여하지 않다. ‘무서워서’라기보다는 그것이 ‘당연한 것’으로 인식되기 때문이다. 학교폭력은 단순한 폭력이 아니라 ‘계급’의 무게로 피해 학생을 짓누른다. 계급은 누구의 힘으로도 벗어날 수 없는 것이기 때문에 자살이라는 극단적 선택으로까지 이어진다. 사회진화론적인 인식이 퍼져있는 이상 물리적 폭력을 강제로 막아도 약자를 향한 공격은 어떻게든 이뤄진다.",
       "일진은 이 땅의 우등생 입시 위주 교육은 시키는 대로 열심히 일하는 노동자를 키워내는 것에 초점을 맞추고 있다. 동료로서의 유대감을 키워나가야 할 학생들의 머릿속에 철저한 위계와 차별이 당연하다는 듯 작동한다. 학교만의 문제가 아니다. 기업 회장님이 맷값 주겠다며 직원을 매질하는 어른들 세상 자체가 문제다. 빨리 높은 자리를 꿰차고 아랫사람이 올라오지 못하게 짓밟는 질서에서 일진은 오히려 모범적인 ‘우등생’일는지도 모른다. 학교폭력은 일진의 손발을 묶는 게 아닌, 학생들에게 서로 싸우면서 성장할 수 있도록 유대감을 심어주는 일이다. 도완득에게 동주 선생이 그랬듯 말이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380570914",
@@ -2815,6 +3204,8 @@
     "publication": "대학내일",
     "issue": "607",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380570914",
@@ -2829,8 +3220,9 @@
       "노골적으로 드러난 이데올로기 사실 슈퍼 히어로물은 ‘은폐된 이데올로기’가 아니라 이처럼 ‘노골적으로 드러난 이데올로기’와 관련된다. 대립하는 가치 체계 간의 갈등을 은근히 설득하려는 게 아니라 그저 스펙터클한 액션 장르의 요소로 사용하는 셈이다. 너무나도 노골적으로 선악 구도는 만들어 일종의 키치, 원래의 의미를 잃은 유치한 장식거리가 된다. 예를 들어 그래픽 티셔츠에서 나치의 선전선동 포스터를 갖다 붙여 귀여운 볼거리로 만드는 식이다. <어벤저스>를 보며 관객은 영화 속 선악 대립구도를 그저 재미로 받아들인다. 슈퍼 히어로물을 만드는 사람도, 즐기는 사람도, 일방적 가치를 맹목적으로 받아들일 만큼 멍청하지 않다는 뜻이기도 하다. 아이언맨의 주된 감상평은 “우와~ 차 좋다!”이지, “미국 짱!”이 아니다. 또한 슈퍼 히어로들은 이데올로기의 선전물이라기보다, 언제든지 ‘폭력의 독점자인 국가’를 위협할 수 있는 ‘독립적이고 개인적인 존재’로 이해되어야 한다. 스스로를 선의 편으로, ‘도덕적’ 존재로 설정하기 때문에 슈퍼 히어로들은 ‘무엇이 선인가? 무엇이 도덕적인가?’를 끊임없이 고민하는 존재이다. 그 과정에서 무조건적 충성이 바람직한지 고민(캡틴 아메리카)하고, 인간의 자격을 고민(헐크)하고, 다른 존재와 함께 살아갈 방법을 고민(엑스맨)하고, 노블리스 오블리주를 고민(아이언맨)하고, 소시민으로서의 삶과 책임 사이에서 갈등(스파이더맨)하고, 장애의 의미와 극복을 고민(데어데블)하는 시도가 계속되어 왔다. 그 결과 최초에 백인, 근육질, 남성, 군인으로 대표되던 슈퍼 히어로의 세계에 다양한 인종, 능력, 성별, 직업, 신념과 가치관을 가진 슈퍼 히어로들이 등장하게 된 것이다.",
       "히어로, 모두 서로 다른 인격체였더라 <어벤저스>는 “이처럼 서로 다른 이들을 어떻게 조화롭게 묶어낼 것인가?”라는 질문에 대한 하나의 대답이다. Avengers, 굳이 번역하면 ‘복수자들’이라는 이름의 슈퍼 히어로 연합은 ‘이데올로기적, 그리고 육체적으로 잘 훈련된 군대’라기보다, 정부 기관의 규율에 저항하고 서로의 다른 가치관과 개성을 주체하지 못하는 ‘문제아 집단’에 가깝다. 그들은 전 지구적 위기에 직면해서도 ‘복수’를 맹목적으로 추구하지 않는다. <어벤저스>의 핵심은 서로 다른 가치관을 가진 슈퍼 히어로들이 상호 간에 ‘공유된’ 가치와 목표를 형성해 나가고, 또 협동하는 것에 있다. 영화의 주된 내용 역시 그들이 하나의 목표를 형성해 나가는 과정 자체에 주목한다. 모두가 예상하다시피, 영화의 결말은 어벤저스가 세상을 구하고는 다시 각자의 길을 가는 모습을 그리는데, 이 역시 그들이 집단 혹은 특정한 가치에 매몰되지 않은 개인이기에 가능한 이야기다. 지금 우리가 보고 있는 슈퍼 히어로는 미국적 가치를 보편인 양 포장하거나, 각자 자기의 가치가 보편이라고 주장하고 대결하기보다, 무엇이 보편인지 함께 고민하고 협력해 나가는 존재다. 물론, 이 역시 현재 미국 사회의 이념이 반영된 결과인 건 분명하지만, 이 속에는 반나치주의, 반공주의, 일방주의, 제국주의, 백인우월주의, 남성우월주의를 극복하기 위한 미국 사회의 노력이 반영되어 있다. 만약 <어벤저스>에서 구태여 고민거리를 찾는다면 그건 영화의 바깥에 존재한다. 원작 그래픽 노블을 읽은 사람은 알겠지만 이번 영화에 모인 영웅은 원작과 다르다. 엑스맨과 스파이더맨이 빠져 있다. 폭스와 소니가 엑스맨과 스파이더맨의 영화 판권을 쥐고 있기 때문이다. 자본주의 시스템 덕에 영웅이 한 스크린에 모일 수 있었지만, 동시에 그 자본주의 탓에 모두들 모이지 못했다는 게 아쉬울 뿐이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380573492",
@@ -2840,6 +3232,8 @@
     "publication": "대학내일",
     "issue": "630",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380573492",
@@ -2853,8 +3247,9 @@
       "완벽하지 않아도 괜찮아 오디션 프로그램을 위한 변명, 두 번째는 ‘우리가 만든 연예인’이 또 다른 변화를 만들어 내고 있다는 점이다. 연예인은 완벽한 우상(idol)으로 ‘만들어져’ 왔다. 노래도 잘하고 예쁘고 게다가 성격도 좋아야 했고, 적어도 그래야 성공할 수 있었다. 어떻게 정의하든지 간에 연예인은 ‘일반인’의 대칭점에 있는 뭔가 특별한 존재였고, 그래서 연예인에 대한 평가 기준 역시 매우 엄격했다. 그들은 완벽하지 않다는 이유만으로 비판 혹은 비난을 당할 수 있는 존재였다. 그러나 최근 오디션 프로그램을 통해 데뷔한 연예인들에게는 조금 다른 잣대가 적용되고 있다. 조금은 어설프고 어딘가 부족해도 그런 모습이 당연한 것처럼 여겨진다. 심지어 그런 어설픔과 부족함을 매력이라고 생각하는 사람들도 있다. 그들에게 적용되는 기준을 보면, 오디션 출신들은 특별한 재주를 가진 일반인 정도로 간주되는 것 같다. 만약 오디션 프로그램에 나오지 않았다면, 우리처럼 평범한 삶을 살아갔을 일반인이라는 생각 때문일 수도 있다. 그렇기에 그들이 연예인으로서 부족한 모습을 보여도 당연한 것으로 여기고, 그들의 특별한 재능을 크게 칭찬할 수 있게 된다. 최근 싱글 앨범 <1,2,3,4>를 발표한 신인 가수 ‘이하이’의 뮤직비디오를 보면서 처음 든 생각은 “이래도 괜찮은 걸까?”였다. 보컬로서의 재능은 분명했지만, 굳이 말하자면 또래 아이돌들에 비해 몸짓 같은 것이 어딘가 부족해 보였다. 그러나 대중은 그녀에게 열광했다. 그녀가 K팝스타의 우승자가 아니라는 것 따위는 중요하지 않았다. 버스커버스커를, 허각을, 이하이를 사랑하는 대중은 이제 그들에게 이렇게 말하고 있는 것 같다. “완벽하지 않아도 괜찮아.” 삼단 고음을 못해도, 예쁘지 않아도, 춤을 잘 추지 못해도, 그러니까 ‘우상(idol)’이 아니어도 괜찮다고 말하고 있는 것 같다. 아마도 오디션 프로그램을 통해서 그들의 지금은 조금 부족하더라도 이만큼 하는 것이 얼마나 대단한 변화인지를 알기 때문일 것이다. 오디션 프로그램을 잔인한 배틀로얄로 바라보기보다 참가자와 시청자 모두를 성장시키는 힐링캠프로 볼 수 있지 않을까? 그것이 배틀로얄이라면, 오디션에서 탈락한 참가자들 대부분은 왜 좌절하기보다 다시 도전하려는 의지를 보이는 것일까? 하나의 잣대로 모두를 줄 세우려 하고, 무한 경쟁을 이야기하면서 1등만 기억하는 것은 오디션 프로그램이 아니라 세상이다. 고상한 척 비판하기보다 오히려 사람들이 왜 그것에 열광하는지, 무엇을 배울 수 있는지 생각해봐야 하지 않을까?",
       "오디션 프로그램은 단순한 쇼가 아니다 삭막한 생존경쟁도 아니다 대중이 한 연예인의 탄생을 함께 하는 무대다 1등이 아니어도 완벽하지 않더라도 관객은 자신만의 연예인을 따뜻하게 지지한다"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380572781",
@@ -2864,6 +3259,8 @@
     "publication": "대학내일",
     "issue": "624",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380572781",
@@ -2878,8 +3275,9 @@
       "삼류 영화 예고편 때문일까? 어쨌거나, 작금의 사태에 대한 모든 비난의 화살이 일방적으로 이슬람권을 향하고 있는 것은 분명 문제가 있다. 미국 언론은 이슬람교도들에게 가치다원주의를 인정하라고, <이슬람교도의 순진함>을 관용하라고 종용한다. 말은 안하지만, “이슬람교도들이 그깟 영화 예고편에 지나치게 과민한 반응을 보이고 있다”고 생각하는 듯하다. 여기에는 이슬람에 대한 편견뿐만 아니라 그들 스스로에 대한 미국의 뿌리 깊은 편견이 작동하고 있다. 미국은 가치다원주의와 언론의 자유를 수호하는 나라이고, 이슬람교도들은 가치다원주의와 언론의 자유를 부정한다는 편견 말이다. 그러나 가치다원주의와 언론의 자유의 의미를 제대로 이해하고 있지 못한 것은 오히려 미국 사람들도 매한가지가 아닐는지. 지금 일어나는 갈등의 이유가 단순히 삼류 영화 예고편 때문만은 아니란 생각을 지울 수 없다. 평소 이슬람교도들을 대하던 미국인들의 비관용적 태도를 생각한다면 말이다.",
       "모든가치는상대적이라는 가치다원주의 그렇다면 상대방의 가치를 부정하는 가치 역시 인정받아야 할까? 그리고 이슬람의 분노는 단지 삼류영화 한 편 때문일까?"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380574204",
@@ -2889,6 +3287,8 @@
     "publication": "대학내일",
     "issue": "634",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380574204",
@@ -2903,8 +3303,9 @@
       "재난을 소비하다 볼츠는 사람들이 자연재해처럼 통제할 수 없는 상황에 놓인 사람들을 볼 때 무력감을 느끼지만, 일차적으로 이러한 상황을 통제하지 못하더라도 여전히 이차적으로 통제할 수 있다고 말한다. TV에 비친 재난 장면에 압도당하지만 채널을 돌리면 그 장면을 쉽게 회피할 수 있다는 뜻이다. 또한 통제할 수 없는 재난을 통제된 방식으로 전해 듣고 있다는 점에서 본질적인 안정감을 느낄지도 모른다. 지구 반대편에 저렇게 끔찍한 재난이 발생했는데, 내가 보고 있는 TV 뉴스 프로그램은 내일 같은 시간에 여지없이 방송될 것을 알기 때문이다. 나아가 볼츠는 루크레티우스(Titus Lucretius Carus)를 인용하면서 “재난에 대한 뉴스는 정보의 문제가 아니라, 끔찍한 사건으로부터 거리를 두고 있다는 즐거움과 관련이 있다”고 지적한다. 이것은 『소비의 사회』에서 보드리야르가 “매스커뮤니케이션은 […] 거짓 비장감을 돋우고 […] 평온 무사한 일상생활의 진기함을 강조한다”고 지적한 것과도 일맥상통한다. 볼츠에 따르면, ‘감정적 동조’의 태도는 바깥에서 발생한 불행을 지켜보면서 느끼는 이 즐거움에 대한 보상으로 나타나는 것이다. “어머나. 어쩌니. 저걸 어째. 아휴. 쯧쯧쯧”은 이러한 태도의 전형적 사례인 셈이다. 매스미디어는 끊임없이 우리에게 타인의 종말을 제공하고, 우리는 그것을 소비하면서 삶을 지탱해가고 있다. 그렇기에 매스미디어가 재난을 팔고 사람들의 두려움을 통해서 돈을 번다고 비판할 수만은 없는 노릇이다. 근본적인 문제는 TV에서 타인의 불행이 반복될수록 우리가 그것에 민감해지기보다 둔감해지고 있다는 점이다. 호네스(Axel Honneth)는 “미디어가 동감 혹은 분노의 감정을 반복적으로 불러일으켜 직접적이고 개인적인 개입(involvement)을 유도한다”고 주장하지만, 이제 TV에 나오는 웬만한 재난은 그다지 슬프지도, 괴롭지도 않게 느껴지는 것 역시 사실이다. 볼츠는 이를 “공포에 대한 대비 훈련”이라고 명명한다.",
       "재난의 민낯 내가 찾아간 이시노마키 시는 TV에서 보았던 모습과는 많이 달라져 있었다. 도시 한복판까지 밀려와 있던 난파선은 치워진 지 오래였고, 도로나 공장, 주택가 역시 정리가 된 모양이었다. 다만 도로를 따라 눈에 보이는 거의 모든 곳에 쓰레기가 차곡차곡 산처럼 쌓여 있었고, 도시치고는 건물이 드문드문하다는 느낌이 들었을 뿐이다. 그날의 지진과 쓰나미로 발생한 일본 전역의 사망자가 1만 4000명 정도이고 그중 이시노마키 시의 사망자가 1만 명에 달한다는 사실을 알았을 때, 그리고 차창 밖으로 보이는 까만 돌무덤들이 한 사람이 아니라 한 가족을 위한 것이라는 사실을 알았을 때, 우리의 반응은 역시 크게 다르지 않았다. “어머나. 어쩌니. 저걸 어째. 아휴. 쯧쯧쯧.” 버스에서 내려 바다가 멀리 보이는 어느 초등학교 운동장 앞에 섰다. 초등학교 건물 전체는 화재로 검게 그을린 상태였다. “우리들은 지지 않아!”라고 적힌 현수막이 힘없이 걸려 있고, 그 아래 콘크리트 바닥엔 가까스로 형체만 남은 물건 몇 개가 가지런히 놓여 있었다. 대부분 재가 묻어 엉망이었지만, 한때 사랑받았음을 증명하듯 손때 묻은 곰 인형과 누군가 자랑스레 목에 걸고 뛰어다녔을 법한 조잡한 메달이 눈에 들어왔다. 한 가족의 집이 서 있던 자리에 덩그러니 세워진 비석의 글자를 눈으로 읽으면서 타인의 종말이 진짜처럼 느껴졌다. 비로소 눈앞의 압도적 재난 앞에 모골이 송연해졌다. 쓰나미의 직접적인 흔적은 많이 지워진 상태였지만, 압도적 재난이 훑고 간 그 장소에 서 있다는 사실만으로도 매스미디어가 주지 못하는 공감의 깊이를 느낄 수 있었다. 당신도 꼭 가보길 바란다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380572972",
@@ -2914,6 +3315,8 @@
     "publication": "대학내일",
     "issue": "622",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380572972",
@@ -2928,8 +3331,9 @@
       "정의의 구현자로서 국가가 흉악범을 잡아들이고 죄를 묻고 처벌하며, 그 비용과 리스크 역시 공동체가 공유하게 되었으니, 이제 한이 풀릴까? 대부분의 경우는 그렇다. 그래서 드라마 C.S.I.는 범인의 죄를 밝혀내는 것만으로도 해피 엔딩으로 끝날 수 있다. 그러나 최근 아동 성폭행 사건의 경우에서처럼, 범인이 체포되어 죄가 낱낱이 밝혀졌음에도 분노는 쉽게 가라앉지 않는 경우가 있다. 추측하건대, 죄의 무거움에 비해 처벌이 가벼워 ‘당한 만큼 갚아준다’는 느낌이 들지 않기 때문일 것이다. 사적 복수가 금지된 상황에서 처벌마저 솜방망일 경우, 이 분노가 법체계를 향하는 것은 당연한 귀결이다. 이는 법체계에 전반에 대한 신뢰에도 악영향을 미치게 될 것이다. 대중의 법 감정을 고려했을 때, 분명 아동성범죄자에 대한 처벌은 강화돼야 할 필요가 있다. 일반적으로 폭력을 거부하는 것을 정의라고 생각하지만, 벤야민(Walter Benjamin)이 말했듯, 정의는 근본적으로 폭력이라는 수단 없이는 유지될 수 없다. 정의에 어긋나는 행동을 한 순간 그것을 처벌하는 폭력이 개입하게 될 것이라는 인식이 있어야 법은 유지될 수 있기 때문이다. 벤야민은 이러한 폭력을 ‘법수호적 폭력’이라고 이름 붙였다. 하지만 이런 법수호적 폭력이라도 무작정 긍정되는 건 아니다. 해당 사회의 원칙에 따라야 한다. 법수호적 폭력은 전체 국민이 동의하는 폭력이기에 한 사회의 인권에 대한 감각의 기준이 된다. 이런 문제에 이렇게까지 반응할 수 있구나 하는 기준 말이다. 죄인을 통째로 불태우던 중세인들은 하층민이나 외부인을 대할 때 훨씬 폭력적이었다. 죄인을 불태우던 그 호전성과 폭력성이 그대로 다른 분야로 이어졌기 때문이다. 그렇게 폭력적인 시대였기에 처벌 역시 폭력적이라 할 수도 있다. 어찌 됐든 처벌의 모습과 그 사회 구성원들의 감각은 함께 움직인다.",
       "거세와 사형은 필요 없다 거세는 인체의 일부분을 못 쓰게 만드는 형벌이다. 당사자의 의지에 반해 신체에 변형을 가하는 행동은 현대 사회에선 받아들여지기 어려운 행위다. 사형 역시 목숨을 거두는 궁극적인 행위로 생명 자체를 존중하는 우리들의 기준과 맞지 않다. 우리나라는 공식적으로 처벌의 목적을 ‘교화’에 둔다. 사형은 죄인이 자기 잘못에 대해 반성할 여지를 주지 않는다. 거세와 사형을 반대하는 이유는 아동 성범죄자에 대한 분노에 공감을 못해서가 아니라 그 처벌의 수위와 방법이 우리 사회의 정의 기준에 맞지 않다고 생각하기 때문이다. 만약 “안 그러면 된다”는 반론을 제기하며 국가가 행하는 폭력이 무조건 강해진다면, 우리들 역시 어느새 그런 폭력을 당연하게 여기게 된다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380573219",
@@ -2939,6 +3343,8 @@
     "publication": "대학내일",
     "issue": "626",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380573219",
@@ -2953,8 +3359,9 @@
       "선택지는 단 하나, 존버! 그나마 3000만원도 없는 사람은 대책이 없다. 멀거나 좁거나 어두운 곳에서, 이외수의 표현을 빌리자면, 존버(‘존X 버티다’의 줄임말)하는 수밖에 없다. 3000만원이 모이면 월세로 살다가, 6000만원이 모이면 전세를 살다가, 1억 1500만원을 모아 3억 8500만원짜리 아파트를 사면 된다. 축하한다. 이제 드디어 렌트 푸어를 벗어나 하우스 푸어가 되었다. 우리나라 주택담보대출 규모가 395조 4000억이라고 하는데, 모두 1억 1500만원씩 돈을 빌렸다고 치면 대략 3400만명의 하우스 푸어 동지가 있는 셈이니 외롭진 않겠다. 이처럼 보통의 삶을 꿈꾸는 당신의 눈앞에 선택지는 사실상 하나밖에 없다. 세입자이자 빚쟁이로서 열심히 일해서 돈을 갚는 것 말이다. 그나마 성공적으로 빚쟁이 신세를 벗어나면, 그때는 비로소 다른 인생을 선택할 수 있을 거라는 희망이 당신을 ‘존버’하게 만들었을 것이다. 그러나 현실에 해피엔딩은 없다. 은퇴 후 마땅한 수입이 없는 당신은 평생을 쏟아 부은 아파트를 담보로 ‘주택연금’을 신청하고, 월평균 103만원을 받으며 역시나 힘겨운 여생을 존버할 것이다. 그리고 당신이 사망하는 순간, 그 아파트는 더 이상 당신 것이 아니게 된다. “살 것(Buy)인가 살 것(Live)인가 그것이 문제로다!”라고 고민한 것 같지만, 결국 빚쟁이라는 선택지 한 장만 손에 쥐고 ‘존버’할 뿐이다. 자유롭고 싶어서 시작한 일이 이리되었다. 뒤돌아보면, 결국 평생 ‘아파트 한 채’라는 밑 빠진 독에 물 붇기를 한 셈이라는 생각이 든다. 힘이 있을 때는 잠시나마 물을 가득 채울 수 있었지만, 지쳐서 손을 놓으면 물은 금세 다 빠져나가 버린다. 콩쥐는 있는데 새엄마도, 팥쥐도 없는 이 보통의 삶은 미스터리 스릴러가 따로 없다. 이러니 취업, 결혼, 육아를 포기한 3포세대로 사는 게 낫다는 푸념도 헛말은 아니다. 79년생부터 92년생까지 954만명의 3포 세대 동지들이 있으니 이쪽도 외롭진 않다. 그러나 이것을 미스터리 스릴러로 남겨둬서는 안 된다. 촘스키는 “누가 이득을 보는지를 생각하면, 무엇을 행동해야 할 것인가 방향이 보인다”고 말했다. 누가 독에 구멍을 뚫었을까? 밑 빠진 독에 부은 그 물은 어디로 빠져나간 것일까? 누가 우리의 자유를, 우리의 자유로운 삶을 담보로 이익을 보고 있는 것일까? 김전일의 말마따나, 범인은 분명 이 안에 있다.",
       "보통의 삶을 꿈꾸는 당신의 눈 앞에 선택지는 사실상 하나밖에 없다 세입자이자 빚쟁이로서 열심히 일해서 돈을 갚는 것 말이다"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380570462",
@@ -2964,6 +3371,8 @@
     "publication": "대학내일",
     "issue": "605",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380570462",
@@ -2978,8 +3387,9 @@
       "게임의 규칙을 바꾸다 아이러니하게도 변화는 헝거 게임 밖이 아니라 안에서 시작된다. 서로 죽고 죽이는 것 외에는 다른 선택지가 없다고 생각된 그 게임 안에서 무언가 ‘다른’ 일이 벌어진다. (아직 영화나 책을 보지 않았을 독자를 위해, 헝거 게임의 규칙을 바꾼 사건에 대해서는 언급하지 않겠다.) 비록 왕과 귀족이 정해놓은 게임 속에서라도 한 사람의 ‘다른’ 행동이 상대방의 행동에 영향을 미치고, 이것이 결국 게임의 규칙을 바꾸게 된다. 그리고 이 사건이 게임 바깥의 사람들에게도 영향을 미치게 된다. 나 역시 그 뒷이야기를 읽지 않아 확신할 수는 없지만, 침묵으로 일관하던 12개 구역의 주민들이 이제 게임 바깥의 규칙을 바꾸려할 것이다. 『헝거 게임』의 외형적 설정은 중세시대 전제왕정에서 빌려온 것이지만, 이야기 속 시점이 과거가 아니라 미래라는 점은 의미심장하다. 누군가가 만들어 놓은 ‘생존경쟁’이라는 틀 속에서 온갖 노력을 다해보지만 결국에는 ‘운’에 기댈 수밖에 없게 만드는 게임의 규칙, 경쟁에는 참여하지 않으면서 그 규칙 위에 군림하고 있는 자들, 그리고 그들에게 감히 저항하지 못하는 우리들의 모습과 크게 다르지 않기 때문이다. 현실 속 청년들의 생존경쟁에 대한 공포가 영화 주인공의 그것보다 덜하지는 않다. 『헝거 게임』의 세계를 뒤덮고 있는 그 절망적 침묵이 우리 세계에도 마찬가지로 나타나고 있다.",
       "확률의 신을 버린다는 것 그러나 언제나 그렇듯 변화는 가능하다. 게다가 우리는 영화 속 판엠과 달리 형식상이나마 민주주의 체제에 살고 있다. ‘종이 돌멩이(paper stone)’이라 불리는 투표를 통해 더 나은 대안을 찾아갈 수도 있다. 중요한 건 변화를 이끌어낼 시작점. 즉 확률의 신을 버리는 행위다. 최대한 노력하다보면 적어도 나는 잘되지 않을까, 하는 그 긍정적인 마인드를 버리라는 말이다. 온갖 기업 광고와 자기계발서, 인생 멘토가 외치는 희망과 긍정에 물음표를 다는 것이 게임의 룰을 바꾸는 시작이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221380570171",
@@ -2989,6 +3399,8 @@
     "publication": "대학내일",
     "issue": "598",
     "year": "2012",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221380570171",
@@ -3002,8 +3414,9 @@
       "세계 물의 날은 왜 인기가 없는가 그렇다면 왜 삼일절은, 세계 여성의 날은, 세계 물의 날은 왜 화이트데이만큼의 충성도나 참여율을 갖지 못하는 것일까? 결론부터 말하자면, 달력에 새겨진 기념일의 대부분이 무겁고 심각한 주제를 갖고 있기 때문이다. 사랑을 표현할 시간도 부족한 이런 세상에서 독립운동, 납세, 양돈농가, 여성, 수학, 암, 물 부족, 기상, 결핵을 기념하라니, 가능할 리 없다. 그런데도 누군가는 ‘사람들이 상업주의에 물들어서 정작 중요한 삼일절은 놀러 가는 날 정도로 취급하고 화이트데이만 챙긴다’고 비난한다. 글쎄, 그렇게 비난만 할 게 아니라, 왜 그렇게 의미 있는 날이 아무 의미 없는 날처럼 여겨지는지를 고민해봐야 하지 않을까? 주요 기념일들을 사랑의 문제로, 개인사의 영역으로까지 끌어내리는 것도 한 가지 방법이 될 수 있다. 달력에 인쇄되어 있지 않지만 개인적으로 의미가 있는 생일, 연인과의 100일, 1주년 등은 엄청나게 높은 충성도와 참여율을 보인다. 반대로 달력에 새겨진 그 많은 기념일을 챙기는 경우는 드물다. 그중에 나를 위한 기념일이 없기 때문이다. 그나마 어린이날, 어버이날, 스승의 날처럼 개인적으로 뚜렷한 대상이 있는 기념일은 삼일절, 개천절, 광복절 등에 비해 훨씬 큰 참여율을 보이는데, 무엇인가 기념할 것이 있다면 그것이 어떻게 ‘나’에게 의미 있는 기념일이 될 수 있는지, 또 어떻게 하면 그것을 기념할 수 있는지 알기 때문이다.",
       "기념일을 관심 있게 만드는 법 삼일절도 본질적으로 감사와 사랑하는 마음을 전하는 날이다. 다만 방법을 모를 뿐이다. 마냥 무겁고 심각하지만, 꼭 그럴 필요는 없다. 알랭 드 보통이 ‘무신론자를 위한 종교’에서 지적한 것처럼, 제도는 “태도와 행동의 발전과 영속을 통해서 발휘하는 광범위한 영향력”을 미칠 수 있다. 제도를 통해 사람들의 태도와 행동을 발전시킬 수 있다는 말이다. 기업들은 데이마케팅을 통해 자신들의 기획이 조금이나마 제도화될 수 있도록 엄청난 노력을 쏟아 붇는다. 반면에, 정부 및 관련 부처들은 기업이 하고 싶어도 할 수 없는 규모의 제도화 수단을 갖고 있으면서도 극히 미미한 영향력을 행사하고 있을 뿐이다. 이 능력을 활용하지는 못할망정, 사람들의 저조한 참여율에 낙담하고 오히려 한글날과 제헌절같이 반드시 챙겨야 할 주요 기념일조차 공휴일을 해제하는 실정이니, 답답한 일이다. 중요하고 의미 있는 기념일을 ‘나’의 기념일로 만들고, 사랑을 표현하는 것은 생각보다 간단하다. 우리부터 시작해보자. 3월 8일 ‘세계 여성의 날’에 누군가에게 빵과 장미를 선물하는 거다. 여자친구, 누나, 여동생, 엄마, 아니면 학교에서 일하시는 아주머니도 좋다. 혹시 아는가, 당신의 작은 행동이 또 하나의 ‘사랑을 표현하는 날’을 탄생시킬지? 다시 한 번 강조하건대, 사랑을 전하는 기념일은 많을수록 좋다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379824205",
@@ -3013,6 +3426,8 @@
     "publication": "대학내일",
     "issue": "563",
     "year": "2011",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379824205",
@@ -3027,8 +3442,9 @@
       "+ + + + + 기사. ‘My Father, the Terrorist’(Omar bin Laden) 2009년 10월 28일, Vanity Fair라는 잡지의 홈페이지에 실린 독점 기사이다. 오마르 빈 라덴이 그의 아버지 오사마 빈 라덴에 대해 쓴 글이다. 인간 빈 라덴의 단면을 읽을 수 있다. www.vanityfair.com/politics/features/2009/10/omar-bin-laden-200910",
       "+ + + + + 책. ‘테러리즘 누군가의 해방 투쟁’(찰스 타운센트) “당신에게 테러리스트는 다른 누군가에는 해방의 전사일 수 있다”는 상대주의적 관점에 바탕하고 있지만, 테러리즘을 옹호하는 것으로 이해해서는 곤란하다. 다만 테러리즘의 정치 역사적 배경을 이해할 때 정치가 시작되고, 비로소 해결의 실마리가 보이게 될 것이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379825881",
@@ -3038,6 +3454,8 @@
     "publication": "대학내일",
     "issue": "583",
     "year": "2011",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379825881",
@@ -3052,8 +3470,9 @@
       "+ + + + + ‘공감의 시대’ 제러미 리프킨 두껍다. 하지만 가볍다. 책이 두껍고 그 무게가 가볍다는 말이기도 하고, 리프킨이 제시하는 지식의 두께가 두껍지만 그 지식을 가볍게 전달한다는 말이기도 하다. 800쪽이 넘어가는 책이지만 “B급 책 10권 보느니 밤새워 씨름해 볼 만 하다”든가 “다양한 얘기의 맛이 시간 가는 줄 모르고 읽게 된다”같은 평이 대부분이다. 책을 읽어보면 이러한 평가에 ‘공감’하게 될 것이다.",
       "+ + + + + ‘공감과 도덕 발달 (배려와 정의를 위한 함의들)’ 마틴 호프만 최근 미국 교실에서 공감혁명이라는 것이 일어나고 있다. 공감혁명은 공감 개발을 강조하는 새로운 교육 방식을 말하는데, 이러한 변화와 관계된 책 중 하나이다. 저자는 이 책에서 주로 공감의 교육과 그 도덕 심리학적 의미를 다루고 있다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379826228",
@@ -3063,6 +3482,8 @@
     "publication": "대학내일",
     "issue": "579",
     "year": "2011",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379826228",
@@ -3075,8 +3496,9 @@
       "폭로는 나의 힘 재미와 순수성, 이 두 가지가 지금의 나꼼수를 가능하게 한 것이지만, 이를 ‘가벼운 양비론’으로 경계하는 시선도 있다. 비판과 폭로로 얻을 수 있는 게 무엇이냐는 지적이다. 나꼼수가 큰 웃음을 주는 것은 분명하지만, 그 웃음의 뒷맛은 무력감으로 씁쓸하다는 사람도 있다. 사실 현실세계의 권력과 결합하지 않으면 나꼼수에서 제기된 문제들은 해결되기 힘들다. 그러나 나꼼수가 어떠한 형태의 대안을 제시하거나 실질적 권력과 결합하여 그것을 실현하려 하면, 지금의 재미와 순수성에 손상이 가게 된다. 결국 나꼼수는 힘없는 자들의 속을 달래주는 역할에 만족해야 하는 것일까. 사실 나꼼수는 이미 큰 변화를 만들어내고 있다. 촘스키는 기득권의 목표가 “모든 단계의 정책 결정에서 ‘참여자’가 아니라 ‘구경꾼’에 머물게 하는 것”이고, 방송 매체는 기득권의 이러한 가치를 선전하는 도구라고 비판했다. 그런데 나꼼수는 반대로 구경꾼을 참여자로 만들어주는 역할을 한다. 온/오프라인에서 나꼼수에서 제기된 화두에 대한 광범위한 토론이 벌어지고, 나꼼수에 찬성하든 반대하든 적어도 토론에 참여하는 사람들 간에는 단순히 투표 지상주의가 아닌 심의민주주의(Deliberative Democracy)가 작동하고 있다. 무작정 투표 이전에 정치에 대한 생각을 하게 해준다는 말이다. 나꼼수를 찾아 듣고 서로에게 권해주는 많은 사람들, 자발적으로 음악을 만들어 보내는 사람들, 나꼼수 덕분에 정치에 관심을 갖게 됐다는 사람들, 이 사람들이 각자 자기의 목소리를 내기 시작한 것은 큰 변화다. 청자들은 나꼼수에서 꼼수를 배우는 게 아니라 보이는 것 이면(裏面)을 파악하게 된다. ‘내가 고민했거나 동의한 적 없는 모든 것에 의문을 갖게 된다. 그리고 실제로 나꼼수에서 소개된 사례에서 볼 수 있듯이, 비판의식을 가진 사람들이 보다 적극적으로 자기 목소리를 내기 시작했다. 촘스키에 따르면 이러한 비판의식은 기득권의 일방적이고 독선적인 행동을 막을 수 있는 가장 강력하고 거의 유일한 방법이다. 촘스키는 베트남전의 사례를 들어 그 이전까지 마음대로 전쟁을 일으켰던 미국 정부가 여론의 눈치를 보기 시작했다고 지적한다. 사람들이 자기 목소리를 내는 것만으로 생각보다 큰 변화를 가져올 수 있는 것이다. 촘스키는 변화를 만들어내기 위해서는 비판의식을 가진 사람들이 자기 목소리를 내야 하고 때문에 언론의 자유를 보장하는 것이 가장 중요하다고 지적한다. 2011년 ‘국경 없는 기자회(Reporters Without Borders)’의 평가에 따르면 한국의 언론자유 순위는 세계 70위에 불과하다. 2009년 69위로 추락한 이후 오히려 더 낮아졌다. 나꼼수는 이런 상황에서 팟캐스트라는 틈새의 작은 자유의 영역을 비집고 올라온 새싹이다. 이제 이 새싹이 꽃을 피울 수 있도록 자유의 영역을 넓혀가는 것은 우리 모두의 몫이다. 꼼수가 너희를 자유롭게 하리라! 더 읽을 거리 + + + + + 팟캐스트. ‘나는 꼼수다’ (김어준, 정봉주. 주진우, 김용민) 가히 신드롬이라 부를 만하다. 이 글에 조금이라도 호기심이 생겼다면 당장 팟캐스트에 접속하거나, 딴지 라디오 웹사이트에 접속해서 들어보기 바란다. 좌우를 가리지 않고 누구라도 한 번쯤은 들어봐야 자기 목소리를 낼 수 있을 것이다.",
       "+ + + + + 책. ‘촘스키, 누가 무엇으로 세상을 지배하는가’ (드니 로베르, 베로니카 자라쇼비치 저. 강주헌 역) 인터뷰 형식이라서 쉽게 읽힌다. 촘스키의 다음과 같은 말에 매력을 느낀다면 읽어 볼 것을 추천한다. “사람에겐 자기만의 생각이 필요합니다. 사람들이 이런 도전의식을 키우면서 스스로 알아내려 한다면, 그것만으로 나는 내 목적을 어느 정도 성취한 것이라 생각합니다.”"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379823569",
@@ -3086,6 +3508,8 @@
     "publication": "대학내일",
     "issue": null,
     "year": "2011",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379823569",
@@ -3101,8 +3525,9 @@
       "+ 책. ‘더블’ 박민규. 박민규의 단편소설집이다. 첫 번째 소설인 「근처」에서 암에 걸린 주인공이 삶의 대부분이라 믿었던 직장을 그만두어야 했을 때, 부장이 조심스럽게 이런 말을 건낸다. “저기… 이런 말 하긴 뭣하지만 말일세… 일주일 정도라도… 어떻게 인수인계를…”",
       "+ 인터뷰. ‘민형배 광주 광산구청장의 ‘색깔 다른 행정’’ 오마이뉴스 11년 2월 7자. 인터뷰 중 민형배 구청장의 다음과 같은 말로 내용을 대신한다. “체화된 노동에 대한 정당한 가치와 의미를 부여해야 한다. 이것이 내가 80년대 초반 위장취업 노동자로 일할 때부터 가진 노동에 대한, 인간에 대한 가장 기본적인 자세다. 우리 구청에서 제일 먼저 출근하시는 분은 청소하는 분인데 새벽 4시30분에 출근하신다. 이분들 비롯해서 우리 구청의 비정규직 일을 하시는 분들 직급별, 직능별로 임금표 봤더니 최저임금 간신히 넘더라. 너무하지 않나. 노동과 인간에 대한 예의를 지키고 싶었다.”"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379826506",
@@ -3112,6 +3537,8 @@
     "publication": "대학내일",
     "issue": "587",
     "year": "2011",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379826506",
@@ -3127,8 +3554,9 @@
       "+ + + + + 책. ‘세계 정복은 가능한가’ 오카다 토시오 지음. 레진 옮김, 파란미디어 펴냄 세계 정복을 꿈꾸는 당신을 위한 지침서! 저자는 책의 말미에서 이런 명언을 남긴다. “지금 현재의 ‘행복’과 ‘평화’에 No라고 말하는 것. 새로운 ‘행복’과 ‘평화’를 세계에 선언하는 것. 그것이 새 시대의 세계 정복을 향한 구호인 것입니다.”",
       "+ + + + + 만화. ‘출동!! 먹통 X’ 고병규 지음, 대원씨아이 펴냄 외계인이 지구를 침략하고, 온 지구가 전력을 다해 만들어 낸 ‘먹통 X’ 로봇이 출동한다. 그런데 먼저 출동한 구형 탱크와 전투기가 외계인을 물리치자 먹통 X는 오히려 탱크와 전투기를 공격하는데… 아무 생각 없이 봐도, 아주 많이 생각하고 봐도 재미있는 만화."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379825368",
@@ -3138,6 +3566,8 @@
     "publication": "대학내일",
     "issue": "571",
     "year": "2011",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379825368",
@@ -3151,8 +3581,9 @@
       "그래도 게임은 공정한 편 이처럼 비정한 게임이 왜 재미있는 걸까? 제국주의의 열망이 내 안에도 불타고 있는 걸까? 결국엔 운 좋고 돈 많은 사람이 승리할 뿐. 우리가 사는 세계가 그런 것만으로도 지겨운데 왜 이런 게임을 하는 걸까? 그건 이 게임이 정의롭게 행해지기 때문이다. 비록 게임이 노력이나 능력으로 극복할 수 없는 것이지만 모두에게 동일한 규칙으로 진행된다는 점에서 정의롭다. 당연한 이야기이지만, 게임의 진행 과정에서 누구는 주사위를 3개 굴린다든가 누구는 벌금을 안 내거나 하면 게임 자체가 성립되지 않는다. 동일한 규칙에 따라 게임이 진행되기 때문에 설사 99%의 운과 1%의 전략으로 승패가 갈리더라도 결과에 승복할 수 있는 것이다. 이를 ‘정의로운 상황으로부터 정의로운 단계를 거쳐 발생하는 것은 무엇이나 그 자체로 정의롭다’는 노직(Robert Nozick)의 가정을 적용해 해석해보자. 부루마불 안에서 이 가정이 완전하게 성립하기 위해서는 게임의 진행뿐만 아니라 게임의 조건 역시 정의로워야 한다. 시작 시점의 조건이 동일하지 않은 상황에서 주사위를 던질 기회를 주는 것 자체는 아무런 의미가 없다. 자기는 200만원을 가지고 누구에게는 50만원만 쥐어주면 아무도 게임에 참여하지 않는다. 부루마블의 모든 플레이어는 동일한 금액을 갖고 아무도 선점하지 않은 땅을 향해 동일한 방식으로 게임을 진행하기 때문에 결과적으로 게임의 결과가 정의로울 수 있다. 우리가 사는 세상 역시 모두에게 동일한 ‘게임의 룰’이 적용되기에 결과에 승복해야 한다고 주장한다. 모든 실패는 노력, 재능, 운의 문제라고 말하는데 익숙해져 있다. 그러나 적어도 결과를 수긍하기 위해선 최소한의 조건이 충족되어야 한다. 결과가 정의롭기 위해서는 단순히 게임에 참여해서 주사위를 던질 수 있게 해주는 ‘명목상의 기회’ 이상으로, 최소한 기회를 활용할 수 있는 기반이 제공돼야 한다. 누구는 유학 경험에 빠방한 지원을 받다가 취업 시장에 나가고, 누군 알바 경험에 집안 살림까지 돌보다가 취업 시장에 나간다면? 과연 똑같은 조건에서 주사위를 던졌다 말할 수 있을까? 때로는 이 세계에 어린이 게임만큼의 정의도 없다는 생각이 든다. 더 할 거리 + + + + + 보드게임, 부루마불 세계여행, 씨앗사 뭐니뭐니 해도 역시 실제 둘러앉아 주사위를 굴려가며 놀아야 재미있는 법이다. 이번 M.T.나 추석 명절에는 부루마블로 세계여행도 하고 세계에 대한 생각도 키워보는 건 어떨까.",
       "+ + + + + 책, 아나키에서 유토피아로, 로버트 노직 저, 남경희 역 보수적인 세계관에 바탕해 유토피아적인 자유주의 사상을 설파하는 이 시대의 고전이다. 노직의 주장은 ‘자유지상주의’로 분류되며 평등이나 분배 등을 주장하는 학자의 대척점에 있는 것으로 평가된다. 그러나 단순히 ‘신자유주의’ 철학자라고 평가내리기전에 직접 읽어볼 것을 추천한다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379823889",
@@ -3162,6 +3593,8 @@
     "publication": "대학내일",
     "issue": "555",
     "year": "2011",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379823889",
@@ -3175,8 +3608,9 @@
       "+ 책. ‘만민법’ – 존 롤스. 미국 현대 자유주의 논의의 중심에 서 있던 대학자의 유작. 일평생 정의의 문제를 논하던 그가 국제사회, 아니 만민의 사회에 대한 혜안을 정리한 책.",
       "+ 영화. ‘호텔 르완다’ – 테리 조지. 아주 옛날도 아닌, 1994년 르완다에서 발생한 끔찍한 사건을 그린 영화. 스포일러가 되지 않기 위해 주인공이 살아남을지 죽을지는 말해줄 수 없지만, 한 가지는 확실하게 말할 수 있다. “절대 일어나서는 안 될 일이다”"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379823206",
@@ -3186,6 +3620,8 @@
     "publication": "대학내일",
     "issue": null,
     "year": "2011",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379823206",
@@ -3200,8 +3636,9 @@
       "더 읽을거리",
       "+ 영화. ‘디스트릭트 나인(District 9)’ 닐 블롬캠프(Neill Blomkamp). 남아프리카 공화국 요하네스버그 인근의 외계인 수용구역을 다룬 공상과학 영화아다. 주인공에 초점을 맞추면 카프카 변신의 현대판으로 읽히기도 하지만, 외계인 영화의 껍데기를 벗기고 보면 지금 이 세계 곳곳에 있는 난민촌의 모습이 그대로 보인다. 어쩌면 난민촌보다 우리가 살고 있는 이 지구촌의 모습인 것도 같다. + 책. ‘은하수를 여행하는 히치하이커를 위한 안내서’ 더글러스 애덤스(Douglas Noel Adams). 은하수를 여행하는 히치하이커를 위한 안내서이자 앞으로 외계인 친구를 사귀게 될 지구인들을 위한 안내서이기도 하다. 공상과학물에 대한 약간의 오덕을 갖춰야 즐겁게 읽히는 책이기는 하지만, 잘 알고 있지 않은가, 안내서나 설명서는 항상 제목만큼 쉽지 않다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379825598",
@@ -3211,6 +3648,8 @@
     "publication": "대학내일",
     "issue": "575",
     "year": "2011",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379825598",
@@ -3223,8 +3662,9 @@
       "검열 권하는 사회 왜 청소년들에게 작위적이고 명시적인 검열이 가해지는 것이 당연하다고 생각하는 것일까? 왜 관용하지 않는 행위인 검열을 관용하는 아이러니한 상황이 발생하는 것일까? ‘어쩔 수 없는 검열’따위의 말을 할 수 있는 건 검열이 우리에게 체화되어 있기 때문이다. 가정, 학교, 직장, 사회, 문화, 종교, 언론, 정치, 경제 등 모든 영역에서 검열이 존재한다. 선생님의 체벌보다 국정교과서가 더 훌륭한 사상검열 수단으로 작동한다. 정부와 기업의 주장에 순응하는 기사를 쓰는 것은 쉽지만, 그에 반하거나 그것을 비판하는 글을 쓰기 위해서는 엄청난 연구와 자료가 요구될 뿐만 아니라 이후에 있을 소송을 감당할 준비가 되어 있어야 한다. 술자리에서 정치, 종교를 다루면 안 되지만 간통, 이혼, 복수, 폭력이 판치는 막장 드라마나 이 시대의 섹스 심벌들이 눈요깃 거리를 제공하는 음악 프로그램은 허용된다. 표면으로 드러나지 않는 ‘필터링’의 방식으로 진행되는 검열은 물리적인 폭력이 동반되는 검열보다 더 큰 힘을 갖고 우리 삶을 통제한다. 촘스키(Avram Noam Chomsky)가 말했듯이 “언론과 교육기관에는 복잡한 필터 시스템이 설치되어 있어서, 반정부적 관점은 아예 배제되거나 아니면 주변으로 밀려나게끔 되어”있다. 그에 따르면 책임 있는 비평가들 역시 “자유 아래서의 세뇌 활동(brainwashing under freedom)”의 주체일 뿐이다. 사회 속에 만연한 검열 문화에 따라 주장과 비판, 그 모든 것이 “용인 가능한” 입장 내에서만 움직이게 되고 사람들은 우리 사회에 존재하는 자체 검열에 익숙해져 있을수록 잘 적응하고 스스로가 ‘용인’된 범위 내에서 생각하고 행동하게 된다. 그리고 미성숙한 청소년, 친구, 동료 시민들도 이 범위 내에서 생각하고 행동하기를 바란다. 이런 의미에서우리 사회는 자발적 검열 공동체로서의 성격을 지닌다. 누구도 모든 종류의 검열이 완전히 철폐되어야 한다고 ‘감히’ 말하지 않는다. 국가보안법 폐지론자도 청소년보호법은 반대하지 않는다. 사실 매번 이런 문제가 불거질 때마다 큰일인 것처럼 난리를 피우지만 곧 아무 일도 없었다는 듯이 조용해질 것이 분명하기 때문에 검열하는 쪽도 당하는 쪽도 별로 신경 쓰지 않는다. 박경신 위원은 문제가 된 글을 블로그에서 자진 삭제했고, 청소년들은 심의 대상인 곡을 평소에 그랬던 것처럼 다운로드 받을 것이다. 우리는 검열에 익숙하니까 검열에 순응하거나 검열의 눈을 피하는 방법에도 익숙하다. 가장 자유로워야 할 사적 영역에 쓴 글도, 현수막에 그린 쥐 그림도 비난과 법적 처벌의 대상이 되고 또 그러려니 한다. 얼마 전까지만 해도 말 한마디 잘하면 남산 밑에 끌려가서 물, 전기, 욕설 등을 ‘무상 지급’해줬다는데, 지금은 고소할 뿐 예전같이 무상고문을 제공하지 않는다는 점만으로도 참 감사할 일이다. 북한에서 자행되고 있다는 사상 통제가 여기에서도 작동하고 있는 걸 보면 검열이야말로 북한의 소행일지도 모른다.",
       "+ + + + + 『청소년보호법 시행령』 제7조 「별표1」의 주옥같은 조문을 감상해보자. ‘2. 개별 심의기준. 가. 음란한 자태를 지나치게 묘사한 것, 나. 성행위와 관련하여 그 방법?감정?음성 등을 지나치게 묘사한 것, 다. 수간을 묘사하거나 혼음, 근친상간, 가학?피학성 음란증 등 변태성행위, 매춘행위 기타 사회통념상 허용되지 아니한 성관계를 조장하는 것, 라. 청소년을 대상으로 하는 성행위를 조장하거나 여성을 성적 대상으로만 기술하는 등 성윤리를 왜곡시키는 것’등."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379824940",
@@ -3234,6 +3674,8 @@
     "publication": "대학내일",
     "issue": "567",
     "year": "2011",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379824940",
@@ -3247,8 +3689,9 @@
       "+ + + + + 다큐멘터리. ‘인사이드 잡’ 찰스 퍼거슨. 우리가 살고 있는 현실에 비하면 영화 <부당거래>는 애교다. MIT에서 정치학을 공부하고 미국 경제의 깊숙한 곳까지 경험한 감독이 만든 이 다큐멘터리는 “어떤 공포영화보다 무서운 경제 호러”라는 극찬(?)을 받은 바 있다.",
       "+ + + + + 책. ‘나쁜 사마리아인들’ 장하준. 무거운 내용이 가볍게 읽히는, 두 말할 나위 없이 좋은 책이다. 소위 ‘주류 경제학자’들로 구성된 IMF, 그리고 신자유주의를 향해가는 세계가 왜 위기를 맞이할 수밖에 없는지 궁금하다면 반드시 읽어야 할 책이다. 동 저자의 <사다리 걷어차기>를 함께 읽을 것을 추천한다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379822125",
@@ -3258,6 +3701,8 @@
     "publication": "대학내일",
     "issue": null,
     "year": "2010",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379822125",
@@ -3273,8 +3718,9 @@
       "+ 책. ‘종말의 바보’ 이사카 코타로. 종말을 맞이하는 여러 모습들을 그리고 있다. 이 단편 소설을 원작으로하는 시오즈카 마코토의 만화도 있다.",
       "+ 애니메이션. “개그만화 보기좋은날, ‘종말편’” 마스다 코우스케. 가슴아프게 웃긴 애니메이션. 종말의 진짜 패닉은 종말이 피해간 이후에 온다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379821583",
@@ -3284,6 +3730,8 @@
     "publication": "대학내일",
     "issue": null,
     "year": "2010",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379821583",
@@ -3298,8 +3746,9 @@
       "+ 책 ‘얼터너티브 드림: 한국 SF 대표 작가 단편 10선’ 복거일 외 책의 제목이기도 한 김덕성의 ‘얼터너티브 드림’을 비롯하여, 듀나, 오경문, 이영도 등의 재치있는 SF 단편들이 실려있다.",
       "+ 책 ‘매트릭스로 철학하기’ 슬라보 예 지젝 외 슬라보 예 지젝을 비롯한 17명의 현직 철학 교수들이 영화 <매트릭스>의 철학적 의미에 관해 쓴 15편의 원고를 묶은 것이다. 이 외에 글렌예페스가 엮어낸 ‘우리는 매트릭스 안에 살고있나’와 국내 철학자들이 쓴 ‘철 학으로 매트릭스 읽기’ 등도 있다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379822629",
@@ -3309,6 +3758,8 @@
     "publication": "대학내일",
     "issue": null,
     "year": "2010",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379822629",
@@ -3323,8 +3774,9 @@
       "+ 책. ‘공포의 문화: 왜 우리는 근거없는 두려움을 안고 살아가는가?’ 배리 글래스너. 책 제목에서 이미 모든 것을 설명하고 있다. 우리의 도덕적 불안을 자극하고, 그에 대한 상징적 대용물을 제공함으로써 막대한 부와 권력을 차지한 ‘그들’에 대한 폭로전이다.",
       "+ 책. ‘우리가 꼭 알아야할, 그러나 잘 알지 못해TEjs 세상의 몇 가지 사실들’ 제시카 윌리엄스. 우리가 진짜 무서워야할 것을 말해주는 책이다. 이 책에 소개된 그로테스크한 불평들이야말로 섬뜩하고 무서운 이야기이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379822947",
@@ -3334,6 +3786,8 @@
     "publication": "대학내일",
     "issue": null,
     "year": "2010",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379822947",
@@ -3349,8 +3803,9 @@
       "+ 책. ‘소셜 네트워크 e혁명’ 매튜 프레이저, 수마트라 두타. SNS와 관련된 대부분의 책들이 벼락 부자 이야기에 초점을 맞추는 것에 비해, SNS의 사회학적 의미를 상세히 분석한 책이다. 영화 『소셜네트워크』에 만족하지 못하는 사람들에게 추천.",
       "+ 드라마. ‘전차남(電車男)’ 한때 모든 오타쿠들에게 헛된 희망을 안겨준 드라마. SNS의 초기 형태에 해당하는 PC 통신 ‘친구’들의 느슨한 관계에서, SNS의 무한한 가능성을 발견할 수 있다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379821736",
@@ -3360,6 +3815,8 @@
     "publication": "대학내일",
     "issue": null,
     "year": "2010",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379821736",
@@ -3375,8 +3832,9 @@
       "+ 책 ‘슈퍼 히어로 미국을 말하다: 슈퍼 히어로를 읽는 미국의 시선’ 마크 웨이드 외. 슈퍼히어로를 다양한 시각에서 분석한 것으로, 실존주의, 형이상학, 도덕철학 등에 바탕한 해석 이 흥미롭다.",
       "+ 블로그 ‘부머의 슈퍼히어로’ 부머(boomer27). 슈퍼히어로에 관한 광범위한 지식을 담고 있는 블로그로, 중요한 해외 자료들을 번역한 내용도 찾아볼 수 있다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379822305",
@@ -3386,6 +3844,8 @@
     "publication": "대학내일",
     "issue": null,
     "year": "2010",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379822305",
@@ -3401,8 +3861,9 @@
       "+ 책. ‘지하드 대 맥월드’ 벤자민 R. 바버. 역사의 종말, 소프트파워, 문명의 충돌과 같은 개념들로 잘 설명되지 않는 갈등의 본질과 해결책을 모두 포함하고 있는 명저.",
       "+ 책. ‘철학으로 보는 문화’ 신응철. 새로운 철학의 분과인 문화철학의 관점에서 문화의 보편성과 특수성, 고급문화와 대중문화 등을 설명한 개론 입문서."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379820895",
@@ -3412,6 +3873,8 @@
     "publication": "대학내일",
     "issue": null,
     "year": "2010",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379820895",
@@ -3427,8 +3890,9 @@
       "+ 영화 ‘28일 후’ 대니 보일 감독, 2003 영국의 한 영장류 연구시설에서 ‘분노 바이러스’가 유출된 28일 후, 교통사고를 당해 의식을 잃었던 한 남자가 텅 빈 병원에서 깨어나면서 시작하는 이 영화는, 좀비 대 인간이라기보다 인간 자체의 문제에 초점을 맞추고 있다. “공포의 새로운 차원을 여는 하이 쇼크 호러!”라는 포스터 문구에서처럼 다소 ‘하이 쇼크 호러’한 영상이 있지만, 이 사람이 ‘슬럼독 밀리어네어’의 감독이라는 점을 고려해보면 일반적인 ‘좀비 액션물’이 아니라는 점은 쉽게 알 수 있을 것이다. 헐리우드 자매품 ‘28주 후’가 있으며, 후속작 ‘28개월 후’가 2011년에 개봉 예정이다.",
       "+ 책 ‘위험한 생각들’ 존 브록만 엮음, 2007 ‘세계 지식의 지휘자’라는 다소 이상한 수식어가 붙는 존 브록만이 엮어낸 ‘위험한 생각들’에는, 로버트 샤피로, 헬렌 피셔, 리처드 도킨스 등 대충 이름은 들어본 것 같은 석학들의 짧지만 흥미로운 생각들이 담겨있다. 석학들 간의 토론을 위한 엣지재단(Edge Foundation, Inc.)의 회장이자 웹사이트 포럼 엣지(www.edge.org)의 설립자인 존 브록만처럼 엣지있게 생각하는 사람들을 위한 교양서적이다."
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   },
   {
     "logNo": "221379821926",
@@ -3438,6 +3902,8 @@
     "publication": "대학내일",
     "issue": null,
     "year": "2010",
+    "month": null,
+    "day": null,
     "naverCategory": "에세이",
     "section": "칼럼",
     "sourceUrl": "https://blog.naver.com/ecopower/221379821926",
@@ -3453,7 +3919,8 @@
       "+ 책. ‘오프사이드는 왜 반칙인가?: 근대 축구 탄생의 사회사’ 나카무라 도시오 “축제는 거기에 참가하여 먹고 즐기는 모든 사람들이 막연한 경로를 통해 그 곳에 가득 찬 어리석음에 감염되는, 신분과 지위의 상하를 가리지 않는 주연(酒宴)의 시간이다.”",
       "+ 논문. ‘축구와 노동계급’ 정준영 “축구는 기본적으로 ‘약자가 강자를 언제든지 이길 수 있는’ 속성을 지니고 있었기에, 노동자 계층으로부터 전폭적인 지지를 얻을 수 있었다.”"
     ],
+    "kind": "post",
     "migrationStatus": "상세 페이지 완료",
-    "kind": "post"
+    "note": null
   }
 ]
