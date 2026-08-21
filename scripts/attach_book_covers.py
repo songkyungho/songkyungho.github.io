@@ -25,10 +25,15 @@ SLUG_TO_COVER = {
 }
 
 SLUG_TO_NOTE = {
-    "2010-001": {"text": "2011년 대한민국학술원 우수학술도서(사회과학 분야) 선정", "url": None},
+    "2010-001": {
+        "text": "2011년 대한민국학술원 우수학술도서(사회과학 분야) 선정",
+        "url": None,
+        "image": "/images/about/award-book-2011.png",
+    },
     "2021-005": {
         "text": "게이오대학교(FMC) 번역출판 지원 프로그램의 지원을 받아 출간",
         "url": "https://www.fmc.keio.ac.jp/publication/translation",
+        "image": None,
     },
 }
 

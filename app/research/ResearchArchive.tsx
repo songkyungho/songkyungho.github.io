@@ -30,7 +30,8 @@ export default function ResearchArchive() {
                 <span className="type-chip">{item.kind}</span>
                 <h2>{item.text}</h2>
                 {item.note && (
-                  <p className="venue">
+                  <p className="venue note-with-badge">
+                    {item.note.image && <img alt="" src={item.note.image} />}
                     {item.note.text}
                     {item.note.url && ` (${new URL(item.note.url).hostname})`}
                   </p>

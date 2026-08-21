@@ -259,7 +259,8 @@
     "image": "/images/research/book-2021-b.png",
     "note": {
       "text": "게이오대학교(FMC) 번역출판 지원 프로그램의 지원을 받아 출간",
-      "url": "https://www.fmc.keio.ac.jp/publication/translation"
+      "url": "https://www.fmc.keio.ac.jp/publication/translation",
+      "image": null
     }
   },
   {
@@ -327,7 +328,8 @@
     "image": "/images/research/book-2010.png",
     "note": {
       "text": "2011년 대한민국학술원 우수학술도서(사회과학 분야) 선정",
-      "url": null
+      "url": null,
+      "image": "/images/about/award-book-2011.png"
     }
   },
   {

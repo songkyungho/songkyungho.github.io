@@ -22,8 +22,8 @@ const positions = [
 ];
 
 const awards = [
-  ["2024", "교육부장관상 (우수신진연구인력)"],
-  ["2024", "연세대학교 총장상 (우수강사)"],
+  ["2024", "교육부장관상 (우수신진연구인력)", "/images/about/award-moe-2024.jpg"],
+  ["2024", "연세대학교 총장상 (우수강사)", "/images/about/award-yonsei-2024.jpg"],
 ];
 
 const education = [
@@ -101,7 +101,12 @@ export default function AboutPage() {
 
       <section className="about-section">
         <div className="about-section-title"><p className="eyebrow">AWARDS</p><h2>수상</h2></div>
-        <div className="timeline">{awards.map(([year, title]) => <div className="timeline-row" key={`${year}-${title}`}><time>{year}</time><strong>{title}</strong></div>)}</div>
+        <div className="timeline">{awards.map(([year, title, image]) => (
+          <div className="timeline-row" key={`${year}-${title}`}>
+            <time>{year}</time>
+            <div className="award-row"><strong>{title}</strong><img alt={`${title} 인증서`} src={image} /></div>
+          </div>
+        ))}</div>
       </section>
 
       <section className="about-section education-section">
