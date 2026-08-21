@@ -30,6 +30,13 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - run: pnpm build
+        id: build_app
+        continue-on-error: true
+
+      - run: cat dist/server/vinext-prerender.json || echo "no manifest"
+        if: always()
+
+      - run: if [ "${{ steps.build_app.outcome }}" != "success" ]; then exit 1; fi
 
       - run: touch dist/client/.nojekyll
 
