@@ -3,7 +3,7 @@ import { PageIntro } from "../components";
 
 export const metadata: Metadata = { title: "소개 | 송경호", description: "정치학자이자 AI 안전 연구자 송경호의 연구 분야, 경력과 학력" };
 
-const areas = ["인공지능 안전 거버넌스", "디지털 개념사", "동아시아 사상사", "한국학 및 북한학", "인권·민주주의·규범정치이론", "기후변화 적응과 리빙랩"];
+const areas = ["인공지능 안전 거버넌스", "디지털 개념사", "동아시아 사상사", "인권·민주주의·규범정치이론", "한국학 및 북한학", "기후변화 적응과 리빙랩"];
 
 const positions = [
   ["2026–현재", "우정사업본부 윤리경영위원회 위원", ""],
@@ -76,7 +76,10 @@ export default function AboutPage() {
     <main className="inner-page">
       <PageIntro eyebrow="ABOUT" title="소개" />
       <section className="about-lead">
-        <h2>송경호<br /><span lang="en">Kyungho David Song, Ph.D.</span></h2>
+        <div>
+          <h2>송경호<br /><span lang="en">Kyungho David Song, Ph.D.</span></h2>
+          <p className="role-tagline">정치학자, 개념사학자, AI 안전 연구자</p>
+        </div>
         <div className="prose">
           <p className="lead-quote">기술적으로 가능한 것과 정치적으로 바람직한 것은 같은 질문이 아닙니다.</p>
           <p>한국전자통신연구원(ETRI) 인공지능안전연구소 선임연구원으로, 신기술과 민주주의 이론, 국제협력이 교차하는 지점에서 AI 거버넌스 정책을 연구합니다.</p>
