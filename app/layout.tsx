@@ -18,6 +18,22 @@ export const metadata: Metadata = {
   },
 };
 
+// vinext's App Router client runtime hijacks every same-origin <a> click for
+// RSC soft-navigation, then throws inside its own handler in this static
+// export — killing navigation entirely. This capture-phase listener runs
+// before that handler (DOM capture always precedes bubble, regardless of
+// attach order) and stops it, leaving the browser's native anchor navigation.
+const disableBrokenClientRouting = `
+document.addEventListener("click", function (e) {
+  if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  var el = e.target;
+  while (el && el.tagName !== "A") el = el.parentElement;
+  if (!el || !el.getAttribute("href") || el.getAttribute("href").charAt(0) === "#") return;
+  if (el.target && el.target !== "_self") return;
+  e.stopImmediatePropagation();
+}, true);
+`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,7 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body><SiteHeader />{children}<SiteFooter /></body>
+      <body>
+        <script dangerouslySetInnerHTML={{ __html: disableBrokenClientRouting }} />
+        <SiteHeader />{children}<SiteFooter />
+      </body>
     </html>
   );
 }
