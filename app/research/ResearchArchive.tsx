@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import research from "../data/research-archive.json";
 
-const filters = ["전체", "논문", "보고서", "저서·역서", "학위논문"];
+const filters = ["전체", "논문", "보고서", "편저", "역서", "학위논문"];
 
 export default function ResearchArchive() {
   const [filter, setFilter] = useState("전체");
@@ -29,6 +29,12 @@ export default function ResearchArchive() {
               <div>
                 <span className="type-chip">{item.kind}</span>
                 <h2>{item.text}</h2>
+                {item.note && (
+                  <p className="venue">
+                    {item.note.text}
+                    {item.note.url && ` (${new URL(item.note.url).hostname})`}
+                  </p>
+                )}
               </div>
               {item.url && <span className="arrow" aria-hidden="true">↗</span>}
             </>

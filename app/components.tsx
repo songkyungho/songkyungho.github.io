@@ -32,11 +32,11 @@ export function SiteFooter() {
   );
 }
 
-export function PageIntro({ eyebrow, title, description }: { eyebrow: string; title: string; description: string }) {
+export function PageIntro({ eyebrow, title }: { eyebrow: string; title: string }) {
   return (
     <section className="page-intro">
       <p className="eyebrow">{eyebrow}</p>
-      <div><h1>{title}</h1><p>{description}</p></div>
+      <h1>{title}</h1>
     </section>
   );
 }

@@ -74,7 +74,7 @@ const others = [
 export default function AboutPage() {
   return (
     <main className="inner-page">
-      <PageIntro eyebrow="ABOUT" title="소개" description="정치학의 질문과 AI 안전의 실천을 연결합니다. 기술이 사회의 의사결정과 권력, 권리의 구조를 어떻게 바꾸는지 연구합니다." />
+      <PageIntro eyebrow="ABOUT" title="소개" />
       <section className="about-lead">
         <h2>송경호<br /><span lang="en">Kyungho David Song, Ph.D.</span></h2>
         <div className="prose">

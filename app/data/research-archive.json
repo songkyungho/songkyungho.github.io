@@ -9,7 +9,8 @@
     "kind": "보고서",
     "slug": "2026-001",
     "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/114?mno=&pageIndex=1&searchCondition=&searchKeyword=",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "보고서",
@@ -21,7 +22,8 @@
     "kind": "보고서",
     "slug": "2026-002",
     "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/102?mno=&pageIndex=2&searchCondition=&searchKeyword=",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "등재/단독",
@@ -33,7 +35,8 @@
     "kind": "논문",
     "slug": "2025-001",
     "url": "https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART003236884",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "등재/공동",
@@ -45,7 +48,8 @@
     "kind": "논문",
     "slug": "2025-002",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003276447",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "저서/공동",
@@ -54,10 +58,11 @@
     "day": null,
     "title": "대형언어모델의 편향: 공통감각의 부재와 기술적 한계",
     "text": "송경호. 2025. “대형언어모델의 편향: 공통감각의 부재와 기술적 한계” 조화순 편. 『무엇이 한국사회를 분열시키나』  서울: 박영사",
-    "kind": "저서·역서",
+    "kind": "편저",
     "slug": "2025-003",
     "url": "https://product.kyobobook.co.kr/detail/S000217463205",
-    "image": "/images/research/book-2025-a.png"
+    "image": "/images/research/book-2025-a.png",
+    "note": null
   },
   {
     "tag": "저서/공동",
@@ -66,10 +71,11 @@
     "day": null,
     "title": "기후적응 리빙랩을 위한 의사결정 지원시스템: 사례와 시사점.",
     "text": "송경호, 양성빈. 2025. “기후적응 리빙랩을 위한 의사결정 지원시스템: 사례와 시사점.” 이태동, 신상범 편. 『리빙랩: 지속가능한 발전을 위한 공동창조와 실험』  서울: 사회평론아카데미.",
-    "kind": "저서·역서",
+    "kind": "편저",
     "slug": "2025-004",
     "url": "https://product.kyobobook.co.kr/detail/S000218729474",
-    "image": "/images/research/book-2025-b.png"
+    "image": "/images/research/book-2025-b.png",
+    "note": null
   },
   {
     "tag": "보고서",
@@ -81,7 +87,8 @@
     "kind": "보고서",
     "slug": "2025-005",
     "url": null,
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "등재/공동",
@@ -93,7 +100,8 @@
     "kind": "논문",
     "slug": "2024-001",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003153554",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "SCOPUS/단독",
@@ -105,7 +113,8 @@
     "kind": "논문",
     "slug": "2024-002",
     "url": "https://www.jstor.org/stable/27372578",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "등재/공동",
@@ -117,7 +126,8 @@
     "kind": "논문",
     "slug": "2023-001",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002962170",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "A&HCI/SCOPUS/공동",
@@ -129,7 +139,8 @@
     "kind": "논문",
     "slug": "2023-002",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002941098",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "등재/공동",
@@ -141,7 +152,8 @@
     "kind": "논문",
     "slug": "2023-003",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002994813",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "저서/공동",
@@ -150,10 +162,11 @@
     "day": null,
     "title": "(동아시아 교양총서 4) 근현대 동아시아 지식장과 정치변동",
     "text": "박은영 , 손민석 , 김태진 , 김도형 , 김현 , 소진형 , 박삼헌 , 정주아 , 이헌미 , 송경호 , 홍철기 , 이관후 저. 2023. 『(동아시아 교양총서 4) 근현대 동아시아 지식장과 정치변동』. 서울: 성균관대학교출판부",
-    "kind": "저서·역서",
+    "kind": "편저",
     "slug": "2023-004",
     "url": "https://product.kyobobook.co.kr/detail/S000201581336",
-    "image": "/images/research/book-2023.png"
+    "image": "/images/research/book-2023.png",
+    "note": null
   },
   {
     "tag": "등재/공동",
@@ -165,7 +178,8 @@
     "kind": "논문",
     "slug": "2022-001",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002827670",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "저서/공동",
@@ -174,10 +188,11 @@
     "day": null,
     "title": "역사화해의 이정표 3: 역사적 콘텍스트와 근대성을 중심으로",
     "text": "이병택 편. 이병택, 이동수 , 민원정 , 소진형 , 송경호 , 이동욱 , 신현선, 곽진오 저. 2022. 『역사화해의 이정표 3: 역사적 콘텍스트와 근대성을 중심으로』. 서울: 동북아역사재단",
-    "kind": "저서·역서",
+    "kind": "편저",
     "slug": "2022-002",
     "url": "https://product.kyobobook.co.kr/detail/S000201237202",
-    "image": "/images/research/book-2022.png"
+    "image": "/images/research/book-2022.png",
+    "note": null
   },
   {
     "tag": "SSCI/공동",
@@ -189,7 +204,8 @@
     "kind": "논문",
     "slug": "2021-001",
     "url": "https://www.mdpi.com/2071-1050/13/7/4074",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "우수등재/공동",
@@ -201,7 +217,8 @@
     "kind": "논문",
     "slug": "2021-002",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002730821",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "등재/공동",
@@ -213,7 +230,8 @@
     "kind": "논문",
     "slug": "2021-003",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002793793",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "역서/공동",
@@ -222,10 +240,11 @@
     "day": null,
     "title": "서양을 번역하다: 문명개화 시대의 자유, 권리, 주권, 사회",
     "text": "더글라스 하울랜드 저. 김현, 박은영, 소진형, 손민석, 송경호, 이헌미, 홍철기 공동번역. 2021. 『서양을 번역하다: 문명개화 시대의 자유, 권리, 주권, 사회』. 서울: 성균관대학교 출판부",
-    "kind": "저서·역서",
+    "kind": "역서",
     "slug": "2021-004",
     "url": "http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791155504697&orderClick=LAG&Kc=",
-    "image": "/images/research/book-2021-a.png"
+    "image": "/images/research/book-2021-a.png",
+    "note": null
   },
   {
     "tag": "역서/공동",
@@ -234,10 +253,14 @@
     "day": null,
     "title": "(완역) 서양사정",
     "text": "후쿠자와 유키치 저. 송경호, 김현, 김숭배, 나카무라 슈토 공동번역. 2021. 『(완역) 서양사정』. 파주: 여문책",
-    "kind": "저서·역서",
+    "kind": "역서",
     "slug": "2021-005",
     "url": "http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791187700418&orderClick=LAG&Kc=",
-    "image": "/images/research/book-2021-b.png"
+    "image": "/images/research/book-2021-b.png",
+    "note": {
+      "text": "게이오대학교(FMC) 번역출판 지원 프로그램의 지원을 받아 출간",
+      "url": "https://www.fmc.keio.ac.jp/publication/translation"
+    }
   },
   {
     "tag": "우수등재/공동",
@@ -249,7 +272,8 @@
     "kind": "논문",
     "slug": "2020-001",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002658169",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "학위논문/박사",
@@ -261,7 +285,8 @@
     "kind": "학위논문",
     "slug": "2020-002",
     "url": "https://library.yonsei.ac.kr/search/detail/CAT000001996393?briefLink=/main/searchBrief?q=%EC%86%A1%EA%B2%BD%ED%98%B8",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "등재/공동",
@@ -273,7 +298,8 @@
     "kind": "논문",
     "slug": "2016-001",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002137117",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "등재/단독",
@@ -285,7 +311,8 @@
     "kind": "논문",
     "slug": "2012-001",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001685974",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "역서/공동",
@@ -294,10 +321,14 @@
     "day": null,
     "title": "다문화주의 시민권",
     "text": "윌 킴리카 저. 장동진 책임번역. 황민혁ㆍ송경호ㆍ변영환 공동번역. 2010. 11. 『다문화주의 시민권』. 서울: 동명사.",
-    "kind": "저서·역서",
+    "kind": "역서",
     "slug": "2010-001",
     "url": "http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788941171119&orderClick=LEa&Kc=",
-    "image": "/images/research/book-2010.png"
+    "image": "/images/research/book-2010.png",
+    "note": {
+      "text": "2011년 대한민국학술원 우수학술도서(사회과학 분야) 선정",
+      "url": null
+    }
   },
   {
     "tag": "A&HCI/공동",
@@ -309,7 +340,8 @@
     "kind": "논문",
     "slug": "2009-001",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001335928",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "등재후보/공동",
@@ -321,7 +353,8 @@
     "kind": "논문",
     "slug": "2007-001",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001519989",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "학위논문/석사",
@@ -333,7 +366,8 @@
     "kind": "학위논문",
     "slug": "2007-002",
     "url": "https://library.yonsei.ac.kr/search/detail/CAT000000160182?briefLink=/main/searchBrief?q=%EC%86%A1%EA%B2%BD%ED%98%B8",
-    "image": null
+    "image": null,
+    "note": null
   },
   {
     "tag": "등재후보/공동",
@@ -345,6 +379,7 @@
     "kind": "논문",
     "slug": "2006-001",
     "url": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART001520275",
-    "image": null
+    "image": null,
+    "note": null
   }
 ]

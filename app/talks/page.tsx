@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "발표와 강연 | 송경호", descr
 export default function TalksPage() {
   return (
     <main className="inner-page">
-      <PageIntro eyebrow="TALKS & PRESENTATIONS" title="발표와 강연" description="학술대회 발표, 정책 세미나, 국제회의, 토론과 특강을 발행 시점 기록 그대로 나열합니다." />
+      <PageIntro eyebrow="TALKS & PRESENTATIONS" title="발표와 강연" />
       <TalksArchive />
     </main>
   );

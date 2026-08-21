@@ -18,7 +18,7 @@ const media = [
 export default function MediaPage() {
   return (
     <main className="inner-page">
-      <PageIntro eyebrow="MEDIA & RESOURCES" title="자료와 미디어" description="방송, 인터뷰와 공개 프로젝트를 한곳에 모았습니다. 영상과 출판물처럼 구분에 필요한 경우에만 표지 이미지를 사용합니다." />
+      <PageIntro eyebrow="MEDIA & RESOURCES" title="자료와 미디어" />
       <section className="resource-section">
         <div className="section-line"><h2>방송과 영상</h2><span>3</span></div>
         <div className="video-grid">{media.slice(0, 3).map((item, index) => {

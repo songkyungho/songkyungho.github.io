@@ -36,8 +36,13 @@ def is_publication(tag: str) -> bool:
 def publication_kind(tag: str) -> str:
     if "학위논문" in tag:
         return "학위논문"
-    if "저서" in tag or "역서" in tag:
-        return "저서·역서"
+    if "역서" in tag:
+        return "역서"
+    if "저서" in tag:
+        # every "저서"-tagged entry so far is a chapter in an edited
+        # volume (someone else is credited as 편/editor), not a
+        # solely-authored book - see conversation
+        return "편저"
     if "보고서" in tag:
         return "보고서"
     return "논문"
