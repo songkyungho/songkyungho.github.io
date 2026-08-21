@@ -22,9 +22,20 @@ PUBLICATION_MARKERS = [
     "등재", "SCOPUS", "SSCI", "A&HCI", "저서", "역서", "학위논문", "보고서",
 ]
 
+# one-off overrides for entries whose source tag doesn't match how the
+# entry actually reads (e.g. tagged [좌담] but he was the speaker, not
+# just a discussant) - keyed by a distinctive substring of the entry
+KIND_OVERRIDES = {
+    "나는 내가 믿고 싶은 것을 믿는다": "발표",
+    "내란과 극우 앞에선 사회운동의 고민들": "발표",
+    # Keio COE-CCC x Yonsei BK21 joint symposium - academic, but named
+    # in Japanese so it doesn't hit any of the Korean/English markers
+    "慶應義塾大學": "학술발표",
+}
+
 YEAR_HEADER_RE = re.compile(r"^(\d{4})(–\d{4})?$")
 TAG_LINE_RE = re.compile(r"^\[([^\]]+)\]\s*(.*)$")
-DATE_RE = re.compile(r"(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})")
+DATE_RE = re.compile(r"(\d{4})\.\s*(\d{1,2})\.\s*(\d{1,2})\.?")
 YEAR_ONLY_RE = re.compile(r"(\d{4})")
 TITLE_RE = re.compile(r"[“\"『]([^”\"』]{2,200})[”\"』]")
 
@@ -52,7 +63,34 @@ def talk_kind(tag: str) -> str:
     for marker in ["발표", "특강", "토론", "사회", "좌담", "포스터"]:
         if marker in tag:
             return marker
+    # the only two [.../기타]-tagged talks are round-table-style
+    # discussions, so file them under 좌담 rather than a catch-all 기타
+    if "기타" in tag:
+        return "좌담"
     return "기타"
+
+
+ACADEMIC_MARKERS = [
+    "학회", "학술대회", "학술회의", "학술토론회", "학술제", "학술발표회",
+    "학술연구회", "Congress", "APSA", "Conference", "Convention",
+]
+
+
+def is_academic_talk(rest: str) -> bool:
+    """[.../발표]-tagged entries split into 학술발표 (run by an academic
+    society / styled as a scholarly conference) vs 발표 (government
+    briefings, institute policy seminars, inter-institute symposia) -
+    see conversation for the worked examples this rule was checked
+    against."""
+    return any(marker in rest for marker in ACADEMIC_MARKERS)
+
+
+def region_prefix(tag: str):
+    if "국제" in tag:
+        return "국제"
+    if "국내" in tag:
+        return "국내"
+    return None
 
 
 def slugify(year: str, index: int) -> str:
@@ -84,10 +122,12 @@ def main():
         date_match = DATE_RE.search(rest)
         if date_match:
             year, month, day = date_match.groups()
+            detail = re.sub(r"\s{2,}", " ", rest[: date_match.start()] + " " + rest[date_match.end() :]).strip(" .")
         else:
             year_only = YEAR_ONLY_RE.search(rest)
             year = year_only.group(1) if year_only else current_year
             month, day = None, None
+            detail = rest
         if not year:
             year = current_year or "0000"
 
@@ -97,6 +137,7 @@ def main():
         entry = {
             "tag": tag,
             "year": year,
+            "detail": detail,
             "month": int(month) if month else None,
             "day": int(day) if day else None,
             "title": title,
@@ -108,7 +149,21 @@ def main():
             counter = pub_counter
             bucket = publications
         else:
-            entry["kind"] = talk_kind(tag)
+            kind = talk_kind(tag)
+            # some entries are tagged e.g. [국제/발표] but are actually a
+            # poster ("(poster)" noted inline) rather than a talk
+            if "(poster)" in rest.lower():
+                kind = "포스터"
+            for needle, override in KIND_OVERRIDES.items():
+                if needle in rest:
+                    kind = override
+                    break
+            if kind == "발표":
+                kind = "학술발표" if is_academic_talk(rest) else "발표"
+            entry["kind"] = kind
+            prefix = region_prefix(tag)
+            if kind in ("학술발표", "발표") and prefix:
+                entry["detail"] = f"[{prefix}] {entry['detail']}"
             counter = talk_counter
             bucket = talks
 

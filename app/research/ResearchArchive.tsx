@@ -10,7 +10,8 @@ export default function ResearchArchive() {
   const [query, setQuery] = useState("");
   const shown = useMemo(() => research.filter((item) => {
     const typeMatch = filter === "전체" || item.kind === filter;
-    const queryMatch = item.text.toLowerCase().includes(query.trim().toLowerCase());
+    const haystack = [item.text, item.series, item.org, ...(item.authors ?? [])].filter(Boolean).join(" ").toLowerCase();
+    const queryMatch = haystack.includes(query.trim().toLowerCase());
     return typeMatch && queryMatch;
   }), [filter, query]);
 
@@ -28,7 +29,15 @@ export default function ResearchArchive() {
               <div className="archive-year">{item.year}</div>
               <div>
                 <span className="type-chip">{item.kind}</span>
-                <h2>{item.text}</h2>
+                {item.authors ? (
+                  <>
+                    {item.series && <p className="venue">{item.series}</p>}
+                    <h2>{item.title}</h2>
+                    <p className="venue">{item.authors.join(", ")}{item.org && ` · ${item.org}`}</p>
+                  </>
+                ) : (
+                  <h2>{item.detail}</h2>
+                )}
                 {item.note && (
                   <p className="venue note-with-badge">
                     {item.note.image && <img alt="" src={item.note.image} />}

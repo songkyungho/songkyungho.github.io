@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import talks from "../data/talks-archive.json";
 
-const filters = ["전체", "발표", "특강", "토론", "사회", "좌담", "포스터", "기타"];
+const filters = ["전체", "학술발표", "발표", "특강", "토론", "사회", "좌담", "포스터"];
 
 function formatDate(item: { year: string; month: number | null; day: number | null }) {
   if (item.month && item.day) return `${item.year}.${String(item.month).padStart(2, "0")}.${String(item.day).padStart(2, "0")}`;
@@ -32,7 +32,7 @@ export default function TalksArchive() {
           <article className="talk-row" key={item.slug}>
             <time>{formatDate(item)}</time>
             <span className="type-chip">{item.kind}</span>
-            <div><h2>{item.text}</h2></div>
+            <div><h2>{item.detail}</h2></div>
           </article>
         ))}
       </div>

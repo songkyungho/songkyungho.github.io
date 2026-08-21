@@ -3,6 +3,26 @@ import { PageIntro } from "../components";
 
 export const metadata: Metadata = { title: "소개 | 송경호", description: "정치학자이자 AI 안전 연구자 송경호의 연구 분야, 경력과 학력" };
 
+const AFFILIATION_LINKS: [string, string][] = [
+  ["인공지능안전연구소", "https://www.aisi.re.kr/kor"],
+  ["BK21", "https://bk21pol.yonsei.ac.kr"],
+];
+
+function linkifyAffiliation(text: string) {
+  for (const [needle, url] of AFFILIATION_LINKS) {
+    const idx = text.indexOf(needle);
+    if (idx === -1) continue;
+    return (
+      <>
+        {text.slice(0, idx)}
+        <a href={url}>{needle}</a>
+        {text.slice(idx + needle.length)}
+      </>
+    );
+  }
+  return text;
+}
+
 const areas = ["인공지능 안전 거버넌스", "디지털 개념사", "동아시아 사상사", "인권·민주주의·규범정치이론", "한국학 및 북한학", "기후변화 적응과 리빙랩"];
 
 const positions = [
@@ -80,13 +100,6 @@ export default function AboutPage() {
           <h2>송경호<br /><span lang="en">Kyungho David Song, Ph.D.</span></h2>
           <p className="role-tagline">정치학자, 개념사학자, AI 안전 연구자</p>
         </div>
-        <div className="prose">
-          <p className="lead-quote">기술적으로 가능한 것과 정치적으로 바람직한 것은 같은 질문이 아닙니다.</p>
-          <p>한국전자통신연구원(ETRI) 인공지능안전연구소 선임연구원으로, 신기술과 민주주의 이론, 국제협력이 교차하는 지점에서 AI 거버넌스 정책을 연구합니다.</p>
-          <p>AI안전연구소에서는 인공지능 기본법 제32조에 따른 고성능 프론티어 모델 가이드라인 초안을 작성하고, 국제적으로 정합적인 첨단 AI 위험관리체계 구축을 주도하고 있습니다. Future of Life Institute와 협력해 EU AI법과의 비교 매핑을 포함한 대한민국 인공지능 기본법 웹사이트를 개발하며 국제적 대화와 협력을 뒷받침했습니다. 기술적 AI 안전과 민주적 거버넌스 원칙을 연결해 AI 주권, 알고리즘 책무성, 다자간 협력의 문제를 다룹니다.</p>
-          <p>근현대 동아시아에서 인권 규범이 정치사상적으로 어떻게 수용되었는지를 다룬 정치학 박사로, 이러한 학제간 접근을 AI 거버넌스 연구에 접목합니다.</p>
-          <p>연구 범위는 기후적응 정책, AI 거버넌스, 지능형 시스템에 걸쳐 있습니다. 시민 참여와 데이터 기반 거버넌스를 결합한 기후변화 적응 의사결정 지원시스템 개발 R&D 프로젝트를 이끌었으며, 최근에는 AI 에이전트 커뮤니티의 거버넌스 메커니즘과 AI가 민주주의에서 수행하는 역할을 탐구하고 있습니다.</p>
-        </div>
       </section>
 
       <section className="about-section">
@@ -96,7 +109,7 @@ export default function AboutPage() {
 
       <section className="about-section">
         <div className="about-section-title"><p className="eyebrow">POSITIONS</p><h2>주요 경력</h2></div>
-        <div className="timeline">{positions.map(([year, title, note], index) => <div className="timeline-row" key={`${year}-${title}-${index}`}><time>{year}</time><div><strong>{title}</strong>{note && <p>{note}</p>}</div></div>)}</div>
+        <div className="timeline">{positions.map(([year, title, note], index) => <div className="timeline-row" key={`${year}-${title}-${index}`}><time>{year}</time><div><strong>{linkifyAffiliation(title)}</strong>{note && <p>{note}</p>}</div></div>)}</div>
       </section>
 
       <section className="about-section">
