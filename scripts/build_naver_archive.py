@@ -24,6 +24,11 @@ FEATURED = {
     "222107544175": ("university-tomorrow-657-song-taeseop", "/images/writing/university-tomorrow/657-song-taeseop.jpg"),
 }
 
+# posts with no actual photo of their own get this generic Naver-wide
+# blog icon back from their og:image meta tag - treat that as no image
+# rather than a real thumbnail
+NAVER_DEFAULT_OG_IMAGE = "https://ssl.pstatic.net/static/blog/icon/og_270x270.png"
+
 # addDate is when the post was added to the Naver blog, not necessarily
 # when the piece was originally published (many older/reposted pieces were
 # bulk-imported on the same day) - so it isn't trustworthy for day-level
@@ -122,6 +127,8 @@ def main() -> None:
         paragraphs, remote_image = extract_post(log_no)
         featured = FEATURED.get(log_no)
         saved_image = image_map.get(log_no)
+        if (saved_image or {}).get("source") == NAVER_DEFAULT_OG_IMAGE:
+            saved_image = None
         section = classify(publication, item["categoryNo"])
         kind = "post"
         if log_no in SECTION_OVERRIDES:
