@@ -11,6 +11,7 @@ type MediaItem = {
   year: string | null;
   month: number | null;
   day: number | null;
+  image?: string;
 };
 
 function youtubeId(url: string) {
@@ -44,7 +45,7 @@ export default function MediaArchive({ media }: { media: MediaItem[] }) {
       <div className="video-grid">
         {shown.map((item) => {
           const id = youtubeId(item.url);
-          const thumb = id ? `https://i.ytimg.com/vi/${id}/hqdefault.jpg` : null;
+          const thumb = item.image ?? (id ? `https://i.ytimg.com/vi/${id}/hqdefault.jpg` : null);
           return (
             <a className="video-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
               {thumb ? <img src={thumb} alt="" /> : <div className="placeholder-thumb">{item.format}</div>}
