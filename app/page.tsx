@@ -82,6 +82,9 @@ export default function Home() {
           <div><p className="eyebrow">RESEARCH NOTES &amp; ARCHIVE</p><h1>최근 기록</h1></div>
         </header>
         <p data-debug="counts">{`r=${researchItems.length} t=${talksItems.length} w=${writingItems.length} m=${mediaItems.length}`}</p>
+        <p data-debug="top-research">{JSON.stringify(researchItems.slice(0, 2).map((i) => [i.dateKey, i.title]))}</p>
+        <p data-debug="top-talks">{JSON.stringify(talksItems.slice(0, 2).map((i) => [i.dateKey, i.title]))}</p>
+        <p data-debug="recent-keys">{JSON.stringify(recent.map((i) => i.dateKey))}</p>
         <div className="index-list">
           {recent.map((item) => (
             <a
