@@ -9,9 +9,15 @@ function youtubeId(url: string) {
   return match ? match[1] : null;
 }
 
+function dateKey(item: { year: string | null; month: number | null; day: number | null }) {
+  return Number(item.year ?? 0) * 372 + Number(item.month ?? 0) * 31 + Number(item.day ?? 0);
+}
+
+const sortedMedia = [...media].sort((a, b) => dateKey(b) - dateKey(a));
+
 export default function MediaPage() {
-  const broadcasts = media.filter((item) => item.format === "방송");
-  const rest = media.filter((item) => item.format !== "방송");
+  const broadcasts = sortedMedia.filter((item) => item.format === "방송");
+  const rest = sortedMedia.filter((item) => item.format !== "방송");
   return (
     <main className="inner-page">
       <PageIntro eyebrow="MEDIA & RESOURCES" title="자료와 미디어" />
