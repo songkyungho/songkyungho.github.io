@@ -28,6 +28,20 @@
     "slug": "2026-002"
   },
   {
+    "tag": "특강",
+    "year": "2026",
+    "detail": "(제목) <Nazarbayev University>",
+    "month": 9,
+    "day": 18,
+    "title": null,
+    "authors": null,
+    "text": "2026. 9. 18. (제목) <Nazarbayev University>",
+    "kind": "특강",
+    "region": null,
+    "venue": "(제목) <Nazarbayev University>",
+    "slug": "2026-003"
+  },
+  {
     "tag": "국내/발표",
     "year": "2026",
     "detail": "[국내] 송경호. “정치 분야 AI Systemic Risk 소개,” <[AI안전연구소] 정치 분야 AI Systematic Risk 연구 협력 패널>, <한국정치학회 하계학술대회> (부경대)",
@@ -39,7 +53,7 @@
     "kind": "학술발표",
     "region": "국내",
     "venue": "<[AI안전연구소] 정치 분야 AI Systematic Risk 연구 협력 패널>, <한국정치학회 하계학술대회> (부경대)",
-    "slug": "2026-003"
+    "slug": "2026-004"
   },
   {
     "tag": "국내/발표",
@@ -53,7 +67,7 @@
     "kind": "학술발표",
     "region": "국내",
     "venue": "<[AI안전연구소] 정치 분야 AI 안전성 평가의 현재와 과제 패널>, <한국정치학회 하계학술대회> (부경대) [토론] 장휘, 김현, 임희수",
-    "slug": "2026-004"
+    "slug": "2026-005"
   },
   {
     "tag": "국제/발표",
@@ -67,7 +81,7 @@
     "kind": "발표",
     "region": "국제",
     "venue": "<Securing AI: Verification and Other Technical Approaches> (네덜란드 외교부 주최, 헤이그)",
-    "slug": "2026-005"
+    "slug": "2026-006"
   },
   {
     "tag": "국제/토론",
@@ -81,7 +95,7 @@
     "kind": "토론",
     "region": null,
     "venue": "<TAIGR @ ICML 2026> (서울)",
-    "slug": "2026-006"
+    "slug": "2026-007"
   },
   {
     "tag": "국제/발표",
@@ -95,7 +109,7 @@
     "kind": "포스터",
     "region": null,
     "venue": "(poster) <TAIGR @ ICML 2026> (서울)",
-    "slug": "2026-007"
+    "slug": "2026-008"
   },
   {
     "tag": "국제/사회",
@@ -109,7 +123,7 @@
     "kind": "사회",
     "region": null,
     "venue": "<Seoul Alignment Workshop> (서울)",
-    "slug": "2026-008"
+    "slug": "2026-009"
   },
   {
     "tag": "특강",
@@ -123,7 +137,7 @@
     "kind": "특강",
     "region": null,
     "venue": "<양성평등전문위원회 제1전문위 전체회의(1차)>",
-    "slug": "2026-009"
+    "slug": "2026-010"
   },
   {
     "tag": "국내/발표",
@@ -137,7 +151,7 @@
     "kind": "발표",
     "region": "국내",
     "venue": "<AI 안전·안보 정책 연구 세미나> (인공지능안전연구소·국가보안기술연구소 공동주최)",
-    "slug": "2026-010"
+    "slug": "2026-011"
   },
   {
     "tag": "특강",
@@ -151,7 +165,7 @@
     "kind": "특강",
     "region": null,
     "venue": "<세종대학교 인문-IT융합연구원>",
-    "slug": "2026-011"
+    "slug": "2026-012"
   },
   {
     "tag": "국내/토론",
@@ -165,7 +179,7 @@
     "kind": "토론",
     "region": null,
     "venue": "“[패널3] 국가인공지능전략위원회 AI 민주주의 분과 패널,” <한국정당학회 특벽학술대회>",
-    "slug": "2026-012"
+    "slug": "2026-013"
   },
   {
     "tag": "특강",
@@ -179,7 +193,7 @@
     "kind": "특강",
     "region": null,
     "venue": "(2강) <용화여자고등학교>",
-    "slug": "2026-013"
+    "slug": "2026-014"
   },
   {
     "tag": "특강",
@@ -193,7 +207,7 @@
     "kind": "특강",
     "region": null,
     "venue": "(1강) <용화여자고등학교>",
-    "slug": "2026-014"
+    "slug": "2026-015"
   },
   {
     "tag": "특강",
@@ -207,7 +221,7 @@
     "kind": "특강",
     "region": null,
     "venue": "<연세대 미래캠퍼스> (천자현 교수)",
-    "slug": "2026-015"
+    "slug": "2026-016"
   },
   {
     "tag": "국내/발표",
@@ -221,7 +235,7 @@
     "kind": "발표",
     "region": "국내",
     "venue": "<국회입법조사처 AI 거버넌스 인재양성 간담회>",
-    "slug": "2026-016"
+    "slug": "2026-017"
   },
   {
     "tag": "특강",
@@ -235,7 +249,7 @@
     "kind": "특강",
     "region": null,
     "venue": "<세종대> (장휘 교수)",
-    "slug": "2026-017"
+    "slug": "2026-018"
   },
   {
     "tag": "특강",
@@ -249,7 +263,7 @@
     "kind": "특강",
     "region": null,
     "venue": "<연세대와 함께하는 상주시민 아카데미, 상주시평생학습관>",
-    "slug": "2026-018"
+    "slug": "2026-019"
   },
   {
     "tag": "국내/발표",
@@ -263,7 +277,7 @@
     "kind": "발표",
     "region": "국내",
     "venue": "<통일연구원 전문가 세미나>",
-    "slug": "2026-019"
+    "slug": "2026-020"
   },
   {
     "tag": "토론",
@@ -277,7 +291,7 @@
     "kind": "토론",
     "region": null,
     "venue": "<International Convergence Workshop on Extreme Risk Management Framework>, Future of Life Institute",
-    "slug": "2026-020"
+    "slug": "2026-021"
   },
   {
     "tag": "토론",
@@ -291,7 +305,7 @@
     "kind": "토론",
     "region": null,
     "venue": "<Panel: How Middle Powers Shape AI Governance>, Ima Bello (Chair), Guilherme Fitzgibbon Alves Pereira, Kyungho Song, <IASEAI '26>",
-    "slug": "2026-021"
+    "slug": "2026-022"
   },
   {
     "tag": "특강",
