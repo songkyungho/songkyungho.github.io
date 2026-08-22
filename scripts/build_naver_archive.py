@@ -29,6 +29,10 @@ FEATURED = {
 # rather than a real thumbnail
 NAVER_DEFAULT_OG_IMAGE = "https://ssl.pstatic.net/static/blog/icon/og_270x270.png"
 
+# this post's og:image is an unrelated 참여사회연구소 논문공모전 poster (a
+# link elsewhere in the post, not a photo of the piece itself) - drop it
+BAD_IMAGE_LOGNOS = {"222111993470"}
+
 # addDate is when the post was added to the Naver blog, not necessarily
 # when the piece was originally published (many older/reposted pieces were
 # bulk-imported on the same day) - so it isn't trustworthy for day-level
@@ -142,9 +146,13 @@ def main() -> None:
         paragraphs, remote_image = extract_post(log_no)
         featured = FEATURED.get(log_no)
         saved_image = image_map.get(log_no)
-        if (saved_image or {}).get("source") == NAVER_DEFAULT_OG_IMAGE:
+        if (saved_image or {}).get("source") == NAVER_DEFAULT_OG_IMAGE or log_no in BAD_IMAGE_LOGNOS:
             saved_image = None
         section = classify(publication, item["categoryNo"])
+        if section == "이슈브리프":
+            # the meta line already reads "{publication} · 이슈브리프" -
+            # drop the word from publication itself so it doesn't repeat
+            publication = re.sub(r"\s*이슈브리프\s*$", "", publication).strip()
         kind = "post"
         if log_no in SECTION_OVERRIDES:
             section, kind = SECTION_OVERRIDES[log_no]
