@@ -50,6 +50,12 @@ RAW_TITLE_OVERRIDES = {
         "박성진 “인공지능시대의 민주주의, 자유와 인권 그리고 데이터와 포스트데모스,” 김태선 “AI 시대의 정치, 그 가능성과 한계”",
         "<IT정치연구회 기획 패널 - “AI와 정치, 그리고 민주주의”>, 한국정치학회 하계학술대회",
     ),
+    # two-lecture 특강 - TITLE_RE only ever grabs the first quoted title,
+    # leaving the second lecture's title stuck in the venue text
+    "다이쇼 데모크라시": (
+        "“제14강. 왜 다이쇼 데모크라시는 좌절하였을까,” “제15강. 일본의 상징천황제와 ‘전후 민주주의’”",
+        "<근대화와 동서양> 방송통신대학교 (이우창 교수)",
+    ),
 }
 
 # 돌깨TV filmed this talk (the Jesuit center colloquium) - link the
