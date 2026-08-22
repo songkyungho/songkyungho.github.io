@@ -34,6 +34,7 @@ export default function MediaArchive({ media }: { media: MediaItem[] }) {
   return (
     <section className="archive-block">
       <div className="archive-tools">
+        <h2>미디어({media.length})</h2>
         <div className="filter-row" aria-label="미디어 분류">
           {filters.filter((item) => item === "전체" || counts[item] > 0).map((item) => (
             <button className={filter === item ? "active" : ""} key={item} onClick={() => setFilter(item)} type="button">
