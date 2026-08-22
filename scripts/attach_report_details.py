@@ -32,7 +32,7 @@ REPORT_DETAILS = {
         "series": "인공지능 위험과 대응방안",
         "title": "인공지능 사고 데이터 분석을 통한 AI위험 분석",
         "authors": ["송경호"],
-        "org": AISI,
+        "org": None,
     },
     "2025-005": {
         "series": "공론화 기반 AI 정책 보고서: AI와 환각",
