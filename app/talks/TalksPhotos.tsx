@@ -13,6 +13,8 @@ const photos = [
   { src: "/images/talks/talk-yonghwa-2024-lecture.jpg", alt: "2024 이세계 헌법 특강" },
   { src: "/images/talks/talk-yonghwa-2024-b.jpg", alt: "용화여자고등학교 특강" },
   { src: "/images/talks/talk-bk21-award.jpg", alt: "4단계 BK21사업 우수 참여인력 표창 시상식" },
+  { src: "/images/talks/talk-khu-ai-thinkers.jpeg", alt: "경희대 비교문화연구소 특강 \"AI의 사상가들: 알고리즘 뒤에 숨은 신념들\"" },
+  { src: "/images/talks/talk-iaseai26-panel.jpeg", alt: "IASEAI '26 패널 토론" },
 ];
 
 export default function TalksPhotos() {
