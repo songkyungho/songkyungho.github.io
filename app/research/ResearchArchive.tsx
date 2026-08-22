@@ -5,6 +5,19 @@ import research from "../data/research-archive.json";
 
 const filters = ["전체", "논문", "보고서", "편저", "역서", "학위논문"];
 
+const INDEX_LABELS: Record<string, string> = {
+  "등재": "KCI",
+  "우수등재": "KCI 우수등재",
+  "등재후보": "KCI 등재후보",
+  "SCOPUS": "SCOPUS",
+  "SSCI": "SSCI",
+  "A&HCI": "A&HCI",
+};
+
+function paperIndexLabel(tag: string) {
+  return tag.split("/").map((part) => INDEX_LABELS[part]).filter(Boolean).join(" · ");
+}
+
 export default function ResearchArchive() {
   const [filter, setFilter] = useState("전체");
   const [query, setQuery] = useState("");
@@ -25,11 +38,12 @@ export default function ResearchArchive() {
       <div className="archive-list">
         {shown.map((item) => {
           const isReport = item.kind === "보고서";
+          const indexLabel = item.kind === "논문" ? paperIndexLabel(item.tag) : "";
           const content = (
             <>
               <div className="archive-year">{item.year}</div>
               <div>
-                <span className="type-chip">{item.kind}</span>
+                <span className="type-chip">{item.kind}{indexLabel ? ` · ${indexLabel}` : ""}</span>
                 {item.series && <p className="venue">{item.series}</p>}
                 {isReport ? (
                   <>

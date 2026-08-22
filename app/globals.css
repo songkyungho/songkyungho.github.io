@@ -57,6 +57,7 @@ main { min-height: calc(100vh - 68px); }
 .page-intro h1 { margin: 0; font-size: 2.15rem; line-height: 1.2; letter-spacing: -.045em; }
 
 .about-lead, .about-section { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 36px; padding: 48px 0; border-bottom: 1px solid var(--line); }
+.about-lead > div { grid-column: 1 / -1; }
 .about-lead > div > h2 { margin: 0; font-size: 1rem; line-height: 1.55; }
 .about-lead > div > h2 span { color: var(--muted); font: .73rem/1.5 Georgia, serif; font-weight: 400; }
 .role-tagline { margin: 10px 0 0; color: var(--accent); font-size: .74rem; font-weight: 620; letter-spacing: -.01em; }
