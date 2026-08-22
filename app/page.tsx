@@ -12,11 +12,11 @@ type RecentItem = {
   href: string;
 };
 
-function dateKey(year: string, month: number | null, day: number | null) {
-  return Number(year) * 372 + (month ?? 0) * 31 + (day ?? 0);
+function dateKey(year: string, month: number | string | null, day: number | string | null) {
+  return Number(year) * 372 + Number(month ?? 0) * 31 + Number(day ?? 0);
 }
 
-function formatDate(year: string, month: number | null, day: number | null) {
+function formatDate(year: string, month: number | string | null, day: number | string | null) {
   if (month && day) return `${year}.${String(month).padStart(2, "0")}.${String(day).padStart(2, "0")}`;
   if (month) return `${year}.${String(month).padStart(2, "0")}`;
   return year;
@@ -81,10 +81,6 @@ export default function Home() {
         <header className="index-heading">
           <div><p className="eyebrow">RESEARCH NOTES &amp; ARCHIVE</p><h1>최근 기록</h1></div>
         </header>
-        <p data-debug="counts">{`r=${researchItems.length} t=${talksItems.length} w=${writingItems.length} m=${mediaItems.length}`}</p>
-        <p data-debug="top-research">{JSON.stringify(researchItems.slice(0, 2).map((i) => [i.dateKey, i.title]))}</p>
-        <p data-debug="top-talks">{JSON.stringify(talksItems.slice(0, 2).map((i) => [i.dateKey, i.title]))}</p>
-        <p data-debug="recent-keys">{JSON.stringify(recent.map((i) => i.dateKey))}</p>
         <div className="index-list">
           {recent.map((item) => (
             <a
