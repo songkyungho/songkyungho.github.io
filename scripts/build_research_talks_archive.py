@@ -27,10 +27,28 @@ PUBLICATION_MARKERS = [
 # just a discussant) - keyed by a distinctive substring of the entry
 KIND_OVERRIDES = {
     "나는 내가 믿고 싶은 것을 믿는다": "발표",
-    "내란과 극우 앞에선 사회운동의 고민들": "발표",
     # Keio COE-CCC x Yonsei BK21 joint symposium - academic, but named
     # in Japanese so it doesn't hit any of the Korean/English markers
     "慶應義塾大學": "학술발표",
+    # genuinely academic presentations whose venue text doesn't contain
+    # any of ACADEMIC_MARKERS (심포지움/세미나/워크숍/포럼 아니라 학회 등),
+    # so is_academic_talk() would otherwise leave them as plain 발표
+    "AI 연구기관 성과공유 심포지움": "학술발표",
+    "Integrating Citizen and Stakeholder": "학술발표",
+    "데이터로 본 한국 정치 문화의 적대성": "학술발표",
+    "미중기술경쟁": "학술발표",
+    "세계인문학포럼": "학술발표",
+    "UNIST 인문학부 창의인문": "학술발표",
+    "역사화해 사례연구 워크숍": "학술발표",
+    "트랜스-로컬 공동체와 ‘이후’의 상상력": "학술발표",
+    "한국학 연구 클러스터 구출을 위한 워크샵": "학술발표",
+    "서강대 글로컬사회문화연구소 발표회": "학술발표",
+    "제1차 2020년 연세대학교 통일연구원 워크샵": "학술발표",
+    "19세기 동아시아의 인권 수용": "학술발표",
+    "신민의 권리 보장과 군주전치의 모순": "학술발표",
+    "연세대학교 일반대학원 정치학과 박사과정 논문연구 워크숍": "학술발표",
+    "Keio-Yonsei Joint Workshop on Peace and Democracy in East Asia": "학술발표",
+    "Nationalism and Peace in East Asia": "학술발표",
 }
 
 # this entry has no single talk title of its own - the only quoted
@@ -62,14 +80,6 @@ RAW_TITLE_OVERRIDES = {
         "“무기추천,” “부수적 피해,” “표적정보전문화과정” 등",
         "대한민국 공군",
     ),
-}
-
-# 돌깨TV filmed this talk (the Jesuit center colloquium) - link the
-# recording on the talk entry itself rather than filing it as a
-# standalone media interview, since that's what it actually is
-VIDEO_OVERRIDES = {
-    "나는 내가 믿고 싶은 것을 믿는다": "https://youtu.be/_oPWn3JEm9U",
-    "EU AI Act GPAI 실천강령의 주요 내용과 과제": "https://youtu.be/c10Up9BsVUQ",
 }
 
 # every 특강/토론/사회 entry is his own (unlike 발표, which lists whichever
@@ -278,11 +288,6 @@ def main():
                         entry["day2"] = day2
                         entry["detail"] = DOUBLE_DATE_LEFTOVER_RE.sub("", entry["detail"])
                         break
-            for needle, video_url in VIDEO_OVERRIDES.items():
-                if needle in rest:
-                    entry["videoUrl"] = video_url
-                    break
-
             entry["region"] = prefix if kind in ("학술발표", "발표") else None
             venue = entry["detail"]
             if prefix and venue.startswith(f"[{prefix}] "):

@@ -528,8 +528,7 @@
     "title": "EU AI Act GPAI 실천강령의 주요 내용과 과제",
     "authors": "송경호",
     "text": "송경호. 2025. 9. 24. “EU AI Act GPAI 실천강령의 주요 내용과 과제,” <2025 AI 연구기관 성과공유 심포지움>",
-    "kind": "발표",
-    "videoUrl": "https://youtu.be/c10Up9BsVUQ",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<2025 AI 연구기관 성과공유 심포지움>",
     "slug": "2025-014"
@@ -726,7 +725,6 @@
     "authors": "송경호",
     "text": "송경호. 2025. 5. 17. “나는 내가 믿고 싶은 것을 믿는다: 대화 불가능 시대의 청년 남성,” <예수회 인권연대연구센터 콜로키움> (예수회센터)",
     "kind": "발표",
-    "videoUrl": "https://youtu.be/_oPWn3JEm9U",
     "region": null,
     "venue": "<예수회 인권연대연구센터 콜로키움> (예수회센터)",
     "slug": "2025-028"
@@ -740,7 +738,7 @@
     "title": "Integrating Citizen and Stakeholder: Mapping Platforms and Decision Support Systems for Climate Adaptation",
     "authors": "Kyungho Song & Seong-Bhin Yang",
     "text": "Kyungho Song & Seong-Bhin Yang. 2025. 4. 30. “Integrating Citizen and Stakeholder: Mapping Platforms and Decision Support Systems for Climate Adaptation,” <EGU 25> (오스트리아 빈)",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국제",
     "venue": "<EGU 25> (오스트리아 빈)",
     "slug": "2025-029"
@@ -762,15 +760,15 @@
   {
     "tag": "좌담",
     "year": "2025",
-    "detail": "송경호. “내란과 극우 앞에선 사회운동의 고민들,” <참여사회연구소>",
+    "detail": "김주호(진행), 권김현영, 송경호, 한상원. “내란과 극우 앞에 선 사회운동의 고민들,” 참여사회연구소 (참여연대 아름드리홀)",
     "month": 3,
     "day": 21,
-    "title": "내란과 극우 앞에선 사회운동의 고민들",
-    "authors": "송경호",
-    "text": "송경호. 2025. 03. 21. “내란과 극우 앞에선 사회운동의 고민들,” <참여사회연구소>",
-    "kind": "발표",
+    "title": "내란과 극우 앞에 선 사회운동의 고민들",
+    "authors": "김주호(진행), 권김현영, 송경호, 한상원",
+    "text": "김주호(진행), 권김현영, 송경호, 한상원. 2025. 3. 21. “내란과 극우 앞에 선 사회운동의 고민들,” 참여사회연구소 (참여연대 아름드리홀)",
+    "kind": "좌담",
     "region": null,
-    "venue": "<참여사회연구소>",
+    "venue": "참여사회연구소 (참여연대 아름드리홀)",
     "slug": "2025-031"
   },
   {
@@ -922,7 +920,7 @@
     "title": "데이터로 본 한국 정치 문화의 적대성과 정치양극화: 미디어와 SNS의 혐오표현을 중심으로",
     "authors": "송경호",
     "text": "송경호. 2024. 9. 5. “데이터로 본 한국 정치 문화의 적대성과 정치양극화: 미디어와 SNS의 혐오표현을 중심으로,” <정치의 개인화와 정치양극화> 고려대 정치연구소, SSK 양극화연구센터",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<정치의 개인화와 정치양극화> 고려대 정치연구소, SSK 양극화연구센터",
     "slug": "2024-010"
@@ -1236,7 +1234,7 @@
     "title": "인공지능과 정치: 철인왕, 공리주의 머신, 그리고 샤머니즘",
     "authors": "송경호",
     "text": "송경호. 2023. 12. 06. “인공지능과 정치: 철인왕, 공리주의 머신, 그리고 샤머니즘,” <“AI 시대의 미중기술경쟁” 한국조지메이슨 안보정책연구소 - 연세대학교 통일연구원 공동 세미나> (한국조지메이슨대학교) [토론] 장휘",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<“AI 시대의 미중기술경쟁” 한국조지메이슨 안보정책연구소 - 연세대학교 통일연구원 공동 세미나> (한국조지메이슨대학교) [토론] 장휘",
     "slug": "2023-003"
@@ -1264,7 +1262,7 @@
     "title": "인공지능과 정치: 철인왕, 공리주의 머신, 그리고 샤머니즘",
     "authors": "송경호",
     "text": "송경호. 2023. 11. 08. “인공지능과 정치: 철인왕, 공리주의 머신, 그리고 샤머니즘,” <세계인문학포럼> (부산 벡스코) [토론] 송성수(부산대), 정원석(경남대)",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국제",
     "venue": "<세계인문학포럼> (부산 벡스코) [토론] 송성수(부산대), 정원석(경남대)",
     "slug": "2023-004"
@@ -1732,16 +1730,16 @@
     "slug": "2022-016"
   },
   {
-    "tag": "국내/발표",
+    "tag": "좌담",
     "year": "2022",
-    "detail": "[국내] 송경호. “2022 신정부 출범과 남북관계 전망,” <2022년 제2차 연세대학교 통일연구원 라운드테이블>",
+    "detail": "“2022 신정부 출범과 남북관계 전망,” <2022년 제2차 연세대학교 통일연구원 라운드테이블>",
     "month": 1,
     "day": 19,
     "title": "2022 신정부 출범과 남북관계 전망",
-    "authors": "송경호",
-    "text": "송경호. 2022. 1. 19. “2022 신정부 출범과 남북관계 전망,” <2022년 제2차 연세대학교 통일연구원 라운드테이블>",
-    "kind": "발표",
-    "region": "국내",
+    "authors": null,
+    "text": "2022. 1. 19. “2022 신정부 출범과 남북관계 전망,” <2022년 제2차 연세대학교 통일연구원 라운드테이블>",
+    "kind": "좌담",
+    "region": null,
     "venue": "<2022년 제2차 연세대학교 통일연구원 라운드테이블>",
     "slug": "2022-019"
   },
@@ -1760,16 +1758,16 @@
     "slug": "2022-022"
   },
   {
-    "tag": "국내/발표",
+    "tag": "좌담",
     "year": "2022",
-    "detail": "[국내] 송경호. “열린 세계에서 시민으로 살기: 세계시민성과 국가의 역할,” <2022년 제1차 연세대학교 통일연구원 라운드테이블>",
+    "detail": "“열린 세계에서 시민으로 살기: 세계시민성과 국가의 역할,” <2022년 제1차 연세대학교 통일연구원 라운드테이블>",
     "month": 1,
     "day": 6,
     "title": "열린 세계에서 시민으로 살기: 세계시민성과 국가의 역할",
-    "authors": "송경호",
-    "text": "송경호. 2022. 1. 6. “열린 세계에서 시민으로 살기: 세계시민성과 국가의 역할,” <2022년 제1차 연세대학교 통일연구원 라운드테이블>",
-    "kind": "발표",
-    "region": "국내",
+    "authors": null,
+    "text": "2022. 1. 6. “열린 세계에서 시민으로 살기: 세계시민성과 국가의 역할,” <2022년 제1차 연세대학교 통일연구원 라운드테이블>",
+    "kind": "좌담",
+    "region": null,
     "venue": "<2022년 제1차 연세대학교 통일연구원 라운드테이블>",
     "slug": "2022-020"
   },
@@ -1846,13 +1844,13 @@
   {
     "tag": "국내/발표",
     "year": "2021",
-    "detail": "[국내] 장휘ㆍ송경호. <포스트 팬데믹: 국가와 시민사회> UNIST 인문학부 창의인문 교육 및 연구센터 세미나 (UNIST 경영관 106호 + 온라인 동시진행) [토론] 장하원",
+    "detail": "[국내] 장휘ㆍ송경호. “코로나19와 한국 민족주의의 분화,” <포스트 팬데믹: 국가와 시민사회> UNIST 인문학부 창의인문 교육 및 연구센터 세미나 (UNIST 경영관 106호 + 온라인 동시진행) [토론] 장하원",
     "month": 12,
     "day": 16,
-    "title": null,
+    "title": "코로나19와 한국 민족주의의 분화",
     "authors": "장휘, 송경호",
-    "text": "장휘ㆍ송경호. 2021. 12. 16. <포스트 팬데믹: 국가와 시민사회> UNIST 인문학부 창의인문 교육 및 연구센터 세미나 (UNIST 경영관 106호 + 온라인 동시진행) [토론] 장하원",
-    "kind": "발표",
+    "text": "장휘ㆍ송경호. 2021. 12. 16. “코로나19와 한국 민족주의의 분화,” <포스트 팬데믹: 국가와 시민사회> UNIST 인문학부 창의인문 교육 및 연구센터 세미나 (UNIST 경영관 106호 + 온라인 동시진행) [토론] 장하원",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<포스트 팬데믹: 국가와 시민사회> UNIST 인문학부 창의인문 교육 및 연구센터 세미나 (UNIST 경영관 106호 + 온라인 동시진행) [토론] 장하원",
     "slug": "2021-001"
@@ -1866,7 +1864,7 @@
     "title": "마리아 루스호 사건을 통해 본 메이지 일본에서의 인권 개념 수용",
     "authors": "송경호",
     "text": "송경호. 2021. 12. 8. “마리아 루스호 사건을 통해 본 메이지 일본에서의 인권 개념 수용,” <역사화해 사례연구 워크숍> 동북아역사재단 (온라인) [토론] 엄혜원",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<역사화해 사례연구 워크숍> 동북아역사재단 (온라인) [토론] 엄혜원",
     "slug": "2021-002"
@@ -1992,7 +1990,7 @@
     "title": "기억투쟁의 매커니즘과 화해의 역설: 제주 4·3의 사례를 중심으로",
     "authors": "송경호",
     "text": "송경호. 2021. 6. 21. “기억투쟁의 매커니즘과 화해의 역설: 제주 4·3의 사례를 중심으로,” <경희대학교 비교문화연구소 “트랜스-로컬 공동체와 ‘이후’의 상상력”> (온라인) [토론] 장휘",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<경희대학교 비교문화연구소 “트랜스-로컬 공동체와 ‘이후’의 상상력”> (온라인) [토론] 장휘",
     "slug": "2021-012"
@@ -2006,7 +2004,7 @@
     "title": "후쿠자와 유키치의 『서양사정』: 19세기 일본에서의 서구 개념 수용과 번역",
     "authors": "김현, 송경호",
     "text": "김현ㆍ송경호. 2021. 6. 18. “후쿠자와 유키치의 『서양사정』: 19세기 일본에서의 서구 개념 수용과 번역,” <2021 - 제 4차 한국학 연구 클러스터 구출을 위한 워크샵> (연세대학교 통일연구원, 국학연구원 공동개최, 서울, 김대중도서관) (온라인 동시진행) [토론] 김태진, 이새봄",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<2021 - 제 4차 한국학 연구 클러스터 구출을 위한 워크샵> (연세대학교 통일연구원, 국학연구원 공동개최, 서울, 김대중도서관) (온라인 동시진행) [토론] 김태진, 이새봄",
     "slug": "2021-013"
@@ -2020,7 +2018,7 @@
     "title": "후쿠자와 유키치의 『서양사정』: 19세기 일본에서의 서구 개념 수용과 번역",
     "authors": "김현, 송경호",
     "text": "김현ㆍ송경호. 2021. 5. 28. “후쿠자와 유키치의 『서양사정』: 19세기 일본에서의 서구 개념 수용과 번역,” <서강대 글로컬사회문화연구소 발표회> (서울, 서강대 떼이야르관)",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<서강대 글로컬사회문화연구소 발표회> (서울, 서강대 떼이야르관)",
     "slug": "2021-014"
@@ -2244,7 +2242,7 @@
     "title": "‘안보(安保)’는 어떻게 생겨났을까?: 시큐리티 개념의 수용과 ‘安保’의 성립",
     "authors": "김현, 송경호",
     "text": "김현ㆍ송경호. 2020. 8. 26. “‘안보(安保)’는 어떻게 생겨났을까?: 시큐리티 개념의 수용과 ‘安保’의 성립,” <제1차 2020년 연세대학교 통일연구원 워크샵> (서울, 김대중도서관 3층)",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<제1차 2020년 연세대학교 통일연구원 워크샵> (서울, 김대중도서관 3층)",
     "slug": "2020-011"
@@ -2300,7 +2298,7 @@
     "title": "19세기 동아시아의 인권 수용",
     "authors": "송경호",
     "text": "송경호. 2020. 5. 21. “19세기 동아시아의 인권 수용,” 참여사회연구소",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "참여사회연구소",
     "slug": "2020-015"
@@ -2314,7 +2312,7 @@
     "title": "신민의 권리 보장과 군주전치의 모순: 입헌정체략(1868)을 중심으로",
     "authors": "송경호",
     "text": "송경호. 2020. 5. 15. “신민의 권리 보장과 군주전치의 모순: 입헌정체략(1868)을 중심으로,” <정치사상모임> (세종대)",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<정치사상모임> (세종대)",
     "slug": "2020-016"
@@ -2612,7 +2610,7 @@
     "title": "The Idea of Human Rights in East Asia: Early Encounters with the Western Idea in Japan and Korea",
     "authors": "송경호",
     "text": "송경호. 2014. 12. 3. “The Idea of Human Rights in East Asia: Early Encounters with the Western Idea in Japan and Korea,” <연세대학교 일반대학원 정치학과 박사과정 논문연구 워크숍> 연세대학교 (서울)",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<연세대학교 일반대학원 정치학과 박사과정 논문연구 워크숍> 연세대학교 (서울)",
     "slug": "2014-001"
@@ -2626,7 +2624,7 @@
     "title": "The Idea of Human Rights in East Asia: Early Encounters with the Western Idea in Japan and Korea",
     "authors": "Kyungho Song",
     "text": "Kyungho Song. 2014. 11. 28. “The Idea of Human Rights in East Asia: Early Encounters with the Western Idea in Japan and Korea,” <Keio-Yonsei Joint Workshop on Peace and Democracy in East Asia> Keio University (Tokyo)",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국제",
     "venue": "<Keio-Yonsei Joint Workshop on Peace and Democracy in East Asia> Keio University (Tokyo)",
     "slug": "2014-002"
@@ -2654,7 +2652,7 @@
     "title": "동아시아 인권사상: 일본과 한국의 초기수용양태 비교",
     "authors": "송경호",
     "text": "송경호. 2014. 8. 22. “동아시아 인권사상: 일본과 한국의 초기수용양태 비교,” <연세대학교 일반대학원 정치학과 박사과정 논문연구 워크숍> 연세대학교 (서울)",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국내",
     "venue": "<연세대학교 일반대학원 정치학과 박사과정 논문연구 워크숍> 연세대학교 (서울)",
     "slug": "2014-003"
@@ -2696,7 +2694,7 @@
     "title": "Coercing Human Rights Norms?: Considerable Options After the COI Report on Human Rights in the DPRK",
     "authors": "Kyungho Song",
     "text": "Kyungho Song. 2014. 6. 23. “Coercing Human Rights Norms?: Considerable Options After the COI Report on Human Rights in the DPRK,” <Keio-Yonsei Joint Workshop on Peace and Democracy in East Asia> Yonsei University (Seoul)",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국제",
     "venue": "<Keio-Yonsei Joint Workshop on Peace and Democracy in East Asia> Yonsei University (Seoul)",
     "slug": "2014-011"
@@ -2766,7 +2764,7 @@
     "title": "Making North Korea Decent: Implication and limitation of Rawls’s The Law of Peoples",
     "authors": "Kyungho Song",
     "text": "Kyungho Song. 2012. 11. 23. “Making North Korea Decent: Implication and limitation of Rawls’s The Law of Peoples,” <International Seminar “Nationalism and Peace in East Asia”> Tohoku University (Sendai)",
-    "kind": "발표",
+    "kind": "학술발표",
     "region": "국제",
     "venue": "<International Seminar “Nationalism and Peace in East Asia”> Tohoku University (Sendai)",
     "slug": "2012-002"
