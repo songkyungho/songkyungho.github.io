@@ -81,6 +81,7 @@ export default function Home() {
         <header className="index-heading">
           <div><p className="eyebrow">RESEARCH NOTES &amp; ARCHIVE</p><h1>최근 기록</h1></div>
         </header>
+        <p data-debug="counts">{`r=${researchItems.length} t=${talksItems.length} w=${writingItems.length} m=${mediaItems.length}`}</p>
         <div className="index-list">
           {recent.map((item) => (
             <a
