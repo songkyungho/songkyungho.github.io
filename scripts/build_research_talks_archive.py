@@ -270,6 +270,15 @@ def main():
                 venue = venue[len(f"[{prefix}] "):]
             title_in_venue = None if any(n in rest for n in NO_TITLE_OVERRIDES) else TITLE_RE.search(venue)
             if title_in_venue:
+                # 토론 entries are dated "YYYY. M. D. Presenter, "Title," <Venue>" -
+                # the presenter's name sits between the date and the title rather
+                # than before the date, so authors_raw (computed pre-date) misses
+                # it entirely. Recover it from the venue text instead: it's whatever
+                # sits before the quoted title once the date has been stripped out.
+                if kind == "토론" and not entry["authors"]:
+                    presenter_raw = venue[: title_in_venue.start()].strip(" ,.")
+                    if presenter_raw:
+                        entry["authors"] = re.sub(r"\s*[ㆍ;]\s*", ", ", presenter_raw).strip(", ")
                 venue = venue[title_in_venue.end():]
             elif placeholder_match:
                 venue = re.sub(r"\(제목\)", "", venue, count=1)
