@@ -1,5 +1,12 @@
 [
   {
+    "title": "AI Safety Daily Digest",
+    "outlet": "인공지능안전연구소",
+    "description": "AI 안전·거버넌스·정책 관련 소식을 매일 수집해 정리하는 아카이브 사이트입니다.",
+    "image": "/images/projects/ai-safety-daily-digest.png",
+    "url": "https://ecopower82.github.io/ai-safety-digest/index.html"
+  },
+  {
     "title": "Korea AI Basic Act Explorer",
     "outlet": "K-AISI x Future of Life Institute",
     "description": "기본법과 EU AI법의 연결 관계를 조문 단위로 탐색할 수 있도록 한 프로젝트입니다.",
