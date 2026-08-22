@@ -32,20 +32,35 @@ NAVER_DEFAULT_OG_IMAGE = "https://ssl.pstatic.net/static/blog/icon/og_270x270.pn
 # addDate is when the post was added to the Naver blog, not necessarily
 # when the piece was originally published (many older/reposted pieces were
 # bulk-imported on the same day) - so it isn't trustworthy for day-level
-# precision by default. These four are cross-posts of 프레시안 시민정치시평
-# columns whose real publish date is recoverable from the original
-# pressian.com URL (see notion-raw/column-essay.txt) - keyed by logNo.
+# precision by default. These are cross-posts of columns run elsewhere
+# (4x 프레시안 시민정치시평, 1x 경향신문) whose real publish date is
+# recoverable from the original article - keyed by logNo.
 DATE_OVERRIDES = {
     "222108390052": ("2020", "7", "16"),
     "222164090739": ("2020", "12", "2"),
     "222317884312": ("2021", "3", "26"),
     "222462598364": ("2021", "7", "30"),
+    "222108376126": ("2013", "12", "22"),
 }
 
 # one-off correction: this Naver post is an interview with him, not a
 # column he wrote - see conversation
 SECTION_OVERRIDES = {
     "222108370483": ("보도", "press"),
+}
+
+# these are cross-posts of 연세대 통일연구원(YINKS) issue briefs - point
+# straight at the original YINKS post instead of serving our own copy
+OUTLINK_OVERRIDES = {
+    "222124292658": "https://www.yinks.or.kr/post/제142호-송경호-전문연구원-2000년대-이후-한국의-북한-인권-연구-동향",
+    "222462606782": "https://www.yinks.or.kr/post/제149호-송경호-전문연구원-북한연속간행물-획득-현황과-활용-과제",
+    # 프레시안 [시민정치시평] cross-posts - point at the original pressian.com
+    # article instead of serving our own copy (see notion-raw/column-essay.txt)
+    "222108390052": "https://www.pressian.com/pages/articles/2020071611204102564",
+    "222164090739": "https://www.pressian.com/pages/articles/2020120217341532115",
+    "222317884312": "https://www.pressian.com/pages/articles/2021032611152727989",
+    "222462598364": "https://www.pressian.com/pages/articles/2021073016225795192",
+    "222108376126": "https://www.khan.co.kr/article/201312222036445/?s_code=ao018",
 }
 
 IMAGE_MAP_PATH = WORK / "naver-image-map.json"
@@ -134,7 +149,10 @@ def main() -> None:
         if log_no in SECTION_OVERRIDES:
             section, kind = SECTION_OVERRIDES[log_no]
         override = DATE_OVERRIDES.get(log_no)
-        month, day = (override[1], override[2]) if override else (None, None)
+        if override:
+            year, month, day = override
+        else:
+            month, day = None, None
         archive.append({
             "logNo": log_no,
             "slug": featured[0] if featured else f"writing-{log_no}",
@@ -147,13 +165,14 @@ def main() -> None:
             "day": day,
             "naverCategory": "칼럼" if item["categoryNo"] == "93" else "에세이",
             "section": section,
-            "sourceUrl": f"https://blog.naver.com/ecopower/{log_no}",
+            "sourceUrl": OUTLINK_OVERRIDES.get(log_no, f"https://blog.naver.com/ecopower/{log_no}"),
             "naverImportedAt": item["addDate"],
             "image": featured[1] if featured else (saved_image or {}).get("local"),
             "imageSource": (saved_image or {}).get("source", remote_image),
-            "body": paragraphs,
+            "body": [] if log_no in OUTLINK_OVERRIDES else paragraphs,
             "kind": kind,
-            "migrationStatus": "상세 페이지 완료" if paragraphs else "본문 확인 필요",
+            "migrationStatus": "외부 링크만 (전문 미이전)" if log_no in OUTLINK_OVERRIDES
+                else ("상세 페이지 완료" if paragraphs else "본문 확인 필요"),
         })
 
     if len(archive) != 90 or len({item["logNo"] for item in archive}) != 90:
