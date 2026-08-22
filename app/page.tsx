@@ -79,8 +79,7 @@ export default function Home() {
       </aside>
 
       <section className="recent-index">
-        <div className="section-line"><h2>만든 것들</h2><span>{projects.length}</span></div>
-        <div className="video-grid">
+        <div className="video-grid projects-grid">
           {projects.map((item) => (
             <a className="video-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
               <img src={item.image} alt="" />
@@ -109,12 +108,6 @@ export default function Home() {
             </a>
           ))}
         </div>
-        <nav className="archive-shortcuts" aria-label="전체 자료 바로가기">
-          <a href="/research">연구 전체 보기</a>
-          <a href="/talks">발표 전체 보기</a>
-          <a href="/writing">글 전체 보기</a>
-          <a href="/media">미디어 전체 보기</a>
-        </nav>
       </section>
     </main>
   );

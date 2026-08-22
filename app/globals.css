@@ -148,6 +148,7 @@ main { min-height: calc(100vh - 68px); }
 .section-line h2 { margin: 0; font-size: 1rem; }
 .section-line span { color: var(--accent); font-size: .68rem; }
 .video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; padding-top: 16px; }
+.projects-grid { margin-bottom: 40px; }
 .video-card { padding-bottom: 16px; border-bottom: 1px solid var(--line); }
 .video-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; filter: saturate(.78); }
 .video-card > span { display: block; margin-top: 12px; color: var(--accent); font-size: .66rem; }
