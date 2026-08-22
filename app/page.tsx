@@ -98,8 +98,11 @@ export default function Home() {
               {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
             >
               <time>{item.date}</time>
-              <span className="index-type">{item.type}</span>
-              <div><h2>{item.title}</h2><p>{item.detail}</p></div>
+              <div>
+                <span className="type-chip">{item.type}</span>
+                <h2>{item.title}</h2>
+                {item.detail && <p>{item.detail}</p>}
+              </div>
               <span aria-hidden="true">↗</span>
             </a>
           ))}
