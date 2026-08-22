@@ -5,10 +5,14 @@ import talks from "../data/talks-archive.json";
 
 const filters = ["전체", "학술발표", "발표", "특강", "토론", "사회", "좌담", "포스터"];
 
-function formatDate(item: { year: string; month: number | null; day: number | null }) {
-  if (item.month && item.day) return `${item.year}.${String(item.month).padStart(2, "0")}.${String(item.day).padStart(2, "0")}`;
-  if (item.month) return `${item.year}.${String(item.month).padStart(2, "0")}`;
-  return item.year;
+function formatDate(item: { year: string; month: number | null; day: number | null; month2?: number; day2?: number }) {
+  if (!item.month || !item.day) return item.month ? `${item.year}.${String(item.month).padStart(2, "0")}` : item.year;
+  const primary = `${item.year}.${String(item.month).padStart(2, "0")}.${String(item.day).padStart(2, "0")}`;
+  if (!item.month2 || !item.day2) return primary;
+  const second = item.month2 === item.month
+    ? String(item.day2).padStart(2, "0")
+    : `${String(item.month2).padStart(2, "0")}.${String(item.day2).padStart(2, "0")}`;
+  return `${primary}, ${second}`;
 }
 
 export default function TalksArchive() {
@@ -16,7 +20,8 @@ export default function TalksArchive() {
   const [query, setQuery] = useState("");
   const shown = useMemo(() => talks.filter((item) => {
     const typeMatch = filter === "전체" || item.kind === filter;
-    const queryMatch = item.text.toLowerCase().includes(query.trim().toLowerCase());
+    const haystack = [item.text, item.title, item.venue, item.authors].filter(Boolean).join(" ").toLowerCase();
+    const queryMatch = haystack.includes(query.trim().toLowerCase());
     return typeMatch && queryMatch;
   }), [filter, query]);
 
@@ -31,9 +36,10 @@ export default function TalksArchive() {
         {shown.map((item) => (
           <article className="talk-row" key={item.slug}>
             <time>{formatDate(item)}</time>
-            <span className="type-chip">{item.kind}</span>
             <div>
-              <h2>{item.detail}</h2>
+              <span className="type-chip">{item.kind}{item.region ? ` · ${item.region}` : ""}</span>
+              <h2>{item.authors ? `${item.authors}, ` : ""}{item.title ? `“${item.title}”` : item.venue}</h2>
+              {item.title && item.venue && <p className="venue">{item.venue}</p>}
               {item.videoUrl && <a className="venue" href={item.videoUrl} target="_blank" rel="noopener noreferrer">영상 보기 ↗</a>}
             </div>
           </article>

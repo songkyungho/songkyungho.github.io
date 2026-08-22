@@ -8,11 +8,11 @@ export default function BookShelf() {
     <section className="book-shelf" aria-label="저서와 역서">
       {books.map((book) =>
         book.url ? (
-          <a href={book.url} key={book.slug} title={book.text} target="_blank" rel="noopener noreferrer">
-            <img alt={book.text} src={book.image!} />
+          <a href={book.url} key={book.slug} title={book.title} target="_blank" rel="noopener noreferrer">
+            <img alt={book.title} src={book.image!} />
           </a>
         ) : (
-          <img alt={book.text} key={book.slug} src={book.image!} title={book.text} />
+          <img alt={book.title} key={book.slug} src={book.image!} title={book.title} />
         )
       )}
     </section>

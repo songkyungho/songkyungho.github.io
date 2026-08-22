@@ -13,20 +13,26 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 RESEARCH = ROOT / "app" / "data" / "research-archive.json"
 
-AISI = "한국전자통신연구원 인공지능안전연구소"
+AISI = "인공지능안전연구소"
 
 REPORT_DETAILS = {
     "2026-001": {
         "series": None,
         "title": "EU 인공지능법 범용인공지능(GPAI) 실천강령(CoP) 한글 안내서",
-        "authors": ["최민석 실장", "송경호 선임연구원", "주지연 석사후연수연구원", "신민규 석사후연수연구원"],
+        "authors": ["최민석", "송경호", "주지연", "신민규"],
         "org": AISI,
     },
     "2026-002": {
         "series": "AI 안전 동향 분석 시리즈 26-01",
         "title": "AI사고 정의 및 보고체계 국제동향",
-        "authors": ["송경호 선임연구원", "주지연 석사후연수연구원"],
-        "org": f"{AISI} AI안전정책및대외협력실",
+        "authors": ["송경호", "주지연"],
+        "org": AISI,
+    },
+    "2025-005": {
+        "series": "공론화 기반 AI 정책 보고서: AI와 환각",
+        "title": "AI 환각의 기술-사회적 구조와 대응방안",
+        "authors": ["송경호"],
+        "org": None,
     },
 }
 
@@ -43,7 +49,7 @@ NEW_REPORT = {
     "image": None,
     "note": None,
     "series": None,
-    "authors": ["최민석 실장", "신민규 석사후연수연구원", "조지연 선임연구원", "송경호 선임연구원"],
+    "authors": ["최민석", "신민규", "조지연", "송경호"],
     "org": AISI,
 }
 

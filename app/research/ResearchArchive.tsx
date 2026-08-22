@@ -10,7 +10,7 @@ export default function ResearchArchive() {
   const [query, setQuery] = useState("");
   const shown = useMemo(() => research.filter((item) => {
     const typeMatch = filter === "전체" || item.kind === filter;
-    const haystack = [item.text, item.series, item.org, ...(item.authors ?? [])].filter(Boolean).join(" ").toLowerCase();
+    const haystack = [item.text, item.title, item.venue, item.series, item.org, ...(item.authors ?? [])].filter(Boolean).join(" ").toLowerCase();
     const queryMatch = haystack.includes(query.trim().toLowerCase());
     return typeMatch && queryMatch;
   }), [filter, query]);
@@ -24,19 +24,23 @@ export default function ResearchArchive() {
       <p className="result-count">{shown.length}개의 연구성과</p>
       <div className="archive-list">
         {shown.map((item) => {
+          const isReport = item.kind === "보고서";
           const content = (
             <>
               <div className="archive-year">{item.year}</div>
               <div>
                 <span className="type-chip">{item.kind}</span>
-                {item.authors ? (
+                {item.series && <p className="venue">{item.series}</p>}
+                {isReport ? (
                   <>
-                    {item.series && <p className="venue">{item.series}</p>}
                     <h2>{item.title}</h2>
-                    <p className="venue">{item.authors.join(", ")}{item.org && ` · ${item.org}`}</p>
+                    <p className="venue">{item.authors?.join(", ")}{item.org && ` · ${item.org}`}</p>
                   </>
                 ) : (
-                  <h2>{item.detail}</h2>
+                  <>
+                    <h2>{item.authors ? `${item.authors.join(", ")}, ` : ""}“{item.title}”</h2>
+                    {item.venue && <p className="venue">{item.venue}</p>}
+                  </>
                 )}
                 {item.note && (
                   <p className="venue note-with-badge">
