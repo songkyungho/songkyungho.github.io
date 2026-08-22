@@ -40,13 +40,24 @@ NO_TITLE_OVERRIDES = {
     "IT정치연구회 기획 패널",
 }
 
+# same entry as NO_TITLE_OVERRIDES above: it has two separate discussants,
+# each with their own quoted title, rather than one title of his own -
+# spliced back in verbatim as a pre-quoted "title" (entry["rawTitle"] tells
+# the page not to wrap it in its own quote marks) with the panel name and
+# organizer kept as the venue line
+RAW_TITLE_OVERRIDES = {
+    "IT정치연구회 기획 패널": (
+        "박성진 “인공지능시대의 민주주의, 자유와 인권 그리고 데이터와 포스트데모스,” 김태선 “AI 시대의 정치, 그 가능성과 한계”",
+        "<IT정치연구회 기획 패널 - “AI와 정치, 그리고 민주주의”>, 한국정치학회 하계학술대회",
+    ),
+}
+
 # 돌깨TV filmed this talk (the Jesuit center colloquium) - link the
 # recording on the talk entry itself rather than filing it as a
 # standalone media interview, since that's what it actually is
 VIDEO_OVERRIDES = {
     "나는 내가 믿고 싶은 것을 믿는다": "https://youtu.be/_oPWn3JEm9U",
     "EU AI Act GPAI 실천강령의 주요 내용과 과제": "https://youtu.be/c10Up9BsVUQ",
-    "AI의 사상가들: 알고리즘 뒤에 숨은 신념들": "https://youtu.be/TdMasD9qZqA",
 }
 
 # every 특강/토론/사회 entry is his own (unlike 발표, which lists whichever
@@ -243,6 +254,10 @@ def main():
                 for name_prefix in NAME_PREFIXES:
                     if entry["detail"].startswith(name_prefix):
                         entry["detail"] = entry["detail"][len(name_prefix):]
+                        # the byline itself is redundant for these kinds
+                        # (always him), but authors_raw/authors were
+                        # already captured before this strip ran
+                        entry["authors"] = None
                         break
             if kind == "특강":
                 for needle, label in SEMESTER_LABELS.items():
@@ -290,6 +305,13 @@ def main():
                 entry["titleSuffix"] = session_match.group(1)
                 venue = venue[session_match.end():].strip()
             entry["venue"] = venue or None
+
+            for needle, (raw_title, raw_venue) in RAW_TITLE_OVERRIDES.items():
+                if needle in rest:
+                    entry["title"] = raw_title
+                    entry["rawTitle"] = True
+                    entry["venue"] = raw_venue
+                    break
 
             counter = talk_counter
             bucket = talks

@@ -41,7 +41,7 @@ export default function TalksArchive() {
             <time>{formatDate(item)}</time>
             <div>
               <span className="type-chip">{item.kind}{item.region ? ` · ${item.region}` : ""}</span>
-              <h2>{item.authors ? `${item.authors}, ` : ""}{item.title ? (item.title === "(제목)" ? item.title : `“${item.title}”`) : item.venue}{item.titleSuffix ? ` (${item.titleSuffix})` : ""}</h2>
+              <h2>{item.authors ? `${item.authors}, ` : ""}{item.title ? (item.title === "(제목)" || item.rawTitle ? item.title : `“${item.title}”`) : item.venue}{item.titleSuffix ? ` (${item.titleSuffix})` : ""}</h2>
               {item.title && item.venue && <p className="venue">{item.venue}</p>}
               {item.videoUrl && <a className="venue" href={item.videoUrl} target="_blank" rel="noopener noreferrer">영상 보기 ↗</a>}
             </div>
