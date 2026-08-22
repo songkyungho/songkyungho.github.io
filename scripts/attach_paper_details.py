@@ -3,12 +3,11 @@ entries in app/data/research-archive.json, so the site can render them the
 same way as 보고서 entries (kind chip, then authors + quoted title, then a
 muted venue line) instead of the raw citation string - see conversation.
 
-The 편저 (edited-volume chapter) title for slug 2023-004 was corrected from
-the book's own title to the actual chapter title, confirmed against the
-publisher's table of contents (press.skku.edu). Two other 편저 entries
-(2025-004, 2022-002) could not be verified against a public table of
-contents - their titles are left as the best guess already on the site
-and may need a manual correction from the user.
+The 편저 (edited-volume chapter) titles were corrected from the book's own
+title to each chapter's actual title: 2023-004 was confirmed against the
+publisher's table of contents (press.skku.edu); 2025-004 and 2022-002
+weren't findable in any public table of contents, so the user supplied
+those two directly.
 """
 import json
 from pathlib import Path
@@ -35,7 +34,7 @@ PAPER_DETAILS = {
     "2025-004": {
         "authors": ["송경호", "양성빈"],
         "title": "기후적응 리빙랩을 위한 의사결정 지원시스템: 사례와 시사점",
-        "venue": "이태동, 신상범 편, 『리빙랩: 지속가능한 발전을 위한 공동창조와 실험』 (서울: 사회평론아카데미)",
+        "venue": "이태동, 신상범 편, 『리빙랩: 지속가능한 발전을 위한 공동창조와 실험』 (서울: 사회평론아카데미), 제5장",
     },
     "2024-001": {
         "authors": ["김현", "송경호", "백우열"],
@@ -74,7 +73,7 @@ PAPER_DETAILS = {
     },
     "2022-002": {
         "authors": ["송경호"],
-        "title": "역사화해의 이정표 3: 역사적 콘텍스트와 근대성을 중심으로",
+        "title": "역사화해의 사례로서 마리아 루스호 사건과 메이지 일본에서의 인권 개념 수용",
         "venue": "이병택 편, 『역사화해의 이정표 3: 역사적 콘텍스트와 근대성을 중심으로』 (서울: 동북아역사재단)",
     },
     "2021-001": {
