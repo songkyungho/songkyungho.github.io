@@ -296,6 +296,20 @@
     "slug": "2026-021"
   },
   {
+    "tag": "국내/발표",
+    "year": "2026",
+    "detail": "[국내] 송경호. “AI 윤리 동향과 국방 분야에의 시사점,” <2026 DSQ AI SW 연구분과 간담회> 국방기술품질원 주최 (서울 인스파이어 비즈니스센터)",
+    "month": 4,
+    "day": 23,
+    "title": "AI 윤리 동향과 국방 분야에의 시사점",
+    "authors": "송경호",
+    "text": "송경호. 2026. 4. 23. “AI 윤리 동향과 국방 분야에의 시사점,” <2026 DSQ AI SW 연구분과 간담회> 국방기술품질원 주최 (서울 인스파이어 비즈니스센터)",
+    "kind": "발표",
+    "region": "국내",
+    "venue": "<2026 DSQ AI SW 연구분과 간담회> 국방기술품질원 주최 (서울 인스파이어 비즈니스센터)",
+    "slug": "2026-022"
+  },
+  {
     "tag": "좌담",
     "year": "2026",
     "detail": "“International Convergence Workshop on Extreme Risk Management Framework,” Future of Life Institute·Strategic Foresight Group 공동주최, <IASEAI '26> (프랑스 파리)",
@@ -307,7 +321,7 @@
     "kind": "좌담",
     "region": null,
     "venue": "Future of Life Institute·Strategic Foresight Group 공동주최, <IASEAI '26> (프랑스 파리)",
-    "slug": "2026-022"
+    "slug": "2026-023"
   },
   {
     "tag": "좌담",
@@ -321,7 +335,7 @@
     "kind": "좌담",
     "region": null,
     "venue": "<IASEAI '26> (프랑스 파리)",
-    "slug": "2026-023"
+    "slug": "2026-024"
   },
   {
     "tag": "특강",
