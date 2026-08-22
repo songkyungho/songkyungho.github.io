@@ -2,6 +2,7 @@ import research from "./data/research-archive.json";
 import talks from "./data/talks-archive.json";
 import writing from "./data/writing-archive.json";
 import media from "./data/media.json";
+import projects from "./data/projects.json";
 
 type RecentItem = {
   dateKey: number;
@@ -78,6 +79,18 @@ export default function Home() {
       </aside>
 
       <section className="recent-index">
+        <div className="section-line"><h2>만든 것들</h2><span>{projects.length}</span></div>
+        <div className="video-grid">
+          {projects.map((item) => (
+            <a className="video-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
+              <img src={item.image} alt="" />
+              <span>{item.outlet}</span>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </a>
+          ))}
+        </div>
+
         <header className="index-heading">
           <div><p className="eyebrow">RESEARCH NOTES &amp; ARCHIVE</p><h1>최근 기록</h1></div>
         </header>

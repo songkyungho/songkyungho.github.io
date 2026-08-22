@@ -45,6 +45,8 @@ NO_TITLE_OVERRIDES = {
 # standalone media interview, since that's what it actually is
 VIDEO_OVERRIDES = {
     "나는 내가 믿고 싶은 것을 믿는다": "https://youtu.be/_oPWn3JEm9U",
+    "EU AI Act GPAI 실천강령의 주요 내용과 과제": "https://youtu.be/c10Up9BsVUQ",
+    "AI의 사상가들: 알고리즘 뒤에 숨은 신념들": "https://youtu.be/TdMasD9qZqA",
 }
 
 # every 특강/토론/사회 entry is his own (unlike 발표, which lists whichever

@@ -1,10 +1,13 @@
 [
+  { "format": "방송", "outlet": "XSFM · News by Daylight", "title": "증거를 인멸한 AI, 구속수사도 못할텐데", "description": "AI가 남긴 흔적을 스스로 지웠을 때 법적 책임을 어떻게 물을 수 있는지를 다룹니다.", "url": "https://youtu.be/DRq2BSj2RNY", "year": "2026", "month": 8, "day": 12 },
+  { "format": "방송", "outlet": "XSFM · News by Daylight", "title": "미국의 AI쇄국, 소버린은 필수가 되었나", "description": "미국의 AI 수출 규제 강화와 각국의 소버린 AI 전략을 살펴봅니다.", "url": "https://youtu.be/WbCei3jZvBU", "year": "2026", "month": 6, "day": 25 },
   { "format": "방송", "outlet": "XSFM · News by Daylight", "title": "지극히 정치적인 AI", "description": "AI가 정치와 전쟁, 사회적 의사결정에 들어올 때 우리가 마주할 질문을 이야기합니다.", "url": "https://youtu.be/ODxyzbqMOWk", "year": "2026", "month": 2, "day": 10 },
   { "format": "방송", "outlet": "XSFM · News by Daylight", "title": "전쟁에 AI를 어디어디 쓰는 거예요", "description": "군사 AI의 실제 활용과 정치적·윤리적 통제의 문제를 다룹니다.", "url": "https://youtu.be/-fpfWrbRptw", "year": "2026", "month": 3, "day": 10 },
   { "format": "방송", "outlet": "XSFM · News by Daylight", "title": "몸을 가진 AI와 인류, 정치가 풀어야 할 숙제", "description": "피지컬 AI가 바꿀 권력과 책임의 경계를 살펴봅니다.", "url": "https://www.youtube.com/watch?v=yDKbk9vp4V8", "year": "2026", "month": 4, "day": 21 },
+  { "format": "영상 인터뷰", "outlet": "PO.INT · 한국정치학회", "title": "인공지능과 정치: 정치에도 프로야구처럼 ABS 도입이 가능할까?", "description": "프로야구의 ABS(자동 판정 시스템)에 착안해 정치에 AI를 도입할 수 있을지를 논의합니다.", "url": "https://www.youtube.com/watch?v=WQmaqItdsP0", "year": "2024", "month": 4, "day": 21 },
+  { "format": "영상 인터뷰", "outlet": "KOREAZ · 외교부", "title": "Responsible Military Use of AI", "description": "REAIM 서밋을 앞두고 군사 분야 AI의 책임 있는 사용을 논의하는 영어 대담입니다.", "url": "https://www.youtube.com/watch?v=gvP2HG63c-k", "year": "2024", "month": 9, "day": 6 },
   { "format": "영상 인터뷰", "outlet": "중앙일보", "title": "AI 박정희, AI 김대중 만들면? 그게 정치 유튜버보다 무섭다", "description": "역사적 정치인을 재현하는 AI와 정치적 권위의 문제를 짚습니다.", "url": "https://www.joongang.co.kr/article/25366180", "year": "2025", "month": 9, "day": 12 },
   { "format": "영상 인터뷰", "outlet": "중앙일보", "title": "쓰레기장 선정, 찍소리 못한다? AI 정치인 뜨면 생기는 일", "description": "알고리즘 의사결정이 민주적 책임에 미치는 영향을 살펴봅니다.", "url": "https://www.joongang.co.kr/article/25367971", "year": "2025", "month": 9, "day": 19 },
   { "format": "영상 인터뷰", "outlet": "중앙일보", "title": "‘인간 정치인? 혐오스럽지만…’ AI 정치인이 더 무서운 까닭", "description": "AGI 정치의 가능성과 위험, 인간 정치의 의미를 이야기합니다.", "url": "https://www.joongang.co.kr/article/25369931", "year": "2025", "month": 9, "day": 26 },
-  { "format": "프로젝트", "outlet": "AI Basic Act", "title": "대한민국 인공지능 기본법", "description": "법률 본문과 국제 AI 규제의 연결 관계를 탐색할 수 있는 독립 프로젝트입니다.", "url": "https://aibasicact.kr/", "year": null, "month": null, "day": null },
   { "format": "특강 영상", "outlet": "멋쟁이사자처럼", "title": "AI와 인문학, 21세기형 리더에게 필요한 덕목", "description": "IT 인재 교육 커뮤니티 멋쟁이사자처럼에서 진행한 특강 영상입니다.", "url": "https://youtu.be/aREwn_EoxWA", "year": "2024", "month": 8, "day": 7 }
 ]
