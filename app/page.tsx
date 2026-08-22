@@ -71,7 +71,7 @@ export default function Home() {
       <aside className="profile-rail">
         <p className="profile-name">송경호 <span>Kyungho David Song, Ph.D.</span></p>
         <p className="profile-role">인공지능안전연구소 선임연구원</p>
-        <p className="profile-summary">정치학자, 개념사학자, AI 안전 연구자</p>
+        <p className="profile-summary">정치학자, AI 안전 연구자</p>
       </aside>
 
       <section className="recent-index">
