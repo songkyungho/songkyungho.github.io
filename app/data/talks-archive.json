@@ -19,12 +19,12 @@
     "detail": "(제목) <숭실대 베어드교양대학>",
     "month": 10,
     "day": 14,
-    "title": null,
+    "title": "(제목)",
     "authors": null,
     "text": "2026. 10. 14. (제목) <숭실대 베어드교양대학>",
     "kind": "특강",
     "region": null,
-    "venue": "(제목) <숭실대 베어드교양대학>",
+    "venue": "<숭실대 베어드교양대학>",
     "slug": "2026-002"
   },
   {
@@ -33,12 +33,12 @@
     "detail": "(제목) <Nazarbayev University>",
     "month": 9,
     "day": 18,
-    "title": null,
+    "title": "(제목)",
     "authors": null,
     "text": "2026. 9. 18. (제목) <Nazarbayev University>",
     "kind": "특강",
     "region": null,
-    "venue": "(제목) <Nazarbayev University>",
+    "venue": "<Nazarbayev University>",
     "slug": "2026-003"
   },
   {

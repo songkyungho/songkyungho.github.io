@@ -202,7 +202,8 @@ def main():
             year = current_year or "0000"
 
         title_match = None if any(n in rest for n in NO_TITLE_OVERRIDES) else TITLE_RE.search(rest)
-        title = title_text(title_match).rstrip(",").strip() if title_match else None
+        placeholder_match = None if title_match else re.search(r"\(제목\)", rest)
+        title = title_text(title_match).rstrip(",").strip() if title_match else ("(제목)" if placeholder_match else None)
 
         authors_raw = rest[: date_match.start()].strip(" .") if date_match else ""
         authors = re.sub(r"\s*[ㆍ;]\s*", ", ", authors_raw).strip(", ") or None
@@ -270,6 +271,8 @@ def main():
             title_in_venue = None if any(n in rest for n in NO_TITLE_OVERRIDES) else TITLE_RE.search(venue)
             if title_in_venue:
                 venue = venue[title_in_venue.end():]
+            elif placeholder_match:
+                venue = re.sub(r"\(제목\)", "", venue, count=1)
             elif authors_raw and venue.startswith(authors_raw):
                 venue = venue[len(authors_raw):]
             venue = re.sub(r"^[,.\s]+", "", venue).strip()

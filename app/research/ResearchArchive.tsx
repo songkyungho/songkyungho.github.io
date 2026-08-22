@@ -55,7 +55,7 @@ export default function ResearchArchive() {
                   </>
                 ) : (
                   <>
-                    <h2>{item.authors ? `${item.authors.join(", ")}, ` : ""}“{item.title}”</h2>
+                    <h2>{item.authors && item.kind !== "학위논문" && item.kind !== "역서" ? `${item.authors.join(", ")}, ` : ""}“{item.title}”</h2>
                     {item.venue && <p className="venue">{item.venue}</p>}
                   </>
                 )}
