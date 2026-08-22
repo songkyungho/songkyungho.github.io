@@ -72,10 +72,6 @@ export default function Home() {
         <p className="profile-name">송경호 <span>Kyungho David Song, Ph.D.</span></p>
         <p className="profile-role">인공지능안전연구소 선임연구원</p>
         <p className="profile-summary">정치학자, 개념사학자, AI 안전 연구자</p>
-        <div className="profile-links">
-          <a href="/about">상세 소개</a>
-          <a href="https://scholar.google.com/citations?user=AE9lR2wAAAAJ&hl=ko" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
-        </div>
       </aside>
 
       <section className="recent-index">
