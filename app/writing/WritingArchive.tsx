@@ -22,7 +22,7 @@ function formatDate(item: { year: string | null; month: string | null; day: stri
   return item.year;
 }
 
-const filters = ["전체", "이슈브리프", "칼럼", "에세이", "보도"];
+const filters = ["전체", "이슈브리프", "칼럼", "에세이"];
 
 export default function WritingArchive({ archive }: { archive: WritingSummary[] }) {
   const [filter, setFilter] = useState("전체");
@@ -37,7 +37,7 @@ export default function WritingArchive({ archive }: { archive: WritingSummary[] 
   }), [filter, query]);
 
   return (
-    <section className="archive-block" aria-label="기고, 에세이와 언론 보도">
+    <section className="archive-block" aria-label="기고와 에세이">
       <div className="archive-tools writing-tools">
         <div className="filter-row" aria-label="글 분류">
           {filters.map((item) => (

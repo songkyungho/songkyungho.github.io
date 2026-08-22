@@ -91,6 +91,8 @@ main { min-height: calc(100vh - 68px); }
 .note-with-badge img { width: 26px; height: auto; border-radius: 3px; }
 
 .archive-block { padding-top: 28px; }
+.press-block .archive-tools { justify-content: flex-start; border-bottom: 1px solid var(--ink); }
+.press-block .archive-tools h2 { margin: 0; font-size: 1rem; }
 .archive-tools { display: flex; justify-content: space-between; gap: 24px; align-items: end; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
 .filter-row { display: flex; flex-wrap: wrap; gap: 20px; }
 .filter-row button { padding: 4px 0; border: 0; border-bottom: 1px solid transparent; background: transparent; color: var(--muted); font: inherit; font-size: .73rem; cursor: pointer; }
