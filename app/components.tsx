@@ -26,6 +26,9 @@ export function SiteFooter() {
       <div className="footer-links">
         <a href="https://scholar.google.com/citations?user=AE9lR2wAAAAJ&hl=ko" target="_blank" rel="noopener noreferrer">Google Scholar</a>
         <a href="https://github.com/songkyungho" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/kyungho-song-35a79990/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.facebook.com/songkyungho82?locale=ko_KR" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/panda_soooong/" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
     </footer>
   );
