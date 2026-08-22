@@ -52,7 +52,7 @@ NEW_REPORT = {
     "kind": "보고서",
     "slug": "2026-intl-report",
     "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/119?ptSignature=myq8exWppBvlsub5Sr8a78bbxNkUKo%2FOOa%2BANLitP%2BRowKOb42MhFxHrU0ICe2q3LdIPbqDkrRvJdrTsOsGp9dnU11bqw0oMz45R%2FI9IYLDzXT6qglQn6l1onjnE29oiEv8nRNgTLWhnXaSC9Es%2FmmMJGpdzRzCBZOlC0j%2BazP4dITmIZzhvti5pxvJNK0MtAU2DH7rZuWZAq7ixMWupri8LXwk6UA%2Bi%2Bk0vO39Dc9CE3TpQgizHo6bogvNJseNkQ0MhgRjeEvYesH0QCgy2I73dWs8ndLWNywGuU4df2hmlbGtJlXN7nZsCA1zhb5nV5VGrkHOQyXYE8RPKXANECiE8IXPPMoUKWSsXPMh9q5v2UZMsjUDEJDIiV3U3jUv1XHsKNOjoTOJVg%2BCXr0Vw8w%3D%3D&csSignature=otfgVv%2FgBQVw2Shwj0QlXA%3D%3D&mno=&pageIndex=1&searchCondition=&searchKeyword=",
-    "image": None,
+    "image": "/images/research/report-2026-intl.jpeg",
     "note": None,
     "series": None,
     "authors": ["최민석", "신민규", "조지연", "송경호"],

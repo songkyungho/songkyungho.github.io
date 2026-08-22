@@ -276,6 +276,10 @@ def main():
             elif authors_raw and venue.startswith(authors_raw):
                 venue = venue[len(authors_raw):]
             venue = re.sub(r"^[,.\s]+", "", venue).strip()
+            session_match = re.match(r"^\((\d+강)\)\s*", venue)
+            if session_match:
+                entry["titleSuffix"] = session_match.group(1)
+                venue = venue[session_match.end():].strip()
             entry["venue"] = venue or None
 
             counter = talk_counter

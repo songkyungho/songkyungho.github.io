@@ -5,5 +5,12 @@
     "description": "기본법과 EU AI법의 연결 관계를 조문 단위로 탐색할 수 있도록 한 프로젝트입니다.",
     "image": "https://koreaaia.futureoflife.org/uploads/hero_section_image_1e64fcc4c2_efa92c9f6e.webp?v=1780661774996",
     "url": "https://aibasicact.kr/"
+  },
+  {
+    "title": "ROK-FORTRESS 벤치마크",
+    "outlet": "K-AISI x Scale.AI",
+    "description": "국가안보를 주제 FORTRESS 벤치마크의 한국어/맥락 트랜스크리에이션 프로젝트입니다.",
+    "image": "/images/projects/rok-fortress.png",
+    "url": "https://arxiv.org/abs/2605.14152"
   }
 ]

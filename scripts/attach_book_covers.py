@@ -22,6 +22,8 @@ SLUG_TO_COVER = {
     "2023-004": "book-2023.png",
     "2025-003": "book-2025-a.png",
     "2025-004": "book-2025-b.png",
+    "2026-001": "report-2026-001.jpeg",
+    "2026-002": "report-2026-002.png",
 }
 
 SLUG_TO_NOTE = {

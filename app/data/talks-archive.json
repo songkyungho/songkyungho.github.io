@@ -98,17 +98,17 @@
     "slug": "2026-007"
   },
   {
-    "tag": "국제/발표",
+    "tag": "국제/포스터",
     "year": "2026",
-    "detail": "Kyungho Song. “ROK-FORTRESS,” (poster) <TAIGR @ ICML 2026> (서울)",
+    "detail": "Michael S. Lee, Yash Maurya, Drew Rein, Bert Herring, Jonathan Nguyen, Kyungho Song, Udari Madhushani Sehwag, Jiyeon Cho, Kaustubh Deshpande, Yeongkyun Jang, Jiyeon Joo, Minn Seok Choi, Evi Fuelle, Christina Q. Knight, Joseph Brandifino, Max Fenkell. “ROK-FORTRESS,” <TAIGR @ ICML 2026> (서울)",
     "month": 7,
     "day": 10,
     "title": "ROK-FORTRESS",
-    "authors": "Kyungho Song",
-    "text": "Kyungho Song. 2026. 7. 10. “ROK-FORTRESS,” (poster) <TAIGR @ ICML 2026> (서울)",
+    "authors": "Michael S. Lee, Yash Maurya, Drew Rein, Bert Herring, Jonathan Nguyen, Kyungho Song, Udari Madhushani Sehwag, Jiyeon Cho, Kaustubh Deshpande, Yeongkyun Jang, Jiyeon Joo, Minn Seok Choi, Evi Fuelle, Christina Q. Knight, Joseph Brandifino, Max Fenkell",
+    "text": "Michael S. Lee, Yash Maurya, Drew Rein, Bert Herring, Jonathan Nguyen, Kyungho Song, Udari Madhushani Sehwag, Jiyeon Cho, Kaustubh Deshpande, Yeongkyun Jang, Jiyeon Joo, Minn Seok Choi, Evi Fuelle, Christina Q. Knight, Joseph Brandifino, Max Fenkell. 2026. 7. 10. “ROK-FORTRESS,” <TAIGR @ ICML 2026> (서울)",
     "kind": "포스터",
     "region": null,
-    "venue": "(poster) <TAIGR @ ICML 2026> (서울)",
+    "venue": "<TAIGR @ ICML 2026> (서울)",
     "slug": "2026-008"
   },
   {
@@ -192,7 +192,8 @@
     "text": "2026. 6. 6. \"AI의 시대, 인간의 질문: 무엇을 알고, 무엇을 결정할 것인가,\" (2강) <용화여자고등학교>",
     "kind": "특강",
     "region": null,
-    "venue": "(2강) <용화여자고등학교>",
+    "titleSuffix": "2강",
+    "venue": "<용화여자고등학교>",
     "slug": "2026-014"
   },
   {
@@ -206,7 +207,8 @@
     "text": "2026. 5. 30. \"AI의 시대, 인간의 질문: 무엇을 알고, 무엇을 결정할 것인가,\" (1강) <용화여자고등학교>",
     "kind": "특강",
     "region": null,
-    "venue": "(1강) <용화여자고등학교>",
+    "titleSuffix": "1강",
+    "venue": "<용화여자고등학교>",
     "slug": "2026-015"
   },
   {

@@ -20,6 +20,10 @@ DST = ROOT / "app" / "data" / "writing-archive.json"
 
 NEW_ENTRIES = [
     # -- own writing: issue briefs / policy pieces --
+    dict(slug="col-aibasicact-2026-01", title="Korea's AI Law Has an Official English Name. Almost No One Uses It.",
+         publication="AI Basic Act (aibasicact.kr)", year="2026", month="8", section="이슈브리프", kind="post",
+         sourceUrl="https://lnkd.in/genWCMjt",
+         excerpt="Kyungho Song & Bongkyung Cho. 「Framework Act on the Development of Artificial Intelligence and the Creation of a Foundation for Trust」라는 공식 영문 명칭과 통용되는 약칭 'AI Basic Act' 사이의 간극을 다룬 aibasicact.kr의 첫 블로그 글."),
     dict(slug="col-undp-2025", title="Building Safer AI for All Languages: A Collective Pathway to Inclusive Human Development",
          publication="UNDP Digital, AI and Innovation Hub", year="2025", section="칼럼", kind="post",
          sourceUrl="https://www.undp.org/digital/blog/building-safer-ai-all-languages-collective-pathway-inclusive-human-development",
