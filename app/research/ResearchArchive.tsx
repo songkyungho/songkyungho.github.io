@@ -18,6 +18,10 @@ function paperIndexLabel(tag: string) {
   return tag.split("/").map((part) => INDEX_LABELS[part]).filter(Boolean).join(" · ");
 }
 
+const counts: Record<string, number> = Object.fromEntries(
+  filters.map((item) => [item, item === "전체" ? research.length : research.filter((r) => r.kind === item).length])
+);
+
 export default function ResearchArchive() {
   const [filter, setFilter] = useState("전체");
   const [query, setQuery] = useState("");
@@ -31,10 +35,9 @@ export default function ResearchArchive() {
   return (
     <section className="archive-block">
       <div className="archive-tools">
-        <div className="filter-row" aria-label="연구 유형 필터">{filters.map((item) => <button className={filter === item ? "active" : ""} onClick={() => setFilter(item)} key={item}>{item}</button>)}</div>
+        <div className="filter-row" aria-label="연구 유형 필터">{filters.map((item) => <button className={filter === item ? "active" : ""} onClick={() => setFilter(item)} key={item}>{item}({counts[item]})</button>)}</div>
         <label className="archive-search"><span className="sr-only">연구 검색</span><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="제목, 학술지, 키워드 검색" /></label>
       </div>
-      <p className="result-count">{shown.length}개의 연구성과</p>
       <div className="archive-list">
         {shown.map((item) => {
           const isReport = item.kind === "보고서";
