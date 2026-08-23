@@ -190,7 +190,7 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
   .page-intro .eyebrow { margin: 0; }
   .about-lead, .about-section { padding: 34px 0; }
   .archive-tools { align-items: stretch; flex-direction: column; }
-  .archive-search input { width: 100%; }
+  .archive-search input { width: 100%; border-bottom: 0; }
   .filter-row { gap: 14px; }
   .archive-row { grid-template-columns: 56px minmax(0, 1fr); gap: 12px; }
   .archive-row .arrow { display: none; }
