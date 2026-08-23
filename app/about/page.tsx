@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageIntro } from "../components";
+import AchievementHeatmap from "./AchievementHeatmap";
 
 export const metadata: Metadata = { title: "소개 | 송경호", description: "정치학자이자 AI 안전 연구자 송경호의 연구 분야, 경력과 학력" };
 
@@ -152,6 +153,8 @@ export default function AboutPage() {
         <div className="about-section-title"><p className="eyebrow">OTHERS</p><h2>그 외 이력</h2></div>
         <div className="timeline">{others.map(([year, title]) => <div className="timeline-row" key={`${year}-${title}`}><time>{year}</time><strong>{title}</strong></div>)}</div>
       </section>
+
+      <AchievementHeatmap />
     </main>
   );
 }

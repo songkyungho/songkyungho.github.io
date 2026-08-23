@@ -73,6 +73,26 @@ main { min-height: calc(100vh - 68px); }
 .timeline-row p { margin: 3px 0 0; color: var(--muted); font-size: .75rem; }
 .timeline-row p a, .timeline-row strong a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 
+.achievement-section .heatmap-scroll { grid-column: 1 / -1; margin-top: 24px; overflow-x: auto; padding-bottom: 6px; }
+.heatmap { border-collapse: collapse; min-width: 960px; width: 100%; }
+.heatmap th, .heatmap td { padding: 0; text-align: center; }
+.heatmap thead th { padding: 0 0 8px; color: var(--muted); font: .68rem Georgia, serif; font-weight: 400; }
+.heatmap thead th:first-child { text-align: left; }
+.heatmap tbody th { padding-right: 14px; text-align: left; font-size: .76rem; font-weight: 600; white-space: nowrap; border-top: 1px solid var(--line); }
+.heatmap tbody tr:first-child th { border-top: 0; }
+.heatmap tbody td { border-top: 1px solid var(--line); padding: 3px; }
+.heatmap tbody tr:first-child td { border-top: 0; }
+.heat-cell { display: flex; align-items: center; justify-content: center; height: 28px; border-radius: 4px; font-size: .7rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.heat-cell.c0 { background: var(--soft); color: var(--line); }
+.heat-cell.c1 { background: rgba(40, 107, 156, .18); }
+.heat-cell.c2 { background: rgba(40, 107, 156, .38); }
+.heat-cell.c3 { background: rgba(40, 107, 156, .62); color: #fff; }
+.heat-cell.c4 { background: rgba(40, 107, 156, .88); color: #fff; }
+.heat-cell.total { background: transparent; color: var(--ink); font-weight: 700; font-size: .78rem; }
+.heatmap thead th.total-head, .heatmap tbody td.total-cell { border-left: 2px solid var(--ink); }
+.achievement-section .heatmap-legend { grid-column: 1 / -1; display: flex; align-items: center; gap: 8px; margin-top: 14px; color: var(--muted); font-size: .68rem; }
+.heatmap-legend .heat-cell { width: 22px; height: 16px; }
+
 .slideshow-viewport { overflow: hidden; padding-top: 28px; mask-image: linear-gradient(to right, transparent, black 32px, black calc(100% - 32px), transparent); }
 .slideshow-track { display: flex; width: max-content; animation: slideshow-scroll linear infinite; }
 .slideshow-viewport:hover .slideshow-track { animation-play-state: paused; }
