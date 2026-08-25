@@ -11,6 +11,7 @@ export function SiteHeader() {
         <a href="/talks">발표</a>
         <a href="/writing">글</a>
         <a href="/media">미디어</a>
+        <a href="/art">아트</a>
       </nav>
       <span className="language" aria-label="한국어 사이트">KO</span>
     </header>
