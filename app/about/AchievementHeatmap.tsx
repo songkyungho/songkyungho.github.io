@@ -3,7 +3,7 @@ import talks from "../data/talks-archive.json";
 import writing from "../data/writing-archive.json";
 import media from "../data/media.json";
 
-const CATS = ["논문", "저서·역서", "보고서", "강연", "발표", "토론·좌담", "글", "미디어", "언론 보도"] as const;
+const CATS = ["논문", "저서·역서", "보고서", "강연", "학술발표", "발표", "토론·좌담", "글", "미디어", "언론 보도"] as const;
 type Cat = (typeof CATS)[number];
 
 function bump(counts: Map<number, Map<Cat, number>>, year: number, cat: Cat) {
@@ -25,7 +25,8 @@ function buildMatrix() {
   for (const item of talks) {
     const year = Number(item.year);
     if (item.kind === "특강") bump(counts, year, "강연");
-    else if (item.kind === "학술발표" || item.kind === "발표" || item.kind === "포스터") bump(counts, year, "발표");
+    else if (item.kind === "학술발표" || item.kind === "포스터") bump(counts, year, "학술발표");
+    else if (item.kind === "발표") bump(counts, year, "발표");
     else bump(counts, year, "토론·좌담"); // 토론, 좌담, 사회
   }
 
