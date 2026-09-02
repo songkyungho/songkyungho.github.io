@@ -5,15 +5,17 @@ export function SiteHeader() {
         <span className="wordmark-ko">송경호</span>
         <span className="wordmark-en">KYUNGHO DAVID SONG</span>
       </a>
-      <nav aria-label="주요 메뉴">
-        <a href="/about">소개</a>
+      <nav className="masthead-primary" aria-label="주요 메뉴">
         <a href="/research">연구</a>
         <a href="/talks">발표</a>
         <a href="/writing">글</a>
         <a href="/media">미디어</a>
         <a href="/art">아트</a>
       </nav>
-      <span className="language" aria-label="한국어 사이트">KO</span>
+      <nav className="masthead-meta" aria-label="사이트">
+        <a href="/site">소개</a>
+        <a href="/updates">업데이트</a>
+      </nav>
     </header>
   );
 }
@@ -22,7 +24,7 @@ export function SiteFooter() {
   return (
     <footer>
       <div>
-        <strong>송경호 · Kyungho David Song, Ph.D.</strong>
+        <strong><a href="/about">송경호 · Kyungho David Song, Ph.D.</a></strong>
       </div>
       <div className="footer-links">
         <a href="https://scholar.google.com/citations?user=AE9lR2wAAAAJ&hl=ko" target="_blank" rel="noopener noreferrer">Google Scholar</a>
