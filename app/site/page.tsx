@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const sections = [
   ["홈", "최근 기록과 진행 중인 프로젝트를 한눈에 둡니다."],
-  ["소개", "연구 분야, 경력, 학력, 강의와 연도별 활동 히트맵입니다."],
+  ["CV", "연구 분야, 경력, 학력, 강의와 연도별 활동 히트맵입니다."],
   ["연구", "논문, 편저·역서, 보고서를 모읍니다."],
   ["발표", "학술발표, 발표, 특강, 토론·좌담을 날짜순으로 둡니다."],
   ["글", "이슈브리프, 칼럼, 에세이와 원문 상세 페이지입니다."],
@@ -29,7 +29,7 @@ export default function SitePage() {
             한국어를 기본으로 하고, 공식 영문 제목과 초록이 있으면 함께 적습니다.
           </p>
           <p>
-            사람 소개는 <a href="/about">여기</a>에서, 매일 쌓이는 AI 안전 소식은{" "}
+            CV는 <a href="/about">여기</a>에서, 매일 쌓이는 AI 안전 소식은{" "}
             <a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI Safety Daily Digest</a>에서 봅니다.
           </p>
         </div>

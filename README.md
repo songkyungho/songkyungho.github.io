@@ -8,7 +8,7 @@
 
 ## 구성
 
-- `/about` 인물 소개
+- `/about` CV
 - `/research` 연구와 논문
 - `/talks` 발표
 - `/writing` 이슈브리프·칼럼·에세이

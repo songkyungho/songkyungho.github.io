@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { PageIntro } from "../components";
 import AchievementHeatmap from "./AchievementHeatmap";
 
-export const metadata: Metadata = { title: "소개 | 송경호", description: "정치학자이자 AI 안전 연구자 송경호의 연구 분야, 경력과 학력" };
+export const metadata: Metadata = { title: "CV | 송경호", description: "정치학자이자 AI 안전 연구자 송경호의 연구 분야, 경력과 학력" };
 
 const AFFILIATION_LINKS: [string, string][] = [
   ["인공지능안전연구소", "https://www.aisi.re.kr/kor"],
@@ -96,7 +96,7 @@ const others = [
 export default function AboutPage() {
   return (
     <main className="inner-page">
-      <PageIntro eyebrow="ABOUT" title="소개" />
+      <PageIntro eyebrow="CV" title="CV" />
       <section className="about-lead">
         <div>
           <h2>송경호<br /><span lang="en">Kyungho David Song, Ph.D.</span></h2>

@@ -6,6 +6,7 @@ export function SiteHeader() {
         <span className="wordmark-en">KYUNGHO DAVID SONG</span>
       </a>
       <nav className="masthead-primary" aria-label="주요 메뉴">
+        <a href="/about">CV</a>
         <a href="/research">연구</a>
         <a href="/talks">발표</a>
         <a href="/writing">글</a>
