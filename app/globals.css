@@ -182,13 +182,20 @@ main { min-height: calc(100vh - 68px); }
 .article-source a, .article-back a { width: fit-content; color: var(--accent); font-size: .72rem; text-decoration: underline; text-underline-offset: 3px; }
 .article-back { margin-top: 30px; }
 
+.home-block { margin-bottom: 44px; }
+.home-block-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+.home-block-head .eyebrow { margin: 0; }
+.home-block-head a { color: var(--accent); font-size: .72rem; text-decoration: underline; text-underline-offset: 3px; }
+.home-block .video-grid { padding-top: 12px; }
 .video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; padding-top: 16px; }
-.projects-grid { margin-bottom: 40px; }
 .video-card { padding-bottom: 16px; border-bottom: 1px solid var(--line); overflow: hidden; }
 .video-card img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; filter: saturate(.78); transition: transform .4s cubic-bezier(.2,.7,.2,1); }
 .video-card:hover img { transform: scale(1.02); }
 .placeholder-thumb { display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 16 / 9; background: var(--line); color: var(--muted); font-size: .72rem; }
-.video-card > span { display: block; margin-top: 12px; color: var(--accent); font-size: .66rem; }
+.video-card > span, .video-meta span { color: var(--accent); font-size: .66rem; }
+.video-card > span { display: block; margin-top: 12px; }
+.video-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; margin-top: 12px; }
+.video-meta time { color: var(--muted); font: .66rem Georgia, serif; }
 .video-card h3 { margin: 5px 0 7px; font-size: .9rem; font-weight: 600; line-height: 1.45; }
 .video-card p { margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.55; }
 
@@ -251,7 +258,7 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
   .video-grid { grid-template-columns: 1fr; gap: 24px; }
   .video-card { display: grid; grid-template-columns: 124px 1fr; column-gap: 14px; }
   .video-card img, .video-card .placeholder-thumb { grid-row: 1 / 5; }
-  .video-card > span { margin-top: 0; }
+  .video-card > span, .video-meta { margin-top: 0; }
   .video-card h3 { margin-top: 2px; }
   .source-note, footer { align-items: flex-start; flex-direction: column; }
   .archive-writing-list .writing-row { grid-template-columns: 48px minmax(0, 1fr); }

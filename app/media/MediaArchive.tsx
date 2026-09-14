@@ -19,6 +19,13 @@ function youtubeId(url: string) {
   return match ? match[1] : null;
 }
 
+function formatDate(item: { year: string | null; month: number | null; day: number | null }) {
+  if (!item.year) return null;
+  if (item.month && item.day) return `${item.year}.${String(item.month).padStart(2, "0")}.${String(item.day).padStart(2, "0")}`;
+  if (item.month) return `${item.year}.${String(item.month).padStart(2, "0")}`;
+  return item.year;
+}
+
 const filters = ["전체", "방송", "영상 인터뷰", "특강 영상", "팟캐스트"];
 
 export default function MediaArchive({ media }: { media: MediaItem[] }) {
@@ -47,10 +54,14 @@ export default function MediaArchive({ media }: { media: MediaItem[] }) {
         {shown.map((item) => {
           const id = youtubeId(item.url);
           const thumb = item.image ?? (id ? `https://i.ytimg.com/vi/${id}/hqdefault.jpg` : null);
+          const date = formatDate(item);
           return (
             <a className="video-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
               {thumb ? <img src={thumb} alt="" /> : <div className="placeholder-thumb">{item.format}</div>}
-              <span>{item.outlet}</span>
+              <div className="video-meta">
+                {date && <time>{date}</time>}
+                <span>{item.outlet}</span>
+              </div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </a>

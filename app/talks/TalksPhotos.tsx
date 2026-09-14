@@ -1,4 +1,6 @@
 const photos = [
+  { src: "/images/talks/talk-soongsil-baird-2026.jpg", alt: "2026 베어드 AI 렉처 「AI는 전쟁을 어떻게 바꾸는가?」 포스터" },
+  { src: "/images/talks/talk-nazarbayev-2026.jpg", alt: "Nazarbayev University 특강 AI Governance and Safety in Korea 포스터" },
   { src: "/images/talks/talk-symposium-2025.png", alt: "2025 AI 연구기관 성과공유 심포지엄 발표" },
   { src: "/images/talks/talk-conference-room.jpeg", alt: "국제 컨퍼런스 발표" },
   { src: "/images/talks/talk-warfilmfest-2025.jpeg", alt: "제3회 전쟁과여성영화제 포럼 패널" },

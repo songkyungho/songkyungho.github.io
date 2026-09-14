@@ -65,6 +65,23 @@ const recent = [...researchItems, ...talksItems, ...writingItems, ...mediaItems]
   .sort((a, b) => b.dateKey - a.dateKey)
   .slice(0, 8);
 
+function youtubeId(url: string) {
+  const match = url.match(/(?:youtu\.be\/|[?&]v=)([\w-]{11})/);
+  return match ? match[1] : null;
+}
+
+const latestMedia = [...media]
+  .filter((item) => item.year)
+  .sort((a, b) => dateKey(b.year as string, b.month, b.day) - dateKey(a.year as string, a.month, a.day))
+  .slice(0, 3)
+  .map((item) => {
+    const id = youtubeId(item.url);
+    return {
+      ...item,
+      thumb: item.image ?? (id ? `https://i.ytimg.com/vi/${id}/hqdefault.jpg` : null),
+    };
+  });
+
 export default function Home() {
   return (
     <main className="archive-home">
@@ -75,15 +92,41 @@ export default function Home() {
       </aside>
 
       <section className="recent-index">
-        <div className="video-grid projects-grid">
-          {projects.map((item) => (
-            <a className="video-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
-              <img src={item.image} alt="" />
-              <span>{item.outlet}</span>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </a>
-          ))}
+        <div className="home-block">
+          <p className="eyebrow">FEATURED</p>
+          <div className="video-grid">
+            {projects.map((item) => (
+              <a className="video-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
+                <img src={item.image} alt="" />
+                <span>{item.outlet}</span>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="home-block">
+          <div className="home-block-head">
+            <p className="eyebrow">MEDIA</p>
+            <a href="/media">전체 보기</a>
+          </div>
+          <div className="video-grid">
+            {latestMedia.map((item) => {
+              const date = formatDate(item.year, item.month, item.day);
+              return (
+                <a className="video-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
+                  {item.thumb ? <img src={item.thumb} alt="" /> : <div className="placeholder-thumb">{item.format}</div>}
+                  <div className="video-meta">
+                    {date && <time>{date}</time>}
+                    <span>{item.outlet}</span>
+                  </div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </a>
+              );
+            })}
+          </div>
         </div>
 
         <header className="index-heading">
