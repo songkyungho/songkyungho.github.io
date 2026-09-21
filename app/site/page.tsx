@@ -29,8 +29,13 @@ export default function SitePage() {
             한국어를 기본으로 하고, 공식 영문 제목과 초록이 있으면 함께 적습니다.
           </p>
           <p>
-            CV는 <a href="/about">여기</a>에서, 매일 쌓이는 AI 안전 소식은{" "}
-            <a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI Safety Daily Digest</a>에서 봅니다.
+            CV는 <a href="/about">여기</a>에서 봅니다. 매일 쌓이는 AI 안전 소식은{" "}
+            <a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 다이제스트</a>
+            , 법·정책 문서는{" "}
+            <a href="https://songkyungho.github.io/ai-safety-library/" target="_blank" rel="noopener noreferrer">AI 안전 라이브러리</a>
+            , 개념어는{" "}
+            <a href="https://songkyungho.github.io/ai-safety-glossary/" target="_blank" rel="noopener noreferrer">AI 안전 용어집</a>
+            에서 봅니다.
           </p>
         </div>
       </section>
