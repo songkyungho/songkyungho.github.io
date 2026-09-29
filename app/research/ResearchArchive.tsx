@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import research from "../data/research-archive.json";
 
-const filters = ["전체", "논문", "보고서", "편저", "역서", "학위논문"];
+const filters = ["전체", "논문", "컨퍼런스 페이퍼", "보고서", "편저", "역서", "학위논문"];
 
 const INDEX_LABELS: Record<string, string> = {
   "등재": "KCI",
@@ -12,6 +12,7 @@ const INDEX_LABELS: Record<string, string> = {
   "SCOPUS": "SCOPUS",
   "SSCI": "SSCI",
   "A&HCI": "A&HCI",
+  "NeurIPS": "NeurIPS",
 };
 
 function paperIndexLabel(tag: string) {
@@ -27,7 +28,7 @@ export default function ResearchArchive() {
   const [query, setQuery] = useState("");
   const shown = useMemo(() => research.filter((item) => {
     const typeMatch = filter === "전체" || item.kind === filter;
-    const haystack = [item.text, item.title, item.venue, item.series, item.org, ...(item.authors ?? [])].filter(Boolean).join(" ").toLowerCase();
+    const haystack = [item.text, item.title, item.venue, item.series, item.org, item.note?.text, ...(item.authors ?? [])].filter(Boolean).join(" ").toLowerCase();
     const queryMatch = haystack.includes(query.trim().toLowerCase());
     return typeMatch && queryMatch;
   }), [filter, query]);
@@ -36,12 +37,12 @@ export default function ResearchArchive() {
     <section className="archive-block">
       <div className="archive-tools">
         <div className="filter-row" aria-label="연구 유형 필터">{filters.map((item) => <button className={filter === item ? "active" : ""} onClick={() => setFilter(item)} key={item}>{item}({counts[item]})</button>)}</div>
-        <label className="archive-search"><span className="sr-only">연구 검색</span><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="제목, 학술지, 키워드 검색" /></label>
+        <label className="archive-search"><span className="sr-only">연구 검색</span><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="제목, 학술지·학회, 키워드 검색" /></label>
       </div>
       <div className="archive-list">
         {shown.map((item) => {
           const isReport = item.kind === "보고서";
-          const indexLabel = item.kind === "논문" ? paperIndexLabel(item.tag) : "";
+          const indexLabel = item.kind === "논문" || item.kind === "컨퍼런스 페이퍼" ? paperIndexLabel(item.tag) : "";
           const content = (
             <>
               <div className="archive-year">{item.year}</div>
@@ -60,7 +61,7 @@ export default function ResearchArchive() {
                   </>
                 )}
                 {item.note && (
-                  <p className="venue note-with-badge">
+                  <p className={item.note.image ? "venue note-with-badge" : "venue"}>
                     {item.note.image && <img alt="" src={item.note.image} />}
                     {item.note.text}
                     {item.note.url && ` (${new URL(item.note.url).hostname})`}

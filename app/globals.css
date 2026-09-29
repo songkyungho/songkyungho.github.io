@@ -120,7 +120,7 @@ main { min-height: calc(100vh - 68px); }
 .award-row { display: flex; align-items: center; gap: 14px; }
 .award-row img { width: 56px; height: auto; box-shadow: var(--shadow-img); }
 
-.note-with-badge { display: flex; align-items: center; gap: 8px; }
+.note-with-badge { display: flex; align-items: flex-start; gap: 8px; }
 .note-with-badge img { width: 26px; height: auto; border-radius: 3px; }
 
 .archive-block { padding-top: 28px; }

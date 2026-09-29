@@ -170,16 +170,17 @@
   {
     "tag": "국제/포스터",
     "year": "2026",
-    "detail": "Michael S. Lee, Yash Maurya, Drew Rein, Bert Herring, Jonathan Nguyen, Kyungho Song, Udari Madhushani Sehwag, Jiyeon Cho, Kaustubh Deshpande, Yeongkyun Jang, Jiyeon Joo, Minn Seok Choi, Evi Fuelle, Christina Q. Knight, Joseph Brandifino, Max Fenkell. “ROK-FORTRESS,” <TAIGR @ ICML 2026> (서울)",
+    "detail": "Michael S. Lee, Yash Maurya, Drew Rein, Bert Herring, Jonathan Nguyen, Kyungho Song, Udari Madhushani Sehwag, Jiyeon Cho, Kaustubh Deshpande, Yeongkyun Jang, Jiyeon Joo, Minn Seok Choi, Evi Fuelle, Christina Q. Knight, Joseph Brandifino, Max Fenkell. “ROK-FORTRESS: Measuring the Effect of Geopolitical Transcreation for National Security and Public Safety,” <TAIGR: Second Workshop on Technical AI Governance Research @ ICML 2026> (서울). Outstanding Paper.",
     "month": 7,
     "day": 10,
-    "title": "ROK-FORTRESS",
+    "title": "ROK-FORTRESS: Measuring the Effect of Geopolitical Transcreation for National Security and Public Safety",
     "authors": "Michael S. Lee, Yash Maurya, Drew Rein, Bert Herring, Jonathan Nguyen, Kyungho Song, Udari Madhushani Sehwag, Jiyeon Cho, Kaustubh Deshpande, Yeongkyun Jang, Jiyeon Joo, Minn Seok Choi, Evi Fuelle, Christina Q. Knight, Joseph Brandifino, Max Fenkell",
-    "text": "Michael S. Lee, Yash Maurya, Drew Rein, Bert Herring, Jonathan Nguyen, Kyungho Song, Udari Madhushani Sehwag, Jiyeon Cho, Kaustubh Deshpande, Yeongkyun Jang, Jiyeon Joo, Minn Seok Choi, Evi Fuelle, Christina Q. Knight, Joseph Brandifino, Max Fenkell. 2026. 7. 10. “ROK-FORTRESS,” <TAIGR @ ICML 2026> (서울)",
+    "text": "Michael S. Lee, Yash Maurya, Drew Rein, Bert Herring, Jonathan Nguyen, Kyungho Song, Udari Madhushani Sehwag, Jiyeon Cho, Kaustubh Deshpande, Yeongkyun Jang, Jiyeon Joo, Minn Seok Choi, Evi Fuelle, Christina Q. Knight, Joseph Brandifino, Max Fenkell. 2026. 7. 10. “ROK-FORTRESS: Measuring the Effect of Geopolitical Transcreation for National Security and Public Safety,” <TAIGR: Second Workshop on Technical AI Governance Research @ ICML 2026> (서울). Outstanding Paper.",
     "kind": "포스터",
     "region": null,
-    "venue": "<TAIGR @ ICML 2026> (서울)",
-    "slug": "2026-009"
+    "venue": "<TAIGR: Second Workshop on Technical AI Governance Research @ ICML 2026> (서울)",
+    "slug": "2026-009",
+    "titleSuffix": "우수 논문"
   },
   {
     "tag": "국내/좌담",

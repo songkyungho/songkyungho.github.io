@@ -17,7 +17,7 @@ function buildMatrix() {
 
   for (const item of research) {
     const year = Number(item.year);
-    if (item.kind === "논문") bump(counts, year, "논문");
+    if (item.kind === "논문" || item.kind === "컨퍼런스 페이퍼") bump(counts, year, "논문");
     else if (item.kind === "편저" || item.kind === "역서" || item.kind === "학위논문") bump(counts, year, "저서·역서");
     else if (item.kind === "보고서") bump(counts, year, "보고서");
   }
