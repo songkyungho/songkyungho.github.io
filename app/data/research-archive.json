@@ -29,11 +29,7 @@
     "slug": "2026-fortress",
     "url": "https://arxiv.org/abs/2605.14152",
     "image": null,
-    "note": {
-      "text": "Scale AI와 Korea AI Safety Institute 공동 연구. NeurIPS 2026 Datasets and Benchmarks(ED) Track 포스터로, 유효 논문 3,757편 중 971편(25.8%)이 채택됐다. 초기 버전은 2026년 7월 서울 ICML 사이드 워크숍 TAIGR(Second Workshop on Technical AI Governance Research) 우수 논문(Outstanding Paper)이다. 영어권·미국 맥락의 안전 벤치마크를 다른 언어권에 옮길 때 흔히 번역에 그치지만, 번역만으로는 그 사회의 지정학적·문화적 맥락에서 무엇이 위험한지를 포착하지 못한다. 이 연구는 원본 의도를 유지하면서 현지 맥락에 맞게 재구성하는 트랜스크리에이션(transcreation)이 벤치마크 유효성에 미치는 영향을 정량 측정한다. 기여의 핵심은 Tier-Weighted Risk Score(TRS)로, 오답을 단순 집계하지 않고 위해 유형을 Tier 1(낮은 진입장벽의 일반 정보)부터 Tier 3(고위험 실행 또는 치명적 침해)까지 가중한다.",
-      "url": null,
-      "image": null
-    },
+    "note": null,
     "series": null,
     "org": "Scale AI · Korea AI Safety Institute",
     "venue": "NeurIPS 2026 Datasets and Benchmarks (ED) Track (poster)"
