@@ -8,7 +8,14 @@ type Params = { slug: string };
 const records = archive;
 
 type Source = { n: number; title: string; meta: string | null; note: string; url: string | null; host: string | null; status: string | null };
-type Block = { type: "h2" | "h3" | "p"; id?: string | null; text: string } | { type: "refs"; items: Source[] };
+type Figure = { type: "figure"; src: string; alt: string; caption: string; href: string | null; narrow?: boolean };
+type Graphic =
+  | { type: "graphic"; kind: "timeline"; title: string; caption: string; items: { when: string; text: string; mark?: string }[] }
+  | { type: "graphic"; kind: "criteria"; title: string; items: { q: string; a: string; ref: string }[] }
+  | { type: "graphic"; kind: "quadrant"; title: string; x: [string, string]; y: [string, string]; points: { pos: "top-left" | "bottom-right"; name: string; sub: string; note: string; ref: string }[] }
+  | { type: "graphic"; kind: "doubling"; title: string; caption: string; bars: { label: string; value: number }[] }
+  | { type: "graphic"; kind: "statute"; title: string; caption: string; href: string; articles: { head: string; lines: { text: string; indent?: boolean; mark?: boolean }[] }[] };
+type Block = { type: "h2" | "h3" | "p"; id?: string | null; text: string } | { type: "refs"; items: Source[] } | Figure | Graphic;
 type BlogPost = { intro: string[]; summary: string[]; toc: { id: string; text: string }[]; blocks: Block[] };
 
 const blogPosts = writingBlocks as unknown as Record<string, BlogPost>;
@@ -41,6 +48,109 @@ function SourceBox({ items }: { items: Source[] }) {
   );
 }
 
+function BlogFigure({ figure }: { figure: Figure }) {
+  const image = <img alt={figure.alt} loading="lazy" src={figure.src} />;
+  return (
+    <figure className={figure.narrow ? "blog-figure narrow" : "blog-figure"}>
+      {figure.href ? <a href={figure.href} target="_blank" rel="noopener noreferrer">{image}</a> : image}
+      <figcaption>
+        {figure.href ? (
+          <a href={figure.href} target="_blank" rel="noopener noreferrer">{figure.caption}<span aria-hidden="true"> ↗</span><span className="sr-only"> (새 창)</span></a>
+        ) : figure.caption}
+      </figcaption>
+    </figure>
+  );
+}
+
+function BlogGraphic({ graphic }: { graphic: Graphic }) {
+  if (graphic.kind === "timeline") {
+    return (
+      <figure className="blog-graphic">
+        <p className="graphic-title">{graphic.title}</p>
+        <ol className="graphic-timeline">
+          {graphic.items.map((item) => (
+            <li className={item.mark ? "marked" : undefined} key={item.when}>
+              <time>{item.when}</time>
+              <p>{item.text}</p>
+              {item.mark && <span>{item.mark}</span>}
+            </li>
+          ))}
+        </ol>
+        <figcaption>{graphic.caption}</figcaption>
+      </figure>
+    );
+  }
+  if (graphic.kind === "criteria") {
+    return (
+      <figure className="blog-graphic">
+        <p className="graphic-title">{graphic.title}</p>
+        <ol className="graphic-criteria">
+          {graphic.items.map((item) => (
+            <li key={item.ref}>
+              <a href={`#s${item.ref}`}><strong>{item.q}</strong><span>{item.a}</span></a>
+            </li>
+          ))}
+        </ol>
+      </figure>
+    );
+  }
+  if (graphic.kind === "quadrant") {
+    return (
+      <figure className="blog-graphic">
+        <p className="graphic-title">{graphic.title}</p>
+        <div className="graphic-quadrant" role="img" aria-label={graphic.points.map((point) => `${point.name}: ${point.sub}. ${point.note}`).join(" ")}>
+          <span className="axis-y">↑ {graphic.y[1]}</span>
+          <div className="quadrant-grid">
+            {(["top-left", "top-right", "bottom-left", "bottom-right"] as const).map((cell) => {
+              const point = graphic.points.find((item) => item.pos === cell);
+              return (
+                <div className={point ? `cell ${cell} filled` : `cell ${cell}`} key={cell}>
+                  {point && <><strong>{point.name}</strong><span>{point.sub}</span><em>{point.note} · {point.ref}</em></>}
+                </div>
+              );
+            })}
+          </div>
+          <span className="axis-x">{graphic.x[1]} →</span>
+        </div>
+      </figure>
+    );
+  }
+  if (graphic.kind === "statute") {
+    return (
+      <figure className="blog-graphic">
+        <p className="graphic-title">
+          <a href={graphic.href} target="_blank" rel="noopener noreferrer">{graphic.title}<span aria-hidden="true"> ↗</span><span className="sr-only"> (새 창)</span></a>
+        </p>
+        {graphic.articles.map((article) => (
+          <div className="graphic-statute" key={article.head}>
+            <strong>{article.head}</strong>
+            {article.lines.map((line) => (
+              <p className={[line.indent ? "indent" : "", line.mark ? "mark" : ""].join(" ").trim() || undefined} key={line.text.slice(0, 20)}>{line.text}</p>
+            ))}
+          </div>
+        ))}
+        <figcaption>{graphic.caption}</figcaption>
+      </figure>
+    );
+  }
+  const max = Math.max(...graphic.bars.map((bar) => bar.value));
+  return (
+    <figure className="blog-graphic">
+      <p className="graphic-title">{graphic.title}</p>
+      <div className="graphic-bars">
+        {graphic.bars.map((bar) => (
+          <div key={bar.label}>
+            <span className="bar-label">{bar.label}</span>
+            <span className="bar-track"><span className="bar-fill" style={{ width: `${(bar.value / max) * 100}%` }} /></span>
+            <span className="bar-value">{bar.value === Math.round(bar.value) ? bar.value : `약 ${Math.round(bar.value)}`}배</span>
+          </div>
+        ))}
+      </div>
+      <figcaption>{graphic.caption}</figcaption>
+    </figure>
+  );
+}
+
 function BlogBody({ post }: { post: BlogPost }) {
   return (
     <>
@@ -64,6 +174,8 @@ function BlogBody({ post }: { post: BlogPost }) {
       </nav>
       {post.blocks.map((block, index) => {
         if (block.type === "refs") return <SourceBox items={block.items} key={`refs-${index}`} />;
+        if (block.type === "figure") return <BlogFigure figure={block} key={`figure-${index}`} />;
+        if (block.type === "graphic") return <BlogGraphic graphic={block} key={`graphic-${index}`} />;
         if (block.type === "h2") return <h2 className="blog-chapter" id={block.id ?? undefined} key={`h2-${index}`}>{block.text}</h2>;
         if (block.type === "h3") return <h3 className="blog-claim" id={block.id ?? undefined} key={`h3-${index}`}>{block.text}</h3>;
         return <p key={`p-${index}`}>{block.text}</p>;
