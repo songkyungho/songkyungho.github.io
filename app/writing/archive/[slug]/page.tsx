@@ -221,7 +221,7 @@ export default async function ArchivedWritingPage({ params }: { params: Promise<
             {item.year && (
               <div>
                 <dt>발행</dt>
-                <dd>{item.month && item.day ? `${item.year}.${String(item.month).padStart(2, "0")}.${String(item.day).padStart(2, "0")}` : item.year}</dd>
+                <dd>{item.month && item.day ? `${item.year}.${String(item.month).padStart(2, "0")}.${String(item.day).padStart(2, "0")}` : item.month ? `${item.year}.${String(item.month).padStart(2, "0")}` : item.year}</dd>
               </div>
             )}
           </dl>

@@ -43,7 +43,8 @@ const talksItems: RecentItem[] = talks.map((item) => ({
 
 const writingItems: RecentItem[] = writing.map((item) => ({
   dateKey: dateKey(item.year ?? "0", item.month, item.day),
-  date: formatDate(item.year ?? "0", item.month, item.day),
+  // 블로그 글은 날짜를 월까지만 보여 준다 (모바일 목록에서 제목과 겹치지 않게)
+  date: formatDate(item.year ?? "0", item.month, item.section === "블로그" ? null : item.day),
   type: item.section,
   title: item.title,
   detail: item.publication,

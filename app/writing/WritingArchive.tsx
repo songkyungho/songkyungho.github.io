@@ -17,8 +17,9 @@ type WritingSummary = {
   note: { text: string; url?: string } | null;
 };
 
-function formatDate(item: { year: string | null; month: string | null; day: string | null }) {
-  if (item.month && item.day) return `${item.year}.${item.month.padStart(2, "0")}.${item.day.padStart(2, "0")}`;
+function formatDate(item: { year: string | null; month: string | null; day: string | null; section: string }) {
+  if (item.month && item.day && item.section !== "블로그") return `${item.year}.${item.month.padStart(2, "0")}.${item.day.padStart(2, "0")}`;
+  if (item.month) return `${item.year}.${item.month.padStart(2, "0")}`;
   return item.year;
 }
 
