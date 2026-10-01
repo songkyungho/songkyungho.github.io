@@ -22,7 +22,7 @@ function formatDate(item: { year: string | null; month: string | null; day: stri
   return item.year;
 }
 
-const filters = ["전체", "이슈브리프", "칼럼", "에세이"];
+const filters = ["전체", "이슈브리프", "칼럼", "에세이", "블로그"];
 
 export default function WritingArchive({ archive }: { archive: WritingSummary[] }) {
   const [filter, setFilter] = useState("전체");

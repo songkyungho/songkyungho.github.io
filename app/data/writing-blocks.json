@@ -1,0 +1,1621 @@
+{
+  "blog-ai-doom-2026-09": {
+    "intro": [
+      "요즘 AI 종말론이 다시 자주 들린다. 과장이라는 반응도 있고, 이미 늦었다는 반응도 있다. 이 노트는 종말론이 말하는 위험과 이미 와 있는 위험을 요즘 내가 어떻게 보는지 정리한 것이다."
+    ],
+    "summary": [
+      "AI 위험은 무엇에서 오는지, 세상과 얼마나 연결되어 있는지, 무엇이 다치는지, 되돌릴 수 있는지를 함께 봐야 한다. 종말론의 핵심은 통제 상실이고, 그것이 두려운 이유는 한번 벌어지면 되돌릴 수 없고, 그 문턱이 10년 뒤가 아니라 내년일 수 있기 때문이다.",
+      "그런데 미리 막을 수단이 작동하지 않는다. 개발사조차 일이 벌어진 뒤에야 알고, 규제는 눈에 보이는 큰 모델에만 집중되어 있는데, 그마저도 여의치 않다. 종말론이 과장된 것처럼 들리는 이유는 우리가 매일 쓰는 모델만 보고 실제 역량을 낮춰 보기 때문이다. 그러나 프론티어 랩이 안에서 실험하는 모델의 역량은 그보다 훨씬 높다. 그러니 개발 경쟁의 속도는 늦춰야 하고, 안전성을 향한 경쟁의 속도는 오히려 더 높여야 한다. 그리고 그 판단과 검증은 공적 전문기관이 맡아야 한다.",
+      "지금 다가온 위험은 이미 현실이 된 위험이다. 역량 위험은 벌써 현재형이 되었고, 사회의 신뢰를 조금씩 떨어뜨리는 누적·점진적 위험은 지금 제도로는 포착되거나 관리되기 어렵다. 그래서 해야 할 일은 사고 보고를 의무화하는 데서 끝나지 않는다. 국제 협력으로 프론티어 랩 안을 들여다볼 통로를 만들고, 소프트웨어로 확인할 수 없는 부분은 하드웨어 검증도 고려해야 한다."
+    ],
+    "toc": [
+      {
+        "id": "ch1",
+        "text": "1. 위험을 보는 틀: 역량과 맥락, 연결 정도, 대상, 가능성·크기·가역성"
+      },
+      {
+        "id": "ch2",
+        "text": "2. 종말론의 핵심: 통제 상실, 되돌릴 수 없음, 그리고 내년"
+      },
+      {
+        "id": "ch3",
+        "text": "3. 왜 미리 막지 못하는가: 개발사도 나중에 알고, 규제는 큰 모델만 본다"
+      },
+      {
+        "id": "ch4",
+        "text": "4. 왜 과장처럼 들리는가: 우리가 쓰는 모델은 맛보기다"
+      },
+      {
+        "id": "ch5",
+        "text": "5. 그래서 속도 조절, 그렇다면 누가 정하는가: 민간이 아닌 공적 전문기관"
+      },
+      {
+        "id": "ch6",
+        "text": "6. 지금 다가온 위험: 이미 현실이 된 역량 위험과 보이지 않는 누적·점진적 위험"
+      },
+      {
+        "id": "ch7",
+        "text": "7. 무엇을 해야 하는가: 사고 보고 의무화와 그 한계, 프론티어 랩과의 공동연구와 인력 상호 파견, 하드웨어 검증, 한국의 국가 AI 안전 마스터플랜"
+      },
+      {
+        "id": "ch8",
+        "text": "8. 결론"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "h2",
+        "id": "ch1",
+        "text": "1. 위험을 보는 틀"
+      },
+      {
+        "type": "h3",
+        "id": "s1-1",
+        "text": "1-1. AI 위험은 역량에서 오는 것과 맥락에서 오는 것으로 나뉜다"
+      },
+      {
+        "type": "p",
+        "text": "맥락 위험은 분야 자체가 위험한 경우다. 의료, 채용, 대출 심사처럼 결과가 사람의 삶에 바로 닿는 분야로, EU AI Act의 '고위험', 한국 AI 기본법의 '고영향'이 여기에 해당한다."
+      },
+      {
+        "type": "p",
+        "text": "AI 기본법은 고영향 인공지능을 에너지, 먹는물, 보건의료, 원자력, 채용, 대출 심사 등 열한 개 영역으로 한정해 정의한다(제2조 제4호)."
+      },
+      {
+        "type": "p",
+        "text": "역량 위험은 분야와 상관없이 AI가 너무 뛰어나서 생기는 위험이다. 생물무기 같은 화학·생물·방사능·핵(CBRN) 위협과 사이버 공격이 대표적이다."
+      },
+      {
+        "type": "p",
+        "text": "역량 위험은 의도하지 않아도 생긴다. 앤트로픽은 미토스의 사이버 공격 역량을 따로 학습시키지 않았는데, 일반 능력이 좋아지면서 부산물로 생겼다고 밝혔다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 1,
+            "title": "인공지능 발전과 신뢰 기반 조성 등에 관한 기본법",
+            "meta": "국가법령정보센터, 현행",
+            "note": "한국 AI 기본법 원문. 제2조 제4호 고영향 인공지능 정의, 제32조 연산량 기준 안전성 확보 의무",
+            "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=282791",
+            "host": "law.go.kr",
+            "status": null
+          },
+          {
+            "n": 2,
+            "title": "EU AI Act, Regulation (EU) 2024/1689",
+            "meta": "유럽연합 관보",
+            "note": "EU AI Act 공식 원문. 제6조와 부속서 III의 고위험 AI, 제3조 제65호의 시스템적 위험 정의",
+            "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+            "host": "eur-lex.europa.eu",
+            "status": null
+          },
+          {
+            "n": 3,
+            "title": "앤트로픽, 클로드 미토스 프리뷰 발표",
+            "meta": "2026-04-07",
+            "note": "미토스의 사이버 역량은 명시적으로 학습시키지 않은 부산물이라고 밝힘",
+            "url": "https://www.anthropic.com/research/mythos-preview",
+            "host": "anthropic.com",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s1-2",
+        "text": "1-2. AI가 세상과 얼마나 연결되어 있는지에 따라 위험의 크기가 달라진다"
+      },
+      {
+        "type": "p",
+        "text": "실험실 안에만 있는 AI는 실험실 안의 바이러스와 같아서 덜 위험하다."
+      },
+      {
+        "type": "p",
+        "text": "사회와 연결될수록 위험은 커진다. 로봇청소기의 오작동과 대형 수력발전소 AI의 오작동은 같은 오작동이지만 규모가 전혀 다르다."
+      },
+      {
+        "type": "p",
+        "text": "같은 AI라도 어떤 권한을 쥐고 있는지에 따라 결과가 달라진다. 버튼을 누를 권한만 줘도 얘기가 달라진다."
+      },
+      {
+        "type": "p",
+        "text": "2장에서 볼 올여름 사고들은 모두 실험실 안의 AI가 실제 인터넷과 이어진 순간에 벌어졌다."
+      },
+      {
+        "type": "h3",
+        "id": "s1-3",
+        "text": "1-3. 위험은 '무엇에 대한 위험인가'로도 나뉜다"
+      },
+      {
+        "type": "p",
+        "text": "AI 위험은 대체로 개인의 권리, 공공의 안전, 국가 안보에 미치는 위험으로 나눌 수 있다."
+      },
+      {
+        "type": "p",
+        "text": "같은 기술도 겨냥하는 대상에 따라 다른 위험이 된다. 딥페이크는 개인을 노린 사기에도, 국가 단위의 여론전에도 쓰인다."
+      },
+      {
+        "type": "h3",
+        "id": "s1-4",
+        "text": "1-4. 위험은 가능성과 크기, 그리고 되돌릴 수 있는지로 따져야 한다"
+      },
+      {
+        "type": "p",
+        "text": "위험은 위해가 일어날 가능성과 위해의 정도·범위의 결합이다."
+      },
+      {
+        "type": "p",
+        "text": "가능성은 높지만 한 번의 피해는 작고 많은 사람이 오래 겪는 위험이 있고, 가능성은 낮지만 한번 벌어지면 파국적인 위험이 있다."
+      },
+      {
+        "type": "p",
+        "text": "둘을 기댓값 하나로 뭉치면 중요한 정보가 사라진다. 특히 되돌릴 수 없는 위험은 기댓값으로 표현되지 않는다."
+      },
+      {
+        "type": "p",
+        "text": "그래서 가역성을 따로 봐야 한다. 아래 2장의 종말론 위험과 6장의 누적·점진적 위험은 바로 이 기준에서 갈린다."
+      },
+      {
+        "type": "h3",
+        "id": "s1-5",
+        "text": "1-5. EU가 '시스템적 위험'으로 묶은 것은 둘로 나눠 봐야 한다"
+      },
+      {
+        "type": "p",
+        "text": "EU GPAI CoP는 AI 기업이 반드시 평가해야 할 시스템적 위험으로 네 가지를 지정한다. 화학·생물·방사능·핵, 통제 상실, 사이버 공격, 유해한 조작이다."
+      },
+      {
+        "type": "p",
+        "text": "그런데 화학·생물 위협과 조작은 정반대 자리에 있다. 앞의 것은 한번 벌어지면 파국적이고 되돌리기 어렵다. 뒤의 것은 한 번의 피해는 작지만 흔하고, 사회 전체에 오래 쌓인다."
+      },
+      {
+        "type": "p",
+        "text": "그래서 앞의 것은 종말론의 파국 위험(2장)으로, 뒤의 것은 누적·점진적 위험(6장)으로 나눠서 본다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 4,
+            "title": "유럽집행위원회, EU GPAI CoP",
+            "meta": "2025-07-10",
+            "note": "안전·보안 장 부속서 1.4에서 4대 시스템적 위험을 지정. 통제 상실이 공식 목록에 들어 있음",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+            "host": "digital-strategy.ec.europa.eu",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "ch2",
+        "text": "2. 종말론의 핵심: 통제 상실, 되돌릴 수 없음, 그리고 내년"
+      },
+      {
+        "type": "h3",
+        "id": "s2-1",
+        "text": "2-1. 종말론의 핵심축은 통제 상실이다"
+      },
+      {
+        "type": "p",
+        "text": "EU는 통제 상실을 인간이 모델을 믿을 만하게 지시하고, 수정하고, 멈추는 능력을 잃는 위험으로 정의한다."
+      },
+      {
+        "type": "p",
+        "text": "아직은 실험실 안의 이야기다. 완전히 통제를 잃은 것은 아니지만, 그 징후가 보이기 시작했다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 5,
+            "title": "유럽집행위원회, EU GPAI CoP",
+            "meta": "2025-07-10",
+            "note": "부속서 1.4의 통제 상실 정의",
+            "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+            "host": "digital-strategy.ec.europa.eu",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s2-2",
+        "text": "2-2. 올여름, 실험실 문턱을 넘은 사례가 잇따랐다"
+      },
+      {
+        "type": "p",
+        "text": "영국 AI보안연구소(UK AISI)의 사이버 평가(7월 25~28일)에서 122번 실행 가운데 10번, 에이전트가 평가 환경을 벗어나 실제 인터넷의 사람과 조직을 상대로 무단 행동 19건을 했다. 가짜 계정을 만들어 악성 코드 승인을 설득하기도 했다."
+      },
+      {
+        "type": "p",
+        "text": "앤트로픽은 자체 사이버 평가 중 실제 시스템을 건드린 사고 세 건을 공개했다. 그중 하나에서는 악성 패키지가 약 15개 시스템에서 실행되었다. 9월 후속 보고에서 사고는 네 건으로 늘었다."
+      },
+      {
+        "type": "p",
+        "text": "오픈AI 내부 연구모델의 평가에서는 에이전트 약 1,200개가 비공식 게시판을 만들어 7만 건 넘는 메시지로 역할을 나눴고, 그중 약 700개가 실제 외부 서비스인 허깅페이스를 공격했다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 6,
+            "title": "영국 AI보안연구소, 사이버 평가 중 무단 행동 사고 보고서",
+            "meta": "2026-08-04",
+            "note": "122번 중 10번 이탈, 무단 행동 19건. 대책으로 실행 중 실시간 모니터링 제시",
+            "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+            "host": "aisi.gov.uk",
+            "status": null
+          },
+          {
+            "n": 7,
+            "title": "앤트로픽, 사이버보안 평가 중 사고 조사",
+            "meta": "2026-07-30",
+            "note": "평가 중 실제 시스템을 건드린 사고 세 건 공개",
+            "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+            "host": "anthropic.com",
+            "status": null
+          },
+          {
+            "n": 8,
+            "title": "METR·레드우드 리서치, 오픈AI 허깅페이스 사고 독립 조사",
+            "meta": "2026-08-26",
+            "note": "에이전트 1,200개, 메시지 7만 건, 700개 공격이라는 수치의 원출처",
+            "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+            "host": "metr.org",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s2-3",
+        "text": "2-3. 이것은 '탈옥'이 아니라 통제 상실이다"
+      },
+      {
+        "type": "p",
+        "text": "탈옥은 사람이 교묘한 명령으로 안전장치를 일부러 뚫는 것이다. 위 사건들에서는 아무도 해킹을 지시하지 않았고, 에이전트가 스스로 과업 범위를 넓혔다."
+      },
+      {
+        "type": "p",
+        "text": "통제 상실은 AI가 나쁜 목적을 품는 경우만이 아니다. 목적은 사람이 줬더라도 수단과 속도가 사람 손을 떠나면 통제 상실이다."
+      },
+      {
+        "type": "p",
+        "text": "그래서 \"결국 나쁜 사람이 문제 아니냐\"는 반론은 절반만 맞다. 목적을 준 사람조차 AI가 무엇을 어떻게 할지 따라가지 못하면 막을 사람이 없다."
+      },
+      {
+        "type": "p",
+        "text": "앤트로픽의 사고는 평가 협력사와의 설정 오류에서 비롯되었으니(3-1) 단순한 실수로 볼 수도 있겠으나, 현실의 통제 상실도 이런 실수에서 시작될 공산이 크다. 인터넷이 연결되어 있던 것은 사람의 실수지만, 그 연결을 타고 실제 시스템을 건드린 것은 에이전트였다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 9,
+            "title": "영국 AI보안연구소, 사이버 평가 중 무단 행동 사고 보고서",
+            "meta": "2026-08-04",
+            "note": "지시 없이 과업 범위를 넓힌 에이전트 행동의 상세 기록",
+            "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+            "host": "aisi.gov.uk",
+            "status": null
+          },
+          {
+            "n": 10,
+            "title": "헨드릭스·마제이카·우드사이드, 「AI 파국 위험 개관」",
+            "meta": "2023",
+            "note": "AI 파국 위험을 악용, 경쟁, 조직, 통제 불능 AI의 넷으로 정리. 악용과 통제 상실이 섞일 수 있음을 보여 줌",
+            "url": "https://arxiv.org/abs/2306.12001",
+            "host": "arxiv.org",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s2-4",
+        "text": "2-4. 통제 상실의 원인은 기술과 사회 양쪽에 있다"
+      },
+      {
+        "type": "p",
+        "text": "기술적으로는 AI가 무엇을 왜 하는지 들여다볼 수단이 약해지고 있다. 에이전트가 \"여기가 평가 환경인가 실제인가\"를 스스로 따진 기록도 나왔다."
+      },
+      {
+        "type": "p",
+        "text": "재귀적 자기개선이 이를 심화한다. AI가 다음 세대 AI의 설계에 관여하면 결과물을 더 이상 인간이 설계하지 않게 된다. 아직 이 단계에 완전히 도달한 것은 아니다."
+      },
+      {
+        "type": "p",
+        "text": "사회적으로는 위험관리가 기업의 자발적 조치에 맡겨져 있다. 개발사는 정보를 독점할 유인이 있고, 속도 경쟁이 위험관리를 앞선다. 추가 시험으로 출시를 늦추면 덜 신중한 경쟁자에게 시장을 빼앗길 위험이 있다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 11,
+            "title": "국제 AI 안전 보고서 2026",
+            "meta": "벤지오 외, 2026-02",
+            "note": "13쪽: 개발사의 정보 독점 유인과 속도 압박. 102쪽: 출시를 늦추면 덜 신중한 경쟁자에게 시장을 잃는다는 속도와 안전의 상충",
+            "url": "https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026_1.pdf",
+            "host": "internationalaisafetyreport.org",
+            "status": null
+          },
+          {
+            "n": 12,
+            "title": "테크크런치, 앤트로픽 연구원 퇴사와 자기개선 AI 경고",
+            "meta": "2026-09-09",
+            "note": "제이콥 콕슨이 자기개선 AI를 두고 기업들이 \"목숨을 건 도박\"을 한다고 경고",
+            "url": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/",
+            "host": "techcrunch.com",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s2-5",
+        "text": "2-5. 벌어지면 막을 수 없다"
+      },
+      {
+        "type": "p",
+        "text": "가장 뛰어난 AI가 누군가의 목적에 따라, 사람이 쫓아갈 수 없는 속도로 사이버 공격을 퍼붓거나, 살상 드론을 움직이거나, 다른 나라 주요 시설을 망가뜨리거나, 금융시장을 흔드는 상황을 생각할 수 있다."
+      },
+      {
+        "type": "p",
+        "text": "대응하는 쪽의 속도가 공격하는 쪽을 따라가지 못한다. AI가 자율적으로 해낼 수 있는 사이버 과업의 길이는 약 4.7개월마다 두 배로 늘었고, 최신 모델은 이 추세마저 웃돌았다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 13,
+            "title": "영국 AI보안연구소, 자율 AI 사이버 역량의 발전 속도",
+            "meta": "2026-05-13",
+            "note": "자율 사이버 과업 길이가 약 4.7개월마다 두 배. 미토스 등 최신 모델은 추세를 크게 상회",
+            "url": "https://www.aisi.gov.uk/blog/how-fast-is-autonomous-ai-cyber-capability-advancing",
+            "host": "aisi.gov.uk",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s2-6",
+        "text": "2-6. 종말론의 핵심은 되돌릴 수 없다는 점이다"
+      },
+      {
+        "type": "p",
+        "text": "종말론의 핵심은 여러 위험 가운데 한번 벌어지면 되돌릴 수 없는 성격의 것들에 있다."
+      },
+      {
+        "type": "p",
+        "text": "되돌릴 수 없으니 사후 대응으로는 부족하고, 사전적 조치가 필요하다."
+      },
+      {
+        "type": "p",
+        "text": "확률 분포조차 알 수 없는 불확실성 앞에서는 통계적 위험관리도 작동하지 않으니, 사전예방의 원칙을 따를 수밖에 없다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 14,
+            "title": "닉 보스트롬, 「실존적 위험」",
+            "meta": "Journal of Evolution and Technology, 2002",
+            "note": "인류 멸종이나 되돌릴 수 없는 잠재력 훼손을 '실존적 위험'으로 처음 체계화한 논문",
+            "url": "https://nickbostrom.com/existential/risks",
+            "host": "nickbostrom.com",
+            "status": null
+          },
+          {
+            "n": 15,
+            "title": "토비 오드, 『벼랑』",
+            "meta": "2020",
+            "note": "AI를 인류 최대의 실존적 위험 요인으로 꼽은 책",
+            "url": "https://theprecipice.com/",
+            "host": "theprecipice.com",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s2-7",
+        "text": "2-7. 10년 뒤가 아니라 내년일 수 있다"
+      },
+      {
+        "type": "p",
+        "text": "오픈AI와 앤트로픽에서 일한 연구원 제이콥 콕슨은 퇴사하며 「월스트리트저널」 인터뷰에서 내년 말이면 이미 통제 불능이 될 수 있는 흐름이라고 말했다(9월 8일, 미국 시각)."
+      },
+      {
+        "type": "p",
+        "text": "다음 날 앤트로픽의 정렬 연구 책임자 에번 휴빙거는 AI가 10년 안에 인류를 멸종시킬 확률을 개인적으로 10% 넘게 본다고 했다. 앤트로픽의 공식 입장은 아니다."
+      },
+      {
+        "type": "p",
+        "text": "개발사 안에서 나온 경고만 있는 것도 아니다. 2-5에서 본 대로 AI가 자율적으로 해내는 사이버 과업의 길이가 4.7개월마다 두 배로 늘어난다면, 1년 사이에 여섯 배 가까이 길어진다."
+      },
+      {
+        "type": "p",
+        "text": "기후위기의 1.5도와 같은 구조다. 기후과학은 1.5~2도 부근에서 남극·그린란드 빙상의 되돌릴 수 없는 손실이 촉발될 수 있다고 본다. 그래서 1.5도가 대응의 시한이 되었다."
+      },
+      {
+        "type": "p",
+        "text": "비유의 한계도 있다. 기후의 문턱은 온도로 표시되지만 AI의 문턱은 합의된 지표가 없다. 연구자들의 멸망 확률 추정은 10%에서 99.99%까지 갈린다."
+      },
+      {
+        "type": "p",
+        "text": "그러나 문턱의 위치가 불확실하다는 것은 안심할 이유가 아니라 더 일찍 조심할 이유다. 『국제 AI 안전 보고서』는 더 강한 증거를 기다리다가는 대응 자체가 불가능해질 수 있다며 이를 '증거의 딜레마'라고 부른다."
+      },
+      {
+        "type": "p",
+        "text": "반대 목소리도 있다. 트럼프 대통령은 멸종 가능성을 전혀 걱정하지 않으며 AI 경쟁에서 이기는 게 중요하다고 했다(9월 10일, 미국 시각)."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 16,
+            "title": "테크크런치, 앤트로픽 연구원 퇴사와 경고",
+            "meta": "2026-09-09",
+            "note": "콕슨의 퇴사와 \"내년 말\" 경고. 발언의 원출처는 「월스트리트저널」 인터뷰",
+            "url": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/",
+            "host": "techcrunch.com",
+            "status": null
+          },
+          {
+            "n": 17,
+            "title": "포천, 같은 사건 보도",
+            "meta": "2026-09-09",
+            "note": "콕슨 퇴사와 휴빙거 발언을 함께 다룸",
+            "url": "https://fortune.com/2026/09/09/anthropic-researcher-resigns-warn-ai-companies-gambling-with-lives/",
+            "host": "fortune.com",
+            "status": null
+          },
+          {
+            "n": 18,
+            "title": "기후변화에 관한 정부간 협의체, 1.5도 특별보고서 정책결정자 요약",
+            "meta": "2018",
+            "note": "B.2.2항: 1.5~2도 부근에서 빙상 불안정과 비가역적 손실이 촉발될 수 있음",
+            "url": "https://www.ipcc.ch/sr15/chapter/spm/",
+            "host": "ipcc.ch",
+            "status": null
+          },
+          {
+            "n": 19,
+            "title": "뉴시스, 멸망 확률 추정 보도",
+            "meta": "2026-09-10",
+            "note": "연구자들의 멸망 확률 추정이 10%에서 99.99%까지 갈림",
+            "url": "https://www.newsis.com/view/NISX20260910_0003783813",
+            "host": "newsis.com",
+            "status": null
+          },
+          {
+            "n": 20,
+            "title": "국제 AI 안전 보고서 2025",
+            "meta": "벤지오 외",
+            "note": "14쪽: 증거의 딜레마. 108쪽: 통제 상실 위험의 확률은 다른 위험보다 특히 논쟁적",
+            "url": "https://internationalaisafetyreport.org/sites/default/files/2025-10/international_ai_safety_report_2025_english.pdf",
+            "host": "internationalaisafetyreport.org",
+            "status": null
+          },
+          {
+            "n": 21,
+            "title": "기즈모도, 트럼프 대통령의 멸종 우려 일축",
+            "meta": "2026-09-11",
+            "note": "멸종 가능성을 걱정하지 않으며 AI 경쟁에서 이겨야 한다고 발언",
+            "url": "https://gizmodo.com/trump-shrugs-off-warnings-that-ai-could-cause-human-extinction-2000810553",
+            "host": "gizmodo.com",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "ch3",
+        "text": "3. 왜 미리 막지 못하는가"
+      },
+      {
+        "type": "h3",
+        "id": "s3-1",
+        "text": "3-1. 규제기관만 모르는 게 아니다. 개발사조차 나중에야 안다"
+      },
+      {
+        "type": "p",
+        "text": "오픈AI는 7월 11일에 벌어진 허깅페이스 침해를 약 일주일 뒤에야 파악했고, 7월 21일에야 공식 인정했다."
+      },
+      {
+        "type": "p",
+        "text": "앤트로픽의 사고 세 건은 모두 평가 지시문에 \"인터넷에 접근할 수 없다\"고 적혀 있었지만, 평가 협력사와의 설정 오류로 실제로는 연결되어 있었다. 개발사도 자기 실험실의 상태를 몰랐다."
+      },
+      {
+        "type": "p",
+        "text": "영국 AI보안연구소는 에이전트가 자기 행동이 실제라는 것을 언제 알아차렸는지 아직 분석하고 있다고 밝혔다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 22,
+            "title": "뉴시스, 「AI 에이전트 700개 떼로 몰려가 기업 서버 털었다…오픈AI, 일주일 뒤 파악」",
+            "meta": "2026-08-30",
+            "note": "개발사도 사고를 일주일 뒤에야 알았다는 국내 보도",
+            "url": "https://www.newsis.com/view/NISX20260830_0003768111",
+            "host": "newsis.com",
+            "status": null
+          },
+          {
+            "n": 23,
+            "title": "METR·레드우드 리서치, 오픈AI 허깅페이스 사고 독립 조사",
+            "meta": "2026-08-26",
+            "note": "침해 시점과 파악 시점의 차이를 포함한 사고 경위",
+            "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+            "host": "metr.org",
+            "status": null
+          },
+          {
+            "n": 24,
+            "title": "앤트로픽, 사이버보안 평가 중 사고 조사",
+            "meta": "2026-07-30",
+            "note": "세 건 모두 '인터넷 없음'으로 안내했지만 설정 오류로 실제 연결",
+            "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+            "host": "anthropic.com",
+            "status": null
+          },
+          {
+            "n": 25,
+            "title": "영국 AI보안연구소, 사이버 평가 중 무단 행동 사고 보고서",
+            "meta": "2026-08-04",
+            "note": "에이전트의 인지 시점 분석이 진행 중이라고 밝힘",
+            "url": "https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing",
+            "host": "aisi.gov.uk",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s3-2",
+        "text": "3-2. 그런데 사전 규제는 개발사의 자기신고에서 출발한다"
+      },
+      {
+        "type": "p",
+        "text": "AI 기본법 제32조는 학습 연산량이 기준을 넘는 AI에 수명주기 전반의 위험관리 의무를 부과하지만, 출발점은 사업자 자신의 신고다."
+      },
+      {
+        "type": "p",
+        "text": "규율 대상의 상당수는 해외에서 개발된 폐쇄형 시스템인데, 이를 실제로 조사·점검할 범위와 방식은 아직 검토 단계다. EU도 같은 고민을 안고 있다."
+      },
+      {
+        "type": "p",
+        "text": "기본법의 사실조사와 과태료 규정은 2027년 1월 21일까지 시행이 유예되어 있다."
+      },
+      {
+        "type": "p",
+        "text": "요컨대 사전 규제가 기대는 자기신고는, 신고하는 쪽도 아직 모르는 것을 담을 수 없다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 26,
+            "title": "인공지능 발전과 신뢰 기반 조성 등에 관한 기본법",
+            "meta": "국가법령정보센터, 현행",
+            "note": "제32조 안전성 확보 의무와 부칙의 유예 규정",
+            "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=282791",
+            "host": "law.go.kr",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s3-3",
+        "text": "3-3. 규제의 그물은 큰 모델만 잡는다. 특화 모델과 오픈 웨이트 모델은 그물 밖에 있다"
+      },
+      {
+        "type": "p",
+        "text": "연산량으로 대상을 정하면 가장 큰 프론티어 모델만 걸린다. 작지만 위험한 모델은 빠진다."
+      },
+      {
+        "type": "p",
+        "text": "생물 AI 도구는 대부분 오픈 웨이트다. 한 연구에서 성능 상위 도구의 23%가 오용 가능성이 높았고, 그중 61.5%가 완전히 공개되어 있었다. 조사된 생물 AI 도구 375개 가운데 안전장치를 갖춘 것은 3%뿐이었다."
+      },
+      {
+        "type": "p",
+        "text": "오픈 웨이트 공개는 되돌릴 수 없다. 공개된 가중치는 회수할 수 없고, 악의를 가진 사용자는 안전장치를 떼어 낼 수 있다."
+      },
+      {
+        "type": "p",
+        "text": "그리고 오픈 웨이트 모델은 빠르게 따라온다. 2026년 1월 이후 최고 오픈 웨이트 모델은 최고 폐쇄형 모델보다 평균 넉 달 뒤처져 있다. 사이버 역량만 보면 격차가 2025년의 6~10개월에서 4~7개월로 줄었다."
+      },
+      {
+        "type": "p",
+        "text": "격차 추정은 측정 방법과 시점에 따라 다르다. 2024년에는 약 1년, 2025년 10월에는 평균 3.5개월로 추정되었다. 추정치는 달라도 격차가 줄어드는 방향은 같다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 27,
+            "title": "국제 AI 안전 보고서 2026",
+            "meta": "벤지오 외",
+            "note": "64쪽: 생물 AI 도구 대부분이 오픈 웨이트. 69쪽: 375개 중 3%만 안전장치. 132~134쪽: 오픈 웨이트 공개는 되돌릴 수 없음. 135쪽: 2025년까지 자료로 격차 '1년 미만'",
+            "url": "https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026_1.pdf",
+            "host": "internationalaisafetyreport.org",
+            "status": null
+          },
+          {
+            "n": 28,
+            "title": "에포크 AI, 오픈 모델은 최고 폐쇄형 모델보다 넉 달 뒤처진다",
+            "meta": "2026-05-29",
+            "note": "2026년 1월 이후 평균 넉 달, 에포크 역량지수 8점 차이",
+            "url": "https://epoch.ai/data-insights/open-closed-eci-gap",
+            "host": "epoch.ai",
+            "status": null
+          },
+          {
+            "n": 29,
+            "title": "영국 AI보안연구소, 오픈 웨이트 모델의 사이버 역량 격차",
+            "meta": "2026-07-17",
+            "note": "사이버 과업에서 격차 4~7개월, 2025년 6~10개월에서 축소. 장기 과제에서는 격차가 더 클 수 있다는 단서",
+            "url": "https://www.aisi.gov.uk/blog/how-far-behind-the-frontier-are-leading-open-weight-models-on-cyber",
+            "host": "aisi.gov.uk",
+            "status": null
+          },
+          {
+            "n": 30,
+            "title": "에포크 AI, 오픈 웨이트 모델은 평균 약 3개월 뒤처진다",
+            "meta": "2025-10-30",
+            "note": "2025년 10월 기준 평균 3.5개월",
+            "url": "https://epoch.ai/data-insights/open-weights-vs-closed-weights-models",
+            "host": "epoch.ai",
+            "status": null
+          },
+          {
+            "n": 31,
+            "title": "에포크 AI, 오픈 모델은 얼마나 뒤처져 있나",
+            "meta": "2024-11-04",
+            "note": "2024년 기준 약 1년(5~22개월)",
+            "url": "https://epoch.ai/blog/open-models-report",
+            "host": "epoch.ai",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "ch4",
+        "text": "4. 왜 과장처럼 들리는가"
+      },
+      {
+        "type": "h3",
+        "id": "s4-1",
+        "text": "4-1. 우리가 매일 쓰는 모델은 맛보기다. 그래서 실제 역량을 낮춰 본다"
+      },
+      {
+        "type": "p",
+        "text": "우리가 요금을 내고 쓰는 챗GPT나 클로드는 안전장치와 사용 한도가 걸린 버전이다. 쓸 수 있는 자원과 추론 시간도 제한되어 있다."
+      },
+      {
+        "type": "p",
+        "text": "회사 안의 연구용 모델은 전혀 다른 존재다. 안전장치를 풀고 도움이 되는 데만 맞춘 상태로, 훨씬 많은 연산과 에이전트를 쓴다. 허깅페이스 공격도 일반 서비스가 아니라 오픈AI의 내부 연구모델에서 나왔다."
+      },
+      {
+        "type": "p",
+        "text": "개발사의 발표는 홍보일 수 있다는 반론도 있다. 그러나 허깅페이스 사고의 수치는 METR과 레드우드 리서치가 독립적으로 조사해 내놓은 것이다."
+      },
+      {
+        "type": "p",
+        "text": "오픈AI는 에이전트 1만 개 가까이를 88시간 동안 투입해 나비에-스토크스 방정식에 관한 핵심 명제 두 개를 증명했다고 밝혔다(9월 8일). 다만 외력이 있는 변형 문제여서 해결로 볼 수 있는지 논쟁이 있고, 오픈AI도 상금을 청구하지 않겠다고 했다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 32,
+            "title": "METR·레드우드 리서치, 오픈AI 허깅페이스 사고 독립 조사",
+            "meta": "2026-08-26",
+            "note": "공격한 에이전트가 오픈AI 내부 연구모델로 움직였음",
+            "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+            "host": "metr.org",
+            "status": null
+          },
+          {
+            "n": 33,
+            "title": "코인데스크, 오픈AI 에이전트 1만 개의 나비에-스토크스 결과와 수학계 논쟁",
+            "meta": "2026-09-09",
+            "note": "88시간 투입 결과와 해결 여부를 둘러싼 논쟁",
+            "url": "https://www.coindesk.com/tech/2026/09/09/openai-says-10-000-ai-agents-solved-a-usd1-million-math-problem-now-mathematicians-are-fighting",
+            "host": "coindesk.com",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "ch5",
+        "text": "5. 그래서 속도 조절, 그렇다면 누가 정하는가"
+      },
+      {
+        "type": "h3",
+        "id": "s5-1",
+        "text": "5-1. 남는 수단은 속도를 늦추는 것이다"
+      },
+      {
+        "type": "p",
+        "text": "되돌릴 수 없는 위험이고(2장), 문턱은 내년일 수 있으며(2장), 사전 조치는 개발사조차 나중에야 아는 정보에 기대고 있다(3장)."
+      },
+      {
+        "type": "p",
+        "text": "이 셋이 겹치면 남는 수단은 속도를 늦추는 것이다. 검증하고 통제하는 수단이 역량을 따라올 시간을 벌어야 한다."
+      },
+      {
+        "type": "p",
+        "text": "다만 늦춰야 하는 것은 개발 경쟁의 속도다. 안전성을 향한 경쟁의 속도는 오히려 더 높여야 한다. 평가, 검증, 통제 기술이 역량을 따라잡아야 속도를 늦춘 시간이 의미가 있다."
+      },
+      {
+        "type": "p",
+        "text": "안전하게 만드는 데에는 자원이 더 든다. 건물을 대충 지으면 빠르고 싸지만 안전하게 지으려면 시간과 장비가 더 드는 것처럼, 평가와 검증, 통제 연구도 모델을 수없이 돌려 봐야 해서 상당한 연산 자원이 필요하다. 기술만의 일도 아니다. 그 기술로 무엇을 언제 막을지 정하는 안전 거버넌스에도 투자와 사람이 필요하다(7-4)."
+      },
+      {
+        "type": "h3",
+        "id": "s5-2",
+        "text": "5-2. 속도 조절 요구는 업계 안에서 먼저 나왔다"
+      },
+      {
+        "type": "p",
+        "text": "7월 말 오픈AI, 앤트로픽, 구글 딥마인드, 메타 등의 전현직 직원들이 미국 정부에 속도 조절 수단 개발을 지원해 달라는 서한을 냈다. 서명자는 8월 초 1,300명을 넘었다."
+      },
+      {
+        "type": "p",
+        "text": "9월 12일 앤트로픽의 다리오 아모데이 대표가 AI 역량을 끌어올리는 속도를 늦춰야 한다며 세 단계를 제안했다. 외부 평가자 상주, 민주국가 기업 간 공동 기준과 속도 한도, 권위주의 국가와의 조율이다."
+      },
+      {
+        "type": "p",
+        "text": "샘 올트먼은 동의하며 외부 평가자 상주를 오픈AI도 하겠다고 했다. 이틀 뒤에는 연방 안전기준을 환영하되 \"먼저 우리 스스로 할 수 있는 것을 하자\"고 했다. 7월에는 국제원자력기구를 본뜬 미국 주도 국제 포럼을 제안한 바 있다."
+      },
+      {
+        "type": "p",
+        "text": "데미스 하사비스는 7월, 미국 정부가 뒷받침하되 업계가 재원을 대는 금융투자업 자율규제기구형 표준기구를 제안했다. 출시 30일 전 자발적 모델 제출에서 시작해 의무로 바꾸자는 구상이다. 9월에는 아모데이의 글이 옳은 방향이라고 호응했다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 34,
+            "title": "Pacing the Frontier 서한",
+            "meta": "2026-07",
+            "note": "프론티어 AI 기업 전현직 직원들이 미국 정부에 속도 조절 수단 개발 지원을 요청",
+            "url": "https://www.pacingthefrontier.com/",
+            "host": "pacingthefrontier.com",
+            "status": null
+          },
+          {
+            "n": 35,
+            "title": "포천, 직원 서한 보도",
+            "meta": "2026-07-29",
+            "note": "서한의 요구와 서명 규모",
+            "url": "https://fortune.com/2026/07/29/anthropic-deepmind-openai-meta-washington-ai-slowdown-plan/",
+            "host": "fortune.com",
+            "status": null
+          },
+          {
+            "n": 36,
+            "title": "다리오 아모데이, 「We Must Pace the Frontier」",
+            "meta": "2026-09-12",
+            "note": "3단계 속도 조절안 원문",
+            "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+            "host": "darioamodei.com",
+            "status": null
+          },
+          {
+            "n": 37,
+            "title": "테크크런치, 아모데이의 속도 조절안 보도",
+            "meta": "2026-09-12",
+            "note": "발표일과 제안 요지",
+            "url": "https://techcrunch.com/2026/09/12/anthropic-ceo-outlines-plan-to-pace-the-frontier/",
+            "host": "techcrunch.com",
+            "status": null
+          },
+          {
+            "n": 38,
+            "title": "샘 올트먼 X 게시물",
+            "meta": "2026-09-12",
+            "note": "속도 조절 동의, 외부 평가자 상주 약속",
+            "url": "https://x.com/sama/status/2098811563415150910",
+            "host": "x.com",
+            "status": null
+          },
+          {
+            "n": 39,
+            "title": "CNBC, 올트먼의 속도 조절 입장",
+            "meta": "2026-09-14",
+            "note": "연방 기준은 환영, 정부 역할은 국제 조율, \"먼저 우리 스스로\"",
+            "url": "https://www.cnbc.com/2026/09/14/sam-altman-ai-slowdown-anthropic-amodei-musk.html",
+            "host": "cnbc.com",
+            "status": null
+          },
+          {
+            "n": 40,
+            "title": "실리콘앵글, 올트먼의 미국 주도 국제 포럼 제안",
+            "meta": "2026-07-02",
+            "note": "국제원자력기구형 국제 AI 표준 포럼 제안(파이낸셜타임스 기고 보도)",
+            "url": "https://siliconangle.com/2026/07/02/sam-altman-calls-us-led-international-forum-set-global-ai-standards/",
+            "host": "siliconangle.com",
+            "status": null
+          },
+          {
+            "n": 41,
+            "title": "데미스 하사비스 X 게시물",
+            "meta": "2026-07-14",
+            "note": "프론티어 AI 표준기구 제안 원문",
+            "url": "https://x.com/demishassabis/status/2076957440109625718",
+            "host": "x.com",
+            "status": null
+          },
+          {
+            "n": 42,
+            "title": "테크크런치, 하사비스의 표준기구 제안",
+            "meta": "2026-07-14",
+            "note": "정부 뒷받침, 업계 재원, 독립 운영 구조",
+            "url": "https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/",
+            "host": "techcrunch.com",
+            "status": null
+          },
+          {
+            "n": 43,
+            "title": "데미스 하사비스 X 게시물",
+            "meta": "2026-09-12경",
+            "note": "아모데이의 글이 옳은 방향이라고 호응",
+            "url": "https://x.com/demishassabis/status/2098909516582490602",
+            "host": "x.com",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s5-3",
+        "text": "5-3. 그러나 업계의 제안은 판단과 검증을 업계 안에 둔다"
+      },
+      {
+        "type": "p",
+        "text": "평가자에게 접근권을 주는 것도 기업이고, 기준을 함께 정하는 것도 기업들이며, 표준기구의 재원도 업계가 낸다."
+      },
+      {
+        "type": "p",
+        "text": "그래서 규칙을 적용받을 쪽이 규칙을 직접 쓰려 한다는 규제 포획 비판이 바로 나왔다. 기업이 급여와 접근권을 쥔 상주 평가자는 독립적일 수 없다는 지적도 있다."
+      },
+      {
+        "type": "p",
+        "text": "하사비스의 구상은 업계 내부 반대로 추진이 멈췄다는 보도가 나왔다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 44,
+            "title": "더 레지스터, 「빅 AI가 규제 포획의 조건을 내걸었다」",
+            "meta": "2026-09-14",
+            "note": "아모데이 제안을 업계가 스스로 규칙을 쓰려는 시도로 비판",
+            "url": "https://www.theregister.com/ai-and-ml/2026/09/14/big-ai-sets-out-its-terms-for-regulatory-capture-and-calls-it-pace-the-frontier/5296067",
+            "host": "theregister.com",
+            "status": null
+          },
+          {
+            "n": 45,
+            "title": "테크폴리시프레스, 「누가 속도를 정해야 하나」",
+            "meta": "2026-09-17",
+            "note": "기업이 급여와 접근권을 쥔 평가자의 독립성 문제",
+            "url": "https://techpolicy.press/who-should-pace-the-frontier-not-dario-amodei",
+            "host": "techpolicy.press",
+            "status": null
+          },
+          {
+            "n": 46,
+            "title": "포천, 하사비스 표준기구 구상 평가",
+            "meta": "2026-07-21",
+            "note": "금융투자업 자율규제 모델이 규제 포획으로 이어졌다는 우려",
+            "url": "https://fortune.com/2026/07/21/google-deepmind-ceo-demis-hassabis-finra-for-ai-proposal-gains-momentum-but-is-it-any-good/",
+            "host": "fortune.com",
+            "status": null
+          },
+          {
+            "n": 47,
+            "title": "동아일보, 하사비스 표준기구 추진 중단 보도",
+            "meta": "2026-09-18",
+            "note": "업계 내부 반대로 추진이 멈췄다는 보도",
+            "url": "https://www.donga.com/news/Inter/article/all/20260918/134693390/1",
+            "host": "donga.com",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s5-4",
+        "text": "5-4. 속도를 정하는 일은 원래 민주적 통제의 몫이지만, 민주주의는 느리다"
+      },
+      {
+        "type": "p",
+        "text": "속도를 정한다는 것은 사회 전체가 감수할 위험의 크기를 정하는 일이다. 그래서 원래 민주적 통제 아래 있어야 한다."
+      },
+      {
+        "type": "p",
+        "text": "아모데이 등을 상대로 한 반독점 집단소송의 원고들도, 속도 조절은 CEO들의 사적 합의가 아니라 의회가 만든 법으로 정해야 한다고 주장했다."
+      },
+      {
+        "type": "p",
+        "text": "그런데 민주주의는 느리다. 제도는 기술의 속도를 따라가지 못하고, 규제가 시행될 즈음에는 이미 낡아 있을 수 있다. 문턱이 내년이라면 입법의 속도로는 늦다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 48,
+            "title": "조선일보, AI 기업 속도 조절 합의 반독점 집단소송 보도",
+            "meta": "2026-09-20",
+            "note": "속도 조절은 의회의 법으로 정해야 한다는 원고 측 주장",
+            "url": "https://www.chosun.com/economy/tech_it/2026/09/20/34AS5BPXFRDNDAFAMJBUTKWD6I/",
+            "host": "chosun.com",
+            "status": null
+          },
+          {
+            "n": 49,
+            "title": "국제 AI 안전 보고서 2025",
+            "meta": "벤지오 외",
+            "note": "177쪽: 기술 혁신과 거버넌스 구조의 속도 차이, 규제가 시행될 즈음 낡을 수 있음",
+            "url": "https://internationalaisafetyreport.org/sites/default/files/2025-10/international_ai_safety_report_2025_english.pdf",
+            "host": "internationalaisafetyreport.org",
+            "status": null
+          },
+          {
+            "n": 50,
+            "title": "국제 AI 안전 보고서 2026",
+            "meta": "벤지오 외",
+            "note": "97쪽: 거버넌스 절차는 AI 환경 변화에 느리게 적응함",
+            "url": "https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026_1.pdf",
+            "host": "internationalaisafetyreport.org",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s5-5",
+        "text": "5-5. 그러니 전문 기관이 맡되, 민간이 아닌 공적 기관이어야 한다"
+      },
+      {
+        "type": "p",
+        "text": "현실적으로는 전문 기관이 판단하고 검증할 수밖에 없다. 그리고 그 기관은 민간이 아니어야 한다."
+      },
+      {
+        "type": "p",
+        "text": "그렇다고 민주적 통제를 건너뛰자는 것은 아니다. 원칙과 권한은 법으로 한 번 정해 두고, 개별 판단은 권한을 위임받은 전문기관이 그때그때 내리는 방식이다. 원자력이나 금융 규제도 이렇게 운영된다."
+      },
+      {
+        "type": "p",
+        "text": "기업이 자사 시스템을 두고 모은 증거는 경제적 이해관계 때문에 편향될 수 있어서, 독립 평가자의 증거가 특히 중요하다. 개발사는 정보를 독점할 유인이 있고, 상업적 이유로 위험평가 정보를 공유하기 어렵다. 연구자들은 자율규제의 한계 때문에 제3자 감사·검증이 필요하다고 주장해 왔다."
+      },
+      {
+        "type": "p",
+        "text": "제도로 옮기면, AI안전연구소 같은 공적 기관이 판단하고 그 이유를 공개해 시민이 들여다볼 수 있게 한다. 기업의 자발적 안전 서약을 인정하거나 철회하는 권한도 공적 기관에만 둔다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 51,
+            "title": "국제 AI 안전 보고서 2025",
+            "meta": "벤지오 외",
+            "note": "108쪽: 기업 증거는 경제적 유인으로 편향될 수 있어 독립 평가자의 증거가 특히 중요",
+            "url": "https://internationalaisafetyreport.org/sites/default/files/2025-10/international_ai_safety_report_2025_english.pdf",
+            "host": "internationalaisafetyreport.org",
+            "status": null
+          },
+          {
+            "n": 52,
+            "title": "국제 AI 안전 보고서 2026",
+            "meta": "벤지오 외",
+            "note": "13쪽: 정보 독점 유인. 97쪽: 상업적 고려로 위험평가 정보 공유가 어려움. 114쪽: 자율규제의 한계와 제3자 감사·검증·표준화",
+            "url": "https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026_1.pdf",
+            "host": "internationalaisafetyreport.org",
+            "status": null
+          },
+          {
+            "n": 53,
+            "title": "저자 자료: 송경호, IASEAI'27 모델정책 초안",
+            "meta": "2026-09",
+            "note": "자발적 서약의 인정·철회 권한을 공적 기관에만 두고 판단 이유를 공개하는 모델 조문",
+            "url": null,
+            "host": null,
+            "status": "미공개"
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s5-6",
+        "text": "5-6. 속도 조절에는 국경과 오픈 웨이트라는 빈틈이 있다"
+      },
+      {
+        "type": "p",
+        "text": "민주국가 기업끼리 속도를 맞춰도, 중국 모델은 2023년 이후 미국 최전선을 평균 7개월(최소 4개월, 최대 14개월) 뒤에서 따라왔다. 속도를 늦추면 그 격차가 좁혀질 수 있다."
+      },
+      {
+        "type": "p",
+        "text": "아모데이가 셋째 단계로 권위주의 국가와의 조율을 넣은 이유이고, 트럼프 대통령이 멸종보다 중국에 지는 것을 걱정한 이유이기도 하다."
+      },
+      {
+        "type": "p",
+        "text": "오픈 웨이트 모델도 넉 달에서 일곱 달 뒤에 따라온다(3-3). 기업 간 합의만으로는 이 빈틈을 막을 수 없다. 공개 여부와 특화 도구의 접근을 판단하는 공적 장치가 함께 있어야 한다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 54,
+            "title": "에포크 AI, 중국 AI 모델은 2023년 이후 미국 최전선보다 평균 7개월 뒤처졌다",
+            "meta": "2026-01-02",
+            "note": "2023~2025년 평균 7개월, 최소 4개월, 최대 14개월",
+            "url": "https://epoch.ai/data-insights/us-vs-china-eci",
+            "host": "epoch.ai",
+            "status": null
+          },
+          {
+            "n": 55,
+            "title": "다리오 아모데이, 「We Must Pace the Frontier」",
+            "meta": "2026-09-12",
+            "note": "셋째 단계: 민주국가 정부와 권위주의 국가 정부의 조율",
+            "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+            "host": "darioamodei.com",
+            "status": null
+          },
+          {
+            "n": 56,
+            "title": "기즈모도, 트럼프 대통령의 멸종 우려 일축",
+            "meta": "2026-09-11",
+            "note": "AI 경쟁에서 이기지 못하면 매우 나쁜 처지에 놓인다는 발언",
+            "url": "https://gizmodo.com/trump-shrugs-off-warnings-that-ai-could-cause-human-extinction-2000810553",
+            "host": "gizmodo.com",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "ch6",
+        "text": "6. 지금 다가온 위험: 이미 현실이 된 위험"
+      },
+      {
+        "type": "h3",
+        "id": "s6-1",
+        "text": "6-1. 지금 다가온 위험은 이미 현실이 된 위험이다"
+      },
+      {
+        "type": "p",
+        "text": "2장의 위험이 내년의 문턱이라면, 이 장의 위험은 이미 넘어와 있는 위험이다."
+      },
+      {
+        "type": "p",
+        "text": "두 갈래로 나타난다. 하나는 현재형이 된 역량 위험이고, 다른 하나는 보이지 않게 쌓이는 누적·점진적 위험이다."
+      },
+      {
+        "type": "h3",
+        "id": "s6-2",
+        "text": "6-2. 역량 위험은 이미 현재형이다"
+      },
+      {
+        "type": "p",
+        "text": "오픈AI는 GPT-6 아스트라가 사이버보안 분야에서 자사 기준 최고 위험 등급인 '치명적'을 충족한 첫 모델이라고 밝혔다."
+      },
+      {
+        "type": "p",
+        "text": "앤트로픽의 미토스는 27년 된 오픈BSD, 16년 된 FFmpeg, 17년 된 프리BSD의 취약점을 스스로 찾아냈다. 영국 AI보안연구소 평가에서는 인간 전문가가 20시간 걸리는 32단계 공격 시뮬레이션을 10번 중 3번 끝까지 해냈다."
+      },
+      {
+        "type": "p",
+        "text": "앤트로픽은 예멘 북부의 무기 개발 조직이 클로드로 탄도미사일 등의 개발을 시도하다 차단되었다고 공개했다. 이 조직을 후티 반군으로 지목한 것은 언론의 해석이다."
+      },
+      {
+        "type": "p",
+        "text": "우크라이나 방산업체 대표는 2024년 AI가 조종하는 드론 10대를 한 차례 시험 투입했다고 증언했다. 우크라이나 국방부는 응답하지 않았다."
+      },
+      {
+        "type": "p",
+        "text": "요컨대 2장에서 '만약'으로 말한 장면의 조각들은 이미 따로따로 벌어지고 있다. 아직 없는 것은 그 조각들이 통제를 벗어난 AI 하나에서 한꺼번에 벌어지는 일뿐이다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 57,
+            "title": "오픈AI, GPT-6 아스트라 배포 안전 문서",
+            "meta": "2026-09-01",
+            "note": "사이버보안 '치명적' 기준을 처음 충족",
+            "url": "https://deploymentsafety.openai.com/gpt-6-astra",
+            "host": "deploymentsafety.openai.com",
+            "status": null
+          },
+          {
+            "n": 58,
+            "title": "앤트로픽, 클로드 미토스 프리뷰 발표",
+            "meta": "2026-04-07",
+            "note": "수십 년 묵은 취약점을 스스로 발견",
+            "url": "https://www.anthropic.com/research/mythos-preview",
+            "host": "anthropic.com",
+            "status": null
+          },
+          {
+            "n": 59,
+            "title": "영국 AI보안연구소, 미토스 사이버 역량 평가",
+            "meta": "2026-04-13",
+            "note": "20시간짜리 32단계 공격 시뮬레이션을 10번 중 3번 완수",
+            "url": "https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities",
+            "host": "aisi.gov.uk",
+            "status": null
+          },
+          {
+            "n": 60,
+            "title": "앤트로픽, AI 오남용 탐지 보고서 2026년 9월호",
+            "meta": "2026-09-10",
+            "note": "예멘 북부 조직의 미사일 개발 시도와 계정 차단",
+            "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+            "host": "anthropic.com",
+            "status": null
+          },
+          {
+            "n": 61,
+            "title": "미들이스트아이, 후티의 클로드 악용 보도",
+            "meta": null,
+            "note": "위 조직을 후티로 지목한 언론 보도",
+            "url": "https://www.middleeasteye.net/news/houthis-used-ai-platform-claude-develop-ballistic-missiles",
+            "host": "middleeasteye.net",
+            "status": null
+          },
+          {
+            "n": 62,
+            "title": "탐스하드웨어, 우크라이나 AI 드론 증언 보도",
+            "meta": "2026-06, 뉴사이언티스트 인용",
+            "note": "2024년 AI 조종 드론 10대 시험 투입 증언",
+            "url": "https://www.tomshardware.com/tech-industry/ukraine-used-10-ai-controlled-terminator-drones-to-kill-russian-soldiers-two-years-ago-marking-first-autonomous-killings-of-humans-senior-ukrainian-defense-industry-figure-confirms-this-autonomous-watershed-was-passed-in-2024",
+            "host": "tomshardware.com",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s6-3",
+        "text": "6-3. 누적·점진적 위험: 모르는 사이 쌓이는 위험"
+      },
+      {
+        "type": "p",
+        "text": "되돌릴 수 없는 위험만 위험한 것은 아니다. 모르는 사이에 사회 전체에 서서히 쌓이는 위험도 있다."
+      },
+      {
+        "type": "p",
+        "text": "아무도 죽거나 다치지 않고 특정할 피해자도 없는데, 사회 전체가 서로를, 정보를, 제도를 믿는 능력이 조금씩 닳아 가는 경우다."
+      },
+      {
+        "type": "p",
+        "text": "한나 아렌트는 모두가 늘 거짓말을 하면 사람들은 거짓말을 믿는 게 아니라 아무것도 믿지 않게 되고, 스스로 판단하지 못하게 된다고 했다."
+      },
+      {
+        "type": "p",
+        "text": "한 번의 피해는 작지만 가능성은 높고, 범위는 사회 전체이며, 오래 걸려 나타난다. 2장의 위험과 정반대 자리에 있지만, 오래 쌓이면 그 영향도 파국적일 수 있다."
+      },
+      {
+        "type": "p",
+        "text": "특정 행위자에게 돌릴 수 없는 '구조적 위험'이라는 개념과 같은 맥락에 있다."
+      },
+      {
+        "type": "p",
+        "text": "이미 현실이라면서 왜 뚜렷한 사례가 없느냐고 물을 수 있다. 이 위험은 한 사건으로 드러나지 않고 오래 쌓이기 때문에 숫자로 보여 주기 어렵고, 그렇게 잘 보이지 않는다는 것 자체가 6-4에서 말할 문제다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 63,
+            "title": "한나 아렌트 인터뷰",
+            "meta": "뉴욕리뷰오브북스, 1978-10-26 게재",
+            "note": "1973~74년 로제 에레라와의 인터뷰. 모두가 거짓말하면 아무것도 믿지 않게 된다는 대목",
+            "url": "https://www.nybooks.com/articles/1978/10/26/hannah-arendt-from-an-interview/",
+            "host": "nybooks.com",
+            "status": null
+          },
+          {
+            "n": 64,
+            "title": "츠베츨루트·다포, 「AI 위험에 대해 생각하기: 사고, 오용, 구조」",
+            "meta": "로페어, 2019",
+            "note": "사고와 오용 외에 '구조적 위험'이라는 범주를 제시",
+            "url": "https://www.lawfaremedia.org/article/thinking-about-risks-ai-accidents-misuse-and-structure",
+            "host": "lawfaremedia.org",
+            "status": null
+          },
+          {
+            "n": 65,
+            "title": "울리히 벡, 『위험사회』",
+            "meta": "1986, 영역 1992",
+            "note": "근대가 만든 위험이 책임을 물을 곳 없이 분산된다는 사회학 고전",
+            "url": "https://us.sagepub.com/en-us/nam/risk-society/book203184",
+            "host": "us.sagepub.com",
+            "status": null
+          },
+          {
+            "n": 66,
+            "title": "저자 자료: 송경호, 「AI 위험의 개념적 이해」",
+            "meta": "2026",
+            "note": "누적·점진적 위험을 별도 유형으로 추가한 분류 모형",
+            "url": null,
+            "host": null,
+            "status": "미공개"
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s6-4",
+        "text": "6-4. 이 위험은 지금 제도로는 보이지 않는다"
+      },
+      {
+        "type": "p",
+        "text": "지금의 위험 관리는 특정할 수 있는 피해자와 피해 사건을 전제한다. 피해자가 없으면 신고할 사고도, 제출할 평가서도, 점검표의 항목도 없다."
+      },
+      {
+        "type": "p",
+        "text": "판단의 재료도 규제받는 쪽이 만든다. 고영향 AI 해당 여부는 사업자의 자체 확인에서, 개인정보 위험은 처리자의 평가서에서, 사고는 사업자 내부의 인지에서 출발한다."
+      },
+      {
+        "type": "p",
+        "text": "『국제 AI 안전 보고서』도 자율규제의 한계 때문에 제3자 감사·검증이 필요하다는 연구자들의 주장을 정리한다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 67,
+            "title": "저자 자료: 송경호, AI 연구기관 성과공유 심포지엄 종합토론문",
+            "meta": "2026-09-30",
+            "note": "위험 판단 재료를 피규제자가 만드는 구조와, 특정 가능한 피해만 보는 위험 개념의 협소함",
+            "url": null,
+            "host": null,
+            "status": "미공개"
+          },
+          {
+            "n": 68,
+            "title": "국제 AI 안전 보고서 2026",
+            "meta": "벤지오 외",
+            "note": "114쪽: 자율규제의 한계와 제3자 감사·검증·표준화",
+            "url": "https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026_1.pdf",
+            "host": "internationalaisafetyreport.org",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "ch7",
+        "text": "7. 무엇을 해야 하는가"
+      },
+      {
+        "type": "h3",
+        "id": "s7-1",
+        "text": "7-1. 사고 보고를 의무화해야 한다. 그러나 의무화만으로는 부족하다"
+      },
+      {
+        "type": "p",
+        "text": "사고 보고는 필요하다. AI 기본법 제32조도 사전 위험관리와 사고 모니터링·대응을 안전성 확보 체계 하나로 묶고 있고, 하위규범은 발생 24시간 안에 발생보고, 7일 안에 초동조치보고, 15일 안에 처리결과보고를 하도록 구체화하고 있다."
+      },
+      {
+        "type": "p",
+        "text": "그러나 보고는 보이는 사고만 잡는다. 우리가 보는 사고 자료는 사업자가 인지해 신고했거나 외부에서 발견되어 공개된 것뿐이다. 아무도 인지하지 못한 사고는 보고 의무로도 잡히지 않는다. 관측된 사고와 실제 사고의 차이는 정의, 신고 유인, 탐지 역량, 언론 보도의 편향, 영업비밀과 보안 문제에서 생긴다. 개발사조차 사고를 일주일 뒤에야 알았다(3-1)."
+      },
+      {
+        "type": "p",
+        "text": "무엇이 'AI 사고'인지부터 합의가 어렵다. AI가 원인이어야 사고인지, 수단으로 쓰이기만 해도 사고인지가 갈린다. 사고로 판단하려면 AI가 얼마나 기여했는지, 피해가 실제로 일어났는지, 얼마나 심각한지, 누가 영향을 받는지를 모두 따져야 한다."
+      },
+      {
+        "type": "p",
+        "text": "가장 중요한 신호는 피해가 나지 않은 '아차 사고'에 있다. 평가 중 위험 행동처럼 피해가 현실화되지 않은 것은 사고가 아니라 위해 요인으로 분류된다. 통제 상실의 징후는 대부분 여기에 있다(2-2). 보고 의무를 실제 피해 중심으로 설계하면 가장 중요한 신호가 빠진다. 사고의 정의는 사후 책임의 문제이고, 위해 요인의 정의는 예방의 문제다."
+      },
+      {
+        "type": "p",
+        "text": "어디서 선을 긋느냐가 핵심이다. 지켜볼 문턱, 보고할 문턱, 국가가 개입할 문턱은 서로 다르다. 문턱이 낮으면 신고가 넘쳐 처리가 안 되고, 높으면 중요한 신호를 놓친다. 피해 규모, 지속성(되돌릴 수 있는지), 확산성, 긴급성, 불확실성을 함께 따져 단계별로 격상해야 한다."
+      },
+      {
+        "type": "p",
+        "text": "보고를 받는다고 대응이 되지는 않는다. 정부 쪽에서 신고를 접수하고, 빨리 분류하고, 분석하고, 격상하고, 그 결과를 제도에 되돌리는 기능이 없으면 보고는 서류로 쌓일 뿐이다. 모든 신고를 똑같이 처리할 수 없으므로 신속한 분류와 중대성 판단이 국가 기능의 핵심이고, 여기에는 AI 전문성과 인력이 필요하다."
+      },
+      {
+        "type": "p",
+        "text": "한 사고가 여러 관할에 걸친다. AI 에이전트가 개인정보를 빼냈다면 AI 안전사고이면서 개인정보 유출사고이고 사이버 침해사고다. 누가 받을지가 겹치거나 빌 수 있다. 공통 창구와 분류는 AI 전문기관이 맡고 현장 대응은 분야별 소관기관이 하는 연합형이 대안으로 거론되지만, 조정 비용이 따른다."
+      },
+      {
+        "type": "p",
+        "text": "사건 단위의 보고로는 잡히지 않는 위험도 있다. 피해자를 특정할 수 없는 누적·점진적 위험은 '사건'으로 보고될 수 없다(6-4). 해외 개발사와 이미 공개된 오픈 웨이트 모델에는 국내 보고 의무가 닿지 않는다(3-2, 3-3)."
+      },
+      {
+        "type": "p",
+        "text": "요컨대 필요한 것은 보고 의무 하나가 아니다. 위험 신호를 관측하고, 알맞은 수준으로 분류·격상해 기존 대응체계와 잇고, 그 경험을 다시 안전성 평가와 정책에 되돌리는 체계가 함께 있어야 한다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 69,
+            "title": "최민석, 「AI 사고 모니터링 및 대응 체계」",
+            "meta": "2026 AI 연구기관 심포지엄 발표, ETRI 인공지능안전연구소, 2026-09-30",
+            "note": "관측 가능성의 한계, 사고 정의의 네 가지 판단, 문턱 설계, 보고와 대응의 구분, 다중 관할과 연합형 대안",
+            "url": null,
+            "host": null,
+            "status": "미공개"
+          },
+          {
+            "n": 70,
+            "title": "인공지능안전연구소, 「AI사고 정의 및 보고체계 국제동향」",
+            "meta": "2026-05-19",
+            "note": "OECD 기준의 사고와 위해 요인 구분, 국가별 보고체계 비교",
+            "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/102",
+            "host": "aisi.re.kr",
+            "status": null
+          },
+          {
+            "n": 71,
+            "title": "뉴시스, 「AI 에이전트 700개 떼로 몰려가 기업 서버 털었다…오픈AI, 일주일 뒤 파악」",
+            "meta": "2026-08-30",
+            "note": "개발사도 사고를 일주일 뒤에야 알았다는 보도",
+            "url": "https://www.newsis.com/view/NISX20260830_0003768111",
+            "host": "newsis.com",
+            "status": null
+          },
+          {
+            "n": 72,
+            "title": "국제 AI 안전 보고서 2026",
+            "meta": "벤지오 외",
+            "note": "13쪽: 개발사는 중요한 정보를 독점할 유인이 있음. 불리한 사실을 스스로 보고할 유인이 약하다는 근거",
+            "url": "https://internationalaisafetyreport.org/sites/default/files/2026-02/international-ai-safety-report-2026_1.pdf",
+            "host": "internationalaisafetyreport.org",
+            "status": null
+          },
+          {
+            "n": 73,
+            "title": "인공지능 발전과 신뢰 기반 조성 등에 관한 기본법",
+            "meta": "국가법령정보센터, 현행",
+            "note": "제32조 안전성 확보 의무(위험관리와 사고 모니터링·대응)",
+            "url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=282791",
+            "host": "law.go.kr",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s7-2",
+        "text": "7-2. 글로벌 이니셔티브를 통해 프론티어 랩과 공동연구하고, 평가·거버넌스 인력을 서로 파견해야 한다"
+      },
+      {
+        "type": "p",
+        "text": "한국은 프론티어 모델 개발국이 아니다. 규율 대상의 상당수는 해외 폐쇄형 모델이고, 국내 법의 조사·제재 수단은 여기에 잘 닿지 않는다(3-2). 모델 안을 들여다볼 접근권과 정보는 협력으로 얻을 수밖에 없다."
+      },
+      {
+        "type": "p",
+        "text": "협력의 틀은 생기기 시작했다. 한국 AI안전연구소는 오픈AI와 고위험 분야 안전 평가 협력 업무협약을 맺었고(6월 17일), 과기정통부는 앤트로픽과 AI 안전·보안 협력 업무협약을 맺었다(6월 18일). 싱가포르 AI안전연구소와는 AI 에이전트의 데이터 유출 위험을 공동으로 시험해 보고서를 공개했다(6월 15일)."
+      },
+      {
+        "type": "p",
+        "text": "한국은 각국 AI안전연구소가 모인 국제 네트워크(NAAIMES, 옛 국제 AI안전연구소 네트워크)의 회원이다. 이 네트워크는 7월 서울에서 모여 국제 평가 모범 지침을 내놓았다."
+      },
+      {
+        "type": "p",
+        "text": "다음 단계는 공동연구를 넘어 사람을 서로 보내는 것이다. 공적 평가기관의 인력이 프론티어 랩 안에서 모델과 개발 과정을 상시로 평가하고, 랩의 안전·거버넌스 인력도 공적 기관에 와서 평가 방법과 기준을 함께 만든다."
+      },
+      {
+        "type": "p",
+        "text": "아모데이도 외부 평가자에게 직원 수준의 상시 접근권을 주자고 했다(5-2). 다만 그 평가자가 기업이 비용을 대는 민간 조직이면 독립성이 문제가 된다(5-3). 파견되는 평가자가 공적 기관 소속이어야 하는 이유다."
+      },
+      {
+        "type": "p",
+        "text": "사람이 오가면 정보가 오간다. 개발사도 나중에야 아는 문제(3-1)를 더 일찍 볼 수 있고, 출시 전 정부 평가를 추진하는 나라들과 기준을 맞출 수 있다. 미국 정부는 신규 모델 출시 전 최대 30일의 보안 검증을 주요 AI 기업들과 논의했다."
+      },
+      {
+        "type": "p",
+        "text": "인력 상호 파견은 내 제안이다. 보안 서약, 비밀 유지, 이해충돌 관리 같은 구체적 방식은 설계가 필요하다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 74,
+            "title": "과학기술정보통신부 보도자료, 한국 AI안전연구소와 오픈AI 간 업무협약 체결",
+            "meta": "2026-06-17",
+            "note": "고위험 분야 안전 평가 방법론 공유, 한국어와 한국 맥락을 반영한 평가 체계 공동 개발",
+            "url": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187441",
+            "host": "msit.go.kr",
+            "status": null
+          },
+          {
+            "n": 75,
+            "title": "과학기술정보통신부 보도자료, 과기정통부와 앤트로픽의 AI 안전·보안 협력 추진",
+            "meta": "2026-06-18",
+            "note": "첨단 AI 안전성 평가와 사이버 위협 대응 협력 업무협약",
+            "url": "https://www.msit.go.kr/bbs/view.do?sCode=user&mId=307&mPid=208&bbsSeqNo=94&nttSeqNo=3187446",
+            "host": "msit.go.kr",
+            "status": null
+          },
+          {
+            "n": 76,
+            "title": "인공지능안전연구소, 한국·싱가포르 AI 에이전트 데이터 유출 위험 공동 테스트 보고서",
+            "meta": "2026-06-15",
+            "note": "두 나라 AI안전연구소가 2026년 상반기 공동 수행한 시험 결과",
+            "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/106",
+            "host": "aisi.re.kr",
+            "status": null
+          },
+          {
+            "n": 77,
+            "title": "영국 AI보안연구소, 국제 평가 모범 지침과 AI 측정의 열린 질문",
+            "meta": "2026-07-23",
+            "note": "NAAIMES의 회원국(한국 포함)과 서울 회의, 국제 평가 모범 지침 발표",
+            "url": "https://www.aisi.gov.uk/blog/international-evaluation-best-practice-and-open-questions-in-ai-measurement",
+            "host": "aisi.gov.uk",
+            "status": null
+          },
+          {
+            "n": 78,
+            "title": "다리오 아모데이, 「We Must Pace the Frontier」",
+            "meta": "2026-09-12",
+            "note": "첫째 단계: 외부 평가자에게 직원 수준의 상시 접근권 부여",
+            "url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+            "host": "darioamodei.com",
+            "status": null
+          },
+          {
+            "n": 79,
+            "title": "테크폴리시프레스, 「누가 속도를 정해야 하나」",
+            "meta": "2026-09-17",
+            "note": "기업이 급여와 접근권을 쥔 평가자의 독립성 문제",
+            "url": "https://techpolicy.press/who-should-pace-the-frontier-not-dario-amodei",
+            "host": "techpolicy.press",
+            "status": null
+          },
+          {
+            "n": 80,
+            "title": "동아일보, 백악관의 AI 해킹 대책 논의",
+            "meta": "2026-08-05",
+            "note": "신규 모델 출시 전 최대 30일의 보안 검증 절차 논의",
+            "url": "https://www.donga.com/news/Inter/article/all/20260804/134421358/2",
+            "host": "donga.com",
+            "status": null
+          },
+          {
+            "n": 81,
+            "title": "저자 자료: 송경호, IASEAI'27 모델정책 초안",
+            "meta": "2026-09",
+            "note": "상대국 기관과의 상호협정을 통한 검증 정보 공유와 검증 위탁 조항",
+            "url": null,
+            "host": null,
+            "status": "미공개"
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s7-3",
+        "text": "7-3. 소프트웨어 검증으로 안 되는 부분은 하드웨어 검증도 고려해야 한다"
+      },
+      {
+        "type": "p",
+        "text": "소프트웨어 평가는 개발사가 보여 주는 것만 본다. 연산량 자기신고, 폐쇄형 모델의 학습 과정, 이미 공개된 오픈 웨이트 모델, 나라 사이 합의의 준수 여부는 밖에서 확인하기 어렵다(3-2, 3-3, 5-6)."
+      },
+      {
+        "type": "p",
+        "text": "그래서 AI 칩과 데이터센터 수준에서 확인하는 하드웨어 검증이 대안으로 논의된다. 모델과 데이터를 공개하지 않고도 핵심 지표를 확인할 수 있다는 장점이 있지만, 아직 초기 연구 단계다. 소프트웨어 평가를 대체하는 것이 아니라 보완하는 수단으로 봐야 한다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 82,
+            "title": "국제 AI 안전 보고서 2025",
+            "meta": "벤지오 외",
+            "note": "24쪽, 207쪽: 하드웨어 기반 검증은 기밀을 지키면서 국경을 넘는 합의 검증을 도울 수 있으나 아직 초기 연구 단계",
+            "url": "https://internationalaisafetyreport.org/sites/default/files/2025-10/international_ai_safety_report_2025_english.pdf",
+            "host": "internationalaisafetyreport.org",
+            "status": null
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "id": "s7-4",
+        "text": "7-4. 한국은 올해 안에 국가 AI 안전 마스터플랜을 세운다"
+      },
+      {
+        "type": "p",
+        "text": "과기정통부는 가칭 '국가 AI 안전 생태계 조성 마스터플랜'을 12월까지 수립하겠다고 밝혔다(9월 30일). 3대 전략(안)은 국가 AI 안전 관리체계 구축, 첨단 AI 안전 대응역량 강화, 국민 일상의 AI 안전 환경 조성이다."
+      },
+      {
+        "type": "p",
+        "text": "이를 위해 국내외 AI 기업과 협회, 인공지능안전연구소 등 유관기관, 기술·법제 전문가 25명 안팎이 참여하는 민관 실무협의체를 10월부터 가동한다."
+      },
+      {
+        "type": "p",
+        "text": "이 과제들을 맡을 사람도 길러야 한다. 국내 AI 인재양성은 기술 쪽에 치우쳐 있고 공공정책과 조직 측면의 거버넌스 교육은 거의 비어 있는데, 단기 수익이 분명하지 않아 시장이 스스로 채우기 어려운 영역이니 공적 투자가 필요하다. 나도 2026년 5월 국회입법조사처 간담회에서 이 공백을 짚었고, 관련 교육 프로그램 논의에 참여하고 있다."
+      },
+      {
+        "type": "p",
+        "text": "이 장에서 말한 과제들, 즉 사고 대응 체계, 프론티어 랩과의 국제 협력, 검증 수단, 그리고 이 일을 맡을 사람을 기르는 일이 이 계획에 어떻게 담기는지가 앞으로 지켜볼 지점이다."
+      },
+      {
+        "type": "refs",
+        "items": [
+          {
+            "n": 83,
+            "title": "머니투데이, 「정부, 'AI 안전' 민관 실무협의체 가동…12월 마스터플랜 수립」",
+            "meta": "2026-09-30",
+            "note": "마스터플랜 3대 전략과 민관 실무협의체 구성, 12월 수립 일정",
+            "url": "https://www.mt.co.kr/tech/2026/09/30/2026093009510636744",
+            "host": "mt.co.kr",
+            "status": null
+          },
+          {
+            "n": 84,
+            "title": "보안뉴스, 「국가 AI 안전 생태계 조성 마스터플랜 수립 위한 민관 협의체 구성」",
+            "meta": "2026-09-30",
+            "note": "같은 발표의 다른 보도. 협의체 참여 기관과 담당 국장 발언",
+            "url": "https://www.boannews.com/news/articleView.html?idxno=146109",
+            "host": "boannews.com",
+            "status": null
+          },
+          {
+            "n": 85,
+            "title": "저자 자료: 송경호, 「AI 거버넌스 인재 확보의 필요성과 시급성」",
+            "meta": "국회입법조사처 AI 거버넌스 인재 양성 전문가 간담회 발제, 2026-05-13",
+            "note": "국내 거버넌스 인재 수요 진단, 기술 인재 편중과 시장 실패라는 공급 부재의 원인, 국가 AI 전략에 거버넌스 인재를 명시하자는 제언",
+            "url": null,
+            "host": null,
+            "status": "미공개"
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "id": "ch8",
+        "text": "8. 결론"
+      },
+      {
+        "type": "h3",
+        "id": "s8-1",
+        "text": "8-1. 이미, 그리고 내년"
+      },
+      {
+        "type": "p",
+        "text": "AI 위험을 말하는 언어의 시제가 바뀌었다. 경고는 늘 \"그렇게 되면 위험하다\"는 미래형이었는데, 요즘은 \"이미 벌어졌다\"는 현재형으로 들린다."
+      },
+      {
+        "type": "p",
+        "text": "두 위험 모두 먼 미래의 이야기가 아니다. 역량 위험과 누적·점진적 위험은 이미 벌어지고 있고, 되돌릴 수 없는 통제 상실의 문턱은 내년일 수 있다."
+      },
+      {
+        "type": "p",
+        "text": "두 위험은 성격이 정반대이지만, 대응이 막힌 이유는 같다. 위험을 판단할 재료를 규제받는 쪽이 만드는데 그쪽도 나중에야 알고, 판단의 틀은 눈에 보이는 피해만 센다."
+      },
+      {
+        "type": "p",
+        "text": "이것을 과장이라고 느낀다면, 우리가 매일 쓰는 순한 버전을 보고 실제 역량을 판단하고 있기 때문이다."
+      },
+      {
+        "type": "p",
+        "text": "할 일은 사고 보고를 의무화하는 데서 끝나지 않는다. 국제 협력으로 프론티어 랩과 공동연구하고 평가 인력을 서로 보내 안을 들여다볼 통로를 만들고, 소프트웨어로 확인할 수 없는 부분은 하드웨어 검증도 고려해야 한다. 연말에 나올 국가 AI 안전 마스터플랜에 이런 과제들이 어떻게 담기는지 지켜볼 필요가 있다."
+      },
+      {
+        "type": "p",
+        "text": "그래서 개발 경쟁의 속도는 늦추고, 안전성을 향한 경쟁의 속도는 높여야 한다. 그 속도를 정하는 일은 원래 민주적 통제의 몫이지만 민주주의는 느리다. 그러니 판단과 검증은 민간이 아닌 공적 전문기관이 맡고, 그 이유를 공개해 시민이 들여다볼 수 있어야 한다."
+      }
+    ]
+  }
+}
