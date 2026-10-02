@@ -1,6 +1,27 @@
 [
   {
     "logNo": null,
+    "slug": "blog-nk-openweight-2026-10",
+    "title": "북한의 AI 역량, 다시 보기: 오픈웨이트 모델 운용의 논지와 근거",
+    "rawTitle": "북한의 AI 역량, 다시 보기: 오픈웨이트 모델 운용의 논지와 근거",
+    "publication": "개인 노트",
+    "issue": null,
+    "year": "2026",
+    "month": "10",
+    "day": "2",
+    "naverCategory": null,
+    "section": "블로그",
+    "sourceUrl": null,
+    "naverImportedAt": null,
+    "image": null,
+    "imageSource": null,
+    "body": [],
+    "kind": "post",
+    "note": null,
+    "migrationStatus": "상세 페이지 완료"
+  },
+  {
+    "logNo": null,
     "slug": "blog-ai-doom-2026-09",
     "title": "이미 와 있는 위험: AI 종말론의 논지와 근거",
     "rawTitle": "이미 와 있는 위험: AI 종말론의 논지와 근거",

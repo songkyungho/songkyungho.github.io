@@ -13,7 +13,8 @@ type Graphic =
   | { type: "graphic"; kind: "timeline"; title: string; caption: string; items: { when: string; text: string; mark?: string }[] }
   | { type: "graphic"; kind: "criteria"; title: string; items: { q: string; a: string; ref: string }[] }
   | { type: "graphic"; kind: "quadrant"; title: string; x: [string, string]; y: [string, string]; points: { pos: "top-left" | "bottom-right"; name: string; sub: string; note: string; ref: string }[] }
-  | { type: "graphic"; kind: "doubling"; title: string; caption: string; bars: { label: string; value: number }[] }
+  | { type: "graphic"; kind: "doubling"; title: string; caption: string; wide?: boolean; bars: { label: string; value: number; display?: string }[] }
+  | { type: "graphic"; kind: "table"; title: string; caption: string; header: string[]; rows: string[][] }
   | { type: "graphic"; kind: "statute"; title: string; caption: string; href: string; articles: { head: string; lines: { text: string; indent?: boolean; mark?: boolean }[] }[] };
 type Block = { type: "h2" | "h3" | "p"; id?: string | null; text: string } | { type: "refs"; items: Source[] } | Figure | Graphic;
 type BlogPost = { intro: string[]; summary: string[]; toc: { id: string; text: string }[]; blocks: Block[] };
@@ -133,16 +134,34 @@ function BlogGraphic({ graphic }: { graphic: Graphic }) {
       </figure>
     );
   }
+  if (graphic.kind === "table") {
+    return (
+      <figure className="blog-graphic">
+        <p className="graphic-title">{graphic.title}</p>
+        <div className="graphic-table-wrap">
+          <table className="graphic-table">
+            <thead><tr>{graphic.header.map((cell) => <th key={cell} scope="col">{cell}</th>)}</tr></thead>
+            <tbody>
+              {graphic.rows.map((row) => (
+                <tr key={row[0]}>{row.map((cell, index) => index === 0 ? <th key={index} scope="row">{cell}</th> : <td key={index}>{cell}</td>)}</tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <figcaption>{graphic.caption}</figcaption>
+      </figure>
+    );
+  }
   const max = Math.max(...graphic.bars.map((bar) => bar.value));
   return (
     <figure className="blog-graphic">
       <p className="graphic-title">{graphic.title}</p>
-      <div className="graphic-bars">
+      <div className={graphic.wide ? "graphic-bars wide" : "graphic-bars"}>
         {graphic.bars.map((bar) => (
           <div key={bar.label}>
             <span className="bar-label">{bar.label}</span>
             <span className="bar-track"><span className="bar-fill" style={{ width: `${(bar.value / max) * 100}%` }} /></span>
-            <span className="bar-value">{bar.value === Math.round(bar.value) ? bar.value : `약 ${Math.round(bar.value)}`}배</span>
+            <span className="bar-value">{bar.display ?? `${bar.value === Math.round(bar.value) ? bar.value : `약 ${Math.round(bar.value)}`}배`}</span>
           </div>
         ))}
       </div>
