@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type React from "react";
 import archive from "../../../data/writing-archive.json";
 import writingBlocks from "../../../data/writing-blocks.json";
 import { SITE_URL } from "../../../../site.config";
@@ -20,6 +21,23 @@ type Block = { type: "h2" | "h3" | "p"; id?: string | null; text: string } | { t
 type BlogPost = { intro: string[]; summary: string[]; toc: { id: string; text: string }[]; blocks: Block[] };
 
 const blogPosts = writingBlocks as unknown as Record<string, BlogPost>;
+
+const INLINE_LINK = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g;
+
+function Inline({ text }: { text: string }) {
+  const parts: React.ReactNode[] = [];
+  let last = 0;
+  for (const match of text.matchAll(INLINE_LINK)) {
+    const index = match.index ?? 0;
+    if (index > last) parts.push(text.slice(last, index));
+    parts.push(<a href={match[2]} key={index} target="_blank" rel="noopener noreferrer">{match[1]}</a>);
+    last = index + match[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return <>{parts}</>;
+}
+
+const plain = (text: string) => text.replace(INLINE_LINK, "$1");
 
 function SourceBox({ items }: { items: Source[] }) {
   return (
@@ -173,10 +191,10 @@ function BlogGraphic({ graphic }: { graphic: Graphic }) {
 function BlogBody({ post }: { post: BlogPost }) {
   return (
     <>
-      {post.intro.map((paragraph) => <p key={paragraph.slice(0, 24)}>{paragraph}</p>)}
+      {post.intro.map((paragraph) => <p key={paragraph.slice(0, 24)}><Inline text={paragraph} /></p>)}
       <section className="thesis-summary" aria-labelledby="thesis-summary-title">
         <h2 id="thesis-summary-title">전체 논지</h2>
-        {post.summary.map((paragraph) => <p key={paragraph.slice(0, 24)}>{paragraph}</p>)}
+        {post.summary.map((paragraph) => <p key={paragraph.slice(0, 24)}><Inline text={paragraph} /></p>)}
       </section>
       <nav className="article-toc" aria-label="목차">
         <p>목차</p>
@@ -197,7 +215,7 @@ function BlogBody({ post }: { post: BlogPost }) {
         if (block.type === "graphic") return <BlogGraphic graphic={block} key={`graphic-${index}`} />;
         if (block.type === "h2") return <h2 className="blog-chapter" id={block.id ?? undefined} key={`h2-${index}`}>{block.text}</h2>;
         if (block.type === "h3") return <h3 className="blog-claim" id={block.id ?? undefined} key={`h3-${index}`}>{block.text}</h3>;
-        return <p key={`p-${index}`}>{block.text}</p>;
+        return <p key={`p-${index}`}><Inline text={block.text} /></p>;
       })}
     </>
   );
@@ -212,7 +230,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const item = records.find((record) => record.slug === slug);
   if (!item) return { title: "글을 찾을 수 없습니다 | 송경호" };
   const post = blogPosts[slug];
-  const description = post ? post.intro.join(" ") : `${item.publication}${item.issue ? ` ${item.issue}호` : ""}에 실린 송경호의 글, 「${item.title}」.`;
+  const description = post ? plain(post.intro.join(" ")) : `${item.publication}${item.issue ? ` ${item.issue}호` : ""}에 실린 송경호의 글, 「${item.title}」.`;
   const image = item.image ? `${SITE_URL}${item.image}` : undefined;
   return {
     title: `${item.title} | 송경호`,
