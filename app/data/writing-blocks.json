@@ -740,7 +740,7 @@
       },
       {
         "type": "p",
-        "text": "최신 GPU는 더 그렇다. 미국은 2026년 들어 H200의 중국 수출을 건별 심사로 일부 허용했지만, 최신 블랙웰 계열은 여전히 막아 두고 있다. 중국 정부도 자국 기업에 H200 구매를 자제하라고 지시했다는 보도가 나왔다."
+        "text": "최신 GPU는 더 그렇다. 미국 상무부 산업안보국은 2026년 1월 H200급 칩의 중국 수출 심사를 '거부 추정'에서 '건별 심사'로 바꿨지만, 미국 내 공급 충분성과 제3자 성능 검증 같은 조건을 붙였다. 블랙웰 계열처럼 그보다 성능이 높은 최신 칩은 이 완화의 대상이 아니다. 중국 정부도 자국 기업에 H200 구매를 자제하라고 지시했다는 보도가 나왔다."
       },
       {
         "type": "p",
@@ -755,11 +755,11 @@
         "items": [
           {
             "n": 22,
-            "title": "「엔비디아 H200 수출 일지: 중국 반입은 허용, 블랙웰은 여전히 통제」",
-            "meta": "탐스하드웨어, 2026",
-            "note": "미국이 H200의 중국 수출을 엄격한 조건 아래 허용했으나 블랙웰 계열은 통제 유지",
-            "url": "https://www.tomshardware.com/tech-industry/semiconductors/us-eases-nvidia-export-restrictions-h200-cleared-for-china-under-tight-controls",
-            "host": "tomshardware.com",
+            "title": "미국 상무부 산업안보국, 「첨단 컴퓨팅 품목의 허가 심사 정책 개정」",
+            "meta": "연방관보 2026-00789, 2026-01-15",
+            "note": "TPP 21,000 미만, DRAM 대역폭 6,500GB/s 미만인 H200급 칩의 중국·마카오 수출을 조건부 건별 심사로 전환. 그 기준을 넘는 칩은 대상이 아님",
+            "url": "https://www.federalregister.gov/d/2026-00789",
+            "host": "federalregister.gov",
             "status": null
           },
           {
