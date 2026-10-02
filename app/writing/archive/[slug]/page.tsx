@@ -263,7 +263,7 @@ export default async function ArchivedWritingPage({ params }: { params: Promise<
             )}
           </dl>
         </header>
-        {item.image && <figure className="article-hero"><img alt={`「${item.title}」 대표 이미지`} src={item.image} /><figcaption>당시 게재 이미지</figcaption></figure>}
+        {item.image && <figure className="article-hero"><img alt={`「${item.title}」 대표 이미지`} src={item.image} /><figcaption>{item.section === "블로그" ? "AI로 생성한 대표 이미지" : "당시 게재 이미지"}</figcaption></figure>}
         <div className={post ? "article-body blog-body" : "article-body"}>
           {post ? <BlogBody post={post} /> : item.body.map((paragraph, index) => /^#\d+\.?$/.test(paragraph) ? <h2 key={`${paragraph}-${index}`}>{paragraph}</h2> : <p key={`${paragraph.slice(0, 24)}-${index}`}>{paragraph}</p>)}
         </div>
