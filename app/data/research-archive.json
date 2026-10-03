@@ -37,6 +37,33 @@
   {
     "tag": "보고서",
     "year": "2026",
+    "detail": "<프론티어 AI 위험 업데이트 2026년 상반기 (한국어본)>",
+    "month": 10,
+    "day": 2,
+    "title": "프론티어 AI 위험 업데이트 2026년 상반기 (한국어본)",
+    "authors": [
+      "최민석",
+      "조지연",
+      "송경호",
+      "신민규"
+    ],
+    "text": "2026. 10. 2. <프론티어 AI 위험 업데이트 2026년 상반기 (한국어본)>",
+    "kind": "보고서",
+    "slug": "2026-004",
+    "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/126",
+    "image": "/images/research/report-2026-004.jpeg",
+    "note": {
+      "text": "원저 Guillem Bas·Husanjot Chahal(AI Risk Explorer), 한국어본 검토·작성",
+      "url": "https://www.airiskexplorer.com/risk-assessments",
+      "image": null
+    },
+    "series": null,
+    "org": "인공지능안전연구소 · AI Risk Explorer",
+    "venue": null
+  },
+  {
+    "tag": "보고서",
+    "year": "2026",
     "detail": "<EU 인공지능법 범용인공지능(GPAI) 실천강령(CoP) 한글 안내서>",
     "month": 7,
     "day": 16,

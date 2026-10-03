@@ -71,17 +71,57 @@ function youtubeId(url: string) {
   return match ? match[1] : null;
 }
 
-const latestMedia = [...media]
-  .filter((item) => item.year)
-  .sort((a, b) => dateKey(b.year as string, b.month, b.day) - dateKey(a.year as string, a.month, a.day))
-  .slice(0, 3)
-  .map((item) => {
-    const id = youtubeId(item.url);
-    return {
-      ...item,
-      thumb: item.image ?? (id ? `https://i.ytimg.com/vi/${id}/hqdefault.jpg` : null),
-    };
-  });
+type LatestCard = { key: number; date: string; outlet: string; title: string; href: string; thumb: string | null; placeholder: string };
+
+// 최근 글(보도 제외)과 미디어를 합쳐 가장 최근 3개
+const latest: LatestCard[] = [
+  ...writing
+    .filter((item) => item.kind === "post" && item.year)
+    .map((item) => ({
+      key: dateKey(item.year as string, item.month, item.day),
+      date: formatDate(item.year as string, item.month, item.section === "블로그" ? null : item.day),
+      outlet: item.section === "블로그" ? "블로그" : `${item.publication} · ${item.section}`,
+      title: item.title,
+      href: item.migrationStatus === "상세 페이지 완료" ? `/writing/archive/${item.slug}` : (item.sourceUrl ?? "/writing"),
+      thumb: item.image,
+      placeholder: item.section,
+    })),
+  ...media
+    .filter((item) => item.year)
+    .map((item) => {
+      const id = youtubeId(item.url);
+      return {
+        key: dateKey(item.year as string, item.month, item.day),
+        date: formatDate(item.year as string, item.month, item.day),
+        outlet: item.outlet,
+        title: item.title,
+        href: item.url,
+        thumb: item.image ?? (id ? `https://i.ytimg.com/vi/${id}/hqdefault.jpg` : null),
+        placeholder: item.format,
+      };
+    }),
+]
+  .sort((a, b) => b.key - a.key)
+  .slice(0, 3);
+
+// 피쳐드 세 번째 칸: 카드에 이미 없는 가장 최근 연구·보고서
+const cardUrls = new Set(projects.cards.map((card) => card.url));
+const latestResearch = [...research]
+  .filter((item) => ["논문", "컨퍼런스 페이퍼", "보고서"].includes(item.kind) && item.image && item.url && !cardUrls.has(item.url))
+  .sort((a, b) => dateKey(b.year, b.month, b.day) - dateKey(a.year, a.month, a.day))[0];
+
+const featuredCards = [
+  ...projects.cards,
+  ...(latestResearch
+    ? [{
+        title: latestResearch.title,
+        outlet: `최신 ${latestResearch.kind} · ${formatDate(latestResearch.year, latestResearch.month, null)}`,
+        description: latestResearch.org ?? "",
+        image: latestResearch.image as string,
+        url: latestResearch.url as string,
+      }]
+    : []),
+];
 
 export default function Home() {
   return (
@@ -95,9 +135,19 @@ export default function Home() {
       <section className="recent-index">
         <div className="home-block">
           <p className="eyebrow">FEATURED</p>
+          <ul className="project-links">
+            {projects.links.map((item) => (
+              <li key={item.url}>
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  <strong>{item.title}<span aria-hidden="true"> ↗</span></strong>
+                  <span>{item.description}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
           <div className="video-grid">
-            {projects.map((item) => (
-              <a className="video-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
+            {featuredCards.map((item) => (
+              <a className="video-card featured-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
                 <img src={item.image} alt="" />
                 <span>{item.outlet}</span>
                 <h3>{item.title}</h3>
@@ -113,20 +163,21 @@ export default function Home() {
             <a href="/media">전체 보기</a>
           </div>
           <div className="video-grid">
-            {latestMedia.map((item) => {
-              const date = formatDate(item.year, item.month, item.day);
-              return (
-                <a className="video-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
-                  {item.thumb ? <img src={item.thumb} alt="" /> : <div className="placeholder-thumb">{item.format}</div>}
-                  <div className="video-meta">
-                    {date && <time>{date}</time>}
-                    <span>{item.outlet}</span>
-                  </div>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </a>
-              );
-            })}
+            {latest.map((item) => (
+              <a
+                className="video-card"
+                href={item.href}
+                key={item.title}
+                {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              >
+                {item.thumb ? <img src={item.thumb} alt="" /> : <div className="placeholder-thumb">{item.placeholder}</div>}
+                <div className="video-meta">
+                  <time>{item.date}</time>
+                  <span>{item.outlet}</span>
+                </div>
+                <h3>{item.title}</h3>
+              </a>
+            ))}
           </div>
         </div>
 
