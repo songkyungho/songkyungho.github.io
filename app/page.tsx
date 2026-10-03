@@ -134,7 +134,6 @@ export default function Home() {
 
       <section className="recent-index">
         <div className="home-block">
-          <p className="eyebrow">FEATURED</p>
           <ul className="project-links">
             {projects.links.map((item) => (
               <li key={item.url}>
@@ -146,6 +145,10 @@ export default function Home() {
               </li>
             ))}
           </ul>
+        </div>
+
+        <div className="home-block">
+          <p className="eyebrow">FEATURED</p>
           <div className="video-grid">
             {featuredCards.map((item) => (
               <a className="video-card featured-card" href={item.url} target="_blank" rel="noopener noreferrer" key={item.title}>
