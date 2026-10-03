@@ -138,7 +138,8 @@ export default function Home() {
           <ul className="project-links">
             {projects.links.map((item) => (
               <li key={item.url}>
-                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                {/* 각 사이트 메인 헤더와 같은 그라데이션 */}
+                <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ background: `linear-gradient(165deg, ${item.colors[0]} 0%, ${item.colors[1]} 100%)` }}>
                   <strong>{item.title}<span aria-hidden="true"> ↗</span></strong>
                   <span>{item.description}</span>
                 </a>

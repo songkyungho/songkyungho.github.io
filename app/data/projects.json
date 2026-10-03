@@ -3,22 +3,38 @@
     {
       "title": "AI 안전 다이제스트",
       "description": "AI 안전·거버넌스 동향을 매일 모아 정리합니다.",
-      "url": "https://songkyungho.github.io/ai-safety-digest/"
+      "url": "https://songkyungho.github.io/ai-safety-digest/",
+      "colors": [
+        "#474284",
+        "#565193"
+      ]
     },
     {
       "title": "AI 안전 라이브러리",
       "description": "세계 각국의 AI 법·가이드라인·정책 문서를 모았습니다.",
-      "url": "https://songkyungho.github.io/ai-safety-library/"
+      "url": "https://songkyungho.github.io/ai-safety-library/",
+      "colors": [
+        "#3a5270",
+        "#4a6584"
+      ]
     },
     {
       "title": "AI 안전 연구",
       "description": "AI 안전 논문·벤치마크·연구 해설을 주제별로 정리합니다.",
-      "url": "https://songkyungho.github.io/ai-safety-research/"
+      "url": "https://songkyungho.github.io/ai-safety-research/",
+      "colors": [
+        "#5a3550",
+        "#6c4562"
+      ]
     },
     {
       "title": "AI 안전 용어집",
       "description": "AI 안전 관점으로 풀어 쓴 핵심 용어를 모았습니다.",
-      "url": "https://songkyungho.github.io/ai-safety-glossary/"
+      "url": "https://songkyungho.github.io/ai-safety-glossary/",
+      "colors": [
+        "#2f5951",
+        "#3e6f64"
+      ]
     }
   ],
   "cards": [
