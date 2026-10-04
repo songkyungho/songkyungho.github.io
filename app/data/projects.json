@@ -35,6 +35,15 @@
         "#2f5951",
         "#3e6f64"
       ]
+    },
+    {
+      "title": "AI 안전 기회",
+      "description": "AI 안전 행사·교육·채용·펀딩과 국내 공고를 마감일 순으로 모읍니다.",
+      "url": "https://songkyungho.github.io/ai-safety-opportunities/",
+      "colors": [
+        "#5e4a2a",
+        "#73603a"
+      ]
     }
   ],
   "cards": [
