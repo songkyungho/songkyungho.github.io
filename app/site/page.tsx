@@ -36,7 +36,7 @@ export default function SitePage() {
             , 개념어는{" "}
             <a href="https://songkyungho.github.io/ai-safety-glossary/" target="_blank" rel="noopener noreferrer">AI 안전 용어집</a>
             , 행사·교육·채용·펀딩과 국내 공고는{" "}
-            <a href="https://songkyungho.github.io/ai-safety-opportunities/" target="_blank" rel="noopener noreferrer">AI 안전 알림판</a>
+            <a href="https://songkyungho.github.io/ai-safety-board/" target="_blank" rel="noopener noreferrer">AI 안전 알림판</a>
             에서 봅니다.
           </p>
         </div>
