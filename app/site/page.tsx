@@ -33,6 +33,8 @@ export default function SitePage() {
             <a href="https://songkyungho.github.io/ai-safety-digest/" target="_blank" rel="noopener noreferrer">AI 안전 다이제스트</a>
             , 법·정책 문서는{" "}
             <a href="https://songkyungho.github.io/ai-safety-library/" target="_blank" rel="noopener noreferrer">AI 안전 라이브러리</a>
+            , 연구 논문·보고서는{" "}
+            <a href="https://songkyungho.github.io/ai-safety-research/" target="_blank" rel="noopener noreferrer">AI 안전 연구</a>
             , 개념어는{" "}
             <a href="https://songkyungho.github.io/ai-safety-glossary/" target="_blank" rel="noopener noreferrer">AI 안전 용어집</a>
             , 행사·교육·채용·펀딩과 국내 공고는{" "}
