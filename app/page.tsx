@@ -135,8 +135,8 @@ export default function Home() {
       <section className="recent-index">
         <div className="home-block">
           <ul className="project-links">
-            {projects.links.map((item) => (
-              <li key={item.url}>
+            {projects.links.map((item, index) => (
+              <li key={item.url} className={index >= 2 ? "compact" : undefined}>
                 {/* 각 사이트 메인 헤더와 같은 그라데이션 */}
                 <a href={item.url} target="_blank" rel="noopener noreferrer" style={{ background: `linear-gradient(165deg, ${item.colors[0]} 0%, ${item.colors[1]} 100%)` }}>
                   <strong>{item.title}<span aria-hidden="true"> ↗</span></strong>

@@ -279,12 +279,17 @@ a.source-title:hover { text-decoration: underline; text-underline-offset: 3px; }
 .video-card h3 { margin: 5px 0 7px; font-size: .9rem; font-weight: 600; line-height: 1.45; }
 .video-card p { margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.55; }
 .featured-card img { object-position: top; }
-.project-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+.project-links { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+.project-links li { grid-column: span 3; }
+.project-links li.compact { grid-column: span 2; }
 .project-links a { display: block; height: 100%; padding: 15px 18px 16px; border-radius: 4px; color: #f4f2eb; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
 .project-links strong { display: block; font-size: .88rem; font-weight: 650; letter-spacing: -.01em; }
 .project-links strong span { opacity: .7; font-weight: 400; }
 .project-links a > span { display: block; margin-top: 4px; color: rgba(244, 242, 235, .78); font-size: .72rem; line-height: 1.5; }
 .project-links a:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(29, 29, 31, .14); }
+.project-links li.compact a { padding: 11px 13px 12px; }
+.project-links li.compact strong { font-size: .8rem; }
+.project-links li.compact a > span { margin-top: 3px; font-size: .66rem; line-height: 1.45; }
 
 .source-note { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-top: 20px; padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .source-note p { margin: 0; color: var(--muted); font-size: .75rem; }
@@ -348,6 +353,7 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
   .video-card > span, .video-meta { margin-top: 0; }
   .video-card h3 { margin-top: 2px; }
   .project-links { grid-template-columns: 1fr; }
+  .project-links li, .project-links li.compact { grid-column: auto; }
   .source-note, footer { align-items: flex-start; flex-direction: column; }
   .archive-writing-list .writing-row { grid-template-columns: 48px minmax(0, 1fr); }
   .article-page { padding: 42px 20px 72px; }
