@@ -5,6 +5,14 @@ import { SiteFooter, SiteHeader } from "./components";
 export const metadata: Metadata = {
   title: "송경호 | Kyungho David Song",
   description: "정치학자 송경호의 연구, 논문, 발표, 칼럼과 미디어 활동을 모은 개인 연구 아카이브입니다.",
+  icons: {
+    // 탭 아이콘. 정의는 ~/Code/ai-safety-common/aisafety_common/favicon.py("home"), 파일은 scripts/make_favicon.py가 만든다
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180" },
+  },
   openGraph: {
     title: "송경호 | Kyungho David Song",
     description: "정치학자 송경호의 논문, 정책보고서, 발표와 글을 모은 개인 연구 아카이브입니다.",
