@@ -48,7 +48,7 @@ const writingItems: RecentItem[] = writing.map((item) => ({
   type: item.section,
   title: item.title,
   detail: item.publication,
-  href: item.migrationStatus === "상세 페이지 완료" ? `/writing/archive/${item.slug}` : item.sourceUrl,
+  href: item.migrationStatus === "상세 페이지 완료" ? `/writing/archive/${item.slug}` : (item.sourceUrl ?? "/writing"),
 }));
 
 const mediaItems: RecentItem[] = media

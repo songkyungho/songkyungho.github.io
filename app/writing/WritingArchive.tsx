@@ -35,7 +35,7 @@ export default function WritingArchive({ archive }: { archive: WritingSummary[] 
     const matchesFilter = filter === "전체" || item.section === filter;
     const haystack = `${item.title} ${item.publication} ${item.year ?? ""}`.toLowerCase();
     return matchesFilter && haystack.includes(query.trim().toLowerCase());
-  }), [filter, query]);
+  }), [archive, filter, query]);
 
   return (
     <section className="archive-block" aria-label="기고와 에세이">

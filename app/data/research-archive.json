@@ -99,7 +99,7 @@
     "kind": "보고서",
     "slug": "2026-002",
     "url": "https://www.aisi.re.kr/kor/article/ATCL75b4fb0a5/102?mno=&pageIndex=2&searchCondition=&searchKeyword=",
-    "image": "/images/research/report-2026-002.png",
+    "image": "/images/research/report-2026-002.webp",
     "note": null,
     "series": "AI 안전 동향 분석 시리즈 26-01",
     "org": "인공지능안전연구소",
@@ -500,7 +500,7 @@
     "kind": "역서",
     "slug": "2021-004",
     "url": "http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791155504697&orderClick=LAG&Kc=",
-    "image": "/images/research/book-2021-a.png",
+    "image": "/images/research/book-2021-a.webp",
     "note": null,
     "series": null,
     "org": null,
@@ -636,7 +636,7 @@
     "note": {
       "text": "2011년 대한민국학술원 우수학술도서(사회과학 분야) 선정",
       "url": null,
-      "image": "/images/about/award-book-2011.png"
+      "image": "/images/about/award-book-2011.webp"
     },
     "series": null,
     "org": null,

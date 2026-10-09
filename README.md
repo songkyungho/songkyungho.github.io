@@ -4,7 +4,7 @@
 
 - 현재 사이트: <https://songkyungho.github.io/>
 - 언어: 한국어 중심, 공식 영문 제목·초록 병기
-- 글 아카이브: 이슈브리프·칼럼·에세이·블로그 126편 (상세 페이지 85편). 보도 29편을 포함하면 155편
+- 글 아카이브: 이슈브리프·칼럼·에세이·블로그 127편 (상세 페이지 86편). 보도 29편을 포함하면 156편
 
 ## 구성
 
@@ -19,20 +19,21 @@
 
 ## 로컬 실행
 
-Node.js 22.13 이상과 pnpm이 필요합니다.
+Node.js 22.13 이상과 pnpm이 필요합니다. 프레임워크는 Next.js(정적 내보내기, `output: "export"`)입니다.
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-배포용 빌드는 다음 명령으로 확인합니다.
+배포용 정적 빌드(`out/`)와 렌더링 테스트는 다음 명령으로 확인합니다.
 
 ```bash
-pnpm build
+pnpm test   # = pnpm build + node --test tests/rendered-html.test.mjs
 ```
 
 ## 배포
 
-`main`에 push하면 [GitHub Actions](.github/workflows/deploy-pages.yml)가 `vinext build`로
-정적 파일(`output: "export"`)을 만들어 GitHub Pages에 자동 배포합니다.
+`main`에 push하면 [GitHub Actions](.github/workflows/deploy-pages.yml)가 `pnpm test`(= `next build`
+정적 내보내기 + 렌더링 테스트)를 실행하고, 생성된 `out/` 폴더를 GitHub Pages에 자동 배포합니다.
+테스트가 실패하면 배포하지 않습니다.

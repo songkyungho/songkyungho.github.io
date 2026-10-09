@@ -35,6 +35,12 @@ const eslintConfig = defineConfig([
         version: "detect",
       },
     },
+    rules: {
+      // 정적 내보내기(output: "export") 사이트라 클라이언트 라우터·이미지 최적화를 쓰지 않는다.
+      // 일반 <a>와 <img>를 그대로 쓴다.
+      "@next/next/no-html-link-for-pages": "off",
+      "@next/next/no-img-element": "off",
+    },
   },
 ]);
 

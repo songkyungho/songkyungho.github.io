@@ -2,38 +2,24 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-// `pnpm build`가 만든 서버 번들로 홈(/)을 렌더링한다.
+// `pnpm build`(next build, output: "export")가 out/에 쓴 정적 HTML을 읽는다.
 async function render(path = "/") {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
-  const { default: worker } = await import(workerUrl.href);
-
-  return worker.fetch(
-    new Request(`http://localhost${path}`, {
-      headers: { accept: "text/html" },
-    }),
-    {
-      ASSETS: {
-        fetch: async () => new Response("Not found", { status: 404 }),
-      },
-    },
-    {
-      waitUntil() {},
-      passThroughOnException() {},
-    },
-  );
+  const file = path === "/" ? "index.html" : `${path.replace(/^\//, "")}.html`;
+  return readFile(new URL(`../out/${file}`, import.meta.url), "utf8");
 }
 
 function escapeRegExp(text) {
   return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
 
-test("server-renders the home page", async () => {
-  const response = await render();
-  assert.equal(response.status, 200);
-  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
+// React가 HTML에 쓰는 방식대로 이스케이프한다.
+function escapeHtml(text) {
+  return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#x27;");
+}
 
-  const html = await response.text();
+test("exports the home page", async () => {
+  const html = await render();
+  assert.match(html, /^<!DOCTYPE html>/i);
   assert.match(html, /<title>송경호 \| Kyungho David Song<\/title>/);
   assert.match(html, /인공지능안전연구소 선임연구원/);
   assert.match(html, /FEATURED/);
@@ -45,13 +31,13 @@ test("renders the AI safety site banners from projects.json", async () => {
   const projects = JSON.parse(
     await readFile(new URL("../app/data/projects.json", import.meta.url), "utf8"),
   );
-  const html = await (await render()).text();
+  const html = await render();
 
   assert.match(html, /<ul class="project-links">/);
   for (const link of projects.links) {
-    assert.match(html, new RegExp(escapeRegExp(link.title)), `banner title: ${link.title}`);
-    assert.match(html, new RegExp(escapeRegExp(link.description)), `banner description: ${link.title}`);
-    assert.match(html, new RegExp(`href="${escapeRegExp(link.url)}"`), `banner url: ${link.title}`);
+    assert.match(html, new RegExp(escapeRegExp(escapeHtml(link.title))), `banner title: ${link.title}`);
+    assert.match(html, new RegExp(escapeRegExp(escapeHtml(link.description))), `banner description: ${link.title}`);
+    assert.match(html, new RegExp(`href="${escapeRegExp(escapeHtml(link.url))}"`), `banner url: ${link.title}`);
   }
 
   // 앞 두 배너(다이제스트·라이브러리)는 기본 크기, 나머지는 compact로 한 줄에 둔다.
@@ -60,4 +46,14 @@ test("renders the AI safety site banners from projects.json", async () => {
   const compactCount = (list.match(/<li class="compact">/g) ?? []).length;
   assert.equal(fullCount, 2);
   assert.equal(compactCount, projects.links.length - 2);
+});
+
+test("exports every writing archive entry as a flat .html page", async () => {
+  const archive = JSON.parse(
+    await readFile(new URL("../app/data/writing-archive.json", import.meta.url), "utf8"),
+  );
+  for (const item of archive) {
+    const html = await render(`/writing/archive/${item.slug}`);
+    assert.match(html, new RegExp(`<h1>${escapeRegExp(escapeHtml(item.title))}</h1>`), `archive page: ${item.slug}`);
+  }
 });

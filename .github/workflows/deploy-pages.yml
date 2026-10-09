@@ -32,13 +32,13 @@ jobs:
       # pnpm test = pnpm build + 렌더링 테스트. 테스트가 실패하면 배포하지 않는다.
       - run: pnpm test
 
-      - run: touch dist/client/.nojekyll
+      - run: touch out/.nojekyll
 
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/client
+          path: out
 
   deploy:
     needs: build
