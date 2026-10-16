@@ -2,6 +2,20 @@
   {
     "tag": "특강",
     "year": "2026",
+    "detail": "\"AI 활용 사례 및 활용 방안: 연구분야,\" <통일연구원 AI 활용 교육(연구분야)> (통일연구원 국제회의실)",
+    "month": 11,
+    "day": 3,
+    "title": "AI 활용 사례 및 활용 방안: 연구분야",
+    "authors": null,
+    "text": "2026. 11. 3. \"AI 활용 사례 및 활용 방안: 연구분야,\" <통일연구원 AI 활용 교육(연구분야)> (통일연구원 국제회의실)",
+    "kind": "특강",
+    "region": null,
+    "venue": "<통일연구원 AI 활용 교육(연구분야)> (통일연구원 국제회의실)",
+    "slug": "2026-035"
+  },
+  {
+    "tag": "특강",
+    "year": "2026",
     "detail": "\"기술 공화국: 무엇을 왜 만들 것인가?,\" <용화여자고등학교>",
     "month": 10,
     "day": 24,
@@ -12,6 +26,34 @@
     "region": null,
     "venue": "<용화여자고등학교>",
     "slug": "2026-001"
+  },
+  {
+    "tag": "국제/발표",
+    "year": "2026",
+    "detail": "[국제] Kyungho Song. “AI Safety and Security Governance in Korea,” <2nd Japan-ROK AI Working Level Meeting> (외교부, 서울)",
+    "month": 10,
+    "day": 21,
+    "title": "AI Safety and Security Governance in Korea",
+    "authors": "Kyungho Song",
+    "text": "Kyungho Song. 2026. 10. 21. “AI Safety and Security Governance in Korea,” <2nd Japan-ROK AI Working Level Meeting> (외교부, 서울)",
+    "kind": "발표",
+    "region": "국제",
+    "venue": "<2nd Japan-ROK AI Working Level Meeting> (외교부, 서울)",
+    "slug": "2026-034"
+  },
+  {
+    "tag": "국제/사회",
+    "year": "2026",
+    "detail": "“AI 안보·보안 분야 공동 워크숍 1일차: Safety and Security Overviews, CBRN, Cyber,” <ETRI 인공지능안전연구소·OpenAI 공동 워크숍> (서울 양재 L타워)",
+    "month": 10,
+    "day": 19,
+    "title": "AI 안보·보안 분야 공동 워크숍 1일차: Safety and Security Overviews, CBRN, Cyber",
+    "authors": null,
+    "text": "2026. 10. 19. “AI 안보·보안 분야 공동 워크숍 1일차: Safety and Security Overviews, CBRN, Cyber,” <ETRI 인공지능안전연구소·OpenAI 공동 워크숍> (서울 양재 L타워)",
+    "kind": "사회",
+    "region": null,
+    "venue": "<ETRI 인공지능안전연구소·OpenAI 공동 워크숍> (서울 양재 L타워)",
+    "slug": "2026-033"
   },
   {
     "tag": "특강",
@@ -26,6 +68,34 @@
     "region": null,
     "venue": "<숭실대 베어드교양대학>",
     "slug": "2026-002"
+  },
+  {
+    "tag": "국제/발표",
+    "year": "2026",
+    "detail": "[국제] Kyungho Song. “Translating Benchmarks Is Not Enough: Benchmark Localization, Translation and Transcreation,” <The 1st Korea–Japan AISI Technical Workshop> (Korea AISI·Japan AISI 공동 주최, 도쿄)",
+    "month": 10,
+    "day": 9,
+    "title": "Translating Benchmarks Is Not Enough: Benchmark Localization, Translation and Transcreation",
+    "authors": "Kyungho Song",
+    "text": "Kyungho Song. 2026. 10. 9. “Translating Benchmarks Is Not Enough: Benchmark Localization, Translation and Transcreation,” <The 1st Korea–Japan AISI Technical Workshop> (Korea AISI·Japan AISI 공동 주최, 도쿄)",
+    "kind": "발표",
+    "region": "국제",
+    "venue": "<The 1st Korea–Japan AISI Technical Workshop> (Korea AISI·Japan AISI 공동 주최, 도쿄)",
+    "slug": "2026-032"
+  },
+  {
+    "tag": "국제/발표",
+    "year": "2026",
+    "detail": "[국제] Kyungho Song. “Korea AI Safety Institute: An Overview,” <The 1st Korea–Japan AISI Technical Workshop> (Korea AISI·Japan AISI 공동 주최, 도쿄)",
+    "month": 10,
+    "day": 8,
+    "title": "Korea AI Safety Institute: An Overview",
+    "authors": "Kyungho Song",
+    "text": "Kyungho Song. 2026. 10. 8. “Korea AI Safety Institute: An Overview,” <The 1st Korea–Japan AISI Technical Workshop> (Korea AISI·Japan AISI 공동 주최, 도쿄)",
+    "kind": "발표",
+    "region": "국제",
+    "venue": "<The 1st Korea–Japan AISI Technical Workshop> (Korea AISI·Japan AISI 공동 주최, 도쿄)",
+    "slug": "2026-031"
   },
   {
     "tag": "국내/토론",
