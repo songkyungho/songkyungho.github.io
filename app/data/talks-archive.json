@@ -98,6 +98,20 @@
     "slug": "2026-001"
   },
   {
+    "tag": "국제/사회",
+    "year": "2026",
+    "detail": "“세션2 AI 리스크 관리의 이론과 실제: 패널토론 좌장,” <2026 AI 안전 정책 글로벌 워크숍: From Framework to Practice> ETRI 인공지능안전연구소 (서울신라호텔)",
+    "month": 10,
+    "day": 23,
+    "title": "세션2 AI 리스크 관리의 이론과 실제: 패널토론 좌장",
+    "authors": null,
+    "text": "2026. 10. 23. “세션2 AI 리스크 관리의 이론과 실제: 패널토론 좌장,” <2026 AI 안전 정책 글로벌 워크숍: From Framework to Practice> ETRI 인공지능안전연구소 (서울신라호텔)",
+    "kind": "사회",
+    "region": "국제",
+    "venue": "<2026 AI 안전 정책 글로벌 워크숍: From Framework to Practice> ETRI 인공지능안전연구소 (서울신라호텔)",
+    "slug": "2026-042"
+  },
+  {
     "tag": "특강",
     "year": "2026",
     "detail": "\"AI 활용 사례 및 활용 방안: 연구분야,\" <통일연구원 AI 활용 교육(연구분야)> (통일연구원 국제회의실)",
@@ -135,7 +149,7 @@
     "authors": null,
     "text": "2026. 10. 19. “AI 안보·보안 분야 공동 워크숍 1일차: Safety and Security Overviews, CBRN, Cyber,” <ETRI 인공지능안전연구소·OpenAI 공동 워크숍> (서울 양재 L타워)",
     "kind": "사회",
-    "region": null,
+    "region": "국제",
     "venue": "<ETRI 인공지능안전연구소·OpenAI 공동 워크숍> (서울 양재 L타워)",
     "slug": "2026-033"
   },
