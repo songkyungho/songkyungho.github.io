@@ -15,7 +15,7 @@ type MediaItem = {
 };
 
 function youtubeId(url: string) {
-  const match = url.match(/(?:youtu\.be\/|[?&]v=)([\w-]{11})/);
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:live|shorts|embed)\/|[?&]v=)([\w-]{11})/);
   return match ? match[1] : null;
 }
 
