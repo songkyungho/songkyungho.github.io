@@ -320,9 +320,7 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 .footer-links { display: flex; gap: 20px; align-items: center; color: var(--accent); font-size: .68rem; }
 .footer-links a { text-decoration: underline; text-underline-offset: 3px; }
 
-/* 번역: 목록은 index-row를 쓰고, 문서는 원문·번역을 한 줄(tr-row)에 짝지어 둔 뒤 data-view로 보일 칸을 고른다. */
-.tr-index { border-bottom: 1px solid var(--line); }
-.tr-index .index-row .eyebrow { margin: 0; }
+/* 번역: 원문·번역을 한 줄(tr-row)에 짝지어 둔 뒤 data-view로 보일 칸을 고른다. 목록은 글 > 블로그. */
 .tr-original-title { margin: 4px 0 0; color: var(--muted); font: .78rem/1.5 Georgia, serif; }
 .article-header .tr-original-title { margin-top: 14px; font-size: .9rem; }
 .tr-disclaimer { margin: 26px 0 0; padding: 16px 20px 6px; border-left: 3px solid #b26b00; background: #fff8ec; font-size: .8rem; line-height: 1.7; }
