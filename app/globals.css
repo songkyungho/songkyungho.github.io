@@ -370,12 +370,8 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 .tr-h2 .tr-en, .tr-h3 .tr-en { margin: 0; font: italic 700 .85rem/1.6 Georgia, serif; }
 .tr-h2 .tr-en { font-size: 1.05rem; font-style: normal; }
 .tr-table-wrap { margin: .4em 0 1.4em; overflow-x: auto; }
+/* 칸 너비를 고르게 나눈다(자동 배치는 글이 짧은 칸을 지나치게 좁혀 표가 세로로 늘어진다) */
 .tr-table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: .8rem; line-height: 1.6; }
-/* 글이 긴 표는 본문 칸(약 700~850px)에 가두면 칸마다 세로로 1000px 넘게 늘어진다.
-   넓은 화면에서는 본문 칸 오른쪽 빈 여백까지 표를 넓힌다(본문 왼쪽 끝 = 50vw-288px, 창이 1180px 미만이면 318px). */
-@media (min-width: 761px) {
-  .tr-tablerow .tr-table-wrap { width: max(100%, min(100vw - 340px, 50vw + 240px, 1120px)); }
-}
 .tr-table th, .tr-table td { min-width: 8em; padding: 7px 9px; border: 1px solid var(--line); vertical-align: top; text-align: left; word-break: keep-all; }
 /* 원문 대조 보기에서도 표는 좌우로 나누면 칸이 찌그러지므로 번역 위·원문 아래로 쌓는다 */
 .tr-body[data-view="both"] .tr-tablerow { grid-template-columns: minmax(0, 1fr); }
