@@ -3,7 +3,9 @@ import anthropicS1 from "../data/translations/anthropic-s1-2026-risk-factors.jso
 // 번역 문서 한 편 = scripts/import_translation.py가 만든 JSON 한 개. 새 문서는 여기 import만 더한다.
 // marks: 번역문 강조(scripts/emphasize_translation.py). t는 ko의 연속 부분 문자열, 블록 안 순서대로·겹치지 않음.
 export type Mark = { t: string; k: "key" | "safety" };
-export type TranslationBlock = { type: "h2" | "h3" | "p" | "li"; en: string; ko: string; id?: string; marks?: Mark[] };
+// refs: 문서 안 상호 참조(scripts/link_crossrefs.py). t는 ko의 인용된 제목, to는 가리키는 제목 블록의 id.
+export type CrossRef = { t: string; to: string };
+export type TranslationBlock = { type: "h2" | "h3" | "p" | "li"; en: string; ko: string; id?: string; marks?: Mark[]; refs?: CrossRef[] };
 export type TranslationDoc = {
   slug: string;
   title: string;

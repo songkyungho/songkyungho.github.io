@@ -373,6 +373,9 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 /* 강조: 형광 밑줄(AI 안전 관련)과 굵게(핵심 결론). data-marks="off"면 평문처럼 보인다. */
 .tr-safety { padding: 0 1px; background: linear-gradient(transparent 58%, #ffe58a 58%); color: inherit; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .tr-key { font-weight: 720; }
+/* 문서 안 상호 참조: 누르면 그 위험 항목 제목으로 간다 */
+.tr-ref { color: var(--accent); text-decoration: underline dotted; text-underline-offset: 3px; }
+.tr-ref:hover { text-decoration-style: solid; }
 .tr-body[data-marks="off"] .tr-safety { background: none; }
 .tr-body[data-marks="off"] .tr-key { font-weight: inherit; }
 .tr-legend { margin-top: 14px; padding: 12px 0 2px; border-top: 1px solid var(--line); font-size: .72rem; line-height: 1.6; }
