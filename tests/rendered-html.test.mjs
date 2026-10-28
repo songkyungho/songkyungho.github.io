@@ -52,9 +52,11 @@ test("exports each translation with the disclaimer and every source block paired
   const { readdir } = await import("node:fs/promises");
   const dir = new URL("../app/data/translations/", import.meta.url);
   const index = await render("/translations");
+  const writing = await render("/writing");
   for (const file of await readdir(dir)) {
     const doc = JSON.parse(await readFile(new URL(file, dir), "utf8"));
     assert.match(index, new RegExp(`href="/translations/${escapeRegExp(doc.slug)}"`), `index link: ${doc.slug}`);
+    assert.match(writing, new RegExp(`href="/translations/${escapeRegExp(doc.slug)}"`), `writing (blog) link: ${doc.slug}`);
     const html = await render(`/translations/${doc.slug}`);
     assert.match(html, new RegExp(`<h1>${escapeRegExp(escapeHtml(doc.title))}</h1>`), `title: ${doc.slug}`);
     assert.match(html, /LLM 자동번역 · 비공식 참고용/, `disclaimer: ${doc.slug}`);

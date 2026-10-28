@@ -111,7 +111,7 @@ export default async function TranslationPage({ params }: { params: Promise<Para
           </div>
         </div>
       </article>
-      <nav className="article-back" aria-label="번역 목록"><a href="/translations">← 번역 목록으로 돌아가기</a></nav>
+      <nav className="article-back" aria-label="글 목록"><a href="/writing">← 글 아카이브로 돌아가기</a></nav>
     </main>
   );
 }

@@ -10,7 +10,6 @@ export function SiteHeader() {
         <a href="/research">연구</a>
         <a href="/talks">발표</a>
         <a href="/writing">글</a>
-        <a href="/translations">번역</a>
         <a href="/media">미디어</a>
         <a href="/art">아트</a>
       </nav>

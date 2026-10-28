@@ -15,6 +15,7 @@ type WritingSummary = {
   sourceUrl: string | null;
   migrationStatus: string;
   note: { text: string; url?: string } | null;
+  href?: string;
 };
 
 function formatDate(item: { year: string | null; month: string | null; day: string | null; section: string }) {
@@ -74,7 +75,7 @@ export default function WritingArchive({ archive }: { archive: WritingSummary[] 
             </>
           );
           return hasDetail ? (
-            <a className="writing-row" href={`/writing/archive/${item.slug}`} key={item.slug}>{content}</a>
+            <a className="writing-row" href={item.href ?? `/writing/archive/${item.slug}`} key={item.slug}>{content}</a>
           ) : (
             <a className="writing-row" href={item.sourceUrl ?? undefined} target="_blank" rel="noopener noreferrer" key={item.slug}>{content}</a>
           );
