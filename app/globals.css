@@ -367,6 +367,14 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 .tr-h3 h3 { margin: 0; font-size: 1rem; font-weight: 680; line-height: 1.6; letter-spacing: -.02em; }
 .tr-h2 .tr-en, .tr-h3 .tr-en { margin: 0; font: italic 700 .85rem/1.6 Georgia, serif; }
 .tr-h2 .tr-en { font-size: 1.05rem; font-style: normal; }
+.tr-table-wrap { margin: .4em 0 1.4em; overflow-x: auto; }
+.tr-table { width: 100%; border-collapse: collapse; font-size: .8rem; line-height: 1.6; }
+.tr-table th, .tr-table td { min-width: 8em; padding: 7px 9px; border: 1px solid var(--line); vertical-align: top; text-align: left; word-break: keep-all; }
+/* 원문 대조 보기에서도 표는 좌우로 나누면 칸이 찌그러지므로 번역 위·원문 아래로 쌓는다 */
+.tr-body[data-view="both"] .tr-tablerow { grid-template-columns: minmax(0, 1fr); }
+.tr-body[data-view="both"] .tr-tablerow .tr-en .tr-table-wrap { margin-top: 0; }
+.tr-table th { background: var(--soft); font-weight: 680; }
+.tr-table[lang="en"] { font-family: Georgia, serif; font-size: .76rem; }
 .tr-li .tr-ko, .tr-li .tr-en { position: relative; padding-left: 1.2em; }
 .tr-li .tr-ko::before, .tr-li .tr-en::before { content: "•"; position: absolute; left: .2em; color: var(--muted); }
 .tr-li p { margin-bottom: .5em; }

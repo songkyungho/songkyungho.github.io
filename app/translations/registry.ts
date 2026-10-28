@@ -1,3 +1,4 @@
+import anthropicRsp34 from "../data/translations/anthropic-rsp-v3-4.json";
 import anthropicS1 from "../data/translations/anthropic-s1-2026-risk-factors.json";
 
 // 번역 문서 한 편 = scripts/import_translation.py가 만든 JSON 한 개. 새 문서는 여기 import만 더한다.
@@ -5,7 +6,8 @@ import anthropicS1 from "../data/translations/anthropic-s1-2026-risk-factors.jso
 export type Mark = { t: string; k: "key" | "safety" };
 // refs: 문서 안 상호 참조(scripts/link_crossrefs.py). t는 ko의 인용된 제목, to는 가리키는 제목 블록의 id.
 export type CrossRef = { t: string; to: string };
-export type TranslationBlock = { type: "h2" | "h3" | "p" | "li"; en: string; ko: string; id?: string; marks?: Mark[]; refs?: CrossRef[] };
+// table: 행은 " ⏎ ", 칸은 "|"로 나눈 Markdown 표 한 줄(scripts/import_translation.py). 첫 행이 머리글.
+export type TranslationBlock = { type: "h2" | "h3" | "p" | "li" | "table"; en: string; ko: string; id?: string; marks?: Mark[]; refs?: CrossRef[] };
 export type TranslationDoc = {
   slug: string;
   title: string;
@@ -15,6 +17,9 @@ export type TranslationDoc = {
   published: string;
   source_url: string;
   source_note: string;
+  // 원문 링크 문구(기본 "원문 보기")와 목차에 셀 항목 이름(예: "위험" → "위험 87개"). 없으면 개수를 쓰지 않는다.
+  source_label?: string;
+  item_label?: string;
   translated: string;
   model: string;
   glossary: string;
@@ -29,6 +34,6 @@ export type TranslationDoc = {
   blocks: TranslationBlock[];
 };
 
-export const translations = ([anthropicS1] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
+export const translations = ([anthropicS1, anthropicRsp34] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
 
 export const dotDate = (iso: string) => iso.replaceAll("-", ".");

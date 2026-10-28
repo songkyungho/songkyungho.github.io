@@ -13,24 +13,44 @@ META.json holds the page fields (slug, title, original_title, publisher, publish
 """
 
 import json
+import re
 import sys
 from itertools import groupby
 
 PREFIX = (("## ", "h2"), ("### ", "h3"), ("- ", "li"))
 
 
+TABLE_SEP = re.compile(r"^\|[\s:|-]+\|$")
+
+
+def table_rows(chunk: str) -> str:
+    """'[표] | a | b | ⏎ | 1 | 2 |' 한 줄이든, 번역 모델이 풀어 쓴 여러 줄 Markdown 표든 같은 꼴로:
+    머리 구분선을 버리고 행을 ' ⏎ '로 잇는다."""
+    text = chunk.replace("[표]", "", 1)
+    rows = [r.strip() for r in re.split(r"\s*⏎\s*|\n", text) if r.strip()]
+    return " ⏎ ".join(r for r in rows if r.startswith("|") and not TABLE_SEP.match(r))
+
+
 def parse(path: str) -> list[dict]:
+    """빈 줄로 나뉜 블록을 읽는다. 빈 줄 없이 한 줄 한 블록인 파일(S-1 등)도 그대로 읽힌다."""
     blocks = []
-    for line in open(path, encoding="utf-8"):
-        line = line.strip()
-        if not line or line.startswith("# "):
+    for chunk in re.split(r"\n\s*\n", open(path, encoding="utf-8").read()):
+        chunk = chunk.strip()
+        if not chunk:
             continue
-        for mark, kind in PREFIX:
-            if line.startswith(mark):
-                blocks.append({"type": kind, "text": line[len(mark):].strip()})
-                break
-        else:
-            blocks.append({"type": "p", "text": line})
+        if chunk.startswith(("[표]", "|")):
+            blocks.append({"type": "table", "text": table_rows(chunk)})
+            continue
+        for line in chunk.splitlines():
+            line = line.strip()
+            if not line or line.startswith("# "):
+                continue
+            for mark, kind in PREFIX:
+                if line.startswith(mark):
+                    blocks.append({"type": kind, "text": line[len(mark):].strip()})
+                    break
+            else:
+                blocks.append({"type": "p", "text": line})
     return blocks
 
 

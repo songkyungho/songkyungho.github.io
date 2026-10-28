@@ -64,6 +64,9 @@ test("exports each translation with the disclaimer and every source block paired
     const marks = doc.blocks.flatMap((block) => block.marks ?? []);
     assert.equal((html.match(/<mark class="tr-safety">/g) ?? []).length, marks.filter((m) => m.k === "safety").length, `safety marks: ${doc.slug}`);
     assert.equal((html.match(/<strong class="tr-key">/g) ?? []).length, marks.filter((m) => m.k === "key").length, `key marks: ${doc.slug}`);
+    // 표는 번역·원문 두 칸 모두 표로 렌더링되는지
+    const tables = doc.blocks.filter((block) => block.type === "table").length;
+    assert.equal((html.match(/<table class="tr-table"/g) ?? []).length, tables * 2, `tables: ${doc.slug}`);
     // 상호 참조가 모두 링크로 렌더링되고, 가리키는 제목이 페이지에 있는지
     const refs = doc.blocks.flatMap((block) => block.refs ?? []);
     assert.equal((html.match(/<a class="tr-ref" href="#s\d+">/g) ?? []).length, refs.length, `cross-refs: ${doc.slug}`);

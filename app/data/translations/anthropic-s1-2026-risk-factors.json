@@ -7,6 +7,8 @@
  "published": "2026-10-26",
  "source_url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
  "source_note": "원문 59–152쪽, 'Risk Factors' 절 전체",
+ "source_label": "원문 보기 (SEC EDGAR)",
+ "item_label": "위험",
  "translated": "2026-10-28",
  "model": "Claude Opus 5.5 (effort medium)",
  "glossary": "AI 안전 번역 용어집",

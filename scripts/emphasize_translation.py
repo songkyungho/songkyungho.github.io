@@ -29,7 +29,7 @@ EFFORT = "medium"
 PRICE_IN, PRICE_OUT = 4.0, 20.0  # USD per million tokens
 SHARED_ENV = Path.home() / ".config" / "ai-safety" / "env"
 
-SYSTEM = """당신은 AI 안전 연구자를 위해 긴 번역문에 강조 표시를 다는 편집자다. 독자는 앤트로픽 같은 프론티어 AI 기업의 공시 문서를 훑어 읽으며, AI 안전과 관련된 서술과 각 항목의 요점을 빨리 찾고 싶어 한다.
+SYSTEM = """당신은 AI 안전 연구자를 위해 긴 번역문에 강조 표시를 다는 편집자다. 독자는 프론티어 AI 기업의 공시·정책 문서를 훑어 읽으며, AI 안전과 관련된 서술과 각 항목의 요점을 빨리 찾고 싶어 한다.
 
 입력은 문서의 한 항목(제목과 번호 붙은 본문 블록)이다. 두 종류의 표시를 고른다.
 
@@ -130,7 +130,7 @@ def apply_marks(blocks: list[dict], seg: list[int], marks: list[dict]) -> int:
     spans: dict[int, list[tuple[int, int, str, str]]] = {}
     for m in marks:
         n = m["block"]
-        if n not in seg or blocks[n]["type"] in ("h2", "h3"):
+        if n not in seg or blocks[n]["type"] not in ("p", "li"):  # 제목·표에는 강조를 달지 않는다
             dropped += 1
             continue
         ko = blocks[n]["ko"]

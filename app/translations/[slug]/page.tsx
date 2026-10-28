@@ -81,7 +81,28 @@ function Paragraphs({ text, lang, marks = [], refs = [] }: { text: string; lang:
   );
 }
 
+function Table({ text, lang }: { text: string; lang: "ko" | "en" }) {
+  const rows = text.split(" ⏎ ").map((row) => row.replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim()));
+  const [head, ...body] = rows;
+  return (
+    <div className="tr-table-wrap">
+      <table className="tr-table" lang={lang}>
+        <thead><tr>{head.map((cell, i) => <th key={i}>{cell}</th>)}</tr></thead>
+        <tbody>{body.map((row, r) => <tr key={r}>{row.map((cell, c) => <td key={c}>{cell}</td>)}</tr>)}</tbody>
+      </table>
+    </div>
+  );
+}
+
 function Row({ block }: { block: TranslationBlock }) {
+  if (block.type === "table") {
+    return (
+      <div className="tr-row tr-tablerow">
+        <div className="tr-ko"><Table lang="ko" text={block.ko} /></div>
+        <div className="tr-en"><Table lang="en" text={block.en} /></div>
+      </div>
+    );
+  }
   if (block.type === "h2" || block.type === "h3") {
     const Heading = block.type;
     return (
@@ -107,7 +128,7 @@ function Toc({ doc }: { doc: TranslationDoc }) {
   }
   return (
     <nav className="tr-toc" aria-label="목차">
-      <p>목차 · 위험 {doc.stats.items}개</p>
+      <p>목차{doc.item_label ? ` · ${doc.item_label} ${doc.stats.items}개` : ""}</p>
       <ol>
         {sections.map(({ h2, items }) => (
           <li key={h2.id}>
@@ -156,7 +177,7 @@ export default async function TranslationPage({ params }: { params: Promise<Para
 
         <div className="tr-source">
           <a href={doc.source_url} target="_blank" rel="noopener noreferrer">
-            원문 보기 (SEC EDGAR)<span aria-hidden="true"> ↗</span><span className="sr-only"> (새 창)</span>
+            {doc.source_label ?? "원문 보기"}<span aria-hidden="true"> ↗</span><span className="sr-only"> (새 창)</span>
           </a>
           <span>{doc.source_note}</span>
         </div>
