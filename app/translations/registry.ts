@@ -31,6 +31,8 @@ export type TranslationDoc = {
   // 공유 미리보기용 JPEG (페이스북은 WebP를 못 읽는 경우가 있다). 없으면 image를 쓴다.
   og_image?: string;
   stats: { blocks: number; sections: number; items: number; words_en: number };
+  // 원문 쪽 하단 각주. 본문에는 '[^n]'으로 표시돼 있다(scripts/import_translation.py extract_footnotes).
+  notes?: { n: number; en: string; ko: string; linked: boolean }[];
   blocks: TranslationBlock[];
 };
 

@@ -35,6 +35,79 @@ def table_cells(row: str) -> list[str]:
     return [c.strip() for c in row.strip().strip("|").split("|")]
 
 
+def _join(a: str, b: str) -> str:
+    if not a:
+        return b
+    if not b:
+        return a
+    return a + ("" if b[:1] in ":;,.)" else " ") + b
+
+
+def merge_continuation_rows(block: dict) -> dict:
+    """한 행의 내용이 쪽 경계·셀 줄바꿈으로 여러 행에 나뉜 것을 합친다.
+    원문(영어) 첫 칸이 소문자나 문장부호로 시작하면 앞 행의 이어짐으로 보고, 번역문도 같은 행끼리 합친다."""
+    en_rows = [table_cells(r) for r in block["en"].split(" ⏎ ")]
+    ko_rows = [table_cells(r) for r in block["ko"].split(" ⏎ ")]
+    if len(en_rows) != len(ko_rows):
+        return block
+    keep_en, keep_ko = [en_rows[0]], [ko_rows[0]]
+    for en, ko in zip(en_rows[1:], ko_rows[1:]):
+        first = next((c for c in en if c), "")
+        if len(keep_en) > 1 and first[:1] and (first[:1].islower() or first[:1] in ":;,.●"):
+            for kept, row in ((keep_en[-1], en), (keep_ko[-1], ko)):
+                for i, cell in enumerate(row[: len(kept)]):
+                    kept[i] = _join(kept[i], cell)
+        else:
+            keep_en.append(en)
+            keep_ko.append(ko)
+    fmt = lambda rows: " ⏎ ".join("| " + " | ".join(r) + " |" for r in rows)
+    return {**block, "en": fmt(keep_en), "ko": fmt(keep_ko)}
+
+
+NOTE_BODY = re.compile(r"^(\d{1,2})\s{2,}")
+
+
+def extract_footnotes(blocks: list[dict]) -> tuple[list[dict], list[dict]]:
+    """PDF 쪽 하단 각주가 본문 사이에 독립 문단("2  Note that …")으로 끼어 들어온 것을 빼서 모으고,
+    본문의 각주 번호를 '[^n]' 표시로 바꾼다(페이지에서 위첨자 링크로 그림).
+    원문은 Docling 꼴(번호 뒤 공백 두 칸, 표 안은 낱말 사이 숫자)로, 번역문은 같은 블록에서 그 번호가
+    한 번만 나올 때만 바꾼다 — 모호하면 그대로 둔다."""
+    notes, body = [], []
+    for b in blocks:
+        m = NOTE_BODY.match(b["en"]) if b["type"] == "p" else None
+        if m:
+            notes.append({"n": int(m.group(1)), "en": b["en"][m.end():].strip(),
+                          "ko": re.sub(r"^\d{1,2}\s*", "", b["ko"]).strip()})
+        else:
+            body.append(b)
+    for note in notes:
+        note["linked"] = link_note_marker(body, note["n"])
+    return body, sorted(notes, key=lambda x: x["n"])
+
+
+def link_note_marker(body: list[dict], n: int) -> bool:
+    """본문에서 각주 n의 표시를 원문·번역문 모두 꼭 한 곳에서 찾으면 '[^n]'으로 바꾼다.
+    원문: 먼저 Docling 꼴(번호 뒤 공백 두 칸)을, 없으면 표 안의 낱말 사이 숫자('company 3 |')를 찾는다.
+    번역문: 같은 블록에서 앞이 띄어쓰기·쉼표·한글이고 뒤에 단위가 붙지 않는 숫자('고역량13 모델', ',11 당사는')
+    — 'ASL-3', '제3자', 'SL4', '5배', '3.6절'은 제외."""
+    strict = re.compile(rf"(?<=[^\d\s])(\s?){n}(?=\s{{2}})")
+    loose = re.compile(rf"(?<=[A-Za-z.,)”’:;])(?<!\d\.)\s?{n}(?=\s|$)")
+    hits = [(i, m) for i, b in enumerate(body) if b["type"] in ("p", "li", "table") for m in strict.finditer(b["en"])]
+    if not hits:
+        hits = [(i, m) for i, b in enumerate(body) if b["type"] == "table" for m in loose.finditer(b["en"])]
+    if len(hits) != 1:
+        return False
+    i, m = hits[0]
+    b = body[i]
+    ko_hits = list(re.finditer(rf"(?<=[\s,.가-힣])(?<!제)(?<!\d\.){n}(?![\d.]|\s*[배개명년월일회%절])", b["ko"]))
+    if len(ko_hits) != 1:
+        return False
+    b["en"] = b["en"][: m.start()] + f"[^{n}]" + b["en"][m.end():]
+    k = ko_hits[0]
+    b["ko"] = b["ko"][: k.start()].rstrip() + f"[^{n}]" + b["ko"][k.end():]
+    return True
+
+
 def merge_split_tables(blocks: list[dict]) -> list[dict]:
     """PDF에서 여러 쪽에 걸친 표는 쪽마다 머리글을 되풀이한 별개의 표로 잡힌다.
     원문 머리글(칸 공백 무시)이 같은 표가 연달아 나오면 하나로 합치고, 되풀이된 머리글 행은 버린다."""
@@ -49,7 +122,7 @@ def merge_split_tables(blocks: list[dict]) -> list[dict]:
                     prev[lang] = prev[lang] + " ⏎ " + " ⏎ ".join(rows)
             continue
         out.append(b)
-    return out
+    return [merge_continuation_rows(b) if b["type"] == "table" else b for b in out]
 
 
 def parse(path: str) -> list[dict]:
@@ -139,7 +212,7 @@ def align(en: list[dict], ko: list[dict]) -> list[dict]:
 
 
 def main(src: str, translated: str, meta_path: str) -> None:
-    blocks = merge_split_tables(align(parse(src), parse(translated)))
+    blocks, notes = extract_footnotes(merge_split_tables(align(parse(src), parse(translated))))
     for n, block in enumerate(blocks):
         if block["type"] in ("h2", "h3"):
             block["id"] = f"s{n}"
@@ -150,7 +223,10 @@ def main(src: str, translated: str, meta_path: str) -> None:
         "items": sum(b["type"] == "h3" for b in blocks),
         "words_en": sum(len(b["en"].split()) for b in blocks),
     }
-    json.dump({**meta, "blocks": blocks}, sys.stdout, ensure_ascii=False, indent=1)
+    out = {**meta, "blocks": blocks}
+    if notes:
+        out["notes"] = notes
+    json.dump(out, sys.stdout, ensure_ascii=False, indent=1)
     sys.stdout.write("\n")
 
 

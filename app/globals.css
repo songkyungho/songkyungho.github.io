@@ -376,6 +376,16 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 .tr-body[data-view="both"] .tr-tablerow { grid-template-columns: minmax(0, 1fr); }
 .tr-body[data-view="both"] .tr-tablerow .tr-en .tr-table-wrap { margin-top: 0; }
 .tr-table th { background: var(--soft); font-weight: 680; }
+.tr-table td > p { margin: 0 0 .4em; font-size: inherit; line-height: inherit; }
+.tr-cell-lead { font-weight: 720; }
+.tr-fn { font-size: .68em; line-height: 0; }
+.tr-fn a { margin-left: 1px; color: var(--accent); }
+.tr-note p { font-size: .8rem; line-height: 1.75; color: #4a4a4f; }
+.tr-fn-n { display: inline-block; min-width: 1.6em; color: var(--accent); font-weight: 700; }
+.tr-fn-back { color: var(--accent); }
+.tr-note, .tr-row[id] { scroll-margin-top: 44px; }
+.tr-cell-list { margin: 0; padding-left: 1.1em; }
+.tr-cell-list li { margin: 0 0 .3em; }
 .tr-table[lang="en"] { font-family: Georgia, serif; font-size: .76rem; }
 .tr-li .tr-ko, .tr-li .tr-en { position: relative; padding-left: 1.2em; }
 .tr-li .tr-ko::before, .tr-li .tr-en::before { content: "•"; position: absolute; left: .2em; color: var(--muted); }

@@ -61,7 +61,8 @@ test("exports each translation with the disclaimer and every source block paired
     assert.equal(h1, escapeHtml(doc.title), `title: ${doc.slug}`);
     assert.match(html, /LLM 자동번역 · 비공식 참고용/, `disclaimer: ${doc.slug}`);
     assert.match(html, new RegExp(`href="${escapeRegExp(escapeHtml(doc.source_url))}"`), `source link: ${doc.slug}`);
-    assert.equal((html.match(/class="tr-row /g) ?? []).length, doc.blocks.length, `paired rows: ${doc.slug}`);
+    const noteRows = doc.notes?.length ? doc.notes.length + 1 : 0; // 각주 구획 제목 + 각주
+    assert.equal((html.match(/class="tr-row /g) ?? []).length, doc.blocks.length + noteRows, `paired rows: ${doc.slug}`);
     // 강조 표시가 모두 제자리를 찾아 렌더링됐는지 (번역문을 고쳐 표시 문구가 사라지면 여기서 걸린다)
     const marks = doc.blocks.flatMap((block) => block.marks ?? []);
     assert.equal((html.match(/<mark class="tr-safety">/g) ?? []).length, marks.filter((m) => m.k === "safety").length, `safety marks: ${doc.slug}`);
@@ -77,6 +78,12 @@ test("exports each translation with the disclaimer and every source block paired
         assert.ok(!/다시 쓴다|다시 쓰겠다|번역하면 다음과 같다/.test(part), `model note left in block ${n}: ${doc.slug}`);
       }
     }
+    // 각주: 본문에 남은 각주 본문 문단이 없고, 연결된 각주는 번역·원문 양쪽에 위첨자 링크가 있는지
+    for (const note of doc.notes ?? []) {
+      assert.match(html, new RegExp(`id="fn-${note.n}"`), `note ${note.n}: ${doc.slug}`);
+      if (note.linked) assert.equal((html.match(new RegExp(`href="#fn-${note.n}" id="fnref-${note.n}-`, "g")) ?? []).length, 2, `note ref ${note.n}: ${doc.slug}`);
+    }
+    assert.ok(!doc.blocks.some((block) => block.type === "p" && /^\d{1,2}\s{2,}/.test(block.en)), `footnote left in body: ${doc.slug}`);
     // 표는 번역·원문 두 칸 모두 표로 렌더링되는지
     const tables = doc.blocks.filter((block) => block.type === "table").length;
     assert.equal((html.match(/<table class="tr-table"/g) ?? []).length, tables * 2, `tables: ${doc.slug}`);

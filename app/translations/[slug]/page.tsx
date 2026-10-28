@@ -53,30 +53,58 @@ function inlineSpans(text: string, marks: Mark[], refs: CrossRef[]): Span[] {
   return spans.sort((a, b) => a.start - b.start);
 }
 
-function renderRange(text: string, from: number, to: number, spans: Span[]) {
+// 본문의 각주 표시 '[^n]'을 위첨자 링크로. 번역·원문 칸 모두 그려지므로 되돌아올 자리 id에 언어를 붙인다.
+function withNotes(text: string, lang: "ko" | "en"): React.ReactNode[] {
+  return text.split(/\[\^(\d+)\]/).map((part, i) => i % 2
+    ? <sup className="tr-fn" key={i}><a href={`#fn-${part}`} id={`fnref-${part}-${lang}`}>{part}</a></sup>
+    : part);
+}
+
+function renderRange(text: string, from: number, to: number, spans: Span[], lang: "ko" | "en") {
   const nodes: React.ReactNode[] = [];
   let cursor = from;
   for (const span of spans) {
     if (span.start < cursor || span.end > to) continue;
-    if (span.start > cursor) nodes.push(text.slice(cursor, span.start));
+    if (span.start > cursor) nodes.push(...withNotes(text.slice(cursor, span.start), lang));
     nodes.push(span.node(span.start));
     cursor = span.end;
   }
-  if (cursor < to) nodes.push(text.slice(cursor, to));
+  if (cursor < to) nodes.push(...withNotes(text.slice(cursor, to), lang));
   return nodes;
 }
 
 // 번역문은 한 원문 문단을 여러 문단으로 나눴을 수 있다(빈 줄로 구분).
 function Paragraphs({ text, lang, marks = [], refs = [] }: { text: string; lang: "ko" | "en"; marks?: Mark[]; refs?: CrossRef[] }) {
   const spans = marks.length || refs.length ? inlineSpans(text, marks, refs) : [];
-  let offset = 0;
+  const parts = text.split("\n\n");
+  const starts = parts.map((_, i) => parts.slice(0, i).reduce((sum, p) => sum + p.length + 2, 0));
   return (
     <>
-      {text.split("\n\n").map((part, index) => {
-        const start = offset;
-        offset += part.length + 2;
-        return <p key={index} lang={lang}>{spans.length ? renderRange(text, start, start + part.length, spans) : part}</p>;
-      })}
+      {parts.map((part, index) => (
+        <p key={index} lang={lang}>{renderRange(text, starts[index], starts[index] + part.length, spans, lang)}</p>
+      ))}
+    </>
+  );
+}
+
+// 표 첫 칸의 머리말("Anthropic in the lead. …", "Novel chemical/biological weapons production. …")은 원문에서
+// 굵은 글씨다. 추출본에는 굵기가 없으니, 짧은 첫 문장 뒤에 설명이 이어지면 그 첫 문장을 굵게 보인다.
+function leadSplit(text: string): [string, string] | null {
+  const m = text.match(/^(.{2,90}?[.。])\s+(?=\D)([\s\S]+)$/);
+  return m ? [m[1], m[2]] : null;
+}
+
+// 칸 안의 글머리 목록은 PDF에서 "… 다음을 수행한다: ● 첫째 ● 둘째"처럼 한 줄로 이어져 들어온다.
+function Cell({ text, lang, lead }: { text: string; lang: "ko" | "en"; lead: boolean }) {
+  const split = lead ? leadSplit(text) : null;
+  const rest = split ? split[1] : text;
+  const [intro, ...items] = rest.split(/\s*●\s*/);
+  const head = split && <strong className="tr-cell-lead">{withNotes(split[0], lang)} </strong>;
+  if (!items.length) return <>{head}{withNotes(rest, lang)}</>;
+  return (
+    <>
+      {(head || intro) && <p>{head}{withNotes(intro, lang)}</p>}
+      <ul className="tr-cell-list">{items.map((item, i) => <li key={i}>{withNotes(item, lang)}</li>)}</ul>
     </>
   );
 }
@@ -87,8 +115,8 @@ function Table({ text, lang }: { text: string; lang: "ko" | "en" }) {
   return (
     <div className="tr-table-wrap">
       <table className="tr-table" lang={lang}>
-        <thead><tr>{head.map((cell, i) => <th key={i}>{cell}</th>)}</tr></thead>
-        <tbody>{body.map((row, r) => <tr key={r}>{row.map((cell, c) => <td key={c}>{cell}</td>)}</tr>)}</tbody>
+        <thead><tr>{head.map((cell, i) => <th key={i}>{withNotes(cell, lang)}</th>)}</tr></thead>
+        <tbody>{body.map((row, r) => <tr key={r}>{row.map((cell, c) => <td key={c}><Cell lang={lang} lead={c === 0} text={cell} /></td>)}</tr>)}</tbody>
       </table>
     </div>
   );
@@ -117,6 +145,31 @@ function Row({ block }: { block: TranslationBlock }) {
       <div className="tr-ko"><Paragraphs lang="ko" marks={block.marks} refs={block.refs} text={block.ko} /></div>
       <div className="tr-en"><Paragraphs lang="en" text={block.en} /></div>
     </div>
+  );
+}
+
+// 원문 쪽 하단 각주는 문서 끝에 모은다. 번역·원문 대조 전환을 그대로 따르도록 같은 tr-row 꼴로 그린다.
+function Notes({ notes }: { notes: NonNullable<TranslationDoc["notes"]> }) {
+  return (
+    <section aria-label="각주" className="tr-notes">
+      <div className="tr-row tr-h2" id="notes">
+        <h2 className="tr-ko" lang="ko">각주</h2>
+        <p className="tr-en" lang="en">Notes</p>
+      </div>
+      {notes.map((note) => (
+        <div className="tr-row tr-note" id={`fn-${note.n}`} key={note.n}>
+          {(["ko", "en"] as const).map((lang) => (
+            <div className={`tr-${lang}`} key={lang}>
+              <p lang={lang}>
+                <span className="tr-fn-n">{note.n}</span>
+                {note[lang]}
+                {note.linked && <> <a aria-label="본문으로 돌아가기" className="tr-fn-back" href={`#fnref-${note.n}-${lang}`}>↩</a></>}
+              </p>
+            </div>
+          ))}
+        </div>
+      ))}
+    </section>
   );
 }
 
@@ -190,6 +243,7 @@ export default async function TranslationPage({ params }: { params: Promise<Para
           <div className="tr-body" data-marks="on" data-view="ko" id="tr-body">
             <div className="tr-columns" aria-hidden="true"><span>번역</span><span>원문 (English)</span></div>
             {doc.blocks.map((block, index) => <Row block={block} key={index} />)}
+            {doc.notes?.length ? <Notes notes={doc.notes} /> : null}
           </div>
         </div>
       </article>
