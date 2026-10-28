@@ -48,6 +48,21 @@ test("renders the AI safety site banners from projects.json", async () => {
   assert.equal(compactCount, projects.links.length - 2);
 });
 
+test("exports each translation with the disclaimer and every source block paired", async () => {
+  const { readdir } = await import("node:fs/promises");
+  const dir = new URL("../app/data/translations/", import.meta.url);
+  const index = await render("/translations");
+  for (const file of await readdir(dir)) {
+    const doc = JSON.parse(await readFile(new URL(file, dir), "utf8"));
+    assert.match(index, new RegExp(`href="/translations/${escapeRegExp(doc.slug)}"`), `index link: ${doc.slug}`);
+    const html = await render(`/translations/${doc.slug}`);
+    assert.match(html, new RegExp(`<h1>${escapeRegExp(escapeHtml(doc.title))}</h1>`), `title: ${doc.slug}`);
+    assert.match(html, /LLM 자동번역 · 비공식 참고용/, `disclaimer: ${doc.slug}`);
+    assert.match(html, new RegExp(`href="${escapeRegExp(escapeHtml(doc.source_url))}"`), `source link: ${doc.slug}`);
+    assert.equal((html.match(/class="tr-row /g) ?? []).length, doc.blocks.length, `paired rows: ${doc.slug}`);
+  }
+});
+
 test("exports every writing archive entry as a flat .html page", async () => {
   const archive = JSON.parse(
     await readFile(new URL("../app/data/writing-archive.json", import.meta.url), "utf8"),
