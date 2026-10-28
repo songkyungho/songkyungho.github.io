@@ -3,6 +3,7 @@ import type React from "react";
 import { Disclaimer } from "../Disclaimer";
 import { dotDate, translations, type Mark, type TranslationBlock, type TranslationDoc } from "../registry";
 import { ViewSwitch } from "../ViewSwitch";
+import { SITE_URL } from "../../../site.config";
 
 type Params = { slug: string };
 
@@ -15,11 +16,13 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const doc = translations.find((item) => item.slug === slug);
   if (!doc) return { title: "번역을 찾을 수 없습니다 | 송경호" };
   const description = `${doc.summary} (LLM 자동번역, 비공식 참고용)`;
+  const shareImage = doc.og_image ?? doc.image;
+  const image = shareImage ? `${SITE_URL}${shareImage}` : undefined;
   return {
     title: `${doc.title} (자동번역) | 송경호`,
     description,
-    openGraph: { title: `${doc.title} (자동번역)`, description },
-    twitter: { card: "summary", title: `${doc.title} (자동번역)`, description },
+    openGraph: { title: `${doc.title} (자동번역)`, description, images: image ? [{ url: image, width: 1600, height: 893 }] : [] },
+    twitter: { card: image ? "summary_large_image" : "summary", title: `${doc.title} (자동번역)`, description, images: image ? [image] : [] },
   };
 }
 
@@ -111,6 +114,13 @@ export default async function TranslationPage({ params }: { params: Promise<Para
             <div><dt>분량</dt><dd>영어 {doc.stats.words_en.toLocaleString("ko-KR")}단어</dd></div>
           </dl>
         </header>
+
+        {doc.image && (
+          <figure className="article-hero tr-hero">
+            <a href={doc.source_url} target="_blank" rel="noopener noreferrer"><img alt={`${doc.original_title} 원문 표지`} src={doc.image} /></a>
+            {doc.image_caption && <figcaption>{doc.image_caption}</figcaption>}
+          </figure>
+        )}
 
         <Disclaimer doc={doc} />
 

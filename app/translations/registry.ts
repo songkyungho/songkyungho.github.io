@@ -18,6 +18,11 @@ export type TranslationDoc = {
   glossary: string;
   glossary_url: string;
   summary: string;
+  // 대표 이미지(블로그 글과 같은 1600×893). 문서 상단·공유 미리보기·홈 최근 카드에 쓴다.
+  image?: string;
+  image_caption?: string;
+  // 공유 미리보기용 JPEG (페이스북은 WebP를 못 읽는 경우가 있다). 없으면 image를 쓴다.
+  og_image?: string;
   stats: { blocks: number; sections: number; items: number; words_en: number };
   blocks: TranslationBlock[];
 };

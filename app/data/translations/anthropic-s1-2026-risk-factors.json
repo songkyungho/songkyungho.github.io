@@ -18,6 +18,9 @@
   "items": 87,
   "words_en": 69289
  },
+ "image": "/images/translations/anthropic-s1-2026-cover.webp",
+ "og_image": "/images/translations/anthropic-s1-2026-cover.jpg",
+ "image_caption": "원문 S-1 표지 (SEC EDGAR, 2026.10.26 제출)",
  "blocks": [
   {
    "type": "p",

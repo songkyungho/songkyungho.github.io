@@ -3,6 +3,7 @@ import talks from "./data/talks-archive.json";
 import writing from "./data/writing-archive.json";
 import media from "./data/media.json";
 import projects from "./data/projects.json";
+import { translations } from "./translations/registry";
 
 type RecentItem = {
   dateKey: number;
@@ -51,6 +52,21 @@ const writingItems: RecentItem[] = writing.map((item) => ({
   href: item.migrationStatus === "상세 페이지 완료" ? `/writing/archive/${item.slug}` : (item.sourceUrl ?? "/writing"),
 }));
 
+// 번역은 블로그의 한 갈래 — 글과 같은 자리에, 번역일 기준으로 섞는다.
+const translationEntries = translations.map((doc) => {
+  const [year, month, day] = doc.translated.split("-");
+  return { doc, year, month: Number(month), day: Number(day), href: `/translations/${doc.slug}` };
+});
+
+const translationItems: RecentItem[] = translationEntries.map(({ doc, year, month, day, href }) => ({
+  dateKey: dateKey(year, month, day),
+  date: formatDate(year, month, null),
+  type: "블로그",
+  title: doc.title,
+  detail: "번역",
+  href,
+}));
+
 const mediaItems: RecentItem[] = media
   .filter((item) => item.year)
   .map((item) => ({
@@ -62,7 +78,7 @@ const mediaItems: RecentItem[] = media
     href: item.url,
   }));
 
-const recent = [...researchItems, ...talksItems, ...writingItems, ...mediaItems]
+const recent = [...researchItems, ...talksItems, ...writingItems, ...translationItems, ...mediaItems]
   .sort((a, b) => b.dateKey - a.dateKey)
   .slice(0, 8);
 
@@ -86,6 +102,15 @@ const latest: LatestCard[] = [
       thumb: item.image,
       placeholder: item.section,
     })),
+  ...translationEntries.map(({ doc, year, month, day, href }) => ({
+    key: dateKey(year, month, day),
+    date: formatDate(year, month, null),
+    outlet: "블로그 · 번역",
+    title: doc.title,
+    href,
+    thumb: doc.image ?? null,
+    placeholder: "번역",
+  })),
   ...media
     .filter((item) => item.year)
     .map((item) => {
