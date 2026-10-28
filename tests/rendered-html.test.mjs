@@ -64,6 +64,17 @@ test("exports each translation with the disclaimer and every source block paired
     const marks = doc.blocks.flatMap((block) => block.marks ?? []);
     assert.equal((html.match(/<mark class="tr-safety">/g) ?? []).length, marks.filter((m) => m.k === "safety").length, `safety marks: ${doc.slug}`);
     assert.equal((html.match(/<strong class="tr-key">/g) ?? []).length, marks.filter((m) => m.k === "key").length, `key marks: ${doc.slug}`);
+    // 번역문에 영어 원문이 그대로 남았거나(모델이 앞부분을 되풀이) 모델의 작업 흔적이 섞이지 않았는지
+    for (const [n, block] of doc.blocks.entries()) {
+      if (!["p", "li"].includes(block.type)) continue;
+      for (const part of block.ko.split("\n\n")) {
+        const latin = (part.match(/[A-Za-z]/g) ?? []).length;
+        const hangul = (part.match(/[가-힣]/g) ?? []).length;
+        const words = part.trim().split(/\s+/).length;
+        assert.ok(!(words >= 8 && latin > 3 * hangul), `untranslated English in block ${n}: ${doc.slug}`);
+        assert.ok(!/다시 쓴다|다시 쓰겠다|번역하면 다음과 같다/.test(part), `model note left in block ${n}: ${doc.slug}`);
+      }
+    }
     // 표는 번역·원문 두 칸 모두 표로 렌더링되는지
     const tables = doc.blocks.filter((block) => block.type === "table").length;
     assert.equal((html.match(/<table class="tr-table"/g) ?? []).length, tables * 2, `tables: ${doc.slug}`);
