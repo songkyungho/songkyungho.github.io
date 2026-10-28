@@ -31,6 +31,27 @@ def table_rows(chunk: str) -> str:
     return " ⏎ ".join(r for r in rows if r.startswith("|") and not TABLE_SEP.match(r))
 
 
+def table_cells(row: str) -> list[str]:
+    return [c.strip() for c in row.strip().strip("|").split("|")]
+
+
+def merge_split_tables(blocks: list[dict]) -> list[dict]:
+    """PDF에서 여러 쪽에 걸친 표는 쪽마다 머리글을 되풀이한 별개의 표로 잡힌다.
+    원문 머리글(칸 공백 무시)이 같은 표가 연달아 나오면 하나로 합치고, 되풀이된 머리글 행은 버린다."""
+    out: list[dict] = []
+    for b in blocks:
+        prev = out[-1] if out else None
+        if (b["type"] == "table" and prev and prev["type"] == "table"
+                and table_cells(prev["en"].split(" ⏎ ")[0]) == table_cells(b["en"].split(" ⏎ ")[0])):
+            for lang in ("en", "ko"):
+                rows = b[lang].split(" ⏎ ")[1:]
+                if rows:
+                    prev[lang] = prev[lang] + " ⏎ " + " ⏎ ".join(rows)
+            continue
+        out.append(b)
+    return out
+
+
 def parse(path: str) -> list[dict]:
     """빈 줄로 나뉜 블록을 읽는다. 빈 줄 없이 한 줄 한 블록인 파일(S-1 등)도 그대로 읽힌다."""
     blocks = []
@@ -118,7 +139,7 @@ def align(en: list[dict], ko: list[dict]) -> list[dict]:
 
 
 def main(src: str, translated: str, meta_path: str) -> None:
-    blocks = align(parse(src), parse(translated))
+    blocks = merge_split_tables(align(parse(src), parse(translated)))
     for n, block in enumerate(blocks):
         if block["type"] in ("h2", "h3"):
             block["id"] = f"s{n}"
