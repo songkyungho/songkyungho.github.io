@@ -56,7 +56,9 @@ test("exports each translation with the disclaimer and every source block paired
     const doc = JSON.parse(await readFile(new URL(file, dir), "utf8"));
     assert.match(writing, new RegExp(`href="/translations/${escapeRegExp(doc.slug)}"`), `writing (blog) link: ${doc.slug}`);
     const html = await render(`/translations/${doc.slug}`);
-    assert.match(html, new RegExp(`<h1>${escapeRegExp(escapeHtml(doc.title))}</h1>`), `title: ${doc.slug}`);
+    // 제목 안의 판 번호는 줄바꿈 방지 span으로 감싸므로 태그를 걷어 내고 비교한다
+    const h1 = (html.match(/<h1>([\s\S]*?)<\/h1>/)?.[1] ?? "").replace(/<[^>]+>/g, "");
+    assert.equal(h1, escapeHtml(doc.title), `title: ${doc.slug}`);
     assert.match(html, /LLM 자동번역 · 비공식 참고용/, `disclaimer: ${doc.slug}`);
     assert.match(html, new RegExp(`href="${escapeRegExp(escapeHtml(doc.source_url))}"`), `source link: ${doc.slug}`);
     assert.equal((html.match(/class="tr-row /g) ?? []).length, doc.blocks.length, `paired rows: ${doc.slug}`);

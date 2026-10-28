@@ -329,7 +329,9 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 .tr-disclaimer li { margin: 0 0 4px; font-size: .8rem; }
 .tr-disclaimer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 .tr-page { max-width: 1180px; margin: 0 auto; padding: 62px 24px 100px; }
-.tr-page .article-header h1 { max-width: 860px; }
+.tr-page .article-header h1 { max-width: none; }
+/* 제목에서 숫자가 든 낱말("3.4판", "증권신고서(S-1)")은 줄이 바뀌어도 쪼개지지 않게 */
+.tr-nowrap { white-space: nowrap; }
 .tr-hero { max-width: 860px; margin: 36px auto 0; }
 .tr-hero figcaption { text-align: center; }
 .tr-hero img { border: 1px solid var(--line); }

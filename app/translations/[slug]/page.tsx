@@ -155,7 +155,7 @@ export default async function TranslationPage({ params }: { params: Promise<Para
       <article>
         <header className="article-header">
           <p className="eyebrow">TRANSLATION · 자동번역</p>
-          <h1>{doc.title}</h1>
+          <h1>{doc.title.split(/(\S*\d\S*)/).map((part, i) => i % 2 ? <span className="tr-nowrap" key={i}>{part}</span> : part)}</h1>
           <p className="tr-original-title" lang="en">{doc.original_title}</p>
           <dl className="article-meta">
             <div><dt>원문</dt><dd>{doc.publisher}</dd></div>
