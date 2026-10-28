@@ -330,7 +330,8 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 .tr-disclaimer a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 .tr-page { max-width: 1180px; margin: 0 auto; padding: 62px 24px 100px; }
 .tr-page .article-header h1 { max-width: 860px; }
-.tr-hero { max-width: 860px; margin: 36px 0 0; }
+.tr-hero { max-width: 860px; margin: 36px auto 0; }
+.tr-hero figcaption { text-align: center; }
 .tr-hero img { border: 1px solid var(--line); }
 .tr-source { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; margin: 18px 0 0; font-size: .74rem; }
 .tr-source a { color: var(--accent); font-weight: 650; text-decoration: underline; text-underline-offset: 3px; }
