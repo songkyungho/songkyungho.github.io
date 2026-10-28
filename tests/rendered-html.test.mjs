@@ -60,6 +60,10 @@ test("exports each translation with the disclaimer and every source block paired
     assert.match(html, /LLM 자동번역 · 비공식 참고용/, `disclaimer: ${doc.slug}`);
     assert.match(html, new RegExp(`href="${escapeRegExp(escapeHtml(doc.source_url))}"`), `source link: ${doc.slug}`);
     assert.equal((html.match(/class="tr-row /g) ?? []).length, doc.blocks.length, `paired rows: ${doc.slug}`);
+    // 강조 표시가 모두 제자리를 찾아 렌더링됐는지 (번역문을 고쳐 표시 문구가 사라지면 여기서 걸린다)
+    const marks = doc.blocks.flatMap((block) => block.marks ?? []);
+    assert.equal((html.match(/<mark class="tr-safety">/g) ?? []).length, marks.filter((m) => m.k === "safety").length, `safety marks: ${doc.slug}`);
+    assert.equal((html.match(/<strong class="tr-key">/g) ?? []).length, marks.filter((m) => m.k === "key").length, `key marks: ${doc.slug}`);
   }
 });
 

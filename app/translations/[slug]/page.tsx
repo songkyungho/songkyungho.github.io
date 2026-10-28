@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import type React from "react";
 import { Disclaimer } from "../Disclaimer";
-import { dotDate, translations, type TranslationBlock, type TranslationDoc } from "../registry";
+import { dotDate, translations, type Mark, type TranslationBlock, type TranslationDoc } from "../registry";
 import { ViewSwitch } from "../ViewSwitch";
 
 type Params = { slug: string };
@@ -22,9 +23,29 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   };
 }
 
+// 강조는 블록 안에서 앞에서부터 차례로 찾는다. 표시가 문단 경계(빈 줄)를 넘지 않으므로 문단마다 이어서 소비한다.
+function marked(text: string, marks: Mark[], state: { next: number }) {
+  const nodes: React.ReactNode[] = [];
+  let cursor = 0;
+  while (state.next < marks.length) {
+    const mark = marks[state.next];
+    const at = text.indexOf(mark.t, cursor);
+    if (at < 0) break;
+    if (at > cursor) nodes.push(text.slice(cursor, at));
+    nodes.push(mark.k === "key"
+      ? <strong className="tr-key" key={at}>{mark.t}</strong>
+      : <mark className="tr-safety" key={at}>{mark.t}</mark>);
+    cursor = at + mark.t.length;
+    state.next += 1;
+  }
+  if (cursor < text.length) nodes.push(text.slice(cursor));
+  return nodes;
+}
+
 // 번역문은 한 원문 문단을 여러 문단으로 나눴을 수 있다(빈 줄로 구분).
-function Paragraphs({ text, lang }: { text: string; lang: "ko" | "en" }) {
-  return <>{text.split("\n\n").map((part, index) => <p key={index} lang={lang}>{part}</p>)}</>;
+function Paragraphs({ text, lang, marks = [] }: { text: string; lang: "ko" | "en"; marks?: Mark[] }) {
+  const state = { next: 0 };
+  return <>{text.split("\n\n").map((part, index) => <p key={index} lang={lang}>{marks.length ? marked(part, marks, state) : part}</p>)}</>;
 }
 
 function Row({ block }: { block: TranslationBlock }) {
@@ -39,7 +60,7 @@ function Row({ block }: { block: TranslationBlock }) {
   }
   return (
     <div className={`tr-row tr-${block.type}`}>
-      <div className="tr-ko"><Paragraphs lang="ko" text={block.ko} /></div>
+      <div className="tr-ko"><Paragraphs lang="ko" marks={block.marks} text={block.ko} /></div>
       <div className="tr-en"><Paragraphs lang="en" text={block.en} /></div>
     </div>
   );
@@ -102,10 +123,10 @@ export default async function TranslationPage({ params }: { params: Promise<Para
 
         <div className="tr-layout">
           <aside className="tr-rail">
-            <ViewSwitch />
+            <ViewSwitch hasMarks={doc.blocks.some((block) => block.marks?.length)} />
             <Toc doc={doc} />
           </aside>
-          <div className="tr-body" data-view="ko" id="tr-body">
+          <div className="tr-body" data-marks="on" data-view="ko" id="tr-body">
             <div className="tr-columns" aria-hidden="true"><span>번역</span><span>원문 (English)</span></div>
             {doc.blocks.map((block, index) => <Row block={block} key={index} />)}
           </div>

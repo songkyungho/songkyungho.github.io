@@ -367,6 +367,16 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 .tr-li .tr-ko, .tr-li .tr-en { position: relative; padding-left: 1.2em; }
 .tr-li .tr-ko::before, .tr-li .tr-en::before { content: "•"; position: absolute; left: .2em; color: var(--muted); }
 .tr-li p { margin-bottom: .5em; }
+/* 강조: 형광 밑줄(AI 안전 관련)과 굵게(핵심 결론). data-marks="off"면 평문처럼 보인다. */
+.tr-safety { padding: 0 1px; background: linear-gradient(transparent 58%, #ffe58a 58%); color: inherit; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.tr-key { font-weight: 720; }
+.tr-body[data-marks="off"] .tr-safety { background: none; }
+.tr-body[data-marks="off"] .tr-key { font-weight: inherit; }
+.tr-legend { margin-top: 14px; padding: 12px 0 2px; border-top: 1px solid var(--line); font-size: .72rem; line-height: 1.6; }
+.tr-legend p { margin: 0 0 6px; }
+.tr-legend .tr-legend-note { color: var(--muted); font-size: .66rem; }
+.tr-marks-toggle { margin-bottom: 10px; padding: 4px 10px; border: 1px solid var(--ink); border-radius: 999px; background: var(--paper); color: var(--ink); font: inherit; font-size: .7rem; font-weight: 650; cursor: pointer; }
+.tr-marks-toggle[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
 
 @media (max-width: 760px) {
   body { font-size: 16.5px; }
