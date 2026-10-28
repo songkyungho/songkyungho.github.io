@@ -36,13 +36,13 @@
   {
    "type": "h3",
    "en": "Our success depends in large part on our ability to continue to develop the most advanced and capable AI models, and any failure to do so could adversely affect our business.",
-   "ko": "당사의 성공은 가장 첨단의 고역량 AI 모델을 지속적으로 개발하는 능력에 크게 좌우되며, 이에 실패할 경우 당사의 사업에 불리한 영향을 미칠 수 있다.",
+   "ko": "당사의 성공은 최첨단 고역량 AI 모델을 지속적으로 개발하는 능력에 크게 좌우되며, 이에 실패할 경우 당사의 사업에 불리한 영향을 미칠 수 있다.",
    "id": "s2"
   },
   {
    "type": "p",
    "en": "Our success depends in large part on our ability to continuously develop, improve, and deploy the most advanced, capable, and useful AI models. Achieving and maintaining this position depends on our ability to:",
-   "ko": "당사의 성공은 가장 첨단의 역량이 높고 유용한 AI 모델을 지속적으로 개발, 개선 및 배포하는 능력에 크게 좌우된다. 이러한 지위를 확보하고 유지하는 것은 다음과 같은 당사의 능력에 달려 있다."
+   "ko": "당사의 성공은 역량이 높고 유용한 최첨단 AI 모델을 지속적으로 개발, 개선 및 배포하는 능력에 크게 좌우된다. 이러한 지위를 확보하고 유지하는 것은 다음과 같은 당사의 능력에 달려 있다."
   },
   {
    "type": "li",
@@ -124,7 +124,7 @@
   {
    "type": "p",
    "en": "Our ability to maintain our position at the frontier of AI depends in part on our use of AI systems to accelerate our research processes, a recursive dynamic we refer to as “closing the loop,” in which successive versions of our models assist in building the next, with the goal of compounding capability gains over time. Our models have been and are increasingly becoming critical tools in designing, training, testing, and optimizing next-generation AI systems. If we fail to direct sufficient compute and research efforts to AI-assisted development, or if our competitors more effectively leverage AI to enhance their own innovation cycles, we risk falling progressively further behind as competitors continuously use AI to further enhance their own development capabilities, enabling the creation of increasingly advanced systems at an accelerating pace. As our reliance on our own AI systems to write production code, conduct research, and build subsequent model versions deepens, any systemic flaw, bias, or error in our current models could propagate into the next versions of models and products built using those systems, compounding across successive versions of Claude models in ways that may be difficult to detect or remediate. If we are unable to manage the foregoing risks, our ability to deploy the most advanced, capable, and useful AI models could be adversely affected.",
-   "ko": "AI의 최전선에서 당사의 지위를 유지하는 능력은 부분적으로 당사의 연구 프로세스를 가속화하기 위한 AI 시스템의 활용에 달려 있다. 당사는 이러한 재귀적 역학을 \"루프 닫기(closing the loop)\"라고 부르며, 이는 시간이 지남에 따라 역량 향상을 누적시키는 것을 목표로 각 세대의 모델이 다음 세대 모델의 구축을 지원하는 것이다. 당사의 모델은 차세대 AI 시스템의 설계, 학습, 테스트 및 최적화에 있어 핵심적인 도구가 되어 왔으며, 그 중요성은 점점 더 커지고 있다. 당사가 AI 지원 개발에 충분한 연산 및 연구 역량을 투입하지 못하거나, 경쟁사가 자사의 혁신 주기를 강화하는 데 AI를 더 효과적으로 활용할 경우, 경쟁사가 AI를 지속적으로 활용하여 자사의 개발 역량을 더욱 강화하고 이를 통해 점점 더 첨단화된 시스템을 가속적인 속도로 개발할 수 있게 됨에 따라 당사는 점차 더 크게 뒤처질 위험이 있다. 프로덕션 코드 작성, 연구 수행 및 후속 모델 버전 구축에 있어 당사 자체 AI 시스템에 대한 의존도가 심화됨에 따라, 현재 당사 모델의 시스템적 결함, 편향 또는 오류는 해당 시스템을 사용하여 구축된 차세대 모델 및 제품으로 전파될 수 있으며, 탐지하거나 시정하기 어려운 방식으로 후속 Claude 모델 버전 전반에 걸쳐 누적될 수 있다. 당사가 위의 위험을 관리하지 못할 경우, 가장 첨단의 역량이 높고 유용한 AI 모델을 배포하는 당사의 능력은 불리한 영향을 받을 수 있다.",
+   "ko": "AI의 최전선에서 당사의 지위를 유지하는 능력은 부분적으로 당사의 연구 프로세스를 가속화하기 위한 AI 시스템의 활용에 달려 있다. 당사는 이러한 재귀적 역학을 \"루프 닫기(closing the loop)\"라고 부르며, 이는 시간이 지남에 따라 역량 향상을 누적시키는 것을 목표로 각 세대의 모델이 다음 세대 모델의 구축을 지원하는 것이다. 당사의 모델은 차세대 AI 시스템의 설계, 학습, 테스트 및 최적화에 있어 핵심적인 도구가 되어 왔으며, 그 중요성은 점점 더 커지고 있다. 당사가 AI 지원 개발에 충분한 연산 및 연구 역량을 투입하지 못하거나, 경쟁사가 자사의 혁신 주기를 강화하는 데 AI를 더 효과적으로 활용할 경우, 경쟁사가 AI를 지속적으로 활용하여 자사의 개발 역량을 더욱 강화하고 이를 통해 점점 더 첨단화된 시스템을 가속적인 속도로 개발할 수 있게 됨에 따라 당사는 점차 더 크게 뒤처질 위험이 있다. 프로덕션 코드 작성, 연구 수행 및 후속 모델 버전 구축에 있어 당사 자체 AI 시스템에 대한 의존도가 심화됨에 따라, 현재 당사 모델의 시스템적 결함, 편향 또는 오류는 해당 시스템을 사용하여 구축된 차세대 모델 및 제품으로 전파될 수 있으며, 탐지하거나 시정하기 어려운 방식으로 후속 Claude 모델 버전 전반에 걸쳐 누적될 수 있다. 당사가 위의 위험을 관리하지 못할 경우, 역량이 높고 유용한 최첨단 AI 모델을 배포하는 당사의 능력은 불리한 영향을 받을 수 있다.",
    "marks": [
     {
      "t": "현재 당사 모델의 시스템적 결함, 편향 또는 오류는 해당 시스템을 사용하여 구축된 차세대 모델 및 제품으로 전파될 수 있으며, 탐지하거나 시정하기 어려운 방식으로 후속 Claude 모델 버전 전반에 걸쳐 누적될 수 있다",
