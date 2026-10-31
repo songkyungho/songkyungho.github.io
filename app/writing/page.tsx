@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageIntro } from "../components";
 import archive from "../data/writing-archive.json";
-import { translations } from "../translations/registry";
+import { listTitle, translations } from "../translations/registry";
 import WritingArchive from "./WritingArchive";
 import WritingPhotos from "./WritingPhotos";
 
@@ -17,7 +17,7 @@ export default function WritingPage() {
   const translated = translations.map((doc) => {
     const [year, month, day] = doc.translated.split("-");
     return {
-      slug: doc.slug, title: doc.title, publication: "번역", issue: null, year, month: String(Number(month)), day: String(Number(day)),
+      slug: doc.slug, title: listTitle(doc), publication: "번역", issue: null, year, month: String(Number(month)), day: String(Number(day)),
       section: "블로그", kind: "translation", sourceUrl: null, migrationStatus: "상세 페이지 완료", note: null,
       href: `/translations/${doc.slug}`,
     };

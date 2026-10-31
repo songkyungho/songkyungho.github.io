@@ -51,3 +51,12 @@ export type TranslationDoc = {
 export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, caSb53, nyRaise2026] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
 
 export const dotDate = (iso: string) => iso.replaceAll("-", ".");
+
+// 목록(글·홈)에 쓰는 제목: 원문 발간일을 괄호로 붙인다. 제목 끝 괄호가 판 날짜('(2026.1)', '(2025.12.30판)')면
+// 발간일로 바꾸고, 다른 말('(2026년 개정법)')이면 그 괄호 안에 쉼표로 잇는다.
+export const listTitle = (doc: TranslationDoc) => {
+  const date = dotDate(doc.published);
+  const m = doc.title.match(/^(.*?)\s*\(([^()]*)\)$/);
+  if (!m) return `${doc.title} (${date})`;
+  return /^\d{4}\.\d{1,2}(\.\d{1,2})?판?$/.test(m[2]) ? `${m[1]} (${date})` : `${m[1]} (${m[2]}, ${date})`;
+};

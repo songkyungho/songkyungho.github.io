@@ -3,7 +3,7 @@ import talks from "./data/talks-archive.json";
 import writing from "./data/writing-archive.json";
 import media from "./data/media.json";
 import projects from "./data/projects.json";
-import { translations } from "./translations/registry";
+import { listTitle, translations } from "./translations/registry";
 
 type RecentItem = {
   dateKey: number;
@@ -62,7 +62,7 @@ const translationItems: RecentItem[] = translationEntries.map(({ doc, year, mont
   dateKey: dateKey(year, month, day),
   date: formatDate(year, month, null),
   type: "블로그",
-  title: doc.title,
+  title: listTitle(doc),
   detail: "번역",
   href,
 }));
@@ -106,7 +106,7 @@ const latest: LatestCard[] = [
     key: dateKey(year, month, day),
     date: formatDate(year, month, null),
     outlet: "블로그 · 번역",
-    title: doc.title,
+    title: listTitle(doc),
     href,
     thumb: doc.image ?? null,
     placeholder: "번역",
