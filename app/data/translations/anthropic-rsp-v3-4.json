@@ -87,7 +87,7 @@
   {
    "n": 10,
    "en": "A Risk Report may include information about Anthropic's models and risk preparedness more recent than the coverage date, but does not guarantee completeness about such information.",
-   "ko": "위험 보고서에는 기준일 이후의 Anthropic 모델 및 위험 대비 태세에 관한 정보가 포함될 수 있으나, 그러한 정보의 완전성을 보장하지는 않는다.",
+   "ko": "위험 보고서에는 기준일 이후의 Anthropic 모델 및 위험 대비태세에 관한 정보가 포함될 수 있으나, 그러한 정보의 완전성을 보장하지는 않는다.",
    "linked": true
   },
   {
@@ -501,10 +501,10 @@
   {
    "type": "li",
    "en": "We intend for our Risk Reports to be direct, candid, and informative about how we see the risks of our systems and our state of preparedness for them.",
-   "ko": "당사는 위험 보고서가 당사 시스템의 위험과 그에 대한 당사의 대비 태세를 당사가 어떻게 보고 있는지에 대해 직접적이고 솔직하며 유익한 정보를 제공하도록 하고자 한다.",
+   "ko": "당사는 위험 보고서가 당사 시스템의 위험과 그에 대한 당사의 대비태세를 당사가 어떻게 보고 있는지에 대해 직접적이고 솔직하며 유익한 정보를 제공하도록 하고자 한다.",
    "marks": [
     {
-     "t": "위험 보고서가 당사 시스템의 위험과 그에 대한 당사의 대비 태세를 당사가 어떻게 보고 있는지에 대해 직접적이고 솔직하며 유익한 정보를 제공하도록 하고자 한다",
+     "t": "위험 보고서가 당사 시스템의 위험과 그에 대한 당사의 대비태세를 당사가 어떻게 보고 있는지에 대해 직접적이고 솔직하며 유익한 정보를 제공하도록 하고자 한다",
      "k": "key"
     }
    ]

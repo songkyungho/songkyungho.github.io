@@ -1,6 +1,6 @@
 {
  "slug": "openai-preparedness-v2",
- "title": "OpenAI 대비 프레임워크 2판",
+ "title": "OpenAI 대비태세 프레임워크 2판",
  "original_title": "OpenAI Preparedness Framework, Version 2",
  "publisher": "OpenAI",
  "doc_kind": "프론티어 안전 프레임워크",
@@ -103,10 +103,10 @@
   {
    "type": "p",
    "en": "An internal, cross-functional group of OpenAI leaders called the Safety Advisory Group (SAG) oversees the Preparedness Framework and makes expert recommendations on the level and type of safeguards required for deploying frontier capabilities safely and securely. OpenAI Leadership can approve or reject these recommendations, and our Board's Safety and Security Committee provides oversight of these decisions.",
-   "ko": "OpenAI 리더들로 구성된 내부 교차기능 조직인 안전 자문 그룹(SAG)은 대비 프레임워크(Preparedness Framework)를 감독하며, 프론티어 역량을 안전하고 보안성 있게 배포하는 데 필요한 안전장치의 수준과 유형에 관해 전문적 권고를 제시한다. OpenAI 경영진은 이러한 권고를 승인하거나 거부할 수 있으며, 이사회의 Safety and Security Committee가 이러한 결정을 감독한다.",
+   "ko": "OpenAI 리더들로 구성된 내부 교차기능 조직인 안전 자문 그룹(SAG)은 대비태세 프레임워크(Preparedness Framework)를 감독하며, 프론티어 역량을 안전하고 보안성 있게 배포하는 데 필요한 안전장치의 수준과 유형에 관해 전문적 권고를 제시한다. OpenAI 경영진은 이러한 권고를 승인하거나 거부할 수 있으며, 이사회의 Safety and Security Committee가 이러한 결정을 감독한다.",
    "marks": [
     {
-     "t": "안전 자문 그룹(SAG)은 대비 프레임워크(Preparedness Framework)를 감독하며",
+     "t": "안전 자문 그룹(SAG)은 대비태세 프레임워크(Preparedness Framework)를 감독하며",
      "k": "safety"
     },
     {
@@ -122,7 +122,7 @@
   {
    "type": "h3",
    "en": "1.1 Why we're updating the Preparedness Framework",
-   "ko": "1.1 대비 프레임워크를 개정하는 이유",
+   "ko": "1.1 대비태세 프레임워크를 개정하는 이유",
    "id": "s7"
   },
   {
@@ -133,7 +133,7 @@
   {
    "type": "li",
    "en": "Safeguarding stronger models will require more planning and coordination. Until now, our models' own limitations have given us confidence that, in the areas tracked under the Preparedness Framework, they were safe to deploy. Our evaluations have so far shown that even our most advanced models, even without safeguards in place, aren't yet capable enough to pose severe risks in areas like bio- or cybersecurity. We are on the cusp of systems that can do new science, and that are increasingly agentic - systems that will soon have the capability to create meaningful risk of severe harm. This means we will need to design and deploy safeguards we can rely on for safety and security - which requires a new level of planning and coordination across the company, beyond what's needed to measure capabilities.",
-   "ko": "더 강력한 모델에 대한 안전장치를 마련하려면 더 많은 계획과 조율이 필요할 것이다. 지금까지는 모델 자체의 한계 덕분에, 대비 프레임워크에서 추적하는 영역에서 모델을 배포해도 안전하다고 확신할 수 있었다. 지금까지의 평가에 따르면 우리의 최첨단 모델조차 안전장치가 없는 상태에서도 생물학이나 사이버 보안 같은 영역에서 심각한 위험을 초래할 만큼의 역량은 아직 갖추지 못했다. 우리는 새로운 과학을 수행할 수 있고 점점 더 에이전트적(agentic)인 시스템, 즉 머지않아 심각한 피해의 유의미한 위험을 야기할 역량을 갖추게 될 시스템의 등장을 목전에 두고 있다. 이는 안전과 보안을 위해 신뢰할 수 있는 안전장치를 설계하고 배포해야 함을 의미하며, 이를 위해서는 역량 측정에 필요한 수준을 넘어 전사적으로 새로운 수준의 계획과 조율이 요구된다.",
+   "ko": "더 강력한 모델에 대한 안전장치를 마련하려면 더 많은 계획과 조율이 필요할 것이다. 지금까지는 모델 자체의 한계 덕분에, 대비태세 프레임워크에서 추적하는 영역에서 모델을 배포해도 안전하다고 확신할 수 있었다. 지금까지의 평가에 따르면 우리의 최첨단 모델조차 안전장치가 없는 상태에서도 생물학이나 사이버 보안 같은 영역에서 심각한 위험을 초래할 만큼의 역량은 아직 갖추지 못했다. 우리는 새로운 과학을 수행할 수 있고 점점 더 에이전트적(agentic)인 시스템, 즉 머지않아 심각한 피해의 유의미한 위험을 야기할 역량을 갖추게 될 시스템의 등장을 목전에 두고 있다. 이는 안전과 보안을 위해 신뢰할 수 있는 안전장치를 설계하고 배포해야 함을 의미하며, 이를 위해서는 역량 측정에 필요한 수준을 넘어 전사적으로 새로운 수준의 계획과 조율이 요구된다.",
    "marks": [
     {
      "t": "더 강력한 모델에 대한 안전장치를 마련하려면 더 많은 계획과 조율이 필요할 것이다.",
@@ -435,10 +435,10 @@
   {
    "type": "p",
    "en": "We will periodically review the latest research and findings for each Research Category. SAG will receive the results of such reviews and evaluate whether there is sufficient evidence to recommend updates to our internal practices or to the Preparedness Framework.",
-   "ko": "주기적으로 각 연구 범주에 대한 최신 연구와 결과를 검토할 것이다. 안전 자문 그룹은 이러한 검토 결과를 전달받아, 내부 실행 방안이나 대비 프레임워크의 갱신을 권고할 만한 충분한 근거가 있는지 평가한다.",
+   "ko": "주기적으로 각 연구 범주에 대한 최신 연구와 결과를 검토할 것이다. 안전 자문 그룹은 이러한 검토 결과를 전달받아, 내부 실행 방안이나 대비태세 프레임워크의 갱신을 권고할 만한 충분한 근거가 있는지 평가한다.",
    "marks": [
     {
-     "t": "안전 자문 그룹은 이러한 검토 결과를 전달받아, 내부 실행 방안이나 대비 프레임워크의 갱신을 권고할 만한 충분한 근거가 있는지 평가한다.",
+     "t": "안전 자문 그룹은 이러한 검토 결과를 전달받아, 내부 실행 방안이나 대비태세 프레임워크의 갱신을 권고할 만한 충분한 근거가 있는지 평가한다.",
      "k": "key"
     }
    ]
@@ -504,7 +504,7 @@
   {
    "type": "p",
    "en": "Persuasion : OpenAI prohibits the use of our products to manipulate political views as part of our Model Spec, and we build in safeguards to back this policy. We also continue to study the persuasive and relational capabilities of models (including on emotional well-being and preventing bias in our products) and monitor and investigate misuse of our products (including for influence operations). We believe many of the challenges around AI persuasion risks require solutions at a systemic or societal level, and we actively contribute to these efforts through our participation as a steering committee member of C2PA and working with lawmaker and industry peers to support state legislation on AI content provenance in Florida and California. Within our wider safety stack, our Preparedness Framework is specifically focused on frontier AI risks meeting a specific definition of severe harms[^1:2], and Persuasion category risks do not fit the criteria for inclusion.",
-   "ko": "설득: OpenAI는 Model Spec의 일환으로 자사 제품을 정치적 견해 조작에 사용하는 것을 금지하며, 이 정책을 뒷받침하기 위한 안전장치를 내장하고 있다. 또한 모델의 설득 및 관계 형성 역량(정서적 웰빙 및 제품 내 편향 방지에 관한 사항 포함)을 지속적으로 연구하고, 제품 오용(영향력 공작을 위한 오용 포함)을 모니터링하고 조사한다. AI 설득 위험을 둘러싼 많은 과제는 시스템 또는 사회 차원의 해결책을 필요로 한다고 판단하며, 우리는 C2PA 운영위원회 회원으로 참여하고, 입법자 및 업계 동료들과 협력하여 플로리다주와 캘리포니아주의 AI 콘텐츠 출처 관련 주 법안을 지원함으로써 이러한 노력에 적극 기여하고 있다. 보다 넓은 안전 체계 내에서 대비 프레임워크는 심각한 피해에 대한 특정 정의[^1:2]를 충족하는 프론티어 AI 위험에 특화되어 있으며, 설득 범주의 위험은 포함 기준에 부합하지 않는다.",
+   "ko": "설득: OpenAI는 Model Spec의 일환으로 자사 제품을 정치적 견해 조작에 사용하는 것을 금지하며, 이 정책을 뒷받침하기 위한 안전장치를 내장하고 있다. 또한 모델의 설득 및 관계 형성 역량(정서적 웰빙 및 제품 내 편향 방지에 관한 사항 포함)을 지속적으로 연구하고, 제품 오용(영향력 공작을 위한 오용 포함)을 모니터링하고 조사한다. AI 설득 위험을 둘러싼 많은 과제는 시스템 또는 사회 차원의 해결책을 필요로 한다고 판단하며, 우리는 C2PA 운영위원회 회원으로 참여하고, 입법자 및 업계 동료들과 협력하여 플로리다주와 캘리포니아주의 AI 콘텐츠 출처 관련 주 법안을 지원함으로써 이러한 노력에 적극 기여하고 있다. 보다 넓은 안전 체계 내에서 대비태세 프레임워크는 심각한 피해에 대한 특정 정의[^1:2]를 충족하는 프론티어 AI 위험에 특화되어 있으며, 설득 범주의 위험은 포함 기준에 부합하지 않는다.",
    "marks": [
     {
      "t": "자사 제품을 정치적 견해 조작에 사용하는 것을 금지하며, 이 정책을 뒷받침하기 위한 안전장치를 내장하고 있다",
@@ -672,10 +672,10 @@
   {
    "type": "p",
    "en": "The Preparedness Framework applies to any new or updated deployment that has a plausible chance of reaching a capability threshold whose corresponding risks are not addressed by an existing Safeguards Report. Examples of such covered deployments are:",
-   "ko": "대비 프레임워크는 역량 임계값에 도달할 개연성이 있으며, 그에 상응하는 위험이 기존 안전장치 보고서에서 다루어지지 않는 모든 신규 또는 업데이트된 배포에 적용된다. 이러한 적용 대상 배포의 예는 다음과 같다.",
+   "ko": "대비태세 프레임워크는 역량 임계값에 도달할 개연성이 있으며, 그에 상응하는 위험이 기존 안전장치 보고서에서 다루어지지 않는 모든 신규 또는 업데이트된 배포에 적용된다. 이러한 적용 대상 배포의 예는 다음과 같다.",
    "marks": [
     {
-     "t": "대비 프레임워크는 역량 임계값에 도달할 개연성이 있으며, 그에 상응하는 위험이 기존 안전장치 보고서에서 다루어지지 않는 모든 신규 또는 업데이트된 배포에 적용된다.",
+     "t": "대비태세 프레임워크는 역량 임계값에 도달할 개연성이 있으며, 그에 상응하는 위험이 기존 안전장치 보고서에서 다루어지지 않는 모든 신규 또는 업데이트된 배포에 적용된다.",
      "k": "key"
     }
    ]
@@ -721,14 +721,14 @@
   {
    "type": "p",
    "en": "If justified by our forecasts and threat models as potentially posing a severe risk during development and prior to external deployment, we will select an appropriate checkpoint during development to be covered by the Preparedness Framework.",
-   "ko": "예측 및 위협 모델에 비추어 개발 중이자 외부 배포 이전 단계에서 심각한 위험을 초래할 가능성이 있다고 판단되는 경우, 개발 중의 적절한 체크포인트를 선정하여 대비 프레임워크의 적용 대상으로 삼는다.",
+   "ko": "예측 및 위협 모델에 비추어 개발 중이자 외부 배포 이전 단계에서 심각한 위험을 초래할 가능성이 있다고 판단되는 경우, 개발 중의 적절한 체크포인트를 선정하여 대비태세 프레임워크의 적용 대상으로 삼는다.",
    "marks": [
     {
      "t": "외부 배포 이전 단계에서 심각한 위험을 초래할 가능성이 있다고 판단되는 경우",
      "k": "safety"
     },
     {
-     "t": "개발 중의 적절한 체크포인트를 선정하여 대비 프레임워크의 적용 대상으로 삼는다.",
+     "t": "개발 중의 적절한 체크포인트를 선정하여 대비태세 프레임워크의 적용 대상으로 삼는다.",
      "k": "key"
     }
    ]
@@ -736,7 +736,7 @@
   {
    "type": "p",
    "en": "In cases of ambiguity about whether a model is covered by the Preparedness Framework, the SAG is responsible for making the final determination.",
-   "ko": "모델이 대비 프레임워크의 적용 대상인지 모호한 경우, 최종 결정은 안전 자문 그룹이 내린다.",
+   "ko": "모델이 대비태세 프레임워크의 적용 대상인지 모호한 경우, 최종 결정은 안전 자문 그룹이 내린다.",
    "marks": [
     {
      "t": "최종 결정은 안전 자문 그룹이 내린다",
@@ -865,7 +865,7 @@
   {
    "type": "p",
    "en": "Each capability threshold has a corresponding class of risk-specific safeguard guidelines under the Preparedness Framework. We use the following process to select safeguards for a deployment:",
-   "ko": "대비 프레임워크에서 각 역량 임계값에는 그에 상응하는 위험별 안전장치 지침 유형이 있다. 배포에 적용할 안전장치를 선정하기 위해 다음 절차를 따른다.",
+   "ko": "대비태세 프레임워크에서 각 역량 임계값에는 그에 상응하는 위험별 안전장치 지침 유형이 있다. 배포에 적용할 안전장치를 선정하기 위해 다음 절차를 따른다.",
    "marks": [
     {
      "t": "각 역량 임계값에는 그에 상응하는 위험별 안전장치 지침 유형이 있다",
@@ -1201,7 +1201,7 @@
   {
    "type": "p",
    "en": "Such models require additional safeguards (safety and security controls) during development, regardless of whether or when they are externally deployed. We do not currently possess any models that have Critical levels of capability, and we expect to further update this Preparedness Framework before reaching such a level with any model.",
-   "ko": "그러한 모델은 외부 배포 여부나 시점과 관계없이 개발 과정에서 추가적인 안전장치(안전 및 보안 통제)를 필요로 한다. 우리는 현재 치명적 수준의 역량을 갖춘 모델을 보유하고 있지 않으며, 어떤 모델이든 그러한 수준에 도달하기 전에 이 대비 프레임워크를 추가로 갱신할 것으로 예상한다.",
+   "ko": "그러한 모델은 외부 배포 여부나 시점과 관계없이 개발 과정에서 추가적인 안전장치(안전 및 보안 통제)를 필요로 한다. 우리는 현재 치명적 수준의 역량을 갖춘 모델을 보유하고 있지 않으며, 어떤 모델이든 그러한 수준에 도달하기 전에 이 대비태세 프레임워크를 추가로 갱신할 것으로 예상한다.",
    "marks": [
     {
      "t": "외부 배포 여부나 시점과 관계없이 개발 과정에서 추가적인 안전장치(안전 및 보안 통제)를 필요로 한다",
@@ -1212,7 +1212,7 @@
      "k": "safety"
     },
     {
-     "t": "어떤 모델이든 그러한 수준에 도달하기 전에 이 대비 프레임워크를 추가로 갱신할 것으로 예상한다",
+     "t": "어떤 모델이든 그러한 수준에 도달하기 전에 이 대비태세 프레임워크를 추가로 갱신할 것으로 예상한다",
      "k": "safety"
     }
    ]
@@ -1241,7 +1241,7 @@
   {
    "type": "p",
    "en": "Effective implementation of the Preparedness Framework requires internal and external accountability, so that the public, governments, and our industry peers can trust in our adherence to this policy.",
-   "ko": "대비 프레임워크를 효과적으로 이행하려면 대중, 정부 및 업계 동료가 우리의 이 정책 준수를 신뢰할 수 있도록 내부 및 외부 책임성이 필요하다.",
+   "ko": "대비태세 프레임워크를 효과적으로 이행하려면 대중, 정부 및 업계 동료가 우리의 이 정책 준수를 신뢰할 수 있도록 내부 및 외부 책임성이 필요하다.",
    "marks": [
     {
      "t": "대중, 정부 및 업계 동료가 우리의 이 정책 준수를 신뢰할 수 있도록 내부 및 외부 책임성이 필요하다",
@@ -1305,10 +1305,10 @@
   {
    "type": "li",
    "en": "Public disclosures : We will release information about our Preparedness Framework results in order to facilitate public awareness of the state of frontier AI capabilities for major deployments. This published information will include the scope of testing performed, capability evaluations for each Tracked Category, our reasoning for the deployment decision, and any other context about a model's development or capabilities that was decisive in the decision to deploy. Additionally, if the model is beyond a High threshold, we will include information about safeguards we have implemented to sufficiently minimize the associated risks. Such disclosures about results and safeguards may be redacted or summarized where necessary, such as to protect intellectual property or safety.",
-   "ko": "공개: 우리는 주요 배포에 대한 프론티어 AI 역량 현황에 관한 대중의 인식을 높이기 위해 대비 프레임워크 결과에 관한 정보를 공개한다. 공개되는 정보에는 수행된 테스트의 범위, 각 추적 범주에 대한 역량 평가, 배포 결정에 대한 우리의 추론, 그리고 배포 결정에 결정적이었던 모델의 개발 또는 역량에 관한 기타 맥락이 포함된다. 또한 모델이 높은(High) 임계값을 넘어서는 경우, 관련 위험을 충분히 최소화하기 위해 구현한 안전장치에 관한 정보를 포함한다. 결과 및 안전장치에 관한 이러한 공개 내용은 지식재산권이나 안전을 보호하기 위해 필요한 경우 삭제 처리되거나 요약될 수 있다.",
+   "ko": "공개: 우리는 주요 배포에 대한 프론티어 AI 역량 현황에 관한 대중의 인식을 높이기 위해 대비태세 프레임워크 결과에 관한 정보를 공개한다. 공개되는 정보에는 수행된 테스트의 범위, 각 추적 범주에 대한 역량 평가, 배포 결정에 대한 우리의 추론, 그리고 배포 결정에 결정적이었던 모델의 개발 또는 역량에 관한 기타 맥락이 포함된다. 또한 모델이 높은(High) 임계값을 넘어서는 경우, 관련 위험을 충분히 최소화하기 위해 구현한 안전장치에 관한 정보를 포함한다. 결과 및 안전장치에 관한 이러한 공개 내용은 지식재산권이나 안전을 보호하기 위해 필요한 경우 삭제 처리되거나 요약될 수 있다.",
    "marks": [
     {
-     "t": "대비 프레임워크 결과에 관한 정보를 공개한다",
+     "t": "대비태세 프레임워크 결과에 관한 정보를 공개한다",
      "k": "key"
     },
     {
@@ -1381,7 +1381,7 @@
   {
    "type": "p",
    "en": "In this version of the Preparedness Framework, we make a number of updates, designed to reflect what we've learned and update our safety and governance process for the next generations of highly capable models. Key changes include that we:",
-   "ko": "이번 버전의 대비 프레임워크에서는 우리가 학습한 내용을 반영하고 차세대 고역량(Highly capable) 모델을 위한 안전 및 거버넌스 절차를 갱신하기 위해 여러 가지 업데이트를 수행한다. 주요 변경 사항은 다음과 같다.",
+   "ko": "이번 버전의 대비태세 프레임워크에서는 우리가 학습한 내용을 반영하고 차세대 고역량(Highly capable) 모델을 위한 안전 및 거버넌스 절차를 갱신하기 위해 여러 가지 업데이트를 수행한다. 주요 변경 사항은 다음과 같다.",
    "marks": [
     {
      "t": "차세대 고역량(Highly capable) 모델을 위한 안전 및 거버넌스 절차를 갱신하기 위해 여러 가지 업데이트를 수행한다",
@@ -1411,7 +1411,7 @@
   {
    "type": "li",
    "en": "Define how High and Critical capability thresholds relate to underlying risks . High capability thresholds mean capabilities that significantly increase existing risk vectors for severe harm under the relevant threat model. Critical capability thresholds mean capabilities that present a meaningful risk of a qualitatively new threat vector for severe harm with no ready precedent under the relevant threat model. Also, we are removing terms 'low' and 'medium' from the Framework, because those levels were not operationally involved in the execution of our Preparedness work.",
-   "ko": "높은 역량 임계값 및 치명적 역량 임계값과 근본 위험 간 관계의 정의. 높은 역량 임계값은 관련 위협 모델하에서 심각한 피해에 대한 기존 위험 벡터를 상당히 증가시키는 역량을 의미한다. 치명적 역량 임계값은 관련 위협 모델하에서 마땅한 전례가 없는, 심각한 피해에 대한 질적으로 새로운 위협 벡터의 유의미한 위험을 제기하는 역량을 의미한다. 또한 '낮음(low)' 및 '중간(medium)' 수준은 대비 업무 수행에 운영상 관여하지 않았으므로 프레임워크에서 해당 용어를 삭제한다.",
+   "ko": "높은 역량 임계값 및 치명적 역량 임계값과 근본 위험 간 관계의 정의. 높은 역량 임계값은 관련 위협 모델하에서 심각한 피해에 대한 기존 위험 벡터를 상당히 증가시키는 역량을 의미한다. 치명적 역량 임계값은 관련 위협 모델하에서 마땅한 전례가 없는, 심각한 피해에 대한 질적으로 새로운 위협 벡터의 유의미한 위험을 제기하는 역량을 의미한다. 또한 '낮음(low)' 및 '중간(medium)' 수준은 대비태세 업무 수행에 운영상 관여하지 않았으므로 프레임워크에서 해당 용어를 삭제한다.",
    "marks": [
     {
      "t": "심각한 피해에 대한 기존 위험 벡터를 상당히 증가시키는 역량",
@@ -1437,14 +1437,14 @@
   {
    "type": "li",
    "en": "Update the Tracked Categories of frontier capability accordingly, focusing on biological and chemical capability, cybersecurity, and AI self-improvement. Going forward we will handle risks related to persuasion outside the Preparedness Framework, including via our Model Spec and policy prohibitions on the use of our tools for political campaigning or lobbying, and our ongoing investigations of misuse of our products (including detecting and disrupting influence operations). We are moving Nuclear and Radiological capabilities into Research Categories.",
-   "ko": "이에 따라 프론티어 역량의 추적 범주를 갱신하여 생물학 및 화학 역량, 사이버 보안, AI 자기 개선에 초점을 맞춤. 앞으로 설득 관련 위험은 대비 프레임워크 외부에서 다루며, 여기에는 Model Spec 및 정치 캠페인이나 로비 활동에 우리 도구를 사용하는 것을 금지하는 정책, 그리고 우리 제품의 오용에 대한 지속적 조사(영향력 공작의 탐지 및 차단 포함)가 포함된다. 핵 및 방사능 역량은 연구 범주로 이동한다.",
+   "ko": "이에 따라 프론티어 역량의 추적 범주를 갱신하여 생물학 및 화학 역량, 사이버 보안, AI 자기 개선에 초점을 맞춤. 앞으로 설득 관련 위험은 대비태세 프레임워크 외부에서 다루며, 여기에는 Model Spec 및 정치 캠페인이나 로비 활동에 우리 도구를 사용하는 것을 금지하는 정책, 그리고 우리 제품의 오용에 대한 지속적 조사(영향력 공작의 탐지 및 차단 포함)가 포함된다. 핵 및 방사능 역량은 연구 범주로 이동한다.",
    "marks": [
     {
      "t": "생물학 및 화학 역량, 사이버 보안, AI 자기 개선에 초점을 맞춤",
      "k": "safety"
     },
     {
-     "t": "설득 관련 위험은 대비 프레임워크 외부에서 다루며",
+     "t": "설득 관련 위험은 대비태세 프레임워크 외부에서 다루며",
      "k": "safety"
     },
     {
@@ -1493,7 +1493,7 @@
   {
    "type": "li",
    "en": "Establish Capabilities Reports and Safeguards Reports , the key artifacts we use to support informed decision-making under the Preparedness Framework in the context of systems that are capable enough to pose severe risks.",
-   "ko": "역량 보고서 및 안전장치 보고서의 수립. 이는 심각한 위험을 제기할 만큼 역량이 높은 시스템과 관련하여 대비 프레임워크하에서 정보에 입각한 의사결정을 지원하기 위해 사용하는 핵심 산출물이다.",
+   "ko": "역량 보고서 및 안전장치 보고서의 수립. 이는 심각한 위험을 제기할 만큼 역량이 높은 시스템과 관련하여 대비태세 프레임워크하에서 정보에 입각한 의사결정을 지원하기 위해 사용하는 핵심 산출물이다.",
    "marks": [
     {
      "t": "심각한 위험을 제기할 만큼 역량이 높은 시스템과 관련하여",
@@ -1547,10 +1547,10 @@
   {
    "type": "li",
    "en": "Clarify the governance process . Our Safety Advisory Group oversees the effective design, implementation, and adherence to the Preparedness Framework, in partnership with safety leaders in the company. For covered launches, SAG assesses residual risk in tracked areas, net of safeguards, and makes expert recommendations on safeguard adequacy and deployment decision-making to OpenAI leadership.",
-   "ko": "거버넌스 절차의 명확화. 안전 자문 그룹은 사내 안전 책임자와 협력하여 대비 프레임워크의 효과적인 설계, 이행 및 준수를 감독한다. 적용 대상 출시에 대해 안전 자문 그룹은 추적 영역에서 안전장치를 반영한 후의 잔여 위험을 평가하고, 안전장치의 적절성과 배포 의사결정에 관한 전문가 권고를 OpenAI 경영진에 제공한다.",
+   "ko": "거버넌스 절차의 명확화. 안전 자문 그룹은 사내 안전 책임자와 협력하여 대비태세 프레임워크의 효과적인 설계, 이행 및 준수를 감독한다. 적용 대상 출시에 대해 안전 자문 그룹은 추적 영역에서 안전장치를 반영한 후의 잔여 위험을 평가하고, 안전장치의 적절성과 배포 의사결정에 관한 전문가 권고를 OpenAI 경영진에 제공한다.",
    "marks": [
     {
-     "t": "안전 자문 그룹은 사내 안전 책임자와 협력하여 대비 프레임워크의 효과적인 설계, 이행 및 준수를 감독한다",
+     "t": "안전 자문 그룹은 사내 안전 책임자와 협력하여 대비태세 프레임워크의 효과적인 설계, 이행 및 준수를 감독한다",
      "k": "key"
     },
     {
@@ -1568,7 +1568,7 @@
   {
    "type": "p",
    "en": "We establish an operational structure to oversee our procedural commitments within the Preparedness Framework.",
-   "ko": "우리는 대비 프레임워크 내 절차적 약정을 감독하기 위한 운영 구조를 수립한다."
+   "ko": "우리는 대비태세 프레임워크 내 절차적 약정을 감독하기 위한 운영 구조를 수립한다."
   },
   {
    "type": "p",
@@ -1578,12 +1578,12 @@
   {
    "type": "li",
    "en": "Overseeing the effective design, implementation, and adherence to the Preparedness Framework in partnership with the safety organization leader",
-   "ko": "안전 조직 책임자와 협력하여 대비 프레임워크의 효과적인 설계, 이행 및 준수를 감독함"
+   "ko": "안전 조직 책임자와 협력하여 대비태세 프레임워크의 효과적인 설계, 이행 및 준수를 감독함"
   },
   {
    "type": "li",
    "en": "For each deployment in scope under the Preparedness Framework, reviewing relevant reports and all other relevant materials and assessing of the level of Tracked Category capabilities and any post-safeguards residual risks",
-   "ko": "대비 프레임워크 적용 범위에 속하는 각 배포에 대해 관련 보고서 및 기타 모든 관련 자료를 검토하고, 추적 범주 역량의 수준과 안전장치 적용 후의 잔여 위험을 평가함",
+   "ko": "대비태세 프레임워크 적용 범위에 속하는 각 배포에 대해 관련 보고서 및 기타 모든 관련 자료를 검토하고, 추적 범주 역량의 수준과 안전장치 적용 후의 잔여 위험을 평가함",
    "marks": [
     {
      "t": "추적 범주 역량의 수준과 안전장치 적용 후의 잔여 위험을 평가함",
@@ -1594,7 +1594,7 @@
   {
    "type": "li",
    "en": "For each deployment under the Preparedness Framework, providing recommendations on potential next steps and any applicable risks to OpenAI Leadership, as well as rationale",
-   "ko": "대비 프레임워크하의 각 배포에 대해 잠재적 후속 조치 및 해당 위험에 관한 권고를 근거와 함께 OpenAI 경영진에 제공함",
+   "ko": "대비태세 프레임워크하의 각 배포에 대해 잠재적 후속 조치 및 해당 위험에 관한 권고를 근거와 함께 OpenAI 경영진에 제공함",
    "marks": [
     {
      "t": "잠재적 후속 조치 및 해당 위험에 관한 권고를 근거와 함께 OpenAI 경영진에 제공함",
@@ -1675,7 +1675,7 @@
   {
    "type": "li",
    "en": "Resourcing the implementation of the Preparedness Framework (e.g., additional work on safeguards where necessary).",
-   "ko": "대비 프레임워크의 이행에 필요한 자원을 배정함(예: 필요한 경우 안전장치에 대한 추가 작업)",
+   "ko": "대비태세 프레임워크의 이행에 필요한 자원을 배정함(예: 필요한 경우 안전장치에 대한 추가 작업)",
    "marks": [
     {
      "t": "필요한 경우 안전장치에 대한 추가 작업",
@@ -1701,10 +1701,10 @@
   {
    "type": "p",
    "en": "Updates to the Preparedness Framework. The Preparedness Framework is a living document and will be updated. The SAG reviews proposed changes to the Preparedness Framework and makes a recommendation that is processed according to the standard decision-making process. We will review and potentially update the Preparedness Framework for continued sufficiency at least once a year.",
-   "ko": "대비 프레임워크의 갱신. 대비 프레임워크는 지속적으로 갱신되는 문서(living document)이며 향후 갱신될 것이다. 안전 자문 그룹은 대비 프레임워크에 대한 변경 제안을 검토하고 권고를 제시하며, 이 권고는 표준 의사결정 절차에 따라 처리된다. 우리는 대비 프레임워크가 지속적으로 충분한지 확인하기 위해 최소 연 1회 이를 검토하고 필요시 갱신할 것이다.",
+   "ko": "대비태세 프레임워크의 갱신. 대비태세 프레임워크는 지속적으로 갱신되는 문서(living document)이며 향후 갱신될 것이다. 안전 자문 그룹은 대비태세 프레임워크에 대한 변경 제안을 검토하고 권고를 제시하며, 이 권고는 표준 의사결정 절차에 따라 처리된다. 우리는 대비태세 프레임워크가 지속적으로 충분한지 확인하기 위해 최소 연 1회 이를 검토하고 필요시 갱신할 것이다.",
    "marks": [
     {
-     "t": "안전 자문 그룹은 대비 프레임워크에 대한 변경 제안을 검토하고 권고를 제시하며",
+     "t": "안전 자문 그룹은 대비태세 프레임워크에 대한 변경 제안을 검토하고 권고를 제시하며",
      "k": "safety"
     }
    ]
