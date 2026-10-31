@@ -106,22 +106,29 @@ def link_note_marker(body: list[dict], n: int) -> bool:
         w = re.search(r"([A-Za-z]+)\s*$", body[i]["en"][: m.start()])
         return not w or len(re.findall(rf"\b{w.group(1)}\s+{n}\b", en_all)) < 2
 
-    hits = [(i, m) for i, b in texts for m in strict.finditer(b["en"])]
-    if not hits:
-        hits = [(i, m) for i, b in texts for m in spaced.finditer(b["en"]) if not_a_name(i, m)]
-    if not hits:  # 숫자 바로 뒤의 각주 번호: 'Security level 4 13 for' → 13
-        pair = re.compile(rf"(?<=\d)\s{n}(?=\s[A-Za-z])")
-        hits = [(i, m) for i, b in texts for m in pair.finditer(b["en"])]
-    if not hits:  # 문장 가운데: 'misuse risk 2 as well', 'deployment 4 of a new' (번호 매기는 낱말 뒤는 제외)
-        mid = re.compile(rf"(?<=[a-z])(?<!level)(?<!Level)(?<!ection)(?<!ersion)(?<!step)(?<!phase)(?<!tier)(?<!able)\s{n}(?=\s[a-z])")
-        hits = [(i, m) for i, b in texts if b["type"] in ("p", "li") for m in mid.finditer(b["en"]) if not_a_name(i, m)]
-    if not hits:
-        hits = [(i, m) for i, b in texts if b["type"] == "table" for m in loose.finditer(b["en"]) if not_a_name(i, m)]
+    pair = re.compile(rf"(?<=\d)\s{n}(?=\s[A-Za-z])")  # 숫자 바로 뒤의 각주 번호: 'Security level 4 13 for' → 13
+    # 문장 가운데: 'misuse risk 2 as well', 'out of control, 2 we', "awareness' 6 selectively" (번호 매기는 낱말 뒤는 제외)
+    mid = re.compile(rf"(?<=[a-z,'’])(?<!g\.,)(?<!e\.,)(?<!\bto)(?<!\band)(?<!\bor)(?<!level)(?<!Level)(?<!ection)(?<!ersion)(?<!step)(?<!phase)(?<!tier)(?<!able)\s{n}(?=\s[a-z])")
+    passes = [
+        [(i, m) for i, b in texts for m in strict.finditer(b["en"])],
+        [(i, m) for i, b in texts for m in spaced.finditer(b["en"]) if not_a_name(i, m)],
+        [(i, m) for i, b in texts for m in pair.finditer(b["en"])],
+        [(i, m) for i, b in texts if b["type"] in ("p", "li") for m in mid.finditer(b["en"]) if not_a_name(i, m)],
+        [(i, m) for i, b in texts if b["type"] == "table" for m in loose.finditer(b["en"]) if not_a_name(i, m)],
+    ]
+    # 앞 단계에서 찾았지만 하나도 잇지 못하면(같은 블록에 둘 이상 등) 다음 단계로 넘어간다
+    for hits in passes:
+        if hits and _link_hits(body, n, hits):
+            return True
+    return False
+
+
+def _link_hits(body: list[dict], n: int, hits: list) -> bool:
     linked = 0
     for i in sorted({i for i, _ in hits}):
         ms = [m for j, m in hits if j == i]
         b = body[i]
-        ko_hits = list(re.finditer(rf"(?<=[\s,.가-힣])(?<!제)(?<!\d\.){n}(?!\d|\.\d|[배개명년월일회%절주쪽]|\s+(?:%|[배개명년월일회절주쪽](?![가-힣])))", b["ko"]))
+        ko_hits = list(re.finditer(rf"(?<=[\s,.가-힣])(?<!제)(?<!\d\.){n}(?!\d|\.\d|[배개명년월일회%절주쪽차단장종]|\s+(?:%|[배개명년월일회절주쪽](?![가-힣])))", b["ko"]))
         if len(ms) != 1 or len(ko_hits) > 1:
             continue
         mark = f"[^{n}]" if not linked else f"[^{n}:{linked + 1}]"
@@ -258,6 +265,10 @@ def align(en: list[dict], ko: list[dict]) -> list[dict]:
 
 def main(src: str, translated: str, meta_path: str) -> None:
     blocks, notes = extract_footnotes(merge_split_tables(align(parse(src), parse(translated))))
+    # doc-translator --keep-refused: 모델이 번역을 거절한 구간은 원문이 그대로 남는다. 페이지가 안내를 달도록 표시한다.
+    for block in blocks:
+        if block["ko"].strip() == block["en"].strip() and re.search(r"[A-Za-z]{3,}", block["en"]):
+            block["untranslated"] = True
     for n, block in enumerate(blocks):
         if block["type"] in ("h2", "h3"):
             block["id"] = f"s{n}"

@@ -370,6 +370,9 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 .tr-h2 .tr-en, .tr-h3 .tr-en { margin: 0; font: italic 700 .85rem/1.6 Georgia, serif; }
 .tr-h2 .tr-en { font-size: 1.05rem; font-style: normal; }
 .tr-table-wrap { margin: .4em 0 1.4em; overflow-x: auto; }
+/* 번역 모델이 거절해 원문을 그대로 둔 블록 */
+.tr-untranslated { margin: .2em 0 .5em !important; padding: 6px 10px; border-left: 3px solid #c9a227; background: #fbf6e6; font-size: .74rem !important; line-height: 1.6 !important; color: #6b5a1e; }
+.tr-untranslated-row .tr-ko [lang="en"] { font-family: Georgia, serif; color: #4a4a4f; }
 /* 대화 예시(Model Spec): 역할별 말풍선 카드. 견주는 어시스턴트 응답에는 좋은/나쁜 응답 표지를 단다 */
 .tr-example { display: grid; gap: 8px; margin: .3em 0 1.6em; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); font-size: .84rem; line-height: 1.7; }
 .tr-msg { padding: 8px 12px 10px; border-radius: 6px; background: var(--paper); border-left: 3px solid var(--line); }

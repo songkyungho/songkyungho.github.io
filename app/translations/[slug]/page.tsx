@@ -211,7 +211,21 @@ function HeadingText({ text, lang }: { text: string; lang: "ko" | "en" }) {
   return <>{title}{auth && <span className="tr-auth" title="권한 수준(authority level)">{lang === "ko" ? AUTHORITY[auth] : auth}</span>}</>;
 }
 
+const UNTRANSLATED = "번역하지 않음 — 번역 모델이 생물·화학 무기 등 위험한 정보에 해당할 수 있다고 판단해 거절한 부분이라 원문을 그대로 둡니다.";
+
 function Row({ block }: { block: TranslationBlock }) {
+  if (block.untranslated) {
+    const Heading = block.type === "h2" || block.type === "h3" ? block.type : null;
+    return (
+      <div className={`tr-row tr-${block.type} tr-untranslated-row`} id={block.id}>
+        <div className="tr-ko">
+          <p className="tr-untranslated">{UNTRANSLATED}</p>
+          {Heading ? <Heading lang="en">{block.en}</Heading> : block.type === "table" ? <Table lang="en" text={block.en} /> : <Paragraphs lang="en" text={block.en} />}
+        </div>
+        <div className="tr-en">{Heading ? <p lang="en">{block.en}</p> : block.type === "table" ? <Table lang="en" text={block.en} /> : <Paragraphs lang="en" text={block.en} />}</div>
+      </div>
+    );
+  }
   if (block.type === "example") {
     return (
       <div className="tr-row tr-examplerow">

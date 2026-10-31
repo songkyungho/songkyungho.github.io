@@ -69,7 +69,7 @@ test("exports each translation with the disclaimer and every source block paired
     assert.equal((html.match(/<strong class="tr-key">/g) ?? []).length, marks.filter((m) => m.k === "key").length, `key marks: ${doc.slug}`);
     // 번역문에 영어 원문이 그대로 남았거나(모델이 앞부분을 되풀이) 모델의 작업 흔적이 섞이지 않았는지
     for (const [n, block] of doc.blocks.entries()) {
-      if (!["p", "li"].includes(block.type)) continue;
+      if (!["p", "li"].includes(block.type) || block.untranslated) continue;
       for (const part of block.ko.split("\n\n")) {
         // 따옴표 안의 영어 이름('"Advanced AI Scaling Framework"에서 …로 변경')은 일부러 남긴 것이라 세지 않는다
         const latin = (part.replace(/["“'‘][^"”'’]*["”'’]/g, "").match(/[A-Za-z]/g) ?? []).length;
@@ -85,6 +85,9 @@ test("exports each translation with the disclaimer and every source block paired
       if (note.linked) assert.equal((html.match(new RegExp(`href="#fn-${note.n}" id="fnref-${note.n}-`, "g")) ?? []).length, 2, `note ref ${note.n}: ${doc.slug}`);
     }
     assert.ok(!doc.blocks.some((block) => block.type === "p" && /^\d{1,2}\s{2,}/.test(block.en)), `footnote left in body: ${doc.slug}`);
+    // 번역 모델이 거절해 원문으로 남긴 블록은 안내문을 단다
+    const untranslated = doc.blocks.filter((block) => block.untranslated).length;
+    assert.equal((html.match(/class="tr-untranslated"/g) ?? []).length, untranslated, `untranslated notices: ${doc.slug}`);
     // 표는 번역·원문 두 칸 모두 표로 렌더링되는지
     const tables = doc.blocks.filter((block) => block.type === "table").length;
     assert.equal((html.match(/<table class="tr-table"/g) ?? []).length, tables * 2, `tables: ${doc.slug}`);

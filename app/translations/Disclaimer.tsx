@@ -14,6 +14,12 @@ export function Disclaimer({ doc }: { doc: TranslationDoc }) {
           원저작자나 발행 기관이 제공하거나 검토한 번역이 아니며, 번역자가 속한 기관(ETRI·AI안전연구소)의 공식 번역이나
           입장과도 무관한 개인 작업입니다. 원문의 저작권은 원저작자에게 있습니다.
         </li>
+        {doc.blocks.some((block) => block.untranslated) && (
+          <li>
+            번역 모델이 생물·화학 무기 등 위험한 정보에 해당할 수 있다고 판단해 번역을 거절한 부분
+            {` ${doc.blocks.filter((block) => block.untranslated).length}곳`}은 원문(영어)을 그대로 두고 표시했습니다.
+          </li>
+        )}
         {doc.blocks.some((block) => block.marks?.length) && (
           <li>번역문의 형광 밑줄(AI 안전 관련 서술)과 굵은 글씨(항목의 핵심 결론)는 번역자가 LLM으로 표시한 것으로, 원문에는 없습니다.</li>
         )}
