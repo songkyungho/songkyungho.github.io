@@ -54,10 +54,13 @@ function inlineSpans(text: string, marks: Mark[], refs: CrossRef[]): Span[] {
 }
 
 // 본문의 각주 표시 '[^n]'을 위첨자 링크로. 번역·원문 칸 모두 그려지므로 되돌아올 자리 id에 언어를 붙인다.
+// 같은 각주를 다시 가리키는 '[^n:2]'는 링크만 걸고 id는 달지 않는다(각주의 ↩는 첫 표시로 돌아간다).
 function withNotes(text: string, lang: "ko" | "en"): React.ReactNode[] {
-  return text.split(/\[\^(\d+)\]/).map((part, i) => i % 2
-    ? <sup className="tr-fn" key={i}><a href={`#fn-${part}`} id={`fnref-${part}-${lang}`}>{part}</a></sup>
-    : part);
+  return text.split(/(\[\^\d+(?::\d+)?\])/).map((part, i) => {
+    const m = part.match(/^\[\^(\d+)(:\d+)?\]$/);
+    if (!m) return part;
+    return <sup className="tr-fn" key={i}><a href={`#fn-${m[1]}`} id={m[2] ? undefined : `fnref-${m[1]}-${lang}`}>{m[1]}</a></sup>;
+  });
 }
 
 function renderRange(text: string, from: number, to: number, spans: Span[], lang: "ko" | "en") {
@@ -87,18 +90,21 @@ function Paragraphs({ text, lang, marks = [], refs = [] }: { text: string; lang:
   );
 }
 
-// 표 첫 칸의 머리말("Anthropic in the lead. …", "Novel chemical/biological weapons production. …")은 원문에서
-// 굵은 글씨다. 추출본에는 굵기가 없으니, 짧은 첫 문장 뒤에 설명이 이어지면 그 첫 문장을 굵게 보인다.
+// 표 첫 칸의 머리말("Anthropic in the lead. …", "Novel chemical/biological weapons production. …",
+// "Cybersecurity: …")은 원문에서 굵은 글씨다. 추출본에는 굵기가 없으니, 짧은 첫 문장이나 짧은 이름표(콜론까지)
+// 뒤에 설명이 이어지면 그 부분을 굵게 보인다.
 function leadSplit(text: string): [string, string] | null {
+  const label = text.match(/^([^.:。]{2,60}?)\s?:\s+([\s\S]+)$/);
+  if (label) return [`${label[1]}:`, label[2]];
   const m = text.match(/^(.{2,90}?[.。])\s+(?=\D)([\s\S]+)$/);
   return m ? [m[1], m[2]] : null;
 }
 
-// 칸 안의 글머리 목록은 PDF에서 "… 다음을 수행한다: ● 첫째 ● 둘째"처럼 한 줄로 이어져 들어온다.
+// 칸 안의 글머리 목록은 PDF에서 "… 다음을 수행한다: ● 첫째 ● 둘째"처럼 한 줄로 이어져 들어온다(● 또는 •).
 function Cell({ text, lang, lead }: { text: string; lang: "ko" | "en"; lead: boolean }) {
   const split = lead ? leadSplit(text) : null;
   const rest = split ? split[1] : text;
-  const [intro, ...items] = rest.split(/\s*●\s*/);
+  const [intro, ...items] = rest.split(/\s*[●•]\s*/);
   const head = split && <strong className="tr-cell-lead">{withNotes(split[0], lang)} </strong>;
   if (!items.length) return <>{head}{withNotes(rest, lang)}</>;
   return (
@@ -109,14 +115,36 @@ function Cell({ text, lang, lead }: { text: string; lang: "ko" | "en"; lead: boo
   );
 }
 
+// 첫 칸이 빈 행은 위 행의 첫 칸을 세로로 이어 쓴다(원문의 병합 칸 — 예: 한 범주의 High·Critical 두 행).
+function firstColumnSpans(body: string[][]): number[] {
+  const spans = body.map(() => 1);
+  body.forEach((row, r) => {
+    if (row[0] || r === 0) return;
+    let top = r - 1;
+    while (top > 0 && !body[top][0]) top--;
+    spans[top]++;
+    spans[r] = 0;
+  });
+  return spans;
+}
+
 function Table({ text, lang }: { text: string; lang: "ko" | "en" }) {
   const rows = text.split(" ⏎ ").map((row) => row.replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim()));
   const [head, ...body] = rows;
+  const spans = firstColumnSpans(body);
   return (
     <div className="tr-table-wrap">
       <table className="tr-table" lang={lang}>
         <thead><tr>{head.map((cell, i) => <th key={i}>{withNotes(cell, lang)}</th>)}</tr></thead>
-        <tbody>{body.map((row, r) => <tr key={r}>{row.map((cell, c) => <td key={c}><Cell lang={lang} lead={c === 0} text={cell} /></td>)}</tr>)}</tbody>
+        <tbody>
+          {body.map((row, r) => (
+            <tr key={r}>
+              {row.map((cell, c) => c === 0 && !spans[r] ? null : (
+                <td key={c} rowSpan={c === 0 && spans[r] > 1 ? spans[r] : undefined}><Cell lang={lang} lead={c === 0} text={cell} /></td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
       </table>
     </div>
   );

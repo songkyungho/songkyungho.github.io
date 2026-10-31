@@ -86,26 +86,36 @@ def extract_footnotes(blocks: list[dict]) -> tuple[list[dict], list[dict]]:
 
 
 def link_note_marker(body: list[dict], n: int) -> bool:
-    """본문에서 각주 n의 표시를 원문·번역문 모두 꼭 한 곳에서 찾으면 '[^n]'으로 바꾼다.
-    원문: 먼저 Docling 꼴(번호 뒤 공백 두 칸)을, 없으면 표 안의 낱말 사이 숫자('company 3 |')를 찾는다.
+    """본문에서 각주 n의 표시를 원문·번역문에서 찾아 '[^n]'으로 바꾼다. 같은 각주를 여러 곳에서 가리키면
+    둘째부터 '[^n:2]', '[^n:3]'(페이지는 되돌아올 자리 id를 첫 표시에만 단다). 블록마다 원문·번역문에서
+    꼭 한 번씩 찾은 곳만 바꾸고, 모호한 블록은 그대로 둔다.
+    원문: 먼저 Docling 꼴(번호 뒤 공백 두 칸)을, 없으면 표 안의 낱말 사이 숫자('company 3 |')를,
+    낱말·문장부호 뒤 숫자 다음에 문장부호·대문자·블록 끝이 오는 꼴('harms 1 ,', 'Chemical 5 :',
+    'harm. 4 SAG', 'criteria: 3')을, 그래도 없으면 표 안의 낱말 사이 숫자를 찾는다('just 4 weeks'와 헷갈리기 쉬워 마지막).
     번역문: 같은 블록에서 앞이 띄어쓰기·쉼표·한글이고 뒤에 단위가 붙지 않는 숫자('고역량13 모델', ',11 당사는')
     — 'ASL-3', '제3자', 'SL4', '5배', '3.6절'은 제외."""
     strict = re.compile(rf"(?<=[^\d\s])(\s?){n}(?=\s{{2}})")
     loose = re.compile(rf"(?<=[A-Za-z.,)”’:;])(?<!\d\.)\s?{n}(?=\s|$)")
-    hits = [(i, m) for i, b in enumerate(body) if b["type"] in ("p", "li", "table") for m in strict.finditer(b["en"])]
+    spaced = re.compile(rf"(?<=[A-Za-z.,:;)”’])\s{n}(?=\s(?:[,.:;)]|[A-Z])|$)")
+    texts = [(i, b) for i, b in enumerate(body) if b["type"] in ("p", "li", "table")]
+    hits = [(i, m) for i, b in texts for m in strict.finditer(b["en"])]
     if not hits:
-        hits = [(i, m) for i, b in enumerate(body) if b["type"] == "table" for m in loose.finditer(b["en"])]
-    if len(hits) != 1:
-        return False
-    i, m = hits[0]
-    b = body[i]
-    ko_hits = list(re.finditer(rf"(?<=[\s,.가-힣])(?<!제)(?<!\d\.){n}(?![\d.]|\s*[배개명년월일회%절])", b["ko"]))
-    if len(ko_hits) != 1:
-        return False
-    b["en"] = b["en"][: m.start()] + f"[^{n}]" + b["en"][m.end():]
-    k = ko_hits[0]
-    b["ko"] = b["ko"][: k.start()].rstrip() + f"[^{n}]" + b["ko"][k.end():]
-    return True
+        hits = [(i, m) for i, b in texts for m in spaced.finditer(b["en"])]
+    if not hits:
+        hits = [(i, m) for i, b in texts if b["type"] == "table" for m in loose.finditer(b["en"])]
+    linked = 0
+    for i in sorted({i for i, _ in hits}):
+        ms = [m for j, m in hits if j == i]
+        b = body[i]
+        ko_hits = list(re.finditer(rf"(?<=[\s,.가-힣])(?<!제)(?<!\d\.){n}(?![\d.]|\s*[배개명년월일회%절주쪽])", b["ko"]))
+        if len(ms) != 1 or len(ko_hits) != 1:
+            continue
+        mark = f"[^{n}]" if not linked else f"[^{n}:{linked + 1}]"
+        m, k = ms[0], ko_hits[0]
+        b["en"] = b["en"][: m.start()] + mark + re.sub(r"^\s+(?=[,.:;)])", "", b["en"][m.end():])
+        b["ko"] = b["ko"][: k.start()].rstrip() + mark + re.sub(r"^\s+(?=[,.:;)을를이가은는의에과와])", "", b["ko"][k.end():])
+        linked += 1
+    return linked > 0
 
 
 def merge_split_tables(blocks: list[dict]) -> list[dict]:

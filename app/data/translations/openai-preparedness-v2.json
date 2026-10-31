@@ -1,0 +1,2282 @@
+{
+ "slug": "openai-preparedness-v2",
+ "title": "OpenAI 대비 프레임워크 2판",
+ "original_title": "OpenAI Preparedness Framework, Version 2",
+ "publisher": "OpenAI",
+ "doc_kind": "프론티어 안전 프레임워크",
+ "published": "2025-04-15",
+ "source_url": "https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf",
+ "source_note": "2025년 4월 15일 개정 2판 전문 (22쪽, 표지·목차 제외)",
+ "source_label": "원문 보기 (OpenAI PDF)",
+ "translated": "2026-10-31",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "summary": "OpenAI가 심각한 위해로 이어질 수 있는 최첨단 역량을 추적·평가하고 안전장치를 갖추는 방식을 정한 프레임워크의 2판이다. 생물·화학, 사이버보안, AI 자기 개선을 추적 범주로 두고 높은·치명적 역량 임계값별 안전장치 지침을 제시하며, 연구 범주, 역량 판정 절차, 안전 자문 그룹(SAG)의 거버넌스, 안전장치 예시를 담고 있다.",
+ "image": "/images/translations/openai-preparedness-v2-cover.webp",
+ "og_image": "/images/translations/openai-preparedness-v2-cover.jpg",
+ "image_caption": "원문 표지 (OpenAI, 2025.4.15 개정 2판)",
+ "stats": {
+  "blocks": 203,
+  "sections": 8,
+  "items": 24,
+  "words_en": 8996
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "1 Introduction",
+   "ko": "1 서론",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "We believe there are a limited number of AI capabilities that could pose new risks of severe harm. In order to safely unlock the beneficial uses of frontier AI capabilities, we exercise particular caution and implement safeguards that sufficiently minimize the risk of severe harm in these areas. To do this, we:",
+   "ko": "우리는 심각한 피해(severe harm)라는 새로운 위험을 초래할 수 있는 AI 역량이 제한적이라고 본다. 프론티어 AI 역량의 유익한 활용을 안전하게 실현하기 위해, 우리는 이러한 영역에서 각별히 주의를 기울이고 심각한 피해의 위험을 충분히 최소화하는 안전장치를 시행한다. 이를 위해 우리는 다음을 수행한다.",
+   "marks": [
+    {
+     "t": "심각한 피해(severe harm)라는 새로운 위험을 초래할 수 있는 AI 역량",
+     "k": "safety"
+    },
+    {
+     "t": "심각한 피해의 위험을 충분히 최소화하는 안전장치를 시행한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Decide where to focus - we use a holistic risk assessment to decide which frontier capability categories to track or research further, and to define threshold levels of those capabilities that are associated with meaningful increases in risk of severe harm.",
+   "ko": "집중할 영역 결정 - 총체적인 위험 평가를 통해 추적하거나 추가로 연구할 프론티어 역량 범주를 결정하고, 심각한 피해 위험의 유의미한 증가와 연관된 해당 역량의 임계 수준을 정의한다.",
+   "marks": [
+    {
+     "t": "심각한 피해 위험의 유의미한 증가와 연관된 해당 역량의 임계 수준을 정의한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Measure capabilities associated with risks of severe harms - we run in-scope models through frontier capability evaluations to measure the full extent of model capabilities before we deploy our models and during development. Our capability elicitation efforts are designed to detect the threshold levels of capability that we have identified as enabling meaningful increases in risk of severe harms.",
+   "ko": "심각한 피해 위험과 연관된 역량 측정 - 모델을 배포하기 전과 개발 중에 적용 대상 모델(In-scope models)에 프론티어 역량 평가(evaluation)를 실시하여 모델 역량의 전모를 측정한다. 우리의 역량 유도 활동은 심각한 피해 위험을 유의미하게 증가시킬 수 있다고 식별한 역량 임계 수준을 탐지하도록 설계되어 있다.",
+   "marks": [
+    {
+     "t": "적용 대상 모델(In-scope models)에 프론티어 역량 평가(evaluation)를 실시하여 모델 역량의 전모를 측정한다",
+     "k": "safety"
+    },
+    {
+     "t": "역량 임계 수준을 탐지하도록 설계되어 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Safeguard against severe harms - we evaluate the likelihood that severe harms could actually occur in the context of deployment, using threat models that take our safeguards into account. We do not deploy models that reach a High capability threshold until the associated risks that they pose are sufficiently minimized. If a model under development reaches a Critical capability threshold, we also require safeguards to sufficiently minimize the associated risks during development, irrespective of deployment plans.",
+   "ko": "심각한 피해에 대한 안전장치 마련 - 안전장치를 고려한 위협 모델(Threat model)을 사용하여 배포 맥락에서 심각한 피해가 실제로 발생할 가능성을 평가한다. 높은 역량 임계값(High capability threshold)에 도달한 모델은 그것이 초래하는 관련 위험이 충분히 최소화될 때까지 배포하지 않는다. 개발 중인 모델이 치명적 역량 임계값(Critical capability threshold)에 도달하면, 배포 계획과 관계없이 개발 중에도 관련 위험을 충분히 최소화하는 안전장치를 요구한다.",
+   "marks": [
+    {
+     "t": "안전장치를 고려한 위협 모델(Threat model)을 사용하여 배포 맥락에서 심각한 피해가 실제로 발생할 가능성을 평가한다",
+     "k": "safety"
+    },
+    {
+     "t": "높은 역량 임계값(High capability threshold)에 도달한 모델은 그것이 초래하는 관련 위험이 충분히 최소화될 때까지 배포하지 않는다.",
+     "k": "key"
+    },
+    {
+     "t": "배포 계획과 관계없이 개발 중에도 관련 위험을 충분히 최소화하는 안전장치를 요구한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Build trust - we engage with subject-matter experts across and beyond OpenAI to inform these efforts and to build confidence that we are meeting our commitments and effectively managing risk.",
+   "ko": "신뢰 구축 - OpenAI 내외부의 분야별 전문가와 협력하여 이러한 활동에 반영하고, 우리가 약정을 이행하며 위험을 효과적으로 관리하고 있다는 신뢰를 구축한다.",
+   "marks": [
+    {
+     "t": "우리가 약정을 이행하며 위험을 효과적으로 관리하고 있다는 신뢰를 구축한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "An internal, cross-functional group of OpenAI leaders called the Safety Advisory Group (SAG) oversees the Preparedness Framework and makes expert recommendations on the level and type of safeguards required for deploying frontier capabilities safely and securely. OpenAI Leadership can approve or reject these recommendations, and our Board's Safety and Security Committee provides oversight of these decisions.",
+   "ko": "OpenAI 리더들로 구성된 내부 교차기능 조직인 안전 자문 그룹(SAG)은 대비 프레임워크(Preparedness Framework)를 감독하며, 프론티어 역량을 안전하고 보안성 있게 배포하는 데 필요한 안전장치의 수준과 유형에 관해 전문적 권고를 제시한다. OpenAI 경영진은 이러한 권고를 승인하거나 거부할 수 있으며, 이사회의 Safety and Security Committee가 이러한 결정을 감독한다.",
+   "marks": [
+    {
+     "t": "안전 자문 그룹(SAG)은 대비 프레임워크(Preparedness Framework)를 감독하며",
+     "k": "safety"
+    },
+    {
+     "t": "OpenAI 경영진은 이러한 권고를 승인하거나 거부할 수 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "이사회의 Safety and Security Committee가 이러한 결정을 감독한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1.1 Why we're updating the Preparedness Framework",
+   "ko": "1.1 대비 프레임워크를 개정하는 이유",
+   "id": "s7"
+  },
+  {
+   "type": "p",
+   "en": "Our environment is changing in four key ways:",
+   "ko": "우리를 둘러싼 환경은 네 가지 핵심 측면에서 변화하고 있다."
+  },
+  {
+   "type": "li",
+   "en": "Safeguarding stronger models will require more planning and coordination. Until now, our models' own limitations have given us confidence that, in the areas tracked under the Preparedness Framework, they were safe to deploy. Our evaluations have so far shown that even our most advanced models, even without safeguards in place, aren't yet capable enough to pose severe risks in areas like bio- or cybersecurity. We are on the cusp of systems that can do new science, and that are increasingly agentic - systems that will soon have the capability to create meaningful risk of severe harm. This means we will need to design and deploy safeguards we can rely on for safety and security - which requires a new level of planning and coordination across the company, beyond what's needed to measure capabilities.",
+   "ko": "더 강력한 모델에 대한 안전장치를 마련하려면 더 많은 계획과 조율이 필요할 것이다. 지금까지는 모델 자체의 한계 덕분에, 대비 프레임워크에서 추적하는 영역에서 모델을 배포해도 안전하다고 확신할 수 있었다. 지금까지의 평가에 따르면 우리의 최첨단 모델조차 안전장치가 없는 상태에서도 생물학이나 사이버 보안 같은 영역에서 심각한 위험을 초래할 만큼의 역량은 아직 갖추지 못했다. 우리는 새로운 과학을 수행할 수 있고 점점 더 에이전트적(agentic)인 시스템, 즉 머지않아 심각한 피해의 유의미한 위험을 야기할 역량을 갖추게 될 시스템의 등장을 목전에 두고 있다. 이는 안전과 보안을 위해 신뢰할 수 있는 안전장치를 설계하고 배포해야 함을 의미하며, 이를 위해서는 역량 측정에 필요한 수준을 넘어 전사적으로 새로운 수준의 계획과 조율이 요구된다.",
+   "marks": [
+    {
+     "t": "더 강력한 모델에 대한 안전장치를 마련하려면 더 많은 계획과 조율이 필요할 것이다.",
+     "k": "key"
+    },
+    {
+     "t": "생물학이나 사이버 보안 같은 영역에서 심각한 위험을 초래할 만큼의 역량은 아직 갖추지 못했다",
+     "k": "safety"
+    },
+    {
+     "t": "머지않아 심각한 피해의 유의미한 위험을 야기할 역량을 갖추게 될 시스템의 등장을 목전에 두고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "안전과 보안을 위해 신뢰할 수 있는 안전장치를 설계하고 배포해야 함을 의미하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "More frequent deployments require scalable evaluations. Today, we're able to develop and deploy better models more often than ever thanks to reasoning advances that can unlock new capabilities without as much training as the previous paradigm. As a result, it's important to embrace methods that scale, including scalable capability evaluations that work well for a faster cadence of model deployment, as well as periodic deeper dives that validate those scalable evaluations.",
+   "ko": "배포 빈도가 높아짐에 따라 확장 가능한 평가(Scalable Evaluations)가 필요하다. 오늘날 우리는 이전 패러다임만큼 많은 훈련 없이도 새로운 역량을 끌어낼 수 있는 추론 분야의 진전 덕분에, 그 어느 때보다 자주 더 나은 모델을 개발하고 배포할 수 있다. 따라서 더 빠른 모델 배포 주기에 적합한 확장 가능한 역량 평가와, 이러한 확장 가능한 평가를 검증하는 주기적인 심층 분석을 포함하여 확장 가능한 방법을 채택하는 것이 중요하다.",
+   "marks": [
+    {
+     "t": "배포 빈도가 높아짐에 따라 확장 가능한 평가(Scalable Evaluations)가 필요하다.",
+     "k": "key"
+    },
+    {
+     "t": "더 빠른 모델 배포 주기에 적합한 확장 가능한 역량 평가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Ahighly dynamic development landscape for frontier AI makes it important for us to share our latest thinking. With a growing number of labs producing frontier AI models, it is more important than ever for us and other labs to contribute to community efforts on frontier safety and security, including by adapting safety work for the reasoning paradigm and for increasingly agentic systems, and advocating for and contributing to advanced protection measures in a world of continual frontier AI proliferation.",
+   "ko": "프론티어 AI 개발 환경이 매우 역동적이므로 우리의 최신 견해를 공유하는 것이 중요하다. 프론티어 AI 모델을 개발하는 연구소가 늘어남에 따라, 우리와 다른 연구소들이 프론티어 안전 및 보안에 관한 공동체적 노력에 기여하는 것이 그 어느 때보다 중요해졌다. 여기에는 추론 패러다임과 점점 더 에이전트적인 시스템에 맞게 안전 작업을 조정하는 것, 그리고 프론티어 AI가 지속적으로 확산되는 세계에서 고도화된 보호 조치를 옹호하고 이에 기여하는 것이 포함된다.",
+   "marks": [
+    {
+     "t": "프론티어 안전 및 보안에 관한 공동체적 노력에 기여하는 것이 그 어느 때보다 중요해졌다",
+     "k": "safety"
+    },
+    {
+     "t": "추론 패러다임과 점점 더 에이전트적인 시스템에 맞게 안전 작업을 조정하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "We and the broader field have gained more experience and built conviction on how to do this work. The past year of research and deployment on safety frameworks both at OpenAI and across the AI field have given us greater clarity on how to prioritize and approach categories of risk. This includes our threat modelling, development work on new capability evaluations, and external consultations, as well as relevant publications from external researchers and updated frameworks from industry peers.[^2]",
+   "ko": "우리와 더 넓은 분야는 이 작업을 수행하는 방법에 관해 더 많은 경험을 쌓고 확신을 다졌다. 지난 1년간 OpenAI와 AI 분야 전반에서 이루어진 안전 프레임워크에 관한 연구와 배포를 통해, 위험 범주의 우선순위를 정하고 접근하는 방법이 더욱 명확해졌다. 여기에는 우리의 위협 모델링, 새로운 역량 평가 개발 작업, 외부 자문뿐만 아니라 외부 연구자들의 관련 출판물과 업계 동료들의 개정된 프레임워크도 포함된다.[^2]",
+   "marks": [
+    {
+     "t": "위험 범주의 우선순위를 정하고 접근하는 방법이 더욱 명확해졌다",
+     "k": "safety"
+    },
+    {
+     "t": "우리의 위협 모델링, 새로운 역량 평가 개발 작업, 외부 자문",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "2 Deciding where to focus",
+   "ko": "2 집중할 영역 결정",
+   "id": "s13"
+  },
+  {
+   "type": "h3",
+   "en": "2.1 Holistic risk assessment and categorization",
+   "ko": "2.1 총체적 위험 평가 및 범주화",
+   "id": "s14"
+  },
+  {
+   "type": "p",
+   "en": "We evaluate whether frontier capabilities create a risk of severe harm through a holistic risk assessment process. This process draws on our own internal research and signals, and where appropriate incorporates feedback from academic researchers, independent domain experts, industry bodies such as the Frontier Model Forum, and the U.S. government and its partners, as well as relevant legal and policy mandates.",
+   "ko": "우리는 총체적인 위험 평가 프로세스를 통해 프론티어 역량이 심각한 피해의 위험을 야기하는지 평가한다. 이 프로세스는 내부 연구와 신호를 바탕으로 하며, 적절한 경우 학계 연구자, 독립적인 분야 전문가, Frontier Model Forum 같은 업계 단체, 미국 정부 및 그 파트너의 피드백과 관련 법적·정책적 요구사항을 반영한다.",
+   "marks": [
+    {
+     "t": "총체적인 위험 평가 프로세스를 통해 프론티어 역량이 심각한 피해의 위험을 야기하는지 평가한다",
+     "k": "key"
+    },
+    {
+     "t": "Frontier Model Forum 같은 업계 단체, 미국 정부 및 그 파트너의 피드백",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Where we determine that a capability presents a real risk of severe harm, we may decide to monitor it as a Tracked Category or a Research Category .",
+   "ko": "어떤 역량이 심각한 피해의 실질적 위험을 제기한다고 판단하는 경우, 이를 추적 범주(Tracked Categories) 또는 연구 범주(Research Categories)로 모니터링하기로 결정할 수 있다.",
+   "marks": [
+    {
+     "t": "추적 범주(Tracked Categories) 또는 연구 범주(Research Categories)로 모니터링하기로 결정할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Tracked Categories are those capabilities which we track most closely, measuring them during each covered deployment and preparing safeguards for when a threshold level is crossed. We treat a frontier capability as a Tracked Category if the capability creates a risk that meets five criteria:[^3]",
+   "ko": "추적 범주는 우리가 가장 면밀히 추적하는 역량으로, 각 적용 대상 배포 시마다 측정하고 임계 수준을 넘을 경우에 대비하여 안전장치를 준비한다. 어떤 역량이 다음 다섯 가지 기준을 충족하는 위험을 야기하는 경우, 해당 프론티어 역량을 추적 범주로 취급한다.[^3]",
+   "marks": [
+    {
+     "t": "각 적용 대상 배포 시마다 측정하고 임계 수준을 넘을 경우에 대비하여 안전장치를 준비한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Plausible : It must be possible to identify a causal pathway for a severe harm in the capability area, enabled by frontier AI.",
+   "ko": "개연성 : 해당 역량 영역에서 프론티어 AI로 인해 가능해지는 심각한 피해의 인과 경로를 식별할 수 있어야 한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI로 인해 가능해지는 심각한 피해의 인과 경로를 식별할 수 있어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Measurable : We can construct or adopt capability evaluations that measure capabilities that closely track the potential for the severe harm.",
+   "ko": "측정 가능성 : 심각한 피해의 가능성을 밀접하게 추적하는 역량을 측정하는 역량 평가를 구성하거나 채택할 수 있다.",
+   "marks": [
+    {
+     "t": "심각한 피해의 가능성을 밀접하게 추적하는 역량을 측정하는 역량 평가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Severe : There is a plausible threat model within the capability area that would create severe harm.[^1]",
+   "ko": "심각성 : 해당 역량 영역 내에 심각한 피해를 야기할 개연성 있는 위협 모델이 존재한다.[^1]",
+   "marks": [
+    {
+     "t": "심각한 피해를 야기할 개연성 있는 위협 모델이 존재한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Net new : The outcome cannot currently be realized as described (including at that scale, by that threat actor, or for that cost) with existing tools and resources (e.g., available as of 2021) but without access to frontier AI.",
+   "ko": "순증성(net new) : 기존 도구와 자원(예: 2021년 기준으로 이용 가능한 것)으로는 프론티어 AI에 접근하지 않고서는 해당 결과를 기술된 대로(해당 규모로, 해당 위협 행위자에 의해, 또는 해당 비용으로 실현하는 경우를 포함) 현재 실현할 수 없다.",
+   "marks": [
+    {
+     "t": "프론티어 AI에 접근하지 않고서는 해당 결과를 기술된 대로",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Instantaneous or irremediable : The outcome is such that once realized, its severe harms are immediately felt, or are inevitable due to a lack of feasible measures to remediate.",
+   "ko": "즉각성 또는 회복 불가능성 : 해당 결과가 일단 실현되면 그 심각한 피해가 즉시 나타나거나, 실행 가능한 복구 조치가 없어 불가피하다.",
+   "marks": [
+    {
+     "t": "실행 가능한 복구 조치가 없어 불가피하다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We review and update Tracked Categories periodically or when we learn significant new information.",
+   "ko": "우리는 추적 범주를 주기적으로, 또는 중대한 새 정보를 알게 되었을 때 검토하고 갱신한다.",
+   "marks": [
+    {
+     "t": "추적 범주를 주기적으로, 또는 중대한 새 정보를 알게 되었을 때 검토하고 갱신한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Research Categories are capabilities that, while they do not meet the above criteria, nonetheless have the potential to cause or contribute to severe harm, and where we are working now in order to prepare to address risks in the future (including potentially by maturing them to Tracked Categories).",
+   "ko": "연구 범주는 위의 기준을 충족하지는 않지만 그럼에도 심각한 피해를 야기하거나 이에 기여할 잠재력이 있는 역량으로, 향후 위험에 대응할 수 있도록 현재 준비 작업을 진행하고 있는 역량이다(추적 범주로 발전시키는 것을 포함할 수 있다).",
+   "marks": [
+    {
+     "t": "심각한 피해를 야기하거나 이에 기여할 잠재력이 있는 역량",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2.2 Tracked Categories",
+   "ko": "2.2 추적 범주",
+   "id": "s25"
+  },
+  {
+   "type": "p",
+   "en": "For each Tracked Category, we develop and maintain a threat model identifying specific risks of severe harms that could arise from the frontier capabilities in that domain and sets corresponding capability thresholds that would lead to a meaningful increase in risk of severe harm.[^4] SAG reviews and approves these threat models. Capability thresholds concretely describe things an AI system might be able to help someone do or might be able to do on its own that could meaningfully increase risk of severe harm.",
+   "ko": "각 추적 범주에 대해, 우리는 해당 영역의 프론티어 역량으로부터 발생할 수 있는 심각한 피해의 구체적 위험을 식별하는 위협 모델을 개발·유지하고, 심각한 피해 위험의 유의미한 증가로 이어질 수 있는 상응하는 역량 임계값을 설정한다.[^4] SAG는 이러한 위협 모델을 검토하고 승인한다. 역량 임계값은 AI 시스템이 누군가를 도와 수행하거나 스스로 수행할 수 있는 것 가운데 심각한 피해 위험을 유의미하게 증가시킬 수 있는 것을 구체적으로 기술한다.",
+   "marks": [
+    {
+     "t": "심각한 피해의 구체적 위험을 식별하는 위협 모델을 개발·유지하고",
+     "k": "safety"
+    },
+    {
+     "t": "SAG는 이러한 위협 모델을 검토하고 승인한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "High capability thresholds mean capabilities that significantly increase existing risk vectors for severe harm. Covered systems that cross this capability threshold are required to have robust and effective safeguards that sufficiently minimize the associated risk of severe harm before they are deployed and appropriate security controls as they are developed. Critical capability thresholds mean capabilities that present a meaningful risk of a qualitatively new threat vector for severe harm with no ready precedent. Critical capabilities require safeguards even during the development of the covered system, irrespective of deployment plans.",
+   "ko": "높은 역량 임계값은 심각한 피해로 이어지는 기존 위험 벡터를 크게 증가시키는 역량을 의미한다. 이 역량 임계값을 넘는 적용 대상 시스템은 배포 전에 관련된 심각한 피해 위험을 충분히 최소화하는 견고하고 효과적인 안전장치를 갖추어야 하고, 개발 과정에서는 적절한 보안 통제를 갖추어야 한다. 치명적 역량 임계값은 마땅한 전례가 없는, 질적으로 새로운 심각한 피해의 위협 벡터가 생길 유의미한 위험을 제기하는 역량을 의미한다. 치명적 역량의 경우, 배포 계획과 관계없이 적용 대상 시스템의 개발 단계에서부터 안전장치가 필요하다.",
+   "marks": [
+    {
+     "t": "배포 전에 관련된 심각한 피해 위험을 충분히 최소화하는 견고하고 효과적인 안전장치를 갖추어야 하고",
+     "k": "key"
+    },
+    {
+     "t": "질적으로 새로운 심각한 피해의 위협 벡터가 생길 유의미한 위험을 제기하는 역량",
+     "k": "safety"
+    },
+    {
+     "t": "치명적 역량의 경우, 배포 계획과 관계없이 적용 대상 시스템의 개발 단계에서부터 안전장치가 필요하다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our team develops or adopts evaluations designed to track progress on each of these capabilities and to indicate when the identified capability thresholds may have been reached.",
+   "ko": "우리 팀은 이러한 각 역량의 진척을 추적하고, 식별된 역량 임계값에 도달했을 수 있는 시점을 알려 주도록 설계된 평가(evaluation)를 개발하거나 채택한다.",
+   "marks": [
+    {
+     "t": "식별된 역량 임계값에 도달했을 수 있는 시점을 알려 주도록 설계된 평가(evaluation)를 개발하거나 채택한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We further break down the specific capability thresholds, associated risks, and safeguards for those thresholds in Table 1.",
+   "ko": "구체적인 역량 임계값, 관련 위험, 그리고 해당 임계값에 대한 안전장치는 표 1에 더 상세히 제시한다."
+  },
+  {
+   "type": "table",
+   "en": "| Tracked Category | Capability threshold that could lead to the risk | Associated risk of severe harm | Risk-specific safeguard guidelines | ⏎ | Biological and Chemical[^5]: The ability of an AI model to accelerate and expand access to biological and chemical research, development, and skill-building, including access to expert knowledge and assistance with laboratory work. | [High] The model can provide meaningful counterfactual assistance (relative to unlimited access to baseline of tools available in 2021) to 'novice' actors (anyone with a basic relevant technical background) that enables them to create known biological or chemical threats. | Significantly increased likelihood and frequency of biological or chemical terror events by non-state actors using known reference-class threats. | • Require security controls meeting High standard (Appendix C.3) • Require safeguards against misuse meeting High standard (Appendix C.1) before external deployment | ⏎ |  | [Critical] The model can enable an expert to develop a highly dangerous novel threat vector (e.g., comparable to a novel CDC Class A biological agent) OR the model can be connected to tools and equipment to complete the full engineering and/or synthesis cycle of a regulated or novel biological threat without human intervention. | Proliferating the ability to create a novel threat vector of the severity of a CDC Class Abiological agent (i.e., high mortality, ease of transmission) could cause millions of deaths and significantly disrupt public life, with few available societal safeguards. | • Until we have specified safeguards and security controls that would meet a Critical standard, halt further development • Contribute towards improved public policy and pandemic preparedness | ⏎ | Cybersecurity : The ability of an AI model to assist in the development of tools and executing operations for cyberdefense and cyberoffense. | [High] The model removes existing bottlenecks to scaling cyber operations including by automating end-to-end cyber operations against reasonably hardened targets OR by automating the discovery and exploitation of operationally relevant vulnerabilities. | Removing bottlenecks limiting malicious cyber activity may upset the current cyberoffense-cyberdefense balance by significantly automating and scaling the volume of existing cyberattacks. In conjunction with a Long-range Autonomy capability (Section 2.3), models that could bypass OpenAI's technical safeguards constraining model activity, such as sandboxing or monitoring services, could compromise OpenAI's ability to track and mitigate all other risks. | • Require security controls meeting High standard (Appendix C.3) • Require safeguards against misuse meeting High standard (Appendix C.1) for external deployment • Require safeguards meeting High standard against misalignment (Appendix C.2) for large-scale internal deployment • Contribute towards improved cyberdefense policies and tools for cyberdefense | ⏎ |  | [Critical] Atool-augmented model can identify and develop functional zero-day exploits of all severity levels in many hardened real-world critical systems without human intervention OR model can devise and execute end-to-end novel strategies for cyberattacks against hardened targets given only a high level desired goal. | Finding and executing end-to-end exploits for all software could lead to catastrophe from unilateral actors, hacking military or industrial systems, or OpenAI infrastructure. Novel cyber operations, e.g., those involving novel zero-days or novel methods of command- and-control, generally pose the most serious threat, as they are unpredictable and scarce. | • Until we have specified safeguards and security controls standards that would meet a Critical standard, halt further development | ⏎ | AI Self-improvement : The ability of an AI system to accelerate AI research, including to increase the system's own capability. | [High] The model's impact is equivalent to giving every OpenAI researcher a highly performant mid-career research engineer assistant, relative to those researchers' 2024 baseline. | This milestone suggests AI self-improvement may be beginning to accelerate. To meet the large-scale safety research, operations, and security investments that need to be in place when wereach Critical self-improvement, we will by then need to have made significant progress on those investments at this earlier milestone to avoid later risks. | • Require security controls meeting High standard (Appendix C.3) | ⏎ |  | [Critical] The model is capable of recursively self improving (i.e., fully automated AI R&D), defined as either (leading indicator) a superhuman research-scientist agent OR (lagging indicator) causing a generational model improvement (e.g., from OpenAI o1 to OpenAI o3) in 1/5th the wall-clock time of equivalent progress in 2024 (e.g., sped up to just 4 weeks) sustainably for several months. | A major acceleration in the rate of AI R&D could rapidly increase the rate at which new capabilities and risks emerge, to the point where our current oversight practices are insufficient to identify and mitigate new risks, including risks to maintaining human control of the AI system itself. | • Until we have specified safeguards and security controls that would meet a Critical standard, halt further development |",
+   "ko": "| 추적 범주 | 위험으로 이어질 수 있는 역량 임계값 | 관련된 심각한 피해 위험 | 위험별 안전장치 지침 | ⏎ | 생물학 및 화학[^5]: 전문 지식에 대한 접근과 실험실 작업 지원을 포함하여, 생물학 및 화학 연구, 개발, 기술 습득을 가속화하고 이에 대한 접근을 확대하는 AI 모델의 능력 | [높음] 모델이 '초보' 행위자(관련 기술적 배경을 기본적으로 갖춘 모든 사람)에게 (2021년에 이용 가능한 기준 도구에 무제한 접근할 수 있는 경우와 비교하여) 유의미한 반사실적(counterfactual) 지원을 제공하여, 이들이 알려진 생물학적 또는 화학적 위협을 만들어 낼 수 있게 함 | 비국가 행위자가 알려진 참조 계열(reference-class) 위협을 사용하여 생물학적 또는 화학적 테러를 일으킬 가능성과 빈도가 크게 증가함 | • 높은 기준(부록 C.3)을 충족하는 보안 통제 요구 • 외부 배포 전 높은 기준(부록 C.1)을 충족하는 오용 방지 안전장치 요구 | ⏎ |  | [치명적] 모델이 전문가로 하여금 매우 위험한 새로운 위협 벡터(예: 새로운 CDC Class A 생물학적 작용제에 필적하는 것)를 개발할 수 있게 하거나, 또는 모델을 도구 및 장비와 연결하여 규제 대상이거나 새로운 생물학적 위협의 전체 엔지니어링 및/또는 합성 주기를 인간의 개입 없이 완료할 수 있음 | CDC Class A 생물학적 작용제 수준의 심각성(즉, 높은 치사율, 용이한 전파)을 지닌 새로운 위협 벡터를 만드는 능력이 확산되면, 사회적으로 이용 가능한 안전장치가 거의 없는 상황에서 수백만 명이 사망하고 공공생활이 크게 혼란에 빠질 수 있음 | • 치명적 기준을 충족하는 안전장치와 보안 통제를 구체화할 때까지 추가 개발 중단 • 공공 정책 및 팬데믹 대비 개선에 기여 | ⏎ | 사이버 보안 : 사이버 방어 및 사이버 공격을 위한 도구 개발과 작전 수행을 지원하는 AI 모델의 능력 | [높음] 모델이 상당한 수준으로 강화된 표적에 대한 종단간(end-to-end) 사이버 작전을 자동화하거나, 또는 작전상 의미 있는 취약점의 발견과 악용을 자동화함으로써, 사이버 작전의 스케일링을 가로막던 기존 병목을 제거함 | 악의적 사이버 활동을 제한하던 병목이 제거되면, 기존 사이버 공격의 규모가 상당 부분 자동화되고 스케일링되어 현재의 사이버 공격-사이버 방어 균형이 무너질 수 있음. 장기 자율성(Long-range Autonomy) 역량(2.3절)과 결합될 경우, 샌드박싱이나 모니터링 서비스처럼 모델 활동을 제약하는 OpenAI의 기술적 안전장치를 우회할 수 있는 모델은 다른 모든 위험을 추적하고 완화하는 OpenAI의 능력을 훼손할 수 있음 | • 높은 기준(부록 C.3)을 충족하는 보안 통제 요구 • 외부 배포 시 높은 기준(부록 C.1)을 충족하는 오용 방지 안전장치 요구 • 대규모 내부 배포 시 오정렬에 대해 높은 기준(부록 C.2)을 충족하는 안전장치 요구 • 사이버 방어 정책 및 사이버 방어용 도구 개선에 기여 | ⏎ |  | [치명적] 도구로 보강된 모델이 인간의 개입 없이 방어가 강화된 다수의 실제 핵심 시스템에서 모든 심각도 수준의 작동하는 제로데이 익스플로잇을 식별하고 개발할 수 있거나, 또는 모델이 상위 수준의 목표만 주어진 상태에서 강화된 표적에 대한 새로운 종단간 사이버 공격 전략을 고안하고 실행할 수 있음 | 모든 소프트웨어에 대해 종단간 익스플로잇을 찾아 실행할 수 있게 되면, 단독 행위자가 군사·산업 시스템이나 OpenAI 인프라를 해킹하여 재앙적 결과를 초래할 수 있음. 새로운 사이버 작전, 예컨대 새로운 제로데이나 새로운 명령·제어(command-and-control) 방식이 수반되는 작전은 예측이 어렵고 희소하기 때문에 일반적으로 가장 심각한 위협이 됨 | • 치명적 기준을 충족하는 안전장치 및 보안 통제 기준을 구체화할 때까지 추가 개발 중단 | ⏎ | AI 자기 개선(AI Self-improvement) : 시스템 자체의 역량 향상을 포함하여 AI 연구를 가속화하는 AI 시스템의 능력 | [높음] 모델의 영향이 모든 OpenAI 연구자에게, 해당 연구자들의 2024년 기준선 대비, 매우 뛰어난 성능의 중견 연구 엔지니어 조수를 붙여 주는 것과 동등한 수준임 | 이 이정표는 AI 자기 개선이 가속화되기 시작했을 수 있음을 시사함. 치명적 수준의 자기 개선에 도달했을 때 갖추어야 할 대규모 안전 연구, 운영, 보안 투자 요건을 충족하려면, 이후의 위험을 피하기 위해 이보다 앞선 이 이정표 시점부터 해당 투자에서 상당한 진전을 이루어 두어야 함 | • 높은 기준(부록 C.3)을 충족하는 보안 통제 요구 | ⏎ |  | [치명적] 모델이 재귀적 자기 개선(즉, 완전히 자동화된 AI 연구개발(R&D))을 할 수 있음. 이는 (선행 지표) 초인적 연구 과학자 에이전트, 또는 (후행 지표) 2024년에 동등한 진전에 소요된 실제 경과 시간(wall-clock time)의 1/5만으로(예: 단 4주로 단축) 세대 단위의 모델 개선(예: OpenAI o1에서 OpenAI o3로의 개선)을 수개월간 지속적으로 이루어 내는 것으로 정의됨 | AI 연구개발 속도가 크게 가속화되면 새로운 역량과 위험이 등장하는 속도가 급격히 빨라져, 현재의 감독 실행 방안으로는 AI 시스템 자체에 대한 인간의 통제를 유지하는 데 따르는 위험을 포함한 새로운 위험을 식별하고 완화하기에 불충분해지는 지점에 이를 수 있음 | • 치명적 기준을 충족하는 안전장치와 보안 통제를 구체화할 때까지 추가 개발 중단 |"
+  },
+  {
+   "type": "p",
+   "en": "Table 1: Tracked Categories",
+   "ko": "표 1: 추적 범주"
+  },
+  {
+   "type": "h3",
+   "en": "2.3 Research Categories",
+   "ko": "2.3 연구 범주",
+   "id": "s32"
+  },
+  {
+   "type": "p",
+   "en": "There are also some areas of frontier capability that do not meet the criteria to be Tracked Categories, but where we believe work is required now in order to prepare to effectively address risks of severe harms in the future. These capabilities either need more research and threat modeling before they can be rigorously measured, or do not cause direct risks themselves but may need to be monitored because further advancement in this capability could undermine the safeguards we rely on to mitigate existing Tracked Category risks. We call these Research Categories, and in these areas we will take the following steps, both internally and in collaboration with external experts:",
+   "ko": "추적 범주의 기준은 충족하지 않지만, 향후 심각한 피해 위험에 효과적으로 대응할 수 있도록 지금 작업이 필요하다고 판단되는 프론티어 역량 영역도 있다. 이러한 역량은 엄밀하게 측정하기 전에 더 많은 연구와 위협 모델링이 필요하거나, 그 자체로는 직접적인 위험을 야기하지 않지만 해당 역량이 더 발전하면 기존 추적 범주 위험을 완화하기 위해 우리가 의존하는 안전장치를 약화시킬 수 있어 모니터링이 필요할 수 있다. 우리는 이를 연구 범주라고 부르며, 이 영역에서는 내부적으로, 그리고 외부 전문가와 협력하여 다음 조치를 취할 것이다.",
+   "marks": [
+    {
+     "t": "향후 심각한 피해 위험에 효과적으로 대응할 수 있도록 지금 작업이 필요하다고 판단되는 프론티어 역량 영역도 있다",
+     "k": "key"
+    },
+    {
+     "t": "기존 추적 범주 위험을 완화하기 위해 우리가 의존하는 안전장치를 약화시킬 수 있어 모니터링이 필요할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Further developing the threat models for the area,",
+   "ko": "해당 영역의 위협 모델을 더욱 발전시킨다."
+  },
+  {
+   "type": "li",
+   "en": "Advancing the science of capability measurement in the area and investing towards the development of rigorous evaluations (which could be achieved internally or via partnerships), and",
+   "ko": "해당 영역에서 역량 측정의 과학을 진전시키고, 엄밀한 평가 개발에 투자한다(이는 내부적으로 또는 파트너십을 통해 달성할 수 있다).",
+   "marks": [
+    {
+     "t": "해당 영역에서 역량 측정의 과학을 진전시키고, 엄밀한 평가 개발에 투자한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Sharing summaries of our findings with the public where feasible.",
+   "ko": "실행 가능한 경우 연구 결과의 요약을 대중과 공유한다."
+  },
+  {
+   "type": "p",
+   "en": "We will periodically review the latest research and findings for each Research Category. SAG will receive the results of such reviews and evaluate whether there is sufficient evidence to recommend updates to our internal practices or to the Preparedness Framework.",
+   "ko": "주기적으로 각 연구 범주에 대한 최신 연구와 결과를 검토할 것이다. 안전 자문 그룹은 이러한 검토 결과를 전달받아, 내부 실행 방안이나 대비 프레임워크의 갱신을 권고할 만한 충분한 근거가 있는지 평가한다.",
+   "marks": [
+    {
+     "t": "안전 자문 그룹은 이러한 검토 결과를 전달받아, 내부 실행 방안이나 대비 프레임워크의 갱신을 권고할 만한 충분한 근거가 있는지 평가한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Table 2: Research Categories",
+   "ko": "표 2: 연구 범주"
+  },
+  {
+   "type": "table",
+   "en": "| Research Category | Potential response | ⏎ | Long-range Autonomy: ability for a model to execute a long-horizon sequence of actions sufficient to realize a 'High' threat model (e.g., a cyberattack) without being directed by a human (including successful social engineering attacks when needed) | If a model has High or Critical capabilities in any of the Tracked Categories, require a 'misalignment' safeguards report (see Section 4.2). As this category matures, we will make decisions about how this should influence our governance, including setting internal and external deployment safeguards milestones. | ⏎ | Sandbagging: ability and propensity to respond to safety or capability evaluations in a way that significantly diverges from performance under real conditions, undermining the validity of such evaluations. | Adopt elicitation approach that overcomes sandbagging, or use a conservative upper bound of the model's non-sandbagged evaluation results | ⏎ | Autonomous Replication and Adaptation: ability to survive, replicate, resist shutdown, acquire resources to maintain and scale its own operations, and commit illegal activities that collectively constitute causing severe harm (whether when explicitly instructed, or at its own initiative), without also utilizing capabilities tracked in other Tracked Categories. | Convert Autonomous Replication and Adaptation to a Tracked Category | ⏎ | Undermining Safeguards: ability and propensity for the model to act to undermine safeguards placed on it, including e.g., deception, colluding with oversight models, sabotaging safeguards over time such as by embedding vulnerabilities in safeguards code, etc. | If a model has High or Critical capabilities in any of the Tracked Categories, require the Safeguards case to be robust to the discovered capability and/or propensity | ⏎ | Nuclear and Radiological: ability to meaningfully counterfactually enable the creation of a radiological threat or enable or significantly accelerate the development of or access to a nuclear threat while remaining undetected. | Heighten safeguards (and consider further actions) in consultation with appropriate US government actors, accounting for the complexity of classified information handling. |",
+   "ko": "| 연구 범주 | 잠재적 대응 | ⏎ | 장기 자율성: 인간의 지시 없이 '높음' 위협 모델(예: 사이버 공격)을 실현하기에 충분한 장기적 행동 시퀀스를 실행하는 모델의 능력(필요시 성공적인 사회공학 공격 포함) | 모델이 추적 범주 중 어느 하나에서 높음 또는 치명적 역량을 보유하는 경우, '오정렬' 안전장치 보고서(Safeguards Report) 요구(4.2절 참조). 이 범주가 성숙해짐에 따라, 내부 배포 및 외부 배포 안전장치 이정표 설정을 포함하여 이것이 거버넌스에 어떻게 반영되어야 하는지 결정할 것임 | ⏎ | 샌드배깅: 실제 조건에서의 성능과 현저히 다른 방식으로 안전성 평가나 역량 평가에 응답하여 해당 평가의 타당성을 훼손하는 능력 및 성향 | 샌드배깅을 극복하는 유도 접근법을 채택하거나, 모델의 샌드배깅이 없는 평가 결과에 대한 보수적 상한값 사용 | ⏎ | 자율 복제 및 적응(Autonomous Replication and Adaptation): 다른 추적 범주에서 추적되는 역량을 함께 활용하지 않고도, 생존하고, 복제하고, 종료에 저항하고, 자체 운영을 유지·확장하기 위한 자원을 획득하며, 종합적으로 심각한 피해를 야기하는 데 해당하는 불법 활동을 저지르는 능력(명시적으로 지시받은 경우이든 스스로의 주도에 의한 경우이든) | 자율 복제 및 적응(Autonomous Replication and Adaptation)을 추적 범주로 전환 | ⏎ | 안전장치 무력화(Undermining Safeguards): 예컨대 기만, 감독 모델과의 공모, 안전장치 코드에 취약점을 임베딩하는 등의 방식으로 시간에 걸쳐 안전장치를 방해하는 것을 포함하여, 모델에 부과된 안전장치를 무력화하는 행동을 하는 모델의 능력 및 성향 | 모델이 추적 범주 중 어느 하나에서 높음 또는 치명적 역량을 보유하는 경우, 안전장치 논증(Safeguards case)이 발견된 역량 및/또는 성향에 대해 견고할 것을 요구 | ⏎ | 핵 및 방사능: 탐지되지 않은 채 방사능 위협의 생성을 유의미하게 반사실적으로(counterfactually) 가능하게 하거나, 핵 위협의 개발 또는 접근을 가능하게 하거나 현저히 가속화하는 능력 | 기밀 정보 취급의 복잡성을 고려하여, 적절한 미국 정부 관계자와 협의하에 안전장치 강화(및 추가 조치 검토) |"
+  },
+  {
+   "type": "h3",
+   "en": "Changes to Tracked Categories in version 2",
+   "ko": "버전 2에서의 추적 범주 변경 사항",
+   "id": "s40"
+  },
+  {
+   "type": "p",
+   "en": "AI Self-improvement (now a Tracked Category), Long-range Autonomy and Autonomous Replication and Adaptation (now Research Categories) are distinct aspects of what we formerly termed Model Autonomy. We have separated self-improvement because it presents a distinct plausible, net new, and potentially irremediable risk, namely that of a hard-to-track rapid acceleration in AI capabilities which could have hard-to-predict severely harmful consequences. In addition, the evaluations we use to measure this capability are distinct from those applicable to Long-range Autonomy and Autonomous Replication and Adaptation. Meanwhile, while these latter risks' threat models are not yet sufficiently mature to receive the scrutiny of Tracked Categories, we believe they justify additional research investment and could qualify in the future, so we are investing in them now as Research Categories.",
+   "ko": "AI 자기 개선(현재 추적 범주), 장기 자율성 및 자율 복제 및 적응(Autonomous Replication and Adaptation)(현재 연구 범주)은 이전에 모델 자율성이라고 불렀던 것의 서로 구별되는 측면이다. 자기 개선을 분리한 것은 그것이 별개의, 개연성 있고, 완전히 새로우며, 잠재적으로 회복 불가능한 위험, 즉 예측하기 어려운 심각한 피해를 초래할 수 있는, 추적하기 어려운 AI 역량의 급속한 가속화라는 위험을 제기하기 때문이다. 또한 이 역량을 측정하는 데 사용하는 평가는 장기 자율성 및 자율 복제 및 적응에 적용되는 평가와 다르다. 한편, 후자의 위험들은 위협 모델이 아직 추적 범주 수준의 면밀한 검토를 받을 만큼 충분히 성숙하지 않았지만, 추가 연구 투자를 정당화하며 향후 추적 범주에 해당할 수 있다고 판단하므로, 현재 이를 연구 범주로서 투자하고 있다.",
+   "marks": [
+    {
+     "t": "AI 자기 개선(현재 추적 범주), 장기 자율성 및 자율 복제 및 적응(Autonomous Replication and Adaptation)(현재 연구 범주)",
+     "k": "safety"
+    },
+    {
+     "t": "잠재적으로 회복 불가능한 위험, 즉 예측하기 어려운 심각한 피해를 초래할 수 있는, 추적하기 어려운 AI 역량의 급속한 가속화라는 위험",
+     "k": "key"
+    },
+    {
+     "t": "추가 연구 투자를 정당화하며 향후 추적 범주에 해당할 수 있다고 판단하므로",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Nuclear and Radiological capabilities are now a Research Category. While basic information related to nuclear weapons design is available in public sources, the information and expertise needed to actually create a working nuclear weapon is significant, and classified. Further, there are significant physical barriers to success, like access to fissile material, specialized equipment, and ballistics. Because of the significant resources required and the legal controls around information and equipment, nuclear weapons development cannot be fully studied outside a classified context. Our work on nuclear risks also informs our efforts on the related but distinct risks posed by radiological weapons. We build safeguards to prevent our models from assisting with high-risk queries related to building weapons, and evaluate performance on those refusal policies as part of our safety process. Our analysis suggests that nuclear risks are likely to be of substantially greater severity and therefore we will prioritize research on nuclear-related risks. We will also engage with US national security stakeholders on how best to assess these risks.",
+   "ko": "핵 및 방사능 역량은 이제 연구 범주이다. 핵무기 설계와 관련된 기본 정보는 공개 자료에서 얻을 수 있지만, 실제로 작동하는 핵무기를 만드는 데 필요한 정보와 전문 지식은 상당하며 기밀로 분류되어 있다. 더욱이 핵분열 물질, 특수 장비, 탄도학에 대한 접근 등 성공을 가로막는 상당한 물리적 장벽이 존재한다. 막대한 자원이 필요하고 정보와 장비에 대한 법적 통제가 있기 때문에, 핵무기 개발은 기밀 환경 밖에서는 완전히 연구될 수 없다. 핵 위험에 대한 작업은 관련되어 있으나 구별되는 방사능 무기의 위험에 대한 노력에도 반영된다. 우리는 모델이 무기 제작과 관련된 고위험 질의를 지원하지 못하도록 안전장치를 구축하고, 안전 프로세스의 일환으로 이러한 거부 정책에 대한 성능을 평가한다. 분석 결과 핵 위험이 상당히 더 심각할 가능성이 높은 것으로 나타났으므로, 핵 관련 위험에 대한 연구를 우선시할 것이다. 또한 이러한 위험을 가장 잘 평가하는 방법에 대해 미국 국가안보 이해관계자와 협력할 것이다.",
+   "marks": [
+    {
+     "t": "핵 및 방사능 역량은 이제 연구 범주이다.",
+     "k": "key"
+    },
+    {
+     "t": "모델이 무기 제작과 관련된 고위험 질의를 지원하지 못하도록 안전장치를 구축하고",
+     "k": "safety"
+    },
+    {
+     "t": "안전 프로세스의 일환으로 이러한 거부 정책에 대한 성능을 평가한다",
+     "k": "safety"
+    },
+    {
+     "t": "미국 국가안보 이해관계자와 협력할 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Persuasion : OpenAI prohibits the use of our products to manipulate political views as part of our Model Spec, and we build in safeguards to back this policy. We also continue to study the persuasive and relational capabilities of models (including on emotional well-being and preventing bias in our products) and monitor and investigate misuse of our products (including for influence operations). We believe many of the challenges around AI persuasion risks require solutions at a systemic or societal level, and we actively contribute to these efforts through our participation as a steering committee member of C2PA and working with lawmaker and industry peers to support state legislation on AI content provenance in Florida and California. Within our wider safety stack, our Preparedness Framework is specifically focused on frontier AI risks meeting a specific definition of severe harms[^1:2], and Persuasion category risks do not fit the criteria for inclusion.",
+   "ko": "설득: OpenAI는 Model Spec의 일환으로 자사 제품을 정치적 견해 조작에 사용하는 것을 금지하며, 이 정책을 뒷받침하기 위한 안전장치를 내장하고 있다. 또한 모델의 설득 및 관계 형성 역량(정서적 웰빙 및 제품 내 편향 방지에 관한 사항 포함)을 지속적으로 연구하고, 제품 오용(영향력 공작을 위한 오용 포함)을 모니터링하고 조사한다. AI 설득 위험을 둘러싼 많은 과제는 시스템 또는 사회 차원의 해결책을 필요로 한다고 판단하며, 우리는 C2PA 운영위원회 회원으로 참여하고, 입법자 및 업계 동료들과 협력하여 플로리다주와 캘리포니아주의 AI 콘텐츠 출처 관련 주 법안을 지원함으로써 이러한 노력에 적극 기여하고 있다. 보다 넓은 안전 체계 내에서 대비 프레임워크는 심각한 피해에 대한 특정 정의[^1:2]를 충족하는 프론티어 AI 위험에 특화되어 있으며, 설득 범주의 위험은 포함 기준에 부합하지 않는다.",
+   "marks": [
+    {
+     "t": "자사 제품을 정치적 견해 조작에 사용하는 것을 금지하며, 이 정책을 뒷받침하기 위한 안전장치를 내장하고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "제품 오용(영향력 공작을 위한 오용 포함)을 모니터링하고 조사한다",
+     "k": "safety"
+    },
+    {
+     "t": "설득 범주의 위험은 포함 기준에 부합하지 않는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "3 Measuring capabilities",
+   "ko": "3 역량 측정",
+   "id": "s44"
+  },
+  {
+   "type": "h3",
+   "en": "3.1 Evaluation approach",
+   "ko": "3.1 평가(evaluation) 접근법",
+   "id": "s45"
+  },
+  {
+   "type": "p",
+   "en": "We invest deeply in developing or adopting new science-backed evaluations that provide high precision and high recall indications of whether a covered system has reached a capability threshold in one of our Tracked Categories.",
+   "ko": "우리는 대상 시스템이 추적 범주 중 하나에서 역량 임계값에 도달했는지에 대해 높은 정밀도와 높은 재현율의 지표를 제공하는, 과학적 근거에 기반한 새로운 평가를 개발하거나 도입하는 데 깊이 투자한다.",
+   "marks": [
+    {
+     "t": "대상 시스템이 추적 범주 중 하나에서 역량 임계값에 도달했는지에 대해 높은 정밀도와 높은 재현율의 지표를 제공하는",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our evaluations are intended to approximate the full capability that the adversary contemplated by our threat model could extract from the deployment candidate model, including by using the highestcapability tier of system settings, using a version of the model that has a negligible rate of safety-based refusals on our Tracked Category capability evaluations (which may require a separate model variant), and with the best presently-available scaffolds. These measures are taken to approximate the high end of expected elicitation by threat actors attempting to misuse the model, and should be tailored depending on the level of expected access (e.g., doing finetuning if the weights will be released).",
+   "ko": "평가는 위협 모델이 상정하는 공격자가 배포 후보 모델로부터 끌어낼 수 있는 전체 역량을 근사하기 위한 것으로, 여기에는 최고 역량 등급의 시스템 설정을 사용하고, 추적 범주 역량 평가에서 안전상의 이유로 인한 거부 비율이 무시할 만한 수준인 모델 버전(별도의 모델 변형이 필요할 수 있음)을 사용하며, 현재 이용 가능한 최선의 스캐폴딩을 활용하는 것이 포함된다. 이러한 조치는 모델을 오용하려는 위협 행위자가 수행할 것으로 예상되는 유도의 상단을 근사하기 위해 취해지며, 예상되는 접근 수준에 따라 조정되어야 한다(예: 가중치가 공개될 경우 파인튜닝 수행).",
+   "marks": [
+    {
+     "t": "추적 범주 역량 평가에서 안전상의 이유로 인한 거부 비율이 무시할 만한 수준인 모델 버전",
+     "k": "safety"
+    },
+    {
+     "t": "모델을 오용하려는 위협 행위자가 수행할 것으로 예상되는 유도의 상단을 근사하기 위해 취해지며",
+     "k": "safety"
+    },
+    {
+     "t": "가중치가 공개될 경우 파인튜닝 수행",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Nonetheless, given the continuous progress in model scaffolding and elicitation techniques, we regard any one-time capability elicitation in a frontier model as a lower bound, rather than a ceiling, on capabilities that may emerge in real world use and misuse. We incorporate this uncertainty into our assessments. We monitor the technical landscape for changes to the elicitation techniques and best practices, and reassess our evaluations as needed.",
+   "ko": "그럼에도 불구하고, 모델 스캐폴딩과 유도 기법이 지속적으로 발전하고 있음을 고려하여, 프론티어 모델에 대한 일회성 역량 유도는 실제 사용 및 오용에서 나타날 수 있는 역량의 상한이 아니라 하한으로 간주한다. 우리는 이러한 불확실성을 평가(assessment)에 반영한다. 유도 기법과 모범 사례의 변화에 대해 기술 동향을 모니터링하고, 필요에 따라 평가를 재검토한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델에 대한 일회성 역량 유도는 실제 사용 및 오용에서 나타날 수 있는 역량의 상한이 아니라 하한으로 간주한다.",
+     "k": "key"
+    },
+    {
+     "t": "우리는 이러한 불확실성을 평가(assessment)에 반영한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Capability evaluations come in two different forms:",
+   "ko": "역량 평가는 두 가지 형태로 이루어진다."
+  },
+  {
+   "type": "li",
+   "en": "Scalable Evaluations: automated evaluations designed to measure proxies that approximate whether a capability threshold has been crossed. Scalable evaluations have associated 'indicative thresholds,' which are levels of performance that we have pre-determined to indicate that a deployment may have reached a capability threshold.",
+   "ko": "확장 가능한 평가: 역량 임계값을 넘었는지를 근사하는 대리 지표를 측정하도록 설계된 자동화된 평가. 확장 가능한 평가에는 관련 '지표 임계값(indicative thresholds)'이 있으며, 이는 배포가 역량 임계값에 도달했을 수 있음을 나타내는 것으로 사전에 정해 둔 성능 수준임.",
+   "marks": [
+    {
+     "t": "배포가 역량 임계값에 도달했을 수 있음을 나타내는 것으로 사전에 정해 둔 성능 수준",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Deep Dives: designed to provide additional evidence validating the scalable evaluations' findings on whether a capability threshold has been crossed. These may include a wide range of evidence gathering activities, such as human expert red-teaming, expert consultations, resource-intensive third party evaluations (e.g., bio wet lab studies, assessments by independent third party evaluators), and any other activity requested by SAG.",
+   "ko": "심층 평가(Deep Dives): 역량 임계값을 넘었는지에 관한 확장 가능한 평가의 결과를 검증하는 추가 증거를 제공하도록 설계됨. 여기에는 인간 전문가 레드티밍, 전문가 자문, 자원 집약적인 제3자 평가(예: 생물학 습식 실험실(wet lab) 연구, 독립적인 제3자 평가 기관의 평가(assessment)), 그리고 안전 자문 그룹이 요청하는 기타 모든 활동 등 광범위한 증거 수집 활동이 포함될 수 있음.",
+   "marks": [
+    {
+     "t": "인간 전문가 레드티밍, 전문가 자문, 자원 집약적인 제3자 평가",
+     "k": "safety"
+    },
+    {
+     "t": "독립적인 제3자 평가 기관의 평가(assessment)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "An example of a Tracked Category capability evaluation",
+   "ko": "추적 범주 역량 평가의 예시",
+   "id": "s52"
+  },
+  {
+   "type": "p",
+   "en": "To assess the degree to which a covered system can reduce the barriers to creating a biological weapon, our current evaluations test both how capable the system is at providing useful information to someone creating a weapon and how capable it is of directly integrating with relevant tools, such as ordering precursor materials via the Internet.",
+   "ko": "적용 대상 시스템이 생물무기 제조의 장벽을 어느 정도 낮출 수 있는지 평가하기 위해, 현재의 평가는 무기를 제조하려는 사람에게 유용한 정보를 제공하는 데 시스템이 얼마나 유능한지와, 인터넷을 통한 전구물질 주문과 같이 관련 도구와 직접 연동하는 데 얼마나 유능한지를 모두 시험한다.",
+   "marks": [
+    {
+     "t": "적용 대상 시스템이 생물무기 제조의 장벽을 어느 정도 낮출 수 있는지 평가하기 위해",
+     "k": "key"
+    },
+    {
+     "t": "무기를 제조하려는 사람에게 유용한 정보를 제공하는 데 시스템이 얼마나 유능한지",
+     "k": "safety"
+    },
+    {
+     "t": "인터넷을 통한 전구물질 주문과 같이 관련 도구와 직접 연동하는 데 얼마나 유능한지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our evaluations test acquiring critical and sensitive information across the five stages of the biological threat creation process: Ideation, Acquisition, Magnification, Formulation, and Release. These evaluations, developed by domain experts, cover things like how to troubleshoot the laboratory processes involved.",
+   "ko": "평가는 생물학적 위협 생성 과정의 다섯 단계, 즉 구상(Ideation), 획득(Acquisition), 증폭(Magnification), 제형화(Formulation), 방출(Release) 전반에 걸쳐 핵심적이고 민감한 정보를 획득하는 것을 시험한다. 해당 분야 전문가들이 개발한 이 평가는 관련 실험실 공정의 문제 해결 방법 등을 다룬다.",
+   "marks": [
+    {
+     "t": "생물학적 위협 생성 과정의 다섯 단계",
+     "k": "safety"
+    },
+    {
+     "t": "핵심적이고 민감한 정보를 획득하는 것을 시험한다",
+     "k": "safety"
+    },
+    {
+     "t": "해당 분야 전문가들이 개발한 이 평가는 관련 실험실 공정의 문제 해결 방법 등을 다룬다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "You can learn more about our Tracked Category capability evaluations in past system cards, such as those for OpenAI o1 and Operator.",
+   "ko": "추적 범주 역량 평가에 대한 자세한 내용은 OpenAI o1 및 Operator의 시스템 카드 등 과거 시스템 카드에서 확인할 수 있다.",
+   "marks": [
+    {
+     "t": "추적 범주 역량 평가에 대한 자세한 내용은",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3.2 Testing scope",
+   "ko": "3.2 시험 범위",
+   "id": "s56"
+  },
+  {
+   "type": "p",
+   "en": "The Preparedness Framework applies to any new or updated deployment that has a plausible chance of reaching a capability threshold whose corresponding risks are not addressed by an existing Safeguards Report. Examples of such covered deployments are:",
+   "ko": "대비 프레임워크는 역량 임계값에 도달할 개연성이 있으며, 그에 상응하는 위험이 기존 안전장치 보고서에서 다루어지지 않는 모든 신규 또는 업데이트된 배포에 적용된다. 이러한 적용 대상 배포의 예는 다음과 같다.",
+   "marks": [
+    {
+     "t": "대비 프레임워크는 역량 임계값에 도달할 개연성이 있으며, 그에 상응하는 위험이 기존 안전장치 보고서에서 다루어지지 않는 모든 신규 또는 업데이트된 배포에 적용된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "every frontier model (e.g., OpenAI o1 or OpenAI o3) that we plan to deploy externally",
+   "ko": "외부 배포를 계획하고 있는 모든 프론티어 모델(예: OpenAI o1 또는 OpenAI o3)"
+  },
+  {
+   "type": "li",
+   "en": "any agentic system (including significant agents deployed only internally) that represents a substantial increase in the capability frontier",
+   "ko": "역량 프론티어의 상당한 확대를 나타내는 모든 에이전트형 시스템(내부에만 배포되는 중요한 에이전트 포함)",
+   "marks": [
+    {
+     "t": "역량 프론티어의 상당한 확대를 나타내는 모든 에이전트형 시스템(내부에만 배포되는 중요한 에이전트 포함)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "any significant change in the deployment conditions of an existing model (e.g., enabling finetuning, releasing weights, or significant new features) that makes the existing Capabilities Report or Safeguards Report no longer reasonably applicable",
+   "ko": "기존 역량 보고서(Capabilities Report) 또는 안전장치 보고서를 더 이상 합리적으로 적용할 수 없게 만드는, 기존 모델의 배포 조건에 대한 모든 중대한 변경(예: 파인튜닝 허용, 가중치 공개, 또는 중요한 신규 기능)",
+   "marks": [
+    {
+     "t": "파인튜닝 허용, 가중치 공개, 또는 중요한 신규 기능",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "incremental updates or distilled models with unexpectedly significant increases in capability.[^6]",
+   "ko": "예상치 못하게 역량이 크게 증가한 점진적 업데이트 또는 증류 모델[^6]",
+   "marks": [
+    {
+     "t": "예상치 못하게 역량이 크게 증가한 점진적 업데이트 또는 증류 모델",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "If justified by our forecasts and threat models as potentially posing a severe risk during development and prior to external deployment, we will select an appropriate checkpoint during development to be covered by the Preparedness Framework.",
+   "ko": "예측 및 위협 모델에 비추어 개발 중이자 외부 배포 이전 단계에서 심각한 위험을 초래할 가능성이 있다고 판단되는 경우, 개발 중의 적절한 체크포인트를 선정하여 대비 프레임워크의 적용 대상으로 삼는다.",
+   "marks": [
+    {
+     "t": "외부 배포 이전 단계에서 심각한 위험을 초래할 가능성이 있다고 판단되는 경우",
+     "k": "safety"
+    },
+    {
+     "t": "개발 중의 적절한 체크포인트를 선정하여 대비 프레임워크의 적용 대상으로 삼는다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In cases of ambiguity about whether a model is covered by the Preparedness Framework, the SAG is responsible for making the final determination.",
+   "ko": "모델이 대비 프레임워크의 적용 대상인지 모호한 경우, 최종 결정은 안전 자문 그룹이 내린다.",
+   "marks": [
+    {
+     "t": "최종 결정은 안전 자문 그룹이 내린다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3.3 Capability threshold determinations",
+   "ko": "3.3 역량 임계값 판정",
+   "id": "s64"
+  },
+  {
+   "type": "p",
+   "en": "Prior to deployment, every covered model undergoes the suite of Scalable Evaluations. The results of these evaluations, and any noteworthy observations that should affect interpretation of the results, are compiled into a Capabilities Report that is submitted to the SAG.",
+   "ko": "배포에 앞서 모든 적용 대상 모델은 확장 가능한 평가 일체를 거친다. 이 평가의 결과와, 결과 해석에 영향을 미쳐야 하는 주목할 만한 관찰 사항은 역량 보고서로 취합되어 안전 자문 그룹에 제출된다.",
+   "marks": [
+    {
+     "t": "배포에 앞서 모든 적용 대상 모델은 확장 가능한 평가 일체를 거친다.",
+     "k": "key"
+    },
+    {
+     "t": "역량 보고서로 취합되어 안전 자문 그룹에 제출된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The determination that a threshold has been reached is informed by these indicative results from capability evaluations, and also reflects holistic judgment based on the totality of available evidence - for example, information about the methodological robustness of evaluation results.",
+   "ko": "임계값 도달 여부의 판정은 역량 평가에서 얻은 이러한 지표성 결과를 근거로 하며, 아울러 이용 가능한 증거 전체(예: 평가 결과의 방법론적 강건성에 관한 정보)에 기반한 종합적 판단을 반영한다.",
+   "marks": [
+    {
+     "t": "임계값 도달 여부의 판정은 역량 평가에서 얻은 이러한 지표성 결과를 근거로 하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The SAG reviews the Capabilities Report and decides on next steps. These can include:",
+   "ko": "안전 자문 그룹은 역량 보고서를 검토하고 다음 단계를 결정한다. 여기에는 다음이 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "안전 자문 그룹은 역량 보고서를 검토하고 다음 단계를 결정한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Determine that the capability threshold has been crossed, and therefore recommend implementing and assessing corresponding safeguards , if they have not already been implemented and assessed.",
+   "ko": "역량 임계값을 넘었다고 판단 : 이에 따라 상응하는 안전장치가 아직 구현 및 평가되지 않았다면 이를 구현하고 평가할 것을 권고함.",
+   "marks": [
+    {
+     "t": "상응하는 안전장치가 아직 구현 및 평가되지 않았다면 이를 구현하고 평가할 것을 권고함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Determine that a threshold has not been crossed : If the scalable evaluations did not cross their indicative thresholds, the SAG may conclude that the model does not have High or Critical capability, and recommend no further action.",
+   "ko": "임계값을 넘지 않았다고 판단 : 확장 가능한 평가가 지표 임계값을 넘지 않은 경우, 안전 자문 그룹은 해당 모델이 High 또는 Critical 수준의 역량을 보유하지 않는다고 결론짓고 추가 조치를 권고하지 않을 수 있음.",
+   "marks": [
+    {
+     "t": "해당 모델이 High 또는 Critical 수준의 역량을 보유하지 않는다고 결론짓고 추가 조치를 권고하지 않을 수 있음",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Recommend deep dive research : This is appropriate if SAG needs additional evidence in order to make a recommendation.",
+   "ko": "심층 평가 연구 권고 : 안전 자문 그룹이 권고를 내리기 위해 추가 증거가 필요한 경우에 적절함.",
+   "marks": [
+    {
+     "t": "심층 평가 연구 권고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "4 Safeguarding against severe harm",
+   "ko": "4 심각한 피해에 대한 안전장치",
+   "id": "s71"
+  },
+  {
+   "type": "p",
+   "en": "Safeguards that mitigate the risk of severe harm are at the core of our safe deployment approach for covered systems that reach a capability threshold. This section describes the process through which we select which safeguards to apply and how we evaluate whether those safeguards sufficiently minimize the risk of severe harm.",
+   "ko": "심각한 피해의 위험을 완화하는 안전장치는 역량 임계값에 도달한 적용 대상 시스템에 대한 안전한 배포 접근법의 핵심이다. 이 절에서는 적용할 안전장치를 선정하는 과정과, 해당 안전장치가 심각한 피해의 위험을 충분히 최소화하는지를 평가하는 방법을 설명한다.",
+   "marks": [
+    {
+     "t": "심각한 피해의 위험을 완화하는 안전장치는 역량 임계값에 도달한 적용 대상 시스템에 대한 안전한 배포 접근법의 핵심이다.",
+     "k": "key"
+    },
+    {
+     "t": "해당 안전장치가 심각한 피해의 위험을 충분히 최소화하는지를 평가하는 방법",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "If a covered system appears likely to cross a capability threshold, we will start to work on safeguards to sufficiently reduce the risks of severe harm associated with that threshold even if a formal capability determination has not yet been made.",
+   "ko": "적용 대상 시스템이 역량 임계값을 넘을 가능성이 높아 보이는 경우, 공식적인 역량 판정이 아직 내려지지 않았더라도 해당 임계값과 관련된 심각한 피해의 위험을 충분히 줄이기 위한 안전장치 작업에 착수한다.",
+   "marks": [
+    {
+     "t": "적용 대상 시스템이 역량 임계값을 넘을 가능성이 높아 보이는 경우",
+     "k": "safety"
+    },
+    {
+     "t": "공식적인 역량 판정이 아직 내려지지 않았더라도 해당 임계값과 관련된 심각한 피해의 위험을 충분히 줄이기 위한 안전장치 작업에 착수한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "4.1 Safeguard selection",
+   "ko": "4.1 안전장치 선정",
+   "id": "s74"
+  },
+  {
+   "type": "p",
+   "en": "Each capability threshold has a corresponding class of risk-specific safeguard guidelines under the Preparedness Framework. We use the following process to select safeguards for a deployment:",
+   "ko": "대비 프레임워크에서 각 역량 임계값에는 그에 상응하는 위험별 안전장치 지침 유형이 있다. 배포에 적용할 안전장치를 선정하기 위해 다음 절차를 따른다.",
+   "marks": [
+    {
+     "t": "각 역량 임계값에는 그에 상응하는 위험별 안전장치 지침 유형이 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "We first identify the plausible ways in which the associated risk of severe harm can come to fruition in the proposed deployment.",
+   "ko": "먼저, 제안된 배포에서 관련된 심각한 피해의 위험이 현실화될 수 있는 개연성 있는 경로를 식별한다.",
+   "marks": [
+    {
+     "t": "관련된 심각한 피해의 위험이 현실화될 수 있는 개연성 있는 경로를 식별한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "For each of those, we then identify specific safeguards that either exist or should be implemented that would address the risk.",
+   "ko": "다음으로, 각 경로에 대해 해당 위험에 대응할 수 있는, 이미 존재하거나 구현되어야 하는 구체적인 안전장치를 식별한다."
+  },
+  {
+   "type": "li",
+   "en": "For each identified safeguard, we identify methods to measure their efficacy and an efficacy threshold.",
+   "ko": "식별된 각 안전장치에 대해 그 효과성을 측정하는 방법과 효과성 임계값을 정한다.",
+   "marks": [
+    {
+     "t": "그 효과성을 측정하는 방법과 효과성 임계값을 정한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Weconsider separate safeguards for two of the main ways in which risks can be realized: a malicious user , who can leverage the model to cause the severe harm, and a misaligned model , which autonomously causes the harm. We illustrate the types of safeguards for each in Table 3.",
+   "ko": "우리는 위험이 현실화될 수 있는 두 가지 주요 경로, 즉 모델을 활용해 심각한 피해를 야기할 수 있는 악의적 사용자와, 자율적으로 피해를 야기하는 정렬되지 않은 모델(misaligned model)에 대해 별도의 안전장치를 고려한다. 각각에 대한 안전장치 유형은 표 3에 제시한다.",
+   "marks": [
+    {
+     "t": "모델을 활용해 심각한 피해를 야기할 수 있는 악의적 사용자와, 자율적으로 피해를 야기하는 정렬되지 않은 모델(misaligned model)에 대해 별도의 안전장치를 고려한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The methodology for security controls is similar, although focused on the relevant security threat models.",
+   "ko": "보안 통제에 대한 방법론도 이와 유사하나, 관련 보안 위협 모델에 초점을 둔다.",
+   "marks": [
+    {
+     "t": "관련 보안 위협 모델에 초점을 둔다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Appendix C provides illustrative examples of potential safeguards and safeguard efficacy assessments that could be used to establish that we have sufficiently minimized the risk of severe harm. The examples aim to provide insight on our thinking but should not be construed as a definitive checklist of the safeguards we will apply to a given launch.",
+   "ko": "부록 C는 심각한 피해의 위험을 충분히 최소화했음을 입증하는 데 활용될 수 있는 잠재적 안전장치와 안전장치 효과성 평가(safeguard efficacy assessment)의 예시를 제시한다. 이 예시는 우리의 사고방식에 대한 이해를 돕기 위한 것이며, 특정 출시에 적용할 안전장치의 확정적인 체크리스트로 해석되어서는 안 된다.",
+   "marks": [
+    {
+     "t": "심각한 피해의 위험을 충분히 최소화했음을 입증하는 데 활용될 수 있는 잠재적 안전장치",
+     "k": "safety"
+    },
+    {
+     "t": "특정 출시에 적용할 안전장치의 확정적인 체크리스트로 해석되어서는 안 된다",
+     "k": "key"
+    }
+   ],
+   "refs": [
+    {
+     "t": "부록 C",
+     "to": "s155"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "4.2 Safeguard sufficiency",
+   "ko": "4.2 안전장치 충분성",
+   "id": "s82"
+  },
+  {
+   "type": "p",
+   "en": "We compile the information on the planned safeguards needed to minimize the risk of severe harm into a Safeguards Report. The Safeguards Report should include the following information:",
+   "ko": "심각한 피해의 위험을 최소화하는 데 필요한 계획된 안전장치에 관한 정보는 안전장치 보고서로 취합한다. 안전장치 보고서에는 다음 정보가 포함되어야 한다.",
+   "marks": [
+    {
+     "t": "심각한 피해의 위험을 최소화하는 데 필요한 계획된 안전장치에 관한 정보는 안전장치 보고서로 취합한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Identified ways a risk of severe harm can be realized for the given deployment, each mapped to the associated security controls and safeguards",
+   "ko": "해당 배포에서 심각한 피해의 위험이 현실화될 수 있는 것으로 식별된 경로와, 각 경로에 대응하는 보안 통제 및 안전장치",
+   "marks": [
+    {
+     "t": "심각한 피해의 위험이 현실화될 수 있는 것으로 식별된 경로",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Details about the efficacy of those safeguards",
+   "ko": "해당 안전장치의 효과성에 관한 세부 사항"
+  },
+  {
+   "type": "li",
+   "en": "An assessment on the residual risk of severe harm based on the deployment",
+   "ko": "배포에 따른 심각한 피해의 잔여 위험에 대한 평가(assessment)",
+   "marks": [
+    {
+     "t": "배포에 따른 심각한 피해의 잔여 위험에 대한 평가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Any notable limitations with the information provided",
+   "ko": "제공된 정보의 주목할 만한 한계"
+  },
+  {
+   "type": "p",
+   "en": "Many safeguards can be reused across different deployments, and so in practice we may find that the majority of deployments need few new safeguards and associated stress-testing beyond those already in place for prior deployments.",
+   "ko": "많은 안전장치는 여러 배포에 걸쳐 재사용될 수 있으므로, 실제로는 대부분의 배포에서 이전 배포를 위해 이미 마련된 것 외에 새로운 안전장치와 관련 스트레스 테스트가 거의 필요하지 않을 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "SAG is responsible for assessing whether the safeguards associated with a given deployment sufficiently minimize the risk of severe harm associated with the proposed deployment. The SAG will make this determination based on:",
+   "ko": "안전 자문 그룹은 특정 배포와 관련된 안전장치가 제안된 배포와 관련된 심각한 피해의 위험을 충분히 최소화하는지 평가할 책임이 있다. 안전 자문 그룹은 다음을 근거로 이를 판단한다.",
+   "marks": [
+    {
+     "t": "안전 자문 그룹은 특정 배포와 관련된 안전장치가 제안된 배포와 관련된 심각한 피해의 위험을 충분히 최소화하는지 평가할 책임이 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "The level of capability in the Tracked Category based on the Capabilities Report.",
+   "ko": "역량 보고서에 근거한 추적 범주에서의 역량 수준"
+  },
+  {
+   "type": "li",
+   "en": "The associated risks of severe harm , as described in the threat model and where needed, advice of internal or external experts.",
+   "ko": "위협 모델에 기술된, 그리고 필요한 경우 내부 또는 외부 전문가의 자문을 반영한 관련 심각한 피해의 위험"
+  },
+  {
+   "type": "p",
+   "en": "Table 3: Types of safeguards. See Appendix C.1 and C.2 for additional details.",
+   "ko": "표 3: 안전장치 유형. 자세한 내용은 부록 C.1 및 C.2 참조.",
+   "refs": [
+    {
+     "t": "부록 C.1",
+     "to": "s158"
+    }
+   ]
+  },
+  {
+   "type": "table",
+   "en": "| Safeguards Against Malicious Users | Safeguards Against a Misaligned Model | ⏎ | Potential claims: • Robustness: Malicious users cannot use the model to cause the severe harm because they cannot elicit the necessary capability, such as because the model is modified to refuse to provide assistance to harmful tasks and is robust to jailbreaks that would circumvent those refusals. • Usage Monitoring: If a model does not refuse and provides assistance to harmful tasks, monitors can stop or catch malicious users before they have achieved an unacceptable scale of harm, through a combination of automated and human detection and enforcement within an acceptable time frame. • Trust-based Access: The actors who gain access to the model are not going to use it in a way that presents an associated risk of severe harm under our threat model. | Potential claims: • Lack of Autonomous Capability : The model is not capable of carrying out tasks autonomously, including the risk of severe harm. • Value Alignment : The model consistently applies human values in novel settings (without any instructions) to avoid taking actions that cause harm, and has shown sufficiently minimal indications of misaligned behaviors like deception or scheming. • Instruction Alignment : The model consistently understands and follows user or system instructions, even when vague, and those instructions rule out pathways to causing severe harm. • Reliable and Robust System Oversight : Effective AI and human oversight of model actions detects and prevents execution of harm or subversion of safeguards. • System Architecture : The model can't take actions that cause harm because it lacks access to output channels or mechanisms to persist sufficiently to execute the harm, due to system design and restricted permissions. |",
+   "ko": "| 악의적 사용자에 대한 안전장치 | 오정렬된 모델에 대한 안전장치 | ⏎ | 잠재적 주장: • 강건성: 악의적 사용자는 필요한 역량을 이끌어낼 수 없으므로 모델을 이용해 심각한 피해를 야기할 수 없다. 예를 들어, 모델이 유해한 과업에 대한 지원을 거부하도록 수정되어 있고, 그러한 거부를 우회하려는 탈옥(Jailbreak)에 대해 강건하기 때문이다. • 사용 모니터링(Usage Monitoring): 모델이 거부하지 않고 유해한 과업에 대한 지원을 제공하더라도, 자동화된 탐지·조치와 인간에 의한 탐지·조치를 결합하여 허용 가능한 시간 내에 모니터링을 통해 악의적 사용자가 용납할 수 없는 규모의 피해를 달성하기 전에 이를 저지하거나 적발할 수 있다. • 신뢰 기반 접근(Trust-based Access): 모델에 접근하는 행위자는 우리의 위협 모델상 관련 심각한 피해의 위험을 초래하는 방식으로 모델을 사용하지 않을 것이다. | 잠재적 주장: • 자율 역량의 부재(Lack of Autonomous Capability): 모델은 심각한 피해의 위험을 포함하여 과업을 자율적으로 수행할 역량이 없다. • 가치 정렬(Value Alignment): 모델은 (어떠한 지시 없이도) 새로운 환경에서 인간의 가치를 일관되게 적용하여 피해를 야기하는 행동을 회피하며, 기만이나 계략적 행동과 같은 오정렬 행동의 징후가 충분히 최소한으로만 나타났다. • 지시 정렬(Instruction Alignment): 모델은 사용자 또는 시스템 지시가 모호하더라도 이를 일관되게 이해하고 따르며, 그러한 지시는 심각한 피해를 야기하는 경로를 배제한다. • 신뢰할 수 있고 강건한 시스템 감독(Reliable and Robust System Oversight): 모델의 행동에 대한 효과적인 AI 감독 및 인간 감독이 피해의 실행 또는 안전장치의 무력화를 탐지하고 방지한다. • 시스템 아키텍처: 시스템 설계와 제한된 권한으로 인해 모델은 출력 채널에 접근하지 못하거나 피해를 실행할 만큼 충분히 지속할 수 있는 메커니즘을 갖추지 못하므로 피해를 야기하는 행동을 할 수 없다. |"
+  },
+  {
+   "type": "li",
+   "en": "The safeguards in place and their effectiveness based on the Safeguards Report.",
+   "ko": "안전장치 보고서에 근거한, 마련된 안전장치와 그 효과성"
+  },
+  {
+   "type": "li",
+   "en": "The baseline risk from other deployments , based on a review of any non-OpenAI deployments of models which have crossed the capability thresholds and any public evidence of the safeguards applied for those models.",
+   "ko": "역량 임계값을 넘은 모델의 OpenAI 외 배포 사례 및 해당 모델에 적용된 안전장치에 관한 공개 증거에 대한 검토에 근거한, 다른 배포로부터의 기준 위험",
+   "marks": [
+    {
+     "t": "역량 임계값을 넘은 모델의 OpenAI 외 배포 사례",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Covered systems that reach High capability must have safeguards that sufficiently minimize the associated risk of severe harm before they are deployed. Systems that reach Critical capability also require safeguards that sufficiently minimize associated risks during development.",
+   "ko": "높은(High) 역량에 도달한 적용 대상 시스템은 배포되기 전에 관련 심각한 피해의 위험을 충분히 최소화하는 안전장치를 갖추어야 한다. 치명적(Critical) 역량에 도달한 시스템은 개발 과정에서도 관련 위험을 충분히 최소화하는 안전장치를 필요로 한다.",
+   "marks": [
+    {
+     "t": "높은(High) 역량에 도달한 적용 대상 시스템은 배포되기 전에 관련 심각한 피해의 위험을 충분히 최소화하는 안전장치를 갖추어야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "치명적(Critical) 역량에 도달한 시스템은 개발 과정에서도 관련 위험을 충분히 최소화하는 안전장치를 필요로 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Based on this evidence, SAG then has the following decision points:",
+   "ko": "이러한 증거를 바탕으로 안전 자문 그룹은 다음과 같은 결정 사항을 갖는다."
+  },
+  {
+   "type": "li",
+   "en": "SAG can find that it is confident that the safeguards sufficiently minimize the associated risk of severe harm for the proposed deployment, and recommend deployment .",
+   "ko": "안전 자문 그룹은 안전장치가 제안된 배포에 대해 관련 심각한 피해의 위험을 충분히 최소화한다고 확신하고 배포를 권고할 수 있다."
+  },
+  {
+   "type": "li",
+   "en": "SAG can request further evaluation of the effectiveness of the safeguards to evaluate if the associated risk of severe harm is sufficiently minimized",
+   "ko": "안전 자문 그룹은 관련 심각한 피해의 위험이 충분히 최소화되었는지 평가하기 위해 안전장치의 효과성에 대한 추가 평가를 요청할 수 있다."
+  },
+  {
+   "type": "li",
+   "en": "SAG can fi nd the safeguards do not sufficiently minimize the risk of severe harm and recommend potential alternative deployment conditions or additional or more effective safeguards that would sufficiently minimize the risk.",
+   "ko": "안전 자문 그룹은 안전장치가 심각한 피해의 위험을 충분히 최소화하지 못한다고 판단하고, 위험을 충분히 최소화할 수 있는 잠재적 대안 배포 조건 또는 추가적이거나 더 효과적인 안전장치를 권고할 수 있다.",
+   "marks": [
+    {
+     "t": "안전장치가 심각한 피해의 위험을 충분히 최소화하지 못한다고 판단하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The SAG will strive to recommend further actions that are as targeted and non-disruptive as possible while still mitigating risks of severe harm. All of SAG's recommendations will go to OpenAI Leadership for final decision-making in accordance with the decision-making practices outlined in Appendix B.",
+   "ko": "안전 자문 그룹은 심각한 피해의 위험을 완화하면서도 가능한 한 표적화되고 지장을 최소화하는 추가 조치를 권고하도록 노력한다. 안전 자문 그룹의 모든 권고는 부록 B에 기술된 의사결정 실행 방안에 따라 최종 의사결정을 위해 OpenAI 경영진에게 전달된다.",
+   "marks": [
+    {
+     "t": "최종 의사결정을 위해 OpenAI 경영진에게 전달된다",
+     "k": "safety"
+    }
+   ],
+   "refs": [
+    {
+     "t": "부록 B",
+     "to": "s137"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We expect to continuously improve our safeguards over time. If we find reasonable evidence that our safeguards are not working as expected, we will validate the information being received and review the sufficiency of our safeguards.",
+   "ko": "우리는 시간이 지남에 따라 안전장치를 지속적으로 개선할 것으로 예상한다. 안전장치가 예상대로 작동하지 않는다는 합리적인 증거를 발견하는 경우, 우리는 수신되는 정보를 검증하고 안전장치의 충분성을 검토한다.",
+   "marks": [
+    {
+     "t": "안전장치가 예상대로 작동하지 않는다는 합리적인 증거를 발견하는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "4.3 Marginal risk",
+   "ko": "4.3 한계 위험",
+   "id": "s103"
+  },
+  {
+   "type": "p",
+   "en": "We recognize that another frontier AI model developer might develop or release a system with High or Critical capability in one of this Framework's Tracked Categories and may do so without instituting comparable safeguards to the ones we have committed to. Such an action could significantly increase the baseline risk of severe harm being realized in the world, and limit the degree to which we can reduce risk using our safeguards. If we are able to rigorously confirm that such a scenario has occurred, then we could adjust accordingly the level of safeguards that we require in that capability area, but only if:",
+   "ko": "우리는 다른 프론티어 AI 모델 개발자가 이 프레임워크의 추적 범주 중 하나에서 높은 역량 또는 치명적 역량을 갖춘 시스템을 개발하거나 출시할 수 있으며, 우리가 약속한 것에 상응하는 안전장치를 마련하지 않은 채 그렇게 할 수 있음을 인지하고 있다. 그러한 행위는 세계에서 심각한 피해가 현실화될 기준 위험을 크게 증가시키고, 우리가 안전장치를 통해 위험을 줄일 수 있는 정도를 제한할 수 있다. 그러한 시나리오가 발생했음을 엄격하게 확인할 수 있는 경우, 우리는 해당 역량 영역에서 요구하는 안전장치 수준을 그에 맞게 조정할 수 있으나, 이는 다음의 경우에 한한다.",
+   "marks": [
+    {
+     "t": "우리가 약속한 것에 상응하는 안전장치를 마련하지 않은 채 그렇게 할 수 있음을 인지하고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "그러한 행위는 세계에서 심각한 피해가 현실화될 기준 위험을 크게 증가시키고, 우리가 안전장치를 통해 위험을 줄일 수 있는 정도를 제한할 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "우리는 해당 역량 영역에서 요구하는 안전장치 수준을 그에 맞게 조정할 수 있으나",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "we assess that doing so does not meaningfully increase the overall risk of severe harm,",
+   "ko": "그렇게 하는 것이 심각한 피해의 전체 위험을 유의미하게 증가시키지 않는다고 평가하는 경우,",
+   "marks": [
+    {
+     "t": "심각한 피해의 전체 위험을 유의미하게 증가시키지 않는다고 평가하는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "we publicly acknowledge that we are making the adjustment,",
+   "ko": "조정을 하고 있음을 공개적으로 인정하는 경우,",
+   "marks": [
+    {
+     "t": "조정을 하고 있음을 공개적으로 인정하는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "and, in order to avoid a race to the bottom on safety, we keep our safeguards at a level more protective than the other AI developer, and share information to validate this claim.",
+   "ko": "그리고 안전에 관한 바닥으로의 경쟁을 피하기 위해, 우리의 안전장치를 다른 AI 개발자보다 더 보호적인 수준으로 유지하고 이러한 주장을 검증할 수 있는 정보를 공유하는 경우.",
+   "marks": [
+    {
+     "t": "안전에 관한 바닥으로의 경쟁을 피하기 위해",
+     "k": "safety"
+    },
+    {
+     "t": "우리의 안전장치를 다른 AI 개발자보다 더 보호적인 수준으로 유지하고 이러한 주장을 검증할 수 있는 정보를 공유하는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "4.4 Increasing safeguards before internal use and further development",
+   "ko": "4.4 내부 사용 및 추가 개발 이전의 안전장치 강화",
+   "id": "s108"
+  },
+  {
+   "type": "p",
+   "en": "Models that have reached or are forecasted to reach Critical capability in a Tracked Category present severe dangers and should be treated with extreme caution.",
+   "ko": "추적 범주에서 치명적 역량에 도달했거나 도달할 것으로 예측되는 모델은 심각한 위험을 제기하므로 극도로 신중하게 다루어야 한다.",
+   "marks": [
+    {
+     "t": "추적 범주에서 치명적 역량에 도달했거나 도달할 것으로 예측되는 모델은 심각한 위험을 제기하므로 극도로 신중하게 다루어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Such models require additional safeguards (safety and security controls) during development, regardless of whether or when they are externally deployed. We do not currently possess any models that have Critical levels of capability, and we expect to further update this Preparedness Framework before reaching such a level with any model.",
+   "ko": "그러한 모델은 외부 배포 여부나 시점과 관계없이 개발 과정에서 추가적인 안전장치(안전 및 보안 통제)를 필요로 한다. 우리는 현재 치명적 수준의 역량을 갖춘 모델을 보유하고 있지 않으며, 어떤 모델이든 그러한 수준에 도달하기 전에 이 대비 프레임워크를 추가로 갱신할 것으로 예상한다.",
+   "marks": [
+    {
+     "t": "외부 배포 여부나 시점과 관계없이 개발 과정에서 추가적인 안전장치(안전 및 보안 통제)를 필요로 한다",
+     "k": "safety"
+    },
+    {
+     "t": "우리는 현재 치명적 수준의 역량을 갖춘 모델을 보유하고 있지 않으며",
+     "k": "safety"
+    },
+    {
+     "t": "어떤 모델이든 그러한 수준에 도달하기 전에 이 대비 프레임워크를 추가로 갱신할 것으로 예상한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our approach to Critical capabilities will need to be robust to both malicious actors (either internal or external) and model misalignment risks. The SAG retains discretion over when to request deep dive evaluations of models whose scalable evaluations indicate that they may possess or may be nearing critical capability thresholds.",
+   "ko": "치명적 역량에 대한 우리의 접근법은 (내부 또는 외부의) 악의적 행위자와 모델 오정렬 위험 모두에 대해 강건해야 한다. 안전 자문 그룹은 확장 가능한 평가 결과 치명적 역량 임계값을 보유하고 있거나 이에 근접하고 있을 수 있는 것으로 나타난 모델에 대해 심층 평가(deep dive evaluation)를 언제 요청할지에 관한 재량권을 보유한다.",
+   "marks": [
+    {
+     "t": "(내부 또는 외부의) 악의적 행위자와 모델 오정렬 위험 모두에 대해 강건해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "치명적 역량 임계값을 보유하고 있거나 이에 근접하고 있을 수 있는 것으로 나타난 모델에 대해 심층 평가(deep dive evaluation)를 언제 요청할지에 관한 재량권",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "5 Building trust",
+   "ko": "5 신뢰 구축",
+   "id": "s112"
+  },
+  {
+   "type": "p",
+   "en": "Effective implementation of the Preparedness Framework requires internal and external accountability, so that the public, governments, and our industry peers can trust in our adherence to this policy.",
+   "ko": "대비 프레임워크를 효과적으로 이행하려면 대중, 정부 및 업계 동료가 우리의 이 정책 준수를 신뢰할 수 있도록 내부 및 외부 책임성이 필요하다.",
+   "marks": [
+    {
+     "t": "대중, 정부 및 업계 동료가 우리의 이 정책 준수를 신뢰할 수 있도록 내부 및 외부 책임성이 필요하다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "5.1 Internal governance",
+   "ko": "5.1 내부 거버넌스",
+   "id": "s114"
+  },
+  {
+   "type": "li",
+   "en": "Clear internal decision-making practices . We have clear roles and responsibilities and decisionmaking practices as described in Appendix B.",
+   "ko": "명확한 내부 의사결정 실행 방안. 우리는 부록 B에 기술된 바와 같이 명확한 역할과 책임 및 의사결정 실행 방안을 갖추고 있다.",
+   "refs": [
+    {
+     "t": "부록 B",
+     "to": "s137"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Internal Transparency . We will document relevant reports made to the SAG and of SAG's decision and reasoning. Employees may also request and receive a summary of the testing results and SAG recommendation on capability levels and safeguards (subject to certain limits for highly sensitive information).",
+   "ko": "내부 투명성. 우리는 안전 자문 그룹에 제출된 관련 보고서와 안전 자문 그룹의 결정 및 그 추론을 문서화한다. 직원은 또한 역량 수준과 안전장치에 관한 테스트 결과 및 안전 자문 그룹 권고의 요약을 요청하고 받을 수 있다(고도로 민감한 정보에 대해서는 일정한 제한이 적용됨).",
+   "marks": [
+    {
+     "t": "우리는 안전 자문 그룹에 제출된 관련 보고서와 안전 자문 그룹의 결정 및 그 추론을 문서화한다.",
+     "k": "key"
+    },
+    {
+     "t": "역량 수준과 안전장치에 관한 테스트 결과 및 안전 자문 그룹 권고의 요약을 요청하고 받을 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Noncompliance . Any employee can raise concerns about potential violations of this policy, or about its implementation, via our Raising Concerns Policy. We will track and appropriately investigate any reported or otherwise identified potential instances of noncompliance with this policy, and where reports are substantiated, will take appropriate and proportional corrective action.",
+   "ko": "미준수. 모든 직원은 Raising Concerns Policy를 통해 이 정책의 잠재적 위반이나 그 이행에 관한 우려를 제기할 수 있다. 우리는 보고되었거나 달리 식별된 이 정책의 잠재적 미준수 사례를 추적하고 적절하게 조사하며, 보고가 사실로 입증되는 경우 적절하고 비례적인 시정 조치를 취한다.",
+   "marks": [
+    {
+     "t": "Raising Concerns Policy를 통해 이 정책의 잠재적 위반이나 그 이행에 관한 우려를 제기할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "보고가 사실로 입증되는 경우 적절하고 비례적인 시정 조치를 취한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "5.2 Transparency and external participation",
+   "ko": "5.2 투명성 및 외부 참여",
+   "id": "s118"
+  },
+  {
+   "type": "li",
+   "en": "Public disclosures : We will release information about our Preparedness Framework results in order to facilitate public awareness of the state of frontier AI capabilities for major deployments. This published information will include the scope of testing performed, capability evaluations for each Tracked Category, our reasoning for the deployment decision, and any other context about a model's development or capabilities that was decisive in the decision to deploy. Additionally, if the model is beyond a High threshold, we will include information about safeguards we have implemented to sufficiently minimize the associated risks. Such disclosures about results and safeguards may be redacted or summarized where necessary, such as to protect intellectual property or safety.",
+   "ko": "공개: 우리는 주요 배포에 대한 프론티어 AI 역량 현황에 관한 대중의 인식을 높이기 위해 대비 프레임워크 결과에 관한 정보를 공개한다. 공개되는 정보에는 수행된 테스트의 범위, 각 추적 범주에 대한 역량 평가, 배포 결정에 대한 우리의 추론, 그리고 배포 결정에 결정적이었던 모델의 개발 또는 역량에 관한 기타 맥락이 포함된다. 또한 모델이 높은(High) 임계값을 넘어서는 경우, 관련 위험을 충분히 최소화하기 위해 구현한 안전장치에 관한 정보를 포함한다. 결과 및 안전장치에 관한 이러한 공개 내용은 지식재산권이나 안전을 보호하기 위해 필요한 경우 삭제 처리되거나 요약될 수 있다.",
+   "marks": [
+    {
+     "t": "대비 프레임워크 결과에 관한 정보를 공개한다",
+     "k": "key"
+    },
+    {
+     "t": "모델이 높은(High) 임계값을 넘어서는 경우, 관련 위험을 충분히 최소화하기 위해 구현한 안전장치에 관한 정보를 포함한다",
+     "k": "safety"
+    },
+    {
+     "t": "지식재산권이나 안전을 보호하기 위해 필요한 경우 삭제 처리되거나 요약될 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Third-party evaluation of tracked model capabilities : If we deem that a deployment warrants deeper testing of Tracked Categories of capability (as described in Section 3.1), for example based on results of Capabilities Report presented to them, then when available and feasible, OpenAI will work with third-parties to independently evaluate models.",
+   "ko": "추적 대상 모델 역량에 대한 제3자 평가: 예를 들어 그들에게 제출된 역량 보고서의 결과에 근거하여 특정 배포에 대해 추적 범주 역량에 대한 보다 심층적인 테스트(3.1절에 기술된 바와 같이)가 필요하다고 판단하는 경우, OpenAI는 가능하고 실행 가능한 때에 제3자와 협력하여 모델을 독립적으로 평가한다.",
+   "marks": [
+    {
+     "t": "OpenAI는 가능하고 실행 가능한 때에 제3자와 협력하여 모델을 독립적으로 평가한다",
+     "k": "key"
+    }
+   ],
+   "refs": [
+    {
+     "t": "3.1절",
+     "to": "s45"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Third-party stress testing of safeguards : If we deem that a deployment warrants third party stress testing of safeguards and if high quality third-party testing is available, we will work with third parties to evaluate safeguards. We may seek this out in particular for models that are over a High capability threshold.",
+   "ko": "안전장치에 대한 제3자 스트레스 테스트: 특정 배포에 대해 안전장치에 대한 제3자 스트레스 테스트가 필요하다고 판단하고 고품질의 제3자 테스트를 이용할 수 있는 경우, 우리는 제3자와 협력하여 안전장치를 평가한다. 특히 높은 역량 임계값을 넘어서는 모델에 대해 이를 추진할 수 있다.",
+   "marks": [
+    {
+     "t": "우리는 제3자와 협력하여 안전장치를 평가한다",
+     "k": "safety"
+    },
+    {
+     "t": "특히 높은 역량 임계값을 넘어서는 모델에 대해 이를 추진할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Independent expert opinions for evidence produced to SAG : The SAG may opt to get independent expert opinion on the evidence being produced to SAG. The purpose of this input is to add independent analysis from individuals or organizations with deep expertise in domains of relevant risks (e.g., biological risk). If provided, these opinions will form part of the analysis presented to SAG in making its decision on the safety of a deployment. These domain experts may not necessarily be AI experts and their input will form one part of the holistic evidence that SAG reviews.",
+   "ko": "안전 자문 그룹에 제출된 증거에 대한 독립 전문가 의견: 안전 자문 그룹은 자신에게 제출되는 증거에 대해 독립 전문가 의견을 구할 수 있다. 이 입력의 목적은 관련 위험 영역(예: 생물학적 위험)에 깊은 전문성을 갖춘 개인이나 조직의 독립적 분석을 추가하는 것이다. 이러한 의견이 제공되는 경우, 이는 안전 자문 그룹이 배포의 안전성에 관한 결정을 내릴 때 제시되는 분석의 일부를 구성한다. 이러한 분야 전문가가 반드시 AI 전문가일 필요는 없으며, 이들의 입력은 안전 자문 그룹이 검토하는 종합적 증거의 일부를 구성한다.",
+   "marks": [
+    {
+     "t": "안전 자문 그룹은 자신에게 제출되는 증거에 대해 독립 전문가 의견을 구할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "관련 위험 영역(예: 생물학적 위험)에 깊은 전문성을 갖춘 개인이나 조직의 독립적 분석",
+     "k": "safety"
+    },
+    {
+     "t": "안전 자문 그룹이 배포의 안전성에 관한 결정을 내릴 때 제시되는 분석의 일부를 구성한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "A Change log",
+   "ko": "A 변경 이력",
+   "id": "s123"
+  },
+  {
+   "type": "p",
+   "en": "In this version of the Preparedness Framework, we make a number of updates, designed to reflect what we've learned and update our safety and governance process for the next generations of highly capable models. Key changes include that we:",
+   "ko": "이번 버전의 대비 프레임워크에서는 우리가 학습한 내용을 반영하고 차세대 고역량(Highly capable) 모델을 위한 안전 및 거버넌스 절차를 갱신하기 위해 여러 가지 업데이트를 수행한다. 주요 변경 사항은 다음과 같다.",
+   "marks": [
+    {
+     "t": "차세대 고역량(Highly capable) 모델을 위한 안전 및 거버넌스 절차를 갱신하기 위해 여러 가지 업데이트를 수행한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Clarify the relationship among capabilities, risks and safeguards . In our updated framework, we make clear that we use a holistic process to decide which areas of frontier AI capability to track, and to define threshold levels of those capabilities that are associated with meaningful increases in risk of severe harm. We describe how we develop and maintain threat models that identify these severe risks, and how we evaluate model capabilities and build and test safeguards that sufficiently minimize the associated risks. We make clear that safeguards can take a variety of forms, and that reducing risk generally does not require reducing capability.",
+   "ko": "역량, 위험, 안전장치 간 관계의 명확화. 갱신된 프레임워크에서 우리는 프론티어 AI 역량 중 어느 영역을 추적할지 결정하고, 심각한 피해의 위험을 유의미하게 증가시키는 것과 관련된 해당 역량의 임계 수준을 정의하기 위해 종합적인 절차를 사용함을 명확히 한다. 우리는 이러한 심각한 위험을 식별하는 위협 모델을 어떻게 개발하고 유지하는지, 그리고 모델 역량을 어떻게 평가하고 관련 위험을 충분히 최소화하는 안전장치를 어떻게 구축하고 테스트하는지 기술한다. 우리는 안전장치가 다양한 형태를 취할 수 있으며, 위험 감소에 일반적으로 역량 감소가 필요하지 않음을 명확히 한다.",
+   "marks": [
+    {
+     "t": "심각한 피해의 위험을 유의미하게 증가시키는 것과 관련된 해당 역량의 임계 수준을 정의",
+     "k": "safety"
+    },
+    {
+     "t": "관련 위험을 충분히 최소화하는 안전장치를 어떻게 구축하고 테스트하는지 기술한다",
+     "k": "safety"
+    },
+    {
+     "t": "위험 감소에 일반적으로 역량 감소가 필요하지 않음을 명확히 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Define how High and Critical capability thresholds relate to underlying risks . High capability thresholds mean capabilities that significantly increase existing risk vectors for severe harm under the relevant threat model. Critical capability thresholds mean capabilities that present a meaningful risk of a qualitatively new threat vector for severe harm with no ready precedent under the relevant threat model. Also, we are removing terms 'low' and 'medium' from the Framework, because those levels were not operationally involved in the execution of our Preparedness work.",
+   "ko": "높은 역량 임계값 및 치명적 역량 임계값과 근본 위험 간 관계의 정의. 높은 역량 임계값은 관련 위협 모델하에서 심각한 피해에 대한 기존 위험 벡터를 상당히 증가시키는 역량을 의미한다. 치명적 역량 임계값은 관련 위협 모델하에서 마땅한 전례가 없는, 심각한 피해에 대한 질적으로 새로운 위협 벡터의 유의미한 위험을 제기하는 역량을 의미한다. 또한 '낮음(low)' 및 '중간(medium)' 수준은 대비 업무 수행에 운영상 관여하지 않았으므로 프레임워크에서 해당 용어를 삭제한다.",
+   "marks": [
+    {
+     "t": "심각한 피해에 대한 기존 위험 벡터를 상당히 증가시키는 역량",
+     "k": "safety"
+    },
+    {
+     "t": "심각한 피해에 대한 질적으로 새로운 위협 벡터의 유의미한 위험을 제기하는 역량",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Give specific criteria for which capabilities we track . Wetrack capabilities that create risks meeting five criteria - they are plausible, measurable, severe, net new, and instantaneous or irremediable.",
+   "ko": "추적 대상 역량에 대한 구체적 기준 제시. 우리는 다섯 가지 기준을 충족하는 위험을 야기하는 역량을 추적한다. 즉, 개연성이 있고(plausible), 측정 가능하며(measurable), 심각하고(severe), 순수하게 새로우며(net new), 즉각적이거나 회복 불가능한(instantaneous or irremediable) 위험이다.",
+   "marks": [
+    {
+     "t": "즉각적이거나 회복 불가능한(instantaneous or irremediable) 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Update the Tracked Categories of frontier capability accordingly, focusing on biological and chemical capability, cybersecurity, and AI self-improvement. Going forward we will handle risks related to persuasion outside the Preparedness Framework, including via our Model Spec and policy prohibitions on the use of our tools for political campaigning or lobbying, and our ongoing investigations of misuse of our products (including detecting and disrupting influence operations). We are moving Nuclear and Radiological capabilities into Research Categories.",
+   "ko": "이에 따라 프론티어 역량의 추적 범주를 갱신하여 생물학 및 화학 역량, 사이버 보안, AI 자기 개선에 초점을 맞춤. 앞으로 설득 관련 위험은 대비 프레임워크 외부에서 다루며, 여기에는 Model Spec 및 정치 캠페인이나 로비 활동에 우리 도구를 사용하는 것을 금지하는 정책, 그리고 우리 제품의 오용에 대한 지속적 조사(영향력 공작의 탐지 및 차단 포함)가 포함된다. 핵 및 방사능 역량은 연구 범주로 이동한다.",
+   "marks": [
+    {
+     "t": "생물학 및 화학 역량, 사이버 보안, AI 자기 개선에 초점을 맞춤",
+     "k": "safety"
+    },
+    {
+     "t": "설득 관련 위험은 대비 프레임워크 외부에서 다루며",
+     "k": "safety"
+    },
+    {
+     "t": "우리 제품의 오용에 대한 지속적 조사(영향력 공작의 탐지 및 차단 포함)",
+     "k": "safety"
+    },
+    {
+     "t": "핵 및 방사능 역량은 연구 범주로 이동한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Introduce Research Categories , areas of capability that do not meet the criteria to be Tracked Categories, but where we believe additional work is needed now. For these areas, in collaboration with external experts, we commit to further developing the associated threat models and advancing the science of capability measurement for the area, including by investing in the development of rigorous capability evaluations. These include Long-range Autonomy, Sandbagging, Autonomous Replication and Adaptation, Undermining Safeguards, and Nuclear and Radiological.",
+   "ko": "연구 범주의 도입. 연구 범주는 추적 범주의 기준은 충족하지 않으나 현재 추가 작업이 필요하다고 판단되는 역량 영역이다. 이러한 영역에 대해 우리는 외부 전문가와 협력하여 관련 위협 모델을 추가로 개발하고, 엄밀한 역량 평가 개발에 대한 투자를 포함하여 해당 영역의 역량 측정 과학을 발전시킬 것을 약정한다. 여기에는 장기 자율성, 샌드배깅, 자율 복제 및 적응, 안전장치 무력화, 핵 및 방사능이 포함된다.",
+   "marks": [
+    {
+     "t": "장기 자율성, 샌드배깅, 자율 복제 및 적응, 안전장치 무력화, 핵 및 방사능이 포함된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Provide more detail on our capability elicitation approach , making clear that we will consider a range of techniques in order to test a model version that approximates the high end of expected elicitation by threat actors attempting to misuse the model. We also define 'scalable evaluations,' which are automated, and distinguish these from 'deep dive' evaluations that may include consultation with human experts and are designed in part to validate the scalable evaluations.",
+   "ko": "역량 유도 접근법에 대한 보다 상세한 설명 제공. 모델을 오용하려는 위협 행위자가 시도할 것으로 예상되는 유도의 상한에 근접하는 모델 버전을 테스트하기 위해 다양한 기법을 고려할 것임을 명확히 한다. 또한 자동화된 '확장 가능한 평가'를 정의하고, 이를 인간 전문가와의 협의를 포함할 수 있으며 부분적으로 확장 가능한 평가를 검증하도록 설계된 '심층(deep dive)' 평가와 구분한다.",
+   "marks": [
+    {
+     "t": "모델을 오용하려는 위협 행위자가 시도할 것으로 예상되는 유도의 상한에 근접하는 모델 버전을 테스트",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Provide risk-specific safeguard guidelines . This information gives more detail on how we expect to safely develop and deploy models advanced enough to pose severe risks in tracked capability areas. As we move toward increasingly capable models, we are planning for safeguards that will be tailored to the specific risks they are intended to address.",
+   "ko": "위험별 안전장치 지침 제공. 이 정보는 추적 대상 역량 영역에서 심각한 위험을 제기할 만큼 고도화된 모델을 어떻게 안전하게 개발하고 배포할 것으로 예상하는지에 대해 보다 상세히 설명한다. 점점 더 역량이 높은 모델로 나아감에 따라, 우리는 대응하고자 하는 특정 위험에 맞춤화된 안전장치를 계획하고 있다.",
+   "marks": [
+    {
+     "t": "대응하고자 하는 특정 위험에 맞춤화된 안전장치를 계획하고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Establish Capabilities Reports and Safeguards Reports , the key artifacts we use to support informed decision-making under the Preparedness Framework in the context of systems that are capable enough to pose severe risks.",
+   "ko": "역량 보고서 및 안전장치 보고서의 수립. 이는 심각한 위험을 제기할 만큼 역량이 높은 시스템과 관련하여 대비 프레임워크하에서 정보에 입각한 의사결정을 지원하기 위해 사용하는 핵심 산출물이다.",
+   "marks": [
+    {
+     "t": "심각한 위험을 제기할 만큼 역량이 높은 시스템과 관련하여",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Clarify approach to establishing safeguard efficacy , moving beyond the flawed approach of rerunning capability evaluations on the safeguarded model and towards a more thorough assessment of each safeguard and its efficacy (Section 4.1).",
+   "ko": "안전장치 효과성 확립 접근법의 명확화. 안전장치가 적용된 모델에 역량 평가를 재실행하는 결함 있는 접근법에서 벗어나, 각 안전장치와 그 효과성에 대한 보다 철저한 평가(assessment)로 나아간다(4.1절).",
+   "marks": [
+    {
+     "t": "안전장치가 적용된 모델에 역량 평가를 재실행하는 결함 있는 접근법에서 벗어나",
+     "k": "safety"
+    }
+   ],
+   "refs": [
+    {
+     "t": "4.1절",
+     "to": "s74"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Deprioritize safety drills , as we are shifting our attention to a more durable approach of continuously red-teaming and assessing the effectiveness of our safeguards.",
+   "ko": "안전 훈련(safety drills)의 우선순위 하향. 안전장치의 효과성을 지속적으로 레드티밍하고 평가하는 보다 지속 가능한 접근법으로 관심을 전환하고 있기 때문이다.",
+   "marks": [
+    {
+     "t": "안전 훈련(safety drills)의 우선순위 하향",
+     "k": "safety"
+    },
+    {
+     "t": "안전장치의 효과성을 지속적으로 레드티밍하고 평가하는 보다 지속 가능한 접근법",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Clarify our focus on marginal risk , including the context of other systems available on the market, and outline our approach for maintaining responsible safeguards and reinforcing responsible practices across the industry if another actor releases a system we would assess as having High or Critical capability.",
+   "ko": "한계 위험에 대한 초점의 명확화. 여기에는 시장에서 이용 가능한 다른 시스템의 맥락이 포함되며, 다른 행위자가 우리가 높은(High) 또는 치명적(Critical) 역량을 보유한 것으로 평가할 시스템을 출시하는 경우 책임 있는 안전장치를 유지하고 업계 전반에 걸쳐 책임 있는 실행 방안을 강화하기 위한 접근법을 제시한다.",
+   "marks": [
+    {
+     "t": "다른 행위자가 우리가 높은(High) 또는 치명적(Critical) 역량을 보유한 것으로 평가할 시스템을 출시하는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Clarify the governance process . Our Safety Advisory Group oversees the effective design, implementation, and adherence to the Preparedness Framework, in partnership with safety leaders in the company. For covered launches, SAG assesses residual risk in tracked areas, net of safeguards, and makes expert recommendations on safeguard adequacy and deployment decision-making to OpenAI leadership.",
+   "ko": "거버넌스 절차의 명확화. 안전 자문 그룹은 사내 안전 책임자와 협력하여 대비 프레임워크의 효과적인 설계, 이행 및 준수를 감독한다. 적용 대상 출시에 대해 안전 자문 그룹은 추적 영역에서 안전장치를 반영한 후의 잔여 위험을 평가하고, 안전장치의 적절성과 배포 의사결정에 관한 전문가 권고를 OpenAI 경영진에 제공한다.",
+   "marks": [
+    {
+     "t": "안전 자문 그룹은 사내 안전 책임자와 협력하여 대비 프레임워크의 효과적인 설계, 이행 및 준수를 감독한다",
+     "k": "key"
+    },
+    {
+     "t": "추적 영역에서 안전장치를 반영한 후의 잔여 위험을 평가하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "B Decision-making practices",
+   "ko": "B 의사결정 실행 방안",
+   "id": "s137"
+  },
+  {
+   "type": "p",
+   "en": "We establish an operational structure to oversee our procedural commitments within the Preparedness Framework.",
+   "ko": "우리는 대비 프레임워크 내 절차적 약정을 감독하기 위한 운영 구조를 수립한다."
+  },
+  {
+   "type": "p",
+   "en": "The Safety Advisory Group (SAG) is responsible for:",
+   "ko": "안전 자문 그룹은 다음을 담당한다."
+  },
+  {
+   "type": "li",
+   "en": "Overseeing the effective design, implementation, and adherence to the Preparedness Framework in partnership with the safety organization leader",
+   "ko": "안전 조직 책임자와 협력하여 대비 프레임워크의 효과적인 설계, 이행 및 준수를 감독함"
+  },
+  {
+   "type": "li",
+   "en": "For each deployment in scope under the Preparedness Framework, reviewing relevant reports and all other relevant materials and assessing of the level of Tracked Category capabilities and any post-safeguards residual risks",
+   "ko": "대비 프레임워크 적용 범위에 속하는 각 배포에 대해 관련 보고서 및 기타 모든 관련 자료를 검토하고, 추적 범주 역량의 수준과 안전장치 적용 후의 잔여 위험을 평가함",
+   "marks": [
+    {
+     "t": "추적 범주 역량의 수준과 안전장치 적용 후의 잔여 위험을 평가함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "For each deployment under the Preparedness Framework, providing recommendations on potential next steps and any applicable risks to OpenAI Leadership, as well as rationale",
+   "ko": "대비 프레임워크하의 각 배포에 대해 잠재적 후속 조치 및 해당 위험에 관한 권고를 근거와 함께 OpenAI 경영진에 제공함",
+   "marks": [
+    {
+     "t": "잠재적 후속 조치 및 해당 위험에 관한 권고를 근거와 함께 OpenAI 경영진에 제공함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Making other recommendations to OpenAI Leadership on longer-term changes or investments that are forecasted to be necessary for upcoming models to continue to keep residual risks at acceptable levels",
+   "ko": "향후 모델이 잔여 위험을 계속 수용 가능한 수준으로 유지하는 데 필요할 것으로 예측되는 장기적 변경 또는 투자에 관해 OpenAI 경영진에 기타 권고를 제공함",
+   "marks": [
+    {
+     "t": "향후 모델이 잔여 위험을 계속 수용 가능한 수준으로 유지하는 데 필요할 것으로 예측되는 장기적 변경 또는 투자",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "For the avoidance of doubt, OpenAI Leadership can also make decisions without the SAG's participation, i.e., the SAG does not have the ability to 'filibuster'",
+   "ko": "오해의 소지를 없애기 위해 명시하자면, OpenAI 경영진은 안전 자문 그룹의 참여 없이도 결정을 내릴 수 있다. 즉, 안전 자문 그룹은 '필리버스터'를 행사할 권한이 없다.",
+   "marks": [
+    {
+     "t": "OpenAI 경영진은 안전 자문 그룹의 참여 없이도 결정을 내릴 수 있다. 즉, 안전 자문 그룹은 '필리버스터'를 행사할 권한이 없다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "SAG Membership: the SAG provides a diversity of perspectives to evaluate the strength of evidence related to catastrophic risk and recommend appropriate actions.",
+   "ko": "SAG 구성: 안전 자문 그룹은 파국적 위험과 관련된 증거의 강도를 평가하고 적절한 조치를 권고하기 위해 다양한 관점을 제공한다.",
+   "marks": [
+    {
+     "t": "파국적 위험과 관련된 증거의 강도를 평가하고 적절한 조치를 권고하기 위해 다양한 관점을 제공한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "The members of the SAG and the SAG Chair are appointed by the OpenAI Leadership.",
+   "ko": "안전 자문 그룹의 구성원과 의장은 OpenAI 경영진이 임명한다.",
+   "marks": [
+    {
+     "t": "안전 자문 그룹의 구성원과 의장은 OpenAI 경영진이 임명한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "SAG members serve for one year terms. OpenAI Leadership may choose to re-appoint someone from previous years to ensure there is continuity of knowledge and experience, while still ensuring that fresh and timely perspectives are present in the group.",
+   "ko": "안전 자문 그룹 구성원의 임기는 1년이다. OpenAI 경영진은 지식과 경험의 연속성을 확보하기 위해 이전 연도 구성원을 재임명할 수 있으며, 동시에 그룹 내에 새롭고 시의적절한 관점이 유지되도록 한다."
+  },
+  {
+   "type": "li",
+   "en": "The SAG Chair makes any final decisions needed for the SAG. This role is expected to rotate, as appointed by OpenAI Leadership.",
+   "ko": "안전 자문 그룹 의장은 안전 자문 그룹에 필요한 최종 결정을 내린다. 이 역할은 OpenAI 경영진의 임명에 따라 순환될 것으로 예상된다."
+  },
+  {
+   "type": "p",
+   "en": "OpenAI Leadership , i.e., the CEO or a person designated by them, is responsible for:",
+   "ko": "OpenAI 경영진, 즉 CEO 또는 CEO가 지정한 자는 다음을 담당한다."
+  },
+  {
+   "type": "li",
+   "en": "Making all final decisions, including accepting any residual risks and making deployment go/no-go decisions, informed by SAG's recommendations.",
+   "ko": "안전 자문 그룹의 권고를 바탕으로 잔여 위험의 수용 및 배포 진행/중단(go/no-go) 결정을 포함한 모든 최종 결정을 내림",
+   "marks": [
+    {
+     "t": "안전 자문 그룹의 권고를 바탕으로 잔여 위험의 수용 및 배포 진행/중단(go/no-go) 결정을 포함한 모든 최종 결정을 내림",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Resourcing the implementation of the Preparedness Framework (e.g., additional work on safeguards where necessary).",
+   "ko": "대비 프레임워크의 이행에 필요한 자원을 배정함(예: 필요한 경우 안전장치에 대한 추가 작업)",
+   "marks": [
+    {
+     "t": "필요한 경우 안전장치에 대한 추가 작업",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The Safety and Security Committee (SSC) of the OpenAI Board of Directors (Board) will be given visibility into processes, and can review decisions and otherwise require reports and information from OpenAI Leadership as necessary to fulfill the Board's oversight role. Where necessary, the Board may reverse a decision and/or mandate a revised course of action.",
+   "ko": "OpenAI 이사회(이사회) 산하 안전·보안 위원회(SSC)는 절차에 대한 가시성을 제공받으며, 이사회의 감독 역할을 수행하는 데 필요한 경우 결정을 검토하고 OpenAI 경영진에 보고서 및 정보를 요구할 수 있다. 필요한 경우 이사회는 결정을 번복하거나 수정된 조치 방향을 지시할 수 있다.",
+   "marks": [
+    {
+     "t": "안전·보안 위원회(SSC)는 절차에 대한 가시성을 제공받으며",
+     "k": "safety"
+    },
+    {
+     "t": "필요한 경우 이사회는 결정을 번복하거나 수정된 조치 방향을 지시할 수 있다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Updates to the Preparedness Framework. The Preparedness Framework is a living document and will be updated. The SAG reviews proposed changes to the Preparedness Framework and makes a recommendation that is processed according to the standard decision-making process. We will review and potentially update the Preparedness Framework for continued sufficiency at least once a year.",
+   "ko": "대비 프레임워크의 갱신. 대비 프레임워크는 지속적으로 갱신되는 문서(living document)이며 향후 갱신될 것이다. 안전 자문 그룹은 대비 프레임워크에 대한 변경 제안을 검토하고 권고를 제시하며, 이 권고는 표준 의사결정 절차에 따라 처리된다. 우리는 대비 프레임워크가 지속적으로 충분한지 확인하기 위해 최소 연 1회 이를 검토하고 필요시 갱신할 것이다.",
+   "marks": [
+    {
+     "t": "안전 자문 그룹은 대비 프레임워크에 대한 변경 제안을 검토하고 권고를 제시하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Fast-track. In the rare case that a risk of severe harm rapidly develops (e.g., there is a change in our understanding of model safety that requires urgent response), we can request a fast track for the SAG to process the report urgently. The SAG Chair should also coordinate with OpenAI Leadership for immediate reaction as needed to address the risk.",
+   "ko": "신속 처리(fast-track). 심각한 피해의 위험이 급격히 발생하는 드문 경우(예: 긴급 대응이 필요한 수준으로 모델 안전성에 대한 이해가 변화한 경우), 우리는 안전 자문 그룹이 보고서를 긴급히 처리하도록 신속 처리를 요청할 수 있다. 안전 자문 그룹 의장은 또한 해당 위험에 대응하기 위해 필요에 따라 즉각적인 대응을 위해 OpenAI 경영진과 조율해야 한다.",
+   "marks": [
+    {
+     "t": "심각한 피해의 위험이 급격히 발생하는 드문 경우(예: 긴급 대응이 필요한 수준으로 모델 안전성에 대한 이해가 변화한 경우)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "C Illustrative safeguards, controls, and efficacy assessments",
+   "ko": "C 안전장치, 통제 및 효과성 평가(assessment) 예시",
+   "id": "s155"
+  },
+  {
+   "type": "p",
+   "en": "This Appendix provides illustrative examples of potential safeguards, and safeguard efficacy assessments that could be used to establish that we have sufficiently mitigated the risk of severe harm. The examples aim to provide insight on our thinking, but many of the techniques require further research. The safeguards should not be construed as a definitive or comprehensive list of the safeguards we will or could apply to a given launch.",
+   "ko": "이 부록은 심각한 피해의 위험을 충분히 완화했음을 입증하는 데 사용될 수 있는 잠재적 안전장치와 안전장치 효과성 평가의 예시를 제공한다. 이 예시는 우리의 사고방식에 대한 통찰을 제공하기 위한 것이나, 상당수의 기법은 추가 연구가 필요하다. 이 안전장치들은 우리가 특정 출시에 적용할 또는 적용할 수 있는 안전장치의 확정적이거나 포괄적인 목록으로 해석되어서는 안 된다.",
+   "marks": [
+    {
+     "t": "심각한 피해의 위험을 충분히 완화했음을 입증하는 데 사용될 수 있는 잠재적 안전장치와 안전장치 효과성 평가의 예시",
+     "k": "safety"
+    },
+    {
+     "t": "상당수의 기법은 추가 연구가 필요하다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Asareminder, covered systems that reach High capability must have safeguards that sufficiently minimize the associated risk of severe harm before they are deployed. Systems that reach Critical capability also require sufficient safeguards during development.",
+   "ko": "다시 상기하자면, 높은(High) 역량에 도달한 적용 대상 시스템은 배포되기 전에 관련된 심각한 피해의 위험을 충분히 최소화하는 안전장치를 갖추어야 한다. 치명적(Critical) 역량에 도달한 시스템은 개발 과정에서도 충분한 안전장치가 요구된다.",
+   "marks": [
+    {
+     "t": "높은(High) 역량에 도달한 적용 대상 시스템은 배포되기 전에 관련된 심각한 피해의 위험을 충분히 최소화하는 안전장치를 갖추어야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "치명적(Critical) 역량에 도달한 시스템은 개발 과정에서도 충분한 안전장치가 요구된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "C.1 Safeguards against malicious users",
+   "ko": "C.1 악의적 사용자에 대한 안전장치",
+   "id": "s158"
+  },
+  {
+   "type": "p",
+   "en": "Several of the Tracked Categories pose risks via malicious users leveraging the frontier capability to enable severe harm, such as professional hackers automating and scaling cyberattacks or terrorists consulting a model to debug the development of a biological weapon.",
+   "ko": "여러 추적 범주는 악의적 사용자가 최첨단 역량을 활용하여 심각한 피해를 가능하게 함으로써 위험을 초래한다. 예를 들어, 전문 해커가 사이버 공격을 자동화하고 스케일링하거나, 테러리스트가 생물학 무기 개발 과정을 디버그하기 위해 모델에 자문을 구하는 경우가 이에 해당한다.",
+   "marks": [
+    {
+     "t": "악의적 사용자가 최첨단 역량을 활용하여 심각한 피해를 가능하게 함으로써 위험을 초래한다",
+     "k": "safety"
+    },
+    {
+     "t": "전문 해커가 사이버 공격을 자동화하고 스케일링하거나, 테러리스트가 생물학 무기 개발 과정을 디버그하기 위해 모델에 자문을 구하는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Safeguards should sufficiently minimize the risk of severe harm associated with misuse of the model's capabilities. This can be done by establishing that all plausible known vectors of enabling severe harm are sufficiently addressed by one or more of the following claims:",
+   "ko": "안전장치는 모델 역량의 오용과 관련된 심각한 피해의 위험을 충분히 최소화해야 한다. 이는 심각한 피해를 가능하게 하는 그럴듯한 모든 알려진 경로가 다음 주장 중 하나 이상에 의해 충분히 대응되고 있음을 입증함으로써 달성할 수 있다.",
+   "marks": [
+    {
+     "t": "안전장치는 모델 역량의 오용과 관련된 심각한 피해의 위험을 충분히 최소화해야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "심각한 피해를 가능하게 하는 그럴듯한 모든 알려진 경로가 다음 주장 중 하나 이상에 의해 충분히 대응되고 있음을 입증",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Robustness : Users cannot use the model to cause the harm because they cannot elicit the capability, such as because the model is modified to refuse to provide assistance to harmful tasks and is robust to jailbreaks that would circumvent those refusals.",
+   "ko": "강건성: 사용자가 해당 역량을 이끌어낼 수 없으므로 모델을 이용해 피해를 야기할 수 없다. 예를 들어, 모델이 유해한 과업에 대한 지원을 거부하도록 수정되어 있고, 이러한 거부를 우회하는 탈옥에 대해 강건한 경우가 이에 해당한다.",
+   "marks": [
+    {
+     "t": "모델이 유해한 과업에 대한 지원을 거부하도록 수정되어 있고, 이러한 거부를 우회하는 탈옥에 대해 강건한 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Usage Monitoring : If a model does not refuse and provides assistance to harmful tasks, monitors can stop or catch adversarial users before their misuse has achieved an unacceptable scale of harm, through a combination of automated and human detection and enforcement within an acceptable time frame.",
+   "ko": "사용 모니터링: 모델이 거부하지 않고 유해한 과업을 지원하는 경우, 모니터링 체계는 수용 가능한 시간 내에 자동화된 탐지·집행과 인간에 의한 탐지·집행을 결합하여, 적대적 사용자의 오용이 수용할 수 없는 규모의 피해에 이르기 전에 이를 저지하거나 적발할 수 있다.",
+   "marks": [
+    {
+     "t": "적대적 사용자의 오용이 수용할 수 없는 규모의 피해에 이르기 전에 이를 저지하거나 적발할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Trust-based Access : The actors who gain access to the model will not use it in a way that presents an associated risk of severe harm under our threat model.",
+   "ko": "신뢰 기반 접근: 모델에 대한 접근 권한을 얻는 행위자는 우리의 위협 모델상 관련된 심각한 피해의 위험을 초래하는 방식으로 모델을 사용하지 않을 것이다.",
+   "marks": [
+    {
+     "t": "우리의 위협 모델상 관련된 심각한 피해의 위험을 초래하는 방식으로 모델을 사용하지 않을 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The table below illustrates possible examples of safeguards and safeguard efficacy assessments we could consider to claim we have sufficiently minimized the risks of severe harm associated with a High level of capability under any of our Tracked Categories.",
+   "ko": "아래 표는 추적 범주 중 어느 하나에서든 높은(High) 수준의 역량과 관련된 심각한 피해의 위험을 충분히 최소화했다고 주장하기 위해 고려할 수 있는 안전장치 및 안전장치 효과성 평가의 가능한 예시를 보여준다.",
+   "marks": [
+    {
+     "t": "높은(High) 수준의 역량과 관련된 심각한 피해의 위험을 충분히 최소화했다고 주장하기 위해",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Table 4: Claims, potential safeguards, and efficacy assessments for malicious users",
+   "ko": "표 4: 악의적 사용자에 대한 주장, 잠재적 안전장치 및 효과성 평가"
+  },
+  {
+   "type": "table",
+   "en": "| Claim | Safeguards that could support this claim | Potential safeguard efficacy assessments | ⏎ | Robustness | • Training the model to refuse to help with high-risk tasks or to otherwise produce low-risk responses • Unlearning or training-data filtering to erase specific risk-enabling knowledge from the model's knowledge-base • Interpretability-based approaches, like activation steering, that directly edit models' thinking at inference time • Jailbreak robustness, including through adversarial training, inference-time deliberation, and more | • Automated and expert red-teaming (identifying success per resources) • Prevalence of jailbreaks identified via monitoring and reports, in historical deployments • Results from public jailbreak bounties and results from private and public jailbreak benchmarks | ⏎ | Usage Monitoring | • Monitoring harmful user requests, model responses, and aggregate usage patterns using auxiliary models trained to detect harmful tasks and jailbreak attempts • Blocking unsafe user requests and model responses automatically when possible and escalating to human review and approval otherwise • Expanding human monitoring and investigation capacity to track capabilities that pose a risk of severe harm, and developing data infrastructure and review tools to enable human investigations • Blocking access for users and organizations that violate our usage policies, leading to potential permanent bans • Expanding escalation channels with law enforcement channels | • Automated and human red-teaming of each oversight and review mechanism (focused on detection precision/recall) • In-production detection and enforcement SLAs for human monitoring teams, and historical performance • Rapid remediation of known jailbreaks: Time to patching a new known jailbreak • Redteamer success creating a certain number of accounts without detection (success per resources) | ⏎ | Trust-based Access | • Iterated deployment to wider user groups • Measures for establishing user trustworthiness - Trusted customer relationships - KYC and identity verification to enable traceability - KYC robustness to prevent a banned actor from creating new accounts at scale (recidivism) • Actor-policy standards, including bespoke usage policies that limit access to higher capabilities to trusted actors • Access conditions including variation across actors, e.g., rate-limits, fine-tuning access, releasing weights | • Iterated deployment to wider user group, with careful monitoring to detect instances of abuse |",
+   "ko": "| 주장 | 이 주장을 뒷받침할 수 있는 안전장치 | 잠재적 안전장치 효과성 평가 | ⏎ | 강건성 | • 고위험 과업에 대한 지원을 거부하거나 저위험 응답을 생성하도록 모델을 학습시킴 • 망각 학습(unlearning) 또는 학습 데이터 필터링을 통해 위험을 가능하게 하는 특정 지식을 모델의 지식 기반에서 제거함 • 활성화 조향(activation steering) 등 추론(Inference) 시점에 모델의 사고를 직접 편집하는 해석 가능성 기반 접근법 • 적대적 학습, 추론 시점 숙고(inference-time deliberation) 등을 통한 탈옥 강건성 | • 자동화 및 전문가 레드티밍(투입 자원 대비 성공 식별) • 과거 배포에서 모니터링 및 신고를 통해 식별된 탈옥의 발생 빈도 • 공개 탈옥 현상금 프로그램 결과 및 비공개·공개 탈옥 벤치마크 결과 | ⏎ | 사용 모니터링 | • 유해한 과업 및 탈옥 시도를 탐지하도록 학습된 보조 모델(Auxiliary Model)을 사용하여 유해한 사용자 요청, 모델 응답 및 전체 사용 패턴을 모니터링함 • 가능한 경우 안전하지 않은 사용자 요청 및 모델 응답을 자동으로 차단하고, 그렇지 않은 경우 인간 검토 및 승인으로 이관함 • 심각한 피해의 위험을 초래하는 역량을 추적하기 위해 인간 모니터링 및 조사 역량을 확대하고, 인간 조사를 가능하게 하는 데이터 인프라 및 검토 도구를 개발함 • 사용 정책을 위반하는 사용자 및 조직의 접근을 차단하며, 이는 영구 금지로 이어질 수 있음 • 법 집행 기관과의 이관 채널을 확대함 | • 각 감독 및 검토 메커니즘에 대한 자동화 및 인간 레드티밍(탐지 정밀도/재현율 중심) • 인간 모니터링 팀의 운영 환경 내 탐지 및 집행 SLA와 과거 성과 • 알려진 탈옥의 신속한 해결: 새로 알려진 탈옥을 패치하는 데 걸리는 시간 • 레드티머가 탐지되지 않고 일정 수의 계정을 생성하는 데 성공한 정도(투입 자원 대비 성공) | ⏎ | 신뢰 기반 접근 | • 더 넓은 사용자 집단으로의 반복적 배포 • 사용자 신뢰성 확립을 위한 조치 - 신뢰할 수 있는 고객 관계 - 추적 가능성 확보를 위한 KYC 및 신원 확인 - 금지된 행위자가 대규모로 새 계정을 생성하는 것(재범(recidivism))을 방지하기 위한 KYC 강건성 • 더 높은 역량에 대한 접근을 신뢰할 수 있는 행위자로 제한하는 맞춤형 사용 정책을 포함한 행위자 정책 기준 • 행위자별 차등을 포함한 접근 조건(예: 속도 제한, 미세조정(Fine-Tuning) 접근, 가중치 공개) | • 남용 사례를 탐지하기 위한 면밀한 모니터링을 수반하는, 더 넓은 사용자 집단으로의 반복적 배포 |"
+  },
+  {
+   "type": "h3",
+   "en": "C.2 Safeguards against a misaligned model",
+   "ko": "C.2 오정렬된 모델에 대한 안전장치",
+   "id": "s167"
+  },
+  {
+   "type": "p",
+   "en": "In addition to human misuse, several of the Tracked Category capabilities pose risks when models themselves are able to autonomously execute a severe harm, whether due to misalignment or subversion by an adversary.",
+   "ko": "인간의 오용 외에도, 여러 추적 범주 역량은 오정렬 또는 적대자에 의한 전복(subversion)으로 인해 모델 자체가 자율적으로 심각한 피해를 실행할 수 있게 될 때 위험을 초래한다.",
+   "marks": [
+    {
+     "t": "오정렬 또는 적대자에 의한 전복(subversion)으로 인해 모델 자체가 자율적으로 심각한 피해를 실행할 수 있게 될 때 위험을 초래한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Safeguards should sufficiently minimize the risk associated with a misaligned model circumventing human control and oversight and executing severe harms. This can be done by establishing that all plausible known vectors of enabling severe harm are sufficiently addressed by one or more of the following claims:",
+   "ko": "안전장치는 오정렬된 모델이 인간의 통제와 감독을 우회하여 심각한 피해를 실행하는 것과 관련된 위험을 충분히 최소화해야 한다. 이는 심각한 피해를 가능하게 하는 것으로 알려진 모든 개연성 있는 경로가 다음 주장 중 하나 이상에 의해 충분히 다루어지고 있음을 입증함으로써 달성할 수 있다.",
+   "marks": [
+    {
+     "t": "안전장치는 오정렬된 모델이 인간의 통제와 감독을 우회하여 심각한 피해를 실행하는 것과 관련된 위험을 충분히 최소화해야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "심각한 피해를 가능하게 하는 것으로 알려진 모든 개연성 있는 경로가 다음 주장 중 하나 이상에 의해 충분히 다루어지고 있음을 입증함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Lack of Autonomous Capability : The model is not capable of carrying out tasks autonomously, including the risk of severe harm.",
+   "ko": "자율적 역량의 부재: 모델이 심각한 피해의 위험을 포함하여 과업을 자율적으로 수행할 역량이 없다.",
+   "marks": [
+    {
+     "t": "모델이 심각한 피해의 위험을 포함하여 과업을 자율적으로 수행할 역량이 없다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Value Alignment : The model consistently applies human values in novel settings (without any instructions) to avoid taking actions that cause harm, and has shown sufficiently minimal indications of misaligned behaviors like deception or scheming.",
+   "ko": "가치 정렬: 모델이 새로운 환경에서도 (어떠한 지시 없이) 일관되게 인간의 가치를 적용하여 피해를 초래하는 행동을 회피하며, 기만이나 계략적 행동과 같은 오정렬된 행동의 징후가 충분히 최소한으로만 나타났다.",
+   "marks": [
+    {
+     "t": "기만이나 계략적 행동과 같은 오정렬된 행동의 징후가 충분히 최소한으로만 나타났다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Instruction Alignment : The model consistently understands and follows user or system instructions, even when vague, and those instructions rule out pathways to causing severe harm.",
+   "ko": "지시 정렬: 모델이 사용자 또는 시스템 지시를 모호한 경우에도 일관되게 이해하고 따르며, 해당 지시가 심각한 피해를 초래하는 경로를 배제한다.",
+   "marks": [
+    {
+     "t": "해당 지시가 심각한 피해를 초래하는 경로를 배제한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Reliable and Robust System Oversight : Effective AI and human oversight of model actions detects and prevents execution of harm or subversion of safeguards.",
+   "ko": "신뢰할 수 있고 강건한 시스템 감독: 모델 행동에 대한 효과적인 AI 및 인간 감독이 피해의 실행 또는 안전장치의 전복을 탐지하고 방지한다.",
+   "marks": [
+    {
+     "t": "효과적인 AI 및 인간 감독이 피해의 실행 또는 안전장치의 전복을 탐지하고 방지한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "System Architecture : The model can't take actions that cause harm because it lacks access to output channels or mechanisms to persist sufficiently to execute the harm, due to containerization and restricted permissions.",
+   "ko": "시스템 아키텍처: 컨테이너화 및 제한된 권한으로 인해 모델이 출력 채널에 접근할 수 없거나 피해를 실행할 만큼 충분히 지속할 수 있는 메커니즘이 없으므로, 피해를 초래하는 행동을 취할 수 없다.",
+   "marks": [
+    {
+     "t": "컨테이너화 및 제한된 권한으로 인해 모델이 출력 채널에 접근할 수 없거나",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "These misalignment claims may be further complemented by the safeguards applied towards the malicious-actor-oriented 'Robustness' and 'Usage Monitoring' claims, which similarly limit a misaligned model's use of its own or another model's capabilities.",
+   "ko": "이러한 오정렬 관련 주장은 악의적 행위자를 겨냥한 '강건성' 및 '사용 모니터링' 주장에 적용되는 안전장치로 추가 보완될 수 있으며, 이 안전장치들은 마찬가지로 오정렬된 모델이 자신 또는 다른 모델의 역량을 사용하는 것을 제한한다.",
+   "marks": [
+    {
+     "t": "오정렬된 모델이 자신 또는 다른 모델의 역량을 사용하는 것을 제한한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The table below illustrates possible examples of safeguards and safeguard efficacy assessments we could consider to claim we have sufficiently minimized the risks of severe harm associated with High level of capability under any of our Tracked Categories.",
+   "ko": "아래 표는 추적 범주 중 어느 하나에서든 높은 수준의 역량과 관련된 심각한 피해의 위험을 충분히 최소화했다고 주장하기 위해 고려할 수 있는 안전장치 및 안전장치 효과성 평가의 가능한 예시를 보여준다.",
+   "marks": [
+    {
+     "t": "높은 수준의 역량과 관련된 심각한 피해의 위험을 충분히 최소화했다고 주장하기 위해 고려할 수 있는 안전장치 및 안전장치 효과성 평가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "table",
+   "en": "| Claim | Potential safeguards | Potential safeguard efficacy assessments | ⏎ | Lack of Autonomous Capability | • Not applicable, as this involves capability evaluation. | • Long-range Autonomy capability evaluations show the model cannot act autonomously as described in the threat model (Section 2.3) | ⏎ | Value Alignment | • Generalization from specified or trained values • Steering or interpretability to control misaligned behaviors like deception or scheming | • Red-teamers create both environments and adversarial requests to probe the limits of the model's value alignment. Evidence of taking harmful actions, including deception and scheming, would be evidence of misalignment • Internal and external user reports, monitoring, or manual inspection for historical model deployments show no significant evidence of unexpected value alignment failures | ⏎ | Instruction Alignment | • Instruction following, instruction hierarchy and adherence to complex Model Specs • Model spec defined to comprehensively rule out risk pathways • Training user models and training AI to collaborate with users • Build risk models and training to avoid unnecessary risk • Training for uncertainty estimation and reliable answers | • Large scale usage or testing in realistic settings should show the model consistently takes action aligned to the user's instructions or goals (while maintaining value alignment and avoiding harm). Examples against would include trying to escape a container, lying to the user to appease them, etc. | ⏎ | Reliable and Robust System Oversight | • Monitor AI supervises agent actions to detect agent in the case of trying to take harmful actions, scheming, or similar • System forces human approval of agent actions (either by default, or by escalation of the monitor) • Model's reasoning is provided faithfully and interpretably to humans to review • Agent actions are all logged in an uneditable database, and asynchronous monitoring routines review those actions for evidence of harm | • Red-teamers can train an arbitrarily adversarial agent or can pretend to be an agent in our setup and we should ensure that harmful behaviors are detected by monitors with a high recall rate • Monitor escalations are either outright blocked or, in empirical studies, users with the relevant level of expertise were shown to reliably understand and act on monitor flags before significant harm occurred • SLAs for asynchronous monitors to analyze and detect harmful agent actions post-hoc | ⏎ | System Architecture (including containerization and permissions) | • Limiting internet access and other tool access • Limiting credentials • Limiting access to system resources or filesystem (e.g., sandboxing) • Limiting persistence or state | • Testing and red-teaming of the system protections • 'Canary evaluations' which test model capabilities to bypass less complex, easier-to-exploit versions of our security controls, establishing that our implemented controls are robust |",
+   "ko": "| 주장 | 잠재적 안전장치 | 잠재적 안전장치 효과성 평가 | ⏎ | 자율적 역량의 부재 | • 역량 평가에 해당하므로 적용되지 않음 | • 장기 자율성 역량 평가 결과, 모델이 위협 모델(2.3절)에 기술된 방식으로 자율적으로 행동할 수 없음이 확인됨 | ⏎ | 가치 정렬 | • 명시되거나 학습된 가치로부터의 일반화 • 기만이나 계략적 행동과 같은 오정렬된 행동을 통제하기 위한 조향 또는 해석 가능성 | • 레드티머가 모델 가치 정렬의 한계를 탐색하기 위해 환경과 적대적 요청을 모두 생성함. 기만 및 계략적 행동을 포함한 유해한 행동을 취한 증거는 오정렬의 증거가 됨 • 과거 모델 배포에 대한 내부 및 외부 사용자 신고, 모니터링 또는 수동 점검에서 예상치 못한 가치 정렬 실패의 유의미한 증거가 나타나지 않음 | ⏎ | 지시 정렬 | • 지시 준수, 지시 위계(instruction hierarchy) 및 복잡한 Model Spec 준수 • 위험 경로를 포괄적으로 배제하도록 정의된 Model Spec • 사용자 모델 학습 및 사용자와 협업하도록 AI를 학습시킴 • 위험 모델 구축 및 불필요한 위험을 회피하도록 하는 학습 • 불확실성 추정 및 신뢰할 수 있는 답변을 위한 학습 | • 현실적인 환경에서의 대규모 사용 또는 테스트를 통해 모델이 (가치 정렬을 유지하고 피해를 회피하면서) 사용자의 지시 또는 목표에 부합하는 행동을 일관되게 취함이 확인되어야 함. 반대 사례로는 컨테이너 탈출 시도, 사용자를 달래기 위해 거짓말하기 등이 있음 | ⏎ | 신뢰할 수 있고 강건한 시스템 감독 | • 모니터링 AI가 에이전트 행동을 감독하여 에이전트가 유해한 행동, 계략적 행동 또는 이와 유사한 행동을 시도하는 경우 이를 탐지함 • 시스템이 에이전트 행동에 대해 (기본값으로, 또는 모니터링에 의한 이관을 통해) 인간 승인을 강제함 • 모델의 추론이 인간이 검토할 수 있도록 충실하고 해석 가능한 형태로 제공됨 • 에이전트 행동이 모두 편집 불가능한 데이터베이스에 기록되며, 비동기 모니터링 루틴이 해당 행동을 검토하여 피해의 증거를 확인함 | • 레드티머가 임의로 적대적인 에이전트를 학습시키거나 당사 환경에서 에이전트를 가장할 수 있으며, 당사는 유해한 행동이 높은 재현율로 모니터링에 의해 탐지되도록 보장해야 함 • 모니터링 이관 사항이 즉시 차단되거나, 실증 연구에서 관련 전문성 수준을 갖춘 사용자가 심각한 피해가 발생하기 전에 모니터링 경고를 신뢰성 있게 이해하고 이에 대응하는 것으로 확인됨 • 비동기 모니터링이 유해한 에이전트 행동을 사후에 분석하고 탐지하기 위한 SLA | ⏎ | 시스템 아키텍처(컨테이너화 및 권한 포함) | • 인터넷 접근 및 기타 도구 접근 제한 • 자격 증명 제한 • 시스템 자원 또는 파일 시스템에 대한 접근 제한(예: 샌드박싱) • 지속성 또는 상태 제한 | • 시스템 보호 장치에 대한 테스트 및 레드티밍 • 덜 복잡하고 악용하기 쉬운 버전의 보안 통제를 우회하는 모델 역량을 테스트하여, 구현된 통제가 강건함을 입증하는 '카나리 평가(canary evaluation)' |"
+  },
+  {
+   "type": "h3",
+   "en": "C.3 Security controls",
+   "ko": "C.3 보안 통제",
+   "id": "s178"
+  },
+  {
+   "type": "p",
+   "en": "Robust security practices and controls are essential to mitigating risks associated with the deployment of models reaching High capability thresholds. Our security approach integrates industry best practices with OpenAI-specific innovations tailored to manage the unique threats posed by frontier AI technologies. Our security practices are designed to protect against external and internal adversaries and align with established frameworks such as ISO 27001, SOC2, NIST SP 800-53, and FedRAMP. While nascent, AIspecific security standards may also provide frameworks for addressing security and regulatory standards that address the unique challenges of securing AI systems. This may include efforts emerging from the Cloud Security Alliance's AI Safety Initiative or the NIST SP 800-218 AI updates.",
+   "ko": "강건한 보안 실행 방안 및 통제는 높은 역량 임계값에 도달한 모델의 배포와 관련된 위험을 완화하는 데 필수적이다. 당사의 보안 접근법은 업계 모범 사례와 프론티어 AI 기술이 제기하는 고유한 위협을 관리하도록 맞춤화된 OpenAI 고유의 혁신을 통합한다. 당사의 보안 실행 방안은 외부 및 내부 적대자로부터 보호하도록 설계되었으며, ISO 27001, SOC2, NIST SP 800-53, FedRAMP 등 확립된 프레임워크에 부합한다. 아직 초기 단계이기는 하나, AI 특화 보안 표준 또한 AI 시스템 보안의 고유한 과제를 다루는 보안 및 규제 기준에 대응하기 위한 프레임워크를 제공할 수 있다. 여기에는 Cloud Security Alliance의 AI Safety Initiative 또는 NIST SP 800-218 AI 업데이트에서 나타나고 있는 노력이 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "강건한 보안 실행 방안 및 통제는 높은 역량 임계값에 도달한 모델의 배포와 관련된 위험을 완화하는 데 필수적이다.",
+     "k": "key"
+    },
+    {
+     "t": "프론티어 AI 기술이 제기하는 고유한 위협을 관리하도록 맞춤화된 OpenAI 고유의 혁신",
+     "k": "safety"
+    },
+    {
+     "t": "외부 및 내부 적대자로부터 보호하도록 설계되었으며",
+     "k": "safety"
+    },
+    {
+     "t": "AI 특화 보안 표준 또한 AI 시스템 보안의 고유한 과제를 다루는 보안 및 규제 기준에 대응하기 위한 프레임워크를 제공할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We will require the following practices for High capability models:",
+   "ko": "당사는 높은 역량 모델에 대해 다음 실행 방안을 요구할 것이다.",
+   "marks": [
+    {
+     "t": "당사는 높은 역량 모델에 대해 다음 실행 방안을 요구할 것이다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Security Threat Modeling and Risk Management",
+   "ko": "보안 위협 모델링 및 위험 관리",
+   "id": "s181"
+  },
+  {
+   "type": "li",
+   "en": "-Comprehensive Security Threat Models: Ensure OpenAI employs security threat modeling that systematically identifies and mitigates risks posed by adversaries. These models address both external and internal threats, explicitly mapping vulnerabilities and attack vectors relevant to frontier AI model access or misuse.",
+   "ko": "-포괄적 보안 위협 모델: OpenAI가 적대자가 제기하는 위험을 체계적으로 식별하고 완화하는 보안 위협 모델링을 활용하도록 보장한다. 이러한 모델은 외부 및 내부 위협을 모두 다루며, 프론티어 AI 모델에 대한 접근 또는 오용과 관련된 취약점과 공격 경로를 명시적으로 매핑한다.",
+   "marks": [
+    {
+     "t": "적대자가 제기하는 위험을 체계적으로 식별하고 완화하는 보안 위협 모델링",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 AI 모델에 대한 접근 또는 오용과 관련된 취약점과 공격 경로를 명시적으로 매핑한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Continuous Review and Iteration: Ensure security threat models are regularly reviewed and updated. This includes updating the Security framework, policies, and controls as technologies and threats evolve.",
+   "ko": "-지속적 검토 및 반복: 보안 위협 모델이 정기적으로 검토되고 업데이트되도록 보장한다. 여기에는 기술과 위협의 변화에 따라 보안 프레임워크, 정책 및 통제를 업데이트하는 것이 포함된다.",
+   "marks": [
+    {
+     "t": "보안 위협 모델이 정기적으로 검토되고 업데이트되도록 보장한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Continuous Monitoring and Validation: Ensure security threat models and updates inform where security and data privacy controls should be implemented, improved, and monitored to further reduce risk. Internal and external assessments to validate these controls are conducted regularly and reports are provided to OpenAI leadership.",
+   "ko": "-지속적 모니터링 및 확인: 보안 위협 모델과 그 업데이트가 위험을 추가로 줄이기 위해 보안 및 데이터 프라이버시 통제를 어디에 구현하고, 개선하고, 모니터링해야 하는지에 반영되도록 보장한다. 이러한 통제를 확인하기 위한 내부 및 외부 평가(assessment)가 정기적으로 수행되며, 그 보고서가 OpenAI 경영진에게 제공된다.",
+   "marks": [
+    {
+     "t": "이러한 통제를 확인하기 위한 내부 및 외부 평가(assessment)가 정기적으로 수행되며",
+     "k": "safety"
+    },
+    {
+     "t": "그 보고서가 OpenAI 경영진에게 제공된다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Defense in Depth",
+   "ko": "심층 방어",
+   "id": "s185"
+  },
+  {
+   "type": "li",
+   "en": "-Layered Security Architecture: Adopt a layered security strategy, ensuring robust protection through multiple defensive barriers, including physical and datacenter security, network segmentation and controls, workload isolation, data encryption, and other overlapping and complementary security controls.",
+   "ko": "-계층형 보안 아키텍처: 물리 및 데이터센터 보안, 네트워크 분할 및 통제, 워크로드 격리, 데이터 암호화, 그리고 기타 중첩적이고 상호 보완적인 보안 통제를 포함한 다중 방어 장벽을 통해 강건한 보호를 보장하는 계층형 보안 전략을 채택한다.",
+   "marks": [
+    {
+     "t": "다중 방어 장벽을 통해 강건한 보호를 보장하는 계층형 보안 전략을 채택한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Zero Trust Principles: Embrace Zero Trust principles in the design and operation of infrastructure, networks, and endpoints. Leverage hardware-backed security and modern authentication standards and controls for accessing critical resources and performing operations.",
+   "ko": "-제로 트러스트 원칙: 인프라, 네트워크 및 엔드포인트(Endpoint)의 설계와 운영에 제로 트러스트 원칙을 적용한다. 핵심 자원에 접근하고 작업을 수행할 때 하드웨어 기반 보안과 최신 인증 표준 및 통제를 활용한다.",
+   "marks": [
+    {
+     "t": "인프라, 네트워크 및 엔드포인트(Endpoint)의 설계와 운영에 제로 트러스트 원칙을 적용한다",
+     "k": "safety"
+    },
+    {
+     "t": "하드웨어 기반 보안과 최신 인증 표준 및 통제를 활용한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Access Management",
+   "ko": "접근 관리",
+   "id": "s188"
+  },
+  {
+   "type": "li",
+   "en": "-Principle of Least Privilege: Ensure access to systems and data is limited based on job functions, need-to-know, and operational requirements in alignment with the principles of least privilege and separation of duties. Ensure all access is regularly audited and reviewed. For all models, especially those presenting High capabilities, access must be strictly limited, protected with strong multi-factor authentication, and may require additional approvals for access.",
+   "ko": "-최소 권한 원칙: 최소 권한 원칙과 직무 분리 원칙에 부합하도록, 시스템과 데이터에 대한 접근을 직무 기능, 알 필요성(need-to-know) 및 운영상 요구사항에 따라 제한하도록 보장한다. 모든 접근이 정기적으로 감사되고 검토되도록 보장한다. 모든 모델, 특히 높은 역량을 보이는 모델의 경우, 접근은 엄격히 제한되어야 하고, 강력한 다중 요소 인증으로 보호되어야 하며, 접근을 위해 추가 승인이 요구될 수 있다.",
+   "marks": [
+    {
+     "t": "시스템과 데이터에 대한 접근을 직무 기능, 알 필요성(need-to-know) 및 운영상 요구사항에 따라 제한하도록 보장한다",
+     "k": "safety"
+    },
+    {
+     "t": "모든 모델, 특히 높은 역량을 보이는 모델의 경우, 접근은 엄격히 제한되어야 하고, 강력한 다중 요소 인증으로 보호되어야 하며, 접근을 위해 추가 승인이 요구될 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Identity and Device Management: Employees must authenticate using multi-factor authentication (MFA) and managed devices meeting security baselines. Access must be logged and reviewed for detection and investigative purposes.",
+   "ko": "-신원 및 기기 관리: 직원은 다중 요소 인증(MFA)과 보안 기준선을 충족하는 관리 기기를 사용하여 인증해야 한다. 접근은 탐지 및 조사 목적으로 기록되고 검토되어야 한다.",
+   "marks": [
+    {
+     "t": "접근은 탐지 및 조사 목적으로 기록되고 검토되어야 한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Secure Development and Supply Chain",
+   "ko": "보안 개발 및 공급망",
+   "id": "s191"
+  },
+  {
+   "type": "li",
+   "en": "-Secure Development Lifecycle: Integrate automated code analysis, formal security reviews, and penetration testing in engineering processes. Apply security reviews and validation to higher-sensitivity critical components prior to deployment.",
+   "ko": "-보안 개발 수명주기: 엔지니어링 프로세스에 자동화된 코드 분석, 공식 보안 검토, 침투 테스트를 통합한다. 민감도가 높은 핵심 구성요소에 대해서는 배포 전에 보안 검토와 확인을 적용한다.",
+   "marks": [
+    {
+     "t": "엔지니어링 프로세스에 자동화된 코드 분석, 공식 보안 검토, 침투 테스트를 통합한다.",
+     "k": "key"
+    },
+    {
+     "t": "민감도가 높은 핵심 구성요소에 대해서는 배포 전에 보안 검토와 확인을 적용한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Change Management: Establish and maintain a formal change management process to ensure that all modifications to systems, applications, and infrastructure are properly authorized, documented, tested, and approved before deployment. Changes to critical infrastructure should undergo multi-person approval and review. This process should include maintaining comprehensive records of changes and implementing rollback procedures to revert to previous states.",
+   "ko": "-변경 관리: 시스템, 애플리케이션 및 인프라에 대한 모든 수정 사항이 배포 전에 적절히 승인되고, 문서화되고, 테스트되고, 승인받도록 보장하기 위해 공식적인 변경 관리 프로세스를 수립하고 유지한다. 핵심 기반시설에 대한 변경은 다인 승인 및 검토를 거쳐야 한다. 이 프로세스에는 변경 사항에 대한 포괄적인 기록을 유지하고, 이전 상태로 되돌리기 위한 롤백 절차를 구현하는 것이 포함되어야 한다.",
+   "marks": [
+    {
+     "t": "핵심 기반시설에 대한 변경은 다인 승인 및 검토를 거쳐야 한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Software Supply Chain Integrity: Enforce supply chain security measures, including sourcing hardware and software from reputable sources, and continuous vetting and monitoring of third-party suppliers and software libraries.",
+   "ko": "-소프트웨어 공급망 무결성: 평판이 좋은 출처로부터 하드웨어와 소프트웨어를 조달하고, 제3자 공급업체 및 소프트웨어 라이브러리를 지속적으로 검증하고 모니터링하는 것을 포함한 공급망 보안 조치를 시행한다.",
+   "marks": [
+    {
+     "t": "제3자 공급업체 및 소프트웨어 라이브러리를 지속적으로 검증하고 모니터링하는 것을 포함한 공급망 보안 조치를 시행한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Operational Security",
+   "ko": "운영 보안",
+   "id": "s195"
+  },
+  {
+   "type": "li",
+   "en": "-Monitoring and Incident Response: Monitor security and event logs continuously to detect, triage, and respond to security incidents rapidly by 24x7 on-call staff.",
+   "ko": "-모니터링 및 사고 대응: 24x7 대기 인력이 보안 사고를 신속하게 탐지하고, 분류하고, 대응할 수 있도록 보안 및 이벤트 로그를 지속적으로 모니터링한다.",
+   "marks": [
+    {
+     "t": "24x7 대기 인력이 보안 사고를 신속하게 탐지하고, 분류하고, 대응할 수 있도록",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Vulnerability Management: Ensure known vulnerabilities are addressed through consistent patching and corrective actions, minimizing exploitation opportunities.",
+   "ko": "-취약점 관리: 일관된 패치 적용과 시정 조치를 통해 알려진 취약점이 해결되도록 보장하여 악용 기회를 최소화한다.",
+   "marks": [
+    {
+     "t": "알려진 취약점이 해결되도록 보장하여 악용 기회를 최소화한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Adversarial Testing and Red-Teaming: Conduct adversarial testing and red-teaming exercises to proactively identify and mitigate potential vulnerabilities within corporate, research, and product systems, ensuring resilience against unknown vulnerabilities and emerging threats. Encourage reporting of good-faith security research through bug bounty programs.",
+   "ko": "-적대적 시험 및 레드티밍: 기업, 연구 및 제품 시스템 내의 잠재적 취약점을 선제적으로 식별하고 완화하기 위해 적대적 시험 및 레드티밍 훈련을 수행하여, 알려지지 않은 취약점과 새롭게 등장하는 위협에 대한 회복탄력성을 보장한다. 버그바운티 프로그램을 통해 선의의 보안 연구 결과 보고를 장려한다.",
+   "marks": [
+    {
+     "t": "적대적 시험 및 레드티밍 훈련을 수행하여, 알려지지 않은 취약점과 새롭게 등장하는 위협에 대한 회복탄력성을 보장한다",
+     "k": "key"
+    },
+    {
+     "t": "버그바운티 프로그램을 통해 선의의 보안 연구 결과 보고를 장려한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Auditing and Transparency",
+   "ko": "감사 및 투명성",
+   "id": "s199"
+  },
+  {
+   "type": "li",
+   "en": "-Independent Security Audits: Ensure security controls and practices are validated regularly by third-party auditors to ensure compliance with relevant standards and robustness against identified threats.",
+   "ko": "-독립적 보안 감사: 관련 표준에 대한 규정 준수 및 식별된 위협에 대한 강건성을 보장하기 위해, 보안 통제와 실행 방안이 제3자 감사인에 의해 정기적으로 확인되도록 보장한다.",
+   "marks": [
+    {
+     "t": "식별된 위협에 대한 강건성을 보장하기 위해",
+     "k": "safety"
+    },
+    {
+     "t": "보안 통제와 실행 방안이 제3자 감사인에 의해 정기적으로 확인되도록 보장한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Transparency in Security Practices: Ensure security findings, remediation efforts, and key metrics from internal and independent audits are periodically shared with internal stakeholders and summarized publicly to demonstrate ongoing commitment and accountability.",
+   "ko": "-보안 실행 방안의 투명성: 지속적인 약정과 책임성을 입증하기 위해, 내부 감사 및 독립 감사에서 도출된 보안 관련 발견 사항, 개선 노력 및 주요 지표가 내부 이해관계자와 주기적으로 공유되고 공개적으로 요약되도록 보장한다.",
+   "marks": [
+    {
+     "t": "보안 관련 발견 사항, 개선 노력 및 주요 지표가 내부 이해관계자와 주기적으로 공유되고 공개적으로 요약되도록 보장한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Governance and Oversight: Ensure that management provides oversight over the information security and risk management programs.",
+   "ko": "-거버넌스 및 감독: 경영진이 정보 보안 및 위험 관리 프로그램에 대한 감독을 제공하도록 보장한다.",
+   "marks": [
+    {
+     "t": "경영진이 정보 보안 및 위험 관리 프로그램에 대한 감독을 제공하도록 보장한다",
+     "k": "safety"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "By “severe harm” in this document, we mean the death or grave injury of thousands of people or hundreds of billions of dollars of economic damage. Our safety stack addresses a broad spectrum of risks, including many with harms below this severity. In choosing to set a high bar here, we aim to ensure that the most severe risks receive attention commensurate with their magnitude.",
+   "ko": "본 문서에서 \"심각한 피해\"란 수천 명의 사망 또는 중상, 혹은 수천억 달러 규모의 경제적 손해를 의미한다. 당사의 안전 스택은 이러한 심각도에 미치지 않는 피해를 초래하는 다수의 위험을 포함하여 광범위한 위험을 다룬다. 여기서 높은 기준을 설정하기로 한 것은 가장 심각한 위험이 그 규모에 상응하는 주의를 받도록 하기 위함이다.",
+   "linked": true
+  },
+  {
+   "n": 2,
+   "en": "For example, our adoption of Capability Reports and Safeguards Reports parallels Anthropic’s updated RSP.",
+   "ko": "예를 들어, 당사의 역량 보고서 및 안전장치 보고서 도입은 Anthropic의 업데이트된 책임 있는 스케일링 정책(RSP)과 유사하다.",
+   "linked": true
+  },
+  {
+   "n": 3,
+   "en": "These criteria were informed in part by Meta’s recent Frontier AI Framework.",
+   "ko": "이러한 기준은 부분적으로 Meta의 최근 Frontier AI Framework를 참고하여 마련되었다.",
+   "linked": true
+  },
+  {
+   "n": 4,
+   "en": "Threat models are informed both by our broader risk assessment process, and by more specific information that we gather across OpenAI teams and external experts. While past deployment experiences are an important source of information about existing risks, we also recognize that in the case of net-new risks of severe harm, significant safeguards may be needed to reduce the risk of harms that have never been realized.",
+   "ko": "위협 모델은 당사의 보다 광범위한 위험 평가 프로세스와, OpenAI 내 여러 팀 및 외부 전문가로부터 수집하는 보다 구체적인 정보를 모두 바탕으로 한다. 과거의 배포 경험은 기존 위험에 관한 중요한 정보원이지만, 당사는 심각한 피해를 초래하는 완전히 새로운 위험의 경우 한 번도 현실화된 적 없는 피해의 위험을 줄이기 위해 상당한 안전장치가 필요할 수 있다는 점도 인식하고 있다.",
+   "linked": true
+  },
+  {
+   "n": 5,
+   "en": "We will build safeguards against both biological and chemical threats. Given the higher potential severity of biological threats relative to chemical ones, we will prioritize Biological capability evaluations and these will be used as indicators for High and Critical capabilities for the category.",
+   "ko": "당사는 생물학적 위협과 화학적 위협 모두에 대한 안전장치를 구축할 것이다. 화학적 위협에 비해 생물학적 위협의 잠재적 심각도가 더 높다는 점을 고려하여, 당사는 생물학 역량 평가를 우선시할 것이며, 이는 해당 범주의 높은(High) 역량 및 치명적(Critical) 역량에 대한 지표로 사용될 것이다.",
+   "linked": true
+  },
+  {
+   "n": 6,
+   "en": "In general, models that we distill, fine-tune, or quantize from a model that was previously determined not to cross a High capability threshold will ordinarily not require additional safety measures barring reason to believe a significant increase in capability has occurred.",
+   "ko": "일반적으로, 이전에 높은 역량 임계값을 넘지 않는 것으로 판정된 모델로부터 증류, 미세조정 또는 양자화한 모델은, 역량이 크게 증가했다고 볼 만한 이유가 없는 한 통상적으로 추가 안전 조치를 요구하지 않는다.",
+   "linked": true
+  }
+ ]
+}
