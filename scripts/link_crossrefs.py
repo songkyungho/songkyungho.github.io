@@ -17,7 +17,7 @@ import sys
 EN_REF = re.compile(r"“\s*—\s*(.+?)”", re.S)
 KO_REF = re.compile(r"[“\"「『]\s*([—–-]\s*.+?)[”\"」』]", re.S)
 EN_NUM = re.compile(r"\bSections?\s+(\d+(?:\.\d+)*)\b|\bAppendix\s+([A-Z](?:\.\d+)*)\b")
-KO_NUM = re.compile(r"\d+(?:\.\d+)*절|부록\s*[A-Z](?:\.\d+)*")
+KO_NUM = re.compile(r"\d+(?:\.\d+)*절|섹션\s?\d+(?:\.\d+)*|부록\s*[A-Z](?:\.\d+)*")
 
 
 def norm(text: str) -> str:
@@ -42,7 +42,7 @@ def main(path: str) -> None:
             if b["type"] not in ("h2", "h3"):
                 continue
             en = b["en"].strip()
-            if number and re.match(rf"^{re.escape(number)}\.?\s", en):
+            if number and re.match(rf"^(?:Section )?{re.escape(number)}[.:]?\s", en):
                 return b["id"]
             if letter and re.match(rf"^(?:Appendix )?{re.escape(letter)}[.:]?(?:\s|$)", en):
                 return b["id"]

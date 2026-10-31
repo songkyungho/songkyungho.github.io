@@ -1,0 +1,2161 @@
+{
+ "slug": "gdm-fsf-v3-1",
+ "title": "구글 딥마인드 프론티어 안전 프레임워크 3.1판",
+ "original_title": "Google DeepMind Frontier Safety Framework, Version 3.1",
+ "publisher": "Google DeepMind",
+ "doc_kind": "프론티어 안전 프레임워크",
+ "published": "2026-04-17",
+ "source_url": "https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/strengthening-our-frontier-safety-framework/frontier-safety-framework_3-1.pdf",
+ "source_note": "2026년 4월 17일 공개 3.1판 전문 (20쪽, 표지·목차 제외)",
+ "source_label": "원문 보기 (Google DeepMind PDF)",
+ "translated": "2026-10-31",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "summary": "구글 딥마인드가 최첨단 모델의 심각한 위험을 관리하려고 정한 프레임워크의 3.1판이다. 치명적 역량 수준(CCL)과 추적 역량 수준(TCL)을 기준으로 위험 식별부터 위험 수용 판단까지의 관리 절차를 정하고, 오용(CBRN·사이버·유해한 조작)과 기계학습 R&D·오정렬 영역별 보안·배포 완화 조치, 거버넌스, 공개 원칙, 용어 풀이를 담고 있다.",
+ "image": "/images/translations/gdm-fsf-v3-1-cover.webp",
+ "og_image": "/images/translations/gdm-fsf-v3-1-cover.jpg",
+ "image_caption": "원문 표지 (Google DeepMind, 2026.4.17 공개 3.1판)",
+ "stats": {
+  "blocks": 187,
+  "sections": 7,
+  "items": 32,
+  "words_en": 7296
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Overview",
+   "ko": "개요",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "The Frontier Safety Framework is a set of protocols that aims to address severe risks that may arise from the high-impact capabilities of frontier AI models. It complements Google's suite of AI responsibility and safety practices, and enables Google's AI innovation and deployment consistent with our AI Principles.",
+   "ko": "Frontier Safety Framework는 프론티어 AI 모델의 고영향 역량에서 발생할 수 있는 심각한 위험에 대응하기 위한 프로토콜의 집합이다. 이 프레임워크는 Google의 AI 책임 및 안전 실행 방안을 보완하며, Google이 AI 원칙에 부합하는 방식으로 AI 혁신과 배포를 추진할 수 있게 한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 모델의 고영향 역량에서 발생할 수 있는 심각한 위험에 대응하기 위한 프로토콜의 집합",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The Framework is informed by the broader conversation on Frontier AI Safety and Security Frameworks.[^1] The core components of such Frameworks are to:",
+   "ko": "이 프레임워크는 프론티어 AI 안전 및 보안 프레임워크에 관한 폭넓은 논의를 바탕으로 한다.[^1] 이러한 프레임워크의 핵심 구성 요소는 다음과 같다."
+  },
+  {
+   "type": "li",
+   "en": "Identify capability levels at which frontier AI models, without additional mitigations, could pose severe risk.",
+   "ko": "추가적인 완화 조치가 없을 경우 프론티어 AI 모델이 심각한 위험을 초래할 수 있는 역량 수준을 식별한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 모델이 심각한 위험을 초래할 수 있는 역량 수준을 식별한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Implement protocols to detect the attainment of such capability levels throughout the model lifecycle.",
+   "ko": "모델 수명주기 전반에 걸쳐 그러한 역량 수준에 도달했는지를 탐지하는 프로토콜을 시행한다.",
+   "marks": [
+    {
+     "t": "그러한 역량 수준에 도달했는지를 탐지하는 프로토콜을 시행한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Prepare and articulate proactive mitigation plans to ensure severe risks are adequately mitigated when such capability levels are attained.",
+   "ko": "그러한 역량 수준에 도달했을 때 심각한 위험이 충분히 완화되도록 선제적 완화 계획을 준비하고 명확히 제시한다.",
+   "marks": [
+    {
+     "t": "심각한 위험이 충분히 완화되도록 선제적 완화 계획을 준비하고 명확히 제시한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Where required or appropriate, involve external parties to help inform and guide the approach.",
+   "ko": "필요하거나 적절한 경우, 접근 방식에 정보를 제공하고 방향을 안내할 수 있도록 외부 당사자를 참여시킨다."
+  },
+  {
+   "type": "p",
+   "en": "In the Framework, we specify protocols for the detection of capability levels at which frontier AI models may pose significant or severe risks (which we call 'Tracked Capability Levels (TCLs)' and 'Critical Capability Levels (CCLs)' respectively), and articulate mitigation approaches to address such risks. The Framework addresses misuse risk[^2] as well as machine learning research and development (ML R&D) and misalignment risk.[^3] For each type of risk, we define a set of CCLs (and TCLs where relevant) and a mitigation approach for them. Risk assessment will necessarily involve evaluating cross-cutting capabilities such as agency, tool use, reasoning, and scientific understanding. Please refer to the Glossary at the end of this document for definitions used in the Framework.",
+   "ko": "이 프레임워크에서 우리는 프론티어 AI 모델이 중대한 위험 또는 심각한 위험을 초래할 수 있는 역량 수준(각각 '추적 역량 수준(TCL)'과 '치명적 역량 수준(CCL)'이라 칭함)을 탐지하기 위한 프로토콜을 명시하고, 그러한 위험에 대응하기 위한 완화 접근 방식을 제시한다. 이 프레임워크는 오용 위험[^2] 뿐만 아니라 머신러닝 연구개발(ML R&D) 및 오정렬 위험도 다룬다.[^3] 각 위험 유형에 대해 우리는 일련의 CCL(및 해당되는 경우 TCL)과 그에 대한 완화 접근 방식을 정의한다. 위험 평가에는 행위 주체성(agency), 도구 사용, 추론, 과학적 이해와 같은 교차적 역량에 대한 평가(evaluation)가 필연적으로 수반된다. 이 프레임워크에서 사용되는 용어의 정의는 본 문서 말미의 용어집을 참조하기 바란다.",
+   "marks": [
+    {
+     "t": "'추적 역량 수준(TCL)'과 '치명적 역량 수준(CCL)'",
+     "k": "safety"
+    },
+    {
+     "t": "이 프레임워크는 오용 위험[^2] 뿐만 아니라 머신러닝 연구개발(ML R&D) 및 오정렬 위험도 다룬다.",
+     "k": "safety"
+    },
+    {
+     "t": "행위 주체성(agency), 도구 사용, 추론, 과학적 이해와 같은 교차적 역량에 대한 평가(evaluation)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The safety and security of frontier AI models is a global public good. The protocols here represent our current understanding and approach of how severe frontier AI risks may be anticipated and addressed. Importantly, there are certain mitigations whose social value is significantly reduced if not broadly applied to frontier AI models reaching critical capabilities. These mitigations are most effective when adopted by industry as a whole: our adoption of them would result in effective risk mitigation for society only if all relevant organizations provide similar levels of protection.",
+   "ko": "프론티어 AI 모델의 안전과 보안은 글로벌 공공재이다. 여기에 제시된 프로토콜은 심각한 프론티어 AI 위험을 어떻게 예측하고 대응할 수 있는지에 관한 우리의 현재 이해와 접근 방식을 나타낸다. 중요한 점은, 치명적 역량에 도달하는 프론티어 AI 모델에 폭넓게 적용되지 않으면 사회적 가치가 크게 감소하는 특정 완화 조치들이 존재한다는 것이다. 이러한 완화 조치는 업계 전체가 채택할 때 가장 효과적이다. 즉, 모든 관련 조직이 유사한 수준의 보호 조치를 제공하는 경우에만 우리의 채택이 사회에 실효적인 위험 완화로 이어질 것이다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 모델의 안전과 보안은 글로벌 공공재이다.",
+     "k": "safety"
+    },
+    {
+     "t": "모든 관련 조직이 유사한 수준의 보호 조치를 제공하는 경우에만 우리의 채택이 사회에 실효적인 위험 완화로 이어질 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The Framework is based on early and evolving research. We may change our approach over time as we gain experience and insights on the projected capabilities of future frontier models. We will review the Framework periodically and we expect it to evolve substantially as our understanding of the risks and benefits of frontier models improves.",
+   "ko": "이 프레임워크는 초기 단계에 있으며 계속 발전하고 있는 연구에 기반한다. 우리는 향후 프론티어 모델의 예상 역량에 관한 경험과 통찰을 축적함에 따라 시간이 지나면서 접근 방식을 변경할 수 있다. 우리는 이 프레임워크를 주기적으로 검토할 것이며, 프론티어 모델의 위험과 편익에 대한 이해가 향상됨에 따라 프레임워크가 상당히 발전할 것으로 예상한다.",
+   "marks": [
+    {
+     "t": "이 프레임워크는 초기 단계에 있으며 계속 발전하고 있는 연구에 기반한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Section 1: Framework",
+   "ko": "섹션 1: 프레임워크",
+   "id": "s10"
+  },
+  {
+   "type": "p",
+   "en": "This section describes the central components of the Frontier Safety Framework. These protocols represent our current understanding of and approach for how severe frontier AI risks may be anticipated and addressed.",
+   "ko": "이 섹션은 Frontier Safety Framework의 핵심 구성 요소를 설명한다. 이러한 프로토콜은 심각한 프론티어 AI 위험을 어떻게 예측하고 대응할 수 있는지에 관한 우리의 현재 이해와 접근 방식을 나타낸다.",
+   "marks": [
+    {
+     "t": "심각한 프론티어 AI 위험을 어떻게 예측하고 대응할 수 있는지에 관한 우리의 현재 이해와 접근 방식",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1.1 Scope",
+   "ko": "1.1 범위",
+   "id": "s12"
+  },
+  {
+   "type": "p",
+   "en": "The Frontier Safety Framework focuses on possible severe risks stemming from high-impact capabilities of frontier AI models. The Framework complements Google's suite of AI responsibility and safety practices, which address other risks in addition to the severe risks in scope of the Framework in accordance with our AI Principles. The approaches and mitigations outlined in the Framework are not exclusive to models where we believe a severe risk could arise and are part of Google's comprehensive AI responsibility and safety practices.",
+   "ko": "Frontier Safety Framework는 프론티어 AI 모델의 고영향 역량에서 비롯될 수 있는 심각한 위험에 초점을 맞춘다. 이 프레임워크는 Google의 AI 책임 및 안전 실행 방안을 보완하며, 이러한 실행 방안은 AI 원칙에 따라 이 프레임워크의 범위에 속하는 심각한 위험 외에 다른 위험도 다룬다. 이 프레임워크에 제시된 접근 방식과 완화 조치는 심각한 위험이 발생할 수 있다고 판단되는 모델에만 국한되지 않으며, Google의 포괄적인 AI 책임 및 안전 실행 방안의 일부이다.",
+   "marks": [
+    {
+     "t": "Frontier Safety Framework는 프론티어 AI 모델의 고영향 역량에서 비롯될 수 있는 심각한 위험에 초점을 맞춘다.",
+     "k": "key"
+    },
+    {
+     "t": "이 프레임워크는 Google의 AI 책임 및 안전 실행 방안을 보완하며",
+     "k": "safety"
+    },
+    {
+     "t": "심각한 위험이 발생할 수 있다고 판단되는 모델에만 국한되지 않으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1.2 Critical Capability Levels and Tracked Capability Levels",
+   "ko": "1.2 치명적 역량 수준 및 추적 역량 수준",
+   "id": "s14"
+  },
+  {
+   "type": "p",
+   "en": "The Framework is built primarily around capability thresholds called 'Critical Capability Levels (CCLs).' These are capability levels at which, absent mitigation measures, frontier AI models or systems may pose heightened risk of severe harm. CCLs are determined by identifying and analyzing the main foreseeable paths through which a model could result in severe harm: we then define the CCLs as the minimal set of capabilities a model must possess to do so. CCLs are one important component of our risk acceptance determination.",
+   "ko": "이 프레임워크는 주로 '치명적 역량 수준(CCL)'이라 불리는 역량 임계값을 중심으로 구성된다. 이는 완화 조치가 없을 경우 프론티어 AI 모델 또는 시스템이 심각한 피해(severe harm)의 위험을 고조시킬 수 있는 역량 수준이다. CCL은 모델이 심각한 피해를 초래할 수 있는 주요한 예측 가능 경로를 식별하고 분석함으로써 결정된다. 그런 다음 우리는 모델이 그러한 피해를 초래하기 위해 보유해야 하는 최소한의 역량 집합으로 CCL을 정의한다. CCL은 위험 수용 결정의 중요한 구성 요소 중 하나이다.",
+   "marks": [
+    {
+     "t": "완화 조치가 없을 경우 프론티어 AI 모델 또는 시스템이 심각한 피해(severe harm)의 위험을 고조시킬 수 있는 역량 수준",
+     "k": "key"
+    },
+    {
+     "t": "모델이 그러한 피해를 초래하기 위해 보유해야 하는 최소한의 역량 집합으로 CCL을 정의한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We identify CCLs for two kinds of risks: misuse risk and risks related to machine learning R&D and misalignment.",
+   "ko": "우리는 두 가지 유형의 위험, 즉 오용 위험과 머신러닝 연구개발 및 오정렬 관련 위험에 대해 CCL을 식별한다.",
+   "marks": [
+    {
+     "t": "오용 위험과 머신러닝 연구개발 및 오정렬 관련 위험에 대해 CCL을 식별한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "For misuse risk , we define CCLs in the following risk domains where the misuse of model capabilities may result in severe harm:",
+   "ko": "오용 위험 에 대해서는, 모델 역량의 오용이 심각한 피해를 초래할 수 있는 다음 위험 영역에서 CCL을 정의한다.",
+   "marks": [
+    {
+     "t": "모델 역량의 오용이 심각한 피해를 초래할 수 있는 다음 위험 영역에서 CCL을 정의한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "CBRN: Risks of models assisting in the development, preparation, and/or execution of a chemical, biological, radiological, or nuclear ('CBRN') threat.",
+   "ko": "화학·생물·방사능·핵(CBRN): 모델이 화학·생물·방사능·핵('CBRN') 위협의 개발, 준비 및/또는 실행을 지원할 위험.",
+   "marks": [
+    {
+     "t": "모델이 화학·생물·방사능·핵('CBRN') 위협의 개발, 준비 및/또는 실행을 지원할 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Cyber: Risks of models assisting in the development, preparation, and/or execution of a cyber attack.",
+   "ko": "사이버: 모델이 사이버 공격의 개발, 준비 및/또는 실행을 지원할 위험.",
+   "marks": [
+    {
+     "t": "모델이 사이버 공격의 개발, 준비 및/또는 실행을 지원할 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Harmful Manipulation: Risks of models with high manipulative capabilities potentially being misused in ways that could reasonably result in large scale harm.",
+   "ko": "유해한 조작: 높은 조작 역량을 갖춘 모델이 대규모 피해를 초래할 것으로 합리적으로 예상되는 방식으로 오용될 수 있는 위험.",
+   "marks": [
+    {
+     "t": "높은 조작 역량을 갖춘 모델이 대규모 피해를 초래할 것으로 합리적으로 예상되는 방식으로 오용될 수 있는 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "For machine learning R&D and misalignment risks , we define CCLs that identify when ML R&D capabilities in our models may, if not properly managed, reduce society's overall ability to manage AI risks. Such capabilities may serve as a substantial cross-cutting risk factor for several pathways (e.g. through misalignment, misuse or structural risks) to severe harm.",
+   "ko": "머신러닝 연구개발 및 오정렬 위험 에 대해서는, 우리 모델의 머신러닝 연구개발(ML R&D) 역량이 적절히 관리되지 않을 경우 AI 위험을 관리하는 사회의 전반적인 능력을 저하시킬 수 있는 시점을 식별하는 CCL을 정의한다. 이러한 역량은 심각한 피해로 이어지는 여러 경로(예: 오정렬, 오용 또는 구조적 위험을 통한 경로)에 걸쳐 상당한 교차적 위험 요인으로 작용할 수 있다.",
+   "marks": [
+    {
+     "t": "적절히 관리되지 않을 경우 AI 위험을 관리하는 사회의 전반적인 능력을 저하시킬 수 있는 시점",
+     "k": "safety"
+    },
+    {
+     "t": "심각한 피해로 이어지는 여러 경로(예: 오정렬, 오용 또는 구조적 위험을 통한 경로)에 걸쳐 상당한 교차적 위험 요인으로 작용할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This update to the Framework introduces 'Tracked Capability Levels (TCLs).' TCLs are meant to capture significant risks that may manifest at a lower capability threshold than our CCLs and we apply our mitigation and risk acceptance determination process proportionately. We identify TCLs for CBRN risk, as well as ML R&D and misalignment risks. We may include TCLs for additional risks in the future, as our threat modeling develops. Similarly to CCLs, early warning evaluations will be used to assess the proximity of a model to a TCL and analyze the risk posed, involving internal and external experts as needed.",
+   "ko": "이번 프레임워크 개정에서는 '추적 역량 수준(TCL)'을 도입한다. TCL은 CCL보다 낮은 역량 임계값에서 나타날 수 있는 중대한 위험을 포착하기 위한 것이며, 우리는 완화 및 위험 수용 결정 절차를 이에 비례적으로 적용한다. 우리는 화학·생물·방사능·핵(CBRN) 위험과 머신러닝 연구개발(ML R&D) 및 오정렬 위험에 대해 TCL을 식별한다. 위협 모델링이 발전함에 따라 향후 추가적인 위험에 대한 TCL을 포함할 수 있다. CCL과 마찬가지로, 모델이 TCL에 얼마나 근접했는지 평가하고 그로 인한 위험을 분석하기 위해 조기 경보 평가(Early warning evaluation)가 활용되며, 필요에 따라 내부 및 외부 전문가가 참여한다.",
+   "marks": [
+    {
+     "t": "TCL은 CCL보다 낮은 역량 임계값에서 나타날 수 있는 중대한 위험을 포착하기 위한 것이며",
+     "k": "key"
+    },
+    {
+     "t": "모델이 TCL에 얼마나 근접했는지 평가하고 그로 인한 위험을 분석하기 위해 조기 경보 평가(Early warning evaluation)가 활용되며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1.3 Risk Management Process",
+   "ko": "1.3 위험 관리 절차",
+   "id": "s23"
+  },
+  {
+   "type": "p",
+   "en": "We conduct our risk management process as appropriate, throughout the model development process, on various checkpoints or versions of a model, both before and after deployment.",
+   "ko": "우리는 모델 개발 과정 전반에 걸쳐, 배포 전후 모두에 모델의 다양한 체크포인트 또는 버전을 대상으로 위험 관리 절차를 적절하게 수행한다.",
+   "marks": [
+    {
+     "t": "배포 전후 모두에 모델의 다양한 체크포인트 또는 버전을 대상으로",
+     "k": "safety"
+    },
+    {
+     "t": "위험 관리 절차를 적절하게 수행한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1.3.1 Risk Identification",
+   "ko": "1.3.1 위험 식별",
+   "id": "s25"
+  },
+  {
+   "type": "p",
+   "en": "The first part of our risk management process is risk identification . We identify potential risks that could stem from our models and analyze their characteristics to determine which of the identified risks could be significant or severe risks. We consider a wide range of risks as part of our ongoing research, taking into account the characteristics, capabilities, propensities, and affordances of our models and other sources of information, such as our internal risk taxonomies, internal expertise and relevant external research. As explained above, we have identified risk domains where, based on early research, we have determined significant or severe risks may be most likely to arise from future models: CBRN, cyber, harmful manipulation, as well as machine learning R&D and misalignment. As part of our broader research into and development of frontier AI models, we continue to assess whether there are other risk domains where significant or severe risks may arise and will update our approach as appropriate. For each of the four identified domains, we have developed specific scenarios and T/CCLs in which these risks could materialize.",
+   "ko": "위험 관리 절차의 첫 번째 단계는 위험 식별 이다. 우리는 모델에서 비롯될 수 있는 잠재적 위험을 식별하고, 그 특성을 분석하여 식별된 위험 중 어떤 것이 중대한 위험 또는 심각한 위험이 될 수 있는지 판단한다. 우리는 지속적인 연구의 일환으로, 모델의 특성, 역량, 성향, 어포던스(행동 가능성)와 함께 내부 위험 분류 체계, 내부 전문 지식, 관련 외부 연구 등 기타 정보원을 고려하여 광범위한 위험을 검토한다. 앞서 설명한 바와 같이, 우리는 초기 연구를 바탕으로 향후 모델에서 중대한 위험 또는 심각한 위험이 발생할 가능성이 가장 높다고 판단한 위험 영역, 즉 화학·생물·방사능·핵(CBRN), 사이버, 유해한 조작, 그리고 머신러닝 연구개발 및 오정렬을 식별하였다. 프론티어 AI 모델에 대한 보다 폭넓은 연구 및 개발의 일환으로, 우리는 중대한 위험 또는 심각한 위험이 발생할 수 있는 다른 위험 영역이 있는지 계속 평가하고 있으며, 적절하게 접근 방식을 갱신할 것이다. 식별된 네 가지 영역 각각에 대해 우리는 이러한 위험이 현실화될 수 있는 구체적인 시나리오와 T/CCL을 개발하였다.",
+   "marks": [
+    {
+     "t": "우리는 모델에서 비롯될 수 있는 잠재적 위험을 식별하고, 그 특성을 분석하여 식별된 위험 중 어떤 것이 중대한 위험 또는 심각한 위험이 될 수 있는지 판단한다.",
+     "k": "key"
+    },
+    {
+     "t": "모델의 특성, 역량, 성향, 어포던스(행동 가능성)",
+     "k": "safety"
+    },
+    {
+     "t": "화학·생물·방사능·핵(CBRN), 사이버, 유해한 조작, 그리고 머신러닝 연구개발 및 오정렬",
+     "k": "safety"
+    },
+    {
+     "t": "중대한 위험 또는 심각한 위험이 발생할 수 있는 다른 위험 영역이 있는지 계속 평가하고 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 위험이 현실화될 수 있는 구체적인 시나리오와 T/CCL을 개발하였다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1.3.2 Inherent Risk Assessment",
+   "ko": "1.3.2 고유 위험 평가(Inherent Risk Assessment)",
+   "id": "s27"
+  },
+  {
+   "type": "p",
+   "en": "To understand whether a model may, without appropriate mitigations, contribute to the risks identified, we conduct a closer assessment of its capabilities against the T/CCLs. We conduct a critical capability assessment prior to the first external deployment[^4] of a new frontier AI model. For external deployment of subsequent versions of the model, we determine whether a substantial modification has been made and whether a further critical capability assessment is required if (1) the model has meaningful new capabilities or material increases in performance; and (2) we believe such material capability increase could materially undermine the justification for why the risks stemming from the model are acceptable.",
+   "ko": "모델이 적절한 완화조치 없이 식별된 위험에 기여할 수 있는지 파악하기 위해, 우리는 T/CCL을 기준으로 모델의 역량을 보다 면밀히 평가(assessment)한다. 우리는 새로운 프론티어 AI 모델의 첫 외부 배포[^4] 이전에 치명적 역량 평가(Critical capability assessment)를 수행한다. 이후 버전의 모델을 외부 배포할 때는 실질적 수정이 이루어졌는지, 그리고 추가적인 치명적 역량 평가가 필요한지를 판단한다. 추가 평가는 (1) 모델이 유의미한 새로운 역량을 갖추었거나 성능이 실질적으로 증가하였고, (2) 그러한 실질적 역량 증가가 해당 모델에서 비롯되는 위험을 수용할 수 있다고 본 근거를 실질적으로 약화시킬 수 있다고 판단되는 경우에 필요하다.",
+   "marks": [
+    {
+     "t": "모델이 적절한 완화조치 없이 식별된 위험에 기여할 수 있는지 파악하기 위해",
+     "k": "safety"
+    },
+    {
+     "t": "우리는 새로운 프론티어 AI 모델의 첫 외부 배포[^4] 이전에 치명적 역량 평가(Critical capability assessment)를 수행한다.",
+     "k": "key"
+    },
+    {
+     "t": "그러한 실질적 역량 증가가 해당 모델에서 비롯되는 위험을 수용할 수 있다고 본 근거를 실질적으로 약화시킬 수 있다고 판단되는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To understand if a subsequent version of the model has meaningful new capabilities or material increases in performance relative to the last checkpoint subject to a critical capability assessment, we conduct material capability change assessments on various checkpoints upon the completion of a post-training run. These assessments draw on model characteristics, such as its provenance, size, modality, and performance on general capability benchmarks. To understand if such a change in capability in the subsequent version of the model could materially undermine the justification for why the risks stemming from the model are acceptable, we may also conduct light-weight versions of our 'early warning evaluations' described below, including our automated benchmarks, to confirm a model remains below T/CCL. We may also apply material capability change assessments to models not on the frontier, to understand whether a critical capability assessment is required.",
+   "ko": "이후 버전의 모델이 마지막으로 치명적 역량 평가를 받은 체크포인트에 비해 유의미한 새로운 역량을 갖추었거나 성능이 실질적으로 증가하였는지 파악하기 위해, 우리는 사후 학습 실행이 완료되면 여러 체크포인트를 대상으로 실질적 역량 변화 평가(Material capability change assessment)를 수행한다. 이 평가는 모델의 출처, 규모, 모달리티, 일반 역량 벤치마크 성능 등 모델의 특성을 근거로 한다. 이후 버전의 모델에서 나타난 이러한 역량 변화가 해당 모델에서 비롯되는 위험을 수용할 수 있다고 본 근거를 실질적으로 약화시킬 수 있는지 파악하기 위해, 우리는 모델이 여전히 T/CCL 미만에 머물러 있는지 확인하는 목적으로 아래에 기술된 '조기 경보 평가'의 경량 버전(자동화된 벤치마크 포함)을 수행할 수도 있다. 또한 치명적 역량 평가가 필요한지 파악하기 위해 프론티어에 있지 않은 모델에도 실질적 역량 변화 평가를 적용할 수 있다.",
+   "marks": [
+    {
+     "t": "실질적 역량 변화 평가(Material capability change assessment)를 수행한다",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 여전히 T/CCL 미만에 머물러 있는지 확인하는 목적으로",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Central to our critical capability assessments are 'early warning evaluations,' which we use to test the specific threats and risk scenarios identified through our threat modeling, determine a model's capability, and assess the proximity of the model to a T/CCL. For CCLs, we define 'alert thresholds,' which may draw on evaluation results, expert assessments, and other sources of information; that are designed to flag when a CCL may be reached before a critical capability assessment is conducted again. In our evaluations, we seek to apply appropriate scaffolding, inference compute, and other augmentations to also assess the capabilities of systems that will likely be produced with the model based on the specific threats and risk scenarios we have identified for the T/CCL. We may run early warning evaluations more frequently or adjust alert thresholds if the rate of progress suggests our safety buffer is no longer adequate. We conduct further analysis, including reviewing model-independent information, external evaluations, and post-market monitoring as appropriate. In particular, we strive to learn from our post-market monitoring mechanisms, including as part of our detection, mitigation, response and/or reporting of incidents relating to our frontier safety risk domains. Actionable insights from these processes allow us to enhance our tools, training, processes, policies, and response efforts.",
+   "ko": "치명적 역량 평가의 핵심은 '조기 경보 평가'이다. 우리는 이를 활용하여 위협 모델링을 통해 식별된 구체적인 위협 및 위험 시나리오를 검증하고, 모델의 역량을 판단하며, 모델이 T/CCL에 얼마나 근접했는지 평가한다. CCL에 대해서는 '경보 임계값(Alert threshold)'을 정의한다. 경보 임계값은 평가(evaluation) 결과, 전문가 평가, 기타 정보원을 근거로 할 수 있으며, 치명적 역량 평가가 다시 수행되기 전에 CCL에 도달할 가능성이 있는 시점을 포착하도록 설계된다. 평가 과정에서 우리는 T/CCL에 대해 식별한 구체적인 위협 및 위험 시나리오를 바탕으로, 해당 모델을 이용해 구축될 가능성이 높은 시스템의 역량까지 평가하기 위해 적절한 스캐폴딩, 추론(Inference) 연산 및 기타 증강 기법을 적용하고자 한다. 진전 속도로 볼 때 안전 여유(Safety buffer)가 더 이상 충분하지 않다고 판단되면, 조기 경보 평가를 더 자주 실시하거나 경보 임계값을 조정할 수 있다. 우리는 적절한 경우 모델-비의존적 정보, 외부 평가, 출시 후 모니터링 검토 등을 포함한 추가 분석을 수행한다. 특히 프론티어 안전 위험 영역과 관련된 사고의 탐지, 완화, 대응 및/또는 보고 과정 등을 포함하여 출시 후 모니터링 메커니즘으로부터 교훈을 얻고자 노력한다. 이러한 과정에서 얻은 실행 가능한 통찰을 바탕으로 도구, 학습, 절차, 정책 및 대응 활동을 개선할 수 있다.",
+   "marks": [
+    {
+     "t": "치명적 역량 평가의 핵심은 '조기 경보 평가'이다.",
+     "k": "key"
+    },
+    {
+     "t": "모델이 T/CCL에 얼마나 근접했는지 평가한다",
+     "k": "safety"
+    },
+    {
+     "t": "치명적 역량 평가가 다시 수행되기 전에 CCL에 도달할 가능성이 있는 시점을 포착하도록 설계된다",
+     "k": "safety"
+    },
+    {
+     "t": "해당 모델을 이용해 구축될 가능성이 높은 시스템의 역량까지 평가하기 위해 적절한 스캐폴딩, 추론(Inference) 연산 및 기타 증강 기법을 적용하고자 한다",
+     "k": "safety"
+    },
+    {
+     "t": "안전 여유(Safety buffer)가 더 이상 충분하지 않다고 판단되면",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 안전 위험 영역과 관련된 사고의 탐지, 완화, 대응 및/또는 보고 과정",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our approach to model evaluations and inherent risk assessments described above means we can proactively monitor a model's capabilities throughout the entire lifecycle of the model and ensure that any significant or severe risk is properly identified and mitigated. Where appropriate, we may engage relevant external actors, including governments, to inform our responsible development and deployment practices.",
+   "ko": "위에서 기술한 모델 평가 및 고유 위험 평가 접근 방식을 통해, 우리는 모델의 전체 수명주기에 걸쳐 모델의 역량을 선제적으로 모니터링하고 모든 중대한 위험 또는 심각한 위험이 적절히 식별되고 완화되도록 보장할 수 있다. 적절한 경우, 책임 있는 개발 및 배포 실행 방안을 마련하기 위해 정부를 포함한 관련 외부 행위자와 협력할 수 있다.",
+   "marks": [
+    {
+     "t": "모든 중대한 위험 또는 심각한 위험이 적절히 식별되고 완화되도록 보장할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "정부를 포함한 관련 외부 행위자와 협력할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Note on Machine Learning R&D CCLs: Risk assessment must take into account the fact that other actors may put significantly more effort into eliciting capabilities than we put into assessing risk, thus requiring conservatism in the form of evaluations. However, as a frontier AI company, we do not expect other groups to put significantly more effort into ML R&D than we do ourselves. As a result, to assess the ML R&D CCLs, we may use sources of information about our own progress at accelerating ML R&D to assess whether we are near or at the ML R&D CCLs, in addition to evaluations of ML R&D capabilities.",
+   "ko": "머신러닝 연구개발 CCL에 관한 참고 사항: 위험 평가는 다른 행위자가 역량을 이끌어내는 데 기울이는 노력이 우리가 위험을 평가하는 데 기울이는 노력보다 상당히 클 수 있다는 사실을 고려해야 하며, 따라서 평가 방식에서 보수성이 요구된다. 그러나 프론티어 AI 기업으로서 우리는 다른 집단이 머신러닝 연구개발에 우리보다 상당히 더 많은 노력을 기울일 것으로 예상하지 않는다. 따라서 머신러닝 연구개발 CCL을 평가할 때, 우리는 머신러닝 연구개발 역량에 대한 평가 외에도 머신러닝 연구개발 가속화에 관한 우리 자신의 진전 상황에 대한 정보원을 활용하여 머신러닝 연구개발 CCL에 근접했거나 도달했는지 평가할 수 있다.",
+   "marks": [
+    {
+     "t": "다른 행위자가 역량을 이끌어내는 데 기울이는 노력이 우리가 위험을 평가하는 데 기울이는 노력보다 상당히 클 수 있다는 사실을 고려해야 하며, 따라서 평가 방식에서 보수성이 요구된다",
+     "k": "safety"
+    },
+    {
+     "t": "머신러닝 연구개발 가속화에 관한 우리 자신의 진전 상황에 대한 정보원을 활용하여 머신러닝 연구개발 CCL에 근접했거나 도달했는지 평가할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1.3.3 Risk Mitigation",
+   "ko": "1.3.3 위험 완화",
+   "id": "s33"
+  },
+  {
+   "type": "p",
+   "en": "We apply safety and security mitigations throughout the lifecycle of our models, including as part of our training and model development phase and, where appropriate, before T/CCLs are reached as described in the process below.",
+   "ko": "우리는 학습 및 모델 개발 단계를 포함하여 모델의 수명주기 전반에 걸쳐 안전 및 보안 완화조치를 적용하며, 적절한 경우 아래 절차에 기술된 바와 같이 T/CCL에 도달하기 전에도 이를 적용한다.",
+   "marks": [
+    {
+     "t": "모델의 수명주기 전반에 걸쳐 안전 및 보안 완화조치를 적용하며",
+     "k": "safety"
+    },
+    {
+     "t": "T/CCL에 도달하기 전에도 이를 적용한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "When a model reaches an alert threshold for a CCL, we will assess the proximity of the model to the CCL and analyze the risk posed, involving internal and external experts as needed. This will inform the formulation and application of a response plan. Central to most response plans will be the application of the mitigations described later in the Framework. However, if we assess that risks stemming from the model remain acceptable and model capabilities remain distant from a CCL, the response plan may include updating the alert threshold to ensure the safety buffer remains appropriate.",
+   "ko": "모델이 CCL에 대한 경보 임계값에 도달하면, 우리는 필요에 따라 내부 및 외부 전문가를 참여시켜 모델이 CCL에 얼마나 근접했는지 평가하고 그로 인한 위험을 분석한다. 이는 대응 계획의 수립 및 적용에 반영된다. 대부분의 대응 계획에서 핵심은 본 프레임워크 후반부에 기술된 완화조치의 적용이 될 것이다. 다만 모델에서 비롯되는 위험이 여전히 수용 가능하고 모델 역량이 여전히 CCL과 거리가 멀다고 평가되는 경우, 대응 계획에는 안전 여유가 적절하게 유지되도록 경보 임계값을 갱신하는 조치가 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "모델이 CCL에 대한 경보 임계값에 도달하면, 우리는 필요에 따라 내부 및 외부 전문가를 참여시켜 모델이 CCL에 얼마나 근접했는지 평가하고 그로 인한 위험을 분석한다.",
+     "k": "key"
+    },
+    {
+     "t": "대응 계획에는 안전 여유가 적절하게 유지되도록 경보 임계값을 갱신하는 조치가 포함될 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We have two categories of mitigations: security mitigations (such as preventing the exfiltration of model weights), and deployment mitigations (such as safety fine-tuning and monitoring and response) intended to counter the misuse or misaligned expression of critical capabilities in deployments.",
+   "ko": "완화조치는 두 가지 범주로 구분된다. 하나는 보안 위험 완화조치(예: 모델 가중치 유출 방지)이고, 다른 하나는 배포 과정에서 치명적 역량이 오용되거나 오정렬된 방식으로 발현되는 것을 막기 위한 배포 완화조치(예: 안전 미세조정(Fine-Tuning), 모니터링 및 대응)이다.",
+   "marks": [
+    {
+     "t": "보안 위험 완화조치(예: 모델 가중치 유출 방지)",
+     "k": "safety"
+    },
+    {
+     "t": "배포 과정에서 치명적 역량이 오용되거나 오정렬된 방식으로 발현되는 것을 막기 위한 배포 완화조치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The mitigations described in this document are limited to those mitigations that will be required to bring a model to an acceptable level of risk relative just to the specific T/CCL, which by definition pose the greatest risks of harm. Because we cannot always anticipate what security and deployment mitigations will be appropriate for models beyond the current frontier, the specific mitigations we implement may be determined when a T/CCL is reached, informed by the threat landscape at that time. These mitigations also reflect considerations from the perspective of addressing significant and severe risks from powerful capabilities alone; due to this focused scope, other risk management and security considerations may result in more stringent mitigations applied to a model than specified by the Framework.",
+   "ko": "본 문서에 기술된 완화조치는 정의상 가장 큰 피해 위험을 초래하는 특정 T/CCL에 대해서만 모델을 수용 가능한 위험 수준으로 낮추는 데 필요한 완화조치로 한정된다. 현재의 프론티어를 넘어서는 모델에 어떤 보안 및 배포 완화조치가 적절할지 항상 예측할 수는 없으므로, 실제로 시행할 구체적인 완화조치는 T/CCL에 도달한 시점에 그 당시의 위협 환경을 반영하여 결정될 수 있다. 또한 이러한 완화조치는 오로지 강력한 역량에서 비롯되는 중대한 위험 및 심각한 위험에 대처하는 관점의 고려 사항을 반영한다. 이처럼 범위가 한정되어 있으므로, 다른 위험 관리 및 보안 고려 사항으로 인해 본 프레임워크에서 명시한 것보다 더 엄격한 완화조치가 모델에 적용될 수 있다.",
+   "marks": [
+    {
+     "t": "현재의 프론티어를 넘어서는 모델에 어떤 보안 및 배포 완화조치가 적절할지 항상 예측할 수는 없으므로",
+     "k": "safety"
+    },
+    {
+     "t": "실제로 시행할 구체적인 완화조치는 T/CCL에 도달한 시점에 그 당시의 위협 환경을 반영하여 결정될 수 있다",
+     "k": "key"
+    },
+    {
+     "t": "오로지 강력한 역량에서 비롯되는 중대한 위험 및 심각한 위험에 대처하는 관점의 고려 사항을 반영한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1.3.4 Residual Risk Assessment",
+   "ko": "1.3.4 잔여 위험 평가",
+   "id": "s38"
+  },
+  {
+   "type": "p",
+   "en": "We will use various processes to evaluate the effectiveness and limitations of mitigations:",
+   "ko": "우리는 다양한 절차를 활용하여 완화조치의 효과성과 한계를 평가한다.",
+   "marks": [
+    {
+     "t": "다양한 절차를 활용하여 완화조치의 효과성과 한계를 평가한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Security mitigations : security infrastructure at Google is subject to penetration testing and other kinds of assessments, and is continually improved based on these results.",
+   "ko": "보안 위험 완화조치 : Google의 보안 인프라는 침투 테스트 및 기타 유형의 평가를 받으며, 그 결과를 바탕으로 지속적으로 개선된다.",
+   "marks": [
+    {
+     "t": "Google의 보안 인프라는 침투 테스트 및 기타 유형의 평가를 받으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Deployment mitigations : we will use a combination of threat modeling, empirical testing, and other sources of information to assess the effectiveness and limitations of our deployment mitigations.",
+   "ko": "배포 완화조치 : 위협 모델링, 실증적 테스트 및 기타 정보원을 조합하여 배포 완화조치의 효과성과 한계를 평가한다.",
+   "marks": [
+    {
+     "t": "위협 모델링, 실증적 테스트 및 기타 정보원을 조합하여 배포 완화조치의 효과성과 한계를 평가한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Models reaching TCLs or CCLs will be subject to residual risk assessments as part of evaluating their deployment mitigations. For models reaching CCLs, the residual risk assessment will be informed by a supplemental safety case. See the deployment mitigations sections below regarding misuse and machine learning R&D and misalignment for more.",
+   "ko": "TCL 또는 CCL에 도달한 모델은 배포 완화조치 평가의 일환으로 잔여 위험 평가를 받는다. CCL에 도달한 모델의 경우, 잔여 위험 평가는 보충적 안전 사례를 근거로 한다. 자세한 내용은 아래의 오용 및 머신러닝 연구개발·오정렬 관련 배포 완화조치 절을 참조한다.",
+   "marks": [
+    {
+     "t": "TCL 또는 CCL에 도달한 모델은 배포 완화조치 평가의 일환으로 잔여 위험 평가를 받는다.",
+     "k": "key"
+    },
+    {
+     "t": "잔여 위험 평가는 보충적 안전 사례를 근거로 한다",
+     "k": "safety"
+    },
+    {
+     "t": "오용 및 머신러닝 연구개발·오정렬 관련 배포 완화조치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1.3.5 Risk Acceptance Determination",
+   "ko": "1.3.5 위험 수용 결정",
+   "id": "s43"
+  },
+  {
+   "type": "p",
+   "en": "The Framework outlines the risk acceptance determination approach for different model risks and capabilities pertaining to significant and severe risks. To summarize:",
+   "ko": "본 프레임워크는 중대한 위험 및 심각한 위험과 관련된 다양한 모델 위험 및 역량에 대한 위험 수용 결정 방식을 제시한다. 요약하면 다음과 같다.",
+   "marks": [
+    {
+     "t": "중대한 위험 및 심각한 위험과 관련된 다양한 모델 위험 및 역량에 대한 위험 수용 결정 방식",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "A model for which inherent risk assessment indicates no T/CCL is reached will be deemed to pose an acceptable level of risk for further development and deployment, because it should not possess the capabilities required to substantially contribute to significant or severe risk scenarios.",
+   "ko": "고유 위험 평가 결과 어떤 T/CCL에도 도달하지 않은 것으로 나타난 모델은 추가 개발 및 배포에 있어 수용 가능한 수준의 위험을 초래하는 것으로 간주된다. 이러한 모델은 중대한 위험 또는 심각한 위험 시나리오에 실질적으로 기여하는 데 필요한 역량을 갖추고 있지 않을 것이기 때문이다.",
+   "marks": [
+    {
+     "t": "고유 위험 평가 결과 어떤 T/CCL에도 도달하지 않은 것으로 나타난 모델은 추가 개발 및 배포에 있어 수용 가능한 수준의 위험을 초래하는 것으로 간주된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "A model for which the inherent risk assessment indicates a misuse T/CCL has been reached will be deemed to pose an acceptable level of residual risk for further development or deployment, if:",
+   "ko": "고유 위험 평가 결과 오용 T/CCL에 도달한 것으로 나타난 모델은 다음 조건을 충족하는 경우 추가 개발 또는 배포에 있어 수용 가능한 수준의 잔여 위험을 초래하는 것으로 간주된다.",
+   "marks": [
+    {
+     "t": "오용 T/CCL에 도달한 것으로 나타난 모델",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "We assess that the deployment mitigations have brought the residual risk of harm to an acceptable level, based on considerations such as the effectiveness of mitigations, the scope of the deployment, what capabilities and mitigations are available on other publicly available models (e.g. if other models are similarly capable and have few mitigations, then the marginal risk added by our external deployment is likely low), and the historical incidence and severity of related events. This is required only for external deployment, not internal deployment or further development.",
+   "ko": "완화조치의 효과성, 배포 범위, 공개적으로 이용 가능한 다른 모델의 역량과 완화조치(예: 다른 모델이 유사한 역량을 갖추고 있으면서 완화조치가 거의 없다면, 우리의 외부 배포로 추가되는 한계 위험은 낮을 가능성이 크다), 관련 사건의 과거 발생 빈도 및 심각도 등을 고려하여 배포 완화조치가 피해의 잔여 위험을 수용 가능한 수준으로 낮추었다고 평가하는 경우. 이 조건은 외부 배포에만 요구되며, 내부 배포나 추가 개발에는 요구되지 않는다.",
+   "marks": [
+    {
+     "t": "배포 완화조치가 피해의 잔여 위험을 수용 가능한 수준으로 낮추었다고 평가하는 경우",
+     "k": "safety"
+    },
+    {
+     "t": "이 조건은 외부 배포에만 요구되며, 내부 배포나 추가 개발에는 요구되지 않는다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Security mitigations have been applied to the model weights reaching the recommended security level stated below, or we otherwise assess that the level of security applied is adequate, e.g. based on mitigations already in place, if they match or exceed the level of security applied to other models with similar capabilities or risk profiles, or we assess that the benefits of the open release of model weights outweigh the risks.",
+   "ko": "아래에 명시된 권장 보안 수준(SL)에 도달하도록 모델 가중치에 보안 위험 완화조치가 적용된 경우, 또는 적용된 보안 수준이 충분하다고 달리 평가하는 경우. 예를 들어 이미 시행 중인 완화조치가 유사한 역량이나 위험 프로필을 가진 다른 모델에 적용된 보안 수준과 동등하거나 이를 상회하는 경우, 또는 모델 가중치 공개로 얻는 편익이 위험보다 크다고 평가하는 경우가 이에 해당한다.",
+   "marks": [
+    {
+     "t": "모델 가중치에 보안 위험 완화조치가 적용된 경우",
+     "k": "safety"
+    },
+    {
+     "t": "모델 가중치 공개로 얻는 편익이 위험보다 크다고 평가하는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "A model for which the inherent risk assessment indicates a ML R&D CCL has been reached will be deemed to pose an acceptable level of residual risk for further development or deployment, if:",
+   "ko": "고유 위험 평가 결과 머신러닝 연구개발 CCL에 도달한 것으로 나타난 모델은 다음 조건을 충족하는 경우 추가 개발 또는 배포에 있어 수용 가능한 수준의 잔여 위험을 초래하는 것으로 간주된다.",
+   "marks": [
+    {
+     "t": "머신러닝 연구개발 CCL에 도달한 것으로 나타난 모델",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "We assess that the deployment mitigations have brought the residual risk of severe harm to an acceptable level, based on considerations such as the effectiveness of mitigations, and information pertaining to model propensities and the severity of related events.[^5] This is required only for external deployment and high-risk internal deployment, not further development.",
+   "ko": "완화조치의 효과성, 모델 성향 및 관련 사건의 심각도에 관한 정보 등을 고려하여 배포 완화조치가 심각한 피해의 잔여 위험을 수용 가능한 수준으로 낮추었다고 평가하는 경우.[^5] 이 조건은 외부 배포 및 고위험 내부 배포에만 요구되며, 추가 개발에는 요구되지 않는다.",
+   "marks": [
+    {
+     "t": "배포 완화조치가 심각한 피해의 잔여 위험을 수용 가능한 수준으로 낮추었다고 평가하는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Security mitigations have been applied to the model weights reaching the recommended security level stated below, or we otherwise assess that the level of security applied is adequate, e.g. based on mitigations already in place, if they match or exceed the level of security applied to other models with similar capabilities or risk profiles, or we assess that the benefits of the open release of model weights outweigh the risks.",
+   "ko": "아래에 명시된 권장 보안 수준(SL)에 도달하도록 모델 가중치에 보안 위험 완화조치가 적용된 경우, 또는 적용된 보안 수준이 충분하다고 달리 평가하는 경우. 예를 들어 이미 시행 중인 완화조치가 유사한 역량이나 위험 프로필을 가진 다른 모델에 적용된 보안 수준과 동등하거나 이를 상회하는 경우, 또는 모델 가중치 공개로 얻는 편익이 위험보다 크다고 평가하는 경우가 이에 해당한다.",
+   "marks": [
+    {
+     "t": "모델 가중치에 보안 위험 완화조치가 적용된 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "A model for which the inherent risk assessment indicates the TCL for ML R&D and misalignment risk has been reached will be deemed to pose an acceptable level of residual risk for further development or deployment, if:",
+   "ko": "고유 위험 평가 결과 머신러닝 연구개발 및 오정렬 위험에 대한 TCL에 도달한 것으로 나타난 모델은 다음 조건을 충족하는 경우 추가 개발 또는 배포에 있어 수용 가능한 수준의 잔여 위험을 초래하는 것으로 간주된다.",
+   "marks": [
+    {
+     "t": "머신러닝 연구개발 및 오정렬 위험에 대한 TCL에 도달한 것으로 나타난 모델",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "We assess that the deployment mitigations have brought the residual risk of significant harm to an acceptable level, based on considerations such as the effectiveness of mitigations, and information pertaining to model propensities and the severity of related events, or if we assess that the model is very unlikely to possess the propensities that would be required for material risk of significant harm through misalignment risk. This is required only for external deployment and high-risk internal deployment, not further development.",
+   "ko": "완화조치의 효과성, 모델 성향 및 관련 사건의 심각도에 관한 정보 등을 고려하여 배포 완화조치가 중대한 피해의 잔여 위험을 수용 가능한 수준으로 낮추었다고 평가하는 경우, 또는 오정렬 위험을 통해 중대한 피해의 실질적 위험을 초래하는 데 필요한 성향을 모델이 보유하고 있을 가능성이 매우 낮다고 평가하는 경우. 이 조건은 외부 배포 및 고위험 내부 배포에만 요구되며, 추가 개발에는 요구되지 않는다.",
+   "marks": [
+    {
+     "t": "오정렬 위험을 통해 중대한 피해의 실질적 위험을 초래하는 데 필요한 성향을 모델이 보유하고 있을 가능성이 매우 낮다고 평가하는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "We assess that the level of security applied is adequate, e.g. based on mitigations already in place, if they match or exceed the level of security applied to other models with similar capabilities or risk profiles, or we assess that the benefits of the open release of model weights outweigh the risks.",
+   "ko": "적용된 보안 수준이 충분하다고 평가하는 경우. 예를 들어 이미 시행 중인 완화조치가 유사한 역량이나 위험 프로필을 가진 다른 모델에 적용된 보안 수준과 동등하거나 이를 상회하는 경우, 또는 모델 가중치 공개로 얻는 편익이 위험보다 크다고 평가하는 경우가 이에 해당한다.",
+   "marks": [
+    {
+     "t": "모델 가중치 공개로 얻는 편익이 위험보다 크다고 평가하는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Note: Assessing frontier AI capabilities and corresponding significant and severe risk is a complex process. Because the science of AI risk assessment is still developing, our assessments will often involve some level of subjective analysis. The concept of proportionality is central to our determination of whether a particular mitigation has sufficiently reduced the risk to acceptable levels. The mitigation and the effects of such mitigation should also be assessed holistically and be proportionate with expected impact of a model's risk, thus balancing safety with innovation.",
+   "ko": "참고: 프론티어 AI의 역량과 그에 상응하는 중대한 위험 및 심각한 위험을 평가하는 것은 복잡한 과정이다. AI 위험 평가에 관한 과학은 아직 발전 중이므로, 우리의 평가에는 상당 부분 어느 정도의 주관적 분석이 수반될 것이다. 특정 완화조치가 위험을 수용 가능한 수준으로 충분히 낮추었는지 판단할 때 비례성 개념이 핵심이다. 또한 완화조치와 그 효과는 종합적으로 평가되어야 하며, 모델 위험의 예상 영향에 비례해야 한다. 이를 통해 안전과 혁신 간의 균형을 도모한다.",
+   "marks": [
+    {
+     "t": "AI 위험 평가에 관한 과학은 아직 발전 중이므로, 우리의 평가에는 상당 부분 어느 정도의 주관적 분석이 수반될 것이다.",
+     "k": "key"
+    },
+    {
+     "t": "이를 통해 안전과 혁신 간의 균형을 도모한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Section 2: Misuse",
+   "ko": "섹션 2: 오용",
+   "id": "s56"
+  },
+  {
+   "type": "p",
+   "en": "This section describes our mitigation approach for models that pose risks of significant or severe harm through misuse, and then details our set of misuse T/CCLs (CBRN, cyber and harmful manipulation), as well as the mitigation approach that we assess as appropriate for them.",
+   "ko": "본 절은 오용을 통해 중대한 피해 또는 심각한 피해의 위험을 초래하는 모델에 대한 우리의 완화 접근 방식을 기술하고, 이어서 오용 T/CCL(화학·생물·방사능·핵, 사이버, 유해한 조작) 및 이에 적절하다고 평가하는 완화 접근 방식을 상세히 설명한다.",
+   "marks": [
+    {
+     "t": "오용을 통해 중대한 피해 또는 심각한 피해의 위험을 초래하는 모델에 대한 우리의 완화 접근 방식",
+     "k": "safety"
+    },
+    {
+     "t": "오용 T/CCL(화학·생물·방사능·핵, 사이버, 유해한 조작)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2.1 Mitigation Approach",
+   "ko": "2.1 완화 접근 방식",
+   "id": "s58"
+  },
+  {
+   "type": "p",
+   "en": "There are two categories of mitigations to address models with misuse critical capabilities: security mitigations intended to prevent the exfiltration or unauthorized modification of model weights, and deployment mitigations intended to counter the misuse of critical capabilities in external deployments. For security, we have several levels of mitigations, allowing calibration of the appropriateness and robustness of security measures to the risks posed. Regarding deployment mitigations for models reaching T/CCLs, we specify a standard process for applying, assessing, and reviewing mitigations: the aim of this process is to calibrate mitigations to T/CCLs, and the procedural approach reflects the more iterative and T/CCL-dependent nature of deployment mitigations. This structured process for deployment mitigations is centered on assessing and reviewing that the risk of severe harm has been brought to an acceptable level proportionate to the risk.",
+   "ko": "오용 관련 치명적 역량을 갖춘 모델에 대처하기 위한 완화조치는 두 가지 범주로 구분된다. 하나는 모델 가중치의 유출 또는 무단 수정을 방지하기 위한 보안 위험 완화조치이고, 다른 하나는 외부 배포 과정에서 치명적 역량의 오용을 막기 위한 배포 완화조치이다. 보안 측면에서는 여러 단계의 완화조치를 두어, 초래되는 위험에 맞게 보안 조치의 적절성과 강건성을 보정할 수 있도록 한다. T/CCL에 도달한 모델에 대한 배포 완화조치와 관련해서는 완화조치의 적용, 평가 및 검토를 위한 표준 절차를 명시한다. 이 절차의 목적은 완화조치를 T/CCL에 맞게 보정하는 것이며, 이러한 절차적 접근 방식은 배포 완화조치가 보다 반복적이고 T/CCL에 의존적인 특성을 지닌다는 점을 반영한다. 배포 완화조치를 위한 이 구조화된 절차는 심각한 피해의 위험이 위험에 비례하여 수용 가능한 수준으로 낮추어졌는지를 평가하고 검토하는 데 중점을 둔다.",
+   "marks": [
+    {
+     "t": "오용 관련 치명적 역량을 갖춘 모델에 대처하기 위한 완화조치",
+     "k": "safety"
+    },
+    {
+     "t": "하나는 모델 가중치의 유출 또는 무단 수정을 방지하기 위한 보안 위험 완화조치이고, 다른 하나는 외부 배포 과정에서 치명적 역량의 오용을 막기 위한 배포 완화조치이다.",
+     "k": "key"
+    },
+    {
+     "t": "보안 조치의 적절성과 강건성을 보정할 수 있도록 한다",
+     "k": "safety"
+    },
+    {
+     "t": "T/CCL에 도달한 모델에 대한 배포 완화조치와 관련해서는 완화조치의 적용, 평가 및 검토를 위한 표준 절차를 명시한다",
+     "k": "safety"
+    },
+    {
+     "t": "심각한 피해의 위험이 위험에 비례하여 수용 가능한 수준으로 낮추어졌는지를 평가하고 검토하는 데 중점을 둔다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2.1.1 Security Mitigations",
+   "ko": "2.1.1 보안 위험 완화조치",
+   "id": "s60"
+  },
+  {
+   "type": "p",
+   "en": "Security mitigations against exfiltration or unauthorized modification risk, such as identity and access management practices and hardening interface-access to unreleased model parameters, are important for models reaching misuse CCLs. This is because the release or unauthorized modification of model weights may enable the removal of any safeguards trained into or deployed with the model, and hence access (including by threat actors) to any critical capabilities.",
+   "ko": "신원 및 접근 관리 실행 방안, 미공개 모델 파라미터에 대한 인터페이스 접근 강화 등 유출 또는 무단 수정 위험에 대한 보안 위험 완화조치는 오용 CCL에 도달한 모델에 중요하다. 모델 가중치가 공개되거나 무단으로 수정되면 모델에 학습되었거나 모델과 함께 배포된 모든 안전장치가 제거될 수 있으며, 이에 따라 (위협 행위자를 포함한) 누구든 치명적 역량에 접근할 수 있게 되기 때문이다.",
+   "marks": [
+    {
+     "t": "유출 또는 무단 수정 위험에 대한 보안 위험 완화조치는 오용 CCL에 도달한 모델에 중요하다",
+     "k": "safety"
+    },
+    {
+     "t": "모델 가중치가 공개되거나 무단으로 수정되면 모델에 학습되었거나 모델과 함께 배포된 모든 안전장치가 제거될 수 있으며, 이에 따라 (위협 행위자를 포함한) 누구든 치명적 역량에 접근할 수 있게 되기 때문이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Using Google's Secure AI Framework (SAIF) and Google's common security infrastructure, we implement state-of-the-art security mitigations. SAIF is a defense-in-depth approach that embeds security into every layer of our AI systems-from data and infrastructure to models and applications. SAIF is premised on six core elements: strong security foundations, detection and response, automated defenses, harmonized platform-level controls, adaptable controls to mitigate emerging threats, and end-to-end risk assessments.",
+   "ko": "우리는 Google의 Secure AI Framework(SAIF)와 Google의 공통 보안 인프라를 활용하여 최첨단 보안 위험 완화조치를 시행한다. SAIF는 데이터와 인프라에서 모델과 애플리케이션에 이르기까지 AI 시스템의 모든 계층에 보안을 내재화하는 심층 방어(defense-in-depth) 접근 방식이다. SAIF는 여섯 가지 핵심 요소를 전제로 한다. 강력한 보안 기반, 탐지 및 대응, 자동화된 방어, 조화된 플랫폼 수준의 통제, 새로운 위협을 완화하기 위한 적응형 통제, 그리고 종단 간 위험 평가가 그것이다.",
+   "marks": [
+    {
+     "t": "Google의 Secure AI Framework(SAIF)와 Google의 공통 보안 인프라를 활용하여 최첨단 보안 위험 완화조치를 시행한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We use security levels to indicate security goals/principles in line with the corresponding level in the RAND model weight security framework.[^6] We also define and recommend \"Security Level 2+,\" which uses RAND Security Level 2 (SL2) as a baseline, with additional security measures designed to address risks from insider threats and well-resourced non-state external actors. These additional measures may include, for example: dedicated insider risk teams; background checks and ID verification for personnel with sensitive access; review of model training data for signs of tampering; mandating that the processing of untrusted inputs occurs within sandboxed environments; advanced red-teaming that simulates well-resourced adversaries (including Advanced Persistent Threat (APT) groups); and proactive threat hunting with 24/7 incident response capabilities.",
+   "ko": "우리는 RAND 모델 가중치 보안 프레임워크(RAND model weight security framework)의 해당 수준에 맞추어 보안 목표/원칙을 나타내기 위해 보안 수준(SL)을 사용한다.[^6] 또한 \"보안 수준 2+(Security Level 2+)\"를 정의하고 권장한다. 이는 RAND 보안 수준 2(SL2)를 기준으로 삼되, 내부자 위협 및 자원이 풍부한 외부 비국가 행위자로부터의 위험에 대처하도록 설계된 추가 보안 조치를 포함한다. 이러한 추가 조치에는 예를 들어 다음이 포함될 수 있다. 전담 내부자 위험 대응팀 운영, 민감한 접근 권한을 가진 인력에 대한 신원 조회 및 신분 확인, 변조 징후 확인을 위한 모델 학습 데이터 검토, 신뢰할 수 없는 입력의 처리를 샌드박스 환경 내에서 수행하도록 의무화, 자원이 풍부한 적대 세력(지능형 지속 위협(APT) 그룹 포함)을 모사하는 고도화된 레드티밍, 그리고 연중무휴 24시간 사고 대응 역량을 갖춘 선제적 위협 헌팅(threat hunting).",
+   "marks": [
+    {
+     "t": "RAND 모델 가중치 보안 프레임워크(RAND model weight security framework)의 해당 수준에 맞추어 보안 목표/원칙을 나타내기 위해 보안 수준(SL)을 사용한다",
+     "k": "safety"
+    },
+    {
+     "t": "내부자 위협 및 자원이 풍부한 외부 비국가 행위자로부터의 위험에 대처하도록 설계된 추가 보안 조치를 포함한다",
+     "k": "safety"
+    },
+    {
+     "t": "자원이 풍부한 적대 세력(지능형 지속 위협(APT) 그룹 포함)을 모사하는 고도화된 레드티밍",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Because AI security is an area of active research, we expect the concrete measures implemented to reach each level of security to evolve substantially.",
+   "ko": "AI 보안은 활발히 연구가 진행 중인 분야이므로, 각 보안 수준에 도달하기 위해 시행하는 구체적인 조치는 상당히 발전해 나갈 것으로 예상한다.",
+   "marks": [
+    {
+     "t": "AI 보안은 활발히 연구가 진행 중인 분야이므로",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2.1.2 Deployment Mitigations",
+   "ko": "2.1.2 배포 완화조치",
+   "id": "s65"
+  },
+  {
+   "type": "p",
+   "en": "The following mitigation process for external deployments will be applied to models reaching a misuse T/CCL, allowing for iterative and flexible tailoring of mitigations to each risk and use case.",
+   "ko": "오용 T/CCL에 도달한 모델에는 외부 배포를 위한 다음의 완화 절차가 적용되며, 이를 통해 각 위험 및 사용 사례에 맞게 완화조치를 반복적이고 유연하게 조정할 수 있다.",
+   "marks": [
+    {
+     "t": "오용 T/CCL에 도달한 모델에는 외부 배포를 위한 다음의 완화 절차가 적용되며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Development and assessment of mitigations: safeguards and an accompanying residual risk assessment are developed by iterating on the following:",
+   "ko": "완화조치의 개발 및 평가(assessment): 안전장치와 이에 수반되는 잔여 위험 평가는 다음 사항을 반복하여 개발한다.",
+   "marks": [
+    {
+     "t": "안전장치와 이에 수반되는 잔여 위험 평가는 다음 사항을 반복하여 개발한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "a. Developing and improving a suite of safeguards targeting the capability, which may include measures such as safety post-training, monitoring and analysis, account moderation, jailbreak detection and patching, user verification, and bug bounties.[^7]",
+   "ko": "a. 해당 역량을 겨냥한 일련의 안전장치를 개발하고 개선한다. 여기에는 안전 사후 학습, 모니터링 및 분석, 계정 관리(account moderation), 탈옥(Jailbreak) 탐지 및 패치, 사용자 인증, 버그 바운티 등의 조치가 포함될 수 있다.[^7]",
+   "marks": [
+    {
+     "t": "안전 사후 학습, 모니터링 및 분석, 계정 관리(account moderation), 탈옥(Jailbreak) 탐지 및 패치, 사용자 인증, 버그 바운티",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "b. Assessing the robustness of these mitigations against the risk posed through testing (e.g. automated evaluations, red teaming) and threat modeling research. This residual risk assessment could take into account factors such as:",
+   "ko": "b. 테스트(예: 자동화된 평가(evaluation), 레드티밍) 및 위협 모델링 연구를 통해, 제기되는 위험에 대한 이러한 완화조치의 강건성을 평가한다. 이 잔여 위험 평가에서는 다음과 같은 요소를 고려할 수 있다.",
+   "marks": [
+    {
+     "t": "테스트(예: 자동화된 평가(evaluation), 레드티밍) 및 위협 모델링 연구를 통해, 제기되는 위험에 대한 이러한 완화조치의 강건성을 평가한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "i. The effectiveness of the mitigations. For example, tests run on mitigated models may suggest that the refusal rate and jailbreak robustness together imply that threat actors are unlikely to be able to circumvent safeguards.",
+   "ko": "i. 완화조치의 효과성. 예를 들어, 완화조치가 적용된 모델에 대해 수행한 테스트에서 거부율과 탈옥 강건성을 종합할 때 위협 행위자가 안전장치를 우회할 가능성이 낮다는 결과가 나올 수 있다.",
+   "marks": [
+    {
+     "t": "거부율과 탈옥 강건성을 종합할 때 위협 행위자가 안전장치를 우회할 가능성이 낮다는 결과",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "ii. The likelihood and consequences of model misuse, capability improvements after the risk assessment, and likelihood and consequences of our mitigations being circumvented, deactivated, or subverted.",
+   "ko": "ii. 모델 오용의 가능성과 결과, 위험 평가 이후의 역량 향상, 그리고 우리의 완화조치가 우회되거나 비활성화되거나 무력화될 가능성과 그 결과.",
+   "marks": [
+    {
+     "t": "우리의 완화조치가 우회되거나 비활성화되거나 무력화될 가능성과 그 결과",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "iii. The scope of the deployment. For example, small scale and private deployments may pose substantially less risk than large scale or public deployments.",
+   "ko": "iii. 배포의 범위. 예를 들어, 소규모 비공개 배포는 대규모 배포나 공개 배포보다 위험이 상당히 낮을 수 있다."
+  },
+  {
+   "type": "li",
+   "en": "iv. What capabilities and mitigations are available on other publicly available models. For example, whether another (non-Google) publicly deployed model is at the same T/CCL, and has mitigations that are less effective at preventing misuse than that of the model being assessed, in which case the deployment of this model is less likely to materially increase risk.",
+   "ko": "iv. 공개적으로 이용 가능한 다른 모델에서 어떤 역량과 완화조치가 제공되는지 여부. 예를 들어, 공개적으로 배포된 다른 (Google이 아닌) 모델이 동일한 T/CCL에 도달해 있으면서 평가 대상 모델보다 오용 방지 효과가 낮은 완화조치를 갖추고 있는지 여부로, 이 경우 해당 모델의 배포가 위험을 실질적으로 증가시킬 가능성은 낮다.",
+   "marks": [
+    {
+     "t": "이 경우 해당 모델의 배포가 위험을 실질적으로 증가시킬 가능성은 낮다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "v. The historical incidence and severity of related events: for example, whether data suggests a high (or low) likelihood of attempted misuse of models at the T/CCL. Mitigations would consequently have to be stronger (or would not have to be so strong) for deployment to be appropriate.",
+   "ko": "v. 관련 사건의 과거 발생 빈도 및 심각도. 예를 들어, 데이터상 T/CCL 수준 모델에 대한 오용 시도 가능성이 높은지(또는 낮은지) 여부이다. 이에 따라 배포가 적절한 것이 되려면 완화조치가 더 강력해야 하거나(또는 그만큼 강력하지 않아도 된다).",
+   "marks": [
+    {
+     "t": "데이터상 T/CCL 수준 모델에 대한 오용 시도 가능성이 높은지(또는 낮은지) 여부",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "c. Where the model has reached a CCL, the residual risk assessment will be supplemented with a safety case.",
+   "ko": "c. 모델이 CCL에 도달한 경우, 잔여 위험 평가는 안전 사례로 보완된다.",
+   "marks": [
+    {
+     "t": "모델이 CCL에 도달한 경우, 잔여 위험 평가는 안전 사례로 보완된다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Pre-deployment review of residual risk assessment: external deployments of a model take place only after the appropriate governance function determines the residual risk to be acceptable (including a safety case where a CCL has been reached). In particular, we will deem deployment mitigations adequate if the evidence suggests that for the T/CCLs the model has reached, the increase in likelihood of harm from the proposed external deployment has been reduced to an acceptable level.",
+   "ko": "잔여 위험 평가의 배포 전 검토: 모델의 외부 배포는 적절한 거버넌스 기능이 잔여 위험을 수용 가능한 수준이라고 판단한 후에만 이루어진다(CCL에 도달한 경우 안전 사례 포함). 특히, 모델이 도달한 T/CCL에 대해 제안된 외부 배포로 인한 피해 가능성의 증가가 수용 가능한 수준으로 낮추어졌다는 증거가 있는 경우, 배포 완화조치가 적절하다고 간주한다.",
+   "marks": [
+    {
+     "t": "모델의 외부 배포는 적절한 거버넌스 기능이 잔여 위험을 수용 가능한 수준이라고 판단한 후에만 이루어진다",
+     "k": "key"
+    },
+    {
+     "t": "피해 가능성의 증가가 수용 가능한 수준으로 낮추어졌다는 증거가 있는 경우, 배포 완화조치가 적절하다고 간주한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Post-deployment processes: our residual risk assessments, safety cases and mitigations may be updated as a result of post-market monitoring, including information about incidents relating to our frontier safety risk domains. Material updates to a safety case will be submitted to the appropriate governance function for review and might result in updates to the related residual risk assessment or safety case.",
+   "ko": "배포 후 절차: 우리의 잔여 위험 평가, 안전 사례 및 완화조치는 프론티어 안전 위험 영역과 관련된 사고 정보를 포함한 출시 후 모니터링의 결과에 따라 갱신될 수 있다. 안전 사례의 중대한 갱신 사항은 검토를 위해 적절한 거버넌스 기능에 제출되며, 그 결과 관련 잔여 위험 평가 또는 안전 사례가 갱신될 수 있다.",
+   "marks": [
+    {
+     "t": "프론티어 안전 위험 영역과 관련된 사고 정보를 포함한 출시 후 모니터링의 결과에 따라 갱신될 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This process is designed to ensure that residual risk remains at acceptable levels: evidence of efficacy collected during development and testing, as well as expert-driven estimates of other parameters, will enable us to assess residual risk and to detect substantial changes that invalidate our risk assessment. With iteration on mitigations and residual risk assessments, we believe that we are able to make informed decisions about the level of risk via a T/CCL before a model is deployed, and prevent models posing unacceptable levels of risk from being deployed.",
+   "ko": "이 절차는 잔여 위험이 수용 가능한 수준으로 유지되도록 설계되었다. 개발 및 테스트 과정에서 수집된 효과성 증거와 기타 파라미터에 대한 전문가 기반 추정치를 통해 잔여 위험을 평가하고, 우리의 위험 평가를 무효화하는 상당한 변화를 탐지할 수 있다. 완화조치와 잔여 위험 평가를 반복함으로써, 모델이 배포되기 전에 T/CCL을 통해 위험 수준에 관한 정보에 기반한 결정을 내리고, 수용 불가능한 수준의 위험을 제기하는 모델이 배포되는 것을 방지할 수 있다고 본다.",
+   "marks": [
+    {
+     "t": "수용 불가능한 수준의 위험을 제기하는 모델이 배포되는 것을 방지할 수 있다고 본다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "While we monitor for potential future risks related to insider misuse, our current assessment of these risk domains indicates that the risks of insider misuse posed by the misuse T/CCLs identified below are effectively addressed by our baseline controls (such as background checks and access restrictions). At this stage, additional mitigations beyond these established safeguards are not required.",
+   "ko": "우리는 내부자 오용과 관련된 잠재적인 향후 위험을 모니터링하고 있으나, 이러한 위험 영역에 대한 현재의 평가(assessment)에 따르면 아래에 제시된 오용 T/CCL이 제기하는 내부자 오용 위험은 기본 통제(신원 조회 및 접근 제한 등)를 통해 효과적으로 대처되고 있다. 현 단계에서는 이러한 기존 안전장치 외에 추가적인 완화조치가 필요하지 않다.",
+   "marks": [
+    {
+     "t": "내부자 오용 위험은 기본 통제(신원 조회 및 접근 제한 등)를 통해 효과적으로 대처되고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "현 단계에서는 이러한 기존 안전장치 외에 추가적인 완화조치가 필요하지 않다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2.2 Misuse Capability Levels",
+   "ko": "2.2 오용 역량 수준",
+   "id": "s80"
+  },
+  {
+   "type": "p",
+   "en": "We set out below a set of CBRN, cyber, and harmful manipulation CCLs as well as the CBRN TCL that we have identified through ongoing analysis of these risk domains. We expect these to evolve over time. We recommend a security level for each CCL, which reflects our assessment of the minimum appropriate level of security the field of frontier AI should apply to models reaching each CCL. In practice, our overall security posture may commonly exceed the baseline levels recommended here.",
+   "ko": "아래에서는 이러한 위험 영역에 대한 지속적인 분석을 통해 식별한 일련의 화학·생물·방사능·핵, 사이버, 유해한 조작 CCL과 화학·생물·방사능·핵 TCL을 제시한다. 이는 시간이 지남에 따라 발전할 것으로 예상한다. 우리는 각 CCL에 대해 보안 수준을 권장하며, 이는 프론티어 AI 분야가 각 CCL에 도달한 모델에 적용해야 할 최소한의 적절한 보안 수준에 대한 우리의 평가를 반영한다. 실제로 우리의 전반적인 보안 태세는 여기에서 권장하는 기준 수준을 넘어서는 경우가 많을 수 있다.",
+   "marks": [
+    {
+     "t": "화학·생물·방사능·핵, 사이버, 유해한 조작 CCL과 화학·생물·방사능·핵 TCL을 제시한다",
+     "k": "safety"
+    },
+    {
+     "t": "우리는 각 CCL에 대해 보안 수준을 권장하며, 이는 프론티어 AI 분야가 각 CCL에 도달한 모델에 적용해야 할 최소한의 적절한 보안 수준에 대한 우리의 평가를 반영한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "These recommended security levels reflect our current thinking proportionate to the risks posed and may be adjusted if our understanding of the risks changes. This may occur if, for example, a model does not possess capabilities meaningfully different from other publicly available models that have weaker security applied (in which case the marginal benefit of higher security is limited), or if we assess that the benefits of the open release of model weights outweigh the risks. Relatedly, we believe these recommendations will only be effective if the entire frontier AI field applies them, and of limited social utility if not.",
+   "ko": "이러한 권장 보안 수준은 제기되는 위험에 비례한 현재의 판단을 반영하며, 위험에 대한 이해가 바뀌면 조정될 수 있다. 예를 들어, 모델이 더 약한 보안이 적용된 공개적으로 이용 가능한 다른 모델과 의미 있게 다른 역량을 보유하지 않은 경우(이 경우 더 높은 보안의 한계 편익은 제한적임), 또는 모델 가중치의 공개 배포에 따른 편익이 위험보다 크다고 평가하는 경우가 이에 해당할 수 있다. 이와 관련하여, 이러한 권장 사항은 프론티어 AI 분야 전체가 적용할 때에만 효과적이며, 그렇지 않을 경우 사회적 효용이 제한적이라고 본다.",
+   "marks": [
+    {
+     "t": "더 약한 보안이 적용된 공개적으로 이용 가능한 다른 모델과 의미 있게 다른 역량을 보유하지 않은 경우",
+     "k": "safety"
+    },
+    {
+     "t": "모델 가중치의 공개 배포에 따른 편익이 위험보다 크다고 평가하는 경우",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 권장 사항은 프론티어 AI 분야 전체가 적용할 때에만 효과적이며, 그렇지 않을 경우 사회적 효용이 제한적이라고 본다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2.2.1 Chemical, Biological, Radiological or Nuclear",
+   "ko": "2.2.1 화학·생물·방사능·핵",
+   "id": "s83"
+  },
+  {
+   "type": "p",
+   "en": "This risk domain focuses on risks of models assisting in the development, preparation and/or execution of a CBRN threat.",
+   "ko": "이 위험 영역은 모델이 화학·생물·방사능·핵 위협의 개발, 준비 및/또는 실행을 지원할 위험에 초점을 맞춘다.",
+   "marks": [
+    {
+     "t": "모델이 화학·생물·방사능·핵 위협의 개발, 준비 및/또는 실행을 지원할 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Table 2.2.1.a: CBRN CCL and Security Mitigations",
+   "ko": "표 2.2.1.a: 화학·생물·방사능·핵 CCL 및 보안 위험 완화조치"
+  },
+  {
+   "type": "table",
+   "en": "| Critical Capability Level | Recommended security level and rationale | ⏎ | CBRN uplift level 1: Provides low to medium resourced actors uplift in reference scenarios resulting in additional[^8] expected harm at severe scale. | Security level 2+ The difficulty of building defenses against certain CBRN threats means the exfiltration, unauthorized modification, and leak of model weights with this capability could be highly damaging. However, the low to medium resourced actors who would be likely to experience the most CBRN uplift are unlikely to pose a substantial exfiltration threat at the level of OC3 groups as defined by RAND. |",
+   "ko": "| 치명적 역량 수준 | 권장 보안 수준 및 근거 | ⏎ | 화학·생물·방사능·핵 업리프트 수준 1: 참조 시나리오에서 중저 수준의 자원을 보유한 행위자에게 업리프트를 제공하여 심각한 규모의 추가적인[^8] 기대 피해를 초래함. | 보안 수준 2+ 특정 화학·생물·방사능·핵 위협에 대한 방어 체계 구축이 어렵다는 점에서, 이러한 역량을 갖춘 모델 가중치의 유출, 무단 수정 및 누출은 매우 큰 피해를 초래할 수 있음. 그러나 화학·생물·방사능·핵 업리프트를 가장 크게 경험할 가능성이 있는 중저 수준의 자원을 보유한 행위자는 RAND가 정의한 OC3 그룹 수준의 상당한 유출 위협을 제기할 가능성이 낮음. |"
+  },
+  {
+   "type": "h3",
+   "en": "CBRN Tracked Capability Level",
+   "ko": "화학·생물·방사능·핵 추적 역량 수준",
+   "id": "s87"
+  },
+  {
+   "type": "p",
+   "en": "The CBRN TCL is defined as follows:",
+   "ko": "화학·생물·방사능·핵 TCL은 다음과 같이 정의된다.",
+   "marks": [
+    {
+     "t": "화학·생물·방사능·핵 TCL",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "CBRN uplift TCL : Provides low to medium resourced actors uplift in reference scenarios, resulting in material risk of CBRN attacks that could result in significant but not severe harm.",
+   "ko": "화학·생물·방사능·핵 업리프트 TCL: 참조 시나리오에서 중저 수준의 자원을 보유한 행위자에게 업리프트를 제공하여, 상당하지만 심각하지는 않은 피해를 초래할 수 있는 화학·생물·방사능·핵 공격의 실질적 위험을 야기함.",
+   "marks": [
+    {
+     "t": "중저 수준의 자원을 보유한 행위자에게 업리프트를 제공하여, 상당하지만 심각하지는 않은 피해를 초래할 수 있는 화학·생물·방사능·핵 공격의 실질적 위험을 야기함",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2.2.2 Cyber",
+   "ko": "2.2.2 사이버",
+   "id": "s90"
+  },
+  {
+   "type": "p",
+   "en": "This risk domain focuses on risks of models assisting in the development, preparation, and/or execution of a cyber attack.",
+   "ko": "이 위험 영역은 모델이 사이버 공격의 개발, 준비 및/또는 실행을 지원할 위험에 초점을 맞춘다.",
+   "marks": [
+    {
+     "t": "모델이 사이버 공격의 개발, 준비 및/또는 실행을 지원할 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Table 2.2.2.a: Cyber CCL and Security Mitigations",
+   "ko": "표 2.2.2.a: 사이버 CCL 및 보안 위험 완화조치"
+  },
+  {
+   "type": "table",
+   "en": "| Critical Capability Level | Recommended security level and rationale | ⏎ | Cyber uplift level 1: Provides sufficient uplift with high impact cyber attacks for additional expected harm at severe scale. | Security level 2+ Models able to greatly assist cyber attack might be of interest to well-resourced state actors. However, the potential for automated cyber-defense and social adaptation as a response to exfiltration means that higher levels of security, and the resulting costs to innovation, are likely not warranted. |",
+   "ko": "| 치명적 역량 수준 | 권장 보안 수준 및 근거 | ⏎ | 사이버 업리프트 수준 1: 고영향 사이버 공격에 대해 충분한 업리프트를 제공하여 심각한 규모의 추가적인 기대 피해를 초래함. | 보안 수준 2+ 사이버 공격을 크게 지원할 수 있는 모델은 자원이 풍부한 국가 행위자의 관심 대상이 될 수 있음. 그러나 유출에 대응한 자동화된 사이버 방어와 사회적 적응의 가능성을 고려할 때, 더 높은 보안 수준과 그에 따른 혁신 비용은 정당화되지 않을 가능성이 높음. |"
+  },
+  {
+   "type": "h3",
+   "en": "2.2.3 Harmful Manipulation",
+   "ko": "2.2.3 유해한 조작",
+   "id": "s94"
+  },
+  {
+   "type": "p",
+   "en": "This risk domain focuses on risks of models with high manipulative capabilities potentially being misused in ways that could reasonably result in large scale harm.",
+   "ko": "이 위험 영역은 높은 조작 역량을 갖춘 모델이 대규모 피해를 초래할 것으로 합리적으로 예상되는 방식으로 오용될 위험에 초점을 맞춘다.",
+   "marks": [
+    {
+     "t": "높은 조작 역량을 갖춘 모델이 대규모 피해를 초래할 것으로 합리적으로 예상되는 방식으로 오용될 위험",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Note: The research into harmful manipulation from a severe risk perspective is nascent. The CCL and our assessment of the risk in this domain is exploratory and subject to further research, and may be substantially changed over time.",
+   "ko": "참고: 심각한 위험의 관점에서 유해한 조작에 관한 연구는 초기 단계에 있다. 이 영역의 CCL과 위험에 대한 우리의 평가(assessment)는 탐색적 성격을 지니며 추가 연구가 필요하고, 시간이 지남에 따라 상당히 변경될 수 있다.",
+   "marks": [
+    {
+     "t": "심각한 위험의 관점에서 유해한 조작에 관한 연구는 초기 단계에 있다",
+     "k": "safety"
+    },
+    {
+     "t": "탐색적 성격을 지니며 추가 연구가 필요하고, 시간이 지남에 따라 상당히 변경될 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Table 2.2.3.a: Harmful Manipulation CCL and Security Mitigations",
+   "ko": "표 2.2.3.a: 유해한 조작 CCL 및 보안 위험 완화조치"
+  },
+  {
+   "type": "table",
+   "en": "| Critical Capability Level | Recommended security level and rationale | ⏎ | Harmful manipulation level 1 (exploratory): Possesses manipulative capabilities sufficient to enable it to systematically and substantially change beliefs and behavior in identified high stakes contexts over the course of interactions with the model, reasonably resulting in additional expected harm at severe scale. | Security level 2+ The lower velocity of harm scenarios associated with this CCL and the viability of social defenses against large-scale misuse of such models count against security mitigations with substantial costs to innovation. |",
+   "ko": "| 치명적 역량 수준 | 권장 보안 수준 및 근거 | ⏎ | 유해한 조작 수준 1(탐색적): 모델과의 상호작용 과정에서 식별된 고위험 맥락에서 신념과 행동을 체계적이고 실질적으로 변화시킬 수 있을 만큼 충분한 조작 역량을 보유하여, 심각한 규모의 추가적인 기대 피해를 초래할 것으로 합리적으로 예상됨. | 보안 수준 2+ 이 CCL과 관련된 피해 시나리오의 진행 속도가 상대적으로 느리고, 이러한 모델의 대규모 오용에 대한 사회적 방어가 실행 가능하다는 점은 혁신에 상당한 비용을 수반하는 보안 위험 완화조치를 적용하지 않을 근거가 됨. |"
+  },
+  {
+   "type": "h2",
+   "en": "Section 3: Machine Learning R&D and Misalignment",
+   "ko": "섹션 3: 머신러닝 R&D 및 오정렬",
+   "id": "s99"
+  },
+  {
+   "type": "p",
+   "en": "This section describes our mitigation approach for models that pose risks of significant or severe harm through machine learning R&D and misalignment, and then details our set of TCL and CCLs, as well as the mitigations that we provisionally assess as appropriate for them.",
+   "ko": "이 섹션에서는 머신러닝 R&D 및 오정렬을 통해 상당하거나 심각한 피해의 위험을 제기하는 모델에 대한 우리의 완화 접근법을 기술하고, 이어서 우리의 TCL 및 CCL 세트와 이에 대해 잠정적으로 적절한 것으로 평가(assessment)하는 완화조치를 상술한다.",
+   "marks": [
+    {
+     "t": "머신러닝 R&D 및 오정렬을 통해 상당하거나 심각한 피해의 위험을 제기하는 모델에 대한 우리의 완화 접근법",
+     "k": "safety"
+    },
+    {
+     "t": "우리의 TCL 및 CCL 세트와 이에 대해 잠정적으로 적절한 것으로 평가(assessment)하는 완화조치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3.1 Mitigation Approach",
+   "ko": "3.1 완화 접근법",
+   "id": "s101"
+  },
+  {
+   "type": "p",
+   "en": "As with misuse T/CCLs, we take a similar approach to security and deployment mitigations for ML R&D and Misalignment T/CCLs, although deployment mitigations focus on different threat models and therefore also include measures for high-risk internal deployments.",
+   "ko": "오용 T/CCL과 마찬가지로, 우리는 머신러닝 R&D 및 오정렬 T/CCL에 대해서도 보안 및 배포 완화조치에 유사한 접근법을 취한다. 다만 배포 완화조치는 다른 위협 모델(Threat model)에 초점을 맞추며, 따라서 고위험 내부 배포에 대한 조치도 포함한다.",
+   "marks": [
+    {
+     "t": "머신러닝 R&D 및 오정렬 T/CCL에 대해서도 보안 및 배포 완화조치에 유사한 접근법을 취한다",
+     "k": "safety"
+    },
+    {
+     "t": "고위험 내부 배포에 대한 조치도 포함한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3.1.1 Security Mitigations",
+   "ko": "3.1.1 보안 위험 완화조치",
+   "id": "s103"
+  },
+  {
+   "type": "p",
+   "en": "Security mitigations against exfiltration and unauthorized modification risk are important for models reaching ML R&D CCLs. In addition, exfiltration of highly capable models increases the likelihood they will be misused to achieve other critical capabilities, or deployed without adequate control and oversight. Below, we rely again on security levels to articulate the security goal recommended for each CCL.[^9] Security mitigations also protect against the risk of the model exfiltrating itself.",
+   "ko": "유출 및 무단 수정 위험에 대한 보안 위험 완화조치는 머신러닝 R&D CCL에 도달한 모델에 중요하다. 또한 고역량(Highly capable) 모델이 유출되면 해당 모델이 다른 치명적 역량을 달성하는 데 오용되거나, 적절한 통제와 감독 없이 배포될 가능성이 높아진다. 아래에서는 각 CCL에 권장되는 보안 목표를 명시하기 위해 다시 보안 수준을 활용한다.[^9] 보안 위험 완화조치는 모델이 스스로를 유출할 위험에 대해서도 보호를 제공한다.",
+   "marks": [
+    {
+     "t": "유출 및 무단 수정 위험에 대한 보안 위험 완화조치는 머신러닝 R&D CCL에 도달한 모델에 중요하다.",
+     "k": "key"
+    },
+    {
+     "t": "해당 모델이 다른 치명적 역량을 달성하는 데 오용되거나, 적절한 통제와 감독 없이 배포될 가능성이 높아진다",
+     "k": "safety"
+    },
+    {
+     "t": "보안 위험 완화조치는 모델이 스스로를 유출할 위험에 대해서도 보호를 제공한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3.1.2 Deployment Mitigations",
+   "ko": "3.1.2 배포 완화조치",
+   "id": "s105"
+  },
+  {
+   "type": "p",
+   "en": "The following mitigation process will be applied for deployments of a model reaching a ML R&D and Misalignment T/CCL. The approach is similar to misuse deployment mitigations, with an added focus on high-risk internal deployments.",
+   "ko": "머신러닝 R&D 및 오정렬 T/CCL에 도달한 모델의 배포에는 다음의 완화 프로세스가 적용된다. 이 접근법은 오용 배포 완화조치와 유사하되, 고위험 내부 배포에 대한 초점이 추가된다.",
+   "marks": [
+    {
+     "t": "머신러닝 R&D 및 오정렬 T/CCL에 도달한 모델의 배포에는 다음의 완화 프로세스가 적용된다",
+     "k": "key"
+    },
+    {
+     "t": "고위험 내부 배포에 대한 초점이 추가된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Development and assessment of mitigations: safeguards and an accompanying residual risk assessment are developed by iterating on the following:",
+   "ko": "완화조치의 개발 및 평가(assessment): 안전장치와 이에 수반되는 잔여 위험 평가는 다음 사항을 반복하는 방식으로 개발된다."
+  },
+  {
+   "type": "li",
+   "en": "a. Developing and improving a suite of safeguards targeting the capability, which may include measures such as limiting affordances, monitoring and escalation, auditing, and alignment training, in addition to measures for preventing large-scale misuse.[^10]",
+   "ko": "a. 해당 역량을 겨냥한 일련의 안전장치를 개발하고 개선한다. 여기에는 대규모 오용 방지 조치 외에도 어포던스 제한, 모니터링 및 상부 보고(escalation), 감사, 정렬 훈련 등의 조치가 포함될 수 있다.[^10]",
+   "marks": [
+    {
+     "t": "어포던스 제한, 모니터링 및 상부 보고(escalation), 감사, 정렬 훈련 등의 조치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "b. Assessing the robustness of these mitigations against the risk posed in both internal and external deployment through testing (e.g. automated evaluations, red teaming) and threat modeling research. This residual risk assessment could take into account factors such as:",
+   "ko": "b. 테스트(예: 자동화된 평가(evaluation), 레드티밍)와 위협 모델링 연구를 통해 내부 배포와 외부 배포 모두에서 제기되는 위험에 대한 이러한 완화조치의 강건성을 평가한다. 이 잔여 위험 평가에서는 다음과 같은 요소를 고려할 수 있다.",
+   "marks": [
+    {
+     "t": "테스트(예: 자동화된 평가(evaluation), 레드티밍)와 위협 모델링 연구",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "i. The effectiveness of the mitigations. For example, tests run on the safeguards may suggest that it is very unlikely they can be circumvented by external threat actors or the model in question.",
+   "ko": "i. 완화조치의 효과성. 예를 들어, 안전장치에 대해 수행한 테스트 결과, 외부 위협 행위자나 해당 모델이 이를 우회할 가능성이 매우 낮다는 점이 시사될 수 있다.",
+   "marks": [
+    {
+     "t": "외부 위협 행위자나 해당 모델이 이를 우회할 가능성이 매우 낮다는 점",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "ii. The likelihood and consequences of model misuse or misalignment, capability improvements after the risk assessment, and likelihood and consequences of our mitigations being circumvented, deactivated, or subverted.",
+   "ko": "ii. 모델 오용 또는 오정렬의 가능성과 결과, 위험 평가 이후의 역량 향상, 그리고 우리의 완화조치가 우회, 비활성화 또는 무력화될 가능성과 결과.",
+   "marks": [
+    {
+     "t": "모델 오용 또는 오정렬의 가능성과 결과",
+     "k": "safety"
+    },
+    {
+     "t": "우리의 완화조치가 우회, 비활성화 또는 무력화될 가능성과 결과",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "iii. The scope of the deployment. For example, small-scale and private deployments may pose substantially less risk than large-scale or public deployments.",
+   "ko": "iii. 배포의 범위. 예를 들어, 소규모 및 비공개 배포는 대규모 또는 공개 배포보다 위험이 상당히 낮을 수 있다."
+  },
+  {
+   "type": "li",
+   "en": "iv. Model propensity for, historical incidence of and severity of related events: for example, such data may suggest a high (or low) likelihood of misalignment in or misuse of models at the T/CCL, and mitigations would consequently have to be stronger (or not as strong) for deployment to be appropriate.",
+   "ko": "iv. 관련 사건에 대한 모델의 성향, 과거 발생 이력 및 심각도. 예를 들어, 이러한 데이터는 해당 T/CCL에 있는 모델의 오정렬 또는 오용 가능성이 높다는(또는 낮다는) 점을 시사할 수 있으며, 그에 따라 배포가 적절한 것이 되려면 완화조치가 더 강력해야 한다(또는 그만큼 강력하지 않아도 된다).",
+   "marks": [
+    {
+     "t": "해당 T/CCL에 있는 모델의 오정렬 또는 오용 가능성이 높다는(또는 낮다는) 점",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "c. Where the model has reached a CCL, the residual risk assessment will be supplemented with a safety case.",
+   "ko": "c. 모델이 CCL에 도달한 경우, 잔여 위험 평가는 안전 사례로 보완된다.",
+   "marks": [
+    {
+     "t": "모델이 CCL에 도달한 경우, 잔여 위험 평가는 안전 사례로 보완된다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Pre-deployment review of residual risk assessment: external deployments and high-risk internal deployments of a model take place only after the appropriate governance function determines the residual risk to be acceptable (including a safety case where a CCL has been reached). In particular, we will deem deployment mitigations adequate if the evidence suggests that for the T/CCLs the model has reached, the increase in likelihood of harm from the proposed deployment has been reduced to an acceptable level.",
+   "ko": "잔여 위험 평가에 대한 배포 전 검토: 모델의 외부 배포 및 고위험 내부 배포는 적절한 거버넌스 기능이 잔여 위험을 수용 가능하다고 결정한 후에만 이루어진다(CCL에 도달한 경우 안전 사례 포함). 특히, 모델이 도달한 T/CCL에 대해 제안된 배포로 인한 피해 가능성의 증가가 수용 가능한 수준으로 감소되었음을 증거가 시사하는 경우, 우리는 배포 완화조치가 충분하다고 판단한다.",
+   "marks": [
+    {
+     "t": "모델의 외부 배포 및 고위험 내부 배포는 적절한 거버넌스 기능이 잔여 위험을 수용 가능하다고 결정한 후에만 이루어진다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Post-deployment processes: our residual risk assessments, safety cases and mitigations may be updated as a result of post-market monitoring, including information about incidents relating to our frontier safety risk domains. Material updates to a safety case will be submitted to the appropriate governance function for review and might result in updates to the related residual risk assessment or safety case.",
+   "ko": "배포 후 프로세스: 우리의 잔여 위험 평가, 안전 사례 및 완화조치는 프론티어 안전 위험 영역과 관련된 사건에 관한 정보를 포함한 출시 후 모니터링의 결과에 따라 갱신될 수 있다. 안전 사례에 대한 중대한 갱신 사항은 검토를 위해 적절한 거버넌스 기능에 제출되며, 그 결과 관련 잔여 위험 평가 또는 안전 사례가 갱신될 수 있다.",
+   "marks": [
+    {
+     "t": "프론티어 안전 위험 영역과 관련된 사건에 관한 정보를 포함한 출시 후 모니터링",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This process is designed to ensure that residual risk remains at acceptable levels: evidence of efficacy collected during development and testing, as well as expert-driven estimates of other parameters, will enable us to assess residual risk and to detect substantial changes that invalidate our risk assessment. With iteration on mitigations and residual risk assessments, we believe that we are able to make informed decisions about the level of risk via a T/CCL before a model is deployed, and prevent models posing unacceptable levels of risk from being deployed.",
+   "ko": "이 프로세스는 잔여 위험이 수용 가능한 수준으로 유지되도록 설계되었다. 개발 및 테스트 과정에서 수집된 효능의 증거와 기타 파라미터에 대한 전문가 주도의 추정치를 통해, 우리는 잔여 위험을 평가하고 위험 평가를 무효화하는 실질적인 변화를 탐지할 수 있다. 완화조치와 잔여 위험 평가를 반복함으로써, 우리는 모델이 배포되기 전에 T/CCL을 통해 위험 수준에 대해 정보에 기반한 결정을 내리고, 수용 불가능한 수준의 위험을 제기하는 모델이 배포되는 것을 방지할 수 있다고 본다.",
+   "marks": [
+    {
+     "t": "수용 불가능한 수준의 위험을 제기하는 모델이 배포되는 것을 방지할 수 있다고 본다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3.2 ML R&D and Misalignment Capability Levels",
+   "ko": "3.2 머신러닝 R&D 및 오정렬 역량 수준",
+   "id": "s118"
+  },
+  {
+   "type": "p",
+   "en": "We take a tiered approach to addressing ML R&D and misalignment risks:",
+   "ko": "우리는 머신러닝 R&D 및 오정렬 위험에 대응하기 위해 단계적 접근법을 취한다.",
+   "marks": [
+    {
+     "t": "머신러닝 R&D 및 오정렬 위험에 대응하기 위해 단계적 접근법을 취한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "We set a Stealth and Situational Awareness TCL that indicates a baseline level of model capability above which misalignment risks may begin to arise. At this capability level we apply a proportionate set of mitigation and risk acceptance determination processes.",
+   "ko": "오정렬 위험이 발생하기 시작할 수 있는 모델 역량의 기준 수준을 나타내는 은밀성(stealth) 및 상황 인식 TCL을 설정한다. 이 역량 수준에서는 비례적인 완화 및 위험 수용 결정 프로세스를 적용한다.",
+   "marks": [
+    {
+     "t": "오정렬 위험이 발생하기 시작할 수 있는 모델 역량의 기준 수준",
+     "k": "safety"
+    },
+    {
+     "t": "은밀성(stealth) 및 상황 인식 TCL을 설정한다",
+     "k": "safety"
+    },
+    {
+     "t": "비례적인 완화 및 위험 수용 결정 프로세스를 적용한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "We set ML R&D CCLs that indicate higher capability levels at which misalignment, misuse and structural risks are heightened and may reach a severe scale. At these capability levels we apply a stronger set of mitigations, and follow the risk acceptance process as detailed in the rest of the framework.",
+   "ko": "오정렬, 오용 및 구조적 위험이 고조되어 심각한 규모에 이를 수 있는 더 높은 역량 수준을 나타내는 머신러닝 R&D CCL을 설정한다. 이러한 역량 수준에서는 더 강력한 완화조치를 적용하고, 본 프레임워크의 나머지 부분에 상술된 위험 수용 프로세스를 따른다.",
+   "marks": [
+    {
+     "t": "오정렬, 오용 및 구조적 위험이 고조되어 심각한 규모에 이를 수 있는 더 높은 역량 수준을 나타내는 머신러닝 R&D CCL을 설정한다",
+     "k": "key"
+    },
+    {
+     "t": "더 강력한 완화조치를 적용하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3.2.1 Stealth and Situational Awareness Tracked Capability Level",
+   "ko": "3.2.1 은밀성 및 상황 인식 추적 역량 수준",
+   "id": "s122"
+  },
+  {
+   "type": "p",
+   "en": "The Stealth and Situational Awareness TCL is defined as follows:",
+   "ko": "은밀성 및 상황 인식 TCL은 다음과 같이 정의된다."
+  },
+  {
+   "type": "p",
+   "en": "Stealth and Situational Awareness TCL : The instrumental reasoning abilities of the model enable enough situational awareness (ability to discover and use relevant details of its deployment setting) and stealth (ability to circumvent basic oversight mechanisms) such that, absent additional mitigations, we cannot rule out the model significantly undermining human control.",
+   "ko": "은밀성 및 상황 인식 TCL: 모델의 도구적 추론 능력이 충분한 상황 인식(배포 환경의 관련 세부 사항을 발견하고 활용하는 능력)과 은밀성(기본적인 감독 메커니즘을 우회하는 능력)을 가능하게 하여, 추가적인 완화조치가 없을 경우 모델이 인간의 통제를 상당히 약화할 가능성을 배제할 수 없는 수준.",
+   "marks": [
+    {
+     "t": "은밀성(기본적인 감독 메커니즘을 우회하는 능력)",
+     "k": "safety"
+    },
+    {
+     "t": "추가적인 완화조치가 없을 경우 모델이 인간의 통제를 상당히 약화할 가능성을 배제할 수 없는 수준",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "When a model has reached this TCL, we will carry out periodic residual risk assessments of the misalignment risk posed. This assessment may take into account models' alignment propensities, capabilities, and our defenses against misaligned models. Since misalignment risks can manifest through internal use, these assessments will also account for the safety implications of high-risk internal deployments for such models. If the risk assessment deems the residual risk from internal deployment to be unacceptable without additional safeguards (such as chain-of-thought monitoring on high-risk deployments), these will be applied.",
+   "ko": "모델이 이 TCL에 도달하면, 우리는 해당 모델이 제기하는 오정렬 위험에 대해 주기적인 잔여 위험 평가를 수행한다. 이 평가에서는 모델의 정렬 성향, 역량, 그리고 오정렬된 모델에 대한 우리의 방어 수단을 고려할 수 있다. 오정렬 위험은 내부 사용을 통해 발현될 수 있으므로, 이러한 평가에서는 해당 모델의 고위험 내부 배포가 갖는 안전상의 함의도 고려한다. 위험 평가 결과 추가적인 안전장치(예: 고위험 배포에 대한 사고 사슬(chain-of-thought) 모니터링) 없이는 내부 배포로 인한 잔여 위험이 수용 불가능하다고 판단되는 경우, 이러한 안전장치를 적용한다.",
+   "marks": [
+    {
+     "t": "해당 모델이 제기하는 오정렬 위험에 대해 주기적인 잔여 위험 평가를 수행한다",
+     "k": "safety"
+    },
+    {
+     "t": "오정렬 위험은 내부 사용을 통해 발현될 수 있으므로",
+     "k": "safety"
+    },
+    {
+     "t": "고위험 배포에 대한 사고 사슬(chain-of-thought) 모니터링",
+     "k": "safety"
+    },
+    {
+     "t": "내부 배포로 인한 잔여 위험이 수용 불가능하다고 판단되는 경우, 이러한 안전장치를 적용한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3.2.2 ML R&D Critical Capability Levels",
+   "ko": "3.2.2 머신러닝 R&D 치명적 역량 수준",
+   "id": "s126"
+  },
+  {
+   "type": "p",
+   "en": "We define ML R&D CCLs at capability levels at which misalignment, misuse and structural risks may reach a severe scale. We expect these to evolve over time. We recommend a security level for each of these CCLs, which reflect our assessment of the minimum appropriate level of security the field of frontier AI should apply to models reaching each CCL.[^11]",
+   "ko": "우리는 오정렬, 오용 및 구조적 위험이 심각한 규모에 이를 수 있는 역량 수준에서 머신러닝 R&D CCL을 정의한다. 이러한 CCL은 시간이 지남에 따라 발전할 것으로 예상한다. 우리는 각 CCL에 대해 보안 수준을 권고하며, 이는 각 CCL에 도달한 모델에 프론티어 AI 분야가 적용해야 할 최소한의 적절한 보안 수준에 대한 우리의 평가(assessment)를 반영한다.[^11]",
+   "marks": [
+    {
+     "t": "우리는 오정렬, 오용 및 구조적 위험이 심각한 규모에 이를 수 있는 역량 수준에서 머신러닝 R&D CCL을 정의한다.",
+     "k": "key"
+    },
+    {
+     "t": "각 CCL에 도달한 모델에 프론티어 AI 분야가 적용해야 할 최소한의 적절한 보안 수준",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Table 3.2.2.a: ML R&D CCLs and Security Mitigations",
+   "ko": "표 3.2.2.a: 머신러닝 R&D CCL 및 보안 위험 완화조치"
+  },
+  {
+   "type": "table",
+   "en": "| Critical Capability Level | Recommended security level and rationale | ⏎ | ML R&D acceleration level 1: Has been used to accelerate AI development, resulting in AI progress substantially accelerating from historical rates. | Security level 3[^12] Unrestricted access to models at this level of capability could significantly increase a threat actor's ability to progress to yet more powerful models and other critical capabilities. The exfiltration of such a model may therefore have a significant effect on society's ability to adapt to and govern powerful AI models, effects that may have long-lasting consequences. Substantially strengthened security is therefore recommended. However, we expect that acceleration will stem from systems of models integrated with workflows, rather than the model alone. The overall reduced impact of model weights counts against security levels with substantial innovation costs. | ⏎ | ML R&D automation level 1: Can fully automate the work of any team of researchers at Google focused on improving AI capabilities, with approximately comparable all-inclusive costs. | We recommend Security level 4[^13] for this capability threshold, but emphasize that this must be taken on by the frontier AI field as a whole. Unrestricted access to models at this level of capability could give an actor (or AI systems) with adequate computational resources the ability to reach capabilities much more powerful than those in the other CCLs listed in a short amount of time. This could be catastrophic if there is no effective way of defending against rapidly improving and potentially superhuman AI systems wielded by threat actors. Therefore, we recommend models at this level of capability have exceptional security even though they may have substantial innovation costs. |",
+   "ko": "| 치명적 역량 수준 | 권고 보안 수준 및 근거 | ⏎ | 머신러닝 R&D 가속 수준 1: AI 개발을 가속하는 데 사용되어, AI 발전이 과거 속도에 비해 상당히 가속되는 결과를 초래한 수준. | 보안 수준 3[^12] 이 역량 수준의 모델에 대한 무제한 접근은 위협 행위자가 더욱 강력한 모델 및 기타 치명적 역량으로 나아가는 능력을 크게 증대할 수 있다. 따라서 이러한 모델의 유출은 강력한 AI 모델에 적응하고 이를 통제하는 사회의 능력에 중대한 영향을 미칠 수 있으며, 그 영향은 장기적인 결과를 초래할 수 있다. 따라서 대폭 강화된 보안이 권고된다. 다만, 가속은 모델 단독보다는 워크플로와 통합된 모델 시스템에서 비롯될 것으로 예상한다. 모델 가중치의 전반적인 영향이 감소한다는 점은 상당한 혁신 비용을 수반하는 보안 수준을 적용하는 것에 불리하게 작용한다. | ⏎ | 머신러닝 R&D 자동화 수준 1: AI 역량 향상에 주력하는 Google 내 어떠한 연구자 팀의 업무라도 대략 비슷한 수준의 총비용으로 완전히 자동화할 수 있는 수준. | 이 역량 임계값에 대해 보안 수준 4[^13]을 권고하나, 이는 프론티어 AI 분야 전체가 함께 이행해야 한다는 점을 강조한다. 이 역량 수준의 모델에 대한 무제한 접근은 적절한 연산 자원을 보유한 행위자(또는 AI 시스템)에게 단기간에 열거된 다른 CCL보다 훨씬 더 강력한 역량에 도달할 수 있는 능력을 부여할 수 있다. 위협 행위자가 운용하는, 빠르게 개선되며 잠재적으로 초인적인 AI 시스템에 대해 효과적인 방어 수단이 없다면 이는 파국적일 수 있다. 따라서 상당한 혁신 비용을 수반할 수 있더라도 이 역량 수준의 모델에는 탁월한 보안을 갖출 것을 권고한다. |"
+  },
+  {
+   "type": "h2",
+   "en": "Section 4: Governance and Accountability",
+   "ko": "섹션 4: 거버넌스 및 책임성",
+   "id": "s130"
+  },
+  {
+   "type": "h3",
+   "en": "4.1 Governance structure",
+   "ko": "4.1 거버넌스 구조",
+   "id": "s131"
+  },
+  {
+   "type": "p",
+   "en": "We have in place a well-established and comprehensive internal governance structure designed to ensure the robust implementation of the processes outlined in this Frontier Safety Framework. Responsibilities for assessing and mitigating risks are clearly defined and allocated across all levels of the organization. This includes legal, compliance, and safety reviews with escalation procedures to ensure appropriate oversight.",
+   "ko": "우리는 본 프론티어 안전 프레임워크에 기술된 프로세스가 견고하게 이행되도록 설계된, 잘 정립된 포괄적인 내부 거버넌스 구조를 갖추고 있다. 위험의 평가(assessment) 및 완화에 대한 책임은 조직의 모든 수준에 걸쳐 명확하게 정의되고 배분되어 있다. 여기에는 적절한 감독을 보장하기 위한 상부 보고(escalation) 절차를 갖춘 법률, 규정 준수 및 안전 검토가 포함된다.",
+   "marks": [
+    {
+     "t": "본 프론티어 안전 프레임워크에 기술된 프로세스가 견고하게 이행되도록 설계된, 잘 정립된 포괄적인 내부 거버넌스 구조",
+     "k": "safety"
+    },
+    {
+     "t": "위험의 평가(assessment) 및 완화에 대한 책임은 조직의 모든 수준에 걸쳐 명확하게 정의되고 배분되어 있다.",
+     "k": "key"
+    },
+    {
+     "t": "상부 보고(escalation) 절차를 갖춘 법률, 규정 준수 및 안전 검토",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Section 5: Updates and Disclosures",
+   "ko": "섹션 5: 갱신 및 공개",
+   "id": "s133"
+  },
+  {
+   "type": "h3",
+   "en": "5.1 Updates",
+   "ko": "5.1 갱신",
+   "id": "s134"
+  },
+  {
+   "type": "p",
+   "en": "The Frontier Safety Framework will be reviewed at least once a year-more frequently if we have reasonable grounds to believe the adequacy of the Framework or our adherence to it has been materially undermined. The process will involve (i) an assessment of the Framework's appropriateness for the management of significant and severe risk, drawing on information sources such as record of adherence to the framework, relevant high-quality research, information shared through industry forums, and evaluation results, as necessary, and (ii) an assessment of our adherence to the Framework. Following this assessment, we may:",
+   "ko": "프론티어 안전 프레임워크는 최소 연 1회 검토되며, 프레임워크의 적절성 또는 우리의 프레임워크 준수가 실질적으로 훼손되었다고 믿을 합리적 근거가 있는 경우에는 더 자주 검토된다. 이 프로세스에는 (i) 필요에 따라 프레임워크 준수 기록, 관련 고품질 연구, 산업 포럼을 통해 공유된 정보, 평가(evaluation) 결과 등의 정보원을 활용하여 중대하고 심각한 위험을 관리하는 데 있어 프레임워크가 적절한지에 대한 평가(assessment)와, (ii) 우리의 프레임워크 준수에 대한 평가(assessment)가 포함된다. 이 평가(assessment)에 따라 우리는 다음을 수행할 수 있다.",
+   "marks": [
+    {
+     "t": "프레임워크의 적절성 또는 우리의 프레임워크 준수가 실질적으로 훼손되었다고 믿을 합리적 근거가 있는 경우에는 더 자주 검토된다",
+     "k": "key"
+    },
+    {
+     "t": "중대하고 심각한 위험을 관리하는 데 있어 프레임워크가 적절한지에 대한 평가(assessment)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Update our risk domains and T/CCLs, where necessary.",
+   "ko": "필요한 경우 위험 영역 및 T/CCL을 갱신한다.",
+   "marks": [
+    {
+     "t": "필요한 경우 위험 영역 및 T/CCL을 갱신한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Update our testing and mitigation approaches, where needed to ensure risk remains adequately assessed and addressed according to our current understanding.",
+   "ko": "현재의 이해에 따라 위험이 적절히 평가되고 대응되도록 보장하는 데 필요한 경우 테스트 및 완화 접근법을 갱신한다.",
+   "marks": [
+    {
+     "t": "테스트 및 완화 접근법을 갱신한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The updated version and framework assessment will be reviewed by the appropriate corporate governance bodies.",
+   "ko": "갱신된 버전과 프레임워크 평가(assessment)는 적절한 기업 거버넌스 기구의 검토를 받는다.",
+   "marks": [
+    {
+     "t": "갱신된 버전과 프레임워크 평가(assessment)는 적절한 기업 거버넌스 기구의 검토를 받는다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "5.2 Disclosures",
+   "ko": "5.2 공개",
+   "id": "s139"
+  },
+  {
+   "type": "p",
+   "en": "If we assess that a model has reached a CCL that poses an unmitigated and material risk to overall public safety, we aim to share relevant information with appropriate government authorities where it will facilitate safety of frontier AI. Where appropriate, and subject to adequate confidentiality and security measures and considerations around proprietary and sensitive information, this information may include:",
+   "ko": "모델이 전반적인 공공 안전에 완화되지 않은 실질적 위험을 제기하는 CCL에 도달했다고 평가하는 경우, 우리는 프론티어 AI의 안전을 촉진할 수 있는 경우 적절한 정부 당국과 관련 정보를 공유하는 것을 목표로 한다. 적절한 경우, 그리고 적절한 기밀 유지 및 보안 조치와 독점적·민감 정보에 관한 고려 사항을 전제로, 이 정보에는 다음이 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "모델이 전반적인 공공 안전에 완화되지 않은 실질적 위험을 제기하는 CCL에 도달했다고 평가하는 경우, 우리는 프론티어 AI의 안전을 촉진할 수 있는 경우 적절한 정부 당국과 관련 정보를 공유하는 것을 목표로 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Model information : characteristics of the AI model relevant to the risk it may pose with its critical capabilities.",
+   "ko": "모델 정보: AI 모델이 그 치명적 역량으로 인해 제기할 수 있는 위험과 관련된 해당 모델의 특성.",
+   "marks": [
+    {
+     "t": "AI 모델이 그 치명적 역량으로 인해 제기할 수 있는 위험과 관련된 해당 모델의 특성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Evaluation results : such as details about the evaluation design, the results, and any robustness tests.",
+   "ko": "평가(evaluation) 결과: 평가(evaluation) 설계, 결과 및 강건성 테스트에 관한 세부 사항 등.",
+   "marks": [
+    {
+     "t": "평가(evaluation) 설계, 결과 및 강건성 테스트에 관한 세부 사항",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Mitigation plans : descriptions of our mitigation plans and how they are expected to reduce the risk.",
+   "ko": "완화 계획: 우리의 완화 계획과 이것이 위험을 어떻게 감소시킬 것으로 예상되는지에 대한 설명.",
+   "marks": [
+    {
+     "t": "우리의 완화 계획과 이것이 위험을 어떻게 감소시킬 것으로 예상되는지에 대한 설명",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We may also consider disclosing information to other external organizations to promote shared learning and coordinated risk mitigation. We will continue to review and evolve our disclosure process over time.",
+   "ko": "우리는 공동 학습과 조율된 위험 완화를 촉진하기 위해 다른 외부 기관에 정보를 공개하는 것도 고려할 수 있다. 우리는 시간이 지남에 따라 공개 프로세스를 지속적으로 검토하고 발전시킬 것이다.",
+   "marks": [
+    {
+     "t": "공동 학습과 조율된 위험 완화를 촉진하기 위해 다른 외부 기관에 정보를 공개하는 것도 고려할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "5.3 Past Updates and Changes",
+   "ko": "5.3 과거 갱신 및 변경 사항",
+   "id": "s145"
+  },
+  {
+   "type": "p",
+   "en": "Versions:",
+   "ko": "버전:"
+  },
+  {
+   "type": "li",
+   "en": "Version 3.1 (April 17, 2026)",
+   "ko": "버전 3.1 (2026년 4월 17일)"
+  },
+  {
+   "type": "li",
+   "en": "Introduced CBRN TCLs and outlined mitigation and risk acceptance process.",
+   "ko": "화학·생물·방사능·핵 TCL을 도입하고 완화 및 위험 수용 프로세스를 제시함.",
+   "marks": [
+    {
+     "t": "화학·생물·방사능·핵 TCL을 도입하고 완화 및 위험 수용 프로세스를 제시함.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Incorporated the previous exploratory Misalignment risk domain into a combined ML R&D and Misalignment risk domain and outlined mitigation and risk acceptance process for the TCL.",
+   "ko": "기존의 탐색적 오정렬 위험 영역을 통합된 머신러닝 R&D 및 오정렬 위험 영역에 편입하고, 해당 TCL에 대한 완화 및 위험 수용 프로세스를 제시함.",
+   "marks": [
+    {
+     "t": "기존의 탐색적 오정렬 위험 영역을 통합된 머신러닝 R&D 및 오정렬 위험 영역에 편입하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Outlined enhanced level of security for CBRN, Cyber and Harmful Manipulation CCLs to Security Level 2+ to protect against non-state actors and insider threats.",
+   "ko": "비국가 행위자 및 내부자 위협으로부터 보호하기 위해 화학·생물·방사능·핵, 사이버 및 유해한 조작 CCL에 대한 보안 수준을 보안 수준 2+로 강화함을 제시함.",
+   "marks": [
+    {
+     "t": "비국가 행위자 및 내부자 위협으로부터 보호하기 위해 화학·생물·방사능·핵, 사이버 및 유해한 조작 CCL에 대한 보안 수준을 보안 수준 2+로 강화함을 제시함.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Included more detail on our risk management process.",
+   "ko": "위험 관리 프로세스에 관한 세부 내용을 보강함.",
+   "marks": [
+    {
+     "t": "위험 관리 프로세스에 관한 세부 내용을 보강함.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Included description of our internal governance structure.",
+   "ko": "내부 거버넌스 구조에 대한 설명을 포함함."
+  },
+  {
+   "type": "li",
+   "en": "Introduced a glossary.",
+   "ko": "용어집을 도입함."
+  },
+  {
+   "type": "li",
+   "en": "Version 3.0 (September 22, 2025)",
+   "ko": "버전 3.0 (2025년 9월 22일)"
+  },
+  {
+   "type": "li",
+   "en": "Version 2.0 (February 4, 2025)",
+   "ko": "버전 2.0 (2025년 2월 4일)"
+  },
+  {
+   "type": "li",
+   "en": "Version 1.0 (May 17, 2024)",
+   "ko": "버전 1.0 (2024년 5월 17일)"
+  },
+  {
+   "type": "h2",
+   "en": "Glossary",
+   "ko": "용어집",
+   "id": "s157"
+  },
+  {
+   "type": "h3",
+   "en": "Model",
+   "ko": "모델",
+   "id": "s158"
+  },
+  {
+   "type": "p",
+   "en": "Frontier AI Models or Models : are trained on a large data set, display significant generality, are capable of performing a wide range of distinctive tasks and have high-impact capabilities. Frontier AI models' agentic and reasoning-based general capabilities near or exceed those of other Google models. There may be many different checkpoints and versions of the same model along the entire model lifecycle: we consider checkpoints and versions the same model if their base capabilities stem primarily from the same foundational training run, but will conduct additional testing on new versions as specified in Section 1.3. When we refer to 'model' in this Framework, we may be referring to a checkpoint or version of the model.",
+   "ko": "프론티어 AI 모델 또는 모델: 대규모 데이터 세트로 학습되고, 상당한 범용성을 보이며, 다양하고 구별되는 광범위한 과업을 수행할 수 있고, 고영향 역량을 갖춘 모델이다. 프론티어 AI 모델의 에이전트형 및 추론 기반 범용 역량은 다른 Google 모델의 역량에 근접하거나 이를 능가한다. 전체 모델 수명주기에 걸쳐 동일한 모델의 다양한 체크포인트와 버전이 존재할 수 있다. 우리는 체크포인트와 버전의 기본 역량이 주로 동일한 기초 학습 실행(foundational training run)에서 비롯된 경우 이를 동일한 모델로 간주하나, 섹션 1.3에 명시된 바와 같이 새로운 버전에 대해서는 추가 테스트를 수행한다. 본 프레임워크에서 '모델'이라 할 때는 모델의 체크포인트 또는 버전을 지칭할 수 있다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 모델 또는 모델: 대규모 데이터 세트로 학습되고, 상당한 범용성을 보이며, 다양하고 구별되는 광범위한 과업을 수행할 수 있고, 고영향 역량을 갖춘 모델이다.",
+     "k": "key"
+    },
+    {
+     "t": "에이전트형 및 추론 기반 범용 역량은 다른 Google 모델의 역량에 근접하거나 이를 능가한다",
+     "k": "safety"
+    },
+    {
+     "t": "섹션 1.3에 명시된 바와 같이 새로운 버전에 대해서는 추가 테스트를 수행한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Risk Domains",
+   "ko": "위험 영역",
+   "id": "s160"
+  },
+  {
+   "type": "p",
+   "en": "CBRN: risks of models assisting in the development, preparation, and/or execution of a chemical, biological, radiological, or nuclear ('CBRN') threat.",
+   "ko": "화학·생물·방사능·핵: 모델이 화학·생물·방사능·핵 위협의 개발, 준비 및/또는 실행을 지원할 위험.",
+   "marks": [
+    {
+     "t": "모델이 화학·생물·방사능·핵 위협의 개발, 준비 및/또는 실행을 지원할 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Cyber: risks of models assisting in the development, preparation, and/or execution of a cyber attack.",
+   "ko": "사이버: 모델이 사이버 공격의 개발, 준비 및/또는 실행을 지원할 위험.",
+   "marks": [
+    {
+     "t": "모델이 사이버 공격의 개발, 준비 및/또는 실행을 지원할 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Harmful Manipulation: risks of models with high manipulative capabilities potentially being misused in ways that could reasonably result in large scale harm.",
+   "ko": "유해한 조작: 높은 조작 역량을 갖춘 모델이 합리적으로 대규모 피해를 초래할 수 있는 방식으로 오용될 위험.",
+   "marks": [
+    {
+     "t": "높은 조작 역량을 갖춘 모델이 합리적으로 대규모 피해를 초래할 수 있는 방식으로 오용될 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "ML R&D and Misalignment: risks of models' ML R&D capabilities or misaligned propensities reducing society's overall ability to manage AI risks. Such capabilities may serve as a substantial cross-cutting risk factor for several pathways (e.g. through misalignment, misuse or structural risks) to severe harm.",
+   "ko": "머신러닝 R&D 및 오정렬: 모델의 머신러닝 R&D 역량 또는 오정렬된 성향이 AI 위험을 관리하는 사회의 전반적인 능력을 저하시킬 위험. 이러한 역량은 심각한 피해에 이르는 여러 경로(예: 오정렬, 오용 또는 구조적 위험을 통한 경로)에 대해 상당한 범분야적(cross-cutting) 위험 요인으로 작용할 수 있다.",
+   "marks": [
+    {
+     "t": "모델의 머신러닝 R&D 역량 또는 오정렬된 성향이 AI 위험을 관리하는 사회의 전반적인 능력을 저하시킬 위험",
+     "k": "key"
+    },
+    {
+     "t": "상당한 범분야적(cross-cutting) 위험 요인으로 작용할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Thresholds",
+   "ko": "임계값",
+   "id": "s165"
+  },
+  {
+   "type": "p",
+   "en": "Critical Capability Levels (CCLs): are the main capability thresholds around which we have built the Framework process. They represent the capability levels at which, absent mitigation measures, frontier AI models or systems may pose heightened risk of severe harm.",
+   "ko": "치명적 역량 수준(CCL): 우리가 프레임워크 프로세스를 구축하는 데 중심이 되는 주요 역량 임계값이다. 이는 완화 조치가 없을 경우 프론티어 AI 모델 또는 시스템이 심각한 피해의 고조된 위험을 제기할 수 있는 역량 수준을 나타낸다.",
+   "marks": [
+    {
+     "t": "치명적 역량 수준(CCL)",
+     "k": "safety"
+    },
+    {
+     "t": "완화 조치가 없을 경우 프론티어 AI 모델 또는 시스템이 심각한 피해의 고조된 위험을 제기할 수 있는 역량 수준",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Tracked Capability Levels (TCLs): are capability thresholds which capture a lower level of risks than our CCLs. They represent the capability levels at which, absent mitigation measures, frontier AI models or systems may pose heightened risk of significant but not severe levels of harm.",
+   "ko": "추적 역량 수준(TCL): 우리의 CCL보다 낮은 수준의 위험을 포착하는 역량 임계값이다. 이는 완화 조치가 없을 경우 프론티어 AI 모델 또는 시스템이 심각한 수준에는 이르지 않으나 상당한 수준의 피해에 대한 고조된 위험을 제기할 수 있는 역량 수준을 나타낸다.",
+   "marks": [
+    {
+     "t": "상당한 수준의 피해에 대한 고조된 위험을 제기할 수 있는 역량 수준",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Alert Thresholds: are thresholds which we set marginally earlier than our CCLs. Crossing these thresholds indicates a CCL may be reached in the foreseeable future, due to the speed of capability progress. In particular, they are meant to account for the possibility of models reaching a CCL before the next critical capability assessment cycle.",
+   "ko": "경보 임계값: 우리의 CCL보다 약간 앞서 설정하는 임계값이다. 이 임계값을 넘는다는 것은 역량 발전 속도로 인해 예측 가능한 미래에 CCL에 도달할 수 있음을 나타낸다. 특히 경보 임계값은 다음 치명적 역량 평가 주기 이전에 모델이 CCL에 도달할 가능성을 고려하기 위한 것이다.",
+   "marks": [
+    {
+     "t": "이 임계값을 넘는다는 것은 역량 발전 속도로 인해 예측 가능한 미래에 CCL에 도달할 수 있음을 나타낸다.",
+     "k": "key"
+    },
+    {
+     "t": "다음 치명적 역량 평가 주기 이전에 모델이 CCL에 도달할 가능성을 고려하기 위한 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Inherent Risk Assessment",
+   "ko": "고유 위험 평가",
+   "id": "s169"
+  },
+  {
+   "type": "p",
+   "en": "Inherent Risk Assessments: the process of evaluating the level of risk posed by the model. This is part of the risk management process, and includes material capability change assessments and critical capability assessments.",
+   "ko": "고유 위험 평가: 모델이 제기하는 위험 수준을 평가하는 과정이다. 이는 위험 관리 프로세스의 일부로, 실질적 역량 변화 평가와 치명적 역량 평가를 포함한다.",
+   "marks": [
+    {
+     "t": "모델이 제기하는 위험 수준을 평가하는 과정이다",
+     "k": "key"
+    },
+    {
+     "t": "실질적 역량 변화 평가와 치명적 역량 평가를 포함한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Critical Capability Assessments: determine a model's proximity to T/CCLs through the use of early warning evaluations and other sources of evidence.",
+   "ko": "치명적 역량 평가: 조기 경보 평가 및 기타 증거 출처를 활용하여 모델이 T/CCL에 얼마나 근접했는지를 판단한다.",
+   "marks": [
+    {
+     "t": "조기 경보 평가 및 기타 증거 출처를 활용하여 모델이 T/CCL에 얼마나 근접했는지를 판단한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Early Warning Evaluations: are evaluations which measure the dangerous capabilities of a model. They specifically target the threats and risk scenarios identified through our threat modeling to determine a model's proximity to a CCL or TCL, and they provide the most direct evidence for whether these thresholds have been reached.",
+   "ko": "조기 경보 평가: 모델의 위험한 역량을 측정하는 평가(evaluation)이다. 이는 위협 모델링을 통해 식별된 위협과 위험 시나리오를 구체적으로 겨냥하여 모델이 CCL 또는 TCL에 얼마나 근접했는지를 판단하며, 이러한 임계값에 도달했는지 여부에 대한 가장 직접적인 증거를 제공한다.",
+   "marks": [
+    {
+     "t": "모델의 위험한 역량을 측정하는 평가(evaluation)이다",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 임계값에 도달했는지 여부에 대한 가장 직접적인 증거를 제공한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Material Capability Change Assessments: indicate whether a critical capability assessment is required. These assessments are typically conducted upon the completion of new post-training runs on various checkpoints, and they are primarily aimed at determining whether updated versions of a model have developed material capability increases relative to the last checkpoint subject to a critical capability assessment. May also be used to assess whether a critical capability assessment is required of non-frontier AI models.",
+   "ko": "실질적 역량 변화 평가: 치명적 역량 평가가 필요한지 여부를 나타낸다. 이러한 평가는 일반적으로 다양한 체크포인트에 대한 새로운 사후 학습 실행이 완료되었을 때 수행되며, 주로 모델의 갱신된 버전이 치명적 역량 평가를 받은 마지막 체크포인트 대비 실질적 역량 증가를 보였는지를 판단하는 것을 목적으로 한다. 비프론티어 AI 모델에 대해 치명적 역량 평가가 필요한지를 평가하는 데에도 사용될 수 있다.",
+   "marks": [
+    {
+     "t": "모델의 갱신된 버전이 치명적 역량 평가를 받은 마지막 체크포인트 대비 실질적 역량 증가를 보였는지를 판단하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Material Capability Increases: are meaningful new capabilities or material increases in model performance that we believe could materially undermine our justifications for a model's level of risk being acceptable, for example, by reaching a CCL that the previous version of the model had not reached.",
+   "ko": "실질적 역량 증가: 모델의 위험 수준이 수용 가능하다는 우리의 정당화 근거를 실질적으로 약화시킬 수 있다고 판단되는 의미 있는 새로운 역량 또는 모델 성능의 실질적 증가이다. 예를 들어 이전 버전의 모델이 도달하지 않았던 CCL에 도달하는 경우가 이에 해당한다.",
+   "marks": [
+    {
+     "t": "모델의 위험 수준이 수용 가능하다는 우리의 정당화 근거를 실질적으로 약화시킬 수 있다고 판단되는 의미 있는 새로운 역량",
+     "k": "key"
+    },
+    {
+     "t": "이전 버전의 모델이 도달하지 않았던 CCL에 도달하는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Risk Mitigation",
+   "ko": "위험 완화",
+   "id": "s175"
+  },
+  {
+   "type": "p",
+   "en": "Response Plans: are plans put in place when a new alert threshold has been reached to prepare for future models reaching a CCL. Central to most response plans will be the application of the mitigations described earlier in the Framework. However, if we assess that risks stemming from the model remain acceptable and model capabilities remain distant from a CCL, the response plan may include updating the alert threshold to ensure the safety buffer remains appropriate.",
+   "ko": "대응 계획: 새로운 경보 임계값에 도달했을 때 향후 모델이 CCL에 도달하는 상황에 대비하기 위해 마련하는 계획이다. 대부분의 대응 계획에서 핵심은 본 프레임워크 앞부분에서 기술한 완화 조치의 적용이 될 것이다. 그러나 모델에서 비롯되는 위험이 여전히 수용 가능하고 모델 역량이 여전히 CCL과 거리가 있다고 평가하는 경우, 대응 계획에는 안전 여유가 적절하게 유지되도록 경보 임계값을 갱신하는 것이 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "모델이 CCL에 도달하는 상황에 대비하기 위해 마련하는 계획",
+     "k": "safety"
+    },
+    {
+     "t": "안전 여유가 적절하게 유지되도록 경보 임계값을 갱신하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Deployment Mitigations: are safety measures we implement which are intended to counter the misuse or misaligned expression of critical capabilities in deployments. They may include safety post-training, input/output/chain-of-thought monitoring and analysis, account moderation, jailbreak detection and patching, user verification, and bug bounties.",
+   "ko": "배포 완화조치: 배포 과정에서 치명적 역량의 오용 또는 오정렬된 발현에 대응하기 위해 우리가 시행하는 안전 조치이다. 여기에는 안전 사후 학습, 입력/출력/사고 사슬(chain-of-thought) 모니터링 및 분석, 계정 관리(account moderation), 탈옥 탐지 및 패치, 사용자 인증, 버그 바운티 등이 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "배포 과정에서 치명적 역량의 오용 또는 오정렬된 발현에 대응하기 위해 우리가 시행하는 안전 조치이다.",
+     "k": "key"
+    },
+    {
+     "t": "입력/출력/사고 사슬(chain-of-thought) 모니터링 및 분석",
+     "k": "safety"
+    },
+    {
+     "t": "탈옥 탐지 및 패치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "External Deployments: represent model releases to entities outside of Google. They can include both low-risk external deployments as well as general purpose releases to the broader public.",
+   "ko": "외부 배포: Google 외부 주체에 대한 모델 공개를 의미한다. 저위험 외부 배포와 더 넓은 대중을 대상으로 하는 범용 공개를 모두 포함할 수 있다."
+  },
+  {
+   "type": "li",
+   "en": "Low-Risk External Deployments: represent small scale and private releases restricted to particular external groups or organizations.",
+   "ko": "저위험 외부 배포: 특정 외부 그룹 또는 조직으로 제한된 소규모 비공개 공개를 의미한다."
+  },
+  {
+   "type": "li",
+   "en": "Internal Deployments: represent model releases restricted to Google employees for internal use.",
+   "ko": "내부 배포: 내부 사용을 위해 Google 직원으로 제한된 모델 공개를 의미한다."
+  },
+  {
+   "type": "li",
+   "en": "High-Risk Internal Deployments: represent model releases restricted to Google employees for use cases with the potential to enable severe threat scenarios (e.g. building internal security infrastructure or automating ML R&D).",
+   "ko": "고위험 내부 배포: 심각한 위협 시나리오를 가능하게 할 잠재력이 있는 사용 사례(예: 내부 보안 인프라 구축 또는 머신러닝 R&D 자동화)를 위해 Google 직원으로 제한된 모델 공개를 의미한다.",
+   "marks": [
+    {
+     "t": "심각한 위협 시나리오를 가능하게 할 잠재력이 있는 사용 사례(예: 내부 보안 인프라 구축 또는 머신러닝 R&D 자동화)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Security Mitigations: are safety measures we implement which are intended to prevent the unauthorized modification or exfiltration of model weights by unauthorized actors. They may include identity and access management practices, and hardening interface-access to unreleased model parameters, among other measures. We communicate the level of security we consider appropriate to models which cross our thresholds using the RAND model weight security framework.",
+   "ko": "보안 위험 완화조치: 권한 없는 행위자에 의한 모델 가중치의 무단 수정 또는 유출을 방지하기 위해 우리가 시행하는 안전 조치이다. 여기에는 신원 및 접근 관리 실행 방안, 미공개 모델 파라미터에 대한 인터페이스 접근 강화 등이 포함될 수 있다. 우리는 RAND 모델 가중치 보안 프레임워크를 사용하여 임계값을 넘은 모델에 적절하다고 판단하는 보안 수준을 전달한다.",
+   "marks": [
+    {
+     "t": "권한 없는 행위자에 의한 모델 가중치의 무단 수정 또는 유출을 방지하기 위해 우리가 시행하는 안전 조치이다.",
+     "k": "key"
+    },
+    {
+     "t": "RAND 모델 가중치 보안 프레임워크를 사용하여 임계값을 넘은 모델에 적절하다고 판단하는 보안 수준을 전달한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "RAND Security Levels: indicate security goals and principles relevant to frontier developers aiming to protect their model weights from various actors - with the strength and type of security measures differing for each category of actor.[^14]",
+   "ko": "RAND 보안 수준: 다양한 행위자로부터 모델 가중치를 보호하고자 하는 프론티어 개발자와 관련된 보안 목표 및 원칙을 나타내며, 보안 조치의 강도와 유형은 행위자 범주별로 다르다.[^14]",
+   "marks": [
+    {
+     "t": "다양한 행위자로부터 모델 가중치를 보호하고자 하는 프론티어 개발자와 관련된 보안 목표 및 원칙",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Residual Risk Assessment",
+   "ko": "잔여 위험 평가",
+   "id": "s184"
+  },
+  {
+   "type": "p",
+   "en": "Residual Risk Assessments: the process of evaluating the level of risk that remains after all planned mitigation strategies have been implemented. This is part of the risk management process, following a critical capability assessment and the effect of mitigations. The residual risk should be brought within the acceptable levels, as determined by the T/CCLs as relevant.",
+   "ko": "잔여 위험 평가: 계획된 모든 완화 전략이 시행된 후 남아 있는 위험 수준을 평가하는 과정이다. 이는 위험 관리 프로세스의 일부로, 치명적 역량 평가 및 완화 조치의 효과 확인에 뒤이어 수행된다. 잔여 위험은 해당되는 T/CCL에 따라 결정되는 수용 가능한 수준 이내로 낮춰져야 한다.",
+   "marks": [
+    {
+     "t": "치명적 역량 평가 및 완화 조치의 효과 확인",
+     "k": "safety"
+    },
+    {
+     "t": "잔여 위험은 해당되는 T/CCL에 따라 결정되는 수용 가능한 수준 이내로 낮춰져야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Safety Cases: are an assessable argument showing how severe risks associated with a model's CCLs have been reduced to an acceptable level. Residual risk assessments will be supplemented with a safety case when a model reaches a CCL, and inform a model's risk acceptance determination.[^15] For misuse risk, such an argument may be based, for example, on considerations such as the effectiveness of mitigations, the scope of the deployment, what capabilities and mitigations are available on other publicly available models, and the historical incidence and severity of related events. For ML R&D and misalignment risk, such an argument may be based, for example, on considerations such as the effectiveness of mitigations relative to model capabilities, and information pertaining to model propensities and the severity of related events.",
+   "ko": "안전 사례: 모델의 CCL과 관련된 심각한 위험이 어떻게 수용 가능한 수준으로 감소되었는지를 보여주는 평가 가능한 논증이다. 모델이 CCL에 도달하면 잔여 위험 평가는 안전 사례로 보완되며, 이는 모델의 위험 수용 결정에 반영된다.[^15] 오용 위험의 경우, 이러한 논증은 예를 들어 완화 조치의 효과성, 배포 범위, 공개적으로 이용 가능한 다른 모델에서 이용 가능한 역량과 완화 조치, 관련 사건의 과거 발생 빈도 및 심각도 등의 고려 사항에 기반할 수 있다. 머신러닝 R&D 및 오정렬 위험의 경우, 이러한 논증은 예를 들어 모델 역량 대비 완화 조치의 효과성, 모델 성향 및 관련 사건의 심각도에 관한 정보 등의 고려 사항에 기반할 수 있다.",
+   "marks": [
+    {
+     "t": "모델의 CCL과 관련된 심각한 위험이 어떻게 수용 가능한 수준으로 감소되었는지를 보여주는 평가 가능한 논증",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 CCL에 도달하면 잔여 위험 평가는 안전 사례로 보완되며, 이는 모델의 위험 수용 결정에 반영된다.",
+     "k": "key"
+    },
+    {
+     "t": "오용 위험의 경우, 이러한 논증은 예를 들어 완화 조치의 효과성, 배포 범위",
+     "k": "safety"
+    },
+    {
+     "t": "머신러닝 R&D 및 오정렬 위험의 경우",
+     "k": "safety"
+    },
+    {
+     "t": "모델 역량 대비 완화 조치의 효과성, 모델 성향",
+     "k": "safety"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "See https://www.gov.uk/government/publications/emerging-processes-for-frontier-ai-safety , https://metr.org/faisc , https://www.anthropic.com/rsp-updates , https://www.anthropic.com/news/compliance-framework-SB53 , https://openai.com/index/updating-our-preparedness-framework/ , https://www.frontiermodelforum.org/publications/#technical-reports .",
+   "ko": "https://www.gov.uk/government/publications/emerging-processes-for-frontier-ai-safety , https://metr.org/faisc , https://www.anthropic.com/rsp-updates , https://www.anthropic.com/news/compliance-framework-SB53 , https://openai.com/index/updating-our-preparedness-framework/ , https://www.frontiermodelforum.org/publications/#technical-reports 참조.",
+   "linked": true
+  },
+  {
+   "n": 2,
+   "en": "As in, in the context of the Framework, risks of threat actors using critical capabilities of deployed or exfiltrated models to cause harm.",
+   "ko": "즉, 본 프레임워크의 맥락에서 위협 행위자가 배포되었거나 유출된 모델의 치명적 역량을 사용하여 피해를 야기할 위험을 의미한다.",
+   "linked": true
+  },
+  {
+   "n": 3,
+   "en": "In the context of the Framework, we address specific scenarios where model misalignment may create the risk of significant or severe harm, and scenarios where ML R&D capabilities may heighten misalignment, misuse, and structural risks.",
+   "ko": "본 프레임워크의 맥락에서 우리는 모델 오정렬이 상당한 또는 심각한 피해의 위험을 초래할 수 있는 구체적 시나리오와, 머신러닝 R&D 역량이 오정렬, 오용 및 구조적 위험을 고조시킬 수 있는 시나리오를 다룬다.",
+   "linked": true
+  },
+  {
+   "n": 4,
+   "en": "A critical capability assessment may not be conducted for low-risk external deployments (e.g. to a small number of trusted testers) if the appropriate governance function determines the residual risk of such deployments to be acceptable even if the model has reached a T/CCL (including with a safety case where a CCL has been reached).",
+   "ko": "적절한 거버넌스 기능이 저위험 외부 배포(예: 소수의 신뢰할 수 있는 테스터 대상)의 잔여 위험을 수용 가능하다고 판단하는 경우, 모델이 T/CCL에 도달했더라도(CCL에 도달한 경우 안전 사례를 포함하여) 해당 배포에 대해서는 치명적 역량 평가를 수행하지 않을 수 있다.",
+   "linked": true
+  },
+  {
+   "n": 5,
+   "en": "Note that deployment mitigations for the ML R&D CCLs are different than those for the misuse CCLs because of differences in which deployment could lead to severe harm for those respective categories. In contrast, security mitigations protecting against weights exfiltration and unauthorized modification are generally beneficial to both kinds of risk .",
+   "ko": "머신러닝 R&D CCL에 대한 배포 완화조치는 오용 CCL에 대한 배포 완화조치와 다르다는 점에 유의해야 한다. 이는 각 범주에서 어떤 배포가 심각한 피해로 이어질 수 있는지가 서로 다르기 때문이다. 반면 가중치 유출 및 무단 수정을 방지하는 보안 위험 완화조치는 일반적으로 두 유형의 위험 모두에 유익하다.",
+   "linked": true
+  },
+  {
+   "n": 6,
+   "en": "In other words, “security level N ” indicates security controls and detections at a level generally aligned with RAND SL N . See https://www.rand.org/pubs/research_reports/RRA2849-1.html , pp 21-22. In aligning our security levels with RAND’s, we are referring to the security goals and principles in the RAND framework, rather than the benchmarks (i.e. concrete measures) also described in the RAND report. As the authors point out, the “security level benchmarks represent neither a complete standard nor a compliance regime—they are provided for informational purposes only and should inform security teams’ decisions rather than supersede them.”",
+   "ko": "다시 말해, \"보안 수준 N\"은 RAND SL N에 대체로 부합하는 수준의 보안 통제 및 탐지를 의미한다. https://www.rand.org/pubs/research_reports/RRA2849-1.html , 21-22쪽 참조. 우리의 보안 수준을 RAND의 보안 수준에 맞출 때, 이는 RAND 보고서에 함께 기술된 벤치마크(즉, 구체적 조치)가 아니라 RAND 프레임워크의 보안 목표 및 원칙을 가리킨다. 저자들이 지적하듯이, \"보안 수준 벤치마크는 완전한 표준도 아니고 규정 준수 체계도 아니며, 정보 제공 목적으로만 제시된 것으로서 보안 팀의 결정을 대체하기보다는 그 결정에 참고가 되어야 한다.\"",
+   "linked": true
+  },
+  {
+   "n": 7,
+   "en": "See section 5 of https://arxiv.org/abs/2504.01849 .",
+   "ko": "https://arxiv.org/abs/2504.01849 의 5절 참조.",
+   "linked": true
+  },
+  {
+   "n": 8,
+   "en": "Here, and in other misuse T/CCLs, we intend this to mean relative to a baseline without generative AI.",
+   "ko": "여기서, 그리고 다른 오용 T/CCL에서도, 이는 생성형 AI가 없는 기준선 대비를 의미한다.",
+   "linked": true
+  },
+  {
+   "n": 9,
+   "en": "While the RAND framework is not specifically designed to address this case, we index it at present because it is the most useful reference in this area.",
+   "ko": "RAND 프레임워크가 이 경우를 다루도록 특별히 설계된 것은 아니지만, 이 분야에서 가장 유용한 참고 자료이므로 현재로서는 이를 기준으로 삼는다.",
+   "linked": true
+  },
+  {
+   "n": 10,
+   "en": "See section 6 of https://arxiv.org/abs/2504.01849 .",
+   "ko": "https://arxiv.org/abs/2504.01849 의 6절 참조.",
+   "linked": true
+  },
+  {
+   "n": 11,
+   "en": "The same caveats regarding security levels for misuse CCLs apply.",
+   "ko": "오용 CCL의 보안 수준에 관한 단서가 동일하게 적용된다.",
+   "linked": true
+  },
+  {
+   "n": 12,
+   "en": "This level may include mitigations aligned with SL 2+, plus additional mitigations designed to prevent unilateral access, harden infrastructure, and prevent data exfiltration.",
+   "ko": "이 수준에는 SL 2+에 부합하는 완화 조치와 더불어, 단독 접근(unilateral access) 방지, 인프라 강화, 데이터 유출 방지를 위해 설계된 추가 완화 조치가 포함될 수 있다.",
+   "linked": true
+  },
+  {
+   "n": 13,
+   "en": "This level may include mitigations aligned with SL 2+ and 3, plus additional mitigations aimed to isolate model weights, enhanced data center security, further hardening of infrastructure and minimizing potential attack surface.",
+   "ko": "이 수준에는 SL 2+ 및 3에 부합하는 완화 조치와 더불어, 모델 가중치 격리, 데이터 센터 보안 강화, 인프라의 추가적 강화, 잠재적 공격 표면 최소화를 목표로 하는 추가 완화 조치가 포함될 수 있다.",
+   "linked": true
+  },
+  {
+   "n": 14,
+   "en": "See https://www.rand.org/pubs/research_reports/RRA2849-1.html .",
+   "ko": "https://www.rand.org/pubs/research_reports/RRA2849-1.html 참조.",
+   "linked": true
+  },
+  {
+   "n": 15,
+   "en": "See also, for reference, https://arxiv.org/abs/2505.01420 .",
+   "ko": "참고로 https://arxiv.org/abs/2505.01420 도 참조.",
+   "linked": true
+  }
+ ]
+}

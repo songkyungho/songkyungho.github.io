@@ -29,7 +29,8 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
 type Span = { start: number; end: number; node: (key: number) => React.ReactNode };
 
 // 강조와 상호 참조를 블록 전체 문자열에서 앞에서부터 차례로 찾아 위치를 정한다(둘은 겹치지 않고, 문단 경계를 넘지 않는다).
-function inlineSpans(text: string, marks: Mark[], refs: CrossRef[]): Span[] {
+// 강조 구간 안에 각주 표시가 들어 있을 수 있어 강조 글자도 withNotes로 그린다.
+function inlineSpans(text: string, marks: Mark[], refs: CrossRef[], lang: "ko" | "en"): Span[] {
   const spans: Span[] = [];
   let cursor = 0;
   for (const mark of marks) {
@@ -38,8 +39,8 @@ function inlineSpans(text: string, marks: Mark[], refs: CrossRef[]): Span[] {
     spans.push({
       start: at, end: at + mark.t.length,
       node: (key) => mark.k === "key"
-        ? <strong className="tr-key" key={key}>{mark.t}</strong>
-        : <mark className="tr-safety" key={key}>{mark.t}</mark>,
+        ? <strong className="tr-key" key={key}>{withNotes(mark.t, lang)}</strong>
+        : <mark className="tr-safety" key={key}>{withNotes(mark.t, lang)}</mark>,
     });
     cursor = at + mark.t.length;
   }
@@ -78,7 +79,7 @@ function renderRange(text: string, from: number, to: number, spans: Span[], lang
 
 // 번역문은 한 원문 문단을 여러 문단으로 나눴을 수 있다(빈 줄로 구분).
 function Paragraphs({ text, lang, marks = [], refs = [] }: { text: string; lang: "ko" | "en"; marks?: Mark[]; refs?: CrossRef[] }) {
-  const spans = marks.length || refs.length ? inlineSpans(text, marks, refs) : [];
+  const spans = marks.length || refs.length ? inlineSpans(text, marks, refs, lang) : [];
   const parts = text.split("\n\n");
   const starts = parts.map((_, i) => parts.slice(0, i).reduce((sum, p) => sum + p.length + 2, 0));
   return (

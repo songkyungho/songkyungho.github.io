@@ -91,7 +91,8 @@ def link_note_marker(body: list[dict], n: int) -> bool:
     꼭 한 번씩 찾은 곳만 바꾸고, 모호한 블록은 그대로 둔다.
     원문: 먼저 Docling 꼴(번호 뒤 공백 두 칸)을, 없으면 표 안의 낱말 사이 숫자('company 3 |')를,
     낱말·문장부호 뒤 숫자 다음에 문장부호·대문자·블록 끝이 오는 꼴('harms 1 ,', 'Chemical 5 :',
-    'harm. 4 SAG', 'criteria: 3')을, 그래도 없으면 표 안의 낱말 사이 숫자를 찾는다('just 4 weeks'와 헷갈리기 쉬워 마지막).
+    'harm. 4 SAG', 'criteria: 3')을, 숫자 뒤 숫자('level 4 13 for')를, 문장 가운데('risk 2 as well')를,
+    그래도 없으면 표 안의 낱말 사이 숫자를 찾는다('just 4 weeks'와 헷갈리기 쉬워 마지막).
     번역문: 같은 블록에서 앞이 띄어쓰기·쉼표·한글이고 뒤에 단위가 붙지 않는 숫자('고역량13 모델', ',11 당사는')
     — 'ASL-3', '제3자', 'SL4', '5배', '3.6절'은 제외."""
     strict = re.compile(rf"(?<=[^\d\s])(\s?){n}(?=\s{{2}})")
@@ -101,6 +102,12 @@ def link_note_marker(body: list[dict], n: int) -> bool:
     hits = [(i, m) for i, b in texts for m in strict.finditer(b["en"])]
     if not hits:
         hits = [(i, m) for i, b in texts for m in spaced.finditer(b["en"])]
+    if not hits:  # 숫자 바로 뒤의 각주 번호: 'Security level 4 13 for' → 13
+        pair = re.compile(rf"(?<=\d)\s{n}(?=\s[A-Za-z])")
+        hits = [(i, m) for i, b in texts for m in pair.finditer(b["en"])]
+    if not hits:  # 문장 가운데: 'misuse risk 2 as well', 'deployment 4 of a new' (번호 매기는 낱말 뒤는 제외)
+        mid = re.compile(rf"(?<=[a-z])(?<!level)(?<!Level)(?<!ection)(?<!ersion)(?<!step)(?<!phase)(?<!tier)(?<!able)\s{n}(?=\s[a-z])")
+        hits = [(i, m) for i, b in texts if b["type"] in ("p", "li") for m in mid.finditer(b["en"])]
     if not hits:
         hits = [(i, m) for i, b in texts if b["type"] == "table" for m in loose.finditer(b["en"])]
     linked = 0
@@ -112,8 +119,15 @@ def link_note_marker(body: list[dict], n: int) -> bool:
             continue
         mark = f"[^{n}]" if not linked else f"[^{n}:{linked + 1}]"
         m, k = ms[0], ko_hits[0]
-        b["en"] = b["en"][: m.start()] + mark + re.sub(r"^\s+(?=[,.:;)])", "", b["en"][m.end():])
-        b["ko"] = b["ko"][: k.start()].rstrip() + mark + re.sub(r"^\s+(?=[,.:;)을를이가은는의에과와])", "", b["ko"][k.end():])
+        en_rest = b["en"][m.end():]
+        b["en"] = b["en"][: m.start()] + mark + re.sub(r"^\s+(?=[,.:;)])", "", en_rest)
+        rest = b["ko"][k.end():]
+        if not re.match(r"\s+[A-Z]", en_rest):  # 원문이 새 문장으로 이어지면 '이 역량…'의 '이'는 조사가 아니다
+            rest = re.sub(r"^\s+(?=[,.:;)]|(?:을|를|이|가|은|는|의|에|과|와)(?:\s|$|[,.]))", "", rest)
+        before = b["ko"][: k.start()].rstrip()
+        if before[-1:] in ".!?)”" and rest[:1].isalnum():
+            rest = " " + rest  # '한다.1이러한' → '한다.[^1] 이러한'
+        b["ko"] = before + mark + rest
         linked += 1
     return linked > 0
 
