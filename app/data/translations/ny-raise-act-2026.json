@@ -7,7 +7,7 @@
  "source_url": "https://nyassembly.gov/leg/?default_fld=&leg_video=&bn=A09449&term=&Text=Y",
  "source_note": "2026년 개정법(A.9449/S.8828, 2026년 법률 제96장) 전문. 제2조가 2025년에 제정된 원 법(A.6453-B)의 일반사업법 제44-B조를 폐지하고 새로 정하므로 이 문서가 시행될 법의 전문이다. 대괄호 안은 삭제되는 문구. 2027년 1월 1일 시행",
  "source_label": "원문 보기 (New York State Assembly)",
- "summary": "미국 뉴욕주의 프론티어 AI 안전법(Responsible AI Safety and Education Act)을 2026년에 고쳐 쓴 개정법이다. 대형 프론티어 개발자에게 프론티어 AI 프레임워크 공개와 투명성 보고, 중대 안전 사고 보고, 감독 기관에의 등록·공시와 비용 분담을 요구하고, 적용 범위와 예외, 위반 시 제재, 규칙 제정 권한을 정한다. 캘리포니아주 SB 53과 같은 틀을 따른다.",
+ "summary": "미국 뉴욕주의 프론티어 AI 안전법(Responsible AI Safety and Education Act)을 2026년에 고쳐 쓴 개정법이다. 대형 프론티어 개발자에게 프론티어 AI 프레임워크 공개와 투명성 보고, 치명적 안전 사고 보고, 감독 기관에의 등록·공시와 비용 분담을 요구하고, 적용 범위와 예외, 위반 시 제재, 규칙 제정 권한을 정한다. 캘리포니아주 SB 53과 같은 틀을 따른다.",
  "image": "/images/translations/ny-raise-act-2026-cover.webp",
  "og_image": "/images/translations/ny-raise-act-2026-cover.jpg",
  "image_caption": "원문 웹 페이지 (뉴욕주 하원, A.9449 법안 원문)",
@@ -111,10 +111,10 @@
   {
    "type": "p",
    "en": "9. Timely reporting of critical safety incidents to the government is essential to ensure that public authorities are promptly informed of ongoing and emerging risks to public safety. This reporting enables the government to monitor effectively in the event that advanced capabilities emerge in frontier artificial intelligence models that may pose a threat to the public.",
-   "ko": "9. 공공 당국이 공공 안전에 대한 현재 진행 중인 위험과 신흥 위험을 신속하게 파악하도록 하기 위해서는 중대 안전 사고(critical safety incident)를 정부에 시의적절하게 보고하는 것이 필수적이다. 정부는 이러한 보고를 통하여 공중에 위협이 될 수 있는 고도의 역량이 프론티어 인공지능 모델에서 출현하는 경우 이를 효과적으로 모니터링할 수 있다.",
+   "ko": "9. 공공 당국이 공공 안전에 대한 현재 진행 중인 위험과 신흥 위험을 신속하게 파악하도록 하기 위해서는 치명적 안전 사고(critical safety incident)를 정부에 시의적절하게 보고하는 것이 필수적이다. 정부는 이러한 보고를 통하여 공중에 위협이 될 수 있는 고도의 역량이 프론티어 인공지능 모델에서 출현하는 경우 이를 효과적으로 모니터링할 수 있다.",
    "marks": [
     {
-     "t": "중대 안전 사고(critical safety incident)를 정부에 시의적절하게 보고하는 것이 필수적이다",
+     "t": "치명적 안전 사고(critical safety incident)를 정부에 시의적절하게 보고하는 것이 필수적이다",
      "k": "safety"
     },
     {
@@ -249,10 +249,10 @@
   {
    "type": "p",
    "en": "4. \"Critical safety incident\" means any of the following:",
-   "ko": "4. \"중대 안전 사고\"란 다음 중 어느 하나를 말한다.",
+   "ko": "4. \"치명적 안전 사고\"란 다음 중 어느 하나를 말한다.",
    "marks": [
     {
-     "t": "\"중대 안전 사고\"란 다음 중 어느 하나를 말한다.",
+     "t": "\"치명적 안전 사고\"란 다음 중 어느 하나를 말한다.",
      "k": "key"
     }
    ]
@@ -493,10 +493,10 @@
   {
    "type": "p",
    "en": "(h) identifying and responding to critical safety incidents;",
-   "ko": "(h) 중대 안전 사고를 식별하고 이에 대응하는 것;",
+   "ko": "(h) 치명적 안전 사고를 식별하고 이에 대응하는 것;",
    "marks": [
     {
-     "t": "중대 안전 사고를 식별하고 이에 대응하는 것",
+     "t": "치명적 안전 사고를 식별하고 이에 대응하는 것",
      "k": "safety"
     }
    ]
@@ -665,10 +665,10 @@
   {
    "type": "p",
    "en": "1. The office shall establish a mechanism to be used by a frontier developer or a member of the public to report a critical safety incident that includes all of the following:",
-   "ko": "1. 국은 프론티어 개발자 또는 일반 공중이 중대 안전 사고를 보고하는 데 사용할 수단을 마련하여야 하며, 그 보고에는 다음 각 사항이 모두 포함되어야 한다.",
+   "ko": "1. 국은 프론티어 개발자 또는 일반 공중이 치명적 안전 사고를 보고하는 데 사용할 수단을 마련하여야 하며, 그 보고에는 다음 각 사항이 모두 포함되어야 한다.",
    "marks": [
     {
-     "t": "국은 프론티어 개발자 또는 일반 공중이 중대 안전 사고를 보고하는 데 사용할 수단을 마련하여야 하며",
+     "t": "국은 프론티어 개발자 또는 일반 공중이 치명적 안전 사고를 보고하는 데 사용할 수단을 마련하여야 하며",
      "k": "safety"
     }
    ]
@@ -676,17 +676,17 @@
   {
    "type": "p",
    "en": "(a) the date of the critical safety incident;",
-   "ko": "(a) 중대 안전 사고의 발생일;"
+   "ko": "(a) 치명적 안전 사고의 발생일;"
   },
   {
    "type": "p",
    "en": "(b) the reasons the incident qualifies as a critical safety incident;",
-   "ko": "(b) 해당 사고가 중대 안전 사고에 해당하는 사유;"
+   "ko": "(b) 해당 사고가 치명적 안전 사고에 해당하는 사유;"
   },
   {
    "type": "p",
    "en": "(c) a short and plain statement describing the critical safety incident; and",
-   "ko": "(c) 중대 안전 사고를 기술하는 간결하고 평이한 진술; 및"
+   "ko": "(c) 치명적 안전 사고를 기술하는 간결하고 평이한 진술; 및"
   },
   {
    "type": "p",
@@ -728,10 +728,10 @@
   {
    "type": "p",
    "en": "3. (a) Subject to paragraph (b) of this subdivision, a frontier developer shall report any critical safety incident pertaining to one or more of its frontier models to the office within seventy-two hours from a determination that a critical safety incident has occurred or within seventy-two hours of the frontier developer learning facts sufficient to establish a reasonable belief that a critical safety incident has occurred.",
-   "ko": "3. (a) 본 항 (b)호가 정하는 바에 따라, 프론티어 개발자는 자신의 하나 이상의 프론티어 모델과 관련된 모든 중대 안전 사고를, 중대 안전 사고가 발생하였다고 판단한 때부터 72시간 이내에, 또는 프론티어 개발자가 중대 안전 사고가 발생하였다는 합리적인 믿음을 성립시키기에 충분한 사실을 알게 된 때부터 72시간 이내에 국에 보고하여야 한다.",
+   "ko": "3. (a) 본 항 (b)호가 정하는 바에 따라, 프론티어 개발자는 자신의 하나 이상의 프론티어 모델과 관련된 모든 치명적 안전 사고를, 치명적 안전 사고가 발생하였다고 판단한 때부터 72시간 이내에, 또는 프론티어 개발자가 치명적 안전 사고가 발생하였다는 합리적인 믿음을 성립시키기에 충분한 사실을 알게 된 때부터 72시간 이내에 국에 보고하여야 한다.",
    "marks": [
     {
-     "t": "프론티어 개발자는 자신의 하나 이상의 프론티어 모델과 관련된 모든 중대 안전 사고를, 중대 안전 사고가 발생하였다고 판단한 때부터 72시간 이내에",
+     "t": "프론티어 개발자는 자신의 하나 이상의 프론티어 모델과 관련된 모든 치명적 안전 사고를, 치명적 안전 사고가 발생하였다고 판단한 때부터 72시간 이내에",
      "k": "key"
     }
    ]
@@ -739,10 +739,10 @@
   {
    "type": "p",
    "en": "(b) If a frontier developer discovers that a critical safety incident poses an imminent risk of death or serious physical injury, the frontier developer shall disclose that incident within twenty-four hours to an authority, including any law enforcement agency or public safety agency with jurisdiction, that is appropriate based on the nature of that incident and as required by law.",
-   "ko": "(b) 프론티어 개발자가 중대 안전 사고가 사망 또는 중대한 신체 상해의 임박한 위험을 초래한다는 사실을 발견한 경우, 해당 프론티어 개발자는 그 사고의 성격에 비추어 적절하고 법률이 요구하는 바에 따른 기관(관할권을 가진 법 집행기관 또는 공공 안전 기관을 포함한다)에 24시간 이내에 그 사고를 공개하여야 한다.",
+   "ko": "(b) 프론티어 개발자가 치명적 안전 사고가 사망 또는 중대한 신체 상해의 임박한 위험을 초래한다는 사실을 발견한 경우, 해당 프론티어 개발자는 그 사고의 성격에 비추어 적절하고 법률이 요구하는 바에 따른 기관(관할권을 가진 법 집행기관 또는 공공 안전 기관을 포함한다)에 24시간 이내에 그 사고를 공개하여야 한다.",
    "marks": [
     {
-     "t": "중대 안전 사고가 사망 또는 중대한 신체 상해의 임박한 위험을 초래한다는 사실을 발견한 경우",
+     "t": "치명적 안전 사고가 사망 또는 중대한 신체 상해의 임박한 위험을 초래한다는 사실을 발견한 경우",
      "k": "safety"
     },
     {
@@ -754,7 +754,7 @@
   {
    "type": "p",
    "en": "(c) A frontier developer that discovers information about a critical safety incident after filing the initial report required by this subdivision may file an amended report.",
-   "ko": "(c) 본 항이 요구하는 최초 보고서를 제출한 후 중대 안전 사고에 관한 정보를 발견한 프론티어 개발자는 수정 보고서를 제출할 수 있다.",
+   "ko": "(c) 본 항이 요구하는 최초 보고서를 제출한 후 치명적 안전 사고에 관한 정보를 발견한 프론티어 개발자는 수정 보고서를 제출할 수 있다.",
    "marks": [
     {
      "t": "수정 보고서를 제출할 수 있다",
@@ -765,10 +765,10 @@
   {
    "type": "p",
    "en": "4. The office shall review critical safety incident reports submitted by frontier developers and may review reports submitted by members of the public.",
-   "ko": "4. 국은 프론티어 개발자가 제출한 중대 안전 사고 보고서를 검토하여야 하며, 일반 공중이 제출한 보고서를 검토할 수 있다.",
+   "ko": "4. 국은 프론티어 개발자가 제출한 치명적 안전 사고 보고서를 검토하여야 하며, 일반 공중이 제출한 보고서를 검토할 수 있다.",
    "marks": [
     {
-     "t": "국은 프론티어 개발자가 제출한 중대 안전 사고 보고서를 검토하여야 하며",
+     "t": "국은 프론티어 개발자가 제출한 치명적 안전 사고 보고서를 검토하여야 하며",
      "k": "safety"
     }
    ]
@@ -776,7 +776,7 @@
   {
    "type": "p",
    "en": "5. (a) The office may transmit reports of critical safety incidents or summaries of any assessments of catastrophic risk from internal use of frontier models to other governmental entities at their discretion, considering for example and without limitation the following: the severity of any such incident, potential ongoing risks, legal or regulatory obligations, the need for coordinating with other governmental agencies or other entities and the availability of information. The office shall consider transmitting such reports or summaries to the office of the attorney general, as appropriate. Any report transmitted from the office to another governmental entity shall be exempt from disclosure under article six of the public officers law.",
-   "ko": "5. (a) 국은 중대 안전 사고 보고서 또는 프론티어 모델의 내부 사용으로 인한 파국적 위험에 대한 모든 평가의 요약을 그 재량에 따라 다른 정부 기관에 송부할 수 있으며, 이때 예를 들어 다음 사항을 고려하되 이에 한정되지 아니한다: 해당 사고의 심각성, 잠재적으로 지속되는 위험, 법적 또는 규제상 의무, 다른 정부 기관 또는 그 밖의 주체와의 조정 필요성 및 정보의 가용성. 국은 적절한 경우 해당 보고서 또는 요약을 주 법무장관(Attorney General)실에 송부하는 것을 고려하여야 한다. 국이 다른 정부 기관에 송부한 모든 보고서는 공무원법(public officers law) 제6장에 따른 공개 대상에서 제외된다.",
+   "ko": "5. (a) 국은 치명적 안전 사고 보고서 또는 프론티어 모델의 내부 사용으로 인한 파국적 위험에 대한 모든 평가의 요약을 그 재량에 따라 다른 정부 기관에 송부할 수 있으며, 이때 예를 들어 다음 사항을 고려하되 이에 한정되지 아니한다: 해당 사고의 심각성, 잠재적으로 지속되는 위험, 법적 또는 규제상 의무, 다른 정부 기관 또는 그 밖의 주체와의 조정 필요성 및 정보의 가용성. 국은 적절한 경우 해당 보고서 또는 요약을 주 법무장관(Attorney General)실에 송부하는 것을 고려하여야 한다. 국이 다른 정부 기관에 송부한 모든 보고서는 공무원법(public officers law) 제6장에 따른 공개 대상에서 제외된다.",
    "marks": [
     {
      "t": "해당 사고의 심각성, 잠재적으로 지속되는 위험",
@@ -802,7 +802,7 @@
   {
    "type": "p",
    "en": "6. A report of a critical safety incident submitted to the office pursuant to this section and a report of assessments of catastrophic risk from internal use pursuant to section fourteen hundred twenty-one of this article, are exempt from disclosure under article six of the public officers law.",
-   "ko": "6. 본 조에 따라 국에 제출된 중대 안전 사고 보고서와 본 장 제1421조에 따른 내부 사용으로 인한 파국적 위험에 대한 평가 보고서는 공무원법 제6장에 따른 공개 대상에서 제외된다.",
+   "ko": "6. 본 조에 따라 국에 제출된 치명적 안전 사고 보고서와 본 장 제1421조에 따른 내부 사용으로 인한 파국적 위험에 대한 평가 보고서는 공무원법 제6장에 따른 공개 대상에서 제외된다.",
    "marks": [
     {
      "t": "내부 사용으로 인한 파국적 위험에 대한 평가 보고서는 공무원법 제6장에 따른 공개 대상에서 제외된다",
@@ -818,10 +818,10 @@
   {
    "type": "p",
    "en": "(i) anonymized and aggregated information about critical safety incidents that have been reviewed by the office since the preceding report;",
-   "ko": "(i) 직전 보고서 이후 국이 검토한 중대 안전 사고에 관한 익명화되고 집계된 정보;",
+   "ko": "(i) 직전 보고서 이후 국이 검토한 치명적 안전 사고에 관한 익명화되고 집계된 정보;",
    "marks": [
     {
-     "t": "국이 검토한 중대 안전 사고에 관한 익명화되고 집계된 정보",
+     "t": "국이 검토한 치명적 안전 사고에 관한 익명화되고 집계된 정보",
      "k": "safety"
     }
    ]
@@ -871,10 +871,10 @@
   {
    "type": "p",
    "en": "(a) (i) the law, regulation, or guidance document imposes or states standards or requirements for critical safety incident reporting that are substantially equivalent to, or stricter than, those required by subdivision three of this section; and",
-   "ko": "(a) (i) 해당 법률, 규정 또는 지침 문서가 본 조 제3항이 요구하는 것과 실질적으로 동등하거나 그보다 엄격한 중대 안전 사고 보고에 관한 기준 또는 요건을 부과하거나 명시할 것; 및",
+   "ko": "(a) (i) 해당 법률, 규정 또는 지침 문서가 본 조 제3항이 요구하는 것과 실질적으로 동등하거나 그보다 엄격한 치명적 안전 사고 보고에 관한 기준 또는 요건을 부과하거나 명시할 것; 및",
    "marks": [
     {
-     "t": "실질적으로 동등하거나 그보다 엄격한 중대 안전 사고 보고에 관한 기준 또는 요건",
+     "t": "실질적으로 동등하거나 그보다 엄격한 치명적 안전 사고 보고에 관한 기준 또는 요건",
      "k": "safety"
     }
    ]
@@ -882,7 +882,7 @@
   {
    "type": "p",
    "en": "(ii) the law, regulation, or guidance document described in subparagraph (i) of this paragraph does not need to require critical safety incident reporting to the state of New York; and",
-   "ko": "(ii) 본 호 (i)목에 기술된 법률, 규정 또는 지침 문서가 뉴욕주에 대한 중대 안전 사고 보고를 요구할 필요는 없을 것; 및"
+   "ko": "(ii) 본 호 (i)목에 기술된 법률, 규정 또는 지침 문서가 뉴욕주에 대한 치명적 안전 사고 보고를 요구할 필요는 없을 것; 및"
   },
   {
    "type": "p",
@@ -924,10 +924,10 @@
   {
    "type": "p",
    "en": "(iii) frontier developers who comply with subdivision three of this section by meeting such federal standards shall send copies of any critical safety incident reports required by such federal standards to the office concurrently with sending them to federal authorities.",
-   "ko": "(iii) 해당 연방 기준을 충족함으로써 본 조 제3항을 준수하는 프론티어 개발자는 해당 연방 기준이 요구하는 모든 중대 안전 사고 보고서의 사본을 연방 당국에 송부하는 것과 동시에 국에 송부하여야 한다.",
+   "ko": "(iii) 해당 연방 기준을 충족함으로써 본 조 제3항을 준수하는 프론티어 개발자는 해당 연방 기준이 요구하는 모든 치명적 안전 사고 보고서의 사본을 연방 당국에 송부하는 것과 동시에 국에 송부하여야 한다.",
    "marks": [
     {
-     "t": "모든 중대 안전 사고 보고서의 사본을 연방 당국에 송부하는 것과 동시에 국에 송부하여야 한다",
+     "t": "모든 치명적 안전 사고 보고서의 사본을 연방 당국에 송부하는 것과 동시에 국에 송부하여야 한다",
      "k": "safety"
     }
    ]
@@ -1060,10 +1060,10 @@
   {
    "type": "p",
    "en": "3. Nothing in this article shall be construed to prevent a large frontier developer from asserting that another person, entity, or factor, may be responsible for any alleged harm, injury or damage resulting from a catastrophic risk or critical safety incident.",
-   "ko": "3. 본 장의 어떠한 규정도 파국적 위험 또는 중대 안전 사고로 인하여 발생하였다고 주장되는 피해, 상해 또는 손해에 대하여 다른 사람, 단체 또는 요인이 책임이 있을 수 있다고 대형 프론티어 개발자가 주장하는 것을 막는 것으로 해석되어서는 아니 된다.",
+   "ko": "3. 본 장의 어떠한 규정도 파국적 위험 또는 치명적 안전 사고로 인하여 발생하였다고 주장되는 피해, 상해 또는 손해에 대하여 다른 사람, 단체 또는 요인이 책임이 있을 수 있다고 대형 프론티어 개발자가 주장하는 것을 막는 것으로 해석되어서는 아니 된다.",
    "marks": [
     {
-     "t": "파국적 위험 또는 중대 안전 사고로 인하여 발생하였다고 주장되는 피해, 상해 또는 손해",
+     "t": "파국적 위험 또는 치명적 안전 사고로 인하여 발생하였다고 주장되는 피해, 상해 또는 손해",
      "k": "safety"
     }
    ]
@@ -1179,14 +1179,14 @@
   {
    "type": "p",
    "en": "The office is hereby authorized to adopt rules and regulations to implement the provisions of this article as needed. To the extent the office determines that doing so will facilitate safety and transparency consistent with the underlying purpose of this article, the office may consider additional reporting or publication requirements for information to facilitate safety and transparency, including but not limited to, post-critical safety incident information, sharing plans and protocols, and the transmission of frontier AI frameworks to the office.",
-   "ko": "국은 필요에 따라 본 장의 규정을 시행하기 위한 규칙 및 규정을 채택할 권한을 가진다. 국은 본 장의 근본 목적에 부합하게 안전 및 투명성을 증진할 것이라고 판단하는 범위에서, 안전 및 투명성을 증진하기 위한 정보에 관한 추가적인 보고 또는 공표 요건을 고려할 수 있으며, 여기에는 중대 안전 사고 이후의 정보, 계획 및 프로토콜의 공유, 국에 대한 프론티어 AI 프레임워크의 송부가 포함되나 이에 한정되지 아니한다.",
+   "ko": "국은 필요에 따라 본 장의 규정을 시행하기 위한 규칙 및 규정을 채택할 권한을 가진다. 국은 본 장의 근본 목적에 부합하게 안전 및 투명성을 증진할 것이라고 판단하는 범위에서, 안전 및 투명성을 증진하기 위한 정보에 관한 추가적인 보고 또는 공표 요건을 고려할 수 있으며, 여기에는 치명적 안전 사고 이후의 정보, 계획 및 프로토콜의 공유, 국에 대한 프론티어 AI 프레임워크의 송부가 포함되나 이에 한정되지 아니한다.",
    "marks": [
     {
      "t": "안전 및 투명성을 증진하기 위한 정보에 관한 추가적인 보고 또는 공표 요건을 고려할 수 있으며",
      "k": "key"
     },
     {
-     "t": "중대 안전 사고 이후의 정보, 계획 및 프로토콜의 공유",
+     "t": "치명적 안전 사고 이후의 정보, 계획 및 프로토콜의 공유",
      "k": "safety"
     },
     {
