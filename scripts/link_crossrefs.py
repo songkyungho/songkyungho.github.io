@@ -17,7 +17,7 @@ import sys
 EN_REF = re.compile(r"“\s*—\s*(.+?)”", re.S)
 KO_REF = re.compile(r"[“\"「『]\s*([—–-]\s*.+?)[”\"」』]", re.S)
 EN_NUM = re.compile(r"\bSections?\s+(\d+(?:\.\d+)*)\b|\bAppendix\s+([A-Z](?:\.\d+)*)\b")
-KO_NUM = re.compile(r"\d+(?:\.\d+)*절|섹션\s?\d+(?:\.\d+)*|부록\s*[A-Z](?:\.\d+)*")
+KO_NUM = re.compile(r"\d+(?:\.\d+)*절|섹션\s?\d+(?:\.\d+)*|부록\s*[A-Z](?:\.\d+)*|제\d+(?:\.\d+)*조")
 
 
 def norm(text: str) -> str:
@@ -37,12 +37,13 @@ def main(path: str) -> None:
         return hits[0]
 
     def numbered_target(number: str | None, letter: str | None) -> str | None:
-        """'Section 3.6' → '3.6 …' 제목, 'Appendix A' → 'Appendix A …' 제목(또는 'A …', 'C.1 …'처럼 기호로 시작하는 제목)."""
+        """'Section 3.6' → '3.6 …' 제목, 'Section 22757.11' → '§ 22757.11' 제목(법률), 'Appendix A' → 'Appendix A …' 제목
+        (또는 'A …', 'C.1 …'처럼 기호로 시작하는 제목)."""
         for b in blocks:
             if b["type"] not in ("h2", "h3"):
                 continue
             en = b["en"].strip()
-            if number and re.match(rf"^(?:Section )?{re.escape(number)}[.:]?\s", en):
+            if number and re.match(rf"^(?:Section |§\s*)?{re.escape(number)}(?:[.:]?\s|$)", en):
                 return b["id"]
             if letter and re.match(rf"^(?:Appendix )?{re.escape(letter)}[.:]?(?:\s|$)", en):
                 return b["id"]
