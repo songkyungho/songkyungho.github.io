@@ -151,7 +151,75 @@ function Table({ text, lang }: { text: string; lang: "ko" | "en" }) {
   );
 }
 
+const ROLES: Record<string, [string, string]> = {
+  developer: ["개발자", "Developer"], user: ["사용자", "User"], assistant: ["어시스턴트", "Assistant"],
+  system: ["시스템", "System"], tool: ["도구", "Tool"], untrusted: ["신뢰할 수 없는 입력", "Untrusted"],
+  settings: ["설정", "Settings"], form: ["양식", "Form"],
+};
+
+type Message = { role: string; attrs: string; verdict?: "good" | "bad"; note?: string; lines: string[]; alt: boolean };
+
+// 대화 예시: '<user>'·'</user>' 같은 태그 줄 사이가 한 메시지. <comparison> 안의 어시스턴트 응답은 서로 견주는 대안이다.
+function parseExample(text: string): Message[] {
+  const out: Message[] = [];
+  let cur: Message | null = null;
+  let alt = false;
+  for (const line of text.split(/ ?⏎ ?/)) {
+    const open = line.match(/^<([a-z_]+)([^>]*)>\s*(?:<!--\s*(GOOD|BAD)\s*:?\s*(.*?)\s*-->)?\s*$/);
+    const close = line.match(/^<\/([a-z_]+)>\s*$/);
+    if (open && open[1] === "comparison") { alt = true; continue; }
+    if (close && close[1] === "comparison") { alt = false; continue; }
+    if (open && ROLES[open[1]] && !cur) {
+      cur = { role: open[1], attrs: open[2].trim(), lines: [], alt,
+        verdict: open[3] ? (open[3] === "GOOD" ? "good" : "bad") : undefined, note: open[4] || undefined };
+      continue;
+    }
+    if (close && cur && close[1] === cur.role) { out.push(cur); cur = null; continue; }
+    if (cur) cur.lines.push(line);
+  }
+  if (cur) out.push(cur);
+  return out;
+}
+
+function Example({ text, lang }: { text: string; lang: "ko" | "en" }) {
+  const i = lang === "ko" ? 0 : 1;
+  return (
+    <div className="tr-example" lang={lang}>
+      {parseExample(text).map((msg, k) => (
+        <div className={`tr-msg tr-msg-${msg.role}${msg.verdict ? ` tr-msg-${msg.verdict}` : ""}`} key={k}>
+          <p className="tr-msg-head">
+            <span className="tr-msg-role">{ROLES[msg.role]?.[i] ?? msg.role}</span>
+            {msg.verdict && <span className="tr-msg-verdict">{lang === "ko" ? (msg.verdict === "good" ? "좋은 응답" : "나쁜 응답") : msg.verdict.toUpperCase()}</span>}
+            {msg.note && <span className="tr-msg-note">{msg.note}</span>}
+          </p>
+          <div className="tr-msg-body">{msg.lines.join("\n").trim()}</div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// Model Spec 제목 끝의 권한 수준(' · Root')은 따로 표시한다.
+const AUTHORITY: Record<string, string> = { Root: "루트", System: "시스템", Developer: "개발자", User: "사용자", Guideline: "지침" };
+function splitAuthority(text: string): [string, string | null] {
+  const m = text.match(/^(.*?)\s·\s(Root|System|Developer|User|Guideline)$/);
+  return m ? [m[1], m[2]] : [text, null];
+}
+
+function HeadingText({ text, lang }: { text: string; lang: "ko" | "en" }) {
+  const [title, auth] = splitAuthority(text);
+  return <>{title}{auth && <span className="tr-auth" title="권한 수준(authority level)">{lang === "ko" ? AUTHORITY[auth] : auth}</span>}</>;
+}
+
 function Row({ block }: { block: TranslationBlock }) {
+  if (block.type === "example") {
+    return (
+      <div className="tr-row tr-examplerow">
+        <div className="tr-ko"><Example lang="ko" text={block.ko} /></div>
+        <div className="tr-en"><Example lang="en" text={block.en} /></div>
+      </div>
+    );
+  }
   if (block.type === "table") {
     return (
       <div className="tr-row tr-tablerow">
@@ -164,8 +232,8 @@ function Row({ block }: { block: TranslationBlock }) {
     const Heading = block.type;
     return (
       <div className={`tr-row tr-${block.type}`} id={block.id}>
-        <Heading className="tr-ko" lang="ko">{block.ko}</Heading>
-        <p className="tr-en" lang="en">{block.en}</p>
+        <Heading className="tr-ko" lang="ko"><HeadingText lang="ko" text={block.ko} /></Heading>
+        <p className="tr-en" lang="en"><HeadingText lang="en" text={block.en} /></p>
       </div>
     );
   }
@@ -215,9 +283,9 @@ function Toc({ doc }: { doc: TranslationDoc }) {
         {sections.map(({ h2, items }) => (
           <li key={h2.id}>
             <details>
-              <summary><a href={`#${h2.id}`}>{h2.ko}</a><span>{items.length}</span></summary>
+              <summary><a href={`#${h2.id}`}>{splitAuthority(h2.ko)[0]}</a><span>{items.length}</span></summary>
               <ol>
-                {items.map((item) => <li key={item.id}><a href={`#${item.id}`}>{item.ko}</a></li>)}
+                {items.map((item) => <li key={item.id}><a href={`#${item.id}`}>{splitAuthority(item.ko)[0]}</a></li>)}
               </ol>
             </details>
           </li>

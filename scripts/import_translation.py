@@ -177,6 +177,9 @@ def parse(path: str) -> list[dict]:
         if chunk.startswith(("[표]", "|")):
             blocks.append({"type": "table", "text": table_rows(chunk)})
             continue
+        if chunk.startswith("[예시]"):  # 대화 예시(Model Spec): 줄을 ' ⏎ '로 이은 한 블록
+            blocks.append({"type": "example", "text": re.sub(r"\s*\n\s*", " ⏎ ", chunk.removeprefix("[예시]").strip())})
+            continue
         for line in chunk.splitlines():
             line = line.strip()
             if not line or line.startswith("# "):

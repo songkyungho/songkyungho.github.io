@@ -1,7 +1,9 @@
 import anthropicRsp34 from "../data/translations/anthropic-rsp-v3-4.json";
 import anthropicS1 from "../data/translations/anthropic-s1-2026-risk-factors.json";
+import claudeConstitution from "../data/translations/claude-constitution-2026-01.json";
 import gdmFsf31 from "../data/translations/gdm-fsf-v3-1.json";
 import metaSsf21 from "../data/translations/meta-ssf-v2-1.json";
+import openaiModelSpec from "../data/translations/openai-model-spec-2026-10.json";
 import openaiPreparedness2 from "../data/translations/openai-preparedness-v2.json";
 import xaiFaif202512 from "../data/translations/xai-faif-2025-12.json";
 
@@ -11,7 +13,8 @@ export type Mark = { t: string; k: "key" | "safety" };
 // refs: 문서 안 상호 참조(scripts/link_crossrefs.py). t는 ko의 인용된 제목, to는 가리키는 제목 블록의 id.
 export type CrossRef = { t: string; to: string };
 // table: 행은 " ⏎ ", 칸은 "|"로 나눈 Markdown 표 한 줄(scripts/import_translation.py). 첫 행이 머리글.
-export type TranslationBlock = { type: "h2" | "h3" | "p" | "li" | "table"; en: string; ko: string; id?: string; marks?: Mark[]; refs?: CrossRef[] };
+// example: 대화 예시(Model Spec). 줄을 " ⏎ "로 이은 '<user> ⏎ 내용 ⏎ </user> ⏎ <comparison> ⏎ <assistant> <!-- GOOD: … --> …' 꼴.
+export type TranslationBlock = { type: "h2" | "h3" | "p" | "li" | "table" | "example"; en: string; ko: string; id?: string; marks?: Mark[]; refs?: CrossRef[] };
 export type TranslationDoc = {
   slug: string;
   title: string;
@@ -40,6 +43,6 @@ export type TranslationDoc = {
   blocks: TranslationBlock[];
 };
 
-export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, gdmFsf31, metaSsf21, xaiFaif202512] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
+export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
 
 export const dotDate = (iso: string) => iso.replaceAll("-", ".");
