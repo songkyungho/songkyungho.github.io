@@ -104,7 +104,7 @@
   {
    "type": "p",
    "en": "This is the October 2026 revision of our second iteration of our Meta Superintelligence Scaling Framework (previously titled the Frontier AI Framework). We're releasing this update to the Framework to address two emerging areas of industry discussion. We've added requirements for mitigating model containment failures in training and evaluation, in a new catastrophic outcome category (Loss of Control 3), and considerations we're taking overall to maintain control of model development by humans. This version also recognizes the growing importance of open models by introducing specific considerations around open weights releases.",
-   "ko": "본 문서는 Meta Superintelligence Scaling Framework(이전 명칭: Frontier AI Framework) 두 번째 버전의 2026년 10월 개정판이다. 이번 업데이트는 업계에서 새롭게 논의되고 있는 두 가지 영역을 다루기 위한 것이다. 첫째, 새로운 파국적 결과 범주(통제 상실 3)를 신설하여 훈련 및 평가(evaluation) 과정에서 발생하는 모델 격리 실패(containment failure)를 완화하기 위한 요구사항을 추가하였고, 인간이 모델 개발에 대한 통제를 유지하기 위해 전반적으로 고려하는 사항도 포함하였다. 둘째, 개방형 가중치 공개에 관한 구체적인 고려사항을 도입하여 개방형 모델의 중요성이 커지고 있음을 반영하였다.",
+   "ko": "본 문서는 Meta Superintelligence Scaling Framework(이전 명칭: Frontier AI Framework) 두 번째 버전의 2026년 10월 개정판이다. 이번 업데이트는 업계에서 새롭게 논의되고 있는 두 가지 영역을 다루기 위한 것이다. 첫째, 새로운 파국적 결과 범주(통제 상실 3)를 신설하여 훈련 및 평가(evaluation) 과정에서 발생하는 모델 격리 실패(containment failure)를 완화하기 위한 요구사항을 추가하였고, 인간이 모델 개발에 대한 통제를 유지하기 위해 전반적으로 고려하는 사항도 포함하였다. 둘째, 오픈 웨이트 공개에 관한 구체적인 고려사항을 도입하여 개방형 모델의 중요성이 커지고 있음을 반영하였다.",
    "marks": [
     {
      "t": "새로운 파국적 결과 범주(통제 상실 3)를 신설하여 훈련 및 평가(evaluation) 과정에서 발생하는 모델 격리 실패(containment failure)를 완화하기 위한 요구사항을 추가하였고",
@@ -115,7 +115,7 @@
      "k": "safety"
     },
     {
-     "t": "개방형 가중치 공개에 관한 구체적인 고려사항을 도입하여",
+     "t": "오픈 웨이트 공개에 관한 구체적인 고려사항을 도입하여",
      "k": "safety"
     }
    ]
@@ -197,10 +197,10 @@
   {
    "type": "p",
    "en": "This Framework covers AI deployments across their entire lifecycle: from training to evaluation to deployment, including controlled or closed deployments and open weight release. Each setting comes with its own threat surfaces and risks, and the Framework is designed to be flexible and adapt to the specific considerations of each.",
-   "ko": "본 프레임워크는 AI 배포의 전체 수명주기, 즉 훈련부터 평가(evaluation), 배포에 이르기까지를 다루며, 여기에는 통제형 또는 폐쇄형 배포와 개방형 가중치 공개가 포함된다. 각 환경에는 고유한 위협 표면과 위험이 존재하며, 본 프레임워크는 각 환경의 구체적인 고려사항에 유연하게 적응할 수 있도록 설계되었다.",
+   "ko": "본 프레임워크는 AI 배포의 전체 수명주기, 즉 훈련부터 평가(evaluation), 배포에 이르기까지를 다루며, 여기에는 통제형 또는 폐쇄형 배포와 오픈 웨이트 공개가 포함된다. 각 환경에는 고유한 위협 표면과 위험이 존재하며, 본 프레임워크는 각 환경의 구체적인 고려사항에 유연하게 적응할 수 있도록 설계되었다.",
    "marks": [
     {
-     "t": "통제형 또는 폐쇄형 배포와 개방형 가중치 공개가 포함된다",
+     "t": "통제형 또는 폐쇄형 배포와 오픈 웨이트 공개가 포함된다",
      "k": "safety"
     },
     {
@@ -1546,7 +1546,7 @@
   {
    "type": "p",
    "en": "Our evaluations are also designed to account for the deployment context of the model. This includes assessing whether risks will remain within defined thresholds once a model is deployed or released using the target deployment or release approach. We will seek to account for the tools and scaffolding in the current ecosystem that could be leveraged to enhance the model's capabilities. For example: For deployments in user-facing products, we may test in the product's harness to replicate realistic use cases, while for API deployments or open weight releases we may test in a range of harnesses and environments. We may additionally explore how risks may materialize in combination with other models, through task decomposition.",
-   "ko": "우리의 평가는 모델의 배포 맥락도 고려하도록 설계된다. 여기에는 목표로 하는 배포 또는 공개 방식으로 모델을 배포하거나 공개했을 때 위험이 정의된 임계값 이내로 유지되는지를 평가하는 것이 포함된다. 우리는 모델의 역량을 강화하는 데 활용될 수 있는, 현재 생태계 내 도구와 스캐폴딩을 고려하고자 한다. 예를 들어 사용자 대상 제품에 배포하는 경우 현실적인 사용 사례를 재현하기 위해 해당 제품의 하네스(harness)에서 테스트할 수 있으며, 애플리케이션 프로그래밍 인터페이스 (API) 배포나 개방형 가중치 공개(open weight release)의 경우에는 다양한 하네스와 환경에서 테스트할 수 있다. 또한 과업 분해(task decomposition)를 통해 다른 모델과 결합될 때 위험이 어떻게 현실화될 수 있는지도 추가로 탐색할 수 있다.",
+   "ko": "우리의 평가는 모델의 배포 맥락도 고려하도록 설계된다. 여기에는 목표로 하는 배포 또는 공개 방식으로 모델을 배포하거나 공개했을 때 위험이 정의된 임계값 이내로 유지되는지를 평가하는 것이 포함된다. 우리는 모델의 역량을 강화하는 데 활용될 수 있는, 현재 생태계 내 도구와 스캐폴딩을 고려하고자 한다. 예를 들어 사용자 대상 제품에 배포하는 경우 현실적인 사용 사례를 재현하기 위해 해당 제품의 하네스(harness)에서 테스트할 수 있으며, 애플리케이션 프로그래밍 인터페이스 (API) 배포나 오픈 웨이트 공개(open weight release)의 경우에는 다양한 하네스와 환경에서 테스트할 수 있다. 또한 과업 분해(task decomposition)를 통해 다른 모델과 결합될 때 위험이 어떻게 현실화될 수 있는지도 추가로 탐색할 수 있다.",
    "marks": [
     {
      "t": "위험이 정의된 임계값 이내로 유지되는지를 평가하는 것이 포함된다",
@@ -1620,7 +1620,7 @@
   {
    "type": "li",
    "en": "For open-weight releases or deployments with fine-tuning APIs, we would additionally consider adversaries capable of modifying model behavior through continued training.",
-   "ko": "개방형 가중치 공개 또는 미세조정 API를 제공하는 배포의 경우, 지속적인 훈련을 통해 모델의 행동을 수정할 수 있는 공격자를 추가로 고려한다.",
+   "ko": "오픈 웨이트 공개 또는 미세조정 API를 제공하는 배포의 경우, 지속적인 훈련을 통해 모델의 행동을 수정할 수 있는 공격자를 추가로 고려한다.",
    "marks": [
     {
      "t": "지속적인 훈련을 통해 모델의 행동을 수정할 수 있는 공격자를 추가로 고려한다",
@@ -3317,7 +3317,7 @@
   {
    "type": "li",
    "en": "Closed release: models that are released widely in Meta products, but are not directly available to external partners with open weights.",
-   "ko": "폐쇄형 공개: Meta 제품에서 광범위하게 공개되지만, 외부 파트너가 개방형 가중치로 직접 이용할 수는 없는 모델."
+   "ko": "폐쇄형 공개: Meta 제품에서 광범위하게 공개되지만, 외부 파트너가 오픈 웨이트로 직접 이용할 수는 없는 모델."
   },
   {
    "type": "li",
@@ -3488,10 +3488,10 @@
   {
    "type": "li",
    "en": "Open Weights : Added additional discussion of the benefits and risks of open weight deployments.",
-   "ko": "개방형 가중치: 개방형 가중치 배포의 이점과 위험에 관한 논의를 추가함.",
+   "ko": "오픈 웨이트: 오픈 웨이트 배포의 이점과 위험에 관한 논의를 추가함.",
    "marks": [
     {
-     "t": "개방형 가중치 배포의 이점과 위험에 관한 논의를 추가함",
+     "t": "오픈 웨이트 배포의 이점과 위험에 관한 논의를 추가함",
      "k": "safety"
     }
    ]

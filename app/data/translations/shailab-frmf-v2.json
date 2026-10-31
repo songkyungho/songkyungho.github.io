@@ -1997,7 +1997,7 @@
   {
    "type": "li",
    "en": "1) Contextual analysis (Section 3.1): Collating and analyzing the external factors that shape the risk landscape, including: the model's deployment configuration and access constraints (e.g., API vs. open-weight release), the capabilities and intent of plausible threat actors, the availability of hazardous information in training data, and the current state of real-world threats (e.g., evolving cyber-exploit marketplaces, known biological weapon synthesis pathways). This grounds empirical model evaluations in the actual operating environment and threat landscape.",
-   "ko": "1) 맥락 분석(섹션 3.1): 위험 지형을 형성하는 외부 요인을 수집·분석한다. 여기에는 모델의 배포 구성 및 접근 제약(예: API 대 개방형 가중치 공개), 개연성 있는 위협 행위자의 역량과 의도, 학습 데이터 내 위험 정보의 가용성, 현실 세계 위협의 현황(예: 진화하는 사이버 익스플로잇 시장, 알려진 생물무기 합성 경로)이 포함된다. 이를 통해 경험적 모델 평가(evaluation)를 실제 운영 환경과 위협 지형에 기반하도록 한다.",
+   "ko": "1) 맥락 분석(섹션 3.1): 위험 지형을 형성하는 외부 요인을 수집·분석한다. 여기에는 모델의 배포 구성 및 접근 제약(예: API 대 오픈 웨이트 공개), 개연성 있는 위협 행위자의 역량과 의도, 학습 데이터 내 위험 정보의 가용성, 현실 세계 위협의 현황(예: 진화하는 사이버 익스플로잇 시장, 알려진 생물무기 합성 경로)이 포함된다. 이를 통해 경험적 모델 평가(evaluation)를 실제 운영 환경과 위협 지형에 기반하도록 한다.",
    "marks": [
     {
      "t": "개연성 있는 위협 행위자의 역량과 의도, 학습 데이터 내 위험 정보의 가용성",
@@ -4825,7 +4825,7 @@
   {
    "type": "li",
    "en": "(2) Escalation protocols: Predefined chains of command specifying who has authority to order partial or full shutdown at each escalation level, with clear timelines for decision-making.",
-   "ko": "(2) 단계적 상향 프로토콜(escalation protocol): 각 상향 단계에서 부분 또는 전면 중단을 명령할 권한이 누구에게 있는지를 명시하고, 의사결정을 위한 명확한 시한을 포함하는 사전 정의된 지휘 체계임.",
+   "ko": "(2) 단계적 상향 프로토콜(escalation protocol): 각 상향 단계에서 부분 또는 전면 중단을 명령할 권한이 누구에게 있는지를 명시하고, 의사결정을 위한 명확한 시한을 포함하는 사전 정의된 지휘 계통임.",
    "marks": [
     {
      "t": "부분 또는 전면 중단을 명령할 권한이 누구에게 있는지를 명시",
