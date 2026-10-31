@@ -266,8 +266,12 @@ def align(en: list[dict], ko: list[dict]) -> list[dict]:
 def main(src: str, translated: str, meta_path: str) -> None:
     blocks, notes = extract_footnotes(merge_split_tables(align(parse(src), parse(translated))))
     # doc-translator --keep-refused: 모델이 번역을 거절한 구간은 원문이 그대로 남는다. 페이지가 안내를 달도록 표시한다.
+    # 법령의 조 표시('SECTION 1', 'SEC. 2')처럼 옮길 말이 없어 원문과 같은 제목은 거절이 아니다.
+    label = re.compile(r"^(?:SECTION|SEC\.|Section|ARTICLE|Article|§)\s*\d", re.IGNORECASE)
     for block in blocks:
         if block["ko"].strip() == block["en"].strip() and re.search(r"[A-Za-z]{3,}", block["en"]):
+            if block["type"] in ("h2", "h3") and label.match(block["en"].strip()):
+                continue
             block["untranslated"] = True
     for n, block in enumerate(blocks):
         if block["type"] in ("h2", "h3"):
