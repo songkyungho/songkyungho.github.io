@@ -97,35 +97,53 @@ def link_note_marker(body: list[dict], n: int) -> bool:
     — 'ASL-3', '제3자', 'SL4', '5배', '3.6절'은 제외."""
     strict = re.compile(rf"(?<=[^\d\s])(\s?){n}(?=\s{{2}})")
     loose = re.compile(rf"(?<=[A-Za-z.,)”’:;])(?<!\d\.)\s?{n}(?=\s|$)")
-    spaced = re.compile(rf"(?<=[A-Za-z.,:;)”’])\s{n}(?=\s(?:[,.:;)]|[A-Z])|$)")
+    spaced = re.compile(rf"(?<=[A-Za-z.,:;)”’])\s{n}(?=\s(?:[,.:;)]|[A-Z])|$)|(?<=[a-z]\.)\s{n}(?=\s[a-z])")
     texts = [(i, b) for i, b in enumerate(body) if b["type"] in ("p", "li", "table")]
+    en_all = "\n".join(b["en"] for _, b in texts)
+
+    def not_a_name(i: int, m: re.Match) -> bool:
+        """'Loss of Control 2', 'Cyber 2'처럼 문서에 두 번 넘게 나오는 '낱말 + 번호'는 이름이지 각주가 아니다."""
+        w = re.search(r"([A-Za-z]+)\s*$", body[i]["en"][: m.start()])
+        return not w or len(re.findall(rf"\b{w.group(1)}\s+{n}\b", en_all)) < 2
+
     hits = [(i, m) for i, b in texts for m in strict.finditer(b["en"])]
     if not hits:
-        hits = [(i, m) for i, b in texts for m in spaced.finditer(b["en"])]
+        hits = [(i, m) for i, b in texts for m in spaced.finditer(b["en"]) if not_a_name(i, m)]
     if not hits:  # 숫자 바로 뒤의 각주 번호: 'Security level 4 13 for' → 13
         pair = re.compile(rf"(?<=\d)\s{n}(?=\s[A-Za-z])")
         hits = [(i, m) for i, b in texts for m in pair.finditer(b["en"])]
     if not hits:  # 문장 가운데: 'misuse risk 2 as well', 'deployment 4 of a new' (번호 매기는 낱말 뒤는 제외)
         mid = re.compile(rf"(?<=[a-z])(?<!level)(?<!Level)(?<!ection)(?<!ersion)(?<!step)(?<!phase)(?<!tier)(?<!able)\s{n}(?=\s[a-z])")
-        hits = [(i, m) for i, b in texts if b["type"] in ("p", "li") for m in mid.finditer(b["en"])]
+        hits = [(i, m) for i, b in texts if b["type"] in ("p", "li") for m in mid.finditer(b["en"]) if not_a_name(i, m)]
     if not hits:
-        hits = [(i, m) for i, b in texts if b["type"] == "table" for m in loose.finditer(b["en"])]
+        hits = [(i, m) for i, b in texts if b["type"] == "table" for m in loose.finditer(b["en"]) if not_a_name(i, m)]
     linked = 0
     for i in sorted({i for i, _ in hits}):
         ms = [m for j, m in hits if j == i]
         b = body[i]
-        ko_hits = list(re.finditer(rf"(?<=[\s,.가-힣])(?<!제)(?<!\d\.){n}(?![\d.]|\s*[배개명년월일회%절주쪽])", b["ko"]))
-        if len(ms) != 1 or len(ko_hits) != 1:
+        ko_hits = list(re.finditer(rf"(?<=[\s,.가-힣])(?<!제)(?<!\d\.){n}(?!\d|\.\d|[배개명년월일회%절주쪽]|\s+(?:%|[배개명년월일회절주쪽](?![가-힣])))", b["ko"]))
+        if len(ms) != 1 or len(ko_hits) > 1:
             continue
         mark = f"[^{n}]" if not linked else f"[^{n}:{linked + 1}]"
-        m, k = ms[0], ko_hits[0]
+        m = ms[0]
+        if not ko_hits:
+            # 번역문이 각주 번호를 빠뜨렸으면 원문 표시와 같은 비율 자리 뒤의 첫 문장 끝에 단다.
+            en_text = b["en"]
+            target = m.start() / max(1, len(en_text)) * len(b["ko"])
+            ends = [e.end() for e in re.finditer(r"[.!?。](?=\s|$)|:(?=\s)", b["ko"])] or [len(b["ko"])]
+            at = next((e for e in ends if e >= target), ends[-1])
+            b["en"] = en_text[: m.start()] + mark + re.sub(r"^\s+(?=[,.:;)])", "", en_text[m.end():])
+            b["ko"] = b["ko"][:at] + mark + b["ko"][at:]
+            linked += 1
+            continue
+        k = ko_hits[0]
         en_rest = b["en"][m.end():]
         b["en"] = b["en"][: m.start()] + mark + re.sub(r"^\s+(?=[,.:;)])", "", en_rest)
         rest = b["ko"][k.end():]
         if not re.match(r"\s+[A-Z]", en_rest):  # 원문이 새 문장으로 이어지면 '이 역량…'의 '이'는 조사가 아니다
             rest = re.sub(r"^\s+(?=[,.:;)]|(?:을|를|이|가|은|는|의|에|과|와)(?:\s|$|[,.]))", "", rest)
         before = b["ko"][: k.start()].rstrip()
-        if before[-1:] in ".!?)”" and rest[:1].isalnum():
+        if before[-1:] in ".!?”" and rest[:1].isalnum():
             rest = " " + rest  # '한다.1이러한' → '한다.[^1] 이러한'
         b["ko"] = before + mark + rest
         linked += 1

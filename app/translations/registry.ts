@@ -1,7 +1,9 @@
 import anthropicRsp34 from "../data/translations/anthropic-rsp-v3-4.json";
 import anthropicS1 from "../data/translations/anthropic-s1-2026-risk-factors.json";
 import gdmFsf31 from "../data/translations/gdm-fsf-v3-1.json";
+import metaSsf21 from "../data/translations/meta-ssf-v2-1.json";
 import openaiPreparedness2 from "../data/translations/openai-preparedness-v2.json";
+import xaiFaif202512 from "../data/translations/xai-faif-2025-12.json";
 
 // 번역 문서 한 편 = scripts/import_translation.py가 만든 JSON 한 개. 새 문서는 여기 import만 더한다.
 // marks: 번역문 강조(scripts/emphasize_translation.py). t는 ko의 연속 부분 문자열, 블록 안 순서대로·겹치지 않음.
@@ -38,6 +40,6 @@ export type TranslationDoc = {
   blocks: TranslationBlock[];
 };
 
-export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, gdmFsf31] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
+export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, gdmFsf31, metaSsf21, xaiFaif202512] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
 
 export const dotDate = (iso: string) => iso.replaceAll("-", ".");

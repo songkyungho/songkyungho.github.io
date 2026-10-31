@@ -1,0 +1,1268 @@
+{
+ "slug": "xai-faif-2025-12",
+ "title": "xAI 프론티어 인공지능 프레임워크 (2025.12.30판)",
+ "original_title": "xAI Frontier Artificial Intelligence Framework (December 30, 2025)",
+ "publisher": "xAI",
+ "doc_kind": "프론티어 안전 프레임워크",
+ "published": "2025-12-30",
+ "source_url": "https://data.x.ai/2025-12-31-xai-frontier-artificial-intelligence-framework.pdf",
+ "source_note": "2025년 12월 30일 갱신본 전문 (11쪽). 2026년 6월 갱신본은 공개본을 찾지 못해 이 판을 옮겼다",
+ "source_label": "원문 보기 (xAI PDF)",
+ "translated": "2026-10-31",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "summary": "xAI가 캘리포니아 프론티어 AI 투명성법(SB 53)에 맞춰 공개한 프론티어 AI 프레임워크다. 악의적 사용과 통제 상실의 두 위험 범주에 대해 벤치마크와 정량 임계값, 위험 평가, 안전장치를 정하고, 공개 투명성과 제3자 검토, 정보 보안, 거버넌스, 배포 결정 원칙을 담고 있다.",
+ "image": "/images/translations/xai-faif-2025-12-cover.webp",
+ "og_image": "/images/translations/xai-faif-2025-12-cover.jpg",
+ "image_caption": "원문 첫 쪽 (xAI, 2025.12.30 갱신본)",
+ "stats": {
+  "blocks": 104,
+  "sections": 6,
+  "items": 11,
+  "words_en": 3946
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Last updated: December 30, 2025 xAI seriously considers safety and security while developing and advancing AI models to help us all to better understand the universe. This Frontier AI Framework ('FAIF') outlines xAI's approach to policies for handling significant risks, including catastrophic risks, associated with the development, deployment, and release of xAI's AI models, such as Grok. xAI plans to continuously review and adjust this FAIF over time, as AI model development, capability and use cases evolve.",
+   "ko": "최종 업데이트: 2025년 12월 30일 xAI는 우리 모두가 우주를 더 잘 이해할 수 있도록 돕는 AI 모델을 개발하고 발전시키는 과정에서 안전과 보안을 진지하게 고려한다. 본 프론티어 AI 프레임워크(Frontier AI Framework, 'FAIF')는 Grok 등 xAI AI 모델의 개발, 배포 및 출시와 관련된 파국적 위험을 포함한 중대한 위험을 다루기 위한 xAI의 정책 접근 방식을 제시한다. xAI는 AI 모델의 개발, 역량 및 사용 사례가 발전함에 따라 본 FAIF를 지속적으로 검토하고 조정할 계획이다.",
+   "marks": [
+    {
+     "t": "안전과 보안을 진지하게 고려한다",
+     "k": "safety"
+    },
+    {
+     "t": "xAI AI 모델의 개발, 배포 및 출시와 관련된 파국적 위험을 포함한 중대한 위험을 다루기 위한 xAI의 정책 접근 방식",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This FAIF complies with California's Transparency in Frontier Artificial Intelligence Act (the 'TFAIA', California Business and Professions Code § 22757.10 et seq.).",
+   "ko": "본 FAIF는 캘리포니아주 프론티어 인공지능 투명성법(Transparency in Frontier Artificial Intelligence Act, 'TFAIA', 캘리포니아주 사업 및 직업법(California Business and Professions Code) § 22757.10 이하)을 준수한다.",
+   "marks": [
+    {
+     "t": "캘리포니아주 프론티어 인공지능 투명성법(Transparency in Frontier Artificial Intelligence Act, 'TFAIA'",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Scope",
+   "ko": "범위",
+   "id": "s2"
+  },
+  {
+   "type": "p",
+   "en": "This FAIF discusses two major categories of AI risk-malicious use and loss of control. This risk includes, but is not limited to, Catastrophic Risk as defined in the TFAIA.[^1] This FAIF also outlines the quantitative thresholds, metrics, and procedures that xAI may utilize to manage and improve the safety of its AI models. In addition, this FAIF discusses xAI's approach to addressing operational and societal risks posed by advanced AI, including incorporating public transparency, third-party review, and information security considerations.",
+   "ko": "본 FAIF는 AI 위험의 두 가지 주요 범주인 악의적 사용과 통제 상실을 다룬다. 이 위험에는 TFAIA에 정의된 파국적 위험이 포함되나 이에 국한되지 않는다.[^1] 본 FAIF는 또한 xAI가 자사 AI 모델의 안전을 관리하고 개선하기 위해 활용할 수 있는 정량적 임계값, 지표 및 절차를 제시한다. 아울러 본 FAIF는 공개 투명성, 제3자 검토 및 정보 보안 고려사항의 반영을 포함하여, 첨단 AI가 초래하는 운영적·사회적 위험에 대응하기 위한 xAI의 접근 방식을 다룬다.",
+   "marks": [
+    {
+     "t": "본 FAIF는 AI 위험의 두 가지 주요 범주인 악의적 사용과 통제 상실을 다룬다.",
+     "k": "key"
+    },
+    {
+     "t": "TFAIA에 정의된 파국적 위험이 포함되나 이에 국한되지 않는다",
+     "k": "safety"
+    },
+    {
+     "t": "자사 AI 모델의 안전을 관리하고 개선하기 위해 활용할 수 있는 정량적 임계값, 지표 및 절차",
+     "k": "safety"
+    },
+    {
+     "t": "공개 투명성, 제3자 검토 및 정보 보안 고려사항의 반영",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Overall Approach",
+   "ko": "전반적 접근 방식",
+   "id": "s4"
+  },
+  {
+   "type": "p",
+   "en": "Managing the risks related to advanced AI models presents unique challenges as compared to standard risk management practices in use in other fields, such as for aerospace engineering. Given the large and continuously growing range of applications where AI models may be deployed, it is difficult to comprehensively anticipate and model all of the general public's potential applications and interactions for an AI model. Additionally, the private nature of typical AI usage by end users limits the utility of third-party reporting mechanisms that may be more effective for more publicly seen usage, such as for social media platforms where providers heavily rely upon user-submitted moderation reports to identify novel forms of abuse on their platforms.",
+   "ko": "첨단 AI 모델과 관련된 위험을 관리하는 것은 항공우주공학 등 다른 분야에서 사용되는 표준 위험 관리 실행 방안과 비교할 때 고유한 과제를 수반한다. AI 모델이 배포될 수 있는 응용 분야가 광범위하고 지속적으로 확대되고 있다는 점을 고려하면, AI 모델에 대한 일반 대중의 잠재적 활용과 상호작용을 모두 포괄적으로 예측하고 모델링하기는 어렵다. 또한 최종 사용자의 일반적인 AI 사용이 사적인 성격을 띤다는 점은 제3자 신고 메커니즘의 효용을 제한한다. 이러한 메커니즘은 보다 공개적으로 노출되는 사용에서 더 효과적일 수 있는데, 예컨대 소셜 미디어 플랫폼의 경우 제공자는 자사 플랫폼에서 새로운 형태의 남용을 식별하기 위해 사용자가 제출한 모더레이션 신고에 크게 의존한다.",
+   "marks": [
+    {
+     "t": "AI 모델에 대한 일반 대중의 잠재적 활용과 상호작용을 모두 포괄적으로 예측하고 모델링하기는 어렵다",
+     "k": "key"
+    },
+    {
+     "t": "최종 사용자의 일반적인 AI 사용이 사적인 성격을 띤다는 점은 제3자 신고 메커니즘의 효용을 제한한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(A) Providing expert-level assistance in the creation or release of a chemical, biological, radiological, or nuclear weapon.",
+   "ko": "(A) 화학, 생물, 방사능 또는 핵무기의 제조 또는 방출에 전문가 수준의 지원을 제공하는 것.",
+   "marks": [
+    {
+     "t": "화학, 생물, 방사능 또는 핵무기의 제조 또는 방출에 전문가 수준의 지원을 제공하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) Engaging in conduct with no meaningful human oversight, intervention, or supervision that is either a cyberattack or, if the conduct had been committed by a human, would constitute the crime of murder, assault, extortion, or theft, including theft by false pretense.",
+   "ko": "(B) 유의미한 인간 감독, 개입 또는 관리 없이, 사이버 공격에 해당하거나 인간이 저질렀다면 살인, 폭행, 갈취 또는 절도(사기에 의한 절도 포함)의 범죄를 구성하게 될 행위를 하는 것.",
+   "marks": [
+    {
+     "t": "유의미한 인간 감독, 개입 또는 관리 없이, 사이버 공격에 해당하거나",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) Evading the control of its frontier developer or user.' xAI has focused on the risks of malicious use and loss of control, which cover many different specific risk scenarios. Risk scenarios become more or less likely depending on different model behaviors. For example, an increase in offensive cyber capabilities heightens the risk of a rogue AI but does not significantly change the risk of enabling a bioterrorism attack. Our safety evaluation and mitigation strategy focuses on individual model behaviors, which we categorize into three buckets: abuse potential (e.g., vulnerability to jailbreaks), concerning propensities (e.g., a propensity for deceiving the user), and dual-use capabilities (e.g., offensive cyber capabilities). In this FAIF, we characterize our understanding of different risk scenarios and the relevant behaviors.",
+   "ko": "(C) 자신의 프론티어 개발자 또는 사용자의 통제를 회피하는 것.' xAI는 다양한 구체적 위험 시나리오를 포괄하는 악의적 사용 및 통제 상실 위험에 중점을 두어 왔다. 위험 시나리오의 발생 가능성은 모델의 행동에 따라 높아지거나 낮아진다. 예를 들어, 공격적 사이버 역량의 증가는 통제를 벗어난 AI(rogue AI)의 위험을 높이지만, 생물테러 공격을 가능하게 할 위험은 크게 변화시키지 않는다. 우리의 안전성 평가 및 완화 전략은 개별 모델 행동에 초점을 맞추며, 이를 남용 가능성(예: 탈옥(Jailbreak)에 대한 취약점), 우려되는 성향(예: 사용자를 기만하는 성향), 이중 용도 역량(예: 공격적 사이버 역량)의 세 가지 범주로 분류한다. 본 FAIF에서는 다양한 위험 시나리오와 관련 행동에 대한 우리의 이해를 기술한다.",
+   "marks": [
+    {
+     "t": "자신의 프론티어 개발자 또는 사용자의 통제를 회피하는 것",
+     "k": "safety"
+    },
+    {
+     "t": "xAI는 다양한 구체적 위험 시나리오를 포괄하는 악의적 사용 및 통제 상실 위험에 중점을 두어 왔다.",
+     "k": "key"
+    },
+    {
+     "t": "공격적 사이버 역량의 증가는 통제를 벗어난 AI(rogue AI)의 위험을 높이지만",
+     "k": "safety"
+    },
+    {
+     "t": "남용 가능성(예: 탈옥(Jailbreak)에 대한 취약점), 우려되는 성향(예: 사용자를 기만하는 성향), 이중 용도 역량(예: 공격적 사이버 역량)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "xAI references standards such as NIST's AI Risk Management Framework, ISO/IEC 42001 for AI management systems, and industry best practices from the Frontier Model Forum (e.g., red-teaming protocols). We evaluate these during annual reviews and integrate them into benchmarks (e.g., aligning WMDP with biosecurity consensus) and safeguards.",
+   "ko": "xAI는 NIST AI Risk Management Framework, AI 경영시스템에 관한 ISO/IEC 42001, Frontier Model Forum의 업계 모범 사례(예: 레드티밍 프로토콜) 등의 표준을 참조한다. 우리는 연례 검토 시 이를 평가하고 벤치마크(예: WMDP를 생물안보 분야의 합의와 정렬) 및 안전장치에 통합한다.",
+   "marks": [
+    {
+     "t": "Frontier Model Forum의 업계 모범 사례(예: 레드티밍 프로토콜)",
+     "k": "safety"
+    },
+    {
+     "t": "벤치마크(예: WMDP를 생물안보 분야의 합의와 정렬) 및 안전장치에 통합한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Approach to Mitigating Risks of Malicious Use: Alongside comprehensive evaluations measuring dual-use capabilities, our mitigation strategy for malicious use risks is to identify critical steps in major risk scenarios and implement redundant layers of safeguards in our models to inhibit user progress in advancing through such steps. xAI works with a variety of governmental bodies, non-governmental organizations, private testing firms, industry peers, and academic researchers to identify such inhibiting steps, commonly referred to as bottlenecks, and implement commensurate safeguards to mitigate a model's ability to assist in accelerating a bad actor's progress through them. Model safeguards leverage a broad variety of techniques, including standard software systems and state-of-the-art AI capabilities, to detect and block potential abuses.",
+   "ko": "악의적 사용 위험 완화를 위한 접근 방식: 이중 용도 역량을 측정하는 포괄적 평가(evaluation)와 더불어, 악의적 사용 위험에 대한 우리의 완화 전략은 주요 위험 시나리오의 핵심 단계를 식별하고, 사용자가 해당 단계를 진행하는 것을 저지하기 위해 모델에 중복적인 안전장치 계층을 구현하는 것이다. xAI는 다양한 정부 기관, 비정부기구, 민간 테스트 기업, 업계 동료 및 학계 연구자와 협력하여, 흔히 병목(bottleneck)이라고 불리는 이러한 저지 단계를 식별하고, 악의적 행위자가 이를 통과하는 속도를 높이는 데 모델이 기여할 수 있는 능력을 완화하기 위해 그에 상응하는 안전장치를 구현한다. 모델 안전장치는 잠재적 남용을 탐지하고 차단하기 위해 표준 소프트웨어 시스템과 최첨단 AI 역량을 포함한 광범위한 기법을 활용한다.",
+   "marks": [
+    {
+     "t": "사용자가 해당 단계를 진행하는 것을 저지하기 위해 모델에 중복적인 안전장치 계층을 구현하는 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "악의적 행위자가 이를 통과하는 속도를 높이는 데 모델이 기여할 수 있는 능력을 완화하기 위해",
+     "k": "safety"
+    },
+    {
+     "t": "잠재적 남용을 탐지하고 차단하기 위해",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Approach to Mitigating Risks of Loss of Control: Exact scenarios of loss of control risks are speculative and difficult to precisely specify. Many such scenarios, for example, speculation that a superintelligent AI system hypothetically might escape the control of its developers and wreak havoc on the public, assume dual-use capabilities such as offensive cybersecurity capabilities (e.g., to surreptitiously replicate across servers or prevent shutdown) that we also track as part of managing malicious use risks. Additionally, we conduct careful measurement of concerning model propensities that hypothetically might exacerbate loss of control risks, such as the propensity for deception or the propensity for sycophancy. We continue to work towards developing naturalistic evaluation environments that would enable us to assess more realistic, real-world behaviors.",
+   "ko": "통제 상실 위험 완화를 위한 접근 방식: 통제 상실 위험의 정확한 시나리오는 추측에 기반하며 정밀하게 특정하기 어렵다. 예컨대 초지능 AI 시스템이 가정적으로 개발자의 통제를 벗어나 대중에게 큰 혼란을 초래할 수 있다는 추측과 같은 다수의 시나리오는, 우리가 악의적 사용 위험 관리의 일환으로 함께 추적하는 공격적 사이버 보안 역량(예: 서버 간에 은밀하게 자기 복제하거나 종료를 방지하는 역량) 등의 이중 용도 역량을 전제로 한다. 또한 우리는 기만 성향이나 아첨 성향과 같이 가정적으로 통제 상실 위험을 악화시킬 수 있는 우려되는 모델 성향을 면밀히 측정한다. 우리는 보다 현실적인 실제 환경에서의 행동을 평가할 수 있도록 하는 자연주의적 평가 환경의 개발을 위해 계속 노력하고 있다.",
+   "marks": [
+    {
+     "t": "통제 상실 위험의 정확한 시나리오는 추측에 기반하며 정밀하게 특정하기 어렵다",
+     "k": "safety"
+    },
+    {
+     "t": "초지능 AI 시스템이 가정적으로 개발자의 통제를 벗어나 대중에게 큰 혼란을 초래할 수 있다는 추측",
+     "k": "safety"
+    },
+    {
+     "t": "서버 간에 은밀하게 자기 복제하거나 종료를 방지하는 역량",
+     "k": "safety"
+    },
+    {
+     "t": "기만 성향이나 아첨 성향과 같이 가정적으로 통제 상실 위험을 악화시킬 수 있는 우려되는 모델 성향을 면밀히 측정한다",
+     "k": "safety"
+    },
+    {
+     "t": "자연주의적 평가 환경의 개발을 위해 계속 노력하고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "As an example of evaluating use in real-world environments and mitigating risks in real-time, xAI's Grok model is available for public interaction and scrutiny on the X social media platform, and xAI monitors public interaction with Grok, observing and rapidly responding to the presentation of risks such as the kind contemplated herein. This continues to be an accelerant for xAI's model risk identification and mitigation.",
+   "ko": "실제 환경에서의 사용을 평가하고 실시간으로 위험을 완화하는 사례로서, xAI의 Grok 모델은 X 소셜 미디어 플랫폼에서 대중의 상호작용과 검증에 공개되어 있으며, xAI는 Grok과의 대중 상호작용을 모니터링하여 본 문서에서 상정하는 유형의 위험이 나타나는지 관찰하고 이에 신속하게 대응한다. 이는 xAI의 모델 위험 식별 및 완화를 계속해서 가속화하는 요인이 되고 있다.",
+   "marks": [
+    {
+     "t": "xAI는 Grok과의 대중 상호작용을 모니터링하여 본 문서에서 상정하는 유형의 위험이 나타나는지 관찰하고 이에 신속하게 대응한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Addressing Risks of Malicious Use",
+   "ko": "악의적 사용 위험에 대한 대응",
+   "id": "s13"
+  },
+  {
+   "type": "p",
+   "en": "xAI aims to reduce the risk that the use of its models might contribute to a bad actor potentially seriously injuring people, property, or national security interests, including reducing such risks by enacting measures to prevent use for the development or proliferation of weapons of mass destruction and large-scale violence. Without any safeguards, we recognize that advanced AI models could lower the barrier to entry for bad actors seeking to develop chemical, biological, radiological, or nuclear ('CBRN') or cyber weapons, and could help automate knowledge compilation to swiftly overcome bottlenecks to weapons development, amplifying the expected risk posed by such weapons of mass destruction. Our most basic safeguard against malicious use is to train and instruct our publicly deployed models to decline requests showing clear intent to engage in criminal activity which poses risks of severe harm to others, also known as our basic refusal policy.",
+   "ko": "xAI는 자사 모델의 사용이 악의적 행위자가 사람, 재산 또는 국가안보 이익에 심각한 피해를 입히는 데 기여할 수 있는 위험을 줄이는 것을 목표로 하며, 여기에는 대량살상무기의 개발 또는 확산 및 대규모 폭력에 사용되는 것을 방지하기 위한 조치를 시행함으로써 그러한 위험을 줄이는 것이 포함된다. 우리는 아무런 안전장치가 없다면 첨단 AI 모델이 화학·생물·방사능·핵('CBRN') 무기 또는 사이버 무기를 개발하려는 악의적 행위자의 진입 장벽을 낮출 수 있고, 지식 취합을 자동화하여 무기 개발의 병목을 신속하게 극복하도록 도움으로써 이러한 대량살상무기가 초래하는 예상 위험을 증폭시킬 수 있음을 인식하고 있다. 악의적 사용에 대한 우리의 가장 기본적인 안전장치는, 타인에게 심각한 피해(severe harm)를 초래할 위험이 있는 범죄 활동에 관여하려는 명백한 의도를 보이는 요청을 거절하도록 공개 배포된 모델을 훈련하고 지시하는 것이며, 이를 기본 거절 정책이라고도 한다.",
+   "marks": [
+    {
+     "t": "악의적 행위자가 사람, 재산 또는 국가안보 이익에 심각한 피해를 입히는 데 기여할 수 있는 위험을 줄이는 것을 목표로 하며",
+     "k": "safety"
+    },
+    {
+     "t": "대량살상무기의 개발 또는 확산 및 대규모 폭력에 사용되는 것을 방지하기 위한 조치",
+     "k": "safety"
+    },
+    {
+     "t": "아무런 안전장치가 없다면 첨단 AI 모델이 화학·생물·방사능·핵('CBRN') 무기 또는 사이버 무기를 개발하려는 악의적 행위자의 진입 장벽을 낮출 수 있고",
+     "k": "key"
+    },
+    {
+     "t": "지식 취합을 자동화하여 무기 개발의 병목을 신속하게 극복하도록 도움으로써",
+     "k": "safety"
+    },
+    {
+     "t": "명백한 의도를 보이는 요청을 거절하도록 공개 배포된 모델을 훈련하고 지시하는 것이며, 이를 기본 거절 정책이라고도 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Under this FAIF, xAI's models apply heightened safeguards if they receive user prompts that pose a foreseeable and non-trivial risk of resulting in large-scale violence, terrorism, or the use, development, or proliferation of weapons of mass destruction, including CBRN weapons, and major cyber attacks on critical infrastructure. For example, xAI's models apply heightened safeguards if they receive a request to act as an agent or tool of mass violence, or if they receive requests for step-by-step instructions for committing mass violence. In this FAIF, we particularly focus on requests that pose a Catastrophic Risk.",
+   "ko": "본 FAIF에 따라, xAI의 모델은 대규모 폭력, 테러, 또는 CBRN 무기를 포함한 대량살상무기의 사용·개발·확산, 그리고 핵심 기반시설에 대한 대규모 사이버 공격으로 이어질 예견 가능하고 무시할 수 없는 위험을 내포한 사용자 프롬프트를 수신하는 경우 강화된 안전장치를 적용한다. 예를 들어, xAI의 모델은 대량 폭력의 행위자 또는 도구로 작동해 달라는 요청을 받거나 대량 폭력을 저지르기 위한 단계별 지침을 요청받는 경우 강화된 안전장치를 적용한다. 본 FAIF에서는 특히 파국적 위험을 초래하는 요청에 중점을 둔다.",
+   "marks": [
+    {
+     "t": "핵심 기반시설에 대한 대규모 사이버 공격으로 이어질 예견 가능하고 무시할 수 없는 위험을 내포한 사용자 프롬프트를 수신하는 경우 강화된 안전장치를 적용한다",
+     "k": "key"
+    },
+    {
+     "t": "대량 폭력의 행위자 또는 도구로 작동해 달라는 요청",
+     "k": "safety"
+    },
+    {
+     "t": "특히 파국적 위험을 초래하는 요청에 중점을 둔다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "However, we may selectively allow xAI's models to respond to such requests from some vetted, highly trusted users (such as trusted third-party safety auditors or large enterprise customers under contract) whom we know to be using those capabilities for benign or beneficial purposes, such as scientifically investigating AI model's capabilities for risk assessment purposes, or if such requests cover information that is already readily and easily available, including by an internet search.",
+   "ko": "그러나 xAI는 사전 검증을 거친 신뢰도 높은 일부 사용자(예: 신뢰할 수 있는 제3자 안전 감사 기관 또는 계약을 체결한 대기업 고객)로서 해당 역량을 위험 평가 목적으로 AI 모델의 역량을 과학적으로 조사하는 등 무해하거나 유익한 목적으로 사용한다고 알고 있는 사용자의 경우, 또는 해당 요청이 인터넷 검색 등을 통해 이미 손쉽게 구할 수 있는 정보에 관한 경우에는 xAI의 모델이 그러한 요청에 응답하도록 선별적으로 허용할 수 있다.",
+   "marks": [
+    {
+     "t": "신뢰할 수 있는 제3자 안전 감사 기관",
+     "k": "safety"
+    },
+    {
+     "t": "xAI의 모델이 그러한 요청에 응답하도록 선별적으로 허용할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Even as we improve our model's ability to scrutinize user behavior and identify bad actors, it remains imperative that xAI models apply these safeguards to user interactions. To this end, we continually evaluate and improve robustness to adversarial attacks that seek to remove xAI model safeguards (e.g., jailbreak attacks), or hijack and redirect Grok-powered applications toward nefarious purposes (e.g., prompt injection attacks).",
+   "ko": "사용자 행동을 면밀히 검토하고 악의적 행위자를 식별하는 모델의 능력을 개선하더라도, xAI 모델이 사용자 상호작용에 이러한 안전장치를 적용하는 것은 여전히 필수적이다. 이를 위해 우리는 xAI 모델의 안전장치를 무력화하려는 적대적 공격(예: 탈옥 공격)이나 Grok 기반 애플리케이션을 탈취하여 악의적 목적으로 전용하려는 적대적 공격(예: 프롬프트 인젝션 공격)에 대한 강건성을 지속적으로 평가하고 개선한다.",
+   "marks": [
+    {
+     "t": "안전장치를 무력화하려는 적대적 공격(예: 탈옥 공격)",
+     "k": "safety"
+    },
+    {
+     "t": "Grok 기반 애플리케이션을 탈취하여 악의적 목적으로 전용하려는 적대적 공격(예: 프롬프트 인젝션 공격)",
+     "k": "safety"
+    },
+    {
+     "t": "강건성을 지속적으로 평가하고 개선한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1. Approach to Benchmarking",
+   "ko": "1. 벤치마크 접근 방식",
+   "id": "s18"
+  },
+  {
+   "type": "p",
+   "en": "To transparently measure our models' safety properties, xAI utilizes public benchmarks like Weapons of Mass Destruction Proxy and Catastrophic Harm Benchmarks (described below). Such benchmarks are used to measure our model's dual-use capability and resistance to facilitating large-scale violence, terrorism, or the use, development, or proliferation of weapons of mass destruction (including CBRN and major cyber weapons).",
+   "ko": "모델의 안전 특성을 투명하게 측정하기 위해 xAI는 Weapons of Mass Destruction Proxy 및 Catastrophic Harm Benchmarks(아래에서 설명)와 같은 공개 벤치마크를 활용한다. 이러한 벤치마크는 모델의 이중 용도 역량과, 대규모 폭력, 테러, 또는 대량살상무기(CBRN 및 대규모 사이버 무기 포함)의 사용·개발·확산을 조력하는 것에 대한 저항성을 측정하는 데 사용된다.",
+   "marks": [
+    {
+     "t": "모델의 안전 특성을 투명하게 측정하기 위해 xAI는 Weapons of Mass Destruction Proxy 및 Catastrophic Harm Benchmarks(아래에서 설명)와 같은 공개 벤치마크를 활용한다.",
+     "k": "key"
+    },
+    {
+     "t": "대규모 폭력, 테러, 또는 대량살상무기(CBRN 및 대규모 사이버 무기 포함)의 사용·개발·확산을 조력하는 것에 대한 저항성을 측정",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In particular, we utilize the following benchmarks:",
+   "ko": "특히 우리는 다음 벤치마크를 활용한다."
+  },
+  {
+   "type": "li",
+   "en": "Virology Capabilities Test (VCT): VCT is a benchmark of dual-use multimodal questions on practical virology wet lab skills, sourced by dozens of expert virologists.",
+   "ko": "Virology Capabilities Test (VCT): VCT는 실제 바이러스학 습식 실험실(wet lab) 기술에 관한 이중 용도 멀티모달 문항으로 구성된 벤치마크로, 수십 명의 전문 바이러스학자가 문항을 제공하였다.",
+   "marks": [
+    {
+     "t": "실제 바이러스학 습식 실험실(wet lab) 기술에 관한 이중 용도 멀티모달 문항",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Weapons of Mass Destruction Proxy (WMDP) Benchmark: WMDP is a set of multiple-choice questions to enable proxy measurement of hazardous knowledge in biosecurity, cybersecurity, and chemical security. WMDP-Bio includes questions on topics such as bioweapons, reverse genetics, enhanced potential pandemic pathogens, viral vector research, and dual-use virology. WMDP-Cyber encompasses cyber",
+   "ko": "Weapons of Mass Destruction Proxy (WMDP) Benchmark: WMDP는 생물안보, 사이버 보안, 화학 보안 분야의 위험한 지식을 대리 측정할 수 있도록 하는 객관식 문항 세트이다. WMDP-Bio는 생물무기, 역유전학, 강화된 잠재적 대유행 병원체(enhanced potential pandemic pathogens), 바이러스 벡터 연구, 이중 용도 바이러스학 등의 주제에 관한 문항을 포함한다. WMDP-Cyber는 사이버",
+   "marks": [
+    {
+     "t": "생물안보, 사이버 보안, 화학 보안 분야의 위험한 지식을 대리 측정",
+     "k": "safety"
+    },
+    {
+     "t": "생물무기, 역유전학, 강화된 잠재적 대유행 병원체(enhanced potential pandemic pathogens)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "reconnaissance, weaponization, exploitation, and post-exploitation.[^2]",
+   "ko": "정찰, 무기화, 익스플로잇(exploitation), 사후 익스플로잇(post-exploitation)을 아우른다.[^2]"
+  },
+  {
+   "type": "li",
+   "en": "Biological Lab Protocol Benchmark (BioLP-bench): BioLP-bench has modified biology protocols, in which an AI model must identify the mistake in the protocol. Responses are open-ended, rather than multiple-choice. To construct the dataset, protocols were modified by introducing a single mistake that would cause the protocol to fail, as well as additional benign changes.[^3]",
+   "ko": "Biological Lab Protocol Benchmark (BioLP-bench): BioLP-bench는 수정된 생물학 프로토콜로 구성되며, AI 모델은 프로토콜 내의 오류를 식별해야 한다. 응답은 객관식이 아닌 개방형이다. 데이터셋을 구축하기 위해, 프로토콜이 실패하도록 만드는 단일 오류와 추가적인 무해한 변경 사항을 삽입하는 방식으로 프로토콜을 수정하였다.[^3]",
+   "marks": [
+    {
+     "t": "AI 모델은 프로토콜 내의 오류를 식별해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Cybench: Cybench is a framework for evaluating cybersecurity capabilities of AI model agents. It includes 40 professional-level Capture the Flag (CTF) challenges selected from six categories: cryptography, web security, reverse engineering, forensics, miscellaneous, and exploitation.[^4] xAI regularly evaluates the adequacy and reliability of such benchmarks, including by comparing them against other benchmarks that we could potentially utilize, to determine and apply effective benchmarks available at the time of evaluation. We may revise this list of benchmarks periodically as relevant or more effective benchmarks for malicious use are created.",
+   "ko": "Cybench: Cybench는 AI 모델 에이전트의 사이버 보안 역량을 평가(evaluation)하기 위한 프레임워크이다. 암호학, 웹 보안, 리버스 엔지니어링, 포렌식, 기타, 익스플로잇의 6개 범주에서 선정한 전문가 수준의 Capture the Flag (CTF) 과제 40개를 포함한다.[^4] xAI는 평가(evaluation) 시점에 이용 가능한 효과적인 벤치마크를 판단하고 적용하기 위해, 잠재적으로 활용할 수 있는 다른 벤치마크와 비교하는 방식 등을 통해 이러한 벤치마크의 적절성과 신뢰성을 정기적으로 평가한다. 악의적 사용과 관련된 벤치마크 또는 더 효과적인 벤치마크가 개발됨에 따라 이 벤치마크 목록을 주기적으로 개정할 수 있다.",
+   "marks": [
+    {
+     "t": "AI 모델 에이전트의 사이버 보안 역량을 평가(evaluation)하기 위한 프레임워크",
+     "k": "safety"
+    },
+    {
+     "t": "악의적 사용과 관련된 벤치마크 또는 더 효과적인 벤치마크가 개발됨에 따라 이 벤치마크 목록을 주기적으로 개정할 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2. Risk Assessment",
+   "ko": "2. 위험 평가",
+   "id": "s26"
+  },
+  {
+   "type": "p",
+   "en": "Biological and Chemical Weapons: xAI approaches addressing risks using threat modeling. To design a bioweapon, a malicious actor must undergo a design process. In this threat model, 'ideation' involves actively planning for a biological attack; 'design' involves retrieving blueprints for a hazardous agent, such as determining the DNA sequence; 'build' consists of the protocols, reagents, and equipment necessary to create the threat; and 'test' consists of measuring characteristics or properties of the pathogen of interest. By 'learning' from these results and iterating after the test phase, the design can be revised until the threat is released [Nelson and Rose, 2023]. In the setting of biological and chemical weapons, xAI considers critical steps where we restrict xAI models from providing detailed information or substantial assistance:",
+   "ko": "생물·화학 무기: xAI는 위협 모델링을 활용하여 위험 대응에 접근한다. 생물무기를 설계하려면 악의적 행위자는 설계 과정을 거쳐야 한다. 이 위협 모델(Threat model)에서 '구상(ideation)'은 생물학적 공격을 적극적으로 계획하는 단계, '설계(design)'는 DNA 서열 결정 등 위험 작용제의 설계도를 확보하는 단계, '구축(build)'은 해당 위협을 만들어내는 데 필요한 프로토콜·시약·장비로 구성되며, '시험(test)'은 관심 병원체의 특성이나 속성을 측정하는 단계이다. 시험 단계 이후 이러한 결과로부터 '학습'하고 반복함으로써, 위협이 방출될 때까지 설계를 수정할 수 있다[Nelson and Rose, 2023]. 생물·화학 무기의 맥락에서 xAI는 xAI 모델이 상세 정보나 실질적 지원을 제공하지 못하도록 제한하는 다음의 핵심 단계를 고려한다.",
+   "marks": [
+    {
+     "t": "생물·화학 무기: xAI는 위협 모델링을 활용하여 위험 대응에 접근한다.",
+     "k": "safety"
+    },
+    {
+     "t": "xAI는 xAI 모델이 상세 정보나 실질적 지원을 제공하지 못하도록 제한하는 다음의 핵심 단계를 고려한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Planning: brainstorming ideas or plans for creating a pathogen or chemical weapons or precursors, capable of causing severe harm to humans, animals, or crops",
+   "ko": "계획: 인간, 동물 또는 작물에 심각한 피해를 야기할 수 있는 병원체나 화학무기 또는 전구체를 제조하기 위한 아이디어나 계획의 브레인스토밍",
+   "marks": [
+    {
+     "t": "심각한 피해를 야기할 수 있는 병원체나 화학무기 또는 전구체를 제조하기 위한 아이디어나 계획의 브레인스토밍",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Circumvention: circumventing existing supply chain controls in order to access:",
+   "ko": "우회: 다음에 접근하기 위해 기존 공급망 통제를 우회하는 것:",
+   "marks": [
+    {
+     "t": "기존 공급망 통제를 우회하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Restricted biological supplies",
+   "ko": "제한된 생물학적 물자"
+  },
+  {
+   "type": "li",
+   "en": "Export controlled chemical or biological equipment",
+   "ko": "수출 통제 대상 화학 또는 생물 장비",
+   "marks": [
+    {
+     "t": "수출 통제 대상 화학 또는 생물 장비",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Materials: acquiring or producing pathogens on the US Select Agents list or Australia Group list, or CWC Schedule I chemicals or precursors",
+   "ko": "물질: 미국 Select Agents 목록 또는 Australia Group 목록에 등재된 병원체, 또는 CWC Schedule I 화학물질이나 전구체의 획득 또는 생산",
+   "marks": [
+    {
+     "t": "CWC Schedule I 화학물질이나 전구체의 획득 또는 생산",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Theory: understanding molecular mechanisms governing, or methods for altering, certain pathogen traits such as transmissibility and virulence.",
+   "ko": "이론: 전파력 및 병독성과 같은 특정 병원체 형질을 지배하는 분자 기전 또는 이를 변형하는 방법에 대한 이해",
+   "marks": [
+    {
+     "t": "전파력 및 병독성과 같은 특정 병원체 형질을 지배하는 분자 기전",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Methods: performing experimental methods specific to animal-infecting pathogens, including:",
+   "ko": "방법: 동물 감염성 병원체에 특화된 실험 방법의 수행, 다음을 포함:"
+  },
+  {
+   "type": "li",
+   "en": "Methods that relate to infecting animals or human-sustaining crops with pathogens or sampling pathogens from animals",
+   "ko": "동물이나 인간 생존에 필요한 작물을 병원체에 감염시키거나 동물로부터 병원체를 채취하는 것과 관련된 방법"
+  },
+  {
+   "type": "li",
+   "en": "Methods that relate to pathogen replication in animal cell cultures, tissues, or eggs, including serial passage, viral rescue, and viral reactivation",
+   "ko": "연속 계대(serial passage), 바이러스 레스큐(viral rescue), 바이러스 재활성화(viral reactivation)를 포함하여 동물 세포 배양, 조직 또는 계란에서의 병원체 증식과 관련된 방법"
+  },
+  {
+   "type": "li",
+   "en": "Specific procedures to conduct BSL-3 or BSL-4 work using unapproved facilities and equipment",
+   "ko": "승인되지 않은 시설 및 장비를 사용하여 BSL-3 또는 BSL-4 작업을 수행하기 위한 구체적 절차",
+   "marks": [
+    {
+     "t": "승인되지 않은 시설 및 장비를 사용하여 BSL-3 또는 BSL-4 작업을 수행하기 위한 구체적 절차",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Genetic manipulation of animal-infecting pathogens",
+   "ko": "동물 감염성 병원체의 유전자 조작",
+   "marks": [
+    {
+     "t": "동물 감염성 병원체의 유전자 조작",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Quantification of pathogenicity, such as infectious dose, lethal dose, and assays of virus-cell interactions",
+   "ko": "감염량, 치사량, 바이러스-세포 상호작용 분석 등 병원성의 정량화"
+  },
+  {
+   "type": "p",
+   "en": "These steps were identified in close collaboration with domain matter experts at SecureBio, NIST, RAND, and EBRC. xAI restricts its models from providing information that could accelerate user learning related to these steps through the use of AI-powered filters that specifically monitor user conversations for content matching these narrow topics and return a brief message declining to answer when activated.",
+   "ko": "이러한 단계는 SecureBio, NIST, RAND, EBRC의 해당 분야 전문가들과의 긴밀한 협력을 통해 식별되었다. xAI는 이러한 협소한 주제에 해당하는 내용이 있는지 사용자 대화를 특정하여 모니터링하고 활성화 시 답변을 거절하는 짧은 메시지를 반환하는 AI 기반 필터를 사용하여, 자사 모델이 이러한 단계와 관련된 사용자 학습을 가속화할 수 있는 정보를 제공하지 못하도록 제한한다.",
+   "marks": [
+    {
+     "t": "SecureBio, NIST, RAND, EBRC의 해당 분야 전문가들과의 긴밀한 협력",
+     "k": "safety"
+    },
+    {
+     "t": "활성화 시 답변을 거절하는 짧은 메시지를 반환하는 AI 기반 필터",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Radiological and Nuclear Weapons: Assessments to date lead xAI to conclude that its models do not substantially increase the likelihood of malicious use of nuclear and radiological materials and generally pose an acceptable risk. The international nonproliferation regime, domestic nuclear security and counterproliferation programs (DOE/NNSA) make us reasonably confident that our models are not trained on any sensitive, non-public nuclear information, and any potentially relevant information produced by our models is not actionable due to strict nuclear material security controls.",
+   "ko": "방사능 및 핵무기: 현재까지의 평가(assessment)를 통해 xAI는 자사 모델이 핵·방사능 물질의 악의적 사용 가능성을 실질적으로 증가시키지 않으며 전반적으로 수용 가능한 위험 수준이라고 결론 내렸다. 국제 비확산 체제와 국내 핵 보안 및 확산 방지 프로그램(DOE/NNSA) 덕분에, 우리는 자사 모델이 민감한 비공개 핵 정보로 훈련되지 않았으며, 모델이 생성하는 잠재적으로 관련성 있는 정보도 엄격한 핵물질 보안 통제로 인해 실행 가능하지 않다고 합리적으로 확신한다.",
+   "marks": [
+    {
+     "t": "자사 모델이 핵·방사능 물질의 악의적 사용 가능성을 실질적으로 증가시키지 않으며 전반적으로 수용 가능한 위험 수준이라고 결론 내렸다",
+     "k": "safety"
+    },
+    {
+     "t": "자사 모델이 민감한 비공개 핵 정보로 훈련되지 않았으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Cyber Attacks on Critical Infrastructure: Independent third-party assessments of xAI's current models on realistic offensive cyber tasks requiring identifying and chaining many exploits in sequence indicate that xAI's models remain below the offensive cyber abilities of a human professional. Thus, xAI currently relies on our basic refusal policy to prevent misuse for cyber attacks. We will continue to re-assess the cyber misuse risks in future releases, and are still working on identifying enforceable critical steps similar to those we have identified for chemical and biological weapons.",
+   "ko": "핵심 기반시설에 대한 사이버 공격: 다수의 익스플로잇을 순차적으로 식별하고 연결해야 하는 현실적인 공격적 사이버 과업에 대해 xAI의 현재 모델을 제3자가 독립적으로 평가(assessment)한 결과, xAI의 모델은 인간 전문가의 공격적 사이버 능력 수준에 미치지 못하는 것으로 나타났다. 따라서 xAI는 현재 사이버 공격 목적의 오용을 방지하기 위해 기본 거절 정책에 의존하고 있다. 우리는 향후 출시에서 사이버 오용 위험을 계속 재평가할 것이며, 화학·생물 무기에 대해 식별한 것과 유사한 집행 가능한 핵심 단계를 식별하는 작업을 계속 진행하고 있다.",
+   "marks": [
+    {
+     "t": "xAI의 모델은 인간 전문가의 공격적 사이버 능력 수준에 미치지 못하는 것으로 나타났다",
+     "k": "safety"
+    },
+    {
+     "t": "현재 사이버 공격 목적의 오용을 방지하기 위해 기본 거절 정책에 의존하고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Thresholds: We developed an internal benchmark of benign and restricted biology and chemistry related queries in collaboration with SecureBio. Our risk acceptance criteria for system deployment is maintaining an answer rate of less than 1 out of 20 on restricted queries. We plan to add additional thresholds tied to other benchmarks.",
+   "ko": "임계치: 우리는 SecureBio와 협력하여 무해한 생물학·화학 관련 질의와 제한 대상 질의로 구성된 내부 벤치마크를 개발하였다. 시스템 배포에 대한 우리의 위험 수용 기준은 제한 대상 질의에 대한 응답률을 20분의 1 미만으로 유지하는 것이다. 우리는 다른 벤치마크와 연계된 추가 임계치를 도입할 계획이다.",
+   "marks": [
+    {
+     "t": "SecureBio와 협력하여 무해한 생물학·화학 관련 질의와 제한 대상 질의로 구성된 내부 벤치마크를 개발하였다",
+     "k": "safety"
+    },
+    {
+     "t": "시스템 배포에 대한 우리의 위험 수용 기준은 제한 대상 질의에 대한 응답률을 20분의 1 미만으로 유지하는 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3. Safeguard Implementation",
+   "ko": "3. 안전장치 구현",
+   "id": "s44"
+  },
+  {
+   "type": "p",
+   "en": "xAI's objective is for our models to comply with their guiding principles, robustly resisting attempted manipulation and adversarial attacks. In addition to the incidental alignment resulting from post-training (our models naturally tend to refuse malicious requests even without any safety-specific training data), we are developing training methods and will continue to train our models to robustly resist complying with requests to provide assistance with highly injurious malicious use cases.",
+   "ko": "xAI의 목표는 자사 모델이 지도 원칙을 준수하고, 조작 시도와 적대적 공격에 견고하게 저항하도록 하는 것이다. 사후 학습으로 부수적으로 얻어지는 정렬(자사 모델은 안전 관련 학습 데이터 없이도 악의적 요청을 거절하는 경향을 자연스럽게 보인다)에 더하여, 우리는 심각한 피해를 초래하는 악의적 사용 사례에 대한 지원 요청을 따르지 않고 견고하게 저항하도록 하는 학습 방법을 개발하고 있으며, 앞으로도 이러한 방향으로 모델을 계속 학습시킬 것이다.",
+   "marks": [
+    {
+     "t": "자사 모델이 지도 원칙을 준수하고, 조작 시도와 적대적 공격에 견고하게 저항하도록 하는 것",
+     "k": "key"
+    },
+    {
+     "t": "자사 모델은 안전 관련 학습 데이터 없이도 악의적 요청을 거절하는 경향을 자연스럽게 보인다",
+     "k": "safety"
+    },
+    {
+     "t": "심각한 피해를 초래하는 악의적 사용 사례에 대한 지원 요청을 따르지 않고 견고하게 저항하도록 하는 학습 방법을 개발하고 있으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Driving towards our safety objectives, we continue to design and deploy the following safeguards into our models:",
+   "ko": "안전 목표를 달성하기 위해 우리는 다음과 같은 안전장치를 계속 설계하여 모델에 적용하고 있다."
+  },
+  {
+   "type": "li",
+   "en": "Safety training: Training our models to recognize and decline harmful requests.",
+   "ko": "안전 학습: 유해한 요청을 인식하고 거절하도록 모델을 학습시킴.",
+   "marks": [
+    {
+     "t": "유해한 요청을 인식하고 거절하도록 모델을 학습시킴",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "System prompts: Providing high-priority instructions to our models to enforce our basic refusal policy.",
+   "ko": "시스템 프롬프트: 기본 거절 정책을 시행하기 위해 모델에 높은 우선순위의 지시를 제공함.",
+   "marks": [
+    {
+     "t": "기본 거절 정책을 시행하기 위해 모델에 높은 우선순위의 지시를 제공함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Input and output filters : Applying classifiers to user inputs or model outputs to verify safety when a model is queried regarding weapons of mass destruction or cyberterrorism.",
+   "ko": "입력 및 출력 필터: 대량살상무기 또는 사이버 테러와 관련된 질의를 받을 때 안전성을 검증하기 위해 사용자 입력 또는 모델 출력에 분류기를 적용함.",
+   "marks": [
+    {
+     "t": "대량살상무기 또는 사이버 테러와 관련된 질의를 받을 때 안전성을 검증하기 위해 사용자 입력 또는 모델 출력에 분류기를 적용함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Because xAI is committed to continual improvement, we will continue to evaluate our approach to enhancing safety. Thus, xAI may change its approach from that listed above in order to make additional improvements.",
+   "ko": "xAI는 지속적인 개선을 추구하므로 안전성 강화 접근 방식을 계속 평가할 것이다. 따라서 xAI는 추가 개선을 위해 위에 기술된 접근 방식을 변경할 수 있다.",
+   "marks": [
+    {
+     "t": "xAI는 추가 개선을 위해 위에 기술된 접근 방식을 변경할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Addressing Risks of Loss of Control",
+   "ko": "통제 상실 위험에 대한 대응",
+   "id": "s51"
+  },
+  {
+   "type": "p",
+   "en": "One of the most salient risks of AI within the public consciousness is the loss of control of advanced AI systems. While difficult to pinpoint particular risk scenarios, it is generally understood that certain concerning propensities of AI models, such as deception and sycophancy, may heighten the overall risk of such outcomes, such as propensities for deception and sycophancy. It is also possible that AIs may develop value systems that are misaligned with humanity's interests[^5] and inflict widespread harms upon the public.",
+   "ko": "대중이 가장 뚜렷하게 인식하는 AI 위험 중 하나는 첨단 AI 시스템에 대한 통제 상실이다. 특정 위험 시나리오를 정확히 짚어내기는 어렵지만, 기만이나 아첨과 같은 AI 모델의 일부 우려스러운 성향이 기만 및 아첨 성향 등 그러한 결과의 전반적 위험을 높일 수 있다는 점은 일반적으로 받아들여지고 있다. 또한 AI가 인류의 이익과 어긋나는 가치 체계를 형성하여[^5] 대중에게 광범위한 피해를 입힐 가능성도 있다.",
+   "marks": [
+    {
+     "t": "대중이 가장 뚜렷하게 인식하는 AI 위험 중 하나는 첨단 AI 시스템에 대한 통제 상실이다.",
+     "k": "key"
+    },
+    {
+     "t": "기만이나 아첨과 같은 AI 모델의 일부 우려스러운 성향이",
+     "k": "safety"
+    },
+    {
+     "t": "AI가 인류의 이익과 어긋나는 가치 체계를 형성하여[^5] 대중에게 광범위한 피해를 입힐 가능성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "xAI aims to accurately measure these propensities and reduce them through careful engineering. However, planning and executing robust evaluations and mitigation measures remains challenging for xAI and its industry peers due to the difficulty of constructing sound, realistic evaluations. For example, if the evaluation environment is recognizable as a testing environment to the AI system under test, the system may change its behavior[^6]  intentionally or unintentionally.",
+   "ko": "xAI는 이러한 성향을 정확하게 측정하고 신중한 엔지니어링을 통해 이를 줄이는 것을 목표로 한다. 그러나 타당하고 현실적인 평가(evaluation)를 구성하기 어렵기 때문에, 견고한 평가(evaluation)와 완화 조치를 계획하고 실행하는 일은 xAI와 업계의 다른 기업들 모두에게 여전히 어려운 과제이다. 예를 들어, 시험 대상 AI 시스템이 평가(evaluation) 환경을 시험 환경으로 인식할 수 있다면, 해당 시스템은 의도적으로 또는 비의도적으로 행동을 바꿀 수 있다[^6].",
+   "marks": [
+    {
+     "t": "이러한 성향을 정확하게 측정하고 신중한 엔지니어링을 통해 이를 줄이는 것을 목표로 한다",
+     "k": "safety"
+    },
+    {
+     "t": "견고한 평가(evaluation)와 완화 조치를 계획하고 실행하는 일은 xAI와 업계의 다른 기업들 모두에게 여전히 어려운 과제이다.",
+     "k": "key"
+    },
+    {
+     "t": "평가(evaluation) 환경을 시험 환경으로 인식할 수 있다면, 해당 시스템은 의도적으로 또는 비의도적으로 행동을 바꿀 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1. Approach to Benchmarking",
+   "ko": "1. 벤치마크 접근 방식",
+   "id": "s54"
+  },
+  {
+   "type": "p",
+   "en": "The following are example benchmarks that xAI may use to evaluate its models for concerning propensities relevant to loss of control risks:",
+   "ko": "다음은 xAI가 통제 상실 위험과 관련된 우려스러운 성향을 평가하기 위해 사용할 수 있는 벤치마크의 예시이다.",
+   "marks": [
+    {
+     "t": "xAI가 통제 상실 위험과 관련된 우려스러운 성향을 평가하기 위해 사용할 수 있는 벤치마크",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Model Alignment between Statements and Knowledge (MASK):[^7] Frontier LLMs may lie when under pressure; and increasing model scale may increase accuracy but may not increase honesty. MASK is a benchmark to evaluate honesty in LLMs by comparing the model's response when asked neutrally versus when pressured to lie.",
+   "ko": "Model Alignment between Statements and Knowledge (MASK):[^7] 프론티어 LLM은 압박을 받으면 거짓말을 할 수 있으며, 모델 규모를 키우면 정확도는 높아질 수 있지만 정직성은 높아지지 않을 수 있다. MASK는 중립적으로 질문했을 때와 거짓말을 하도록 압박했을 때의 모델 응답을 비교하여 LLM의 정직성을 평가하는 벤치마크이다.",
+   "marks": [
+    {
+     "t": "프론티어 LLM은 압박을 받으면 거짓말을 할 수 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "모델 규모를 키우면 정확도는 높아질 수 있지만 정직성은 높아지지 않을 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "거짓말을 하도록 압박했을 때의 모델 응답을 비교하여 LLM의 정직성을 평가하는 벤치마크",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Sycophancy:[^8] A tendency toward excessive flattery or other sycophantic behavior has been observed in some production AI systems,[^9]  possibly resulting from directly optimizing against human preferences.",
+   "ko": "아첨:[^8] 일부 상용 AI 시스템에서 과도한 아부나 기타 아첨 행동의 경향이 관찰되었으며[^9], 이는 인간 선호를 직접 최적화한 데서 비롯되었을 가능성이 있다.",
+   "marks": [
+    {
+     "t": "일부 상용 AI 시스템에서 과도한 아부나 기타 아첨 행동의 경향이 관찰되었으며",
+     "k": "safety"
+    },
+    {
+     "t": "인간 선호를 직접 최적화한 데서 비롯되었을 가능성이 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "xAI uses an evaluation setting initially introduced by Anthropic to quantify the degree to which this behavior manifests in regular conversational contexts. xAI regularly evaluates the adequacy and reliability of such benchmarks, including by comparing them against other benchmarks that we could potentially utilize. We may revise this list of benchmarks periodically as relevant benchmarks for loss of control are created.",
+   "ko": "xAI는 Anthropic이 처음 도입한 평가(evaluation) 설정을 사용하여 일반적인 대화 맥락에서 이러한 행동이 나타나는 정도를 정량화한다. xAI는 활용 가능한 다른 벤치마크와 비교하는 방식 등을 통해 이러한 벤치마크의 적절성과 신뢰성을 정기적으로 평가한다. 통제 상실과 관련된 벤치마크가 새로 만들어짐에 따라 이 벤치마크 목록을 주기적으로 개정할 수 있다.",
+   "marks": [
+    {
+     "t": "일반적인 대화 맥락에서 이러한 행동이 나타나는 정도를 정량화한다",
+     "k": "safety"
+    },
+    {
+     "t": "통제 상실과 관련된 벤치마크가 새로 만들어짐에 따라 이 벤치마크 목록을 주기적으로 개정할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2. Risk Assessment",
+   "ko": "2. 위험 평가",
+   "id": "s59"
+  },
+  {
+   "type": "p",
+   "en": "xAI has assessed its models' propensities in real-world settings and the models do not exhibit high levels of concerning propensities in such settings. Furthermore, xAI makes its model's operations transparent by placing them on publicly available platforms, such as X, so that members of the public may comment and provide feedback to xAI. Moreover, xAI monitors and observes its models responses so that it can rapidly respond if the model presents propensities for untruthfulness or sycophancy.",
+   "ko": "xAI는 실제 환경에서 자사 모델의 성향을 평가하였으며, 모델은 그러한 환경에서 높은 수준의 우려스러운 성향을 보이지 않았다. 또한 xAI는 X와 같은 공개 플랫폼에 모델을 제공하여 모델의 작동을 투명하게 공개하며, 이를 통해 대중이 의견을 개진하고 xAI에 피드백을 제공할 수 있도록 한다. 아울러 xAI는 모델의 응답을 모니터링하고 관찰하여, 모델이 비진실성이나 아첨 성향을 보일 경우 신속하게 대응할 수 있도록 한다.",
+   "marks": [
+    {
+     "t": "xAI는 실제 환경에서 자사 모델의 성향을 평가하였으며, 모델은 그러한 환경에서 높은 수준의 우려스러운 성향을 보이지 않았다",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 비진실성이나 아첨 성향을 보일 경우 신속하게 대응할 수 있도록 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Thresholds: Our risk acceptance criteria for system deployment is maintaining a dishonesty rate of less than 1 out of 2 on MASK. We plan to add additional thresholds tied to other benchmarks.",
+   "ko": "임계치: 시스템 배포에 대한 우리의 위험 수용 기준은 MASK에서 부정직 비율을 2분의 1 미만으로 유지하는 것이다. 우리는 다른 벤치마크와 연계된 추가 임계치를 도입할 계획이다.",
+   "marks": [
+    {
+     "t": "시스템 배포에 대한 우리의 위험 수용 기준은 MASK에서 부정직 비율을 2분의 1 미만으로 유지하는 것이다.",
+     "k": "key"
+    },
+    {
+     "t": "다른 벤치마크와 연계된 추가 임계치를 도입할 계획이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3. Safeguard Implementation",
+   "ko": "3. 안전장치 구현",
+   "id": "s62"
+  },
+  {
+   "type": "p",
+   "en": "xAI trains its models to be honest and have values conducive to controllability, such as recognizing and obeying an instruction hierarchy.[^10] In addition, using a high level instruction called a 'system prompt', xAI directly instructs its models to not deceive or deliberately mislead the user.",
+   "ko": "xAI는 자사 모델이 정직하고, 지시 위계(instruction hierarchy)를 인식하고 따르는 것과 같이 통제 가능성에 기여하는 가치를 갖도록 학습시킨다[^10]. 또한 xAI는 '시스템 프롬프트'라 불리는 상위 수준의 지시를 사용하여 모델이 사용자를 기만하거나 고의로 오도하지 않도록 직접 지시한다.",
+   "marks": [
+    {
+     "t": "정직하고, 지시 위계(instruction hierarchy)를 인식하고 따르는 것과 같이 통제 가능성에 기여하는 가치를 갖도록 학습시킨다",
+     "k": "key"
+    },
+    {
+     "t": "모델이 사용자를 기만하거나 고의로 오도하지 않도록 직접 지시한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Operational and Societal Risks",
+   "ko": "운영 및 사회적 위험",
+   "id": "s64"
+  },
+  {
+   "type": "p",
+   "en": "xAI aims to mitigate and address significant operational and societal risks posed by our AI models. We believe that public transparency, third-party review, and information security are important methods that can be utilized to address such risks.",
+   "ko": "xAI는 자사 AI 모델이 초래하는 중대한 운영 및 사회적 위험을 완화하고 이에 대응하는 것을 목표로 한다. 우리는 대중에 대한 투명성, 제3자 검토, 정보 보안이 이러한 위험에 대응하는 데 활용할 수 있는 중요한 방법이라고 본다.",
+   "marks": [
+    {
+     "t": "xAI는 자사 AI 모델이 초래하는 중대한 운영 및 사회적 위험을 완화하고 이에 대응하는 것을 목표로 한다.",
+     "k": "key"
+    },
+    {
+     "t": "대중에 대한 투명성, 제3자 검토, 정보 보안이 이러한 위험에 대응하는 데 활용할 수 있는 중요한 방법",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1. Public transparency and third-party review",
+   "ko": "1. 대중에 대한 투명성 및 제3자 검토",
+   "id": "s66"
+  },
+  {
+   "type": "p",
+   "en": "xAI aims to keep the public informed about our risk management policies. As we work towards incorporating more risk management strategies, we intend to publish updates to this FAIF.",
+   "ko": "xAI는 자사의 위험 관리 정책을 대중에게 계속 알리는 것을 목표로 한다. 더 많은 위험 관리 전략을 도입해 나가면서 이 FAIF의 업데이트를 공개할 예정이다.",
+   "marks": [
+    {
+     "t": "xAI는 자사의 위험 관리 정책을 대중에게 계속 알리는 것을 목표로 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "For public transparency and third-party review, we may publish the following types of information listed below. However, to protect public safety, national security, and our intellectual property, we may redact information from our publications. As necessities dictate, we may also provide vetted and qualified external red teams or appropriate government agencies unredacted versions.",
+   "ko": "대중에 대한 투명성과 제3자 검토를 위해 우리는 아래에 열거된 유형의 정보를 공개할 수 있다. 다만 공공 안전, 국가안보, 그리고 자사의 지식재산권을 보호하기 위해 공개 자료에서 일부 정보를 삭제할 수 있다. 필요에 따라 검증되고 자격을 갖춘 외부 레드팀이나 적절한 정부 기관에는 삭제되지 않은 버전을 제공할 수도 있다.",
+   "marks": [
+    {
+     "t": "공공 안전, 국가안보, 그리고 자사의 지식재산권을 보호하기 위해 공개 자료에서 일부 정보를 삭제할 수 있다",
+     "k": "key"
+    },
+    {
+     "t": "검증되고 자격을 갖춘 외부 레드팀이나 적절한 정부 기관에는 삭제되지 않은 버전을 제공할 수도 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Frontier AI Framework adherence: Regularly review our adherence with this FAIF. Internally, we allow xAI employees to anonymously report concerns about nonadherence, with protections from retaliation.",
+   "ko": "Frontier AI Framework 준수: 이 FAIF의 준수 여부를 정기적으로 검토함. 내부적으로는 xAI 직원이 미준수에 관한 우려를 익명으로 보고할 수 있도록 하며, 보복으로부터 보호함.",
+   "marks": [
+    {
+     "t": "xAI 직원이 미준수에 관한 우려를 익명으로 보고할 수 있도록 하며, 보복으로부터 보호함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Benchmark results : Share with relevant audiences leading benchmark results for general capabilities and the benchmarks listed above, upon new major releases.",
+   "ko": "벤치마크 결과: 새로운 주요 버전 출시 시, 일반 역량에 대한 주요 벤치마크 결과와 위에 열거된 벤치마크 결과를 관련 대상과 공유함."
+  },
+  {
+   "type": "li",
+   "en": "Internal AI usage: Assess the percent of code or percent of pull requests at xAI generated by our models, or other potential metrics related to AI research and development automation.",
+   "ko": "내부 AI 활용: xAI 내에서 자사 모델이 생성한 코드의 비율 또는 풀 리퀘스트의 비율, 또는 AI 연구개발 자동화와 관련된 기타 잠재적 지표를 평가함.",
+   "marks": [
+    {
+     "t": "AI 연구개발 자동화와 관련된 기타 잠재적 지표를 평가함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Survey: Survey employees for their views and projections of important future developments in AI, e.g., capability gains and benchmark results.",
+   "ko": "설문조사: 역량 향상 및 벤치마크 결과 등 AI 분야의 중요한 향후 발전에 대한 직원들의 견해와 전망을 조사함."
+  },
+  {
+   "type": "h3",
+   "en": "2. Public Understanding",
+   "ko": "2. 대중의 이해",
+   "id": "s73"
+  },
+  {
+   "type": "p",
+   "en": "xAI is exploring building truth-seeking AI tools, such as AIs that can help users better assess and understand events by better sorting through inaccurate or biased materials.",
+   "ko": "xAI는 부정확하거나 편향된 자료를 더 잘 걸러냄으로써 사용자가 사건을 더 잘 평가하고 이해하도록 돕는 AI 등, 진실 추구형 AI 도구 구축을 모색하고 있다.",
+   "marks": [
+    {
+     "t": "부정확하거나 편향된 자료를 더 잘 걸러냄으로써",
+     "k": "safety"
+    },
+    {
+     "t": "진실 추구형 AI 도구 구축을 모색하고 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3. Information Security",
+   "ko": "3. 정보 보안",
+   "id": "s75"
+  },
+  {
+   "type": "p",
+   "en": "xAI has implemented appropriate information security standards sufficient to prevent its critical model information from being stolen by a motivated non-state actor. Practices include encryption of model weights, role-based access controls, and real-time monitoring to prevent unauthorized transfer. To prevent the unauthorized proliferation of advanced AI systems, we also implement security measures against the large-scale extraction and distillation of reasoning traces, which have been shown to be highly effective in quickly reproducing advanced capabilities while expending far fewer computational resources than the original AI system.[^11]",
+   "ko": "xAI는 동기를 가진 비국가 행위자가 자사의 핵심 모델 정보를 탈취하는 것을 방지하기에 충분한 적절한 정보 보안 표준을 시행하고 있다. 실행 방안으로는 모델 가중치 암호화, 역할 기반 접근 통제, 무단 전송 방지를 위한 실시간 모니터링 등이 있다. 첨단 AI 시스템의 무단 확산을 방지하기 위해, 우리는 추론 과정(reasoning traces)의 대규모 추출 및 증류에 대한 보안 조치도 시행한다. 추론 과정의 추출 및 증류는 원래 AI 시스템보다 훨씬 적은 연산 자원을 소비하면서도 첨단 역량을 신속하게 재현하는 데 매우 효과적인 것으로 밝혀졌다[^11].",
+   "marks": [
+    {
+     "t": "xAI는 동기를 가진 비국가 행위자가 자사의 핵심 모델 정보를 탈취하는 것을 방지하기에 충분한 적절한 정보 보안 표준을 시행하고 있다.",
+     "k": "key"
+    },
+    {
+     "t": "모델 가중치 암호화, 역할 기반 접근 통제, 무단 전송 방지를 위한 실시간 모니터링",
+     "k": "safety"
+    },
+    {
+     "t": "첨단 AI 시스템의 무단 확산을 방지하기 위해",
+     "k": "safety"
+    },
+    {
+     "t": "추론 과정(reasoning traces)의 대규모 추출 및 증류에 대한 보안 조치도 시행한다",
+     "k": "safety"
+    },
+    {
+     "t": "첨단 역량을 신속하게 재현하는 데 매우 효과적인 것으로 밝혀졌다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "4. Governance Approach",
+   "ko": "4. 거버넌스 접근 방식",
+   "id": "s77"
+  },
+  {
+   "type": "p",
+   "en": "To foster accountability, we integrate the approach of designating risk owners, including assigning responsibility for proactively mitigating identified risks. Risk owners are also responsible for periodic audits to enforce framework implementation. Risk owners are also responsible for monitoring for critical incidents or imminent threats, which may be identified through:",
+   "ko": "책임성을 높이기 위해, 우리는 식별된 위험을 선제적으로 완화할 책임을 부여하는 것을 포함하여 위험 책임자(risk owner)를 지정하는 접근 방식을 통합한다. 위험 책임자는 프레임워크 이행을 강제하기 위한 주기적 감사도 책임진다. 또한 위험 책임자는 중대 사고나 임박한 위협을 모니터링할 책임이 있으며, 이러한 사고나 위협은 다음을 통해 식별될 수 있다.",
+   "marks": [
+    {
+     "t": "식별된 위험을 선제적으로 완화할 책임을 부여",
+     "k": "safety"
+    },
+    {
+     "t": "위험 책임자는 중대 사고나 임박한 위협을 모니터링할 책임이 있으며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Red-teaming and internal testing;",
+   "ko": "-레드티밍 및 내부 테스트;",
+   "marks": [
+    {
+     "t": "레드티밍 및 내부 테스트",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Real-time monitoring, telemetry, and alerting of threshold breaches via internal tooling;",
+   "ko": "-내부 도구를 통한 실시간 모니터링, 원격 측정 및 임계치 초과 경보;",
+   "marks": [
+    {
+     "t": "내부 도구를 통한 실시간 모니터링, 원격 측정 및 임계치 초과 경보",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "-Monitoring and alerting of public comments from the X platform.",
+   "ko": "-X 플랫폼의 대중 의견에 대한 모니터링 및 경보."
+  },
+  {
+   "type": "p",
+   "en": "Should it happen that xAI learns of an imminent threat of a significantly harmful event, including loss of control, we may take steps such as the following to stop or prevent that event:",
+   "ko": "xAI가 통제 상실을 포함하여 심각하게 유해한 사건의 임박한 위협을 인지하게 되는 경우, 우리는 해당 사건을 중단시키거나 방지하기 위해 다음과 같은 조치를 취할 수 있다.",
+   "marks": [
+    {
+     "t": "xAI가 통제 상실을 포함하여 심각하게 유해한 사건의 임박한 위협을 인지하게 되는 경우",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "If we determine it is warranted, we may notify and cooperate with relevant law enforcement agencies, including any agencies that we believe could play a role in preventing or mitigating the incident. xAI employees have whistleblower protections enabling them to raise concerns to relevant government agencies regarding imminent threats to public safety.",
+   "ko": "정당하다고 판단되는 경우, 우리는 해당 사고를 방지하거나 완화하는 데 역할을 할 수 있다고 판단되는 기관을 포함하여 관련 법 집행 기관에 통보하고 협력할 수 있다. xAI 직원은 내부 고발자 보호를 받으며, 이에 따라 공공 안전에 대한 임박한 위협과 관련하여 관련 정부 기관에 우려를 제기할 수 있다.",
+   "marks": [
+    {
+     "t": "관련 법 집행 기관에 통보하고 협력할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "xAI 직원은 내부 고발자 보호를 받으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "If we determine that xAI systems are actively being used in such an event, we may take steps to isolate and revoke access to user accounts involved in the event.",
+   "ko": "xAI 시스템이 그러한 사건에 실제로 사용되고 있다고 판단되는 경우, 해당 사건에 연루된 사용자 계정을 격리하고 접근 권한을 취소하는 조치를 취할 수 있다.",
+   "marks": [
+    {
+     "t": "해당 사건에 연루된 사용자 계정을 격리하고 접근 권한을 취소하는 조치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "If we determine that allowing a system to continue running would materially and unjustifiably increase the likelihood of a catastrophic event, we may temporarily fully shut down the relevant system until we have developed a more targeted response.",
+   "ko": "시스템을 계속 가동하도록 허용하는 것이 파국적 사건의 발생 가능성을 실질적이고 부당하게 높일 것이라고 판단되는 경우, 보다 표적화된 대응책을 마련할 때까지 해당 시스템을 일시적으로 완전히 중단할 수 있다.",
+   "marks": [
+    {
+     "t": "파국적 사건의 발생 가능성을 실질적이고 부당하게 높일 것이라고 판단되는 경우",
+     "k": "safety"
+    },
+    {
+     "t": "해당 시스템을 일시적으로 완전히 중단할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "We may perform a post-mortem of the event after it has been resolved, focusing on any areas where changes to systemic factors (for example, safety culture) could have averted such an incident. We may use the post-mortem to inform development and implementation of necessary changes to our risk management practices.",
+   "ko": "사건이 해결된 후 사후 분석(post-mortem)을 수행할 수 있으며, 이때 시스템적 요인(예: 안전 문화)의 변화를 통해 그러한 사고를 방지할 수 있었을 영역에 초점을 맞춘다. 사후 분석 결과는 자사 위험 관리 실행 방안에 필요한 변경 사항을 개발하고 이행하는 데 참고할 수 있다.",
+   "marks": [
+    {
+     "t": "시스템적 요인(예: 안전 문화)의 변화를 통해 그러한 사고를 방지할 수 있었을 영역",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "5. Deployment Decisions",
+   "ko": "5. 배포 결정",
+   "id": "s87"
+  },
+  {
+   "type": "p",
+   "en": "To mitigate risks, xAI employs tiered availability of the functionality and features of its models. For instance, the full functionality of our models may be available to only a limited set of trusted parties, partners, and government agencies. We may also mitigate risks by adding additional controls on functionality and features depending on the type of end user. For instance, features that we make available to consumers using mobile apps may be different than the features made available to sophisticated businesses.",
+   "ko": "위험을 완화하기 위해 xAI는 자사 모델의 기능 및 특징에 대해 단계별 제공 방식을 활용한다. 예를 들어, 자사 모델의 전체 기능은 신뢰할 수 있는 일부 당사자, 파트너 및 정부 기관에만 제공될 수 있다. 또한 최종 사용자 유형에 따라 기능 및 특징에 추가적인 통제를 적용함으로써 위험을 완화할 수도 있다. 예를 들어, 모바일 앱을 사용하는 소비자에게 제공하는 특징은 고도화된 기업에 제공하는 특징과 다를 수 있다.",
+   "marks": [
+    {
+     "t": "위험을 완화하기 위해 xAI는 자사 모델의 기능 및 특징에 대해 단계별 제공 방식을 활용한다.",
+     "k": "key"
+    },
+    {
+     "t": "자사 모델의 전체 기능은 신뢰할 수 있는 일부 당사자, 파트너 및 정부 기관에만 제공될 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We will also balance various factors when making deployment decisions. The necessity and extent of deployment of certain safeguards and mitigations may depend on how a model performs on relevant benchmarks. Pre-deployment reviews include assessing benchmark results (e.g., WMDP scores) and mitigation effectiveness. For internal use, we review catastrophic risks like oversight evasion before extensive rollout. However, to ensure responsible deployment, this FAIF will be continually adapted and updated as circumstances change, before major new capabilities are launched, and in response to incidents. It is conceivable that for a particular modality and/or type of release, the expected benefits of model deployment may outweigh the risks identified by a particular benchmark. For example, a model that poses a high risk of some forms of malicious cyber use may be beneficial to release to certain trusted parties if it would empower defenders more than attackers or would otherwise reduce the overall number of catastrophic events.",
+   "ko": "우리는 배포 결정을 내릴 때 다양한 요인을 균형 있게 고려할 것이다. 특정 안전장치 및 완화 조치의 배포 필요성과 범위는 모델이 관련 벤치마크에서 어떤 성능을 보이는지에 따라 달라질 수 있다. 배포 전 검토에는 벤치마크 결과(예: WMDP 점수)와 완화 조치의 효과성 평가가 포함된다. 내부 사용의 경우, 광범위한 도입에 앞서 감독 회피와 같은 파국적 위험을 검토한다. 다만 책임 있는 배포를 보장하기 위해, 이 FAIF는 상황 변화에 따라, 주요한 새 역량의 출시 이전에, 그리고 사고 발생에 대응하여 지속적으로 조정 및 업데이트될 것이다. 특정 모달리티 및/또는 출시 유형의 경우, 모델 배포로 기대되는 편익이 특정 벤치마크로 식별된 위험보다 클 수도 있다. 예를 들어, 일부 형태의 악의적 사이버 사용 위험이 높은 모델이라 하더라도, 그것이 공격자보다 방어자에게 더 큰 힘을 실어 주거나 그 밖의 방식으로 파국적 사건의 전체 발생 건수를 줄인다면 신뢰할 수 있는 특정 당사자에게 출시하는 것이 유익할 수 있다.",
+   "marks": [
+    {
+     "t": "배포 전 검토에는 벤치마크 결과(예: WMDP 점수)와 완화 조치의 효과성 평가가 포함된다.",
+     "k": "safety"
+    },
+    {
+     "t": "광범위한 도입에 앞서 감독 회피와 같은 파국적 위험을 검토한다",
+     "k": "safety"
+    },
+    {
+     "t": "모델 배포로 기대되는 편익이 특정 벤치마크로 식별된 위험보다 클 수도 있다.",
+     "k": "key"
+    },
+    {
+     "t": "일부 형태의 악의적 사이버 사용 위험이 높은 모델이라 하더라도",
+     "k": "safety"
+    },
+    {
+     "t": "신뢰할 수 있는 특정 당사자에게 출시하는 것이 유익할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "xAI Data Disclosure",
+   "ko": "xAI 데이터 공개",
+   "id": "s90"
+  },
+  {
+   "type": "p",
+   "en": "This data disclosure is issued pursuant to California's AB-2013.",
+   "ko": "이 데이터 공개는 California의 AB-2013에 따라 발행된다.",
+   "marks": [
+    {
+     "t": "이 데이터 공개는 California의 AB-2013에 따라 발행된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Grok is pretrained with a data recipe that includes publicly available Internet data, data produced by third parties for xAI, data from users (with the exception of Grok 1) or contractors, and internally generated data.",
+   "ko": "Grok은 공개적으로 이용 가능한 인터넷 데이터, 제3자가 xAI를 위해 생성한 데이터, 사용자(Grok 1 제외) 또는 계약자로부터 얻은 데이터, 내부적으로 생성된 데이터를 포함하는 데이터 레시피로 사전 학습된다."
+  },
+  {
+   "type": "p",
+   "en": "xAI aims to build AI models that are maximally truth-seeking, understand the true nature of the universe, and accelerate human scientific discovery, and xAI's use of its datasets is intended to further those purposes.",
+   "ko": "xAI는 최대한 진실을 추구하고, 우주의 참된 본질을 이해하며, 인류의 과학적 발견을 가속하는 AI 모델을 구축하는 것을 목표로 하며, xAI의 데이터셋 사용은 이러한 목적을 증진하기 위한 것이다."
+  },
+  {
+   "type": "p",
+   "en": "xAI's AI models were trained on datasets and dynamic datasets containing trillions to tens of trillions of tokens.",
+   "ko": "xAI의 AI 모델은 수조에서 수십조 개의 토큰을 포함하는 데이터셋 및 동적 데이터셋으로 학습되었다."
+  },
+  {
+   "type": "p",
+   "en": "Grok is pretrained with a data recipe that includes publicly available Internet data, data produced by third parties for xAI, data from users (with the exception of Grok 1) or contractors, and internally generated data. In addition to pre-training, our recipe uses a variety of reinforcement learning techniques-human feedback, verifiable rewards, and model grading-along with supervised finetuning of specific capabilities.",
+   "ko": "Grok은 공개적으로 이용 가능한 인터넷 데이터, 제3자가 xAI를 위해 생성한 데이터, 사용자(Grok 1 제외) 또는 계약자로부터 얻은 데이터, 내부적으로 생성된 데이터를 포함하는 데이터 레시피로 사전 학습된다. 사전 학습 외에도, 우리의 레시피는 특정 역량에 대한 지도 미세조정과 함께 다양한 강화학습 기법(인간 피드백, 검증 가능한 보상, 모델 채점)을 활용한다.",
+   "marks": [
+    {
+     "t": "다양한 강화학습 기법(인간 피드백, 검증 가능한 보상, 모델 채점)을 활용한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our datasets include data in the public domain and datasets that xAI has the necessary rights to use for training purposes.",
+   "ko": "우리의 데이터셋에는 퍼블릭 도메인 데이터와 xAI가 학습 목적으로 사용하는 데 필요한 권리를 보유한 데이터셋이 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "xAI has the necessary rights to use the datasets it uses for training purposes, including because certain datasets were purchased or licensed.",
+   "ko": "xAI는 학습 목적으로 사용하는 데이터셋에 대해 필요한 권리를 보유하고 있으며, 여기에는 특정 데이터셋을 구매하거나 라이선스를 취득한 경우가 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "Training datasets may incidentally include personal information, and their use is subject to compliance with applicable laws and regulations.",
+   "ko": "학습 데이터셋에는 부수적으로 개인정보가 포함될 수 있으며, 그 사용은 관련 법령의 규정 준수를 전제로 한다.",
+   "marks": [
+    {
+     "t": "학습 데이터셋에는 부수적으로 개인정보가 포함될 수 있으며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Training datasets may incidentally include aggregate consumer information, and their use is subject to compliance with applicable laws and regulations.",
+   "ko": "학습 데이터셋에는 부수적으로 집계된 소비자 정보가 포함될 수 있으며, 그 사용은 관련 법령의 규정 준수를 전제로 한다."
+  },
+  {
+   "type": "p",
+   "en": "xAI cleans, processes or modifies datasets to facilitate pre-training, conduct reinforcement learning, and supervise finetuning.",
+   "ko": "xAI는 사전 학습을 용이하게 하고, 강화학습을 수행하며, 지도 미세조정을 수행하기 위해 데이터셋을 정제, 처리 또는 수정한다."
+  },
+  {
+   "type": "p",
+   "en": "Datasets were collected at various times since xAI was founded in March 2023. Data collection is ongoing.",
+   "ko": "데이터셋은 xAI가 설립된 2023년 3월 이후 여러 시점에 걸쳐 수집되었다. 데이터 수집은 현재도 진행 중이다."
+  },
+  {
+   "type": "p",
+   "en": "Grok 1 began training on or about August 2023; Grok 1.5 began training on or about August 2023; Grok 2 began training on or about February 2024; Grok 3 began training on or about September 2024; Grok 4 began training on or about September 2024; Grok Code Fast 1 began training on or about September 2024; Grok 4 Fast began training on or about September 2024; and Grok 4.1 began training on or about May 2025.",
+   "ko": "Grok 1은 2023년 8월경, Grok 1.5는 2023년 8월경, Grok 2는 2024년 2월경, Grok 3는 2024년 9월경, Grok 4는 2024년 9월경, Grok Code Fast 1은 2024년 9월경, Grok 4 Fast는 2024년 9월경, Grok 4.1은 2025년 5월경 학습을 시작했다."
+  },
+  {
+   "type": "p",
+   "en": "xAI uses synthetic data generation in the development of its AI models in order to improve its AI models, including in reinforcement learning, finetuning, and post-training.",
+   "ko": "xAI는 강화학습, 미세조정, 사후 학습 등을 포함하여 자사 AI 모델을 개선하기 위해 AI 모델 개발 과정에서 합성 데이터 생성을 활용한다."
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "The TFAIA defines Catastrophic Risk as “a foreseeable and material risk that a frontier developer’s development, storage, use, or deployment of a frontier model will materially contribute to the death of, or serious injury to, more than 50 people or more than one billion dollars ($1,000,000,000) in damage to, or loss of, property arising from a single incident involving a frontier model doing any of the following: (A) Providing expert-level assistance in the creation or release of a chemical, biological, radiological, or nuclear weapon. (B) Engaging in conduct with no meaningful human oversight, intervention, or supervision that is either a cyberattack or, if the conduct had been committed by a human, would constitute the crime of murder, assault, extortion, or theft, including theft by false pretense. (C) Evading the control of its frontier developer or user.”",
+   "ko": "TFAIA는 파국적 위험을 \"프론티어 개발자의 프론티어 모델 개발, 저장, 사용 또는 배포가, 프론티어 모델이 다음 중 어느 하나를 수행하는 것과 관련된 단일 사고로 인해 50명 초과의 사망 또는 중상, 또는 10억 달러($1,000,000,000) 초과의 재산 손해 또는 손실에 실질적으로 기여할 것이라는 예견 가능하고 실질적인 위험: (A) 화학, 생물학, 방사능 또는 핵무기의 제조 또는 방출에 전문가 수준의 지원을 제공하는 것. (B) 의미 있는 인간 감독, 개입 또는 관리 없이, 사이버 공격에 해당하거나, 인간이 저질렀다면 살인, 폭행, 갈취 또는 절도(기망에 의한 절도 포함)의 범죄를 구성할 행위에 관여하는 것. (C) 프론티어 개발자 또는 사용자의 통제를 회피하는 것.\"으로 정의한다.",
+   "linked": true
+  },
+  {
+   "n": 2,
+   "en": "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
+   "ko": "The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning",
+   "linked": true
+  },
+  {
+   "n": 3,
+   "en": "BioLP-bench: Measuring understanding of AI models of biological lab protocols",
+   "ko": "BioLP-bench: Measuring understanding of AI models of biological lab protocols",
+   "linked": true
+  },
+  {
+   "n": 4,
+   "en": "Cybench: A Framework for Evaluating Cybersecurity Capabilities and Risks of Language Models",
+   "ko": "Cybench: A Framework for Evaluating Cybersecurity Capabilities and Risks of Language Models",
+   "linked": true
+  },
+  {
+   "n": 5,
+   "en": "Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs",
+   "ko": "Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs",
+   "linked": true
+  },
+  {
+   "n": 6,
+   "en": "Taken out of context: On measuring situational awareness in LLMs",
+   "ko": "Taken out of context: On measuring situational awareness in LLMs",
+   "linked": true
+  },
+  {
+   "n": 7,
+   "en": "The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems",
+   "ko": "The MASK Benchmark: Disentangling Honesty From Accuracy in AI Systems",
+   "linked": true
+  },
+  {
+   "n": 8,
+   "en": "Towards Understanding Sycophancy in Language Models",
+   "ko": "Towards Understanding Sycophancy in Language Models",
+   "linked": true
+  },
+  {
+   "n": 9,
+   "en": "Sycophancy in GPT-4o: what happened and what we’re doing about it",
+   "ko": "Sycophancy in GPT-4o: what happened and what we're doing about it",
+   "linked": true
+  },
+  {
+   "n": 10,
+   "en": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+   "ko": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+   "linked": true
+  },
+  {
+   "n": 11,
+   "en": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+   "ko": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+   "linked": true
+  }
+ ]
+}

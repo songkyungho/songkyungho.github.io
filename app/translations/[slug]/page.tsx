@@ -57,10 +57,10 @@ function inlineSpans(text: string, marks: Mark[], refs: CrossRef[], lang: "ko" |
 // 본문의 각주 표시 '[^n]'을 위첨자 링크로. 번역·원문 칸 모두 그려지므로 되돌아올 자리 id에 언어를 붙인다.
 // 같은 각주를 다시 가리키는 '[^n:2]'는 링크만 걸고 id는 달지 않는다(각주의 ↩는 첫 표시로 돌아간다).
 function withNotes(text: string, lang: "ko" | "en"): React.ReactNode[] {
-  return text.split(/(\[\^\d+(?::\d+)?\])/).map((part, i) => {
+  return text.split(/(\[\^\d+(?::\d+)?\])/).map((part) => {
     const m = part.match(/^\[\^(\d+)(:\d+)?\]$/);
     if (!m) return part;
-    return <sup className="tr-fn" key={i}><a href={`#fn-${m[1]}`} id={m[2] ? undefined : `fnref-${m[1]}-${lang}`}>{m[1]}</a></sup>;
+    return <sup className="tr-fn" key={`fn-${m[1]}${m[2] ?? ""}`}><a href={`#fn-${m[1]}`} id={m[2] ? undefined : `fnref-${m[1]}-${lang}`}>{m[1]}</a></sup>;
   });
 }
 
