@@ -692,7 +692,7 @@
   {
    "type": "p",
    "en": "To calibrate this open-weight-specific  margin  of  safety,  this  framework  employs  four interconnected  analytical  dimensions that together allow us to estimate the likelihood and severity  of  potential  harm:  Deployment  Environment,  Threat  Source,  Enabling  Capability, and Societal Resilience.",
-   "ko": "이러한 오픈 웨이트 특화 안전 여유를 보정하기 위해, 본 프레임워크는 잠재적 피해의 가능성과 심각도를 함께 추정할 수 있게 하는 네 가지 상호 연결된 분석 차원, 즉 배포 환경(Deployment Environment), 위협 원천(Threat Source), 조력 역량(Enabling Capability), 사회적 회복력(Societal Resilience)을 활용한다.",
+   "ko": "이러한 오픈 웨이트 특화 안전 여유를 보정하기 위해, 본 프레임워크는 잠재적 피해의 가능성과 심각도를 함께 추정할 수 있게 하는 네 가지 상호 연결된 분석 차원, 즉 배포 환경(Deployment Environment), 위협 원천(Threat Source), 실현 역량(Enabling Capability), 사회적 회복력(Societal Resilience)을 활용한다.",
    "marks": [
     {
      "t": "잠재적 피해의 가능성과 심각도를 함께 추정할 수 있게 하는 네 가지 상호 연결된 분석 차원",
@@ -878,13 +878,13 @@
   {
    "type": "h3",
    "en": "Enabling Capability (C)",
-   "ko": "조력 역량(C)",
+   "ko": "실현 역량(C)",
    "id": "s70"
   },
   {
    "type": "p",
    "en": "Enabling capability refers to the core functional abilities of the AI model that make specific risk  scenarios  possible  when  the  model  is  deployed  without  additional  safeguards.  This includes both intended capabilities such as scientific reasoning, coding, and planning, and emergent  capabilities  that  may  arise  from  scale  or  training.  Particular  attention  is  paid  to bottleneck capabilities-those whose presence or absence most directly determines whether a given harmful outcome can be realized.",
-   "ko": "조력 역량은 모델이 추가적인 안전장치 없이 배포될 때 특정 위험 시나리오를 가능하게 하는 AI 모델의 핵심 기능적 능력을 의미한다. 여기에는 과학적 추론, 코딩, 계획 수립과 같은 의도된 역량과, 규모나 학습으로부터 발생할 수 있는 창발적 역량이 모두 포함된다. 특히 병목 역량(bottleneck capability), 즉 그 존재 여부가 특정 유해한 결과의 실현 가능 여부를 가장 직접적으로 결정하는 역량에 주목한다.",
+   "ko": "실현 역량은 모델이 추가적인 안전장치 없이 배포될 때 특정 위험 시나리오를 가능하게 하는 AI 모델의 핵심 기능적 능력을 의미한다. 여기에는 과학적 추론, 코딩, 계획 수립과 같은 의도된 역량과, 규모나 학습으로부터 발생할 수 있는 창발적 역량이 모두 포함된다. 특히 병목 역량(bottleneck capability), 즉 그 존재 여부가 특정 유해한 결과의 실현 가능 여부를 가장 직접적으로 결정하는 역량에 주목한다.",
    "marks": [
     {
      "t": "모델이 추가적인 안전장치 없이 배포될 때 특정 위험 시나리오를 가능하게 하는 AI 모델의 핵심 기능적 능력",
@@ -899,7 +899,7 @@
   {
    "type": "p",
    "en": "For open-weight models, enabling capability has to be assessed not against the model as released, but against the capability that a downstream well-resourced actor can extract from it  through  fine-tuning.  Proprietary  models,  by  contrast,  can  be  assessed  against  the capability  of  the  deployed  system  as  the  provider  intends  it  to  run,  with  system  prompts, refusal  training,  and  monitoring  in  place. Open-weight risk assessment therefore has to track the  upper  envelope  of  what  the  weights  make  possible  (i.e.  worst-case scenario).",
-   "ko": "오픈 웨이트 모델의 경우, 조력 역량은 공개된 상태의 모델이 아니라 다운스트림의 자원이 풍부한 행위자가 미세조정을 통해 모델로부터 추출할 수 있는 역량을 기준으로 평가해야 한다. 반면 독점 모델은 시스템 프롬프트, 거부 학습, 모니터링이 갖추어진 상태에서 제공자가 의도한 대로 운영되는 배포 시스템의 역량을 기준으로 평가할 수 있다. 따라서 오픈 웨이트 위험 평가는 가중치가 가능하게 하는 것의 상한(upper envelope)(즉, 최악의 시나리오)을 추적해야 한다.",
+   "ko": "오픈 웨이트 모델의 경우, 실현 역량은 공개된 상태의 모델이 아니라 다운스트림의 자원이 풍부한 행위자가 미세조정을 통해 모델로부터 추출할 수 있는 역량을 기준으로 평가해야 한다. 반면 독점 모델은 시스템 프롬프트, 거부 학습, 모니터링이 갖추어진 상태에서 제공자가 의도한 대로 운영되는 배포 시스템의 역량을 기준으로 평가할 수 있다. 따라서 오픈 웨이트 위험 평가는 가중치가 가능하게 하는 것의 상한(upper envelope)(즉, 최악의 시나리오)을 추적해야 한다.",
    "marks": [
     {
      "t": "다운스트림의 자원이 풍부한 행위자가 미세조정을 통해 모델로부터 추출할 수 있는 역량을 기준으로 평가해야 한다",
@@ -977,7 +977,7 @@
   {
    "type": "p",
    "en": "Taken together, the framework recommends setting risk thresholds through a holistic judgment  based  on  these  dimensions  in combination, rather than having a test for each  dimension.  Deployment  Environment  (E),  Threat  Source  (T),  and  Enabling Capability  (C)  set  the  level  of  risk  exposure  that  a  given  open-weight  release generates, while Societal Resilience (R) sets the level of risk that a society can safely absorb before that exposure becomes unacceptable. A threshold is crossed when E, T, and  C  together  outpace  what  R  can  absorb,  which  means  that  the  same  as-released capability  can  sit  above  or  below  the  risk  threshold  depending  on  the  resilience  of  the receiving society at the time of release.",
-   "ko": "종합하면, 본 프레임워크는 각 차원별로 개별 검사를 두기보다 이들 차원을 결합한 총체적 판단을 통해 위험 임계값을 설정할 것을 권고한다. 배포 환경(E), 위협 원천(T), 조력 역량(C)은 특정 오픈 웨이트 공개가 초래하는 위험 노출 수준을 결정하며, 사회적 회복력(R)은 그 노출이 수용 불가능해지기 전에 사회가 안전하게 흡수할 수 있는 위험 수준을 결정한다. E, T, C가 함께 R이 흡수할 수 있는 수준을 넘어설 때 임계값을 넘은 것이며, 이는 동일한 공개 상태의 역량이라도 공개 시점에 이를 수용하는 사회의 회복력에 따라 위험 임계값보다 높을 수도, 낮을 수도 있음을 의미한다.",
+   "ko": "종합하면, 본 프레임워크는 각 차원별로 개별 검사를 두기보다 이들 차원을 결합한 총체적 판단을 통해 위험 임계값을 설정할 것을 권고한다. 배포 환경(E), 위협 원천(T), 실현 역량(C)은 특정 오픈 웨이트 공개가 초래하는 위험 노출 수준을 결정하며, 사회적 회복력(R)은 그 노출이 수용 불가능해지기 전에 사회가 안전하게 흡수할 수 있는 위험 수준을 결정한다. E, T, C가 함께 R이 흡수할 수 있는 수준을 넘어설 때 임계값을 넘은 것이며, 이는 동일한 공개 상태의 역량이라도 공개 시점에 이를 수용하는 사회의 회복력에 따라 위험 임계값보다 높을 수도, 낮을 수도 있음을 의미한다.",
    "marks": [
     {
      "t": "각 차원별로 개별 검사를 두기보다 이들 차원을 결합한 총체적 판단을 통해 위험 임계값을 설정할 것을 권고한다",
