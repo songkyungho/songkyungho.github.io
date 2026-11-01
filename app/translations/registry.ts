@@ -5,6 +5,7 @@ import claudeConstitution from "../data/translations/claude-constitution-2026-01
 import gdmFsf31 from "../data/translations/gdm-fsf-v3-1.json";
 import metaSsf21 from "../data/translations/meta-ssf-v2-1.json";
 import nyRaise2026 from "../data/translations/ny-raise-act-2026.json";
+import reflectionOsf from "../data/translations/reflection-osf-2026-10.json";
 import openaiModelSpec from "../data/translations/openai-model-spec-2026-10.json";
 import openaiPreparedness2 from "../data/translations/openai-preparedness-v2.json";
 import shailabFrmf2 from "../data/translations/shailab-frmf-v2.json";
@@ -48,7 +49,7 @@ export type TranslationDoc = {
   blocks: TranslationBlock[];
 };
 
-export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, caSb53, nyRaise2026] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
+export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, caSb53, nyRaise2026] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
 
 export const dotDate = (iso: string) => iso.replaceAll("-", ".");
 

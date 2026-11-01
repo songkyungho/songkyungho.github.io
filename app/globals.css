@@ -348,7 +348,7 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 .tr-toc > p { margin: 0 0 8px; color: var(--muted); font-size: .63rem; font-weight: 720; letter-spacing: .1em; }
 .tr-toc ol { margin: 0; padding: 0; list-style: none; }
 .tr-toc > ol > li { border-top: 1px solid var(--line); }
-.tr-toc summary { display: flex; justify-content: space-between; gap: 8px; padding: 9px 0; font-weight: 650; cursor: pointer; }
+.tr-toc summary, .tr-toc > ol > li > a { display: flex; justify-content: space-between; gap: 8px; padding: 9px 0; font-weight: 650; cursor: pointer; }
 .tr-toc summary span { color: var(--muted); font: .7rem Georgia, serif; }
 .tr-toc details ol { padding: 0 0 10px 10px; }
 .tr-toc details li { padding: 4px 0; color: var(--muted); }

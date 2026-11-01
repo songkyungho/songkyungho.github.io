@@ -7,7 +7,7 @@
  "source_url": "https://concordia-ai.com/wp-content/uploads/2026/09/Open-Weight-AI-Risk-Management-Framework.pdf",
  "source_note": "2026년 9월 공개본 전문 (32쪽, 기여자 명단·인용 안내·목차·참고문헌 제외)",
  "source_label": "원문 보기 (Concordia AI PDF)",
- "summary": "중국 AI 기업 Z.ai(智谱, 즈푸)가 Concordia AI와 함께 낸, 모델 가중치를 공개(오픈 웨이트)할 때의 위험 관리 프레임워크다. 오픈 웨이트 범용 AI의 이점과 오용·사고 위험을 짚고, 배포 환경·위협원·가능하게 하는 역량·사회적 회복력의 네 요소로 위험 임계값을 정한 뒤, 개발 전부터 배포 후까지 단계별 위험 분석·평가·완화와 내부 거버넌스·사회적 감독을 규정한다.",
+ "summary": "중국 AI 기업 Z.ai(智谱, 즈푸)가 Concordia AI와 함께 낸, 모델 가중치를 공개(오픈 웨이트)할 때의 위험 관리 프레임워크다. 오픈 웨이트 범용 AI의 이점과 오용·사고 위험을 짚고, 배포 환경·위협 원천·실현 역량·사회적 회복력의 네 요소로 위험 임계값을 정한 뒤, 개발 전부터 배포 후까지 단계별 위험 분석·평가·완화와 내부 거버넌스·사회적 감독을 규정한다.",
  "image": "/images/translations/zai-open-weight-2026-09-cover.webp",
  "og_image": "/images/translations/zai-open-weight-2026-09-cover.jpg",
  "image_caption": "원문 표지 (Concordia AI · Z.ai, 2026.9)",

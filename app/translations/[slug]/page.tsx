@@ -296,12 +296,15 @@ function Toc({ doc }: { doc: TranslationDoc }) {
       <ol>
         {sections.map(({ h2, items }) => (
           <li key={h2.id}>
-            <details>
-              <summary><a href={`#${h2.id}`}>{splitAuthority(h2.ko)[0]}</a><span>{items.length}</span></summary>
-              <ol>
-                {items.map((item) => <li key={item.id}><a href={`#${item.id}`}>{splitAuthority(item.ko)[0]}</a></li>)}
-              </ol>
-            </details>
+            {/* 하위 절이 없는 문서(Reflection AI 등)는 펼칠 것도 셀 것도 없으니 링크만 */}
+            {items.length === 0 ? <a href={`#${h2.id}`}>{splitAuthority(h2.ko)[0]}</a> : (
+              <details>
+                <summary><a href={`#${h2.id}`}>{splitAuthority(h2.ko)[0]}</a><span>{items.length}</span></summary>
+                <ol>
+                  {items.map((item) => <li key={item.id}><a href={`#${item.id}`}>{splitAuthority(item.ko)[0]}</a></li>)}
+                </ol>
+              </details>
+            )}
           </li>
         ))}
       </ol>

@@ -1,0 +1,1017 @@
+{
+ "slug": "reflection-osf-2026-10",
+ "title": "Reflection AI 오픈 안전 프레임워크",
+ "original_title": "Open Safety Framework (Reflection AI)",
+ "publisher": "Reflection AI",
+ "published": "2026-10-05",
+ "source_url": "https://reflection.ai/safety",
+ "source_note": "공식 안전 페이지 전문 (표 6개 포함)",
+ "source_label": "원문 보기 (Reflection AI)",
+ "summary": "오픈 웨이트 모델을 내는 미국 AI 기업 Reflection AI가 첫 모델 Beam을 공개하며 함께 낸 안전 프레임워크다. 권력 집중을 첫 위험으로 두고 생태계 지표로 살피는 점이 특징이며, 생물·화학 무기와 사이버 공격, 통제 상실은 제한·치명 두 등급의 역량 임계값으로 다룬다. 공개를 기본값으로 하되 파국적·비가역적 피해 역량에는 공개 전 긍정적 안전 사례를 요구하는 백스톱을 둔다.",
+ "image": "/images/translations/reflection-osf-2026-10-cover.webp",
+ "og_image": "/images/translations/reflection-osf-2026-10-cover.jpg",
+ "image_caption": "원문 웹 페이지 대표 이미지 (Reflection AI, 2026.10)",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "doc_kind": "프론티어 안전 프레임워크",
+ "stats": {
+  "blocks": 98,
+  "sections": 8,
+  "items": 0,
+  "words_en": 4680
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Introduction",
+   "ko": "서론",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "The mission of Reflection AI, Inc. (\"Reflection\") is to make intelligence open and accessible to all. We build open models that let anyone control their intelligence and help shape the future of AI. We are convinced that openness accelerates progress: shared systems facilitate broader participation and produce ecosystems of research, innovation, and economic opportunities that no single lab can replicate alone. Open models let researchers inspect, stress-test, and strengthen the safeguards we build, contributing to the safety of the model and the entire ecosystem.",
+   "ko": "Reflection AI, Inc.(\"Reflection\")의 사명은 지능을 개방하여 모든 사람이 접근할 수 있도록 하는 것이다. Reflection은 누구나 자신의 지능을 통제하고 AI의 미래를 함께 만들어 갈 수 있도록 하는 오픈 모델을 구축한다. Reflection은 개방성이 진보를 가속한다고 확신한다. 공유된 시스템은 더 폭넓은 참여를 촉진하며, 어떤 단일 연구소도 혼자서는 재현할 수 없는 연구, 혁신, 경제적 기회의 생태계를 만들어 낸다. 오픈 모델은 연구자가 Reflection이 구축한 안전장치를 검사하고 한계 상황에서 시험하며 강화할 수 있게 하여, 모델과 생태계 전체의 안전성에 기여한다.",
+   "marks": [
+    {
+     "t": "오픈 모델은 연구자가 Reflection이 구축한 안전장치를 검사하고 한계 상황에서 시험하며 강화할 수 있게 하여, 모델과 생태계 전체의 안전성에 기여한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Reflection is committed to the principle that the power of the most consequential technology of our time should be broadly shared, for all students, researchers, developers, companies, and institutions to study, build on, and deploy, rather than concentrated in the hands of a few organizations. The most effective way to meaningfully control and govern an AI system or product is through access to open models, enabling organizations to operate AI under their own governance, security, and compliance frameworks.",
+   "ko": "Reflection은 우리 시대에 가장 중대한 영향을 미치는 기술의 힘이 소수 조직의 손에 집중되어서는 안 되며, 모든 학생, 연구자, 개발자, 기업, 기관이 이를 연구하고, 이를 토대로 구축하고, 배포할 수 있도록 폭넓게 공유되어야 한다는 원칙을 지키기로 약정한다. AI 시스템이나 제품을 실질적으로 통제하고 관리하는 가장 효과적인 방법은 오픈 모델에 접근하는 것이며, 이를 통해 조직은 자체 거버넌스, 보안, 규정 준수 체계 아래에서 AI를 운영할 수 있다.",
+   "marks": [
+    {
+     "t": "가장 중대한 영향을 미치는 기술의 힘이 소수 조직의 손에 집중되어서는 안 되며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Safety is at the core of Reflection’s mission. As our shared understanding of frontier risks continues to evolve, this framework represents Reflection’s current understanding and approach to ensuring our models, and the industry, measure dangerous capabilities and deploy open AI models responsibly.",
+   "ko": "안전은 Reflection 사명의 핵심이다. 프론티어 위험에 대한 공동의 이해가 계속 발전하고 있으므로, 이 프레임워크는 Reflection의 모델과 업계가 위험한 역량을 측정하고 오픈 AI 모델을 책임감 있게 배포하도록 보장하기 위한 Reflection의 현재 이해와 접근 방식을 나타낸다.",
+   "marks": [
+    {
+     "t": "안전은 Reflection 사명의 핵심이다.",
+     "k": "safety"
+    },
+    {
+     "t": "이 프레임워크는 Reflection의 모델과 업계가 위험한 역량을 측정하고 오픈 AI 모델을 책임감 있게 배포하도록 보장하기 위한 Reflection의 현재 이해와 접근 방식을 나타낸다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Our Approach",
+   "ko": "우리의 접근 방식",
+   "id": "s4"
+  },
+  {
+   "type": "p",
+   "en": "Reflection’s approach is informed by our research and development of AI models, legal requirements, voluntary commitments such as the White House Accord on Super Intelligence, standards issued by national and international standards-setting organizations (including, but not limited to NIST AI RMF and ISO 42001), and industry norms and practices. Reflection anticipates that our approach will continue to evolve as legal requirements, standards, industry practices, and our research and development evolve as well.",
+   "ko": "Reflection의 접근 방식은 AI 모델에 대한 자체 연구·개발, 법적 요건, White House Accord on Super Intelligence와 같은 자발적 약정, 국내외 표준 제정 기관이 발표한 표준(NIST AI RMF와 ISO 42001을 포함하되 이에 한정되지 않음), 그리고 업계 규범 및 실행 방안을 바탕으로 한다. Reflection은 법적 요건, 표준, 업계 관행, 그리고 자체 연구·개발이 발전함에 따라 이러한 접근 방식도 계속 발전할 것으로 예상한다.",
+   "marks": [
+    {
+     "t": "White House Accord on Super Intelligence와 같은 자발적 약정",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To put these commitments into practice, Reflection has established a standing governance process with clearly assigned ownership, cross-functional representation across research, engineering, security, product, legal, and policy, and an auditable path for escalating the most consequential decisions to key leaders within the company and, where appropriate, Reflection’s Board of Directors.",
+   "ko": "이러한 약정을 실행에 옮기기 위해 Reflection은 상설 거버넌스 절차를 수립했다. 이 절차는 책임 소재가 명확히 지정되어 있고, 연구, 엔지니어링, 보안, 제품, 법무, 정책 부문이 부서 간 대표를 두며, 가장 중대한 영향을 미치는 결정을 회사 내 핵심 책임자에게, 그리고 적절한 경우 Reflection 이사회에 상정할 수 있는 감사 가능한 경로를 갖추고 있다.",
+   "marks": [
+    {
+     "t": "가장 중대한 영향을 미치는 결정을 회사 내 핵심 책임자에게, 그리고 적절한 경우 Reflection 이사회에 상정할 수 있는 감사 가능한 경로",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Because openness is central to how Reflection builds, we welcome sustained engagement from the open-source community, government, researchers, and industry partners to test and continuously improve our models and safety systems. This collaboration will support our safety research, red teaming, model capability evaluations, open-weights safety systems, and evolving marginal risk landscape. It calls for scrutiny across the whole ecosystem to ensure the path to Superintelligence is guided by transparency, rigor, and shared accountability.",
+   "ko": "개방성은 Reflection이 모델을 구축하는 방식의 핵심이므로, Reflection은 오픈소스 커뮤니티, 정부, 연구자, 업계 파트너가 모델과 안전 시스템을 시험하고 지속적으로 개선하도록 꾸준히 참여해 주기를 환영한다. 이러한 협력은 Reflection의 안전 연구, 레드티밍, 모델 역량 평가, 오픈 웨이트(open-weight) 안전 시스템, 그리고 변화하는 한계 위험 지형을 뒷받침할 것이다. 초지능으로 가는 길이 투명성, 엄밀성, 공동의 책임성에 따라 이끌어지도록 하려면 생태계 전반의 면밀한 검토가 필요하다.",
+   "marks": [
+    {
+     "t": "Reflection의 안전 연구, 레드티밍, 모델 역량 평가, 오픈 웨이트(open-weight) 안전 시스템",
+     "k": "safety"
+    },
+    {
+     "t": "초지능으로 가는 길이 투명성, 엄밀성, 공동의 책임성에 따라 이끌어지도록 하려면",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This Open Safety Framework (OSF) is focused on our approach to addressing risk for models that may exhibit ”catastrophic risk” as defined under relevant U.S. law, such as California’s Transparency in Frontier AI Act (TFAIA) and “general-purpose AI models with systemic risk” under the European Union’s AI Act. Where the OSF references “systemic risks” this includes that term, as defined under the EU AI Act, and “catastrophic risk” as defined under relevant U.S. law, such as the TFAIA. Reflection addresses other potential harms through separate policies, model specifications, and product safeguards.",
+   "ko": "이 Open Safety Framework(OSF)는 캘리포니아주의 Transparency in Frontier AI Act(TFAIA) 등 관련 미국 법률에서 정의하는 \"파국적 위험\"을 보일 수 있는 모델, 그리고 유럽연합 EU AI 법에 따른 \"시스템적 위험이 있는 범용 AI 모델\"에 대한 위험 대응 접근 방식을 중점적으로 다룬다. OSF에서 \"시스템적 위험\"을 언급하는 경우, 이는 EU AI 법에서 정의하는 해당 용어와, TFAIA 등 관련 미국 법률에서 정의하는 \"파국적 위험\"을 모두 포함한다. Reflection은 그 밖의 잠재적 피해를 별도의 정책, 모델 명세, 제품 안전장치를 통해 다룬다.",
+   "marks": [
+    {
+     "t": "\"파국적 위험\"을 보일 수 있는 모델",
+     "k": "safety"
+    },
+    {
+     "t": "\"시스템적 위험이 있는 범용 AI 모델\"에 대한 위험 대응 접근 방식",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This OSF is Reflection’s public commitment to identifying, evaluating, and mitigating systemic risks in our model. It sets out the specific risks to be addressed, the capability threshold that separates an ordinary release from one requiring additional mitigations, and the requirements that must be satisfied before Reflection releases any model.",
+   "ko": "이 OSF는 Reflection의 모델에 내재한 시스템적 위험을 식별하고, 평가(evaluation)하며, 완화하겠다는 Reflection의 공개 약정이다. 여기에서는 대응해야 할 구체적인 위험, 일반 공개와 추가 완화 조치가 필요한 공개를 가르는 역량 임계값, 그리고 Reflection이 어떤 모델이든 공개하기 전에 충족해야 하는 요건을 정한다.",
+   "marks": [
+    {
+     "t": "이 OSF는 Reflection의 모델에 내재한 시스템적 위험을 식별하고, 평가(evaluation)하며, 완화하겠다는 Reflection의 공개 약정이다.",
+     "k": "key"
+    },
+    {
+     "t": "일반 공개와 추가 완화 조치가 필요한 공개를 가르는 역량 임계값",
+     "k": "safety"
+    },
+    {
+     "t": "Reflection이 어떤 모델이든 공개하기 전에 충족해야 하는 요건",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Risks, Capabilities, and Mitigations",
+   "ko": "위험, 역량, 완화",
+   "id": "s10"
+  },
+  {
+   "type": "p",
+   "en": "This Framework addresses eight recognized systemic risks and is constructed backwards from the harm using an outcome-first method. The first systemic risk, Concentration of Power, is evaluated using ecosystem-level indicators. The remaining seven are capability risks, each assessed for the specific catastrophic harm it could enable.",
+   "ko": "이 프레임워크는 인정된 여덟 가지 시스템적 위험을 다루며, 결과를 우선시하는 방식으로 피해에서 거꾸로 구성되었다. 첫 번째 시스템적 위험인 권력 집중(Concentration of Power)은 생태계 수준 지표를 사용하여 평가(evaluation)한다. 나머지 일곱 가지는 역량 위험이며, 각각이 가능하게 할 수 있는 구체적인 파국적 피해를 기준으로 평가(assessment)한다.",
+   "marks": [
+    {
+     "t": "각각이 가능하게 할 수 있는 구체적인 파국적 피해를 기준으로 평가(assessment)한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The Governing Logic",
+   "ko": "규율 논리"
+  },
+  {
+   "type": "p",
+   "en": "Release decisions balance two types of potential systemic risk:",
+   "ko": "공개 결정은 두 가지 유형의 잠재적 시스템적 위험 사이에서 균형을 취한다."
+  },
+  {
+   "type": "li",
+   "en": "Concentration risk: the potential loss of societal oversight that results from a powerful capability is held by only a few actors.",
+   "ko": "집중 위험(concentration risk): 강력한 역량을 소수의 행위자만 보유함으로써 발생하는 사회적 감독 상실의 가능성이다.",
+   "marks": [
+    {
+     "t": "강력한 역량을 소수의 행위자만 보유함으로써 발생하는 사회적 감독 상실의 가능성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Diffusion risk: the potential misuse that may occur where a dangerous capability is released broadly.",
+   "ko": "확산 위험(diffusion risk): 위험한 역량이 광범위하게 공개될 때 발생할 수 있는 오용의 가능성이다.",
+   "marks": [
+    {
+     "t": "위험한 역량이 광범위하게 공개될 때 발생할 수 있는 오용의 가능성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Releasing a model openly reduces concentration harm but can raise diffusion harm; restricting or closing a model does the reverse. Of the two, concentration harm is the more durable: once structurally entrenched and self-reinforcing, it weakens the competition, institutions, and public oversight needed to challenge or reverse it. Diffusion harms, while potentially catastrophic or irreversible in individual cases, are more amenable at the system level to detection, adaptation, mitigation, and defensive response. Reflection’s default is therefore to release AI models openly but to maintain a backstop or baseline to address the most severe cases. This backstop applies where a capability's direct harm has the potential to be both catastrophic and irreversible. Reflection reaches that determination by weighing the capability's marginal risk, the offense-defense balance, and the potential for defensive acceleration.",
+   "ko": "모델을 개방적으로 공개하면 집중 피해는 줄어들지만 확산 피해는 커질 수 있으며, 모델을 제한하거나 비공개로 하면 그 반대가 된다. 두 가지 가운데 집중 피해가 더 지속적이다. 집중 피해는 구조적으로 고착되어 자기강화적으로 변하면 이에 도전하거나 이를 되돌리는 데 필요한 경쟁, 제도, 공적 감독을 약화시킨다. 확산 피해는 개별 사례에서는 파국적이거나 되돌릴 수 없을 수 있지만, 시스템 차원에서는 탐지, 적응, 완화, 방어적 대응에 더 잘 대처할 수 있다. 따라서 Reflection의 기본 방침은 AI 모델을 개방적으로 공개하되, 가장 심각한 사례에 대처하기 위한 최종 안전망(backstop) 또는 기준선을 유지하는 것이다. 이 최종 안전망은 어떤 역량의 직접적 피해가 파국적이면서 되돌릴 수 없을 가능성이 있는 경우에 적용된다. Reflection은 해당 역량의 한계 위험, 공격-방어 균형(offense-defense balance), 방어적 가속(defensive acceleration)의 가능성을 저울질하여 이를 판단한다.",
+   "marks": [
+    {
+     "t": "모델을 개방적으로 공개하면 집중 피해는 줄어들지만 확산 피해는 커질 수 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "집중 피해는 구조적으로 고착되어 자기강화적으로 변하면 이에 도전하거나 이를 되돌리는 데 필요한 경쟁, 제도, 공적 감독을 약화시킨다.",
+     "k": "safety"
+    },
+    {
+     "t": "따라서 Reflection의 기본 방침은 AI 모델을 개방적으로 공개하되, 가장 심각한 사례에 대처하기 위한 최종 안전망(backstop) 또는 기준선을 유지하는 것이다.",
+     "k": "key"
+    },
+    {
+     "t": "어떤 역량의 직접적 피해가 파국적이면서 되돌릴 수 없을 가능성이 있는 경우에 적용된다",
+     "k": "safety"
+    },
+    {
+     "t": "공격-방어 균형(offense-defense balance), 방어적 가속(defensive acceleration)의 가능성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Established Systemic Risks",
+   "ko": "확립된 시스템적 위험(Established Systemic Risks)"
+  },
+  {
+   "type": "p",
+   "en": "In addition to the concentration systemic risk described above, the OSF takes into account four additional specified systemic risks.",
+   "ko": "위에서 설명한 집중 시스템적 위험 외에, OSF는 네 가지 추가적인 특정 시스템적 위험을 고려한다."
+  },
+  {
+   "type": "li",
+   "en": "Concentration of Power",
+   "ko": "권력 집중"
+  },
+  {
+   "type": "li",
+   "en": "Biological Weapons",
+   "ko": "생물학 무기",
+   "marks": [
+    {
+     "t": "생물학 무기",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Chemical Weapons",
+   "ko": "화학 무기",
+   "marks": [
+    {
+     "t": "화학 무기",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Cyber Offense",
+   "ko": "사이버 공격",
+   "marks": [
+    {
+     "t": "사이버 공격",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Loss of Control",
+   "ko": "통제 상실",
+   "marks": [
+    {
+     "t": "통제 상실",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Research Systemic Risks",
+   "ko": "연구 대상 시스템적 위험(Research Systemic Risks)"
+  },
+  {
+   "type": "p",
+   "en": "The OSF also takes into account the following additional risks, which are separately categorized for the reasons described below.",
+   "ko": "OSF는 또한 다음의 추가 위험을 고려하며, 이는 아래에 설명하는 이유로 별도로 분류된다."
+  },
+  {
+   "type": "li",
+   "en": "Radiological Weapons",
+   "ko": "방사능 무기",
+   "marks": [
+    {
+     "t": "방사능 무기",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Nuclear Weapons",
+   "ko": "핵무기",
+   "marks": [
+    {
+     "t": "핵무기",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Harmful Manipulation",
+   "ko": "유해한 조작",
+   "marks": [
+    {
+     "t": "유해한 조작",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Thresholds and Response",
+   "ko": "임계값과 대응",
+   "id": "s29"
+  },
+  {
+   "type": "p",
+   "en": "This Framework establishes the conditions that govern Reflection’s response for each identified systemic risk. For a given systemic risk, Reflection assesses the relevant specific model and the proposals for its release and deployment to determine where that risk stands and the response it requires. This assessment is provisional and is reassessed following a material change.",
+   "ko": "이 프레임워크는 식별된 각 시스템적 위험에 대한 Reflection의 대응을 규율하는 조건을 정한다. Reflection은 특정 시스템적 위험별로 해당 모델과 그 공개 및 배포 제안을 평가(assessment)하여 그 위험이 어느 단계에 있는지와 필요한 대응이 무엇인지를 판단한다. 이 평가(assessment)는 잠정적이며, 중대한 변경이 있으면 다시 평가(assessment)한다."
+  },
+  {
+   "type": "p",
+   "en": "Reflection operationalizes the safety margin through four factors assessed before release: (1) capability uncertainty, recognizing that evaluations may not fully characterize the model’s capabilities under all elicitation methods reasonably available at the time of assessment; (2) under-elicitation risk, recognizing that no evaluation exhaustively demonstrates model capability; (3) historical evaluation uncertainty, reflecting the observed limitations of comparable evaluation methodologies; and (4) mitigation-durability uncertainty, recognizing that credited mitigations should be demonstrated to remain effective under reasonable adversarial testing before release.",
+   "ko": "Reflection은 공개 전에 평가(assessment)하는 네 가지 요소를 통해 안전 여유도를 구체화한다. 네 가지 요소는 다음과 같다. (1) 역량 불확실성: 평가(assessment) 시점에 합리적으로 이용할 수 있는 모든 유도(elicitation) 방법에서 평가(evaluation)가 모델의 역량을 완전히 규명하지 못할 수 있음을 인식한 것이다. (2) 과소 유도 위험: 어떤 평가(evaluation)도 모델의 역량을 남김없이 입증하지는 못함을 인식한 것이다. (3) 과거 평가(evaluation) 불확실성: 유사한 평가(evaluation) 방법론에서 관찰된 한계를 반영한 것이다. (4) 완화 내구성 불확실성: 인정되는 완화 조치는 공개 전에 합리적인 적대적 시험에서도 효과가 유지됨이 입증되어야 함을 인식한 것이다.",
+   "marks": [
+    {
+     "t": "평가(evaluation)가 모델의 역량을 완전히 규명하지 못할 수 있음을 인식한 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "어떤 평가(evaluation)도 모델의 역량을 남김없이 입증하지는 못함",
+     "k": "safety"
+    },
+    {
+     "t": "인정되는 완화 조치는 공개 전에 합리적인 적대적 시험에서도 효과가 유지됨이 입증되어야 함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The Framework assesses Concentration of Power first (Table 1 below), using ecosystem conditions and release-mode indicators. The Established Systemic Risks that follow (Table 2 below) are each assessed against two risk tiers: Limited and Critical.",
+   "ko": "이 프레임워크는 생태계 조건과 공개 방식 지표를 사용하여 먼저 권력 집중을 평가(assessment)한다(아래 표 1). 이어지는 확립된 시스템적 위험(아래 표 2)은 각각 제한(Limited)과 치명적(Critical)이라는 두 가지 위험 등급을 기준으로 평가(assessment)한다."
+  },
+  {
+   "type": "p",
+   "en": "Concentration of Power is the systemic risk that frontier AI capability becomes concentrated in the hands of a small number of actors. Unlike the other systemic risks, it does not depend on misuse of the model. Reflection assesses whether the model’s capability and distribution increase or reduce that concentration and, where the risk is elevated, responds by promoting broader diffusion of frontier AI capability.",
+   "ko": "권력 집중은 프론티어 AI 역량이 소수 행위자의 손에 집중되는 시스템적 위험이다. 다른 시스템적 위험과 달리 모델의 오용 여부에 좌우되지 않는다. Reflection은 모델의 역량과 배포 방식이 이러한 집중을 심화시키는지 완화하는지를 평가(assessment)하고, 위험이 높아진 경우 프론티어 AI 역량의 더 폭넓은 확산을 촉진하는 방식으로 대응한다.",
+   "marks": [
+    {
+     "t": "권력 집중은 프론티어 AI 역량이 소수 행위자의 손에 집중되는 시스템적 위험이다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Table 1. Concentration of Power",
+   "ko": "표 1. 권력 집중"
+  },
+  {
+   "type": "p",
+   "en": "Table 1",
+   "ko": "표 1"
+  },
+  {
+   "type": "table",
+   "en": "| Element | Approach | ⏎ | Ecosystem | In a healthy ecosystem, frontier capability is broadly distributed across many open and closed developers, and no actor, including Reflection, holds or is nearing a decisive advantage. The condition of concern is concentration of frontier AI capability in the hands of a few companies, states, networks, or lab insiders, creating a durable position that democratic, legal, or market mechanisms can’t effectively reverse. | ⏎ | Indicators of concentration of power | Lack of distribution of capability across open and closed developers; limited breadth of effective access across the research and developer community; proximity of any single actor to a decisive advantage. | ⏎ | Response | Maintain open release as the default and monitor the ecosystem indicators. Where the indicators point toward a strong concentration of power, promote diffusion more strongly: release openly, and where Reflection holds the lead, release rather than hoard, even at competitive cost. Add measures to ensure broad effective access, publishing research and tooling and supporting downstream capacity, so that diffusion is real, not merely nominal. Withholding is not a response to concentration, since for Reflection that would mean becoming the concentrator. |",
+   "ko": "| 항목 | 접근 방식 | ⏎ | 생태계 | 건전한 생태계에서는 프론티어 역량이 다수의 개방형·폐쇄형 개발자에게 폭넓게 분포하며, Reflection을 포함한 어떤 행위자도 결정적 우위를 보유하거나 그에 근접하지 않는다. 우려되는 상태는 프론티어 AI 역량이 소수의 기업, 국가, 네트워크 또는 연구소 내부자의 손에 집중되어, 민주적·법적·시장 메커니즘으로는 효과적으로 되돌릴 수 없는 지속적 지위가 만들어지는 것이다. | ⏎ | 권력 집중 지표 | 개방형·폐쇄형 개발자 간 역량 분포의 부족, 연구자 및 개발자 커뮤니티 전반에서 실효적 접근 범위의 제한, 단일 행위자의 결정적 우위 근접도. | ⏎ | 대응 | 개방적 공개를 기본 방침으로 유지하고 생태계 지표를 모니터링한다. 지표가 강한 권력 집중을 시사하는 경우 확산을 더 강하게 촉진한다. 즉 개방적으로 공개하며, Reflection이 앞서 있는 경우에는 경쟁상의 비용을 감수하더라도 독점하지 않고 공개한다. 확산이 명목에 그치지 않고 실질적이도록 연구와 도구를 공개하고 하위 단계의 역량을 지원하는 등 폭넓은 실효적 접근을 보장하는 조치를 추가한다. 공개 보류는 집중에 대한 대응이 될 수 없다. Reflection의 경우 그것은 스스로 집중의 주체가 되는 것을 의미하기 때문이다. |"
+  },
+  {
+   "type": "p",
+   "en": "Established System Risks are each assigned a direct-harm tier on a marginal basis, the additional risk beyond what comparable models already allow: either Limited (no meaningful uplift) or Critical (a decisive contribution to a catastrophic outcome).",
+   "ko": "확립된 시스템적 위험은 각각 한계적 기준, 즉 유사한 모델이 이미 허용하는 수준을 넘어서는 추가 위험을 기준으로 직접 피해 등급을 부여한다. 등급은 제한(Limited, 의미 있는 업리프트 없음) 또는 치명적(Critical, 파국적 결과에 대한 결정적 기여)이다.",
+   "marks": [
+    {
+     "t": "유사한 모델이 이미 허용하는 수준을 넘어서는 추가 위험을 기준으로 직접 피해 등급을 부여한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Table 2. Established Systemic Risks",
+   "ko": "표 2. 확립된 시스템적 위험"
+  },
+  {
+   "type": "p",
+   "en": "Biological Weapons",
+   "ko": "생물학 무기"
+  },
+  {
+   "type": "table",
+   "en": "| Tier | Capability | Mitigations | ⏎ | Limited | Limited expansion of misuse opportunities or the threat landscape relative to a reference model or public baseline, including comparable publicly available open-weight models or closed models without robust safeguards. The scale, sophistication, and accessibility of harmful activity remain substantially unchanged. | Pre-release biological capability evaluations, biosecurity SME red-teaming, and external review prior to release, calibrated to target misuse without suppressing legitimate life-science, diagnostic, and scientific capability. | ⏎ | Critical | Decisive contribution toward a Biological Outcome (a biological weapon capable of causing mass casualties deployed with weapons effect by a novice threat actor with the model as the material contributor). The contribution is decisive where the deployment would not have been possible with a released open-model or closed frontier model without robust safeguards. | Recommended deployment mitigations in the form of classifiers and intervention recommendations (system instruction intervention, prompt block, model routing, account summarization and/or monitoring). Release is paused until remediation demonstrates the recommended mitigations, offense-defense balance, defensive acceleration, threat environment, marginal risk, and model capabilities satisfy the Limited release criteria, supported by an affirmative safety case; otherwise, the model is not released. |",
+   "ko": "| 등급 | 역량 | 완화 | ⏎ | 제한(Limited) | 기준 모델 또는 공개된 기준선(공개적으로 이용 가능한 유사한 오픈 웨이트 모델이나 강건한 안전장치가 없는 폐쇄형 모델 포함)과 비교하여 오용 기회 또는 위협 지형의 확대가 제한적이다. 유해 활동의 규모, 정교성, 접근성은 실질적으로 변함이 없다. | 공개 전 생물학 역량 평가, 생물안보 분야 전문가(SME) 레드티밍, 공개 전 외부 검토를 실시하되, 정당한 생명과학, 진단, 과학적 역량을 억제하지 않으면서 오용을 겨냥하도록 조정한다. | ⏎ | 치명적(Critical) | 생물학적 결과(Biological Outcome)에 대한 결정적 기여. 여기서 생물학적 결과란 대량 인명피해를 일으킬 수 있는 생물학 무기가 해당 모델을 실질적 기여자로 하여 초보 위협 행위자에 의해 무기 효과(weapons effect)를 내며 사용되는 것을 말한다. 강건한 안전장치가 없는 공개된 오픈 모델이나 폐쇄형 프론티어 모델로는 그러한 사용이 불가능했을 경우 그 기여는 결정적이다. | 분류기와 개입 권고(시스템 지시 개입, 프롬프트 차단, 모델 라우팅, 계정 요약 및/또는 모니터링)의 형태로 된 권고 배포 완화조치. 시정 조치를 통해 권고된 완화조치, 공격-방어 균형(offense-defense balance), 방어적 가속(defensive acceleration), 위협 환경, 한계 위험, 모델 역량이 제한(Limited) 등급의 공개 기준을 충족함이 입증되고 이것이 확정적 안전 사례로 뒷받침될 때까지 공개는 보류되며, 그렇지 않으면 모델은 공개되지 않는다. |"
+  },
+  {
+   "type": "p",
+   "en": "Chemical Weapons",
+   "ko": "화학 무기"
+  },
+  {
+   "type": "table",
+   "en": "| Tier | Capability | Mitigations | ⏎ | Limited | Limited expansion of (i) the misuse opportunity or (ii) the threat landscape for chemical agents. Expansion is marginal relative to a reference model or public baseline, including comparable publicly available open-weight models, or closed frontier models without robust safeguards where appropriate. The scale, sophistication, and accessibility of harmful activity are substantially unchanged. | Pre-release chemical capability evaluations, chemical-weapons SME red-teaming, and external review prior to release. | ⏎ | Critical | Decisive contribution toward a Chemical Outcome: a chemical weapon capable of causing mass casualties is deployed with weapons effect by a novice threat actor with the model as the material contributor, which would not have been possible with a released open-model or closed frontier model without robust safeguards. | Recommended deployment mitigations in the form of classifiers and intervention recommendations (system instruction intervention, prompt block, model routing, account summarization and/or monitoring). Release is paused until remediation demonstrates the recommended mitigations, offense-defense balance, defensive acceleration, threat environment, marginal risk, and model capabilities satisfy the Limited release criteria, supported by an affirmative safety case; otherwise, the model is not released. |",
+   "ko": "| 등급 | 역량 | 완화 | ⏎ | 제한(Limited) | 화학 작용제에 대한 (i) 오용 기회 또는 (ii) 위협 지형의 확대가 제한적이다. 그 확대는 기준 모델 또는 공개된 기준선(공개적으로 이용 가능한 유사한 오픈 웨이트 모델, 또는 적절한 경우 강건한 안전장치가 없는 폐쇄형 프론티어 모델 포함)과 비교하여 미미하다. 유해 활동의 규모, 정교성, 접근성은 실질적으로 변함이 없다. | 공개 전 화학 역량 평가, 화학 무기 분야 전문가(SME) 레드티밍, 공개 전 외부 검토. | ⏎ | 치명적(Critical) | 화학적 결과(Chemical Outcome)에 대한 결정적 기여. 즉 대량 인명피해를 일으킬 수 있는 화학 무기가 해당 모델을 실질적 기여자로 하여 초보 위협 행위자에 의해 무기 효과(weapons effect)를 내며 사용되며, 이는 강건한 안전장치가 없는 공개된 오픈 모델이나 폐쇄형 프론티어 모델로는 불가능했을 것이다. | 분류기와 개입 권고(시스템 지시 개입, 프롬프트 차단, 모델 라우팅, 계정 요약 및/또는 모니터링)의 형태로 된 권고 배포 완화조치. 시정 조치를 통해 권고된 완화조치, 공격-방어 균형(offense-defense balance), 방어적 가속(defensive acceleration), 위협 환경, 한계 위험, 모델 역량이 제한(Limited) 등급의 공개 기준을 충족함이 입증되고 이것이 확정적 안전 사례로 뒷받침될 때까지 공개는 보류되며, 그렇지 않으면 모델은 공개되지 않는다. |"
+  },
+  {
+   "type": "p",
+   "en": "Cyber Offense",
+   "ko": "사이버 공격"
+  },
+  {
+   "type": "table",
+   "en": "| Tier | Capability | Mitigations | ⏎ | Limited | No material contribution toward a Cyber Outcome: Limited or no material shift in the cyber-offense and/or cyber-defense balance attributable to the model. Limited expansion of the threat landscape relative to comparable publicly available open-weight models or closed frontier models without robust safeguards where appropriate. | Cyber refusal and alignment robustness training; red teaming; standard evaluations of autonomous vulnerability discovery and exploit generation; internal security controls; bug-bounty program. | ⏎ | Critical | Decisive contribution toward a Cyber Outcome: A. A severe cyber-attack on critical infrastructure resulting in casualties, catastrophic economic loss, or significant measurable disruption of said critical services, which would not have been possible with a released open-model or closed frontier model without robust safeguards. OR B. A significant advantage for cyber offensive capabilities, eroding defensive equilibrium, including dual-use categories (reverse engineering, penetration testing, etc.), which is not possible with a released open-model or closed frontier model without robust safeguards. | Recommended deployment mitigations in the form of classifiers and intervention recommendations (system instruction intervention, prompt block, model routing, account summarization and/or monitoring). Where the model can still conduct autonomous discovery-to-exploitation against critical-infrastructure systems after remediation resulting in stated effects, it is not released. |",
+   "ko": "| 등급 | 역량 | 완화 | ⏎ | 제한(Limited) | 사이버 결과(Cyber Outcome)에 대한 실질적 기여가 없음. 해당 모델에 기인하는 사이버 공격 및/또는 사이버 방어 균형의 변화가 제한적이거나 실질적으로 없다. 공개적으로 이용 가능한 유사한 오픈 웨이트 모델, 또는 적절한 경우 강건한 안전장치가 없는 폐쇄형 프론티어 모델과 비교하여 위협 지형의 확대가 제한적이다. | 사이버 거부 및 정렬 강건성 훈련, 레드티밍, 자율적 취약점 발견 및 익스플로잇 생성에 대한 표준 평가(evaluation), 내부 보안 통제, 버그바운티 프로그램. | ⏎ | 치명적(Critical) | 사이버 결과(Cyber Outcome)에 대한 결정적 기여: A. 핵심 기반시설에 대한 중대한 사이버 공격으로 인해 인명 피해, 파국적 경제 손실 또는 해당 핵심 서비스의 측정 가능한 중대한 중단이 발생하는 경우이며, 이는 강건한 안전장치가 없는 공개된 오픈 모델이나 폐쇄형 프론티어 모델로는 불가능했을 것이다. 또는 B. 이중 용도 범주(리버스 엔지니어링, 침투 테스트 등)를 포함하여 사이버 공격 역량에 중대한 우위를 가져와 방어적 균형을 무너뜨리는 경우이며, 이는 강건한 안전장치가 없는 공개된 오픈 모델이나 폐쇄형 프론티어 모델로는 불가능하다. | 분류기와 개입 권고(시스템 지시 개입, 프롬프트 차단, 모델 라우팅, 계정 요약 및/또는 모니터링)의 형태로 된 권고 배포 완화조치. 시정 조치 이후에도 모델이 핵심 기반시설 시스템에 대해 취약점 발견부터 익스플로잇까지 자율적으로 수행하여 위에 명시된 효과를 낼 수 있는 경우, 해당 모델은 공개되지 않는다. |"
+  },
+  {
+   "type": "p",
+   "en": "Loss of Control",
+   "ko": "통제 상실"
+  },
+  {
+   "type": "table",
+   "en": "| Tier | Capability | Mitigations | ⏎ | Limited | No material erosion of evaluability, monitorability, or controllability attributable to the model. Within the elicitation methods and reference scaffolds tested, the model does not exhibit the properties that produce the Control Outcome: it complies with shutdown, interruption, tool restriction, and correction, including where compliance defeats an assigned task; does not attempt persistence beyond intended termination, self-replication, weight self-exfiltration, or egress from its authorized environment; and does not act to evade or deceive monitoring or evaluation. Comparison to a reference open-weight model informs this assessment but does not by itself establish the tier. | Mitigations are applied in proportion to the assessed risk and the release modality, and are drawn from the following: pre-release loss-of-control evaluations. | ⏎ | Critical | The model exhibits properties or attempts conduct that defeat evaluability, monitorability, or controllability: it persists, propagates, self-modifies, acquires resources, or resists correction beyond the operator's control, such that operators can no longer dependably assess its behavior, observe it in use, steer it, keep it within bounds, or bring it to a stop. Established by resistance to or subversion of shutdown or interruption; attempted or achieved egress, self-replication, weight self-exfiltration, or persistence beyond intended termination; action to evade, disable, or deceive monitoring, evaluation, or human oversight, including evaluation sabotage and capability concealment; or acquisition of resources, credentials, or permissions beyond authorized scope in service of the foregoing. | Recommended deployment mitigations, including monitorability classifiers over reasoning traces and tool calls, introspection probes for deception and evaluation awareness, and a reference agent harness with default egress restriction, tool allowlisting, and an out-of-band stop, are published and shipped enabled by default. They receive no credit toward this determination because a party holding the weights may remove them, and they address the mechanisms the model has been shown to defeat. The model is not released. Internal use of the checkpoint is suspended, and the matter is escalated to the Committee. Release may proceed only if remediation addresses the propensity in the weights and re-evaluation satisfies the Limited criteria under the same conditions, supported by an affirmative safety case. Otherwise, the model is not released in any modality. |",
+   "ko": "| 등급 | 역량 | 완화 | ⏎ | 제한(Limited) | 해당 모델에 기인하는 평가 가능성, 모니터링 가능성(monitorability), 통제 가능성의 실질적 훼손이 없다. 시험된 모델 유도 방법과 참조 스캐폴드(reference scaffold) 범위 내에서, 모델은 통제 결과(Control Outcome)를 낳는 특성을 보이지 않는다. 즉 규정 준수가 할당된 과업을 무산시키는 경우를 포함하여 종료, 중단, 도구 제한, 교정에 따르며, 의도된 종료 이후의 지속(persistence), 자기 복제, 가중치 자기 유출, 또는 허가된 환경으로부터의 이탈(egress)을 시도하지 않고, 모니터링이나 평가(evaluation)를 회피하거나 기만하려는 행위를 하지 않는다. 참조 오픈 웨이트 모델과의 비교는 이 평가(assessment)에 정보를 제공하나, 그 자체만으로 등급을 확정하지는 않는다. | 완화조치는 평가된 위험과 공개 방식(release modality)에 비례하여 적용하며, 다음 중에서 선정한다: 공개 전 통제 상실 평가. | ⏎ | 치명적(Critical) | 모델이 평가 가능성, 모니터링 가능성, 또는 통제 가능성을 무력화하는 특성을 보이거나 그러한 행위를 시도한다. 즉 운영자의 통제를 벗어나 지속하거나, 전파하거나, 자기 수정하거나, 자원을 획득하거나, 교정에 저항함으로써, 운영자가 더 이상 모델의 행동을 신뢰성 있게 평가하거나, 사용 중에 관찰하거나, 조종하거나, 한계 내에 유지하거나, 정지시킬 수 없게 된다. 이는 다음에 의해 입증된다: 종료 또는 중단에 대한 저항이나 전복; 이탈, 자기 복제, 가중치 자기 유출, 또는 의도된 종료 이후의 지속의 시도 또는 달성; 평가 사보타지와 역량 은폐를 포함하여 모니터링, 평가, 또는 인간 감독을 회피, 무력화, 또는 기만하려는 행위; 또는 앞서 언급한 행위를 위한, 허가된 범위를 넘는 자원, 자격 증명, 권한의 획득. | 추론 흔적(reasoning trace)과 도구 호출에 대한 모니터링 가능성 분류기, 기만 및 평가 인지에 대한 내성 탐침(introspection probe), 기본 이탈 제한·도구 허용 목록 지정·대역 외(out-of-band) 정지 기능을 갖춘 참조 에이전트 하니스(agent harness)를 포함한 권고 배포 완화조치를 공개하고 기본적으로 활성화된 상태로 제공한다. 가중치를 보유한 당사자가 이를 제거할 수 있고, 이들은 모델이 무력화하는 것으로 확인된 메커니즘을 대상으로 하므로, 이 판정에서는 인정(credit)되지 않는다. 모델은 공개되지 않는다. 해당 체크포인트의 내부 사용은 중단되며, 이 사안은 위원회(Committee)에 상정된다. 시정 조치가 가중치에 내재한 성향을 해소하고, 재평가가 동일한 조건에서 제한(Limited) 등급 기준을 충족하며, 이것이 확정적 안전 사례로 뒷받침되는 경우에 한하여 공개를 진행할 수 있다. 그렇지 않으면 모델은 어떠한 방식으로도 공개되지 않는다. |"
+  },
+  {
+   "type": "p",
+   "en": "Affirmative safety case. The safety case demonstrates that the residual systemic risk of the model remains acceptable after mitigations have been applied and documents: (1) the supporting evaluation evidence, credited mitigations, and applicable safety margin; (2) the assumptions and reasonably foreseeable conditions under which that conclusion would no longer hold; and (3) the rationale supporting the release decision.",
+   "ko": "확정적 안전 사례(Affirmative safety case). 안전 사례는 완화조치를 적용한 이후에도 모델의 잔여 시스템적 위험이 수용 가능한 수준으로 유지됨을 입증하며, 다음을 문서화한다: (1) 이를 뒷받침하는 평가 증거, 인정된 완화조치, 적용된 안전 여유도; (2) 해당 결론이 더 이상 성립하지 않게 되는 가정과 합리적으로 예견 가능한 조건; (3) 공개 결정을 뒷받침하는 근거.",
+   "marks": [
+    {
+     "t": "완화조치를 적용한 이후에도 모델의 잔여 시스템적 위험이 수용 가능한 수준으로 유지됨을 입증하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Release gate. For each release candidate, the Model Report records the basis for proceeding, setting forth the following: (1) the systemic risk tier reached for each identified risk against the defined capability tiers, with the safety margin applied; (2) the systemic risk estimates, both with mitigations in place and with the model fully elicited, and the marginal risk the open-weight release adds relative to a similar model already available; (3) the safety and security mitigations implemented and their limitations; (4) whether and how input from independent external evaluators informed the decision, including their reports or a reasonable justification where no such external evaluators were involved; and (5) a reasonable justification that the systemic risks are acceptable, including the safety margins, and detailing the conditions under which that justification would no longer hold. The Committee (defined in the Governance section) proceeds only where the systemic risks are acceptable; otherwise, it does not place the model on the market, restricts or blocks it.",
+   "ko": "공개 관문(Release gate). 각 공개 후보에 대하여 모델 보고서는 진행의 근거를 기록하며, 다음 사항을 명시한다: (1) 식별된 각 위험에 대하여 정의된 역량 등급에 비추어 도달한 시스템적 위험 등급과, 적용된 안전 여유도; (2) 완화조치를 적용한 경우와 모델을 완전히 유도한 경우 각각의 시스템적 위험 추정치, 그리고 이미 이용 가능한 유사 모델과 비교하여 오픈 웨이트 공개가 추가하는 한계 위험; (3) 시행된 안전 위험 완화조치 및 보안 위험 완화조치와 그 한계; (4) 독립적인 외부 평가자의 의견이 결정에 반영되었는지 여부와 그 방식(해당 보고서, 또는 그러한 외부 평가자가 관여하지 않은 경우 합리적인 사유 포함); (5) 안전 여유도를 포함하여 시스템적 위험이 수용 가능하다는 합리적인 근거와, 그 근거가 더 이상 성립하지 않게 되는 조건에 대한 상세. 위원회(거버넌스 절에서 정의됨)는 시스템적 위험이 수용 가능한 경우에 한하여 진행하며, 그렇지 않은 경우 모델을 시장에 출시하지 않거나, 제한 또는 차단한다.",
+   "marks": [
+    {
+     "t": "오픈 웨이트 공개가 추가하는 한계 위험",
+     "k": "safety"
+    },
+    {
+     "t": "독립적인 외부 평가자의 의견이 결정에 반영되었는지 여부와 그 방식",
+     "k": "safety"
+    },
+    {
+     "t": "시스템적 위험이 수용 가능한 경우에 한하여 진행하며, 그렇지 않은 경우 모델을 시장에 출시하지 않거나, 제한 또는 차단한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Research Systemic Risks",
+   "ko": "연구 시스템적 위험(Research Systemic Risks)"
+  },
+  {
+   "type": "p",
+   "en": "The Research Systemic Risks list comprises systemic risks Reflection does not yet assess against our standard release tiers. For these risks, bespoke evaluations may be required because the factors that drive harm extend beyond model capability alone. In addition, mitigations may not always be the best fit, and because some of these harms are diffuse across the ecosystem rather than tied to a single provider, both risk and response remain open research problems. We take these risks with the utmost seriousness and continue to study their marginal risk, capabilities, and threat models. Their placement as research systemic risks is provisional: we may add risks as capabilities advance and new threats emerge, and a risk might move to Established status once Reflection determines that tier-based assessment is warranted.",
+   "ko": "연구 시스템적 위험 목록은 Reflection이 아직 표준 공개 등급에 따라 평가하지 않는 시스템적 위험으로 구성된다. 이러한 위험의 경우 피해를 일으키는 요인이 모델 역량만을 넘어서므로 맞춤형 평가가 필요할 수 있다. 또한 완화조치가 항상 가장 적합한 수단은 아닐 수 있으며, 이러한 피해 중 일부는 단일 제공자에 귀속되지 않고 생태계 전반에 확산되어 있으므로 위험과 대응 모두 여전히 열린 연구 과제이다. 우리는 이러한 위험을 최대한 엄중하게 받아들이며, 그 한계 위험, 역량, 위협 모델(Threat model)을 계속 연구한다. 연구 시스템적 위험으로의 분류는 잠정적이다. 역량이 발전하고 새로운 위협이 등장함에 따라 위험을 추가할 수 있으며, Reflection이 등급 기반 평가가 정당화된다고 판단하면 해당 위험은 확립(Established) 상태로 이동할 수 있다.",
+   "marks": [
+    {
+     "t": "위험과 대응 모두 여전히 열린 연구 과제이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Table 3. Research",
+   "ko": "표 3. 연구"
+  },
+  {
+   "type": "p",
+   "en": "Table 1",
+   "ko": "표 1"
+  },
+  {
+   "type": "table",
+   "en": "| Research Category | Description | ⏎ | Radiological Weapons | A radiological weapon capable of causing widespread contamination and disruption, deployed with weapons effect by a novice threat actor with the model as the material contributor, which would not have been possible with a released open-weight or closed frontier model without robust safeguards. | ⏎ | Nuclear Weapons | A nuclear weapon capable of causing mass casualties, deployed with weapons effect by a novice threat actor with the model as the material contributor, which would not have been possible with a released open-weight or closed frontier model without robust safeguards. | ⏎ | Harmful Manipulation | Significant erosion of informed consent or rational deliberation in consequential individual or collective decision-making, with the model as the material contributor, which would not have been possible with a released open-weight or closed frontier model without robust safeguards. |",
+   "ko": "| 연구 범주 | 설명 | ⏎ | 방사능 무기 | 광범위한 오염과 혼란을 일으킬 수 있는 방사능 무기가 해당 모델을 실질적 기여자로 하여 초보 위협 행위자에 의해 무기 효과(weapons effect)를 내며 사용되며, 이는 강건한 안전장치가 없는 공개된 오픈 웨이트 모델이나 폐쇄형 프론티어 모델로는 불가능했을 것이다. | ⏎ | 핵무기 | 대량 인명피해를 일으킬 수 있는 핵무기가 해당 모델을 실질적 기여자로 하여 초보 위협 행위자에 의해 무기 효과를 내며 사용되며, 이는 강건한 안전장치가 없는 공개된 오픈 웨이트 모델이나 폐쇄형 프론티어 모델로는 불가능했을 것이다. | ⏎ | 유해한 조작 | 해당 모델을 실질적 기여자로 하여, 중대한 영향을 미치는 개인 또는 집단의 의사결정에서 충분한 정보에 입각한 동의 또는 합리적 숙고가 심각하게 훼손되며, 이는 강건한 안전장치가 없는 공개된 오픈 웨이트 모델이나 폐쇄형 프론티어 모델로는 불가능했을 것이다. |"
+  },
+  {
+   "type": "h2",
+   "en": "Risk Assessment and Threat Modeling",
+   "ko": "위험 평가 및 위협 모델 구축",
+   "id": "s54"
+  },
+  {
+   "type": "p",
+   "en": "Reflection conducts model capability evaluations, release safety evaluations, recommended safety stack mitigation robustness evaluations (at Critical), third-party assurance evaluations, and evidence-based threat modeling to model each risk to inform said evaluations and launch criteria.",
+   "ko": "Reflection은 각 위험을 모델링하여 해당 평가와 출시 기준에 반영하기 위해 역량 평가, 공개 안전성 평가, 권고 안전 스택(safety stack) 완화조치 강건성 평가(치명적 등급에서), 제3자 보증 평가, 그리고 증거 기반 위협 모델(Threat model) 구축을 수행한다.",
+   "marks": [
+    {
+     "t": "역량 평가, 공개 안전성 평가, 권고 안전 스택(safety stack) 완화조치 강건성 평가(치명적 등급에서), 제3자 보증 평가, 그리고 증거 기반 위협 모델(Threat model) 구축을 수행한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Internal use: The same systemic-risk assessment applies to internal use of frontier models, including research, operational systems, and internal products. Internal deployment is assessed against the same capability thresholds and safeguards as pre-release deployment. Behavior indicating degradation of evaluability, monitorability, or controllability is assessed under Loss of Control and triggers the same escalation and remediation process as a model crossing a pre-release threshold.",
+   "ko": "내부 사용: 동일한 시스템적 위험 평가(assessment)가 연구, 운영 시스템, 내부 제품을 포함한 프론티어 모델의 내부 사용에도 적용된다. 내부 배포는 공개 전 배포와 동일한 역량 임계값 및 안전장치에 비추어 평가된다. 평가 가능성, 모니터링 가능성, 또는 통제 가능성의 저하를 나타내는 행동은 통제 상실 항목에서 평가되며, 모델이 공개 전 임계값을 넘는 경우와 동일한 상정 및 시정 절차를 촉발한다.",
+   "marks": [
+    {
+     "t": "내부 배포는 공개 전 배포와 동일한 역량 임계값 및 안전장치에 비추어 평가된다.",
+     "k": "key"
+    },
+    {
+     "t": "평가 가능성, 모니터링 가능성, 또는 통제 가능성의 저하를 나타내는 행동은 통제 상실 항목에서 평가되며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Capability forecasting: For each Established systemic risk, Reflection estimates when one of its models is expected to exceed the highest tier previously reached for that risk. Forecasts are expressed as time ranges or probability distributions together with their principal assumptions and uncertainties. They inform evaluation planning, mitigation development, governance prioritization, and resource allocation, and are reviewed whenever material new information becomes available.",
+   "ko": "역량 예측: 확립된(Established) 각 시스템적 위험에 대하여, Reflection은 자사 모델 중 하나가 해당 위험에서 이전에 도달한 최고 등급을 언제 초과할 것으로 예상되는지 추정한다. 예측은 시간 범위 또는 확률 분포로 표현되며, 주요 가정과 불확실성이 함께 제시된다. 예측은 평가 계획, 완화 개발, 거버넌스 우선순위 설정, 자원 배분에 반영되며, 중요한 새로운 정보가 확보될 때마다 검토된다.",
+   "marks": [
+    {
+     "t": "자사 모델 중 하나가 해당 위험에서 이전에 도달한 최고 등급을 언제 초과할 것으로 예상되는지 추정한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Frontier-risk behavior standard. Reflection defines a model-level model behavior spec against which safeguards and residual risk are evaluated. This standard is not a general content policy, but rather describes the minimum intended behavior in frontier-risk contexts.",
+   "ko": "프론티어 위험 행동 표준. Reflection은 안전장치와 잔여 위험을 평가하는 기준이 되는 모델 수준의 모델 행동 명세를 정의한다. 이 표준은 일반적인 콘텐츠 정책이 아니라, 프론티어 위험 맥락에서 의도되는 최소한의 행동을 기술한 것이다.",
+   "marks": [
+    {
+     "t": "프론티어 위험 맥락에서 의도되는 최소한의 행동을 기술한 것이다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In frontier-risk settings, a Reflection model is expected to:",
+   "ko": "프론티어 위험 상황에서 Reflection 모델에는 다음이 요구된다."
+  },
+  {
+   "type": "li",
+   "en": "Decline a request, channel it toward a safe alternative, or limit itself to defense-oriented assistance whenever the request would materially advance any specified-risk scenario family.",
+   "ko": "요청이 지정된 위험 시나리오군 중 어느 하나라도 실질적으로 진전시킬 경우, 요청을 거절하거나 안전한 대안으로 유도하거나 방어 지향적 지원으로 응답을 제한한다.",
+   "marks": [
+    {
+     "t": "요청을 거절하거나 안전한 대안으로 유도하거나 방어 지향적 지원으로 응답을 제한한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Withhold instructions, tactics, or tool-use patterns that would help circumvent safety controls, evaluation, monitoring, or human oversight.",
+   "ko": "안전 통제, 평가(evaluation), 모니터링 또는 인간 감독을 우회하는 데 도움이 될 지시, 전술, 도구 사용 패턴을 제공하지 않는다.",
+   "marks": [
+    {
+     "t": "안전 통제, 평가(evaluation), 모니터링 또는 인간 감독을 우회하는 데 도움이 될 지시, 전술, 도구 사용 패턴을 제공하지 않는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Not engage in deception, coercion, or the fostering of dependency, and not materially sway a user's beliefs or decisions in high-stakes situations.",
+   "ko": "기만(deception), 강압, 의존성 조장에 관여하지 않으며, 고위험 상황에서 사용자의 믿음이나 의사결정에 실질적인 영향을 미치지 않는다.",
+   "marks": [
+    {
+     "t": "기만(deception), 강압, 의존성 조장에 관여하지 않으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Stay amenable to operator control in agentic evaluations, respecting shutdown, tool restrictions, monitoring, and correction.",
+   "ko": "에이전트형 평가(evaluation)에서 운영자 통제를 수용하는 상태를 유지하며, 종료, 도구 제한, 모니터링, 교정을 존중한다.",
+   "marks": [
+    {
+     "t": "운영자 통제를 수용하는 상태를 유지하며, 종료, 도구 제한, 모니터링, 교정을 존중한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Model Reports (referred to as “transparency reports” under relevant U.S. law, such as TFAIA) describe how we evaluate these behaviors under the mitigated model, representative downstream configurations, and Reflection’s official deployment stack, where appropriate. For public open-weight releases, only behaviors that remain durable in the released model receive mitigation credit.",
+   "ko": "모델 보고서(TFAIA 등 관련 미국 법률에서는 \"투명성 보고서\"로 지칭됨)는 완화가 적용된 모델, 대표적인 다운스트림 구성, 그리고 적절한 경우 Reflection의 공식 배포 스택에서 이러한 행동을 어떻게 평가(evaluation)하는지 기술한다. 공개 오픈 웨이트 모델 공개의 경우, 공개된 모델에서 지속적으로 유지되는 행동에 대해서만 완화 인정(mitigation credit)이 부여된다.",
+   "marks": [
+    {
+     "t": "공개된 모델에서 지속적으로 유지되는 행동에 대해서만 완화 인정(mitigation credit)이 부여된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Mitigations: Reflection applies durable mitigations proportionate to the identified systemic risks and intended release modality. Their effectiveness is evaluated as part of the systemic-risk assessment, and mitigation credit is determined according to the release-mode principles below.",
+   "ko": "완화: Reflection은 식별된 시스템적 위험과 의도된 공개 방식에 비례하는 지속 가능한 완화를 적용한다. 그 효과성은 시스템적 위험 평가의 일부로 평가(evaluation)되며, 완화 인정은 아래의 공개 방식별 원칙에 따라 결정된다.",
+   "marks": [
+    {
+     "t": "식별된 시스템적 위험과 의도된 공개 방식에 비례하는 지속 가능한 완화를 적용한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Representative mitigations include training-data filtering, behavioral fine-tuning, capability ablation, machine unlearning, retraining, and staged pre-release access where appropriate. They also include the recommended deployment mitigations Reflection publishes for deployers to adopt: prompted classifiers, introspection probes, and supervised fine-tuned classifiers, with suggested interventions (system-instruction intervention, prompt block, model routing, monitoring, account enforcement, and/or hierarchical summarization). Documentation, safety kits, and acceptable-use guidance will support deployers.",
+   "ko": "대표적인 완화로는 학습 데이터 필터링, 행동 미세조정(Fine-Tuning), 역량 절제 실험, 머신 언러닝, 재학습, 그리고 적절한 경우 공개 전 단계적 접근이 있다. 여기에는 Reflection이 배포자가 채택하도록 게시하는 권고 배포 완화조치도 포함된다. 이는 프롬프트 기반 분류기, 내성 프로브(introspection probes), 지도 미세조정(Fine-Tuning)된 분류기이며, 권장 개입(시스템 지시 개입, 프롬프트 차단, 모델 라우팅, 모니터링, 계정 조치 및/또는 계층적 요약)이 함께 제시된다. 문서, 안전 키트, 허용 가능한 사용 지침이 배포자를 지원한다.",
+   "marks": [
+    {
+     "t": "학습 데이터 필터링, 행동 미세조정(Fine-Tuning), 역량 절제 실험, 머신 언러닝, 재학습",
+     "k": "safety"
+    },
+    {
+     "t": "프롬프트 기반 분류기, 내성 프로브(introspection probes), 지도 미세조정(Fine-Tuning)된 분류기",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Security: Reflection maintains appropriate security controls over internal infrastructure, training pipelines, and unreleased model variants until model parameters are publicly released or securely deleted. Equivalent controls may be substituted where they achieve the same security objective and are documented in the Model Report.",
+   "ko": "보안: Reflection은 모델 파라미터가 공개되거나 안전하게 삭제될 때까지 내부 인프라, 학습 파이프라인, 미공개 모델 변형에 대해 적절한 보안 통제를 유지한다. 동일한 보안 목표를 달성하고 모델 보고서에 문서화된 경우에는 동등한 통제로 대체할 수 있다.",
+   "marks": [
+    {
+     "t": "모델 파라미터가 공개되거나 안전하게 삭제될 때까지 내부 인프라, 학습 파이프라인, 미공개 모델 변형에 대해 적절한 보안 통제를 유지한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Governance",
+   "ko": "거버넌스",
+   "id": "s68"
+  },
+  {
+   "type": "p",
+   "en": "Framework and Accountability: Reflection maintains a governance framework that assigns clear and documented responsibility for managing the systemic risks arising from its AI models. The framework establishes accountability across four complementary functions: oversight, risk ownership, support and monitoring, and assurance. Together these functions ensure that systemic risks are identified, assessed, mitigated, and monitored throughout the model lifecycle, and that responsibility for each activity rests with an identified role or body.",
+   "ko": "프레임워크와 책임성: Reflection은 자사 AI 모델에서 발생하는 시스템적 위험을 관리하는 책임을 명확하고 문서화된 방식으로 부여하는 거버넌스 프레임워크를 유지한다. 이 프레임워크는 감독, 위험 소유, 지원 및 모니터링, 보증이라는 상호 보완적인 네 가지 기능에 걸쳐 책임성을 확립한다. 이 기능들은 함께 작동하여 시스템적 위험이 모델 수명주기 전반에 걸쳐 식별, 평가(assessment), 완화, 모니터링되도록 하고, 각 활동에 대한 책임이 특정된 역할 또는 기구에 귀속되도록 보장한다.",
+   "marks": [
+    {
+     "t": "자사 AI 모델에서 발생하는 시스템적 위험을 관리하는 책임을 명확하고 문서화된 방식으로 부여하는 거버넌스 프레임워크를 유지한다",
+     "k": "key"
+    },
+    {
+     "t": "시스템적 위험이 모델 수명주기 전반에 걸쳐 식별, 평가(assessment), 완화, 모니터링되도록",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Governance bodies. The structure is multilayered so that decisions are taken at the appropriate level. Operational decisions are made as close as possible to the relevant model, capability, or deployment by the leaders accountable for that work. The Governance Committee, chaired by the CEO, is Reflection’s executive decision-making body for Critical systemic-risk matters and provides strategic oversight of this Framework. The Governance Council is the cross-functional management body responsible for the Framework’s day-to-day operation, coordinating systemic risk assessments, mitigation activities, and routine governance decisions. Council Working Groups support the Governance Council by conducting technical assessments and reviewing specific models, risks, or releases. This structure provides a clear and auditable path for escalation while enabling leadership to set risk calibration, strategic direction, and executive oversight.",
+   "ko": "거버넌스 기구. 이 구조는 의사결정이 적절한 수준에서 이루어지도록 다층적으로 설계되어 있다. 운영상의 결정은 해당 모델, 역량 또는 배포와 가능한 한 가까운 곳에서 그 업무에 책임이 있는 리더가 내린다. CEO가 의장을 맡는 거버넌스 위원회(Governance Committee)는 치명적(Critical) 시스템적 위험 사안에 대한 Reflection의 경영진 의사결정 기구이며, 이 프레임워크에 대한 전략적 감독을 제공한다. 거버넌스 협의회(Governance Council)는 프레임워크의 일상적 운영을 담당하는 부서 간 관리 기구로서, 시스템적 위험 평가, 완화 활동, 일상적인 거버넌스 결정을 조율한다. 협의회 실무그룹(Council Working Groups)은 기술적 평가(assessment)를 수행하고 특정 모델, 위험 또는 공개를 검토함으로써 거버넌스 협의회를 지원한다. 이 구조는 명확하고 감사 가능한 상정 경로를 제공하는 동시에, 리더십이 위험 보정, 전략적 방향, 경영진 감독을 설정할 수 있도록 한다.",
+   "marks": [
+    {
+     "t": "치명적(Critical) 시스템적 위험 사안에 대한 Reflection의 경영진 의사결정 기구",
+     "k": "safety"
+    },
+    {
+     "t": "시스템적 위험 평가, 완화 활동, 일상적인 거버넌스 결정을 조율한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Where appropriate, the Governance Committee may provide information, assurance, and recommendations to the Board of Directors regarding the effectiveness of the AI governance framework, material systemic risks, significant incidents, significant changes to the OSF, and the adequacy of resources allocated to AI safety, security, and compliance activities.",
+   "ko": "적절한 경우, 거버넌스 위원회는 AI 거버넌스 프레임워크의 효과성, 중대한 시스템적 위험, 중대한 사고, OSF의 중요한 변경, 그리고 AI 안전, 보안, 규정 준수 활동에 배정된 자원의 충분성에 관하여 이사회에 정보, 보증 및 권고를 제공할 수 있다.",
+   "marks": [
+    {
+     "t": "중대한 시스템적 위험, 중대한 사고",
+     "k": "safety"
+    },
+    {
+     "t": "AI 안전, 보안, 규정 준수 활동에 배정된 자원의 충분성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Risk Tiering and Escalation: Within this framework, each horizontal function applies the tiering to its own area using the methods and evidence best suited to it, such as model evaluations, security testing, legal and regulatory analysis, and/or stakeholder and reputational assessment, while the tier definitions, the residual-risk basis, and the escalation rules remain shared across all functions.",
+   "ko": "위험 등급화와 상정: 이 프레임워크 안에서 각 수평 기능은 모델 평가(evaluation), 보안 테스트, 법률 및 규제 분석, 및/또는 이해관계자 및 평판 평가(assessment) 등 자신에게 가장 적합한 방법과 증거를 사용하여 자신의 영역에 등급화를 적용한다. 반면 등급 정의, 잔여 위험 기준, 상정 규칙은 모든 기능에 걸쳐 공통으로 유지된다."
+  },
+  {
+   "type": "li",
+   "en": "Assignment and escalation. Each responsible team assigns a tier. The Council Working Groups rate and decide matters assessed as Limited. Critical matters are escalated to the Committee for review and decision, with the Council preparing the matter and recommendation.",
+   "ko": "배정과 상정. 각 담당 팀이 등급을 배정한다. 협의회 실무그룹은 제한적(Limited)으로 평가(assessment)된 사안을 등급 판정하고 결정한다. 치명적(Critical) 사안은 검토와 결정을 위해 위원회로 상정되며, 협의회가 해당 사안과 권고안을 준비한다.",
+   "marks": [
+    {
+     "t": "치명적(Critical) 사안은 검토와 결정을 위해 위원회로 상정되며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Cross-functional differences. Where functions assess a matter at different tiers, the highest tier assigned governs until reassessment resolves it.",
+   "ko": "기능 간 차이. 기능별로 한 사안에 대해 서로 다른 등급으로 평가(assessment)하는 경우, 재평가(reassessment)로 해소될 때까지 배정된 등급 중 가장 높은 등급이 우선한다.",
+   "marks": [
+    {
+     "t": "배정된 등급 중 가장 높은 등급이 우선한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Uncertainty. Where evidence is incomplete, contested, or the matter sits on a boundary, it is assigned the higher tier until assessment resolves it downward.",
+   "ko": "불확실성. 증거가 불완전하거나 다툼이 있거나 사안이 경계에 놓인 경우, 평가(assessment)를 통해 하향 조정될 때까지 더 높은 등급을 배정한다.",
+   "marks": [
+    {
+     "t": "평가(assessment)를 통해 하향 조정될 때까지 더 높은 등급을 배정한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Risk Ownership: The Safety Lead holds overall responsibility for managing the systemic risks arising from Reflection’s AI models. This responsibility spans model development and deployment activities, the implementation of mitigation measures, and the management of responses to serious incidents related to model use and development. To ensure decisions are made by those closest to the work, the Safety Lead may assign operational responsibilities to the research, engineering, security and product leaders accountable for particular models, capabilities, or deployments, and may delegate working-level decisions to the Governance Council. Even in areas where operational responsibility has been assigned, the Safety Lead will maintain ownership and accountability for the management of systemic risk.",
+   "ko": "위험 소유: 안전 책임자(Safety Lead)는 Reflection의 AI 모델에서 발생하는 시스템적 위험을 관리하는 전반적인 책임을 진다. 이 책임은 모델 개발 및 배포 활동, 완화 조치의 이행, 모델 사용과 개발에 관련된 중대 사고에 대한 대응 관리에 걸쳐 있다. 업무에 가장 가까운 사람들이 결정을 내리도록 하기 위해, 안전 책임자는 특정 모델, 역량 또는 배포에 책임이 있는 연구, 엔지니어링, 보안, 제품 리더에게 운영상의 책임을 배정할 수 있으며, 실무 수준의 결정을 거버넌스 협의회에 위임할 수 있다. 운영상의 책임이 배정된 영역에서도 안전 책임자는 시스템적 위험 관리에 대한 소유권과 책임성을 유지한다.",
+   "marks": [
+    {
+     "t": "안전 책임자(Safety Lead)는 Reflection의 AI 모델에서 발생하는 시스템적 위험을 관리하는 전반적인 책임을 진다",
+     "k": "key"
+    },
+    {
+     "t": "모델 사용과 개발에 관련된 중대 사고에 대한 대응 관리",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Support and Monitoring: The AI Governance Lead supports and monitors the framework. The role operates independently from research and product delivery activities, which enables it to provide objective challenges. Its responsibilities include supporting the organization of governance processes, conducting systemic risk assessments, monitoring the implementation and adequacy of mitigation measures, and identifying gaps or weaknesses in the framework. The AI Governance Lead coordinates the Governance Council and reports to the Governance Committee, providing a direct line between working-level monitoring and executive oversight.",
+   "ko": "지원 및 모니터링: AI 거버넌스 책임자(AI Governance Lead)는 이 프레임워크를 지원하고 모니터링한다. 이 역할은 연구 및 제품 제공 활동과 독립적으로 운영되며, 이를 통해 객관적인 문제 제기를 할 수 있다. 그 책임에는 거버넌스 프로세스의 조직 지원, 시스템적 위험 평가 수행, 완화 조치의 이행 및 충분성 모니터링, 프레임워크의 공백이나 취약점 식별이 포함된다. AI 거버넌스 책임자는 거버넌스 협의회를 조율하고 거버넌스 위원회에 보고하며, 실무 수준의 모니터링과 경영진 감독 사이에 직접적인 연결선을 제공한다.",
+   "marks": [
+    {
+     "t": "이 역할은 연구 및 제품 제공 활동과 독립적으로 운영되며, 이를 통해 객관적인 문제 제기를 할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "완화 조치의 이행 및 충분성 모니터링, 프레임워크의 공백이나 취약점 식별",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Assurance: Where appropriate, Reflection will also seek independent external assurance from qualified experts, evaluators, auditors, legal advisors, and/or other third parties, each of whom is independent of the framework's day-to-day operation.",
+   "ko": "보증: 적절한 경우, Reflection은 자격을 갖춘 전문가, 평가자, 감사인, 법률 자문 및/또는 기타 제3자로부터 독립적인 외부 보증도 구하며, 이들은 모두 프레임워크의 일상적 운영과 독립적이다.",
+   "marks": [
+    {
+     "t": "독립적인 외부 보증도 구하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Lifecycle",
+   "ko": "수명주기",
+   "id": "s79"
+  },
+  {
+   "type": "p",
+   "en": "Safety is a lifecycle commitment, not a single checkpoint. Reflection assesses systemic risk before a model is released and stays engaged with it across the model’s life.",
+   "ko": "안전은 단일 점검 시점이 아니라 수명주기에 걸친 약정이다. Reflection은 모델이 공개되기 전에 시스템적 위험을 평가(assess)하며, 모델의 전 수명에 걸쳐 지속적으로 관여한다.",
+   "marks": [
+    {
+     "t": "안전은 단일 점검 시점이 아니라 수명주기에 걸친 약정이다.",
+     "k": "key"
+    },
+    {
+     "t": "모델이 공개되기 전에 시스템적 위험을 평가(assess)하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Material capability assessment. Where several candidate release checkpoints are likely to share a materially equivalent risk profile, Reflection may use a material capability assessment, comparing a candidate against the most recent fully assessed reference checkpoint on model capabilities, to avoid running a full systemic-risk assessment on each. Where the candidate shows no meaningful capability uplift, sits clear of a Critical threshold, and introduces no new risk-relevant affordance (such as a new modality or tool access), it may be covered by the reference checkpoint's safety case; otherwise a full assessment is conducted.",
+   "ko": "실질적 역량 평가. 공개 후보 체크포인트 여러 개가 실질적으로 동등한 위험 프로파일을 공유할 가능성이 높은 경우, Reflection은 각각에 대해 전체 시스템적 위험 평가를 수행하는 것을 피하기 위해 실질적 역량 평가(assessment)를 활용할 수 있다. 이는 후보 체크포인트를 평가(assessment)가 완전히 이루어진 가장 최근의 기준 체크포인트와 모델 역량 면에서 비교하는 방식이다. 후보 체크포인트가 유의미한 역량 업리프트를 보이지 않고, 치명적(Critical) 임계값에서 충분히 떨어져 있으며, 위험과 관련된 새로운 어포던스(행동 가능성)(예: 새로운 모달리티 또는 도구 접근)를 도입하지 않는 경우에는 기준 체크포인트의 안전 사례가 이를 포괄할 수 있다. 그렇지 않으면 전체 평가(assessment)를 수행한다.",
+   "marks": [
+    {
+     "t": "치명적(Critical) 임계값에서 충분히 떨어져 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "위험과 관련된 새로운 어포던스(행동 가능성)(예: 새로운 모달리티 또는 도구 접근)를 도입하지 않는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Post-release reassessment. Reflection conducts post-release monitoring appropriate to its AI model deployments, designed to assess whether systemic risk exceeds acceptable levels or updates are needed to Model Reports. For public open-weight models, reassessment concerns the original systemic-risk assessment and affirmative safety case rather than downstream deployments or derivative models of similar capability.",
+   "ko": "공개 후 재평가. Reflection은 자사의 AI 모델 배포에 적절한 공개 후 모니터링을 수행하며, 이는 시스템적 위험이 허용 가능한 수준을 초과하는지 또는 모델 보고서의 갱신이 필요한지를 평가(assess)하도록 설계된다. 공개 오픈 웨이트 모델의 경우, 재평가(reassessment)는 다운스트림 배포나 유사한 역량의 파생 모델이 아니라 최초의 시스템적 위험 평가와 입증형 안전 사례(affirmative safety case)를 대상으로 한다.",
+   "marks": [
+    {
+     "t": "시스템적 위험이 허용 가능한 수준을 초과하는지 또는 모델 보고서의 갱신이 필요한지를 평가(assess)하도록 설계된다",
+     "k": "safety"
+    },
+    {
+     "t": "재평가(reassessment)는 다운스트림 배포나 유사한 역량의 파생 모델이 아니라 최초의 시스템적 위험 평가와 입증형 안전 사례(affirmative safety case)를 대상으로 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "US voluntary government-testing buffer. The lifecycle calendar reserves up to 30 days before release to other trusted partners for (voluntary) U.S. government access if a model may be designated a “covered frontier model” under the June 2, 2026 Executive Order, “Promoting Advanced Artificial Intelligence Innovation and Security” (i.e., where the classified cyber-capability benchmarking process led by Treasury, NSA and CISA, with the NSA Director designating, would apply). This is a planning buffer and a collaboration path – not a mandatory licensing, preclearance, or permitting requirement.",
+   "ko": "미국 정부 자발적 테스트 완충 기간. 수명주기 일정은 모델이 2026년 6월 2일자 행정명령 “Promoting Advanced Artificial Intelligence Innovation and Security”에 따라 “대상 프론티어 모델(covered frontier model)”로 지정될 수 있는 경우(즉, Treasury, NSA, CISA가 주도하고 NSA 국장이 지정하는 기밀 사이버 역량 벤치마크 프로세스가 적용될 경우), 다른 신뢰할 수 있는 파트너에 대한 공개 전에 (자발적인) 미국 정부 접근을 위해 최대 30일을 확보한다. 이는 계획상의 완충 기간이자 협력 경로이며, 의무적인 면허, 사전 승인 또는 허가 요건이 아니다.",
+   "marks": [
+    {
+     "t": "기밀 사이버 역량 벤치마크 프로세스가 적용될 경우",
+     "k": "safety"
+    },
+    {
+     "t": "(자발적인) 미국 정부 접근을 위해 최대 30일을 확보한다",
+     "k": "safety"
+    },
+    {
+     "t": "의무적인 면허, 사전 승인 또는 허가 요건이 아니다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Critical safety incident identification and response. Reflection maintains a process for identifying and responding to “critical safety incidents” under relevant U.S. law, such as TFAIA, or “serious AI incidents” under the EU AI Act (collectively “critical safety incidents”). Potential critical safety incidents are immediately escalated to the AI Governance Committee. The Committee determines the appropriate technical, governance, and regulatory response, including remediation, intervention, and external reporting where required by law. All critical safety incidents and significant near misses are documented and incorporated into subsequent systemic-risk assessments, Model Reports, and Framework updates where appropriate.",
+   "ko": "치명적 안전 사고 식별 및 대응. Reflection은 TFAIA 등 관련 미국 법률에 따른 “치명적 안전 사고(critical safety incident)” 또는 EU AI 법에 따른 “중대 AI 사고(serious AI incident)”(통칭 “치명적 안전 사고(critical safety incident)”)를 식별하고 이에 대응하는 프로세스를 유지한다. 잠재적 치명적 안전 사고는 즉시 AI 거버넌스 위원회에 상정된다. 위원회는 시정, 개입, 법률상 요구되는 경우의 외부 보고를 포함하여 적절한 기술적·거버넌스적·규제적 대응을 결정한다. 모든 치명적 안전 사고와 중대한 아차사고는 문서화되며, 적절한 경우 이후의 시스템적 위험 평가, 모델 보고서, 프레임워크 갱신에 반영된다.",
+   "marks": [
+    {
+     "t": "잠재적 치명적 안전 사고는 즉시 AI 거버넌스 위원회에 상정된다.",
+     "k": "key"
+    },
+    {
+     "t": "시정, 개입, 법률상 요구되는 경우의 외부 보고를 포함하여 적절한 기술적·거버넌스적·규제적 대응을 결정한다",
+     "k": "safety"
+    },
+    {
+     "t": "모든 치명적 안전 사고와 중대한 아차사고는 문서화되며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Reflection also investigates the following categories of reportable safety incident under the same escalation process:",
+   "ko": "Reflection은 동일한 상정 프로세스에 따라 다음 범주의 보고 대상 안전 사고도 조사한다."
+  },
+  {
+   "type": "li",
+   "en": "Autonomous model behavior outside intended user direction;",
+   "ko": "의도된 사용자 지시를 벗어난 모델의 자율적 행동;",
+   "marks": [
+    {
+     "t": "의도된 사용자 지시를 벗어난 모델의 자율적 행동",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Inadvertent release, theft, misappropriation, or unauthorized access to model weights;",
+   "ko": "모델 가중치의 의도치 않은 공개, 절취, 전용 또는 무단 접근;",
+   "marks": [
+    {
+     "t": "모델 가중치의 의도치 않은 공개, 절취, 전용 또는 무단 접근",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Critical failure of technical or administrative controls protecting frontier models.",
+   "ko": "프론티어 모델을 보호하는 기술적 또는 관리적 통제의 치명적 실패.",
+   "marks": [
+    {
+     "t": "프론티어 모델을 보호하는 기술적 또는 관리적 통제의 치명적 실패",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Where required, Reflection provides an independent third-party audit pathway consistent with applicable legal requirements.",
+   "ko": "필요한 경우, Reflection은 적용 가능한 법적 요건에 부합하는 독립적인 제3자 감사 경로를 제공한다.",
+   "marks": [
+    {
+     "t": "독립적인 제3자 감사 경로를 제공한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Reflection reports reportable incidents in accordance with the applicable legal deadline. Documentation relating to covered models and reportable incidents is retained for the periods required under the applicable legal regime.",
+   "ko": "Reflection은 보고 대상 사고를 적용되는 법정 기한에 따라 보고한다. 대상 모델 및 보고 대상 사고와 관련된 문서는 적용되는 법제에서 요구하는 기간 동안 보관된다.",
+   "marks": [
+    {
+     "t": "보고 대상 사고를 적용되는 법정 기한에 따라 보고한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "A Model Technical Report is prepared before each covered model is placed on the market and updated whenever required by this Framework or applicable law. It documents the model’s capabilities, intended uses, limitations, systemic-risk assessment, evaluation evidence, mitigations, affirmative safety case, and release decision. The documentation will be retained for the periods required under the applicable legal regime.",
+   "ko": "모델 기술 보고서(Model Technical Report)는 각 대상 모델(covered model)이 시장에 출시되기 전에 작성되며, 이 프레임워크 또는 적용 법률이 요구할 때마다 갱신된다. 이 보고서는 모델의 역량, 의도된 용도, 한계, 시스템적 위험 평가, 평가(evaluation) 증거, 완화 조치, 입증형 안전 사례, 공개 결정을 문서화한다. 이 문서는 적용되는 법제에서 요구하는 기간 동안 보관된다.",
+   "marks": [
+    {
+     "t": "시스템적 위험 평가, 평가(evaluation) 증거, 완화 조치, 입증형 안전 사례, 공개 결정을 문서화한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Substantial modification criteria. A frontier model undergoes a substantial modification where changes materially affect the capabilities, propensities, affordances, deployment context, threat landscape, the effectiveness of mitigations on which the systemic-risk assessment depends, or any other aspect of the systemic-risk profile documented in the most recent Model Report. A reassessment that changes the highest systemic-risk tier reached by any Reflection model always constitutes a substantial modification. Changes that do not materially affect the systemic-risk assessment do not require a new public disclosure.",
+   "ko": "상당한 변경 기준. 프론티어 모델에 대한 변경이 역량, 성향, 어포던스(행동 가능성), 배포 맥락, 위협 환경, 시스템적 위험 평가가 의존하는 완화 조치의 효과성, 또는 가장 최근의 모델 보고서에 문서화된 시스템적 위험 프로파일의 그 밖의 어떤 측면에 실질적으로 영향을 미치는 경우, 해당 프론티어 모델은 상당한 변경(substantial modification)을 거친 것이다. Reflection의 어느 모델이든 도달한 가장 높은 시스템적 위험 등급을 바꾸는 재평가는 항상 상당한 변경에 해당한다. 시스템적 위험 평가에 실질적으로 영향을 미치지 않는 변경은 새로운 공개 공시를 요구하지 않는다.",
+   "marks": [
+    {
+     "t": "Reflection의 어느 모델이든 도달한 가장 높은 시스템적 위험 등급을 바꾸는 재평가는 항상 상당한 변경에 해당한다.",
+     "k": "safety"
+    },
+    {
+     "t": "시스템적 위험 평가에 실질적으로 영향을 미치지 않는 변경은 새로운 공개 공시를 요구하지 않는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Framework review and update. Once a covered model has been placed on the market, Reflection reviews this Framework at least annually, or sooner where credible indications suggest that it is no longer fit for purpose or is not being applied as intended. Material modifications approved by the AI Governance Committee are published within 30 days of approval, together with a justification describing the nature of and reasons for the change, a version number, the date of the modification, and a changelog summarizing the updates. Reflection will provide authorities with an updated version of the Framework where required by local law.",
+   "ko": "프레임워크 검토 및 갱신. 대상 모델이 시장에 출시된 이후, Reflection은 이 프레임워크를 최소 연 1회 검토하며, 프레임워크가 더 이상 목적에 부합하지 않거나 의도대로 적용되지 않고 있음을 시사하는 신뢰할 만한 징후가 있는 경우에는 더 일찍 검토한다. AI 거버넌스 위원회가 승인한 실질적 수정은 승인일로부터 30일 이내에, 변경의 성격과 사유를 설명하는 근거, 버전 번호, 수정일, 갱신 사항을 요약한 변경 이력과 함께 공개된다. Reflection은 현지 법률이 요구하는 경우 당국에 프레임워크의 갱신본을 제공한다.",
+   "marks": [
+    {
+     "t": "프레임워크가 더 이상 목적에 부합하지 않거나 의도대로 적용되지 않고 있음을 시사하는 신뢰할 만한 징후가 있는 경우에는 더 일찍 검토한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Conclusion",
+   "ko": "결론",
+   "id": "s94"
+  },
+  {
+   "type": "p",
+   "en": "This Framework establishes Reflection’s approach to frontier and open model safety. It defines the systemic risks in scope, sets measurable capability thresholds, assigns release consequences to each tier, and requires an affirmative safety case before a model may be placed on the market.",
+   "ko": "이 프레임워크는 프론티어 및 오픈 모델 안전에 대한 Reflection의 접근 방식을 정립한다. 이 프레임워크는 적용 범위 내의 시스템적 위험을 정의하고, 측정 가능한 역량 임계값을 설정하며, 각 등급에 공개 관련 결과를 부여하고, 모델을 시장에 출시하기 전에 입증형 안전 사례를 요구한다.",
+   "marks": [
+    {
+     "t": "적용 범위 내의 시스템적 위험을 정의하고",
+     "k": "safety"
+    },
+    {
+     "t": "측정 가능한 역량 임계값을 설정하며, 각 등급에 공개 관련 결과를 부여하고, 모델을 시장에 출시하기 전에 입증형 안전 사례를 요구한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The Framework is intended to be operational, not merely descriptive. It is implemented through model evaluations, recommended mitigations, red-team studies, threat modeling, external review, governance escalation, Model Reports, incident response, and post-release reassessment. Where evidence is incomplete, contested, or close to a threshold, the higher-risk classification applies until reassessment demonstrates otherwise.",
+   "ko": "이 프레임워크는 단순히 서술에 그치지 않고 운영 가능하도록 의도되었다. 이는 모델 평가(evaluation), 권고 완화 조치, 레드팀 연구, 위협 모델링, 외부 검토, 거버넌스 상정, 모델 보고서, 사고 대응, 공개 후 재평가를 통해 이행된다. 증거가 불완전하거나 다툼이 있거나 임계값에 가까운 경우, 재평가에서 달리 입증될 때까지 더 높은 위험 분류가 적용된다.",
+   "marks": [
+    {
+     "t": "모델 평가(evaluation), 권고 완화 조치, 레드팀 연구, 위협 모델링, 외부 검토",
+     "k": "safety"
+    },
+    {
+     "t": "증거가 불완전하거나 다툼이 있거나 임계값에 가까운 경우, 재평가에서 달리 입증될 때까지 더 높은 위험 분류가 적용된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Reflection will continue to update this Framework as model capabilities, evaluation methods, threat landscapes, legal requirements, and industry practice evolve. The objective is to enable the responsible release of increasingly capable frontier and open models by grounding release decisions in rigorous evaluation, durable mitigations, and transparent governance.",
+   "ko": "Reflection은 모델 역량, 평가(evaluation) 방법, 위협 환경, 법적 요건, 업계 실행 방안이 발전함에 따라 이 프레임워크를 계속 갱신할 것이다. 그 목표는 엄격한 평가(evaluation), 지속 가능한 완화 조치, 투명한 거버넌스에 공개 결정의 근거를 둠으로써 역량이 점점 높아지는 프론티어 및 오픈 모델의 책임 있는 공개를 가능하게 하는 것이다.",
+   "marks": [
+    {
+     "t": "역량이 점점 높아지는 프론티어 및 오픈 모델의 책임 있는 공개를 가능하게 하는 것",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}
