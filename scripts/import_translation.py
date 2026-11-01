@@ -268,9 +268,13 @@ def main(src: str, translated: str, meta_path: str) -> None:
     # doc-translator --keep-refused: 모델이 번역을 거절한 구간은 원문이 그대로 남는다. 페이지가 안내를 달도록 표시한다.
     # 법령의 조 표시('SECTION 1', 'SEC. 2')처럼 옮길 말이 없어 원문과 같은 제목은 거절이 아니다.
     label = re.compile(r"^(?:SECTION|SEC\.|Section|ARTICLE|Article|§)\s*\d", re.IGNORECASE)
+    # 법전 조문 번호만 있는 문단('(5 ILCS 140/7.5)', '(740 ILCS 174/15)')도 옮길 말이 없다.
+    citation = re.compile(r"^\(\s*\d+\s+[A-Z]{3,6}\s+[\d./-]+\s*\)$")
     for block in blocks:
         if block["ko"].strip() == block["en"].strip() and re.search(r"[A-Za-z]{3,}", block["en"]):
             if block["type"] in ("h2", "h3") and label.match(block["en"].strip()):
+                continue
+            if citation.match(block["en"].strip()):
                 continue
             block["untranslated"] = True
     for n, block in enumerate(blocks):

@@ -1,0 +1,1392 @@
+{
+ "slug": "il-sb315",
+ "title": "일리노이주 인공지능 안전 조치법 (SB 315)",
+ "original_title": "Artificial Intelligence Safety Measures Act (Illinois SB 315)",
+ "publisher": "일리노이주",
+ "published": "2026-07-06",
+ "source_url": "https://www.ilga.gov/Legislation/BillStatus?GAID=18&DocNum=315&DocTypeID=SB&LegId=0&SessionID=114",
+ "source_note": "2026년 7월 6일 주지사 서명본(enrolled) 전문. 제80조(정보공개법)와 제90조(내부고발자법)는 고치려는 법의 조문 전문을 그대로 옮겨 적는 일리노이주 개정 방식을 따르므로, 바뀌지 않은 면제 목록은 싣지 않고 조 머리말과 새로 더한 항만 옮겼다. 2027년 1월 1일 시행, 프레임워크 수립·공개 의무와 제3자 감사는 2028년 1월 1일부터",
+ "source_label": "원문 보기 (일리노이주 의회)",
+ "summary": "캘리포니아 SB 53, 뉴욕 RAISE 법에 이어 미국에서 세 번째로 제정된 프론티어 AI 안전법이다. 앞의 두 법과 달리 대규모 프론티어 개발자에게 연례 제3자 독립 감사를 의무화한 것이 특징이다. 50명 초과 사망·중상 또는 10억 달러 초과 재산 피해를 '파국적 위험'으로 정의하고, 프론티어 AI 프레임워크 수립·공개, 중대 안전사고의 72시간 이내 보고(사망·상해가 임박하면 24시간), 내부고발자 보호, 위반 1건당 최대 300만 달러 민사 제재를 정했다. 법은 2027년 1월 1일 시행되고, 프레임워크 의무와 감사는 2028년 1월 1일부터 적용된다.",
+ "image": "/images/translations/il-sb315-cover.webp",
+ "og_image": "/images/translations/il-sb315-cover.jpg",
+ "image_caption": "원문 첫 쪽 (일리노이주 의회, SB0315 Enrolled)",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "doc_kind": "법률",
+ "stats": {
+  "blocks": 184,
+  "sections": 15,
+  "items": 0,
+  "words_en": 5042
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "AN ACT concerning business.",
+   "ko": "기업에 관한 법률."
+  },
+  {
+   "type": "p",
+   "en": "Be it enacted by the People of the State of Illinois, represented in the General Assembly:",
+   "ko": "일리노이주 의회에 의해 대표되는 일리노이주 주민은 다음과 같이 제정한다:"
+  },
+  {
+   "type": "h2",
+   "en": "Section 1. Short title",
+   "ko": "제1조. 약칭",
+   "id": "s2"
+  },
+  {
+   "type": "p",
+   "en": "This Act may be cited as the Artificial Intelligence Safety Measures Act.",
+   "ko": "이 법은 인공지능 안전 조치법(Artificial Intelligence Safety Measures Act)으로 인용할 수 있다."
+  },
+  {
+   "type": "h2",
+   "en": "Section 5. Definitions",
+   "ko": "제5조. 정의",
+   "id": "s4"
+  },
+  {
+   "type": "p",
+   "en": "As used in this Act:",
+   "ko": "이 법에서 사용하는 용어의 뜻은 다음과 같다:"
+  },
+  {
+   "type": "p",
+   "en": "\"Affiliate\" means a person controlling, controlled by, or under common control with a specified person, directly or indirectly, through one or more intermediaries.",
+   "ko": "\"계열사(affiliate)\"란 하나 이상의 중개자를 통하여 직접 또는 간접적으로 특정인을 지배하거나, 특정인에게 지배되거나, 특정인과 공동 지배하에 있는 자를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "\"Agency\" means the Illinois Emergency Management Agency and Office of Homeland Security.",
+   "ko": "\"기관(Agency)\"이란 일리노이주 비상관리청 및 국토안보실(Illinois Emergency Management Agency and Office of Homeland Security)을 말한다."
+  },
+  {
+   "type": "p",
+   "en": "\"Artificial intelligence\" or \"AI\" has the meaning ascribed to the term \"artificial intelligence\" in Section 5 of the Digital Voice and Likeness Protection Act. \"Artificial intelligence\" or \"AI\" includes generative artificial intelligence.",
+   "ko": "\"인공지능\" 또는 \"AI\"는 Digital Voice and Likeness Protection Act 제5조에서 \"인공지능\"이라는 용어에 부여된 의미를 가진다. \"인공지능\" 또는 \"AI\"에는 생성형 인공지능이 포함된다.",
+   "refs": [
+    {
+     "t": "제5조",
+     "to": "s4"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "\"Catastrophic risk\" means a foreseeable and material risk that a frontier developer's development, storage, use, or deployment of a frontier model will materially contribute to the death of, or serious injury to, more than 50 people or more than $1,000,000,000 in damage to, or loss of, property arising from a single incident involving a frontier model doing any of the following:",
+   "ko": "\"파국적 위험\"이란 프론티어 개발자(frontier developer)의 프론티어 모델 개발, 저장, 사용 또는 배포가, 프론티어 모델이 다음 각 호 중 어느 하나를 행하는 것과 관련된 단일 사고로 인하여 50명을 초과하는 사람의 사망 또는 중상, 또는 $1,000,000,000를 초과하는 재산의 손해 또는 손실에 실질적으로 기여할 예견 가능하고 중대한 위험을 말한다:",
+   "marks": [
+    {
+     "t": "50명을 초과하는 사람의 사망 또는 중상, 또는 $1,000,000,000를 초과하는 재산의 손해 또는 손실에 실질적으로 기여할 예견 가능하고 중대한 위험",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) providing expert-level assistance in the creation or release of a chemical, biological, radiological, or nuclear weapon;",
+   "ko": "(1) 화학, 생물학, 방사능 또는 핵무기의 제조 또는 유포에 전문가 수준의 지원을 제공하는 것;",
+   "marks": [
+    {
+     "t": "화학, 생물학, 방사능 또는 핵무기의 제조 또는 유포에 전문가 수준의 지원을 제공하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) engaging in conduct with no meaningful human oversight, intervention, or supervision that is either a cyberattack or, if the conduct had been committed by a human, would constitute the crime of murder, assault, extortion, or theft, including theft by false pretense; or",
+   "ko": "(2) 의미 있는 인간 감독, 개입 또는 관리 없이, 사이버 공격에 해당하거나 인간이 행하였다면 살인, 폭행, 갈취 또는 절도(기망에 의한 절도를 포함한다)의 범죄를 구성하였을 행위를 하는 것; 또는",
+   "marks": [
+    {
+     "t": "의미 있는 인간 감독, 개입 또는 관리 없이, 사이버 공격에 해당하거나",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) evading the control of its frontier developer or user.",
+   "ko": "(3) 해당 프론티어 개발자 또는 사용자의 통제를 회피하는 것.",
+   "marks": [
+    {
+     "t": "해당 프론티어 개발자 또는 사용자의 통제를 회피하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "\"Catastrophic risk\" does not include a foreseeable and material risk from any of the following:",
+   "ko": "\"파국적 위험\"에는 다음 각 호 중 어느 하나로부터 발생하는 예견 가능하고 중대한 위험은 포함되지 않는다:"
+  },
+  {
+   "type": "p",
+   "en": "(1) information that a frontier model outputs if the information is otherwise publicly accessible in a substantially similar form from a source other than a foundation model;",
+   "ko": "(1) 프론티어 모델이 출력하는 정보로서, 해당 정보가 파운데이션 모델 이외의 출처로부터 실질적으로 유사한 형태로 달리 공개적으로 접근 가능한 경우;"
+  },
+  {
+   "type": "p",
+   "en": "(2) lawful activity of the federal government; or",
+   "ko": "(2) 연방정부의 적법한 활동; 또는"
+  },
+  {
+   "type": "p",
+   "en": "(3) harm caused by a frontier model in combination with other software if the frontier model did not materially contribute to the harm.",
+   "ko": "(3) 프론티어 모델이 다른 소프트웨어와 결합하여 야기한 피해로서, 해당 프론티어 모델이 그 피해에 실질적으로 기여하지 아니한 경우."
+  },
+  {
+   "type": "p",
+   "en": "\"Covered employee\" means an employee responsible for assessing, managing, or addressing the risk of critical safety incidents.",
+   "ko": "\"대상 직원(covered employee)\"이란 치명적 안전 사고(critical safety incident)의 위험을 평가, 관리 또는 대응하는 책임을 지는 직원을 말한다.",
+   "marks": [
+    {
+     "t": "치명적 안전 사고(critical safety incident)의 위험을 평가, 관리 또는 대응하는 책임을 지는 직원",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "\"Critical safety incident\" means any of the following:",
+   "ko": "\"치명적 안전 사고\"란 다음 각 호 중 어느 하나를 말한다:"
+  },
+  {
+   "type": "p",
+   "en": "(1) unauthorized access to, modification of, or exfiltration of, the model weights of a frontier model that results in death or bodily injury;",
+   "ko": "(1) 프론티어 모델의 모델 가중치에 대한 무단 접근, 무단 수정 또는 무단 유출로서 사망 또는 신체 상해를 초래하는 것;",
+   "marks": [
+    {
+     "t": "프론티어 모델의 모델 가중치에 대한 무단 접근, 무단 수정 또는 무단 유출",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) harm resulting from the materialization of a catastrophic risk;",
+   "ko": "(2) 파국적 위험의 현실화로 인하여 발생하는 피해;",
+   "marks": [
+    {
+     "t": "파국적 위험의 현실화로 인하여 발생하는 피해",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) loss of control of a frontier model causing death or bodily injury; or",
+   "ko": "(3) 사망 또는 신체 상해를 야기하는 프론티어 모델의 통제 상실; 또는",
+   "marks": [
+    {
+     "t": "사망 또는 신체 상해를 야기하는 프론티어 모델의 통제 상실",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(4) a frontier model that uses deceptive techniques against the frontier developer to subvert the controls or monitoring of its frontier developer outside of the context of an evaluation designed to elicit this behavior and in a manner that demonstrates materially increased catastrophic risk.",
+   "ko": "(4) 프론티어 모델이 해당 행동을 유도하도록 설계된 평가(evaluation)의 맥락 밖에서, 파국적 위험이 실질적으로 증가하였음을 보여주는 방식으로, 프론티어 개발자의 통제 또는 모니터링을 무력화하기 위하여 프론티어 개발자를 상대로 기만적 기법을 사용하는 것.",
+   "marks": [
+    {
+     "t": "프론티어 개발자의 통제 또는 모니터링을 무력화하기 위하여 프론티어 개발자를 상대로 기만적 기법을 사용하는 것",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "\"Deploy\" means to make a frontier model available to a third party for use, modification, copying, or combination with other software. \"Deploy\" does not include making a frontier model available to a third party for the primary purpose of researching, developing, or evaluating the frontier model.",
+   "ko": "\"배포한다\"란 프론티어 모델을 제3자가 사용, 수정, 복제하거나 다른 소프트웨어와 결합할 수 있도록 제공하는 것을 말한다. \"배포한다\"에는 프론티어 모델의 연구, 개발 또는 평가를 주된 목적으로 프론티어 모델을 제3자에게 제공하는 것은 포함되지 않는다."
+  },
+  {
+   "type": "p",
+   "en": "\"Foundation model\" means an artificial intelligence model that is all of the following:",
+   "ko": "\"파운데이션 모델\"이란 다음 각 호의 요건을 모두 갖춘 인공지능 모델을 말한다:"
+  },
+  {
+   "type": "p",
+   "en": "(1) trained on a broad data set;",
+   "ko": "(1) 광범위한 데이터 세트로 훈련되었을 것;"
+  },
+  {
+   "type": "p",
+   "en": "(2) designed for generality of output; and",
+   "ko": "(2) 출력의 범용성을 위하여 설계되었을 것; 및"
+  },
+  {
+   "type": "p",
+   "en": "(3) adaptable to a wide range of distinctive tasks.",
+   "ko": "(3) 광범위하고 다양한 개별 과업에 적용 가능할 것."
+  },
+  {
+   "type": "p",
+   "en": "\"Frontier AI framework\" means documented technical and organizational protocols to manage, assess, and mitigate catastrophic risks.",
+   "ko": "\"프론티어 AI 프레임워크(frontier AI framework)\"란 파국적 위험을 관리, 평가 및 완화하기 위한 문서화된 기술적·조직적 프로토콜을 말한다.",
+   "marks": [
+    {
+     "t": "파국적 위험을 관리, 평가 및 완화하기 위한 문서화된 기술적·조직적 프로토콜",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "\"Frontier developer\" means a person who trains, or initiates the training of, a frontier model using computing power that meets the technical specifications set forth in the definition of \"frontier model\".",
+   "ko": "\"프론티어 개발자\"란 \"프론티어 모델\"의 정의에 규정된 기술적 명세를 충족하는 컴퓨팅 파워를 사용하여 프론티어 모델을 훈련시키거나 그 훈련을 개시하는 자를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "\"Frontier model\" means a foundation model that was trained using a quantity of computing power greater than 1026 integer or floating-point operations. The quantity of computing power described in this definition shall include computing for the original training run and for any subsequent fine-tuning, reinforcement learning, or other material modifications the developer applies to a preceding foundation model.",
+   "ko": "\"프론티어 모델\"이란 1026회를 초과하는 정수 또는 부동소수점 연산량의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델을 말한다. 이 정의에서 규정하는 컴퓨팅 파워의 양에는 최초 훈련 실행을 위한 연산과, 개발자가 선행 파운데이션 모델에 적용하는 후속 미세조정(Fine-Tuning), 강화학습 또는 그 밖의 중대한 수정을 위한 연산이 포함된다.",
+   "marks": [
+    {
+     "t": "1026회를 초과하는 정수 또는 부동소수점 연산량의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "\"Large frontier developer\" means a frontier developer that, together with its affiliates, collectively had annual gross revenues in excess of $500,000,000 in the preceding calendar year.",
+   "ko": "\"대형 프론티어 개발자(large frontier developer)\"란 그 계열사와 합산하여 직전 역년의 연간 총수입이 $500,000,000를 초과한 프론티어 개발자를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "\"Model weight\" means a numerical parameter in a frontier model that is adjusted through training and that helps determine how inputs are transformed into outputs.",
+   "ko": "\"모델 가중치\"란 프론티어 모델 내의 수치 파라미터로서, 훈련을 통하여 조정되며 입력이 출력으로 변환되는 방식을 결정하는 데 기여하는 것을 말한다."
+  },
+  {
+   "type": "p",
+   "en": "\"Person\" means an individual, proprietorship, firm, partnership, joint venture, syndicate, business, trust, company, corporation, limited liability company, association, committee, or any other nongovernmental organization or group of persons acting in concert.",
+   "ko": "\"자(person)\"란 개인, 개인사업체, 상사, 파트너십, 합작투자, 신디케이트, 사업체, 신탁, 회사, 법인, 유한책임회사, 협회, 위원회 또는 그 밖의 비정부 조직이나 공동으로 행동하는 사람들의 집단을 말한다."
+  },
+  {
+   "type": "p",
+   "en": "\"Property\" means tangible or intangible property.",
+   "ko": "\"재산\"이란 유형 또는 무형의 재산을 말한다."
+  },
+  {
+   "type": "h2",
+   "en": "Section 10. Frontier AI framework",
+   "ko": "제10조. 프론티어 AI 프레임워크",
+   "id": "s35"
+  },
+  {
+   "type": "p",
+   "en": "(a) Beginning January 1, 2028, a large frontier developer shall write, implement, comply with, and clearly and conspicuously publish on its website a frontier AI framework that applies to the large frontier developer's frontier models and describes how the large frontier developer approaches all of the following:",
+   "ko": "(a) 2028년 1월 1일부터, 대형 프론티어 개발자는 자신의 프론티어 모델에 적용되며 다음 각 호의 모든 사항에 대하여 대형 프론티어 개발자가 어떻게 접근하는지를 기술하는 프론티어 AI 프레임워크를 작성, 시행 및 준수하고, 이를 자신의 웹사이트에 명확하고 눈에 잘 띄게 게시하여야 한다:",
+   "marks": [
+    {
+     "t": "대형 프론티어 개발자는 자신의 프론티어 모델에 적용되며 다음 각 호의 모든 사항에 대하여 대형 프론티어 개발자가 어떻게 접근하는지를 기술하는 프론티어 AI 프레임워크를 작성, 시행 및 준수하고",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) incorporating national standards, international standards, and industry-consensus best practices into its frontier AI framework;",
+   "ko": "(1) 국가 표준, 국제 표준 및 업계 합의에 따른 모범 사례를 프론티어 AI 프레임워크에 반영하는 것;"
+  },
+  {
+   "type": "p",
+   "en": "(2) defining and assessing thresholds used by the large frontier developer to identify and assess whether a frontier model has capabilities that could pose a catastrophic risk, which may include multiple-tiered thresholds;",
+   "ko": "(2) 프론티어 모델이 파국적 위험을 초래할 수 있는 역량을 보유하는지를 식별하고 평가(assessment)하기 위하여 대형 프론티어 개발자가 사용하는 임계값을 정의하고 평가하는 것(다단계 임계값을 포함할 수 있다);",
+   "marks": [
+    {
+     "t": "프론티어 모델이 파국적 위험을 초래할 수 있는 역량을 보유하는지를 식별하고 평가(assessment)하기 위하여",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) applying mitigations to address the potential for catastrophic risks based on the results of assessments undertaken pursuant to paragraph (2);",
+   "ko": "(3) 제(2)호에 따라 수행된 평가의 결과에 근거하여 파국적 위험의 가능성에 대응하기 위한 완화 조치를 적용하는 것;",
+   "marks": [
+    {
+     "t": "파국적 위험의 가능성에 대응하기 위한 완화 조치를 적용하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(4) reviewing assessments and adequacy of mitigations as part of the decision to deploy a frontier model or use it extensively internally;",
+   "ko": "(4) 프론티어 모델을 배포하거나 내부적으로 광범위하게 사용하는 결정의 일환으로 평가 및 완화 조치의 적정성을 검토하는 것;",
+   "marks": [
+    {
+     "t": "평가 및 완화 조치의 적정성을 검토하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(5) using third parties to assess the potential for catastrophic risks and the effectiveness of mitigations of catastrophic risks;",
+   "ko": "(5) 파국적 위험의 가능성 및 파국적 위험 완화 조치의 효과성을 평가하기 위하여 제3자를 활용하는 것;",
+   "marks": [
+    {
+     "t": "파국적 위험의 가능성 및 파국적 위험 완화 조치의 효과성을 평가하기 위하여 제3자를 활용하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(6) revisiting and updating the frontier AI framework, including any criteria that trigger updates and how the large frontier developer determines when its frontier models are substantially modified enough to require disclosures pursuant to subsection (c);",
+   "ko": "(6) 프론티어 AI 프레임워크를 재검토하고 갱신하는 것(갱신을 촉발하는 기준, 그리고 대형 프론티어 개발자가 자신의 프론티어 모델이 (c)항에 따른 공개가 요구될 만큼 상당히 수정되었는지를 판단하는 방법을 포함한다);"
+  },
+  {
+   "type": "p",
+   "en": "(7) cybersecurity practices to secure unreleased model weights from unauthorized modification or transfer by internal or external parties;",
+   "ko": "(7) 내부 또는 외부 당사자에 의한 무단 수정 또는 이전으로부터 미공개 모델 가중치를 보호하기 위한 사이버 보안 실행 방안;",
+   "marks": [
+    {
+     "t": "무단 수정 또는 이전으로부터 미공개 모델 가중치를 보호하기 위한 사이버 보안 실행 방안",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(8) identifying and responding to critical safety incidents;",
+   "ko": "(8) 치명적 안전 사고를 식별하고 대응하는 것;",
+   "marks": [
+    {
+     "t": "치명적 안전 사고를 식별하고 대응하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(9) instituting internal governance practices to ensure implementation of these processes; and",
+   "ko": "(9) 이러한 절차의 이행을 보장하기 위한 내부 거버넌스 실행 방안을 마련하는 것; 및"
+  },
+  {
+   "type": "p",
+   "en": "(10) assessing and managing catastrophic risk resulting from the internal use of its frontier models, including risks resulting from a frontier model circumventing oversight mechanisms.",
+   "ko": "(10) 자신의 프론티어 모델의 내부 사용으로 인하여 발생하는 파국적 위험(프론티어 모델이 감독 메커니즘을 우회함으로써 발생하는 위험을 포함한다)을 평가하고 관리하는 것.",
+   "marks": [
+    {
+     "t": "자신의 프론티어 모델의 내부 사용으로 인하여 발생하는 파국적 위험",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 모델이 감독 메커니즘을 우회함으로써 발생하는 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b)(1) A large frontier developer shall review and, as appropriate, update its frontier AI framework at least once per year.",
+   "ko": "(b)(1) 대형 프론티어 개발자는 적어도 연 1회 자신의 프론티어 AI 프레임워크를 검토하고, 적절한 경우 이를 갱신하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(2) If a large frontier developer makes a material modification to its frontier AI framework, the large frontier developer shall clearly and conspicuously publish on its website the modified frontier AI framework and a justification for that modification within 30 days.",
+   "ko": "(2) 대형 프론티어 개발자가 자신의 프론티어 AI 프레임워크에 중대한 수정을 하는 경우, 해당 대형 프론티어 개발자는 30일 이내에 수정된 프론티어 AI 프레임워크와 해당 수정의 정당화 사유를 자신의 웹사이트에 명확하고 눈에 잘 띄게 게시하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(c)(1) Before, or concurrently with, deploying a new frontier model or a substantially modified version of an existing frontier model, a frontier developer shall clearly and conspicuously publish on its website a transparency report containing all of the following:",
+   "ko": "(c)(1) 새로운 프론티어 모델 또는 기존 프론티어 모델의 상당히 수정된 버전을 배포하기 전에 또는 배포와 동시에, 프론티어 개발자는 다음 각 목의 사항을 모두 포함하는 투명성 보고서를 자신의 웹사이트에 명확하고 눈에 잘 띄게 게시하여야 한다:"
+  },
+  {
+   "type": "p",
+   "en": "(A) the website of the frontier developer;",
+   "ko": "(A) 프론티어 개발자의 웹사이트;"
+  },
+  {
+   "type": "p",
+   "en": "(B) a mechanism that enables a natural person to communicate with the frontier developer;",
+   "ko": "(B) 자연인이 프론티어 개발자와 소통할 수 있게 하는 수단;"
+  },
+  {
+   "type": "p",
+   "en": "(C) the release date of the frontier model;",
+   "ko": "(C) 프론티어 모델의 출시일;"
+  },
+  {
+   "type": "p",
+   "en": "(D) the languages supported by the frontier model;",
+   "ko": "(D) 프론티어 모델이 지원하는 언어;"
+  },
+  {
+   "type": "p",
+   "en": "(E) the modalities of output supported by the frontier model;",
+   "ko": "(E) 프론티어 모델이 지원하는 출력 모달리티;"
+  },
+  {
+   "type": "p",
+   "en": "(F) the intended uses of the frontier model; and",
+   "ko": "(F) 프론티어 모델의 의도된 용도; 및"
+  },
+  {
+   "type": "p",
+   "en": "(G) any generally applicable restrictions or conditions on uses of the frontier model.",
+   "ko": "(G) 프론티어 모델의 사용에 대하여 일반적으로 적용되는 모든 제한 또는 조건."
+  },
+  {
+   "type": "p",
+   "en": "(2) Before, or concurrently with, deploying a new frontier model or a substantially modified version of an existing frontier model, a large frontier developer shall include in the transparency report required by paragraph (1) of this subsection (c) summaries of all of the following:",
+   "ko": "(2) 새로운 프론티어 모델 또는 기존 프론티어 모델의 상당히 수정된 버전을 배포하기 전에 또는 배포와 동시에, 대형 프론티어 개발자는 이 (c)항 제(1)호에 따라 요구되는 투명성 보고서에 다음 각 목의 사항 모두에 대한 요약을 포함하여야 한다:"
+  },
+  {
+   "type": "p",
+   "en": "(A) assessments of catastrophic risks from the frontier model conducted pursuant to the large frontier developer's frontier AI framework;",
+   "ko": "(A) 대형 프론티어 개발자의 프론티어 AI 프레임워크에 따라 수행된, 프론티어 모델로 인한 파국적 위험에 대한 평가(assessment);",
+   "marks": [
+    {
+     "t": "프론티어 모델로 인한 파국적 위험에 대한 평가(assessment)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) the results of the assessments under subparagraph (A);",
+   "ko": "(B) (A)목에 따른 평가의 결과;"
+  },
+  {
+   "type": "p",
+   "en": "(C) the extent to which third-party evaluators were involved; and",
+   "ko": "(C) 제3자 평가자가 관여한 정도; 및",
+   "marks": [
+    {
+     "t": "제3자 평가자가 관여한 정도",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(D) other steps taken to fulfill the requirements of the frontier AI framework with respect to the frontier model.",
+   "ko": "(D) 해당 프론티어 모델과 관련하여 프론티어 AI 프레임워크의 요건을 이행하기 위하여 취한 그 밖의 조치."
+  },
+  {
+   "type": "p",
+   "en": "(3) All summaries required under paragraph (2) shall be provided in a machine-readable format to facilitate verification of model claims.",
+   "ko": "(3) 제(2)호에 따라 요구되는 모든 요약은 모델에 관한 주장의 검증을 용이하게 하기 위하여 기계 판독 가능한 형식으로 제공되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(4) A frontier developer that publishes the information described in paragraph (1) or (2) as part of a larger document, including a system card or model card, shall be deemed in compliance with the applicable paragraph.",
+   "ko": "(4) 제(1)호 또는 제(2)호에 기술된 정보를 시스템 카드 또는 모델카드를 포함한 더 큰 문서의 일부로 게시하는 프론티어 개발자는 해당 호에 대한 규정 준수가 이루어진 것으로 본다."
+  },
+  {
+   "type": "p",
+   "en": "(5) A frontier developer is encouraged, but not required, to make disclosures described in this subsection (c) that are consistent with, or superior to, industry best practices.",
+   "ko": "(5) 프론티어 개발자는 이 (c)항에 기술된 공개를 업계 모범 사례에 부합하거나 이를 상회하는 방식으로 하도록 권장되나, 이것이 의무는 아니다."
+  },
+  {
+   "type": "p",
+   "en": "(d) Beginning on January 1, 2028 or 90 days after a developer first qualifies as a large frontier developer, whichever is later, a large frontier developer shall annually retain a third party to perform an independent audit of compliance with the requirements of this Section. The third party shall conduct audits consistent with generally accepted auditing standards and best practices and shall possess demonstrated competence to perform the audit, including experience employing or contracting with individuals who possess technical expertise in the safety of frontier models. A large frontier developer shall not retain a third party if either the large frontier developer or the third party has a financial interest in the other party. A large frontier developer may compensate a third party for its services but shall not condition any payment or the amount of any payment on the results of the third party's audit.",
+   "ko": "(d) 2028년 1월 1일 또는 개발자가 대형 프론티어 개발자의 요건을 처음 충족한 날부터 90일이 경과한 날 중 늦은 날부터, 대형 프론티어 개발자는 매년 제3자를 선임하여 이 조의 요건에 대한 규정 준수 여부에 관한 독립적인 감사를 수행하도록 하여야 한다. 해당 제3자는 일반적으로 인정된 감사 기준 및 모범 사례에 부합하게 감사를 수행하여야 하며, 감사를 수행할 수 있는 입증된 역량(프론티어 모델의 안전에 관한 기술적 전문성을 보유한 개인을 고용하거나 그러한 개인과 계약한 경험을 포함한다)을 보유하여야 한다. 대형 프론티어 개발자 또는 제3자 중 어느 한쪽이 상대방에 대하여 재정적 이해관계를 가지는 경우, 대형 프론티어 개발자는 해당 제3자를 선임하여서는 아니 된다. 대형 프론티어 개발자는 제3자에게 그 용역에 대한 보수를 지급할 수 있으나, 어떠한 지급 또는 지급 금액도 제3자의 감사 결과를 조건으로 하여서는 아니 된다.",
+   "marks": [
+    {
+     "t": "매년 제3자를 선임하여 이 조의 요건에 대한 규정 준수 여부에 관한 독립적인 감사를 수행하도록 하여야 한다",
+     "k": "key"
+    },
+    {
+     "t": "프론티어 모델의 안전에 관한 기술적 전문성을 보유한 개인",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) The third party shall be granted access to all materials reasonably necessary to comply with the third party's obligations under this subsection (d), including, but not limited to, all unredacted versions of materials published pursuant to this Act. To protect the frontier developer's trade secrets and confidential business information, cybersecurity, national security of the United States, or public safety, a large frontier developer may impose security protocols on the third party, including, but not limited to, restrictions on note taking, copying, retaining, or removing materials;",
+   "ko": "(1) 제3자에게는 이 (d)항에 따른 제3자의 의무를 이행하는 데 합리적으로 필요한 모든 자료(이 법에 따라 게시된 자료의 민감정보 가림 처리되지 않은 모든 버전을 포함하나 이에 국한되지 않는다)에 대한 접근이 허용되어야 한다. 프론티어 개발자의 영업비밀 및 기밀 영업정보, 사이버 보안, 미국의 국가안보 또는 공공 안전을 보호하기 위하여, 대형 프론티어 개발자는 제3자에게 보안 프로토콜을 부과할 수 있으며, 여기에는 자료에 대한 메모 작성, 복사, 보유 또는 반출의 제한;"
+  },
+  {
+   "type": "p",
+   "en": "requirements for on-premise review; and confidentiality",
+   "ko": "온프레미스 검토 요건; 및 비밀유지"
+  },
+  {
+   "type": "p",
+   "en": "requirements.",
+   "ko": "요건이 포함되나 이에 국한되지 않는다."
+  },
+  {
+   "type": "p",
+   "en": "(2) The third party shall produce a report that includes all of the following:",
+   "ko": "(2) 제3자는 다음 각 목의 사항을 모두 포함하는 보고서를 작성하여야 한다:"
+  },
+  {
+   "type": "p",
+   "en": "(A) a description of whether the large frontier developer has substantially complied with the requirements of this Section;",
+   "ko": "(A) 대형 프론티어 개발자가 이 조의 요건을 실질적으로 준수하였는지 여부에 대한 기술;"
+  },
+  {
+   "type": "p",
+   "en": "(B) if applicable, a description of material deviations from the requirements of this Section, an explanation of any deviation and its rationale, and any recommendations for how the developer can improve its policies and processes for ensuring compliance with the requirements of this Section;",
+   "ko": "(B) 해당되는 경우, 이 조의 요건으로부터의 중대한 이탈에 대한 기술, 각 이탈 및 그 근거에 대한 설명, 그리고 개발자가 이 조의 요건에 대한 규정 준수를 보장하기 위한 정책 및 절차를 개선할 수 있는 방안에 관한 권고;"
+  },
+  {
+   "type": "p",
+   "en": "(C) a detailed assessment of the large frontier developer's internal controls, including its designation and empowerment of senior personnel responsible for such implementation by the large frontier developer, its employees, and its contractors;",
+   "ko": "(C) 대형 프론티어 개발자의 내부 통제에 대한 상세한 평가(대형 프론티어 개발자, 그 직원 및 그 계약자에 의한 그러한 이행을 책임지는 고위 인력의 지정 및 권한 부여를 포함한다);"
+  },
+  {
+   "type": "p",
+   "en": "(D) a list of the personnel involved in the audit;",
+   "ko": "(D) 감사에 관여한 인력의 명단;"
+  },
+  {
+   "type": "p",
+   "en": "(E) the third party's procedures for managing conflicts of interest and any conflicts of interest of any personnel involved in the audit;",
+   "ko": "(E) 이해충돌을 관리하기 위한 제3자의 절차 및 감사에 관여한 인력의 모든 이해충돌;"
+  },
+  {
+   "type": "p",
+   "en": "(F) the methodology of the audit and the nature of the information reviewed by the third party to conduct the audit; and",
+   "ko": "(F) 감사의 방법론 및 감사를 수행하기 위하여 제3자가 검토한 정보의 성격; 및"
+  },
+  {
+   "type": "p",
+   "en": "(G) the signature of the lead auditor certifying the results of the audit.",
+   "ko": "(G) 감사 결과를 인증하는 책임 감사인의 서명."
+  },
+  {
+   "type": "p",
+   "en": "(3) The large frontier developer shall retain an unredacted copy of the report for as long as a frontier model is deployed plus 5 years.",
+   "ko": "(3) 대형 프론티어 개발자는 프론티어 모델이 배포되는 기간에 5년을 더한 기간 동안 민감정보 가림 처리되지 않은 보고서 사본을 보유하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(4)(A) No later than 30 days after receiving the audit report, the large frontier developer shall conspicuously publish on its website a high-level summary of the audit findings and a copy of the third party's report with appropriate redactions and transmit a copy of the redacted report to the Agency and the Attorney General.",
+   "ko": "(4)(A) 대형 프론티어 개발자는 감사 보고서를 받은 날부터 30일 이내에 감사 결과의 개괄적 요약과 적절한 민감정보 가림 처리를 거친 제3자 보고서 사본을 자신의 웹사이트에 눈에 잘 띄게 게시하고, 민감정보 가림 처리된 보고서 사본을 기관 및 법무장관에게 전송하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(B) The large frontier developer shall grant the Agency and the Attorney General access to the third party's report, with redactions, upon request, subject to the redactions permitted under subsection (g).",
+   "ko": "(B) 대형 프론티어 개발자는 기관 및 법무장관의 요청이 있는 경우 (g)항에 따라 허용되는 민감정보 가림 처리를 전제로, 민감정보 가림 처리된 제3자 보고서에 대한 접근을 허용하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(e) A large frontier developer shall transmit to the Agency a summary of any assessment of catastrophic risk resulting from internal use of its frontier models every 3 months or pursuant to another reasonable schedule specified by the large frontier developer and communicated in writing to the Agency and the Attorney General with written updates, as appropriate and agreed upon by the Agency.",
+   "ko": "(e) 대형 프론티어 개발자는 자신의 프론티어 모델의 내부 사용으로 인하여 발생하는 파국적 위험에 대한 모든 평가의 요약을 3개월마다, 또는 대형 프론티어 개발자가 지정하여 기관 및 법무장관에게 서면으로 통지한 그 밖의 합리적인 일정에 따라 기관에 전송하여야 하며, 적절한 경우 기관이 동의한 바에 따라 서면 갱신을 제공하여야 한다.",
+   "marks": [
+    {
+     "t": "내부 사용으로 인하여 발생하는 파국적 위험에 대한 모든 평가의 요약을 3개월마다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(f)(1) A frontier developer shall not make a materially false or misleading statement about catastrophic risk from its frontier models or its management of catastrophic risk.",
+   "ko": "(f)(1) 프론티어 개발자는 자신의 프론티어 모델로 인한 파국적 위험 또는 자신의 파국적 위험 관리에 관하여 중대하게 허위이거나 오해를 불러일으키는 진술을 하여서는 아니 된다.",
+   "marks": [
+    {
+     "t": "파국적 위험 또는 자신의 파국적 위험 관리에 관하여 중대하게 허위이거나 오해를 불러일으키는 진술을 하여서는 아니 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "A large frontier developer shall not make a materially false or misleading statement about its implementation of, or compliance with, its frontier AI framework.",
+   "ko": "대형 프론티어 개발자는 자신의 프론티어 AI 프레임워크의 이행 또는 그에 대한 규정 준수에 관하여 중대하게 허위이거나 오해를 불러일으키는 진술을 하여서는 아니 된다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 프레임워크의 이행 또는 그에 대한 규정 준수에 관하여 중대하게 허위이거나 오해를 불러일으키는 진술",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) This subsection (f) does not apply to a statement that was made in good faith and was reasonable under the circumstances.",
+   "ko": "(2) 이 (f)항은 선의로 이루어졌고 해당 상황에서 합리적이었던 진술에는 적용되지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(g)(1) When a frontier developer publishes documents to comply with this Section, the frontier developer may make redactions to those documents that are necessary to protect the frontier developer's trade secrets, the frontier developer's cybersecurity, public safety, or the national security of the United States or to comply with any federal or State law.",
+   "ko": "(g)(1) 프론티어 개발자가 이 조를 준수하기 위하여 문서를 게시하는 경우, 해당 프론티어 개발자는 자신의 영업비밀, 자신의 사이버 보안, 공공 안전 또는 미국의 국가안보를 보호하거나 연방법 또는 주법을 준수하기 위하여 필요한 범위에서 해당 문서에 민감정보 가림 처리를 할 수 있다.",
+   "marks": [
+    {
+     "t": "공공 안전 또는 미국의 국가안보를 보호하거나",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) If a frontier developer redacts information in a document pursuant to this subsection (g), the frontier developer shall describe the character and justification of the redaction in any published version of the document to the extent permitted by the concerns that justify redaction and shall retain the unredacted information for 5 years.",
+   "ko": "(2) 프론티어 개발자가 이 (g)항에 따라 문서 내 정보에 민감정보 가림 처리를 하는 경우, 해당 프론티어 개발자는 민감정보 가림 처리를 정당화하는 우려가 허용하는 범위 내에서 해당 문서의 모든 공개 버전에 그 민감정보 가림 처리의 성격과 정당화 사유를 기술하여야 하며, 민감정보 가림 처리되지 않은 정보를 5년간 보유하여야 한다."
+  },
+  {
+   "type": "h2",
+   "en": "Section 15. Reporting critical safety incidents",
+   "ko": "제15조. 치명적 안전 사고의 보고",
+   "id": "s86"
+  },
+  {
+   "type": "p",
+   "en": "(a) The Agency, in consultation with the Attorney General, shall establish a mechanism to be used by a frontier developer or a member of the public to report a critical safety incident that includes all of the following:",
+   "ko": "(a) 기관은 법무장관과 협의하여, 프론티어 개발자 또는 일반 공중이 치명적 안전 사고를 보고하는 데 사용할 수 있는 체계로서 다음 각 호의 사항을 모두 포함하는 체계를 마련하여야 한다:",
+   "marks": [
+    {
+     "t": "프론티어 개발자 또는 일반 공중이 치명적 안전 사고를 보고하는 데 사용할 수 있는 체계",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) the date of the critical safety incident;",
+   "ko": "(1) 치명적 안전 사고의 발생일;"
+  },
+  {
+   "type": "p",
+   "en": "(2) the reasons the incident qualifies as a critical safety incident;",
+   "ko": "(2) 해당 사고가 치명적 안전 사고에 해당하는 이유;"
+  },
+  {
+   "type": "p",
+   "en": "(3) a short and plain statement describing the critical safety incident; and",
+   "ko": "(3) 치명적 안전 사고를 기술하는 간결하고 평이한 진술; 및"
+  },
+  {
+   "type": "p",
+   "en": "(4) whether the incident was associated with internal use of a frontier model.",
+   "ko": "(4) 해당 사고가 프론티어 모델의 내부 사용과 관련되었는지 여부.",
+   "marks": [
+    {
+     "t": "해당 사고가 프론티어 모델의 내부 사용과 관련되었는지 여부",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b)(1) The Agency, in consultation with the Attorney General, shall establish a mechanism to be used by a large frontier developer to confidentially submit summaries of any assessments of the potential for catastrophic risk resulting from internal use of its frontier models.",
+   "ko": "(b)(1) 기관은 법무장관과 협의하여, 대형 프론티어 개발자가 자신의 프론티어 모델의 내부 사용으로 인하여 발생하는 파국적 위험 가능성에 대한 모든 평가의 요약을 비공개로 제출하는 데 사용할 수 있는 체계를 마련하여야 한다.",
+   "marks": [
+    {
+     "t": "자신의 프론티어 모델의 내부 사용으로 인하여 발생하는 파국적 위험 가능성에 대한 모든 평가의 요약을 비공개로 제출",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) The Agency and the Attorney General shall take all necessary precautions to limit access to any reports related to internal use of frontier models to only personnel with a specific need to know the information and to protect the reports from unauthorized access.",
+   "ko": "(2) 기관과 법무장관은 프론티어 모델의 내부 사용과 관련된 모든 보고서에 대한 접근을 해당 정보를 알아야 할 구체적 필요가 있는 인원으로만 제한하고, 해당 보고서를 무단 접근으로부터 보호하기 위하여 필요한 모든 예방 조치를 취하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(c) A frontier developer shall report any critical safety incident pertaining to one or more of its frontier models to the Agency and the Attorney General within 72 hours of the frontier developer learning facts sufficient to establish a reasonable belief that a critical safety incident has occurred. The disclosure shall include: (i) the date of the critical safety incident; (ii) the reasons the incident qualifies as a critical safety incident as defined in this Act; and (iii) a short and plain statement describing the critical safety incident. If a frontier developer discovers that a critical safety incident poses an imminent risk of death or serious physical injury, the frontier developer shall disclose that incident within 24 hours to an authority, including any law enforcement agency or public safety agency with jurisdiction, that is appropriate based on the nature of that incident and as required by law. A frontier developer that discovers information about a critical safety incident after filing the initial report required by this subsection (c) may file an amended report. A frontier developer is encouraged, but not required, to report critical safety incidents pertaining to foundation models that are not frontier models.",
+   "ko": "(c) 프론티어 개발자는 자신의 하나 이상의 프론티어 모델과 관련된 모든 치명적 안전 사고를, 치명적 안전 사고가 발생하였다는 합리적 믿음을 성립시키기에 충분한 사실을 알게 된 때부터 72시간 이내에 기관 및 법무장관에게 보고하여야 한다. 해당 공개에는 다음 사항이 포함되어야 한다: (i) 치명적 안전 사고의 발생일; (ii) 해당 사고가 이 법에서 정의하는 치명적 안전 사고에 해당하는 이유; 및 (iii) 치명적 안전 사고를 기술하는 간결하고 평이한 진술. 프론티어 개발자가 치명적 안전 사고가 사망 또는 중대한 신체 상해의 임박한 위험을 초래한다는 사실을 발견한 경우, 해당 프론티어 개발자는 그 사고의 성격에 비추어 적절하고 법률이 요구하는 당국(관할권을 가진 법 집행기관 또는 공공안전기관을 포함한다)에 24시간 이내에 그 사고를 공개하여야 한다. 이 (c)항에 따라 요구되는 최초 보고서를 제출한 후 치명적 안전 사고에 관한 정보를 발견한 프론티어 개발자는 수정 보고서를 제출할 수 있다. 프론티어 개발자는 프론티어 모델이 아닌 파운데이션 모델과 관련된 치명적 안전 사고를 보고하도록 권장되나, 이는 의무 사항이 아니다.",
+   "marks": [
+    {
+     "t": "프론티어 개발자는 자신의 하나 이상의 프론티어 모델과 관련된 모든 치명적 안전 사고를, 치명적 안전 사고가 발생하였다는 합리적 믿음을 성립시키기에 충분한 사실을 알게 된 때부터 72시간 이내에 기관 및 법무장관에게 보고하여야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "사망 또는 중대한 신체 상해의 임박한 위험을 초래한다는 사실을 발견한 경우",
+     "k": "safety"
+    },
+    {
+     "t": "24시간 이내에 그 사고를 공개하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(d) The Agency and the Attorney General shall review critical safety incident reports submitted by frontier developers and may review reports submitted by members of the public.",
+   "ko": "(d) 기관과 법무장관은 프론티어 개발자가 제출한 치명적 안전 사고 보고서를 검토하여야 하며, 일반 공중이 제출한 보고서를 검토할 수 있다.",
+   "marks": [
+    {
+     "t": "기관과 법무장관은 프론티어 개발자가 제출한 치명적 안전 사고 보고서를 검토하여야 하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(e) The Attorney General or the Agency may transmit reports of critical safety incidents to the General Assembly, the Governor, the federal government, or appropriate State agencies. The Attorney General and the Agency shall strongly consider any risks related to trade secrets, public safety, cybersecurity of a frontier developer, or national security when transmitting reports.",
+   "ko": "(e) 법무장관 또는 기관은 치명적 안전 사고 보고서를 주의회, 주지사, 연방정부 또는 적절한 주 기관에 전송할 수 있다. 법무장관과 기관은 보고서를 전송할 때 영업비밀, 공공 안전, 프론티어 개발자의 사이버 보안 또는 국가안보와 관련된 모든 위험을 강하게 고려하여야 한다.",
+   "marks": [
+    {
+     "t": "공공 안전, 프론티어 개발자의 사이버 보안 또는 국가안보와 관련된 모든 위험을 강하게 고려하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(f) The following records are exempt from disclosure under the Freedom of Information Act:",
+   "ko": "(f) 다음 각 호의 기록은 정보자유법에 따른 공개 대상에서 면제된다:"
+  },
+  {
+   "type": "p",
+   "en": "(1) any report of a critical safety incident submitted to the Agency or the Attorney General;",
+   "ko": "(1) 기관 또는 법무장관에게 제출된 모든 치명적 안전 사고 보고서;"
+  },
+  {
+   "type": "p",
+   "en": "(2) any report of an assessment of catastrophic risk from internal use under subsection (e) of Section 10;",
+   "ko": "(2) 제10조 (e)항에 따른 내부 사용으로 인한 파국적 위험에 대한 평가(assessment)의 모든 보고서;",
+   "marks": [
+    {
+     "t": "내부 사용으로 인한 파국적 위험에 대한 평가(assessment)의 모든 보고서",
+     "k": "safety"
+    }
+   ],
+   "refs": [
+    {
+     "t": "제10조",
+     "to": "s35"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) any unredacted version of the third party audit report produced under subsection (d) of Section 10 in the possession of the Agency or the Attorney General;",
+   "ko": "(3) 기관 또는 법무장관이 보유하고 있는, 제10조 (d)항에 따라 작성된 제3자 감사 보고서의 민감정보 가림 처리되지 않은 모든 버전;",
+   "refs": [
+    {
+     "t": "제10조",
+     "to": "s35"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(4) any materials, work papers, notes, or derivative documents prepared by a third party in connection with an audit under subsection (d) of Section 10, to the extent such materials come into the possession of the Agency or the Attorney General; and",
+   "ko": "(4) 제10조 (d)항에 따른 감사와 관련하여 제3자가 작성한 모든 자료, 작업 문서, 메모 또는 파생 문서(해당 자료가 기관 또는 법무장관의 소유가 되는 범위에 한한다); 및",
+   "refs": [
+    {
+     "t": "제10조",
+     "to": "s35"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(5) any covered employee report made under Section 30.",
+   "ko": "(5) 제30조에 따라 이루어진 모든 대상 피고용인 보고.",
+   "refs": [
+    {
+     "t": "제30조",
+     "to": "s154"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(g)(1) By January 1, 2029, and by each January 1 thereafter, the Agency, in consultation with the Attorney General, shall produce a report that includes the following:",
+   "ko": "(g)(1) 기관은 2029년 1월 1일까지, 그리고 그 이후 매년 1월 1일까지 법무장관과 협의하여 다음 각 목의 사항을 포함하는 보고서를 작성하여야 한다:"
+  },
+  {
+   "type": "p",
+   "en": "(A) anonymized and aggregated information about critical safety incidents that have been reviewed by the Agency or the Attorney General since the preceding report;",
+   "ko": "(A) 직전 보고서 이후 기관 또는 법무장관이 검토한 치명적 안전 사고에 관한 익명화 및 집계된 정보;",
+   "marks": [
+    {
+     "t": "치명적 안전 사고에 관한 익명화 및 집계된 정보",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) information that the Agency deems relevant to frontier model safety;",
+   "ko": "(B) 기관이 프론티어 모델 안전과 관련이 있다고 판단하는 정보;",
+   "marks": [
+    {
+     "t": "프론티어 모델 안전과 관련이 있다고 판단하는 정보",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) recommended updates to this Act, if any; and",
+   "ko": "(C) 이 법에 대한 권고 개정 사항(있는 경우); 및"
+  },
+  {
+   "type": "p",
+   "en": "(D) any developments relevant to the purposes of this Act.",
+   "ko": "(D) 이 법의 목적과 관련된 모든 진전 사항."
+  },
+  {
+   "type": "p",
+   "en": "(2) The Agency and the Attorney General shall not include information in a report that would compromise the trade secrets or cybersecurity of a frontier developer, public safety, or the national security of the United States or that would be prohibited by any federal or State law.",
+   "ko": "(2) 기관과 법무장관은 프론티어 개발자의 영업비밀 또는 사이버 보안, 공공 안전 또는 미국의 국가안보를 위태롭게 하거나 연방법 또는 주법에 의하여 금지되는 정보를 보고서에 포함하여서는 아니 된다."
+  },
+  {
+   "type": "p",
+   "en": "(3) The Agency, in consultation with the Attorney General, shall transmit the report under this subsection (g) to the General Assembly and to the Governor.",
+   "ko": "(3) 기관은 법무장관과 협의하여 이 (g)항에 따른 보고서를 주의회 및 주지사에게 전송하여야 한다."
+  },
+  {
+   "type": "h2",
+   "en": "Section 17. Interoperability",
+   "ko": "제17조. 상호운용성",
+   "id": "s110"
+  },
+  {
+   "type": "p",
+   "en": "(a) The Agency, in consultation with the Attorney General, shall designate on its website a declaration process and one or more federal laws, regulations, or guidance documents that meet all of the following conditions for the purposes of subsection (b):",
+   "ko": "(a) 기관은 법무장관과 협의하여, (b)항의 목적상 다음 각 호의 조건을 모두 충족하는 신고 절차와 하나 이상의 연방 법률, 규정 또는 지침 문서를 자신의 웹사이트에 지정하여야 한다:"
+  },
+  {
+   "type": "p",
+   "en": "(1) the law, regulation, or guidance document imposes or states standards or requirements for critical safety incident reporting that are substantially equivalent to, or stricter than, those required by this Act;",
+   "ko": "(1) 해당 법률, 규정 또는 지침 문서가 이 법이 요구하는 것과 실질적으로 동등하거나 그보다 엄격한 치명적 안전 사고 보고에 관한 기준 또는 요건을 부과하거나 명시할 것;",
+   "marks": [
+    {
+     "t": "이 법이 요구하는 것과 실질적으로 동등하거나 그보다 엄격한 치명적 안전 사고 보고에 관한 기준 또는 요건",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) the law, regulation, or guidance document described in paragraph (1) does not need to require critical safety incident reporting to the State of Illinois;",
+   "ko": "(2) (1)호에 기술된 법률, 규정 또는 지침 문서가 일리노이주에 대한 치명적 안전 사고 보고를 요구할 필요는 없을 것;"
+  },
+  {
+   "type": "p",
+   "en": "(3) the law, regulation, or guidance document is intended to assess, detect, or mitigate the catastrophic risk in ways that are substantially equivalent to this Act; and",
+   "ko": "(3) 해당 법률, 규정 또는 지침 문서가 이 법과 실질적으로 동등한 방식으로 파국적 위험을 평가, 탐지 또는 완화하는 것을 목적으로 할 것; 및",
+   "marks": [
+    {
+     "t": "이 법과 실질적으로 동등한 방식으로 파국적 위험을 평가, 탐지 또는 완화하는 것을 목적으로 할 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(4) the law, regulation, or guidance document requires the large frontier developer to undergo independent third-party audits of its assessment of catastrophic risks and critical safety incident reporting with requirements that are substantially equivalent to, or stricter than, those required by this Act.",
+   "ko": "(4) 해당 법률, 규정 또는 지침 문서가 대형 프론티어 개발자에게 파국적 위험에 대한 자신의 평가 및 치명적 안전 사고 보고에 관하여, 이 법이 요구하는 것과 실질적으로 동등하거나 그보다 엄격한 요건에 따른 독립적인 제3자 감사를 받도록 요구할 것.",
+   "marks": [
+    {
+     "t": "파국적 위험에 대한 자신의 평가 및 치명적 안전 사고 보고에 관하여",
+     "k": "safety"
+    },
+    {
+     "t": "독립적인 제3자 감사를 받도록 요구할 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b)(1) A frontier developer that intends to comply with this Act by complying with the requirements of, or meeting the standards stated by, a federal law, regulation, or guidance document designated in subsection (a) shall declare its intent to do so to the Agency by following the process outlined on the Agency's website.",
+   "ko": "(b)(1) (a)항에 따라 지정된 연방 법률, 규정 또는 지침 문서의 요건을 준수하거나 그에 명시된 기준을 충족함으로써 이 법을 준수하고자 하는 프론티어 개발자는 기관의 웹사이트에 안내된 절차에 따라 그러한 의사를 기관에 신고하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(2) After a frontier developer has declared its intent pursuant to paragraph (1), both of the following apply:",
+   "ko": "(2) 프론티어 개발자가 (1)호에 따라 의사를 신고한 후에는 다음 각 목이 모두 적용된다:"
+  },
+  {
+   "type": "p",
+   "en": "(A) the frontier developer shall be deemed in compliance with this Act to the extent that the frontier developer meets the standards of, or complies with the requirements imposed or stated by, the designated federal law, regulation, or guidance document until the frontier developer declares the revocation of that intent to the Agency in the manner provided for on the Agency's website;",
+   "ko": "(A) 해당 프론티어 개발자는 기관의 웹사이트에 규정된 방식으로 그 의사의 철회를 기관에 신고할 때까지, 지정된 연방 법률, 규정 또는 지침 문서의 기준을 충족하거나 그에 의하여 부과되거나 명시된 요건을 준수하는 범위에서 이 법의 규정을 준수한 것으로 간주된다;",
+   "marks": [
+    {
+     "t": "지정된 연방 법률, 규정 또는 지침 문서의 기준을 충족하거나 그에 의하여 부과되거나 명시된 요건을 준수하는 범위에서 이 법의 규정을 준수한 것으로 간주된다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "and",
+   "ko": "및"
+  },
+  {
+   "type": "p",
+   "en": "(B) the failure by a frontier developer to meet the standards of, or comply with the requirements stated by, the federal law, regulation, or guidance document designated pursuant to subsection (a) shall constitute a violation of this Act.",
+   "ko": "(B) 프론티어 개발자가 (a)항에 따라 지정된 연방 법률, 규정 또는 지침 문서의 기준을 충족하지 못하거나 그에 명시된 요건을 준수하지 못하는 경우, 이는 이 법의 위반에 해당한다.",
+   "marks": [
+    {
+     "t": "이는 이 법의 위반에 해당한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) The Agency shall issue updated guidance documents on its website if the requirements of subsection (a) are no longer met.",
+   "ko": "(c) 기관은 (a)항의 요건이 더 이상 충족되지 아니하는 경우 자신의 웹사이트에 갱신된 지침 문서를 발행하여야 한다."
+  },
+  {
+   "type": "h2",
+   "en": "Section 18. Large frontier developer disclosure",
+   "ko": "제18조. 대형 프론티어 개발자 공시",
+   "id": "s122"
+  },
+  {
+   "type": "p",
+   "en": "(a) Except as otherwise provided in this Section, beginning January 1, 2027, no large frontier developer may develop, deploy, or operate a frontier model, in whole or in part in this State, without having a current disclosure statement filed with the Agency and paying the required fee.",
+   "ko": "(a) 이 조에서 달리 규정하는 경우를 제외하고, 2027년 1월 1일부터 대형 프론티어 개발자는 기관에 제출된 유효한 공시서를 보유하고 소정의 수수료를 납부하지 아니하고는 이 주에서 프론티어 모델의 전부 또는 일부를 개발, 배포 또는 운영할 수 없다.",
+   "marks": [
+    {
+     "t": "2027년 1월 1일부터 대형 프론티어 개발자는 기관에 제출된 유효한 공시서를 보유하고 소정의 수수료를 납부하지 아니하고는 이 주에서 프론티어 모델의 전부 또는 일부를 개발, 배포 또는 운영할 수 없다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) The disclosure statement shall be filed in the form and the manner prescribed by the Agency on the Agency's website and shall contain all the information required by the Agency. It shall be renewed annually, whenever ownership of the frontier model is transferred or whenever there is a material change to the information reported in the previously filed disclosure statement, whichever occurs earlier.",
+   "ko": "(b) 공시서는 기관이 자신의 웹사이트에 규정한 양식과 방식에 따라 제출되어야 하며, 기관이 요구하는 모든 정보를 포함하여야 한다. 공시서는 매년, 프론티어 모델의 소유권이 이전될 때마다, 또는 이전에 제출된 공시서에 보고된 정보에 중대한 변경이 있을 때마다 중 가장 먼저 발생하는 시점에 갱신되어야 한다.",
+   "marks": [
+    {
+     "t": "이전에 제출된 공시서에 보고된 정보에 중대한 변경이 있을 때마다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) The disclosure statement shall identify:",
+   "ko": "(c) 공시서는 다음 각 호의 사항을 명시하여야 한다:"
+  },
+  {
+   "type": "p",
+   "en": "(1) the identity of the large frontier developer and all names under which such large frontier developer conducts business;",
+   "ko": "(1) 대형 프론티어 개발자의 신원 및 해당 대형 프론티어 개발자가 사업을 영위하는 데 사용하는 모든 명칭;"
+  },
+  {
+   "type": "p",
+   "en": "(2) the address of the principal place of business and the address of each office the large frontier developer maintains in this State;",
+   "ko": "(2) 주된 사업장의 주소 및 대형 프론티어 개발자가 이 주에 두고 있는 각 사무소의 주소;"
+  },
+  {
+   "type": "p",
+   "en": "(3) in the event the large frontier developer or the ultimate parent of the large frontier developer is a privately or closely held company, a list of all persons or entities that beneficially own a 5% or greater interest in the large frontier developer at the time the disclosure statement is filed and a list of persons who formerly beneficially owned a 5% or greater interest in the owner or its predecessors in the preceding 5 years; in the event the owner or the ultimate parent is a publicly traded company, the owner shall file a list of all persons or entities that beneficially own a 50% or greater interest in the large frontier developer at the time of disclosure;",
+   "ko": "(3) 대형 프론티어 개발자 또는 대형 프론티어 개발자의 최종 모회사가 비상장 회사 또는 폐쇄회사인 경우, 공시서 제출 시점에 대형 프론티어 개발자의 지분 5% 이상을 실질적으로 소유하는 모든 개인 또는 단체의 목록 및 직전 5년 동안 소유자 또는 그 전신의 지분 5% 이상을 실질적으로 소유하였던 자의 목록; 소유자 또는 최종 모회사가 상장회사인 경우, 소유자는 공시 시점에 대형 프론티어 개발자의 지분 50% 이상을 실질적으로 소유하는 모든 개인 또는 단체의 목록을 제출하여야 한다;"
+  },
+  {
+   "type": "p",
+   "en": "and",
+   "ko": "및"
+  },
+  {
+   "type": "p",
+   "en": "(4) the name and contact information of a point of contact, secondary contact, and tertiary contact for the large frontier developer; the point of contact shall be responsible for receiving inquiries relating to this Act from the Agency or other governmental entities.",
+   "ko": "(4) 대형 프론티어 개발자의 주 연락 담당자, 2차 연락 담당자 및 3차 연락 담당자의 성명과 연락처; 주 연락 담당자는 기관 또는 그 밖의 정부 기관으로부터 이 법과 관련된 문의를 접수할 책임을 진다.",
+   "marks": [
+    {
+     "t": "주 연락 담당자는 기관 또는 그 밖의 정부 기관으로부터 이 법과 관련된 문의를 접수할 책임을 진다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(d) The Agency shall charge and collect fees from large frontier developers for the expenses of administering this Act, which shall be nonrefundable unless otherwise indicated. Each large frontier developer shall pay to the Agency its pro rata share of the cost of administration of this Act, as estimated by the Agency, for the current year and any deficit actually incurred in the administration of the Act in prior years.",
+   "ko": "(d) 기관은 이 법의 시행에 드는 비용에 충당하기 위하여 대형 프론티어 개발자에게 수수료를 부과하고 징수하여야 하며, 해당 수수료는 달리 명시되지 아니하는 한 환불되지 아니한다. 각 대형 프론티어 개발자는 기관이 추산한 당해 연도 이 법 시행 비용 중 자신의 비례 분담액과 이전 연도에 이 법의 시행 과정에서 실제로 발생한 결손액을 기관에 납부하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(e) If any person develops, deploys, or operates a large frontier model in this State without a current disclosure filed with the Agency as required by this Section, submits false information in its disclosure or fails to timely pay any assessment required by this Act, in addition to any other penalty or liability that may be imposed under this Act, the Agency may, after notice and hearing, levy civil penalties, fees, and costs as follows:",
+   "ko": "(e) 어떤 자가 이 조에 따라 요구되는 유효한 공시서를 기관에 제출하지 아니하고 이 주에서 대형 프론티어 모델을 개발, 배포 또는 운영하거나, 공시서에 허위 정보를 제출하거나, 이 법에 따라 요구되는 부과금(assessment)을 기한 내에 납부하지 아니하는 경우, 기관은 이 법에 따라 부과될 수 있는 그 밖의 처벌 또는 책임에 더하여, 통지 및 청문을 거친 후 다음 각 호와 같이 민사 벌금, 수수료 및 비용을 부과할 수 있다:",
+   "marks": [
+    {
+     "t": "공시서를 기관에 제출하지 아니하고 이 주에서 대형 프론티어 모델을 개발, 배포 또는 운영하거나, 공시서에 허위 정보를 제출하거나",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) a civil penalty of $1,000 for each day the person fails to file a disclosure as required by this Section or fails to correct false information; and",
+   "ko": "(1) 해당 자가 이 조에 따라 요구되는 공시서를 제출하지 아니하거나 허위 정보를 정정하지 아니하는 매 1일당 $1,000의 민사 벌금; 및"
+  },
+  {
+   "type": "p",
+   "en": "(2) an amount equal to the assessments owed.",
+   "ko": "(2) 미납 부과금(assessment)에 상당하는 금액."
+  },
+  {
+   "type": "p",
+   "en": "(f) The Agency shall maintain and publish a list of large frontier developers who have filed disclosure statements; however, the publication shall not include the contact information set forth in subsection (c).",
+   "ko": "(f) 기관은 공시서를 제출한 대형 프론티어 개발자의 목록을 유지하고 공표하여야 한다. 다만, 공표 내용에는 (c)항에 규정된 연락처 정보를 포함하여서는 아니 된다."
+  },
+  {
+   "type": "h2",
+   "en": "Section 20. Whistleblower protections",
+   "ko": "제20조. 내부 고발자 보호",
+   "id": "s136"
+  },
+  {
+   "type": "p",
+   "en": "(a) A frontier developer shall not make, adopt, enforce, or enter into a rule, regulation, policy, or contract that prevents a covered employee from disclosing, or retaliates against a covered employee for disclosing, information to the Agency, Attorney General, a federal authority, a person with authority over the covered employee, or another covered employee who has authority to investigate, discover, or correct the reported issue, if the covered employee has reasonable cause to believe that the information discloses that:",
+   "ko": "(a) 프론티어 개발자는, 적용 대상 직원이 어떤 정보가 다음 각 호의 사항을 드러낸다고 믿을 만한 합리적인 이유가 있는 경우, 해당 직원이 그 정보를 기관, 법무장관, 연방 당국, 해당 적용 대상 직원에 대한 권한을 가진 자 또는 보고된 문제를 조사, 발견 또는 시정할 권한을 가진 다른 적용 대상 직원에게 공개하는 것을 방해하거나 그러한 공개를 이유로 해당 직원에게 보복하는 규칙, 규정, 정책 또는 계약을 제정, 채택, 시행 또는 체결하여서는 아니 된다:",
+   "marks": [
+    {
+     "t": "그러한 공개를 이유로 해당 직원에게 보복하는 규칙, 규정, 정책 또는 계약을 제정, 채택, 시행 또는 체결하여서는 아니 된다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) the frontier developer's activities pose a specific and substantial danger to the public health or safety resulting from a catastrophic risk; or",
+   "ko": "(1) 프론티어 개발자의 활동이 파국적 위험으로 인하여 공중 보건 또는 안전에 구체적이고 상당한 위해를 초래한다는 것; 또는",
+   "marks": [
+    {
+     "t": "프론티어 개발자의 활동이 파국적 위험으로 인하여 공중 보건 또는 안전에 구체적이고 상당한 위해를 초래한다는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) the frontier developer has violated this Act.",
+   "ko": "(2) 프론티어 개발자가 이 법을 위반하였다는 것.",
+   "marks": [
+    {
+     "t": "프론티어 개발자가 이 법을 위반하였다는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) A frontier developer shall not enter into a contract that prevents a covered employee from making a disclosure protected under the Whistleblower Act.",
+   "ko": "(b) 프론티어 개발자는 적용 대상 직원이 내부 고발자법(Whistleblower Act)에 따라 보호되는 공개를 하지 못하도록 하는 계약을 체결하여서는 아니 된다."
+  },
+  {
+   "type": "p",
+   "en": "(c) A covered employee may use the Attorney General's Workplace Rights Hotline to make reports described in subsection (a).",
+   "ko": "(c) 적용 대상 직원은 (a)항에 기술된 보고를 하기 위하여 법무장관의 직장 내 권리 핫라인(Workplace Rights Hotline)을 이용할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(d) A frontier developer shall provide a clear notice to all covered employees of their rights and responsibilities under this Section, including by doing either of the following:",
+   "ko": "(d) 프론티어 개발자는 다음 각 호 중 어느 하나의 방법을 포함하여, 모든 적용 대상 직원에게 이 조에 따른 그들의 권리와 책임에 관하여 명확히 고지하여야 한다:"
+  },
+  {
+   "type": "p",
+   "en": "(1) at all times posting and displaying within any workplace maintained by the frontier developer a notice to all covered employees of their rights under this Section, ensuring that any new covered employee receives equivalent notice, and ensuring that any covered employee who works remotely periodically receives an equivalent notice; or",
+   "ko": "(1) 프론티어 개발자가 유지하는 모든 사업장 내에 이 조에 따른 권리에 관한 모든 적용 대상 직원 대상 고지문을 상시 게시 및 비치하고, 신규 적용 대상 직원이 동등한 고지를 받도록 보장하며, 원격으로 근무하는 적용 대상 직원이 주기적으로 동등한 고지를 받도록 보장하는 방법; 또는"
+  },
+  {
+   "type": "p",
+   "en": "(2) at least once each year, providing written notice to each covered employee of the covered employee's rights under this Section and ensuring that the notice is received and acknowledged by all of those covered employees.",
+   "ko": "(2) 매년 1회 이상 각 적용 대상 직원에게 이 조에 따른 해당 적용 대상 직원의 권리에 관하여 서면으로 고지하고, 그 모든 적용 대상 직원이 고지를 수령하고 확인하도록 보장하는 방법."
+  },
+  {
+   "type": "p",
+   "en": "(e)(1) A large frontier developer shall provide a reasonable internal process through which a covered employee may anonymously disclose information to the large frontier developer if the covered employee believes in good faith that the information indicates that the large frontier developer's activities present a specific and substantial danger to the public health or safety resulting from a catastrophic risk or that the large frontier developer violated this Act, including a monthly update to the person who made the disclosure regarding the status of the large frontier developer's investigation of the disclosure and the actions taken by the large frontier developer in response to the disclosure.",
+   "ko": "(e)(1) 대형 프론티어 개발자는, 적용 대상 직원이 어떤 정보가 대형 프론티어 개발자의 활동이 파국적 위험으로 인하여 공중 보건 또는 안전에 구체적이고 상당한 위해를 초래한다는 것 또는 대형 프론티어 개발자가 이 법을 위반하였다는 것을 나타낸다고 선의로 믿는 경우, 해당 직원이 그 정보를 대형 프론티어 개발자에게 익명으로 공개할 수 있는 합리적인 내부 절차를 마련하여야 하며, 이 절차에는 공개에 대한 대형 프론티어 개발자의 조사 현황 및 공개에 대응하여 대형 프론티어 개발자가 취한 조치에 관하여 공개자에게 매월 갱신 정보를 제공하는 것이 포함된다.",
+   "marks": [
+    {
+     "t": "대형 프론티어 개발자의 활동이 파국적 위험으로 인하여 공중 보건 또는 안전에 구체적이고 상당한 위해를 초래한다는 것",
+     "k": "safety"
+    },
+    {
+     "t": "익명으로 공개할 수 있는 합리적인 내부 절차를 마련하여야 하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2)(A) Except as provided in subparagraph (B), the disclosures and responses of the process required by this subsection (e) shall be shared with officers and directors of the large frontier developer at least once each quarter.",
+   "ko": "(2)(A) (B)목에 규정된 경우를 제외하고, 이 (e)항에 따라 요구되는 절차의 공개 및 응답 내용은 적어도 분기마다 1회 대형 프론티어 개발자의 임원 및 이사와 공유되어야 한다.",
+   "marks": [
+    {
+     "t": "적어도 분기마다 1회 대형 프론티어 개발자의 임원 및 이사와 공유되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) If a covered employee has alleged wrongdoing by an officer or director of the large frontier developer in a disclosure or response, subparagraph (A) shall not apply with respect to that officer or director.",
+   "ko": "(B) 적용 대상 직원이 공개 또는 응답에서 대형 프론티어 개발자의 임원 또는 이사의 부정행위를 주장한 경우, 해당 임원 또는 이사에 대하여는 (A)목을 적용하지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(f) This Section does not impair or limit the applicability of the Whistleblower Act, including with respect to the rights of employees who are not covered employees to report violations of this Act.",
+   "ko": "(f) 이 조는 적용 대상 직원이 아닌 직원이 이 법의 위반을 보고할 권리에 관한 사항을 포함하여, 내부 고발자법(Whistleblower Act)의 적용을 저해하거나 제한하지 아니한다."
+  },
+  {
+   "type": "h2",
+   "en": "Section 25. Civil penalty",
+   "ko": "제25조. 민사 벌금",
+   "id": "s149"
+  },
+  {
+   "type": "p",
+   "en": "(a) A large frontier developer that fails to publish or transmit a compliant document required to be published or transmitted under this Act, makes a statement in violation of subsection (f) of Section 10, fails to have a third party perform an independent audit of compliance as required by subsection (d) of Section 10, fails to report a critical safety incident as required by Section 15, or fails to comply with its own frontier AI framework shall be subject to a civil penalty in an amount dependent upon the severity of the violation that does not exceed $1,000,000 for the first violation. For a subsequent violation, the civil penalty may not exceed $3,000,000 per violation.",
+   "ko": "(a) 이 법에 따라 공표 또는 전송하도록 요구되는 요건에 부합하는 문서를 공표 또는 전송하지 아니하거나, 제10조 (f)항을 위반하는 진술을 하거나, 제10조 (d)항에 따라 요구되는 제3자에 의한 규정 준수 독립 감사를 받지 아니하거나, 제15조에 따라 요구되는 치명적 안전 사고 보고를 하지 아니하거나, 자신의 프론티어 AI 프레임워크를 준수하지 아니하는 대형 프론티어 개발자는 위반의 심각성에 따라, 최초 위반의 경우 $1,000,000을 초과하지 아니하는 금액의 민사 벌금에 처한다. 이후의 위반에 대하여는 위반 1건당 민사 벌금이 $3,000,000을 초과할 수 없다.",
+   "marks": [
+    {
+     "t": "제10조 (d)항에 따라 요구되는 제3자에 의한 규정 준수 독립 감사를 받지 아니하거나",
+     "k": "safety"
+    },
+    {
+     "t": "제15조에 따라 요구되는 치명적 안전 사고 보고를 하지 아니하거나",
+     "k": "safety"
+    },
+    {
+     "t": "자신의 프론티어 AI 프레임워크를 준수하지 아니하는 대형 프론티어 개발자",
+     "k": "safety"
+    },
+    {
+     "t": "최초 위반의 경우 $1,000,000을 초과하지 아니하는 금액의 민사 벌금에 처한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) A civil penalty described in this Section shall be recovered in a civil action brought exclusively by the Attorney General. Any civil penalties collected from the enforcement of this Act shall be deposited into the Attorney General Court Ordered and Voluntary Compliance Payment Projects Fund.",
+   "ko": "(b) 이 조에 기술된 민사 벌금은 법무장관만이 제기할 수 있는 민사 소송을 통하여 징수된다. 이 법의 집행으로 징수된 민사 벌금은 법무장관 법원 명령 및 자발적 규정 준수 납부금 사업 기금(Attorney General Court Ordered and Voluntary Compliance Payment Projects Fund)에 예치되어야 한다.",
+   "marks": [
+    {
+     "t": "이 조에 기술된 민사 벌금은 법무장관만이 제기할 수 있는 민사 소송을 통하여 징수된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) The loss of value of equity does not count as damage to or loss of property for the purposes of this Act.",
+   "ko": "(c) 이 법의 목적상 지분 가치의 하락은 재산의 손해 또는 손실로 보지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(d) Nothing in this Act shall be construed to establish a private right of action associated with violations of this Act.",
+   "ko": "(d) 이 법의 어떠한 규정도 이 법의 위반과 관련된 사적 소권을 창설하는 것으로 해석되어서는 아니 된다."
+  },
+  {
+   "type": "h2",
+   "en": "Section 30. Duties and obligations",
+   "ko": "제30조. 의무 및 책임",
+   "id": "s154"
+  },
+  {
+   "type": "p",
+   "en": "The duties and obligations imposed by this Act are cumulative with any other duties or obligations imposed under other law and shall not be construed to relieve any party from any duties or obligations imposed under other law and do not limit any rights or remedies under existing law.",
+   "ko": "이 법에 의하여 부과되는 의무 및 책임은 다른 법률에 따라 부과되는 그 밖의 의무 또는 책임에 누적적으로 적용되며, 어떠한 당사자도 다른 법률에 따라 부과되는 의무 또는 책임으로부터 면제하는 것으로 해석되어서는 아니 되고, 현행 법률에 따른 어떠한 권리 또는 구제수단도 제한하지 아니한다.",
+   "marks": [
+    {
+     "t": "이 법에 의하여 부과되는 의무 및 책임은 다른 법률에 따라 부과되는 그 밖의 의무 또는 책임에 누적적으로 적용되며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Section 35. Home rule",
+   "ko": "제35조. 자치권(home rule)",
+   "id": "s156"
+  },
+  {
+   "type": "p",
+   "en": "The regulation of artificial intelligence frontier models is an exclusive power and function of the State. This Section is a denial and limitation of home rule powers and functions under subsection (h) of Section 6 of Article VII of the Illinois Constitution.",
+   "ko": "인공지능 프론티어 모델에 대한 규제는 주의 배타적 권한이자 기능이다. 이 조는 일리노이주 헌법 제7조 제6절 (h)항에 따른 자치권(home rule) 및 그 기능의 부인 및 제한에 해당한다.",
+   "marks": [
+    {
+     "t": "인공지능 프론티어 모델에 대한 규제는 주의 배타적 권한이자 기능이다.",
+     "k": "safety"
+    },
+    {
+     "t": "자치권(home rule) 및 그 기능의 부인 및 제한에 해당한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Section 80",
+   "ko": "제80조",
+   "id": "s158"
+  },
+  {
+   "type": "p",
+   "en": "The Freedom of Information Act is amended by changing Section 7.5 as follows:",
+   "ko": "정보자유법(Freedom of Information Act)은 제7.5조를 다음과 같이 변경하는 방식으로 개정된다:",
+   "marks": [
+    {
+     "t": "정보자유법(Freedom of Information Act)은 제7.5조를 다음과 같이 변경하는 방식으로 개정된다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(5 ILCS 140/7.5)",
+   "ko": "(5 ILCS 140/7.5)"
+  },
+  {
+   "type": "p",
+   "en": "(Text of Section before amendment by P.A. 104-441 and 104-457)",
+   "ko": "(P.A. 104-441 및 104-457에 의한 개정 전 조문)"
+  },
+  {
+   "type": "p",
+   "en": "Sec. 7.5. Statutory exemptions. To the extent provided for by the statutes referenced below, the following shall be exempt from inspection and copying:",
+   "ko": "제7.5조. 법정 예외. 아래에 언급된 법률이 규정하는 범위 내에서, 다음 각 호는 열람 및 복사 대상에서 제외된다:"
+  },
+  {
+   "type": "p",
+   "en": "(vvv) Information exempt from disclosure under subsection (f) of Section 15 of the Artificial Intelligence Safety Measures Act.",
+   "ko": "(vvv) 인공지능 안전 조치법(Artificial Intelligence Safety Measures Act) 제15조 (f)항에 따라 공개가 면제되는 정보.",
+   "marks": [
+    {
+     "t": "인공지능 안전 조치법(Artificial Intelligence Safety Measures Act) 제15조 (f)항에 따라 공개가 면제되는 정보",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(Source: P.A. 103-8, eff. 6-7-23; 103-34, eff. 6-9-23; 103-142, eff. 1-1-24; 103-372, eff. 1-1-24; 103-472, eff. 8-1-24; 103-508, eff. 8-4-23; 103-580, eff. 12-8-23; 103-592, eff. 6-7-24; 103-605, eff. 7-1-24; 103-636, eff. 7-1-24; 103-724, eff. 1-1-25; 103-786, eff. 8-7-24; 103-859, eff. 8-9-24; 103-991, eff. 8-9-24; 103-1049, eff. 8-9-24; 103-1081, eff. 3-21-25; 104-10, eff. 6-16-25; 104-18, eff. 6-30-25; 104-417, eff. 8-15-25; 104-428, eff. 8-18-25; revised 9-10-25.)",
+   "ko": "(출처: P.A. 103-8, 시행 6-7-23; 103-34, 시행 6-9-23; 103-142, 시행 1-1-24; 103-372, 시행 1-1-24; 103-472, 시행 8-1-24; 103-508, 시행 8-4-23; 103-580, 시행 12-8-23; 103-592, 시행 6-7-24; 103-605, 시행 7-1-24; 103-636, 시행 7-1-24; 103-724, 시행 1-1-25; 103-786, 시행 8-7-24; 103-859, 시행 8-9-24; 103-991, 시행 8-9-24; 103-1049, 시행 8-9-24; 103-1081, 시행 3-21-25; 104-10, 시행 6-16-25; 104-18, 시행 6-30-25; 104-417, 시행 8-15-25; 104-428, 시행 8-18-25; 수정 9-10-25.)"
+  },
+  {
+   "type": "p",
+   "en": "(Text of Section after amendment by P.A. 104-457 but before 104-441)",
+   "ko": "(P.A. 104-457에 의한 개정 후, P.A. 104-441에 의한 개정 전 조문)"
+  },
+  {
+   "type": "p",
+   "en": "Sec. 7.5. Statutory exemptions. To the extent provided for by the statutes referenced below, the following shall be exempt from inspection and copying:",
+   "ko": "제7.5조. 법정 예외. 아래에 언급된 법률이 규정하는 범위 내에서, 다음 각 호는 열람 및 복사 대상에서 제외된다:"
+  },
+  {
+   "type": "p",
+   "en": "(vvv) Information exempt from disclosure under subsection (f) of Section 15 of the Artificial Intelligence Safety Measures Act.",
+   "ko": "(vvv) 인공지능 안전 조치법(Artificial Intelligence Safety Measures Act) 제15조 (f)항에 따라 공개가 면제되는 정보.",
+   "marks": [
+    {
+     "t": "인공지능 안전 조치법(Artificial Intelligence Safety Measures Act) 제15조 (f)항에 따라 공개가 면제되는 정보",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(Source: P.A. 103-8, eff. 6-7-23; 103-34, eff. 6-9-23; 103-142, eff. 1-1-24; 103-372, eff. 1-1-24; 103-472, eff. 8-1-24; 103-508, eff. 8-4-23; 103-580, eff. 12-8-23; 103-592, eff. 6-7-24; 103-605, eff. 7-1-24; 103-636, eff. 7-1-24; 103-724, eff. 1-1-25; 103-786, eff. 8-7-24; 103-859, eff. 8-9-24; 103-991, eff. 8-9-24; 103-1049, eff. 8-9-24; 103-1081, eff. 3-21-25; 104-10, eff. 6-16-25; 104-18, eff. 6-30-25; 104-417, eff. 8-15-25; 104-428, eff. 8-18-25; 104-457, eff. 6-1-26; revised 1-7-26.)",
+   "ko": "(출처: P.A. 103-8, 시행 6-7-23; 103-34, 시행 6-9-23; 103-142, 시행 1-1-24; 103-372, 시행 1-1-24; 103-472, 시행 8-1-24; 103-508, 시행 8-4-23; 103-580, 시행 12-8-23; 103-592, 시행 6-7-24; 103-605, 시행 7-1-24; 103-636, 시행 7-1-24; 103-724, 시행 1-1-25; 103-786, 시행 8-7-24; 103-859, 시행 8-9-24; 103-991, 시행 8-9-24; 103-1049, 시행 8-9-24; 103-1081, 시행 3-21-25; 104-10, 시행 6-16-25; 104-18, 시행 6-30-25; 104-417, 시행 8-15-25; 104-428, 시행 8-18-25; 104-457, 시행 6-1-26; 수정 1-7-26.)"
+  },
+  {
+   "type": "p",
+   "en": "(Text of Section after amendment by P.A. 104-441)",
+   "ko": "(P.A. 104-441에 의한 개정 후 조문)"
+  },
+  {
+   "type": "p",
+   "en": "Sec. 7.5. Statutory exemptions. To the extent provided for by the statutes referenced below, the following shall be exempt from inspection and copying:",
+   "ko": "제7.5조. 법정 예외. 아래에 언급된 법률이 규정하는 범위 내에서, 다음 각 호는 열람 및 복사 대상에서 제외된다:"
+  },
+  {
+   "type": "p",
+   "en": "(www) Information exempt from disclosure under subsection (f) of Section 15 of the Artificial Intelligence Safety Measures Act.",
+   "ko": "(www) 인공지능 안전 조치법(Artificial Intelligence Safety Measures Act) 제15조 (f)항에 따라 공개가 면제되는 정보.",
+   "marks": [
+    {
+     "t": "인공지능 안전 조치법(Artificial Intelligence Safety Measures Act) 제15조 (f)항에 따라 공개가 면제되는 정보",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(Source: P.A. 103-8, eff. 6-7-23; 103-34, eff. 6-9-23; 103-142, eff. 1-1-24; 103-372, eff. 1-1-24; 103-472, eff. 8-1-24; 103-508, eff. 8-4-23; 103-580, eff. 12-8-23; 103-592, eff. 6-7-24; 103-605, eff. 7-1-24; 103-636, eff. 7-1-24; 103-724, eff. 1-1-25; 103-786, eff. 8-7-24; 103-859, eff. 8-9-24; 103-991, eff. 8-9-24; 103-1049, eff. 8-9-24; 103-1081, eff. 3-21-25; 104-10, eff. 6-16-25; 104-18, eff. 6-30-25; 104-417, eff. 8-15-25; 104-428, eff. 8-18-25; 104-441, eff. 9-12-26; 104-457, eff. 6-1-26; revised 1-7-26.)",
+   "ko": "(출처: P.A. 103-8, 시행 6-7-23; 103-34, 시행 6-9-23; 103-142, 시행 1-1-24; 103-372, 시행 1-1-24; 103-472, 시행 8-1-24; 103-508, 시행 8-4-23; 103-580, 시행 12-8-23; 103-592, 시행 6-7-24; 103-605, 시행 7-1-24; 103-636, 시행 7-1-24; 103-724, 시행 1-1-25; 103-786, 시행 8-7-24; 103-859, 시행 8-9-24; 103-991, 시행 8-9-24; 103-1049, 시행 8-9-24; 103-1081, 시행 3-21-25; 104-10, 시행 6-16-25; 104-18, 시행 6-30-25; 104-417, 시행 8-15-25; 104-428, 시행 8-18-25; 104-441, 시행 9-12-26; 104-457, 시행 6-1-26; 수정 1-7-26.)"
+  },
+  {
+   "type": "h2",
+   "en": "Section 90",
+   "ko": "제90조",
+   "id": "s173"
+  },
+  {
+   "type": "p",
+   "en": "The Whistleblower Act is amended by changing Section 15 as follows:",
+   "ko": "내부 고발자법(Whistleblower Act)은 제15조를 다음과 같이 변경하는 방식으로 개정된다:",
+   "refs": [
+    {
+     "t": "제15조",
+     "to": "s86"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(740 ILCS 174/15)",
+   "ko": "(740 ILCS 174/15)"
+  },
+  {
+   "type": "p",
+   "en": "Sec. 15. Retaliation for certain disclosures prohibited.",
+   "ko": "제15조. 특정 공개에 대한 보복 금지."
+  },
+  {
+   "type": "p",
+   "en": "(e) An employer may not take retaliatory action against an employee for disclosing or threatening to disclose in good faith any violation of the Artificial Intelligence Safety Measures Act. (Source: P.A. 103-867, eff. 1-1-25; 104-417, eff. 8-15-25; 104-440, eff. 12-9-25.)",
+   "ko": "(e) 사용자는 직원이 인공지능 안전 조치법(Artificial Intelligence Safety Measures Act)의 위반을 선의로 공개하거나 공개하겠다고 고지한 것을 이유로 해당 직원에게 보복 조치를 취할 수 없다. (출처: P.A. 103-867, 시행 1-1-25; 104-417, 시행 8-15-25; 104-440, 시행 12-9-25.)",
+   "marks": [
+    {
+     "t": "사용자는 직원이 인공지능 안전 조치법(Artificial Intelligence Safety Measures Act)의 위반을 선의로 공개하거나 공개하겠다고 고지한 것을 이유로 해당 직원에게 보복 조치를 취할 수 없다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Section 95. No acceleration or delay",
+   "ko": "제95조. 시행의 앞당김 또는 지연 없음",
+   "id": "s178"
+  },
+  {
+   "type": "p",
+   "en": "Where this Act makes changes in a statute that is represented in this Act by text that is not yet or no longer in effect (for example, a Section represented by multiple versions), the use of that text does not accelerate or delay the taking effect of (i) the changes made by this Act or (ii) provisions derived from any other Public Act.",
+   "ko": "이 법이 아직 시행되지 아니하였거나 더 이상 시행되지 아니하는 조문으로 이 법에 표시된 법률을 변경하는 경우(예: 복수의 판본으로 표시된 조), 해당 조문의 사용은 (i) 이 법에 의한 변경 또는 (ii) 그 밖의 공법(Public Act)에서 유래한 규정의 시행을 앞당기거나 지연시키지 아니한다.",
+   "marks": [
+    {
+     "t": "해당 조문의 사용은 (i) 이 법에 의한 변경 또는 (ii) 그 밖의 공법(Public Act)에서 유래한 규정의 시행을 앞당기거나 지연시키지 아니한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Section 97. Severability",
+   "ko": "제97조. 분리 가능성",
+   "id": "s180"
+  },
+  {
+   "type": "p",
+   "en": "The provisions of this Act are severable under Section 1.31 of the Statute on Statutes.",
+   "ko": "이 법의 규정은 법령에 관한 법률(Statute on Statutes) 제1.31조에 따라 분리 가능하다."
+  },
+  {
+   "type": "h2",
+   "en": "Section 99. Effective date",
+   "ko": "제99조. 시행일",
+   "id": "s182"
+  },
+  {
+   "type": "p",
+   "en": "This Act takes effect January 1, 2027.",
+   "ko": "이 법은 2027년 1월 1일부터 시행한다."
+  }
+ ]
+}

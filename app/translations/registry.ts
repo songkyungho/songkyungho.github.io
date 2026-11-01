@@ -4,6 +4,7 @@ import anthropicS1 from "../data/translations/anthropic-s1-2026-risk-factors.jso
 import caSb53 from "../data/translations/ca-sb53.json";
 import claudeConstitution from "../data/translations/claude-constitution-2026-01.json";
 import gdmFsf31 from "../data/translations/gdm-fsf-v3-1.json";
+import ilSb315 from "../data/translations/il-sb315.json";
 import metaSsf21 from "../data/translations/meta-ssf-v2-1.json";
 import microsoftFgf from "../data/translations/microsoft-fgf-2026-02.json";
 import nyRaise2026 from "../data/translations/ny-raise-act-2026.json";
@@ -52,7 +53,7 @@ export type TranslationDoc = {
   blocks: TranslationBlock[];
 };
 
-export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, microsoftFgf, amazonFmsf, caSb53, nyRaise2026] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
+export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, microsoftFgf, amazonFmsf, caSb53, nyRaise2026, ilSb315] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
 
 export const dotDate = (iso: string) => iso.replaceAll("-", ".");
 
