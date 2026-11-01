@@ -1,0 +1,303 @@
+{
+ "slug": "asilomar-2017",
+ "title": "아실로마 AI 원칙",
+ "original_title": "Asilomar AI Principles",
+ "publisher": "Future of Life Institute",
+ "published": "2017-01",
+ "source_url": "https://futureoflife.org/open-letter/ai-principles/",
+ "source_note": "원칙 23개 전문(머리말 포함)",
+ "source_label": "원문 보기 (FLI)",
+ "summary": "Beneficial AI 2017 회의에서 연구자·업계·철학자들이 합의한 23개 원칙이다. 연구 문제, 윤리와 가치, 장기적 문제의 세 묶음으로 나뉜다. 장기적 문제 묶음은 역량에 상한을 단정하지 말 것, 고도 AI는 지구 생명사의 심대한 변화일 수 있다는 것, 재앙적·실존적 위험에 비례한 계획과 완화, 재귀적 자기 개선 시스템의 엄격한 통제, 초지능은 인류 전체의 이익을 위해서만 개발할 것을 담았다.",
+ "doc_kind": "원칙",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/asilomar-2017-cover.webp",
+ "og_image": "/images/translations/asilomar-2017-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 31,
+  "sections": 3,
+  "items": 0,
+  "words_en": 643
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Artificial intelligence has already provided beneficial tools that are used every day by people around the world. Its continued development, guided by the following principles, will offer amazing opportunities to help and empower people in the decades and centuries ahead.",
+   "ko": "인공지능은 이미 전 세계 사람들이 매일 사용하는 유익한 도구를 제공해 왔다. 다음 원칙에 따라 이루어질 인공지능의 지속적인 발전은 향후 수십 년, 수 세기에 걸쳐 사람들을 돕고 그들에게 힘을 실어 줄 놀라운 기회를 제공할 것이다."
+  },
+  {
+   "type": "h2",
+   "en": "Research Issues",
+   "ko": "연구 쟁점",
+   "id": "s1"
+  },
+  {
+   "type": "p",
+   "en": "1) Research Goal: The goal of AI research should be to create not undirected intelligence, but beneficial intelligence.",
+   "ko": "1) 연구 목표: AI 연구의 목표는 방향성 없는 지능이 아니라 유익한 지능을 창출하는 것이어야 한다.",
+   "marks": [
+    {
+     "t": "AI 연구의 목표는 방향성 없는 지능이 아니라 유익한 지능을 창출하는 것이어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "2) Research Funding: Investments in AI should be accompanied by funding for research on ensuring its beneficial use, including thorny questions in computer science, economics, law, ethics, and social studies, such as:",
+   "ko": "2) 연구 자금: AI에 대한 투자에는 AI의 유익한 사용을 보장하기 위한 연구에 대한 자금 지원이 수반되어야 하며, 여기에는 다음과 같은 컴퓨터 과학, 경제학, 법학, 윤리학, 사회 연구 분야의 난제가 포함된다.",
+   "marks": [
+    {
+     "t": "AI의 유익한 사용을 보장하기 위한 연구에 대한 자금 지원이 수반되어야 하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "How can we make future AI systems highly robust, so that they do what we want without malfunctioning or getting hacked?",
+   "ko": "미래의 AI 시스템이 오작동하거나 해킹당하지 않고 우리가 원하는 바를 수행하도록, 어떻게 이를 매우 견고하게 만들 수 있는가?",
+   "marks": [
+    {
+     "t": "미래의 AI 시스템이 오작동하거나 해킹당하지 않고 우리가 원하는 바를 수행하도록, 어떻게 이를 매우 견고하게 만들 수 있는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "How can we grow our prosperity through automation while maintaining people’s resources and purpose?",
+   "ko": "사람들의 자원과 목적의식을 유지하면서, 어떻게 자동화를 통해 번영을 증대할 수 있는가?"
+  },
+  {
+   "type": "li",
+   "en": "How can we update our legal systems to be more fair and efficient, to keep pace with AI, and to manage the risks associated with AI?",
+   "ko": "AI에 발맞추고 AI와 관련된 위험을 관리하기 위해, 어떻게 법 체계를 보다 공정하고 효율적으로 개정할 수 있는가?",
+   "marks": [
+    {
+     "t": "AI와 관련된 위험을 관리하기 위해, 어떻게 법 체계를 보다 공정하고 효율적으로 개정할 수 있는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "What set of values should AI be aligned with, and what legal and ethical status should it have?",
+   "ko": "AI는 어떤 가치 체계에 정렬되어야 하며, 어떤 법적·윤리적 지위를 가져야 하는가?",
+   "marks": [
+    {
+     "t": "AI는 어떤 가치 체계에 정렬되어야 하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "3) Science-Policy Link: There should be constructive and healthy exchange between AI researchers and policy-makers.",
+   "ko": "3) 과학-정책 연계: AI 연구자와 정책 입안자 간에 건설적이고 건전한 교류가 있어야 한다.",
+   "marks": [
+    {
+     "t": "AI 연구자와 정책 입안자 간에 건설적이고 건전한 교류가 있어야 한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "4) Research Culture: A culture of cooperation, trust, and transparency should be fostered among researchers and developers of AI.",
+   "ko": "4) 연구 문화: AI 연구자와 개발자 사이에 협력, 신뢰, 투명성의 문화가 조성되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "5) Race Avoidance: Teams developing AI systems should actively cooperate to avoid corner-cutting on safety standards.",
+   "ko": "5) 경쟁 회피: AI 시스템을 개발하는 팀들은 안전 기준을 소홀히 하는 일이 없도록 적극적으로 협력해야 한다.",
+   "marks": [
+    {
+     "t": "AI 시스템을 개발하는 팀들은 안전 기준을 소홀히 하는 일이 없도록 적극적으로 협력해야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Ethics and Values",
+   "ko": "윤리 및 가치",
+   "id": "s11"
+  },
+  {
+   "type": "p",
+   "en": "6) Safety: AI systems should be safe and secure throughout their operational lifetime, and verifiably so where applicable and feasible.",
+   "ko": "6) 안전: AI 시스템은 운영 수명 전반에 걸쳐 안전하고 보안이 확보되어야 하며, 적용 가능하고 실현 가능한 경우에는 이를 검증할 수 있어야 한다.",
+   "marks": [
+    {
+     "t": "AI 시스템은 운영 수명 전반에 걸쳐 안전하고 보안이 확보되어야 하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "7) Failure Transparency: If an AI system causes harm, it should be possible to ascertain why.",
+   "ko": "7) 실패 투명성: AI 시스템이 피해를 일으킨 경우, 그 원인을 규명할 수 있어야 한다.",
+   "marks": [
+    {
+     "t": "AI 시스템이 피해를 일으킨 경우, 그 원인을 규명할 수 있어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "8) Judicial Transparency: Any involvement by an autonomous system in judicial decision-making should provide a satisfactory explanation auditable by a competent human authority.",
+   "ko": "8) 사법 투명성: 자율 시스템이 사법적 의사결정에 관여하는 경우, 권한 있는 인간 당국이 감사할 수 있는 충분한 설명을 제공해야 한다."
+  },
+  {
+   "type": "p",
+   "en": "9) Responsibility: Designers and builders of advanced AI systems are stakeholders in the moral implications of their use, misuse, and actions, with a responsibility and opportunity to shape those implications.",
+   "ko": "9) 책임: 첨단 AI 시스템의 설계자와 제작자는 그 사용, 오용 및 행동이 갖는 도덕적 함의의 이해관계자이며, 그러한 함의를 형성할 책임과 기회를 지닌다.",
+   "marks": [
+    {
+     "t": "그 사용, 오용 및 행동이 갖는 도덕적 함의의 이해관계자",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "10) Value Alignment: Highly autonomous AI systems should be designed so that their goals and behaviors can be assured to align with human values throughout their operation.",
+   "ko": "10) 가치 정렬(Value Alignment): 고도로 자율적인 AI 시스템은 운영 전반에 걸쳐 그 목표와 행동이 인간의 가치에 정렬됨을 보장할 수 있도록 설계되어야 한다.",
+   "marks": [
+    {
+     "t": "고도로 자율적인 AI 시스템은 운영 전반에 걸쳐 그 목표와 행동이 인간의 가치에 정렬됨을 보장할 수 있도록 설계되어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "11) Human Values: AI systems should be designed and operated so as to be compatible with ideals of human dignity, rights, freedoms, and cultural diversity.",
+   "ko": "11) 인간의 가치: AI 시스템은 인간의 존엄성, 권리, 자유, 문화적 다양성이라는 이상에 부합하도록 설계되고 운영되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "12) Personal Privacy: People should have the right to access, manage and control the data they generate, given AI systems’ power to analyze and utilize that data.",
+   "ko": "12) 개인 프라이버시: AI 시스템이 데이터를 분석하고 활용하는 능력을 고려할 때, 사람들은 자신이 생성한 데이터에 접근하고 이를 관리·통제할 권리를 가져야 한다."
+  },
+  {
+   "type": "p",
+   "en": "13) Liberty and Privacy: The application of AI to personal data must not unreasonably curtail people’s real or perceived liberty.",
+   "ko": "13) 자유와 프라이버시: 개인 데이터에 대한 AI의 적용이 사람들의 실제 자유 또는 체감 자유를 부당하게 제한해서는 안 된다."
+  },
+  {
+   "type": "p",
+   "en": "14) Shared Benefit: AI technologies should benefit and empower as many people as possible.",
+   "ko": "14) 혜택 공유: AI 기술은 가능한 한 많은 사람에게 혜택을 주고 힘을 실어 주어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "15) Shared Prosperity: The economic prosperity created by AI should be shared broadly, to benefit all of humanity.",
+   "ko": "15) 번영 공유: AI가 창출한 경제적 번영은 모든 인류에게 이익이 되도록 널리 공유되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "16) Human Control: Humans should choose how and whether to delegate decisions to AI systems, to accomplish human-chosen objectives.",
+   "ko": "16) 인간의 통제: 인간이 선택한 목표를 달성하기 위해, 의사결정을 AI 시스템에 위임할지 여부와 그 방식은 인간이 선택해야 한다.",
+   "marks": [
+    {
+     "t": "의사결정을 AI 시스템에 위임할지 여부와 그 방식은 인간이 선택해야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "17) Non-subversion: The power conferred by control of highly advanced AI systems should respect and improve, rather than subvert, the social and civic processes on which the health of society depends.",
+   "ko": "17) 비전복: 고도의 첨단 AI 시스템에 대한 통제를 통해 부여되는 권력은 사회의 건전성이 의존하는 사회적·시민적 과정을 전복하기보다 이를 존중하고 개선해야 한다.",
+   "marks": [
+    {
+     "t": "고도의 첨단 AI 시스템에 대한 통제를 통해 부여되는 권력",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "18) AI Arms Race: An arms race in lethal autonomous weapons should be avoided.",
+   "ko": "18) AI 군비 경쟁: 치명적 자율무기의 군비 경쟁은 피해야 한다.",
+   "marks": [
+    {
+     "t": "치명적 자율무기의 군비 경쟁은 피해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Longer-term Issues",
+   "ko": "장기적 쟁점",
+   "id": "s25"
+  },
+  {
+   "type": "p",
+   "en": "19) Capability Caution: There being no consensus, we should avoid strong assumptions regarding upper limits on future AI capabilities.",
+   "ko": "19) 역량에 대한 신중함: 합의가 존재하지 않으므로, 미래 AI 역량의 상한에 대해 강한 가정을 하는 것은 피해야 한다.",
+   "marks": [
+    {
+     "t": "미래 AI 역량의 상한에 대해 강한 가정을 하는 것은 피해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "20) Importance: Advanced AI could represent a profound change in the history of life on Earth, and should be planned for and managed with commensurate care and resources.",
+   "ko": "20) 중요성: 첨단 AI는 지구 생명의 역사에 심대한 변화를 가져올 수 있으므로, 그에 상응하는 주의와 자원을 기울여 계획하고 관리해야 한다.",
+   "marks": [
+    {
+     "t": "첨단 AI는 지구 생명의 역사에 심대한 변화를 가져올 수 있으므로",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "21) Risks: Risks posed by AI systems, especially catastrophic or existential risks, must be subject to planning and mitigation efforts commensurate with their expected impact.",
+   "ko": "21) 위험: AI 시스템이 초래하는 위험, 특히 파국적 위험이나 실존적 위험은 예상되는 영향에 상응하는 계획 및 완화 노력의 대상이 되어야 한다.",
+   "marks": [
+    {
+     "t": "AI 시스템이 초래하는 위험, 특히 파국적 위험이나 실존적 위험은 예상되는 영향에 상응하는 계획 및 완화 노력의 대상이 되어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "22) Recursive Self-Improvement: AI systems designed to recursively self-improve or self-replicate in a manner that could lead to rapidly increasing quality or quantity must be subject to strict safety and control measures.",
+   "ko": "22) 재귀적 자기 개선: 품질이나 수량의 급속한 증가로 이어질 수 있는 방식으로 재귀적 자기 개선이나 자기 복제를 하도록 설계된 AI 시스템은 엄격한 안전 및 통제 조치의 대상이 되어야 한다.",
+   "marks": [
+    {
+     "t": "재귀적 자기 개선이나 자기 복제를 하도록 설계된 AI 시스템은 엄격한 안전 및 통제 조치의 대상이 되어야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "23) Common Good: Superintelligence should only be developed in the service of widely shared ethical ideals, and for the benefit of all humanity rather than one state or organization.",
+   "ko": "23) 공동선: 초지능은 널리 공유되는 윤리적 이상에 복무하고, 하나의 국가나 조직이 아닌 모든 인류의 이익을 위해서만 개발되어야 한다.",
+   "marks": [
+    {
+     "t": "초지능은 널리 공유되는 윤리적 이상에 복무하고",
+     "k": "safety"
+    },
+    {
+     "t": "하나의 국가나 조직이 아닌 모든 인류의 이익을 위해서만 개발되어야 한다",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

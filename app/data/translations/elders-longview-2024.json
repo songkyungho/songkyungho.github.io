@@ -1,0 +1,140 @@
+{
+ "slug": "elders-longview-2024",
+ "title": "디 엘더스·FLI '실존적 위협에 장기적 리더십을' 공개서한",
+ "original_title": "Open letter calling on world leaders to show long-view leadership on existential threats",
+ "publisher": "The Elders · Future of Life Institute",
+ "published": "2024-02-14",
+ "source_url": "https://futureoflife.org/open-letter/long-view-leadership-on-existential-threats/",
+ "source_note": "공개서한 본문 전문",
+ "source_label": "원문 보기 (FLI)",
+ "summary": "만델라가 세운 원로 모임 디 엘더스와 FLI가 함께 낸 서한이다. 기후 위기, 팬데믹, 핵무기와 함께 통제되지 않는 AI를 인류 전체를 위협하는 실존적 위협으로 묶고, 세계 지도자들에게 단기 정치 주기를 넘어서는 '장기적 리더십'을 요구했다. AI 위험을 기후·핵과 같은 반열에 올린 문건이다.",
+ "doc_kind": "공개서한",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/elders-longview-2024-cover.webp",
+ "og_image": "/images/translations/elders-longview-2024-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 17,
+  "sections": 0,
+  "items": 0,
+  "words_en": 556
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Our world is in grave danger. We face a set of threats that put all humanity at risk. Our leaders are not responding with the wisdom and urgency required.",
+   "ko": "우리 세계는 중대한 위험에 처해 있다. 우리는 전 인류를 위험에 빠뜨리는 일련의 위협에 직면해 있다. 그러나 우리의 지도자들은 필요한 지혜와 긴박감을 갖고 대응하지 못하고 있다."
+  },
+  {
+   "type": "p",
+   "en": "The impact of these threats is already being seen: a rapidly changing climate, a pandemic that killed millions and cost trillions, wars in which the use of nuclear weapons has been openly raised.",
+   "ko": "이러한 위협의 영향은 이미 나타나고 있다. 급속히 변화하는 기후, 수백만 명의 목숨을 앗아 가고 수조 달러의 비용을 초래한 팬데믹, 핵무기 사용 가능성이 공공연히 거론되는 전쟁이 그것이다."
+  },
+  {
+   "type": "p",
+   "en": "There could be worse to come. Some of these threats jeopardise the very existence of life on earth. We do not yet know how significant the emerging risks associated with Artificial Intelligence will be.",
+   "ko": "더 나쁜 일이 닥칠 수도 있다. 이러한 위협 중 일부는 지구상 생명의 존재 자체를 위태롭게 한다. 인공지능과 관련된 신흥 위험이 얼마나 심각할지는 아직 알 수 없다.",
+   "marks": [
+    {
+     "t": "이러한 위협 중 일부는 지구상 생명의 존재 자체를 위태롭게 한다.",
+     "k": "safety"
+    },
+    {
+     "t": "인공지능과 관련된 신흥 위험이 얼마나 심각할지는 아직 알 수 없다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We are at a precipice.",
+   "ko": "우리는 벼랑 끝에 서 있다."
+  },
+  {
+   "type": "p",
+   "en": "The signatories of this letter call on world leaders to work together to address these existential threats more decisively. We welcome people of all communities, generations, and political views to join us in asking for courageous decision-making – for the sake of our common future.",
+   "ko": "이 서한의 서명자들은 세계 지도자들이 이러한 실존적 위협(existential threats)에 보다 단호하게 대처하기 위해 협력할 것을 촉구한다. 우리는 모든 공동체, 세대, 정치적 견해를 가진 사람들이 우리의 공동 미래를 위해 용기 있는 의사결정을 요구하는 데 동참하기를 환영한다.",
+   "marks": [
+    {
+     "t": "세계 지도자들이 이러한 실존적 위협(existential threats)에 보다 단호하게 대처하기 위해 협력할 것을 촉구한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The knowledge and resources to address these challenges exist. But too many of our leaders lack the political will or capability to take decisive action. They seek short-term fixes over long-term solutions.",
+   "ko": "이러한 과제를 해결할 지식과 자원은 존재한다. 그러나 너무나 많은 지도자들이 단호한 조치를 취할 정치적 의지나 역량을 갖추지 못하고 있다. 그들은 장기적 해결책보다 단기적 처방을 추구한다."
+  },
+  {
+   "type": "p",
+   "en": "In a year when half the world’s adult population face elections, we urge all those seeking office to take a bold new approach. We need long-view leadership from decision-makers who understand the urgency of the existential threats we face, and believe in our ability to overcome them.",
+   "ko": "전 세계 성인 인구의 절반이 선거를 치르는 올해, 우리는 공직에 도전하는 모든 이들에게 대담하고 새로운 접근법을 취할 것을 촉구한다. 우리에게는 우리가 직면한 실존적 위협의 긴급성을 이해하고, 이를 극복할 수 있는 우리의 능력을 믿는 의사결정자들의 장기적 관점의 리더십(long-view leadership)이 필요하다."
+  },
+  {
+   "type": "p",
+   "en": "Long-view leadership means showing the determination to resolve intractable problems not just manage them, the wisdom to make decisions based on scientific evidence and reason, and the humility to listen to all those affected. Long-view leaders must have the moral strength to address both current concerns and long-term risks, often at the expense of vested interests.",
+   "ko": "장기적 관점의 리더십이란 난제를 단순히 관리하는 데 그치지 않고 해결하려는 결단력, 과학적 증거와 이성에 기초하여 결정을 내리는 지혜, 그리고 영향을 받는 모든 이들의 목소리에 귀 기울이는 겸손함을 보여주는 것을 의미한다. 장기적 관점의 지도자는 종종 기득권을 희생해서라도 현재의 우려와 장기적 위험 모두에 대처할 수 있는 도덕적 힘을 갖추어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "Such values should be common to all political leaders. But they are woefully missing in so many. We need leaders, women and men, who consistently demonstrate the courage to:",
+   "ko": "이러한 가치는 모든 정치 지도자가 공통으로 지녀야 하는 것이다. 그러나 너무나 많은 지도자들에게 이러한 가치가 통탄스러울 만큼 결여되어 있다. 우리에게는 다음을 실천할 용기를 일관되게 보여주는 지도자, 여성과 남성이 필요하다:"
+  },
+  {
+   "type": "li",
+   "en": "Think beyond short-term political cycles and deliver solutions for both current and future generations.",
+   "ko": "단기적 정치 주기를 넘어 사고하고, 현재 세대와 미래 세대 모두를 위한 해결책을 제시함."
+  },
+  {
+   "type": "li",
+   "en": "Recognise that enduring answers require compromise and collaboration for the good of the whole world.",
+   "ko": "지속적인 해답을 위해서는 전 세계의 이익을 위한 타협과 협력이 필요함을 인식함."
+  },
+  {
+   "type": "li",
+   "en": "Show compassion for all people, designing sustainable policies which respect that everyone is born free and equal in dignity and rights.",
+   "ko": "모든 사람에 대한 연민을 보이고, 모든 사람이 태어날 때부터 자유로우며 존엄과 권리에 있어 평등하다는 점을 존중하는 지속 가능한 정책을 설계함."
+  },
+  {
+   "type": "li",
+   "en": "Uphold the international rule of law and accept that durable agreements require transparency and accountability.",
+   "ko": "국제법의 지배를 수호하고, 지속력 있는 합의에는 투명성과 책임성이 필요함을 받아들임."
+  },
+  {
+   "type": "li",
+   "en": "Commit to a vision of hope in humanity’s shared future, not play to its divided past.",
+   "ko": "인류의 분열된 과거에 영합하지 않고, 인류의 공동 미래에 대한 희망의 비전에 헌신함."
+  },
+  {
+   "type": "p",
+   "en": "These principles of long-view leadership can inform urgent changes in policy. Governments can get to work now to agree how to finance the transition to a safe and healthy future powered by clean energy, relaunch arms control talks to reduce the risk of nuclear war, save millions of lives by concluding an equitable pandemic treaty, and start to build the global governance needed to make AI a force for good, not a runaway risk.",
+   "ko": "이러한 장기적 관점의 리더십 원칙은 시급한 정책 변화의 길잡이가 될 수 있다. 각국 정부는 지금 당장 청정에너지로 움직이는 안전하고 건강한 미래로의 전환에 필요한 재원 조달 방안에 합의하고, 핵전쟁의 위험을 줄이기 위한 군비 통제 협상을 재개하며, 공평한 팬데믹 조약을 체결하여 수백만 명의 생명을 구하고, 인공지능이 걷잡을 수 없는 위험이 아니라 선을 위한 힘이 되도록 하는 데 필요한 글로벌 거버넌스 구축에 착수할 수 있다.",
+   "marks": [
+    {
+     "t": "인공지능이 걷잡을 수 없는 위험이 아니라 선을 위한 힘이 되도록 하는 데 필요한 글로벌 거버넌스 구축에 착수할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "As leaders prepare to gather in New York in September for the UN Summit of the Future, it is time to change direction. The biggest risks facing us cannot be tackled by any country acting alone. Yet when nations work together, these challenges can all be addressed, for the good of us all.",
+   "ko": "지도자들이 9월 뉴욕에서 열리는 UN 미래정상회의(Summit of the Future)에 모일 준비를 하고 있는 지금, 방향을 전환해야 할 때이다. 우리가 직면한 가장 큰 위험은 어떤 국가도 단독으로 대처할 수 없다. 그러나 국가들이 협력한다면 이 모든 과제를 우리 모두의 이익을 위해 해결할 수 있다.",
+   "marks": [
+    {
+     "t": "우리가 직면한 가장 큰 위험은 어떤 국가도 단독으로 대처할 수 없다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Despite the seriousness of these existential threats, hope remains. Our best future can still lie ahead of us. We call on leaders to take the long view, and show the courage to lead us to that better future.",
+   "ko": "이러한 실존적 위협의 심각성에도 불구하고 희망은 남아 있다. 최선의 미래는 여전히 우리 앞에 놓여 있을 수 있다. 우리는 지도자들이 장기적 관점을 갖고, 우리를 더 나은 미래로 이끌 용기를 보여줄 것을 촉구한다."
+  }
+ ]
+}

@@ -1,0 +1,444 @@
+{
+ "slug": "idais-london-2026",
+ "title": "IDAIS 런던 합의문",
+ "original_title": "IDAIS-London Statement",
+ "publisher": "International Dialogues on AI Safety",
+ "published": "2026-04-19",
+ "source_url": "https://idais.ai/dialogue/idais-london/",
+ "source_note": "합의문 영문 전문",
+ "source_label": "원문 보기 (IDAIS)",
+ "summary": "영국 왕립학회에서 열린 다섯째 대화의 합의문이다. 지금 추세라면 기술 역량이 거의 없는 비국가 행위자도 1년 안에 일부 국가 수준의 사이버 공격 역량을 갖게 된다며 AI 기반 사이버 공격을 임박한 위협으로, 생물학적 오용을 가까운 위협으로 규정했다. 핵심 기반시설 보호, 프론티어 모델의 안전장치 강화, 평가 역량 구축을 우선순위로 제시하고, 사이버 영역에서 벌어지는 일이 통제 상실을 포함한 더 큰 위험의 경고라고 썼다.",
+ "doc_kind": "과학자 합의문",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/idais-london-2026-cover.webp",
+ "og_image": "/images/translations/idais-london-2026-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 31,
+  "sections": 0,
+  "items": 2,
+  "words_en": 1513
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Continuously advancing AI capabilities are empowering malicious, non-state actors in two ways: lowering the floor for who can cause harm, and raising the ceiling on how much harm can be caused.",
+   "ko": "지속적으로 발전하는 AI 역량은 악의적인 비국가 행위자에게 두 가지 방식으로 힘을 실어주고 있다. 피해를 일으킬 수 있는 주체의 문턱을 낮추고, 일으킬 수 있는 피해 규모의 상한을 높이는 것이다.",
+   "marks": [
+    {
+     "t": "피해를 일으킬 수 있는 주체의 문턱을 낮추고, 일으킬 수 있는 피해 규모의 상한을 높이는 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The potential for harm is currently most acute in the cyber domain. Offensive operations that once required weeks of specialist labour can now be executed by some frontier AI systems, and through them, anyone with access to these systems. Attacks once aimed at individual targets can be deployed at scale, and sophisticated exploits that once required well-resourced actors—cyberattacks that shut down hospitals, water supply systems, the electrical grid, financial markets, or air traffic control—can be performed by far more people at far greater scale.",
+   "ko": "현재 피해 가능성이 가장 심각한 분야는 사이버 영역이다. 과거에는 전문가가 수 주간 노동을 들여야 했던 공격 작전을 이제 일부 프론티어 AI 시스템이 수행할 수 있으며, 이를 통해 해당 시스템에 접근할 수 있는 누구나 수행할 수 있다. 과거 개별 대상을 노리던 공격을 대규모로 전개할 수 있게 되었고, 과거 자원이 풍부한 행위자만 가능했던 정교한 익스플로잇(병원, 상수도 시스템, 전력망, 금융시장 또는 항공교통관제를 마비시키는 사이버 공격)을 훨씬 더 많은 사람이 훨씬 더 큰 규모로 수행할 수 있게 되었다.",
+   "marks": [
+    {
+     "t": "현재 피해 가능성이 가장 심각한 분야는 사이버 영역이다.",
+     "k": "safety"
+    },
+    {
+     "t": "과거에는 전문가가 수 주간 노동을 들여야 했던 공격 작전을 이제 일부 프론티어 AI 시스템이 수행할 수 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "병원, 상수도 시스템, 전력망, 금융시장 또는 항공교통관제를 마비시키는 사이버 공격",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The same pattern, on a slower timeline, is also unfolding in biology. Frontier AI systems are outperforming PhD-level experts on tasks relevant to pathogen design, putting lower-level biological capabilities within reach of non-experts. At the same time, advanced AI systems can modify and design increasingly sophisticated pathogens. If these trends continue, AI systems may soon enable far more actors to attempt biological attacks with capabilities that would cause mass casualties and overwhelm healthcare systems.",
+   "ko": "이와 동일한 양상이 더 느린 속도로 생물학 분야에서도 전개되고 있다. 프론티어 AI 시스템은 병원체 설계와 관련된 과업에서 박사급 전문가를 능가하는 성능을 보이고 있으며, 이로 인해 비전문가도 낮은 수준의 생물학적 역량에 접근할 수 있게 되었다. 동시에 첨단 AI 시스템은 점점 더 정교한 병원체를 변형하고 설계할 수 있다. 이러한 추세가 지속된다면, AI 시스템은 머지않아 훨씬 더 많은 행위자가 대량 사상자를 발생시키고 보건의료 체계를 마비시킬 수 있는 역량을 갖추고 생물학적 공격을 시도하게 할 수 있다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 시스템은 병원체 설계와 관련된 과업에서 박사급 전문가를 능가하는 성능을 보이고 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "첨단 AI 시스템은 점점 더 정교한 병원체를 변형하고 설계할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "대량 사상자를 발생시키고 보건의료 체계를 마비시킬 수 있는 역량을 갖추고 생물학적 공격을 시도하게 할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The rapid emergence of capable AI agents compounds these risks, increasing the speed and scale of potential cyber and biological misuse.",
+   "ko": "유능한 AI 에이전트의 급속한 등장은 이러한 위험을 가중시켜, 잠재적인 사이버 및 생물학적 오용의 속도와 규모를 증대시킨다.",
+   "marks": [
+    {
+     "t": "잠재적인 사이버 및 생물학적 오용의 속도와 규모를 증대시킨다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We assess that dual-use capabilities that were previously concentrated in states—or that required state-level resources to acquire—are fast becoming accessible to non-state actors, from terrorist groups to lone individuals. Currently deployed AI safeguards are far from adequate, and basic technological and societal defences remain embryonic and unevenly deployed across jurisdictions. Coordinated action from frontier AI developers, governments, research institutions, and critical infrastructure entities is necessary if we are to prevent societal-scale harm from AI-enabled attacks.",
+   "ko": "우리는 과거 국가에 집중되어 있었거나 국가 수준의 자원이 있어야 확보할 수 있었던 이중 용도(dual-use) 역량이 테러 집단부터 단독 개인에 이르는 비국가 행위자에게 빠르게 확산되고 있다고 평가한다. 현재 배포된 AI 안전장치는 전혀 충분하지 않으며, 기본적인 기술적·사회적 방어 수단은 여전히 초기 단계에 머물러 있고 관할권마다 고르지 않게 배포되어 있다. AI 기반 공격으로 인한 사회적 규모의 피해를 방지하려면 프론티어 AI 개발자, 정부, 연구기관, 핵심 기반시설 주체 간의 조율된 조치가 필요하다.",
+   "marks": [
+    {
+     "t": "테러 집단부터 단독 개인에 이르는 비국가 행위자에게 빠르게 확산되고 있다고 평가한다",
+     "k": "safety"
+    },
+    {
+     "t": "현재 배포된 AI 안전장치는 전혀 충분하지 않으며",
+     "k": "key"
+    },
+    {
+     "t": "기본적인 기술적·사회적 방어 수단은 여전히 초기 단계에 머물러 있고 관할권마다 고르지 않게 배포되어 있다",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 AI 개발자, 정부, 연구기관, 핵심 기반시설 주체 간의 조율된 조치가 필요하다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We recommend states recognise the common threat posed by the proliferation of AI-enabled cyberattack and biological misuse capabilities and commit to prevention efforts. Leading AI jurisdictions have a particular responsibility for coordination. This includes the US and China in particular, as well as other jurisdictions with significant AI development, deployment, and evaluation capabilities.",
+   "ko": "우리는 각국이 AI 기반 사이버 공격 및 생물학적 오용 역량의 확산이 초래하는 공동의 위협을 인식하고 예방 노력에 전념할 것을 권고한다. 주요 AI 관할권은 조율에 대해 특별한 책임을 진다. 여기에는 특히 미국과 중국이 포함되며, 상당한 AI 개발, 배포 및 평가(evaluation) 역량을 보유한 기타 관할권도 포함된다.",
+   "marks": [
+    {
+     "t": "AI 기반 사이버 공격 및 생물학적 오용 역량의 확산이 초래하는 공동의 위협을 인식하고 예방 노력에 전념할 것을 권고한다",
+     "k": "safety"
+    },
+    {
+     "t": "주요 AI 관할권은 조율에 대해 특별한 책임을 진다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "AI-Enabled Cyberattacks Are an Imminent Threat",
+   "ko": "AI 기반 사이버 공격은 임박한 위협이다",
+   "id": "s6"
+  },
+  {
+   "type": "p",
+   "en": "On current trajectories, non-state actors 1 with minimal capacity will gain access to certain state-level cyberattack capabilities within the next year, creating unprecedented risks to critical infrastructure and national security. Some damage is now likely, as preparation has lagged. But urgent action can still contain harm to remain below societal-scale and build the defensive capabilities needed for what comes next.",
+   "ko": "현재 추세대로라면, 역량이 미미한 비국가 행위자 1 도 향후 1년 이내에 특정 국가 수준의 사이버 공격 역량에 접근할 수 있게 되어 핵심 기반시설과 국가안보에 전례 없는 위험을 초래할 것이다. 대비가 뒤처진 탓에 일부 손해는 이제 불가피할 가능성이 높다. 그러나 긴급한 조치를 통해 여전히 피해를 사회적 규모 미만으로 억제하고, 향후 닥칠 상황에 필요한 방어 역량을 구축할 수 있다.",
+   "marks": [
+    {
+     "t": "역량이 미미한 비국가 행위자 1 도 향후 1년 이내에 특정 국가 수준의 사이버 공격 역량에 접근할 수 있게 되어 핵심 기반시설과 국가안보에 전례 없는 위험을 초래할 것이다",
+     "k": "key"
+    },
+    {
+     "t": "대비가 뒤처진 탓에 일부 손해는 이제 불가피할 가능성이 높다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Frontier AI systems already complete, in hours, coding work that would take expert teams weeks and can discover and exploit vulnerabilities in the world’s most scrutinised codebases—including every major operating system and browser. Societies are nowhere near prepared for this imminent threat.",
+   "ko": "프론티어 AI 시스템은 이미 전문가 팀이 수 주가 걸릴 코딩 작업을 수 시간 만에 완료하며, 모든 주요 운영체제와 브라우저를 포함하여 세계에서 가장 철저하게 검증된 코드베이스에서 취약점을 발견하고 악용할 수 있다. 사회는 이 임박한 위협에 대한 대비가 전혀 되어 있지 않다.",
+   "marks": [
+    {
+     "t": "세계에서 가장 철저하게 검증된 코드베이스에서 취약점을 발견하고 악용할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "사회는 이 임박한 위협에 대한 대비가 전혀 되어 있지 않다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The measures below are necessary but not sufficient; they are illustrative steps in a continuous process of defensive improvement.",
+   "ko": "아래의 조치는 필요조건이지만 충분조건은 아니다. 이는 지속적인 방어 개선 과정에서 취할 수 있는 단계를 예시한 것이다."
+  },
+  {
+   "type": "p",
+   "en": "Priorities for addressing AI-enabled cyberattacks:",
+   "ko": "AI 기반 사이버 공격 대응을 위한 우선순위:"
+  },
+  {
+   "type": "li",
+   "en": "Protect critical infrastructure. Governments should urgently accelerate work to harden critical systems against AI-enabled attacks, drawing on national cybersecurity agencies, critical-infrastructure operators, and the defensive cybersecurity community.",
+   "ko": "핵심 기반시설 보호. 정부는 국가 사이버 보안 기관, 핵심 기반시설 운영자 및 방어적 사이버 보안 커뮤니티의 역량을 활용하여, AI 기반 공격에 대비해 핵심 시스템을 강화하는 작업을 시급히 가속화해야 한다.",
+   "marks": [
+    {
+     "t": "AI 기반 공격에 대비해 핵심 시스템을 강화하는 작업을 시급히 가속화해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Develop the capacity to evaluate frontier AI systems for cyberattack capabilities. Building on existing efforts, leading AI jurisdictions should develop domestic capacity to evaluate frontier AI systems for cyberattack capabilities.",
+   "ko": "프론티어 AI 시스템의 사이버 공격 역량을 평가하는 역량 개발. 주요 AI 관할권은 기존의 노력을 토대로 프론티어 AI 시스템의 사이버 공격 역량을 평가할 수 있는 국내 역량을 개발해야 한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 시스템의 사이버 공격 역량을 평가할 수 있는 국내 역량을 개발해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Require pre-deployment testing and delay wider availability where warranted. Governments and developers should jointly establish frontier cyber capability thresholds that trigger pre-deployment testing and delayed release, codified through a legal compact rather than voluntary commitments alone. Such delays are not necessarily permanent; they create space for risk evaluation and remediation, and are particularly important for frontier open-weight releases, which are irreversible.",
+   "ko": "배포 전 시험 의무화 및 필요시 광범위한 공개 지연. 정부와 개발자는 배포 전 시험과 공개 지연을 촉발하는 프론티어 사이버 역량 임계값을 공동으로 수립하고, 이를 자발적 약정에만 의존하지 않고 법적 협약을 통해 성문화해야 한다. 이러한 지연이 반드시 영구적인 것은 아니다. 지연은 위험 평가와 시정을 위한 여지를 마련하며, 되돌릴 수 없는 프론티어 오픈 웨이트(open-weight) 공개의 경우 특히 중요하다.",
+   "marks": [
+    {
+     "t": "배포 전 시험과 공개 지연을 촉발하는 프론티어 사이버 역량 임계값을 공동으로 수립하고",
+     "k": "safety"
+    },
+    {
+     "t": "자발적 약정에만 의존하지 않고 법적 협약을 통해 성문화해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "되돌릴 수 없는 프론티어 오픈 웨이트(open-weight) 공개의 경우 특히 중요하다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Implement access controls on frontier AI systems with advanced cyber capabilities. Developers, supported by governments, should provide early access to validated defenders, enabling remediation before wider deployment. For models with the most advanced cyberattack capabilities, developers should adopt robust access controls, such as identity verification, to detect misuse and restrict access for malicious actors. These measures should be paired with continued investment in misuse monitoring, with appropriate safeguards for user privacy throughout.",
+   "ko": "고급 사이버 역량을 갖춘 프론티어 AI 시스템에 대한 접근 통제 시행. 개발자는 정부의 지원을 받아 검증된 방어자에게 조기 접근 권한을 제공하여, 광범위한 배포 이전에 시정이 이루어질 수 있도록 해야 한다. 최첨단 사이버 공격 역량을 갖춘 모델의 경우, 개발자는 신원 확인과 같은 강력한 접근 통제를 도입하여 오용을 탐지하고 악의적 행위자의 접근을 제한해야 한다. 이러한 조치는 오용 모니터링에 대한 지속적인 투자와 병행되어야 하며, 전 과정에 걸쳐 사용자 프라이버시를 위한 적절한 안전장치를 갖추어야 한다.",
+   "marks": [
+    {
+     "t": "검증된 방어자에게 조기 접근 권한을 제공하여",
+     "k": "safety"
+    },
+    {
+     "t": "신원 확인과 같은 강력한 접근 통제를 도입하여 오용을 탐지하고 악의적 행위자의 접근을 제한해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "오용 모니터링에 대한 지속적인 투자와 병행되어야 하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Establish information sharing and vulnerability disclosure mechanisms. Governments, working with industry, should build mechanisms to share AI-enabled cyber threat indicators and enable collective detection and disruption of misuse. Cross-jurisdictional arrangements among leading AI jurisdictions are essential. Developer coordination with law enforcement and international bodies (e.g., Interpol) supporting the identification and deterrence of malicious actors would be welcome.",
+   "ko": "정보 공유 및 취약점 공개 메커니즘 구축. 정부는 업계와 협력하여 AI 기반 사이버 위협 지표를 공유하고 오용을 공동으로 탐지·차단할 수 있는 메커니즘을 구축해야 한다. 주요 AI 관할권 간의 관할권 간 협정이 필수적이다. 악의적 행위자의 식별과 억지를 지원하기 위한 개발자와 법 집행기관 및 국제기구(예: Interpol) 간의 협력이 바람직하다.",
+   "marks": [
+    {
+     "t": "AI 기반 사이버 위협 지표를 공유하고 오용을 공동으로 탐지·차단할 수 있는 메커니즘을 구축해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "주요 AI 관할권 간의 관할권 간 협정이 필수적이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Invest in long-term resilience. Public investment should accelerate long-term resilience of critical digital infrastructure. No single technical approach is sufficient; sustained progress requires a portfolio of measures, including modernising legacy systems, translating code into memory-safe languages, deploying AI for defence, and applying formal verification.",
+   "ko": "장기적 회복력에 대한 투자. 공공 투자를 통해 핵심 디지털 인프라의 장기적 회복력을 가속화해야 한다. 단일한 기술적 접근만으로는 충분하지 않다. 지속적인 진전을 위해서는 레거시 시스템 현대화, 코드의 메모리 안전(memory-safe) 언어로의 전환, 방어를 위한 AI 배포, 정형 검증(formal verification) 적용 등 일련의 조치를 포괄하는 포트폴리오가 필요하다.",
+   "marks": [
+    {
+     "t": "핵심 디지털 인프라의 장기적 회복력을 가속화해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "AI-Enabled Biological Misuse",
+   "ko": "AI 기반 생물학적 오용",
+   "id": "s17"
+  },
+  {
+   "type": "p",
+   "en": "In the near future, AI may put high-consequence biological capabilities—potentially including the design of pathogens more dangerous than anything found in nature—within reach of actors who cannot access them today. The consequences could be catastrophic for public health and carry devastating economic impact. These risks must be managed if society is to harness AI's benefits for the life sciences.",
+   "ko": "가까운 미래에 AI는 오늘날 접근할 수 없는 행위자에게도 중대한 결과를 초래하는 생물학적 역량을 제공할 수 있으며, 여기에는 자연에 존재하는 어떤 것보다 더 위험한 병원체의 설계가 포함될 가능성도 있다. 그 결과는 공중보건에 재앙적일 수 있으며 막대한 경제적 영향을 초래할 수 있다. 사회가 생명과학 분야에서 AI의 혜택을 활용하려면 이러한 위험을 관리해야 한다.",
+   "marks": [
+    {
+     "t": "자연에 존재하는 어떤 것보다 더 위험한 병원체의 설계가 포함될 가능성",
+     "k": "safety"
+    },
+    {
+     "t": "그 결과는 공중보건에 재앙적일 수 있으며 막대한 경제적 영향을 초래할 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Frontier AI capabilities relevant to biological misuse are growing rapidly. In two years, frontier AI systems have gone from scoring well below PhD-level experts to outperforming them on open-ended questions, protocol generation, and laboratory troubleshooting. Controlled studies show they provide substantial virology uplift in protocol generation over Internet access alone, and, as of mid-2025, are able to assist non-experts in some steps of laboratory work. Genome language models have already generated novel viable organisms. This risk is further compounded by the emergence of AI agents that can coordinate multi-step laboratory and information-gathering tasks and help build new specialised biological AI models.",
+   "ko": "생물학적 오용과 관련된 프론티어 AI 역량은 빠르게 증가하고 있다. 2년 만에 프론티어 AI 시스템은 개방형 질문, 프로토콜 생성, 실험실 문제 해결에서 박사급 전문가에 크게 못 미치는 점수를 받던 수준에서 이들을 능가하는 수준으로 발전했다. 통제된 연구에 따르면, 프론티어 AI 시스템은 프로토콜 생성에서 인터넷 접근만 이용하는 경우보다 상당한 바이러스학 업리프트를 제공하며, 2025년 중반 기준으로 실험실 작업의 일부 단계에서 비전문가를 지원할 수 있다. 유전체 언어 모델(genome language model)은 이미 생존 가능한 새로운 유기체를 생성한 바 있다. 다단계 실험실 과업 및 정보 수집 과업을 조율하고 새로운 특화 생물학 AI 모델 구축을 도울 수 있는 AI 에이전트의 등장은 이러한 위험을 더욱 가중시킨다.",
+   "marks": [
+    {
+     "t": "생물학적 오용과 관련된 프론티어 AI 역량은 빠르게 증가하고 있다.",
+     "k": "safety"
+    },
+    {
+     "t": "프로토콜 생성에서 인터넷 접근만 이용하는 경우보다 상당한 바이러스학 업리프트를 제공",
+     "k": "safety"
+    },
+    {
+     "t": "유전체 언어 모델(genome language model)은 이미 생존 가능한 새로운 유기체를 생성한 바 있다.",
+     "k": "safety"
+    },
+    {
+     "t": "AI 에이전트의 등장은 이러한 위험을 더욱 가중시킨다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Current model-level safeguards—particularly for open-weight models—are fragile and routinely bypassed. Better defences against AI-enabled biological attacks exist, including nucleic acid synthesis screening, personal protective equipment, air filtration, antivirals, and biosurveillance, but remain nascent and unevenly deployed.",
+   "ko": "현재의 모델 수준 안전장치는, 특히 오픈 웨이트 모델의 경우, 취약하며 일상적으로 우회되고 있다. 핵산 합성 스크리닝, 개인 보호 장비, 공기 여과, 항바이러스제, 생물감시(biosurveillance) 등 AI 기반 생물학적 공격에 대한 더 나은 방어 수단이 존재하지만, 이들은 여전히 초기 단계에 있으며 고르지 않게 배포되어 있다.",
+   "marks": [
+    {
+     "t": "현재의 모델 수준 안전장치는, 특히 오픈 웨이트 모델의 경우, 취약하며 일상적으로 우회되고 있다.",
+     "k": "key"
+    },
+    {
+     "t": "여전히 초기 단계에 있으며 고르지 않게 배포되어 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Priorities for addressing AI-enabled biological misuse:",
+   "ko": "AI 기반 생물학적 오용 대응을 위한 우선순위:"
+  },
+  {
+   "type": "li",
+   "en": "Harden AI safeguards against high-consequence biological misuse. No single mechanism is sufficient. Developers should invest in a portfolio of model-level safeguards (e.g., pre-training data filtering, refusal training) and system-level safeguards (e.g., trusted access programmes, misuse monitoring via classifiers). Governments should fund sustained safety research to strengthen these safeguards over time and enable information-sharing of best practices between companies. Until broader defences mature, high-consequence AI biological capabilities and datasets should be limited to validated users, such as researchers at vetted institutions.",
+   "ko": "중대한 결과를 초래하는 생물학적 오용에 대한 AI 안전장치 강화. 단일한 메커니즘만으로는 충분하지 않다. 개발자는 모델 수준 안전장치(예: 사전 학습 데이터 필터링, 거부 학습(refusal training))와 시스템 수준 안전장치(예: 신뢰 기반 접근 프로그램(trusted access programme), 분류기를 통한 오용 모니터링)로 구성된 포트폴리오에 투자해야 한다. 정부는 이러한 안전장치를 지속적으로 강화하기 위한 안전 연구에 꾸준히 재원을 지원하고, 기업 간 모범 사례에 관한 정보 공유를 가능하게 해야 한다. 보다 광범위한 방어 수단이 성숙하기 전까지는 중대한 결과를 초래할 수 있는 AI의 생물학적 역량과 데이터셋을 검증된 기관의 연구자 등 검증된 사용자에게만 제한적으로 제공해야 한다.",
+   "marks": [
+    {
+     "t": "모델 수준 안전장치(예: 사전 학습 데이터 필터링, 거부 학습(refusal training))와 시스템 수준 안전장치",
+     "k": "safety"
+    },
+    {
+     "t": "검증된 기관의 연구자 등 검증된 사용자에게만 제한적으로 제공해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "For frontier proprietary models: strengthen refusal training, identity-verified access controls, and targeted usage monitoring against high-consequence biological misuse. Developers should continue to harden safeguards against jailbreaking and other adversarial attacks, build out trusted-access programmes, and improve classifier performance, especially in distinguishing legitimate from malicious use.",
+   "ko": "프론티어 독점 모델: 중대한 결과를 초래하는 생물학적 오용에 대응하기 위해 거부 학습, 신원 확인 기반 접근 통제, 표적화된 사용 모니터링(Usage Monitoring)을 강화. 개발자는 탈옥(jailbreaking) 및 기타 적대적 공격에 대한 안전장치를 지속적으로 강화하고, 신뢰 기반 접근 프로그램을 확대하며, 특히 정당한 사용과 악의적 사용을 구별하는 측면에서 분류기의 성능을 개선해야 한다.",
+   "marks": [
+    {
+     "t": "탈옥(jailbreaking) 및 기타 적대적 공격에 대한 안전장치를 지속적으로 강화",
+     "k": "safety"
+    },
+    {
+     "t": "정당한 사용과 악의적 사용을 구별하는 측면에서 분류기의 성능을 개선",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "For frontier open-weight models: research and institute pre-training data filtering for high-consequence biological knowledge. Pre-training data filtering is one of the few potential mitigations for open-weight releases. While not a durable standalone solution, it may meaningfully slow proliferation while stronger safeguards are developed. Developers and researchers should continue to improve filtering methods, assess their effectiveness at production scale, release open-source implementations, and pursue further research into open-weight model safeguards. Governments should help secure the most concerning dual-use pathogen datasets against malicious training and fine-tuning.",
+   "ko": "프론티어 오픈 웨이트 모델: 중대한 결과를 초래하는 생물학적 지식에 대한 사전 학습 데이터 필터링을 연구하고 도입. 사전 학습 데이터 필터링은 오픈 웨이트 공개에 적용할 수 있는 몇 안 되는 잠재적 완화 수단 중 하나이다. 이는 그 자체만으로 지속 가능한 해결책은 아니지만, 더 강력한 안전장치가 개발되는 동안 확산을 의미 있게 늦출 수 있다. 개발자와 연구자는 필터링 방법을 지속적으로 개선하고, 실제 운영 규모에서의 효과성을 평가하며, 오픈소스 구현을 공개하고, 오픈 웨이트 모델 안전장치에 관한 추가 연구를 추진해야 한다. 정부는 가장 우려되는 이중 용도(dual-use) 병원체 데이터셋이 악의적 학습 및 미세조정(Fine-Tuning)에 사용되지 않도록 보호하는 데 기여해야 한다.",
+   "marks": [
+    {
+     "t": "오픈 웨이트 공개에 적용할 수 있는 몇 안 되는 잠재적 완화 수단 중 하나",
+     "k": "safety"
+    },
+    {
+     "t": "이중 용도(dual-use) 병원체 데이터셋이 악의적 학습 및 미세조정(Fine-Tuning)에 사용되지 않도록 보호",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Develop the capacity to evaluate frontier AI systems for biological uplift. Leading AI jurisdictions should build domestic capacity to evaluate frontier systems for meaningful uplift for biological misuse for both experts and non-experts. Tiered oversight mechanisms analogous to biosafety-level (BSL) frameworks—with relevant authorities receiving early access to evaluate systems with potentially high-consequence biological uplift—should be developed, so consequential judgements are not left to developers alone.",
+   "ko": "프론티어 AI 시스템의 생물학적 업리프트 평가 역량 개발. 주요 AI 관할권은 프론티어 시스템이 전문가와 비전문가 모두에게 생물학적 오용에 대한 의미 있는 업리프트를 제공하는지 평가할 수 있는 국내 역량을 구축해야 한다. 생물안전등급(biosafety-level, BSL) 체계와 유사한 단계적 감독 메커니즘을 마련하여, 중대한 결과를 초래하는 생물학적 업리프트를 제공할 가능성이 있는 시스템을 관련 당국이 평가할 수 있도록 조기 접근 권한을 부여해야 한다. 이를 통해 중대한 판단이 개발자에게만 맡겨지지 않도록 해야 한다.",
+   "marks": [
+    {
+     "t": "생물학적 오용에 대한 의미 있는 업리프트를 제공하는지 평가할 수 있는 국내 역량을 구축",
+     "k": "safety"
+    },
+    {
+     "t": "중대한 판단이 개발자에게만 맡겨지지 않도록 해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Coordinate internationally on nucleic acid synthesis screening. Governments and relevant expert communities with synthesis capabilities should coordinate on comprehensive and mandatory nucleic acid synthesis screening as an immediate priority, building on existing national regulatory frameworks.",
+   "ko": "핵산 합성 스크리닝에 관한 국제 공조. 합성 역량을 보유한 정부와 관련 전문가 공동체는 기존의 국가 규제 체계를 토대로, 포괄적이고 의무적인 핵산 합성 스크리닝에 관한 공조를 시급한 우선 과제로 추진해야 한다.",
+   "marks": [
+    {
+     "t": "포괄적이고 의무적인 핵산 합성 스크리닝에 관한 공조",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Accelerate defence against AI-enabled biological attacks. Governments should invest in the capabilities needed to detect, contain, and respond to AI-enabled biological threats, with particular attention to regions where gaps in biosecurity capacity create shared vulnerabilities. Such research should be structured to avoid advancing offensive capabilities as a byproduct.",
+   "ko": "AI 기반 생물학적 공격에 대한 방어 가속화. 정부는 AI 기반 생물학적 위협을 탐지·봉쇄·대응하는 데 필요한 역량에 투자해야 하며, 특히 생물안보 역량의 격차가 공동의 취약점을 초래하는 지역에 각별한 주의를 기울여야 한다. 이러한 연구는 부산물로서 공격 역량을 진전시키는 일이 없도록 설계되어야 한다.",
+   "marks": [
+    {
+     "t": "부산물로서 공격 역량을 진전시키는 일이 없도록 설계되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The safeguards, controls, and societal defences set out above are necessary and urgent. A serious AI-enabled catastrophe would not just cause enormous direct harm, but would also be catastrophic for public trust in AI systems, squandering AI’s substantial societal benefits. The Chernobyl disaster decimated the global nuclear industry and still casts a shadow over civilian nuclear power despite vastly safer modern designs. With trillions of dollars and millions of lives at stake, we will need immediate action and sustained investment from governments, industry, and the research community.",
+   "ko": "위에서 제시한 안전장치, 통제, 사회적 방어 수단은 필요하고도 시급하다. AI로 인한 심각한 재앙은 막대한 직접적 피해를 초래할 뿐만 아니라 AI 시스템에 대한 대중의 신뢰에도 치명적인 타격을 주어, AI가 가져올 상당한 사회적 혜택을 허비하게 만들 것이다. 체르노빌 참사는 전 세계 원자력 산업을 초토화했으며, 현대의 설계가 훨씬 더 안전해졌음에도 여전히 민간 원자력 발전에 그림자를 드리우고 있다. 수조 달러와 수백만 명의 생명이 걸려 있는 만큼, 정부, 업계, 연구 공동체의 즉각적인 행동과 지속적인 투자가 필요하다.",
+   "marks": [
+    {
+     "t": "AI로 인한 심각한 재앙은 막대한 직접적 피해를 초래할 뿐만 아니라 AI 시스템에 대한 대중의 신뢰에도 치명적인 타격",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI-enabled cyberattacks are already upon us, and significant damage is likely in the coming year. Biological misuse is not far behind. We have warned of exactly this dynamic: AI capabilities are outpacing the world’s ability to prepare. What is now unfolding in cyber should serve as a warning for biological risks and for the broader set of risks ahead, including loss of control over increasingly autonomous AI systems. Preparing before capabilities emerge, rather than after, must now be the default posture.",
+   "ko": "AI 기반 사이버 공격은 이미 현실화되었으며, 향후 1년 내에 상당한 손해가 발생할 가능성이 높다. 생물학적 오용도 그리 멀지 않았다. 우리는 바로 이러한 역학, 즉 AI 역량이 세계의 대비 능력을 앞지르고 있다는 점을 경고해 왔다. 현재 사이버 분야에서 전개되고 있는 상황은 생물학적 위험은 물론, 점점 더 자율적으로 작동하는 AI 시스템에 대한 통제 상실을 포함하여 앞으로 닥칠 더 광범위한 위험에 대한 경고가 되어야 한다. 이제는 역량이 출현한 이후가 아니라 출현하기 이전에 대비하는 것이 기본 자세가 되어야 한다.",
+   "marks": [
+    {
+     "t": "AI 기반 사이버 공격은 이미 현실화되었으며, 향후 1년 내에 상당한 손해가 발생할 가능성이 높다.",
+     "k": "safety"
+    },
+    {
+     "t": "AI 역량이 세계의 대비 능력을 앞지르고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "점점 더 자율적으로 작동하는 AI 시스템에 대한 통제 상실",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "1 We use “non-state actors” to include individuals, criminal groups, and other non-governmental entities with intent and capacity to misuse AI capabilities.",
+   "ko": "1 본 문서에서 \"비국가 행위자\"는 AI 역량을 오용할 의도와 능력을 갖춘 개인, 범죄 집단 및 기타 비정부 주체를 포함하는 의미로 사용한다.",
+   "marks": [
+    {
+     "t": "AI 역량을 오용할 의도와 능력을 갖춘 개인, 범죄 집단 및 기타 비정부 주체",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

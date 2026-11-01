@@ -76,7 +76,7 @@ test("exports each translation with the disclaimer and every source block paired
         // 대문자로 시작하는 낱말이 이어지는 고유명사도 옮기지 않고 두므로 세지 않는다.
         const latin = (part
           .replace(/["“'‘][^"”'’]*["”'’]/g, "")
-          .replace(/\b[A-Z][A-Za-z]*\.?(?:[,\s]+(?:[A-Z][A-Za-z]*\.?|\d+|for|and|of|the))+/g, "")
+          .replace(/\b[A-Z][A-Za-z]*\.?(?:[,\s]+(?:[A-Z][A-Za-z]*\.?|\d+|&|for|and|of|the))+/g, "")
           .match(/[A-Za-z]/g) ?? []).length;
         const hangul = (part.match(/[가-힣]/g) ?? []).length;
         const words = part.trim().split(/\s+/).length;

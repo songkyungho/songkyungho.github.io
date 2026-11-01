@@ -1,0 +1,148 @@
+{
+ "slug": "fli-pause-2023",
+ "title": "FLI '거대 AI 실험을 중단하라' 공개서한",
+ "original_title": "Pause Giant AI Experiments: An Open Letter",
+ "publisher": "Future of Life Institute",
+ "published": "2023-03-22",
+ "source_url": "https://futureoflife.org/open-letter/pause-giant-ai-experiments/",
+ "source_note": "공개서한 본문 전문(참고문헌 각주 번호는 뺐다). FAQ·정책 권고 문서는 싣지 않았다",
+ "source_label": "원문 보기 (FLI)",
+ "summary": "GPT-4가 공개된 지 여드레 만에, GPT-4보다 강력한 AI 시스템의 학습을 최소 6개월 멈추라고 모든 AI 연구소에 요구한 서한이다. 인간보다 수가 많고 똑똑해져 결국 우리를 대체할 비인간 지성을 만들어야 하느냐, 문명의 통제권을 잃을 위험을 감수해야 하느냐고 물었다. 중단 기간에 공유 안전 프로토콜을 만들고 AI 거버넌스 체계를 서두르라고 했다. 머스크·워즈니악·벤지오 등이 서명해 'AI 일시 중지' 논쟁의 출발점이 됐다.",
+ "doc_kind": "공개서한",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/fli-pause-2023-cover.webp",
+ "og_image": "/images/translations/fli-pause-2023-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 7,
+  "sections": 0,
+  "items": 0,
+  "words_en": 592
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "AI systems with human-competitive intelligence can pose profound risks to society and humanity, as shown by extensive research  and acknowledged by top AI labs.  As stated in the widely-endorsed Asilomar AI Principles, Advanced AI could represent a profound change in the history of life on Earth, and should be planned for and managed with commensurate care and resources. Unfortunately, this level of planning and management is not happening, even though recent months have seen AI labs locked in an out-of-control race to develop and deploy ever more powerful digital minds that no one – not even their creators – can understand, predict, or reliably control.",
+   "ko": "인간과 경쟁할 수 있는 지능을 갖춘 AI 시스템은 사회와 인류에 심대한 위험을 초래할 수 있다. 이는 광범위한 연구로 입증되었고 최고 수준의 AI 연구소들도 인정하는 사실이다. 널리 지지받는 Asilomar AI Principles에 명시된 바와 같이, 첨단 AI는 지구 생명의 역사에 심대한 변화를 가져올 수 있으므로 그에 상응하는 주의와 자원을 들여 계획하고 관리해야 한다. 그러나 이러한 수준의 계획과 관리는 이루어지지 않고 있다. 최근 몇 달 동안 AI 연구소들은 그 누구도, 심지어 그것을 만든 이들조차 이해하거나 예측하거나 신뢰성 있게 통제할 수 없는 더욱 강력한 디지털 지성(digital minds)을 개발하고 배포하기 위해 통제 불능의 경쟁에 빠져 있다.",
+   "marks": [
+    {
+     "t": "인간과 경쟁할 수 있는 지능을 갖춘 AI 시스템은 사회와 인류에 심대한 위험을 초래할 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "그 누구도, 심지어 그것을 만든 이들조차 이해하거나 예측하거나 신뢰성 있게 통제할 수 없는 더욱 강력한 디지털 지성(digital minds)을 개발하고 배포하기 위해 통제 불능의 경쟁에 빠져 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Contemporary AI systems are now becoming human-competitive at general tasks,  and we must ask ourselves: Should we let machines flood our information channels with propaganda and untruth? Should we automate away all the jobs, including the fulfilling ones? Should we develop nonhuman minds that might eventually outnumber, outsmart, obsolete and replace us? Should we risk loss of control of our civilization? Such decisions must not be delegated to unelected tech leaders. Powerful AI systems should be developed only once we are confident that their effects will be positive and their risks will be manageable. This confidence must be well justified and increase with the magnitude of a system’s potential effects. OpenAI’s recent statement regarding artificial general intelligence, states that “At some point, it may be important to get independent review before starting to train future systems, and for the most advanced efforts to agree to limit the rate of growth of compute used for creating new models.” We agree. That point is now.",
+   "ko": "오늘날의 AI 시스템은 일반 과업에서 인간과 경쟁할 수 있는 수준에 이르고 있으며, 우리는 스스로에게 다음과 같이 물어야 한다. 기계가 우리의 정보 채널을 선전과 허위로 뒤덮도록 내버려 두어야 하는가? 보람 있는 일자리까지 포함하여 모든 일자리를 자동화로 없애야 하는가? 결국 수적으로 우리를 압도하고, 우리보다 똑똑해지며, 우리를 쓸모없게 만들고 대체할 수도 있는 비인간 지성(nonhuman minds)을 개발해야 하는가? 우리 문명에 대한 통제 상실의 위험을 감수해야 하는가? 이러한 결정을 선출되지 않은 기술 업계 지도자들에게 맡겨서는 안 된다. 강력한 AI 시스템은 그 영향이 긍정적이고 그 위험이 관리 가능하다는 확신이 선 후에야 개발되어야 한다. 이 확신은 충분한 근거를 갖추어야 하며, 시스템이 미칠 수 있는 잠재적 영향의 규모가 클수록 더욱 강해져야 한다. OpenAI는 범용 인공지능(artificial general intelligence)에 관한 최근 성명에서 \"어느 시점에는 향후 시스템의 훈련을 시작하기 전에 독립적인 검토를 받는 것이 중요해질 수 있으며, 최첨단 개발 활동에 대해서는 새로운 모델을 만드는 데 사용되는 연산의 증가 속도를 제한하는 데 합의하는 것이 중요해질 수 있다\"고 밝혔다. 우리는 이에 동의한다. 그 시점은 바로 지금이다.",
+   "marks": [
+    {
+     "t": "기계가 우리의 정보 채널을 선전과 허위로 뒤덮도록 내버려 두어야 하는가?",
+     "k": "safety"
+    },
+    {
+     "t": "우리를 쓸모없게 만들고 대체할 수도 있는 비인간 지성(nonhuman minds)을 개발해야 하는가?",
+     "k": "safety"
+    },
+    {
+     "t": "우리 문명에 대한 통제 상실의 위험을 감수해야 하는가?",
+     "k": "safety"
+    },
+    {
+     "t": "강력한 AI 시스템은 그 영향이 긍정적이고 그 위험이 관리 가능하다는 확신이 선 후에야 개발되어야 한다.",
+     "k": "safety"
+    },
+    {
+     "t": "향후 시스템의 훈련을 시작하기 전에 독립적인 검토를 받는 것이 중요해질 수 있으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Therefore, we call on all AI labs to immediately pause for at least 6 months the training of AI systems more powerful than GPT-4. This pause should be public and verifiable, and include all key actors. If such a pause cannot be enacted quickly, governments should step in and institute a moratorium.",
+   "ko": "따라서 우리는 모든 AI 연구소에 GPT-4보다 강력한 AI 시스템의 훈련을 즉시 최소 6개월간 중단할 것을 촉구한다. 이 중단은 공개적이고 검증 가능해야 하며, 모든 핵심 행위자를 포함해야 한다. 이러한 중단이 신속히 시행될 수 없다면 정부가 개입하여 모라토리엄을 도입해야 한다.",
+   "marks": [
+    {
+     "t": "모든 AI 연구소에 GPT-4보다 강력한 AI 시스템의 훈련을 즉시 최소 6개월간 중단할 것을 촉구한다.",
+     "k": "key"
+    },
+    {
+     "t": "정부가 개입하여 모라토리엄을 도입해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI labs and independent experts should use this pause to jointly develop and implement a set of shared safety protocols for advanced AI design and development that are rigorously audited and overseen by independent outside experts. These protocols should ensure that systems adhering to them are safe beyond a reasonable doubt.  This does not mean a pause on AI development in general, merely a stepping back from the dangerous race to ever-larger unpredictable black-box models with emergent capabilities.",
+   "ko": "AI 연구소와 독립 전문가들은 이 중단 기간 동안 첨단 AI의 설계 및 개발을 위한 공동 안전 프로토콜을 함께 개발하고 시행해야 하며, 이 프로토콜은 외부의 독립 전문가들이 엄격하게 감사하고 감독해야 한다. 이 프로토콜은 이를 준수하는 시스템이 합리적 의심의 여지 없이 안전하도록 보장해야 한다. 이는 AI 개발 전반을 중단하자는 것이 아니며, 창발적 역량(emergent capabilities)을 지닌 예측 불가능한 블랙박스 모델을 점점 더 크게 만들려는 위험한 경쟁에서 한발 물러서자는 것일 뿐이다.",
+   "marks": [
+    {
+     "t": "첨단 AI의 설계 및 개발을 위한 공동 안전 프로토콜을 함께 개발하고 시행해야 하며",
+     "k": "safety"
+    },
+    {
+     "t": "외부의 독립 전문가들이 엄격하게 감사하고 감독해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "창발적 역량(emergent capabilities)을 지닌 예측 불가능한 블랙박스 모델을 점점 더 크게 만들려는 위험한 경쟁",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI research and development should be refocused on making today’s powerful, state-of-the-art systems more accurate, safe, interpretable, transparent, robust, aligned, trustworthy, and loyal.",
+   "ko": "AI 연구개발은 오늘날의 강력한 최첨단 시스템을 더욱 정확하고, 안전하며, 해석 가능하고, 투명하며, 견고하고, 정렬되어 있으며(aligned), 신뢰할 수 있고, 충실하게(loyal) 만드는 방향으로 재조정되어야 한다.",
+   "marks": [
+    {
+     "t": "안전하며, 해석 가능하고, 투명하며, 견고하고, 정렬되어 있으며(aligned)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In parallel, AI developers must work with policymakers to dramatically accelerate development of robust AI governance systems. These should at a minimum include: new and capable regulatory authorities dedicated to AI; oversight and tracking of highly capable AI systems and large pools of computational capability; provenance and watermarking systems to help distinguish real from synthetic and to track model leaks; a robust auditing and certification ecosystem; liability for AI-caused harm; robust public funding for technical AI safety research; and well-resourced institutions for coping with the dramatic economic and political disruptions (especially to democracy) that AI will cause.",
+   "ko": "이와 병행하여 AI 개발자는 정책 입안자와 협력하여 견고한 AI 거버넌스 체계의 개발을 획기적으로 가속해야 한다. 이 체계에는 최소한 다음이 포함되어야 한다. AI를 전담하는 역량 있는 새로운 규제 기관, 고역량(Highly capable) AI 시스템과 대규모 연산 역량에 대한 감독 및 추적, 실제와 합성물을 구별하고 모델 유출을 추적하는 데 도움이 되는 출처 증명(provenance) 및 워터마킹 시스템, 견고한 감사 및 인증 생태계, AI가 초래한 피해에 대한 법적 책임, 기술적 AI 안전 연구에 대한 충분한 공공 자금 지원, 그리고 AI가 초래할 극심한 경제적·정치적 혼란(특히 민주주의에 대한 혼란)에 대응하기 위한 충분한 자원을 갖춘 기관이다.",
+   "marks": [
+    {
+     "t": "AI를 전담하는 역량 있는 새로운 규제 기관",
+     "k": "safety"
+    },
+    {
+     "t": "고역량(Highly capable) AI 시스템과 대규모 연산 역량에 대한 감독 및 추적",
+     "k": "safety"
+    },
+    {
+     "t": "모델 유출을 추적하는 데 도움이 되는 출처 증명(provenance) 및 워터마킹 시스템",
+     "k": "safety"
+    },
+    {
+     "t": "기술적 AI 안전 연구에 대한 충분한 공공 자금 지원",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Humanity can enjoy a flourishing future with AI. Having succeeded in creating powerful AI systems, we can now enjoy an “AI summer” in which we reap the rewards, engineer these systems for the clear benefit of all, and give society a chance to adapt. Society has hit pause on other technologies with potentially catastrophic effects on society.  We can do so here. Let’s enjoy a long AI summer, not rush unprepared into a fall.",
+   "ko": "인류는 AI와 함께 번영하는 미래를 누릴 수 있다. 강력한 AI 시스템을 만드는 데 성공한 지금, 우리는 그 성과를 거두고, 이 시스템을 모두에게 분명한 이익이 되도록 설계하며, 사회에 적응할 기회를 주는 \"AI 여름\"을 누릴 수 있다. 사회는 사회에 잠재적으로 파국적인 영향을 미칠 수 있는 다른 기술들에 대해 중단을 선택한 바 있다. 여기서도 그렇게 할 수 있다. 우리는 긴 AI 여름을 누려야 하며, 준비 없이 가을로 서둘러 들어가서는 안 된다.",
+   "marks": [
+    {
+     "t": "사회에 잠재적으로 파국적인 영향을 미칠 수 있는 다른 기술들에 대해 중단을 선택한 바 있다",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

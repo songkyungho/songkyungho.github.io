@@ -275,8 +275,9 @@ def main(src: str, translated: str, meta_path: str) -> None:
     CONNECTORS = {"for", "and", "of", "the", "on", "in", "to", "a", "an", "at", "by"}
 
     def names_only(text: str) -> bool:
-        words = re.findall(r"[A-Za-z][A-Za-z'\u2019]*", text)
-        return bool(words) and all(w[0].isupper() or w.lower() in CONNECTORS for w in words)
+        words = re.findall(r"[^\W\d_][\w'\u2019-]*", text)  # 'Hänni'·'Bagiński'처럼 라틴 확장 글자가 든 이름도 한 낱말로
+        # 대소문자가 없는 글자로 시작하는 낱말(한자 이름 '姚期智')도 고유명사로 본다
+        return bool(words) and all(not w[0].islower() or w.lower() in CONNECTORS for w in words)
     for block in blocks:
         if block["ko"].strip() == block["en"].strip() and re.search(r"[A-Za-z]{3,}", block["en"]):
             if block["type"] in ("h2", "h3") and label.match(block["en"].strip()):

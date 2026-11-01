@@ -1,0 +1,373 @@
+{
+ "slug": "idais-venice-2024",
+ "title": "IDAIS 베네치아 합의문 (글로벌 공공재로서의 AI 안전)",
+ "original_title": "IDAIS-Venice: Consensus Statement on AI Safety as a Global Public Good",
+ "publisher": "International Dialogues on AI Safety",
+ "published": "2024-09-08",
+ "source_url": "https://idais.ai/dialogue/idais-venice/",
+ "source_note": "합의문 영문 전문",
+ "source_label": "원문 보기 (IDAIS)",
+ "summary": "AI 위험이 국경을 넘는 만큼 AI 안전을 글로벌 공공재로 인정해야 한다는 합의문이다. 국가 AI 안전 당국이 모이는 비상 대비 협정과 기구, 배포 전 높은 확신의 안전 사례를 요구하는 안전 보증 체계, 국가 간 검증을 가능하게 할 독립적 국제 연구라는 세 가지 절차를 제안했다.",
+ "doc_kind": "과학자 합의문",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/idais-venice-2024-cover.webp",
+ "og_image": "/images/translations/idais-venice-2024-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 24,
+  "sections": 4,
+  "items": 0,
+  "words_en": 1359
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Consensus Statement on AI Safety as a Global Public Good",
+   "ko": "글로벌 공공재로서의 AI 안전에 관한 합의 성명",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "Rapid advances in artificial intelligence (AI) systems’ capabilities are pushing humanity closer to a world where AI meets and surpasses human intelligence. Experts agree these AI systems are likely to be developed in the coming decades, with many of them believing they will arrive imminently. Loss of human control or malicious use of these AI systems could lead to catastrophic outcomes for all of humanity. Unfortunately, we have not yet developed the necessary science to control and safeguard the use of such advanced intelligence. The global nature of these risks from AI makes it necessary to recognize AI safety as a global public good, and work towards global governance of these risks. Collectively, we must prepare to avert the attendant catastrophic risks that could arrive at any time.",
+   "ko": "인공지능(AI) 시스템의 역량이 급속히 발전하면서 인류는 AI가 인간의 지능에 도달하고 이를 능가하는 세계에 점점 가까워지고 있다. 전문가들은 이러한 AI 시스템이 향후 수십 년 내에 개발될 가능성이 높다는 데 동의하며, 그중 상당수는 그 시점이 임박했다고 본다. 이러한 AI 시스템에 대한 인간의 통제 상실이나 악의적 사용은 인류 전체에 파국적 결과를 초래할 수 있다. 안타깝게도 우리는 이처럼 첨단화된 지능의 사용을 통제하고 이에 안전장치를 마련하는 데 필요한 과학을 아직 확립하지 못했다. AI로 인한 이러한 위험은 전 지구적 성격을 띠므로, AI 안전을 글로벌 공공재로 인정하고 이 위험에 대한 글로벌 거버넌스를 향해 나아가야 한다. 우리는 언제든 닥칠 수 있는 파국적 위험을 피하기 위해 공동으로 대비해야 한다.",
+   "marks": [
+    {
+     "t": "이러한 AI 시스템에 대한 인간의 통제 상실이나 악의적 사용은 인류 전체에 파국적 결과를 초래할 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "첨단화된 지능의 사용을 통제하고 이에 안전장치를 마련하는 데 필요한 과학을 아직 확립하지 못했다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 안전을 글로벌 공공재로 인정하고 이 위험에 대한 글로벌 거버넌스를 향해 나아가야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "언제든 닥칠 수 있는 파국적 위험을 피하기 위해 공동으로 대비해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Promising initial steps by the international community show cooperation on AI safety and governance is achievable despite geopolitical tensions. States and AI developers around the world committed to foundational principles to foster responsible development of AI and minimize risks at two intergovernmental summits. Thanks to these summits, states established AI Safety Institutes or similar institutions to advance testing, research and standards-setting.",
+   "ko": "국제사회가 내디딘 유망한 초기 조치들은 지정학적 긴장 속에서도 AI 안전과 거버넌스에 관한 협력이 가능함을 보여준다. 전 세계 국가와 AI 개발자들은 두 차례의 정부 간 정상회의에서 책임 있는 AI 개발을 촉진하고 위험을 최소화하기 위한 기본 원칙을 약정하였다. 이 정상회의들을 계기로 각국은 시험, 연구 및 표준 제정을 진전시키기 위해 AI 안전연구소(AI Safety Institutes) 또는 이와 유사한 기관을 설립하였다.",
+   "marks": [
+    {
+     "t": "지정학적 긴장 속에서도 AI 안전과 거버넌스에 관한 협력이 가능함",
+     "k": "safety"
+    },
+    {
+     "t": "AI 안전연구소(AI Safety Institutes) 또는 이와 유사한 기관을 설립하였다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "These efforts are laudable and must continue. States must sufficiently resource AI Safety Institutes, continue to convene summits and support other global governance efforts. However, states must go further than they do today. As an initial step, states should develop authorities to detect and respond to AI incidents and catastrophic risks within their jurisdictions. These domestic authorities should coordinate to develop a global contingency plan to respond to severe AI incidents and catastrophic risks. In the longer term, states should develop an international governance regime to prevent the development of models that could pose global catastrophic risks.",
+   "ko": "이러한 노력은 높이 평가할 만하며 지속되어야 한다. 각국은 AI 안전연구소에 충분한 자원을 투입하고, 정상회의를 계속 개최하며, 그 밖의 글로벌 거버넌스 노력을 지원해야 한다. 그러나 각국은 지금보다 더 나아가야 한다. 첫 단계로, 각국은 자국 관할권 내에서 AI 사고(AI incident)와 파국적 위험을 탐지하고 대응할 수 있는 당국을 마련해야 한다. 이러한 국내 당국들은 상호 조율하여 심각한 AI 사고(AI incident)와 파국적 위험에 대응하기 위한 글로벌 비상 계획을 수립해야 한다. 장기적으로는 각국이 전 지구적 파국적 위험을 초래할 수 있는 모델의 개발을 방지하기 위한 국제 거버넌스 체제를 구축해야 한다.",
+   "marks": [
+    {
+     "t": "AI 사고(AI incident)와 파국적 위험을 탐지하고 대응할 수 있는 당국을 마련해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "글로벌 비상 계획을 수립해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "장기적으로는 각국이 전 지구적 파국적 위험을 초래할 수 있는 모델의 개발을 방지하기 위한 국제 거버넌스 체제를 구축해야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Deep and foundational research needs to be conducted to guarantee the safety of advanced AI systems. This work must begin swiftly to ensure they are developed and validated prior to the advent of advanced AIs. To enable this, we call on states to carve out AI safety as a cooperative area of academic and technical activity, distinct from broader geostrategic competition on development of AI capabilities.",
+   "ko": "첨단 AI 시스템의 안전을 보장하기 위해서는 심층적이고 근본적인 연구가 수행되어야 한다. 첨단 AI가 출현하기 전에 그러한 연구 성과가 개발되고 검증될 수 있도록 이 작업은 신속히 시작되어야 한다. 이를 위해 우리는 각국이 AI 역량 개발을 둘러싼 보다 광범위한 지정학적·전략적 경쟁과 구별하여 AI 안전을 학술적·기술적 활동의 협력 영역으로 설정할 것을 촉구한다.",
+   "marks": [
+    {
+     "t": "첨단 AI가 출현하기 전에 그러한 연구 성과가 개발되고 검증될 수 있도록 이 작업은 신속히 시작되어야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "지정학적·전략적 경쟁과 구별하여 AI 안전을 학술적·기술적 활동의 협력 영역으로 설정할 것을 촉구한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The international community should consider setting up three clear processes to prepare for a world where advanced AI systems pose catastrophic risks:",
+   "ko": "국제사회는 첨단 AI 시스템이 파국적 위험을 초래하는 세계에 대비하기 위해 다음 세 가지 명확한 절차의 수립을 검토해야 한다."
+  },
+  {
+   "type": "p",
+   "en": "Emergency Preparedness Agreements and Institutions, through which domestic AI safety authorities convene, collaborate on, and commit to implement model registration and disclosures, incident reporting, tripwires, and contingency plans.",
+   "ko": "비상 대비 협정 및 기관: 이를 통해 각국의 AI 안전 당국이 한자리에 모여 모델 등록 및 공개, 사고 보고, 트립와이어(tripwire), 비상 계획에 관해 협력하고 그 이행을 약정한다.",
+   "marks": [
+    {
+     "t": "모델 등록 및 공개, 사고 보고, 트립와이어(tripwire), 비상 계획에 관해 협력하고 그 이행을 약정한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "A Safety Assurance Framework, requiring developers to make a high-confidence safety case prior to deploying models whose capabilities exceed specified thresholds. Post-deployment monitoring should also be a key component of assurance for highly capable AI systems as they become more widely adopted. These safety assurances should be subject to independent audits.",
+   "ko": "안전 신뢰보증 체계(Safety Assurance Framework): 개발자가 특정 임계값을 초과하는 역량을 가진 모델을 배포하기 전에 높은 신뢰도의 안전 사례를 제시하도록 요구한다. 고역량(Highly capable) AI 시스템이 더욱 널리 도입됨에 따라 배포 후 모니터링 또한 신뢰보증의 핵심 요소가 되어야 한다. 이러한 안전 신뢰보증은 독립적인 감사의 대상이 되어야 한다.",
+   "marks": [
+    {
+     "t": "특정 임계값을 초과하는 역량을 가진 모델을 배포하기 전에 높은 신뢰도의 안전 사례를 제시하도록 요구한다",
+     "k": "safety"
+    },
+    {
+     "t": "배포 후 모니터링 또한 신뢰보증의 핵심 요소가 되어야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "독립적인 감사의 대상이 되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Independent Global AI Safety and Verification Research, developing techniques that would allow states to rigorously verify that AI safety-related claims made by developers, and potentially other states, are true and valid. To ensure the independence of this research it should be conducted globally and funded by a wide range of governments and philanthropists.",
+   "ko": "독립적인 글로벌 AI 안전 및 검증 연구: 개발자, 그리고 잠재적으로는 다른 국가가 제시하는 AI 안전 관련 주장이 사실이며 타당한지를 각국이 엄격하게 검증할 수 있도록 하는 기법을 개발한다. 이 연구의 독립성을 보장하기 위해 연구는 전 지구적으로 수행되어야 하며, 다양한 정부와 자선가들이 자금을 지원해야 한다.",
+   "marks": [
+    {
+     "t": "AI 안전 관련 주장이 사실이며 타당한지를 각국이 엄격하게 검증할 수 있도록 하는 기법을 개발한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Emergency Preparedness Agreements and Institutions",
+   "ko": "비상 대비 협정 및 기관",
+   "id": "s9"
+  },
+  {
+   "type": "p",
+   "en": "States should agree on technical and institutional measures required to prepare for advanced AI systems, regardless of their development timescale. To facilitate these agreements, we need an international body to bring together AI safety authorities, fostering dialogue and collaboration in the development and auditing of AI safety regulations across different jurisdictions. This body would ensure states adopt and implement a minimal set of effective safety preparedness measures, including model registration, disclosure, and tripwires.",
+   "ko": "각국은 첨단 AI 시스템의 개발 시기와 관계없이 이에 대비하는 데 필요한 기술적·제도적 조치에 합의해야 한다. 이러한 합의를 촉진하기 위해서는 AI 안전 당국들을 한데 모아 여러 관할권에 걸친 AI 안전 규제의 개발 및 감사에 관한 대화와 협력을 증진할 국제기구가 필요하다. 이 기구는 각국이 모델 등록, 공개, 트립와이어(tripwire)를 포함한 최소한의 효과적인 안전 대비 조치를 채택하고 이행하도록 보장할 것이다.",
+   "marks": [
+    {
+     "t": "첨단 AI 시스템의 개발 시기와 관계없이 이에 대비하는 데 필요한 기술적·제도적 조치에 합의해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 안전 당국들을 한데 모아 여러 관할권에 걸친 AI 안전 규제의 개발 및 감사에 관한 대화와 협력을 증진할 국제기구가 필요하다",
+     "k": "key"
+    },
+    {
+     "t": "모델 등록, 공개, 트립와이어(tripwire)를 포함한 최소한의 효과적인 안전 대비 조치를 채택하고 이행하도록 보장할 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Over time, this body could also set standards for and commit to using verification methods to enforce domestic implementations of the Safety Assurance Framework. These methods can be mutually enforced through incentives and penalty mechanisms, such as conditioning access to markets on compliance with global standards. Experts and safety authorities should establish incident reporting and contingency plans, and regularly update the list of verified practices to reflect current scientific understanding. This body will be a critical initial coordination mechanism. In the long run, however, states will need to go further to ensure truly global governance of risks from advanced AI.",
+   "ko": "시간이 흐르면서 이 기구는 안전 신뢰보증 체계의 국내 이행을 강제하기 위한 검증 방법에 대한 표준을 설정하고, 그러한 방법의 사용을 약정할 수도 있다. 이러한 방법은 글로벌 표준에 대한 규정 준수를 시장 접근의 조건으로 삼는 것과 같은 인센티브 및 제재 메커니즘을 통해 상호 집행될 수 있다. 전문가와 안전 당국은 사고 보고 및 비상 계획을 수립하고, 현재의 과학적 이해를 반영하도록 검증된 실행 방안 목록을 정기적으로 갱신해야 한다. 이 기구는 중요한 초기 조율 메커니즘이 될 것이다. 그러나 장기적으로 각국은 첨단 AI로 인한 위험에 대한 진정한 글로벌 거버넌스를 보장하기 위해 더 나아가야 할 것이다.",
+   "marks": [
+    {
+     "t": "안전 신뢰보증 체계의 국내 이행을 강제하기 위한 검증 방법에 대한 표준을 설정하고",
+     "k": "safety"
+    },
+    {
+     "t": "글로벌 표준에 대한 규정 준수를 시장 접근의 조건으로 삼는 것과 같은 인센티브 및 제재 메커니즘",
+     "k": "safety"
+    },
+    {
+     "t": "사고 보고 및 비상 계획을 수립하고",
+     "k": "safety"
+    },
+    {
+     "t": "장기적으로 각국은 첨단 AI로 인한 위험에 대한 진정한 글로벌 거버넌스를 보장하기 위해 더 나아가야 할 것이다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Safety Assurance Framework",
+   "ko": "안전 신뢰보증 체계",
+   "id": "s12"
+  },
+  {
+   "type": "p",
+   "en": "Frontier AI developers must demonstrate to domestic authorities that the systems they develop or deploy will not cross red lines such as those defined in the IDAIS-Beijing consensus statement.",
+   "ko": "프론티어 AI 개발자는 자신이 개발하거나 배포하는 시스템이 IDAIS-Beijing 합의 성명에서 정의된 것과 같은 레드라인을 넘지 않을 것임을 국내 당국에 입증해야 한다.",
+   "marks": [
+    {
+     "t": "레드라인을 넘지 않을 것임을 국내 당국에 입증해야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To implement this, we need to build further scientific consensus on risks and red lines. Additionally, we should set early-warning thresholds: levels of model capabilities indicating that a model may cross or come close to crossing a red line. This approach builds on and harmonizes the existing patchwork of voluntary commitments such as responsible scaling policies. Models whose capabilities fall below early-warning thresholds require only limited testing and evaluation, while more rigorous assurance mechanisms are needed for advanced AI systems exceeding these early-warning thresholds.",
+   "ko": "이를 이행하기 위해서는 위험과 레드라인에 관한 과학적 합의를 한층 더 구축해야 한다. 또한 조기 경보 임계값, 즉 모델이 레드라인을 넘거나 넘는 데 근접할 수 있음을 나타내는 모델 역량 수준을 설정해야 한다. 이 접근법은 책임 있는 스케일링 정책과 같이 현재 산발적으로 존재하는 자발적 약정들을 토대로 하며 이를 조화시킨다. 역량이 조기 경보 임계값에 미달하는 모델은 제한적인 시험 및 평가(evaluation)만 필요하지만, 이 조기 경보 임계값을 초과하는 첨단 AI 시스템에는 보다 엄격한 신뢰보증 메커니즘이 필요하다.",
+   "marks": [
+    {
+     "t": "모델이 레드라인을 넘거나 넘는 데 근접할 수 있음을 나타내는 모델 역량 수준을 설정해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "책임 있는 스케일링 정책과 같이 현재 산발적으로 존재하는 자발적 약정들을 토대로 하며 이를 조화시킨다",
+     "k": "safety"
+    },
+    {
+     "t": "이 조기 경보 임계값을 초과하는 첨단 AI 시스템에는 보다 엄격한 신뢰보증 메커니즘이 필요하다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Although testing can alert us to risks, it only gives us a coarse-grained understanding of a model. This is insufficient to provide safety guarantees for advanced AI systems. Developers should submit a high-confidence safety case, i.e., a quantitative analysis that would convince the scientific community that their system design is safe, as is common practice in other safety-critical engineering disciplines. Additionally, safety cases for sufficiently advanced systems should discuss organizational processes, including incentives and accountability structures, to favor safety.",
+   "ko": "시험은 위험을 경고해 줄 수는 있지만 모델에 대해 개략적인 이해만 제공할 뿐이다. 이는 첨단 AI 시스템의 안전을 보장하기에 불충분하다. 개발자는 높은 신뢰도의 안전 사례, 즉 다른 안전 필수(safety-critical) 공학 분야에서 일반적인 관행과 마찬가지로 자신의 시스템 설계가 안전하다는 것을 과학계가 납득할 수 있는 정량적 분석을 제출해야 한다. 아울러 충분히 첨단화된 시스템에 대한 안전 사례는 안전을 우선하도록 하는 인센티브 및 책임성 구조를 포함한 조직 프로세스를 다루어야 한다.",
+   "marks": [
+    {
+     "t": "이는 첨단 AI 시스템의 안전을 보장하기에 불충분하다.",
+     "k": "safety"
+    },
+    {
+     "t": "개발자는 높은 신뢰도의 안전 사례",
+     "k": "key"
+    },
+    {
+     "t": "안전을 우선하도록 하는 인센티브 및 책임성 구조를 포함한 조직 프로세스를 다루어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Pre-deployment testing, evaluation and assurance are not sufficient. Advanced AI systems may increasingly engage in complex multi-agent interactions with other AI systems and users. This interaction may lead to emergent risks that are difficult to predict. Post-deployment monitoring is a critical part of an overall assurance framework, and could include continuous automated assessment of model behavior, centralized AI incident tracking databases, and reporting of the integration of AI in critical systems. Further assurance should be provided by automated run-time checks, such as by verifying that the assumptions of a safety case continue to hold and safely shutting down a model if operated in an out-of-scope environment.",
+   "ko": "배포 전 시험, 평가(evaluation) 및 신뢰보증만으로는 충분하지 않다. 첨단 AI 시스템은 다른 AI 시스템 및 사용자와 복잡한 다중 에이전트 상호작용에 점점 더 많이 관여하게 될 수 있다. 이러한 상호작용은 예측하기 어려운 창발적 위험으로 이어질 수 있다. 배포 후 모니터링은 전체 신뢰보증 체계의 핵심 요소이며, 모델 행동에 대한 지속적인 자동화된 평가(assessment), 중앙집중식 AI 사고(AI incident) 추적 데이터베이스, 핵심 시스템 내 AI 통합 현황 보고 등을 포함할 수 있다. 안전 사례의 가정이 계속 유효한지 검증하고, 모델이 범위 외 환경에서 운용될 경우 이를 안전하게 정지시키는 것과 같은 자동화된 런타임 점검을 통해 추가적인 신뢰보증이 제공되어야 한다.",
+   "marks": [
+    {
+     "t": "이러한 상호작용은 예측하기 어려운 창발적 위험으로 이어질 수 있다.",
+     "k": "safety"
+    },
+    {
+     "t": "배포 후 모니터링은 전체 신뢰보증 체계의 핵심 요소이며",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 범위 외 환경에서 운용될 경우 이를 안전하게 정지시키는 것과 같은 자동화된 런타임 점검",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "States have a key role to play in ensuring safety assurance happens. States should mandate that developers conduct regular testing for concerning capabilities, with transparency provided through independent pre-deployment audits by third parties granted sufficient access to developers’ staff, systems and records necessary to verify the developer’s claims. Additionally, for models exceeding early-warning thresholds, states could require that independent experts approve a developer’s safety case prior to further training or deployment. Moreover, states can help institute ethical norms for AI engineering, for example by stipulating that engineers have an individual duty to protect the public interest similar to those held by medical or legal professionals. Finally, states will also need to build governance processes to ensure adequate post-deployment monitoring.",
+   "ko": "각국은 안전 신뢰보증이 실제로 이루어지도록 하는 데 핵심적인 역할을 해야 한다. 각국은 개발자가 우려스러운 역량에 대한 정기적인 시험을 수행하도록 의무화해야 하며, 투명성은 독립적인 제3자의 배포 전 감사를 통해 확보되어야 한다. 이러한 제3자에게는 개발자의 주장을 검증하는 데 필요한 개발자의 인력, 시스템 및 기록에 대한 충분한 접근 권한이 부여되어야 한다. 아울러 조기 경보 임계값을 초과하는 모델의 경우, 각국은 추가 학습 또는 배포에 앞서 독립적인 전문가가 개발자의 안전 사례를 승인하도록 요구할 수 있다. 나아가 각국은 AI 공학에 대한 윤리 규범을 확립하는 데 기여할 수 있다. 예를 들어, 의료 또는 법률 전문가에게 부과되는 것과 유사하게 엔지니어에게 공익을 보호할 개인적 의무가 있음을 규정할 수 있다. 마지막으로, 각국은 적절한 배포 후 모니터링을 보장하기 위한 거버넌스 프로세스도 구축해야 할 것이다.",
+   "marks": [
+    {
+     "t": "각국은 개발자가 우려스러운 역량에 대한 정기적인 시험을 수행하도록 의무화해야 하며",
+     "k": "safety"
+    },
+    {
+     "t": "독립적인 제3자의 배포 전 감사를 통해 확보되어야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "추가 학습 또는 배포에 앞서 독립적인 전문가가 개발자의 안전 사례를 승인하도록 요구할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "While there may be variations in Safety Assurance Frameworks required nationally, states should collaborate to achieve mutual recognition and commensurability of frameworks.",
+   "ko": "국가별로 요구되는 안전 신뢰보증 체계에는 차이가 있을 수 있으나, 각국은 체계 간 상호 인정과 상호 비교 가능성을 달성하기 위해 협력해야 한다.",
+   "marks": [
+    {
+     "t": "각국은 체계 간 상호 인정과 상호 비교 가능성을 달성하기 위해 협력해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Independent Global AI Safety and Verification Research",
+   "ko": "독립적 글로벌 AI 안전 및 검증 연구",
+   "id": "s19"
+  },
+  {
+   "type": "p",
+   "en": "Independent research into AI safety and verification is critical to develop techniques to ensure the safety of advanced AI systems. States, philanthropists, corporations and experts should enable global independent AI safety and verification research through a series of Global AI Safety and Verification Funds. These funds should scale to a significant fraction of global AI research and development expenditures to adequately support and grow independent research capacity.",
+   "ko": "AI 안전 및 검증에 관한 독립적 연구는 첨단 AI 시스템의 안전을 보장하는 기법을 개발하는 데 매우 중요하다. 각국, 자선가, 기업 및 전문가는 일련의 글로벌 AI 안전 및 검증 기금을 통해 독립적인 글로벌 AI 안전 및 검증 연구를 가능하게 해야 한다. 이 기금들은 독립적인 연구 역량을 충분히 지원하고 확대할 수 있도록 전 세계 AI 연구개발 지출의 상당 부분에 해당하는 규모로 확대되어야 한다.",
+   "marks": [
+    {
+     "t": "AI 안전 및 검증에 관한 독립적 연구는 첨단 AI 시스템의 안전을 보장하는 기법을 개발하는 데 매우 중요하다.",
+     "k": "key"
+    },
+    {
+     "t": "일련의 글로벌 AI 안전 및 검증 기금을 통해 독립적인 글로벌 AI 안전 및 검증 연구를 가능하게 해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "전 세계 AI 연구개발 지출의 상당 부분에 해당하는 규모로 확대되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In addition to foundational AI safety research, these funds would focus on developing privacy-preserving and secure verification methods, which act as enablers for domestic governance and international cooperation. These methods would allow states to credibly check an AI developer’s evaluation results, and whether mitigations specified in their safety case are in place. In the future, these methods may also allow states to verify safety-related claims made by other states, including compliance with the Safety Assurance Frameworks and declarations of significant training runs.",
+   "ko": "기초적인 AI 안전 연구 외에도, 이 기금들은 프라이버시를 보호하고 보안이 확보된 검증 방법을 개발하는 데 중점을 둘 것이며, 이러한 방법은 국내 거버넌스와 국제 협력을 가능하게 하는 수단으로 작용한다. 이러한 방법을 통해 각국은 AI 개발자의 평가(evaluation) 결과와 안전 사례에 명시된 완화 조치가 실제로 시행되고 있는지를 신뢰성 있게 확인할 수 있을 것이다. 향후 이러한 방법은 각국이 안전 신뢰보증 체계에 대한 규정 준수 및 주요 학습 실행(training run)에 대한 신고를 포함하여, 다른 국가가 제기한 안전 관련 주장을 검증하는 데에도 활용될 수 있을 것이다.",
+   "marks": [
+    {
+     "t": "프라이버시를 보호하고 보안이 확보된 검증 방법을 개발하는 데 중점을 둘 것이며",
+     "k": "safety"
+    },
+    {
+     "t": "AI 개발자의 평가(evaluation) 결과와 안전 사례에 명시된 완화 조치가 실제로 시행되고 있는지를 신뢰성 있게 확인할 수 있을 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "주요 학습 실행(training run)에 대한 신고를 포함하여, 다른 국가가 제기한 안전 관련 주장을 검증하는 데에도 활용될 수 있을 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Eventually, comprehensive verification could take place through several methods, including third party governance (e.g., independent audits), software (e.g., audit trails) and hardware (e.g., hardware-enabled mechanisms on AI chips). To ensure global trust, it will be important to have international collaborations developing and stress-testing verification methods.",
+   "ko": "궁극적으로 포괄적인 검증은 제3자 거버넌스(예: 독립적 감사), 소프트웨어(예: 감사 추적), 하드웨어(예: AI 칩에 탑재된 하드웨어 기반 메커니즘)를 포함한 여러 방법을 통해 이루어질 수 있다. 글로벌 신뢰를 보장하기 위해서는 검증 방법을 개발하고 스트레스 테스트하는 국제 협력이 중요할 것이다.",
+   "marks": [
+    {
+     "t": "하드웨어(예: AI 칩에 탑재된 하드웨어 기반 메커니즘)",
+     "k": "safety"
+    },
+    {
+     "t": "글로벌 신뢰를 보장하기 위해서는 검증 방법을 개발하고 스트레스 테스트하는 국제 협력이 중요할 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Critically, despite broader geopolitical tensions, globally trusted verification methods have allowed, and could allow again, states to commit to specific international agreements.",
+   "ko": "결정적으로, 광범위한 지정학적 긴장에도 불구하고 전 세계적으로 신뢰받는 검증 방법은 과거에 각국이 특정 국제 협정을 약정할 수 있게 해 주었으며, 앞으로도 다시 그렇게 할 수 있을 것이다.",
+   "marks": [
+    {
+     "t": "광범위한 지정학적 긴장에도 불구하고 전 세계적으로 신뢰받는 검증 방법은",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

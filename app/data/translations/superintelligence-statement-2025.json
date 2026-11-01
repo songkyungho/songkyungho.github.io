@@ -1,0 +1,870 @@
+{
+ "slug": "superintelligence-statement-2025",
+ "title": "FLI 초지능 성명",
+ "original_title": "Statement on Superintelligence (Future of Life Institute)",
+ "publisher": "Future of Life Institute",
+ "published": "2025-10-22",
+ "source_url": "https://superintelligence-statement.org/",
+ "source_note": "공개 성명 전문(맥락·성명·여론조사·서명자 코멘트 25건). 서명 145,444명(Ekō 청원 72,351명 포함), 2026-11-01 기준",
+ "source_label": "원문 보기 (superintelligence-statement.org)",
+ "summary": "안전하고 통제 가능하다는 폭넓은 과학적 합의와 강력한 대중의 동의가 있기 전까지 초지능 개발을 금지하라는 성명이다. 2023년의 '6개월 중단' 서한이 시한부 유예를 요구했다면, 이번에는 조건이 충족될 때까지의 금지를 요구했다. 앞에 붙은 맥락 단락은 주요 AI 기업들이 10년 안에 초지능을 만들겠다고 공언한 상황과 경제적 무력화부터 인류 멸종까지 이어지는 우려를 적었다. 벤지오·러셀·하라리부터 스티브 배넌·수전 라이스·해리 왕자까지 정치 성향을 가리지 않는 서명자들의 코멘트와 미국 여론조사 결과가 함께 실려 있다.",
+ "doc_kind": "공개 성명",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/superintelligence-statement-2025-cover.webp",
+ "og_image": "/images/translations/superintelligence-statement-2025-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 86,
+  "sections": 4,
+  "items": 25,
+  "words_en": 1772
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Context",
+   "ko": "배경",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "Innovative AI tools may bring unprecedented health and prosperity. However, alongside tools, many leading AI companies have the stated goal of building superintelligence in the coming decade that can significantly outperform all humans on essentially all cognitive tasks. This has raised concerns, ranging from human economic obsolescence and disempowerment, losses of freedom, civil liberties, dignity, and control, to national security risks and even potential human extinction. The succinct statement below aims to create common knowledge of the growing number of experts and public figures who oppose a rush to superintelligence.",
+   "ko": "혁신적인 AI 도구는 전례 없는 건강과 번영을 가져올 수 있다. 그러나 많은 주요 AI 기업은 도구 개발과 더불어, 향후 10년 안에 사실상 모든 인지 작업에서 모든 인간을 크게 능가하는 초지능을 구축하겠다는 목표를 공언해 왔다. 이에 따라 인간의 경제적 무용화와 무력화, 자유·시민적 자유·존엄성·통제력의 상실에서부터 국가안보 위험, 나아가 잠재적인 인류 멸종에 이르기까지 다양한 우려가 제기되고 있다. 아래의 간결한 성명은 초지능을 향한 성급한 질주에 반대하는 전문가와 공인이 늘어나고 있다는 사실을 공동의 인식으로 만들고자 한다.",
+   "marks": [
+    {
+     "t": "향후 10년 안에 사실상 모든 인지 작업에서 모든 인간을 크게 능가하는 초지능을 구축하겠다는 목표를 공언해 왔다",
+     "k": "safety"
+    },
+    {
+     "t": "인간의 경제적 무용화와 무력화, 자유·시민적 자유·존엄성·통제력의 상실에서부터 국가안보 위험, 나아가 잠재적인 인류 멸종에 이르기까지 다양한 우려가 제기되고 있다.",
+     "k": "key"
+    },
+    {
+     "t": "초지능을 향한 성급한 질주에 반대하는 전문가와 공인이 늘어나고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Statement",
+   "ko": "성명",
+   "id": "s2"
+  },
+  {
+   "type": "p",
+   "en": "We call for a prohibition on the development of superintelligence, not lifted before there is",
+   "ko": "우리는 초지능 개발의 금지를 촉구하며, 이 금지는 다음 조건이 충족되기 전까지 해제되어서는 안 된다.",
+   "marks": [
+    {
+     "t": "우리는 초지능 개발의 금지를 촉구하며, 이 금지는 다음 조건이 충족되기 전까지 해제되어서는 안 된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "broad scientific consensus that it will be done safely and controllably, and",
+   "ko": "초지능 개발이 안전하고 통제 가능한 방식으로 이루어질 것이라는 폭넓은 과학적 합의, 그리고",
+   "marks": [
+    {
+     "t": "초지능 개발이 안전하고 통제 가능한 방식으로 이루어질 것이라는 폭넓은 과학적 합의",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "strong public buy-in.",
+   "ko": "강력한 대중적 지지.",
+   "marks": [
+    {
+     "t": "강력한 대중적 지지.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Key polling results on Superintelligence",
+   "ko": "초지능에 관한 주요 여론조사 결과",
+   "id": "s6"
+  },
+  {
+   "type": "li",
+   "en": "5% U.S. adults are in support of the status quo of fast, unregulated development",
+   "ko": "미국 성인의 5%가 빠르고 규제 없는 개발이라는 현 상태를 지지함",
+   "marks": [
+    {
+     "t": "빠르고 규제 없는 개발이라는 현 상태를 지지함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "64% believe superhuman AI shouldn’t be made until proven safe or controllable, or should never be made",
+   "ko": "64%는 초인적 AI가 안전하거나 통제 가능하다고 입증되기 전까지 만들어져서는 안 되며, 또는 결코 만들어져서는 안 된다고 생각함",
+   "marks": [
+    {
+     "t": "64%는 초인적 AI가 안전하거나 통제 가능하다고 입증되기 전까지 만들어져서는 안 되며, 또는 결코 만들어져서는 안 된다고 생각함",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "73% want robust regulation on advanced AI",
+   "ko": "73%는 첨단 AI에 대한 강력한 규제를 원함",
+   "marks": [
+    {
+     "t": "73%는 첨단 AI에 대한 강력한 규제를 원함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Comments from signatories",
+   "ko": "서명자 발언",
+   "id": "s10"
+  },
+  {
+   "type": "h3",
+   "en": "Yoshua Bengio",
+   "ko": "Yoshua Bengio",
+   "id": "s11"
+  },
+  {
+   "type": "p",
+   "en": "Professor of Computer Science, U. Montreal/Mila, Turing Laureate, world's most cited scientist",
+   "ko": "U. Montreal/Mila 컴퓨터과학 교수, 튜링상 수상자, 세계에서 가장 많이 인용된 과학자"
+  },
+  {
+   "type": "p",
+   "en": "“Frontier AI systems could surpass most individuals across most cognitive tasks within just a few years. These advances could unlock solutions to major global challenges, but they also carry significant risks. To safely advance toward superintelligence, we must scientifically determine how to design AI systems that are fundamentally incapable of harming people, whether through misalignment or malicious use. We also need to make sure the public has a much stronger say in decisions that will shape our collective future.”",
+   "ko": "\"프론티어 AI 시스템은 불과 몇 년 안에 대부분의 인지 작업에서 대다수 개인을 능가할 수 있다. 이러한 발전은 세계적 주요 과제에 대한 해법을 열어줄 수 있지만, 동시에 상당한 위험도 수반한다. 초지능을 향해 안전하게 나아가려면, 오정렬로 인한 것이든 악의적 사용으로 인한 것이든 근본적으로 사람에게 해를 끼칠 수 없는 AI 시스템을 어떻게 설계할 것인지 과학적으로 규명해야 한다. 또한 우리의 공동 미래를 좌우할 결정에서 대중이 훨씬 더 강한 발언권을 갖도록 보장해야 한다.\"",
+   "marks": [
+    {
+     "t": "프론티어 AI 시스템은 불과 몇 년 안에 대부분의 인지 작업에서 대다수 개인을 능가할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "동시에 상당한 위험도 수반한다",
+     "k": "safety"
+    },
+    {
+     "t": "오정렬로 인한 것이든 악의적 사용으로 인한 것이든 근본적으로 사람에게 해를 끼칠 수 없는 AI 시스템을 어떻게 설계할 것인지 과학적으로 규명해야 한다",
+     "k": "key"
+    },
+    {
+     "t": "우리의 공동 미래를 좌우할 결정에서 대중이 훨씬 더 강한 발언권을 갖도록 보장해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Stuart Russell",
+   "ko": "Stuart Russell",
+   "id": "s14"
+  },
+  {
+   "type": "p",
+   "en": "Professor of Computer Science, Berkeley, Director of the Center for Human-Compatible Artificial Intelligence (CHAI); Co-author of the standard textbook 'Artificial Intelligence: a Modern Approach'",
+   "ko": "Berkeley 컴퓨터과학 교수, Center for Human-Compatible Artificial Intelligence (CHAI) 소장, 표준 교재 'Artificial Intelligence: a Modern Approach' 공동 저자"
+  },
+  {
+   "type": "p",
+   "en": "“This is not a ban or even a moratorium in the usual sense. It’s simply a proposal to require adequate safety measures for a technology that, according to its developers, has a significant chance to cause human extinction. Is that too much to ask?”",
+   "ko": "\"이것은 통상적인 의미의 금지도, 심지어 모라토리엄도 아니다. 그 개발자들 스스로의 말에 따르더라도 인류 멸종을 초래할 상당한 가능성이 있는 기술에 대해 적절한 안전 조치를 요구하자는 제안일 뿐이다. 그것이 지나친 요구인가?\"",
+   "marks": [
+    {
+     "t": "그 개발자들 스스로의 말에 따르더라도 인류 멸종을 초래할 상당한 가능성이 있는 기술",
+     "k": "safety"
+    },
+    {
+     "t": "적절한 안전 조치를 요구하자는 제안일 뿐이다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Mary Robinson",
+   "ko": "Mary Robinson",
+   "id": "s17"
+  },
+  {
+   "type": "p",
+   "en": "Fmr President of Ireland; Fmr UN High Commissioner for Human Rights",
+   "ko": "전 아일랜드 대통령, 전 UN 인권최고대표"
+  },
+  {
+   "type": "p",
+   "en": "“AI offers extraordinary promise to advance human rights, tackle inequality, and protect our planet, but the pursuit of superintelligence threatens to undermine the very foundations of our common humanity. We must act with both ambition and responsibility by choosing the path of human-centred AI that serves dignity and justice.”",
+   "ko": "\"AI는 인권을 증진하고 불평등에 대응하며 지구를 보호하는 데 놀라운 가능성을 제공하지만, 초지능의 추구는 우리 공동의 인간성의 토대 자체를 훼손할 위협이 된다. 우리는 존엄과 정의에 봉사하는 인간 중심 AI의 길을 선택함으로써 야망과 책임을 함께 갖추고 행동해야 한다.\"",
+   "marks": [
+    {
+     "t": "초지능의 추구는 우리 공동의 인간성의 토대 자체를 훼손할 위협이 된다",
+     "k": "safety"
+    },
+    {
+     "t": "우리는 존엄과 정의에 봉사하는 인간 중심 AI의 길을 선택함으로써 야망과 책임을 함께 갖추고 행동해야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Kersti Kaljulaid",
+   "ko": "Kersti Kaljulaid",
+   "id": "s20"
+  },
+  {
+   "type": "p",
+   "en": "Fmr President of Estonia",
+   "ko": "전 에스토니아 대통령"
+  },
+  {
+   "type": "p",
+   "en": "“I feel like we are creating a nuclear bomb and marketing it for home use. Or maybe giving blobs of mercury for kids to play with. Nor sure we should really. If still possible, we should exercise all necessary caution.”",
+   "ko": "\"마치 핵폭탄을 만들어 가정용으로 판매하는 것 같은 느낌이다. 혹은 아이들에게 수은 덩어리를 가지고 놀라고 주는 것일 수도 있다. 정말 그래야 하는지 확신이 서지 않는다. 아직 가능하다면, 필요한 모든 주의를 기울여야 한다.\"",
+   "marks": [
+    {
+     "t": "마치 핵폭탄을 만들어 가정용으로 판매하는 것 같은 느낌이다.",
+     "k": "safety"
+    },
+    {
+     "t": "아직 가능하다면, 필요한 모든 주의를 기울여야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Prince Harry, Duke of Sussex",
+   "ko": "Prince Harry, Duke of Sussex",
+   "id": "s23"
+  },
+  {
+   "type": "p",
+   "en": "Co- Founder, The Archewell Foundation",
+   "ko": "The Archewell Foundation 공동 설립자"
+  },
+  {
+   "type": "p",
+   "en": "“The future of AI should serve humanity, not replace it. The true test of progress will be not how fast we move, but how wisely we steer.”",
+   "ko": "\"AI의 미래는 인류를 대체하는 것이 아니라 인류에 봉사해야 한다. 진보의 진정한 시험대는 우리가 얼마나 빠르게 나아가느냐가 아니라 얼마나 현명하게 방향을 잡느냐가 될 것이다.\"",
+   "marks": [
+    {
+     "t": "AI의 미래는 인류를 대체하는 것이 아니라 인류에 봉사해야 한다.",
+     "k": "safety"
+    },
+    {
+     "t": "진보의 진정한 시험대는 우리가 얼마나 빠르게 나아가느냐가 아니라 얼마나 현명하게 방향을 잡느냐가 될 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Mark Beall",
+   "ko": "Mark Beall",
+   "id": "s26"
+  },
+  {
+   "type": "p",
+   "en": "Fmr Director of AI Strategy and Policy, Department of Defense",
+   "ko": "전 Department of Defense AI 전략·정책 국장"
+  },
+  {
+   "type": "p",
+   "en": "“When AI researchers warn of extinction and tech leaders build doomsday bunkers, prudence demands we listen. Superintelligence without proper safeguards could be the ultimate expression of human hubris—power without moral restraint.”",
+   "ko": "\"AI 연구자들이 멸종을 경고하고 기술 업계 리더들이 종말 대비 벙커를 짓고 있다면, 신중함은 우리가 귀를 기울일 것을 요구한다. 적절한 안전장치 없는 초지능은 인간 오만의 궁극적 표현, 즉 도덕적 절제 없는 권력이 될 수 있다.\"",
+   "marks": [
+    {
+     "t": "AI 연구자들이 멸종을 경고하고 기술 업계 리더들이 종말 대비 벙커를 짓고 있다면",
+     "k": "safety"
+    },
+    {
+     "t": "적절한 안전장치 없는 초지능은 인간 오만의 궁극적 표현, 즉 도덕적 절제 없는 권력이 될 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Jon Wolfsthal",
+   "ko": "Jon Wolfsthal",
+   "id": "s29"
+  },
+  {
+   "type": "p",
+   "en": "Fmr Special Assistant to the President for National Security Affairs",
+   "ko": "전 국가안보 담당 대통령 특별보좌관"
+  },
+  {
+   "type": "p",
+   "en": "“The discussion over AGI should not be cast as a struggle between so called doomers and optimists. AGI presents a common challenge for all of humanity. We must to ensure we control technology and it does not control us. Until and unless developers and their funders know that a technology with the capacity to be smarter, faster, stronger and just as lethal as humanity cannot escape human control, it must not be unleashed. Ensuring we can enjoy the benefits of AI and AGI requires us to be responsible in its development.”",
+   "ko": "\"인공일반지능(AGI)을 둘러싼 논의를 이른바 비관론자와 낙관론자 간의 싸움으로 규정해서는 안 된다. AGI는 인류 전체에게 공통의 과제이다. 우리는 기술이 우리를 통제하는 것이 아니라 우리가 기술을 통제하도록 보장해야 한다. 인류보다 더 똑똑하고, 더 빠르고, 더 강하며, 인류만큼 치명적일 수 있는 역량을 지닌 기술이 인간의 통제를 벗어날 수 없다는 것을 개발자와 그 자금 제공자들이 확신하기 전까지는, 그 기술을 풀어놓아서는 안 된다. AI와 AGI의 혜택을 누릴 수 있도록 하려면 그 개발에 책임감 있게 임해야 한다.\"",
+   "marks": [
+    {
+     "t": "우리는 기술이 우리를 통제하는 것이 아니라 우리가 기술을 통제하도록 보장해야 한다.",
+     "k": "safety"
+    },
+    {
+     "t": "인류만큼 치명적일 수 있는 역량을 지닌 기술",
+     "k": "safety"
+    },
+    {
+     "t": "인간의 통제를 벗어날 수 없다는 것을 개발자와 그 자금 제공자들이 확신하기 전까지는, 그 기술을 풀어놓아서는 안 된다.",
+     "k": "key"
+    },
+    {
+     "t": "AI와 AGI의 혜택을 누릴 수 있도록 하려면 그 개발에 책임감 있게 임해야 한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Andrew Yao (姚期智)",
+   "ko": "Andrew Yao (姚期智)",
+   "id": "s32"
+  },
+  {
+   "type": "p",
+   "en": "Professor & Dean, Tsinghua University, Turing Laureate",
+   "ko": "Tsinghua University 교수 겸 학장, 튜링상 수상자"
+  },
+  {
+   "type": "p",
+   "en": "“AI techonologies, no matter how powerful and spendid they get, must always remain firmly a human-directed instrument.”",
+   "ko": "\"AI 기술은 아무리 강력하고 훌륭해지더라도, 언제나 확고하게 인간이 지휘하는 도구로 남아야 한다.\"",
+   "marks": [
+    {
+     "t": "언제나 확고하게 인간이 지휘하는 도구로 남아야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Ya-Qin Zhang (张亚勤)",
+   "ko": "Ya-Qin Zhang (张亚勤)",
+   "id": "s35"
+  },
+  {
+   "type": "p",
+   "en": "Chair Professor & Dean, Institute for AI Industry Research, Tsinghua University, fmr President, Baidu",
+   "ko": "Tsinghua University Institute for AI Industry Research 석좌교수 겸 원장, 전 Baidu 총재"
+  },
+  {
+   "type": "p",
+   "en": "“While the rapid advance in frontier AI models can profoundly benefit humanity, it also introduces significant unknown risks. It is dangerous, irresponsible and unnecessary to race for superintelligence without a solid foundation on controllability, dependability and safety.”",
+   "ko": "\"프론티어 AI 모델의 급속한 발전은 인류에게 지대한 혜택을 줄 수 있지만, 동시에 상당한 미지의 위험도 초래한다. 통제 가능성, 신뢰성, 안전성에 대한 견고한 토대 없이 초지능을 향해 경쟁하는 것은 위험하고 무책임하며 불필요하다.\"",
+   "marks": [
+    {
+     "t": "동시에 상당한 미지의 위험도 초래한다",
+     "k": "safety"
+    },
+    {
+     "t": "통제 가능성, 신뢰성, 안전성에 대한 견고한 토대 없이 초지능을 향해 경쟁하는 것은 위험하고 무책임하며 불필요하다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Yi Zeng (曾毅)",
+   "ko": "Yi Zeng (曾毅)",
+   "id": "s38"
+  },
+  {
+   "type": "p",
+   "en": "Professor & Dean, Beijing Institute of AI Safety and Governance, TIME 100 AI",
+   "ko": "Beijing Institute of AI Safety and Governance 교수 겸 원장, TIME 100 AI"
+  },
+  {
+   "type": "p",
+   "en": "“Until now, we do NOT have scientific evidence and practical way to keep Superintelligence safe enough NOT to bring catastrophic risks for human. The World has NOT been ready to welcome Superintelligence NOT as a tool that is controlable at this point.”",
+   "ko": "\"지금까지 우리에게는 초지능이 인간에게 파국적 위험을 초래하지 않을 만큼 충분히 안전하게 유지할 수 있는 과학적 근거도, 실질적 방법도 없다. 현시점에서 세계는 통제 가능한 도구가 아닌 초지능을 맞이할 준비가 되어 있지 않다.\"",
+   "marks": [
+    {
+     "t": "초지능이 인간에게 파국적 위험을 초래하지 않을 만큼 충분히 안전하게 유지할 수 있는 과학적 근거도, 실질적 방법도 없다",
+     "k": "key"
+    },
+    {
+     "t": "세계는 통제 가능한 도구가 아닌 초지능을 맞이할 준비가 되어 있지 않다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Johnnie Moore",
+   "ko": "Johnnie Moore",
+   "id": "s41"
+  },
+  {
+   "type": "p",
+   "en": "President, Congress of Christian Leaders, White House evangelical adviser, emeritus Professor at Liberty University",
+   "ko": "Congress of Christian Leaders 회장, 백악관 복음주의 자문위원, Liberty University 명예교수"
+  },
+  {
+   "type": "p",
+   "en": "“We should rapidly develop powerful AI tools that help cure diseases and solve practical problems, but not autonomous smarter-than-human machines that nobody knows how to control. Creating superintelligent machines is not only unacceptably dangerous and immoral, but also completely unnecessary.”",
+   "ko": "\"우리는 질병 치료와 실질적 문제 해결에 도움이 되는 강력한 AI 도구는 빠르게 개발해야 하지만, 아무도 통제하는 방법을 모르는 자율적이고 인간보다 똑똑한 기계는 개발해서는 안 된다. 초지능 기계를 만드는 것은 용납할 수 없을 만큼 위험하고 비도덕적일 뿐만 아니라, 전혀 불필요하다.\"",
+   "marks": [
+    {
+     "t": "아무도 통제하는 방법을 모르는 자율적이고 인간보다 똑똑한 기계는 개발해서는 안 된다",
+     "k": "safety"
+    },
+    {
+     "t": "초지능 기계를 만드는 것은 용납할 수 없을 만큼 위험하고 비도덕적일 뿐만 아니라, 전혀 불필요하다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Walter Kim",
+   "ko": "Walter Kim",
+   "id": "s44"
+  },
+  {
+   "type": "p",
+   "en": "President, National Association of Evangelicals, board member, Christianity Today",
+   "ko": "National Association of Evangelicals 회장, Christianity Today 이사"
+  },
+  {
+   "type": "p",
+   "en": "“If we race to build superintelligence without clear and morally informed parameters, we risk undermining the incredible potential AI has to alleviate suffering and enable flourishing. We should intentionally harness this amazing technology to help people, not rush to build machines and mechanisms we cannot control.”",
+   "ko": "\"명확하고 도덕적 고려가 반영된 파라미터 없이 초지능 구축 경쟁에 나선다면, 고통을 덜고 번영을 가능하게 하는 AI의 놀라운 잠재력을 훼손할 위험이 있다. 우리는 통제할 수 없는 기계와 메커니즘을 서둘러 만들 것이 아니라, 이 놀라운 기술을 사람들을 돕는 데 의도적으로 활용해야 한다.\"",
+   "marks": [
+    {
+     "t": "명확하고 도덕적 고려가 반영된 파라미터 없이 초지능 구축 경쟁에 나선다면",
+     "k": "safety"
+    },
+    {
+     "t": "고통을 덜고 번영을 가능하게 하는 AI의 놀라운 잠재력을 훼손할 위험이 있다.",
+     "k": "key"
+    },
+    {
+     "t": "우리는 통제할 수 없는 기계와 메커니즘을 서둘러 만들 것이 아니라",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Yuval Noah Harari",
+   "ko": "Yuval Noah Harari",
+   "id": "s47"
+  },
+  {
+   "type": "p",
+   "en": "Author and Professor, Hebrew University of Jerusalem",
+   "ko": "저술가, Hebrew University of Jerusalem 교수"
+  },
+  {
+   "type": "p",
+   "en": "“Superintelligence would likely break the very operating system of human civilization - and is completely unnecessary. If we instead focus on building controllable AI tools to help real people today, we can far more reliably and safely realize AI’s incredible benefits.”",
+   "ko": "\"초지능은 인류 문명의 운영체제 자체를 망가뜨릴 가능성이 높으며, 전혀 불필요하다. 대신 오늘날 실제 사람들을 돕는 통제 가능한 AI 도구를 구축하는 데 집중한다면, AI의 놀라운 혜택을 훨씬 더 확실하고 안전하게 실현할 수 있다.\"",
+   "marks": [
+    {
+     "t": "초지능은 인류 문명의 운영체제 자체를 망가뜨릴 가능성이 높으며, 전혀 불필요하다.",
+     "k": "key"
+    },
+    {
+     "t": "통제 가능한 AI 도구를 구축하는 데 집중한다면",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Joseph Gordon-Levitt",
+   "ko": "Joseph Gordon-Levitt",
+   "id": "s50"
+  },
+  {
+   "type": "p",
+   "en": "Actor, Filmmaker, Founder, HITRECORD",
+   "ko": "배우, 영화제작자, HITRECORD 설립자"
+  },
+  {
+   "type": "p",
+   "en": "“Yeah, we want specific AI tools that can help cure diseases, strengthen national security, etc. But does AI also need to imitate humans, groom our kids, turn us all into slop junkies and make zillions of dollars serving ads? Most people don’t want that. But that’s what these big tech companies mean when they talk about building ‘Superintelligence’.”",
+   "ko": "\"물론 우리는 질병 치료나 국가안보 강화 등에 도움이 되는 특정 AI 도구를 원한다. 하지만 AI가 인간을 흉내 내고, 우리 아이들을 길들이고, 우리 모두를 저질 콘텐츠(slop) 중독자로 만들고, 광고를 팔아 천문학적인 돈을 벌어야 할 필요까지 있는가? 대부분의 사람들은 그것을 원하지 않는다. 그러나 이 거대 기술 기업들이 '초지능'을 구축하겠다고 말할 때 의미하는 것이 바로 그것이다.\"",
+   "marks": [
+    {
+     "t": "AI가 인간을 흉내 내고, 우리 아이들을 길들이고, 우리 모두를 저질 콘텐츠(slop) 중독자로 만들고",
+     "k": "safety"
+    },
+    {
+     "t": "그러나 이 거대 기술 기업들이 '초지능'을 구축하겠다고 말할 때 의미하는 것이 바로 그것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Sir Stephen Fry",
+   "ko": "Sir Stephen Fry",
+   "id": "s53"
+  },
+  {
+   "type": "p",
+   "en": "Actor, director, writer",
+   "ko": "배우, 감독, 작가"
+  },
+  {
+   "type": "p",
+   "en": "“To get the most from what AI has to offer mankind, there is simply no need to reach for the unknowable and highly risky goal of superintelligence, which is by far a frontier too far. By definition this would result in a power that we could neither understand nor control.”",
+   "ko": "\"AI가 인류에게 제공할 수 있는 것을 최대한 얻기 위해, 초지능이라는 알 수 없고 매우 위험한 목표, 즉 지나쳐도 너무 지나친 프론티어에 손을 뻗을 필요는 전혀 없다. 정의상 초지능은 우리가 이해할 수도 통제할 수도 없는 힘을 낳을 것이다.\"",
+   "marks": [
+    {
+     "t": "초지능이라는 알 수 없고 매우 위험한 목표",
+     "k": "safety"
+    },
+    {
+     "t": "정의상 초지능은 우리가 이해할 수도 통제할 수도 없는 힘을 낳을 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Nate Soares",
+   "ko": "Nate Soares",
+   "id": "s56"
+  },
+  {
+   "type": "p",
+   "en": "President, Machine Intelligence Research Institute",
+   "ko": "Machine Intelligence Research Institute 회장"
+  },
+  {
+   "type": "p",
+   "en": "“The race to superintelligence is suicidal. Progress shouldn't be subjected to a public veto, but technologists also shouldn't flirt with annihilation. Scientific consensus alone is not enough (any more than alchemist consensus in the year 1100 would be enough to guarantee a potion of immortality). The science of making a superintelligence beneficial is nowhere near mature. There's time pressure and reality may demand bold action from cognizant leaders (without public buy-in), but the public is right to object to the race and right to be wary of technologist consensus in this case.”",
+   "ko": "\"초지능을 향한 경쟁은 자멸적이다. 진보가 대중의 거부권에 종속되어서는 안 되지만, 기술자들 역시 절멸을 가볍게 넘봐서는 안 된다. 과학적 합의만으로는 충분하지 않다(1100년의 연금술사들이 합의했다고 해서 불로장생의 묘약이 보장되지 않았던 것과 마찬가지이다). 초지능을 유익하게 만드는 과학은 성숙과는 거리가 멀다. 시간적 압박이 존재하며, 현실은 사태를 인식하는 지도자들에게 (대중의 동의 없이도) 과감한 행동을 요구할 수 있다. 그러나 이 경우 대중이 경쟁에 반대하고 기술자들의 합의를 경계하는 것은 옳다.\"",
+   "marks": [
+    {
+     "t": "초지능을 향한 경쟁은 자멸적이다.",
+     "k": "key"
+    },
+    {
+     "t": "기술자들 역시 절멸을 가볍게 넘봐서는 안 된다",
+     "k": "safety"
+    },
+    {
+     "t": "초지능을 유익하게 만드는 과학은 성숙과는 거리가 멀다.",
+     "k": "key"
+    },
+    {
+     "t": "대중이 경쟁에 반대하고 기술자들의 합의를 경계하는 것은 옳다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Joe Allen",
+   "ko": "Joe Allen",
+   "id": "s59"
+  },
+  {
+   "type": "p",
+   "en": "Tech editor at War Room",
+   "ko": "War Room 기술 에디터"
+  },
+  {
+   "type": "p",
+   "en": "“If superintelligence is achievable and the public buys in, then I'm out.”",
+   "ko": "\"초지능이 달성 가능하고 대중이 이를 받아들인다면, 나는 손을 떼겠다.\"",
+   "marks": [
+    {
+     "t": "초지능이 달성 가능하고 대중이 이를 받아들인다면, 나는 손을 떼겠다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Samuel Buteau",
+   "ko": "Samuel Buteau",
+   "id": "s62"
+  },
+  {
+   "type": "p",
+   "en": "Fmr Senior AI Safety Researcher, Mila",
+   "ko": "Mila 전 선임 AI 안전 연구원"
+  },
+  {
+   "type": "p",
+   "en": "“Barring an international agreement, humanity will quite likely not have the ability to build safe superintelligence by the time the first superintelligence is built. Therefore, pursuing superintelligence at this stage is quite likely to cause the permanent disempowerment or extinction of humanity. I support an international agreement to ensure that superintelligence is not built before it can be done safely.”",
+   "ko": "\"국제적 합의가 없다면, 최초의 초지능이 구축되는 시점까지 인류가 안전한 초지능을 구축할 능력을 갖추지 못할 가능성이 상당히 높다. 따라서 현 단계에서 초지능을 추구하는 것은 인류의 영구적 무력화(disempowerment)나 멸종을 초래할 가능성이 상당히 높다. 나는 초지능을 안전하게 구축할 수 있게 되기 전까지는 초지능이 구축되지 않도록 보장하는 국제적 합의를 지지한다.\"",
+   "marks": [
+    {
+     "t": "최초의 초지능이 구축되는 시점까지 인류가 안전한 초지능을 구축할 능력을 갖추지 못할 가능성이 상당히 높다",
+     "k": "safety"
+    },
+    {
+     "t": "현 단계에서 초지능을 추구하는 것은 인류의 영구적 무력화(disempowerment)나 멸종을 초래할 가능성이 상당히 높다.",
+     "k": "key"
+    },
+    {
+     "t": "초지능을 안전하게 구축할 수 있게 되기 전까지는 초지능이 구축되지 않도록 보장하는 국제적 합의를 지지한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Vanessa Kosoy",
+   "ko": "Vanessa Kosoy",
+   "id": "s65"
+  },
+  {
+   "type": "p",
+   "en": "Director of AI Research, The Association for Long Term Existence & Resilience (ALTER)",
+   "ko": "The Association for Long Term Existence & Resilience (ALTER) AI 연구 디렉터"
+  },
+  {
+   "type": "p",
+   "en": "“Creating superintelligence using existing methods with our existing state of knowledge is not even remotely safe. This pathway suffers from 3 major unknowns: the generalization properties of deep learning, the implications of shallow mimicry of the human mind, and the philosophy of value alignment. Unleashing entities of vastly superior intelligence with unknown psychology is extremely dangerous. Doing so while our understanding of the subject is so meager is practically guaranteed to be a disaster. If we wish ourselves and our children to have any kind of future, we must hit the brakes.”",
+   "ko": "\"현재의 지식 수준에서 기존 방법을 사용해 초지능을 만드는 것은 조금도 안전하지 않다. 이 경로에는 3가지 주요 미지의 영역이 있다. 딥러닝의 일반화 특성, 인간 정신에 대한 피상적 모방이 갖는 함의, 그리고 가치 정렬(Value Alignment)의 철학이다. 심리를 알 수 없는, 압도적으로 우월한 지능을 지닌 존재를 풀어놓는 것은 극도로 위험하다. 이 주제에 대한 우리의 이해가 이토록 빈약한 상태에서 그렇게 한다면 재앙은 사실상 확실하다. 우리 자신과 우리 아이들이 어떤 형태로든 미래를 갖기를 바란다면, 우리는 브레이크를 밟아야 한다.\"",
+   "marks": [
+    {
+     "t": "현재의 지식 수준에서 기존 방법을 사용해 초지능을 만드는 것은 조금도 안전하지 않다.",
+     "k": "key"
+    },
+    {
+     "t": "딥러닝의 일반화 특성, 인간 정신에 대한 피상적 모방이 갖는 함의, 그리고 가치 정렬(Value Alignment)의 철학이다.",
+     "k": "safety"
+    },
+    {
+     "t": "심리를 알 수 없는, 압도적으로 우월한 지능을 지닌 존재를 풀어놓는 것은 극도로 위험하다.",
+     "k": "safety"
+    },
+    {
+     "t": "재앙은 사실상 확실하다.",
+     "k": "key"
+    },
+    {
+     "t": "우리는 브레이크를 밟아야 한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Kaarel Hänni",
+   "ko": "Kaarel Hänni",
+   "id": "s68"
+  },
+  {
+   "type": "p",
+   "en": "Research Scientist, Mila",
+   "ko": "Mila 연구과학자"
+  },
+  {
+   "type": "p",
+   "en": "“If we allow the pursuit of AGI to continue, the human era will end, humans and human institutions will probably be rendered insignificant and powerless, and plausibly simply extinct.”",
+   "ko": "\"인공일반지능 추구가 계속되도록 허용한다면, 인간의 시대는 끝날 것이다. 인간과 인간의 제도는 아마도 하찮고 무력한 존재로 전락할 것이며, 그대로 멸종할 가능성도 충분하다.\"",
+   "marks": [
+    {
+     "t": "인공일반지능 추구가 계속되도록 허용한다면, 인간의 시대는 끝날 것이다.",
+     "k": "key"
+    },
+    {
+     "t": "인간과 인간의 제도는 아마도 하찮고 무력한 존재로 전락할 것이며, 그대로 멸종할 가능성도 충분하다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Abram Demski",
+   "ko": "Abram Demski",
+   "id": "s71"
+  },
+  {
+   "type": "p",
+   "en": "Researcher, AFFINE, fmr MIRI researcher",
+   "ko": "AFFINE 연구원, 전 MIRI 연구원"
+  },
+  {
+   "type": "p",
+   "en": "“The current efforts to make transformer-based AI safe have clear inadequacies, including demonstrations of modern AIs strategically blackmailing people, the persistence of (so-called) hallucinations, and the MechaHitler incident. Frontier labs openly race towards superintelligence, with no credible plan to control/align such an entity. Even those involved in the race largely agree that this poses severe risks to humankind, including extinction risks. They race on because their competitors will do so even if they stop. An international agreement to stop this race is crucial.”",
+   "ko": "\"트랜스포머 기반 AI를 안전하게 만들려는 현재의 노력에는 명백한 결함이 있다. 현대 AI가 전략적으로 사람을 협박하는 사례의 시연, (이른바) 환각의 지속, 그리고 MechaHitler 사건 등이 그 예이다. 프런티어 연구소들은 그러한 존재를 통제하거나 정렬할 신뢰할 만한 계획도 없이 공공연하게 초지능을 향해 경쟁하고 있다. 경쟁에 참여하는 이들조차 이것이 멸종 위험을 포함해 인류에게 심각한 위험을 초래한다는 데 대체로 동의한다. 그럼에도 그들이 경쟁을 계속하는 것은 자신들이 멈추더라도 경쟁자들은 계속할 것이기 때문이다. 이 경쟁을 멈추기 위한 국제적 합의가 매우 중요하다.\"",
+   "marks": [
+    {
+     "t": "트랜스포머 기반 AI를 안전하게 만들려는 현재의 노력에는 명백한 결함이 있다.",
+     "k": "safety"
+    },
+    {
+     "t": "현대 AI가 전략적으로 사람을 협박하는 사례의 시연",
+     "k": "safety"
+    },
+    {
+     "t": "프런티어 연구소들은 그러한 존재를 통제하거나 정렬할 신뢰할 만한 계획도 없이 공공연하게 초지능을 향해 경쟁하고 있다.",
+     "k": "key"
+    },
+    {
+     "t": "멸종 위험을 포함해 인류에게 심각한 위험을 초래한다는 데 대체로 동의한다",
+     "k": "safety"
+    },
+    {
+     "t": "자신들이 멈추더라도 경쟁자들은 계속할 것이기 때문이다",
+     "k": "safety"
+    },
+    {
+     "t": "이 경쟁을 멈추기 위한 국제적 합의가 매우 중요하다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Tsvi Benson-Tilsen",
+   "ko": "Tsvi Benson-Tilsen",
+   "id": "s74"
+  },
+  {
+   "type": "p",
+   "en": "fmr MIRI researcher",
+   "ko": "전 MIRI 연구원"
+  },
+  {
+   "type": "p",
+   "en": "“Humanity lacks the technical understanding required to built superhuman AI without the AI killing everyone. Efforts to build superhuman AI should be stopped through laws, international treaties, social norms, professional rules, and by providing alternatives ways to gain the supposed benefits. I hesitated to sign the statement because it sounds like it would be ok to build superhuman AI with some scientific consensus and public buy-in. I believe superhuman AI is too dangerous to be worth risking even in many of those scenarios. But I technically agree with the statement as worded.”",
+   "ko": "\"인류는 AI가 모든 사람을 죽이지 않도록 하면서 초인적 AI를 구축하는 데 필요한 기술적 이해가 부족하다. 초인적 AI를 구축하려는 노력은 법률, 국제 조약, 사회적 규범, 직업 규칙을 통해, 그리고 기대되는 혜택을 얻을 수 있는 대안적 방법을 제공함으로써 중단되어야 한다. 나는 이 성명에 서명하기를 망설였는데, 일정한 과학적 합의와 대중의 동의만 있으면 초인적 AI를 구축해도 괜찮다는 것처럼 들리기 때문이다. 나는 그러한 시나리오 중 상당수에서도 초인적 AI는 감수할 가치가 없을 만큼 너무 위험하다고 생각한다. 그러나 엄밀히 말해 나는 문구 그대로의 성명에는 동의한다.\"",
+   "marks": [
+    {
+     "t": "인류는 AI가 모든 사람을 죽이지 않도록 하면서 초인적 AI를 구축하는 데 필요한 기술적 이해가 부족하다.",
+     "k": "key"
+    },
+    {
+     "t": "초인적 AI를 구축하려는 노력은 법률, 국제 조약, 사회적 규범, 직업 규칙을 통해",
+     "k": "safety"
+    },
+    {
+     "t": "초인적 AI는 감수할 가치가 없을 만큼 너무 위험하다고 생각한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Mateusz Bagiński",
+   "ko": "Mateusz Bagiński",
+   "id": "s77"
+  },
+  {
+   "type": "p",
+   "en": "Independent Researcher",
+   "ko": "독립 연구자"
+  },
+  {
+   "type": "p",
+   "en": "“Attempting to build systems more cognitively capable than humans without having an adequate understanding of how they work is an insane endeavor. Barring a mature and adequate understanding of cognition, we cannot ensure that they will have robustly good effects. Rather, it will mark a grim end of humanity. We do not know when someone might succeed in building it, but even if we have decades, figuring out and implementing the coordination mechanisms required to remove the possibility of building superintelligence is going to take time. Therefore, the time to act is Now.”",
+   "ko": "\"인간보다 인지적으로 더 유능한 시스템을, 그것이 어떻게 작동하는지에 대한 적절한 이해 없이 구축하려는 시도는 미친 짓이다. 인지에 대한 성숙하고 적절한 이해가 없다면, 우리는 그러한 시스템이 견고하게 좋은 영향을 미치도록 보장할 수 없다. 오히려 그것은 인류의 암울한 종말을 의미할 것이다. 누군가가 언제 그것을 구축하는 데 성공할지는 알 수 없지만, 설령 수십 년이 남아 있다 해도, 초지능 구축 가능성을 제거하는 데 필요한 조정 메커니즘을 고안하고 시행하는 데에는 시간이 걸릴 것이다. 따라서 행동해야 할 때는 바로 지금이다.\"",
+   "marks": [
+    {
+     "t": "인간보다 인지적으로 더 유능한 시스템을, 그것이 어떻게 작동하는지에 대한 적절한 이해 없이 구축하려는 시도는 미친 짓이다.",
+     "k": "key"
+    },
+    {
+     "t": "우리는 그러한 시스템이 견고하게 좋은 영향을 미치도록 보장할 수 없다",
+     "k": "safety"
+    },
+    {
+     "t": "오히려 그것은 인류의 암울한 종말을 의미할 것이다.",
+     "k": "safety"
+    },
+    {
+     "t": "초지능 구축 가능성을 제거하는 데 필요한 조정 메커니즘을 고안하고 시행하는 데에는 시간이 걸릴 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "따라서 행동해야 할 때는 바로 지금이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Simon Skade",
+   "ko": "Simon Skade",
+   "id": "s80"
+  },
+  {
+   "type": "p",
+   "en": "AI Alignment Researcher, Independent",
+   "ko": "독립 AI 정렬 연구자"
+  },
+  {
+   "type": "p",
+   "en": "“We need to make people aware how crazy the current situation is: It's like humanity is in a giant plane, companies are racing to start the plane, there's no plan how to keep the plane from crashing, we do not understand how the plane works, and smaller toy planes are already showing worrying signs of malfunction. Let's not let companies start the plane.”",
+   "ko": "\"우리는 현 상황이 얼마나 미친 것인지 사람들이 깨닫게 해야 한다. 이는 마치 인류가 거대한 비행기에 타고 있고, 기업들은 앞다투어 비행기 시동을 걸려 하며, 비행기 추락을 막을 계획은 없고, 우리는 비행기가 어떻게 작동하는지 이해하지 못하며, 더 작은 장난감 비행기들은 이미 우려스러운 오작동 징후를 보이고 있는 것과 같다. 기업들이 비행기 시동을 걸게 두지 말자.\"",
+   "marks": [
+    {
+     "t": "기업들은 앞다투어 비행기 시동을 걸려 하며, 비행기 추락을 막을 계획은 없고",
+     "k": "safety"
+    },
+    {
+     "t": "우리는 비행기가 어떻게 작동하는지 이해하지 못하며",
+     "k": "safety"
+    },
+    {
+     "t": "더 작은 장난감 비행기들은 이미 우려스러운 오작동 징후를 보이고 있는 것과 같다",
+     "k": "safety"
+    },
+    {
+     "t": "기업들이 비행기 시동을 걸게 두지 말자.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Luke McNally",
+   "ko": "Luke McNally",
+   "id": "s83"
+  },
+  {
+   "type": "p",
+   "en": "Senior Lecturer, University of Edinburgh",
+   "ko": "University of Edinburgh 선임강사"
+  },
+  {
+   "type": "p",
+   "en": "“The game theory is clear: competitive pressures are driving us toward catastrophic outcomes no individual wants. We're in a race where 'winning' may mean losing everything. This requires coordination, international agreement, and public mandate, not a corporate sprint to superintelligence.”",
+   "ko": "\"게임 이론은 명확하다. 경쟁 압력이 어느 누구도 원하지 않는 파국적 결과로 우리를 몰아가고 있다. 우리는 '승리'가 모든 것을 잃는 것을 의미할 수도 있는 경쟁 속에 있다. 이 문제에 필요한 것은 조정, 국제적 합의, 그리고 대중의 위임이지, 초지능을 향한 기업들의 전력 질주가 아니다.\"",
+   "marks": [
+    {
+     "t": "경쟁 압력이 어느 누구도 원하지 않는 파국적 결과로 우리를 몰아가고 있다.",
+     "k": "key"
+    },
+    {
+     "t": "'승리'가 모든 것을 잃는 것을 의미할 수도 있는 경쟁",
+     "k": "safety"
+    },
+    {
+     "t": "조정, 국제적 합의, 그리고 대중의 위임",
+     "k": "safety"
+    },
+    {
+     "t": "초지능을 향한 기업들의 전력 질주",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

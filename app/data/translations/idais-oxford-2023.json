@@ -1,0 +1,122 @@
+{
+ "slug": "idais-oxford-2023",
+ "title": "IDAIS 옥스퍼드 합의문",
+ "original_title": "IDAIS-Oxford Statement (International Dialogues on AI Safety)",
+ "publisher": "International Dialogues on AI Safety",
+ "published": "2023-10-31",
+ "source_url": "https://idais.ai/dialogue/idais-oxford/",
+ "source_note": "합의문 영문 전문",
+ "source_label": "원문 보기 (IDAIS)",
+ "summary": "블레츨리 정상회의 전날 디칠리 파크에서 서방과 중국의 과학자들이 처음 모여 낸 합의문이다. 악의적 오용의 단기 위험과 함께, 미래의 AI 시스템이 인간의 통제를 완전히 벗어날 심각한 위험이 있으며 앞으로 수십 년 안에 AI가 인류에 실존적 위험을 가져올 수 있다고 밝혔다. 일정 역량 이상 모델의 의무 등록, 넘으면 즉시 종료하는 레드라인, AI 개발사가 연구개발비의 최소 3분의 1을 안전에 쓰자는 권고를 담았다.",
+ "doc_kind": "과학자 합의문",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/idais-oxford-2023-cover.webp",
+ "og_image": "/images/translations/idais-oxford-2023-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 5,
+  "sections": 0,
+  "items": 0,
+  "words_en": 463
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Global action, cooperation, and capacity building are key to managing risk from AI and enabling humanity to share in its benefits. AI safety is a global public good that should be supported by public and private investment, with advances in safety shared widely. Governments around the world — especially of leading AI nations — have a responsibility to develop measures to prevent worst-case outcomes from malicious or careless actors and to rein in reckless competition. The international community should work to create an international coordination process for advanced AI in this vein.",
+   "ko": "전 지구적 행동, 협력, 역량 구축은 AI로 인한 위험을 관리하고 인류가 그 혜택을 함께 누릴 수 있도록 하는 데 핵심이다. AI 안전은 공공 및 민간 투자로 뒷받침되어야 하는 전 지구적 공공재이며, 안전 분야의 진전은 널리 공유되어야 한다. 전 세계 정부, 특히 AI 선도 국가의 정부는 악의적이거나 부주의한 행위자로 인한 최악의 결과를 방지하고 무모한 경쟁을 억제하기 위한 조치를 마련할 책임이 있다. 국제사회는 이러한 취지에서 첨단 AI를 위한 국제 조정 절차를 마련하기 위해 노력해야 한다.",
+   "marks": [
+    {
+     "t": "AI 안전은 공공 및 민간 투자로 뒷받침되어야 하는 전 지구적 공공재이며",
+     "k": "safety"
+    },
+    {
+     "t": "악의적이거나 부주의한 행위자로 인한 최악의 결과를 방지하고 무모한 경쟁을 억제하기 위한 조치를 마련할 책임이 있다",
+     "k": "safety"
+    },
+    {
+     "t": "첨단 AI를 위한 국제 조정 절차를 마련하기 위해 노력해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We face near-term risks from malicious actors misusing frontier AI systems, with current safety filters integrated by developers easily bypassed. Frontier AI systems produce compelling misinformation and may soon be capable enough to help terrorists develop weapons of mass destruction. Moreover, there is a serious risk that future AI systems may escape human control altogether. Even aligned AI systems could destabilize or disempower existing institutions. Taken together, we believe AI may pose an existential risk to humanity in the coming decades.",
+   "ko": "우리는 악의적 행위자가 프론티어 AI 시스템을 오용하는 데서 비롯되는 단기적 위험에 직면해 있으며, 개발자가 통합한 현재의 안전 필터는 쉽게 우회된다. 프론티어 AI 시스템은 설득력 있는 오정보를 생성하며, 머지않아 테러리스트의 대량살상무기 개발을 도울 수 있을 만큼의 역량을 갖출 수도 있다. 나아가 미래의 AI 시스템이 인간의 통제를 완전히 벗어날 수 있다는 심각한 위험이 존재한다. 정렬된(aligned) AI 시스템조차 기존 제도를 불안정하게 하거나 무력화할 수 있다. 이를 종합하면, 우리는 AI가 향후 수십 년 내에 인류에게 실존적 위험을 초래할 수 있다고 본다.",
+   "marks": [
+    {
+     "t": "개발자가 통합한 현재의 안전 필터는 쉽게 우회된다",
+     "k": "safety"
+    },
+    {
+     "t": "테러리스트의 대량살상무기 개발을 도울 수 있을 만큼의 역량을 갖출 수도 있다",
+     "k": "safety"
+    },
+    {
+     "t": "미래의 AI 시스템이 인간의 통제를 완전히 벗어날 수 있다는 심각한 위험이 존재한다",
+     "k": "safety"
+    },
+    {
+     "t": "정렬된(aligned) AI 시스템조차 기존 제도를 불안정하게 하거나 무력화할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "우리는 AI가 향후 수십 년 내에 인류에게 실존적 위험을 초래할 수 있다고 본다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In domestic regulation, we recommend mandatory registration for the creation, sale or use of models above a certain capability threshold, including open-source copies and derivatives, to enable governments to acquire critical and currently missing visibility into emerging risks. Governments should monitor large-scale data centers and track AI incidents, and should require that AI developers of frontier models be subject to independent third-party audits evaluating their information security and model safety. AI developers should also be required to share comprehensive risk assessments, policies around risk management, and predictions about their systems’ behaviour in third party evaluations and post-deployment with relevant authorities.",
+   "ko": "국내 규제와 관련하여, 우리는 정부가 신흥 위험에 대해 결정적이지만 현재 결여되어 있는 가시성을 확보할 수 있도록, 오픈소스 사본과 파생 모델을 포함하여 일정 역량 임계값을 초과하는 모델의 생성, 판매 또는 사용에 대한 의무 등록제를 권고한다. 정부는 대규모 데이터센터를 모니터링하고 AI 사고(AI incident)를 추적해야 하며, 프론티어 모델의 AI 개발자가 정보 보안과 모델 안전을 평가(evaluation)하는 독립적인 제3자 감사를 받도록 의무화해야 한다. 또한 AI 개발자는 포괄적인 위험 평가, 위험 관리 관련 정책, 그리고 제3자 평가(evaluation) 및 배포 이후 단계에서 자사 시스템이 보일 행동에 관한 예측을 관련 당국과 공유하도록 의무화되어야 한다.",
+   "marks": [
+    {
+     "t": "일정 역량 임계값을 초과하는 모델의 생성, 판매 또는 사용에 대한 의무 등록제를 권고한다",
+     "k": "safety"
+    },
+    {
+     "t": "정보 보안과 모델 안전을 평가(evaluation)하는 독립적인 제3자 감사를 받도록 의무화해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We also recommend defining clear red lines that, if crossed, mandate immediate termination of an AI system — including all copies — through rapid and safe shut-down procedures. Governments should cooperate to instantiate and preserve this capacity. Moreover, prior to deployment as well as during training for the most advanced models, developers should demonstrate to regulators’ satisfaction that their system(s) will not cross these red lines.",
+   "ko": "또한 우리는 명확한 레드라인을 정의하고, 이를 넘을 경우 신속하고 안전한 종료 절차를 통해 해당 AI 시스템을 모든 사본을 포함하여 즉시 종료하도록 의무화할 것을 권고한다. 정부는 이러한 능력을 구현하고 유지하기 위해 협력해야 한다. 나아가 최첨단 모델의 경우, 개발자는 배포 이전뿐 아니라 훈련 중에도 자사 시스템이 이러한 레드라인을 넘지 않을 것임을 규제 당국이 납득할 수 있는 수준으로 입증해야 한다.",
+   "marks": [
+    {
+     "t": "명확한 레드라인을 정의하고, 이를 넘을 경우 신속하고 안전한 종료 절차를 통해 해당 AI 시스템을 모든 사본을 포함하여 즉시 종료하도록 의무화할 것을 권고한다",
+     "k": "safety"
+    },
+    {
+     "t": "배포 이전뿐 아니라 훈련 중에도 자사 시스템이 이러한 레드라인을 넘지 않을 것임을 규제 당국이 납득할 수 있는 수준으로 입증해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Reaching adequate safety levels for advanced AI will also require immense research progress. Advanced AI systems must be demonstrably aligned with their designer’s intent, as well as appropriate norms and values. They must also be robust against both malicious actors and rare failure modes. Sufficient human control needs to be ensured for these systems. Concerted effort by the global research community in both AI and other disciplines is essential; we need a global network of dedicated AI safety research and governance institutions. We call on leading AI developers to make a minimum spending commitment of one third of their AI R&D on AI safety and for government agencies to fund academic and non-profit AI safety and governance research in at least the same proportion.",
+   "ko": "첨단 AI가 충분한 안전 수준에 도달하려면 막대한 연구 진전 또한 필요하다. 첨단 AI 시스템은 설계자의 의도는 물론 적절한 규범 및 가치와도 정렬되어 있음이 입증 가능해야 한다. 또한 이러한 시스템은 악의적 행위자와 드문 실패 모드 모두에 대해 견고해야 한다. 이러한 시스템에 대한 충분한 인간의 통제가 보장되어야 한다. AI 및 기타 학문 분야를 아우르는 전 세계 연구 공동체의 공동 노력이 필수적이며, AI 안전 연구와 거버넌스를 전담하는 기관들의 글로벌 네트워크가 필요하다. 우리는 선도 AI 개발자들에게 AI 연구개발(R&D) 비용의 최소 3분의 1을 AI 안전에 지출하는 약정을 할 것을, 그리고 정부 기관들에게 학계 및 비영리 부문의 AI 안전·거버넌스 연구에 최소한 동일한 비율로 자금을 지원할 것을 촉구한다.",
+   "marks": [
+    {
+     "t": "설계자의 의도는 물론 적절한 규범 및 가치와도 정렬되어 있음이 입증 가능해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "악의적 행위자와 드문 실패 모드 모두에 대해 견고해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 연구개발(R&D) 비용의 최소 3분의 1을 AI 안전에 지출하는 약정을 할 것을",
+     "k": "key"
+    }
+   ]
+  }
+ ]
+}

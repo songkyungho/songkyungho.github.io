@@ -1,0 +1,73 @@
+{
+ "slug": "fli-research-priorities-2015",
+ "title": "FLI '견고하고 유익한 AI를 위한 연구 우선순위' 공개서한",
+ "original_title": "Research Priorities for Robust and Beneficial Artificial Intelligence: An Open Letter",
+ "publisher": "Future of Life Institute",
+ "published": "2015-01",
+ "source_url": "https://futureoflife.org/open-letter/ai-open-letter/",
+ "source_note": "공개서한 본문 전문. 연구 우선순위 부속 문서는 싣지 않았다. FLI 페이지의 게시일 표기는 2015-10-28",
+ "source_label": "원문 보기 (FLI)",
+ "summary": "2015년 1월 푸에르토리코 회의 직후 나온 서한으로, AI 연구의 목표를 더 유능한 AI에서 사회에 유익한 AI로 넓히자고 했다. AI가 인류에 엄청난 이익을 줄 수 있는 만큼 그 함정을 피하는 연구가 시급하다는 주장이다. 러셀·호킹·머스크 등이 서명했고, 이후 AI 안전 연구 자금 지원으로 이어지며 오늘날 AI 안전 분야의 출발점 가운데 하나가 됐다.",
+ "doc_kind": "공개서한",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/fli-research-priorities-2015-cover.webp",
+ "og_image": "/images/translations/fli-research-priorities-2015-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 4,
+  "sections": 0,
+  "items": 0,
+  "words_en": 451
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Artificial intelligence (AI) research has explored a variety of problems and approaches since its inception, but for the last 20 years or so has been focused on the problems surrounding the construction of intelligent agents – systems that perceive and act in some environment. In this context, “intelligence” is related to statistical and economic notions of rationality – colloquially, the ability to make good decisions, plans, or inferences. The adoption of probabilistic and decision-theoretic representations and statistical learning methods has led to a large degree of integration and cross-fertilization among AI, machine learning, statistics, control theory, neuroscience, and other fields. The establishment of shared theoretical frameworks, combined with the availability of data and processing power, has yielded remarkable successes in various component tasks such as speech recognition, image classification, autonomous vehicles, machine translation, legged locomotion, and question-answering systems.",
+   "ko": "인공지능(AI) 연구는 태동 이래 다양한 문제와 접근법을 탐구해 왔으나, 지난 20년가량은 지능형 에이전트(intelligent agent), 즉 어떤 환경 안에서 지각하고 행동하는 시스템을 구축하는 문제에 초점을 맞추어 왔다. 이러한 맥락에서 '지능'은 합리성에 관한 통계학적·경제학적 개념과 관련되며, 쉽게 말해 좋은 결정, 계획 또는 추론(Inference)을 내리는 능력을 뜻한다. 확률론적·결정이론적 표현과 통계적 학습 방법이 채택되면서 AI, 기계학습, 통계학, 통제 이론, 신경과학 및 기타 분야 간에 상당한 수준의 통합과 상호 교류가 이루어졌다. 공유된 이론적 틀이 확립되고 데이터와 연산 능력을 활용할 수 있게 되면서 음성 인식, 이미지 분류, 자율주행차, 기계 번역, 다리 보행(legged locomotion), 질의응답 시스템 등 다양한 구성 과업에서 괄목할 만한 성과가 나타났다."
+  },
+  {
+   "type": "p",
+   "en": "As capabilities in these areas and others cross the threshold from laboratory research to economically valuable technologies, a virtuous cycle takes hold whereby even small improvements in performance are worth large sums of money, prompting greater investments in research. There is now a broad consensus that AI research is progressing steadily, and that its impact on society is likely to increase. The potential benefits are huge, since everything that civilization has to offer is a product of human intelligence; we cannot predict what we might achieve when this intelligence is magnified by the tools AI may provide, but the eradication of disease and poverty are not unfathomable. Because of the great potential of AI, it is important to research how to reap its benefits while avoiding potential pitfalls.",
+   "ko": "이들 분야를 비롯한 여러 영역의 역량이 실험실 연구의 문턱을 넘어 경제적 가치가 있는 기술로 자리 잡으면서 선순환이 형성된다. 즉, 성능이 조금만 향상되어도 막대한 금전적 가치가 생기고, 이것이 다시 연구에 대한 더 큰 투자를 촉진한다. 현재 AI 연구가 꾸준히 진전하고 있으며 사회에 미치는 영향도 커질 가능성이 높다는 데 폭넓은 합의가 형성되어 있다. 문명이 제공하는 모든 것은 인간 지능의 산물이므로 잠재적 이익은 막대하다. AI가 제공할 수 있는 도구로 이 지능이 증폭될 때 무엇을 이룰 수 있을지 예측할 수는 없으나, 질병과 빈곤의 근절도 불가능한 일은 아니다. AI의 잠재력이 크기 때문에 잠재적 위험을 피하면서 그 이익을 거두는 방법을 연구하는 것이 중요하다.",
+   "marks": [
+    {
+     "t": "AI의 잠재력이 크기 때문에 잠재적 위험을 피하면서 그 이익을 거두는 방법을 연구하는 것이 중요하다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The progress in AI research makes it timely to focus research not only on making AI more capable, but also on maximizing the societal benefit of AI. Such considerations motivated the AAAI 2008-09 Presidential Panel on Long-Term AI Futures and other projects on AI impacts, and constitute a significant expansion of the field of AI itself, which up to now has focused largely on techniques that are neutral with respect to purpose. We recommend expanded research aimed at ensuring that increasingly capable AI systems are robust and beneficial: our AI systems must do what we want them to do. The attached research priorities document gives many examples of such research directions that can help maximize the societal benefit of AI. This research is by necessity interdisciplinary, because it involves both society and AI. It ranges from economics, law and philosophy to computer security, formal methods and, of course, various branches of AI itself.",
+   "ko": "AI 연구가 진전함에 따라, 이제는 AI의 역량을 높이는 데뿐 아니라 AI의 사회적 이익을 극대화하는 데에도 연구의 초점을 맞추어야 할 시점이 되었다. 이러한 고려는 AAAI 2008-09 Presidential Panel on Long-Term AI Futures를 비롯한 AI 영향에 관한 여러 프로젝트의 동기가 되었으며, 지금까지 주로 목적에 대해 중립적인 기법에 초점을 맞추어 온 AI 분야 자체를 크게 확장하는 것이다. 우리는 점점 더 유능해지는 AI 시스템이 강건하고(robust) 유익하도록 보장하는 것을 목표로 하는 연구의 확대를 권고한다. 즉, 우리의 AI 시스템은 우리가 원하는 일을 수행해야 한다. 첨부된 연구 우선순위 문서는 AI의 사회적 이익을 극대화하는 데 도움이 될 수 있는 이러한 연구 방향의 사례를 다수 제시한다. 이 연구는 사회와 AI를 모두 다루므로 필연적으로 학제적일 수밖에 없다. 그 범위는 경제학, 법학, 철학에서부터 컴퓨터 보안, 정형 기법(formal methods), 그리고 물론 AI 자체의 다양한 분야에 이른다.",
+   "marks": [
+    {
+     "t": "지금까지 주로 목적에 대해 중립적인 기법에 초점을 맞추어 온 AI 분야 자체를 크게 확장하는 것",
+     "k": "safety"
+    },
+    {
+     "t": "우리는 점점 더 유능해지는 AI 시스템이 강건하고(robust) 유익하도록 보장하는 것을 목표로 하는 연구의 확대를 권고한다.",
+     "k": "key"
+    },
+    {
+     "t": "우리의 AI 시스템은 우리가 원하는 일을 수행해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In summary, we believe that research on how to make AI systems robust and beneficial is both important and timely, and that there are concrete research directions that can be pursued today.",
+   "ko": "요컨대, 우리는 AI 시스템을 강건하고 유익하게 만드는 방법에 관한 연구가 중요하고도 시의적절하며, 오늘날 추진할 수 있는 구체적인 연구 방향이 존재한다고 믿는다.",
+   "marks": [
+    {
+     "t": "AI 시스템을 강건하고 유익하게 만드는 방법에 관한 연구가 중요하고도 시의적절하며",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

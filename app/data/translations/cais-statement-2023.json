@@ -1,0 +1,323 @@
+{
+ "slug": "cais-statement-2023",
+ "title": "CAIS AI 멸종 위험 성명",
+ "original_title": "Statement on AI Risk (Center for AI Safety)",
+ "publisher": "Center for AI Safety",
+ "published": "2023-05-30",
+ "source_url": "https://safe.ai/work/statement-on-ai-extinction-risk",
+ "source_note": "공개 성명 전문(서문·성명·페이지에 실린 주요 서명자 50명). 2026-11-01 열람",
+ "source_label": "원문 보기 (CAIS)",
+ "summary": "'AI로 인한 멸종 위험을 줄이는 일은 팬데믹·핵전쟁 같은 사회 규모 위험과 나란히 세계적 우선순위가 되어야 한다.' 한 문장짜리 성명에, 이렇게 짧게 쓴 까닭을 밝힌 서문이 붙어 있다. 가장 심각한 위험을 입 밖에 내기 어려운 분위기를 깨고, 같은 생각을 하는 전문가가 많다는 사실을 '공통 지식'으로 만들려 했다는 것이다. 힌턴·벤지오와 함께 OpenAI·구글 딥마인드·Anthropic 최고경영자가 나란히 서명해, AI 개발 당사자들이 멸종 위험을 공개적으로 인정한 상징적 문건이 됐다.",
+ "doc_kind": "공개 성명",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/cais-statement-2023-cover.webp",
+ "og_image": "/images/translations/cais-statement-2023-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 54,
+  "sections": 2,
+  "items": 0,
+  "words_en": 553
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "AI experts, journalists, policymakers, and the public are increasingly discussing a broad spectrum of important and urgent risks from AI. Even so, it can be difficult to voice concerns about some of advanced AI’s most severe risks. The succinct statement below aims to overcome this obstacle and open up discussion. It is also meant to create common knowledge of the growing number of experts and public figures who also take some of advanced AI’s most severe risks seriously.",
+   "ko": "AI 전문가, 언론인, 정책 입안자, 그리고 대중은 AI로 인한 광범위하고 중요하며 시급한 위험에 대해 점점 더 많이 논의하고 있다. 그럼에도 첨단 AI의 가장 심각한 위험 중 일부에 대해서는 우려를 표명하기 어려울 수 있다. 아래의 간결한 성명은 이러한 장애물을 극복하고 논의의 장을 여는 것을 목표로 한다. 또한 이 성명은 첨단 AI의 가장 심각한 위험 중 일부를 진지하게 받아들이는 전문가와 공인이 점점 늘어나고 있다는 사실을 공동 지식(common knowledge)으로 만들고자 한다.",
+   "marks": [
+    {
+     "t": "AI로 인한 광범위하고 중요하며 시급한 위험",
+     "k": "safety"
+    },
+    {
+     "t": "첨단 AI의 가장 심각한 위험 중 일부에 대해서는 우려를 표명하기 어려울 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "첨단 AI의 가장 심각한 위험 중 일부를 진지하게 받아들이는 전문가와 공인이 점점 늘어나고 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "The statement",
+   "ko": "성명",
+   "id": "s1"
+  },
+  {
+   "type": "p",
+   "en": "Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war.",
+   "ko": "AI로 인한 멸종 위험을 완화하는 것은 팬데믹, 핵전쟁과 같은 다른 사회적 규모의 위험과 더불어 전 세계적 우선순위가 되어야 한다.",
+   "marks": [
+    {
+     "t": "AI로 인한 멸종 위험을 완화하는 것은",
+     "k": "safety"
+    },
+    {
+     "t": "전 세계적 우선순위가 되어야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Signatories",
+   "ko": "서명자",
+   "id": "s3"
+  },
+  {
+   "type": "li",
+   "en": "Geoffrey Hinton — Emeritus Professor of Computer Science, University of Toronto",
+   "ko": "Geoffrey Hinton — University of Toronto 컴퓨터과학 명예교수"
+  },
+  {
+   "type": "li",
+   "en": "Yoshua Bengio — Professor of Computer Science, U. Montreal / Mila",
+   "ko": "Yoshua Bengio — U. Montreal / Mila 컴퓨터과학 교수"
+  },
+  {
+   "type": "li",
+   "en": "Demis Hassabis — CEO, Google DeepMind",
+   "ko": "Demis Hassabis — Google DeepMind CEO"
+  },
+  {
+   "type": "li",
+   "en": "Sam Altman — CEO, OpenAI",
+   "ko": "Sam Altman — OpenAI CEO"
+  },
+  {
+   "type": "li",
+   "en": "Dario Amodei — CEO, Anthropic",
+   "ko": "Dario Amodei — Anthropic CEO"
+  },
+  {
+   "type": "li",
+   "en": "Dawn Song — Professor of Computer Science, UC Berkeley",
+   "ko": "Dawn Song — UC Berkeley 컴퓨터과학 교수"
+  },
+  {
+   "type": "li",
+   "en": "Ted Lieu — Congressman, US House of Representatives",
+   "ko": "Ted Lieu — US House of Representatives 하원의원"
+  },
+  {
+   "type": "li",
+   "en": "Bill Gates — Gates Ventures",
+   "ko": "Bill Gates — Gates Ventures"
+  },
+  {
+   "type": "li",
+   "en": "Ya-Qin Zhang — Professor and Dean, AIR, Tsinghua University",
+   "ko": "Ya-Qin Zhang — Tsinghua University AIR 교수 겸 원장"
+  },
+  {
+   "type": "li",
+   "en": "Ilya Sutskever — Co-Founder and Chief Scientist, OpenAI",
+   "ko": "Ilya Sutskever — OpenAI 공동 창업자 겸 수석 과학자"
+  },
+  {
+   "type": "li",
+   "en": "Igor Babuschkin — Co-Founder, xAI",
+   "ko": "Igor Babuschkin — xAI 공동 창업자"
+  },
+  {
+   "type": "li",
+   "en": "Shane Legg — Chief AGI Scientist and Co-Founder, Google DeepMind",
+   "ko": "Shane Legg — Google DeepMind 수석 인공일반지능(AGI) 과학자 겸 공동 창업자"
+  },
+  {
+   "type": "li",
+   "en": "Martin Hellman — Professor Emeritus of Electrical Engineering, Stanford",
+   "ko": "Martin Hellman — Stanford 전기공학 명예교수"
+  },
+  {
+   "type": "li",
+   "en": "James Manyika — SVP, Research, Technology and Society, Google-Alphabet",
+   "ko": "James Manyika — Google-Alphabet 연구·기술·사회 담당 수석부사장(SVP)"
+  },
+  {
+   "type": "li",
+   "en": "Yi Zeng — Professor and Director of Brain-inspired Cognitive AI Lab, Institute of Automation, Chinese Academy of Sciences",
+   "ko": "Yi Zeng — Chinese Academy of Sciences 자동화연구소(Institute of Automation) 교수 겸 Brain-inspired Cognitive AI Lab 소장"
+  },
+  {
+   "type": "li",
+   "en": "Xianyuan Zhan — Assistant Professor, Tsinghua University",
+   "ko": "Xianyuan Zhan — Tsinghua University 조교수"
+  },
+  {
+   "type": "li",
+   "en": "Albert Efimov — Chief of Research, Russian Association of Artificial Intelligence",
+   "ko": "Albert Efimov — 러시아 인공지능협회(Russian Association of Artificial Intelligence) 연구 책임자"
+  },
+  {
+   "type": "li",
+   "en": "Alvin Wang Graylin — China President, HTC",
+   "ko": "Alvin Wang Graylin — HTC 중국 사장"
+  },
+  {
+   "type": "li",
+   "en": "Jianyi Zhang — Professor, Beijing Electronic Science and Technology Institute",
+   "ko": "Jianyi Zhang — Beijing Electronic Science and Technology Institute 교수"
+  },
+  {
+   "type": "li",
+   "en": "Anca Dragan — Associate Professor of Computer Science, UC Berkeley",
+   "ko": "Anca Dragan — UC Berkeley 컴퓨터과학 부교수"
+  },
+  {
+   "type": "li",
+   "en": "Christine Parthemore — CEO and Director of the Janne E. Nolan Center on Strategic Weapons, The Council on Strategic Risks",
+   "ko": "Christine Parthemore — 전략위험위원회(The Council on Strategic Risks) CEO 겸 Janne E. Nolan Center on Strategic Weapons 소장"
+  },
+  {
+   "type": "li",
+   "en": "Bill McKibben — Schumann Distinguished Scholar, Middlebury College",
+   "ko": "Bill McKibben — Middlebury College Schumann 석좌 학자"
+  },
+  {
+   "type": "li",
+   "en": "Alan Robock — Distinguished Professor of Climate Science, Rutgers University",
+   "ko": "Alan Robock — Rutgers University 기후과학 석좌교수"
+  },
+  {
+   "type": "li",
+   "en": "Angela Kane — Vice President, International Institute for Peace, Vienna; former UN High Representative for Disarmament Affairs",
+   "ko": "Angela Kane — International Institute for Peace, Vienna 부회장; 전 UN 군축 고위대표"
+  },
+  {
+   "type": "li",
+   "en": "Audrey Tang — Digitalminister.tw and Chair of National Institute of Cyber Security",
+   "ko": "Audrey Tang — Digitalminister.tw 및 국가사이버보안연구원(National Institute of Cyber Security) 이사장"
+  },
+  {
+   "type": "li",
+   "en": "Daniela Amodei — President, Anthropic",
+   "ko": "Daniela Amodei — Anthropic 사장"
+  },
+  {
+   "type": "li",
+   "en": "David Silver — Professor of Computer Science, Google DeepMind and UCL",
+   "ko": "David Silver — Google DeepMind 및 UCL 컴퓨터과학 교수"
+  },
+  {
+   "type": "li",
+   "en": "Lila Ibrahim — COO, Google DeepMind",
+   "ko": "Lila Ibrahim — Google DeepMind COO"
+  },
+  {
+   "type": "li",
+   "en": "Stuart Russell — Professor of Computer Science, UC Berkeley",
+   "ko": "Stuart Russell — UC Berkeley 컴퓨터과학 교수"
+  },
+  {
+   "type": "li",
+   "en": "Tony (Yuhuai) Wu — Co-Founder, xAI",
+   "ko": "Tony (Yuhuai) Wu — xAI 공동 창업자"
+  },
+  {
+   "type": "li",
+   "en": "Marian Rogers Croak — VP Center for Responsible AI and Human Centered Technology, Google",
+   "ko": "Marian Rogers Croak — Google 책임 있는 AI 및 인간 중심 기술 센터(Center for Responsible AI and Human Centered Technology) 부사장"
+  },
+  {
+   "type": "li",
+   "en": "Andrew Barto — Professor Emeritus, University of Massachusetts",
+   "ko": "Andrew Barto — University of Massachusetts 명예교수"
+  },
+  {
+   "type": "li",
+   "en": "Mira Murati — CTO, OpenAI",
+   "ko": "Mira Murati — OpenAI CTO"
+  },
+  {
+   "type": "li",
+   "en": "Jaime Fernández Fisac — Assistant Professor of Electrical and Computer Engineering, Princeton University",
+   "ko": "Jaime Fernández Fisac — Princeton University 전기·컴퓨터공학 조교수"
+  },
+  {
+   "type": "li",
+   "en": "Diyi Yang — Assistant Professor, Stanford University",
+   "ko": "Diyi Yang — Stanford University 조교수"
+  },
+  {
+   "type": "li",
+   "en": "Gillian Hadfield — Professor, CIFAR AI Chair, University of Toronto, Vector Institute for AI",
+   "ko": "Gillian Hadfield — University of Toronto 교수, CIFAR AI Chair, Vector Institute for AI"
+  },
+  {
+   "type": "li",
+   "en": "Laurence Tribe — University Professor Emeritus, Harvard University",
+   "ko": "Laurence Tribe — Harvard University 대학 명예석좌교수(University Professor Emeritus)"
+  },
+  {
+   "type": "li",
+   "en": "Pattie Maes — Professor, Massachusetts Institute of Technology - Media Lab",
+   "ko": "Pattie Maes — Massachusetts Institute of Technology - Media Lab 교수"
+  },
+  {
+   "type": "li",
+   "en": "Kevin Scott — CTO, Microsoft",
+   "ko": "Kevin Scott — Microsoft CTO"
+  },
+  {
+   "type": "li",
+   "en": "Eric Horvitz — Chief Scientific Officer, Microsoft",
+   "ko": "Eric Horvitz — Microsoft 최고과학책임자(Chief Scientific Officer)"
+  },
+  {
+   "type": "li",
+   "en": "Peter Norvig — Education Fellow, Stanford University",
+   "ko": "Peter Norvig — Stanford University 교육 펠로"
+  },
+  {
+   "type": "li",
+   "en": "Joseph Sifakis — Turing Award 2007, Professor, CNRS - Universite Grenoble - Alpes",
+   "ko": "Joseph Sifakis — 2007년 Turing Award 수상자, CNRS - Universite Grenoble - Alpes 교수"
+  },
+  {
+   "type": "li",
+   "en": "Atoosa Kasirzadeh — Assistant Professor, University of Edinburgh, Alan Turing Institute",
+   "ko": "Atoosa Kasirzadeh — University of Edinburgh 조교수, Alan Turing Institute"
+  },
+  {
+   "type": "li",
+   "en": "Erik Brynjolfsson — Professor and Senior Fellow, Stanford Institute for Human-Centered AI",
+   "ko": "Erik Brynjolfsson — Stanford Institute for Human-Centered AI 교수 겸 선임 펠로"
+  },
+  {
+   "type": "li",
+   "en": "Mustafa Suleyman — CEO, Inflection AI",
+   "ko": "Mustafa Suleyman — Inflection AI CEO"
+  },
+  {
+   "type": "li",
+   "en": "Emad Mostaque — CEO, Stability AI",
+   "ko": "Emad Mostaque — Stability AI CEO"
+  },
+  {
+   "type": "li",
+   "en": "Ian Goodfellow — Principal Scientist, Google DeepMind",
+   "ko": "Ian Goodfellow — Google DeepMind 수석 과학자(Principal Scientist)"
+  },
+  {
+   "type": "li",
+   "en": "John Schulman — Co-Founder, OpenAI",
+   "ko": "John Schulman — OpenAI 공동 창업자"
+  },
+  {
+   "type": "li",
+   "en": "Wojciech Zaremba — Co-Founder, OpenAI",
+   "ko": "Wojciech Zaremba — OpenAI 공동 창업자"
+  },
+  {
+   "type": "li",
+   "en": "Dan Hendrycks — Executive Director, Center for AI Safety",
+   "ko": "Dan Hendrycks — AI 안전 센터(Center for AI Safety) 사무총장"
+  }
+ ]
+}

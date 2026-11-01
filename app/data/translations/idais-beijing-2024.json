@@ -1,0 +1,242 @@
+{
+ "slug": "idais-beijing-2024",
+ "title": "IDAIS 베이징 합의문 (AI 레드라인)",
+ "original_title": "IDAIS-Beijing: Consensus Statement on Red Lines in Artificial Intelligence",
+ "publisher": "International Dialogues on AI Safety",
+ "published": "2024-03-11",
+ "source_url": "https://idais.ai/dialogue/idais-beijing/",
+ "source_note": "합의문 영문 전문",
+ "source_label": "원문 보기 (IDAIS)",
+ "summary": "냉전기의 과학·정부 협력이 핵 파국을 막았듯 AI에도 같은 협력이 필요하다며 다섯 가지 레드라인을 제안했다. 인간의 명시적 승인 없는 자기복제·자기개선, 권력 추구, 대량살상무기 개발 지원, 자율적 사이버 공격, 설계자나 규제 당국을 속이는 기만이다. 레드라인을 지키기 위한 거버넌스, 측정·평가, 기술 협력의 길을 함께 제시했다.",
+ "doc_kind": "과학자 합의문",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/idais-beijing-2024-cover.webp",
+ "og_image": "/images/translations/idais-beijing-2024-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 18,
+  "sections": 3,
+  "items": 0,
+  "words_en": 645
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Consensus Statement on Red Lines in Artificial Intelligence",
+   "ko": "인공지능 레드라인에 관한 합의 성명",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "Unsafe development, deployment, or use of AI systems may pose catastrophic or even existential risks to humanity within our lifetimes. These risks from misuse and loss of control could increase greatly as digital intelligence approaches or even surpasses human intelligence.",
+   "ko": "AI 시스템의 안전하지 않은 개발, 배포 또는 사용은 우리 생애 안에 인류에게 파국적이거나 심지어 실존적인 위험을 초래할 수 있다. 오용과 통제 상실로 인한 이러한 위험은 디지털 지능이 인간 지능에 근접하거나 이를 능가함에 따라 크게 증가할 수 있다.",
+   "marks": [
+    {
+     "t": "AI 시스템의 안전하지 않은 개발, 배포 또는 사용은 우리 생애 안에 인류에게 파국적이거나 심지어 실존적인 위험을 초래할 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "오용과 통제 상실로 인한 이러한 위험은 디지털 지능이 인간 지능에 근접하거나 이를 능가함에 따라 크게 증가할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In the depths of the Cold War, international scientific and governmental coordination helped avert thermonuclear catastrophe. Humanity again needs to coordinate to avert a catastrophe that could arise from unprecedented technology. In this consensus statement, we propose red lines in AI development as an international coordination mechanism, including the following non-exhaustive list. At future International Dialogues we will build on this list in response to this rapidly developing technology.",
+   "ko": "냉전이 한창이던 시기, 국제적인 과학계와 정부 간 협력은 열핵 파국을 막는 데 기여했다. 인류는 전례 없는 기술로부터 발생할 수 있는 파국을 막기 위해 다시 한번 협력해야 한다. 본 합의 성명에서 우리는 국제 협력 메커니즘으로서 AI 개발의 레드라인을 제안하며, 여기에는 아래의 비망라적 목록이 포함된다. 우리는 향후 International Dialogues에서 빠르게 발전하는 이 기술에 대응하여 이 목록을 보완해 나갈 것이다.",
+   "marks": [
+    {
+     "t": "인류는 전례 없는 기술로부터 발생할 수 있는 파국을 막기 위해 다시 한번 협력해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "국제 협력 메커니즘으로서 AI 개발의 레드라인을 제안하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Autonomous Replication or Improvement No AI system should be able to copy or improve itself without explicit human approval and assistance. This includes both exact copies of itself as well as creating new AI systems of similar or greater abilities.",
+   "ko": "자율적 복제 또는 개선 어떤 AI 시스템도 명시적인 인간의 승인과 지원 없이 자기 자신을 복제하거나 개선할 수 있어서는 안 된다. 이는 자기 자신의 정확한 복제본을 만드는 것과 유사하거나 더 뛰어난 능력을 가진 새로운 AI 시스템을 만드는 것을 모두 포함한다.",
+   "marks": [
+    {
+     "t": "어떤 AI 시스템도 명시적인 인간의 승인과 지원 없이 자기 자신을 복제하거나 개선할 수 있어서는 안 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Power Seeking No AI system should take actions to unduly increase its power and influence.",
+   "ko": "권력 추구(power seeking) 어떤 AI 시스템도 자신의 권력과 영향력을 부당하게 증대하기 위한 행동을 취해서는 안 된다.",
+   "marks": [
+    {
+     "t": "어떤 AI 시스템도 자신의 권력과 영향력을 부당하게 증대하기 위한 행동을 취해서는 안 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Assisting Weapon Development No AI systems should substantially increase the ability of actors to design weapons of mass destruction, or violate the biological or chemical weapons convention.",
+   "ko": "무기 개발 지원 어떤 AI 시스템도 행위자가 대량살상무기를 설계하는 능력을 상당히 증대하거나, 생물무기 또는 화학무기 협약을 위반해서는 안 된다.",
+   "marks": [
+    {
+     "t": "행위자가 대량살상무기를 설계하는 능력을 상당히 증대하거나, 생물무기 또는 화학무기 협약을 위반해서는 안 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Cyberattacks No AI system should be able to autonomously execute cyberattacks resulting in serious financial losses or equivalent harm.",
+   "ko": "사이버 공격 어떤 AI 시스템도 심각한 재정적 손실 또는 이에 상응하는 피해를 초래하는 사이버 공격을 자율적으로 실행할 수 있어서는 안 된다.",
+   "marks": [
+    {
+     "t": "심각한 재정적 손실 또는 이에 상응하는 피해를 초래하는 사이버 공격을 자율적으로 실행할 수 있어서는 안 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Deception No AI system should be able to consistently cause its designers or regulators to misunderstand its likelihood or capability to cross any of the preceding red lines.",
+   "ko": "기만 어떤 AI 시스템도 앞서 언급한 레드라인 중 어느 하나를 넘을 가능성이나 역량에 대해 그 설계자나 규제 당국이 지속적으로 오인하게 만들 수 있어서는 안 된다.",
+   "marks": [
+    {
+     "t": "그 설계자나 규제 당국이 지속적으로 오인하게 만들 수 있어서는 안 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Roadmap to Red Line Enforcement",
+   "ko": "레드라인 집행을 위한 로드맵",
+   "id": "s8"
+  },
+  {
+   "type": "p",
+   "en": "Ensuring these red lines are not crossed is possible, but will require a concerted effort to develop both improved governance regimes and technical safety methods.",
+   "ko": "이러한 레드라인을 넘지 않도록 보장하는 것은 가능하지만, 이를 위해서는 개선된 거버넌스 체제와 기술적 안전 방법을 모두 개발하기 위한 공동의 노력이 필요하다.",
+   "marks": [
+    {
+     "t": "개선된 거버넌스 체제와 기술적 안전 방법을 모두 개발하기 위한 공동의 노력이 필요하다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Governance Comprehensive governance regimes are needed to ensure red lines are not breached by developed or deployed systems. We should immediately implement domestic registration for AI models and training runs above certain compute or capability thresholds. Registrations should ensure governments have visibility into the most advanced AI in their borders and levers to stem distribution and operation of dangerous models.",
+   "ko": "거버넌스 개발되거나 배포된 시스템이 레드라인을 침범하지 않도록 보장하기 위해서는 포괄적인 거버넌스 체제가 필요하다. 우리는 일정한 연산 임계값 또는 역량 임계값을 초과하는 AI 모델 및 훈련 실행(training run)에 대해 국내 등록 제도를 즉시 시행해야 한다. 등록 제도는 정부가 자국 내 최첨단 AI를 파악할 수 있게 하고, 위험한 모델의 유포와 운영을 저지할 수 있는 수단을 갖추도록 보장해야 한다.",
+   "marks": [
+    {
+     "t": "일정한 연산 임계값 또는 역량 임계값을 초과하는 AI 모델 및 훈련 실행(training run)에 대해 국내 등록 제도를 즉시 시행해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "위험한 모델의 유포와 운영을 저지할 수 있는 수단을 갖추도록 보장해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Domestic regulators ought to adopt globally aligned requirements to prevent crossing these red lines. Access to global markets should be conditioned on domestic regulations meeting these global standards as determined by an international audit, effectively preventing development and deployment of systems that breach red lines.",
+   "ko": "국내 규제 당국은 이러한 레드라인을 넘는 것을 방지하기 위해 국제적으로 정합된 요건을 채택해야 한다. 글로벌 시장에 대한 접근은 국제 감사를 통해 국내 규제가 이러한 글로벌 기준을 충족한다고 판정되는 것을 조건으로 해야 하며, 이를 통해 레드라인을 침범하는 시스템의 개발과 배포를 실효적으로 방지해야 한다.",
+   "marks": [
+    {
+     "t": "국제적으로 정합된 요건을 채택해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "레드라인을 침범하는 시스템의 개발과 배포를 실효적으로 방지해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We should take measures to prevent the proliferation of the most dangerous technologies while ensuring broad access to the benefits of AI technologies. To achieve this we should establish multilateral institutions and agreements to govern AGI development safely and inclusively with enforcement mechanisms to ensure red lines are not crossed and benefits are shared broadly.",
+   "ko": "우리는 AI 기술의 혜택에 대한 폭넓은 접근을 보장하는 동시에 가장 위험한 기술의 확산을 방지하기 위한 조치를 취해야 한다. 이를 달성하기 위해 우리는 인공일반지능(AGI) 개발을 안전하고 포용적으로 관리할 다자간 기구와 협정을 수립해야 하며, 여기에는 레드라인을 넘지 않고 혜택이 폭넓게 공유되도록 보장하는 집행 메커니즘이 포함되어야 한다.",
+   "marks": [
+    {
+     "t": "가장 위험한 기술의 확산을 방지하기 위한 조치를 취해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "인공일반지능(AGI) 개발을 안전하고 포용적으로 관리할 다자간 기구와 협정을 수립해야 하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Measurement and Evaluation We should develop comprehensive methods and techniques to operationalize these red lines prior to there being a meaningful risk of them being crossed. To ensure red line testing regimes keep pace with rapid AI development, we should invest in red teaming and automating model evaluation with appropriate human oversight.",
+   "ko": "측정 및 평가(evaluation) 우리는 레드라인을 넘을 유의미한 위험이 발생하기 전에 이러한 레드라인을 운용 가능하도록 구체화하기 위한 포괄적인 방법과 기법을 개발해야 한다. 레드라인 시험 체제가 빠른 AI 발전 속도를 따라갈 수 있도록, 우리는 적절한 인간 감독하에 레드티밍과 모델 평가(evaluation)의 자동화에 투자해야 한다.",
+   "marks": [
+    {
+     "t": "적절한 인간 감독하에 레드티밍과 모델 평가(evaluation)의 자동화에 투자해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The onus should be on developers to convincingly demonstrate that red lines will not be crossed such as through rigorous empirical evaluations, quantitative guarantees or mathematical proofs.",
+   "ko": "엄격한 실증적 평가(evaluation), 정량적 보증 또는 수학적 증명 등을 통해 레드라인을 넘지 않을 것임을 설득력 있게 입증할 책임은 개발자에게 있어야 한다.",
+   "marks": [
+    {
+     "t": "레드라인을 넘지 않을 것임을 설득력 있게 입증할 책임은 개발자에게 있어야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Technical Collaboration The international scientific community must work together to address the technological and social challenges posed by advanced AI systems. We encourage building a stronger global technical network to accelerate AI safety R&D and collaborations through visiting researcher programs and organizing in-depth AI safety conferences and workshops. Additional funding will be required to support the growth of this field: we call for AI developers and government funders to invest at least one third of their AI R&D budget in safety.",
+   "ko": "기술 협력 국제 과학계는 첨단 AI 시스템이 제기하는 기술적·사회적 과제를 해결하기 위해 함께 노력해야 한다. 우리는 방문 연구자 프로그램과 심층적인 AI 안전 학술대회 및 워크숍 개최를 통해 AI 안전 연구개발과 협력을 가속화할 더욱 강력한 글로벌 기술 네트워크를 구축할 것을 권장한다. 이 분야의 성장을 지원하기 위해서는 추가적인 재원이 필요할 것이다. 우리는 AI 개발자와 정부 연구비 지원 기관이 AI 연구개발 예산의 최소 3분의 1을 안전에 투자할 것을 촉구한다.",
+   "marks": [
+    {
+     "t": "AI 안전 연구개발과 협력을 가속화할 더욱 강력한 글로벌 기술 네트워크를 구축할 것을 권장한다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 연구개발 예산의 최소 3분의 1을 안전에 투자할 것을 촉구한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Conclusion",
+   "ko": "결론",
+   "id": "s16"
+  },
+  {
+   "type": "p",
+   "en": "Decisive action is required to avoid catastrophic global outcomes from AI. The combination of concerted technical research efforts with a prudent international governance regime could mitigate most of the risks from AI, enabling the many potential benefits. International scientific and government collaboration on safety must continue and grow.",
+   "ko": "AI로 인한 파국적인 전 지구적 결과를 피하기 위해서는 단호한 행동이 필요하다. 공동의 기술 연구 노력과 신중한 국제 거버넌스 체제가 결합된다면 AI로 인한 위험 대부분을 완화하고, AI가 가져올 수 있는 다양한 잠재적 혜택을 실현할 수 있을 것이다. 안전에 관한 국제적인 과학계와 정부 간 협력은 지속되고 확대되어야 한다.",
+   "marks": [
+    {
+     "t": "AI로 인한 파국적인 전 지구적 결과를 피하기 위해서는 단호한 행동이 필요하다.",
+     "k": "key"
+    },
+    {
+     "t": "공동의 기술 연구 노력과 신중한 국제 거버넌스 체제가 결합된다면 AI로 인한 위험 대부분을 완화",
+     "k": "safety"
+    },
+    {
+     "t": "안전에 관한 국제적인 과학계와 정부 간 협력은 지속되고 확대되어야 한다.",
+     "k": "key"
+    }
+   ]
+  }
+ ]
+}

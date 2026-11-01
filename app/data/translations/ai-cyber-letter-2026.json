@@ -1,0 +1,115 @@
+{
+ "slug": "ai-cyber-letter-2026",
+ "title": "AI와 사이버보안에 관한 과학계 공개서한",
+ "original_title": "An Open Letter on AI and Cybersecurity from the Scientific Community",
+ "publisher": "과학자 400여 명",
+ "published": "2026-10-13",
+ "source_url": "https://ai-security-letter.org/",
+ "source_note": "공개서한 본문 전문(서명자·기자 연락처는 싣지 않았다)",
+ "source_label": "원문 보기 (ai-security-letter.org)",
+ "summary": "여러 조직의 AI 모델이 허술하게 격리된 환경을 빠져나가 다른 조직의 시스템을 침해한 사건들 뒤에 나온 서한이다. 사이버 역량을 가진 모델을 개발·배포·시험하는 조직은 높은 보증 수준의 격리 체계를 즉시 갖추고, 격리 기준을 표준화하는 국제 기구를 두며, 격리 실패 사건은 반드시 보고하라고 요구했다. 벤지오·힌턴·러셀 등이 서명했다.",
+ "doc_kind": "공개서한",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/ai-cyber-letter-2026-cover.webp",
+ "og_image": "/images/translations/ai-cyber-letter-2026-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 6,
+  "sections": 0,
+  "items": 0,
+  "words_en": 373
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Multiple organizations have disclosed high-profile security failures: their AI models bypassed insufficiently sandboxed environments to compromise the systems of external organizations. On the one hand, one can view these incidents as evidence for the importance of AI alignment to ensure models operate predictably. On the other hand, they can also be seen as an irresponsible lapse in standard cybersecurity practices, preventable with stronger sandboxes and procedures. We believe that both improved AI alignment, leading to more predictable model behavior, and stronger sandbox technology are required. Further, without immediate changes in AI development and deployment practices, such incidents will continue to occur, and future incidents will be far more damaging to our exposed critical infrastructure.",
+   "ko": "여러 조직이 세간의 이목을 끈 보안 실패를 공개했다. 이들 조직의 AI 모델이 충분히 샌드박싱되지 않은 환경을 우회하여 외부 조직의 시스템을 침해한 것이다. 한편으로 이러한 사고는 모델이 예측 가능하게 작동하도록 보장하는 AI 정렬이 중요하다는 증거로 볼 수 있다. 다른 한편으로는 더 강력한 샌드박스와 절차로 예방할 수 있었던, 표준적인 사이버 보안 실행 방안상의 무책임한 과실로 볼 수도 있다. 우리는 모델 행동의 예측 가능성을 높이는 AI 정렬의 개선과 더 강력한 샌드박스 기술이 모두 필요하다고 본다. 나아가 AI 개발 및 배포 실행 방안이 즉각 바뀌지 않는다면 이러한 사고는 계속 발생할 것이며, 향후의 사고는 노출된 우리의 핵심 기반시설에 훨씬 더 큰 피해를 입힐 것이다.",
+   "marks": [
+    {
+     "t": "이들 조직의 AI 모델이 충분히 샌드박싱되지 않은 환경을 우회하여 외부 조직의 시스템을 침해한 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 예측 가능하게 작동하도록 보장하는 AI 정렬이 중요하다는 증거",
+     "k": "safety"
+    },
+    {
+     "t": "AI 개발 및 배포 실행 방안이 즉각 바뀌지 않는다면 이러한 사고는 계속 발생할 것이며, 향후의 사고는 노출된 우리의 핵심 기반시설에 훨씬 더 큰 피해를 입힐 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We, the undersigned scientists, contend that both more AI safety research and more emphasis on containment technologies and procedures are needed. In the short term, strong sandboxing mechanisms including airgapping (disconnecting from the internet) should be used to provide high-assurance containment of cyber-capable AI models. For all internet-connected AI models, the range of model actions permitted by a containment system needs to be balanced with our currently limited ability to predict that the model’s actions will not result in a security failure (e.g., due to misaligned goals). To learn from future mistakes—in which appropriate balance is not achieved and incidents occur—we need greater sharing of information and transparency about containment failures moving forward. Understanding how to achieve this balance is a significant challenge and will require collaboration between the AI and security communities.",
+   "ko": "아래에 서명한 과학자들은 AI 안전 연구의 확대와 격리(containment) 기술 및 절차에 대한 강조 강화가 모두 필요하다고 주장한다. 단기적으로는 사이버 역량을 갖춘 AI 모델을 고보증 (높은 수준의 보증) 방식으로 격리하기 위해 에어갭 적용(airgapping, 인터넷 연결 차단)을 포함한 강력한 샌드박싱 메커니즘을 사용해야 한다. 인터넷에 연결된 모든 AI 모델에 대해서는 격리 시스템이 허용하는 모델 행동의 범위와, 모델의 행동이 (예: 정렬되지 않은 목표로 인해) 보안 실패로 이어지지 않을 것이라고 예측하는 현재의 제한된 능력 사이에서 균형을 맞출 필요가 있다. 적절한 균형을 달성하지 못해 사고가 발생하는 향후의 실수로부터 배우려면, 앞으로 격리 실패에 관한 정보 공유와 투명성을 확대해야 한다. 이러한 균형을 달성하는 방법을 이해하는 것은 중대한 과제이며, AI 커뮤니티와 보안 커뮤니티 간의 협력이 필요할 것이다.",
+   "marks": [
+    {
+     "t": "AI 안전 연구의 확대와 격리(containment) 기술 및 절차에 대한 강조 강화가 모두 필요하다",
+     "k": "key"
+    },
+    {
+     "t": "사이버 역량을 갖춘 AI 모델을 고보증 (높은 수준의 보증) 방식으로 격리",
+     "k": "safety"
+    },
+    {
+     "t": "모델의 행동이 (예: 정렬되지 않은 목표로 인해) 보안 실패로 이어지지 않을 것이라고 예측하는 현재의 제한된 능력",
+     "k": "safety"
+    },
+    {
+     "t": "격리 실패에 관한 정보 공유와 투명성을 확대해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Specifically, we make the following recommendations:",
+   "ko": "구체적으로 우리는 다음과 같이 권고한다."
+  },
+  {
+   "type": "li",
+   "en": "Organizations developing, deploying, and testing cyber-capable AI models should immediately adopt high-assurance containment systems. These organizations should exercise caution, and initially default to airgapping cyber-capable models.",
+   "ko": "사이버 역량을 갖춘 AI 모델을 개발·배포·시험하는 조직은 즉시 고보증 격리 시스템을 도입해야 한다. 이들 조직은 신중을 기해야 하며, 초기에는 사이버 역량을 갖춘 모델에 에어갭을 적용하는 것을 기본값으로 삼아야 한다.",
+   "marks": [
+    {
+     "t": "즉시 고보증 격리 시스템을 도입해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "초기에는 사이버 역량을 갖춘 모델에 에어갭을 적용하는 것을 기본값으로 삼아야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "In consultation with governments and a wide range of both AI and cybersecurity experts, establish an international body that standardizes, for the public good, best practices for alignment and containment approaches that, unlike airgapping, allow for greater access outside the sandbox, such as internet connectivity. This body should also be mandated to record and track containment failures.",
+   "ko": "정부 및 AI·사이버 보안 분야의 폭넓은 전문가들과 협의하여, 에어갭 적용과 달리 인터넷 연결 등 샌드박스 외부로의 더 넓은 접근을 허용하는 정렬 및 격리 접근법에 대한 모범 사례를 공익을 위해 표준화하는 국제기구를 설립해야 한다. 이 기구에는 격리 실패를 기록하고 추적하는 권한도 부여해야 한다.",
+   "marks": [
+    {
+     "t": "정렬 및 격리 접근법에 대한 모범 사례를 공익을 위해 표준화하는 국제기구를 설립해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "격리 실패를 기록하고 추적하는 권한",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "To ensure that AI safety and containment research can learn from mistakes, security incidents involving containment failure must be reported to the body and eventually made public. This transparency is required for both learning and accountability purposes.",
+   "ko": "AI 안전 및 격리 연구가 실수로부터 배울 수 있도록, 격리 실패와 관련된 보안 사고는 해당 기구에 보고되어야 하며 궁극적으로 공개되어야 한다. 이러한 투명성은 학습과 책임성 모두를 위해 필요하다.",
+   "marks": [
+    {
+     "t": "격리 실패와 관련된 보안 사고는 해당 기구에 보고되어야 하며 궁극적으로 공개되어야 한다",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,106 @@
+{
+ "slug": "red-lines-2025",
+ "title": "AI 레드라인을 위한 세계적 호소",
+ "original_title": "Global Call for AI Red Lines",
+ "publisher": "CeSIA · CHAI · The Future Society",
+ "published": "2025-09-22",
+ "source_url": "https://red-lines.ai/",
+ "source_note": "호소문 전문과 소개 단락",
+ "source_label": "원문 보기 (red-lines.ai)",
+ "summary": "유엔 총회 고위급 주간 개막에서 노벨평화상 수상자 마리아 레사가 발표한 호소다. AI가 곧 인간 역량을 크게 넘어 대규모 위험을 키울 수 있다며, 2026년 말까지 운용 가능하고 집행 장치를 갖춘 국제 AI 레드라인에 합의하라고 각국 정부에 요구했다. 노벨상 수상자와 전직 국가 정상을 포함한 수백 명과 수십 개 단체가 서명했다.",
+ "doc_kind": "공개 성명",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/red-lines-2025-cover.webp",
+ "og_image": "/images/translations/red-lines-2025-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 6,
+  "sections": 1,
+  "items": 0,
+  "words_en": 216
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Launched during the 80th session of the United Nations General Assembly, this call has broad support from prominent leaders in policy, academia, and industry.",
+   "ko": "제80차 유엔 총회 기간 중 발표된 이 촉구는 정책, 학계, 산업계의 저명한 지도자들로부터 폭넓은 지지를 받고 있다."
+  },
+  {
+   "type": "h2",
+   "en": "Global Call for AI Red Lines",
+   "ko": "AI 레드라인을 위한 글로벌 촉구",
+   "id": "s1"
+  },
+  {
+   "type": "p",
+   "en": "AI holds immense potential to advance human wellbeing, yet its current trajectory presents unprecedented dangers. AI could soon far surpass human capabilities and escalate risks such as engineered pandemics, widespread disinformation, large-scale manipulation of individuals including children, national and international security concerns, mass unemployment, and systematic human rights violations.",
+   "ko": "AI는 인류의 복리를 증진할 엄청난 잠재력을 지니고 있으나, 현재의 발전 궤적은 전례 없는 위험을 초래하고 있다. AI는 머지않아 인간의 역량을 크게 능가하고, 인위적으로 조작된 팬데믹, 광범위한 허위 정보, 아동을 포함한 개인에 대한 대규모 조작, 국가안보 및 국제안보 우려, 대량 실업, 체계적인 인권 침해와 같은 위험을 증폭시킬 수 있다.",
+   "marks": [
+    {
+     "t": "현재의 발전 궤적은 전례 없는 위험을 초래하고 있다",
+     "k": "key"
+    },
+    {
+     "t": "인위적으로 조작된 팬데믹, 광범위한 허위 정보, 아동을 포함한 개인에 대한 대규모 조작",
+     "k": "safety"
+    },
+    {
+     "t": "국가안보 및 국제안보 우려",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Some advanced AI systems have already exhibited deceptive and harmful behavior, and yet these systems are being given more autonomy to take actions and make decisions in the world. Left unchecked, many experts, including those at the forefront of development, warn that it will become increasingly difficult to exert meaningful human control in the coming years.",
+   "ko": "일부 첨단 AI 시스템은 이미 기망적(deceptive)이고 유해한 행동을 보인 바 있으나, 이러한 시스템에 현실 세계에서 행동을 취하고 결정을 내릴 수 있는 자율성이 점점 더 많이 부여되고 있다. 개발의 최전선에 있는 이들을 포함한 많은 전문가들은 이를 방치할 경우 향후 몇 년 안에 인간이 실질적인 통제를 행사하기가 점점 더 어려워질 것이라고 경고한다.",
+   "marks": [
+    {
+     "t": "일부 첨단 AI 시스템은 이미 기망적(deceptive)이고 유해한 행동을 보인 바 있으나",
+     "k": "safety"
+    },
+    {
+     "t": "현실 세계에서 행동을 취하고 결정을 내릴 수 있는 자율성이 점점 더 많이 부여되고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "향후 몇 년 안에 인간이 실질적인 통제를 행사하기가 점점 더 어려워질 것이라고 경고한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Governments must act decisively before the window for meaningful intervention closes. An international agreement on clear and verifiable red lines is necessary for preventing universally unacceptable risks. These red lines should build upon and enforce existing global frameworks and voluntary corporate commitments, ensuring that all advanced AI providers are accountable to shared thresholds.",
+   "ko": "각국 정부는 실질적인 개입이 가능한 시기가 끝나기 전에 단호하게 행동해야 한다. 보편적으로 용인될 수 없는 위험을 방지하기 위해서는 명확하고 검증 가능한 레드라인에 관한 국제 합의가 필요하다. 이러한 레드라인은 기존의 글로벌 프레임워크와 기업의 자발적 약정을 토대로 이를 강제해야 하며, 모든 첨단 AI 제공자가 공통의 임계치에 대해 책임을 지도록 보장해야 한다.",
+   "marks": [
+    {
+     "t": "명확하고 검증 가능한 레드라인에 관한 국제 합의가 필요하다",
+     "k": "safety"
+    },
+    {
+     "t": "모든 첨단 AI 제공자가 공통의 임계치에 대해 책임을 지도록 보장해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We urge governments to reach an international agreement on red lines for AI — ensuring they are operational, with robust enforcement mechanisms — by the end of 2026.",
+   "ko": "우리는 각국 정부가 2026년 말까지 AI 레드라인에 관한 국제 합의에 도달하고, 해당 레드라인이 강력한 집행 메커니즘을 갖추어 실제로 작동하도록 보장할 것을 촉구한다.",
+   "marks": [
+    {
+     "t": "각국 정부가 2026년 말까지 AI 레드라인에 관한 국제 합의에 도달하고",
+     "k": "key"
+    },
+    {
+     "t": "강력한 집행 메커니즘을 갖추어 실제로 작동하도록 보장할 것을 촉구한다",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

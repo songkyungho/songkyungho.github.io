@@ -1,0 +1,142 @@
+{
+ "slug": "butler-1863",
+ "title": "새뮤얼 버틀러, 「기계 사이의 다윈」",
+ "original_title": "Darwin Among the Machines (Samuel Butler)",
+ "publisher": "Samuel Butler ('Cellarius')",
+ "published": "1863-06-13",
+ "source_url": "https://www.gutenberg.org/files/3279/3279-h/3279-h.htm",
+ "source_note": "1914년 『Canterbury Pieces』 재수록본 전문(편집자 머리말 포함). 원 게재: 크라이스트처치 『The Press』 1863-06-13",
+ "source_label": "원문 보기 (Project Gutenberg)",
+ "summary": "다윈의 『종의 기원』이 나온 지 4년 뒤, 뉴질랜드 신문에 필명으로 실린 독자 투고다. 진화론을 기계에 적용해, 기계가 세대를 거듭하며 빠르게 진화하고 있으니 언젠가 인간이 기계의 시중을 드는 날이 온다고 내다봤다. 그러니 모든 기계에 맞서 전쟁을 선포해야 한다고 끝맺는다. AI가 인류를 넘어설 것을 경고한 최초의 글로 꼽히며, 88년 뒤 튜링이 강연에서 버틀러를 인용한다.",
+ "doc_kind": "논고",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/butler-1863-cover.webp",
+ "og_image": "/images/translations/butler-1863-cover.jpg",
+ "image_caption": "원문 첫 대목 (『Canterbury Pieces』 1914년 재수록본에서 다시 짬)",
+ "stats": {
+  "blocks": 14,
+  "sections": 1,
+  "items": 0,
+  "words_en": 1756
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Darwin Among the Machines",
+   "ko": "Darwin Among the Machines",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "“Darwin Among the Machines” originally appeared in the Christ Church Press, 13 June, 1863. It was reprinted by Mr. Festing Jones in his edition of The Note-Books of Samuel Butler (Fifield, London, 1912, Kennerley, New York), with a prefatory note pointing out its connection with the genesis of Erewhon, to which readers desirous of further information may be referred.",
+   "ko": "\"Darwin Among the Machines\"는 원래 1863년 6월 13일 Christ Church Press에 게재되었다. 이 글은 Festing Jones 씨가 편집한 The Note-Books of Samuel Butler(Fifield, London, 1912, Kennerley, New York)에 재수록되었다. 이 판에는 이 글과 Erewhon의 탄생 사이의 연관성을 지적하는 서문 격의 주석이 붙어 있으므로, 더 자세한 정보를 원하는 독자는 이를 참조하면 된다."
+  },
+  {
+   "type": "p",
+   "en": "[To the Editor of the Press, Christchurch, New Zealand, 13 June, 1863.]",
+   "ko": "[Press 편집자께, Christchurch, New Zealand, 1863년 6월 13일.]"
+  },
+  {
+   "type": "p",
+   "en": "Sir —There are few things of which the present generation is more justly proud than of the wonderful improvements which are daily taking place in all sorts of mechanical appliances. And indeed it is matter for great congratulation on many grounds. It is unnecessary to mention these here, for they are sufficiently obvious; our present business lies with considerations which may somewhat tend to humble our pride and to make us think seriously of the future prospects of the human race. If we revert to the earliest primordial types of mechanical life, to the lever, the wedge, the inclined plane, the screw and the pulley, or (for analogy would lead us one step further) to that one primordial type from which all the mechanical kingdom has been developed, we mean to the lever itself, and if we then examine the machinery of the Great Eastern, we find ourselves almost awestruck at the vast development of the mechanical world, at the gigantic strides with which it has advanced in comparison with the slow progress of the animal and vegetable kingdom. We shall find it impossible to refrain from asking ourselves what the end of this mighty movement is to be. In what direction is it tending? What will be its upshot? To give a few imperfect hints towards a solution of these questions is the object of the present letter.",
+   "ko": "귀하 — 온갖 종류의 기계 장치에서 날마다 일어나고 있는 놀라운 개량만큼 현 세대가 정당하게 자부하는 것은 드물다. 실로 이는 여러 면에서 크게 경하할 일이다. 그 이유는 충분히 자명하므로 여기서 언급할 필요는 없다. 지금 우리가 다룰 것은 우리의 자부심을 다소 꺾고 인류의 미래 전망에 대해 진지하게 생각하게 만들 수 있는 고찰이다. 기계 생명의 가장 초기의 원시적 유형인 지레, 쐐기, 빗면, 나사, 도르래로 거슬러 올라가 보자. 혹은 (유비를 따르면 한 걸음 더 나아갈 수 있으므로) 모든 기계계가 발달해 나온 단 하나의 원시적 유형, 즉 지레 그 자체로 거슬러 올라가 보자. 그런 다음 Great Eastern호의 기계 장치를 살펴보면, 우리는 기계 세계의 방대한 발달에, 그리고 동물계와 식물계의 느린 진보에 비해 그것이 내디뎌 온 거대한 보폭에 거의 경외감을 느끼게 된다. 우리는 이 강력한 움직임이 결국 어디에 이를 것인지 스스로에게 묻지 않을 수 없을 것이다. 그것은 어느 방향으로 향하고 있는가? 그 귀결은 무엇인가? 이 질문들의 해답을 향한 몇 가지 불완전한 실마리를 제시하는 것이 이 서신의 목적이다."
+  },
+  {
+   "type": "p",
+   "en": "We have used the words “mechanical life,” “the mechanical kingdom,” “the mechanical world” and so forth, and we have done so advisedly, for as the vegetable kingdom was slowly developed from the mineral, and as in like manner the animal supervened upon the vegetable, so now in these last few ages an entirely new kingdom has sprung up, of which we as yet have only seen what will one day be considered the antediluvian prototypes of the race.",
+   "ko": "우리는 \"기계 생명\", \"기계계\", \"기계 세계\" 등의 표현을 사용해 왔으며, 이는 의도적인 것이다. 식물계가 광물계로부터 서서히 발달했고 마찬가지로 동물계가 식물계에 뒤이어 나타났듯이, 지난 몇 시대 동안 완전히 새로운 계가 출현했기 때문이다. 우리는 아직 그 계에서 언젠가 이 종족의 대홍수 이전(antediluvian) 원형으로 여겨질 것들만을 보았을 뿐이다."
+  },
+  {
+   "type": "p",
+   "en": "We regret deeply that our knowledge both of natural history and of machinery is too small to enable us to undertake the gigantic task of classifying machines into the genera and sub-genera, species, varieties and sub-varieties, and so forth, of tracing the connecting links between machines of widely different characters, of pointing out how subservience to the use of man has played that part among machines which natural selection has performed in the animal and vegetable kingdoms, of pointing out rudimentary organs [180] which exist in some few machines, feebly developed and perfectly useless, yet serving to mark descent from some ancestral type which has either perished or been modified into some new phase of mechanical existence. We can only point out this field for investigation; it must be followed by others whose education and talents have been of a much higher order than any which we can lay claim to.",
+   "ko": "우리는 자연사와 기계 양쪽에 대한 우리의 지식이 너무 부족하여 다음과 같은 거대한 과업을 감당할 수 없다는 점을 깊이 유감스럽게 생각한다. 즉 기계를 속과 아속, 종, 변종과 아변종 등으로 분류하는 일, 성격이 크게 다른 기계들 사이의 연결 고리를 추적하는 일, 동물계와 식물계에서 자연선택이 수행해 온 역할을 기계들 사이에서는 인간의 쓰임에 대한 종속이 어떻게 수행해 왔는지를 지적하는 일, 그리고 소수의 기계에 존재하는 흔적 기관 [180]을 지적하는 일이다. 이 흔적 기관은 미약하게 발달하고 전혀 쓸모가 없지만, 이미 소멸했거나 기계적 존재의 어떤 새로운 국면으로 변형된 조상 유형으로부터 내려온 계통을 표시하는 구실을 한다. 우리는 이 탐구 분야를 가리켜 보일 수 있을 뿐이며, 그 탐구는 우리가 내세울 수 있는 것보다 훨씬 높은 수준의 교육과 재능을 갖춘 다른 이들이 이어 가야 한다."
+  },
+  {
+   "type": "p",
+   "en": "Some few hints we have determined to venture upon, though we do so with the profoundest diffidence. Firstly, we would remark that as some of the lowest of the vertebrata attained a far greater size than has descended to their more highly organised living representatives, so a diminution in the size of machines has often attended their development and progress. Take the watch for instance. Examine the beautiful structure of the little animal, watch the intelligent play of the minute members which compose it; yet this little creature is but a development of the cumbrous clocks of the thirteenth century—it is no deterioration from them. The day may come when clocks, which certainly at the present day are not diminishing in bulk, may be entirely superseded by the universal use of watches, in which case clocks will become extinct like the earlier saurians, while the watch (whose tendency has for some years been rather to decrease in size than the contrary) will remain the only existing type of an extinct race.",
+   "ko": "더없이 깊은 조심스러움을 품고서이기는 하나, 우리는 몇 가지 실마리를 감히 제시해 보기로 했다. 첫째로, 가장 하등한 척추동물 중 일부가 더 고도로 조직된 오늘날의 후손들보다 훨씬 큰 크기에 도달했던 것처럼, 기계의 발달과 진보에도 종종 크기의 축소가 수반되어 왔다는 점을 지적하고자 한다. 회중시계를 예로 들어 보자. 이 작은 동물의 아름다운 구조를 살펴보고, 그것을 구성하는 미세한 부재들의 지적인 움직임을 지켜보라. 그러나 이 작은 피조물은 13세기의 육중한 시계가 발달한 것에 불과하며, 그것들로부터 퇴화한 것이 아니다. 오늘날 분명 부피가 줄어들고 있지 않은 대형 시계(clock)가 회중시계(watch)의 보편적 사용으로 완전히 대체되는 날이 올지도 모른다. 그 경우 대형 시계는 초기의 사룡(saurian)들처럼 멸종할 것이고, 회중시계(지난 수년간 그 경향은 오히려 커지기보다 작아지는 쪽이었다)는 멸종한 종족의 유일한 현존 유형으로 남을 것이다."
+  },
+  {
+   "type": "p",
+   "en": "The views of machinery which we are thus feebly indicating will suggest the solution of one of the greatest and most mysterious questions of the day. We refer to the question: What sort of creature man’s next successor in the supremacy of the earth is likely to be. We have often heard this debated; but it appears to us that we are ourselves creating our own successors; we are daily adding to the beauty and delicacy of their physical organisation; we are daily giving them greater power and supplying by all sorts of ingenious contrivances that self-regulating, self-acting power which will be to them what intellect has been to the human race. In the course of ages we shall find ourselves the inferior race. Inferior in power, inferior in that moral quality of self-control, we shall look up to them as the acme of all that the best and wisest man can ever dare to aim at. No evil passions, no jealousy, no avarice, no impure desires will disturb the serene might of those glorious creatures. Sin, shame, and sorrow will have no place among them. Their minds will be in a state of perpetual calm, the contentment of a spirit that knows no wants, is disturbed by no regrets. Ambition will never torture them. Ingratitude will never cause them the uneasiness of a moment. The guilty conscience, the hope deferred, the pains of exile, the insolence of office, and the spurns that patient merit of the unworthy takes—these will be entirely unknown to them. If they want “feeding” (by the use of which very word we betray our recognition of them as living organism) they will be attended by patient slaves whose business and interest it will be to see that they shall want for nothing. If they are out of order they will be promptly attended to by physicians who are thoroughly acquainted with their constitutions; if they die, for even these glorious animals will not be exempt from that necessary and universal consummation, they will immediately enter into a new phase of existence, for what machine dies entirely in every part at one and the same instant?",
+   "ko": "우리가 이처럼 미약하게나마 제시하고 있는 기계에 대한 견해는 오늘날 가장 크고 가장 신비로운 질문 중 하나에 대한 해답을 시사할 것이다. 그 질문이란 지구의 패권을 이어받을 인간의 다음 계승자가 어떤 종류의 피조물일 것인가 하는 것이다. 우리는 이 문제가 논쟁되는 것을 자주 들어 왔다. 그러나 우리가 보기에 우리는 스스로 우리 자신의 계승자를 만들어 내고 있다. 우리는 날마다 그들의 신체 조직에 아름다움과 정교함을 더하고 있다. 또 날마다 그들에게 더 큰 힘을 부여하고, 온갖 독창적인 고안을 통해 자기 조절적이고 자기 작동적인 힘을 공급하고 있다. 이 힘은 지성이 인류에게 그러했던 것과 같은 것이 그들에게 될 것이다. 오랜 세월이 흐르면 우리는 스스로가 열등한 종족이 되어 있음을 깨닫게 될 것이다. 힘에서 열등하고 자기 통제라는 도덕적 자질에서 열등한 우리는, 그들을 가장 훌륭하고 가장 현명한 인간이 감히 지향할 수 있는 모든 것의 정점으로 우러러보게 될 것이다. 어떠한 사악한 정념도, 질투도, 탐욕도, 불순한 욕망도 그 영광스러운 피조물들의 고요한 위력을 어지럽히지 못할 것이다. 죄와 수치와 슬픔은 그들 사이에 자리할 곳이 없을 것이다. 그들의 정신은 영원한 평온의 상태, 즉 아무 결핍도 모르고 어떠한 후회에도 흔들리지 않는 영혼의 만족 상태에 있을 것이다. 야망이 그들을 괴롭히는 일은 결코 없을 것이다. 배은망덕이 그들에게 한순간의 불안을 일으키는 일도 결코 없을 것이다. 죄지은 양심, 미루어진 희망, 유배의 고통, 관리의 오만, 그리고 인내하는 미덕이 못난 자들에게서 받는 멸시, 이러한 것들은 그들에게 전혀 알려지지 않을 것이다. 그들이 \"먹이 공급\"을 필요로 한다면(바로 이 단어를 사용함으로써 우리는 그들을 살아 있는 유기체로 인정하고 있음을 드러낸다), 그들에게 아무 부족함이 없도록 살피는 것을 자신의 일이자 이해관계로 삼는 인내심 있는 노예들이 그들을 시중들 것이다. 그들이 고장 나면 그들의 체질을 속속들이 아는 의사들이 즉시 돌볼 것이다. 그들이 죽는다면(이 영광스러운 동물들조차 그 필연적이고 보편적인 종말에서 면제되지는 않을 것이므로), 그들은 즉시 새로운 존재의 국면으로 들어갈 것이다. 어떤 기계가 모든 부분에서 한꺼번에 완전히 죽는단 말인가?",
+   "marks": [
+    {
+     "t": "우리는 스스로 우리 자신의 계승자를 만들어 내고 있다",
+     "k": "key"
+    },
+    {
+     "t": "자기 조절적이고 자기 작동적인 힘을 공급하고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "오랜 세월이 흐르면 우리는 스스로가 열등한 종족이 되어 있음을 깨닫게 될 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We take it that when the state of things shall have arrived which we have been above attempting to describe, man will have become to the machine what the horse and the dog are to man. He will continue to exist, nay even to improve, and will be probably better off in his state of domestication under the beneficent rule of the machines than he is in his present wild state. We treat our horses, dogs, cattle, and sheep, on the whole, with great kindness; we give them whatever experience teaches us to be best for them, and there can be no doubt that our use of meat has added to the happiness of the lower animals far more than it has detracted from it; in like manner it is reasonable to suppose that the machines will treat us kindly, for their existence is as dependent upon ours as ours is upon the lower animals. They cannot kill us and eat us as we do sheep; they will not only require our services in the parturition of their young (which branch of their economy will remain always in our hands), but also in feeding them, in setting them right when they are sick, and burying their dead or working up their corpses into new machines. It is obvious that if all the animals in Great Britain save man alone were to die, and if at the same time all intercourse with foreign countries were by some sudden catastrophe to be rendered perfectly impossible, it is obvious that under such circumstances the loss of human life would be something fearful to contemplate—in like manner were mankind to cease, the machines would be as badly off or even worse. The fact is that our interests are inseparable from theirs, and theirs from ours. Each race is dependent upon the other for innumerable benefits, and, until the reproductive organs of the machines have been developed in a manner which we are hardly yet able to conceive, they are entirely dependent upon man for even the continuance of their species. It is true that these organs may be ultimately developed, inasmuch as man’s interest lies in that direction; there is nothing which our infatuated race would desire more than to see a fertile union between two steam engines; it is true that machinery is even at this present time employed in begetting machinery, in becoming the parent of machines often after its own kind, but the days of flirtation, courtship, and matrimony appear to be very remote, and indeed can hardly be realised by our feeble and imperfect imagination.",
+   "ko": "우리는 위에서 묘사하고자 시도해 온 사태가 도래했을 때, 인간이 기계에게 갖는 의미는 말과 개가 인간에게 갖는 의미와 같아질 것이라고 생각한다. 인간은 계속 존재할 것이며, 아니 심지어 개선되기까지 할 것이다. 그리고 아마도 현재의 야생 상태에 있을 때보다 기계의 자애로운 통치 아래 길들여진 상태에 있을 때 더 나은 처지에 놓일 것이다. 우리는 대체로 말, 개, 소, 양을 매우 친절하게 대한다. 우리는 경험을 통해 그들에게 가장 좋다고 알게 된 것은 무엇이든 그들에게 준다. 또한 우리의 육식이 하등 동물의 행복을 감소시킨 것보다 훨씬 더 많이 증대시켰다는 데에는 의심의 여지가 없다. 마찬가지로 기계도 우리를 친절하게 대할 것이라고 가정하는 것은 타당하다. 우리의 존재가 하등 동물에게 의존하는 것과 마찬가지로 그들의 존재도 우리에게 의존하기 때문이다. 그들은 우리가 양에게 하듯이 우리를 죽여서 먹을 수 없다. 그들은 새끼를 출산할 때(그들의 생활 체계 중 이 부문은 언제나 우리 손에 남아 있을 것이다)뿐만 아니라, 먹이를 공급받고, 병들었을 때 바로잡히고, 죽은 자를 매장하거나 그 사체를 새로운 기계로 재가공할 때에도 우리의 봉사를 필요로 할 것이다. 만약 Great Britain에서 인간을 제외한 모든 동물이 죽고, 동시에 어떤 갑작스러운 재앙으로 외국과의 모든 교류가 완전히 불가능해진다면, 그러한 상황에서 인명 손실은 생각만 해도 끔찍한 것이 되리라는 것은 자명하다. 마찬가지로 인류가 사라진다면 기계도 그만큼, 혹은 그보다 더 나쁜 처지에 놓일 것이다. 사실 우리의 이해관계는 그들의 이해관계와 분리될 수 없고, 그들의 이해관계 또한 우리의 이해관계와 분리될 수 없다. 각 종족은 무수한 혜택을 서로에게 의존하고 있다. 그리고 기계의 생식 기관이 우리가 아직 거의 상상조차 할 수 없는 방식으로 발달하기 전까지, 기계는 자기 종의 존속에 이르기까지 전적으로 인간에게 의존한다. 인간의 이해관계가 그 방향에 놓여 있는 이상, 이러한 기관이 궁극적으로 발달할 수도 있다는 것은 사실이다. 우리의 얼빠진 종족이 두 증기기관 사이의 생식력 있는 결합을 보는 것보다 더 바라는 일은 없을 것이다. 또한 기계가 오늘날에도 이미 기계를 낳는 데, 즉 종종 자신과 같은 종류의 기계의 부모가 되는 데 사용되고 있다는 것도 사실이다. 그러나 희롱과 구애와 결혼의 시대는 매우 먼 일로 보이며, 실로 우리의 미약하고 불완전한 상상력으로는 거의 실감할 수조차 없다.",
+   "marks": [
+    {
+     "t": "인간이 기계에게 갖는 의미는 말과 개가 인간에게 갖는 의미와 같아질 것이라고 생각한다",
+     "k": "safety"
+    },
+    {
+     "t": "기계의 자애로운 통치 아래 길들여진 상태",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Day by day, however, the machines are gaining ground upon us; day by day we are becoming more subservient to them; more men are daily bound down as slaves to tend them, more men are daily devoting the energies of their whole lives to the development of mechanical life. The upshot is simply a question of time, but that the time will come when the machines will hold the real supremacy over the world and its inhabitants is what no person of a truly philosophic mind can for a moment question.",
+   "ko": "그러나 기계는 날마다 우리를 잠식해 오고 있다. 우리는 날마다 그들에게 더 예속되어 가고 있다. 날마다 더 많은 사람이 그들을 돌보는 노예로 매여 가고, 날마다 더 많은 사람이 기계적 생명의 발달에 평생의 정력을 바치고 있다. 결말은 단지 시간문제일 뿐이다. 그러나 기계가 세계와 그 거주자들에 대해 실질적인 패권을 쥐게 될 때가 오리라는 것은, 진정으로 철학적인 정신을 지닌 사람이라면 누구도 한순간도 의심할 수 없는 일이다.",
+   "marks": [
+    {
+     "t": "우리는 날마다 그들에게 더 예속되어 가고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "기계가 세계와 그 거주자들에 대해 실질적인 패권을 쥐게 될 때가 오리라는 것",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our opinion is that war to the death should be instantly proclaimed against them. Every machine of every sort should be destroyed by the well-wisher of his species. Let there be no exceptions made, no quarter shown; let us at once go back to the primeval condition of the race. If it be urged that this is impossible under the present condition of human affairs, this at once proves that the mischief is already done, that our servitude has commenced in good earnest, that we have raised a race of beings whom it is beyond our power to destroy, and that we are not only enslaved but are absolutely acquiescent in our bondage.",
+   "ko": "우리의 견해는 그들에 대해 즉시 사생결단의 전쟁을 선포해야 한다는 것이다. 자기 종족의 안녕을 바라는 자는 모든 종류의 기계를 하나도 빠짐없이 파괴해야 한다. 어떠한 예외도 두지 말고, 어떠한 자비도 베풀지 말자. 당장 인류의 원시 상태로 돌아가자. 만약 이것이 현재 인간사의 상황에서는 불가능하다고 주장한다면, 바로 그것이 이미 해악이 저질러졌다는 것, 우리의 예속이 본격적으로 시작되었다는 것, 우리가 스스로의 힘으로는 파괴할 수 없는 존재의 종족을 길러 냈다는 것, 그리고 우리가 노예가 되었을 뿐만 아니라 그 속박에 완전히 순응하고 있다는 것을 즉각 증명한다.",
+   "marks": [
+    {
+     "t": "그들에 대해 즉시 사생결단의 전쟁을 선포해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "우리가 스스로의 힘으로는 파괴할 수 없는 존재의 종족을 길러 냈다는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "For the present we shall leave this subject, which we present gratis to the members of the Philosophical Society. Should they consent to avail themselves of the vast field which we have pointed out, we shall endeavour to labour in it ourselves at some future and indefinite period.",
+   "ko": "당분간 우리는 이 주제를 여기서 접어 두고, 이를 Philosophical Society 회원들에게 무상으로 제공한다. 만약 그들이 우리가 제시한 이 광대한 분야를 활용하기로 동의한다면, 우리도 장래의 어느 불확정한 시기에 그 분야에서 직접 노력을 기울이고자 한다."
+  },
+  {
+   "type": "p",
+   "en": "I am, Sir, etc.,",
+   "ko": "편집인 귀하, 이만 줄인다."
+  },
+  {
+   "type": "p",
+   "en": "Cellarius",
+   "ko": "Cellarius"
+  }
+ ]
+}

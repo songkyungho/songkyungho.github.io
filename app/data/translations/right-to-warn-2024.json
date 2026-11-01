@@ -1,0 +1,131 @@
+{
+ "slug": "right-to-warn-2024",
+ "title": "'첨단 AI에 대해 경고할 권리' 공개서한",
+ "original_title": "A Right to Warn about Advanced Artificial Intelligence",
+ "publisher": "OpenAI·Google DeepMind 전현직 직원",
+ "published": "2024-06-04",
+ "source_url": "https://righttowarn.ai/",
+ "source_note": "공개서한 본문 전문(서명자 명단은 싣지 않았다)",
+ "source_label": "원문 보기 (righttowarn.ai)",
+ "summary": "OpenAI와 구글 딥마인드의 전현직 직원들이 낸 서한이다. AI 위험이 기존 불평등의 고착부터 자율 AI 시스템의 통제 상실과 인류 멸종에 이를 수 있다고 적고, 효과적인 정부 감독이 없는 지금 직원들이 회사를 견제할 몇 안 되는 사람이라고 했다. 비방 금지 계약을 강제하지 말 것, 익명 신고 절차, 공개 비판의 문화, 공개 경고한 직원에 대한 보복 금지라는 네 원칙을 요구했다.",
+ "doc_kind": "공개서한",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/right-to-warn-2024-cover.webp",
+ "og_image": "/images/translations/right-to-warn-2024-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 8,
+  "sections": 0,
+  "items": 0,
+  "words_en": 537
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "We are current and former employees at frontier AI companies, and we believe in the potential of AI technology to deliver unprecedented benefits to humanity.",
+   "ko": "우리는 프론티어 AI 기업의 전·현직 직원이며, AI 기술이 인류에게 전례 없는 혜택을 가져다줄 잠재력을 지니고 있다고 믿는다."
+  },
+  {
+   "type": "p",
+   "en": "We also understand the serious risks posed by these technologies. These risks range from the further entrenchment of existing inequalities, to manipulation and misinformation, to the loss of control of autonomous AI systems potentially resulting in human extinction. AI companies themselves have acknowledged these risks [1, 2, 3], as have governments across the world [4, 5, 6] and other AI experts [7, 8, 9].",
+   "ko": "우리는 또한 이러한 기술이 초래하는 심각한 위험을 인식하고 있다. 이러한 위험은 기존 불평등의 고착화 심화에서부터 조작과 오정보, 나아가 인류 멸종으로 이어질 수도 있는 자율 AI 시스템에 대한 통제 상실에 이르기까지 다양하다. AI 기업들 스스로도 이러한 위험을 인정한 바 있으며[1, 2, 3], 전 세계 정부들[4, 5, 6]과 다른 AI 전문가들[7, 8, 9] 역시 마찬가지이다.",
+   "marks": [
+    {
+     "t": "조작과 오정보",
+     "k": "safety"
+    },
+    {
+     "t": "인류 멸종으로 이어질 수도 있는 자율 AI 시스템에 대한 통제 상실",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We are hopeful that these risks can be adequately mitigated with sufficient guidance from the scientific community, policymakers, and the public. However, AI companies have strong financial incentives to avoid effective oversight, and we do not believe bespoke structures of corporate governance are sufficient to change this.",
+   "ko": "우리는 과학계, 정책 입안자, 대중이 충분한 지침을 제공한다면 이러한 위험이 적정하게 완화될 수 있으리라 기대한다. 그러나 AI 기업들은 효과적인 감독을 회피할 강력한 재정적 유인을 가지고 있으며, 우리는 기업별 맞춤형 지배구조만으로는 이를 바꾸기에 충분하지 않다고 본다.",
+   "marks": [
+    {
+     "t": "AI 기업들은 효과적인 감독을 회피할 강력한 재정적 유인을 가지고 있으며",
+     "k": "key"
+    },
+    {
+     "t": "기업별 맞춤형 지배구조만으로는 이를 바꾸기에 충분하지 않다고 본다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI companies possess substantial non-public information about the capabilities and limitations of their systems, the adequacy of their protective measures, and the risk levels of different kinds of harm. However, they currently have only weak obligations to share some of this information with governments, and none with civil society. We do not think they can all be relied upon to share it voluntarily.",
+   "ko": "AI 기업들은 자사 시스템의 역량과 한계, 보호 조치의 적정성, 다양한 종류의 피해에 대한 위험 수준에 관해 상당한 비공개 정보를 보유하고 있다. 그러나 현재 이들 기업이 이러한 정보의 일부를 정부와 공유할 의무는 미약할 뿐이며, 시민사회와 공유할 의무는 전혀 없다. 우리는 이들 기업 모두가 이 정보를 자발적으로 공유하리라 믿을 수 있다고 생각하지 않는다.",
+   "marks": [
+    {
+     "t": "보호 조치의 적정성, 다양한 종류의 피해에 대한 위험 수준에 관해 상당한 비공개 정보를 보유하고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "이 정보를 자발적으로 공유하리라 믿을 수 있다고 생각하지 않는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "So long as there is no effective government oversight of these corporations, current and former employees are among the few people who can hold them accountable to the public. Yet broad confidentiality agreements block us from voicing our concerns, except to the very companies that may be failing to address these issues. Ordinary whistleblower protections are insufficient because they focus on illegal activity, whereas many of the risks we are concerned about are not yet regulated. Some of us reasonably fear various forms of retaliation, given the history of such cases across the industry. We are not the first to encounter or speak about these issues.",
+   "ko": "이들 기업에 대한 효과적인 정부 감독이 존재하지 않는 한, 전·현직 직원은 이들 기업이 대중에 대해 책임을 지도록 할 수 있는 몇 안 되는 사람들에 속한다. 그러나 광범위한 비밀유지 계약으로 인해 우리는 우려를 제기할 수 없으며, 예외적으로 우려를 제기할 수 있는 대상은 바로 이러한 문제에 대응하지 못하고 있을 수 있는 해당 기업뿐이다. 일반적인 내부 고발자 보호는 불법 행위에 초점을 맞추고 있는 반면, 우리가 우려하는 위험 중 상당수는 아직 규제 대상이 아니기 때문에 충분하지 않다. 업계 전반에서 있었던 이러한 사례들의 전력을 고려할 때, 우리 중 일부가 다양한 형태의 보복을 우려하는 것은 합리적이다. 이러한 문제에 직면하거나 이에 대해 목소리를 낸 것은 우리가 처음이 아니다.",
+   "marks": [
+    {
+     "t": "광범위한 비밀유지 계약으로 인해 우리는 우려를 제기할 수 없으며",
+     "k": "key"
+    },
+    {
+     "t": "우리가 우려하는 위험 중 상당수는 아직 규제 대상이 아니기 때문에 충분하지 않다",
+     "k": "safety"
+    },
+    {
+     "t": "우리 중 일부가 다양한 형태의 보복을 우려하는 것은 합리적이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We therefore call upon advanced AI companies to commit to these principles:",
+   "ko": "따라서 우리는 첨단 AI 기업들이 다음 원칙을 약속할 것을 촉구한다."
+  },
+  {
+   "type": "li",
+   "en": "That the company will not enter into or enforce any agreement that prohibits “disparagement” or criticism of the company for risk-related concerns, nor retaliate for risk-related criticism by hindering any vested economic benefit;",
+   "ko": "회사는 위험 관련 우려를 이유로 회사에 대한 \"비방\" 또는 비판을 금지하는 어떠한 계약도 체결하거나 집행하지 않으며, 이미 귀속된(vested) 경제적 이익을 저해하는 방식으로 위험 관련 비판에 보복하지 않는다;",
+   "marks": [
+    {
+     "t": "위험 관련 우려를 이유로 회사에 대한 \"비방\" 또는 비판을 금지하는 어떠한 계약도 체결하거나 집행하지 않으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "That the company will facilitate a verifiably anonymous process for current and former employees to raise risk-related concerns to the company’s board, to regulators, and to an appropriate independent organization with relevant expertise; That the company will support a culture of open criticism and allow its current and former employees to raise risk-related concerns about its technologies to the public, to the company’s board, to regulators, or to an appropriate independent organization with relevant expertise, so long as trade secrets and other intellectual property interests are appropriately protected; That the company will not retaliate against current and former employees who publicly share risk-related confidential information after other processes have failed. We accept that any effort to report risk-related concerns should avoid releasing confidential information unnecessarily. Therefore, once an adequate process for anonymously raising concerns to the company’s board, to regulators, and to an appropriate independent organization with relevant expertise exists, we accept that concerns should be raised through such a process initially. However, as long as such a process does not exist, current and former employees should retain their freedom to report their concerns to the public.",
+   "ko": "회사는 전·현직 직원이 회사 이사회, 규제 기관, 그리고 관련 전문성을 갖춘 적절한 독립 기관에 위험 관련 우려를 제기할 수 있도록 익명성이 검증 가능한 절차를 마련한다; 회사는 개방적 비판의 문화를 지원하고, 영업 비밀 및 기타 지식재산권상의 이익이 적절히 보호되는 한, 전·현직 직원이 자사 기술에 관한 위험 관련 우려를 대중, 회사 이사회, 규제 기관, 또는 관련 전문성을 갖춘 적절한 독립 기관에 제기할 수 있도록 허용한다; 회사는 다른 절차가 실패한 후 위험 관련 기밀 정보를 공개적으로 공유하는 전·현직 직원에게 보복하지 않는다. 우리는 위험 관련 우려를 보고하려는 모든 노력이 불필요하게 기밀 정보를 공개하는 일을 피해야 한다는 점을 수용한다. 따라서 회사 이사회, 규제 기관, 그리고 관련 전문성을 갖춘 적절한 독립 기관에 익명으로 우려를 제기할 수 있는 적정한 절차가 존재한다면, 우리는 우려를 우선 그러한 절차를 통해 제기해야 한다는 점을 수용한다. 그러나 그러한 절차가 존재하지 않는 한, 전·현직 직원은 자신의 우려를 대중에게 알릴 자유를 유지해야 한다.",
+   "marks": [
+    {
+     "t": "익명성이 검증 가능한 절차를 마련한다",
+     "k": "safety"
+    },
+    {
+     "t": "위험 관련 기밀 정보를 공개적으로 공유하는 전·현직 직원에게 보복하지 않는다",
+     "k": "safety"
+    },
+    {
+     "t": "전·현직 직원은 자신의 우려를 대중에게 알릴 자유를 유지해야 한다",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

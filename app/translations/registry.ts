@@ -19,6 +19,26 @@ import openaiPreparedness2 from "../data/translations/openai-preparedness-v2.jso
 import shailabFrmf2 from "../data/translations/shailab-frmf-v2.json";
 import xaiFaif202512 from "../data/translations/xai-faif-2025-12.json";
 import zaiOpenWeight from "../data/translations/zai-open-weight-2026-09.json";
+// AI 실존 위험 경고 문건 (라이브러리 xrisk-warnings 컬렉션)
+import xrButler1863 from "../data/translations/butler-1863.json";
+import xrButler1865 from "../data/translations/butler-1865.json";
+import xrButlerErewhon1872 from "../data/translations/butler-erewhon-1872.json";
+import xrFliResearchPriorities2015 from "../data/translations/fli-research-priorities-2015.json";
+import xrAsilomar2017 from "../data/translations/asilomar-2017.json";
+import xrFliPause2023 from "../data/translations/fli-pause-2023.json";
+import xrCaisStatement2023 from "../data/translations/cais-statement-2023.json";
+import xrIdaisOxford2023 from "../data/translations/idais-oxford-2023.json";
+import xrBletchley2023 from "../data/translations/bletchley-2023.json";
+import xrEldersLongview2024 from "../data/translations/elders-longview-2024.json";
+import xrIdaisBeijing2024 from "../data/translations/idais-beijing-2024.json";
+import xrRightToWarn2024 from "../data/translations/right-to-warn-2024.json";
+import xrIdaisVenice2024 from "../data/translations/idais-venice-2024.json";
+import xrIdaisShanghai2025 from "../data/translations/idais-shanghai-2025.json";
+import xrRedLines2025 from "../data/translations/red-lines-2025.json";
+import xrSuperintelligenceStatement2025 from "../data/translations/superintelligence-statement-2025.json";
+import xrProHuman2026 from "../data/translations/pro-human-2026.json";
+import xrIdaisLondon2026 from "../data/translations/idais-london-2026.json";
+import xrAiCyberLetter2026 from "../data/translations/ai-cyber-letter-2026.json";
 
 // 번역 문서 한 편 = scripts/import_translation.py가 만든 JSON 한 개. 새 문서는 여기 import만 더한다.
 // marks: 번역문 강조(scripts/emphasize_translation.py). t는 ko의 연속 부분 문자열, 블록 안 순서대로·겹치지 않음.
@@ -57,7 +77,7 @@ export type TranslationDoc = {
   blocks: TranslationBlock[];
 };
 
-export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, microsoftFgf, amazonFmsf, chinaFramework3, nvidiaFra, cohereSecureAi, g42Fsf, caSb53, nyRaise2026, ilSb315] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
+export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, microsoftFgf, amazonFmsf, chinaFramework3, nvidiaFra, cohereSecureAi, g42Fsf, xrButler1863, xrButler1865, xrButlerErewhon1872, xrFliResearchPriorities2015, xrAsilomar2017, xrFliPause2023, xrCaisStatement2023, xrIdaisOxford2023, xrBletchley2023, xrEldersLongview2024, xrIdaisBeijing2024, xrRightToWarn2024, xrIdaisVenice2024, xrIdaisShanghai2025, xrRedLines2025, xrSuperintelligenceStatement2025, xrProHuman2026, xrIdaisLondon2026, xrAiCyberLetter2026, caSb53, nyRaise2026, ilSb315] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
 
 export const dotDate = (iso: string) => iso.replaceAll("-", ".");
 

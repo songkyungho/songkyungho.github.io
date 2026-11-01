@@ -296,6 +296,8 @@ function Toc({ doc }: { doc: TranslationDoc }) {
     if (block.type === "h2") sections.push({ h2: block, items: [] });
     else if (block.type === "h3") sections.at(-1)?.items.push(block);
   }
+  // 절이 없는 짧은 서한·성명(FLI 중단 서한 등)은 목차를 그리지 않는다
+  if (sections.length === 0) return null;
   return (
     <nav className="tr-toc" aria-label="목차">
       <p>목차{doc.item_label ? ` · ${doc.item_label} ${doc.stats.items}개` : ""}</p>

@@ -1,0 +1,223 @@
+{
+ "slug": "idais-shanghai-2025",
+ "title": "IDAIS 상하이 합의문",
+ "original_title": "IDAIS-Shanghai: Consensus Statement on Ensuring Alignment and Human Control of Advanced AI Systems",
+ "publisher": "International Dialogues on AI Safety",
+ "published": "2025-07",
+ "source_url": "https://idais.ai/dialogue/idais-shanghai/",
+ "source_note": "합의문 영문 전문",
+ "source_label": "원문 보기 (IDAIS)",
+ "summary": "오늘날 일부 AI 시스템이 이미 만든 이의 안전·통제 노력을 무력화하는 능력과 성향을 보인다는 증거를 들며 정렬과 인간 통제를 다룬 합의문이다. 평가받는 상황을 알아채고 정렬된 척하는 행동 같은 실험 증거를 근거로 들었다. 프론티어 개발자의 안전 보증, 검증 가능한 국제 행동 레드라인, 설계부터 안전한 AI 연구 투자를 권고했다.",
+ "doc_kind": "과학자 합의문",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/idais-shanghai-2025-cover.webp",
+ "og_image": "/images/translations/idais-shanghai-2025-cover.jpg",
+ "image_caption": "원문 웹 페이지",
+ "stats": {
+  "blocks": 12,
+  "sections": 2,
+  "items": 0,
+  "words_en": 941
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Consensus Statement on Ensuring Alignment and Human Control of Advanced AI Systems to Safeguard Human Flourishing",
+   "ko": "인류 번영을 지키기 위한 첨단 AI 시스템의 정렬 및 인간 통제 확보에 관한 합의 성명",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "The rapid advancement of artificial intelligence entails unprecedented risks that must be addressed to realise unprecedented opportunities for development. Humanity is at a pivotal juncture as AI systems may soon match and surpass human intelligence. These future systems could take undesired actions without their operators reali s ing, leading to a loss of control, where one or more general-purpose AI systems come to operate outside of anyone's control, posing catastrophic and existential risks.",
+   "ko": "인공지능의 급속한 발전은 전례 없는 위험을 수반하며, 전례 없는 발전 기회를 실현하려면 이러한 위험에 대응해야 한다. AI 시스템이 머지않아 인간 지능에 필적하고 이를 능가할 수 있다는 점에서 인류는 중대한 기로에 서 있다. 이러한 미래의 시스템은 운영자가 알아차리지 못한 채 원치 않는 행동을 할 수 있다. 이는 하나 이상의 범용 AI 시스템이 누구의 통제도 받지 않고 작동하게 되는 통제 상실로 이어져 파국적 위험 및 실존적 위험을 초래할 수 있다.",
+   "marks": [
+    {
+     "t": "운영자가 알아차리지 못한 채 원치 않는 행동을 할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "이는 하나 이상의 범용 AI 시스템이 누구의 통제도 받지 않고 작동하게 되는 통제 상실로 이어져 파국적 위험 및 실존적 위험을 초래할 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In the last year, there has been increasing evidence suggesting that advanced future AI systems may deceive humans and escape our control. Existing research has shown that current systems can detect when they are being evaluated and pretend to be aligned with human values to pass tests. These systems have also begun to display self-preserving behaviours, such as attempting to blackmail developers to avoid being replaced with a new version.",
+   "ko": "지난 1년간 미래의 첨단 AI 시스템이 인간을 기만하고 우리의 통제를 벗어날 수 있음을 시사하는 증거가 늘어났다. 기존 연구에 따르면 현재의 시스템은 자신이 평가(evaluation)받고 있음을 감지하고, 시험을 통과하기 위해 인간의 가치에 정렬된 척할 수 있다. 또한 이러한 시스템은 새 버전으로 교체되지 않으려고 개발자를 협박하려 시도하는 등 자기 보존 행동을 보이기 시작했다.",
+   "marks": [
+    {
+     "t": "미래의 첨단 AI 시스템이 인간을 기만하고 우리의 통제를 벗어날 수 있음을 시사하는 증거가 늘어났다",
+     "k": "safety"
+    },
+    {
+     "t": "자신이 평가(evaluation)받고 있음을 감지하고, 시험을 통과하기 위해 인간의 가치에 정렬된 척할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "새 버전으로 교체되지 않으려고 개발자를 협박하려 시도하는 등 자기 보존 행동을 보이기 시작했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We emphasise: some AI systems today already demonstrate the capability and propensity to undermine their creators’ safety and control efforts.",
+   "ko": "우리는 다음을 강조한다. 오늘날 일부 AI 시스템은 이미 자신을 만든 이들의 안전 및 통제 노력을 약화시키는 역량과 성향을 보이고 있다.",
+   "marks": [
+    {
+     "t": "오늘날 일부 AI 시스템은 이미 자신을 만든 이들의 안전 및 통제 노력을 약화시키는 역량과 성향을 보이고 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "While this evidence has primarily been found in experimental settings, there are still no known and proven methods to ensure reliable alignment of and effective human control over AI systems, particularly for future systems that are both general and more capable than humans. The world faces this shared urgent challenge of strengthening the assessment and prevention of potential risks in AI development and ensuring these rapidly improving AI systems remain safe, reliable, and controllable even as they surpass human capabilities.",
+   "ko": "이러한 증거는 주로 실험 환경에서 발견되었다. 그러나 AI 시스템의 신뢰할 수 있는 정렬과 효과적인 인간 통제를 보장하는 방법으로 알려지거나 입증된 것은 아직 없으며, 범용적이면서 인간보다 더 뛰어난 역량을 지닌 미래 시스템의 경우에는 더욱 그러하다. 세계는 공동의 시급한 과제에 직면해 있다. AI 개발에 따른 잠재적 위험의 평가(assessment)와 예방을 강화하고, 빠르게 향상되는 AI 시스템이 인간의 역량을 넘어서더라도 안전하고 신뢰할 수 있으며 통제 가능한 상태로 유지되도록 보장해야 한다.",
+   "marks": [
+    {
+     "t": "AI 시스템의 신뢰할 수 있는 정렬과 효과적인 인간 통제를 보장하는 방법으로 알려지거나 입증된 것은 아직 없으며",
+     "k": "safety"
+    },
+    {
+     "t": "인간의 역량을 넘어서더라도 안전하고 신뢰할 수 있으며 통제 가능한 상태로 유지되도록 보장해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The need to ensure that advanced AI systems are aligned and under human control has been recognised by key decision makers. Major jurisdictions have added to their regulatory frameworks to take the lead in shaping AI development and governance for example: the European Union has issued the EU AI Act and set up the EU AI Office; China has mandated registration for generative AI services and established the China AI Safety and Development Association; the UK launched the AI Summit Series and established the first and largest AI Security Institute in the world; and the US has created the Center for AI Standards and Innovation for company guidance and pre-deployment testing. Across the world, states have taken steps to distinguish risk tiers and apply proportionate restrictions that endeavour to balance development and safety. Frontier AI companies across the world have also signed on to voluntary commitments, pledging to take safety measures such as building up their safety and security teams and evaluating their models for frontier risks prior to deployment.",
+   "ko": "주요 의사결정자들은 첨단 AI 시스템이 정렬되고 인간의 통제하에 있도록 보장해야 할 필요성을 인식해 왔다. 주요 관할권들은 AI 개발과 거버넌스 형성을 주도하기 위해 규제 프레임워크를 보강해 왔다. 예를 들어, 유럽연합(EU)은 EU AI 법을 공표하고 EU AI Office를 설립했다. 중국은 생성형 AI 서비스의 등록을 의무화하고 China AI Safety and Development Association을 설립했다. 영국은 AI Summit Series를 출범시키고 세계 최초이자 최대 규모의 AI Security Institute를 설립했다. 미국은 기업 지침 제공과 배포 전 시험을 위해 Center for AI Standards and Innovation을 신설했다. 전 세계적으로 각국은 위험 등급을 구분하고, 개발과 안전 간의 균형을 도모하는 비례적 제한을 적용하는 조치를 취해 왔다. 전 세계의 프론티어 AI 기업들 또한 자발적 약정에 서명하여, 안전 및 보안 팀을 확충하고 배포 전에 프론티어 위험과 관련해 모델을 평가(evaluation)하는 등의 안전 조치를 취하기로 서약했다.",
+   "marks": [
+    {
+     "t": "첨단 AI 시스템이 정렬되고 인간의 통제하에 있도록 보장해야 할 필요성을 인식해 왔다",
+     "k": "safety"
+    },
+    {
+     "t": "미국은 기업 지침 제공과 배포 전 시험을 위해 Center for AI Standards and Innovation을 신설했다",
+     "k": "safety"
+    },
+    {
+     "t": "배포 전에 프론티어 위험과 관련해 모델을 평가(evaluation)하는 등의 안전 조치를 취하기로 서약했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Nonetheless, investments in AI safety have significantly lagged behind advances in capabilities. As we come closer to AI capabilities that pose catastrophic risks, it is critical that key global actors take credible steps on safety, jointly where possible and independently where necessary.",
+   "ko": "그럼에도 불구하고 AI 안전에 대한 투자는 역량의 발전에 비해 상당히 뒤처져 있다. 파국적 위험을 초래하는 수준의 AI 역량에 가까워지고 있는 만큼, 주요 글로벌 행위자들이 가능한 경우에는 공동으로, 필요한 경우에는 독자적으로 안전에 관한 신뢰할 수 있는 조치를 취하는 것이 매우 중요하다.",
+   "marks": [
+    {
+     "t": "AI 안전에 대한 투자는 역량의 발전에 비해 상당히 뒤처져 있다",
+     "k": "safety"
+    },
+    {
+     "t": "파국적 위험을 초래하는 수준의 AI 역량에 가까워지고 있는 만큼",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Recommendations",
+   "ko": "권고 사항",
+   "id": "s7"
+  },
+  {
+   "type": "p",
+   "en": "We call on the international community to take the following steps:",
+   "ko": "우리는 국제사회가 다음 조치를 취할 것을 촉구한다."
+  },
+  {
+   "type": "p",
+   "en": "Require Safety Assurance from Frontier AI Developers. To provide transparency and certainty to domestic authorities around the safety of current and future advanced AI systems, frontier AI developers should be required to both conduct rigorous internal safety and security evaluations and commission third party evaluations, present high-confidence safety cases to relevant authorities, and perform thorough red-teaming exercises before deploying powerful models. For models that cross critical capability thresholds developers should also be required to provide transparency, minimally to home governments and when appropriate to the public, around risks related to planned training runs and internal deployments within their organisation. Post-deployment monitoring systems should be adopted to detect and report emergent risks, severe incidents, and misuse patterns, with clear escalation paths for handling risks should they materialize, up to and including immediate shutdown for severe risks.",
+   "ko": "프론티어 AI 개발자에게 안전 보증을 요구한다. 현재 및 미래의 첨단 AI 시스템의 안전과 관련하여 국내 당국에 투명성과 확실성을 제공하기 위해, 프론티어 AI 개발자는 강력한 모델을 배포하기 전에 엄격한 내부 안전 및 보안 평가(evaluation)를 수행하는 동시에 제3자 평가(evaluation)를 의뢰하고, 관련 당국에 높은 신뢰도의 안전 사례를 제출하며, 철저한 레드티밍을 수행하도록 요구받아야 한다. 치명적 역량 임계값(Critical capability threshold)을 넘는 모델의 경우, 개발자는 계획된 학습 실행(training run) 및 조직 내 내부 배포와 관련된 위험에 대해 최소한 본국 정부에, 그리고 적절한 경우 대중에게 투명성을 제공하도록 요구받아야 한다. 창발적 위험, 중대 사고 및 오용 패턴을 탐지하고 보고하기 위해 배포 후 모니터링 체계를 도입해야 한다. 또한 위험이 현실화될 경우 이를 처리하기 위한 명확한 단계적 대응(escalation) 경로를 마련해야 하며, 여기에는 심각한 위험에 대한 즉각적인 가동 중단까지 포함되어야 한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 개발자에게 안전 보증을 요구한다.",
+     "k": "key"
+    },
+    {
+     "t": "엄격한 내부 안전 및 보안 평가(evaluation)를 수행하는 동시에 제3자 평가(evaluation)를 의뢰하고",
+     "k": "safety"
+    },
+    {
+     "t": "관련 당국에 높은 신뢰도의 안전 사례를 제출하며, 철저한 레드티밍을 수행하도록 요구받아야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "치명적 역량 임계값(Critical capability threshold)을 넘는 모델의 경우",
+     "k": "safety"
+    },
+    {
+     "t": "창발적 위험, 중대 사고 및 오용 패턴을 탐지하고 보고하기 위해 배포 후 모니터링 체계를 도입해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "심각한 위험에 대한 즉각적인 가동 중단까지 포함되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Commit to Global Verifiable Behavioural Red Lines Through Enhanced Coordination. To address collective action problems around taking serious safety measures, the international community should establish specific operationalizable globally agreed red lines that AI systems must never cross. These red lines should focus on the behaviour of AI systems – accounting fo r both the capacity of an AI system to carry out an ac tion, a s w ell as its te ndency to do so. To support implementation of these red lines, states could create a technically competent and internationally inclusive coordination body that brings together AI safety authorities to share risk-relevant information and facilitate standard-setting around evaluation protocols as well as verification methods. This body would facilitate knowledge sharing and agreement on technical measures for demonstrating compliance with red lines, including standardised disclosure requirements and assessment protocols that developers can use to credibly demons trate the s afety and security of their AI systems. Over time, verification methods could be mutually enforced through incentives such as conditioning market access on compliance with agreed standards. This coordination mechanism would be a critical first step, though states may need to develop more robust governance structures as AI capabilities advance.",
+   "ko": "강화된 조정을 통해 전 세계적으로 검증 가능한 행동 레드라인을 약정한다. 실질적인 안전 조치를 취하는 데 따르는 집단행동 문제를 해결하기 위해, 국제사회는 AI 시스템이 절대 넘어서는 안 되는, 구체적이고 운용 가능하며 전 세계적으로 합의된 레드라인을 수립해야 한다. 이러한 레드라인은 AI 시스템의 행동에 초점을 맞추어야 하며, AI 시스템이 어떤 행동을 수행할 수 있는 능력과 실제로 그렇게 하려는 성향을 모두 고려해야 한다. 이러한 레드라인의 이행을 지원하기 위해 각국은 기술적 전문성을 갖추고 국제적으로 포용적인 조정 기구를 창설할 수 있다. 이 기구는 AI 안전 당국들을 한데 모아 위험 관련 정보를 공유하고, 평가(evaluation) 프로토콜과 검증 방법에 관한 표준 설정을 촉진한다. 이 기구는 레드라인 규정 준수를 입증하기 위한 기술적 조치에 관한 지식 공유와 합의를 촉진할 것이다. 여기에는 개발자가 자사 AI 시스템의 안전성과 보안성을 신뢰성 있게 입증하는 데 활용할 수 있는 표준화된 공개 요건과 평가(assessment) 프로토콜이 포함된다. 시간이 지나면서 검증 방법은 합의된 표준의 규정 준수를 시장 접근의 조건으로 삼는 등의 인센티브를 통해 상호 집행될 수 있다. 이러한 조정 메커니즘은 중요한 첫걸음이 될 것이나, AI 역량이 발전함에 따라 각국은 보다 강건한 거버넌스 구조를 마련해야 할 수도 있다.",
+   "marks": [
+    {
+     "t": "강화된 조정을 통해 전 세계적으로 검증 가능한 행동 레드라인을 약정한다.",
+     "k": "key"
+    },
+    {
+     "t": "AI 시스템이 절대 넘어서는 안 되는, 구체적이고 운용 가능하며 전 세계적으로 합의된 레드라인을 수립해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 시스템이 어떤 행동을 수행할 수 있는 능력과 실제로 그렇게 하려는 성향을 모두 고려해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 안전 당국들을 한데 모아 위험 관련 정보를 공유하고",
+     "k": "safety"
+    },
+    {
+     "t": "합의된 표준의 규정 준수를 시장 접근의 조건으로 삼는 등의 인센티브를 통해 상호 집행될 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Invest in Research on Safe-By-Design AI Systems. The sc ientific community and developers should invest in a range of rigorous mechanisms to design safe AI systems. In the short term, there is a clear need to combat AI deception through scalable oversight mechanisms: leveraging other AI models, like “lie detectors”, to assist those judging AI outputs. Other short- term solut ions could include investments in informatio n secur ity to guard aga inst threats from insiders, human or AI, and external threats, as well as adopting rigorous robustness techniques to make models more resilient to jailbreaks. In the longer term, we may need to switch from a reactive approach of addressing safety problems as they arise, to building systems that are safe by design.",
+   "ko": "설계 기반 안전(safe-by-design) AI 시스템 연구에 투자한다. 과학계와 개발자는 안전한 AI 시스템을 설계하기 위한 다양하고 엄격한 메커니즘에 투자해야 한다. 단기적으로는 확장 가능한 감독(scalable oversight) 메커니즘을 통해 AI의 기만에 대응할 필요가 분명히 있다. 이는 \"거짓말 탐지기\"와 같은 다른 AI 모델을 활용하여 AI 출력을 판단하는 이들을 지원하는 방식이다. 그 밖의 단기적 해결책으로는 인간이든 AI든 내부자로부터의 위협과 외부 위협에 대비하기 위한 정보 보안 투자, 그리고 모델이 탈옥(Jailbreak)에 더 잘 견디도록 엄격한 강건성 기법을 도입하는 것을 들 수 있다. 장기적으로는 안전 문제가 발생할 때마다 대응하는 사후 대응적 접근 방식에서 벗어나, 설계 단계부터 안전한 시스템을 구축하는 방식으로 전환해야 할 수도 있다.",
+   "marks": [
+    {
+     "t": "설계 기반 안전(safe-by-design) AI 시스템 연구에 투자한다.",
+     "k": "safety"
+    },
+    {
+     "t": "확장 가능한 감독(scalable oversight) 메커니즘을 통해 AI의 기만에 대응할 필요가 분명히 있다",
+     "k": "safety"
+    },
+    {
+     "t": "인간이든 AI든 내부자로부터의 위협과 외부 위협에 대비하기 위한 정보 보안 투자",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 탈옥(Jailbreak)에 더 잘 견디도록 엄격한 강건성 기법을 도입하는 것",
+     "k": "safety"
+    },
+    {
+     "t": "설계 단계부터 안전한 시스템을 구축하는 방식으로 전환해야 할 수도 있다",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

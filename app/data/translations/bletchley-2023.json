@@ -1,0 +1,319 @@
+{
+ "slug": "bletchley-2023",
+ "title": "블레츨리 선언",
+ "original_title": "The Bletchley Declaration by Countries Attending the AI Safety Summit",
+ "publisher": "AI Safety Summit 2023 (28개국·EU)",
+ "published": "2023-11-01",
+ "source_url": "https://www.gov.uk/government/publications/ai-safety-summit-2023-the-bletchley-declaration/the-bletchley-declaration-by-countries-attending-the-ai-safety-summit-1-2-november-2023",
+ "source_note": "선언 전문",
+ "source_label": "원문 보기 (GOV.UK)",
+ "summary": "영국 블레츨리 파크 AI 안전 정상회의에서 미국·중국을 포함한 28개국과 EU가 채택한 선언이다. 프론티어 AI가 의도적 오용이나 의도하지 않은 통제 문제로 심각한, 심지어 재앙적인 피해를 낳을 수 있다고 정부들이 처음으로 함께 인정했다. 과학자들의 멸종 경고와 정부들이 실제로 합의한 문구 사이의 거리를 견줘 볼 수 있는 문건이다.",
+ "doc_kind": "정부 선언",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/bletchley-2023-cover.webp",
+ "og_image": "/images/translations/bletchley-2023-cover.jpg",
+ "image_caption": "원문 웹 페이지 (GOV.UK)",
+ "stats": {
+  "blocks": 44,
+  "sections": 0,
+  "items": 0,
+  "words_en": 1219
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Artificial Intelligence (AI) presents enormous global opportunities: it has the potential to transform and enhance human wellbeing, peace and prosperity. To realise this, we affirm that, for the good of all, AI should be designed, developed, deployed, and used, in a manner that is safe, in such a way as to be human-centric, trustworthy and responsible. We welcome the international community’s efforts so far to cooperate on AI to promote inclusive economic growth, sustainable development and innovation, to protect human rights and fundamental freedoms, and to foster public trust and confidence in AI systems to fully realise their potential.",
+   "ko": "인공지능(AI)은 막대한 세계적 기회를 제공한다. 인공지능은 인류의 복지, 평화, 번영을 변혁하고 증진할 잠재력을 지니고 있다. 이를 실현하기 위해, 우리는 모두의 이익을 위하여 AI가 안전한 방식으로, 그리고 인간 중심적이고 신뢰할 수 있으며 책임 있는 방식으로 설계·개발·배포·사용되어야 함을 확인한다. 우리는 포용적 경제성장, 지속가능한 발전 및 혁신을 촉진하고, 인권과 기본적 자유를 보호하며, AI 시스템의 잠재력을 온전히 실현하기 위해 AI 시스템에 대한 대중의 신뢰와 확신을 증진하고자 지금까지 국제사회가 AI에 관해 협력해 온 노력을 환영한다."
+  },
+  {
+   "type": "p",
+   "en": "AI systems are already deployed across many domains of daily life including housing, employment, transport, education, health, accessibility, and justice, and their use is likely to increase. We recognise that this is therefore a unique moment to act and affirm the need for the safe development of AI and for the transformative opportunities of AI to be used for good and for all, in an inclusive manner in our countries and globally. This includes for public services such as health and education, food security, in science, clean energy, biodiversity, and climate, to realise the enjoyment of human rights, and to strengthen efforts towards the achievement of the United Nations Sustainable Development Goals.",
+   "ko": "AI 시스템은 이미 주거, 고용, 교통, 교육, 보건, 접근성, 사법 등 일상생활의 여러 영역에 걸쳐 배포되어 있으며, 그 사용은 증가할 가능성이 높다. 따라서 우리는 지금이 행동해야 할 특별한 시점임을 인식하며, AI를 안전하게 개발하고 AI의 변혁적 기회를 우리 각국과 전 세계에서 포용적인 방식으로 선을 위해, 그리고 모두를 위해 활용해야 할 필요성을 확인한다. 여기에는 보건·교육 등 공공서비스, 식량안보, 과학, 청정에너지, 생물다양성, 기후 분야가 포함되며, 이를 통해 인권의 향유를 실현하고 유엔 지속가능발전목표 달성을 위한 노력을 강화하고자 한다."
+  },
+  {
+   "type": "p",
+   "en": "Alongside these opportunities, AI also poses significant risks, including in those domains of daily life. To that end, we welcome relevant international efforts to examine and address the potential impact of AI systems in existing fora and other relevant initiatives, and the recognition that the protection of human rights, transparency and explainability, fairness, accountability, regulation, safety, appropriate human oversight, ethics, bias mitigation, privacy and data protection needs to be addressed. We also note the potential for unforeseen risks stemming from the capability to manipulate content or generate deceptive content. All of these issues are critically important and we affirm the necessity and urgency of addressing them.",
+   "ko": "이러한 기회와 더불어, AI는 그러한 일상생활 영역을 포함하여 중대한 위험도 초래한다. 이에 우리는 기존 포럼 및 기타 관련 이니셔티브에서 AI 시스템의 잠재적 영향을 검토하고 대응하려는 관련 국제적 노력을 환영하며, 인권 보호, 투명성 및 설명가능성, 공정성, 책임성, 규제, 안전, 적절한 인간 감독, 윤리, 편향 완화, 프라이버시 및 개인정보 보호를 다루어야 한다는 인식을 환영한다. 또한 우리는 콘텐츠를 조작하거나 기만적인 콘텐츠를 생성하는 역량에서 비롯되는 예상치 못한 위험의 가능성에 주목한다. 이 모든 문제는 매우 중요하며, 우리는 이를 다룰 필요성과 시급성을 확인한다.",
+   "marks": [
+    {
+     "t": "콘텐츠를 조작하거나 기만적인 콘텐츠를 생성하는 역량에서 비롯되는 예상치 못한 위험의 가능성에 주목한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Particular safety risks arise at the ‘frontier’ of AI, understood as being those highly capable general-purpose AI models, including foundation models, that could perform a wide variety of tasks - as well as relevant specific narrow AI that could exhibit capabilities that cause harm - which match or exceed the capabilities present in today’s most advanced models. Substantial risks may arise from potential intentional misuse or unintended issues of control relating to alignment with human intent. These issues are in part because those capabilities are not fully understood and are therefore hard to predict. We are especially concerned by such risks in domains such as cybersecurity and biotechnology, as well as where frontier AI systems may amplify risks such as disinformation. There is potential for serious, even catastrophic, harm, either deliberate or unintentional, stemming from the most significant capabilities of these AI models. Given the rapid and uncertain rate of change of AI, and in the context of the acceleration of investment in technology, we affirm that deepening our understanding of these potential risks and of actions to address them is especially urgent.",
+   "ko": "특히 AI의 '프론티어'에서 특정한 안전 위험이 발생한다. 여기서 프론티어란 다양한 과업을 수행할 수 있는, 파운데이션 모델을 포함한 고역량(Highly capable) 범용 AI 모델, 그리고 피해를 야기하는 역량을 보일 수 있는 관련 특정 협소 AI로서, 오늘날 최첨단 모델에 존재하는 역량에 필적하거나 이를 능가하는 것으로 이해된다. 상당한 위험은 잠재적인 의도적 오용, 또는 인간 의도와의 정렬과 관련된 의도하지 않은 통제 문제에서 발생할 수 있다. 이러한 문제는 부분적으로 그러한 역량이 완전히 이해되지 않아 예측하기 어렵다는 데 기인한다. 우리는 특히 사이버 보안 및 생명공학과 같은 영역에서의 그러한 위험, 그리고 프론티어 AI 시스템이 허위 정보와 같은 위험을 증폭시킬 수 있는 경우를 우려한다. 이러한 AI 모델의 가장 중대한 역량으로부터 고의적이든 비의도적이든 심각한, 나아가 재앙적인 피해가 발생할 가능성이 있다. AI의 빠르고 불확실한 변화 속도를 고려하고, 기술 투자가 가속화되는 맥락에서, 우리는 이러한 잠재적 위험과 그에 대응하기 위한 조치에 대한 이해를 심화하는 것이 특히 시급함을 확인한다.",
+   "marks": [
+    {
+     "t": "특히 AI의 '프론티어'에서 특정한 안전 위험이 발생한다.",
+     "k": "safety"
+    },
+    {
+     "t": "상당한 위험은 잠재적인 의도적 오용, 또는 인간 의도와의 정렬과 관련된 의도하지 않은 통제 문제에서 발생할 수 있다.",
+     "k": "safety"
+    },
+    {
+     "t": "그러한 역량이 완전히 이해되지 않아 예측하기 어렵다는 데 기인한다",
+     "k": "safety"
+    },
+    {
+     "t": "특히 사이버 보안 및 생명공학과 같은 영역에서의 그러한 위험",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 AI 시스템이 허위 정보와 같은 위험을 증폭시킬 수 있는 경우를 우려한다",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 AI 모델의 가장 중대한 역량으로부터 고의적이든 비의도적이든 심각한, 나아가 재앙적인 피해가 발생할 가능성이 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Many risks arising from AI are inherently international in nature, and so are best addressed through international cooperation. We resolve to work together in an inclusive manner to ensure human-centric, trustworthy and responsible AI that is safe, and supports the good of all through existing international fora and other relevant initiatives, to promote cooperation to address the broad range of risks posed by AI. In doing so, we recognise that countries should consider the importance of a pro-innovation and proportionate governance and regulatory approach that maximises the benefits and takes into account the risks associated with AI. This could include making, where appropriate, classifications and categorisations of risk based on national circumstances and applicable legal frameworks. We also note the relevance of cooperation, where appropriate, on approaches such as common principles and codes of conduct. With regard to the specific risks most likely found in relation to frontier AI, we resolve to intensify and sustain our cooperation, and broaden it with further countries, to identify, understand and as appropriate act, through existing international fora and other relevant initiatives, including future international AI Safety Summits.",
+   "ko": "AI로부터 발생하는 많은 위험은 본질적으로 국제적인 성격을 띠므로 국제 협력을 통해 가장 잘 대응할 수 있다. 우리는 AI가 초래하는 광범위한 위험에 대응하기 위한 협력을 촉진하고자, 기존 국제 포럼 및 기타 관련 이니셔티브를 통해, 안전하고 모두의 이익을 뒷받침하는 인간 중심적이고 신뢰할 수 있으며 책임 있는 AI를 보장하기 위해 포용적인 방식으로 함께 노력할 것을 결의한다. 이를 위해 우리는 각국이 AI의 혜택을 극대화하고 AI와 관련된 위험을 고려하는, 혁신 친화적이고 비례적인 거버넌스 및 규제 접근방식의 중요성을 고려해야 함을 인식한다. 여기에는 적절한 경우 국가별 상황과 적용 가능한 법적 체계에 기반하여 위험을 분류하고 범주화하는 것이 포함될 수 있다. 또한 우리는 적절한 경우 공통 원칙 및 행동 강령과 같은 접근방식에 관한 협력이 갖는 의의에 주목한다. 프론티어 AI와 관련하여 발견될 가능성이 가장 높은 특정 위험에 관해서는, 우리는 향후 국제 AI 안전 정상회의를 포함한 기존 국제 포럼 및 기타 관련 이니셔티브를 통해 이를 식별하고, 이해하며, 적절히 조치하기 위해 협력을 강화·지속하고, 이를 더 많은 국가로 확대할 것을 결의한다.",
+   "marks": [
+    {
+     "t": "향후 국제 AI 안전 정상회의를 포함한 기존 국제 포럼 및 기타 관련 이니셔티브를 통해 이를 식별하고, 이해하며, 적절히 조치하기 위해 협력을 강화·지속",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "All actors have a role to play in ensuring the safety of AI: nations, international fora and other initiatives, companies, civil society and academia will need to work together. Noting the importance of inclusive AI and bridging the digital divide, we reaffirm that international collaboration should endeavour to engage and involve a broad range of partners as appropriate, and welcome development-orientated approaches and policies that could help developing countries strengthen AI capacity building and leverage the enabling role of AI to support sustainable growth and address the development gap.",
+   "ko": "모든 행위자는 AI의 안전을 보장하는 데 수행할 역할이 있다. 국가, 국제 포럼 및 기타 이니셔티브, 기업, 시민사회, 학계가 함께 협력해야 할 것이다. 포용적 AI와 디지털 격차 해소의 중요성에 주목하며, 우리는 국제 협력이 적절한 경우 광범위한 파트너를 참여시키고 관여시키도록 노력해야 함을 재확인하고, 개발도상국이 AI 역량 구축을 강화하고 지속가능한 성장을 지원하며 개발 격차를 해소하는 데 AI의 촉진적 역할을 활용하도록 도울 수 있는 개발 지향적 접근방식과 정책을 환영한다."
+  },
+  {
+   "type": "p",
+   "en": "We affirm that, whilst safety must be considered across the AI lifecycle, actors developing frontier AI capabilities, in particular those AI systems which are unusually powerful and potentially harmful, have a particularly strong responsibility for ensuring the safety of these AI systems, including through systems for safety testing, through evaluations, and by other appropriate measures. We encourage all relevant actors to provide context-appropriate transparency and accountability on their plans to measure, monitor and mitigate potentially harmful capabilities and the associated effects that may emerge, in particular to prevent misuse and issues of control, and the amplification of other risks.",
+   "ko": "우리는 안전이 AI 수명주기 전반에 걸쳐 고려되어야 하지만, 프론티어 AI 역량을 개발하는 행위자, 특히 이례적으로 강력하고 잠재적으로 유해한 AI 시스템을 개발하는 행위자는 안전성 시험 체계, 평가(evaluation), 기타 적절한 조치 등을 통해 이러한 AI 시스템의 안전을 보장할 특별히 강한 책임을 진다는 점을 확인한다. 우리는 모든 관련 행위자가 잠재적으로 유해한 역량 및 그로 인해 나타날 수 있는 관련 영향을 측정, 모니터링, 완화하기 위한 계획에 관하여, 특히 오용 및 통제 문제, 그리고 기타 위험의 증폭을 방지하기 위해, 맥락에 적절한 투명성과 책임성을 제공할 것을 권장한다.",
+   "marks": [
+    {
+     "t": "이례적으로 강력하고 잠재적으로 유해한 AI 시스템을 개발하는 행위자는 안전성 시험 체계, 평가(evaluation), 기타 적절한 조치 등을 통해 이러한 AI 시스템의 안전을 보장할 특별히 강한 책임을 진다는 점을 확인한다.",
+     "k": "key"
+    },
+    {
+     "t": "특히 오용 및 통제 문제, 그리고 기타 위험의 증폭을 방지하기 위해",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In the context of our cooperation, and to inform action at the national and international levels, our agenda for addressing frontier AI risk will focus on:",
+   "ko": "우리의 협력 맥락에서, 그리고 국가 및 국제 수준의 조치에 정보를 제공하기 위해, 프론티어 AI 위험에 대응하기 위한 우리의 의제는 다음에 중점을 둘 것이다."
+  },
+  {
+   "type": "li",
+   "en": "identifying AI safety risks of shared concern, building a shared scientific and evidence-based understanding of these risks, and sustaining that understanding as capabilities continue to increase, in the context of a wider global approach to understanding the impact of AI in our societies.",
+   "ko": "우리 사회에서 AI의 영향을 이해하기 위한 보다 폭넓은 글로벌 접근방식의 맥락에서, 공동으로 우려하는 AI 안전 위험을 식별하고, 이러한 위험에 대한 과학적이고 증거에 기반한 공유된 이해를 구축하며, 역량이 계속 증가함에 따라 그러한 이해를 유지하는 것.",
+   "marks": [
+    {
+     "t": "공동으로 우려하는 AI 안전 위험을 식별하고, 이러한 위험에 대한 과학적이고 증거에 기반한 공유된 이해를 구축",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "building respective risk-based policies across our countries to ensure safety in light of such risks, collaborating as appropriate while recognising our approaches may differ based on national circumstances and applicable legal frameworks. This includes, alongside increased transparency by private actors developing frontier AI capabilities, appropriate evaluation metrics, tools for safety testing, and developing relevant public sector capability and scientific research.",
+   "ko": "그러한 위험에 비추어 안전을 보장하기 위해 각국에서 각각의 위험 기반 정책을 수립하되, 국가별 상황과 적용 가능한 법적 체계에 따라 우리의 접근방식이 다를 수 있음을 인식하면서 적절한 경우 협력하는 것. 여기에는 프론티어 AI 역량을 개발하는 민간 행위자의 투명성 제고와 더불어, 적절한 평가(evaluation) 지표, 안전성 시험 도구, 그리고 관련 공공부문 역량 및 과학 연구의 개발이 포함된다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 역량을 개발하는 민간 행위자의 투명성 제고와 더불어, 적절한 평가(evaluation) 지표, 안전성 시험 도구",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In furtherance of this agenda, we resolve to support an internationally inclusive network of scientific research on frontier AI safety that encompasses and complements existing and new multilateral, plurilateral and bilateral collaboration, including through existing international fora and other relevant initiatives, to facilitate the provision of the best science available for policy making and the public good.",
+   "ko": "이 의제를 추진하기 위해, 우리는 기존 국제 포럼 및 기타 관련 이니셔티브를 통한 협력을 포함하여 기존 및 신규 다자, 복수국간, 양자 협력을 포괄하고 보완하는, 프론티어 AI 안전에 관한 국제적으로 포용적인 과학 연구 네트워크를 지원함으로써, 정책 결정과 공공선을 위해 이용 가능한 최선의 과학이 제공될 수 있도록 할 것을 결의한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 안전에 관한 국제적으로 포용적인 과학 연구 네트워크를 지원함으로써",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In recognition of the transformative positive potential of AI, and as part of ensuring wider international cooperation on AI, we resolve to sustain an inclusive global dialogue that engages existing international fora and other relevant initiatives and contributes in an open manner to broader international discussions, and to continue research on frontier AI safety to ensure that the benefits of the technology can be harnessed responsibly for good and for all. We look forward to meeting again in 2024.",
+   "ko": "AI가 지닌 변혁적이고 긍정적인 잠재력을 인식하고, AI에 관한 보다 폭넓은 국제 협력을 보장하기 위한 노력의 일환으로, 우리는 기존 국제 포럼 및 기타 관련 이니셔티브를 참여시키고 보다 폭넓은 국제 논의에 개방적인 방식으로 기여하는 포용적 글로벌 대화를 지속하는 한편, 이 기술의 혜택이 공익과 모두를 위해 책임 있게 활용될 수 있도록 프론티어 AI 안전에 관한 연구를 계속할 것을 결의한다. 우리는 2024년에 다시 만나기를 고대한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 안전에 관한 연구를 계속할 것을 결의한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The countries represented were:",
+   "ko": "참가국은 다음과 같다."
+  },
+  {
+   "type": "li",
+   "en": "Australia",
+   "ko": "호주"
+  },
+  {
+   "type": "li",
+   "en": "Brazil",
+   "ko": "브라질"
+  },
+  {
+   "type": "li",
+   "en": "Canada",
+   "ko": "캐나다"
+  },
+  {
+   "type": "li",
+   "en": "Chile",
+   "ko": "칠레"
+  },
+  {
+   "type": "li",
+   "en": "China",
+   "ko": "중국"
+  },
+  {
+   "type": "li",
+   "en": "European Union",
+   "ko": "유럽연합"
+  },
+  {
+   "type": "li",
+   "en": "France",
+   "ko": "프랑스"
+  },
+  {
+   "type": "li",
+   "en": "Germany",
+   "ko": "독일"
+  },
+  {
+   "type": "li",
+   "en": "India",
+   "ko": "인도"
+  },
+  {
+   "type": "li",
+   "en": "Indonesia",
+   "ko": "인도네시아"
+  },
+  {
+   "type": "li",
+   "en": "Ireland",
+   "ko": "아일랜드"
+  },
+  {
+   "type": "li",
+   "en": "Israel",
+   "ko": "이스라엘"
+  },
+  {
+   "type": "li",
+   "en": "Italy",
+   "ko": "이탈리아"
+  },
+  {
+   "type": "li",
+   "en": "Japan",
+   "ko": "일본"
+  },
+  {
+   "type": "li",
+   "en": "Kenya",
+   "ko": "케냐"
+  },
+  {
+   "type": "li",
+   "en": "Kingdom of Saudi Arabia",
+   "ko": "사우디아라비아 왕국"
+  },
+  {
+   "type": "li",
+   "en": "Netherlands",
+   "ko": "네덜란드"
+  },
+  {
+   "type": "li",
+   "en": "Nigeria",
+   "ko": "나이지리아"
+  },
+  {
+   "type": "li",
+   "en": "The Philippines",
+   "ko": "필리핀"
+  },
+  {
+   "type": "li",
+   "en": "Republic of Korea",
+   "ko": "대한민국"
+  },
+  {
+   "type": "li",
+   "en": "Rwanda",
+   "ko": "르완다"
+  },
+  {
+   "type": "li",
+   "en": "Singapore",
+   "ko": "싱가포르"
+  },
+  {
+   "type": "li",
+   "en": "Spain",
+   "ko": "스페인"
+  },
+  {
+   "type": "li",
+   "en": "Switzerland",
+   "ko": "스위스"
+  },
+  {
+   "type": "li",
+   "en": "Türkiye",
+   "ko": "튀르키예"
+  },
+  {
+   "type": "li",
+   "en": "Ukraine",
+   "ko": "우크라이나"
+  },
+  {
+   "type": "li",
+   "en": "United Arab Emirates",
+   "ko": "아랍에미리트"
+  },
+  {
+   "type": "li",
+   "en": "United Kingdom of Great Britain and Northern Ireland",
+   "ko": "영국(그레이트브리튼 및 북아일랜드 연합왕국)"
+  },
+  {
+   "type": "li",
+   "en": "United States of America",
+   "ko": "미국"
+  },
+  {
+   "type": "p",
+   "en": "On 23 October 2024, New Zealand joined the commitment to the Bletchley Declaration.",
+   "ko": "2024년 10월 23일, 뉴질랜드가 Bletchley 선언에 대한 약정에 동참하였다."
+  },
+  {
+   "type": "p",
+   "en": "References to ‘governments’ and ‘countries’ include international organisations acting in accordance with their legislative or executive competences.",
+   "ko": "'정부' 및 '국가'라는 표현에는 각자의 입법 또는 집행 권한에 따라 행동하는 국제기구가 포함된다."
+  }
+ ]
+}

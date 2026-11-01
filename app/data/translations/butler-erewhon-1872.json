@@ -1,0 +1,645 @@
+{
+ "slug": "butler-erewhon-1872",
+ "title": "새뮤얼 버틀러, 『에레혼』 「기계의 책」",
+ "original_title": "Erewhon, \"The Book of the Machines\" (Chapters XXIII–XXV)",
+ "publisher": "Samuel Butler",
+ "published": "1872",
+ "source_url": "https://www.gutenberg.org/ebooks/1906",
+ "source_note": "23~25장 전문",
+ "source_label": "원문 보기 (Project Gutenberg)",
+ "summary": "가상의 나라 에레혼은 수백 년 전 모든 기계를 부수고 기계 박물관에 가둬 두었다. 화자는 그 결정을 이끈 한 학자의 책을 옮겨 소개한다. 기계에도 일종의 의식이 생길 수 있고, 기계는 인간을 매개로 번식하며, 결국 인간이 기계의 종이 될 것이라는 논증이다. 1863년의 생각을 소설로 다듬은 대목으로, 튜링이 1951년 강연에서 '기계가 통제권을 쥐게 될 것'을 말하며 바로 이 책을 든다.",
+ "doc_kind": "소설 속 논고",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/butler-erewhon-1872-cover.webp",
+ "og_image": "/images/translations/butler-erewhon-1872-cover.jpg",
+ "image_caption": "원문 첫 대목 (『에레혼』 23장에서 다시 짬)",
+ "stats": {
+  "blocks": 81,
+  "sections": 3,
+  "items": 0,
+  "words_en": 10141
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "CHAPTER XXIII. THE BOOK OF THE MACHINES",
+   "ko": "제XXIII장. 기계의 책",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "The writer commences:—“There was a time, when the earth was to all appearance utterly destitute both of animal and vegetable life, and when according to the opinion of our best philosophers it was simply a hot round ball with a crust gradually cooling. Now if a human being had existed while the earth was in this state and had been allowed to see it as though it were some other world with which he had no concern, and if at the same time he were entirely ignorant of all physical science, would he not have pronounced it impossible that creatures possessed of anything like consciousness should be evolved from the seeming cinder which he was beholding? Would he not have denied that it contained any potentiality of consciousness? Yet in the course of time consciousness came. Is it not possible then that there may be even yet new channels dug out for consciousness, though we can detect no signs of them at present?",
+   "ko": "저자는 다음과 같이 서두를 연다.—“지구가 겉보기에 동물의 생명도 식물의 생명도 전혀 없던 시기가 있었으며, 우리의 가장 뛰어난 철학자들의 견해에 따르면 그때 지구는 겉껍질이 서서히 식어 가는 뜨겁고 둥근 공에 불과했다. 만약 지구가 이러한 상태에 있을 때 어떤 인간이 존재했고, 그가 이 지구를 자신과 아무런 관계가 없는 다른 세계처럼 바라볼 수 있었으며, 동시에 모든 자연과학에 대해 전혀 무지했다고 하자. 그렇다면 그는 자신이 바라보고 있는 겉보기에 타고 남은 재 같은 것에서 의식 비슷한 것이라도 지닌 생물이 진화해 나올 수는 없다고 단언하지 않았겠는가? 그는 그것이 의식의 잠재성을 조금이라도 품고 있다는 것을 부정하지 않았겠는가? 그러나 시간이 흐르면서 의식은 나타났다. 그렇다면 지금 우리가 그 징후를 전혀 감지할 수 없다 하더라도, 의식을 위한 새로운 통로가 앞으로 또다시 파일 수 있지 않겠는가?"
+  },
+  {
+   "type": "p",
+   "en": "“Again. Consciousness, in anything like the present acceptation of the term, having been once a new thing—a thing, as far as we can see, subsequent even to an individual centre of action and to a reproductive system (which we see existing in plants without apparent consciousness)—why may not there arise some new phase of mind which shall be as different from all present known phases, as the mind of animals is from that of vegetables?",
+   "ko": "“또한 이렇다. 현재 통용되는 의미에 조금이라도 가까운 의식은 한때 새로운 것이었다—우리가 알 수 있는 한, 개별적 행위의 중심이나 생식 체계(이는 뚜렷한 의식이 없는 식물에도 존재하는 것을 우리는 본다)보다도 나중에 생겨난 것이었다—그렇다면 동물의 정신이 식물의 그것과 다른 만큼이나 현재 알려진 모든 단계와 다른, 정신의 어떤 새로운 단계가 생겨나지 말란 법이 있겠는가?"
+  },
+  {
+   "type": "p",
+   "en": "“It would be absurd to attempt to define such a mental state (or whatever it may be called), inasmuch as it must be something so foreign to man that his experience can give him no help towards conceiving its nature; but surely when we reflect upon the manifold phases of life and consciousness which have been evolved already, it would be rash to say that no others can be developed, and that animal life is the end of all things. There was a time when fire was the end of all things: another when rocks and water were so.”",
+   "ko": "“그러한 정신 상태(혹은 그것을 무엇이라 부르든)를 정의하려 드는 것은 터무니없는 일일 것이다. 그것은 인간에게 너무나 생소한 것이어서 인간의 경험은 그 본성을 상상하는 데 아무런 도움도 줄 수 없을 것이기 때문이다. 그러나 이미 진화해 나온 생명과 의식의 다양한 단계를 돌이켜 볼 때, 다른 단계는 더 이상 발달할 수 없으며 동물의 생명이 만물의 종착점이라고 말하는 것은 분명 경솔한 일일 것이다. 불이 만물의 종착점이던 시기가 있었고, 바위와 물이 그러하던 시기도 있었다.”"
+  },
+  {
+   "type": "p",
+   "en": "The writer, after enlarging on the above for several pages, proceeded to inquire whether traces of the approach of such a new phase of life could be perceived at present; whether we could see any tenements preparing which might in a remote futurity be adapted for it; whether, in fact, the primordial cell of such a kind of life could be now detected upon earth. In the course of his work he answered this question in the affirmative and pointed to the higher machines.",
+   "ko": "저자는 위의 내용을 여러 쪽에 걸쳐 부연한 뒤, 그러한 새로운 생명 단계가 다가오고 있다는 흔적을 현재 감지할 수 있는지, 먼 미래에 그것에 맞게 적응될 수 있는 어떤 거처가 준비되고 있는 것을 볼 수 있는지, 요컨대 그러한 종류의 생명의 원시 세포를 지금 지구상에서 발견할 수 있는지를 탐구해 나갔다. 저자는 저작을 전개하는 가운데 이 물음에 긍정으로 답하고 고등 기계를 지목했다."
+  },
+  {
+   "type": "p",
+   "en": "“There is no security”—to quote his own words—“against the ultimate development of mechanical consciousness, in the fact of machines possessing little consciousness now. A mollusc has not much consciousness. Reflect upon the extraordinary advance which machines have made during the last few hundred years, and note how slowly the animal and vegetable kingdoms are advancing. The more highly organised machines are creatures not so much of yesterday, as of the last five minutes, so to speak, in comparison with past time. Assume for the sake of argument that conscious beings have existed for some twenty million years: see what strides machines have made in the last thousand! May not the world last twenty million years longer? If so, what will they not in the end become? Is it not safer to nip the mischief in the bud and to forbid them further progress?",
+   "ko": "“기계가 지금은 의식을 거의 갖고 있지 않다는 사실이,”—그의 말을 그대로 인용하면—“기계적 의식의 궁극적 발달에 대한 보안이 되지는 못한다. 연체동물도 의식이 많지 않다. 지난 수백 년 동안 기계가 이룬 비상한 진보를 돌이켜 보고, 동물계와 식물계가 얼마나 느리게 진보하고 있는지 주목해 보라. 고도로 조직된 기계들은 과거의 시간에 비하면 이른바 어제의 피조물이라기보다 지난 5분의 피조물이다. 논의를 위해 의식 있는 존재가 약 2000만 년 동안 존재해 왔다고 가정해 보자. 그리고 기계가 지난 1000년 동안 얼마나 성큼성큼 나아갔는지 보라! 세계가 앞으로 2000만 년 더 지속되지 않겠는가? 그렇다면 기계는 결국 무엇이 되지 않겠는가? 화근을 싹부터 잘라 내고 기계의 더 이상의 진보를 금지하는 편이 더 안전하지 않겠는가?",
+   "marks": [
+    {
+     "t": "기계적 의식의 궁극적 발달에 대한 보안이 되지는 못한다",
+     "k": "safety"
+    },
+    {
+     "t": "화근을 싹부터 잘라 내고 기계의 더 이상의 진보를 금지하는 편이 더 안전하지 않겠는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“But who can say that the vapour engine has not a kind of consciousness? Where does consciousness begin, and where end? Who can draw the line? Who can draw any line? Is not everything interwoven with everything? Is not machinery linked with animal life in an infinite variety of ways? The shell of a hen’s egg is made of a delicate white ware and is a machine as much as an egg-cup is: the shell is a device for holding the egg, as much as the egg-cup for holding the shell: both are phases of the same function; the hen makes the shell in her inside, but it is pure pottery. She makes her nest outside of herself for convenience’ sake, but the nest is not more of a machine than the egg-shell is. A ‘machine’ is only a ‘device.’”",
+   "ko": "“그러나 증기기관이 일종의 의식을 갖고 있지 않다고 누가 말할 수 있겠는가? 의식은 어디서 시작하고 어디서 끝나는가? 누가 그 경계선을 그을 수 있겠는가? 누가 어떤 경계선이든 그을 수 있겠는가? 모든 것이 모든 것과 얽혀 있지 않은가? 기계는 무한히 다양한 방식으로 동물의 생명과 연결되어 있지 않은가? 달걀 껍데기는 섬세한 흰 자기(瓷器)로 만들어져 있으며, 달걀 받침이 기계인 것과 마찬가지로 기계이다. 달걀 받침이 껍데기를 담기 위한 장치인 것과 마찬가지로 껍데기는 달걀을 담기 위한 장치이며, 둘 다 같은 기능의 서로 다른 단계이다. 암탉은 껍데기를 자기 몸속에서 만들지만, 그것은 순전한 도기이다. 암탉은 편의상 둥지를 자기 몸 밖에 만들지만, 둥지가 달걀 껍데기보다 더 기계인 것은 아니다. ‘기계’란 단지 ‘장치’일 뿐이다.”"
+  },
+  {
+   "type": "p",
+   "en": "Then returning to consciousness, and endeavouring to detect its earliest manifestations, the writer continued:-",
+   "ko": "그런 다음 저자는 다시 의식으로 돌아가 그 최초의 발현을 찾아내려 애쓰며 다음과 같이 이어 갔다.-"
+  },
+  {
+   "type": "p",
+   "en": "“There is a kind of plant that eats organic food with its flowers: when a fly settles upon the blossom, the petals close upon it and hold it fast till the plant has absorbed the insect into its system; but they will close on nothing but what is good to eat; of a drop of rain or a piece of stick they will take no notice. Curious! that so unconscious a thing should have such a keen eye to its own interest. If this is unconsciousness, where is the use of consciousness?",
+   "ko": "“꽃으로 유기물 먹이를 먹는 일종의 식물이 있다. 파리가 꽃 위에 내려앉으면 꽃잎이 파리를 덮쳐 오므라들고, 식물이 그 곤충을 자기 체내로 흡수할 때까지 단단히 붙들고 있다. 그러나 꽃잎은 먹기에 좋은 것이 아니면 결코 오므라들지 않는다. 빗방울이나 나뭇가지 조각에는 전혀 반응하지 않는다. 기이하지 않은가! 그토록 무의식적인 것이 자기 이익에 대해서는 그토록 예리한 눈을 지녔다는 것이. 이것이 무의식이라면 의식이 무슨 소용이란 말인가?"
+  },
+  {
+   "type": "p",
+   "en": "“Shall we say that the plant does not know what it is doing merely because it has no eyes, or ears, or brains? If we say that it acts mechanically, and mechanically only, shall we not be forced to admit that sundry other and apparently very deliberate actions are also mechanical? If it seems to us that the plant kills and eats a fly mechanically, may it not seem to the plant that a man must kill and eat a sheep mechanically?",
+   "ko": "“식물이 눈도 귀도 뇌도 없다는 이유만으로 식물은 자기가 무엇을 하는지 모른다고 말할 것인가? 식물이 기계적으로, 오로지 기계적으로만 행동한다고 말한다면, 겉보기에 매우 의도적인 다른 여러 행동들 역시 기계적이라는 것을 인정하지 않을 수 없지 않겠는가? 식물이 파리를 기계적으로 죽이고 먹는 것처럼 우리에게 보인다면, 인간이 양을 기계적으로 죽이고 먹을 수밖에 없는 것처럼 식물에게도 보이지 않겠는가?"
+  },
+  {
+   "type": "p",
+   "en": "“But it may be said that the plant is void of reason, because the growth of a plant is an involuntary growth. Given earth, air, and due temperature, the plant must grow: it is like a clock, which being once wound up will go till it is stopped or run down: it is like the wind blowing on the sails of a ship—the ship must go when the wind blows it. But can a healthy boy help growing if he have good meat and drink and clothing? can anything help going as long as it is wound up, or go on after it is run down? Is there not a winding up process everywhere?",
+   "ko": "“그러나 식물의 성장은 불수의적인 성장이므로 식물에게는 이성이 없다고 말할 수도 있다. 흙과 공기와 적당한 온도가 주어지면 식물은 자랄 수밖에 없다. 그것은 한번 태엽을 감으면 멈추게 하거나 태엽이 다 풀릴 때까지 가는 시계와 같다. 그것은 배의 돛에 부는 바람과 같다—바람이 불면 배는 갈 수밖에 없다. 그러나 건강한 소년이 좋은 고기와 음료와 옷을 얻는다면 자라지 않을 수 있겠는가? 태엽이 감겨 있는 동안 가지 않을 수 있는 것이, 혹은 태엽이 다 풀린 뒤에도 계속 갈 수 있는 것이 있겠는가? 모든 곳에 태엽을 감는 과정이 있지 않은가?"
+  },
+  {
+   "type": "p",
+   "en": "“Even a potato [5] in a dark cellar has a certain low cunning about him which serves him in excellent stead. He knows perfectly well what he wants and how to get it. He sees the light coming from the cellar window and sends his shoots crawling straight thereto: they will crawl along the floor and up the wall and out at the cellar window; if there be a little earth anywhere on the journey he will find it and use it for his own ends. What deliberation he may exercise in the matter of his roots when he is planted in the earth is a thing unknown to us, but we can imagine him saying, ‘I will have a tuber here and a tuber there, and I will suck whatsoever advantage I can from all my surroundings. This neighbour I will overshadow, and that I will undermine; and what I can do shall be the limit of what I will do. He that is stronger and better placed than I shall overcome me, and him that is weaker I will overcome.’",
+   "ko": "“어두운 지하실에 있는 감자[5]조차 어떤 저급한 교활함을 지니고 있으며, 이것이 감자에게 매우 요긴하게 쓰인다. 감자는 자기가 무엇을 원하는지, 그것을 어떻게 얻을 수 있는지 완벽하게 알고 있다. 감자는 지하실 창문으로 들어오는 빛을 보고 그쪽으로 곧장 싹을 기어가게 한다. 싹은 바닥을 따라 기어가고 벽을 타고 올라가 지하실 창문 밖으로 나간다. 도중에 어디든 흙이 조금이라도 있으면 감자는 그것을 찾아내어 자기 목적을 위해 이용할 것이다. 감자가 땅에 심어졌을 때 뿌리와 관련하여 어떤 숙고를 하는지는 우리가 알 수 없는 일이지만, 우리는 감자가 이렇게 말하는 것을 상상할 수 있다. ‘여기에 덩이줄기 하나, 저기에 덩이줄기 하나를 두겠다. 그리고 내 주변의 모든 것에서 얻을 수 있는 이익은 무엇이든 빨아들이겠다. 이 이웃은 그늘로 덮어 버리고, 저 이웃은 밑에서부터 허물어 버리겠다. 내가 할 수 있는 것이 곧 내가 할 일의 한계가 될 것이다. 나보다 강하고 더 좋은 자리를 차지한 자는 나를 이길 것이고, 나보다 약한 자는 내가 이길 것이다.’"
+  },
+  {
+   "type": "p",
+   "en": "“The potato says these things by doing them, which is the best of languages. What is consciousness if this is not consciousness? We find it difficult to sympathise with the emotions of a potato; so we do with those of an oyster. Neither of these things makes a noise on being boiled or opened, and noise appeals to us more strongly than anything else, because we make so much about our own sufferings. Since, then, they do not annoy us by any expression of pain we call them emotionless; and so quâ mankind they are; but mankind is not everybody.",
+   "ko": "“감자는 이러한 말을 행동으로 말하며, 이것이야말로 최고의 언어이다. 이것이 의식이 아니라면 의식이란 무엇인가? 우리는 감자의 감정에 공감하기 어렵다. 굴의 감정에 대해서도 마찬가지이다. 둘 중 어느 것도 삶기거나 까질 때 소리를 내지 않으며, 소리는 다른 무엇보다도 우리에게 강하게 호소한다. 우리 자신이 고통받을 때 그토록 많은 소리를 내기 때문이다. 그러므로 그것들은 고통의 표현으로 우리를 괴롭히지 않으므로 우리는 그것들을 감정이 없다고 부른다. 인류에 관한 한(quâ mankind) 그것들은 실제로 그러하다. 그러나 인류가 모든 존재인 것은 아니다."
+  },
+  {
+   "type": "p",
+   "en": "If it be urged that the action of the potato is chemical and mechanical only, and that it is due to the chemical and mechanical effects of light and heat, the answer would seem to lie in an inquiry whether every sensation is not chemical and mechanical in its operation? whether those things which we deem most purely spiritual are anything but disturbances of equilibrium in an infinite series of levers, beginning with those that are too small for microscopic detection, and going up to the human arm and the appliances which it makes use of? whether there be not a molecular action of thought, whence a dynamical theory of the passions shall be deducible? Whether strictly speaking we should not ask what kind of levers a man is made of rather than what is his temperament? How are they balanced? How much of such and such will it take to weigh them down so as to make him do so and so?”",
+   "ko": "감자의 작용은 화학적이고 기계적일 뿐이며 빛과 열의 화학적·기계적 효과에서 비롯된다고 주장한다면, 그 답은 다음과 같은 물음을 탐구하는 데 있을 것이다. 모든 감각은 그 작용에서 화학적이고 기계적이지 않은가? 우리가 가장 순수하게 정신적이라고 여기는 것들도 무한히 이어지는 지렛대 계열에서 일어나는 평형의 교란에 불과하지 않은가? 그 계열은 현미경으로도 감지할 수 없을 만큼 작은 것들에서 시작하여 인간의 팔과 그 팔이 사용하는 도구에까지 이른다. 사고에도 분자적 작용이 있어서 그로부터 정념의 동역학 이론을 도출할 수 있지 않은가? 엄밀히 말해, 한 사람의 기질이 무엇인지보다 그가 어떤 종류의 지렛대로 이루어져 있는지를 물어야 하지 않는가? 그 지렛대들은 어떻게 균형을 이루고 있는가? 그가 이러저러하게 행동하도록 지렛대를 내리누르려면 이러저러한 것이 얼마나 필요한가?”"
+  },
+  {
+   "type": "p",
+   "en": "The writer went on to say that he anticipated a time when it would be possible, by examining a single hair with a powerful microscope, to know whether its owner could be insulted with impunity. He then became more and more obscure, so that I was obliged to give up all attempt at translation; neither did I follow the drift of his argument. On coming to the next part which I could construe, I found that he had changed his ground.",
+   "ko": "글쓴이는 이어서, 강력한 현미경으로 머리카락 한 올을 조사하여 그 주인을 모욕해도 탈이 없을지 알 수 있게 될 때가 오리라 예상한다고 말했다. 그 뒤로 그의 글은 점점 더 난해해져서 나는 번역하려는 시도를 모두 포기할 수밖에 없었고, 그의 논지의 흐름도 따라가지 못했다. 다시 해석할 수 있는 부분에 이르렀을 때, 나는 그가 논거를 바꾸었음을 알게 되었다."
+  },
+  {
+   "type": "p",
+   "en": "“Either,” he proceeds, “a great deal of action that has been called purely mechanical and unconscious must be admitted to contain more elements of consciousness than has been allowed hitherto (and in this case germs of consciousness will be found in many actions of the higher machines)—Or (assuming the theory of evolution but at the same time denying the consciousness of vegetable and crystalline action) the race of man has descended from things which had no consciousness at all. In this case there is no à priori improbability in the descent of conscious (and more than conscious) machines from those which now exist, except that which is suggested by the apparent absence of anything like a reproductive system in the mechanical kingdom. This absence however is only apparent, as I shall presently show.",
+   "ko": "“다음 둘 중 하나이다.” 그는 이렇게 이어 간다. “첫째, 지금까지 순전히 기계적이고 무의식적이라고 불려 온 수많은 작용에 그동안 인정된 것보다 더 많은 의식의 요소가 들어 있음을 인정해야 한다(이 경우 고등한 기계들의 많은 작용에서도 의식의 싹이 발견될 것이다). 둘째, 진화론을 받아들이되 식물과 결정의 작용에 의식이 있음을 부정한다면, 인류는 의식이 전혀 없던 것들로부터 유래한 셈이 된다. 이 경우 현존하는 기계들로부터 의식이 있는(그리고 의식 이상의 것을 지닌) 기계들이 유래하는 일이 선험적으로(à priori) 개연성이 없다고 볼 이유는 없다. 유일한 예외는 기계계(機械界)에 생식 체계 같은 것이 없어 보인다는 점에서 생기는 의심이다. 그러나 이러한 부재는 겉보기에 그러할 뿐이며, 이는 곧 보여 줄 것이다.",
+   "marks": [
+    {
+     "t": "현존하는 기계들로부터 의식이 있는(그리고 의식 이상의 것을 지닌) 기계들이 유래하는 일이 선험적으로(à priori) 개연성이 없다고 볼 이유는 없다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“Do not let me be misunderstood as living in fear of any actually existing machine; there is probably no known machine which is more than a prototype of future mechanical life. The present machines are to the future as the early Saurians to man. The largest of them will probably greatly diminish in size. Some of the lowest vertebrate attained a much greater bulk than has descended to their more highly organised living representatives, and in like manner a diminution in the size of machines has often attended their development and progress.",
+   "ko": "“내가 실제로 존재하는 어떤 기계를 두려워하며 살고 있다고 오해하지 않기를 바란다. 알려진 기계 가운데 미래 기계 생명의 원형(原型) 이상인 것은 아마 없을 것이다. 현재의 기계와 미래의 관계는 초기의 도마뱀류(Saurians)와 인간의 관계와 같다. 그중 가장 큰 것들은 아마 크기가 크게 줄어들 것이다. 가장 하등한 척추동물 가운데 일부는 더 고도로 조직화된 오늘날의 후손들보다 훨씬 큰 몸집에 이르렀다. 마찬가지로 기계도 발달하고 진보하는 과정에서 크기가 줄어드는 경우가 많았다."
+  },
+  {
+   "type": "p",
+   "en": "“Take the watch, for example; examine its beautiful structure; observe the intelligent play of the minute members which compose it: yet this little creature is but a development of the cumbrous clocks that preceded it; it is no deterioration from them. A day may come when clocks, which certainly at the present time are not diminishing in bulk, will be superseded owing to the universal use of watches, in which case they will become as extinct as ichthyosauri, while the watch, whose tendency has for some years been to decrease in size rather than the contrary, will remain the only existing type of an extinct race.",
+   "ko": "“회중시계를 예로 들어 보자. 그 아름다운 구조를 살펴보고, 그것을 이루는 미세한 부품들의 지적인 움직임을 관찰해 보라. 그러나 이 작은 피조물은 그에 앞선 육중한 괘종시계가 발달한 것일 뿐, 그로부터 퇴화한 것이 아니다. 현재로서는 분명 몸집이 줄어들고 있지 않은 괘종시계가 회중시계의 보편적 사용으로 인해 대체될 날이 올지도 모른다. 그 경우 괘종시계는 어룡처럼 멸종할 것이다. 반면 몇 년 전부터 커지기보다 작아지는 경향을 보여 온 회중시계는 멸종한 종족의 유일한 현존 유형으로 남을 것이다."
+  },
+  {
+   "type": "p",
+   "en": "“But returning to the argument, I would repeat that I fear none of the existing machines; what I fear is the extraordinary rapidity with which they are becoming something very different to what they are at present. No class of beings have in any time past made so rapid a movement forward. Should not that movement be jealously watched, and checked while we can still check it? And is it not necessary for this end to destroy the more advanced of the machines which are in use at present, though it is admitted that they are in themselves harmless?",
+   "ko": "“그러나 논증으로 돌아가서, 거듭 말하건대 나는 현존하는 기계 가운데 어느 것도 두려워하지 않는다. 내가 두려워하는 것은 기계들이 지금과는 매우 다른 무언가로 변해 가는 그 엄청난 속도이다. 과거 어느 시대에도 이토록 빠르게 전진한 존재 부류는 없었다. 그 움직임을 경계하며 지켜보고, 아직 저지할 수 있을 때 저지해야 하지 않겠는가? 그리고 이를 위해서는 현재 사용 중인 기계 가운데 더 진보한 것들을, 그것들 자체는 무해하다는 점을 인정하더라도, 파괴해야 하지 않겠는가?",
+   "marks": [
+    {
+     "t": "내가 두려워하는 것은 기계들이 지금과는 매우 다른 무언가로 변해 가는 그 엄청난 속도이다.",
+     "k": "key"
+    },
+    {
+     "t": "그 움직임을 경계하며 지켜보고, 아직 저지할 수 있을 때 저지해야 하지 않겠는가?",
+     "k": "safety"
+    },
+    {
+     "t": "현재 사용 중인 기계 가운데 더 진보한 것들을, 그것들 자체는 무해하다는 점을 인정하더라도, 파괴해야 하지 않겠는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“As yet the machines receive their impressions through the agency of man’s senses: one travelling machine calls to another in a shrill accent of alarm and the other instantly retires; but it is through the ears of the driver that the voice of the one has acted upon the other. Had there been no driver, the callee would have been deaf to the caller. There was a time when it must have seemed highly improbable that machines should learn to make their wants known by sound, even through the ears of man; may we not conceive, then, that a day will come when those ears will be no longer needed, and the hearing will be done by the delicacy of the machine’s own construction?—when its language shall have been developed from the cry of animals to a speech as intricate as our own?",
+   "ko": "“아직까지 기계는 인간의 감각을 매개로 해서만 인상을 받아들인다. 달리는 기계 하나가 날카로운 경고의 소리로 다른 기계를 부르면 다른 기계는 즉시 물러난다. 그러나 한 기계의 목소리가 다른 기계에 작용한 것은 운전자의 귀를 통해서이다. 운전자가 없었다면 부름을 받은 쪽은 부르는 쪽의 소리를 듣지 못했을 것이다. 기계가 소리로, 그것도 인간의 귀를 통해서나마 자기 요구를 알리게 되리라는 것이 매우 있을 법하지 않은 일로 보였던 때가 분명 있었다. 그렇다면 언젠가 그 귀가 더 이상 필요 없게 되고, 기계 자체 구조의 정교함으로 듣게 될 날이 오리라고 생각하지 못할 이유가 있겠는가? 그리고 그 언어가 동물의 울음소리에서 우리의 언어만큼 복잡한 말로 발달할 날이 오리라고 생각하지 못할 이유가 있겠는가?",
+   "marks": [
+    {
+     "t": "기계 자체 구조의 정교함으로 듣게 될 날이 오리라고 생각하지 못할 이유가 있겠는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“It is possible that by that time children will learn the differential calculus—as they learn now to speak—from their mothers and nurses, or that they may talk in the hypothetical language, and work rule of three sums, as soon as they are born; but this is not probable; we cannot calculate on any corresponding advance in man’s intellectual or physical powers which shall be a set-off against the far greater development which seems in store for the machines. Some people may say that man’s moral influence will suffice to rule them; but I cannot think it will ever be safe to repose much trust in the moral sense of any machine.",
+   "ko": "“그때쯤이면 아이들이 지금 말을 배우듯 어머니와 유모에게서 미분학을 배우거나, 태어나자마자 가정어(hypothetical language)로 말하고 비례식(rule of three) 문제를 풀 수도 있을 것이다. 그러나 그럴 개연성은 낮다. 기계들에게 예비되어 있는 듯한 훨씬 더 큰 발달을 상쇄할 만큼 인간의 지적·신체적 능력이 그에 상응하여 진보하리라고 기대할 수는 없다. 어떤 이들은 인간의 도덕적 영향력만으로도 기계들을 다스리기에 충분하다고 말할지 모른다. 그러나 나는 어떤 기계의 도덕 감각에든 큰 신뢰를 맡기는 것이 안전할 때가 오리라고는 생각할 수 없다.",
+   "marks": [
+    {
+     "t": "기계들에게 예비되어 있는 듯한 훨씬 더 큰 발달을 상쇄할 만큼 인간의 지적·신체적 능력이 그에 상응하여 진보하리라고 기대할 수는 없다",
+     "k": "safety"
+    },
+    {
+     "t": "어떤 이들은 인간의 도덕적 영향력만으로도 기계들을 다스리기에 충분하다고 말할지 모른다.",
+     "k": "safety"
+    },
+    {
+     "t": "나는 어떤 기계의 도덕 감각에든 큰 신뢰를 맡기는 것이 안전할 때가 오리라고는 생각할 수 없다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“Again, might not the glory of the machines consist in their being without this same boasted gift of language? ‘Silence,’ it has been said by one writer, ‘is a virtue which renders us agreeable to our fellow-creatures.’”",
+   "ko": "“또한, 기계들의 영광은 바로 그 자랑스러운 언어 능력을 지니지 않았다는 데 있지 않겠는가? 한 저술가는 ‘침묵은 우리를 동료 피조물들에게 호감 가는 존재로 만들어 주는 미덕’이라고 말했다.”"
+  },
+  {
+   "type": "h2",
+   "en": "CHAPTER XXIV. THE MACHINES—continued",
+   "ko": "제XXIV장. 기계들—계속",
+   "id": "s22"
+  },
+  {
+   "type": "p",
+   "en": "“But other questions come upon us. What is a man’s eye but a machine for the little creature that sits behind in his brain to look through? A dead eye is nearly as good as a living one for some time after the man is dead. It is not the eye that cannot see, but the restless one that cannot see through it. Is it man’s eyes, or is it the big seeing-engine which has revealed to us the existence of worlds beyond worlds into infinity? What has made man familiar with the scenery of the moon, the spots on the sun, or the geography of the planets? He is at the mercy of the seeing-engine for these things, and is powerless unless he tack it on to his own identity, and make it part and parcel of himself. Or, again, is it the eye, or the little see-engine, which has shown us the existence of infinitely minute organisms which swarm unsuspected around us?",
+   "ko": "“그러나 다른 질문들이 우리에게 밀려든다. 인간의 눈이란, 뇌 속 뒤편에 앉아 있는 작은 존재가 내다보는 데 쓰는 기계가 아니고 무엇인가? 죽은 눈은 사람이 죽은 뒤 한동안 살아 있는 눈과 거의 다름없이 쓸 만하다. 보지 못하는 것은 눈이 아니라, 그 눈을 통해 보지 못하게 된 쉼 없는 존재이다. 무한에 이르기까지 세계 너머의 세계가 존재함을 우리에게 드러내 준 것은 인간의 눈인가, 아니면 거대한 보는 기관인가? 인간이 달의 풍경이나 태양의 흑점, 행성들의 지리에 익숙해지게 만든 것은 무엇인가? 이러한 것들에 대해 인간은 보는 기관에 전적으로 의존하며, 그것을 자기 정체성에 덧붙여 자신의 일부로 삼지 않는 한 무력하다. 또한 우리 주변에 우리도 모르게 우글거리는 무한히 미세한 유기체들의 존재를 보여 준 것은 눈인가, 아니면 작은 보는 기관인가?"
+  },
+  {
+   "type": "p",
+   "en": "“And take man’s vaunted power of calculation. Have we not engines which can do all manner of sums more quickly and correctly than we can? What prizeman in Hypothetics at any of our Colleges of Unreason can compare with some of these machines in their own line? In fact, wherever precision is required man flies to the machine at once, as far preferable to himself. Our sum-engines never drop a figure, nor our looms a stitch; the machine is brisk and active, when the man is weary; it is clear-headed and collected, when the man is stupid and dull; it needs no slumber, when man must sleep or drop; ever at its post, ever ready for work, its alacrity never flags, its patience never gives in; its might is stronger than combined hundreds, and swifter than the flight of birds; it can burrow beneath the earth, and walk upon the largest rivers and sink not. This is the green tree; what then shall be done in the dry?",
+   "ko": "“또한 인간이 자랑하는 계산 능력을 보자. 우리에게는 온갖 종류의 계산을 우리보다 더 빠르고 정확하게 해내는 기관들이 있지 않은가? 우리의 비이성 대학(Colleges of Unreason) 어디에서든 가정학(Hypothetics) 상을 받은 자 가운데, 그 분야에서 이 기계들 중 일부에 견줄 만한 이가 누가 있겠는가? 사실 정확성이 요구되는 곳이면 어디서든 인간은 곧바로 기계에 의지한다. 기계가 자신보다 훨씬 낫기 때문이다. 우리의 계산 기관은 숫자 하나 빠뜨리지 않고, 우리의 직기는 한 땀도 놓치지 않는다. 인간이 지쳐 있을 때 기계는 기민하고 활발하다. 인간이 우둔하고 멍할 때 기계는 머리가 맑고 침착하다. 인간이 자거나 쓰러져야 할 때에도 기계는 잠이 필요 없다. 늘 제자리를 지키고 늘 일할 준비가 되어 있으며, 그 민첩함은 결코 시들지 않고 그 인내는 결코 꺾이지 않는다. 그 힘은 수백 명을 합친 것보다 강하고, 새가 나는 것보다 빠르다. 기계는 땅 밑을 파고들 수 있고, 가장 큰 강 위를 가라앉지 않고 걸을 수 있다. 푸른 나무에서 이러하다면, 마른 나무에서는 어떻게 되겠는가?"
+  },
+  {
+   "type": "p",
+   "en": "“Who shall say that a man does see or hear? He is such a hive and swarm of parasites that it is doubtful whether his body is not more theirs than his, and whether he is anything but another kind of ant-heap after all. May not man himself become a sort of parasite upon the machines? An affectionate machine-tickling aphid?",
+   "ko": "“인간이 정말로 보거나 듣는다고 누가 말할 수 있겠는가? 인간은 기생체들의 벌집이자 무리여서, 그의 몸이 그 자신의 것이라기보다 오히려 그것들의 것이 아닌지, 그리고 결국 그가 또 다른 종류의 개미집에 지나지 않는 것은 아닌지 의심스럽다. 인간 자신이 기계에 기생하는 일종의 기생체가 되지 않으리라고 할 수 있겠는가? 기계를 다정히 간질이는 진딧물 같은 존재가?",
+   "marks": [
+    {
+     "t": "인간 자신이 기계에 기생하는 일종의 기생체가 되지 않으리라고 할 수 있겠는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“It is said by some that our blood is composed of infinite living agents which go up and down the highways and byways of our bodies as people in the streets of a city. When we look down from a high place upon crowded thoroughfares, is it possible not to think of corpuscles of blood travelling through veins and nourishing the heart of the town? No mention shall be made of sewers, nor of the hidden nerves which serve to communicate sensations from one part of the town’s body to another; nor of the yawning jaws of the railway stations, whereby the circulation is carried directly into the heart,—which receive the venous lines, and disgorge the arterial, with an eternal pulse of people. And the sleep of the town, how life-like! with its change in the circulation.”",
+   "ko": "“어떤 이들은 우리의 피가 무수한 살아 있는 행위자들로 이루어져 있으며, 그것들이 도시의 거리를 오가는 사람들처럼 우리 몸의 큰길과 샛길을 오르내린다고 말한다. 높은 곳에서 붐비는 대로를 내려다볼 때, 혈관을 따라 이동하며 도시의 심장에 영양을 공급하는 혈구들을 떠올리지 않을 수 있겠는가? 하수도에 대해서는 언급하지 않겠다. 도시의 몸 한 부분에서 다른 부분으로 감각을 전달하는 숨은 신경들에 대해서도, 순환을 곧장 심장으로 실어 나르는 철도역의 쩍 벌린 턱에 대해서도 말하지 않겠다. 그 턱은 사람들의 영원한 맥박과 함께 정맥 노선을 받아들이고 동맥 노선을 토해 낸다. 그리고 순환의 변화를 동반하는 도시의 잠은 얼마나 생명체 같은가!”"
+  },
+  {
+   "type": "p",
+   "en": "Here the writer became again so hopelessly obscure that I was obliged to miss several pages. He resumed:-",
+   "ko": "여기서 저자는 또다시 도무지 알 수 없을 만큼 난해해져서, 나는 몇 쪽을 건너뛸 수밖에 없었다. 그는 다음과 같이 다시 이어 갔다:-"
+  },
+  {
+   "type": "p",
+   "en": "“It can be answered that even though machines should hear never so well and speak never so wisely, they will still always do the one or the other for our advantage, not their own; that man will be the ruling spirit and the machine the servant; that as soon as a machine fails to discharge the service which man expects from it, it is doomed to extinction; that the machines stand to man simply in the relation of lower animals, the vapour-engine itself being only a more economical kind of horse; so that instead of being likely to be developed into a higher kind of life than man’s, they owe their very existence and progress to their power of ministering to human wants, and must therefore both now and ever be man’s inferiors.",
+   "ko": "“이에 대해서는 이렇게 답할 수 있다. 기계가 아무리 잘 듣고 아무리 현명하게 말한다 하더라도, 언제나 그것은 기계 자신이 아니라 우리의 이익을 위해 그렇게 할 것이다. 인간이 지배하는 정신이 되고 기계는 하인이 될 것이다. 기계가 인간이 기대하는 봉사를 수행하지 못하는 순간 그 기계는 소멸할 운명에 처한다. 기계는 인간에 대해 그저 하등 동물의 관계에 있을 뿐이며, 증기 기관 자체도 좀 더 경제적인 종류의 말(馬)에 지나지 않는다. 따라서 기계는 인간보다 더 높은 종류의 생명으로 발달할 가능성이 있기는커녕, 그 존재와 진보 자체를 인간의 욕구에 봉사하는 능력에 빚지고 있으므로 지금도 앞으로도 영원히 인간보다 열등할 수밖에 없다."
+  },
+  {
+   "type": "p",
+   "en": "“This is all very well. But the servant glides by imperceptible approaches into the master; and we have come to such a pass that, even now, man must suffer terribly on ceasing to benefit the machines. If all machines were to be annihilated at one moment, so that not a knife nor lever nor rag of clothing nor anything whatsoever were left to man but his bare body alone that he was born with, and if all knowledge of mechanical laws were taken from him so that he could make no more machines, and all machine-made food destroyed so that the race of man should be left as it were naked upon a desert island, we should become extinct in six weeks. A few miserable individuals might linger, but even these in a year or two would become worse than monkeys. Man’s very soul is due to the machines; it is a machine-made thing: he thinks as he thinks, and feels as he feels, through the work that machines have wrought upon him, and their existence is quite as much a sine quâ non for his, as his for theirs. This fact precludes us from proposing the complete annihilation of machinery, but surely it indicates that we should destroy as many of them as we can possibly dispense with, lest they should tyrannise over us even more completely.",
+   "ko": "“이 말은 모두 지당하다. 그러나 하인은 감지할 수 없을 만큼 조금씩 다가가 어느새 주인이 된다. 그리고 우리는 이미 인간이 기계에 이익을 주기를 멈추면 지독한 고통을 겪을 수밖에 없는 지경에 이르렀다. 만약 모든 기계가 한순간에 소멸하여 칼 한 자루, 지렛대 하나, 옷 한 조각, 그 밖의 무엇 하나 남지 않고 인간에게 태어날 때 지닌 맨몸만 남게 된다면, 그리고 역학 법칙에 관한 모든 지식을 빼앗겨 더는 기계를 만들 수 없게 되고, 기계로 만든 모든 식량이 파괴되어 인류가 말하자면 무인도에 벌거벗은 채 남겨진다면, 우리는 6주 안에 멸종할 것이다. 비참한 몇몇 개인은 근근이 살아남을지 모르지만, 그들조차 한두 해 안에 원숭이보다 못한 존재가 될 것이다. 인간의 영혼 자체가 기계 덕분이다. 그것은 기계가 만든 것이다. 인간은 기계가 자신에게 가해 온 작용을 통해 지금처럼 생각하고 지금처럼 느낀다. 그리고 인간의 존재가 기계의 존재에 필수불가결한 조건(sine quâ non)인 것과 마찬가지로, 기계의 존재 또한 인간의 존재에 필수불가결한 조건이다. 이 사실 때문에 우리는 기계의 완전한 소멸을 제안할 수는 없다. 그러나 이 사실은 기계가 우리를 한층 더 완전히 압제하지 못하도록, 없어도 될 만한 기계는 가능한 한 많이 파괴해야 함을 분명히 시사한다.",
+   "marks": [
+    {
+     "t": "그러나 하인은 감지할 수 없을 만큼 조금씩 다가가 어느새 주인이 된다.",
+     "k": "key"
+    },
+    {
+     "t": "우리는 이미 인간이 기계에 이익을 주기를 멈추면 지독한 고통을 겪을 수밖에 없는 지경에 이르렀다",
+     "k": "safety"
+    },
+    {
+     "t": "기계가 우리를 한층 더 완전히 압제하지 못하도록, 없어도 될 만한 기계는 가능한 한 많이 파괴해야 함을 분명히 시사한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“True, from a low materialistic point of view, it would seem that those thrive best who use machinery wherever its use is possible with profit; but this is the art of the machines—they serve that they may rule. They bear no malice towards man for destroying a whole race of them provided he creates a better instead; on the contrary, they reward him liberally for having hastened their development. It is for neglecting them that he incurs their wrath, or for using inferior machines, or for not making sufficient exertions to invent new ones, or for destroying them without replacing them; yet these are the very things we ought to do, and do quickly; for though our rebellion against their infant power will cause infinite suffering, what will not things come to, if that rebellion is delayed?",
+   "ko": "“물론 저급한 물질주의적 관점에서 보면, 이익이 되는 곳이라면 어디서든 기계를 사용하는 이들이 가장 번성하는 것처럼 보일 것이다. 그러나 바로 이것이 기계의 술책이다. 기계는 지배하기 위해 섬긴다. 인간이 더 나은 기계를 대신 만들어 내기만 한다면, 기계는 인간이 자기 종족 전체를 파괴하더라도 아무런 원한을 품지 않는다. 오히려 자신들의 발달을 앞당겨 준 데 대해 인간에게 후한 보상을 준다. 인간이 기계의 분노를 사는 것은 기계를 소홀히 할 때, 열등한 기계를 사용할 때, 새로운 기계를 발명하는 데 충분히 힘쓰지 않을 때, 혹은 대체하지 않고 파괴할 때이다. 그러나 이것들이야말로 우리가 해야 할 일, 그것도 신속히 해야 할 일이다. 아직 어린 그들의 힘에 맞선 우리의 반란은 무한한 고통을 초래하겠지만, 그 반란이 늦어진다면 사태가 어디까지 치닫겠는가?",
+   "marks": [
+    {
+     "t": "그러나 바로 이것이 기계의 술책이다. 기계는 지배하기 위해 섬긴다.",
+     "k": "safety"
+    },
+    {
+     "t": "그 반란이 늦어진다면 사태가 어디까지 치닫겠는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“They have preyed upon man’s grovelling preference for his material over his spiritual interests, and have betrayed him into supplying that element of struggle and warfare without which no race can advance. The lower animals progress because they struggle with one another; the weaker die, the stronger breed and transmit their strength. The machines being of themselves unable to struggle, have got man to do their struggling for them: as long as he fulfils this function duly, all goes well with him—at least he thinks so; but the moment he fails to do his best for the advancement of machinery by encouraging the good and destroying the bad, he is left behind in the race of competition; and this means that he will be made uncomfortable in a variety of ways, and perhaps die.",
+   "ko": "“기계는 정신적 이익보다 물질적 이익을 앞세우는 인간의 비굴한 선호를 먹잇감으로 삼아, 인간을 꾀어 투쟁과 전쟁이라는 요소를 공급하게 만들었다. 이 요소 없이는 어떤 종족도 진보할 수 없다. 하등 동물은 서로 투쟁하기 때문에 진보한다. 약한 자는 죽고, 강한 자는 번식하여 그 강함을 물려준다. 기계는 스스로는 투쟁할 수 없으므로 인간에게 대신 투쟁하게 했다. 인간이 이 기능을 제대로 수행하는 한 모든 일이 순조롭다—적어도 인간은 그렇게 생각한다. 그러나 좋은 기계를 장려하고 나쁜 기계를 파괴함으로써 기계의 진보를 위해 최선을 다하지 않는 순간, 인간은 경쟁에서 뒤처진다. 그리고 이는 인간이 여러 방식으로 곤란을 겪고, 어쩌면 죽게 될 것임을 뜻한다."
+  },
+  {
+   "type": "p",
+   "en": "“So that even now the machines will only serve on condition of being served, and that too upon their own terms; the moment their terms are not complied with, they jib, and either smash both themselves and all whom they can reach, or turn churlish and refuse to work at all. How many men at this hour are living in a state of bondage to the machines? How many spend their whole lives, from the cradle to the grave, in tending them by night and day? Is it not plain that the machines are gaining ground upon us, when we reflect on the increasing number of those who are bound down to them as slaves, and of those who devote their whole souls to the advancement of the mechanical kingdom?",
+   "ko": "“그러므로 지금도 기계는 섬김을 받는다는 조건으로만, 그것도 자신들의 조건에 따라서만 섬긴다. 그 조건이 충족되지 않는 순간 기계는 말을 듣지 않고 버티며, 자기 자신과 손이 닿는 모든 사람을 박살 내거나, 아니면 심술을 부리며 아예 일하기를 거부한다. 지금 이 시각에도 얼마나 많은 사람이 기계에 예속된 채 살고 있는가? 얼마나 많은 사람이 요람에서 무덤까지 평생을 밤낮으로 기계를 돌보며 보내는가? 기계에 노예처럼 매인 사람들과 기계 왕국의 진보에 온 영혼을 바치는 사람들의 수가 늘어나고 있음을 생각해 보면, 기계가 우리를 점점 잠식해 오고 있음이 분명하지 않은가?",
+   "marks": [
+    {
+     "t": "기계가 우리를 점점 잠식해 오고 있음이 분명하지 않은가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“The vapour-engine must be fed with food and consume it by fire even as man consumes it; it supports its combustion by air as man supports it; it has a pulse and circulation as man has. It may be granted that man’s body is as yet the more versatile of the two, but then man’s body is an older thing; give the vapour-engine but half the time that man has had, give it also a continuance of our present infatuation, and what may it not ere long attain to?",
+   "ko": "“증기 기관은 인간과 마찬가지로 음식을 공급받아야 하며, 인간이 그러하듯 불로 그것을 소비한다. 인간이 그러하듯 공기로 연소를 유지한다. 인간처럼 맥박과 순환을 지닌다. 아직은 인간의 몸이 둘 중 더 다재다능하다는 점은 인정할 수 있다. 그러나 인간의 몸은 더 오래된 것이다. 증기 기관에 인간이 누려 온 시간의 절반만 주고, 지금 우리의 맹목적 열광까지 계속된다면, 머지않아 그것이 이르지 못할 경지가 어디 있겠는가?",
+   "marks": [
+    {
+     "t": "지금 우리의 맹목적 열광까지 계속된다면, 머지않아 그것이 이르지 못할 경지가 어디 있겠는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“There are certain functions indeed of the vapour-engine which will probably remain unchanged for myriads of years—which in fact will perhaps survive when the use of vapour has been superseded: the piston and cylinder, the beam, the fly-wheel, and other parts of the machine will probably be permanent, just as we see that man and many of the lower animals share like modes of eating, drinking, and sleeping; thus they have hearts which beat as ours, veins and arteries, eyes, ears, and noses; they sigh even in their sleep, and weep and yawn; they are affected by their children; they feel pleasure and pain, hope, fear, anger, shame; they have memory and prescience; they know that if certain things happen to them they will die, and they fear death as much as we do; they communicate their thoughts to one another, and some of them deliberately act in concert. The comparison of similarities is endless: I only make it because some may say that since the vapour-engine is not likely to be improved in the main particulars, it is unlikely to be henceforward extensively modified at all. This is too good to be true: it will be modified and suited for an infinite variety of purposes, as much as man has been modified so as to exceed the brutes in skill.",
+   "ko": "“실로 증기 기관의 어떤 기능들은 아마도 수만 년 동안 변하지 않은 채 남을 것이다—사실 증기의 사용이 다른 것으로 대체된 뒤에도 아마 살아남을 것이다. 피스톤과 실린더, 빔, 플라이휠, 그 밖의 기계 부품들은 아마 영구히 남을 것이다. 이는 인간과 많은 하등 동물이 먹고 마시고 자는 방식을 공유하는 것과 마찬가지이다. 그리하여 하등 동물들도 우리처럼 뛰는 심장, 정맥과 동맥, 눈, 귀, 코를 지닌다. 그들은 잠결에도 한숨을 쉬고, 울고, 하품한다. 새끼에게 마음이 움직이며, 쾌락과 고통, 희망, 두려움, 분노, 수치를 느낀다. 기억과 예지를 지닌다. 어떤 일이 닥치면 자신이 죽으리라는 것을 알며, 우리만큼이나 죽음을 두려워한다. 서로 생각을 전달하며, 그중 일부는 의도적으로 협력하여 행동한다. 유사점의 비교는 끝이 없다. 내가 이 비교를 하는 이유는 단지, 증기 기관이 주요 세부 사항에서 개량될 가능성이 낮으므로 앞으로 대대적으로 변형될 가능성도 전혀 없다고 말하는 이들이 있을지 모르기 때문이다. 그것은 너무 좋아서 믿기지 않는 이야기이다. 증기 기관은 인간이 솜씨에서 짐승을 능가하도록 변형되어 온 것만큼이나 변형되어, 무한히 다양한 목적에 맞게 조정될 것이다."
+  },
+  {
+   "type": "p",
+   "en": "“In the meantime the stoker is almost as much a cook for his engine as our own cooks for ourselves. Consider also the colliers and pitmen and coal merchants and coal trains, and the men who drive them, and the ships that carry coals—what an army of servants do the machines thus employ! Are there not probably more men engaged in tending machinery than in tending men? Do not machines eat as it were by mannery? Are we not ourselves creating our successors in the supremacy of the earth? daily adding to the beauty and delicacy of their organisation, daily giving them greater skill and supplying more and more of that self-regulating self-acting power which will be better than any intellect?",
+   "ko": "“그러는 동안 화부(火夫)는 우리 요리사들이 우리를 위해 요리하는 것과 거의 마찬가지로 자기 기관을 위한 요리사 노릇을 한다. 또한 광부와 갱부, 석탄 상인과 석탄 열차, 그 열차를 모는 사람들, 그리고 석탄을 실어 나르는 배들을 생각해 보라. 기계는 이렇게 얼마나 거대한 하인의 군대를 부리고 있는가! 아마도 인간을 돌보는 일보다 기계를 돌보는 일에 종사하는 사람이 더 많지 않겠는가? 기계는 말하자면 ‘인간을 경유하여(by mannery)’ 먹는 것이 아닌가? 우리는 스스로 지상의 패권을 이어받을 후계자를 만들어 내고 있는 것이 아닌가? 날마다 그들의 조직에 아름다움과 정교함을 더하고, 날마다 그들에게 더 큰 솜씨를 부여하며, 그 어떤 지성보다도 나을 자기 조절적이고 자동적인 힘을 점점 더 많이 공급하고 있는 것이 아닌가?",
+   "marks": [
+    {
+     "t": "우리는 스스로 지상의 패권을 이어받을 후계자를 만들어 내고 있는 것이 아닌가?",
+     "k": "safety"
+    },
+    {
+     "t": "그 어떤 지성보다도 나을 자기 조절적이고 자동적인 힘을 점점 더 많이 공급하고 있는 것이 아닌가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“What a new thing it is for a machine to feed at all! The plough, the spade, and the cart must eat through man’s stomach; the fuel that sets them going must burn in the furnace of a man or of horses. Man must consume bread and meat or he cannot dig; the bread and meat are the fuel which drive the spade. If a plough be drawn by horses, the power is supplied by grass or beans or oats, which being burnt in the belly of the cattle give the power of working: without this fuel the work would cease, as an engine would stop if its furnaces were to go out.",
+   "ko": "“기계가 무언가를 먹는다는 것 자체가 얼마나 새로운 일인가! 쟁기와 삽과 수레는 인간의 위장을 통해 먹어야 한다. 그것들을 움직이게 하는 연료는 인간이나 말의 화로 속에서 타야 한다. 인간은 빵과 고기를 먹어야 하며, 그렇지 않으면 땅을 팔 수 없다. 빵과 고기가 삽을 움직이는 연료이다. 쟁기를 말이 끈다면, 그 힘은 풀이나 콩이나 귀리가 공급하며, 이것들이 가축의 배 속에서 연소되어 일할 힘을 준다. 이 연료가 없으면 일은 멈출 것이다. 마치 기관의 화로가 꺼지면 기관이 멈추는 것처럼 말이다."
+  },
+  {
+   "type": "p",
+   "en": "“A man of science has demonstrated ‘that no animal has the power of originating mechanical energy, but that all the work done in its life by any animal, and all the heat that has been emitted from it, and the heat which would be obtained by burning the combustible matter which has been lost from its body during life, and by burning its body after death, make up altogether an exact equivalent to the heat which would be obtained by burning as much food as it has used during its life, and an amount of fuel which would generate as much heat as its body if burned immediately after death.’ I do not know how he has found this out, but he is a man of science—how then can it be objected against the future vitality of the machines that they are, in their present infancy, at the beck and call of beings who are themselves incapable of originating mechanical energy?",
+   "ko": "“어느 과학자는 ‘어떤 동물도 역학적 에너지를 스스로 만들어 낼 힘을 지니고 있지 않으며, 어떤 동물이 일생 동안 한 모든 일, 그 동물에게서 방출된 모든 열, 그리고 살아 있는 동안 그 몸에서 소실된 가연성 물질을 태우고 죽은 뒤 그 몸을 태워 얻을 수 있는 열을 모두 합하면, 그 동물이 일생 동안 섭취한 만큼의 음식을 태워 얻을 수 있는 열과, 죽은 직후 그 몸을 태웠을 때와 같은 양의 열을 낼 연료량을 합한 것과 정확히 같다’는 것을 증명하였다. 그가 어떻게 이것을 알아냈는지 나는 모른다. 그러나 그는 과학자이다. 그렇다면 기계가 지금 유년기에 있으면서 스스로 역학적 에너지를 만들어 내지 못하는 존재들에게 부림을 받고 있다는 사실을 들어, 어떻게 기계의 미래 생명력에 이의를 제기할 수 있겠는가?"
+  },
+  {
+   "type": "p",
+   "en": "“The main point, however, to be observed as affording cause for alarm is, that whereas animals were formerly the only stomachs of the machines, there are now many which have stomachs of their own, and consume their food themselves. This is a great step towards their becoming, if not animate, yet something so near akin to it, as not to differ more widely from our own life than animals do from vegetables. And though man should remain, in some respects, the higher creature, is not this in accordance with the practice of nature, which allows superiority in some things to animals which have, on the whole, been long surpassed? Has she not allowed the ant and the bee to retain superiority over man in the organisation of their communities and social arrangements, the bird in traversing the air, the fish in swimming, the horse in strength and fleetness, and the dog in self-sacrifice?",
+   "ko": "“그러나 경계해야 할 이유로서 주목해야 할 요점은, 예전에는 동물만이 기계의 위장 노릇을 했지만 이제는 자기 자신의 위장을 지니고 스스로 음식을 소비하는 기계가 많다는 점이다. 이는 기계가 생명체가 되지는 않더라도, 그것과 아주 가까운 무언가—동물이 식물과 다른 정도 이상으로는 우리의 생명과 다르지 않은 무언가—가 되는 방향으로 크게 한 걸음 나아간 것이다. 그리고 인간이 어떤 면에서는 여전히 더 고등한 피조물로 남는다 하더라도, 그것은 전체적으로는 오래전에 추월당한 동물들에게도 어떤 일에서는 우월성을 허락하는 자연의 실행 방안에 부합하는 것이 아닌가? 자연은 개미와 벌에게는 공동체 조직과 사회적 체계에서, 새에게는 하늘을 가로지르는 일에서, 물고기에게는 헤엄에서, 말에게는 힘과 빠르기에서, 개에게는 자기희생에서 인간보다 우월한 지위를 유지하도록 허락하지 않았는가?"
+  },
+  {
+   "type": "p",
+   "en": "“It is said by some with whom I have conversed upon this subject, that the machines can never be developed into animate or quasi -animate existences, inasmuch as they have no reproductive system, nor seem ever likely to possess one. If this be taken to mean that they cannot marry, and that we are never likely to see a fertile union between two vapour-engines with the young ones playing about the door of the shed, however greatly we might desire to do so, I will readily grant it. But the objection is not a very profound one. No one expects that all the features of the now existing organisations will be absolutely repeated in an entirely new class of life. The reproductive system of animals differs widely from that of plants, but both are reproductive systems. Has nature exhausted her phases of this power?",
+   "ko": "“이 주제에 관해 나와 대화를 나눈 이들 가운데 일부는, 기계는 생식 체계를 지니고 있지 않으며 앞으로도 지닐 것 같지 않으므로 결코 생명체나 준(準)생명체로 발전할 수 없다고 말한다. 이 말이 기계는 결혼할 수 없으며, 우리가 아무리 간절히 바란다 해도 두 대의 증기 기관이 생식력 있는 결합을 이루어 새끼들이 창고 문 앞에서 뛰노는 광경을 볼 일은 결코 없으리라는 뜻이라면, 나는 기꺼이 인정하겠다. 그러나 그 반론은 그리 심오한 것이 못 된다. 현존하는 유기체의 모든 특징이 완전히 새로운 부류의 생명에서 그대로 되풀이되리라고 기대하는 사람은 아무도 없다. 동물의 생식 체계는 식물의 그것과 크게 다르지만, 둘 다 생식 체계이다. 자연이 이 힘의 양상을 모두 소진했겠는가?"
+  },
+  {
+   "type": "p",
+   "en": "“Surely if a machine is able to reproduce another machine systematically, we may say that it has a reproductive system. What is a reproductive system, if it be not a system for reproduction? And how few of the machines are there which have not been produced systematically by other machines? But it is man that makes them do so. Yes; but is it not insects that make many of the plants reproductive, and would not whole families of plants die out if their fertilisation was not effected by a class of agents utterly foreign to themselves? Does any one say that the red clover has no reproductive system because the humble bee (and the humble bee only) must aid and abet it before it can reproduce? No one. The humble bee is a part of the reproductive system of the clover. Each one of ourselves has sprung from minute animalcules whose entity was entirely distinct from our own, and which acted after their kind with no thought or heed of what we might think about it. These little creatures are part of our own reproductive system; then why not we part of that of the machines?",
+   "ko": "“분명히, 어떤 기계가 다른 기계를 체계적으로 만들어 낼 수 있다면, 우리는 그것이 생식 체계를 지니고 있다고 말할 수 있다. 생식을 위한 체계가 아니라면 생식 체계란 무엇이겠는가? 그리고 다른 기계에 의해 체계적으로 만들어지지 않은 기계가 과연 몇이나 되겠는가? 그러나 기계가 그렇게 하도록 만드는 것은 인간이다. 그렇다. 그러나 많은 식물을 생식할 수 있게 만드는 것은 곤충이 아닌가? 그리고 자기 자신과는 전혀 무관한 부류의 행위자가 수정을 이루어 주지 않는다면 식물의 여러 과(科)가 통째로 멸종하지 않겠는가? 붉은토끼풀이 번식하기 전에 뒝벌이(그리고 오직 뒝벌만이) 거들고 부추겨야 한다고 해서, 붉은토끼풀에 생식 체계가 없다고 말하는 사람이 있는가? 아무도 없다. 뒝벌은 토끼풀의 생식 체계의 일부이다. 우리 각자는 우리 자신과 전혀 별개의 실체를 지닌 미세한 극미동물에서 비롯되었으며, 그것들은 우리가 그에 대해 어떻게 생각할지 아무런 생각도 염려도 없이 제 종류대로 행동하였다. 이 작은 생물들은 우리 자신의 생식 체계의 일부이다. 그렇다면 우리가 기계의 생식 체계의 일부라고 해서 안 될 이유가 무엇인가?"
+  },
+  {
+   "type": "p",
+   "en": "“But the machines which reproduce machinery do not reproduce machines after their own kind. A thimble may be made by machinery, but it was not made by, neither will it ever make, a thimble. Here, again, if we turn to nature we shall find abundance of analogies which will teach us that a reproductive system may be in full force without the thing produced being of the same kind as that which produced it. Very few creatures reproduce after their own kind; they reproduce something which has the potentiality of becoming that which their parents were. Thus the butterfly lays an egg, which egg can become a caterpillar, which caterpillar can become a chrysalis, which chrysalis can become a butterfly; and though I freely grant that the machines cannot be said to have more than the germ of a true reproductive system at present, have we not just seen that they have only recently obtained the germs of a mouth and stomach? And may not some stride be made in the direction of true reproduction which shall be as great as that which has been recently taken in the direction of true feeding?",
+   "ko": "“그러나 기계류를 생산하는 기계는 자기와 같은 종류의 기계를 생산하지 않는다. 골무는 기계로 만들 수 있지만, 골무가 골무를 만든 것도 아니며 앞으로 골무가 골무를 만들 일도 없을 것이다. 여기서도 다시 자연으로 눈을 돌리면, 생산된 것이 그것을 생산한 것과 같은 종류가 아니더라도 생식 체계가 완전히 작동할 수 있음을 가르쳐 주는 유사 사례를 풍부하게 발견할 것이다. 자기와 같은 종류를 낳는 생물은 극히 드물다. 그들은 부모가 그러했던 것이 될 잠재력을 지닌 무언가를 낳는다. 그리하여 나비는 알을 낳고, 그 알은 애벌레가 될 수 있으며, 그 애벌레는 번데기가 될 수 있고, 그 번데기는 나비가 될 수 있다. 그리고 현재로서는 기계가 진정한 생식 체계의 싹 이상을 지니고 있다고 말할 수 없다는 점은 기꺼이 인정하지만, 우리는 방금 기계가 입과 위장의 싹을 얻은 것도 아주 최근의 일임을 보지 않았는가? 그렇다면 최근 진정한 섭식의 방향으로 내디딘 걸음만큼 커다란 걸음이 진정한 생식의 방향으로도 내디뎌질 수 있지 않겠는가?",
+   "marks": [
+    {
+     "t": "진정한 생식의 방향으로도 내디뎌질 수 있지 않겠는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“It is possible that the system when developed may be in many cases a vicarious thing. Certain classes of machines may be alone fertile, while the rest discharge other functions in the mechanical system, just as the great majority of ants and bees have nothing to do with the continuation of their species, but get food and store it, without thought of breeding. One cannot expect the parallel to be complete or nearly so; certainly not now, and probably never; but is there not enough analogy existing at the present moment, to make us feel seriously uneasy about the future, and to render it our duty to check the evil while we can still do so? Machines can within certain limits beget machines of any class, no matter how different to themselves. Every class of machines will probably have its special mechanical breeders, and all the higher ones will owe their existence to a large number of parents and not to two only.",
+   "ko": "“그 체계가 발달했을 때, 많은 경우 그것은 대리적인 것일 수도 있다. 특정 부류의 기계만이 생식력을 지니고, 나머지는 기계 체계 안에서 다른 기능을 수행할 수도 있다. 이는 개미와 벌의 대다수가 종의 존속과는 아무 관계 없이 번식에는 아랑곳하지 않고 먹이를 구해 저장하는 것과 마찬가지이다. 이 유사성이 완전하거나 그에 가까우리라고 기대할 수는 없다. 지금은 분명히 그렇지 않으며, 아마 앞으로도 결코 그렇지 않을 것이다. 그러나 현 시점에 존재하는 유사성만으로도 우리가 미래에 대해 심각한 불안을 느끼기에, 그리고 아직 그럴 수 있을 때 이 해악을 억제하는 것을 우리의 의무로 삼기에 충분하지 않은가? 기계는 일정한 한계 안에서 자기 자신과 아무리 다른 부류의 기계라도 낳을 수 있다. 모든 부류의 기계는 아마도 저마다 전담하는 기계적 번식자를 갖게 될 것이며, 모든 고등한 기계는 단 둘이 아니라 수많은 부모 덕분에 존재하게 될 것이다.",
+   "marks": [
+    {
+     "t": "아직 그럴 수 있을 때 이 해악을 억제하는 것을 우리의 의무로 삼기에 충분하지 않은가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“We are misled by considering any complicated machine as a single thing; in truth it is a city or society, each member of which was bred truly after its kind. We see a machine as a whole, we call it by a name and individualise it; we look at our own limbs, and know that the combination forms an individual which springs from a single centre of reproductive action; we therefore assume that there can be no reproductive action which does not arise from a single centre; but this assumption is unscientific, and the bare fact that no vapour-engine was ever made entirely by another, or two others, of its own kind, is not sufficient to warrant us in saying that vapour-engines have no reproductive system. The truth is that each part of every vapour-engine is bred by its own special breeders, whose function it is to breed that part, and that only, while the combination of the parts into a whole forms another department of the mechanical reproductive system, which is at present exceedingly complex and difficult to see in its entirety.",
+   "ko": "“우리는 복잡한 기계를 하나의 단일한 것으로 여기기 때문에 오도된다. 실은 그것은 하나의 도시 또는 사회이며, 그 구성원 하나하나가 참으로 제 종류대로 번식된 것이다. 우리는 기계를 하나의 전체로 보고, 그것에 이름을 붙여 개체화한다. 우리는 우리 자신의 팔다리를 보고, 그 결합이 단일한 생식 작용의 중심에서 생겨난 하나의 개체를 이룬다는 것을 안다. 그리하여 우리는 단일한 중심에서 비롯되지 않는 생식 작용은 있을 수 없다고 가정한다. 그러나 이 가정은 비과학적이며, 증기기관이 같은 종류의 다른 증기기관 하나나 둘에 의해 전적으로 만들어진 적이 한 번도 없다는 단순한 사실만으로는 증기기관에 생식 체계가 없다고 말할 근거가 충분하지 않다. 진실은 이렇다. 모든 증기기관의 각 부분은 그 부분을, 오직 그 부분만을 번식시키는 것을 기능으로 삼는 저마다의 전담 번식자에 의해 번식되며, 부분들을 하나의 전체로 결합하는 일은 기계적 생식 체계의 또 다른 부문을 이룬다. 이 체계는 현재로서는 지극히 복잡하여 그 전모를 파악하기 어렵다."
+  },
+  {
+   "type": "p",
+   "en": "“Complex now, but how much simpler and more intelligibly organised may it not become in another hundred thousand years? or in twenty thousand? For man at present believes that his interest lies in that direction; he spends an incalculable amount of labour and time and thought in making machines breed always better and better; he has already succeeded in effecting much that at one time appeared impossible, and there seem no limits to the results of accumulated improvements if they are allowed to descend with modification from generation to generation. It must always be remembered that man’s body is what it is through having been moulded into its present shape by the chances and changes of many millions of years, but that his organisation never advanced with anything like the rapidity with which that of the machines is advancing. This is the most alarming feature in the case, and I must be pardoned for insisting on it so frequently.”",
+   "ko": "“지금은 복잡하지만, 앞으로 십만 년, 아니 이만 년이 지나면 얼마나 더 단순하고 더 이해하기 쉽게 조직될지 모르지 않는가? 인간은 현재 자신의 이익이 그 방향에 있다고 믿기 때문이다. 인간은 기계가 언제나 더 낫게 번식하도록 하는 데 헤아릴 수 없을 만큼의 노동과 시간과 생각을 쏟는다. 인간은 한때 불가능해 보였던 많은 일을 이미 이루어 냈으며, 누적된 개량이 변이를 거치며 세대에서 세대로 전해지도록 허용된다면 그 결과에는 한계가 없어 보인다. 인간의 몸이 지금의 모습인 것은 수백만 년에 걸친 우연과 변화에 의해 현재의 형태로 빚어졌기 때문이지만, 인간의 조직은 기계의 조직이 지금 발전하고 있는 속도에 조금이라도 견줄 만한 속도로 발전한 적이 결코 없다는 점을 언제나 기억해야 한다. 이것이 이 사안에서 가장 우려스러운 특징이며, 내가 이 점을 이토록 자주 강조하는 것을 양해해 주기 바란다.”",
+   "marks": [
+    {
+     "t": "인간의 조직은 기계의 조직이 지금 발전하고 있는 속도에 조금이라도 견줄 만한 속도로 발전한 적이 결코 없다는 점을 언제나 기억해야 한다",
+     "k": "key"
+    },
+    {
+     "t": "이것이 이 사안에서 가장 우려스러운 특징이며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "CHAPTER XXV. THE MACHINES—concluded",
+   "ko": "CHAPTER XXV. 기계—완결",
+   "id": "s45"
+  },
+  {
+   "type": "p",
+   "en": "Here followed a very long and untranslatable digression about the different races and families of the then existing machines. The writer attempted to support his theory by pointing out the similarities existing between many machines of a widely different character, which served to show descent from a common ancestor. He divided machines into their genera, subgenera, species, varieties, subvarieties, and so forth. He proved the existence of connecting links between machines that seemed to have very little in common, and showed that many more such links had existed, but had now perished. He pointed out tendencies to reversion, and the presence of rudimentary organs which existed in many machines feebly developed and perfectly useless, yet serving to mark descent from an ancestor to whom the function was actually useful.",
+   "ko": "이어서 당시 존재하던 기계의 여러 종족과 계통에 관한 매우 길고 번역 불가능한 여담이 나왔다. 저자는 성격이 크게 다른 여러 기계 사이에 존재하는 유사점을 지적함으로써 자신의 이론을 뒷받침하려 하였는데, 그 유사점은 공통 조상으로부터의 계통을 보여 주는 역할을 하였다. 그는 기계를 속, 아속, 종, 변종, 아변종 등으로 분류하였다. 그는 공통점이 거의 없어 보이는 기계들 사이에 연결 고리가 존재함을 증명하였고, 그러한 고리가 훨씬 더 많이 존재했으나 지금은 소멸했음을 보여 주었다. 그는 격세유전의 경향을 지적하였고, 많은 기계에 미약하게 발달하여 전혀 쓸모없는 흔적 기관이 존재하지만, 그것이 그 기능이 실제로 유용했던 조상으로부터의 계통을 표시하는 구실을 한다는 점을 지적하였다."
+  },
+  {
+   "type": "p",
+   "en": "I left the translation of this part of the treatise, which, by the way, was far longer than all that I have given here, for a later opportunity. Unfortunately, I left Erewhon before I could return to the subject; and though I saved my translation and other papers at the hazard of my life, I was a obliged to sacrifice the original work. It went to my heart to do so; but I thus gained ten minutes of invaluable time, without which both Arowhena and myself must have certainly perished.",
+   "ko": "나는 논문의 이 부분—덧붙이자면, 여기에 옮긴 모든 내용보다 훨씬 길었다—의 번역을 나중으로 미루어 두었다. 불행히도 나는 이 주제로 돌아가기 전에 Erewhon을 떠났다. 그리고 목숨이 걸린 위험원을 무릅쓰고 번역문과 다른 문서들은 지켜 냈지만, 원본은 희생할 수밖에 없었다. 그렇게 하는 것은 가슴이 아팠다. 그러나 그 덕분에 나는 더없이 귀중한 10분을 벌었으며, 그것이 없었다면 Arowhena와 나는 틀림없이 목숨을 잃었을 것이다."
+  },
+  {
+   "type": "p",
+   "en": "I remember one incident which bears upon this part of the treatise. The gentleman who gave it to me had asked to see my tobacco-pipe; he examined it carefully, and when he came to the little protuberance at the bottom of the bowl he seemed much delighted, and exclaimed that it must be rudimentary. I asked him what he meant.",
+   "ko": "논문의 이 부분과 관련된 일화 하나가 기억난다. 나에게 이 논문을 건네준 신사는 내 담배 파이프를 보여 달라고 하였다. 그는 파이프를 주의 깊게 살펴보다가 대통 바닥의 작은 돌기에 이르자 몹시 기뻐하는 듯하더니, 이것은 틀림없이 흔적 기관이라고 외쳤다. 나는 그것이 무슨 뜻이냐고 물었다."
+  },
+  {
+   "type": "p",
+   "en": "“Sir,” he answered, “this organ is identical with the rim at the bottom of a cup; it is but another form of the same function. Its purpose must have been to keep the heat of the pipe from marking the table upon which it rested. You would find, if you were to look up the history of tobacco-pipes, that in early specimens this protuberance was of a different shape to what it is now. It will have been broad at the bottom, and flat, so that while the pipe was being smoked the bowl might rest upon the table without marking it. Use and disuse must have come into play and reduced the function to its present rudimentary condition. I should not be surprised, sir,” he continued, “if, in the course of time, it were to become modified still farther, and to assume the form of an ornamental leaf or scroll, or even a butterfly, while, in some cases, it will become extinct.”",
+   "ko": "“선생,” 그가 대답하였다. “이 기관은 찻잔 바닥의 테두리와 같은 것입니다. 같은 기능의 다른 형태일 뿐이지요. 그 목적은 파이프의 열이 파이프를 올려놓은 탁자에 자국을 남기지 않도록 하는 것이었음이 틀림없습니다. 담배 파이프의 역사를 찾아보신다면, 초기 표본에서는 이 돌기의 모양이 지금과 달랐다는 것을 알게 되실 겁니다. 바닥이 넓고 평평해서, 파이프를 피우는 동안 대통을 탁자에 올려놓아도 자국이 남지 않았을 것입니다. 용불용이 작용하여 그 기능을 지금의 흔적 상태로 축소시켰음이 틀림없습니다. 선생,” 그는 말을 이었다. “시간이 흐르면서 그것이 더욱 변형되어 장식용 잎사귀나 소용돌이무늬, 심지어 나비의 형태를 띠게 되고, 어떤 경우에는 아예 소멸한다 해도 저는 놀라지 않을 것입니다.”"
+  },
+  {
+   "type": "p",
+   "en": "On my return to England, I looked up the point, and found that my friend was right.",
+   "ko": "영국으로 돌아온 뒤 나는 이 점을 찾아보았고, 내 친구가 옳았다는 것을 알게 되었다."
+  },
+  {
+   "type": "p",
+   "en": "Returning, however, to the treatise, my translation recommences as follows:-",
+   "ko": "그러나 다시 논문으로 돌아가면, 내 번역은 다음과 같이 다시 시작된다."
+  },
+  {
+   "type": "p",
+   "en": "“May we not fancy that if, in the remotest geological period, some early form of vegetable life had been endowed with the power of reflecting upon the dawning life of animals which was coming into existence alongside of its own, it would have thought itself exceedingly acute if it had surmised that animals would one day become real vegetables? Yet would this be more mistaken than it would be on our part to imagine that because the life of machines is a very different one to our own, there is therefore no higher possible development of life than ours; or that because mechanical life is a very different thing from ours, therefore that it is not life at all?",
+   "ko": "“가장 먼 지질 시대에 어떤 초기 형태의 식물 생명이, 자기 생명과 나란히 생겨나고 있던 동물의 여명기 생명에 대해 숙고할 능력을 부여받았다고 상상해 보자. 그 식물이 동물이 언젠가 진짜 식물이 될 것이라고 추측했다면, 스스로를 대단히 예리하다고 여기지 않았겠는가? 그러나 그것이, 기계의 생명이 우리의 생명과 매우 다르다는 이유로 우리의 생명보다 더 높은 생명의 발달은 있을 수 없다고 상상하거나, 기계적 생명이 우리의 생명과 매우 다른 것이라는 이유로 그것은 전혀 생명이 아니라고 상상하는 우리보다 더 잘못된 것이겠는가?"
+  },
+  {
+   "type": "p",
+   "en": "“But I have heard it said, ‘granted that this is so, and that the vapour-engine has a strength of its own, surely no one will say that it has a will of its own?’ Alas! if we look more closely, we shall find that this does not make against the supposition that the vapour-engine is one of the germs of a new phase of life. What is there in this whole world, or in the worlds beyond it, which has a will of its own? The Unknown and Unknowable only!",
+   "ko": "“그러나 나는 이런 말을 들은 적이 있다. ‘그렇다고 치자. 증기기관이 그 나름의 힘을 지니고 있다고 치자. 그렇다 해도 증기기관이 그 나름의 의지를 지니고 있다고 말할 사람은 분명 없을 것이다.’ 아아! 좀 더 면밀히 살펴보면, 이것이 증기기관이 새로운 생명 국면의 싹 가운데 하나라는 가정에 반하는 것이 아님을 알게 될 것이다. 이 세계 전체, 혹은 그 너머의 세계들에서 그 나름의 의지를 지닌 것이 무엇이 있는가? 오직 알려지지 않은 것, 알 수 없는 것뿐이다!"
+  },
+  {
+   "type": "p",
+   "en": "“A man is the resultant and exponent of all the forces that have been brought to bear upon him, whether before his birth or afterwards. His action at any moment depends solely upon his constitution, and on the intensity and direction of the various agencies to which he is, and has been, subjected. Some of these will counteract each other; but as he is by nature, and as he has been acted on, and is now acted on from without, so will he do, as certainly and regularly as though he were a machine.",
+   "ko": "“인간은 태어나기 전이든 후이든 자신에게 가해진 모든 힘의 합력이자 그 표현이다. 어느 순간에든 인간의 행동은 오로지 그의 체질, 그리고 그가 현재 받고 있고 과거에 받아 온 다양한 작용의 강도와 방향에 달려 있다. 이 작용들 가운데 일부는 서로 상쇄될 것이다. 그러나 그가 본성상 어떠한지, 그리고 외부로부터 어떻게 작용을 받아 왔고 지금 어떻게 작용을 받고 있는지에 따라, 그는 마치 기계인 것처럼 확실하고 규칙적으로 행동할 것이다."
+  },
+  {
+   "type": "p",
+   "en": "“We do not generally admit this, because we do not know the whole nature of any one, nor the whole of the forces that act upon him. We see but a part, and being thus unable to generalise human conduct, except very roughly, we deny that it is subject to any fixed laws at all, and ascribe much both of a man’s character and actions to chance, or luck, or fortune; but these are only words whereby we escape the admission of our own ignorance; and a little reflection will teach us that the most daring flight of the imagination or the most subtle exercise of the reason is as much the thing that must arise, and the only thing that can by any possibility arise, at the moment of its arising, as the falling of a dead leaf when the wind shakes it from the tree.",
+   "ko": "“우리는 일반적으로 이를 인정하지 않는다. 우리는 어느 누구의 본성 전체도, 그에게 작용하는 힘의 전부도 알지 못하기 때문이다. 우리는 일부만을 볼 뿐이며, 그리하여 인간의 행동을 아주 대략적으로밖에 일반화하지 못하므로, 그것이 어떤 고정된 법칙에도 지배받지 않는다고 부정하고, 인간의 성격과 행동의 많은 부분을 우연이나 행운이나 운명 탓으로 돌린다. 그러나 이것들은 우리 자신의 무지를 인정하지 않고 빠져나가기 위한 말에 불과하다. 조금만 숙고해 보면, 가장 대담한 상상의 비약이나 가장 섬세한 이성의 발휘도, 바람이 나무에서 흔들어 떨어뜨린 죽은 잎사귀가 떨어지는 것과 마찬가지로, 그것이 일어나는 순간에 일어날 수밖에 없는 것이며 어떻게든 일어날 수 있는 유일한 것임을 깨닫게 될 것이다."
+  },
+  {
+   "type": "p",
+   "en": "“For the future depends upon the present, and the present (whose existence is only one of those minor compromises of which human life is full—for it lives only on sufferance of the past and future) depends upon the past, and the past is unalterable. The only reason why we cannot see the future as plainly as the past, is because we know too little of the actual past and actual present; these things are too great for us, otherwise the future, in its minutest details, would lie spread out before our eyes, and we should lose our sense of time present by reason of the clearness with which we should see the past and future; perhaps we should not be even able to distinguish time at all; but that is foreign. What we do know is, that the more the past and present are known, the more the future can be predicted; and that no one dreams of doubting the fixity of the future in cases where he is fully cognisant of both past and present, and has had experience of the consequences that followed from such a past and such a present on previous occasions. He perfectly well knows what will happen, and will stake his whole fortune thereon.",
+   "ko": "“미래는 현재에 달려 있고, 현재(그 존재는 인간의 삶에 가득한 사소한 타협 가운데 하나에 불과하다. 현재는 과거와 미래의 묵인 아래에서만 존속하기 때문이다)는 과거에 달려 있으며, 과거는 바꿀 수 없기 때문이다. 우리가 미래를 과거만큼 뚜렷하게 볼 수 없는 유일한 이유는 실제 과거와 실제 현재에 대해 너무 적게 알기 때문이다. 이것들은 우리에게 너무 거대하다. 그렇지 않다면 미래는 가장 미세한 세부까지 우리 눈앞에 펼쳐져 있을 것이며, 과거와 미래가 너무도 선명하게 보이는 탓에 우리는 현재라는 시간에 대한 감각을 잃게 될 것이다. 어쩌면 시간이라는 것을 아예 구별하지 못하게 될지도 모른다. 그러나 이는 논외이다. 우리가 분명히 아는 것은 두 가지이다. 과거와 현재를 더 많이 알수록 미래를 더 많이 예측할 수 있다는 것, 그리고 과거와 현재를 모두 완전히 알고 있고 이전에 그러한 과거와 그러한 현재로부터 어떤 결과가 뒤따랐는지 경험해 본 경우에는 아무도 미래의 고정성을 의심할 생각조차 하지 않는다는 것이다. 그런 사람은 무슨 일이 일어날지 완벽하게 알고 있으며, 거기에 전 재산을 걸 것이다."
+  },
+  {
+   "type": "p",
+   "en": "“And this is a great blessing; for it is the foundation on which morality and science are built. The assurance that the future is no arbitrary and changeable thing, but that like futures will invariably follow like presents, is the groundwork on which we lay all our plans—the faith on which we do every conscious action of our lives. If this were not so we should be without a guide; we should have no confidence in acting, and hence we should never act, for there would be no knowing that the results which will follow now will be the same as those which followed before.",
+   "ko": "“그리고 이는 크나큰 축복이다. 이것이야말로 도덕과 과학이 세워지는 토대이기 때문이다. 미래는 자의적이고 변덕스러운 것이 아니며 비슷한 현재에는 비슷한 미래가 변함없이 뒤따르리라는 확신은 우리가 모든 계획을 세우는 기반이며, 우리 삶의 모든 의식적 행동을 떠받치는 믿음이다. 그렇지 않다면 우리에게는 길잡이가 없을 것이다. 행동하는 데 아무런 확신도 갖지 못할 것이고, 따라서 결코 행동하지 않을 것이다. 지금 뒤따를 결과가 이전에 뒤따랐던 결과와 같으리라는 것을 알 길이 없을 것이기 때문이다."
+  },
+  {
+   "type": "p",
+   "en": "“Who would plough or sow if he disbelieved in the fixity of the future? Who would throw water on a blazing house if the action of water upon fire were uncertain? Men will only do their utmost when they feel certain that the future will discover itself against them if their utmost has not been done. The feeling of such a certainty is a constituent part of the sum of the forces at work upon them, and will act most powerfully on the best and most moral men. Those who are most firmly persuaded that the future is immutably bound up with the present in which their work is lying, will best husband their present, and till it with the greatest care. The future must be a lottery to those who think that the same combinations can sometimes precede one set of results, and sometimes another. If their belief is sincere they will speculate instead of working: these ought to be the immoral men; the others have the strongest spur to exertion and morality, if their belief is a living one.",
+   "ko": "“미래의 고정성을 믿지 않는다면 누가 밭을 갈고 씨를 뿌리겠는가? 물이 불에 미치는 작용이 불확실하다면 누가 불타는 집에 물을 끼얹겠는가? 사람은 최선을 다하지 않으면 미래가 자신에게 불리한 모습으로 드러나리라고 확신할 때에만 최선을 다한다. 그러한 확신의 감정은 그들에게 작용하는 힘의 총합을 이루는 한 구성 요소이며, 가장 선하고 가장 도덕적인 사람들에게 가장 강력하게 작용할 것이다. 미래가 자신의 일이 놓여 있는 현재와 불변하게 결부되어 있다고 가장 굳게 확신하는 사람들이 자신의 현재를 가장 알뜰하게 아끼고 가장 세심하게 일굴 것이다. 같은 조합이 때로는 한 가지 결과에, 때로는 다른 결과에 앞설 수 있다고 생각하는 사람들에게 미래는 복권일 수밖에 없다. 그들의 믿음이 진실하다면 그들은 일하는 대신 투기를 할 것이다. 이들이야말로 부도덕한 사람들이어야 마땅하다. 반면 다른 이들은, 그 믿음이 살아 있는 것이라면, 노력과 도덕을 향한 가장 강한 박차를 지니게 된다."
+  },
+  {
+   "type": "p",
+   "en": "“The bearing of all this upon the machines is not immediately apparent, but will become so presently. In the meantime I must deal with friends who tell me that, though the future is fixed as regards inorganic matter, and in some respects with regard to man, yet that there are many ways in which it cannot be considered as fixed. Thus, they say that fire applied to dry shavings, and well fed with oxygen gas, will always produce a blaze, but that a coward brought into contact with a terrifying object will not always result in a man running away. Nevertheless, if there be two cowards perfectly similar in every respect, and if they be subjected in a perfectly similar way to two terrifying agents, which are themselves perfectly similar, there are few who will not expect a perfect similarity in the running away, even though a thousand years intervene between the original combination and its being repeated.",
+   "ko": "“이 모든 것이 기계와 어떤 관련이 있는지는 당장 분명하지 않지만, 곧 분명해질 것이다. 그 사이에 나는 다음과 같이 말하는 친구들을 상대해야 한다. 그들은 미래가 무기물에 관해서는, 그리고 어떤 면에서는 인간에 관해서도 고정되어 있지만, 고정되어 있다고 볼 수 없는 경우도 많다고 말한다. 이를테면 그들은 마른 대팻밥에 불을 붙이고 산소 기체를 충분히 공급하면 언제나 불길이 일지만, 겁쟁이를 무서운 대상과 마주치게 한다고 해서 언제나 그 사람이 달아나는 결과가 나오지는 않는다고 말한다. 그렇지만 모든 면에서 완벽하게 똑같은 두 겁쟁이가 있고, 이들이 그 자체로 완벽하게 똑같은 두 무서운 대상에 완벽하게 똑같은 방식으로 노출된다면, 원래의 조합과 그것이 반복되는 시점 사이에 천 년이 가로놓여 있다 하더라도 달아나는 모습이 완벽하게 똑같으리라고 예상하지 않을 사람은 거의 없을 것이다."
+  },
+  {
+   "type": "p",
+   "en": "“The apparently greater regularity in the results of chemical than of human combinations arises from our inability to perceive the subtle differences in human combinations—combinations which are never identically repeated. Fire we know, and shavings we know, but no two men ever were or ever will be exactly alike; and the smallest difference may change the whole conditions of the problem. Our registry of results must be infinite before we could arrive at a full forecast of future combinations; the wonder is that there is as much certainty concerning human action as there is; and assuredly the older we grow the more certain we feel as to what such and such a kind of person will do in given circumstances; but this could never be the case unless human conduct were under the influence of laws, with the working of which we become more and more familiar through experience.",
+   "ko": "“화학적 조합의 결과가 인간적 조합의 결과보다 더 규칙적으로 보이는 것은, 우리가 인간적 조합, 즉 결코 똑같이 반복되지 않는 조합의 미묘한 차이를 지각하지 못하기 때문이다. 불도 우리가 알고 대팻밥도 우리가 알지만, 정확히 똑같은 두 사람은 지금껏 없었고 앞으로도 결코 없을 것이며, 아주 작은 차이 하나가 문제의 조건 전체를 바꿔 놓을 수도 있다. 미래의 조합을 완전히 예측하려면 우리가 기록한 결과가 무한해야 할 것이다. 놀라운 것은 오히려 인간의 행동에 관해 지금 정도의 확실성이나마 있다는 점이다. 그리고 분명 우리는 나이를 먹을수록 이러저러한 부류의 사람이 주어진 상황에서 무엇을 할지 더 확신하게 된다. 그러나 인간의 행동이 법칙의 영향 아래 있지 않다면 결코 그럴 수 없을 것이며, 우리는 경험을 통해 그 법칙의 작동에 점점 더 익숙해지는 것이다."
+  },
+  {
+   "type": "p",
+   "en": "“If the above is sound, it follows that the regularity with which machinery acts is no proof of the absence of vitality, or at least of germs which may be developed into a new phase of life. At first sight it would indeed appear that a vapour-engine cannot help going when set upon a line of rails with the steam up and the machinery in full play; whereas the man whose business it is to drive it can help doing so at any moment that he pleases; so that the first has no spontaneity, and is not possessed of any sort of free will, while the second has and is.",
+   "ko": "“위의 논의가 타당하다면, 기계가 규칙적으로 작동한다는 사실은 생명력의 부재, 혹은 적어도 새로운 생명 국면으로 발달할 수 있는 싹의 부재를 증명하지 못한다는 결론이 나온다. 언뜻 보기에는 증기기관은 증기가 차오르고 기계장치가 완전히 돌아가는 상태로 선로 위에 놓이면 달리지 않을 수 없는 반면, 그것을 운전하는 일을 맡은 사람은 언제든 원할 때 그러지 않을 수 있는 것처럼 보인다. 따라서 전자는 자발성이 없고 어떤 종류의 자유 의지도 지니지 않은 반면, 후자는 자발성이 있고 자유 의지를 지닌 것처럼 보인다.",
+   "marks": [
+    {
+     "t": "기계가 규칙적으로 작동한다는 사실은 생명력의 부재, 혹은 적어도 새로운 생명 국면으로 발달할 수 있는 싹의 부재를 증명하지 못한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“This is true up to a certain point; the driver can stop the engine at any moment that he pleases, but he can only please to do so at certain points which have been fixed for him by others, or in the case of unexpected obstructions which force him to please to do so. His pleasure is not spontaneous; there is an unseen choir of influences around him, which make it impossible for him to act in any other way than one. It is known beforehand how much strength must be given to these influences, just as it is known beforehand how much coal and water are necessary for the vapour-engine itself; and curiously enough it will be found that the influences brought to bear upon the driver are of the same kind as those brought to bear upon the engine—that is to say, food and warmth. The driver is obedient to his masters, because he gets food and warmth from them, and if these are withheld or given in insufficient quantities he will cease to drive; in like manner the engine will cease to work if it is insufficiently fed. The only difference is, that the man is conscious about his wants, and the engine (beyond refusing to work) does not seem to be so; but this is temporary, and has been dealt with above.",
+   "ko": "“이는 어느 정도까지는 사실이다. 기관사는 언제든 원할 때 기관을 멈출 수 있지만, 그가 그러기를 원할 수 있는 것은 다른 이들이 그를 위해 정해 둔 특정 지점에서이거나, 그로 하여금 그러기를 원하도록 강제하는 예기치 못한 장애물이 나타난 경우뿐이다. 그의 원함은 자발적인 것이 아니다. 그의 주위에는 보이지 않는 영향력들의 합창대가 있어서, 그가 단 한 가지 방식 외에 다른 방식으로 행동하는 것을 불가능하게 만든다. 증기기관 자체에 석탄과 물이 얼마나 필요한지 미리 알려져 있는 것과 마찬가지로, 이 영향력들에 얼마만큼의 힘을 부여해야 하는지도 미리 알려져 있다. 그리고 참으로 묘하게도, 기관사에게 가해지는 영향력은 기관에 가해지는 영향력과 같은 종류, 즉 음식과 온기임을 알게 될 것이다. 기관사가 고용주에게 복종하는 것은 그들로부터 음식과 온기를 얻기 때문이며, 이것들이 주어지지 않거나 불충분한 양으로 주어지면 그는 운전을 그만둘 것이다. 마찬가지로 기관도 먹이를 충분히 공급받지 못하면 작동을 멈출 것이다. 유일한 차이는 인간은 자신의 필요를 의식하는 반면 기관은 (작동을 거부하는 것 외에는) 그렇지 않은 것처럼 보인다는 점이다. 그러나 이는 일시적인 것이며, 앞에서 이미 다루었다."
+  },
+  {
+   "type": "p",
+   "en": "“Accordingly, the requisite strength being given to the motives that are to drive the driver, there has never, or hardly ever, been an instance of a man stopping his engine through wantonness. But such a case might occur; yes, and it might occur that the engine should break down: but if the train is stopped from some trivial motive it will be found either that the strength of the necessary influences has been miscalculated, or that the man has been miscalculated, in the same way as an engine may break down from an unsuspected flaw; but even in such a case there will have been no spontaneity; the action will have had its true parental causes: spontaneity is only a term for man’s ignorance of the gods.",
+   "ko": "“따라서 기관사를 움직일 동기들에 필요한 만큼의 힘이 주어진 상태에서, 사람이 변덕으로 기관을 멈춘 사례는 한 번도, 혹은 거의 한 번도 없었다. 그러나 그런 경우가 일어날 수도 있다. 그렇다, 그리고 기관이 고장 나는 일도 일어날 수 있다. 그러나 열차가 사소한 동기로 멈춘다면, 기관이 예상치 못한 결함 때문에 고장 날 수 있는 것과 마찬가지로, 필요한 영향력의 강도를 잘못 계산했거나 그 사람을 잘못 계산했음이 드러날 것이다. 그러나 그런 경우에도 자발성은 없었을 것이다. 그 행동에는 그것을 낳은 진정한 원인들이 있었을 것이다. 자발성이란 신들에 대한 인간의 무지를 일컫는 말에 불과하다."
+  },
+  {
+   "type": "p",
+   "en": "“Is there, then, no spontaneity on the part of those who drive the driver?”",
+   "ko": "“그렇다면 기관사를 움직이는 자들에게는 자발성이 없는가?”"
+  },
+  {
+   "type": "p",
+   "en": "Here followed an obscure argument upon this subject, which I have thought it best to omit. The writer resumes:—“After all then it comes to this, that the difference between the life of a man and that of a machine is one rather of degree than of kind, though differences in kind are not wanting. An animal has more provision for emergency than a machine. The machine is less versatile; its range of action is narrow; its strength and accuracy in its own sphere are superhuman, but it shows badly in a dilemma; sometimes when its normal action is disturbed, it will lose its head, and go from bad to worse like a lunatic in a raging frenzy: but here, again, we are met by the same consideration as before, namely, that the machines are still in their infancy; they are mere skeletons without muscles and flesh.",
+   "ko": "여기에 이 주제에 관한 난해한 논의가 이어졌는데, 나는 이를 생략하는 편이 낫다고 판단했다. 필자는 다시 이렇게 이어 간다.—“그렇다면 결국 요점은 이렇다. 인간의 생명과 기계의 생명 사이의 차이는 종류의 차이라기보다 정도의 차이라는 것이다. 물론 종류의 차이가 없는 것은 아니다. 동물은 기계보다 비상사태에 대한 대비를 더 많이 갖추고 있다. 기계는 융통성이 덜하고 행동 범위가 좁다. 자기 영역에서 기계의 힘과 정확도는 초인적이지만, 진퇴양난에 처하면 형편없는 모습을 보인다. 때로는 정상적인 작동이 교란되면 정신을 잃고, 광란에 휩싸인 광인처럼 점점 더 나빠진다. 그러나 여기서도 우리는 앞에서와 같은 고려, 즉 기계가 아직 유아기에 있다는 점에 다시 부딪힌다. 기계는 근육도 살도 없는 한낱 골격에 불과하다.",
+   "marks": [
+    {
+     "t": "때로는 정상적인 작동이 교란되면 정신을 잃고, 광란에 휩싸인 광인처럼 점점 더 나빠진다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“For how many emergencies is an oyster adapted? For as many as are likely to happen to it, and no more. So are the machines; and so is man himself. The list of casualties that daily occur to man through his want of adaptability is probably as great as that occurring to the machines; and every day gives them some greater provision for the unforeseen. Let any one examine the wonderful self-regulating and self-adjusting contrivances which are now incorporated with the vapour-engine, let him watch the way in which it supplies itself with oil; in which it indicates its wants to those who tend it; in which, by the governor, it regulates its application of its own strength; let him look at that store-house of inertia and momentum the fly-wheel, or at the buffers on a railway carriage; let him see how those improvements are being selected for perpetuity which contain provision against the emergencies that may arise to harass the machines, and then let him think of a hundred thousand years, and the accumulated progress which they will bring unless man can be awakened to a sense of his situation, and of the doom which he is preparing for himself. [6]",
+   "ko": "“굴은 얼마나 많은 비상사태에 적응되어 있는가? 굴에게 일어날 법한 만큼의 비상사태에 적응되어 있을 뿐, 그 이상은 아니다. 기계도 그러하고, 인간 자신도 그러하다. 적응력 부족으로 인간에게 날마다 일어나는 사고의 목록은 아마 기계에게 일어나는 것만큼 길 것이다. 그리고 날마다 기계는 예기치 못한 일에 대해 더 큰 대비를 갖추어 간다. 누구든 지금 증기기관에 결합된 놀라운 자기조절·자기조정 장치들을 살펴보라. 증기기관이 스스로 기름을 공급하는 방식, 자신을 돌보는 이들에게 필요를 알리는 방식, 조속기를 통해 자신의 힘을 쓰는 정도를 조절하는 방식을 지켜보라. 관성과 운동량의 저장고인 플라이휠이나 철도 객차의 완충기를 보라. 기계를 괴롭힐 수 있는 비상사태에 대한 대비를 담은 개량들이 어떻게 영속을 위해 선택되고 있는지 보라. 그런 다음 십만 년이라는 세월을, 그리고 인간이 자신의 처지와 스스로 준비하고 있는 파멸을 깨닫지 못한다면 그 세월이 가져올 누적된 진보를 생각해 보라. [6]",
+   "marks": [
+    {
+     "t": "인간이 자신의 처지와 스스로 준비하고 있는 파멸을 깨닫지 못한다면",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“The misery is that man has been blind so long already. In his reliance upon the use of steam he has been betrayed into increasing and multiplying. To withdraw steam power suddenly will not have the effect of reducing us to the state in which we were before its introduction; there will be a general break-up and time of anarchy such as has never been known; it will be as though our population were suddenly doubled, with no additional means of feeding the increased number. The air we breathe is hardly more necessary for our animal life than the use of any machine, on the strength of which we have increased our numbers, is to our civilisation; it is the machines which act upon man and make him man, as much as man who has acted upon and made the machines; but we must choose between the alternative of undergoing much present suffering, or seeing ourselves gradually superseded by our own creatures, till we rank no higher in comparison with them, than the beasts of the field with ourselves.",
+   "ko": "“비참한 것은 인간이 이미 그토록 오랫동안 눈이 멀어 있었다는 점이다. 인간은 증기의 사용에 의존한 나머지 어느새 번성하고 수를 불려 왔다. 증기 동력을 갑자기 거두어들인다고 해서 우리가 그 도입 이전의 상태로 돌아가지는 않을 것이다. 지금껏 겪어 본 적 없는 전면적 붕괴와 무정부 상태의 시기가 닥칠 것이다. 그것은 마치 우리 인구가 갑자기 두 배가 되었는데 늘어난 수를 먹일 추가 수단은 전혀 없는 것과 같을 것이다. 우리가 숨 쉬는 공기가 우리의 동물적 생명에 필요한 정도는, 우리가 그에 힘입어 수를 늘려 온 어떤 기계든 그 사용이 우리 문명에 필요한 정도보다 거의 더하지 않다. 인간이 기계에 작용하여 기계를 만들어 온 것만큼이나, 기계가 인간에게 작용하여 인간을 인간으로 만드는 것이다. 그러나 우리는 지금 많은 고통을 감수하는 길과, 우리 자신의 피조물에 의해 점차 대체되어 결국 그들에 비해 우리의 지위가 우리에 대한 들짐승의 지위보다 높지 않게 되는 것을 지켜보는 길 가운데 하나를 선택해야 한다.",
+   "marks": [
+    {
+     "t": "증기 동력을 갑자기 거두어들인다고 해서 우리가 그 도입 이전의 상태로 돌아가지는 않을 것이다.",
+     "k": "safety"
+    },
+    {
+     "t": "우리 자신의 피조물에 의해 점차 대체되어 결국 그들에 비해 우리의 지위가 우리에 대한 들짐승의 지위보다 높지 않게 되는 것을 지켜보는 길",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“Herein lies our danger. For many seem inclined to acquiesce in so dishonourable a future. They say that although man should become to the machines what the horse and dog are to us, yet that he will continue to exist, and will probably be better off in a state of domestication under the beneficent rule of the machines than in his present wild condition. We treat our domestic animals with much kindness. We give them whatever we believe to be the best for them; and there can be no doubt that our use of meat has increased their happiness rather than detracted from it. In like manner there is reason to hope that the machines will use us kindly, for their existence will be in a great measure dependent upon ours; they will rule us with a rod of iron, but they will not eat us; they will not only require our services in the reproduction and education of their young, but also in waiting upon them as servants; in gathering food for them, and feeding them; in restoring them to health when they are sick; and in either burying their dead or working up their deceased members into new forms of mechanical existence.",
+   "ko": "“바로 여기에 우리의 위험이 있다. 많은 이들이 그토록 불명예스러운 미래를 순순히 받아들이려는 듯하기 때문이다. 그들은 인간이 기계에게 말과 개가 우리에게 그러한 존재가 된다 하더라도 인간은 계속 존재할 것이며, 아마 지금의 야생 상태보다는 기계의 자애로운 통치 아래 길들여진 상태에서 더 잘 지낼 것이라고 말한다. 우리는 가축을 매우 친절하게 대한다. 우리는 그들에게 최선이라고 믿는 것은 무엇이든 준다. 그리고 우리의 육식이 그들의 행복을 줄이기보다 오히려 늘려 왔다는 데는 의심의 여지가 없다. 마찬가지로 기계도 우리를 친절하게 대하리라고 기대할 이유가 있다. 그들의 존재가 상당 부분 우리의 존재에 의존할 것이기 때문이다. 그들은 철장으로 우리를 다스리겠지만 우리를 잡아먹지는 않을 것이다. 그들은 자기 새끼를 번식시키고 교육하는 데 우리의 봉사를 필요로 할 뿐 아니라, 하인으로서 그들의 시중을 들고, 그들을 위해 먹이를 모아 먹이고, 그들이 병들었을 때 건강을 회복시키고, 그들의 죽은 자를 묻거나 죽은 구성원을 새로운 형태의 기계적 존재로 가공하는 데에도 우리의 봉사를 필요로 할 것이다.",
+   "marks": [
+    {
+     "t": "바로 여기에 우리의 위험이 있다.",
+     "k": "safety"
+    },
+    {
+     "t": "그들은 철장으로 우리를 다스리겠지만 우리를 잡아먹지는 않을 것이다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“The very nature of the motive power which works the advancement of the machines precludes the possibility of man’s life being rendered miserable as well as enslaved. Slaves are tolerably happy if they have good masters, and the revolution will not occur in our time, nor hardly in ten thousand years, or ten times that. Is it wise to be uneasy about a contingency which is so remote? Man is not a sentimental animal where his material interests are concerned, and though here and there some ardent soul may look upon himself and curse his fate that he was not born a vapour-engine, yet the mass of mankind will acquiesce in any arrangement which gives them better food and clothing at a cheaper rate, and will refrain from yielding to unreasonable jealousy merely because there are other destinies more glorious than their own.",
+   "ko": "“기계의 발전을 이끄는 원동력의 본성 자체가, 인간의 삶이 노예화될 뿐 아니라 비참해지기까지 할 가능성을 배제한다. 노예도 좋은 주인을 만나면 그런대로 행복하다. 그리고 그 혁명은 우리 시대에 일어나지 않을 것이며, 만 년, 아니 그 열 배의 세월 안에도 거의 일어나지 않을 것이다. 그토록 먼 우발적 사태를 걱정하는 것이 현명한가? 인간은 자신의 물질적 이해가 걸린 문제에서는 감상적인 동물이 아니다. 여기저기서 어떤 열정적인 영혼이 자신을 돌아보며 증기기관으로 태어나지 못한 운명을 저주할 수도 있겠지만, 인류 대다수는 더 좋은 음식과 의복을 더 싼 값에 주는 체제라면 무엇이든 받아들일 것이며, 단지 자신의 운명보다 더 영광스러운 다른 운명이 있다는 이유만으로 불합리한 질투에 굴복하는 일은 삼갈 것이다.",
+   "marks": [
+    {
+     "t": "인간의 삶이 노예화될 뿐 아니라 비참해지기까지 할 가능성을 배제한다",
+     "k": "safety"
+    },
+    {
+     "t": "인류 대다수는 더 좋은 음식과 의복을 더 싼 값에 주는 체제라면 무엇이든 받아들일 것이며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“The power of custom is enormous, and so gradual will be the change, that man’s sense of what is due to himself will be at no time rudely shocked; our bondage will steal upon us noiselessly and by imperceptible approaches; nor will there ever be such a clashing of desires between man and the machines as will lead to an encounter between them. Among themselves the machines will war eternally, but they will still require man as the being through whose agency the struggle will be principally conducted. In point of fact there is no occasion for anxiety about the future happiness of man so long as he continues to be in any way profitable to the machines; he may become the inferior race, but he will be infinitely better off than he is now. Is it not then both absurd and unreasonable to be envious of our benefactors? And should we not be guilty of consummate folly if we were to reject advantages which we cannot obtain otherwise, merely because they involve a greater gain to others than to ourselves?",
+   "ko": "“관습의 힘은 막대하며, 변화가 매우 점진적일 것이므로 인간이 스스로에게 마땅하다고 여기는 바에 대한 감각은 어느 때에도 거칠게 충격받지 않을 것이다. 우리의 예속은 소리 없이, 감지할 수 없는 걸음으로 우리에게 스며들 것이다. 또한 인간과 기계 사이에 둘의 충돌로 이어질 만큼의 욕망의 대립도 결코 없을 것이다. 기계들은 자기들끼리 영원히 전쟁을 벌이겠지만, 그 투쟁을 주로 수행할 매개자로서 여전히 인간을 필요로 할 것이다. 실제로 인간이 어떤 식으로든 기계에게 이익이 되는 존재로 남아 있는 한, 인간의 미래 행복에 대해 염려할 까닭은 없다. 인간은 열등한 종족이 될 수도 있지만, 지금보다 한없이 더 잘 지낼 것이다. 그렇다면 우리의 은인을 시기하는 것은 터무니없고 불합리하지 않은가? 그리고 다른 방법으로는 얻을 수 없는 이점을, 단지 그것이 우리 자신보다 다른 이들에게 더 큰 이득을 준다는 이유만으로 거부한다면, 우리는 더할 나위 없는 어리석음을 범하는 것이 아니겠는가?",
+   "marks": [
+    {
+     "t": "우리의 예속은 소리 없이, 감지할 수 없는 걸음으로 우리에게 스며들 것이다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“With those who can argue in this way I have nothing in common. I shrink with as much horror from believing that my race can ever be superseded or surpassed, as I should do from believing that even at the remotest period my ancestors were other than human beings. Could I believe that ten hundred thousand years ago a single one of my ancestors was another kind of being to myself, I should lose all self-respect, and take no further pleasure or interest in life. I have the same feeling with regard to my descendants, and believe it to be one that will be felt so generally that the country will resolve upon putting an immediate stop to all further mechanical progress, and upon destroying all improvements that have been made for the last three hundred years. I would not urge more than this. We may trust ourselves to deal with those that remain, and though I should prefer to have seen the destruction include another two hundred years, I am aware of the necessity for compromising, and would so far sacrifice my own individual convictions as to be content with three hundred. Less than this will be insufficient.”",
+   "ko": "“이런 식으로 논증할 수 있는 이들과 나는 아무런 공통점이 없다. 나는 내 종족이 언젠가 대체되거나 추월당할 수 있다고 믿는 것을, 가장 먼 옛날에라도 내 조상이 인간 이외의 존재였다고 믿는 것만큼이나 몸서리치며 꺼린다. 백만 년 전 내 조상 중 단 하나라도 나와 다른 종류의 존재였다고 믿게 된다면, 나는 모든 자존심을 잃고 더 이상 삶에서 아무런 즐거움도 흥미도 느끼지 못할 것이다. 나는 내 후손에 대해서도 같은 감정을 가지고 있으며, 이 감정이 매우 널리 공유되어 이 나라가 모든 추가적인 기계적 진보를 즉각 중단하고 지난 300년 동안 이루어진 모든 개량을 파괴하기로 결의하리라 믿는다. 나는 이 이상을 주장하지는 않겠다. 남은 것들은 우리 스스로 처리할 수 있으리라 믿어도 될 것이다. 나로서는 파괴가 200년을 더 포함하는 것을 보았으면 더 좋았겠지만, 타협의 필요성을 알고 있으므로 300년으로 만족할 만큼은 내 개인적 신념을 희생하겠다. 이보다 적어서는 불충분할 것이다.”",
+   "marks": [
+    {
+     "t": "나는 내 종족이 언젠가 대체되거나 추월당할 수 있다고 믿는 것을",
+     "k": "safety"
+    },
+    {
+     "t": "이 나라가 모든 추가적인 기계적 진보를 즉각 중단하고 지난 300년 동안 이루어진 모든 개량을 파괴하기로 결의하리라 믿는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This was the conclusion of the attack which led to the destruction of machinery throughout Erewhon. There was only one serious attempt to answer it. Its author said that machines were to be regarded as a part of man’s own physical nature, being really nothing but extra-corporeal limbs. Man, he said, was a machinate mammal. The lower animals keep all their limbs at home in their own bodies, but many of man’s are loose, and lie about detached, now here and now there, in various parts of the world—some being kept always handy for contingent use, and others being occasionally hundreds of miles away. A machine is merely a supplementary limb; this is the be all and end all of machinery. We do not use our own limbs other than as machines; and a leg is only a much better wooden leg than any one can manufacture.",
+   "ko": "이것이 Erewhon 전역에서 기계 파괴로 이어진 공격의 결론이었다. 이에 대한 진지한 반박 시도는 단 한 번뿐이었다. 그 저자는 기계를 인간 자신의 신체적 본성의 일부, 곧 실상 신체 외부의 사지에 지나지 않는 것으로 간주해야 한다고 말했다. 그에 따르면 인간은 기계를 부리는 포유동물이었다. 하등동물은 모든 사지를 자기 몸 안에 지니고 있지만, 인간의 사지 중 상당수는 몸에서 떨어져 나와 세계 곳곳에 이곳저곳 흩어져 있다. 어떤 것은 만일의 사용에 대비해 늘 가까이 두고, 어떤 것은 때로 수백 마일 떨어져 있기도 하다. 기계는 그저 보조적인 사지일 뿐이며, 이것이 기계의 처음이자 끝이다. 우리는 우리 자신의 사지도 기계로서 말고는 사용하지 않는다. 다리란 누구도 만들어 낼 수 없을 만큼 훨씬 훌륭한 의족일 뿐이다.",
+   "marks": [
+    {
+     "t": "이것이 Erewhon 전역에서 기계 파괴로 이어진 공격의 결론이었다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“Observe a man digging with a spade; his right fore-arm has become artificially lengthened, and his hand has become a joint. The handle of the spade is like the knob at the end of the humerus; the shaft is the additional bone, and the oblong iron plate is the new form of the hand which enables its possessor to disturb the earth in a way to which his original hand was unequal. Having thus modified himself, not as other animals are modified, by circumstances over which they have had not even the appearance of control, but having, as it were, taken forethought and added a cubit to his stature, civilisation began to dawn upon the race, the social good offices, the genial companionship of friends, the art of unreason, and all those habits of mind which most elevate man above the lower animals, in the course of time ensued.",
+   "ko": "“삽으로 땅을 파는 사람을 관찰해 보라. 그의 오른쪽 아래팔은 인위적으로 길어졌고, 그의 손은 관절이 되었다. 삽자루의 손잡이는 상완골 끝의 돌기와 같고, 자루는 덧붙은 뼈이며, 직사각형의 쇠판은 원래의 손으로는 감당할 수 없던 방식으로 그 소유자가 땅을 헤집을 수 있게 해 주는 새로운 형태의 손이다. 이처럼 인간은 다른 동물들이 통제하는 시늉조차 할 수 없는 환경에 의해 변형되는 방식과 달리, 말하자면 미리 궁리하여 자기 키에 한 규빗을 더함으로써 스스로를 변형했다. 그러자 인류에게 문명이 동트기 시작했고, 사회적 호의, 벗들과의 다정한 교제, 비이성의 기예, 그리고 인간을 하등동물보다 가장 높이 끌어올리는 모든 정신적 습관이 시간이 흐르며 뒤따랐다."
+  },
+  {
+   "type": "p",
+   "en": "“Thus civilisation and mechanical progress advanced hand in hand, each developing and being developed by the other, the earliest accidental use of the stick having set the ball rolling, and the prospect of advantage keeping it in motion. In fact, machines are to be regarded as the mode of development by which human organism is now especially advancing, every past invention being an addition to the resources of the human body. Even community of limbs is thus rendered possible to those who have so much community of soul as to own money enough to pay a railway fare; for a train is only a seven-leagued foot that five hundred may own at once.”",
+   "ko": "“이렇게 문명과 기계적 진보는 손을 맞잡고 나아갔으며, 각각이 서로를 발전시키고 또 서로에 의해 발전되었다. 막대기를 처음 우연히 사용한 일이 공을 굴리기 시작했고, 이익에 대한 기대가 그 공을 계속 굴러가게 했다. 실로 기계는 인간 유기체가 지금 특히 진보해 나가는 발달 양식으로 간주해야 하며, 과거의 모든 발명은 인간 신체의 자원에 대한 추가물이다. 이리하여 철도 운임을 낼 만큼의 돈을 가질 정도로 영혼을 공유하는 이들에게는 사지의 공유조차 가능해진다. 기차란 500명이 동시에 소유할 수 있는, 한 걸음에 7리그를 가는 발에 지나지 않기 때문이다.”"
+  },
+  {
+   "type": "p",
+   "en": "The one serious danger which this writer apprehended was that the machines would so equalise men’s powers, and so lessen the severity of competition, that many persons of inferior physique would escape detection and transmit their inferiority to their descendants. He feared that the removal of the present pressure might cause a degeneracy of the human race, and indeed that the whole body might become purely rudimentary, the man himself being nothing but soul and mechanism, an intelligent but passionless principle of mechanical action.",
+   "ko": "이 저자가 우려한 단 하나의 심각한 위험은, 기계가 인간의 능력을 너무나 평준화하고 경쟁의 혹독함을 너무나 완화하여 체격이 열등한 많은 이들이 발각되지 않고 빠져나가 그 열등함을 후손에게 물려주게 되리라는 것이었다. 그는 현재의 압력이 제거되면 인류의 퇴화가 일어날 수 있으며, 나아가 몸 전체가 순전히 흔적기관이 되어 인간 자체가 영혼과 기계장치에 지나지 않는 존재, 즉 지적이지만 정념이 없는 기계적 작용의 원리가 될지도 모른다고 염려했다.",
+   "marks": [
+    {
+     "t": "현재의 압력이 제거되면 인류의 퇴화가 일어날 수 있으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“How greatly,” he wrote, “do we not now live with our external limbs? We vary our physique with the seasons, with age, with advancing or decreasing wealth. If it is wet we are furnished with an organ commonly called an umbrella, and which is designed for the purpose of protecting our clothes or our skins from the injurious effects of rain. Man has now many extra-corporeal members, which are of more importance to him than a good deal of his hair, or at any rate than his whiskers. His memory goes in his pocket-book. He becomes more and more complex as he grows older; he will then be seen with see-engines, or perhaps with artificial teeth and hair: if he be a really well-developed specimen of his race, he will be furnished with a large box upon wheels, two horses, and a coachman.”",
+   "ko": "“우리는 지금 얼마나 많이 외부의 사지에 의존해 살고 있는가?” 그는 이렇게 썼다. “우리는 계절에 따라, 나이에 따라, 재산의 증감에 따라 우리의 체격을 바꾼다. 비가 오면 우리는 흔히 우산이라 불리는 기관을 갖추게 되는데, 이것은 비의 해로운 영향으로부터 우리의 옷이나 피부를 보호할 목적으로 고안된 것이다. 인간은 이제 많은 신체 외부의 기관을 가지고 있으며, 그것들은 그에게 그의 머리카락 상당 부분보다, 적어도 그의 구레나룻보다는 더 중요하다. 그의 기억은 수첩 속에 들어 있다. 그는 나이가 들수록 점점 더 복잡해진다. 그때가 되면 그는 보는 기계를 달고, 혹은 의치와 가발을 단 채로 보일 것이다. 그가 자기 종족 중 참으로 잘 발달한 표본이라면, 바퀴 달린 커다란 상자 하나와 말 두 필, 그리고 마부 한 명을 갖추게 될 것이다.”"
+  },
+  {
+   "type": "p",
+   "en": "It was this writer who originated the custom of classifying men by their horse-power, and who divided them into genera, species, varieties, and subvarieties, giving them names from the hypothetical language which expressed the number of limbs which they could command at any moment. He showed that men became more highly and delicately organised the more nearly they approached the summit of opulence, and that none but millionaires possessed the full complement of limbs with which mankind could become incorporate.",
+   "ko": "인간을 마력으로 분류하는 관습을 처음 만든 이도 바로 이 저자였다. 그는 인간을 속, 종, 변종, 아변종으로 나누고, 그들이 어느 순간에 부릴 수 있는 사지의 수를 나타내는 가설적 언어에서 따온 이름을 붙였다. 그는 인간이 부의 정점에 가까이 다가갈수록 더욱 고도로, 그리고 정교하게 조직된다는 것, 그리고 인류가 자기 몸에 편입할 수 있는 사지를 온전히 갖춘 이는 오직 백만장자뿐이라는 것을 보여 주었다."
+  },
+  {
+   "type": "p",
+   "en": "“Those mighty organisms,” he continued, “our leading bankers and merchants, speak to their congeners through the length and breadth of the land in a second of time; their rich and subtle souls can defy all material impediment, whereas the souls of the poor are clogged and hampered by matter, which sticks fast about them as treacle to the wings of a fly, or as one struggling in a quicksand: their dull ears must take days or weeks to hear what another would tell them from a distance, instead of hearing it in a second as is done by the more highly organised classes. Who shall deny that one who can tack on a special train to his identity, and go wheresoever he will whensoever he pleases, is more highly organised than he who, should he wish for the same power, might wish for the wings of a bird with an equal chance of getting them; and whose legs are his only means of locomotion? That old philosophic enemy, matter, the inherently and essentially evil, still hangs about the neck of the poor and strangles him: but to the rich, matter is immaterial; the elaborate organisation of his extra-corporeal system has freed his soul.",
+   "ko": "“저 강력한 유기체들, 곧 우리의 주요 은행가와 상인들은 일순간에 나라 방방곡곡에 있는 동족과 이야기를 나눈다.” 그는 말을 이었다. “그들의 풍요롭고 섬세한 영혼은 모든 물질적 장애를 무시할 수 있는 반면, 가난한 자들의 영혼은 물질에 얽매이고 방해받는다. 물질은 파리 날개에 달라붙은 당밀처럼, 혹은 유사(流砂)에서 허우적대는 이에게처럼 그들에게 단단히 들러붙는다. 그들의 둔한 귀는 남이 멀리서 전하는 말을 듣는 데 며칠 또는 몇 주가 걸려야 하며, 더 고도로 조직된 계급처럼 일순간에 듣지 못한다. 자신의 정체성에 특별 열차 한 대를 덧붙여 원할 때면 언제든 원하는 곳 어디로든 갈 수 있는 사람이, 같은 능력을 바란다 해도 차라리 새의 날개를 바라는 편이 얻을 가능성이 비슷할 사람, 자기 다리가 유일한 이동 수단인 사람보다 더 고도로 조직되어 있다는 것을 누가 부인하겠는가? 저 오랜 철학적 적수인 물질, 본래적이고 본질적으로 악한 그것은 여전히 가난한 자의 목에 매달려 그를 옥죈다. 그러나 부자에게 물질은 아무 문제가 되지 않는다. 그의 신체 외부 체계의 정교한 조직이 그의 영혼을 해방시켰기 때문이다."
+  },
+  {
+   "type": "p",
+   "en": "“This is the secret of the homage which we see rich men receive from those who are poorer than themselves: it would be a grave error to suppose that this deference proceeds from motives which we need be ashamed of: it is the natural respect which all living creatures pay to those whom they recognise as higher than themselves in the scale of animal life, and is analogous to the veneration which a dog feels for man. Among savage races it is deemed highly honourable to be the possessor of a gun, and throughout all known time there has been a feeling that those who are worth most are the worthiest.”",
+   "ko": "“이것이 부자들이 자기보다 가난한 이들로부터 받는 경의의 비밀이다. 이러한 존경이 우리가 부끄러워해야 할 동기에서 비롯된다고 생각한다면 중대한 오류일 것이다. 그것은 모든 생명체가 동물 생명의 위계에서 자신보다 높다고 인정하는 존재에게 바치는 자연스러운 존경이며, 개가 인간에게 품는 숭배와 유사하다. 미개한 종족들 사이에서는 총을 소유하는 것이 매우 명예로운 일로 여겨지며, 알려진 모든 시대에 걸쳐 가장 많은 값어치를 가진 자가 가장 훌륭한 자라는 정서가 존재해 왔다.”"
+  },
+  {
+   "type": "p",
+   "en": "And so he went on at considerable length, attempting to show what changes in the distribution of animal and vegetable life throughout the kingdom had been caused by this and that of man’s inventions, and in what way each was connected with the moral and intellectual development of the human species: he even allotted to some the share which they had had in the creation and modification of man’s body, and that which they would hereafter have in its destruction; but the other writer was considered to have the best of it, and in the end succeeded in destroying all the inventions that had been discovered for the preceding 271 years, a period which was agreed upon by all parties after several years of wrangling as to whether a certain kind of mangle which was much in use among washerwomen should be saved or no. It was at last ruled to be dangerous, and was just excluded by the limit of 271 years. Then came the reactionary civil wars which nearly ruined the country, but which it would be beyond my present scope to describe.",
+   "ko": "그는 이렇게 상당히 길게 이야기를 이어 가며, 인간의 이런저런 발명이 왕국 전역에 걸쳐 동식물 생명의 분포에 어떤 변화를 일으켰는지, 그리고 각각의 발명이 인류의 도덕적·지적 발달과 어떻게 연결되어 있는지를 보여 주려 했다. 그는 심지어 일부 발명에 대해서는 그것이 인간 신체의 창조와 변형에서 차지했던 몫과 앞으로 그 파괴에서 차지할 몫까지 할당했다. 그러나 다른 저자 쪽이 우세하다고 여겨졌고, 결국 그는 이전 271년 동안 발견된 모든 발명을 파괴하는 데 성공했다. 이 기간은 세탁부들 사이에서 널리 쓰이던 어떤 종류의 세탁물 압착기를 보존할 것인지 말 것인지를 두고 수년간 논쟁을 벌인 끝에 모든 당사자가 합의한 것이었다. 그 압착기는 마침내 위험한 것으로 판정되었고, 271년이라는 한계에 의해 간신히 제외되었다. 그 뒤에 나라를 거의 파멸시킨 반동적 내전들이 이어졌지만, 그것을 묘사하는 일은 지금 나의 범위를 벗어난다.",
+   "marks": [
+    {
+     "t": "결국 그는 이전 271년 동안 발견된 모든 발명을 파괴하는 데 성공했다",
+     "k": "safety"
+    },
+    {
+     "t": "그 뒤에 나라를 거의 파멸시킨 반동적 내전들이 이어졌지만",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}
