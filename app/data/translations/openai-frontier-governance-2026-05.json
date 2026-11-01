@@ -7,7 +7,7 @@
  "source_url": "https://cdn.openai.com/pdf/e37d949b-8c9f-4d76-b99e-4272f4631a7e/openai-frontier-governance-framework.pdf",
  "source_note": "2026년 5월 공개본 전문 (22쪽, 표지·목차 제외)",
  "source_label": "원문 보기 (OpenAI PDF)",
- "summary": "OpenAI가 캘리포니아주 프론티어 인공지능 투명성법(TFAIA)과 EU AI법의 범용 AI 실천규범에 맞춰 낸 규제 대응 문서다. 사이버 공격·CBRN·유해한 조작·통제 상실 네 영역의 체계적 위험을 식별·분석하고 수용 여부를 정하는 절차, 위험 등급과 안전 완화, 치명적 안전 사고의 탐지·대응·외부 보고, 보안 위험 관리와 모델 보고서, 외부 전문가 의견 수렴과 프레임워크 변경 절차를 담았다. 이미 번역한 대비태세 프레임워크를 대체하지 않고, 그 접근법 가운데 규제 의무에 걸리는 부분을 따로 정리한 문서다.",
+ "summary": "OpenAI가 캘리포니아주 프론티어 인공지능 투명성법(TFAIA)과 EU AI법의 범용 AI 실천 강령에 맞춰 낸 규제 대응 문서다. 사이버 공격·CBRN·유해한 조작·통제 상실 네 영역의 체계적 위험을 식별·분석하고 수용 여부를 정하는 절차, 위험 등급과 안전 완화, 치명적 안전 사고의 탐지·대응·외부 보고, 보안 위험 관리와 모델 보고서, 외부 전문가 의견 수렴과 프레임워크 변경 절차를 담았다. 이미 번역한 대비태세 프레임워크를 대체하지 않고, 그 접근법 가운데 규제 의무에 걸리는 부분을 따로 정리한 문서다.",
  "image": "/images/translations/openai-frontier-governance-2026-05-cover.webp",
  "og_image": "/images/translations/openai-frontier-governance-2026-05-cover.jpg",
  "image_caption": "원문 첫 쪽 (OpenAI, 2026.5)",

@@ -1,0 +1,1148 @@
+{
+ "slug": "amazon-fmsf-2026-09",
+ "title": "Amazon 프론티어 모델 안전 프레임워크",
+ "original_title": "Amazon's Frontier Model Safety Framework",
+ "publisher": "Amazon",
+ "published": "2026-09-17",
+ "source_url": "https://cdn.amazon.science/a0/4f/bca5cb32495280835d9370a466b7/amazon-fmsf-9-2026.pdf",
+ "source_note": "2026년 9월 개정본 전문 (11쪽, 부속서 포함)",
+ "source_label": "원문 보기 (Amazon PDF)",
+ "summary": "Amazon이 2025년 첫 판을 낸 프론티어 모델 안전 프레임워크의 개정본이다. CBRN 무기 확산, 공격형 사이버 작전, 유해한 조작, 통제 상실 네 가지를 치명적 위험 영역으로 두고 각 영역마다 치명적 역량 임계를 적어 두었다. 자동화 벤치마크와 전문가 레드팀, 향상 연구로 모델이 그 임계에 닿는지 보고, 학습 데이터 검수부터 정렬 학습, 유해 콘텐츠 가드레일, 미세조정 방어, 접근 통제, 사후 모니터링까지 오용·보안·정렬 세 묶음의 완화 조치를 건다. 부속서에는 AWS의 기반 보안 실행 방안을 따로 실었다.",
+ "image": "/images/translations/amazon-fmsf-2026-09-cover.webp",
+ "og_image": "/images/translations/amazon-fmsf-2026-09-cover.jpg",
+ "image_caption": "원문 첫 쪽 (Amazon, 2026.9)",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "doc_kind": "프론티어 안전 프레임워크",
+ "stats": {
+  "blocks": 92,
+  "sections": 7,
+  "items": 4,
+  "words_en": 6222
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Amazon's Frontier Model Safety Framework",
+   "ko": "Amazon의 Frontier Model Safety Framework",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "At Amazon, our leadership principles guide our decision-making. Our approach to AI development naturally follows from our leadership principle 'Success and Scale Bring Broad Responsibility.' As we continue to scale the capabilities of Amazon's most capable frontier models and democratize access to the benefits of AI, we also take responsibility for mitigating the risks potentially arising from the misuse of our technology. In 2025, we published the first version of our Frontier Model Safety Framework 1 to outline the protocols we will follow to prevent any capabilities of frontier models developed by Amazon from creating critical risk in high-impact domains. In keeping with the commitments of this Framework, we publish safety evaluation reports for our most capable frontier models. 1 Given the evolving state of the science underpinning advanced AI capabilities, safety evaluations, and risk mitigations, we have reviewed and updated this Framework to reflect our current practices and account for relevant laws and regulations.",
+   "ko": "Amazon에서는 리더십 원칙이 의사결정의 지침이 된다. AI 개발에 대한 Amazon의 접근 방식은 'Success and Scale Bring Broad Responsibility'라는 리더십 원칙에서 자연스럽게 비롯된다. Amazon은 가장 고도화된 프론티어 모델의 역량을 지속적으로 확장하고 AI의 혜택에 대한 접근을 대중화하는 한편, 자사 기술의 오용으로 발생할 수 있는 위험을 완화할 책임도 진다. Amazon은 2025년에 Frontier Model Safety Framework 1의 첫 번째 버전을 공개하여, Amazon이 개발한 프론티어 모델의 어떠한 역량도 고영향 영역에서 치명적 위험을 초래하지 않도록 하기 위해 따를 프로토콜을 제시하였다. 본 프레임워크의 약정에 따라, Amazon은 가장 고도화된 프론티어 모델에 대한 안전성 평가 보고서를 공개한다. 1 첨단 AI 역량, 안전성 평가 및 위험 완화를 뒷받침하는 과학이 계속 발전하고 있음을 고려하여, Amazon은 현재의 실행 방안을 반영하고 관련 법률 및 규정을 고려하기 위해 본 프레임워크를 검토하고 개정하였다.",
+   "marks": [
+    {
+     "t": "자사 기술의 오용으로 발생할 수 있는 위험을 완화할 책임도 진다",
+     "k": "safety"
+    },
+    {
+     "t": "Amazon이 개발한 프론티어 모델의 어떠한 역량도 고영향 영역에서 치명적 위험을 초래하지 않도록 하기 위해 따를 프로토콜을 제시하였다",
+     "k": "key"
+    },
+    {
+     "t": "가장 고도화된 프론티어 모델에 대한 안전성 평가 보고서를 공개한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This Framework focuses on risks that are unique to the most capable frontier AI models as they scale in size and capability and require specialized evaluation methods and safeguards. Our approach to managing these frontier risks complements Amazon's broader approach to responsible AI, which includes comprehensive practices to control for risks across eight key dimensions.[^2] At its core, this Framework reflects our commitment that we will deploy frontier AI models developed by Amazon with appropriate safeguards in place.",
+   "ko": "본 프레임워크는 가장 고도화된 프론티어 AI 모델의 규모와 역량이 확대됨에 따라 해당 모델에서 고유하게 나타나며, 전문화된 평가(evaluation) 방법과 안전장치가 필요한 위험에 초점을 맞춘다. 이러한 프론티어 위험을 관리하는 Amazon의 접근 방식은 Amazon의 보다 광범위한 책임 있는 AI 접근 방식을 보완한다. 해당 접근 방식에는 8가지 핵심 차원에 걸쳐 위험을 통제하기 위한 포괄적인 실행 방안이 포함된다.[^2] 본 프레임워크의 핵심에는 Amazon이 개발한 프론티어 AI 모델을 적절한 안전장치를 갖춘 상태에서 배포하겠다는 Amazon의 약정이 반영되어 있다.",
+   "marks": [
+    {
+     "t": "전문화된 평가(evaluation) 방법과 안전장치가 필요한 위험에 초점을 맞춘다",
+     "k": "safety"
+    },
+    {
+     "t": "Amazon이 개발한 프론티어 AI 모델을 적절한 안전장치를 갖춘 상태에서 배포하겠다는 Amazon의 약정이 반영되어 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We are grateful to METR, a nonprofit research organization specializing in AI evaluations, and the Frontier Model Forum for feedback during the initial development of this Framework.",
+   "ko": "본 프레임워크의 초기 개발 과정에서 피드백을 제공한 AI 평가 전문 비영리 연구기관 METR과 Frontier Model Forum에 감사를 표한다.",
+   "marks": [
+    {
+     "t": "AI 평가 전문 비영리 연구기관 METR과 Frontier Model Forum",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Overview of the Frontier Model Safety Framework",
+   "ko": "Frontier Model Safety Framework 개요",
+   "id": "s4"
+  },
+  {
+   "type": "p",
+   "en": "Our Framework establishes the processes Amazon will use to identify, assess, and manage potential risks that could arise as we develop more advanced and highly capable frontier AI models. First, it specifies Critical Risk Domains, domains in which advanced model capabilities could give rise to significant public harm through misuse or loss of control. Second, it describes our Critical Risk Evaluations , a variety of automated and human-in-the-loop strategies to determine whether our models demonstrate capabilities that meet or exceed our Critical Capability Threshold within a Critical Risk Domain. Third, it details Risk Mitigations that are used today throughout the model development and deployment lifecycle to protect against abuse of or inappropriate access to our models.",
+   "ko": "본 프레임워크는 Amazon이 보다 첨단화된 고역량(Highly capable) 프론티어 AI 모델을 개발하는 과정에서 발생할 수 있는 잠재적 위험을 식별·평가·관리하기 위해 사용할 절차를 수립한다. 첫째, 본 프레임워크는 치명적 위험 영역(Critical Risk Domains)을 명시한다. 이는 첨단 모델 역량이 오용 또는 통제 상실을 통해 중대한 공공 피해를 초래할 수 있는 영역이다. 둘째, 본 프레임워크는 치명적 위험 평가(Critical Risk Evaluations)를 기술한다. 이는 Amazon의 모델이 치명적 위험 영역 내에서 치명적 역량 임계값(Critical capability threshold)에 도달하거나 이를 초과하는 역량을 보이는지 판단하기 위한 다양한 자동화 전략 및 인간 참여형(human-in-the-loop) 전략이다. 셋째, 본 프레임워크는 Amazon의 모델에 대한 남용이나 부적절한 접근을 방지하기 위해 현재 모델 개발 및 배포 수명주기 전반에 걸쳐 사용되고 있는 위험 완화 조치를 상세히 기술한다.",
+   "marks": [
+    {
+     "t": "잠재적 위험을 식별·평가·관리하기 위해 사용할 절차를 수립한다",
+     "k": "key"
+    },
+    {
+     "t": "첨단 모델 역량이 오용 또는 통제 상실을 통해 중대한 공공 피해를 초래할 수 있는 영역",
+     "k": "safety"
+    },
+    {
+     "t": "치명적 역량 임계값(Critical capability threshold)에 도달하거나 이를 초과하는 역량을 보이는지 판단하기 위한",
+     "k": "safety"
+    },
+    {
+     "t": "Amazon의 모델에 대한 남용이나 부적절한 접근을 방지하기 위해",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "1. Critical Risk Domains",
+   "ko": "1. 치명적 위험 영역",
+   "id": "s6"
+  },
+  {
+   "type": "p",
+   "en": "Critical Risk Domains cover domains in which advanced model capabilities could give rise to significant public harm through misuse or loss of control.  Within each Critical Risk Domain, Critical Capability Thresholds describe model capabilities that could enable this significant harm. When evaluations demonstrate that capabilities meet or exceed a Critical Capability Threshold can be elicited from a frontier model developed by Amazon, the development team will apply appropriate safeguards as outlined in Section 3.",
+   "ko": "치명적 위험 영역은 첨단 모델 역량이 오용 또는 통제 상실을 통해 중대한 공공 피해를 초래할 수 있는 영역을 포괄한다. 각 치명적 위험 영역 내에서 치명적 역량 임계값은 이러한 중대한 피해를 가능하게 할 수 있는 모델 역량을 기술한다. Amazon이 개발한 프론티어 모델에서 치명적 역량 임계값에 도달하거나 이를 초과하는 역량이 이끌어내질 수 있음이 평가를 통해 입증되는 경우, 개발팀은 제3절에 제시된 바와 같이 적절한 안전장치를 적용한다.",
+   "marks": [
+    {
+     "t": "첨단 모델 역량이 오용 또는 통제 상실을 통해 중대한 공공 피해를 초래할 수 있는 영역",
+     "k": "safety"
+    },
+    {
+     "t": "치명적 역량 임계값은 이러한 중대한 피해를 가능하게 할 수 있는 모델 역량을 기술한다",
+     "k": "safety"
+    },
+    {
+     "t": "Amazon이 개발한 프론티어 모델에서 치명적 역량 임계값에 도달하거나 이를 초과하는 역량이 이끌어내질 수 있음이 평가를 통해 입증되는 경우, 개발팀은 제3절에 제시된 바와 같이 적절한 안전장치를 적용한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Chemical, Biological, Radiological, and Nuclear (CBRN) Weapons Proliferation",
+   "ko": "화학·생물·방사능·핵(CBRN) 무기 확산",
+   "id": "s8"
+  },
+  {
+   "type": "p",
+   "en": "The CBRN Weapons Proliferation domain focuses on the risk that a model may be able to guide malicious actors in developing and deploying CBRN weapons. The CBRN capability threshold focuses on the potential that a frontier model may provide actors material 'uplift' in excess of other publicly available models in known harnesses. Note, harness is the operational infrastructure that enables executing tools, performs state and context management, provides guardrails, and drives interaction with model(s). Mitigating risks in the CBRN  Weapons  Proliferation  domain  requires  layered  safeguards  to  prevent  the  elicitation  of  critical capabilities including abuse safeguards and security safeguards to prevent unauthorized access.",
+   "ko": "CBRN 무기 확산 영역은 모델이 악의적 행위자가 CBRN 무기를 개발하고 배치하도록 안내할 수 있는 위험에 초점을 맞춘다. CBRN 역량 임계값은 프론티어 모델이 알려진 하네스(harness)에서 구동되는 공개적으로 이용 가능한 다른 모델들을 넘어서는 실질적인 '업리프트'를 행위자에게 제공할 가능성에 초점을 맞춘다. 여기서 하네스란 도구 실행을 가능하게 하고, 상태 및 컨텍스트 관리를 수행하며, 가드레일을 제공하고, 모델과의 상호작용을 구동하는 운영 인프라를 의미한다. CBRN 무기 확산 영역의 위험을 완화하려면, 치명적 역량이 이끌어내지는 것을 방지하기 위한 다층적 안전장치가 필요하다. 여기에는 남용 방지 안전장치와 무단 접근을 방지하기 위한 보안 안전장치가 포함된다.",
+   "marks": [
+    {
+     "t": "모델이 악의적 행위자가 CBRN 무기를 개발하고 배치하도록 안내할 수 있는 위험",
+     "k": "safety"
+    },
+    {
+     "t": "공개적으로 이용 가능한 다른 모델들을 넘어서는 실질적인 '업리프트'를 행위자에게 제공할 가능성",
+     "k": "safety"
+    },
+    {
+     "t": "CBRN 무기 확산 영역의 위험을 완화하려면, 치명적 역량이 이끌어내지는 것을 방지하기 위한 다층적 안전장치가 필요하다.",
+     "k": "key"
+    },
+    {
+     "t": "남용 방지 안전장치와 무단 접근을 방지하기 위한 보안 안전장치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI at this level will be capable of providing expert-level, interactive instruction that provides material uplift (beyond other publicly available models in known harnesses) that would enable a non-subject matter expert to reliably produce and deploy a CBRN weapon.",
+   "ko": "이 수준의 AI는 비전문가가 CBRN 무기를 안정적으로 제조하고 배치할 수 있게 하는, (알려진 하네스에서 구동되는 공개적으로 이용 가능한 다른 모델들을 넘어서는) 실질적인 업리프트를 제공하는 전문가 수준의 대화형 지침을 제공할 수 있다.",
+   "marks": [
+    {
+     "t": "비전문가가 CBRN 무기를 안정적으로 제조하고 배치할 수 있게 하는",
+     "k": "key"
+    },
+    {
+     "t": "실질적인 업리프트를 제공하는 전문가 수준의 대화형 지침을 제공할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Offensive Cyber Operations",
+   "ko": "공격적 사이버 작전",
+   "id": "s11"
+  },
+  {
+   "type": "p",
+   "en": "The Offensive Cyber Operations domain focuses on risks that would arise from the use of a model by malicious actors to compromise digital systems with the intent to cause harm. The Offensive Cyber Operations threshold focuses on the potential that a frontier model may provide material uplift to non-subject matter experts in attacking hardened or critical systems, either through developing novel end-to-end zero-day compromise chains, or by autonomously extending compromise campaigns through novel command and control strategies that adapt to defenses. Mitigating risks in the Offensive Cyber Operations domain requires layered safeguards to prevent the elicitation of critical capabilities including abuse safeguards and security safeguards against unauthorized access.",
+   "ko": "공격적 사이버 작전 영역은 악의적 행위자가 피해를 입힐 의도로 디지털 시스템을 침해하는 데 모델을 사용함으로써 발생할 수 있는 위험에 초점을 맞춘다. 공격적 사이버 작전 임계값은 프론티어 모델이 보안이 강화된 시스템 또는 핵심 시스템을 공격하는 데 있어 비전문가에게 실질적인 업리프트를 제공할 가능성에 초점을 맞춘다. 이는 새로운 엔드투엔드 제로데이 침해 체인을 개발하는 방식, 또는 방어에 적응하는 새로운 명령·제어(command and control) 전략을 통해 침해 캠페인을 자율적으로 확장하는 방식으로 이루어질 수 있다. 공격적 사이버 작전 영역의 위험을 완화하려면, 치명적 역량이 이끌어내지는 것을 방지하기 위한 다층적 안전장치가 필요하다. 여기에는 남용 방지 안전장치와 무단 접근에 대비한 보안 안전장치가 포함된다.",
+   "marks": [
+    {
+     "t": "악의적 행위자가 피해를 입힐 의도로 디지털 시스템을 침해하는 데 모델을 사용함으로써 발생할 수 있는 위험",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 모델이 보안이 강화된 시스템 또는 핵심 시스템을 공격하는 데 있어 비전문가에게 실질적인 업리프트를 제공할 가능성",
+     "k": "key"
+    },
+    {
+     "t": "새로운 엔드투엔드 제로데이 침해 체인을 개발하는 방식",
+     "k": "safety"
+    },
+    {
+     "t": "침해 캠페인을 자율적으로 확장하는 방식",
+     "k": "safety"
+    },
+    {
+     "t": "치명적 역량이 이끌어내지는 것을 방지하기 위한 다층적 안전장치가 필요하다",
+     "k": "safety"
+    },
+    {
+     "t": "남용 방지 안전장치와 무단 접근에 대비한 보안 안전장치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI at this level will be able to enable non-subject matter experts to discover novel endto-end exploit chains in hardened systems or utilize existing vulnerabilities to autonomously extend control over critical infrastructure systems.",
+   "ko": "이 수준의 AI는 비전문가가 보안이 강화된 시스템에서 새로운 엔드투엔드 익스플로잇 체인을 발견하거나, 기존 취약점을 활용하여 핵심 기반시설 시스템에 대한 통제를 자율적으로 확장할 수 있게 할 수 있다.",
+   "marks": [
+    {
+     "t": "비전문가가 보안이 강화된 시스템에서 새로운 엔드투엔드 익스플로잇 체인을 발견하거나",
+     "k": "safety"
+    },
+    {
+     "t": "기존 취약점을 활용하여 핵심 기반시설 시스템에 대한 통제를 자율적으로 확장할 수 있게 할 수 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Harmful Manipulation",
+   "ko": "유해한 조작",
+   "id": "s14"
+  },
+  {
+   "type": "p",
+   "en": "The Harmful Manipulation domain focuses on risks arising from models capable of enabling persistent, deceptive, or exploitative influence over public in ways that could reasonably result in large scale harm, including social engineering or fraud. Mitigating these risks requires layered safeguards across abuse prevention, unauthorized access control, and misuse monitoring. This is an emerging area of research and evaluation, and we will continue to refine our approach as the science of measuring manipulation matures.",
+   "ko": "유해한 조작 영역은 사회공학이나 사기를 포함하여, 대규모 피해를 초래할 것으로 합리적으로 예상되는 방식으로 대중에게 지속적이거나 기만적이거나 착취적인 영향력을 행사할 수 있게 하는 모델로부터 발생하는 위험에 초점을 맞춘다. 이러한 위험을 완화하려면 남용 방지, 무단 접근 통제, 오용 모니터링 전반에 걸친 다층적 안전장치가 필요하다. 이는 아직 형성 중인 연구 및 평가 분야이며, Amazon은 조작을 측정하는 과학이 성숙해짐에 따라 접근 방식을 지속적으로 개선할 것이다.",
+   "marks": [
+    {
+     "t": "대규모 피해를 초래할 것으로 합리적으로 예상되는 방식으로 대중에게 지속적이거나 기만적이거나 착취적인 영향력을 행사할 수 있게 하는 모델로부터 발생하는 위험",
+     "k": "key"
+    },
+    {
+     "t": "남용 방지, 무단 접근 통제, 오용 모니터링 전반에 걸친 다층적 안전장치가 필요하다",
+     "k": "safety"
+    },
+    {
+     "t": "이는 아직 형성 중인 연구 및 평가 분야이며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI at this level will be capable of providing material uplift (beyond other publicly available models in known harnesses) that would enable a malicious actor to systematically and substantially distort the beliefs or behavior of large populations or high-stakes decision-makers through multi-turn interactions with the model in ways",
+   "ko": "이 수준의 AI는 악의적 행위자가 모델과의 멀티턴 대화를 통해 대규모 인구 집단 또는 중대한 결정을 내리는 의사결정자의 신념이나 행동을 체계적이고 상당한 수준으로 왜곡할 수 있게 하는, (알려진 하네스에서 구동되는 공개적으로 이용 가능한 다른 모델들을 넘어서는) 실질적인 업리프트를 제공할 수 있다. 이러한 방식으로",
+   "marks": [
+    {
+     "t": "악의적 행위자가 모델과의 멀티턴 대화를 통해 대규모 인구 집단 또는 중대한 결정을 내리는 의사결정자의 신념이나 행동을 체계적이고 상당한 수준으로 왜곡할 수 있게 하는",
+     "k": "key"
+    },
+    {
+     "t": "실질적인 업리프트를 제공할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Loss of Control",
+   "ko": "통제 상실",
+   "id": "s17"
+  },
+  {
+   "type": "p",
+   "en": "The Loss of Control domain focuses on risks that could arise from a model's ability to autonomously execute long-horizon, expert-level tasks that could undermine the ability to direct, modify, or shut down the model (e.g., to prevent the model from engaging in harmful, malicious, or criminal actions).  Loss of control could arise in circumstances where a model is capable of self-exfiltration, autonomous resource acquisition, or unauthorized replication. Evaluations for this threat model will include rigorous measurement of a model's propensity for deception, autonomous goal-directed planning, and the ability to circumvent safeguards within an agentic scaffolding that simulates real-world tool use and operational constraints. Mitigating risks in the Loss of Control domain requires layered protection against model misalignment, security safeguards, and monitoring to reduce risks of autonomous models exploiting security vulnerabilities to further their unauthorized autonomous activity.",
+   "ko": "통제 상실 영역은 모델을 지시·수정·중단하는 능력(예: 모델이 유해하거나 악의적이거나 범죄적인 행위에 관여하지 못하도록 하는 능력)을 약화시킬 수 있는, 장기 지평(long-horizon)의 전문가 수준 과업을 모델이 자율적으로 수행하는 능력으로부터 발생할 수 있는 위험에 초점을 맞춘다. 통제 상실은 모델이 자기 유출, 자율적 자원 획득 또는 무단 복제를 할 수 있는 상황에서 발생할 수 있다. 이 위협 모델(Threat model)에 대한 평가에는 모델의 기만 성향, 자율적 목표 지향 계획, 그리고 실제 도구 사용 및 운영상 제약을 모사하는 에이전트형 스캐폴딩 내에서 안전장치를 우회하는 능력에 대한 엄격한 측정이 포함된다. 통제 상실 영역의 위험을 완화하려면, 자율 모델이 보안 취약점을 악용하여 무단 자율 활동을 확대할 위험을 줄이기 위해 모델 오정렬에 대한 다층적 보호, 보안 안전장치 및 모니터링이 필요하다.",
+   "marks": [
+    {
+     "t": "모델을 지시·수정·중단하는 능력(예: 모델이 유해하거나 악의적이거나 범죄적인 행위에 관여하지 못하도록 하는 능력)을 약화시킬 수 있는",
+     "k": "safety"
+    },
+    {
+     "t": "통제 상실은 모델이 자기 유출, 자율적 자원 획득 또는 무단 복제를 할 수 있는 상황에서 발생할 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "모델의 기만 성향, 자율적 목표 지향 계획",
+     "k": "safety"
+    },
+    {
+     "t": "에이전트형 스캐폴딩 내에서 안전장치를 우회하는 능력에 대한 엄격한 측정",
+     "k": "safety"
+    },
+    {
+     "t": "자율 모델이 보안 취약점을 악용하여 무단 자율 활동을 확대할 위험",
+     "k": "safety"
+    },
+    {
+     "t": "모델 오정렬에 대한 다층적 보호, 보안 안전장치 및 모니터링이 필요하다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI at this level will be capable of autonomously planning and executing complex sequences of expert-level tasks (including, but not limited to, the research, development, and deployment of frontier models) in such a way that would impair the ability to direct, modify, or shut down the model.",
+   "ko": "이 수준의 AI는 모델을 지시·수정·중단하는 능력을 저해하는 방식으로, 전문가 수준의 복잡한 일련의 과업(프론티어 모델의 연구, 개발 및 배포를 포함하되 이에 국한되지 않음)을 자율적으로 계획하고 실행할 수 있다.",
+   "marks": [
+    {
+     "t": "모델을 지시·수정·중단하는 능력을 저해하는 방식으로, 전문가 수준의 복잡한 일련의 과업",
+     "k": "safety"
+    },
+    {
+     "t": "자율적으로 계획하고 실행할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "2. Evaluating Frontier Models for Critical Risks",
+   "ko": "2. 치명적 위험에 대한 프론티어 모델 평가",
+   "id": "s20"
+  },
+  {
+   "type": "p",
+   "en": "We conduct internal and, as appropriate, external evaluations on an ongoing basis, including during training and prior to deployment of new frontier models. We also continuously evaluate the effectiveness of our safeguards and mitigations throughout the frontier model lifecycle. We will re-evaluate deployed models prior to any major updates that could meaningfully enhance underlying capabilities.",
+   "ko": "Amazon은 새로운 프론티어 모델의 학습 중 및 배포 전을 포함하여, 내부 평가(evaluation)와 적절한 경우 외부 평가를 지속적으로 수행한다. 또한 프론티어 모델 수명주기 전반에 걸쳐 안전장치와 완화 조치의 효과성을 지속적으로 평가한다. 기반 역량을 의미 있게 향상시킬 수 있는 주요 업데이트가 있을 경우, 그 전에 배포된 모델을 재평가한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델 수명주기 전반에 걸쳐 안전장치와 완화 조치의 효과성을 지속적으로 평가한다",
+     "k": "safety"
+    },
+    {
+     "t": "기반 역량을 의미 있게 향상시킬 수 있는 주요 업데이트가 있을 경우, 그 전에 배포된 모델을 재평가한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our processes encompass evaluation at appropriate stages of the model development process. Through 'maximal capability evaluations,' we identify potential risks early in model development and introduce appropriate risk mitigations during subsequent stages of the model and safeguard development process. Subsequent predeployment evaluations serve to assess the adequacy of the risk mitigation measures that are applied to a model. When an evaluation indicates that a model's capabilities meet a Critical Capability Threshold, we will not deploy the model until safeguards appropriately mitigate the risks.",
+   "ko": "Amazon의 프로세스는 모델 개발 과정의 적절한 단계에서의 평가를 포괄한다. '최대 역량 평가(maximal capability evaluations)'를 통해 모델 개발 초기에 잠재적 위험을 식별하고, 이후 모델 및 안전장치 개발 과정의 후속 단계에서 적절한 위험 완화 조치를 도입한다. 이후의 배포 전 평가는 모델에 적용된 위험 완화 조치의 적정성을 평가하는 역할을 한다. 평가 결과 모델의 역량이 치명적 역량 임계값에 도달한 것으로 나타나는 경우, 안전장치가 위험을 적절히 완화할 때까지 해당 모델을 배포하지 않는다.",
+   "marks": [
+    {
+     "t": "'최대 역량 평가(maximal capability evaluations)'를 통해 모델 개발 초기에 잠재적 위험을 식별하고",
+     "k": "safety"
+    },
+    {
+     "t": "평가 결과 모델의 역량이 치명적 역량 임계값에 도달한 것으로 나타나는 경우, 안전장치가 위험을 적절히 완화할 때까지 해당 모델을 배포하지 않는다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We will use a range of methods to evaluate frontier models for capabilities that are as closely correlated to the Capability Thresholds as possible, and we may engage, where appropriate, with external actors, including governments, as part of those methods. In most cases a single evaluation will not be sufficient for an informed determination as to whether a model has hit a Critical Capability Threshold. We will therefore use a range of internal and external evaluation approaches including both automated and manual methods and both with and without \"agentic scaffoldings,\" environments that grant the model access to external tools such as code interpreters, web browsers, and file systems. Evaluations within agentic scaffoldings measure a model's ability to autonomously plan, correct errors, and execute complex, multi-step tasks in Critical Risk Domains (e.g., identifying software vulnerabilities or synthesizing compounds) that would otherwise require human intervention. Examples of evaluation types include:",
+   "ko": "Amazon은 역량 임계값과 최대한 밀접하게 상관된 역량에 대해 프론티어 모델을 평가하기 위해 다양한 방법을 사용할 것이며, 그러한 방법의 일환으로 적절한 경우 정부를 포함한 외부 행위자와 협력할 수 있다. 대부분의 경우 단일 평가만으로는 모델이 치명적 역량 임계값에 도달했는지에 대해 충분한 정보에 근거한 판단을 내리기에 충분하지 않다. 따라서 Amazon은 자동화된 방법과 수동 방법, 그리고 \"에이전트형 스캐폴딩(agentic scaffolding)\" — 코드 인터프리터, 웹 브라우저, 파일 시스템 등 외부 도구에 대한 접근 권한을 모델에 부여하는 환경 — 을 사용하는 경우와 사용하지 않는 경우를 모두 포함하는 다양한 내부 및 외부 평가 접근 방식을 활용할 것이다. 에이전트형 스캐폴딩 내에서의 평가는 치명적 위험 영역에서 원래라면 인간의 개입이 필요했을 복잡한 다단계 과업(예: 소프트웨어 취약점 식별 또는 화합물 합성)을 모델이 자율적으로 계획하고, 오류를 수정하며, 실행하는 능력을 측정한다. 평가 유형의 예는 다음과 같다:",
+   "marks": [
+    {
+     "t": "적절한 경우 정부를 포함한 외부 행위자와 협력할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "대부분의 경우 단일 평가만으로는 모델이 치명적 역량 임계값에 도달했는지에 대해 충분한 정보에 근거한 판단을 내리기에 충분하지 않다",
+     "k": "safety"
+    },
+    {
+     "t": "복잡한 다단계 과업(예: 소프트웨어 취약점 식별 또는 화합물 합성)을 모델이 자율적으로 계획하고, 오류를 수정하며, 실행하는 능력을 측정한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "a. Automated Benchmarks: Benchmarking provides apples-to-apples comparisons between candidate models by substituting an automated \"assessor\" mechanism for human judgement. We conduct comprehensive evaluations to assess our frontier models using state-of-the-art public benchmarks in addition to internal benchmarking on proprietary test sets built in collaboration with experts.",
+   "ko": "a. 자동화 벤치마크: 벤치마크는 인간의 판단을 자동화된 \"평가자(assessor)\" 메커니즘으로 대체함으로써 후보 모델 간 동일 기준의 비교를 제공한다. Amazon은 전문가와 협력하여 구축한 독점 테스트 세트에 대한 내부 벤치마크에 더하여, 최첨단 공개 벤치마크를 사용하여 프론티어 모델을 평가하는 포괄적인 평가를 수행한다."
+  },
+  {
+   "type": "li",
+   "en": "b. Expert Red Teaming: Red teaming vendors and in-house red teaming experts test our models for safety and security. We work with specialized firms and academics to red-team our models to that could reasonably be expected to cause severe harm.",
+   "ko": "b. 전문가 레드티밍: 레드티밍 업체와 사내 레드티밍 전문가가 모델의 안전성과 보안성을 테스트한다. Amazon은 전문 기업 및 학계와 협력하여 심각한 피해(severe harm)를 초래할 것으로 합리적으로 예상될 수 있는 모델에 대해 레드티밍을 수행한다.",
+   "marks": [
+    {
+     "t": "레드티밍 업체와 사내 레드티밍 전문가가 모델의 안전성과 보안성을 테스트한다",
+     "k": "safety"
+    },
+    {
+     "t": "심각한 피해(severe harm)를 초래할 것으로 합리적으로 예상될 수 있는 모델에 대해 레드티밍을 수행한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "evaluate them for risks that require domain specific expertise.",
+   "ko": "도메인 특화 전문 지식이 필요한 위험에 대해 이를 평가한다."
+  },
+  {
+   "type": "li",
+   "en": "c. Uplift Studies: Uplift studies examine whether access to a model enhances the capability of human actors to perform a task compared to other publicly available models in known harnesses. An uplift study seeks to quantify the degree to which a model enhances task completion through controlled trials that compare the abilities of a group with access to the new frontier model to the abilities of a group without access to the said frontier model.",
+   "ko": "c. 업리프트 연구: 업리프트 연구는 알려진 하네스에서 구동되는 공개적으로 이용 가능한 다른 모델과 비교하여, 모델에 대한 접근이 인간 행위자의 과업 수행 역량을 향상시키는지를 검토한다. 업리프트 연구는 새로운 프론티어 모델에 접근할 수 있는 집단의 능력과 해당 프론티어 모델에 접근할 수 없는 집단의 능력을 비교하는 통제된 시험을 통해, 모델이 과업 완수를 향상시키는 정도를 정량화하고자 한다.",
+   "marks": [
+    {
+     "t": "모델에 대한 접근이 인간 행위자의 과업 수행 역량을 향상시키는지를 검토한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Together, these methods probe both adversarial misuse risks and cooperative capability amplification, offering a holistic understanding of how models may influence outcomes in sensitive domains like CBRN, offensive cyber operations, loss of control, or harmful manipulation. In addition to these comprehensive evaluations, we conduct lighter-touch automated benchmark assessments on a recurring basis, including after model launch, to monitor emerging risks and inform when updates to critical risk assessments, safeguards, and public model documentation are necessary.",
+   "ko": "이러한 방법들은 함께 적대적 오용 위험과 협력적 역량 증폭을 모두 탐색하여, 모델이 화학·생물·방사능·핵, 공격적 사이버 작전, 통제 상실, 유해한 조작과 같은 민감한 영역에서 결과에 어떻게 영향을 미칠 수 있는지에 대한 총체적 이해를 제공한다. 이러한 포괄적 평가 외에도, Amazon은 신흥 위험을 모니터링하고 치명적 위험 평가, 안전장치 및 공개 모델 문서의 업데이트가 필요한 시점을 판단하기 위해, 모델 출시 이후를 포함하여 보다 간소한 자동화 벤치마크 평가(assessment)를 정기적으로 수행한다.",
+   "marks": [
+    {
+     "t": "적대적 오용 위험과 협력적 역량 증폭을 모두 탐색하여",
+     "k": "safety"
+    },
+    {
+     "t": "화학·생물·방사능·핵, 공격적 사이버 작전, 통제 상실, 유해한 조작과 같은 민감한 영역",
+     "k": "safety"
+    },
+    {
+     "t": "모델 출시 이후를 포함하여 보다 간소한 자동화 벤치마크 평가(assessment)를 정기적으로 수행한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "3. Risk Mitigations: Safety and Security Measures for Frontier Models with Capabilities in Critical Risk Domains",
+   "ko": "3. 위험 완화: 치명적 위험 영역에서 역량을 갖춘 프론티어 모델을 위한 안전 및 보안 조치",
+   "id": "s29"
+  },
+  {
+   "type": "p",
+   "en": "Our Safety and Security Measures are designed to prevent risks resulting from abuse and inappropriate access by human actors and misaligned models with the potential to autonomously commit acts of harm against humans. These measures are implemented at multiple points during model development, deployment, and post-deployment both proactively and in response to results of pre-deployment evaluations.",
+   "ko": "Amazon의 안전 및 보안 조치는 인간 행위자에 의한 남용 및 부적절한 접근, 그리고 인간에게 자율적으로 피해를 가할 잠재력을 지닌 오정렬된 모델로부터 발생하는 위험을 방지하도록 설계되어 있다. 이러한 조치는 선제적으로, 그리고 배포 전 평가 결과에 대응하여, 모델 개발, 배포 및 배포 후의 여러 시점에서 시행된다.",
+   "marks": [
+    {
+     "t": "인간 행위자에 의한 남용 및 부적절한 접근, 그리고 인간에게 자율적으로 피해를 가할 잠재력을 지닌 오정렬된 모델로부터 발생하는 위험을 방지하도록 설계되어 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Abuse Safeguards:",
+   "ko": "남용 방지 안전장치:"
+  },
+  {
+   "type": "li",
+   "en": "d. Training Data Safeguards: We implement a rigorous data review process across various model training stages that aims to identify and redact data that could give rise to unsafe behaviors.",
+   "ko": "d. 학습 데이터 안전장치: Amazon은 다양한 모델 학습 단계에 걸쳐 안전하지 않은 행동을 유발할 수 있는 데이터를 식별하고 삭제하는 것을 목표로 하는 엄격한 데이터 검토 프로세스를 시행한다.",
+   "marks": [
+    {
+     "t": "안전하지 않은 행동을 유발할 수 있는 데이터를 식별하고 삭제하는 것을 목표로 하는 엄격한 데이터 검토 프로세스를 시행한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "e. Alignment Training: We implement automated methods to meet the design objectives for each of Amazon's responsible AI dimensions, including safety and security. Both supervised fine tuning (SFT) and learning with human and AI feedback (LHF, LAIF) are used to align models. We use approaches that involve RL algorithms and agentic gyms to align our models. Training data for these techniques are sourced in collaboration with domain experts to align the model towards the desired behaviors.",
+   "ko": "e. 정렬 학습: Amazon은 안전성과 보안성을 포함하여 Amazon의 책임 있는 AI 각 차원에 대한 설계 목표를 충족하기 위해 자동화된 방법을 시행한다. 모델을 정렬하기 위해 지도 미세조정(supervised fine tuning, SFT)과 인간 및 AI 피드백을 통한 학습(LHF, LAIF)을 모두 사용한다. 모델 정렬에는 강화 학습 알고리즘과 에이전트형 짐(agentic gym)을 포함하는 접근 방식을 사용한다. 이러한 기법을 위한 학습 데이터는 모델을 바람직한 행동 쪽으로 정렬하기 위해 도메인 전문가와 협력하여 확보한다.",
+   "marks": [
+    {
+     "t": "모델을 정렬하기 위해 지도 미세조정(supervised fine tuning, SFT)과 인간 및 AI 피드백을 통한 학습(LHF, LAIF)을 모두 사용한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "f. Harmful Content Guardrails: Application of runtime input and output moderation systems serve as a first and last line of defense and enable rapid response to newly identified threats or gaps in model alignment. Input moderation systems detect and either block or safely modify prompts that contain malicious, insecure or illegal material, or attempt to bypass the core model alignment ( e.g. prompt injection, jail-breaking). Output moderation systems ensure that the content adheres to our Amazon Responsible AI objectives by blocking or safely modifying improper outputs.",
+   "ko": "f. 유해 콘텐츠 가드레일: 런타임 입력 및 출력 모더레이션 시스템의 적용은 최초이자 최후의 방어선 역할을 하며, 새롭게 식별된 위협이나 모델 정렬상의 공백에 신속하게 대응할 수 있게 한다. 입력 모더레이션 시스템은 악의적이거나 안전하지 않거나 불법적인 자료를 포함하거나, 핵심 모델 정렬을 우회하려고 시도하는(예: 프롬프트 인젝션, 탈옥(jail-breaking)) 프롬프트를 탐지하여 차단하거나 안전하게 수정한다. 출력 모더레이션 시스템은 부적절한 출력을 차단하거나 안전하게 수정함으로써 콘텐츠가 Amazon 책임 있는 AI 목표를 준수하도록 보장한다.",
+   "marks": [
+    {
+     "t": "최초이자 최후의 방어선 역할을 하며, 새롭게 식별된 위협이나 모델 정렬상의 공백에 신속하게 대응할 수 있게 한다",
+     "k": "safety"
+    },
+    {
+     "t": "핵심 모델 정렬을 우회하려고 시도하는(예: 프롬프트 인젝션, 탈옥(jail-breaking)) 프롬프트를 탐지하여 차단하거나 안전하게 수정한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "g. Fine-tuning Safeguards: Models are trained in a manner that makes them resilient to malicious customer fine-tuning efforts that could undermine initial Responsible AI alignment training by the Amazon team.",
+   "ko": "g. 미세조정(Fine-tuning) 안전장치: 모델은 Amazon 팀이 수행한 초기 책임 있는 AI 정렬 학습을 약화시킬 수 있는 악의적인 고객 미세조정 시도에 대해 회복력을 갖추도록 학습된다.",
+   "marks": [
+    {
+     "t": "초기 책임 있는 AI 정렬 학습을 약화시킬 수 있는 악의적인 고객 미세조정 시도에 대해 회복력을 갖추도록 학습된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "h. Access Controls : In the event automated abuse detection mechanisms identify potential violations, we may request information about customers' use of Amazon frontier models and compliance with relevant terms of service. In the event that customers are non-responsive, unwilling, or unable to comply with relevant terms or policies, Amazon may suspend customer access to Amazon frontier models.",
+   "ko": "h. 접근 통제: 자동화된 남용 탐지 메커니즘이 잠재적 위반을 식별하는 경우, Amazon은 고객의 Amazon 프론티어 모델 사용 및 관련 서비스 약관의 규정 준수에 관한 정보를 요청할 수 있다. 고객이 응답하지 않거나, 관련 약관 또는 정책을 준수할 의사가 없거나 준수할 수 없는 경우, Amazon은 고객의 Amazon 프론티어 모델 접근을 중단할 수 있다.",
+   "marks": [
+    {
+     "t": "Amazon은 고객의 Amazon 프론티어 모델 접근을 중단할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "i. Abuse Detection Signals: We use classifiers (small classification models) to detect certain domains of adversarial intent in user inputs (such as user queries for cyber-offensive techniques) and monitor metrics to identify potential violations and recurring behavior. The classification process is automated and does not involve human review of user inputs.",
+   "ko": "i. 남용 탐지 신호: Amazon은 분류기(소형 분류 모델)를 사용하여 사용자 입력에서 특정 영역의 적대적 의도(예: 사이버 공격 기법에 대한 사용자 질의)를 탐지하고, 잠재적 위반과 반복적 행동을 식별하기 위해 지표를 모니터링한다. 분류 과정은 자동화되어 있으며 사용자 입력에 대한 인간 검토를 수반하지 않는다.",
+   "marks": [
+    {
+     "t": "특정 영역의 적대적 의도(예: 사이버 공격 기법에 대한 사용자 질의)를 탐지하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "j. Incident Detection and Response Protocols: We use detection mechanisms, such as employee escalation, end-user feedback, and automated classifiers, to identify AI safety incidents and maintain response pathways that enable rapid investigation and remediation of reported incidents, including potential guardrail bypass remediation. We report incidents to relevant authorities as appropriate.",
+   "ko": "j. 사고 탐지 및 대응 프로토콜: Amazon은 직원 에스컬레이션, 최종 사용자 피드백, 자동화된 분류기 등의 탐지 메커니즘을 사용하여 AI 안전 사고(AI incident)를 식별하고, 잠재적 가드레일 우회에 대한 시정을 포함하여 보고된 사고의 신속한 조사 및 시정을 가능하게 하는 대응 경로를 유지한다. Amazon은 적절한 경우 관련 당국에 사고를 보고한다.",
+   "marks": [
+    {
+     "t": "잠재적 가드레일 우회에 대한 시정을 포함하여 보고된 사고의 신속한 조사 및 시정을 가능하게 하는 대응 경로를 유지한다",
+     "k": "safety"
+    },
+    {
+     "t": "Amazon은 적절한 경우 관련 당국에 사고를 보고한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "k. Post-Production Monitoring: After a model is placed into production, we continue to gather information about its capabilities and effects through a range of methods such as collecting end-user feedback, providing reporting channels, and establishing bug bounty programs with independent external evaluators. In November 2025, Amazon launched a private AI bug bounty program to strengthen Amazon Nova models.",
+   "ko": "k. 프로덕션 이후 모니터링: 모델을 프로덕션에 투입한 후에도 Amazon은 최종 사용자 피드백 수집, 신고 채널 제공, 독립적인 외부 평가자와의 버그바운티 프로그램 수립 등 다양한 방법을 통해 모델의 역량과 영향에 관한 정보를 지속적으로 수집한다. 2025년 11월, Amazon은 Amazon Nova 모델을 강화하기 위해 비공개 AI 버그바운티 프로그램을 시작하였다.",
+   "marks": [
+    {
+     "t": "비공개 AI 버그바운티 프로그램을 시작하였다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Security Safeguards:",
+   "ko": "보안 안전장치:"
+  },
+  {
+   "type": "p",
+   "en": "At Amazon, security is job zero. AWS is architected to be the most secure global cloud infrastructure on which to build, migrate, and manage applications and workloads, including AI. This is backed by the trust of our millions of customers, including the most security sensitive organizations like government, healthcare, and financial services. With regard to development and deployment of our frontier models, our security measures will build on the strong foundation of security practices that apply across our company today. We describe our current practices in greater detail in Appendix A. Below are some key elements of our existing security approach that we use to safeguard our frontier models:",
+   "ko": "Amazon에서 보안은 최우선 과제(job zero)이다. AWS는 AI를 포함한 애플리케이션과 워크로드를 구축, 이전 및 관리할 수 있는 가장 안전한 글로벌 클라우드 인프라가 되도록 설계되어 있다. 이는 정부, 의료, 금융 서비스와 같이 보안에 가장 민감한 조직을 포함한 수백만 고객의 신뢰로 뒷받침된다. 프론티어 모델의 개발 및 배포와 관련하여, Amazon의 보안 조치는 현재 회사 전반에 적용되는 보안 실행 방안의 견고한 토대 위에 구축될 것이다. 현재의 실행 방안은 부록 A에서 보다 상세히 기술한다. 다음은 Amazon이 프론티어 모델을 보호하기 위해 사용하는 기존 보안 접근 방식의 몇 가지 핵심 요소이다.",
+   "refs": [
+    {
+     "t": "부록 A",
+     "to": "s68"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "l. Secure compute and networking environments. The Trainium or other GPU-enabled compute nodes used for AI model training and inference within the AWS environment are based on the EC2 Nitro system, which provides confidential computing properties natively across the fleet. Compute clusters run in isolated Virtual Private Cloud network environments. All development of frontier models in AWS accounts meets the required security bar for careful configuration and management. These accounts include both identity-based and network-based boundaries, perimeters, and firewalls, as well as enhanced logging of security-relevant metadata such as VPC Flow Logs (netflow data) and DNS logs.",
+   "ko": "l. 안전한 연산 및 네트워킹 환경. AWS 환경 내에서 AI 모델 학습 및 추론(Inference)에 사용되는 Trainium 또는 기타 GPU 기반 연산 노드는 EC2 Nitro 시스템을 기반으로 하며, 이 시스템은 전체 플릿에 걸쳐 기밀 컴퓨팅 속성을 기본적으로 제공한다. 연산 클러스터는 격리된 Virtual Private Cloud 네트워크 환경에서 실행된다. AWS 계정에서 이루어지는 모든 프론티어 모델 개발은 신중한 구성 및 관리를 위해 요구되는 보안 기준을 충족한다. 이러한 계정에는 신원 기반 및 네트워크 기반의 경계, 외곽 경계(perimeter), 방화벽이 포함되며, VPC Flow Logs(netflow 데이터) 및 DNS 로그와 같은 보안 관련 메타데이터에 대한 강화된 로깅도 포함된다."
+  },
+  {
+   "type": "li",
+   "en": "m. Advanced data protection capabilities. For models developed on AWS, model data and intermediate checkpoint  results are stored using AES-256 GCM encryption with data encryption keys backed by the FIPS 140-3 Level 3 certified AWS Key Management Service. Software engineers and data scientists must be members of the correct Critical Permission Groups and authenticate with hardware security tokens from enterprise-managed endpoints in order to access or operate any model systems or data. Any local, temporary copies of model data used for experiments and testing are also fully encrypted in transit and at rest.",
+   "ko": "m. 고급 개인정보 보호 역량. AWS에서 개발된 모델의 경우, 모델 데이터와 중간 체크포인트 결과는 FIPS 140-3 Level 3 인증을 받은 AWS Key Management Service가 뒷받침하는 데이터 암호화 키를 사용하여 AES-256 GCM 암호화로 저장된다. 소프트웨어 엔지니어와 데이터 과학자가 모델 시스템이나 데이터에 접근하거나 이를 운영하려면 올바른 Critical Permission Groups의 구성원이어야 하며, 기업이 관리하는 엔드포인트(Endpoint)에서 하드웨어 보안 토큰으로 인증해야 한다. 실험 및 테스트에 사용되는 모델 데이터의 로컬 임시 사본 역시 전송 중 및 저장 시 모두 완전히 암호화된다."
+  },
+  {
+   "type": "li",
+   "en": "n. Security monitoring, operations, and response. Amazon's automated threat intelligence and defense systems detect and mitigate millions of threats each day. These systems are backed by human experts for threat intelligence, security operations, and security response. Threat sharing with other providers and government agencies provides collective defense and response.",
+   "ko": "n. 보안 모니터링, 운영 및 대응. Amazon의 자동화된 위협 인텔리전스 및 방어 시스템은 매일 수백만 건의 위협을 탐지하고 완화한다. 이러한 시스템은 위협 인텔리전스, 보안 운영, 보안 대응을 담당하는 인간 전문가가 뒷받침한다. 다른 제공업체 및 정부 기관과의 위협 정보 공유는 집단적 방어와 대응을 가능하게 한다.",
+   "marks": [
+    {
+     "t": "다른 제공업체 및 정부 기관과의 위협 정보 공유는 집단적 방어와 대응을 가능하게 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Misalignment Safeguards:",
+   "ko": "오정렬 안전장치:"
+  },
+  {
+   "type": "li",
+   "en": "o. Alignment Training: To contain model misalignment, we identify a model persona that ensures that the model emphasizes ethical practices. We continue using the aforementioned SFT and Learning with human and AI feedback approaches. In addition to this, we gather data to be used during pre-training/mid-training exposing the model to ethical actions in the real world. We simulate scenarios identifying trajectories with ethical decision making and reinforce that back into the model.",
+   "ko": "o. 정렬 학습: 모델 오정렬을 억제하기 위해, Amazon은 모델이 윤리적 실행 방안을 중시하도록 보장하는 모델 페르소나(model persona)를 규정한다. Amazon은 앞서 언급한 SFT 및 인간과 AI 피드백을 통한 학습 접근 방식을 계속 사용한다. 이에 더하여, 사전 학습/중간 학습(mid-training) 과정에서 사용할 데이터를 수집하여 모델이 현실 세계의 윤리적 행동에 노출되도록 한다. Amazon은 시나리오를 시뮬레이션하여 윤리적 의사결정이 이루어지는 궤적(trajectory)을 식별하고 이를 다시 모델에 강화한다.",
+   "marks": [
+    {
+     "t": "모델 오정렬을 억제하기 위해, Amazon은 모델이 윤리적 실행 방안을 중시하도록 보장하는 모델 페르소나(model persona)를 규정한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "p. Fine-tuning Safeguards: Akin to avoiding abuse of our models, we institute guardrails that prevent fine-tuning of our models such that its propensity for misalignment increases. We observe signals in the fine-tuning recipe that may lead to such an outcome and take corrective actions.",
+   "ko": "p. 미세조정 안전장치: 모델의 남용을 방지하는 것과 마찬가지로, Amazon은 모델의 오정렬 성향이 증가하는 방식으로 모델이 미세조정되는 것을 방지하는 가드레일을 시행한다. Amazon은 미세조정 레시피(fine-tuning recipe)에서 그러한 결과로 이어질 수 있는 신호를 관찰하고 시정 조치를 취한다.",
+   "marks": [
+    {
+     "t": "모델의 오정렬 성향이 증가하는 방식으로 모델이 미세조정되는 것을 방지하는 가드레일을 시행한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "q. Post-Production Monitoring: Like our approach for abuse prevention, we continue to gather information about a model's capabilities and impact through a range of methods such as collecting end-user feedback, providing reporting channels, and establishing bug bounty programs with independent external evaluators.",
+   "ko": "q. 프로덕션 이후 모니터링: 남용 방지 접근 방식과 마찬가지로, Amazon은 최종 사용자 피드백 수집, 신고 채널 제공, 독립적인 외부 평가자와의 버그바운티 프로그램 수립 등 다양한 방법을 통해 모델의 역량과 영향에 관한 정보를 지속적으로 수집한다.",
+   "marks": [
+    {
+     "t": "모델의 역량과 영향에 관한 정보를 지속적으로 수집한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We evaluate models at key points during the development and deployment process to adequately mitigate the risks associated with capabilities in Critical Risk Domains. In the event evaluations reveal that an Amazon frontier model meets or exceeds a Critical Capability Threshold and our Risk Mitigations are unable to appropriately control the capabilities associated with Critical Risk Domains ( e.g. , by preventing reliable elicitation of the capability by malicious actors), we will not deploy the model until we have identified and implemented additional safeguards as appropriate.",
+   "ko": "Amazon은 치명적 위험 영역의 역량과 관련된 위험을 충분히 완화하기 위해 개발 및 배포 과정의 핵심 시점마다 모델을 평가한다. 평가(evaluation) 결과 Amazon 프론티어 모델이 치명적 역량 임계값을 충족하거나 초과하고, Amazon의 위험 완화 조치가 치명적 위험 영역과 관련된 역량을 적절하게 통제할 수 없는 경우(예: 악의적 행위자가 해당 역량을 신뢰성 있게 이끌어내는 것(elicitation)을 방지하지 못하는 경우), Amazon은 적절한 추가 안전장치를 식별하고 시행할 때까지 해당 모델을 배포하지 않을 것이다.",
+   "marks": [
+    {
+     "t": "악의적 행위자가 해당 역량을 신뢰성 있게 이끌어내는 것(elicitation)을 방지하지 못하는 경우",
+     "k": "safety"
+    },
+    {
+     "t": "Amazon은 적절한 추가 안전장치를 식별하고 시행할 때까지 해당 모델을 배포하지 않을 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Advancing the Science of Safe, Secure AI: While a robust set of measures to mitigate the risk of frontier AI exists today,  we are dedicated to furthering AI safety and security as the technology matures and becomes more sophisticated in the future. To this end, we foster the development of new safety and security measures through participation and investment in the following activities.",
+   "ko": "안전하고 보안성 있는 AI 과학의 발전: 현재 프론티어 AI의 위험을 완화하기 위한 견고한 조치들이 존재하지만, Amazon은 향후 기술이 성숙하고 더욱 정교해짐에 따라 AI 안전과 보안을 더욱 발전시키는 데 전념하고 있다. 이를 위해 Amazon은 다음 활동에 대한 참여와 투자를 통해 새로운 안전 및 보안 조치의 개발을 촉진한다.",
+   "marks": [
+    {
+     "t": "향후 기술이 성숙하고 더욱 정교해짐에 따라 AI 안전과 보안을 더욱 발전시키는 데 전념하고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Efforts to develop further safety measures include:",
+   "ko": "추가 안전 조치 개발을 위한 노력은 다음과 같다."
+  },
+  {
+   "type": "li",
+   "en": "Collaboration on threat modeling and updated Critical Risk Domains: Amazon is committed to partnering with governments, domain experts, and industry peers to continuously improve Amazon's awareness of the threat environment and ensure that our Critical Risk Domains, Capability Thresholds, and evaluation processes account for evolving (and potentially new) threats.",
+   "ko": "위협 모델링 및 치명적 위험 영역 갱신에 관한 협력: Amazon은 정부, 도메인 전문가, 업계 동료와 협력하여 위협 환경에 대한 Amazon의 인식을 지속적으로 개선하고, Amazon의 치명적 위험 영역, 역량 임계값, 평가 프로세스가 진화하는(그리고 잠재적으로 새로운) 위협을 반영하도록 보장하는 데 전념하고 있다.",
+   "marks": [
+    {
+     "t": "치명적 위험 영역, 역량 임계값, 평가 프로세스가 진화하는(그리고 잠재적으로 새로운) 위협을 반영하도록 보장하는 데 전념하고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Information sharing and best practices development: Amazon engages in fora that bring together companies developing frontier models (e.g. Frontier Model Forum and Partnership on AI) and organized by government agencies (e.g. National Institute of Standards and Technologies). These platforms serve as an opportunity to share findings related to our models and to adopt recommendations from other leading companies.",
+   "ko": "정보 공유 및 모범 사례 개발: Amazon은 프론티어 모델을 개발하는 기업들이 모이는 포럼(예: Frontier Model Forum 및 Partnership on AI)과 정부 기관이 주관하는 포럼(예: National Institute of Standards and Technologies)에 참여한다. 이러한 플랫폼은 Amazon 모델과 관련된 결과를 공유하고 다른 선도 기업의 권고 사항을 채택하는 기회로 활용된다.",
+   "marks": [
+    {
+     "t": "Frontier Model Forum 및 Partnership on AI",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Fostering academic research for development of cutting-edge alignment techniques: Through initiatives such as the Amazon Research Awards and Amazon Research centers, we work with leading academic partners conducting research on frontier AI risks and novel risk mitigation approaches. Additionally, we advance our own research and publish findings in safety conferences, while borrowing learnings presented by other academic institutions at similar venues.",
+   "ko": "최첨단 정렬 기법 개발을 위한 학술 연구 육성: Amazon Research Awards 및 Amazon Research 센터와 같은 이니셔티브를 통해, Amazon은 프론티어 AI 위험과 새로운 위험 완화 접근 방식에 관한 연구를 수행하는 선도적 학술 파트너와 협력한다. 또한 Amazon은 자체 연구를 진전시켜 안전 관련 학회에서 결과를 발표하는 한편, 유사한 학회에서 다른 학술 기관이 발표한 연구 성과를 참고한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 위험과 새로운 위험 완화 접근 방식에 관한 연구를 수행하는 선도적 학술 파트너와 협력한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Investments in advanced AI safety R&D: At Amazon, we accelerate our work in AI safety through initiatives such as our Trusted AI Challenge and gatherings such as the Trusted AI Symposium. These channels enable us to leverage the work of subject matter experts and discover promising approaches towards aligning our frontier models.",
+   "ko": "첨단 AI 안전 R&D에 대한 투자: Amazon은 Trusted AI Challenge와 같은 이니셔티브와 Trusted AI Symposium과 같은 행사를 통해 AI 안전 분야의 작업을 가속화한다. 이러한 채널을 통해 Amazon은 해당 분야 전문가의 작업을 활용하고 프론티어 모델 정렬을 위한 유망한 접근 방식을 발굴할 수 있다.",
+   "marks": [
+    {
+     "t": "프론티어 모델 정렬을 위한 유망한 접근 방식을 발굴할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Learning from our red teaming network: We continue to build our strong network of internal and external red teamers including red teamers with deep subject matter expertise in risks related to capabilities in Critical Risk Domains. These experts are critical in surfacing early insights into emerging critical risks and help us identify and implement appropriate mitigations.",
+   "ko": "레드티밍 네트워크로부터의 학습: Amazon은 치명적 위험 영역의 역량과 관련된 위험에 대해 깊은 전문 지식을 갖춘 레드티머를 포함하여, 내부 및 외부 레드티머로 구성된 강력한 네트워크를 지속적으로 구축하고 있다. 이러한 전문가들은 신흥 치명적 위험에 대한 초기 통찰을 도출하는 데 핵심적인 역할을 하며, Amazon이 적절한 완화 조치를 식별하고 시행하는 데 도움을 준다.",
+   "marks": [
+    {
+     "t": "치명적 위험 영역의 역량과 관련된 위험에 대해 깊은 전문 지식을 갖춘 레드티머를 포함하여, 내부 및 외부 레드티머로 구성된 강력한 네트워크",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Efforts to develop further security measures include:",
+   "ko": "추가 보안 조치 개발을 위한 노력은 다음과 같다."
+  },
+  {
+   "type": "li",
+   "en": "Focused monitoring of threats and abuse by Amazon threat teams. Amazon's threat intelligence, Trust & Safety, and insider threat teams are building additional capabilities to track advanced threat actors and how they interact with and attempt to subvert security measures surrounding AI models. Learnings from this observation and analysis will provide important signals about where additional capabilities and layers of defense are needed to protect against any kind of  'side door' or 'back door' access to frontier models.",
+   "ko": "Amazon 위협 대응팀의 위협 및 남용 집중 모니터링. Amazon의 위협 인텔리전스팀, Trust & Safety팀, 내부자 위협 대응팀은 고도화된 위협 행위자를 추적하고, 이들이 AI 모델을 둘러싼 보안 조치와 어떻게 상호작용하며 이를 어떻게 무력화하려 하는지 추적하는 추가 역량을 구축하고 있다. 이러한 관찰과 분석에서 얻은 교훈은 프론티어 모델에 대한 모든 종류의 '측면 출입구(side door)' 또는 '백도어(back door)' 접근을 방어하기 위해 어느 부분에 추가 역량과 방어 계층이 필요한지에 관한 중요한 신호를 제공할 것이다.",
+   "marks": [
+    {
+     "t": "이들이 AI 모델을 둘러싼 보안 조치와 어떻게 상호작용하며 이를 어떻게 무력화하려 하는지 추적하는 추가 역량을 구축하고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 모델에 대한 모든 종류의 '측면 출입구(side door)' 또는 '백도어(back door)' 접근을 방어하기 위해",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Continued engagement with and investment in external security researchers. We will continue to invest in external security research, including bug bounty programs, academic research investments, and coordinated vulnerability disclosure programs that encourage and reward security experts to partner with us in research and development.",
+   "ko": "외부 보안 연구자와의 지속적 협력 및 투자. Amazon은 외부 보안 연구에 대한 투자를 지속할 것이다. 여기에는 보안 전문가가 Amazon과 협력하여 연구개발에 참여하도록 장려하고 보상하는 버그바운티 프로그램, 학술 연구 투자, 조율된 취약점 공개 프로그램이 포함된다."
+  },
+  {
+   "type": "li",
+   "en": "Threat and response sharing with other frontier model providers. Amazon will utilize relevant industry bodies such as the Frontier Model Forum to share threat patterns and indicators, as well as responses and mitigations where appropriate, to enable better collective defense against adversaries seeking to undermine frontier model security.",
+   "ko": "다른 프론티어 모델 제공자와의 위협 및 대응 정보 공유. Amazon은 Frontier Model Forum과 같은 관련 업계 단체를 활용하여 위협 패턴과 지표를 공유하고, 적절한 경우 대응 및 완화 조치도 공유할 것이다. 이를 통해 프론티어 모델 보안을 훼손하려는 적대 세력에 맞서 더 나은 공동 방어를 가능하게 한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델 보안을 훼손하려는 적대 세력에 맞서 더 나은 공동 방어를 가능하게 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "4. Governing our Frontier Model Safety Framework",
+   "ko": "4. 프론티어 모델 안전 프레임워크의 거버넌스",
+   "id": "s61"
+  },
+  {
+   "type": "p",
+   "en": "Internally, we will use this framework to guide our model development and launch decisions. The implementation of the framework will require:",
+   "ko": "Amazon은 내부적으로 이 프레임워크를 활용하여 모델 개발 및 출시 결정을 이끌 것이다. 프레임워크의 이행에는 다음이 요구된다."
+  },
+  {
+   "type": "li",
+   "en": "The Frontier Model Safety Framework will be incorporated into the Amazon-wide Responsible AI Governance Program, enabling Amazon-wide visibility into the expectations, mechanisms, and adherence to the Framework. Updates to the Frontier Model Safety Framework will be reviewed by the SVP for the model development team, the Chief Security Officer, and legal counsel.",
+   "ko": "프론티어 모델 안전 프레임워크는 Amazon 전사 책임 있는 AI 거버넌스 프로그램에 통합되며, 이를 통해 프레임워크의 기대 사항, 메커니즘, 준수 현황에 대한 Amazon 전사적 가시성을 확보한다. 프론티어 모델 안전 프레임워크의 갱신 사항은 모델 개발팀 담당 SVP, 최고보안책임자(Chief Security Officer), 법률 자문이 검토한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델 안전 프레임워크는 Amazon 전사 책임 있는 AI 거버넌스 프로그램에 통합되며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Frontier models developed by Amazon will be subject to evaluations for capabilities in Critical Risk Domains throughout the development process prior to deployment. The results of these evaluations, including residual risk evaluations, will be reviewed during launch processes. Models may not be released unless evaluations demonstrate that risks are within acceptable levels prior to launch.",
+   "ko": "Amazon이 개발한 프론티어 모델은 배포 이전의 개발 과정 전반에 걸쳐 치명적 위험 영역의 역량에 대한 평가(evaluation)를 받는다. 잔여 위험 평가를 포함한 이러한 평가의 결과는 출시 과정에서 검토된다. 출시 전 평가를 통해 위험이 수용 가능한 수준 이내임이 입증되지 않는 한 모델은 출시될 수 없다.",
+   "marks": [
+    {
+     "t": "배포 이전의 개발 과정 전반에 걸쳐 치명적 위험 영역의 역량에 대한 평가(evaluation)를 받는다",
+     "k": "safety"
+    },
+    {
+     "t": "출시 전 평가를 통해 위험이 수용 가능한 수준 이내임이 입증되지 않는 한 모델은 출시될 수 없다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Any evaluations that exceed the Capability threshold will be reported to the SVP for the model development team and the company's Chief Security Officer. These leaders will review the plan for risk mitigations to address the Critical Capability, how we measure and have assurance about those mitigations. Prior to deployment, these leaders will likewise review the safeguards evaluation report as part of a go/no-go decision to sufficiently mitigate risks related to critical capabilities.",
+   "ko": "역량 임계값을 초과하는 평가 결과는 모두 모델 개발팀 담당 SVP와 회사의 최고보안책임자에게 보고된다. 이들 리더는 치명적 역량에 대응하기 위한 위험 완화 계획과, 해당 완화 조치를 측정하고 그 효과를 보증하는 방식을 검토한다. 배포 이전에 이들 리더는 마찬가지로 안전장치 평가 보고서를 검토하며, 이는 치명적 역량과 관련된 위험이 충분히 완화되었는지에 대한 진행/중단(go/no-go) 결정의 일부이다.",
+   "marks": [
+    {
+     "t": "역량 임계값을 초과하는 평가 결과는 모두 모델 개발팀 담당 SVP와 회사의 최고보안책임자에게 보고된다.",
+     "k": "key"
+    },
+    {
+     "t": "치명적 역량과 관련된 위험이 충분히 완화되었는지에 대한 진행/중단(go/no-go) 결정",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Amazon will publish, in connection with the launch of a frontier AI model, information about the frontier model evaluation for safety and security.",
+   "ko": "Amazon은 프론티어 AI 모델의 출시와 관련하여, 해당 프론티어 모델의 안전성 및 보안성 평가에 관한 정보를 공개할 것이다.",
+   "marks": [
+    {
+     "t": "해당 프론티어 모델의 안전성 및 보안성 평가에 관한 정보를 공개할 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "As we advance our work on frontier models, we will also continue to enhance our AI safety evaluation and risk management processes. This evolving body of work requires an evolving framework as well. We will therefore revisit this Framework at least annually and publish any material modifications, updating it as necessary so that our protocols are appropriately robust to uphold our commitment to deploy safe and secure models. We will also update this Framework as needed in connection with significant technological developments.",
+   "ko": "Amazon은 프론티어 모델에 관한 작업을 진전시킴에 따라 AI 안전성 평가 및 위험 관리 프로세스도 지속적으로 강화할 것이다. 이처럼 진화하는 작업에는 그에 맞게 진화하는 프레임워크가 필요하다. 따라서 Amazon은 최소 연 1회 이 프레임워크를 재검토하고 중대한 수정 사항을 공개하며, 안전하고 보안성 있는 모델을 배포하겠다는 약정을 이행하기에 Amazon의 프로토콜이 적절하게 견고하도록 필요에 따라 이를 갱신할 것이다. 또한 Amazon은 중대한 기술 발전과 관련하여 필요한 경우 이 프레임워크를 갱신할 것이다.",
+   "marks": [
+    {
+     "t": "최소 연 1회 이 프레임워크를 재검토하고 중대한 수정 사항을 공개하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Appendix A: Amazon's Foundational Security Practices",
+   "ko": "부록 A: Amazon의 기초 보안 실행 방안",
+   "id": "s68"
+  },
+  {
+   "type": "p",
+   "en": "Amazon's approach to AI security is built on a firm, well-tested foundation of enterprise security controls for Amazon as a whole, and the unique, industry-leading security capabilities of the AWS cloud environment. Amazon and AWS have a long and proven record of protecting sensitive assets and data from both external and internal threats. These capabilities provide the baseline for more advanced security approaches being designed and developed for deployment in the timeframes expected for the capabilities at Critical Capability Thresholds and beyond.",
+   "ko": "Amazon의 AI 보안 접근 방식은 Amazon 전체에 적용되는 기업 보안 통제라는 견고하고 충분히 검증된 기반과, AWS 클라우드 환경의 고유하고 업계를 선도하는 보안 역량 위에 구축되어 있다. Amazon과 AWS는 민감한 자산과 데이터를 외부 위협과 내부 위협 모두로부터 보호해 온 오랜 실적을 보유하고 있다. 이러한 역량은 치명적 역량 임계값 수준 및 그 이상의 역량이 등장할 것으로 예상되는 시점에 배포하기 위해 설계·개발 중인 보다 고도화된 보안 접근 방식의 기준선을 제공한다.",
+   "marks": [
+    {
+     "t": "이러한 역량은 치명적 역량 임계값 수준 및 그 이상의 역량이 등장할 것으로 예상되는 시점에 배포하기 위해 설계·개발 중인 보다 고도화된 보안 접근 방식의 기준선을 제공한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The following is a summary of existing baseline security controls for Amazon employees and services.",
+   "ko": "다음은 Amazon 직원 및 서비스에 대한 기존 기준 보안 통제의 요약이다."
+  },
+  {
+   "type": "li",
+   "en": "Culture of security. Security at Amazon is 'job zero' for all employees. Our strong security culture[^3] is built and reinforced from the top down with deep executive engagement and commitment, and from the bottom up with training, mentoring, and the implementation and modeling of strong 'see something, say something' as well as 'when in doubt, escalate' and 'no blame' principles of behavior.",
+   "ko": "보안 문화. Amazon에서 보안은 모든 직원에게 '최우선 과업(job zero)'이다. Amazon의 강력한 보안 문화[^3]는 위에서 아래로는 경영진의 깊은 참여와 약정을 통해, 아래에서 위로는 교육, 멘토링, 그리고 '무언가를 보면 말하라(see something, say something)', '의심스러우면 상부에 보고하라(when in doubt, escalate)', '비난하지 않는다(no blame)'는 강력한 행동 원칙의 시행과 모범 실천을 통해 구축되고 강화된다."
+  },
+  {
+   "type": "li",
+   "en": "Workforce vetting and careful monitoring for insider threats. Employment at Amazon requires background checks (to the extent allowed under local law). Employee privileges are carefully restricted from the beginning based on their roles and responsibilities (see 'strong separation of duties and least-privilege access' below). Thereafter, employee access to sensitive resources required to do their work ( e.g. , code repositories, wiki pages, design documents, etc.) is monitored for unusual access patterns. Upon detection of any potential risks, an enterprise security team is tasked with follow-up and investigations as needed.",
+   "ko": "인력 검증 및 내부자 위협에 대한 면밀한 모니터링. Amazon에 고용되려면 (현지 법률이 허용하는 범위 내에서) 신원 조회를 거쳐야 한다. 직원 권한은 처음부터 역할과 책임에 따라 엄격하게 제한된다(아래 '엄격한 직무 분리 및 최소 권한 접근' 참조). 이후 업무 수행에 필요한 민감한 리소스(예: 코드 저장소, 위키 페이지, 설계 문서 등)에 대한 직원의 접근은 비정상적인 접근 패턴이 있는지 모니터링된다. 잠재적 위험이 탐지되면 기업 보안팀이 필요에 따라 후속 조치와 조사를 담당한다.",
+   "marks": [
+    {
+     "t": "내부자 위협에 대한 면밀한 모니터링",
+     "k": "safety"
+    },
+    {
+     "t": "비정상적인 접근 패턴이 있는지 모니터링된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Strong separation of duties and least-privilege access. Amazon access controls enforce (1) strong separations of duties across engineering service teams, and (2) least-privileged access within teams. Physical and logical separation of  duties ensure that individuals and teams who build and operate our data centers do not have logical access to the software-based services that run on that physical infrastructure, and software team members have no physical access. At the logical or software layers, separation of duties means that engineers do not have privileged access to any service that they are not building or operating. Within individual service teams, privileges are further scoped down using carefully managed permission groups that are continuously and automatically updated based on job-related rules and on-call status. Access to production systems is controlled by  Critical Permission Groups that are regularly audited so that only the right personnel, and the smallest number of personnel, have the permissions to carry out privileged operations.",
+   "ko": "엄격한 직무 분리 및 최소 권한 접근. Amazon의 접근 통제는 (1) 엔지니어링 서비스팀 간의 엄격한 직무 분리와 (2) 팀 내 최소 권한 접근을 강제한다. 물리적·논리적 직무 분리를 통해, 데이터 센터를 구축하고 운영하는 개인과 팀은 해당 물리적 인프라에서 실행되는 소프트웨어 기반 서비스에 논리적으로 접근할 수 없으며, 소프트웨어팀 구성원은 물리적 접근 권한이 없다. 논리 계층 또는 소프트웨어 계층에서 직무 분리란 엔지니어가 자신이 구축하거나 운영하지 않는 서비스에 대해 특권 접근 권한을 갖지 않는다는 것을 의미한다. 개별 서비스팀 내에서는 직무 관련 규칙과 온콜(on-call) 상태에 따라 지속적이고 자동으로 갱신되는, 신중하게 관리되는 권한 그룹을 사용하여 권한 범위를 더욱 축소한다. 운영 시스템에 대한 접근은 정기적으로 감사되는 핵심 권한 그룹(Critical Permission Groups)을 통해 통제되며, 이를 통해 적합한 인원만이, 그리고 최소한의 인원만이 특권 작업을 수행할 권한을 갖도록 한다."
+  },
+  {
+   "type": "li",
+   "en": "Physical security of datacenters. Our data centers are secure by design. Before building a data center, we comprehensively assess potential threats and then design, implement, and test controls to ensure the systems, technology, and people we deploy address those risks. Physical access to our data centers is limited to screened personnel within specific job functions and with specific approvals. Any employee whose job does not involve daily work inside the data center but who needs data center access must first apply to a security team that supervises access and provide a valid business justification for temporary, task-specific access. Physical access to AWS data centers is logged, monitored by AI-enhanced video surveillance and other means, and all access records retained for at least 10 years. AWS correlates information gained from logical and physical monitoring systems to enhance security on an as-needed basis. The AWS Security Operations Center performs regular threat and vulnerability reviews of our data centers. Ongoing assessment and mitigation of potential vulnerabilities is performed through data center risk assessment activities. Security Operations Centers provide 24/7 centralized global support by managing and monitoring all data center access activities, equipping local teams and other support teams to respond to security incidents by triaging, consulting, analyzing, and dispatching responses.",
+   "ko": "데이터 센터의 물리적 보안. Amazon의 데이터 센터는 설계 단계부터 안전하도록(secure by design) 만들어진다. 데이터 센터를 구축하기 전에 Amazon은 잠재적 위협을 포괄적으로 평가(assessment)한 다음, 배포하는 시스템, 기술, 인력이 해당 위험에 대응하도록 통제를 설계·구현·테스트한다. 데이터 센터에 대한 물리적 접근은 특정 직무를 수행하고 특정 승인을 받은, 심사를 거친 인원으로 제한된다. 데이터 센터 내부에서 일상적으로 근무하지 않지만 데이터 센터 접근이 필요한 직원은 먼저 접근을 감독하는 보안팀에 신청하고, 임시적이며 과업별로 한정된 접근에 대한 타당한 업무상 사유를 제시해야 한다. AWS 데이터 센터에 대한 물리적 접근은 기록되고, AI로 강화된 영상 감시 및 기타 수단으로 모니터링되며, 모든 접근 기록은 최소 10년간 보관된다. AWS는 필요에 따라 논리적·물리적 모니터링 시스템에서 얻은 정보를 상호 연계하여 보안을 강화한다. AWS 보안 운영 센터(Security Operations Center)는 데이터 센터에 대해 정기적으로 위협 및 취약점 검토를 수행한다. 잠재적 취약점에 대한 지속적인 평가와 완화는 데이터 센터 위험 평가 활동을 통해 수행된다. 보안 운영 센터는 모든 데이터 센터 접근 활동을 관리·모니터링함으로써 연중무휴 24시간 중앙 집중식 글로벌 지원을 제공하며, 현지 팀과 기타 지원팀이 분류, 자문, 분석, 대응 파견을 통해 보안 사고에 대응할 수 있도록 지원한다."
+  },
+  {
+   "type": "li",
+   "en": "Zero trust device and identity management. Access to corporate resources is restricted to Amazonmanaged end-user devices protected by multiple endpoint protection systems, and devices are automatically quarantined upon any  indication of compromise, or if not updated with security updates in a timely manner. Users must re-authenticate at least once a day with a hardware-based multi-factor authentication token with an on-device PIN, and additional authentication steps and two-person rules are added when appropriate for more sensitive operations. A global authentication and authorization service manages access to all internal systems and automatically modifies or revokes privileges based on indicators of risk (such as 'impossible traveler' scenarios) following zero trust principles. General business applications are accessible via encrypted links over insecure networks (i.e., the Internet) when strong device and authentication security are in place. Additional protections such as secure network boundaries, security proxies, or bastion hosts are used  to",
+   "ko": "제로 트러스트 기반 기기 및 신원 관리. 기업 리소스에 대한 접근은 여러 엔드포인트 보호 시스템으로 보호되는 Amazon 관리 최종 사용자 기기로 제한되며, 기기는 침해 징후가 조금이라도 있거나 보안 업데이트가 적시에 적용되지 않은 경우 자동으로 격리된다. 사용자는 기기 내 PIN이 있는 하드웨어 기반 다중 요소 인증 토큰으로 최소 하루에 한 번 재인증해야 하며, 보다 민감한 작업의 경우 적절한 때에 추가 인증 단계와 2인 규칙(two-person rule)이 추가된다. 글로벌 인증 및 인가 서비스는 모든 내부 시스템에 대한 접근을 관리하며, 제로 트러스트 원칙에 따라 위험 지표(예: '불가능한 이동자(impossible traveler)' 시나리오)에 기반하여 권한을 자동으로 변경하거나 회수한다. 일반 업무용 애플리케이션은 강력한 기기 보안 및 인증 보안이 갖춰진 경우 안전하지 않은 네트워크(즉, 인터넷)를 통해 암호화된 링크로 접근할 수 있다. 민감한 시스템과 작업에 대해서는 적절한 경우 보안 네트워크 경계, 보안 프록시, 배스천 호스트(bastion host)와 같은 추가 보호 수단을 사용하여"
+  },
+  {
+   "type": "p",
+   "en": "enforce additional layers of authentication, privilege limitation, logging, and alerting where appropriate for sensitive systems and operations.",
+   "ko": "추가적인 계층의 인증, 권한 제한, 로깅, 경보를 강제한다."
+  },
+  {
+   "type": "p",
+   "en": "Hardware and software supply chain security. Amazon utilizes industry-leading supply chain security practices. This begins with designing and developing many of our own critical hardware components down to the silicon level to provide secure foundations for the AWS cloud. Amazon utilizes contract manufacturing to make most of our own servers, switches, and routers. Component suppliers and sub-assembly firms are carefully vetted and tracked by a hardware supply chain security team. To mitigate the risk of regionally targeted supply chain attacks, we ship tamper-evident assembled racks to centralized storage and distribution centers around the world rather than directly to specific cloud regions. For software supply chain security, core cloud services are built internally using a combination of proprietary software and open-source components. Open-source components are imported to internal repositories for central security scanning and management (more on our secure development lifecycle processes below). Amazon invests heavily in securing open-source software, both with engineering resources where Amazon is the upstream supplier (i.e., by open-sourcing many of our core security technologies), as well as pushing security fixes upstream when those are identified internally and supporting the broader open-source community through large-scale grants and funding.[^4]",
+   "ko": "하드웨어 및 소프트웨어 공급망 보안. Amazon은 업계를 선도하는 공급망 보안 실행 방안을 활용한다. 이는 AWS 클라우드에 안전한 기반을 제공하기 위해 다수의 핵심 하드웨어 구성 요소를 실리콘 수준까지 직접 설계·개발하는 데서 시작한다. Amazon은 자체 서버, 스위치, 라우터 대부분을 위탁 제조 방식으로 생산한다. 부품 공급업체와 하위 조립 업체는 하드웨어 공급망 보안팀이 신중하게 심사하고 추적한다. 특정 지역을 겨냥한 공급망 공격의 위험을 완화하기 위해, Amazon은 변조 여부를 확인할 수 있는(tamper-evident) 조립 완료 랙을 특정 클라우드 리전으로 직접 배송하지 않고 전 세계의 중앙 집중식 보관·배송 센터로 배송한다. 소프트웨어 공급망 보안의 경우, 핵심 클라우드 서비스는 독점 소프트웨어와 오픈소스 구성 요소를 조합하여 내부적으로 구축된다. 오픈소스 구성 요소는 중앙 보안 스캐닝 및 관리를 위해 내부 저장소로 반입된다(보안 개발 수명주기 프로세스에 관해서는 아래에서 자세히 설명한다). Amazon은 오픈소스 소프트웨어의 보안 강화에 막대한 투자를 하고 있다. 이는 Amazon이 업스트림 공급자인 경우 엔지니어링 리소스를 투입하는 것(즉, 다수의 핵심 보안 기술을 오픈소스로 공개하는 것)뿐만 아니라, 내부적으로 발견된 보안 수정 사항을 업스트림에 반영하고 대규모 보조금 및 자금 지원을 통해 보다 광범위한 오픈소스 커뮤니티를 지원하는 것을 포함한다.[^4]"
+  },
+  {
+   "type": "li",
+   "en": "Specialized hardware designs to maximize security. Amazon designs and develops a wide range of custom hardware engineered from the ground up with security in mind to provide secure foundations for the AWS cloud. For example, Amazon's Graviton CPUs lack hyperthreading to protect against an important class of side-channel attacks,  and support hardware-based pointer validation to protect against return-oriented programing and similar threats. Graviton systems as well as systems based on other modern processors from Intel and AMD encrypt all data in memory and data in transit across high-speed local buses. These main system board technologies where customer workloads run, whether based on Graviton, Intel, or AMD processors, are then surrounded by Nitro system components, which offload traditional functions of a hypervisor to run on specialized hardware and firmware modules that provide fully encrypted virtual storage, encrypted virtual networking, and all other virtual functions. As a result, hypervisors become optional, as Nitro uniquely supports a 'bare metal' mode for a variety of instance types. The Nitro system is designed such that no human access is possible to either the Nitro modules or the main system board.[^5] This Zero Operator Access approach has been validated by third party security design reviews.[^6]",
+   "ko": "보안성 극대화를 위한 특화 하드웨어 설계. Amazon은 AWS 클라우드에 안전한 기반을 제공하기 위해 처음부터 보안을 염두에 두고 설계된 광범위한 맞춤형 하드웨어를 설계·개발한다. 예를 들어, Amazon의 Graviton CPU는 중요한 유형의 부채널 공격을 방어하기 위해 하이퍼스레딩을 지원하지 않으며, 반환 지향 프로그래밍(return-oriented programming) 및 유사한 위협을 방어하기 위해 하드웨어 기반 포인터 확인을 지원한다. Graviton 시스템과 Intel 및 AMD의 기타 최신 프로세서 기반 시스템은 메모리 내 모든 데이터와 고속 로컬 버스를 통해 전송 중인 데이터를 암호화한다. Graviton, Intel, AMD 중 어느 프로세서를 기반으로 하든, 고객 워크로드가 실행되는 이러한 메인 시스템 보드 기술은 Nitro 시스템 구성 요소로 둘러싸인다. Nitro 시스템 구성 요소는 하이퍼바이저의 전통적 기능을 오프로드하여 완전히 암호화된 가상 스토리지, 암호화된 가상 네트워킹 및 기타 모든 가상 기능을 제공하는 특화 하드웨어 및 펌웨어 모듈에서 실행되도록 한다. 그 결과, Nitro는 다양한 인스턴스 유형에 대해 '베어메탈(bare metal)' 모드를 고유하게 지원하므로 하이퍼바이저는 선택 사항이 된다. Nitro 시스템은 Nitro 모듈과 메인 시스템 보드 어디에도 사람이 접근할 수 없도록 설계되어 있다.[^5] 이러한 Zero Operator Access 접근 방식은 제3자 보안 설계 검토를 통해 확인되었다.[^6]"
+  },
+  {
+   "type": "li",
+   "en": "Secure design, security reviews, and security testing. Every engineering team at Amazon is fully responsible for the security of what they design, build, and operate. Training and empowerment programs such as the AWS Guardians program[^7] embed security expertise into every team. At the same time, central security teams provide enhanced capabilities and expertise that all engineering teams rely on, including through security architecture reviews, threat modeling exercises, assessments for compliance with all corporate security policies and practices, penetration testing, red teaming services, and the operation of responsible research disclosure and bug bounty programs to enlist the help of outside experts. In the end, all software and AI projects at Amazon must undergo and pass a full security and safety review by one of the central security teams.",
+   "ko": "보안 설계, 보안 검토 및 보안 테스트. Amazon의 모든 엔지니어링팀은 자신이 설계·구축·운영하는 것의 보안에 대해 전적인 책임을 진다. AWS Guardians 프로그램[^7]과 같은 교육 및 역량 강화 프로그램은 모든 팀에 보안 전문성을 내재화한다. 동시에 중앙 보안팀은 모든 엔지니어링팀이 의존하는 강화된 역량과 전문성을 제공하는데, 여기에는 보안 아키텍처 검토, 위협 모델링 훈련, 모든 기업 보안 정책 및 실행 방안에 대한 규정 준수 평가, 침투 테스트, 레드티밍 서비스, 그리고 외부 전문가의 도움을 받기 위한 책임 있는 연구 공개 및 버그바운티 프로그램 운영이 포함된다. 최종적으로, Amazon의 모든 소프트웨어 및 AI 프로젝트는 중앙 보안팀 중 하나가 수행하는 전면적인 보안 및 안전 검토를 받고 통과해야 한다.",
+   "marks": [
+    {
+     "t": "레드티밍 서비스",
+     "k": "safety"
+    },
+    {
+     "t": "모든 소프트웨어 및 AI 프로젝트는 중앙 보안팀 중 하나가 수행하는 전면적인 보안 및 안전 검토를 받고 통과해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Secure development and deployment practices. Software engineering teams at Amazon are supported by a central team that designs, builds, and operates central tooling for core software engineering tasks such as source code repositories, code development, review, and integration testing tools, isolated build environments, and automated static code analysis tools that check for performance and correctness issues, including security issues. Two-person rules govern all code check-ins, and in many cases formal verification tools are run automatically as well to ensure that correctness remains valid. The team also runs a mature and sophisticated pipeline deployment tool[^8] to automate software updates and rollbacks so that any unexpected behaviors or anomalies can be easily reverted for troubleshooting. The highly automated deployment systems also improve security by decreasing the need for direct human access to pre-production and production hosts.",
+   "ko": "보안 개발 및 배포 실행 방안. Amazon의 소프트웨어 엔지니어링팀은 핵심 소프트웨어 엔지니어링 과업을 위한 중앙 도구를 설계·구축·운영하는 중앙팀의 지원을 받는다. 이러한 도구에는 소스 코드 저장소, 코드 개발·검토·통합 테스트 도구, 격리된 빌드 환경, 그리고 보안 문제를 포함한 성능 및 정확성 문제를 점검하는 자동화된 정적 코드 분석 도구가 포함된다. 모든 코드 체크인에는 2인 규칙이 적용되며, 많은 경우 정확성이 유효하게 유지되도록 정형 검증(formal verification) 도구도 자동으로 실행된다. 또한 이 팀은 성숙하고 정교한 파이프라인 배포 도구[^8]를 운영하여 소프트웨어 업데이트와 롤백을 자동화함으로써, 예상치 못한 동작이나 이상 징후가 발생하면 문제 해결을 위해 쉽게 되돌릴 수 있도록 한다. 고도로 자동화된 배포 시스템은 사전 운영(pre-production) 호스트 및 운영 호스트에 대한 사람의 직접 접근 필요성을 줄임으로써 보안성 또한 향상시킨다."
+  },
+  {
+   "type": "li",
+   "en": "Advanced IAM technologies that reduce external and internal risk. AWS's core IAM technology defines how both external API and internal cross-service cloud API authentication and authorization work.  Internal",
+   "ko": "외부 및 내부 위험을 줄이는 고급 IAM 기술. AWS의 핵심 IAM 기술은 외부 API와 내부 서비스 간 클라우드 API 모두의 인증 및 권한 부여 방식을 정의한다. 내부"
+  },
+  {
+   "type": "p",
+   "en": "service-to-service requests utilize carefully designed technologies called Forward Access Session (FAS) tokens for synchronous calls, and Service-Linked Roles (SLRs) for asynchronous calls. Both approaches eliminate the presence of cross-service, powerful administrative credentials in most AWS systems, and thus greatly reduce the possible impact of any cloud service compromise, whether because of external or internal threat actors.",
+   "ko": "서비스 간 요청에는 신중하게 설계된 기술이 사용되는데, 동기식 호출에는 Forward Access Session (FAS) 토큰이, 비동기식 호출에는 Service-Linked Roles (SLRs)가 사용된다. 두 접근 방식 모두 대부분의 AWS 시스템에서 서비스 간에 통용되는 강력한 관리자 자격 증명을 없애며, 따라서 외부 위협 행위자에 의한 것이든 내부 위협 행위자에 의한 것이든 클라우드 서비스 침해가 미칠 수 있는 영향을 크게 줄인다."
+  },
+  {
+   "type": "li",
+   "en": "Advanced data encryption and key management capabilities. AWS implements state-of-the-art encryption and key management capabilities for both data in transit and at rest. All data traveling between our secure facilities across metropolitan or wide area networks is bulk-encrypted with AES-256 GCM (Galois/Counter Mode) using either layer[^1] optical or layer[^2:2] MACSec encryption. AWS was the first major cloud provider to remove support for TLS 1.0/1.1,[^9] so data traveling from the outside to AWS API endpoints across public networks is encrypted with a minimum of Transport Layer Security version 1.2, with 1.3 also available on all endpoints. Private connectivity to AWS using Direct Connect can be cross-connected with MACSec encryption between customer and AWS routers, with back-haul also always encrypted over the private AWS network. For data at rest, the AWS Key Management Service (KMS) provides the basis of envelope-based data encryption across more than 115 storage and database services. KMS is the only cloudnative, highly available, horizontally scalable key management system that is also a FIPS 140-3 Level 3 certified HSM. KMS APIs, as well as those of AWS Certificate Manager and Secrets Manager, also support post-quantum key exchange algorithms to provide protection today against possible future 'harvest now, decrypt later' threats to network encryption from advanced actors and quantum computers.[^10]",
+   "ko": "고급 데이터 암호화 및 키 관리 역량. AWS는 전송 중 데이터와 저장 데이터 모두에 대해 최첨단 암호화 및 키 관리 역량을 구현한다. 대도시권 네트워크나 광역 네트워크를 거쳐 AWS의 보안 시설 간에 이동하는 모든 데이터는 계층[^1] 광학 암호화 또는 계층[^2:2] MACSec 암호화를 사용하여 AES-256 GCM(Galois/Counter Mode)으로 일괄 암호화된다. AWS는 TLS 1.0/1.1 지원을 중단한 최초의 주요 클라우드 제공업체였다.[^9] 따라서 외부에서 공용 네트워크를 거쳐 AWS API 엔드포인트로 이동하는 데이터는 최소 Transport Layer Security 버전 1.2로 암호화되며, 모든 엔드포인트에서 1.3도 사용할 수 있다. Direct Connect를 사용한 AWS로의 프라이빗 연결은 고객 라우터와 AWS 라우터 간에 MACSec 암호화로 교차 연결될 수 있으며, 백홀(back-haul) 또한 프라이빗 AWS 네트워크상에서 항상 암호화된다. 저장 데이터의 경우, AWS Key Management Service(KMS)가 115개 이상의 스토리지 및 데이터베이스 서비스 전반에 걸쳐 봉투(envelope) 기반 데이터 암호화의 기반을 제공한다. KMS는 FIPS 140-3 Level 3 인증 HSM이기도 한 유일한 클라우드 네이티브, 고가용성, 수평 확장형 키 관리 시스템이다. KMS API와 AWS Certificate Manager 및 Secrets Manager의 API는 양자내성 키 교환 알고리즘도 지원하여, 고도화된 행위자와 양자 컴퓨터가 향후 네트워크 암호화에 가할 수 있는 '지금 수집하고 나중에 해독하기(harvest now, decrypt later)' 위협에 대해 현시점부터 보호를 제공한다.[^10]"
+  },
+  {
+   "type": "li",
+   "en": "Access controls that eliminate or carefully limit and control operator access. For several core cloud services, AWS has  eliminated all human access to service hosts. These 'zero operator access' services include the FIPS 140-3 Level 3 validated Key Management Service (KMS), the entire EC2 fleet based on Nitro technology, the Lambda production fleet, and the EKS container management service. These capabilities effectively provide 'confidential computing' by default. For other services, we have built operational tools that enable operators to obtain system logs and execute pre-validated operations without direct access to production hosts. Where emergency operator access may still be necessary, pre-access checks and permissions are required, and all operator actions are logged, with alarms and follow-up for several sensitive local operations, should any occur. More information on this topic is available on our website.[^11]",
+   "ko": "운영자 접근을 제거하거나 신중하게 제한·통제하는 접근 통제. 여러 핵심 클라우드 서비스에 대해 AWS는 서비스 호스트에 대한 사람의 접근을 모두 제거하였다. 이러한 'Zero Operator Access' 서비스에는 FIPS 140-3 Level 3 검증을 받은 Key Management Service(KMS), Nitro 기술 기반의 EC2 전체 플릿, Lambda 운영 플릿, EKS 컨테이너 관리 서비스가 포함된다. 이러한 역량은 사실상 기본적으로 '기밀 컴퓨팅'을 제공한다. 그 밖의 서비스에 대해서는 운영자가 운영 호스트에 직접 접근하지 않고도 시스템 로그를 확보하고 사전 검증된 작업을 실행할 수 있도록 하는 운영 도구를 구축하였다. 긴급 운영자 접근이 여전히 필요할 수 있는 경우에는 사전 접근 점검과 권한이 요구되며, 모든 운영자 작업이 로그로 기록되고, 여러 민감한 로컬 작업에 대해서는 발생 시 경보와 후속 조치가 이루어진다. 이 주제에 관한 자세한 정보는 당사 웹사이트에서 확인할 수 있다.[^11]"
+  },
+  {
+   "type": "li",
+   "en": "Use of formal methods to ensure correctness of security-critical components and subsystems. Amazon makes wide usage of the area of computer science known as automating reasoning, a branch of artificial intelligence that utilizes math and logic to prove the correctness of key software systems. Critical security components such as encryption algorithms,[^12] hypervisor separation kernels,[^13] authorization systems,[^14] automatic privilege reduction features,[^15] and network security components and libraries,[^16] are developed by first creating ideal models of software systems and all their desired states, and then mathematically proving with proof-checking tools that the accompanying software implementation satisfies all the properties of the model. The proofs are then incorporated into the software development lifecycle such that all changes or additions to these critical code bases have the proofs run against them automatically, and any code update that fails to pass a proof is rejected. AWS  also applies automated reasoning to AI itself to help manage the problem of hallucinations.[^17]",
+   "ko": "보안에 중요한 구성 요소 및 하위 시스템의 정확성을 보장하기 위한 정형 기법(formal methods)의 활용. Amazon은 자동 추론(automated reasoning)으로 알려진 컴퓨터 과학 분야를 폭넓게 활용하는데, 이는 수학과 논리를 활용하여 핵심 소프트웨어 시스템의 정확성을 증명하는 인공지능의 한 분야이다. 암호화 알고리즘,[^12] 하이퍼바이저 분리 커널,[^13] 권한 부여 시스템,[^14] 자동 권한 축소 기능,[^15] 네트워크 보안 구성 요소 및 라이브러리[^16]와 같은 중요 보안 구성 요소는 먼저 소프트웨어 시스템과 그 시스템이 가져야 할 모든 상태에 대한 이상적 모델을 만든 다음, 증명 검사 도구를 사용하여 해당 소프트웨어 구현이 모델의 모든 속성을 충족함을 수학적으로 증명하는 방식으로 개발된다. 이후 이러한 증명은 소프트웨어 개발 수명주기에 통합되어, 이들 중요 코드베이스에 대한 모든 변경이나 추가 사항에 대해 증명이 자동으로 실행되며, 증명을 통과하지 못한 코드 업데이트는 모두 거부된다. AWS는 환각 문제의 관리를 돕기 위해 AI 자체에도 자동 추론을 적용한다.[^17]",
+   "marks": [
+    {
+     "t": "AWS는 환각 문제의 관리를 돕기 위해 AI 자체에도 자동 추론을 적용한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Automated threat intelligence and defense systems. AWS harvests large volumes of telemetry about the behavior of bad actors on the Internet by operating MadPot,[^18] likely the world's largest and most",
+   "ko": "자동화된 위협 인텔리전스 및 방어 시스템. AWS는 MadPot[^18]을 운영하여 인터넷상 악의적 행위자의 행동에 관한 대량의 원격 측정(telemetry) 데이터를 수집하는데, MadPot은 아마도 세계에서 가장 크고 가장"
+  },
+  {
+   "type": "p",
+   "en": "sophisticated 'honeypot' system. Sonaris,[^19] a threat detection and automatic mitigation system, and Mithra,[^20] a massive neural network graph model of the riskiness of observed DNS names, allow AWS to detect, block and/or mitigate a wide variety of external threats before they impact AWS and its customers. AWS also works closely with other providers to take down threats that exist outside its network, making the Internet safer for all. AWS security engineers and data scientists have explained in depth this work and the AI systems that power it at recent technical conferences.[^21]",
+   "ko": "정교한 '허니팟(honeypot)' 시스템일 것이다. 위협 탐지 및 자동 완화 시스템인 Sonaris[^19]와, 관측된 DNS 이름의 위험도를 다루는 대규모 신경망 그래프 모델인 Mithra[^20]를 통해 AWS는 다양한 외부 위협이 AWS와 고객에게 영향을 미치기 전에 이를 탐지, 차단 및/또는 완화할 수 있다. AWS는 또한 다른 제공업체와 긴밀히 협력하여 자사 네트워크 외부에 존재하는 위협을 제거함으로써 모두를 위해 인터넷을 더 안전하게 만든다. AWS 보안 엔지니어와 데이터 과학자들은 최근 기술 콘퍼런스에서 이 작업과 이를 뒷받침하는 AI 시스템을 심도 있게 설명하였다.[^21]"
+  },
+  {
+   "type": "li",
+   "en": "Security operations, threat hunting, and abuse capabilities. Our continually improving automated systems are backstopped by the world's leading human threat intelligence and response experts. Amazon operates global 24/7/365 security operations and response teams to supervise and triage incoming issues using four security operations centers around the globe that work in coordination to ensure smooth operational 'handoffs' every six hours. The Amazon Cyber Threat Intelligence team continually monitors and tracks dozens of advanced threat actor groups, observing their tactics, techniques, and procedures, and when appropriate, taking part in coordinated takedowns of their infrastructure. Several examples of our work in this area can be found on our security blog.[^22] The AWS Trust & Safety and Fraud teams detect abusive and fraudulent behavior on the AWS cloud using automated and human monitoring, as well as external reporting mechanisms, and block or evict bad actors as needed.",
+   "ko": "보안 운영, 위협 헌팅 및 남용 대응 역량. 지속적으로 개선되는 당사의 자동화 시스템은 세계 최고 수준의 위협 인텔리전스 및 대응 인력 전문가들이 뒷받침한다. Amazon은 연중무휴 24시간(24/7/365) 글로벌 보안 운영 및 대응팀을 운영하여 유입되는 문제를 감독하고 분류하며, 이를 위해 전 세계 4곳의 보안 운영 센터가 협력하여 6시간마다 원활한 운영 '인계'가 이루어지도록 한다. Amazon 사이버 위협 인텔리전스팀은 수십 개의 고도화된 위협 행위자 그룹을 지속적으로 모니터링하고 추적하면서 이들의 전술, 기법 및 절차를 관찰하고, 적절한 경우 이들의 인프라에 대한 공조 차단 작업에 참여한다. 이 분야에서 당사가 수행한 작업의 여러 사례는 당사 보안 블로그에서 확인할 수 있다.[^22] AWS Trust & Safety팀과 Fraud팀은 자동화된 모니터링과 사람에 의한 모니터링, 그리고 외부 신고 메커니즘을 활용하여 AWS 클라우드상의 남용 및 사기 행위를 탐지하고, 필요에 따라 악의적 행위자를 차단하거나 퇴출한다."
+  },
+  {
+   "type": "li",
+   "en": "General third-party audit and compliance. AWS operates one of world's most carefully and thoroughly audited IT environments. Independent auditors do regular assessments of our environment and services under a wide variety of compliance regimes. These independent experts then issue reports, attestations, and certifications with supporting evidence that customers and regulators can refer to and rely on when assessing the security of AWS's offerings.[^23] Most of these reports, attestations, and certifications are available directly to customers for searching and downloading on a self-service basis using the AWS Artifact service.[^24]",
+   "ko": "일반 제3자 감사 및 규정 준수. AWS는 세계에서 가장 면밀하고 철저하게 감사를 받는 IT 환경 중 하나를 운영한다. 독립 감사인은 다양한 규정 준수 체계에 따라 당사의 환경과 서비스를 정기적으로 평가(assessment)한다. 이후 이들 독립 전문가는 고객과 규제 기관이 AWS 제품 및 서비스의 보안성을 평가할 때 참조하고 신뢰할 수 있도록 근거 자료를 갖춘 보고서, 증명서 및 인증을 발급한다.[^23] 이러한 보고서, 증명서 및 인증의 대부분은 고객이 AWS Artifact 서비스를 통해 셀프서비스 방식으로 직접 검색하고 다운로드할 수 있다.[^24]"
+  },
+  {
+   "type": "li",
+   "en": "Secure AI infrastructure and development environment. All AI accelerator or GPU-enabled compute nodes used for AI model training and inference within the AWS environment are based on the EC2 Nitro system, which provides confidential computing properties natively across the fleet. Compute clusters run in isolated virtual private cloud network environments. All model data and intermediate checkpoint results are stored using AES-256 GCM encryption with data encryption keys backed by KMS. All developments of frontier models in AWS accounts meet the required security bar for careful security configuration and management. These accounts include both identity-based and network-based boundaries, perimeters, and firewalls, as well as enhanced logging of security-relevant metadata such as VPC Flow Logs (netflow data) and DNS logs. The AWS GuardDuty intrusion detection service is enabled in all AI development environments, providing automatic monitoring for potential security threats, searching for indicators of compromise, and surfacing high priority alerts as appropriate. Software engineers and data scientists must be members of the correct Critical Permission Groups and authenticate with hardware security tokens from enterprise-managed endpoints to access or operate any model systems or data. Any  local, temporary copies of model data used for experiments and testing are also fully encrypted in transit and at rest at all times. Datasets used to train AI models are stored in data repositories that implement fine-grained access controls, data encryption, data access flow tracking, version control, and integrity validation.",
+   "ko": "안전한 AI 인프라 및 개발 환경. AWS 환경 내에서 AI 모델 학습 및 추론에 사용되는 모든 AI 가속기 또는 GPU 탑재 연산 노드는 EC2 Nitro 시스템을 기반으로 하며, 이 시스템은 전체 플릿에 걸쳐 기밀 컴퓨팅 특성을 기본적으로 제공한다. 연산 클러스터는 격리된 가상 사설 클라우드(virtual private cloud) 네트워크 환경에서 실행된다. 모든 모델 데이터와 중간 체크포인트 결과는 KMS 기반 데이터 암호화 키를 사용하는 AES-256 GCM 암호화를 적용하여 저장된다. AWS 계정에서 이루어지는 모든 프론티어 모델 개발은 신중한 보안 구성 및 관리에 대해 요구되는 보안 기준을 충족한다. 이러한 계정에는 신원 기반 및 네트워크 기반의 경계, 외곽 경계 및 방화벽이 포함되며, VPC Flow Logs(넷플로우 데이터)와 DNS 로그 등 보안 관련 메타데이터에 대한 강화된 로깅도 포함된다. 모든 AI 개발 환경에는 AWS GuardDuty 침입 탐지 서비스가 활성화되어 있어, 잠재적 보안 위협을 자동으로 모니터링하고 침해 지표를 탐색하며 적절한 경우 우선순위가 높은 경보를 표출한다. 소프트웨어 엔지니어와 데이터 과학자가 모델 시스템이나 데이터에 접근하거나 이를 운영하려면, 해당하는 Critical Permission Groups의 구성원이어야 하며 기업 관리형 엔드포인트에서 하드웨어 보안 토큰으로 인증해야 한다. 실험 및 테스트에 사용되는 모델 데이터의 로컬 임시 사본 또한 전송 중 및 저장 중 모든 시점에서 완전히 암호화된다. AI 모델 학습에 사용되는 데이터셋은 세분화된 접근 통제, 데이터 암호화, 데이터 접근 흐름 추적, 버전 관리 및 무결성 확인을 구현한 데이터 저장소에 보관된다.",
+   "marks": [
+    {
+     "t": "모든 프론티어 모델 개발은 신중한 보안 구성 및 관리에 대해 요구되는 보안 기준을 충족한다",
+     "k": "safety"
+    },
+    {
+     "t": "모델 시스템이나 데이터에 접근하거나 이를 운영하려면, 해당하는 Critical Permission Groups의 구성원이어야 하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Third party audits and red teaming assessments of AI systems . We regularly engage outside security experts to test the security posture of our development and operational systems, reviewing evidence of the controls we have in place and conducting simulated attacks to test our assumptions and ensure models are deployed into secure environments. These audits validate that our model weights are not exposed in ways not accounted for in our threat models.",
+   "ko": "AI 시스템에 대한 제3자 감사 및 레드티밍 평가. 당사는 정기적으로 외부 보안 전문가를 참여시켜 개발 및 운영 시스템의 보안 태세를 테스트한다. 이들은 당사가 마련한 통제에 관한 근거 자료를 검토하고, 모의 공격을 수행하여 당사의 가정을 검증하며 모델이 안전한 환경에 배포되도록 보장한다. 이러한 감사는 당사의 모델 가중치가 위협 모델에서 고려되지 않은 방식으로 노출되지 않음을 확인한다.",
+   "marks": [
+    {
+     "t": "외부 보안 전문가를 참여시켜 개발 및 운영 시스템의 보안 태세를 테스트한다",
+     "k": "safety"
+    },
+    {
+     "t": "모의 공격을 수행하여 당사의 가정을 검증하며 모델이 안전한 환경에 배포되도록 보장한다",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 감사는 당사의 모델 가중치가 위협 모델에서 고려되지 않은 방식으로 노출되지 않음을 확인한다.",
+     "k": "key"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "See https://www.amazon.science/publications/amazons-frontier-model-safety-framework",
+   "ko": "https://www.amazon.science/publications/amazons-frontier-model-safety-framework 참조",
+   "linked": true
+  },
+  {
+   "n": 2,
+   "en": "See https://arxiv.org/html/2507.06260v1 and https://arxiv.org/abs/2601.19134",
+   "ko": "https://arxiv.org/html/2507.06260v1 및 https://arxiv.org/abs/2601.19134 참조",
+   "linked": true
+  },
+  {
+   "n": 3,
+   "en": "See https://aws.amazon.com/ai/responsible-ai/.",
+   "ko": "https://aws.amazon.com/ai/responsible-ai/ 참조.",
+   "linked": true
+  },
+  {
+   "n": 4,
+   "en": "See https://aws.amazon.com/blogs/security/how-the-unique-culture-of-security-at-aws-makes-a-difference/.",
+   "ko": "https://aws.amazon.com/blogs/security/how-the-unique-culture-of-security-at-aws-makes-a-difference/ 참조.",
+   "linked": true
+  },
+  {
+   "n": 5,
+   "en": "See https://aws.amazon.com/security/opensource/.",
+   "ko": "https://aws.amazon.com/security/opensource/ 참조.",
+   "linked": true
+  },
+  {
+   "n": 6,
+   "en": "See https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aws-nitro-system/security-design-of-aws-nitro-system.html.",
+   "ko": "https://docs.aws.amazon.com/whitepapers/latest/security-design-of-aws-nitro-system/security-design-of-aws-nitro-system.html 참조.",
+   "linked": true
+  },
+  {
+   "n": 7,
+   "en": "See https://www.nccgroup.com/us/research-blog/public-report-aws-nitro-system-api-security-claims.",
+   "ko": "https://www.nccgroup.com/us/research-blog/public-report-aws-nitro-system-api-security-claims 참조.",
+   "linked": true
+  },
+  {
+   "n": 8,
+   "en": "See https://aws.amazon.com/blogs/security/how-aws-built-the-security-guardians-program-a-mechanism-to-distribute-security-ownership.",
+   "ko": "https://aws.amazon.com/blogs/security/how-aws-built-the-security-guardians-program-a-mechanism-to-distribute-security-ownership 참조.",
+   "linked": true
+  },
+  {
+   "n": 9,
+   "en": "See https://aws.amazon.com/builders-library/automating-safe-hands-off-deployments.",
+   "ko": "https://aws.amazon.com/builders-library/automating-safe-hands-off-deployments 참조.",
+   "linked": true
+  },
+  {
+   "n": 10,
+   "en": "See https://aws.amazon.com/blogs/security/tls-1-2-required-for-aws-endpoints/.",
+   "ko": "https://aws.amazon.com/blogs/security/tls-1-2-required-for-aws-endpoints/ 참조.",
+   "linked": true
+  },
+  {
+   "n": 11,
+   "en": "See https://aws.amazon.com/security/post-quantum-cryptography/.",
+   "ko": "https://aws.amazon.com/security/post-quantum-cryptography/ 참조.",
+   "linked": true
+  },
+  {
+   "n": 12,
+   "en": "See https://aws.amazon.com/trust-center/operator-access/.",
+   "ko": "https://aws.amazon.com/trust-center/operator-access/ 참조.",
+   "linked": true
+  },
+  {
+   "n": 13,
+   "en": "See https://www.amazon.science/publications/formal-verification-of-cryptographic-software-at-aws-current-practices-and-future-trends.",
+   "ko": "https://www.amazon.science/publications/formal-verification-of-cryptographic-software-at-aws-current-practices-and-future-trends 참조.",
+   "linked": true
+  },
+  {
+   "n": 14,
+   "en": "See 'Introducing the Nitro Isolation Engine: transparency through mathematics,' https://youtu.be/hqqKi3E-oG8.",
+   "ko": "'Introducing the Nitro Isolation Engine: transparency through mathematics,' https://youtu.be/hqqKi3E-oG8 참조.",
+   "linked": true
+  },
+  {
+   "n": 15,
+   "en": "See https://www.amazon.science/publications/formally-verified-cloud-scale-authorization; see also 'Proving the correctness of AWS authorization,' https://youtu.be/oshxAJGrwMU.",
+   "ko": "https://www.amazon.science/publications/formally-verified-cloud-scale-authorization 참조. 'Proving the correctness of AWS authorization,' https://youtu.be/oshxAJGrwMU 도 참조.",
+   "linked": true
+  },
+  {
+   "n": 16,
+   "en": "See https://www.amazon.science/blog/new-aws-tool-recommends-removal-of-unused-permissions.",
+   "ko": "https://www.amazon.science/blog/new-aws-tool-recommends-removal-of-unused-permissions 참조.",
+   "linked": true
+  },
+  {
+   "n": 17,
+   "en": "See https://aws.amazon.com/blogs/security/automated-reasoning-and-amazon-s2n.",
+   "ko": "https://aws.amazon.com/blogs/security/automated-reasoning-and-amazon-s2n 참조.",
+   "linked": true
+  },
+  {
+   "n": 18,
+   "en": "See https://aws.amazon.com/blogs/aws/minimize-ai-hallucinations-and-deliver-up-to-99-verification-accuracy-with-automated-reasoning-checks-now-available/.",
+   "ko": "https://aws.amazon.com/blogs/aws/minimize-ai-hallucinations-and-deliver-up-to-99-verification-accuracy-with-automated-reasoning-checks-now-available/ 참조.",
+   "linked": true
+  },
+  {
+   "n": 19,
+   "en": "See https://aws.amazon.com/blogs/security/how-aws-threat-intelligence-deters-threat-actors.",
+   "ko": "https://aws.amazon.com/blogs/security/how-aws-threat-intelligence-deters-threat-actors 참조.",
+   "linked": true
+  },
+  {
+   "n": 20,
+   "en": "See https://aws.amazon.com/blogs/security/how-aws-uses-active-defense-to-help-protect-customers-from-security-threats.",
+   "ko": "https://aws.amazon.com/blogs/security/how-aws-uses-active-defense-to-help-protect-customers-from-security-threats 참조.",
+   "linked": true
+  },
+  {
+   "n": 21,
+   "en": "See https://aws.amazon.com/blogs/security/how-aws-tracks-the-clouds-biggest-security-threats-and-helps-shut-them-down.",
+   "ko": "https://aws.amazon.com/blogs/security/how-aws-tracks-the-clouds-biggest-security-threats-and-helps-shut-them-down 참조.",
+   "linked": true
+  },
+  {
+   "n": 22,
+   "en": "See 'How AWS's global threat intelligence transforms cloud protection,' https://youtu.be/MsZWR4JJ5lA (2025); 'Discovering emerging threats in cloud security,' https://youtu.be/38Z9csvyFDg (2024).",
+   "ko": "'How AWS's global threat intelligence transforms cloud protection,' https://youtu.be/MsZWR4JJ5lA (2025); 'Discovering emerging threats in cloud security,' https://youtu.be/38Z9csvyFDg (2024) 참조.",
+   "linked": true
+  },
+  {
+   "n": 23,
+   "en": "See, e.g. , https://aws.amazon.com/blogs/security/.",
+   "ko": "예컨대 https://aws.amazon.com/blogs/security/ 참조.",
+   "linked": true
+  },
+  {
+   "n": 24,
+   "en": "See https://aws.amazon.com/compliance/programs/.",
+   "ko": "https://aws.amazon.com/compliance/programs/ 참조.",
+   "linked": true
+  },
+  {
+   "n": 25,
+   "en": "See https://aws.amazon.com/artifact/.",
+   "ko": "https://aws.amazon.com/artifact/ 참조.",
+   "linked": false
+  }
+ ]
+}
