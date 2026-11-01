@@ -52,7 +52,7 @@ const writingItems: RecentItem[] = writing.map((item) => ({
   href: item.migrationStatus === "상세 페이지 완료" ? `/writing/archive/${item.slug}` : (item.sourceUrl ?? "/writing"),
 }));
 
-// 번역은 블로그의 한 갈래 — 글과 같은 자리에, 번역일 기준으로 섞는다.
+// 번역 문건: 글 페이지의 '번역' 카테고리, 홈에서는 ARCHIVE와 최근 기록에 나온다.
 const translationEntries = translations.map((doc) => {
   const [year, month, day] = doc.translated.split("-");
   return { doc, year, month: Number(month), day: Number(day), href: `/translations/${doc.slug}` };
@@ -61,7 +61,7 @@ const translationEntries = translations.map((doc) => {
 const translationItems: RecentItem[] = translationEntries.map(({ doc, year, month, day, href }) => ({
   dateKey: dateKey(year, month, day),
   date: formatDate(year, month, null),
-  type: "블로그",
+  type: "번역",
   title: listTitle(doc),
   detail: "번역",
   href,
@@ -89,10 +89,10 @@ function youtubeId(url: string) {
 
 type LatestCard = { key: number; date: string; outlet: string; title: string; href: string; thumb: string | null; placeholder: string };
 
-// 최근 글(보도 제외)과 미디어를 합쳐 가장 최근 3개
+// MEDIA: 미디어 출연과 직접 쓴 블로그 글만 합쳐 가장 최근 3개 (번역은 ARCHIVE로)
 const latest: LatestCard[] = [
   ...writing
-    .filter((item) => item.kind === "post" && item.year)
+    .filter((item) => item.kind === "post" && item.section === "블로그" && item.year)
     .map((item) => ({
       key: dateKey(item.year as string, item.month, item.day),
       date: formatDate(item.year as string, item.month, item.section === "블로그" ? null : item.day),
@@ -102,15 +102,6 @@ const latest: LatestCard[] = [
       thumb: item.image,
       placeholder: item.section,
     })),
-  ...translationEntries.map(({ doc, year, month, day, href }) => ({
-    key: dateKey(year, month, day),
-    date: formatDate(year, month, null),
-    outlet: "블로그 · 번역",
-    title: listTitle(doc),
-    href,
-    thumb: doc.image ?? null,
-    placeholder: "번역",
-  })),
   ...media
     .filter((item) => item.year)
     .map((item) => {
@@ -126,6 +117,20 @@ const latest: LatestCard[] = [
       };
     }),
 ]
+  .sort((a, b) => b.key - a.key)
+  .slice(0, 3);
+
+// ARCHIVE: 자동 번역 문건 가운데 가장 최근 3개
+const latestTranslations: LatestCard[] = translationEntries
+  .map(({ doc, year, month, day, href }) => ({
+    key: dateKey(year, month, day),
+    date: formatDate(year, month, null),
+    outlet: "번역",
+    title: listTitle(doc),
+    href,
+    thumb: doc.image ?? null,
+    placeholder: "번역",
+  }))
   .sort((a, b) => b.key - a.key)
   .slice(0, 3);
 
@@ -199,6 +204,25 @@ export default function Home() {
                 key={item.title}
                 {...(item.href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
               >
+                {item.thumb ? <img src={item.thumb} alt="" /> : <div className="placeholder-thumb">{item.placeholder}</div>}
+                <div className="video-meta">
+                  <time>{item.date}</time>
+                  <span>{item.outlet}</span>
+                </div>
+                <h3>{item.title}</h3>
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="home-block">
+          <div className="home-block-head">
+            <p className="eyebrow">ARCHIVE</p>
+            <a href="/writing#translation">전체 보기</a>
+          </div>
+          <div className="video-grid">
+            {latestTranslations.map((item) => (
+              <a className="video-card" href={item.href} key={item.href}>
                 {item.thumb ? <img src={item.thumb} alt="" /> : <div className="placeholder-thumb">{item.placeholder}</div>}
                 <div className="video-meta">
                   <time>{item.date}</time>
