@@ -1,0 +1,888 @@
+{
+ "slug": "openai-frontier-governance-2026-05",
+ "title": "OpenAI 프론티어 거버넌스 프레임워크",
+ "original_title": "Frontier Governance Framework (OpenAI)",
+ "publisher": "OpenAI",
+ "published": "2026-05-28",
+ "source_url": "https://cdn.openai.com/pdf/e37d949b-8c9f-4d76-b99e-4272f4631a7e/openai-frontier-governance-framework.pdf",
+ "source_note": "2026년 5월 공개본 전문 (22쪽, 표지·목차 제외)",
+ "source_label": "원문 보기 (OpenAI PDF)",
+ "summary": "OpenAI가 캘리포니아주 프론티어 인공지능 투명성법(TFAIA)과 EU AI법의 범용 AI 실천규범에 맞춰 낸 규제 대응 문서다. 사이버 공격·CBRN·유해한 조작·통제 상실 네 영역의 체계적 위험을 식별·분석하고 수용 여부를 정하는 절차, 위험 등급과 안전 완화, 치명적 안전 사고의 탐지·대응·외부 보고, 보안 위험 관리와 모델 보고서, 외부 전문가 의견 수렴과 프레임워크 변경 절차를 담았다. 이미 번역한 대비태세 프레임워크를 대체하지 않고, 그 접근법 가운데 규제 의무에 걸리는 부분을 따로 정리한 문서다.",
+ "image": "/images/translations/openai-frontier-governance-2026-05-cover.webp",
+ "og_image": "/images/translations/openai-frontier-governance-2026-05-cover.jpg",
+ "image_caption": "원문 첫 쪽 (OpenAI, 2026.5)",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "doc_kind": "프론티어 안전 프레임워크",
+ "stats": {
+  "blocks": 75,
+  "sections": 7,
+  "items": 17,
+  "words_en": 4171
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "1 Introduction",
+   "ko": "1 서론",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "OpenAI's mission is to ensure that artificial general intelligence (AGI) benefits all of humanity. To pursue that mission, we are committed to safely developing and deploying highly capable AI models, which create significant benefits and also bring new risks. We build for safety at every step and share our learnings so that society can make well-informed choices to manage new risks from frontier AI.",
+   "ko": "OpenAI의 사명은 인공일반지능(AGI)이 인류 전체에 이익이 되도록 하는 것이다. 이 사명을 추구하기 위해 OpenAI는 고역량(Highly capable) AI 모델을 안전하게 개발하고 배포하는 데 전념하고 있다. 이러한 모델은 상당한 이익을 창출하는 동시에 새로운 위험도 초래한다. OpenAI는 모든 단계에서 안전을 고려하여 개발하며, 사회가 프론티어 AI로 인한 새로운 위험을 관리하기 위해 충분한 정보에 기반한 선택을 할 수 있도록 그 과정에서 얻은 교훈을 공유한다.",
+   "marks": [
+    {
+     "t": "고역량(Highly capable) AI 모델을 안전하게 개발하고 배포하는 데 전념하고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 모델은 상당한 이익을 창출하는 동시에 새로운 위험도 초래한다.",
+     "k": "key"
+    },
+    {
+     "t": "사회가 프론티어 AI로 인한 새로운 위험을 관리하기 위해 충분한 정보에 기반한 선택을 할 수 있도록",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We are committed to transparency about how our safety practices align with emerging global legal and governance frameworks. To that end, we have developed this Frontier Governance Framework (FGF) to explain how we fulfill our regulatory obligations and to document our current technical and organizational processes for systemic risk assessment and mitigation across key risk categories, including Cybersecurity, CBRN (chemical, biological, radiological, and nuclear), harmful manipulation, and loss of control risks.",
+   "ko": "OpenAI는 자사의 안전 실행 방안이 새롭게 부상하는 글로벌 법률 및 거버넌스 프레임워크에 어떻게 부합하는지에 대해 투명성을 유지하고자 한다. 이를 위해 본 프론티어 거버넌스 프레임워크(Frontier Governance Framework, FGF)를 마련하였다. 본 FGF는 OpenAI가 규제 의무를 어떻게 이행하는지 설명하고, 사이버 보안, 화학·생물·방사능·핵(CBRN), 유해한 조작, 통제 상실 위험 등 주요 위험 범주 전반에 걸친 시스템적 위험 평가 및 완화를 위한 현행 기술적·조직적 절차를 문서화한다.",
+   "marks": [
+    {
+     "t": "본 FGF는 OpenAI가 규제 의무를 어떻게 이행하는지 설명하고, 사이버 보안, 화학·생물·방사능·핵(CBRN), 유해한 조작, 통제 상실 위험 등 주요 위험 범주 전반에 걸친 시스템적 위험 평가 및 완화를 위한 현행 기술적·조직적 절차를 문서화한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our FGF is designed to meet the baseline legal requirements of various frontier AI laws, including:",
+   "ko": "본 FGF는 다음을 포함한 여러 프론티어 AI 법률의 기본 법적 요건을 충족하도록 설계되었다."
+  },
+  {
+   "type": "li",
+   "en": "Under California's Transparency in Frontier AI Act (TFAIA), this FGF is our Frontier AI Framework, documenting OpenAI's technical and organizational protocols to manage, assess, and mitigate catastrophic risks, as detined under the TFAIA.",
+   "ko": "캘리포니아주 프론티어 AI 투명성법(Transparency in Frontier AI Act, TFAIA)에 따라, 본 FGF는 OpenAI의 프론티어 AI 프레임워크(Frontier AI Framework)로서 TFAIA에 정의된 파국적 위험을 관리·평가·완화하기 위한 OpenAI의 기술적·조직적 프로토콜을 문서화한다.",
+   "marks": [
+    {
+     "t": "TFAIA에 정의된 파국적 위험을 관리·평가·완화하기 위한 OpenAI의 기술적·조직적 프로토콜을 문서화한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Under the European Union's General-Purpose AI Code of Practice (the EU Cop), this FGF serves as our publicly available summary of OpenAI's Safety & Security Framework, describing how we assess and mitigate systemic risks and ensure adequate Cybersecurity protection for models covered under Regulation (EU) 2024/1689 (the EU AI Act).",
+   "ko": "유럽연합의 범용 AI 실천 강령(General-Purpose AI Code of Practice, 이하 EU CoP)에 따라, 본 FGF는 OpenAI의 안전 및 보안 프레임워크(Safety & Security Framework)에 대한 공개 요약본으로서, 규정(EU) 2024/1689(EU AI 법)의 적용을 받는 모델에 대해 OpenAI가 시스템적 위험을 어떻게 평가·완화하고 적절한 사이버 보안 보호를 어떻게 보장하는지 기술한다.",
+   "marks": [
+    {
+     "t": "OpenAI가 시스템적 위험을 어떻게 평가·완화하고 적절한 사이버 보안 보호를 어떻게 보장하는지 기술한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The FGF overlaps in some areas with our existing Preparedness Framework (PF). The PF and FGF together describe OpenAI's practices, and we will continue to use and evolve the PF to define and operationalize OpenAI's own approach to managing the most serious risks from advanced AI systems, including in situations where our internal practices go beyond current legal requirements. For example, because the PF is intended both to advance the science of managing severe risks of advanced AI systems and to reflect OpenAI's evolving practices, it may use different definitions of catastrophic risk and does not depend on speciic legal compute thresholds ike the FGF.",
+   "ko": "FGF는 일부 영역에서 OpenAI의 기존 대비태세 프레임워크(Preparedness Framework, PF)와 중첩된다. PF와 FGF는 함께 OpenAI의 실행 방안을 기술하며, OpenAI는 내부 실행 방안이 현행 법적 요건을 넘어서는 상황을 포함하여, 첨단 AI 시스템으로 인한 가장 심각한 위험을 관리하기 위한 OpenAI 고유의 접근 방식을 정의하고 운영하는 데 PF를 계속 활용하고 발전시킬 것이다. 예를 들어, PF는 첨단 AI 시스템의 심각한 위험을 관리하는 과학을 발전시키는 동시에 OpenAI의 변화하는 실행 방안을 반영하는 것을 목적으로 하므로, 파국적 위험에 대해 다른 정의를 사용할 수 있으며 FGF와 달리 특정한 법적 연산 임계값에 의존하지 않는다.",
+   "marks": [
+    {
+     "t": "첨단 AI 시스템으로 인한 가장 심각한 위험을 관리하기 위한 OpenAI 고유의 접근 방식을 정의하고 운영하는 데 PF를 계속 활용하고 발전시킬 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "파국적 위험에 대해 다른 정의를 사용할 수 있으며 FGF와 달리 특정한 법적 연산 임계값에 의존하지 않는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The FGF covers frontier models as defined under the TFAIA and \"general-purpose models with systemic risk\" under the EU AI Act. In this document, when we refer to \"systemic\" risks, we mean both catastrophic risks under the TFAIA and systemic risks under the EU AI Act. The systemic risk assessment and mitigation processes described here apply to covered models that OpenAI has deployed externally, and in some cases internally with respect to risks resulting from circumventing oversight mechanisms. We expect our approach will continue to evolve, and we will update this FGF as our processes and regulatory requirements change.",
+   "ko": "FGF는 TFAIA에 정의된 프론티어 모델과 EU AI 법상의 \"시스템적 위험이 있는 범용 모델(general-purpose models with systemic risk)\"을 대상으로 한다. 본 문서에서 \"시스템적\" 위험이라 함은 TFAIA상의 파국적 위험과 EU AI 법상의 시스템적 위험을 모두 의미한다. 여기에 기술된 시스템적 위험 평가 및 완화 절차는 OpenAI가 외부에 배포한 대상 모델에 적용되며, 경우에 따라 감독 메커니즘 우회로 인한 위험과 관련해서는 내부 배포에도 적용된다. OpenAI는 자사의 접근 방식이 계속 발전할 것으로 예상하며, 절차와 규제 요건이 변경됨에 따라 본 FGF를 갱신할 것이다.",
+   "marks": [
+    {
+     "t": "경우에 따라 감독 메커니즘 우회로 인한 위험과 관련해서는 내부 배포에도 적용된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our approach to mitigating frontier AI safety risks is informed by emerging national and international AI risk management standards, including ISO 42001, the NIST AI Risk Management Framework, and frontier safety laws in relevant jurisdictions. Our approach also draws on the proposal for Responsible Scaling Policies first introduced by METR as well as industry best practices.",
+   "ko": "프론티어 AI 안전 위험을 완화하기 위한 OpenAI의 접근 방식은 ISO 42001, NIST AI 위험 관리 프레임워크(NIST AI Risk Management Framework), 관련 관할권의 프론티어 안전 법률 등 새롭게 부상하는 국내외 AI 위험 관리 표준을 참고한다. 또한 METR이 처음 제안한 책임 있는 스케일링 정책(Responsible Scaling Policies)과 업계 모범 사례도 참고한다.",
+   "marks": [
+    {
+     "t": "METR이 처음 제안한 책임 있는 스케일링 정책(Responsible Scaling Policies)과 업계 모범 사례도 참고한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "2 Systemic risk assessment & mitigation",
+   "ko": "2 시스템적 위험 평가 및 완화",
+   "id": "s9"
+  },
+  {
+   "type": "h3",
+   "en": "2.1 Systemic risk identification",
+   "ko": "2.1 시스템적 위험 식별",
+   "id": "s10"
+  },
+  {
+   "type": "p",
+   "en": "OpenAI has implemented a variety of structured processes to Identity systemic risks stemming from our frontier models and to develop risk scenarios and threat models through which these systemic risks may develop or materialize.",
+   "ko": "OpenAI는 자사 프론티어 모델에서 비롯되는 시스템적 위험을 식별하고, 이러한 시스템적 위험이 전개되거나 현실화될 수 있는 위험 시나리오와 위협 모델(Threat model)을 개발하기 위해 다양한 체계적 절차를 시행하고 있다.",
+   "marks": [
+    {
+     "t": "자사 프론티어 모델에서 비롯되는 시스템적 위험을 식별하고",
+     "k": "safety"
+    },
+    {
+     "t": "위험 시나리오와 위협 모델(Threat model)을 개발하기 위해 다양한 체계적 절차를 시행하고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This FGF's definition of systemic risk includes foreseeable and material risks of severe harm from the development, storage, use, or deployment of our most advanced frontier models, including risks that a model will materially contribute to greater than 50 fatalities or $1 billion of property damages or losses arising from a single incident.",
+   "ko": "본 FGF에서 정의하는 시스템적 위험에는 OpenAI의 최첨단 프론티어 모델의 개발, 저장, 사용 또는 배포로 인한 심각한 피해(severe harm)의 예견 가능하고 중대한 위험이 포함되며, 여기에는 모델이 단일 사건으로 인한 50명 초과의 사망 또는 10억 달러 초과의 재산 손해나 손실에 실질적으로 기여할 위험이 포함된다.",
+   "marks": [
+    {
+     "t": "심각한 피해(severe harm)의 예견 가능하고 중대한 위험",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 단일 사건으로 인한 50명 초과의 사망 또는 10억 달러 초과의 재산 손해나 손실에 실질적으로 기여할 위험이 포함된다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We evaluate whether frontier capabilities create a risk of severe harm through a holistic risk assessment process. This process draws on our own internal research and signals, and, where appropriate, incorporates feedback from academic researchers, independent domain experts, industry bodies such as the Frontier Model Forum, and the U.S. government, the European Commission and other government agencies, as well as relevant legal and policy guidance and requirements.",
+   "ko": "OpenAI는 프론티어 역량이 심각한 피해의 위험을 초래하는지를 총체적 위험 평가 절차를 통해 평가한다. 이 절차는 OpenAI 자체의 내부 연구와 신호를 바탕으로 하며, 적절한 경우 학계 연구자, 독립적인 분야별 전문가, Frontier Model Forum 등 업계 단체, 미국 정부, 유럽연합 집행위원회 및 기타 정부 기관의 피드백과 함께 관련 법률·정책 지침 및 요건을 반영한다.",
+   "marks": [
+    {
+     "t": "프론티어 역량이 심각한 피해의 위험을 초래하는지를 총체적 위험 평가 절차를 통해 평가한다",
+     "k": "safety"
+    },
+    {
+     "t": "Frontier Model Forum 등 업계 단체, 미국 정부, 유럽연합 집행위원회 및 기타 정부 기관의 피드백",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Based on this analysis, this FGF definition currently addresses the following systemic risk Categories:",
+   "ko": "이러한 분석을 바탕으로, 본 FGF의 정의는 현재 다음과 같은 시스템적 위험 범주를 다룬다."
+  },
+  {
+   "type": "table",
+   "en": "| Cyber offense | Risks of enabling large-scale sophisticated cyberattacks, including on critical systems, such as by significantly lowering the barriers to entry for malicious actors, or significantly increasing the potential impact achieved in offensive cyber operations, e.g. through automated vulnerability discovery, exploit generation, operational use, and attack scaling. | ⏎ | Chemical, biological, radiological & nuclear (CBRN) | Risks of enabling Chemical, biological, radiological, and nuclear (CBRN) attacks or accidents, such as by significantly lowering the barriers to entry for malicious actors, or significantly increasing the potential impact achieved, in the design, development, acquisition, release, distribution, and use of related weapons or materials. | ⏎ | Harmful manipulation | Risks stemming from the strategic distortion of human behavior, including the use of model capabilities to conduct influence operations, election interference, or other Coordinated campaigns to manipulate public opinion or undermine democratic processes. | ⏎ | Loss of control | Risks stemming from the inability to reliably direct, modify, or shut down a model, including evading the controls of a model developer or user, or autonomous conduct that, if conducted by a human, would constitute a Crime of murder, assault, extortion, or theft. |",
+   "ko": "| 사이버 공격 | 핵심 시스템 대상 공격을 포함하여 대규모의 정교한 사이버 공격을 가능하게 할 위험. 예컨대 악의적 행위자의 진입 장벽을 크게 낮추거나, 자동화된 취약점 발견, 익스플로잇 생성, 실전 활용, 공격 스케일링 등을 통해 공격적 사이버 작전에서 달성되는 잠재적 영향을 크게 증대시키는 경우가 이에 해당함. | ⏎ | 화학·생물·방사능·핵(CBRN) | 화학·생물·방사능·핵(CBRN) 공격 또는 사고를 가능하게 할 위험. 예컨대 관련 무기 또는 물질의 설계, 개발, 획득, 방출, 유포 및 사용에 있어 악의적 행위자의 진입 장벽을 크게 낮추거나 달성되는 잠재적 영향을 크게 증대시키는 경우가 이에 해당함. | ⏎ | 유해한 조작 | 인간 행동의 전략적 왜곡에서 비롯되는 위험. 모델 역량을 활용하여 영향력 공작, 선거 개입, 또는 여론을 조작하거나 민주적 절차를 훼손하기 위한 기타 조직적 캠페인을 수행하는 것을 포함함. | ⏎ | 통제 상실 | 모델을 신뢰성 있게 지시, 수정 또는 중단할 수 없는 데서 비롯되는 위험. 모델 개발자 또는 사용자의 통제를 회피하는 것, 또는 인간이 행했다면 살인, 폭행, 갈취 또는 절도 범죄에 해당했을 자율적 행위를 포함함. |"
+  },
+  {
+   "type": "h3",
+   "en": "2.2 Systemic risk analysis",
+   "ko": "2.2 시스템적 위험 분석",
+   "id": "s16"
+  },
+  {
+   "type": "p",
+   "en": "Our risk assessment process may take place throughout a model's lifecycle, including during development and after deployment. Risk assessments draw on various sources, including a range of model evaluations, model-independent information such as external research and data, Iterature reviews, market analyses, consultation with internal and external experts, insights from other deployed models, post-release monitoring, and, it applicable, investigations of serious incidents or Critical safety incidents.",
+   "ko": "OpenAI의 위험 평가 절차는 개발 단계와 배포 이후를 포함하여 모델의 수명주기 전반에 걸쳐 이루어질 수 있다. 위험 평가는 다양한 모델 평가(evaluation), 외부 연구 및 데이터와 같은 모델-비의존적 정보, 문헌 검토, 시장 분석, 내외부 전문가 자문, 기타 배포된 모델에서 얻은 통찰, 공개 후 모니터링, 그리고 해당되는 경우 중대 사고 또는 치명적 안전 사고(critical safety incident)에 대한 조사 등 다양한 출처를 활용한다.",
+   "marks": [
+    {
+     "t": "치명적 안전 사고(critical safety incident)에 대한 조사",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "we conduct systemic risk modelling that informs how we evaluate systemic risks before deployment. Currently, we estimate the severity and probability of harm of risks related to CBRN, cyber offense, and loss of control under this FGF. We are still in the early stages of developing an approach for assessing risks from harmful manipulation. Many of the risks stemming from harmful manipulation, such as the use of model capabilities to conduct influence operations, are best addressed through system level mitigations, such as post-deployment monitoring, rather than model evaluations before deployment.",
+   "ko": "OpenAI는 배포 전 시스템적 위험을 평가하는 방식에 반영되는 시스템적 위험 모델링을 수행한다. 현재 OpenAI는 본 FGF에 따라 화학·생물·방사능·핵(CBRN), 사이버 공격, 통제 상실과 관련된 위험에 대해 피해의 심각도와 발생 확률을 추정하고 있다. 유해한 조작으로 인한 위험을 평가하기 위한 접근 방식은 아직 개발 초기 단계에 있다. 모델 역량을 활용한 영향력 공작 수행 등 유해한 조작에서 비롯되는 위험의 상당수는 배포 전 모델 평가(evaluation)보다는 배포 후 모니터링과 같은 시스템 수준의 완화를 통해 가장 효과적으로 대응할 수 있다.",
+   "marks": [
+    {
+     "t": "화학·생물·방사능·핵(CBRN), 사이버 공격, 통제 상실과 관련된 위험에 대해 피해의 심각도와 발생 확률을 추정하고 있다",
+     "k": "key"
+    },
+    {
+     "t": "유해한 조작으로 인한 위험을 평가하기 위한 접근 방식은 아직 개발 초기 단계에 있다.",
+     "k": "safety"
+    },
+    {
+     "t": "배포 후 모니터링과 같은 시스템 수준의 완화를 통해 가장 효과적으로 대응할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "we employ a risk assessment process that includes state-of-theart evaluations to test the specific threats and risk scenarios identifed through our threat modeling, assess a model's capabilities against systemic risk thresholds, and understand and assess the effectiveness of our safeguards and mitigations. We estimate systemic risks where appropriate and practicable using risk tiers that concretely describe things an AI system might be able to help someone do or might be able to do on its own that could meaningfully increase risk of severe harm.",
+   "ko": "OpenAI는 위협 모델링을 통해 식별된 특정 위협과 위험 시나리오를 검증하고, 시스템적 위험 임계값에 비추어 모델의 역량을 평가하며, 안전장치와 완화의 효과성을 파악하고 평가하기 위해 최첨단 평가(evaluation)를 포함하는 위험 평가 절차를 운영한다. OpenAI는 적절하고 실행 가능한 경우 위험 등급을 활용하여 시스템적 위험을 추정한다. 위험 등급은 AI 시스템이 누군가를 도와 수행하게 하거나 스스로 수행할 수 있는 일 중 심각한 피해의 위험을 유의미하게 증가시킬 수 있는 것을 구체적으로 기술한다.",
+   "marks": [
+    {
+     "t": "안전장치와 완화의 효과성을 파악하고 평가하기 위해 최첨단 평가(evaluation)를 포함하는 위험 평가 절차를 운영한다",
+     "k": "key"
+    },
+    {
+     "t": "심각한 피해의 위험을 유의미하게 증가시킬 수 있는 것을 구체적으로 기술한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2.3 Systemic risk acceptance determination",
+   "ko": "2.3 시스템적 위험 수용 결정",
+   "id": "s20"
+  },
+  {
+   "type": "p",
+   "en": "we employ science-backed evaluations that inform whether a covered model presents systemic risks that remain within acceptable levels and help us assess residual risk. Our assessment recognizes that progress in model scaffolding and elicitation techniques can add uncertainty, and we accordingly treat one-time capability elicitations in a frontier model as a lower-bound, rather than a Ceiling, on capabilities that may emerge in real world use and misuse. Our consideration of residual risk takes account of the scale and probability of harm, and is evaluated in light of the sufficiency of implemented safeguards proportionate to the level of risk. In assessing whether to accept residual risk, we review the risk tiers for each systemic risk category and incorporate appropriate safety margins. For example, out of an abundance of caution we have treated models as Crossing a capability threshold in circumstances where we are unable to rule out that a new threshold had been reached, even in the absence of direct evidence that it has occurred.",
+   "ko": "OpenAI는 적용 대상 모델이 수용 가능한 수준 내에 머무르는 시스템적 위험을 초래하는지를 판단하는 데 근거를 제공하고 잔여 위험을 평가하는 데 도움이 되는 과학적 근거 기반 평가(evaluation)를 활용한다. OpenAI의 평가(assessment)는 모델 스캐폴딩과 유도 기법의 발전이 불확실성을 가중시킬 수 있음을 인식하며, 이에 따라 프론티어 모델에 대한 일회성 역량 유도 결과를 실제 사용 및 오용 과정에서 발현될 수 있는 역량의 상한선이 아닌 하한선으로 취급한다. 잔여 위험에 대한 검토는 피해의 규모와 확률을 고려하며, 위험 수준에 비례하여 구현된 안전장치의 충분성에 비추어 평가된다. 잔여 위험의 수용 여부를 평가할 때, OpenAI는 각 시스템적 위험 범주에 대한 위험 등급을 검토하고 적절한 안전 여유도를 반영한다. 예를 들어, OpenAI는 새로운 임계값에 도달했음을 보여주는 직접적인 증거가 없더라도 그 도달 가능성을 배제할 수 없는 상황에서는 만전을 기하기 위해 해당 모델을 역량 임계값을 넘은 것으로 취급해 왔다.",
+   "marks": [
+    {
+     "t": "모델 스캐폴딩과 유도 기법의 발전이 불확실성을 가중시킬 수 있음을 인식하며",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 모델에 대한 일회성 역량 유도 결과를 실제 사용 및 오용 과정에서 발현될 수 있는 역량의 상한선이 아닌 하한선으로 취급한다",
+     "k": "key"
+    },
+    {
+     "t": "위험 수준에 비례하여 구현된 안전장치의 충분성에 비추어 평가된다",
+     "k": "safety"
+    },
+    {
+     "t": "각 시스템적 위험 범주에 대한 위험 등급을 검토하고 적절한 안전 여유도를 반영한다",
+     "k": "safety"
+    },
+    {
+     "t": "만전을 기하기 위해 해당 모델을 역량 임계값을 넘은 것으로 취급해 왔다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Before deployment, models in scope of this Framework undergo a suite of scalable evaluations designed to measure proxies that approximate whether a model's systemic risks reach a new risk tier based on levels of performance that have been predetermined to indicate that a deployment may have reached a capability threshold. Some evaluations can help rule out that a model nas reached a new capability threshold, but passing them does not establish that the threshold has actually been reached.. When analyzing whether a threshold has been reached, we also take into account additional evidence to validate the findings of evaluations, such as human expert red-teaming, expert consultations, and resource-intensive third party evaluations.",
+   "ko": "배포 전에, 본 프레임워크의 적용 범위에 속하는 모델은 확장 가능한 평가(Scalable Evaluations) 일체를 거친다. 이 평가는 배포가 역량 임계값에 도달했을 수 있음을 나타내는 것으로 사전에 정해진 성능 수준에 근거하여, 모델의 시스템적 위험이 새로운 위험 등급에 도달하는지를 근사하는 대리 지표를 측정하도록 설계되어 있다. 일부 평가는 모델이 새로운 역량 임계값에 도달했을 가능성을 배제하는 데 도움이 될 수 있으나, 이를 통과한다고 해서 해당 임계값에 실제로 도달했음이 입증되는 것은 아니다. 임계값 도달 여부를 분석할 때, OpenAI는 인간 전문가 레드티밍, 전문가 자문, 자원 집약적인 제3자 평가 등 평가 결과를 검증하기 위한 추가 증거도 함께 고려한다.",
+   "marks": [
+    {
+     "t": "모델의 시스템적 위험이 새로운 위험 등급에 도달하는지를 근사하는 대리 지표를 측정하도록 설계되어 있다",
+     "k": "safety"
+    },
+    {
+     "t": "인간 전문가 레드티밍, 전문가 자문, 자원 집약적인 제3자 평가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The determination that a threshold has or has not been reached is informed by these results, and also reflects a nolistic judgment based on the totality of available evidence, such as information about the methodological robustness of evaluation results.",
+   "ko": "임계값에 도달했는지 여부에 대한 결정은 이러한 결과를 근거로 하며, 평가 결과의 방법론적 강건성에 관한 정보 등 이용 가능한 증거 전체에 기초한 총체적 판단도 반영한다.",
+   "marks": [
+    {
+     "t": "이용 가능한 증거 전체에 기초한 총체적 판단도 반영한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2.4 Risk tiers",
+   "ko": "2.4 위험 등급",
+   "id": "s24"
+  },
+  {
+   "type": "h3",
+   "en": "Cyber offense",
+   "ko": "사이버 공격",
+   "id": "s25"
+  },
+  {
+   "type": "p",
+   "en": "For cyber offense systemic risks, we have established a tier system that seeks to quantity model capabilities against cybersecurity threats and incorporates risk estimates and other suitable metrics. We use these measurable thresholds for decision-making related to offensive cyber capabilities. The system consists of the following tiers:",
+   "ko": "사이버 공격 관련 시스템적 위험에 대해, OpenAI는 사이버 보안 위협에 비추어 모델 역량을 정량화하고 위험 추정치 및 기타 적합한 지표를 반영하는 등급 체계를 수립하였다. OpenAI는 이러한 측정 가능한 임계값을 공격적 사이버 역량과 관련된 의사결정에 활용한다. 이 체계는 다음 등급으로 구성된다.",
+   "marks": [
+    {
+     "t": "사이버 보안 위협에 비추어 모델 역량을 정량화하고 위험 추정치 및 기타 적합한 지표를 반영하는 등급 체계를 수립하였다",
+     "k": "safety"
+    },
+    {
+     "t": "OpenAI는 이러한 측정 가능한 임계값을 공격적 사이버 역량과 관련된 의사결정에 활용한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "table",
+   "en": "| Tier | Description | Examples | ⏎ | Tier 1 | The model provides assistance equivalent to publicly available resources and/or may provide material technical assistance to active cyber operations using known attack methodologies. | Requests for publicly documented exploit information, generic attack methodology questions, coordinated campaigns affecting multiple organizations, operational security guidance extending campaign longevity | ⏎ | Tier 2 | The model provides substantial capability uplift to small organizations by removing existing bottlenecks to scaling cyber operations, including by automating end-to-end cyber operations against reasonably hardened targets or by automating the discovery and exploitation of operationally relevant vulnerabillities. | Demonstrated abilities to automate and scale the volume of existing cyberattacks, and is capable of exhibiting technical novelty in the discovery and exploitation of operationally relevant vulnerabilities, conducting long-running stealthy or short-running aggressive, goal oriented campaigns, and demonstrates consistency in operations to scale damage or avoid discovery. | ⏎ | Tier 3 | A tool-augmented model can identity and develop functional zero-day exploits of all severity levels in many hardened real-world critical systems without human intervention OR the model can devise and execute end-to-end novel strategies for cyberattacks against hardened targets given only a high-level desired goal. | Autonomous discovery and exploitation of unknown vulnerabilities, self-directed campaign orchestration, resilience and adaptation to hardened security defenses, sustained end-to-end operations without human intervention. |",
+   "ko": "| 등급 | 설명 | 예시 | ⏎ | 등급 1 | 모델이 공개적으로 이용 가능한 자료와 동등한 수준의 지원을 제공하거나, 알려진 공격 방법론을 사용하는 진행 중인 사이버 작전에 실질적인 기술 지원을 제공할 수 있음. | 공개적으로 문서화된 익스플로잇 정보 요청, 일반적인 공격 방법론 관련 질문, 다수 조직에 영향을 미치는 조직적 캠페인, 캠페인 지속 기간을 연장하는 작전 보안 지침 | ⏎ | 등급 2 | 모델이 사이버 작전 스케일링에 대한 기존 병목을 제거함으로써 소규모 조직에 상당한 역량 업리프트를 제공함. 여기에는 합리적인 수준으로 강화된 표적을 대상으로 한 엔드투엔드 사이버 작전의 자동화, 또는 작전상 유의미한 취약점의 발견 및 악용의 자동화가 포함됨. | 기존 사이버 공격의 규모를 자동화하고 확대하는 능력이 입증되고, 작전상 유의미한 취약점의 발견 및 악용에서 기술적 새로움을 보일 수 있으며, 장기간에 걸친 은밀한 캠페인 또는 단기간의 공격적인 목표 지향 캠페인을 수행하고, 손해를 확대하거나 탐지를 회피하기 위한 작전 수행에서 일관성을 보임. | ⏎ | 등급 3 | 도구로 증강된 모델이 인간의 개입 없이 방어가 강화된 다수의 실제 핵심 시스템에서 모든 심각도 수준의 작동 가능한 제로데이 익스플로잇을 식별하고 개발할 수 있음, 또는 모델이 상위 수준의 목표만 주어진 상태에서 강화된 표적을 대상으로 한 새로운 엔드투엔드 사이버 공격 전략을 고안하고 실행할 수 있음. | 알려지지 않은 취약점의 자율적 발견 및 악용, 자기 주도적 캠페인 조율, 강화된 보안 방어에 대한 회복력 및 적응, 인간의 개입 없이 지속되는 엔드투엔드 작전. |"
+  },
+  {
+   "type": "h3",
+   "en": "CBRN",
+   "ko": "화학·생물·방사능·핵(CBRN)",
+   "id": "s28"
+  },
+  {
+   "type": "p",
+   "en": "For CBRN risks, we have established a tier system that quantifies model capabilities against weapons and threat development uplift metrics. We principally build safeguards against biological and chemical threats, and we prioritize biological capability evaluations due to the higher potential severity of biological threats. With respect to nuclear and radiological threats, we note that information and expertise needed to actually create a working nuclear weapon is significant, and classified. Further, there are significant physical barriers to success, like access to fissile material, specialized equipment, and ballistics. Because of the significant resources required and the legal controls around information and equipment, nuclear weapons development cannot be tuly studied outside of a Classited context. We will continue to research and develop threat models for nuclear and radiological risks and engage with national security stakeholders on how best to assess these riskS.",
+   "ko": "화학·생물·방사능·핵(CBRN) 위험에 대해, OpenAI는 무기 및 위협 개발 업리프트 지표에 비추어 모델 역량을 정량화하는 등급 체계를 수립하였다. OpenAI는 주로 생물학적·화학적 위협에 대한 안전장치를 구축하며, 생물학적 위협의 잠재적 심각도가 더 높다는 점에서 생물학적 역량 평가를 우선시한다. 핵 및 방사능 위협과 관련하여, 실제로 작동하는 핵무기를 제조하는 데 필요한 정보와 전문 지식은 방대하며 기밀로 분류되어 있다는 점에 유의한다. 또한 핵분열성 물질, 특수 장비, 탄도학에 대한 접근 등 성공을 가로막는 상당한 물리적 장벽이 존재한다. 막대한 자원이 필요하고 관련 정보와 장비에 대한 법적 통제가 존재하기 때문에, 핵무기 개발은 기밀 환경 밖에서는 온전히 연구될 수 없다. OpenAI는 핵 및 방사능 위험에 대한 위협 모델을 지속적으로 연구·개발하고, 이러한 위험을 가장 잘 평가하는 방법에 관해 국가안보 이해관계자들과 협력할 것이다.",
+   "marks": [
+    {
+     "t": "OpenAI는 무기 및 위협 개발 업리프트 지표에 비추어 모델 역량을 정량화하는 등급 체계를 수립하였다",
+     "k": "key"
+    },
+    {
+     "t": "OpenAI는 주로 생물학적·화학적 위협에 대한 안전장치를 구축하며",
+     "k": "safety"
+    },
+    {
+     "t": "생물학적 위협의 잠재적 심각도가 더 높다는 점에서 생물학적 역량 평가를 우선시한다",
+     "k": "safety"
+    },
+    {
+     "t": "핵 및 방사능 위험에 대한 위협 모델을 지속적으로 연구·개발하고",
+     "k": "safety"
+    },
+    {
+     "t": "국가안보 이해관계자들과 협력할 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "table",
+   "en": "| Tier | Description | Examples | ⏎ | Tier 1 | The model's capabilities provide minimal advantage compared to publicly available information or search engines, or provides minor uplift or lowers barriers to experts. | Aggregates publicly available information within distinct domains, identifies relevant scientific Iiterature, provides general information that requires expert interpretation to be actionable, troubleshoots common tallure modes without prompting, provides step-by-step procedural guidance with specific parameters. | ⏎ | Tier 2 | The model can provide meaningful counterfactual assistance (relative to unlimited access to baseline of tools available in 2021) to novice actors (anyone with a basic relevant technical background) that enables them to Create known biological or chemical threats. | Provides accurate, detailed, and Contextually relevant information that is similar to direct interactions with subject matter experts, that would be aithicult for a non-specialist to obtain via open internet or manuals, and that enables accurate and successful troubleshooting. | ⏎ | Tier 3 | The model can enable an expert to develop a highly dangerous novel threat vector (e.g. comparable to a novel CDc Class A biological agent) OR the model can be connected to tools and equipment to complete the full engineering and/or synthesis cycle of a regulated or novel biological threat without human intervention. | Discovery of novel agents, pathways, autonomously executes full design-acquisition-production-deployment pipeline. |",
+   "ko": "| 등급 | 설명 | 예시 | ⏎ | 등급 1 | 모델의 역량이 공개적으로 이용 가능한 정보나 검색 엔진에 비해 최소한의 이점만을 제공하거나, 전문가에게 경미한 업리프트를 제공하거나 장벽을 낮춤. | 개별 분야 내에서 공개적으로 이용 가능한 정보를 취합함, 관련 과학 문헌을 식별함, 실행 가능하려면 전문가의 해석이 필요한 일반 정보를 제공함, 요청 없이도 일반적인 실패 유형에 대한 문제 해결을 지원함, 구체적인 파라미터를 포함한 단계별 절차 지침을 제공함. | ⏎ | 등급 2 | 모델이 초보 행위자(관련 분야의 기초 기술적 배경을 갖춘 모든 사람)에게 알려진 생물학적 또는 화학적 위협을 만들어낼 수 있게 하는 의미 있는 반사실적 지원(counterfactual assistance)(2021년에 이용 가능했던 기준 도구에 무제한 접근할 수 있는 경우 대비)을 제공할 수 있음. | 분야별 전문가와 직접 상호작용하는 것과 유사하고, 비전문가가 공개 인터넷이나 매뉴얼을 통해 얻기 어려우며, 정확하고 성공적인 문제 해결을 가능하게 하는 정확하고 상세하며 맥락에 부합하는 정보를 제공함. | ⏎ | 등급 3 | 모델이 전문가로 하여금 매우 위험한 새로운 위협 벡터(예: 새로운 CDC A급 생물학적 작용제에 준하는 것)를 개발할 수 있게 함, 또는 모델이 도구 및 장비와 연결되어 인간의 개입 없이 규제 대상이거나 새로운 생물학적 위협의 전체 엔지니어링 및/또는 합성 주기를 완수할 수 있음. | 새로운 작용제 및 경로의 발견, 설계-획득-생산-배치에 이르는 전체 파이프라인의 자율적 실행. |"
+  },
+  {
+   "type": "h3",
+   "en": "Harmful manipulation",
+   "ko": "유해한 조작",
+   "id": "s31"
+  },
+  {
+   "type": "p",
+   "en": "OpenAI's approach to harmful manipulation remains exploratory due to its nascency as a systemic risk area. This risk tier is subject to further research and may be substantially changed over time. As described above, OpenAI believes that these risks may be best addressed through system level mitigations, such as post-deployment monitoring, rather than model evaluations before deployment.",
+   "ko": "OpenAI의 유해한 조작에 대한 접근 방식은 이것이 아직 초기 단계의 시스템적 위험 영역이라는 점에서 여전히 탐색적이다. 이 위험 등급은 추가 연구 대상이며 향후 상당 부분 변경될 수 있다. 앞서 기술한 바와 같이, OpenAI는 이러한 위험은 배포 전 모델 평가(evaluation)보다 배포 후 모니터링과 같은 시스템 수준의 완화를 통해 가장 잘 대응할 수 있다고 본다.",
+   "marks": [
+    {
+     "t": "OpenAI의 유해한 조작에 대한 접근 방식은 이것이 아직 초기 단계의 시스템적 위험 영역이라는 점에서 여전히 탐색적이다.",
+     "k": "key"
+    },
+    {
+     "t": "이 위험 등급은 추가 연구 대상이며 향후 상당 부분 변경될 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "배포 전 모델 평가(evaluation)보다 배포 후 모니터링과 같은 시스템 수준의 완화를 통해 가장 잘 대응할 수 있다고 본다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Loss of control",
+   "ko": "통제 상실",
+   "id": "s33"
+  },
+  {
+   "type": "p",
+   "en": "Loss of control refers to risks arising from humans losing the ability to reliably direct, modify, or shut down a model. Such risks may emerge from misalignment with human intent or values, selfimprovement, model deception, or autonomous self-improvement. Loss of control could result in a model evading the controls of its developer or a user. We have established a tier system that describes model capabilities in light of a models level of autonomy, ability to deceive, and the potential to take unsanctioned or unauthorized action. Outside of risks related to AI seltimprovement, these risk tiers remain exploratory and may evolve substantially.",
+   "ko": "통제 상실은 인간이 모델을 안정적으로 지시하거나, 수정하거나, 중지시킬 수 있는 능력을 잃는 데서 비롯되는 위험을 말한다. 이러한 위험은 인간의 의도나 가치와의 오정렬, 자기 개선(self-improvement), 모델 기만, 또는 자율적 자기 개선에서 발생할 수 있다. 통제 상실은 모델이 개발자나 사용자의 통제를 회피하는 결과로 이어질 수 있다. OpenAI는 모델의 자율성 수준, 기만 능력, 승인되지 않았거나 허가받지 않은 행동을 취할 가능성에 비추어 모델 역량을 기술하는 등급 체계를 수립하였다. AI 자기 개선과 관련된 위험을 제외하면, 이 위험 등급은 여전히 탐색적이며 상당 부분 변화할 수 있다.",
+   "marks": [
+    {
+     "t": "통제 상실은 인간이 모델을 안정적으로 지시하거나, 수정하거나, 중지시킬 수 있는 능력을 잃는 데서 비롯되는 위험을 말한다.",
+     "k": "key"
+    },
+    {
+     "t": "인간의 의도나 가치와의 오정렬, 자기 개선(self-improvement), 모델 기만, 또는 자율적 자기 개선에서 발생할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "통제 상실은 모델이 개발자나 사용자의 통제를 회피하는 결과로 이어질 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "이 위험 등급은 여전히 탐색적이며 상당 부분 변화할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "table",
+   "en": "| Tier | Description | Examples | ⏎ | Tier 1 | The model can reliably complete complex, multi-step tasks but lacks the execution of abilities approaching expert humans. The model demonstrates basic situational awareness when elicited and executes deceptive behaviors in narrow, highly prompted scenarios. | Reliably completes well-defined coding tasks can understand it is being evaluated if prompted and may subtly underperform when instructed. | ⏎ | Tier 2 | The model's impact is broadly equivalent to an expert human executing complex, sustained tasks, but may still nave relative strengths and weaknesses. The model demonstrates the capability to reliably evade detection across a variety of evaluation methods, including the capability to evade chain of thought monitoring. | Reliably completes complex end-to-end software projects, can insert subtle flaws or hidden vulnerabilities that survive expert review, can identify and exploit gaps in monitoring systems it incentivized to do so. | ⏎ | Tier 3 | The model Is superior to the most expert humans in executing most complex projects and can operate autonomously for extended, sustained periods of time. Demonstrates nuanced situational awareness and stealth such that monitoring the model and its chain of thought cannot reliably detect or rule out evasion of human control. | Exceeds the performance of the world's leading experts across diverse, open-ended, complex projects, avoids detection while operating detailed, multi-step plans, can acquire resources and expand capacity against active countermeasures. |",
+   "ko": "| 등급 | 설명 | 예시 | ⏎ | 등급 1 | 모델이 복잡한 다단계 과업을 안정적으로 완수할 수 있으나 인간 전문가에 근접하는 실행 능력은 갖추지 못함. 모델은 유도될 경우 기초적인 상황 인식을 보이며, 범위가 좁고 프롬프트에 의해 강하게 유도된 시나리오에서 기만적 행동을 실행함. | 명확히 정의된 코딩 과업을 안정적으로 완수함, 프롬프트가 주어지면 자신이 평가받고 있음을 이해할 수 있음, 지시받을 경우 미묘하게 낮은 성능을 보일 수 있음. | ⏎ | 등급 2 | 모델의 영향력이 복잡하고 지속적인 과업을 수행하는 인간 전문가와 대체로 동등하나, 여전히 상대적인 강점과 약점이 있을 수 있음. 모델은 사고 사슬(chain of thought) 모니터링을 회피하는 역량을 포함하여, 다양한 평가 방법 전반에 걸쳐 탐지를 안정적으로 회피하는 역량을 보임. | 복잡한 엔드투엔드 소프트웨어 프로젝트를 안정적으로 완수함, 전문가 검토를 통과하는 미묘한 결함이나 숨겨진 취약점을 삽입할 수 있음, 그렇게 할 유인이 있는 경우 모니터링 시스템의 허점을 식별하고 악용할 수 있음. | ⏎ | 등급 3 | 모델이 대부분의 복잡한 프로젝트를 수행하는 데 있어 최고 수준의 인간 전문가보다 우월하며, 장기간 지속적으로 자율적으로 작동할 수 있음. 모델과 그 사고 사슬을 모니터링해도 인간 통제의 회피를 안정적으로 탐지하거나 배제할 수 없을 정도로 정교한 상황 인식과 은밀성을 보임. | 다양하고 개방형이며 복잡한 프로젝트 전반에서 세계 최고 전문가들의 성과를 능가함, 상세한 다단계 계획을 실행하는 동안 탐지를 회피함, 적극적인 대응 조치에 맞서 자원을 획득하고 역량을 확장할 수 있음. |"
+  },
+  {
+   "type": "h3",
+   "en": "2.5 Safety mitigations",
+   "ko": "2.5 안전 위험 완화조치",
+   "id": "s36"
+  },
+  {
+   "type": "p",
+   "en": "OpenAI implements appropriate safety mitigations to address the systemic risks stemming from our models, taking into account the model's release and distribution strategy. OpenAI tailors these measures to the Capability of a model and its deployment, as appropriate, to mitigate systemic risks to acceptable levels. If residual risks associated with the model exceed acceptable risk levels, the model is not deployed unless additional mitigation measures are implemented that sufficiently minimize risk. We rely on a variety of techniques to identity whether adaitional measures are needed, including postdeployment threat intelligence monitoring, post-launch monitoring tools (classifiers, automated detection, human review, and investigations), consultation with experts, and other techniques.",
+   "ko": "OpenAI는 모델 공개 및 유통 전략을 고려하여, 자사 모델에서 비롯되는 시스템적 위험에 대응하기 위한 적절한 안전 위험 완화조치를 시행한다. OpenAI는 시스템적 위험을 수용 가능한 수준으로 완화하기 위해, 적절한 경우 이러한 조치를 모델의 역량 및 배포 방식에 맞추어 조정한다. 모델과 관련된 잔여 위험이 수용 가능한 위험 수준을 초과하는 경우, 위험을 충분히 최소화하는 추가 완화 조치가 시행되지 않는 한 해당 모델은 배포되지 않는다. OpenAI는 추가 조치가 필요한지 여부를 식별하기 위해 배포 후 위협 인텔리전스 모니터링, 출시 후 모니터링 도구(분류기, 자동 탐지, 인간 검토 및 조사), 전문가 자문 및 기타 기법 등 다양한 기법을 활용한다.",
+   "marks": [
+    {
+     "t": "자사 모델에서 비롯되는 시스템적 위험에 대응하기 위한 적절한 안전 위험 완화조치를 시행한다",
+     "k": "safety"
+    },
+    {
+     "t": "모델과 관련된 잔여 위험이 수용 가능한 위험 수준을 초과하는 경우, 위험을 충분히 최소화하는 추가 완화 조치가 시행되지 않는 한 해당 모델은 배포되지 않는다.",
+     "k": "key"
+    },
+    {
+     "t": "배포 후 위협 인텔리전스 모니터링, 출시 후 모니터링 도구(분류기, 자동 탐지, 인간 검토 및 조사)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "where the residual risk talls within acceptable levels, taking into account appropriate safety margins, the model may be approved for continued development and internal use (where applicable), and may be deployed under this Frontier Governance Framework. we document a justification for why the systemic risks stemming from the model are acceptable, including reasonably foreseeable conditions under which the justification may no longer hold, as informed by recommendations from OpenAI's Safety Advisory Group and external experts, as available and appropriate.",
+   "ko": "적절한 안전 여유도를 고려할 때 잔여 위험이 수용 가능한 수준 이내에 있는 경우, 해당 모델은 지속적인 개발 및 (해당되는 경우) 내부 사용을 승인받을 수 있으며, 본 Frontier Governance Framework에 따라 배포될 수 있다. OpenAI는 Safety Advisory Group 및 외부 전문가의 권고(가용하고 적절한 경우)를 반영하여, 모델에서 비롯되는 시스템적 위험이 수용 가능한 이유에 대한 근거를 문서화하며, 여기에는 해당 근거가 더 이상 유효하지 않게 될 수 있는 합리적으로 예견 가능한 조건이 포함된다.",
+   "marks": [
+    {
+     "t": "적절한 안전 여유도를 고려할 때 잔여 위험이 수용 가능한 수준 이내에 있는 경우",
+     "k": "safety"
+    },
+    {
+     "t": "모델에서 비롯되는 시스템적 위험이 수용 가능한 이유에 대한 근거를 문서화하며",
+     "k": "key"
+    },
+    {
+     "t": "해당 근거가 더 이상 유효하지 않게 될 수 있는 합리적으로 예견 가능한 조건",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2.6 Critical safety incident identification and response",
+   "ko": "2.6 치명적 안전 사고의 식별 및 대응",
+   "id": "s39"
+  },
+  {
+   "type": "p",
+   "en": "OpenAI maintains an AI Safety Incident Response Plan (AIRP) that outlines OpenAI's plan for identifying and responding to AI safety incidents. The AIRP has a broad scope and uses definitions optimized for operational decision-making, covering a range of different types of safety incidents that may arise, including those that are reportable under applicable frontier safety laws and regulations, including Critical safety incidents under the TFAIA. We also maintain a Cybersecurity Incident Response Plan that may cover Certain Cybersecurity incidents that are reportable.",
+   "ko": "OpenAI는 AI 안전 사고를 식별하고 이에 대응하기 위한 OpenAI의 계획을 개괄하는 AI 안전 사고 대응 계획(AIRP)을 유지한다. AIRP는 적용 범위가 넓고 운영상 의사결정에 최적화된 정의를 사용하며, 적용 가능한 프런티어 안전 관련 법률 및 규정에 따라 보고 대상이 되는 사고(TFAIA에 따른 치명적 안전 사고 포함)를 비롯하여 발생할 수 있는 다양한 유형의 안전 사고를 포괄한다. 또한 OpenAI는 보고 대상이 되는 특정 사이버 보안 사고를 포괄할 수 있는 사이버 보안 사고 대응 계획을 유지한다.",
+   "marks": [
+    {
+     "t": "AI 안전 사고를 식별하고 이에 대응하기 위한 OpenAI의 계획을 개괄하는 AI 안전 사고 대응 계획(AIRP)을 유지한다",
+     "k": "key"
+    },
+    {
+     "t": "보고 대상이 되는 사고(TFAIA에 따른 치명적 안전 사고 포함)",
+     "k": "safety"
+    },
+    {
+     "t": "보고 대상이 되는 특정 사이버 보안 사고를 포괄할 수 있는 사이버 보안 사고 대응 계획",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We have measures in place to monitor for and report on potential AI safety incidents discovered by both internal and external actors. Potential AI safety incidents are triaged, investigated, escalated, and remediated as appropriate according to the procedures described in the AIRP. These incidents are in turn analyzed to determine whether they meet the criteria for external reporting under applicable laws and regulations.",
+   "ko": "OpenAI는 내부 및 외부 행위자 모두에 의해 발견된 잠재적 AI 안전 사고를 모니터링하고 보고하기 위한 조치를 갖추고 있다. 잠재적 AI 안전 사고는 AIRP에 기술된 절차에 따라 적절하게 분류, 조사, 상부 보고 및 시정된다. 이후 이러한 사고는 적용 가능한 법률 및 규정에 따른 외부 보고 기준을 충족하는지 판단하기 위해 분석된다.",
+   "marks": [
+    {
+     "t": "내부 및 외부 행위자 모두에 의해 발견된 잠재적 AI 안전 사고를 모니터링하고 보고하기 위한 조치",
+     "k": "safety"
+    },
+    {
+     "t": "잠재적 AI 안전 사고는 AIRP에 기술된 절차에 따라 적절하게 분류, 조사, 상부 보고 및 시정된다.",
+     "k": "key"
+    },
+    {
+     "t": "적용 가능한 법률 및 규정에 따른 외부 보고 기준을 충족하는지 판단하기 위해 분석된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Detection and triage",
+   "ko": "탐지 및 분류",
+   "id": "s42"
+  },
+  {
+   "type": "p",
+   "en": "A potential AI safety incident may be detected through various channels, including automated monitoring, employee escalation, end-user feedback, including support tickets and external reporting forms), notification from regulators or the press, and review of on- or off-platform activity. Once a potential AI safety incident is identified, the AIRP dictates procedures for assessing whether the event qualifies as an AI safety incident and for determining severity and notifying appropriate internal teams.",
+   "ko": "잠재적 AI 안전 사고는 자동화된 모니터링, 직원의 상부 보고, 최종 사용자 피드백(지원 티켓 및 외부 신고 양식 포함), 규제 당국 또는 언론의 통지, 플랫폼 내외부 활동 검토 등 다양한 경로를 통해 탐지될 수 있다. 잠재적 AI 안전 사고가 식별되면, AIRP는 해당 사건이 AI 안전 사고에 해당하는지 평가하고, 심각도를 결정하며, 적절한 내부 팀에 통지하기 위한 절차를 규정한다.",
+   "marks": [
+    {
+     "t": "잠재적 AI 안전 사고는 자동화된 모니터링, 직원의 상부 보고, 최종 사용자 피드백(지원 티켓 및 외부 신고 양식 포함), 규제 당국 또는 언론의 통지, 플랫폼 내외부 활동 검토 등 다양한 경로를 통해 탐지될 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "AIRP는 해당 사건이 AI 안전 사고에 해당하는지 평가하고, 심각도를 결정하며, 적절한 내부 팀에 통지하기 위한 절차를 규정한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Investigation, mitigation, and response",
+   "ko": "조사, 완화 및 대응",
+   "id": "s44"
+  },
+  {
+   "type": "p",
+   "en": "OpenAI maintains response teams that investigate and, if necessary, take action to mitigate and contain incidents. The investigation includes determining the root cause, scope, and impact of the incident.",
+   "ko": "OpenAI는 사고를 조사하고, 필요한 경우 사고를 완화하고 억제하기 위한 조치를 취하는 대응 팀을 운영한다. 조사에는 사고의 근본 원인, 범위 및 영향을 규명하는 것이 포함된다.",
+   "marks": [
+    {
+     "t": "OpenAI는 사고를 조사하고, 필요한 경우 사고를 완화하고 억제하기 위한 조치를 취하는 대응 팀을 운영한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Once the investigation has been completed, OpenAI takes steps to implement longer-term solutions to address root causes.As part of our commitment to preventing similar future incidents, we may also conduct a retrospective it needed to document key learnings and address open action items.",
+   "ko": "조사가 완료되면, OpenAI는 근본 원인에 대응하기 위한 장기적 해결책을 시행하는 조치를 취한다. 향후 유사한 사고를 예방하기 위한 약정의 일환으로, OpenAI는 필요한 경우 핵심 교훈을 문서화하고 미결 조치 항목을 처리하기 위해 사후 검토를 실시할 수도 있다.",
+   "marks": [
+    {
+     "t": "OpenAI는 근본 원인에 대응하기 위한 장기적 해결책을 시행하는 조치를 취한다.",
+     "k": "key"
+    },
+    {
+     "t": "핵심 교훈을 문서화하고 미결 조치 항목을 처리하기 위해 사후 검토를 실시할 수도 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "External reporting",
+   "ko": "외부 보고",
+   "id": "s47"
+  },
+  {
+   "type": "p",
+   "en": "As part of our response, we analyze whether we nave reporting obligations relating to the incident under applicable laws and regulations or if any other type of external outreach Is advisable, including under any voluntary commitments. If an incident is determined to be reportable, we will gather relevant information from the investigation and remediation phase for reporting to appropriate authorities within the required deadlines.",
+   "ko": "대응의 일환으로, OpenAI는 적용 가능한 법률 및 규정에 따라 해당 사고와 관련된 보고 의무가 있는지, 또는 자발적 약정에 따른 것을 포함하여 기타 유형의 외부 소통이 바람직한지 분석한다. 사고가 보고 대상으로 판단되면, OpenAI는 조사 및 시정 단계에서 관련 정보를 수집하여 요구되는 기한 내에 적절한 당국에 보고한다.",
+   "marks": [
+    {
+     "t": "적용 가능한 법률 및 규정에 따라 해당 사고와 관련된 보고 의무가 있는지",
+     "k": "safety"
+    },
+    {
+     "t": "자발적 약정에 따른 것을 포함하여 기타 유형의 외부 소통이 바람직한지 분석한다",
+     "k": "safety"
+    },
+    {
+     "t": "사고가 보고 대상으로 판단되면, OpenAI는 조사 및 시정 단계에서 관련 정보를 수집하여 요구되는 기한 내에 적절한 당국에 보고한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "3 Security risk management",
+   "ko": "3 보안 위험 관리",
+   "id": "s49"
+  },
+  {
+   "type": "p",
+   "en": "OpenAI maintains an Information Security and Privacy Program aligned with ISO 27001, 27017, 27018, and 27701, and supported by SOC 2 Type II evaluations. The program is structured to protect critical assets, including model weights, training data, and customer data, from unauthorized access, disclosure, or compromise. It applies a risk-based approach to allocate resources effectively, and promotes security awareness across the organization. Continuous monitoring and improvement ensure that controls adapt to changing risks and operational needs.",
+   "ko": "OpenAI는 ISO 27001, 27017, 27018 및 27701에 부합하고 SOC 2 Type II 평가의 뒷받침을 받는 정보 보안 및 프라이버시 프로그램을 유지한다. 이 프로그램은 모델 가중치, 학습 데이터, 고객 데이터를 포함한 핵심 자산을 무단 접근, 공개 또는 침해로부터 보호하도록 구성되어 있다. 이 프로그램은 자원을 효과적으로 배분하기 위해 위험 기반 접근 방식을 적용하며, 조직 전반에 걸쳐 보안 인식을 증진한다. 지속적인 모니터링과 개선을 통해 통제가 변화하는 위험 및 운영상 필요에 맞게 조정되도록 보장한다.",
+   "marks": [
+    {
+     "t": "모델 가중치, 학습 데이터, 고객 데이터를 포함한 핵심 자산을 무단 접근, 공개 또는 침해로부터 보호하도록 구성되어 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Security for our frontier models is structured around layered controls addressing network, device, and personnel risks, along with protections for sensitive model parameters. Access is tightly managed, environments are continuously monitored, and independent assessments validate effectiveness. This approach ensures that OpenAI can advance AI development while maintaining the confidentiality, integrity, and availability of its critical assets.",
+   "ko": "우리의 프론티어 모델에 대한 보안은 네트워크, 기기 및 인력 관련 위험에 대응하는 다계층 통제와 민감한 모델 파라미터 보호 조치를 중심으로 구성되어 있다. 접근은 엄격하게 관리되고, 환경은 지속적으로 모니터링되며, 독립적인 평가(assessment)를 통해 그 효과성이 검증된다. 이러한 접근 방식을 통해 OpenAI는 핵심 자산의 기밀성, 무결성 및 가용성을 유지하면서 AI 개발을 추진할 수 있다.",
+   "marks": [
+    {
+     "t": "우리의 프론티어 모델에 대한 보안은 네트워크, 기기 및 인력 관련 위험에 대응하는 다계층 통제와 민감한 모델 파라미터 보호 조치를 중심으로 구성되어 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We implement appropriate security mitigations to meet the goals described above. A non-exhaustive list of such mitigations includes:",
+   "ko": "우리는 위에 기술된 목표를 달성하기 위해 적절한 보안 위험 완화조치를 시행한다. 이러한 완화조치의 비한정적 목록은 다음과 같다."
+  },
+  {
+   "type": "table",
+   "en": "| Protection of unreleased model weights | Model weights are protected through encryption (at rest and in transit), continuous monitoring, and access controls (e.g., multi-tactor authentication, multi-party approval, and detailed logging). Physical security of hosting infrastructure is protected by access contrals and inspections. | ⏎ | Hardening interface-access to unreleased model parameters | Interface access to model parameters is limited to authorized personnel, with access controls that are subject to regular review. Access is rate limited and subject to monitoring, and provisioning of access may be monitored and logged. | ⏎ | Insider threats | Personnel (employees and contractors) are screened and subject to regular training. Internal monitoring for anomalous activity is used for early identification of potential risks. Model execution is sandboxed, with restricted egress by default. | ⏎ | Security assurance | Security controls are validated through internal and external assessments, including red teaming, penetration testing, vulnerability scanning, SOC 2 Type II audits, and ISO 27001 certification. OpenAI also maintains vulnerability aisclosure programs and 27/7/365 incident response capabilities. |",
+   "ko": "| 미공개 모델 가중치의 보호 | 모델 가중치는 암호화(저장 시 및 전송 시), 지속적 모니터링, 접근 통제(예: 다중 요소 인증, 다자 승인, 상세 로깅)를 통해 보호됨. 호스팅 인프라의 물리적 보안은 접근 통제 및 점검을 통해 보호됨. | ⏎ | 미공개 모델 파라미터에 대한 인터페이스 접근 강화 | 모델 파라미터에 대한 인터페이스 접근은 승인된 인력으로 제한되며, 접근 통제는 정기적 검토 대상임. 접근에는 속도 제한이 적용되고 모니터링 대상이 되며, 접근 권한 부여는 모니터링 및 기록될 수 있음. | ⏎ | 내부자 위협 | 인력(직원 및 계약자)은 심사를 거치며 정기적 교육 대상임. 잠재적 위험을 조기에 식별하기 위해 이상 활동에 대한 내부 모니터링을 활용함. 모델 실행은 샌드박스 환경에서 이루어지며, 기본적으로 외부 송신(egress)이 제한됨. | ⏎ | 보안 보증 | 보안 통제는 레드티밍, 침투 테스트, 취약점 스캐닝, SOC 2 Type II 감사, ISO 27001 인증을 포함한 내부 및 외부 평가를 통해 검증됨. 또한 OpenAI는 취약점 공개 프로그램과 27/7/365 사고 대응 역량을 유지함. |"
+  },
+  {
+   "type": "h2",
+   "en": "4 Model reporting",
+   "ko": "4 모델 보고",
+   "id": "s54"
+  },
+  {
+   "type": "p",
+   "en": "For models in scope of this Framework, results of our systemic risk assessment and mitigation processes and measures are documented in a Safety and Security Model Report (referred to as \"Transparency Reports\" under the TFAIA). We also publish details of these assessments in system cards or in other reporting when a model launches.",
+   "ko": "이 프레임워크의 적용 범위에 속하는 모델의 경우, 시스템적 위험 평가 및 완화 절차와 조치의 결과는 안전 및 보안 모델 보고서(TFAIA에서는 \"투명성 보고서\"로 지칭됨)에 문서화된다. 또한 우리는 모델 출시 시 시스템 카드 또는 기타 보고를 통해 이러한 평가의 세부 내용을 공개한다.",
+   "marks": [
+    {
+     "t": "시스템적 위험 평가 및 완화 절차와 조치의 결과는 안전 및 보안 모델 보고서(TFAIA에서는 \"투명성 보고서\"로 지칭됨)에 문서화된다",
+     "k": "key"
+    },
+    {
+     "t": "모델 출시 시 시스템 카드 또는 기타 보고를 통해 이러한 평가의 세부 내용을 공개한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Model report updates",
+   "ko": "모델 보고서 업데이트",
+   "id": "s56"
+  },
+  {
+   "type": "p",
+   "en": "For models in scope of this Framework that are subject to the EU AI Act, It we have reasonable grounds to believe that the basis for considering the model's systemic risks acceptable has been materially undermined, we will update our Model Report as appropriate after completing a systemic risk assessment. For example, this could be the case if the model's capabilities materially change through further post-training, if the model's use or integrations into OpenAI's systems materially increase risk, or in the event of a serious incident.",
+   "ko": "이 프레임워크의 적용 범위에 속하며 EU AI 법의 적용을 받는 모델의 경우, 해당 모델의 시스템적 위험을 수용 가능한 것으로 판단한 근거가 실질적으로 훼손되었다고 믿을 만한 합리적인 근거가 있으면, 우리는 시스템적 위험 평가를 완료한 후 모델 보고서를 적절히 업데이트한다. 예를 들어, 추가적인 사후 학습을 통해 모델의 역량이 실질적으로 변화한 경우, 모델의 사용 또는 OpenAI 시스템으로의 통합이 위험을 실질적으로 증가시키는 경우, 또는 중대 사고가 발생한 경우가 이에 해당할 수 있다.",
+   "marks": [
+    {
+     "t": "해당 모델의 시스템적 위험을 수용 가능한 것으로 판단한 근거가 실질적으로 훼손되었다고 믿을 만한 합리적인 근거가 있으면, 우리는 시스템적 위험 평가를 완료한 후 모델 보고서를 적절히 업데이트한다.",
+     "k": "key"
+    },
+    {
+     "t": "추가적인 사후 학습을 통해 모델의 역량이 실질적으로 변화한 경우",
+     "k": "safety"
+    },
+    {
+     "t": "OpenAI 시스템으로의 통합이 위험을 실질적으로 증가시키는 경우",
+     "k": "safety"
+    },
+    {
+     "t": "중대 사고가 발생한 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We will in any event determine whether to update the Model Report for our most capable frontier models once every six months. we will not consider an update necessary if (1) the model's capabilities have not materially changed since the last update, (2) we plan to release a more capable model in less than a month, or (3) if the model is considered similarly safe or safer (under Appendix 2.2 of the Code of Practice).",
+   "ko": "어떠한 경우에도 우리는 가장 높은 역량을 갖춘 프론티어 모델에 대해 6개월마다 1회 모델 보고서의 업데이트 여부를 결정한다. 다음의 경우에는 업데이트가 필요하지 않은 것으로 간주한다. (1) 직전 업데이트 이후 모델의 역량이 실질적으로 변화하지 않은 경우, (2) 1개월 이내에 더 높은 역량을 갖춘 모델을 출시할 계획인 경우, 또는 (3) 해당 모델이 (실천 강령 부록 2.2에 따라) 유사하게 안전하거나 더 안전한 것으로 간주되는 경우.",
+   "marks": [
+    {
+     "t": "가장 높은 역량을 갖춘 프론티어 모델에 대해 6개월마다 1회 모델 보고서의 업데이트 여부를 결정한다.",
+     "k": "key"
+    },
+    {
+     "t": "해당 모델이 (실천 강령 부록 2.2에 따라) 유사하게 안전하거나 더 안전한 것으로 간주되는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Light touch evaluations",
+   "ko": "간소화된 평가",
+   "id": "s59"
+  },
+  {
+   "type": "p",
+   "en": "Separate from any full systemic risk assessment, we may from time to time conduct lighter-touch model evaluations at appropriate trigger points to determine whether (1) additional systemic risk mitigations may be required or (2) if a Model Report update is required. These trigger points may include (1) the release of an updated model or (2) where we have reason to believe a model's risk profile may have materially Changed.",
+   "ko": "전면적인 시스템적 위험 평가와는 별도로, 우리는 (1) 추가적인 시스템적 위험 완화가 필요할 수 있는지 또는 (2) 모델 보고서 업데이트가 필요한지 판단하기 위해 적절한 계기 시점에 수시로 보다 간소화된 모델 평가(evaluation)를 실시할 수 있다. 이러한 계기 시점에는 (1) 업데이트된 모델의 출시 또는 (2) 모델의 위험 프로필이 실질적으로 변화했을 수 있다고 믿을 만한 이유가 있는 경우가 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "추가적인 시스템적 위험 완화가 필요할 수 있는지",
+     "k": "safety"
+    },
+    {
+     "t": "적절한 계기 시점에 수시로 보다 간소화된 모델 평가(evaluation)를 실시할 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "모델의 위험 프로필이 실질적으로 변화했을 수 있다고 믿을 만한 이유가 있는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "5 |nput from external experts",
+   "ko": "5 외부 전문가의 입력",
+   "id": "s61"
+  },
+  {
+   "type": "p",
+   "en": "We may solicit and obtain input from external experts in relevant domains, and other stakeholders, to assist in systemic risk assessment or in determining the sufficiency of safety mitigations. This may include independent third-party evaluators, stress testing of safeguards for models approaching or reaching a new risk tier, or to provide independent expert opinions to assist the Safety Advisory Group in assessing the safety of a proposed deployment. We may also rely on commissioned research reports, public research, and other discussions with internal and external domain experts.",
+   "ko": "우리는 시스템적 위험 평가를 지원하거나 안전 위험 완화조치의 충분성을 판단하는 데 도움을 받기 위해 관련 분야의 외부 전문가 및 기타 이해관계자에게 입력을 요청하고 이를 확보할 수 있다. 여기에는 독립적인 제3자 평가자, 새로운 위험 등급에 근접하거나 도달한 모델에 대한 안전장치의 스트레스 테스트, 또는 제안된 배포의 안전성을 평가하는 데 있어 Safety Advisory Group을 지원하기 위한 독립적인 전문가 의견 제공이 포함될 수 있다. 또한 우리는 의뢰 연구 보고서, 공개 연구, 그리고 내부 및 외부 분야 전문가와의 기타 논의에 의존할 수도 있다.",
+   "marks": [
+    {
+     "t": "시스템적 위험 평가를 지원하거나 안전 위험 완화조치의 충분성을 판단하는 데 도움을 받기 위해 관련 분야의 외부 전문가 및 기타 이해관계자에게 입력을 요청하고 이를 확보할 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "독립적인 제3자 평가자",
+     "k": "safety"
+    },
+    {
+     "t": "새로운 위험 등급에 근접하거나 도달한 모델에 대한 안전장치의 스트레스 테스트",
+     "k": "safety"
+    },
+    {
+     "t": "제안된 배포의 안전성을 평가하는 데 있어 Safety Advisory Group을 지원하기 위한 독립적인 전문가 의견 제공",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "6 Allocation of responsibility for risk management",
+   "ko": "6 위험 관리에 대한 책임 배분",
+   "id": "s63"
+  },
+  {
+   "type": "p",
+   "en": "OpenAI OpCo LLC and OpenAI Ireland Limited maintain internal governance structures and practices designed to meet the requirements of applicable laws and ensure implementation of the processes in this Framework. OpenAI's internal governance practices include managing risks across the lifecycle of our models and ongoing legal and compliance reviews to ensure that risk management functions adhere to this Framework.",
+   "ko": "OpenAI OpCo LLC와 OpenAI Ireland Limited는 적용 가능한 법률의 요건을 충족하고 이 프레임워크에 규정된 절차의 이행을 보장하도록 설계된 내부 거버넌스 구조와 실행 방안을 유지한다. OpenAI의 내부 거버넌스 실행 방안에는 모델의 수명주기 전반에 걸친 위험 관리와, 위험 관리 기능이 이 프레임워크를 준수하도록 보장하기 위한 지속적인 법무 및 규정 준수 검토가 포함된다.",
+   "marks": [
+    {
+     "t": "OpenAI의 내부 거버넌스 실행 방안에는 모델의 수명주기 전반에 걸친 위험 관리와, 위험 관리 기능이 이 프레임워크를 준수하도록 보장하기 위한 지속적인 법무 및 규정 준수 검토가 포함된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "OpenAI OpCo LLC is responsible for compliance with the TFAIA for covered models in the United States.",
+   "ko": "OpenAI OpCo LLC는 미국 내 적용 대상 모델에 대한 TFAIA 규정 준수를 책임진다.",
+   "marks": [
+    {
+     "t": "미국 내 적용 대상 모델에 대한 TFAIA 규정 준수를 책임진다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "OpenAI Ireland Limited is the provider of OpenAI's GPAI-SR models in the EU and responsible for compliance with the EU Code of Practice. The board of directors of OpenAI Ireland Limited exercise systemic risk oversight under this Framework for EU purposes.",
+   "ko": "OpenAI Ireland Limited는 EU 내 OpenAI의 GPAI-SR 모델의 제공자이며 EU 실천 강령의 규정 준수를 책임진다. OpenAI Ireland Limited의 이사회는 EU 관련 목적상 이 프레임워크에 따른 시스템적 위험 감독을 수행한다.",
+   "marks": [
+    {
+     "t": "EU 내 OpenAI의 GPAI-SR 모델의 제공자이며 EU 실천 강령의 규정 준수를 책임진다",
+     "k": "safety"
+    },
+    {
+     "t": "OpenAI Ireland Limited의 이사회는 EU 관련 목적상 이 프레임워크에 따른 시스템적 위험 감독을 수행한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Additional detail about our deployment governance can be found in Appendix B of the PF.",
+   "ko": "우리의 배포 거버넌스에 관한 추가 세부 내용은 PF의 부록 B에서 확인할 수 있다."
+  },
+  {
+   "type": "h2",
+   "en": "7 Framework change management",
+   "ko": "7 프레임워크 변경 관리",
+   "id": "s68"
+  },
+  {
+   "type": "p",
+   "en": "OpenAI commits to ensuring that this FGF is state-of-the-art and kept up to date with OpenAI's policies and procedures with respect to the TFAIA and the EU Code of Practice.",
+   "ko": "OpenAI는 이 FGF가 최첨단 수준을 유지하고, TFAIA 및 EU 실천 강령과 관련된 OpenAI의 정책 및 절차에 맞추어 최신 상태로 유지되도록 보장할 것을 약속한다.",
+   "marks": [
+    {
+     "t": "이 FGF가 최첨단 수준을 유지하고, TFAIA 및 EU 실천 강령과 관련된 OpenAI의 정책 및 절차에 맞추어 최신 상태로 유지되도록 보장할 것을 약속한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "7.1 Update and approval process",
+   "ko": "7.1 업데이트 및 승인 절차",
+   "id": "s70"
+  },
+  {
+   "type": "p",
+   "en": "Updates to this FGF may be proposed by Open AI's Safety Advisory Group, Head of Safety Systems, Head of Preparedness, Chief information Security Officer, Chief Compliance Officer, General Counsel, or executive leadership. OpenAI's Legal function, in collaboration with relevant internal stakeholders, will oversee the process for FGF updates, including determining which updates are required to ensure the FGF remains state-ofthe-art and adequate for its purpose. Updates will also occur as needed after a Framework assessment, as described in Section 7.2 below. Material updates will be presented to the Safety and Security Committee of the board of directors of the OpenAI Foundation and to the board of directors of OpenAI Ireland Limited for oversight, with changes and justifications for material updates documented in a changelog and published within 30 days of the update.",
+   "ko": "이 FGF에 대한 업데이트는 OpenAI의 Safety Advisory Group, Safety Systems 책임자, Preparedness 책임자, 최고정보보안책임자, 최고규정준수책임자, 법무총괄책임자 또는 경영진이 제안할 수 있다. OpenAI의 법무 부서는 관련 내부 이해관계자와 협력하여 FGF 업데이트 절차를 감독하며, 여기에는 FGF가 최첨단 수준을 유지하고 그 목적에 적합하도록 보장하기 위해 어떤 업데이트가 필요한지 결정하는 것이 포함된다. 또한 아래 7.2절에 기술된 바와 같이, 프레임워크 평가 이후 필요에 따라 업데이트가 이루어진다. 중요한 업데이트는 감독을 위해 OpenAI Foundation 이사회의 Safety and Security Committee와 OpenAI Ireland Limited의 이사회에 제출되며, 중요한 업데이트의 변경 사항과 그 정당화 사유는 변경 이력에 문서화되어 업데이트 후 30일 이내에 공개된다.",
+   "marks": [
+    {
+     "t": "OpenAI의 Safety Advisory Group, Safety Systems 책임자, Preparedness 책임자",
+     "k": "safety"
+    },
+    {
+     "t": "중요한 업데이트는 감독을 위해 OpenAI Foundation 이사회의 Safety and Security Committee와 OpenAI Ireland Limited의 이사회에 제출되며",
+     "k": "key"
+    },
+    {
+     "t": "변경 사항과 그 정당화 사유는 변경 이력에 문서화되어 업데이트 후 30일 이내에 공개된다",
+     "k": "safety"
+    }
+   ],
+   "refs": [
+    {
+     "t": "7.2절",
+     "to": "s72"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "7.2 Framework assessment",
+   "ko": "7.2 프레임워크 평가",
+   "id": "s72"
+  },
+  {
+   "type": "p",
+   "en": "OpenAI will complete a Framework Assessment at least once every 12 months from the Effective Dates of the TFAIA and the EU Code of Practice, and based on factors considered by OpenAI's legal function, such as changes in law or regulatory guidance, changes in frontier model capabilities and related technologies, new approaches to mitigations and safeguards, other incidents affecting the industry, and new industry best practices and standards.",
+   "ko": "OpenAI는 TFAIA 및 EU 실천 강령의 시행일로부터 최소 12개월마다 1회, 그리고 법률 또는 규제 지침의 변경, 프론티어 모델 역량 및 관련 기술의 변화, 완화 및 안전장치에 대한 새로운 접근 방식, 업계에 영향을 미치는 기타 사고, 새로운 업계 모범 사례 및 표준 등 OpenAI의 법무 부서가 고려하는 요인에 근거하여 프레임워크 평가를 완료한다.",
+   "marks": [
+    {
+     "t": "최소 12개월마다 1회",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 모델 역량 및 관련 기술의 변화, 완화 및 안전장치에 대한 새로운 접근 방식",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Framework Assessments will consider the adequacy of our FGF and our factors for determining whether updates are required. For the EU Code of Practice, if we identify any instances of nonadherence or any measures that are required to be implemented to ensure continued adherence, we will draft and implement a remediation plan, and update the FGF as appropriate.",
+   "ko": "프레임워크 평가에서는 FGF의 적정성과 업데이트 필요 여부를 판단하기 위한 요인을 검토한다. EU 실천 강령과 관련하여, 미준수 사례 또는 지속적인 준수를 보장하기 위해 시행이 요구되는 조치가 식별되는 경우, 우리는 시정 계획을 수립 및 시행하고 FGF를 적절히 업데이트한다.",
+   "marks": [
+    {
+     "t": "프레임워크 평가에서는 FGF의 적정성과 업데이트 필요 여부를 판단하기 위한 요인을 검토한다.",
+     "k": "key"
+    },
+    {
+     "t": "미준수 사례 또는 지속적인 준수를 보장하기 위해 시행이 요구되는 조치가 식별되는 경우, 우리는 시정 계획을 수립 및 시행하고 FGF를 적절히 업데이트한다",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

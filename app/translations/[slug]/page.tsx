@@ -129,14 +129,19 @@ function firstColumnSpans(body: string[][]): number[] {
   return spans;
 }
 
-function Table({ text, lang }: { text: string; lang: "ko" | "en" }) {
+// 머리글 없이 '이름 | 설명'으로만 된 표도 있다(OpenAI FGF의 위험 범주 표) — 첫 행에 긴 글이 있으면 본문 행이다.
+// 번역·원문 가운데 한쪽만 길 수도 있어(추출이 흐트러진 표) 두 언어가 모두 길 때만 머리글 없는 표로 본다.
+const isHeadless = (text: string) =>
+  text.split(" ⏎ ")[0].replace(/^\||\|$/g, "").split("|").some((cell) => cell.trim().length > 80);
+
+function Table({ text, lang, headless }: { text: string; lang: "ko" | "en"; headless?: boolean }) {
   const rows = text.split(" ⏎ ").map((row) => row.replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim()));
-  const [head, ...body] = rows;
+  const [head, ...body] = headless ? [[], ...rows] : rows;
   const spans = firstColumnSpans(body);
   return (
     <div className="tr-table-wrap">
       <table className="tr-table" lang={lang}>
-        <thead><tr>{head.map((cell, i) => <th key={i}>{withNotes(cell, lang)}</th>)}</tr></thead>
+        {head.length > 0 && <thead><tr>{head.map((cell, i) => <th key={i}>{withNotes(cell, lang)}</th>)}</tr></thead>}
         <tbody>
           {body.map((row, r) => (
             <tr key={r}>
@@ -235,10 +240,11 @@ function Row({ block }: { block: TranslationBlock }) {
     );
   }
   if (block.type === "table") {
+    const headless = isHeadless(block.ko) && isHeadless(block.en);
     return (
       <div className="tr-row tr-tablerow">
-        <div className="tr-ko"><Table lang="ko" text={block.ko} /></div>
-        <div className="tr-en"><Table lang="en" text={block.en} /></div>
+        <div className="tr-ko"><Table lang="ko" text={block.ko} headless={headless} /></div>
+        <div className="tr-en"><Table lang="en" text={block.en} headless={headless} /></div>
       </div>
     );
   }
