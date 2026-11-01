@@ -270,11 +270,19 @@ def main(src: str, translated: str, meta_path: str) -> None:
     label = re.compile(r"^(?:SECTION|SEC\.|Section|ARTICLE|Article|§)\s*\d", re.IGNORECASE)
     # 법전 조문 번호만 있는 문단('(5 ILCS 140/7.5)', '(740 ILCS 174/15)')도 옮길 말이 없다.
     citation = re.compile(r"^\(\s*\d+\s+[A-Z]{3,6}\s+[\d./-]+\s*\)$")
+    # 주소만 있는 문단(참고문헌 링크)과, 고유명사만 늘어선 문단(기관 이름, 사람 이름)도 마찬가지다.
+    link = re.compile(r"^\[?[^\[\]]*\]?\(?https?://\S+\)?$")
+    CONNECTORS = {"for", "and", "of", "the", "on", "in", "to", "a", "an", "at", "by"}
+
+    def names_only(text: str) -> bool:
+        words = re.findall(r"[A-Za-z][A-Za-z'\u2019]*", text)
+        return bool(words) and all(w[0].isupper() or w.lower() in CONNECTORS for w in words)
     for block in blocks:
         if block["ko"].strip() == block["en"].strip() and re.search(r"[A-Za-z]{3,}", block["en"]):
             if block["type"] in ("h2", "h3") and label.match(block["en"].strip()):
                 continue
-            if citation.match(block["en"].strip()):
+            stripped = block["en"].strip()
+            if citation.match(stripped) or link.match(stripped) or names_only(stripped):
                 continue
             block["untranslated"] = True
     for n, block in enumerate(blocks):

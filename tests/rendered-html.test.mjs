@@ -71,8 +71,13 @@ test("exports each translation with the disclaimer and every source block paired
     for (const [n, block] of doc.blocks.entries()) {
       if (!["p", "li"].includes(block.type) || block.untranslated) continue;
       for (const part of block.ko.split("\n\n")) {
-        // 따옴표 안의 영어 이름('"Advanced AI Scaling Framework"에서 …로 변경')은 일부러 남긴 것이라 세지 않는다
-        const latin = (part.replace(/["“'‘][^"”'’]*["”'’]/g, "").match(/[A-Za-z]/g) ?? []).length;
+        // 따옴표 안의 영어 이름('"Advanced AI Scaling Framework"에서 …로 변경')은 일부러 남긴 것이라 세지 않는다.
+        // 기관 이름('OWASP Top 10 for …')과 사람 이름 목록('Dr. Andrew Jackson, Prof. …')처럼
+        // 대문자로 시작하는 낱말이 이어지는 고유명사도 옮기지 않고 두므로 세지 않는다.
+        const latin = (part
+          .replace(/["“'‘][^"”'’]*["”'’]/g, "")
+          .replace(/\b[A-Z][A-Za-z]*\.?(?:[,\s]+(?:[A-Z][A-Za-z]*\.?|\d+|for|and|of|the))+/g, "")
+          .match(/[A-Za-z]/g) ?? []).length;
         const hangul = (part.match(/[가-힣]/g) ?? []).length;
         const words = part.trim().split(/\s+/).length;
         assert.ok(!(words >= 8 && latin > 3 * hangul), `untranslated English in block ${n}: ${doc.slug}`);

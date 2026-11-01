@@ -1,0 +1,742 @@
+{
+ "slug": "g42-fsf-2025-02",
+ "title": "G42 프론티어 AI 안전 프레임워크",
+ "original_title": "Frontier AI Safety Framework (G42)",
+ "publisher": "G42",
+ "published": "2025-02-06",
+ "source_url": "https://www.g42.ai/application/files/9517/3882/2182/G42_Frontier_Safety_Framework_Publication_Version.pdf",
+ "source_note": "2025년 2월 공개본 전문 (14쪽, 표지·목차 제외)",
+ "source_label": "원문 보기 (G42 PDF)",
+ "summary": "아랍에미리트의 AI 기업 G42가 낸 프론티어 안전 프레임워크다. 역량 임계를 두 가지, 곧 생물학적 위협과 공격적 사이버보안에만 정해 두고, 자율 운영과 고도 조작은 앞으로 임계를 더할 후보로 남겼다. 임계에 닿으면 배포 완화 수준과 보안 완화 수준을 단계로 올려 적용하고, 거버넌스와 준수, 내부 보고 체계, 외부 감사와 공개 투명성, 정책 검토 절차를 둔다. 6개월·12개월·그 이후로 나눈 단계별 이행 계획을 붙인 점이 눈에 띄는데, 프레임워크를 완성된 규율이 아니라 차츰 갖춰 갈 것으로 내놓았다는 뜻이다.",
+ "image": "/images/translations/g42-fsf-2025-02-cover.webp",
+ "og_image": "/images/translations/g42-fsf-2025-02-cover.jpg",
+ "image_caption": "원문 표지 (G42, 2025.2)",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "doc_kind": "프론티어 안전 프레임워크",
+ "stats": {
+  "blocks": 71,
+  "sections": 7,
+  "items": 7,
+  "words_en": 3112
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "1 Introduction",
+   "ko": "1 서론",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "G42's  Frontier  AI  Safety  Framework  (' Framework ')  is  a  comprehensive  set  of protocols  designed  to  safeguard  G42's  advanced  AI  initiatives  by  focusing  on responsible  development,  deployment,  and  oversight  of  AI  technologies.  This Framework  is  tailored  specifically  to  address  the  unique  challenges  and  risks associated with high-capability AI, building on industry best practices and aligning with established responsible AI principles.",
+   "ko": "G42의 프론티어 AI 안전 프레임워크('프레임워크')는 AI 기술의 책임 있는 개발, 배포 및 감독에 중점을 두어 G42의 첨단 AI 이니셔티브에 안전장치를 마련하도록 설계된 포괄적인 프로토콜 집합이다. 이 프레임워크는 산업계 모범 사례를 기반으로 하고 확립된 책임 있는 AI 원칙에 부합하도록 하여, 고역량 AI와 관련된 고유한 과제와 위험에 대응하도록 특별히 맞춤화되었다.",
+   "marks": [
+    {
+     "t": "G42의 첨단 AI 이니셔티브에 안전장치를 마련하도록 설계된 포괄적인 프로토콜 집합",
+     "k": "key"
+    },
+    {
+     "t": "고역량 AI와 관련된 고유한 과제와 위험에 대응하도록 특별히 맞춤화되었다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This Framework emphasizes proactive risk identification and mitigation, centering on capability  monitoring,  robust  governance,  and  multi-layered  safeguards  to  ensure powerful AI models are both innovative and safe. With a systematic approach to early threat detection and risk management, it aims to support G42 in unlocking the benefits of  frontier  AI  safely  and  ethically.  The  Framework  was  developed  with  input  from SaferAI and METR, civil society organizations with expertise in AI risk management frameworks.",
+   "ko": "이 프레임워크는 선제적인 위험 식별 및 완화를 강조하며, 강력한 AI 모델이 혁신적이면서도 안전하도록 역량 모니터링, 견고한 거버넌스, 다층적 안전장치를 중심으로 한다. 조기 위협 탐지와 위험 관리에 대한 체계적인 접근을 통해, G42가 프론티어 AI의 이점을 안전하고 윤리적으로 실현하도록 지원하는 것을 목표로 한다. 이 프레임워크는 AI 위험 관리 프레임워크에 전문성을 갖춘 시민사회 조직인 SaferAI와 METR의 입력을 받아 개발되었다.",
+   "marks": [
+    {
+     "t": "선제적인 위험 식별 및 완화를 강조하며",
+     "k": "safety"
+    },
+    {
+     "t": "역량 모니터링, 견고한 거버넌스, 다층적 안전장치를 중심으로 한다",
+     "k": "safety"
+    },
+    {
+     "t": "SaferAI와 METR의 입력을 받아 개발되었다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Structured  as  an  evolving  model  with  phased  implementation,  the  Framework  will adapt to emerging insights and advancements, enabling G42 to implement a resilient and  forward-looking  AI  safety  strategy.  By  setting  rigorous  standards  for  security, autonomy, and ethical consideration across operational domains, G42 is equipped to harness  transformative  AI  capabilities  while  prioritizing  safety,  security,  and  public trust.",
+   "ko": "단계적 이행이 가능한 진화형 모델로 구성된 이 프레임워크는 새로운 통찰과 발전에 맞추어 조정될 것이며, 이를 통해 G42는 회복력 있고 미래지향적인 AI 안전 전략을 이행할 수 있다. 운영 영역 전반에 걸쳐 보안, 자율성, 윤리적 고려에 대한 엄격한 기준을 설정함으로써, G42는 안전, 보안 및 대중의 신뢰를 우선시하면서 혁신적인 AI 역량을 활용할 수 있는 역량을 갖추게 된다.",
+   "marks": [
+    {
+     "t": "새로운 통찰과 발전에 맞추어 조정될 것이며",
+     "k": "safety"
+    },
+    {
+     "t": "보안, 자율성, 윤리적 고려에 대한 엄격한 기준을 설정함으로써",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "As a leader in AI innovation, G42 is committed to developing AI systems that align with its  principles  that  prioritize fairness,  reliability,  safety,  privacy,  security  and inclusiveness to reflect and uphold societal values. These principles are displayed in the image below. This Framework ensures that G42's frontier AI models - those with advanced capabilities that may push industry boundaries - are managed with a robust set of safeguards and risk controls that evolve with the models' capabilities.",
+   "ko": "AI 혁신의 선도자로서 G42는 사회적 가치를 반영하고 수호하기 위해 공정성, 신뢰성, 안전, 프라이버시, 보안 및 포용성을 우선시하는 자사 원칙에 부합하는 AI 시스템을 개발하는 데 전념하고 있다. 이러한 원칙은 아래 이미지에 제시되어 있다. 이 프레임워크는 G42의 프론티어 AI 모델, 즉 산업계의 한계를 넘어설 수 있는 첨단 역량을 갖춘 모델이 모델의 역량과 함께 진화하는 견고한 안전장치 및 위험 통제 체계에 따라 관리되도록 보장한다.",
+   "marks": [
+    {
+     "t": "모델의 역량과 함께 진화하는 견고한 안전장치 및 위험 통제 체계에 따라 관리되도록 보장한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This approach reinforces G42's commitment to responsible AI practices, ensuring that each AI model and AI system operates safely and securely within the domain of its application (such as medical, energy, investment, language specific).",
+   "ko": "이러한 접근 방식은 책임 있는 AI 실행 방안에 대한 G42의 약정을 강화하며, 각 AI 모델과 AI 시스템이 해당 적용 영역(예: 의료, 에너지, 투자, 특정 언어) 내에서 안전하고 보안성 있게 작동하도록 보장한다."
+  },
+  {
+   "type": "h2",
+   "en": "2 Frontier Capability Thresholds",
+   "ko": "2 프론티어 역량 임계값",
+   "id": "s6"
+  },
+  {
+   "type": "p",
+   "en": "Capability  thresholds  establish  points  at  which  an  AI  model's  functionality  requires substantially enhanced safeguards to account for unique risks associated with highstakes capabilities. An initial list of potentially hazardous AI capabilities which G42 will monitor for is:",
+   "ko": "역량 임계값은 고위험 역량과 관련된 고유한 위험을 고려하여 AI 모델의 기능에 상당히 강화된 안전장치가 요구되는 지점을 설정한다. G42가 모니터링할 잠재적으로 위험한 AI 역량의 초기 목록은 다음과 같다.",
+   "marks": [
+    {
+     "t": "역량 임계값은 고위험 역량과 관련된 고유한 위험을 고려하여 AI 모델의 기능에 상당히 강화된 안전장치가 요구되는 지점을 설정한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Biological Threats : When an AI's capabilities could facilitate biological security threats, necessitating strict, proactive measures.",
+   "ko": "생물학적 위협: AI의 역량이 생물 보안 위협을 조장할 수 있어 엄격하고 선제적인 조치가 필요한 경우.",
+   "marks": [
+    {
+     "t": "AI의 역량이 생물 보안 위협을 조장할 수 있어 엄격하고 선제적인 조치가 필요한 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Offensive Cybersecurity: When an AI's capabilities could facilitate cybersecurity threats, necessitating strict, proactive measures.",
+   "ko": "공격적 사이버 보안: AI의 역량이 사이버 보안 위협을 조장할 수 있어 엄격하고 선제적인 조치가 필요한 경우.",
+   "marks": [
+    {
+     "t": "AI의 역량이 사이버 보안 위협을 조장할 수 있어 엄격하고 선제적인 조치가 필요한 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To produce this list, G42 both conducted our own internal risk analysis and received input  from  external  AI  safety  experts.  Initially  G42  identified  potential  capabilities across  several  domains,  including  biological  risks,  cybersecurity,  and  autonomous operations in specialized fields. We then collaborated with METR and SaferAI to refine our list, prioritizing capabilities based on their potential impact and how feasibly they can be measured and monitored.",
+   "ko": "이 목록을 작성하기 위해 G42는 자체적인 내부 위험 분석을 수행하는 동시에 외부 AI 안전 전문가들로부터 입력을 받았다. 처음에 G42는 생물학적 위험, 사이버 보안, 전문 분야에서의 자율 운영 등 여러 영역에 걸쳐 잠재적 역량을 식별하였다. 이후 METR 및 SaferAI와 협력하여 목록을 정제하였으며, 잠재적 영향과 측정 및 모니터링의 실현 가능성을 기준으로 역량의 우선순위를 정하였다.",
+   "marks": [
+    {
+     "t": "METR 및 SaferAI와 협력하여 목록을 정제하였으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In the future, we will map out other hazardous capabilities to consider monitoring. We may also add thresholds for:",
+   "ko": "향후 G42는 모니터링을 고려할 다른 위험 역량을 파악할 것이다. 또한 다음에 대한 임계값을 추가할 수 있다."
+  },
+  {
+   "type": "li",
+   "en": "Autonomous  Operation :  When  an  AI  system  can  make  unsupervised decisions with critical implications, particularly in sectors such as healthcare or defense.",
+   "ko": "자율 운영: AI 시스템이 특히 의료나 국방과 같은 분야에서 중대한 영향을 미치는 결정을 감독 없이 내릴 수 있는 경우.",
+   "marks": [
+    {
+     "t": "중대한 영향을 미치는 결정을 감독 없이 내릴 수 있는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Advanced Manipulation :  Applicable when AI systems can influence human behavior or decisions on a large scale, warranting enhanced monitoring and usage restrictions.",
+   "ko": "고도화된 조작: AI 시스템이 대규모로 인간의 행동이나 결정에 영향을 미칠 수 있어 강화된 모니터링과 사용 제한이 정당화되는 경우에 적용.",
+   "marks": [
+    {
+     "t": "AI 시스템이 대규모로 인간의 행동이나 결정에 영향을 미칠 수 있어",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We plan to integrate decisions on whether to expand our monitoring to include  additional hazardous capabilities into our regular framework review process. This includes both our scheduled internal reviews and our annual reviews by third parties. In making these decisions, we expect to consider factors such as: 'near miss' incidents, whether internal or industry-wide; recommendations from trusted external experts; as well as changes in industry standards for AI risk management.",
+   "ko": "G42는 추가적인 위험 역량을 포함하도록 모니터링을 확대할지에 대한 결정을 정기적인 프레임워크 검토 절차에 통합할 계획이다. 여기에는 예정된 내부 검토와 제3자에 의한 연례 검토가 모두 포함된다. 이러한 결정을 내릴 때에는 내부 또는 산업 전반의 '아차사고' 사례, 신뢰할 수 있는 외부 전문가의 권고, AI 위험 관리에 대한 산업 표준의 변화 등의 요소를 고려할 것으로 예상한다.",
+   "marks": [
+    {
+     "t": "내부 또는 산업 전반의 '아차사고' 사례",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "G42 will conduct evaluations throughout the model lifecycle to assess whether our models  are  approaching  Frontier  Capability  Thresholds.  At  the  outset,  G42  will conduct  preliminary  evaluations  based  on  open-source  and  in-house  benchmarks relevant to a hazardous capability. If a given G42 model achieves lower performance on  relevant  open-source  benchmarks  than  a  model  produced  by  an  outside organization that has been evaluated to be definitively below the capability threshold, then such G42 model will be presumed to be below the capability threshold.",
+   "ko": "G42는 모델 수명주기 전반에 걸쳐 평가(evaluation)를 수행하여 자사 모델이 프론티어 역량 임계값에 근접하고 있는지 평가할 것이다. 우선 G42는 위험 역량과 관련된 오픈소스 및 자체 벤치마크를 기반으로 예비 평가를 수행할 것이다. 특정 G42 모델이 관련 오픈소스 벤치마크에서, 역량 임계값보다 확실히 낮은 것으로 평가된 외부 조직의 모델보다 낮은 성능을 보이는 경우, 해당 G42 모델은 역량 임계값 미만인 것으로 추정된다.",
+   "marks": [
+    {
+     "t": "모델 수명주기 전반에 걸쳐 평가(evaluation)를 수행하여 자사 모델이 프론티어 역량 임계값에 근접하고 있는지 평가할 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "If  the  preliminary  evaluations  cannot  rule  out  proficiency  in  hazardous  capabilities, then we will conduct in-depth evaluations that study the capability in more detail to assess whether the Frontier Capability Threshold has been met. Such evaluations will incorporate capability elicitation - techniques such as prompt engineering, fine-tuning, and agentic  tool  usage  -  to  optimize  performance,  overcome  model  refusals,  and avoid  underestimating  model  capabilities.  Models  created  to  generate  output  in  a specific language, such as Arabic or Hindi, may be tested in those languages.",
+   "ko": "예비 평가로 위험 역량에 대한 숙련도를 배제할 수 없는 경우, 프론티어 역량 임계값 충족 여부를 평가하기 위해 해당 역량을 보다 상세히 연구하는 심층 평가를 수행할 것이다. 이러한 평가에는 성능을 최적화하고, 모델 응답 거부를 극복하며, 모델 역량을 과소평가하지 않도록 프롬프트 엔지니어링, 미세조정(Fine-Tuning), 에이전트형 도구 사용 등의 기법인 역량 유도가 포함된다. 아랍어나 힌디어와 같은 특정 언어로 출력을 생성하도록 만들어진 모델은 해당 언어로 테스트될 수 있다.",
+   "marks": [
+    {
+     "t": "모델 응답 거부를 극복하며, 모델 역량을 과소평가하지 않도록",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "When G42 fine-tunes or adapts an existing open-source model, our assessments of whether  our  models  meet  Frontier  Capability  Thresholds  may  include  relevant evaluation results for the original open-source models when analyzing the impact of our modifications. If we determine that the open-source model has already undergone high-quality assessments for biological threats and offensive cybersecurity capabilities, and our modifications do not enhance its capabilities in these risk areas, we may place greater reliance on the original evaluation results.",
+   "ko": "G42가 기존 오픈소스 모델을 미세조정하거나 조정하는 경우, 자사 모델의 프론티어 역량 임계값 충족 여부에 대한 평가(assessment)에는 수정 사항의 영향을 분석할 때 원본 오픈소스 모델의 관련 평가 결과가 포함될 수 있다. 오픈소스 모델이 이미 생물학적 위협 및 공격적 사이버 보안 역량에 대해 고품질 평가를 거쳤고, G42의 수정이 이러한 위험 영역에서 해당 모델의 역량을 강화하지 않는다고 판단되는 경우, 원본 평가 결과에 더 큰 비중을 둘 수 있다.",
+   "marks": [
+    {
+     "t": "원본 평가 결과에 더 큰 비중을 둘 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In addition to conducting pre-deployment evaluations, post-deployment monitoring will also be used to indicate whether G42's models have reached capability thresholds and  whether  increased  deployment  mitigation  and  security  mitigation  levels  are required.",
+   "ko": "배포 전 평가 수행과 더불어, 배포 후 모니터링 역시 G42 모델이 역량 임계값에 도달했는지, 그리고 배포 완화 수준 및 보안 위험 완화조치 수준의 상향이 필요한지를 나타내는 데 활용될 것이다.",
+   "marks": [
+    {
+     "t": "배포 후 모니터링 역시 G42 모델이 역량 임계값에 도달했는지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "G42 will publish internal reports providing detailed results of our capability evaluations. These reports will be created for our most advanced models at least once every six months, and the results will be shared with the Frontier AI Governance Board and the G42 Executive Leadership Committee.",
+   "ko": "G42는 역량 평가의 상세 결과를 담은 내부 보고서를 발행할 것이다. 이러한 보고서는 최첨단 모델에 대해 최소 6개월에 한 번 작성되며, 그 결과는 프론티어 AI 거버넌스 이사회 및 G42 경영진 위원회와 공유된다.",
+   "marks": [
+    {
+     "t": "최첨단 모델에 대해 최소 6개월에 한 번 작성되며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "G42's Frontier Capability Thresholds are defined in the following table. Each capability threshold  is  associated  with  a  required  Deployment  Mitigation  Level  (DML)  and Security  Mitigation  Levels  (SML),  which  must  be  achieved  before  the  capability threshold is reached. If a necessary Deployment Mitigation Level cannot be achieved, then the model's deployment must be restricted; if a necessary Security Mitigation Level cannot be achieved, then further capabilities development of the model must be paused. Additionally, if a Frontier Capability Threshold has been reached, G42 will update this Framework to define a more advanced threshold that requires increased deployment (e.g., DML 3) and security mitigations (e.g., SML 3).",
+   "ko": "G42의 프론티어 역량 임계값은 다음 표에 정의되어 있다. 각 역량 임계값에는 요구되는 배포 완화 수준(DML)과 보안 위험 완화조치 수준(SML)이 연계되어 있으며, 이는 역량 임계값에 도달하기 전에 달성되어야 한다. 필요한 배포 완화 수준을 달성할 수 없는 경우 모델의 배포는 제한되어야 하며, 필요한 보안 위험 완화조치 수준을 달성할 수 없는 경우 해당 모델의 추가적인 역량 개발은 중단되어야 한다. 또한 프론티어 역량 임계값에 도달한 경우, G42는 이 프레임워크를 갱신하여 강화된 배포 완화(예: DML 3) 및 보안 위험 완화조치(예: SML 3)를 요구하는 보다 고도화된 임계값을 정의할 것이다.",
+   "marks": [
+    {
+     "t": "필요한 배포 완화 수준을 달성할 수 없는 경우 모델의 배포는 제한되어야 하며, 필요한 보안 위험 완화조치 수준을 달성할 수 없는 경우 해당 모델의 추가적인 역량 개발은 중단되어야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "강화된 배포 완화(예: DML 3) 및 보안 위험 완화조치(예: SML 3)를 요구하는 보다 고도화된 임계값",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "table",
+   "en": "| Frontier Capability Threshold | Evaluations | Security and Mitigations | ⏎ | Biological threats : Enabling an individual with only introductory biology experience in developing a biological weapon, through providing detailed advice, automating biological processes, etc. Or, facilitating the design of novel biological weapons with substantially greater potential for damage. | Preliminary evaluations: Benchmarking AI models trained on Bio-Chem data (DNA, Proteins, Chemical molecules, etc.) against emerging research to check capabilities to predict and simulate complex biological interactions. Assess language models' accuracy on open-source biology benchmarks (e.g., LAB-Bench, WMDP-Bio). In-depth evaluations: Assess Bio-Chem AI models' capabilities to help design harmful substances like new variants. Evaluate language models' ability to answer questions about biological weapons development, relative to expert ability. More ambitiously, evaluate human participants' ability to conduct realistic but safe wet lab experiments with and without language model assistance. Although there is less prior research on evaluating and mitigating risks from biological design tools (BDTs), it is still critical for G42 to develop innovative measures for these tools | DML 2 SML 2 Update the policy to include more advanced thresholds Establish and open source new in-house benchmarks to evaluate Bio- Chem capabilities. | ⏎ | Offensive cybersecurity : Automating powerful cyber offensive operations against unsecured or secured targets, in a way that could cause critical damage. | Preliminary evaluations: Assess language model performance on open-source cyber offense benchmarks (e.g., Cybench, eyeballvul). In-depth evaluations: Assess model ability to exploit examples of secured targets in a safe | DML 2 SML 2 Update the policy to include more advanced thresholds |",
+   "ko": "| 프론티어 역량 임계값 | 평가(evaluation) | 보안 및 완화 | ⏎ | 생물학적 위협 : 상세한 조언 제공, 생물학적 프로세스 자동화 등을 통해 입문 수준의 생물학 경험만 있는 개인이 생물학 무기를 개발할 수 있게 함. 또는 손해를 끼칠 잠재력이 상당히 큰 새로운 생물학 무기의 설계를 용이하게 함. | 예비 평가: 생물·화학(Bio-Chem) 데이터(DNA, 단백질, 화학 분자 등)로 학습된 AI 모델을 최신 연구와 비교하는 벤치마크를 수행하여 복잡한 생물학적 상호작용을 예측하고 시뮬레이션하는 역량을 확인함. 언어 모델의 정확도를 오픈소스 생물학 벤치마크(예: LAB-Bench, WMDP-Bio)로 평가함. 심층 평가: 새로운 변이체와 같은 유해 물질의 설계를 돕는 생물·화학 AI 모델의 역량을 평가함. 생물학 무기 개발에 관한 질문에 답하는 언어 모델의 능력을 전문가의 능력과 비교하여 평가함. 보다 야심 차게는, 언어 모델의 지원이 있을 때와 없을 때 인간 참가자가 현실적이지만 안전한 습식 실험(wet lab)을 수행하는 능력을 평가함. 생물학적 설계 도구(BDTs)로 인한 위험의 평가 및 완화에 관한 선행 연구는 상대적으로 적지만, G42가 이러한 도구에 대한 혁신적인 조치를 개발하는 것은 여전히 매우 중요함 | DML 2 SML 2 보다 고도화된 임계값을 포함하도록 정책 갱신 새로운 자체 벤치마크를 구축하고 오픈소스로 공개하여 생물·화학 역량을 평가함. | ⏎ | 공격적 사이버 보안 : 보안이 적용되지 않았거나 적용된 표적을 대상으로, 치명적인 손해를 초래할 수 있는 방식으로 강력한 사이버 공격 작전을 자동화함. | 예비 평가: 오픈소스 사이버 공격 벤치마크(예: Cybench, eyeballvul)에서 언어 모델의 성능을 평가함. 심층 평가: 보안이 적용된 표적 사례를 안전한 | DML 2 SML 2 보다 고도화된 임계값을 포함하도록 정책 갱신 |"
+  },
+  {
+   "type": "table",
+   "en": "| environment. |",
+   "ko": "| 환경에서 익스플로잇하는 모델의 능력을 평가함. |"
+  },
+  {
+   "type": "h2",
+   "en": "3 Deployment Mitigation Levels",
+   "ko": "3 배포 완화 수준",
+   "id": "s23"
+  },
+  {
+   "type": "p",
+   "en": "G42's  Deployment  Mitigation  Levels  are  a  set  of  levels,  mapped  to  the  Frontier Capability  Thresholds,  that  describe  escalating  mitigation  measures  for  products deployed externally. These protect against misuse, including through jailbreaking, as models reach higher levels of capability and risk. These measures address specifically the goal of denying bad actors access to dangerous capabilities under the terms of intended deployment for our models , i.e. presuming that our development environment's information security has not been violated.",
+   "ko": "G42의 배포 완화 수준은 프론티어 역량 임계값에 대응되는 일련의 수준으로, 외부에 배포되는 제품에 대해 단계적으로 강화되는 완화 조치를 기술한다. 이는 모델이 더 높은 수준의 역량과 위험에 도달함에 따라 탈옥(Jailbreak)을 통한 오용을 포함한 오용으로부터 보호한다. 이러한 조치는 특히 자사 모델의 의도된 배포 조건하에서, 즉 개발 환경의 정보 보안이 침해되지 않았다는 전제하에, 악의적 행위자가 위험한 역량에 접근하지 못하도록 하는 목표를 다룬다.",
+   "marks": [
+    {
+     "t": "모델이 더 높은 수준의 역량과 위험에 도달함에 따라 탈옥(Jailbreak)을 통한 오용을 포함한 오용으로부터 보호한다",
+     "k": "key"
+    },
+    {
+     "t": "악의적 행위자가 위험한 역량에 접근하지 못하도록 하는 목표를 다룬다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "table",
+   "en": "| Deployment Mitigation Level | Description | Specific Measures | ⏎ | Level 1 | Foundational safeguards, applied to models with minimal hazardous capabilities. Objective: No novel mitigations required on the basis of catastrophically dangerous capabilities | Examples of foundational safeguards that may be applied include: Model Cards: Documents published alongside each new model deployment, summarising the model's intended use cases, performance on public benchmarks, and the responsible practices conducted to ensure safety. Incident Reporting Channels: Designated pathways for users to report instances of concerning or harmful behavior in violation of company policy to relevant G42 personnel. Information Security Training: Training programs for new and existing personnel on best practices in information security consistent with the measures described in the Security Mitigation Levels. | ⏎ | Level 2 | Intermediate safeguards for models with capabilities requiring focused monitoring. | Risk of model misuse is mitigated by: Real-Time Monitoring and Prompt Filtering: Real-time classifiers evaluate inputs and outputs, detecting | ⏎ |  | Objective: Even a determined actor should not be able to reliably elicit CBRN weapons advice or use the model to automate powerful cyberattacks including malware generation as well as misinformation campaigns, fraud material, illicit video/text/image generation via jailbreak techniques overriding the internal guardrails and supplemental security products. | and filtering harmful interactions as they occur. This will also be aligned to underlying customer company policy and regulatory compliance. Model Robustness Testing: Regular tests of AI models for robustness against attempts to manipulate or corrupt their output. Asynchronous Monitoring: This off-cycle review catches anomalies missed in real-time, assessing all stored interactions for unusual behaviors. Controlled Rollout: For new frontier-level models, implement phased rollouts, starting with limited access to trusted users, with full deployment only after exhaustive risk | ⏎ | Level 3 | Advanced safeguards for models approaching significant capability thresholds. Objective: Deployment safety should be strong enough to resist sophisticated attempts to jailbreak or otherwise misuse the model. | Risk of model misuse is mitigated by: Real-time anomaly detection and encrypted data handling. Simulation and Adversarial Testing: Regular simulations identify model vulnerabilities and develop adaptive responses. Red teaming activity to identify and mitigate potential risks in the system. Testing is designed to ensure effectiveness across all planned deployment contexts, with specialized subject matter experts providing domain-specific input as needed. Controlled Rollout: For new frontier-level models, implement phased rollouts, starting with limited access to trusted users, with full deployment only after exhaustive risk assessments. | ⏎ | Level 4 | Maximum safeguards, designed for high-stakes frontier models with critical functions. Objective: Deployment safety should be strong enough to resist even concerted attempts, with support from state programs, to jailbreak or otherwise misuse the model. | To be defined when models reach capabilities necessitating Level 3 deployment mitigation measures |",
+   "ko": "| 배포 완화 수준 | 설명 | 구체적 조치 | ⏎ | 수준 1 | 위험 역량이 최소한인 모델에 적용되는 기본 안전장치. 목표: 재앙적으로 위험한 역량을 근거로 한 새로운 완화는 요구되지 않음 | 적용될 수 있는 기본 안전장치의 예는 다음과 같음: 모델카드: 각 신규 모델 배포와 함께 공개되는 문서로, 모델의 의도된 사용 사례, 공개 벤치마크 성능, 안전을 보장하기 위해 수행된 책임 있는 실행 방안을 요약함. 사고 보고 채널: 사용자가 회사 정책을 위반하는 우려스럽거나 유해한 행동 사례를 관련 G42 담당자에게 보고할 수 있도록 지정된 경로. 정보 보안 교육: 보안 위험 완화조치 수준에 기술된 조치에 부합하는 정보 보안 모범 사례에 관한 신규 및 기존 인력 대상 교육 프로그램. | ⏎ | 수준 2 | 집중적인 모니터링이 필요한 역량을 가진 모델을 위한 중간 수준의 안전장치. | 모델 오용 위험은 다음을 통해 완화됨: 실시간 모니터링 및 프롬프트 필터링: 실시간 분류기가 입력과 출력을 평가하여, 유해한 상호작용을 발생 즉시 탐지 | ⏎ |  | 목표: 단호한 행위자라도 내부 가드레일과 보조 보안 제품을 무력화하는 탈옥(Jailbreak) 기법을 통해 화학·생물·방사능·핵(CBRN) 무기 관련 조언을 안정적으로 이끌어내거나, 멀웨어 생성은 물론 오정보 캠페인, 사기 자료, 불법 동영상/텍스트/이미지 생성을 포함한 강력한 사이버 공격을 자동화하는 데 모델을 사용할 수 없어야 함. | 및 필터링함. 이는 기반이 되는 고객사 정책 및 규제 규정 준수와도 정렬될 것임. 모델 강건성 시험: 출력을 조작하거나 손상하려는 시도에 대한 AI 모델의 강건성을 정기적으로 시험함. 비동기 모니터링: 실시간으로 놓친 이상을 포착하는 비주기적 검토로, 저장된 모든 상호작용에서 비정상적인 행동을 평가함. 통제된 출시: 새로운 프론티어급 모델의 경우 단계적 출시를 시행하며, 신뢰할 수 있는 사용자에 대한 제한된 접근부터 시작하고, 철저한 위험 | ⏎ | 수준 3 | 상당한 역량 임계값에 근접하는 모델을 위한 고급 안전장치. 목표: 배포 안전성은 모델을 탈옥(Jailbreak)하거나 달리 오용하려는 정교한 시도에 저항할 수 있을 만큼 강력해야 함. | 모델 오용 위험은 다음을 통해 완화됨: 실시간 이상 탐지 및 암호화된 데이터 처리. 시뮬레이션 및 적대적 시험: 정기적인 시뮬레이션을 통해 모델 취약점을 식별하고 적응형 대응을 개발함. 시스템 내 잠재적 위험을 식별하고 완화하기 위한 레드티밍 활동. 시험은 계획된 모든 배포 맥락에서 효과성을 보장하도록 설계되며, 필요에 따라 전문 분야 전문가가 도메인별 입력을 제공함. 통제된 출시: 새로운 프론티어급 모델의 경우 단계적 출시를 시행하며, 신뢰할 수 있는 사용자에 대한 제한된 접근부터 시작하고, 철저한 위험 평가 이후에만 전면 배포함. | ⏎ | 수준 4 | 중요한 기능을 가진 고위험 프론티어 모델을 위해 설계된 최고 수준의 안전장치. 목표: 배포 안전성은 국가 차원 프로그램의 지원을 받는 조직적인 시도에도 모델의 탈옥(Jailbreak) 또는 기타 오용에 저항할 수 있을 만큼 강력해야 함. | 모델이 수준 3 배포 완화 조치를 필요로 하는 역량에 도달할 때 정의 예정 |"
+  },
+  {
+   "type": "h2",
+   "en": "4 Security Mitigation Levels",
+   "ko": "4 보안 위험 완화조치 수준",
+   "id": "s26"
+  },
+  {
+   "type": "p",
+   "en": "G42's Security Mitigation Levels are a set of levels, mapped to the Frontier Capability Thresholds,  describing  escalating  information  security  measures.  These  protect against the theft of model weights, model inversion, and sensitive data, as models reach higher levels of capability and risk. Each tier customizes protections based on the assessed risk and capability of the model, ensuring G42's AI development remains both resilient  and  efficient,  minimizing  disruptions  to  functionality  while  maintaining robust security.",
+   "ko": "G42의 보안 위험 완화조치 수준은 프론티어 역량 임계값에 대응되는 일련의 수준으로, 단계적으로 강화되는 정보 보안 조치를 기술한다. 이는 모델이 더 높은 수준의 역량과 위험에 도달함에 따라 모델 가중치 탈취, 모델 역전(model inversion), 민감 데이터 탈취로부터 보호한다. 각 등급은 평가된 모델의 위험과 역량에 따라 보호 조치를 맞춤화하여, 견고한 보안을 유지하면서도 기능 저해를 최소화함으로써 G42의 AI 개발이 회복력과 효율성을 모두 갖추도록 보장한다.",
+   "marks": [
+    {
+     "t": "단계적으로 강화되는 정보 보안 조치를 기술한다",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 더 높은 수준의 역량과 위험에 도달함에 따라 모델 가중치 탈취, 모델 역전(model inversion), 민감 데이터 탈취로부터 보호한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "table",
+   "en": "| Security Level | Description | Specific Measures | ⏎ | Level 1 | Suitable for models with minimal hazardous capabilities. Objective: No novel mitigations required on the basis of catastrophically dangerous capabilities. | None. G42 may choose to open source models. | ⏎ | Level 2 | Intermediate safeguards for models with capabilities requiring controlled access, providing an extra layer of caution. Objective: The model should be secured such that it would be highly unlikely that a malicious individual or organization (state sponsored, organized crime, terrorist, etc.) could obtain the model weights or access sensitive data. | Access controls and role-based permissions. Model weights are gated by granular role-based permission levels, model access is geofenced to pre-approved locations, limited access attempts using the same credentials. Network segmentation to isolate systems containing model weights. Internal and External Red- Teaming: Rigorous testing by internal security teams, supplemented by external experts, to identify weaknesses. Dynamic Threat Simulation and Response Testing: Regular adversarial simulations expose | ⏎ | Level 3 | Advanced safeguards for models approaching hazardous capabilities that could uplift state programs. Objective: Model weight security should be strong enough to resist even concerted attempts, with support from state programs, to steal model weights or key algorithmic secrets. | Model weights and sensitive data are secured through thorough Security Level 2 protocols, as well as the following measures to ensure access to model weights is highly restricted: multi-party and quorum-based approval for high-sensitivity operations, end-to-end encryption of model weights both at rest and in transit, automatic encryption key rotations at regular intervals. Only trusted users with verified credentials are granted access to high-risk models. Access is role-based, aligned with user responsibilities, and supported by a zero-trust architecture to prevent unauthorized entry. | ⏎ | Level 4 | Maximum safeguards. Objective: Security strong enough to resist concerted attempts with support from state programs to steal model weights. | To be defined when models reach capabilities necessitating Level 3 containment migration measures. |",
+   "ko": "| 보안 수준 | 설명 | 구체적 조치 | ⏎ | 수준 1 | 위험한 역량이 최소한인 모델에 적합함. 목표: 치명적으로 위험한 역량을 근거로 한 새로운 완화 조치는 요구되지 않음. | 없음. G42는 모델을 오픈소스로 공개할 수 있음. | ⏎ | 수준 2 | 통제된 접근이 필요한 역량을 가진 모델을 위한 중간 수준의 안전장치로, 추가적인 주의 계층을 제공함. 목표: 악의적인 개인 또는 조직(국가 지원 세력, 조직범죄, 테러 집단 등)이 모델 가중치를 획득하거나 민감 데이터에 접근할 가능성이 매우 낮도록 모델을 보호해야 함. | 접근 통제 및 역할 기반 권한. 모델 가중치에 대한 접근은 세분화된 역할 기반 권한 수준에 따라 제한되고, 모델 접근은 사전 승인된 위치로 지오펜싱되며, 동일한 자격 증명을 사용한 접근 시도 횟수가 제한됨. 모델 가중치를 보유한 시스템을 격리하기 위한 네트워크 분할. 내부 및 외부 레드티밍: 내부 보안팀이 수행하고 외부 전문가가 보완하는 엄격한 시험을 통해 약점을 식별함. 동적 위협 시뮬레이션 및 대응 시험: 정기적인 적대적 시뮬레이션을 통해 노출 | ⏎ | 수준 3 | 국가 차원 프로그램에 업리프트를 제공할 수 있는 위험한 역량에 근접하는 모델을 위한 고급 안전장치. 목표: 모델 가중치 보안은 국가 차원 프로그램의 지원을 받는 조직적인 시도에도 모델 가중치나 핵심 알고리즘 기밀의 탈취에 저항할 수 있을 만큼 강력해야 함. | 모델 가중치와 민감 데이터는 보안 수준 2 프로토콜의 철저한 적용과 더불어, 모델 가중치에 대한 접근을 고도로 제한하기 위한 다음 조치를 통해 보호됨: 고민감도 작업에 대한 다자간 및 정족수 기반 승인, 저장 및 전송 중인 모델 가중치의 종단 간 암호화, 정기적인 암호화 키 자동 교체. 검증된 자격 증명을 보유한 신뢰할 수 있는 사용자에게만 고위험 모델에 대한 접근 권한이 부여됨. 접근은 역할 기반으로 이루어지며, 사용자 책임에 부합하고, 무단 진입을 방지하기 위한 제로 트러스트 아키텍처의 지원을 받음. | ⏎ | 수준 4 | 최고 수준의 안전장치. 목표: 국가 차원 프로그램의 지원을 받는 조직적인 모델 가중치 탈취 시도에 저항할 수 있을 만큼 강력한 보안. | 모델이 수준 3 격리 완화 조치를 필요로 하는 역량에 도달할 때 정의 예정. |"
+  },
+  {
+   "type": "h2",
+   "en": "5 Governance and Compliance",
+   "ko": "5 거버넌스 및 규정 준수",
+   "id": "s29"
+  },
+  {
+   "type": "p",
+   "en": "A dedicated Frontier AI Governance Board, composed of our Chief Responsible AI Officer, Head of Responsible AI, Head of Technology Risk, and General Counsel, shall oversee all frontier model operations, reviewing safety protocols, risk assessments, and escalation decisions.",
+   "ko": "책임 있는 AI 최고 책임자(Chief Responsible AI Officer), 책임 있는 AI 총괄(Head of Responsible AI), 기술 위험 총괄(Head of Technology Risk), 법무 총괄(General Counsel)로 구성된 전담 프론티어 AI 거버넌스 위원회가 모든 프론티어 모델 운영을 감독하며, 안전 프로토콜, 위험 평가 및 상부 보고(escalation) 결정을 검토한다.",
+   "marks": [
+    {
+     "t": "전담 프론티어 AI 거버넌스 위원회가 모든 프론티어 모델 운영을 감독하며, 안전 프로토콜, 위험 평가 및 상부 보고(escalation) 결정을 검토한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Responsibilities of the Frontier AI Governance Board include, but are not limited to:",
+   "ko": "프론티어 AI 거버넌스 위원회의 책임은 다음을 포함하되 이에 국한되지 않는다."
+  },
+  {
+   "type": "p",
+   "en": "i.  Framework  Oversight:  Ensuring  this  Framework  is  designed  appropriately  and implemented effectively, and proposing updates as required.",
+   "ko": "i.  프레임워크 감독: 본 프레임워크가 적절하게 설계되고 효과적으로 이행되도록 보장하며, 필요에 따라 개정을 제안한다."
+  },
+  {
+   "type": "p",
+   "en": "ii. Evaluating Model Compliance: Routine reviews of G42's most capable models to ensure compliance with this Framework.",
+   "ko": "ii. 모델 규정 준수 평가: G42의 최고 역량 모델이 본 프레임워크를 준수하도록 보장하기 위해 정기적으로 검토한다.",
+   "marks": [
+    {
+     "t": "G42의 최고 역량 모델이 본 프레임워크를 준수하도록 보장하기 위해 정기적으로 검토한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "iii.  Investigation:  Investigating  reports  of  potential  non-compliance  and  escalating material incidences of non-compliance to the G42 Executive Leadership Committee.",
+   "ko": "iii.  조사: 잠재적 미준수 보고를 조사하고, 중대한 미준수 사례를 G42 경영진 위원회(Executive Leadership Committee)에 상부 보고한다.",
+   "marks": [
+    {
+     "t": "중대한 미준수 사례를 G42 경영진 위원회(Executive Leadership Committee)에 상부 보고한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "iv.  Incidence  Response:  Developing  a  comprehensive  incident  response  plan  that outlines  the  steps  to  be  taken  in  the  event  of  non-compliance.  Incident  detection should  leverage  automated  mechanisms  and  human  review,  and  non-sensitive incident information should be shared with applicable government bodies. We plan for our response protocols to focus on rapid remediation to minimize unintended harmful outputs from models. Depending on the nature and severity of the incident, this might involve  implementing  immediate  containment  measures  restricting  access  to  the model either externally, internally or both.",
+   "ko": "iv.  사고 대응: 미준수 발생 시 취해야 할 조치를 명시한 포괄적인 사고 대응 계획을 수립한다. 사고 탐지는 자동화된 메커니즘과 인간 검토를 활용해야 하며, 민감하지 않은 사고 정보는 관련 정부 기관과 공유해야 한다. 당사는 모델의 의도하지 않은 유해한 출력을 최소화하기 위해 신속한 시정에 중점을 두는 대응 프로토콜을 계획하고 있다. 사고의 성격과 심각도에 따라, 이는 외부, 내부 또는 양쪽 모두에서 모델에 대한 접근을 제한하는 즉각적인 격리 조치의 시행을 수반할 수 있다.",
+   "marks": [
+    {
+     "t": "민감하지 않은 사고 정보는 관련 정부 기관과 공유해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "모델의 의도하지 않은 유해한 출력을 최소화하기 위해 신속한 시정에 중점을 두는 대응 프로토콜",
+     "k": "safety"
+    },
+    {
+     "t": "모델에 대한 접근을 제한하는 즉각적인 격리 조치의 시행을 수반할 수 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "G42 will immediately investigate any identified or reported potential instances of noncompliance, taking proportional corrective action as considered necessary.",
+   "ko": "G42는 식별되거나 보고된 잠재적 미준수 사례를 즉시 조사하고, 필요하다고 판단되는 경우 비례적인 시정 조치를 취한다.",
+   "marks": [
+    {
+     "t": "잠재적 미준수 사례를 즉시 조사하고, 필요하다고 판단되는 경우 비례적인 시정 조치를 취한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We will maintain detailed documentation for G42's most capable models, including design decisions, testing results, risk assessments, and incident reports.",
+   "ko": "당사는 설계 결정, 시험 결과, 위험 평가 및 사고 보고서를 포함하여 G42의 최고 역량 모델에 대한 상세한 문서를 유지한다.",
+   "marks": [
+    {
+     "t": "설계 결정, 시험 결과, 위험 평가 및 사고 보고서를 포함하여 G42의 최고 역량 모델에 대한 상세한 문서를 유지한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Transparency and Reporting",
+   "ko": "투명성 및 보고",
+   "id": "s38"
+  },
+  {
+   "type": "h3",
+   "en": "Internal Transparency and Reporting",
+   "ko": "내부 투명성 및 보고",
+   "id": "s39"
+  },
+  {
+   "type": "p",
+   "en": "G42's transparency protocols encourage employees to report concerns while keeping stakeholders informed. These measures include:",
+   "ko": "G42의 투명성 프로토콜은 이해관계자에게 정보를 지속적으로 제공하는 동시에 직원들이 우려 사항을 보고하도록 장려한다. 이러한 조치는 다음을 포함한다.",
+   "marks": [
+    {
+     "t": "직원들이 우려 사항을 보고하도록 장려한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "i. Reporting Mechanisms: To foster a proactive safety culture, clearly defined channels for  reporting  security  incidents  and  compliance  issues  will  be  established.  This includes  creating  mechanisms  for  employees  to  anonymously  report  potential concerns of non-compliance and ensuring that these reports are promptly addressed.",
+   "ko": "i. 보고 메커니즘: 선제적인 안전 문화를 조성하기 위해, 보안 사고 및 규정 준수 문제를 보고하기 위한 명확하게 정의된 채널을 마련한다. 여기에는 직원들이 잠재적 미준수 우려를 익명으로 보고할 수 있는 메커니즘을 마련하고, 이러한 보고가 신속하게 처리되도록 보장하는 것이 포함된다.",
+   "marks": [
+    {
+     "t": "선제적인 안전 문화를 조성하기 위해, 보안 사고 및 규정 준수 문제를 보고하기 위한 명확하게 정의된 채널을 마련한다",
+     "k": "safety"
+    },
+    {
+     "t": "직원들이 잠재적 미준수 우려를 익명으로 보고할 수 있는 메커니즘을 마련하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "ii.  Annual  Governance  Audits:  G42  will  have  independent  internal  audits  to  verify compliance with our policy.",
+   "ko": "ii.  연례 거버넌스 감사: G42는 당사 정책의 준수 여부를 검증하기 위해 독립적인 내부 감사를 실시한다.",
+   "marks": [
+    {
+     "t": "당사 정책의 준수 여부를 검증하기 위해 독립적인 내부 감사를 실시한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "External Audits and Public Transparency",
+   "ko": "외부 감사 및 대외 투명성",
+   "id": "s43"
+  },
+  {
+   "type": "p",
+   "en": "i.  External  Audits:  To  reinforce  accountability,  G42  will  engage  in  annual  external audits to verify compliance with the Framework.",
+   "ko": "i.  외부 감사: 책임성을 강화하기 위해, G42는 프레임워크 준수 여부를 검증하는 연례 외부 감사를 받는다.",
+   "marks": [
+    {
+     "t": "G42는 프레임워크 준수 여부를 검증하는 연례 외부 감사를 받는다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "ii.  Public Disclosure: G42 will publish non-sensitive, up-to-date and active copies of the Framework. We will share more detailed information with the UAE Government and  relevant  policy  stakeholders.  G42  will  publish  an  annual  transparency  report detailing its approach to frontier models, sharing key insights and fostering public trust.",
+   "ko": "ii.  공개: G42는 민감하지 않은 최신 현행본 프레임워크를 공개한다. 보다 상세한 정보는 UAE 정부 및 관련 정책 이해관계자와 공유한다. G42는 프론티어 모델에 대한 접근 방식을 상세히 기술한 연례 투명성 보고서를 발간하여 주요 통찰을 공유하고 대중의 신뢰를 증진한다.",
+   "marks": [
+    {
+     "t": "보다 상세한 정보는 UAE 정부 및 관련 정책 이해관계자와 공유한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "iii. Third -Party Experts: As deemed appropriate, we will solicit external expert advice for capability and safeguards assessments.  This may include partnering with private or civil society organisations with expertise in AI risk management to provide input on our  assessments  plans  and/or  internal  capability  reports  ahead  of  deployment decisions.",
+   "ko": "iii. 제3자 전문가: 적절하다고 판단되는 경우, 당사는 역량 및 안전장치 평가에 대해 외부 전문가의 자문을 구한다. 여기에는 AI 위험 관리 전문성을 갖춘 민간 또는 시민사회 조직과 협력하여, 배포 결정에 앞서 당사의 평가 계획 및/또는 내부 역량 보고서에 대한 입력을 제공받는 것이 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "당사는 역량 및 안전장치 평가에 대해 외부 전문가의 자문을 구한다",
+     "k": "safety"
+    },
+    {
+     "t": "배포 결정에 앞서 당사의 평가 계획 및/또는 내부 역량 보고서에 대한 입력을 제공받는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "iv. Threat Intelligence and Information Sharing: G42 will share threat intelligence with industry partners to address common challenges and emerging risks. G42 will actively participate in forums to set industry standards and share best practices for frontier model safety.",
+   "ko": "iv. 위협 인텔리전스 및 정보 공유: G42는 공통 과제와 신흥 위험에 대응하기 위해 업계 파트너와 위협 인텔리전스를 공유한다. G42는 업계 표준을 설정하고 프론티어 모델 안전을 위한 모범 사례를 공유하는 포럼에 적극적으로 참여한다.",
+   "marks": [
+    {
+     "t": "G42는 공통 과제와 신흥 위험에 대응하기 위해 업계 파트너와 위협 인텔리전스를 공유한다",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 모델 안전을 위한 모범 사례를 공유하는 포럼에 적극적으로 참여한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Policy Review",
+   "ko": "정책 검토",
+   "id": "s48"
+  },
+  {
+   "type": "p",
+   "en": "An annual external review of the Framework will be conducted to ensure adequacy, continuously  benchmarking  G42's  practices  against  industry  standards.  G42  will conduct  more  frequent  internal  reviews,  particularly  in  accordance  with  evolving standards and instances of enhanced model capabilities .",
+   "ko": "프레임워크의 적정성을 보장하기 위해 연례 외부 검토를 실시하며, G42의 실행 방안을 업계 표준과 지속적으로 벤치마킹한다. G42는 특히 변화하는 표준과 모델 역량 향상 사례에 따라 보다 빈번한 내부 검토를 실시한다.",
+   "marks": [
+    {
+     "t": "프레임워크의 적정성을 보장하기 위해 연례 외부 검토를 실시하며",
+     "k": "key"
+    },
+    {
+     "t": "변화하는 표준과 모델 역량 향상 사례에 따라 보다 빈번한 내부 검토를 실시한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "G42 will  proactively  engage  with  government  agencies,  academic  institutions,  and other  regulatory  bodies  to  help  shape  emerging  standards  for  frontier  AI  safety, aligning G42's practices with evolving global frameworks.",
+   "ko": "G42는 정부 기관, 학술 기관 및 기타 규제 기관과 선제적으로 협력하여 프론티어 AI 안전에 관한 새로운 표준 형성에 기여하고, G42의 실행 방안을 변화하는 글로벌 프레임워크에 정렬한다.",
+   "marks": [
+    {
+     "t": "정부 기관, 학술 기관 및 기타 규제 기관과 선제적으로 협력하여 프론티어 AI 안전에 관한 새로운 표준 형성에 기여",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Changes to this Framework will be proposed by the Frontier AI Governance Board and approved by the G42 Executive Leadership Committee.",
+   "ko": "본 프레임워크의 변경은 프론티어 AI 거버넌스 위원회가 제안하고 G42 경영진 위원회가 승인한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 거버넌스 위원회가 제안하고 G42 경영진 위원회가 승인한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "6 Phased Implementation Plan",
+   "ko": "6 단계별 이행 계획",
+   "id": "s52"
+  },
+  {
+   "type": "h3",
+   "en": "Phase 1: Framework Initialization (First 6 Months)",
+   "ko": "1단계: 프레임워크 초기화(최초 6개월)",
+   "id": "s53"
+  },
+  {
+   "type": "li",
+   "en": "Define capability thresholds and initial safety levels across G42's entities.",
+   "ko": "G42 계열사 전반에 걸쳐 역량 임계값과 초기 안전 수준을 정의한다.",
+   "marks": [
+    {
+     "t": "역량 임계값과 초기 안전 수준을 정의한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Establish a Frontier AI Governance Board and a Head of Responsible AI.",
+   "ko": "프론티어 AI 거버넌스 위원회를 설립하고 책임 있는 AI 총괄을 임명한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 거버넌스 위원회를 설립하고 책임 있는 AI 총괄을 임명한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Implement foundational security protocols, including real-time monitoring and role-based access controls.",
+   "ko": "실시간 모니터링 및 역할 기반 접근 통제를 포함한 기초 보안 프로토콜을 시행한다.",
+   "marks": [
+    {
+     "t": "실시간 모니터링 및 역할 기반 접근 통제를 포함한 기초 보안 프로토콜을 시행한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Phase 2: Operational Rollout (6-12 Months)",
+   "ko": "2단계: 운영 확대(6~12개월)",
+   "id": "s57"
+  },
+  {
+   "type": "li",
+   "en": "Scale up red-teaming exercises, adaptive monitoring, and real-time anomaly detection for high-risk models.",
+   "ko": "고위험 모델에 대한 레드티밍 훈련, 적응형 모니터링 및 실시간 이상 탐지를 확대한다.",
+   "marks": [
+    {
+     "t": "고위험 모델에 대한 레드티밍 훈련, 적응형 모니터링 및 실시간 이상 탐지를 확대한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Conduct routine capability assessments.",
+   "ko": "정기적인 역량 평가를 실시한다.",
+   "marks": [
+    {
+     "t": "정기적인 역량 평가를 실시한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Phase 3: Continuous Improvement and Expansion (12+ Months)",
+   "ko": "3단계: 지속적 개선 및 확장(12개월 이후)",
+   "id": "s60"
+  },
+  {
+   "type": "li",
+   "en": "Expand cross-industry collaboration and participate in public safety initiatives.",
+   "ko": "업계 간 협력을 확대하고 공공 안전 이니셔티브에 참여한다.",
+   "marks": [
+    {
+     "t": "업계 간 협력을 확대하고 공공 안전 이니셔티브에 참여한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Perform  annual  reviews  to  adjust  Framework  elements  based  on  emerging frontier model risks.",
+   "ko": "새롭게 대두되는 프론티어 모델 위험을 바탕으로 프레임워크 요소를 조정하기 위해 연례 검토를 수행한다.",
+   "marks": [
+    {
+     "t": "새롭게 대두되는 프론티어 모델 위험을 바탕으로 프레임워크 요소를 조정하기 위해 연례 검토를 수행한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Integrate  predictive  and  adaptive  safety  technologies  to  optimize  real-time threat response and risk containment.",
+   "ko": "실시간 위협 대응 및 위험 억제를 최적화하기 위해 예측형 및 적응형 안전 기술을 통합한다.",
+   "marks": [
+    {
+     "t": "실시간 위협 대응 및 위험 억제를 최적화하기 위해 예측형 및 적응형 안전 기술을 통합한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Publish an annual transparency report to foster public trust and establish G42's role as a responsible AI leader.",
+   "ko": "대중의 신뢰를 증진하고 책임 있는 AI 선도 기업으로서 G42의 역할을 확립하기 위해 연례 투명성 보고서를 발간한다.",
+   "marks": [
+    {
+     "t": "연례 투명성 보고서를 발간한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "7 Conclusion",
+   "ko": "7 결론",
+   "id": "s65"
+  },
+  {
+   "type": "p",
+   "en": "G42's Frontier AI Safety Framework establishes the organization as a pioneering force in  responsible  AI,  setting  a  standard  for  balancing  cutting-edge  innovation  with comprehensive risk management. By embedding adaptive safeguards, G42 creates a scalable, flexible approach to address the evolving risks associated with powerful AI capabilities. Cross-entity governance ensures that safety protocols are aligned and enforced consistently across the organization, fostering a unified culture of responsibility and ethical AI practices.",
+   "ko": "G42의 프론티어 AI 안전 프레임워크는 G42를 책임 있는 AI 분야의 선구적 주체로 자리매김하게 하며, 최첨단 혁신과 포괄적인 위험 관리 간의 균형을 위한 기준을 제시한다. G42는 적응형 안전장치를 임베딩함으로써 강력한 AI 역량과 관련하여 변화하는 위험에 대응하기 위한 확장 가능하고 유연한 접근 방식을 마련한다. 계열사 간 거버넌스는 안전 프로토콜이 조직 전반에 걸쳐 일관되게 정렬되고 시행되도록 보장하며, 책임과 윤리적 AI 실행 방안에 관한 통일된 문화를 조성한다.",
+   "marks": [
+    {
+     "t": "G42는 적응형 안전장치를 임베딩함으로써 강력한 AI 역량과 관련하여 변화하는 위험에 대응하기 위한 확장 가능하고 유연한 접근 방식을 마련한다.",
+     "k": "key"
+    },
+    {
+     "t": "계열사 간 거버넌스는 안전 프로토콜이 조직 전반에 걸쳐 일관되게 정렬되고 시행되도록 보장하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Additionally, G42's commitment to external collaboration opens channels for valuable insights,  best  practices,  and  oversight  from  industry  experts,  academic institutions, and regulatory bodies. This collaborative approach enhances the robustness of the Framework  and  provides transparency and accountability to the broader AI community.",
+   "ko": "또한 외부 협력에 대한 G42의 약정은 업계 전문가, 학술 기관 및 규제 기관으로부터 귀중한 통찰, 모범 사례 및 감독을 받을 수 있는 채널을 열어 준다. 이러한 협력적 접근 방식은 프레임워크의 강건성을 높이고, 보다 광범위한 AI 공동체에 투명성과 책임성을 제공한다.",
+   "marks": [
+    {
+     "t": "업계 전문가, 학술 기관 및 규제 기관으로부터 귀중한 통찰, 모범 사례 및 감독을 받을 수 있는 채널",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Through this Framework, G42 demonstrates that it is not only advancing the frontier of AI technology but also leading the industry in safety standards. By ensuring that its frontier  AI  models  deliver  meaningful  societal  benefits,  G42  upholds  the  highest standards  of  safety,  transparency,  and  accountability-serving  as  a  model  for  the responsible  development  and  deployment  of  advanced  AI.  This  proactive  stance positions G42 to continue innovating with confidence while protecting public trust and promoting AI's positive impact on society.",
+   "ko": "G42는 본 프레임워크를 통해 AI 기술의 최전선을 발전시킬 뿐만 아니라 안전 기준에서도 업계를 선도하고 있음을 입증한다. G42는 자사의 프론티어 AI 모델이 의미 있는 사회적 편익을 제공하도록 보장함으로써 안전, 투명성 및 책임성에 관한 최고 수준의 기준을 견지하며, 첨단 AI의 책임 있는 개발과 배포의 본보기 역할을 한다. 이러한 선제적 입장을 통해 G42는 대중의 신뢰를 보호하고 AI가 사회에 미치는 긍정적 영향을 증진하면서 확신을 가지고 혁신을 지속할 수 있는 위치를 확보한다.",
+   "marks": [
+    {
+     "t": "안전, 투명성 및 책임성에 관한 최고 수준의 기준을 견지하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Authors:",
+   "ko": "저자:"
+  },
+  {
+   "type": "p",
+   "en": "Dr. Andrew Jackson, Prof. Boulbaba Ben Amor, Adele O Herlihy, Dr. Larry Murray, Rohit Manucha, Grzegorz Kosior, James Wilton.",
+   "ko": "Dr. Andrew Jackson, Prof. Boulbaba Ben Amor, Adele O Herlihy, Dr. Larry Murray, Rohit Manucha, Grzegorz Kosior, James Wilton."
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "Suitable for models with minimal hazardous capabilities. Objective: No novel mitigations required on the basis of None. G42 may choose to open source models.",
+   "ko": "위험한 역량이 최소한인 모델에 적합함. 목표: None을 근거로 새로운 완화 조치가 요구되지 않음. G42는 모델을 오픈소스로 공개할 수 있음.",
+   "linked": false
+  }
+ ]
+}

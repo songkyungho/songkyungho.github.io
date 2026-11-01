@@ -1,0 +1,1303 @@
+{
+ "slug": "cohere-secure-ai-2025-02",
+ "title": "Cohere 보안 AI 프론티어 모델 프레임워크 (V1.0)",
+ "original_title": "The Cohere Secure AI Frontier Model Framework (V1.0)",
+ "publisher": "Cohere",
+ "published": "2025-02-11",
+ "source_url": "https://cohere.com/security/the-cohere-secure-ai-frontier-model-framework-february-2025.pdf",
+ "source_note": "2025년 2월 첫 공개본(V1.0) 전문 (19쪽, 표지 제외)",
+ "source_label": "원문 보기 (Cohere PDF)",
+ "summary": "기업용 AI에 집중하는 Cohere가 낸 첫 프레임워크다. 소비자용 챗봇과 달리 모델이 기업의 제품·서비스에 끼워져 쓰인다는 점을 출발점으로 삼아, 실증된 위험만 다루고 맥락 안에서 평가한다는 원칙을 세웠다. 위험 식별, 위험 평가·완화, 위험 보증 장치, 투명성, 연구·외부 이해관계자 참여 다섯 축으로 짜였고, 모델 역량에서 오는 위험과 시스템에 대한 위험을 나눠 보고 심층 방어와 안전한 제품 수명주기 절차로 막는다. 평가·벤치마킹, 내부·제3자 취약점 시험, 고객 주도 시험을 보증 장치로 둔다.",
+ "image": "/images/translations/cohere-secure-ai-2025-02-cover.webp",
+ "og_image": "/images/translations/cohere-secure-ai-2025-02-cover.jpg",
+ "image_caption": "원문 표지 (Cohere, 2025.2)",
+ "translated": "2026-11-01",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "doc_kind": "프론티어 안전 프레임워크",
+ "stats": {
+  "blocks": 128,
+  "sections": 9,
+  "items": 19,
+  "words_en": 5443
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Introduction",
+   "ko": "서론",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "Cohere is the leading security-first enterprise AI company. We build cutting-edge foundation AI models and end-to-end products designed to solve real-world business problems. We partner closely with companies to deliver seamless integration, deep customization, and easy-to-use solutions for their workforce. Our comprehensive range of deployment options offers enterprises the highest levels of data security, privacy, and optionality to deploy across all major cloud providers, private clouds environments, or on-premises.",
+   "ko": "Cohere는 보안 우선(security-first) 엔터프라이즈 AI 분야의 선도 기업이다. Cohere는 실제 비즈니스 문제를 해결하도록 설계된 최첨단 파운데이션 AI 모델과 엔드투엔드(end-to-end) 제품을 구축한다. 또한 기업과 긴밀히 협력하여 원활한 통합, 심층적인 맞춤화, 그리고 임직원이 쉽게 사용할 수 있는 솔루션을 제공한다. Cohere의 폭넓은 배포 옵션은 기업에 최고 수준의 데이터 보안과 프라이버시를 보장하며, 모든 주요 클라우드 제공업체, 프라이빗 클라우드 환경 또는 온프레미스 중 원하는 곳에 배포할 수 있는 선택권을 제공한다."
+  },
+  {
+   "type": "p",
+   "en": "Our AI solutions are deployed worldwide by our customers and partners in the private and public sectors for applications as varied as customer support, supply chain management, searching and organizing financial information, analyzing legal agreements, answering questions about company policies, and summarizing textual information. These use cases and many more - are demonstrated across a wide range of sectors and domains, including financial services, telecom, public services, healthcare, manufacturing, retail, and energy. Our models are being used now, at scale, to enable businesses of all sizes to enhance their offerings and better serve their customers.",
+   "ko": "Cohere의 AI 솔루션은 민간 및 공공 부문의 고객과 파트너를 통해 전 세계에 배포되어 있다. 활용 분야는 고객 지원, 공급망 관리, 금융 정보 검색 및 정리, 법률 계약 분석, 회사 정책 관련 질의응답, 텍스트 정보 요약 등 매우 다양하다. 이러한 사용 사례를 비롯한 수많은 사례가 금융 서비스, 통신, 공공 서비스, 의료, 제조, 소매, 에너지 등 광범위한 부문과 영역에서 나타나고 있다. Cohere의 모델은 현재 대규모로 사용되고 있으며, 규모와 관계없이 모든 기업이 자사 서비스를 고도화하고 고객에게 더 나은 서비스를 제공할 수 있도록 지원하고 있다."
+  },
+  {
+   "type": "p",
+   "en": "Enterprises operating in these domains expect and require providers to meet high standards for safety and security, which are determined by existing risk management practices, compliance policies, sector-specific regulations, and broader societal obligations. It is of paramount importance - to us, to our customers, and to the businesses and societies which they serve - that our models are developed and deployed to meet these regulatory, safety, and security needs, today and in the future.",
+   "ko": "이러한 영역에서 사업을 영위하는 기업은 제공업체에 높은 수준의 안전성과 보안성을 기대하고 요구한다. 이 기준은 기존의 위험 관리 실행 방안, 규정 준수 정책, 부문별 규제, 그리고 보다 폭넓은 사회적 의무에 의해 결정된다. Cohere의 모델이 현재는 물론 미래에도 이러한 규제, 안전 및 보안 요구를 충족하도록 개발되고 배포되는 것은 Cohere와 고객, 그리고 고객이 서비스를 제공하는 기업과 사회 모두에게 무엇보다 중요하다.",
+   "marks": [
+    {
+     "t": "이러한 영역에서 사업을 영위하는 기업은 제공업체에 높은 수준의 안전성과 보안성을 기대하고 요구한다.",
+     "k": "key"
+    },
+    {
+     "t": "Cohere의 모델이 현재는 물론 미래에도 이러한 규제, 안전 및 보안 요구를 충족하도록 개발되고 배포되는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In addition to serving our enterprise customers, we are committed to ensuring that the safety and security of our AI solutions benefit the AI ecosystem and society more broadly. There is a great deal of research and knowledge about the real-world impact that AI already has on society. We play a leading role in forwarding this body of knowledge and implementing practices that minimize harm while benefiting society and businesses.",
+   "ko": "Cohere는 엔터프라이즈 고객에게 서비스를 제공하는 것에 더해, 자사 AI 솔루션의 안전성과 보안성이 AI 생태계와 사회 전반에 이로움을 줄 수 있도록 노력하고 있다. AI가 이미 사회에 미치고 있는 실질적 영향에 관해서는 방대한 연구와 지식이 축적되어 있다. Cohere는 이러한 지식 체계를 발전시키고, 사회와 기업에 이로움을 주면서 피해를 최소화하는 실행 방안을 이행하는 데 선도적인 역할을 하고 있다.",
+   "marks": [
+    {
+     "t": "자사 AI 솔루션의 안전성과 보안성이 AI 생태계와 사회 전반에 이로움을 줄 수 있도록 노력하고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "사회와 기업에 이로움을 주면서 피해를 최소화하는 실행 방안을 이행하는 데 선도적인 역할",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "What does it mean to develop AI solutions for enterprise?",
+   "ko": "엔터프라이즈를 위한 AI 솔루션 개발이란 무엇을 의미하는가?",
+   "id": "s5"
+  },
+  {
+   "type": "p",
+   "en": "Cohere's business-to-business deployment focus represents a critical and distinct voice within the AI ecosystem. Most AI models, including Cohere's, are deployed through, or combined with, applications, products, or services - in many cases provided by everyday businesses or organizations (enterprise). This means that the way in which models are deployed, the users who have access to them, and the data the models are connected to, matters when it comes to how risks manifest and should be mitigated.",
+   "ko": "기업 간 거래(B2B) 배포에 초점을 맞춘 Cohere는 AI 생태계 내에서 중요하고도 차별화된 목소리를 대변한다. Cohere의 모델을 포함한 대부분의 AI 모델은 애플리케이션, 제품 또는 서비스를 통해 배포되거나 이와 결합되어 배포되며, 이러한 애플리케이션, 제품, 서비스는 많은 경우 일반 기업이나 조직(엔터프라이즈)이 제공한다. 따라서 모델이 배포되는 방식, 모델에 접근할 수 있는 사용자, 그리고 모델이 연결되는 데이터는 위험이 어떻게 발현되고 어떻게 완화되어야 하는지를 결정하는 중요한 요소이다.",
+   "marks": [
+    {
+     "t": "모델이 배포되는 방식, 모델에 접근할 수 있는 사용자, 그리고 모델이 연결되는 데이터는 위험이 어떻게 발현되고 어떻게 완화되어야 하는지를 결정하는 중요한 요소이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Enterprise AI risks and corresponding mitigation strategies are distinct from AI models integrated into consumer-facing chatbots or smartphone AI assistants that are available to the general public and connected to personal or publicly-available data sources. Examples of how Cohere's AI solutions are used by businesses across various sectors include: identifying patterns in internal reports to improve the safety of production processes in the manufacturing industry; analyzing market data through a custom internal AI workspace designed for the financial sector; and surfacing reliable information across languages from company policies to answer questions from internal and external stakeholders.",
+   "ko": "엔터프라이즈 AI의 위험과 그에 상응하는 완화 전략은, 일반 대중이 이용할 수 있고 개인 데이터나 공개 데이터 소스에 연결된 소비자 대상 챗봇이나 스마트폰 AI 어시스턴트에 통합된 AI 모델의 경우와는 다르다. 다양한 부문의 기업이 Cohere의 AI 솔루션을 활용하는 사례는 다음과 같다. 제조업에서 내부 보고서의 패턴을 식별하여 생산 공정의 안전성을 개선하는 사례, 금융 부문을 위해 설계된 맞춤형 내부 AI 작업 공간을 통해 시장 데이터를 분석하는 사례, 그리고 회사 정책에서 여러 언어에 걸쳐 신뢰할 수 있는 정보를 찾아 내부 및 외부 이해관계자의 질문에 답변하는 사례 등이 있다.",
+   "marks": [
+    {
+     "t": "엔터프라이즈 AI의 위험과 그에 상응하는 완화 전략은, 일반 대중이 이용할 수 있고 개인 데이터나 공개 데이터 소스에 연결된 소비자 대상 챗봇이나 스마트폰 AI 어시스턴트에 통합된 AI 모델의 경우와는 다르다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "With Cohere's focus on secure AI delivering practical yet robust AI solutions for the enterprise market, we prioritize mitigating risks most salient to enterprises. Enterprises are required to satisfy an ever-growing list of standards and requirements, and they consider large language models (LLMs) 'safe for use' when they are both safe , in that they don't result in harmful outputs, and secure , in that systems and data can't be breached. Cohere prioritizes efforts to ensure that these safety and security needs are met. This includes enabling flexible and secure deployment options, such as fully private deployments where customers can run Cohere's AI solutions on-premises or in their own virtual private cloud, where Cohere has no access to customer data or computing environments.",
+   "ko": "Cohere는 엔터프라이즈 시장을 위해 실용적이면서도 견고한 AI 솔루션을 제공하는 보안 AI에 초점을 두고 있으며, 따라서 기업에 가장 두드러지는 위험을 완화하는 데 우선순위를 둔다. 기업은 계속 늘어나는 표준과 요건을 충족해야 하며, 거대 언어 모델(LLM)이 유해한 출력을 초래하지 않는다는 의미에서 안전(safe)하고, 시스템과 데이터가 침해될 수 없다는 의미에서 보안성(secure)을 갖출 때 이를 '사용하기에 안전하다'고 간주한다. Cohere는 이러한 안전 및 보안 요구가 충족되도록 하는 노력에 우선순위를 둔다. 여기에는 유연하고 안전한 배포 옵션을 제공하는 것이 포함된다. 예를 들어 완전한 프라이빗 배포 방식에서는 고객이 Cohere의 AI 솔루션을 온프레미스 또는 자체 가상 프라이빗 클라우드에서 운영할 수 있으며, 이 경우 Cohere는 고객 데이터나 컴퓨팅 환경에 접근할 수 없다.",
+   "marks": [
+    {
+     "t": "거대 언어 모델(LLM)이 유해한 출력을 초래하지 않는다는 의미에서 안전(safe)하고",
+     "k": "safety"
+    },
+    {
+     "t": "시스템과 데이터가 침해될 수 없다는 의미에서 보안성(secure)을 갖출 때",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In an enterprise environment, managing AI risks involves protecting both AI models and the broader environments (information and information systems) in which they are deployed from unauthorized access, use, disclosure, disruption, modification, or destruction in order to provide confidentiality, integrity, and availability. It also involves ensuring our AI products do not cause harm to people, communities, organizations, or wider society.",
+   "ko": "엔터프라이즈 환경에서 AI 위험을 관리한다는 것은 기밀성, 무결성, 가용성을 보장하기 위해 AI 모델과 모델이 배포되는 보다 넓은 환경(정보 및 정보 시스템)을 무단 접근, 사용, 공개, 방해, 변경 또는 파괴로부터 보호하는 것을 의미한다. 또한 Cohere의 AI 제품이 개인, 공동체, 조직 또는 사회 전반에 피해를 야기하지 않도록 보장하는 것도 포함한다.",
+   "marks": [
+    {
+     "t": "무단 접근, 사용, 공개, 방해, 변경 또는 파괴로부터 보호하는 것",
+     "k": "safety"
+    },
+    {
+     "t": "Cohere의 AI 제품이 개인, 공동체, 조직 또는 사회 전반에 피해를 야기하지 않도록 보장하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our approach to managing AI risks is summarized through the three core principles below:",
+   "ko": "AI 위험 관리에 대한 Cohere의 접근 방식은 다음 세 가지 핵심 원칙으로 요약된다."
+  },
+  {
+   "type": "h3",
+   "en": "01 Evidenced Risks",
+   "ko": "01 근거 기반 위험",
+   "id": "s11"
+  },
+  {
+   "type": "p",
+   "en": "We focus on real-world risks that are known, measured, or observable.",
+   "ko": "Cohere는 알려져 있거나, 측정되었거나, 관찰 가능한 실제 위험에 초점을 맞춘다.",
+   "marks": [
+    {
+     "t": "Cohere는 알려져 있거나, 측정되었거나, 관찰 가능한 실제 위험에 초점을 맞춘다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "02 Assessed in Context",
+   "ko": "02 맥락에 따른 평가",
+   "id": "s13"
+  },
+  {
+   "type": "p",
+   "en": "Risks are identified and assessed in the context of both Cohere's and Cohere's customers' specific use cases and contexts.",
+   "ko": "위험은 Cohere와 Cohere 고객의 구체적인 사용 사례 및 맥락 속에서 식별되고 평가된다.",
+   "marks": [
+    {
+     "t": "위험은 Cohere와 Cohere 고객의 구체적인 사용 사례 및 맥락 속에서 식별되고 평가된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "03 Holistically Managed",
+   "ko": "03 총체적 관리",
+   "id": "s15"
+  },
+  {
+   "type": "p",
+   "en": "AI risk management is embedded by design into model and system development.",
+   "ko": "AI 위험 관리는 설계 단계부터 모델 및 시스템 개발에 내재화된다.",
+   "marks": [
+    {
+     "t": "AI 위험 관리는 설계 단계부터 모델 및 시스템 개발에 내재화된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The Cohere Secure AI Frontier Model Framework, outlined in this document, describes how we implement this approach in practice.",
+   "ko": "본 문서에서 설명하는 Cohere Secure AI Frontier Model Framework는 Cohere가 이러한 접근 방식을 실제로 어떻게 이행하는지를 기술한다.",
+   "marks": [
+    {
+     "t": "Cohere Secure AI Frontier Model Framework",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Our framework at a glance",
+   "ko": "프레임워크 개요",
+   "id": "s18"
+  },
+  {
+   "type": "p",
+   "en": "The Cohere Secure AI Frontier Model Framework contains five components: (i) Risk Identification; (ii) Risk Assessment and Mitigation; (iii) Risk Assurance Mechanisms; (iv) Transparency; and (v) Research and External Stakeholder Engagement. Risk management practices are implemented in each of these components.",
+   "ko": "Cohere Secure AI Frontier Model Framework는 (i) 위험 식별, (ii) 위험 평가 및 완화, (iii) 위험 보증 메커니즘, (iv) 투명성, (v) 연구 및 외부 이해관계자 참여의 다섯 가지 구성요소로 이루어져 있다. 위험 관리 실행 방안은 이 각각의 구성요소에서 이행된다.",
+   "marks": [
+    {
+     "t": "(i) 위험 식별, (ii) 위험 평가 및 완화, (iii) 위험 보증 메커니즘, (iv) 투명성, (v) 연구 및 외부 이해관계자 참여의 다섯 가지 구성요소로 이루어져 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "table",
+   "en": "| Framework component | Our activities and practices | ⏎ | 1. Risk Identification Understanding the type and nature of risks associated with our AI models and systems. | 1a Identifying risks arising from model capabilities 1b Identifying risks to our systems 1c Understanding possible harms in context | ⏎ | 2. Risk Assessment and Mitigation Applying measures to reduce risk throughout the lifecycle of our models and systems. | 2a Defense-in-depth 2b Addressing harms 2c Secure AI by design | ⏎ | 3. Risk Assurance Mechanisms Conducting tests and evaluations to verify and demonstrate that AI risks are appropriately mitigated. | 3a Evaluations and benchmarking 3b Internal and third-party vulnerability testing 3c Customer-led testing and evaluation | ⏎ | 4. Transparency | 4a Documenting and sharing our practices |",
+   "ko": "| 프레임워크 구성요소 | 주요 활동 및 실행 방안 | ⏎ | 1. 위험 식별 Cohere의 AI 모델 및 시스템과 관련된 위험의 유형과 성격을 파악함. | 1a 모델 역량에서 발생하는 위험 식별 1b Cohere 시스템에 대한 위험 식별 1c 맥락 속 잠재적 피해 이해 | ⏎ | 2. 위험 평가 및 완화 모델 및 시스템의 수명주기 전반에 걸쳐 위험을 줄이기 위한 조치를 적용함. | 2a 심층 방어 2b 피해 대응 2c 설계 기반 보안 AI(secure AI by design) | ⏎ | 3. 위험 보증 메커니즘 AI 위험이 적절히 완화되었음을 검증하고 입증하기 위해 테스트와 평가(evaluation)를 수행함. | 3a 평가(evaluation) 및 벤치마크 3b 내부 및 제3자 취약점 테스트 3c 고객 주도 테스트 및 평가(evaluation) | ⏎ | 4. 투명성 | 4a 실행 방안 문서화 및 공유 |"
+  },
+  {
+   "type": "table",
+   "en": "| Sharing information about our risk management practices and inviting feedback to ensure continuous improvement. | 4b Continuous improvement | ⏎ | 5. Research and External Stakeholder Engagement Supporting independent research and engaging externally to advance the science of AI risk management and contribute to industry standards. | 5a Support for independent research 5b External engagement |",
+   "ko": "| 지속적인 개선을 위해 위험 관리 실행 방안에 관한 정보를 공유하고 피드백을 요청함. | 4b 지속적 개선 | ⏎ | 5. 연구 및 외부 이해관계자 참여 AI 위험 관리 과학을 발전시키고 산업 표준에 기여하기 위해 독립 연구를 지원하고 외부와 교류함. | 5a 독립 연구 지원 5b 외부 교류 |"
+  },
+  {
+   "type": "h2",
+   "en": "Framework in depth",
+   "ko": "프레임워크 세부 내용",
+   "id": "s22"
+  },
+  {
+   "type": "h2",
+   "en": "1) Risk Identification",
+   "ko": "1) 위험 식별",
+   "id": "s23"
+  },
+  {
+   "type": "p",
+   "en": "Risk identification is the first step to understanding the type and nature of risks associated with our AI solutions. We identify risks by first assessing potential risks arising from our models' capabilities and the systems in which they may be deployed. We then assess the likelihood and severity of potential harms that may arise in enterprise contexts from the identified risks.",
+   "ko": "위험 식별은 Cohere의 AI 솔루션과 관련된 위험의 유형과 성격을 이해하기 위한 첫 단계이다. Cohere는 먼저 모델의 역량과 모델이 배포될 수 있는 시스템에서 발생할 수 있는 잠재적 위험을 평가하여 위험을 식별한다. 이어서 식별된 위험으로 인해 엔터프라이즈 맥락에서 발생할 수 있는 잠재적 피해의 가능성과 심각도를 평가한다.",
+   "marks": [
+    {
+     "t": "위험 식별은 Cohere의 AI 솔루션과 관련된 위험의 유형과 성격을 이해하기 위한 첫 단계이다.",
+     "k": "key"
+    },
+    {
+     "t": "모델의 역량과 모델이 배포될 수 있는 시스템에서 발생할 수 있는 잠재적 위험을 평가하여 위험을 식별한다",
+     "k": "safety"
+    },
+    {
+     "t": "식별된 위험으로 인해 엔터프라이즈 맥락에서 발생할 수 있는 잠재적 피해의 가능성과 심각도를 평가한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1a) Identifying risks arising from model capabilities",
+   "ko": "1a) 모델 역량에서 발생하는 위험 식별",
+   "id": "s25"
+  },
+  {
+   "type": "p",
+   "en": "Large language models (LLMs) are capable of generating high-quality content, such as text or code, and they can ground their output in context to increase its relevance. However, LLMs also have inherent limitations arising from their architecture, training data, and the nature of the underlying technology. Because LLMs generate content based on statistical patterns, they are limited in the extent to which they can leverage context to inform content generation. Limitations in training data, such as unrepresentative data distributions, historically outdated representations, or an imbalance between harmful patterns and attributes on the one hand and positive patterns and attributes on the other, also impact model capabilities. If these limitations are not mitigated, models can output harmful content, such as hateful or violent content, or child sexual exploitation and abuse material (CSAM).",
+   "ko": "거대 언어 모델(LLM)은 텍스트나 코드와 같은 고품질 콘텐츠를 생성할 수 있으며, 맥락에 근거하여 출력을 생성함으로써 출력의 관련성을 높일 수 있다. 그러나 거대 언어 모델은 그 아키텍처, 학습 데이터, 기반 기술의 특성에서 비롯되는 내재적 한계도 지닌다. 거대 언어 모델은 통계적 패턴에 기반하여 콘텐츠를 생성하기 때문에, 콘텐츠 생성 시 맥락을 활용할 수 있는 정도에 한계가 있다. 대표성이 없는 데이터 분포, 시대에 뒤떨어진 표현, 또는 유해한 패턴 및 속성과 긍정적인 패턴 및 속성 간의 불균형과 같은 학습 데이터의 한계 역시 모델 역량에 영향을 미친다. 이러한 한계가 완화되지 않으면, 모델은 혐오적이거나 폭력적인 콘텐츠, 또는 아동 성착취물(CSAM)과 같은 유해 콘텐츠를 출력할 수 있다.",
+   "marks": [
+    {
+     "t": "거대 언어 모델은 그 아키텍처, 학습 데이터, 기반 기술의 특성에서 비롯되는 내재적 한계도 지닌다",
+     "k": "safety"
+    },
+    {
+     "t": "유해한 패턴 및 속성과 긍정적인 패턴 및 속성 간의 불균형",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 한계가 완화되지 않으면, 모델은 혐오적이거나 폭력적인 콘텐츠, 또는 아동 성착취물(CSAM)과 같은 유해 콘텐츠를 출력할 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We therefore focus our secure AI work on risks that have a high likelihood of occurring based on the types of tasks LLMs are highly performant in, as well as the limitations inherent in how these models function. This is what we refer to as 'model capabilities.'",
+   "ko": "따라서 Cohere는 거대 언어 모델이 높은 성능을 보이는 과업의 유형과 이러한 모델의 작동 방식에 내재된 한계에 비추어 발생 가능성이 높은 위험에 보안 AI 작업의 초점을 맞춘다. 이것이 Cohere가 '모델 역량'이라고 부르는 것이다.",
+   "marks": [
+    {
+     "t": "발생 가능성이 높은 위험에 보안 AI 작업의 초점을 맞춘다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We place potential risks arising from LLM capabilities into one of two categories:",
+   "ko": "Cohere는 거대 언어 모델의 역량에서 발생하는 잠재적 위험을 다음 두 가지 범주 중 하나로 분류한다.",
+   "marks": [
+    {
+     "t": "Cohere는 거대 언어 모델의 역량에서 발생하는 잠재적 위험을 다음 두 가지 범주 중 하나로 분류한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Risks stemming from possible malicious use of foundation AI models, such as generating content to facilitate cybercrime or child sexual exploitation",
+   "ko": "사이버 범죄나 아동 성착취를 조장하는 콘텐츠 생성 등 파운데이션 AI 모델의 악의적 사용 가능성에서 비롯되는 위험",
+   "marks": [
+    {
+     "t": "사이버 범죄나 아동 성착취를 조장하는 콘텐츠 생성 등 파운데이션 AI 모델의 악의적 사용 가능성에서 비롯되는 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Risks stemming from possible harmful outputs in the ordinary, non-malicious use of foundation models, such as outputs that are inaccurate in a way that has a harmful impact on a person or a group",
+   "ko": "개인이나 집단에 유해한 영향을 미치는 방식으로 부정확한 출력 등 파운데이션 모델의 일반적이고 악의적이지 않은 사용 과정에서 발생할 수 있는 유해한 출력에서 비롯되는 위험",
+   "marks": [
+    {
+     "t": "악의적이지 않은 사용 과정에서 발생할 수 있는 유해한 출력에서 비롯되는 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1b) Identifying risks to our systems",
+   "ko": "1b) Cohere 시스템에 대한 위험 식별",
+   "id": "s31"
+  },
+  {
+   "type": "p",
+   "en": "Cohere consistently reviews state-of-the-art research and industry practice regarding the risks associated with AI, and uses this to determine our priorities. At Cohere, risks to our systems are identified through a list of continuously-expanding techniques, including:",
+   "ko": "Cohere는 AI와 관련된 위험에 관한 최첨단 연구와 업계 실행 방안을 지속적으로 검토하고, 이를 바탕으로 우선순위를 결정한다. Cohere에서는 지속적으로 확대되고 있는 다음과 같은 기법들을 통해 시스템에 대한 위험을 식별한다.",
+   "marks": [
+    {
+     "t": "AI와 관련된 위험에 관한 최첨단 연구와 업계 실행 방안을 지속적으로 검토",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Mitigating core vulnerabilities identified by the Open Worldwide Application Security Project (OWASP)",
+   "ko": "Open Worldwide Application Security Project(OWASP)가 식별한 핵심 취약점 완화"
+  },
+  {
+   "type": "li",
+   "en": "Internal threat modeling, which includes a review of how our customers interact with and use our models, to proactively identify potential threats and implement specific counter measures before deployment",
+   "ko": "배포 전에 잠재적 위협을 선제적으로 식별하고 구체적인 대응 조치를 이행하기 위한 내부 위협 모델링(고객이 Cohere 모델과 상호작용하고 이를 사용하는 방식에 대한 검토 포함)",
+   "marks": [
+    {
+     "t": "배포 전에 잠재적 위협을 선제적으로 식별하고 구체적인 대응 조치를 이행하기 위한 내부 위협 모델링",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Monitoring established and well-researched repositories of security attacks and vulnerabilities for AI, such as the Mitre Altas database",
+   "ko": "Mitre Altas 데이터베이스와 같이 AI에 대한 보안 공격 및 취약점에 관해 확립되고 충분히 연구된 저장소 모니터링",
+   "marks": [
+    {
+     "t": "AI에 대한 보안 공격 및 취약점에 관해 확립되고 충분히 연구된 저장소 모니터링",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "With these methods, Cohere can identify risks such as data poisoning, model theft, inference attacks, injection attacks, and output manipulation.",
+   "ko": "이러한 방법을 통해 Cohere는 데이터 오염, 모델 도난, 추론(Inference) 공격, 인젝션 공격, 출력 조작과 같은 위험을 식별할 수 있다.",
+   "marks": [
+    {
+     "t": "데이터 오염, 모델 도난, 추론(Inference) 공격, 인젝션 공격, 출력 조작과 같은 위험을 식별할 수 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Moreover, we identify risks across our broader technology stack and environment by performing continuous monitoring of our security controls using automated and manual techniques. Models are developed and deployed in broader computational environments, and effectively managing AI risks requires us to identify, assess, and mitigate information security threats or vulnerabilities that may arise in these environments.",
+   "ko": "또한 Cohere는 자동화된 기법과 수동 기법을 활용하여 보안 통제를 지속적으로 모니터링함으로써 보다 광범위한 기술 스택과 환경 전반에 걸친 위험을 식별한다. 모델은 보다 광범위한 컴퓨팅 환경에서 개발되고 배포되므로, AI 위험을 효과적으로 관리하려면 이러한 환경에서 발생할 수 있는 정보 보안 위협이나 취약점을 식별, 평가, 완화해야 한다.",
+   "marks": [
+    {
+     "t": "AI 위험을 효과적으로 관리하려면 이러한 환경에서 발생할 수 있는 정보 보안 위협이나 취약점을 식별, 평가, 완화해야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1c) Understanding possible harms in context",
+   "ko": "1c) 맥락 속 잠재적 피해 이해",
+   "id": "s38"
+  },
+  {
+   "type": "p",
+   "en": "The final step to our risk identification process involves understanding the likelihood and severity of harms that could potentially arise from the risks identified in Section 1a and Section 1b, considering the enterprise contexts in which our AI solutions are deployed.",
+   "ko": "위험 식별 프로세스의 마지막 단계는 Cohere의 AI 솔루션이 배포되는 엔터프라이즈 맥락을 고려하여, 1a절과 1b절에서 식별된 위험으로부터 발생할 수 있는 피해의 가능성과 심각도를 이해하는 것이다.",
+   "marks": [
+    {
+     "t": "Cohere의 AI 솔루션이 배포되는 엔터프라이즈 맥락을 고려하여, 1a절과 1b절에서 식별된 위험으로부터 발생할 수 있는 피해의 가능성과 심각도를 이해하는 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We categorize possible harms broadly into two categories:",
+   "ko": "Cohere는 잠재적 피해를 크게 다음 두 가지 범주로 분류한다."
+  },
+  {
+   "type": "li",
+   "en": "Harm to individual users (e.g., exposure to content that is hateful or violent)",
+   "ko": "개별 사용자에 대한 피해(예: 혐오적이거나 폭력적인 콘텐츠에 대한 노출)"
+  },
+  {
+   "type": "li",
+   "en": "Societal harm (e.g., language models that consistently fail for specific demographic groups, or large-scale harms such as violation of data privacy rights resulting from insecure code or malware)",
+   "ko": "사회적 피해(예: 특정 인구 집단에 대해 지속적으로 제대로 작동하지 않는 언어 모델, 또는 안전하지 않은 코드나 멀웨어로 인한 데이터 프라이버시 권리 침해와 같은 대규모 피해)",
+   "marks": [
+    {
+     "t": "안전하지 않은 코드나 멀웨어로 인한 데이터 프라이버시 권리 침해와 같은 대규모 피해",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In the chart below, we further detail specific potential harms within each category, and provide an illustrative assessment of their likelihood and severity.",
+   "ko": "아래 표에서는 각 범주 내의 구체적인 잠재적 피해를 상세히 기술하고, 그 가능성과 심각도에 대한 예시적 평가(assessment)를 제시한다."
+  },
+  {
+   "type": "table",
+   "en": "| Potential Harm | Use Case | Malicious or Unintentional | Likelihood of Harm in Context | Severity of Harm in Context | ⏎ | Outputs that result in a discriminatory outcome[^1] | Resume summarization for human resources managers making hiring decisions, using resume data stored in a company's virtual private cloud. | Unintentional | High, there is a large body of research on this potential harm. | High, in the employment context described here, the harm could involve the loss of an employment opportunity for an individual. At scale, this can lead to societal harm for groups of individuals. | ⏎ | Insecure code | Code generation for enterprise developers managing a company's proprietary data within on-premises servers. | Unintentional | Medium to High possibility of a vulnerability being introduced into company code | Medium to High, depending on the nature of the vulnerability introduced and the type of data handled by the company. Severe vulnerabilities can leave companies vulnerable to cyber attacks affecting individuals and society. | ⏎ | Child sexual exploitation and abuse | Prompting an AI writing assistant to generate stories involving child sexual abuse material. | Malicious | Low in enterprise contexts given the controls typically implemented by enterprises on the acceptable use of internal assets. | Very High, as the harm to children can involve extremely severe bodily and psychological harm. |",
+   "ko": "| 잠재적 피해 | 사용 사례 | 악의적 또는 비의도적 | 맥락 속 피해 가능성 | 맥락 속 피해 심각도 | ⏎ | 차별적 결과를 초래하는 출력[^1] | 기업의 가상 사설 클라우드에 저장된 이력서 데이터를 활용하여, 채용 결정을 내리는 인사 관리자를 위해 이력서를 요약함. | 비의도적 | 높음. 이 잠재적 피해에 관해서는 방대한 연구가 축적되어 있음. | 높음. 여기서 기술한 고용 맥락에서 피해는 개인의 고용 기회 상실을 수반할 수 있음. 대규모로 발생할 경우 개인들로 이루어진 집단에 사회적 피해를 초래할 수 있음. | ⏎ | 안전하지 않은 코드 | 온프레미스 서버 내에서 기업의 독점 데이터를 관리하는 엔터프라이즈 개발자를 위한 코드 생성. | 비의도적 | 기업 코드에 취약점이 유입될 가능성 중간~높음 | 중간~높음. 유입된 취약점의 성격과 기업이 다루는 데이터의 유형에 따라 다름. 심각한 취약점은 기업을 개인과 사회에 영향을 미치는 사이버 공격에 취약하게 만들 수 있음. | ⏎ | 아동 성착취 및 학대 | AI 작성 어시스턴트에 프롬프트를 입력하여 아동 성착취물을 포함하는 이야기를 생성하도록 함. | 악의적 | 엔터프라이즈 맥락에서는 낮음. 기업은 일반적으로 내부 자산의 허용 가능한 사용에 관한 통제를 이행하기 때문임. | 매우 높음. 아동에 대한 피해는 극도로 심각한 신체적·심리적 피해를 수반할 수 있기 때문임. |"
+  },
+  {
+   "type": "table",
+   "en": "| Malware code | Prompting a model to generate code that could be used to spread malware in a cybercrime. | Malicious | Low in enterprise contexts given the controls typically implemented by enterprises on the acceptable use of internal assets. | High to Very High, depending on the code generated and how it is misused. Possible harms resulting from cybercrime can involve widespread financial loss, identity theft, psychological harm to victims, etc. |",
+   "ko": "| 멀웨어 코드 | 사이버 범죄에서 멀웨어를 유포하는 데 사용될 수 있는 코드를 생성하도록 모델에 프롬프트를 입력함. | 악의적 | 엔터프라이즈 맥락에서는 낮음. 기업은 일반적으로 내부 자산의 허용 가능한 사용에 관한 통제를 이행하기 때문임. | 높음~매우 높음. 생성된 코드와 그 오용 방식에 따라 다름. 사이버 범죄로 인해 발생할 수 있는 피해에는 광범위한 금전적 손실, 신원 도용, 피해자에 대한 심리적 피해 등이 포함될 수 있음. |"
+  },
+  {
+   "type": "p",
+   "en": "The examples provided above consider the likelihood and severity of potential harms in the enterprise contexts in which Cohere models are deployed. A similar assessment of potential harms from the same models deployed in contexts such as a consumer chatbot would result in a different risk profile.",
+   "ko": "위에 제시된 예시는 Cohere 모델이 배포되는 엔터프라이즈 맥락에서 잠재적 피해의 가능성과 심각도를 고려한 것이다. 동일한 모델이 소비자용 챗봇과 같은 맥락에 배포될 경우 잠재적 피해에 대해 유사한 평가(assessment)를 수행하면 다른 위험 프로파일이 도출될 것이다.",
+   "marks": [
+    {
+     "t": "동일한 모델이 소비자용 챗봇과 같은 맥락에 배포될 경우 잠재적 피해에 대해 유사한 평가(assessment)를 수행하면 다른 위험 프로파일이 도출될 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To effectively manage AI risks, it is important to identify potential risks based on a contextual assessment of model capabilities, the systems in which they will be deployed, and the likelihood and severity of potential harms.",
+   "ko": "AI 위험을 효과적으로 관리하려면 모델 역량, 모델이 배포될 시스템, 잠재적 피해의 가능성과 심각도에 대한 맥락적 평가(assessment)에 기반하여 잠재적 위험을 식별하는 것이 중요하다.",
+   "marks": [
+    {
+     "t": "모델 역량, 모델이 배포될 시스템, 잠재적 피해의 가능성과 심각도에 대한 맥락적 평가(assessment)에 기반하여 잠재적 위험을 식별하는 것이 중요하다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "2) Risk Assessment and Mitigation",
+   "ko": "2) 위험 평가 및 완화",
+   "id": "s48"
+  },
+  {
+   "type": "p",
+   "en": "Once risks have been identified, they must be assessed and mitigated. We assess and mitigate risks across the development lifecycle of Cohere's AI solutions. This is critical to ensuring that the potential harms identified above do not materialize into actual real-world harms.",
+   "ko": "위험이 식별되면 이를 평가하고 완화해야 한다. Cohere는 AI 솔루션의 개발 수명주기 전반에 걸쳐 위험을 평가하고 완화한다. 이는 위에서 식별된 잠재적 피해가 현실 세계의 실제 피해로 이어지지 않도록 보장하는 데 매우 중요하다.",
+   "marks": [
+    {
+     "t": "Cohere는 AI 솔루션의 개발 수명주기 전반에 걸쳐 위험을 평가하고 완화한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "For example, if unrepresentative data distributions or toxic data are left unaddressed, this can lead to models outputting content that is legally discriminatory, hateful, or violent, or involves the sexual abuse of children. Similarly, if vulnerabilities such as data poisoning or prompt injection aren't found and mitigated, this could lead to malicious actors being able to exploit models to cause harm by, for example, exposing sensitive information.",
+   "ko": "예를 들어, 대표성이 없는 데이터 분포나 유해한 데이터가 해결되지 않은 채 방치되면, 모델이 법적으로 차별적이거나 혐오적이거나 폭력적인 콘텐츠, 또는 아동 성착취와 관련된 콘텐츠를 출력하는 결과로 이어질 수 있다. 마찬가지로 데이터 오염이나 프롬프트 인젝션과 같은 취약점이 발견되고 완화되지 않으면, 악의적 행위자가 모델을 악용하여 민감한 정보를 노출시키는 등의 방식으로 피해를 야기할 수 있게 된다.",
+   "marks": [
+    {
+     "t": "모델이 법적으로 차별적이거나 혐오적이거나 폭력적인 콘텐츠, 또는 아동 성착취와 관련된 콘텐츠를 출력하는 결과로 이어질 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "데이터 오염이나 프롬프트 인젝션과 같은 취약점이 발견되고 완화되지 않으면",
+     "k": "safety"
+    },
+    {
+     "t": "악의적 행위자가 모델을 악용하여 민감한 정보를 노출시키는 등의 방식으로 피해를 야기할 수 있게 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In this section, we lay out our approach to holistically managing risk by implementing safeguards throughout the development lifecycle of an AI model.",
+   "ko": "이 절에서는 AI 모델의 개발 수명주기 전반에 걸쳐 안전장치를 이행함으로써 위험을 총체적으로 관리하는 Cohere의 접근 방식을 제시한다.",
+   "marks": [
+    {
+     "t": "AI 모델의 개발 수명주기 전반에 걸쳐 안전장치를 이행함으로써 위험을 총체적으로 관리하는 Cohere의 접근 방식",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2a) Defense-in-depth",
+   "ko": "2a) 심층 방어",
+   "id": "s52"
+  },
+  {
+   "type": "p",
+   "en": "At Cohere, we recognize that properly securing AI requires going beyond traditional controls. Cohere's security-first culture drives how we work together to design, operate, continuously monitor, and secure both our internal environment (i.e., network, applications, endpoints, data, and personnel) and customer and partner deployments. In addition to applying a holistic approach to security, additional protective measures are woven into the fabric of our models. We cannot secure our models if we do not secure the environment in which we develop them.",
+   "ko": "At Cohere, we recognize... → Cohere는 AI를 적절히 보호하려면 전통적인 통제를 넘어서야 한다는 점을 인식하고 있다. Cohere의 보안 우선 문화는 Cohere가 내부 환경(즉, 네트워크, 애플리케이션, 엔드포인트(Endpoint), 데이터, 인력)과 고객 및 파트너의 배포 환경을 설계·운영하고, 지속적으로 모니터링하며, 보호하기 위해 협업하는 방식을 이끈다. 보안에 총체적 접근 방식을 적용하는 것에 더해, 추가적인 보호 조치가 Cohere 모델의 근간에 녹아 있다. 모델을 개발하는 환경을 보호하지 못한다면 모델 자체도 보호할 수 없다.",
+   "marks": [
+    {
+     "t": "추가적인 보호 조치가 Cohere 모델의 근간에 녹아 있다",
+     "k": "safety"
+    },
+    {
+     "t": "모델을 개발하는 환경을 보호하지 못한다면 모델 자체도 보호할 수 없다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Put another way, we deploy a defense-in-depth strategy. This means we apply layered controls as part of our overall security management program across all systems and processes - for model development and general day-to-day operations - all of which directly contribute to how we secure our models and our internal environment. We align our program to SOC 2 Type II and other recognized frameworks, and we rigorously monitor the health and performance of our security controls throughout the year, performing real-time corrective action when needed.",
+   "ko": "다시 말해, Cohere는 심층 방어 전략을 채택한다. 이는 모델 개발과 일반적인 일상 운영을 위한 모든 시스템과 프로세스에 걸쳐 전반적인 보안 관리 프로그램의 일환으로 계층화된 통제를 적용한다는 의미이며, 이 모든 통제는 Cohere가 모델과 내부 환경을 보호하는 방식에 직접적으로 기여한다. Cohere는 자사 프로그램을 SOC 2 Type II 및 기타 공인된 프레임워크에 부합시키고 있으며, 연중 보안 통제의 상태와 성능을 엄격히 모니터링하고 필요시 실시간으로 시정 조치를 수행한다.",
+   "marks": [
+    {
+     "t": "Cohere는 심층 방어 전략을 채택한다.",
+     "k": "key"
+    },
+    {
+     "t": "이 모든 통제는 Cohere가 모델과 내부 환경을 보호하는 방식에 직접적으로 기여한다",
+     "k": "safety"
+    },
+    {
+     "t": "연중 보안 통제의 상태와 성능을 엄격히 모니터링하고 필요시 실시간으로 시정 조치를 수행한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Core security controls",
+   "ko": "핵심 보안 통제",
+   "id": "s55"
+  },
+  {
+   "type": "p",
+   "en": "Our core controls across network security, endpoint security, identity and access management, data security, and others are designed to protect Cohere from cyber risks that could expose our models, systems, or sensitive data, such as malware, phishing, denial-of-service, insider threats, and vulnerabilities.",
+   "ko": "네트워크 보안, 엔드포인트(Endpoint) 보안, 신원 및 접근 관리, 데이터 보안 등에 걸친 Cohere의 핵심 통제는 멀웨어, 피싱, 서비스 거부, 내부자 위협, 취약점 등 Cohere의 모델, 시스템 또는 민감 데이터를 노출시킬 수 있는 사이버 위험으로부터 Cohere를 보호하도록 설계되어 있다.",
+   "marks": [
+    {
+     "t": "멀웨어, 피싱, 서비스 거부, 내부자 위협, 취약점 등 Cohere의 모델, 시스템 또는 민감 데이터를 노출시킬 수 있는 사이버 위험으로부터 Cohere를 보호하도록 설계되어 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "These controls include:",
+   "ko": "이러한 통제는 다음을 포함한다."
+  },
+  {
+   "type": "li",
+   "en": "Advanced perimeter security controls and real-time threat prevention and monitoring",
+   "ko": "고급 경계 보안 통제 및 실시간 위협 예방·모니터링",
+   "marks": [
+    {
+     "t": "실시간 위협 예방·모니터링",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Secure, risk-based defaults and internal reviews",
+   "ko": "위험 기반의 안전한 기본 설정 및 내부 검토"
+  },
+  {
+   "type": "li",
+   "en": "Advanced endpoint detection and response across our cloud infrastructure and distributed devices",
+   "ko": "클라우드 인프라와 분산 기기 전반에 걸친 고급 엔드포인트(Endpoint) 탐지 및 대응"
+  },
+  {
+   "type": "li",
+   "en": "Strict access controls, including multifactor authentication, role-based access control, and just-in-time access, across and within our environment to protect against insider and external threats (internal access to unreleased model weights is even more strenuously restricted)",
+   "ko": "내부자 및 외부 위협으로부터 보호하기 위해 환경 전반과 내부에 적용되는 다중 인증, 역할 기반 접근 통제, 적시 접근(just-in-time access) 등 엄격한 접근 통제(미공개 모델 가중치에 대한 내부 접근은 한층 더 엄격하게 제한됨)",
+   "marks": [
+    {
+     "t": "내부자 및 외부 위협으로부터 보호하기 위해",
+     "k": "safety"
+    },
+    {
+     "t": "미공개 모델 가중치에 대한 내부 접근은 한층 더 엄격하게 제한됨",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "'Secure Product Lifecycle' controls, including security requirements gathering, security risk assessment, security architecture and product reviews, security threat modeling, security scanning, code reviews, penetration testing, and bug bounty programs",
+   "ko": "보안 요구사항 수집, 보안 위험 평가, 보안 아키텍처 및 제품 검토, 보안 위협 모델링, 보안 스캐닝, 코드 검토, 침투 테스트, 버그바운티 프로그램 등을 포함하는 '보안 제품 수명주기(Secure Product Lifecycle)' 통제",
+   "marks": [
+    {
+     "t": "보안 위협 모델링, 보안 스캐닝, 코드 검토, 침투 테스트, 버그바운티 프로그램",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Secure Product Lifecycle Process",
+   "ko": "보안 제품 수명주기 프로세스",
+   "id": "s63"
+  },
+  {
+   "type": "h3",
+   "en": "Deployment-specific controls",
+   "ko": "배포별 통제",
+   "id": "s64"
+  },
+  {
+   "type": "p",
+   "en": "Where applicable, we also consider risks within the context of customer deployments. For example, because many of our users start building applications through our application programming interfaces (APIs) before moving to more advanced deployments, we extensively test and secure our APIs. Our API V2 underwent a heavy security design review before we made it available.",
+   "ko": "해당되는 경우, Cohere는 고객 배포의 맥락에서도 위험을 고려한다. 예를 들어, 많은 사용자가 보다 고도화된 배포로 넘어가기 전에 Cohere의 애플리케이션 프로그래밍 인터페이스 (API)를 통해 애플리케이션 구축을 시작하기 때문에, Cohere는 API를 광범위하게 테스트하고 보호한다. Cohere의 API V2는 제공되기 전에 강도 높은 보안 설계 검토를 거쳤다.",
+   "marks": [
+    {
+     "t": "Cohere는 API를 광범위하게 테스트하고 보호한다",
+     "k": "safety"
+    },
+    {
+     "t": "Cohere의 API V2는 제공되기 전에 강도 높은 보안 설계 검토를 거쳤다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "For more sophisticated deployments, we focus heavily on container security as our models are bundled via containers. We proactively update our containers with security fixes and also work with customers to provide updated containers if they identify vulnerabilities. Prior to deployment, significant model releases undergo an independent third-party penetration test to validate the security of containers and models.",
+   "ko": "보다 정교한 배포의 경우, Cohere 모델은 컨테이너를 통해 번들링되므로 컨테이너 보안에 크게 중점을 둔다. Cohere는 보안 수정 사항을 반영하여 컨테이너를 선제적으로 업데이트하며, 고객이 취약점을 발견한 경우 고객과 협력하여 업데이트된 컨테이너를 제공한다. 배포에 앞서, 주요 모델 공개는 컨테이너와 모델의 보안성을 검증하기 위해 독립적인 제3자 침투 테스트를 거친다.",
+   "marks": [
+    {
+     "t": "Cohere는 보안 수정 사항을 반영하여 컨테이너를 선제적으로 업데이트하며",
+     "k": "safety"
+    },
+    {
+     "t": "주요 모델 공개는 컨테이너와 모델의 보안성을 검증하기 위해 독립적인 제3자 침투 테스트를 거친다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2b) Addressing harms",
+   "ko": "2b) 피해 대응",
+   "id": "s67"
+  },
+  {
+   "type": "p",
+   "en": "We leverage a combination of techniques to address and mitigate the potential harms described in Section 1. Section 2c below outlines how these techniques are applied throughout the development process to iteratively evaluate and improve our models. As noted above, we also continuously research ways to mitigate risk in enterprise use cases, and leverage our findings to improve our approach to secure AI.",
+   "ko": "Cohere는 1절에서 기술한 잠재적 피해에 대응하고 이를 완화하기 위해 여러 기법을 조합하여 활용한다. 아래 2c절에서는 이러한 기법이 개발 과정 전반에 걸쳐 어떻게 적용되어 모델을 반복적으로 평가(evaluation)하고 개선하는지 개략적으로 설명한다. 앞서 언급한 바와 같이, Cohere는 엔터프라이즈 사용 사례에서 위험을 완화하는 방법을 지속적으로 연구하며, 그 결과를 활용하여 AI 보안 접근 방식을 개선한다.",
+   "marks": [
+    {
+     "t": "Cohere는 1절에서 기술한 잠재적 피해에 대응하고 이를 완화하기 위해 여러 기법을 조합하여 활용한다.",
+     "k": "key"
+    },
+    {
+     "t": "엔터프라이즈 사용 사례에서 위험을 완화하는 방법을 지속적으로 연구하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "More specifically, our harm mitigation practices are focused on achieving the following goals:",
+   "ko": "보다 구체적으로, Cohere의 피해 완화 실행 방안은 다음 목표를 달성하는 데 중점을 둔다."
+  },
+  {
+   "type": "li",
+   "en": "Preventing the generation of harmful outputs in multilingual enterprise use cases",
+   "ko": "다국어 엔터프라이즈 사용 사례에서 유해한 출력의 생성 방지",
+   "marks": [
+    {
+     "t": "다국어 엔터프라이즈 사용 사례에서 유해한 출력의 생성 방지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Adhering to guardrails",
+   "ko": "가드레일 준수",
+   "marks": [
+    {
+     "t": "가드레일 준수",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Minimizing over-refusal",
+   "ko": "과잉거부 최소화"
+  },
+  {
+   "type": "p",
+   "en": "These objectives are informed by the priorities of our enterprise customers who expect performant models capable of completing tasks without generating harmful outputs in the languages in which they operate, along with the ability to apply effective, tailored guardrails.",
+   "ko": "이러한 목표는 엔터프라이즈 고객의 우선순위를 반영한 것이다. 엔터프라이즈 고객은 자신이 업무에 사용하는 언어로 유해한 출력을 생성하지 않으면서 과업을 완수할 수 있는 고성능 모델과 함께, 효과적이고 맞춤화된 가드레일을 적용할 수 있는 능력을 기대한다."
+  },
+  {
+   "type": "p",
+   "en": "Preventing the generation of harmful outputs involves testing and evaluation techniques to control the types of harmful output described in Section 1, for example, child sexual abuse material (CSAM), targeted violence and hate, outputs that result in discriminatory outcomes for protected groups, or insecure code. Cohere also tests and evaluates output generation in the various languages in which Cohere customers do business.",
+   "ko": "유해한 출력의 생성을 방지하는 것은 1절에서 기술한 유형의 유해한 출력, 예를 들어 아동 성착취물, 표적 폭력 및 혐오, 보호 대상 집단에 차별적 결과를 초래하는 출력, 또는 안전하지 않은 코드 등을 통제하기 위한 테스트 및 평가(evaluation) 기법을 수반한다. Cohere는 또한 Cohere 고객이 사업을 영위하는 다양한 언어로 출력 생성을 테스트하고 평가(evaluation)한다.",
+   "marks": [
+    {
+     "t": "아동 성착취물, 표적 폭력 및 혐오, 보호 대상 집단에 차별적 결과를 초래하는 출력, 또는 안전하지 않은 코드 등을 통제하기 위한 테스트 및 평가(evaluation) 기법",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Guardrails, or what we call Safety Modes, are a feature that allows Cohere customers to exercise more precise control over model outputs. For example, a customer who uses Cohere's model for educational or journalistic purposes may want to enable generation of content about violent historical events in order to respond to requests for information. In that case, they could select Cohere's 'contextual' Safety Mode as appropriate for their use cases. In contrast, a customer who provides Cohere models to their large workforce may want to ensure that all employees use the models within prescribed, lower-risk limits. In this case, they may want to set guardrails to 'strict' Safety Mode in order to prohibit profanity, explicit content, and violence. Beyond simply offering these features, Cohere conducts various evaluations to ensure that models actually adhere to these guardrails.",
+   "ko": "가드레일, 즉 Cohere가 Safety Mode라고 부르는 기능은 Cohere 고객이 모델 출력을 보다 정밀하게 통제할 수 있도록 한다. 예를 들어, 교육이나 언론 목적으로 Cohere의 모델을 사용하는 고객은 정보 요청에 응답하기 위해 폭력적인 역사적 사건에 관한 콘텐츠 생성을 허용하고자 할 수 있다. 이 경우 고객은 자신의 사용 사례에 적절한 것으로서 Cohere의 'contextual' Safety Mode를 선택할 수 있다. 반면, 대규모 인력에게 Cohere 모델을 제공하는 고객은 모든 직원이 규정된 저위험 한도 내에서 모델을 사용하도록 보장하고자 할 수 있다. 이 경우 고객은 비속어, 노골적인 콘텐츠, 폭력을 금지하기 위해 가드레일을 'strict' Safety Mode로 설정하고자 할 수 있다. Cohere는 단순히 이러한 기능을 제공하는 데 그치지 않고, 모델이 실제로 이러한 가드레일을 준수하는지 확인하기 위해 다양한 평가(evaluation)를 수행한다.",
+   "marks": [
+    {
+     "t": "모델이 실제로 이러한 가드레일을 준수하는지 확인하기 위해 다양한 평가(evaluation)를 수행한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Over-refusal refers to when a model misinterprets a safe prompt as a harmful one and does not comply with a user's request. Over-refusal can cause performance problems. But if a model refuses to complete tasks in a way that is detrimental to a specific group or individual - if it more frequently refuses to summarize non-English resumes, for example it can also be a potential harm in itself. We aim to minimize such false-positive cases.",
+   "ko": "과잉거부는 모델이 안전한 프롬프트를 유해한 것으로 잘못 해석하여 사용자의 요청에 응하지 않는 경우를 말한다. 과잉거부는 성능 문제를 야기할 수 있다. 그러나 모델이 특정 집단이나 개인에게 불리한 방식으로 과업 완수를 거부한다면(예를 들어 영어가 아닌 이력서의 요약을 더 빈번하게 거부한다면) 그 자체로 잠재적 피해가 될 수도 있다. Cohere는 이러한 오탐(false-positive) 사례를 최소화하는 것을 목표로 한다.",
+   "marks": [
+    {
+     "t": "모델이 특정 집단이나 개인에게 불리한 방식으로 과업 완수를 거부한다면",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Cohere's models, their training data, and the guardrails within which they operate are dynamically updated throughout the development process to achieve the three harm mitigation objectives described above.",
+   "ko": "Cohere의 모델, 모델의 학습 데이터, 모델이 작동하는 가드레일은 위에서 기술한 세 가지 피해 완화 목표를 달성하기 위해 개발 과정 전반에 걸쳐 동적으로 업데이트된다."
+  },
+  {
+   "type": "p",
+   "en": "Where Cohere has direct visibility into the use of its models during deployment, we use that visibility to monitor for malicious attempts to prompt our models for harmful outputs, revoking access from accounts that abuse our systems. Cohere partners closely with customers who deploy Cohere's AI solutions privately or on third-party managed platforms to ensure that they understand and recognize their responsibility for implementing appropriate monitoring controls during deployment.",
+   "ko": "Cohere가 배포 중 자사 모델의 사용 현황을 직접 파악할 수 있는 경우, Cohere는 이를 활용하여 모델이 유해한 출력을 생성하도록 프롬프트를 입력하는 악의적 시도를 모니터링하고, 시스템을 남용하는 계정의 접근 권한을 회수한다. Cohere는 Cohere의 AI 솔루션을 비공개로 또는 제3자 관리 플랫폼에 배포하는 고객과 긴밀히 협력하여, 고객이 배포 중 적절한 모니터링 통제를 이행할 책임을 이해하고 인식하도록 한다.",
+   "marks": [
+    {
+     "t": "모델이 유해한 출력을 생성하도록 프롬프트를 입력하는 악의적 시도를 모니터링하고, 시스템을 남용하는 계정의 접근 권한을 회수한다",
+     "k": "safety"
+    },
+    {
+     "t": "고객이 배포 중 적절한 모니터링 통제를 이행할 책임을 이해하고 인식하도록 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2c) Secure AI by design",
+   "ko": "2c) 설계 기반 AI 보안",
+   "id": "s79"
+  },
+  {
+   "type": "p",
+   "en": "The following table provides an overview of how the risk assessment and mitigation approaches described above are embedded throughout our models' lifecycle, drawing upon long-standing approaches to secure product development and emerging best practices and research for AI risk mitigation.",
+   "ko": "다음 표는 위에서 기술한 위험 평가 및 완화 접근 방식이 보안 제품 개발에 관한 오랜 접근 방식과 AI 위험 완화를 위한 새로운 모범 사례 및 연구를 바탕으로 Cohere 모델의 수명주기 전반에 어떻게 내재되어 있는지를 개괄한다.",
+   "marks": [
+    {
+     "t": "AI 위험 완화를 위한 새로운 모범 사례 및 연구를 바탕으로 Cohere 모델의 수명주기 전반에 어떻게 내재되어 있는지를 개괄한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "table",
+   "en": "| Stage | Key Risks | Key Mitigations We Apply | ⏎ | Data acquisition and preparation Data needs are analyzed and planned. Data is then collected, selected, cleaned, analyzed, and processed. Synthetic data is generated and validated. Once datasets are finalized, they are ingested to train a model. Data acquisition and preparation also functions as a circular process as new or updated data needs are identified and addressed throughout the lifecycle. | ● Data poisoning ● Supply chain vulnerabilities ● Model theft ● Insecure plugin design ● Unrepresentative data distributions ● Imbalance of data with harmful patterns and attributes vs. positive patterns and attributes ● Historically outdated representations in data ● Inaccurate proxies when used to measure representativeness or imbalances | ● Detailed data lineage controls, including tracking the source, pre-processing steps, storage location, and access permissions ● Supply chain controls for any third parties (e.g., data vendors or third-party data annotation) ● Traditional just-in-time access controls, robust authentication, zero-trust rules, etc. ● Data pre-processing (including cleaning, analysis, selection, etc.) ● Re-sampling, re-weighting, and re-balancing datasets to reduce identified representation issues or imbalances |",
+   "ko": "| 단계 | 주요 위험 | Cohere가 적용하는 주요 완화 조치 | ⏎ | 데이터 획득 및 준비 데이터 요구사항을 분석하고 계획한다. 이후 데이터를 수집, 선별, 정제, 분석, 처리한다. 합성 데이터를 생성하고 검증한다. 데이터셋이 확정되면 모델 학습을 위해 투입된다. 데이터 획득 및 준비는 수명주기 전반에 걸쳐 새롭거나 갱신된 데이터 요구사항이 식별되고 해결됨에 따라 순환적 과정으로도 기능한다. | ● 데이터 오염 ● 공급망 취약점 ● 모델 도난 ● 안전하지 않은 플러그인 설계 ● 대표성이 없는 데이터 분포 ● 유해한 패턴 및 속성을 지닌 데이터와 긍정적인 패턴 및 속성을 지닌 데이터 간의 불균형 ● 데이터 내 역사적으로 시대에 뒤떨어진 표상 ● 대표성이나 불균형 측정에 사용되는 부정확한 대리 지표 | ● 출처, 전처리 단계, 저장 위치, 접근 권한 추적을 포함한 상세한 데이터 파생 추적 통제 ● 모든 제3자(예: 데이터 공급업체 또는 제3자 데이터 주석 작업)에 대한 공급망 통제 ● 전통적인 적시(just-in-time) 접근 통제, 강력한 인증, 제로 트러스트 규칙 등 ● 데이터 전처리(정제, 분석, 선별 등 포함) ● 식별된 대표성 문제나 불균형을 줄이기 위한 데이터셋 재표집, 재가중, 재균형화 |"
+  },
+  {
+   "type": "table",
+   "en": "| testing Models are trained to perform across a range of tasks. Evaluations and testing for general performance, safety, and security occur throughout the lifecycle and include red teaming, evaluation with academic and industry benchmarks, and internal bespoke evaluations. Algorithms and training data are adjusted iteratively based on evaluation and testing results. | ● Data poisoning ● Data leakage ● Model theft ● Adversarial attacks ● Evaluation criteria and data are not representative of a population ● Disparate performance in different cases results in disproportionate impact on certain populations ● Models and data are fit for an aggregated, dominant population but sub-optimal for sub-groups within the population | ● Multi-disciplinary red teaming ● Independent third-party security testing, e.g., penetration testing ● Continuous monitoring to detect anomalies and security issues ● Multi-disciplinary red teaming ● Consultation of domain experts ● Multi-faceted evaluations, including standard benchmarks and proprietary evaluations based on identified possible harms and harm reduction objectives ● User research of local language and cultural contexts | ⏎ | Deployment and maintenance Models are deployed and subject to ongoing monitoring controls. | ● Prompt injection ● Insecure output handling ● Model denial of service ● Excessive agency ● Sensitive information disclosure ● Misuse ● Unexpected post-deployment usage patterns that were not accounted for and result in unmitigated risk | ● Blocklists, custom classifiers, and prompt injection guard filters, and human review to detect and intercept attempts to create unsafe outputs ● Specific mitigations applied based on deployment type, e.g., isolated customer environments with focus on remediating security vulnerabilities that coexist between traditional application security and AI security ● Security Information and Event Management (SIEM) system leveraging heuristics and advanced detection capabilities to identify potential threats ● 'Air-gapped\" safeguards to prevent lateral movement and unintended network calls across environments and kernel-based LLMs to prevent the leaking of shared memories or buffers that could expose sensitive data ● Blocklists ● Safety classifiers and human review to detect and intercept attempts to create unsafe outputs ● Human-interpretable explanation of outputs ● User research and customer feedback analysis | ⏎ | Improvement and further fine-tuning User feedback and user research are used for continuous incremental improvements. Fine-tuning may be leveraged by a deployer or by a developer to improve performance in a specific area. | ● Prompt injection ● Insecure input/output handling ● Model denial of service ● Excessive agency ● Sensitive information disclosure ● Adversarial attacks ● Evaluation criteria and data are not representative of a population ● Model design choices amplify performance disparity across different examples in the data | ● Responsible Disclosure Policy to incent third-party security vulnerability discovery ● Specific mitigations applied based on deployment type, e.g., isolated customer environments with focus on remediating security vulnerabilities that coexist between traditional application security and AI security ● Continuous evaluation and user research ● Programs to incentivize research, including research grants and participation in external independent research efforts. ● Multi-disciplinary red teaming |",
+   "ko": "| 테스트 모델은 다양한 과업을 수행하도록 학습된다. 일반 성능, 안전성, 보안성에 대한 평가(evaluation) 및 테스트는 수명주기 전반에 걸쳐 이루어지며, 레드티밍, 학계 및 업계 벤치마크를 활용한 평가(evaluation), 내부 맞춤형 평가(evaluation)를 포함한다. 알고리즘과 학습 데이터는 평가(evaluation) 및 테스트 결과에 따라 반복적으로 조정된다. | ● 데이터 오염 ● 데이터 유출 ● 모델 도난 ● 적대적 공격 ● 평가(evaluation) 기준 및 데이터가 모집단을 대표하지 못함 ● 사례별 성능 격차로 인해 특정 집단에 불균형적 영향이 발생함 ● 모델과 데이터가 집계된 지배적 모집단에는 적합하나 모집단 내 하위 집단에는 최적이 아님 | ● 다학제적 레드티밍 ● 독립적인 제3자 보안 테스트(예: 침투 테스트) ● 이상 징후 및 보안 문제 탐지를 위한 지속적 모니터링 ● 다학제적 레드티밍 ● 분야별 전문가 자문 ● 표준 벤치마크와, 식별된 잠재적 피해 및 피해 감소 목표에 기반한 자체 평가(evaluation)를 포함하는 다면적 평가(evaluation) ● 현지 언어 및 문화적 맥락에 관한 사용자 연구 | ⏎ | 배포 및 유지관리 모델이 배포되고 지속적인 모니터링 통제를 받는다. | ● 프롬프트 인젝션 ● 안전하지 않은 출력 처리 ● 모델 서비스 거부 ● 과도한 행위 주체성(excessive agency) ● 민감 정보 노출 ● 오용 ● 고려되지 않아 완화되지 않은 위험을 초래하는 예기치 못한 배포 후 사용 패턴 | ● 안전하지 않은 출력을 생성하려는 시도를 탐지하고 차단하기 위한 차단 목록, 맞춤형 분류기, 프롬프트 인젝션 방어 필터, 인적 검토 ● 배포 유형에 따라 적용되는 특정 완화 조치(예: 전통적 애플리케이션 보안과 AI 보안 사이에 공존하는 보안 취약점 해소에 중점을 둔 격리된 고객 환경) ● 잠재적 위협 식별을 위해 휴리스틱 및 고도화된 탐지 역량을 활용하는 보안 정보 및 이벤트 관리(SIEM) 시스템 ● 환경 간 수평 이동 및 의도치 않은 네트워크 호출을 방지하기 위한 '에어갭(air-gapped)\" 안전장치, 그리고 민감 데이터를 노출할 수 있는 공유 메모리나 버퍼의 유출을 방지하기 위한 커널 기반 거대 언어 모델 ● 차단 목록 ● 안전하지 않은 출력을 생성하려는 시도를 탐지하고 차단하기 위한 안전 분류기 및 인적 검토 ● 사람이 해석 가능한 출력 설명 ● 사용자 연구 및 고객 피드백 분석 | ⏎ | 개선 및 추가 미세조정(Fine-Tuning) 사용자 피드백과 사용자 연구는 지속적이고 점진적인 개선에 활용된다. 특정 영역의 성능 향상을 위해 배포자 또는 개발자가 미세조정(Fine-Tuning)을 활용할 수 있다. | ● 프롬프트 인젝션 ● 안전하지 않은 입력/출력 처리 ● 모델 서비스 거부 ● 과도한 행위 주체성(excessive agency) ● 민감 정보 노출 ● 적대적 공격 ● 평가(evaluation) 기준 및 데이터가 모집단을 대표하지 못함 ● 모델 설계 선택이 데이터 내 서로 다른 사례 간 성능 격차를 증폭함 | ● 제3자의 보안 취약점 발견을 장려하기 위한 책임 있는 공개 정책(Responsible Disclosure Policy) ● 배포 유형에 따라 적용되는 특정 완화 조치(예: 전통적 애플리케이션 보안과 AI 보안 사이에 공존하는 보안 취약점 해소에 중점을 둔 격리된 고객 환경) ● 지속적 평가(evaluation) 및 사용자 연구 ● 연구 보조금 및 외부 독립 연구 활동 참여를 포함한 연구 장려 프로그램 ● 다학제적 레드티밍 |"
+  },
+  {
+   "type": "h2",
+   "en": "3) Risk Assurance Mechanisms",
+   "ko": "3) 위험 보증 메커니즘",
+   "id": "s83"
+  },
+  {
+   "type": "p",
+   "en": "Assurance mechanisms are measures that provide confidence that risk mitigations are effective and expected risk mitigation objectives have been met. Assurance mechanisms are vital for enterprise businesses adopting AI technologies as they provide necessary safeguards, build trust, ensure compliance, and facilitate continuous improvement.",
+   "ko": "보증 메커니즘은 위험 완화 조치가 효과적이며 기대한 위험 완화 목표가 달성되었다는 확신을 제공하는 조치이다. 보증 메커니즘은 필요한 안전장치를 제공하고, 신뢰를 구축하며, 규정 준수를 보장하고, 지속적 개선을 촉진한다는 점에서 AI 기술을 도입하는 기업에 필수적이다."
+  },
+  {
+   "type": "p",
+   "en": "One approach to risk assurance in the AI industry is focused on risks described as catastrophic or severe, such as capabilities related to radiological and nuclear weapons, autonomy, and self-replication. In this context, thresholds relating to these potential catastrophic risks are developed, and the approach described in safety frameworks is designed to assess risks that are speculated to arise when models attain specific capabilities, such as the ability to perform autonomous research or facilitate biorisk. The models are then deemed to present 'unacceptable' levels of risk when certain capability levels are attained.",
+   "ko": "AI 업계에서 위험 보증에 대한 한 가지 접근 방식은 방사능 및 핵무기 관련 역량, 자율성, 자기 복제와 같이 파국적이거나 심각한 것으로 기술되는 위험에 초점을 맞춘다. 이러한 맥락에서 이들 잠재적 파국적 위험과 관련된 임계치가 개발되며, 안전 프레임워크에 기술된 접근 방식은 모델이 자율적 연구 수행 능력이나 생물학적 위험 조장 능력과 같은 특정 역량을 획득할 때 발생할 것으로 추정되는 위험을 평가(assessment)하도록 설계된다. 이후 모델이 특정 역량 수준에 도달하면 '수용 불가능한' 수준의 위험을 제기하는 것으로 간주된다.",
+   "marks": [
+    {
+     "t": "방사능 및 핵무기 관련 역량, 자율성, 자기 복제와 같이 파국적이거나 심각한 것으로 기술되는 위험에 초점을 맞춘다",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 자율적 연구 수행 능력이나 생물학적 위험 조장 능력과 같은 특정 역량을 획득할 때 발생할 것으로 추정되는 위험을 평가(assessment)하도록 설계된다",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 특정 역량 수준에 도달하면 '수용 불가능한' 수준의 위험을 제기하는 것으로 간주된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "While it is important to consider long-term, potential future risks associated with LLMs and the systems in which they are deployed, studies regarding the likelihood of these capabilities arising and leading to real-world harm are limited in their methodological maturity and transparency, often lacking clear theoretical threat models or developed empirical methods due to their nascency. For example, existing research into how LLMs may increase biorisks fails to account for entire risk chains beyond access to information, and does not systematically compare LLMs to other information access tools, such as the internet. More work is needed to develop methods for assessing these types of threats more reliably.",
+   "ko": "거대 언어 모델 및 그것이 배포되는 시스템과 관련된 장기적이고 잠재적인 미래 위험을 고려하는 것은 중요하지만, 이러한 역량이 발현되어 실제 피해로 이어질 가능성에 관한 연구는 방법론적 성숙도와 투명성 측면에서 한계가 있으며, 초기 단계에 있다는 특성상 명확한 이론적 위협 모델(Threat model)이나 발전된 실증적 방법이 결여된 경우가 많다. 예를 들어, 거대 언어 모델이 생물학적 위험을 어떻게 증가시킬 수 있는지에 관한 기존 연구는 정보 접근 이외의 전체 위험 연쇄를 고려하지 못하고 있으며, 거대 언어 모델을 인터넷과 같은 다른 정보 접근 도구와 체계적으로 비교하지도 않는다. 이러한 유형의 위협을 보다 신뢰성 있게 평가(assessment)하기 위한 방법을 개발하려면 더 많은 연구가 필요하다.",
+   "marks": [
+    {
+     "t": "이러한 역량이 발현되어 실제 피해로 이어질 가능성에 관한 연구는 방법론적 성숙도와 투명성 측면에서 한계가 있으며",
+     "k": "key"
+    },
+    {
+     "t": "거대 언어 모델이 생물학적 위험을 어떻게 증가시킬 수 있는지에 관한 기존 연구는 정보 접근 이외의 전체 위험 연쇄를 고려하지 못하고 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 유형의 위협을 보다 신뢰성 있게 평가(assessment)하기 위한 방법을 개발하려면 더 많은 연구가 필요하다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Cohere's approach to risk assurance, and to determining when models and systems are sufficiently safe and secure to be made available to our customers, is focused on risks that are known, measurable, or observable today. Assurance mechanisms applied to provide confidence that risk mitigations are effective, as outlined below, are similarly focused on assurance measures that can be measured or observed based on today's state-of-the-art practices. Some examples include our evaluations and testing, network and API penetration tests, and robust management of container vulnerability in private deployments.",
+   "ko": "위험 보증, 그리고 모델과 시스템이 고객에게 제공될 만큼 충분히 안전하고 보안성을 갖추었는지 판단하는 데 대한 Cohere의 접근 방식은 현재 알려져 있거나, 측정 가능하거나, 관찰 가능한 위험에 초점을 맞춘다. 아래에 기술한 바와 같이, 위험 완화 조치가 효과적이라는 확신을 제공하기 위해 적용되는 보증 메커니즘 역시 현재의 최첨단 실행 방안에 기반하여 측정하거나 관찰할 수 있는 보증 조치에 초점을 맞춘다. 그 예로는 Cohere의 평가(evaluation) 및 테스트, 네트워크 및 애플리케이션 프로그래밍 인터페이스 (API) 침투 테스트, 비공개 배포 환경에서의 강력한 컨테이너 취약점 관리 등이 있다.",
+   "marks": [
+    {
+     "t": "Cohere의 접근 방식은 현재 알려져 있거나, 측정 가능하거나, 관찰 가능한 위험에 초점을 맞춘다",
+     "k": "key"
+    },
+    {
+     "t": "Cohere의 평가(evaluation) 및 테스트, 네트워크 및 애플리케이션 프로그래밍 인터페이스 (API) 침투 테스트",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Cohere's approach to assurance mechanisms is dynamic, much like the approach to risk assessment and mitigation outlined above, and entails multiple layers of assurance involving both internal and external parties. This approach meets the needs of enterprises with robust risk environments like financial services and public sector.",
+   "ko": "보증 메커니즘에 대한 Cohere의 접근 방식은 위에서 기술한 위험 평가 및 완화 접근 방식과 마찬가지로 동적이며, 내부 및 외부 당사자가 모두 참여하는 다층적 보증을 수반한다. 이 접근 방식은 금융 서비스 및 공공 부문과 같이 엄격한 위험 관리 환경을 갖춘 기업의 요구를 충족한다.",
+   "marks": [
+    {
+     "t": "내부 및 외부 당사자가 모두 참여하는 다층적 보증을 수반한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Cohere's approach to risk assurance also includes clear, final points of evaluation to validate that a model is safe, secure, and ready to be made available to our customers.",
+   "ko": "Cohere의 위험 보증 접근 방식에는 모델이 안전하고 보안성을 갖추었으며 고객에게 제공될 준비가 되었음을 검증하기 위한 명확한 최종 평가(evaluation) 지점도 포함된다.",
+   "marks": [
+    {
+     "t": "모델이 안전하고 보안성을 갖추었으며 고객에게 제공될 준비가 되었음을 검증하기 위한 명확한 최종 평가(evaluation) 지점",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The final authority to determine if our products are safe, secure, and ready to be made available to our customers is delegated by Cohere's CEO to Cohere's Chief Scientist. This decision is made on the basis of final, multi-faceted evaluations and testing. In addition, customers deploying Cohere solutions may have additional tests or evaluations they wish to conduct prior to launching a product or system that integrates Cohere models or systems. Cohere provides necessary support to customers to meet any such additional thresholds.",
+   "ko": "Cohere의 제품이 안전하고 보안성을 갖추었으며 고객에게 제공될 준비가 되었는지 판단하는 최종 권한은 Cohere의 CEO가 Cohere의 Chief Scientist에게 위임한다. 이 결정은 다각적인 최종 평가(evaluation) 및 테스트를 근거로 이루어진다. 또한 Cohere 솔루션을 배포하는 고객은 Cohere 모델이나 시스템을 통합한 제품 또는 시스템을 출시하기 전에 추가 테스트나 평가(evaluation)를 수행하고자 할 수 있다. Cohere는 고객이 이러한 추가 임계치를 충족할 수 있도록 필요한 지원을 제공한다.",
+   "marks": [
+    {
+     "t": "판단하는 최종 권한은 Cohere의 CEO가 Cohere의 Chief Scientist에게 위임한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3a) Evaluations and benchmarking",
+   "ko": "3a) 평가(evaluation) 및 벤치마크 측정",
+   "id": "s91"
+  },
+  {
+   "type": "p",
+   "en": "As described above, Cohere conducts evaluations throughout the model development cycle, using both internal and external evaluation benchmarks. This ensures that our models are not only high-performing, but also safe and reliable. When a model is nearing launch, the modeling function at Cohere conducts a comprehensive final evaluation, assessing both performance and safety metrics. This critical step ensures that our models meet the highest standards before deployment. For example, we evaluate new model versions with industry-standard benchmarks like BOLD (Biases in Open-ended Language Generation) and publish the results.",
+   "ko": "앞서 기술한 바와 같이, Cohere는 모델 개발 주기 전반에 걸쳐 내부 및 외부 평가(evaluation) 벤치마크를 모두 활용하여 평가(evaluation)를 수행한다. 이를 통해 Cohere의 모델이 높은 성능을 갖출 뿐만 아니라 안전하고 신뢰할 수 있도록 보장한다. 모델 출시가 임박하면 Cohere의 모델링 조직은 성능 지표와 안전 지표를 모두 평가(assessment)하는 포괄적인 최종 평가(evaluation)를 수행한다. 이 중요한 단계는 Cohere의 모델이 배포 전에 최고 수준의 기준을 충족하도록 보장한다. 예를 들어, Cohere는 BOLD(Biases in Open-ended Language Generation)와 같은 업계 표준 벤치마크로 새로운 모델 버전을 평가(evaluation)하고 그 결과를 공개한다.",
+   "marks": [
+    {
+     "t": "모델 출시가 임박하면 Cohere의 모델링 조직은 성능 지표와 안전 지표를 모두 평가(assessment)하는 포괄적인 최종 평가(evaluation)를 수행한다",
+     "k": "safety"
+    },
+    {
+     "t": "BOLD(Biases in Open-ended Language Generation)와 같은 업계 표준 벤치마크로 새로운 모델 버전을 평가(evaluation)하고 그 결과를 공개한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Any performance regressions identified during any such testing or evaluations, including the final pre-deployment evaluation, are investigated and mitigated before deployment. We consider models safe and secure to launch when our evaluations and tests demonstrate no significant regressions compared to our previously launched model versions, so that performance and security is maintained or improved for every new significant model version. This is Cohere's bright line for determining when a model is 'acceptable' from a risk management perspective and ready to be launched.",
+   "ko": "최종 배포 전 평가를 포함하여 이러한 테스트나 평가(evaluation) 과정에서 확인된 성능 퇴행은 배포 전에 조사되고 완화된다. Cohere는 평가(evaluation) 및 테스트 결과 이전에 출시한 모델 버전 대비 유의미한 퇴행이 없음이 입증될 때 모델이 출시하기에 안전하고 보안성을 갖추었다고 간주하며, 이를 통해 모든 주요 신규 모델 버전에서 성능과 보안성이 유지되거나 향상되도록 한다. 이것이 위험 관리 관점에서 모델이 '수용 가능'하며 출시 준비가 되었는지를 판단하는 Cohere의 명확한 기준선(bright line)이다.",
+   "marks": [
+    {
+     "t": "최종 배포 전 평가를 포함하여 이러한 테스트나 평가(evaluation) 과정에서 확인된 성능 퇴행은 배포 전에 조사되고 완화된다.",
+     "k": "safety"
+    },
+    {
+     "t": "Cohere는 평가(evaluation) 및 테스트 결과 이전에 출시한 모델 버전 대비 유의미한 퇴행이 없음이 입증될 때 모델이 출시하기에 안전하고 보안성을 갖추었다고 간주하며",
+     "k": "key"
+    },
+    {
+     "t": "위험 관리 관점에서 모델이 '수용 가능'하며 출시 준비가 되었는지를 판단하는 Cohere의 명확한 기준선(bright line)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "At Cohere, we prioritize secure AI through a rigorous evaluation process. When a model is nearing launch, the modeling organization conducts a comprehensive final evaluation, assessing both performance and safety metrics. This critical step ensures that our models meet the highest standards before deployment.",
+   "ko": "Cohere는 엄격한 평가(evaluation) 프로세스를 통해 안전한 AI를 우선시한다. 모델 출시가 임박하면 모델링 조직은 성능 지표와 안전 지표를 모두 평가(assessment)하는 포괄적인 최종 평가(evaluation)를 수행한다. 이 중요한 단계는 Cohere의 모델이 배포 전에 최고 수준의 기준을 충족하도록 보장한다.",
+   "marks": [
+    {
+     "t": "Cohere는 엄격한 평가(evaluation) 프로세스를 통해 안전한 AI를 우선시한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3b) Internal and third-party vulnerability testing",
+   "ko": "3b) 내부 및 제3자 취약점 테스트",
+   "id": "s95"
+  },
+  {
+   "type": "p",
+   "en": "Prior to major model releases, Cohere also performs robust vulnerability management testing, including independent third-party penetration testing of model containers, and vulnerability patching and mitigation, to ensure that models are secure enough to launch.",
+   "ko": "주요 모델 공개에 앞서 Cohere는 모델이 출시하기에 충분한 보안성을 갖추도록 보장하기 위해 모델 컨테이너에 대한 독립적인 제3자 침투 테스트, 취약점 패치 및 완화를 포함한 강력한 취약점 관리 테스트도 수행한다.",
+   "marks": [
+    {
+     "t": "모델 컨테이너에 대한 독립적인 제3자 침투 테스트, 취약점 패치 및 완화를 포함한 강력한 취약점 관리 테스트",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Cohere conducts multidisciplinary red teaming during both the model development phase and post-launch. These red teaming exercises may include independent external parties, such as NIST and Humane Intelligence, and are conducted based on realistic use cases to attempt to break the model's ability to fulfill alignment on risk mitigation goals in order to elicit information about areas of improvement. Results are tracked over time to identify any performance regressions that similarly are mitigated prior to model deployment. For example, Cohere conducted red-teaming on robustness to uncover weaknesses in the model's ability to follow safety instructions even when the specific language used in instructions was changed. The data produced from this exercise was used to develop a robustness evaluation, which was then run on subsequent model versions to provide confidence that the model would be resilient to variability in real-life usage.",
+   "ko": "Cohere는 모델 개발 단계와 출시 후 단계 모두에서 다학제적 레드티밍을 수행한다. 이러한 레드티밍 활동에는 NIST, Humane Intelligence와 같은 독립적인 외부 당사자가 참여할 수 있으며, 개선이 필요한 영역에 관한 정보를 도출하기 위해 현실적인 사용 사례를 기반으로 위험 완화 목표에 대한 정렬을 이행하는 모델의 능력을 무력화하는 시도로 수행된다. 결과는 시간 경과에 따라 추적되어 성능 퇴행을 식별하며, 식별된 퇴행은 마찬가지로 모델 배포 전에 완화된다. 예를 들어, Cohere는 지시문에 사용된 특정 표현이 바뀌더라도 모델이 안전 지시를 따르는 능력에 어떤 약점이 있는지 밝혀내기 위해 강건성에 관한 레드티밍을 수행하였다. 이 활동에서 생성된 데이터는 강건성 평가(evaluation)를 개발하는 데 사용되었으며, 이 평가(evaluation)는 이후 후속 모델 버전에 실행되어 모델이 실제 사용 환경의 가변성에 대해 회복력을 갖출 것이라는 확신을 제공하였다.",
+   "marks": [
+    {
+     "t": "Cohere는 모델 개발 단계와 출시 후 단계 모두에서 다학제적 레드티밍을 수행한다.",
+     "k": "key"
+    },
+    {
+     "t": "NIST, Humane Intelligence와 같은 독립적인 외부 당사자가 참여할 수 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "위험 완화 목표에 대한 정렬을 이행하는 모델의 능력을 무력화하는 시도로 수행된다",
+     "k": "safety"
+    },
+    {
+     "t": "식별된 퇴행은 마찬가지로 모델 배포 전에 완화된다",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 안전 지시를 따르는 능력에 어떤 약점이 있는지 밝혀내기 위해 강건성에 관한 레드티밍을 수행하였다",
+     "k": "safety"
+    },
+    {
+     "t": "이 활동에서 생성된 데이터는 강건성 평가(evaluation)를 개발하는 데 사용되었으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3c) Customer-led testing and evaluation",
+   "ko": "3c) 고객 주도 테스트 및 평가(evaluation)",
+   "id": "s98"
+  },
+  {
+   "type": "p",
+   "en": "Considering Cohere's focus on serving enterprise customers, assurance mechanisms may also vary by specific deployment and customer context. Cohere provides targeted guidance to customers to assist them in implementing appropriate AI risk mitigation measures for their own AI-driven products and services. This includes Cohere's AI Security Guide and Enterprise Guide to AI Safety. Where requested, Cohere also works in partnership with its customers to conduct supplementary assurance evaluations or testing as needed. In this way, the analysis of whether a model is 'acceptable' from a risk management perspective must be adapted to the customer context, and must be able to adapt to new requirements or needs that emerge post-deployment. Assurance here means working with our customers to ensure that our models and systems conform to their risk management obligations and standards.",
+   "ko": "Cohere가 기업 고객 지원에 초점을 맞추고 있음을 고려할 때, 보증 메커니즘은 구체적인 배포 및 고객 맥락에 따라 달라질 수도 있다. Cohere는 고객이 자체 AI 기반 제품 및 서비스에 적절한 AI 위험 완화 조치를 구현할 수 있도록 맞춤형 지침을 제공한다. 여기에는 Cohere의 AI Security Guide와 Enterprise Guide to AI Safety가 포함된다. 요청이 있는 경우 Cohere는 필요에 따라 고객과 협력하여 보완적인 보증 평가(evaluation)나 테스트를 수행하기도 한다. 이러한 방식으로, 위험 관리 관점에서 모델이 '수용 가능'한지에 대한 분석은 고객 맥락에 맞게 조정되어야 하며, 배포 후 새롭게 나타나는 요구사항이나 필요에도 적응할 수 있어야 한다. 여기서 보증이란 Cohere의 모델과 시스템이 고객의 위험 관리 의무 및 기준에 부합하도록 고객과 협력하는 것을 의미한다.",
+   "marks": [
+    {
+     "t": "Cohere는 고객이 자체 AI 기반 제품 및 서비스에 적절한 AI 위험 완화 조치를 구현할 수 있도록 맞춤형 지침을 제공한다.",
+     "k": "key"
+    },
+    {
+     "t": "Cohere의 AI Security Guide와 Enterprise Guide to AI Safety",
+     "k": "safety"
+    },
+    {
+     "t": "고객과 협력하여 보완적인 보증 평가(evaluation)나 테스트를 수행하기도 한다",
+     "k": "safety"
+    },
+    {
+     "t": "위험 관리 관점에서 모델이 '수용 가능'한지에 대한 분석은 고객 맥락에 맞게 조정되어야 하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "4) Transparency",
+   "ko": "4) 투명성",
+   "id": "s100"
+  },
+  {
+   "type": "p",
+   "en": "To provide information to those outside Cohere - customers, government agencies, and the wider public - and to contribute to the development of best practices, we record and make available information about our risk management practices.",
+   "ko": "고객, 정부 기관, 일반 대중 등 Cohere 외부에 정보를 제공하고 모범 사례 개발에 기여하기 위해, Cohere는 위험 관리 실행 방안에 관한 정보를 기록하고 공개한다.",
+   "marks": [
+    {
+     "t": "Cohere는 위험 관리 실행 방안에 관한 정보를 기록하고 공개한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "4a) Documenting and sharing our practices",
+   "ko": "4a) 실행 방안의 문서화 및 공유",
+   "id": "s102"
+  },
+  {
+   "type": "p",
+   "en": "Documentation is a key aspect of our accountability to our customers, partners, relevant government agencies, and the wider public. To promote transparency about our practices, we:",
+   "ko": "문서화는 고객, 파트너, 관련 정부 기관 및 일반 대중에 대한 Cohere의 책임성에서 핵심적인 측면이다. 실행 방안에 관한 투명성을 증진하기 위해 Cohere는 다음을 수행한다.",
+   "marks": [
+    {
+     "t": "실행 방안에 관한 투명성을 증진하기 위해",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Publish documentation regarding our models' capabilities, evaluation results, configurable secure AI features, and model limitations for developers to safely and securely build AI systems using Cohere solutions. This includes model documentation, such as Cohere's Usage Policy and Model Cards, and technical guides, such as Cohere's LLM University.",
+   "ko": "개발자가 Cohere 솔루션을 활용하여 안전하고 보안성 있게 AI 시스템을 구축할 수 있도록 모델의 역량, 평가(evaluation) 결과, 구성 가능한 보안 AI 기능, 모델의 한계에 관한 문서를 공개함. 여기에는 Cohere의 Usage Policy 및 모델카드와 같은 모델 문서, Cohere의 LLM University와 같은 기술 가이드가 포함됨.",
+   "marks": [
+    {
+     "t": "모델의 역량, 평가(evaluation) 결과, 구성 가능한 보안 AI 기능, 모델의 한계에 관한 문서를 공개함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Are publishing this Framework to share our approach on AI risk management for secure AI.",
+   "ko": "안전한 AI를 위한 AI 위험 관리 접근 방식을 공유하기 위해 본 프레임워크를 공개함.",
+   "marks": [
+    {
+     "t": "안전한 AI를 위한 AI 위험 관리 접근 방식을 공유하기 위해 본 프레임워크를 공개함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Offer insights into our data management, security measures, and compliance through our Trust Center.",
+   "ko": "Trust Center를 통해 데이터 관리, 보안 조치 및 규정 준수에 관한 정보를 제공함."
+  },
+  {
+   "type": "li",
+   "en": "Provide guidance to our Customers on how they can manage AI risk for their use cases with our AI Security Guide and Enterprise Guide to AI Safety.",
+   "ko": "AI Security Guide와 Enterprise Guide to AI Safety를 통해 고객이 자신의 사용 사례에 대한 AI 위험을 관리하는 방법에 관한 지침을 제공함.",
+   "marks": [
+    {
+     "t": "고객이 자신의 사용 사례에 대한 AI 위험을 관리하는 방법에 관한 지침을 제공함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "4b) Continuous improvement",
+   "ko": "4b) 지속적 개선",
+   "id": "s108"
+  },
+  {
+   "type": "p",
+   "en": "We are constantly improving our practices to better mitigate AI risks. To identify areas of improvement, we engage with our customers, partners, and the wider public by:",
+   "ko": "Cohere는 AI 위험을 더 효과적으로 완화하기 위해 실행 방안을 지속적으로 개선하고 있다. 개선이 필요한 영역을 식별하기 위해 Cohere는 다음과 같은 방식으로 고객, 파트너 및 일반 대중과 소통한다.",
+   "marks": [
+    {
+     "t": "Cohere는 AI 위험을 더 효과적으로 완화하기 위해 실행 방안을 지속적으로 개선하고 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Incentivizing third-party vulnerability discovery via clear protections for legitimate research practices in our Responsible Disclosure Policy",
+   "ko": "Responsible Disclosure Policy에서 정당한 연구 실행 방안에 대한 명확한 보호를 제공함으로써 제3자의 취약점 발견을 장려함",
+   "marks": [
+    {
+     "t": "제3자의 취약점 발견을 장려함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Conducting user research to understand what challenges and risks can be expected in enterprise use cases",
+   "ko": "기업 사용 사례에서 예상되는 과제와 위험을 파악하기 위한 사용자 연구 수행",
+   "marks": [
+    {
+     "t": "기업 사용 사례에서 예상되는 과제와 위험을 파악하기 위한 사용자 연구 수행",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Engaging with the broader community via dedicated user forums",
+   "ko": "전용 사용자 포럼을 통한 광범위한 커뮤니티와의 소통"
+  },
+  {
+   "type": "p",
+   "en": "We are constantly internally evaluating the tools, techniques, and products we use across the deployment lifecycle to identify and mitigate AI risks as the industry evolves and new techniques become available.",
+   "ko": "Cohere는 업계가 발전하고 새로운 기법이 등장함에 따라 AI 위험을 식별하고 완화하기 위해, 배포 수명주기 전반에 걸쳐 사용하는 도구, 기법 및 제품을 내부적으로 지속적으로 평가(evaluation)하고 있다.",
+   "marks": [
+    {
+     "t": "AI 위험을 식별하고 완화하기 위해, 배포 수명주기 전반에 걸쳐 사용하는 도구, 기법 및 제품을 내부적으로 지속적으로 평가(evaluation)하고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "5) Research and External Stakeholder Engagement",
+   "ko": "5) 연구 및 외부 이해관계자 참여",
+   "id": "s114"
+  },
+  {
+   "type": "h3",
+   "en": "5a) Support for independent research",
+   "ko": "5a) 독립 연구 지원",
+   "id": "s115"
+  },
+  {
+   "type": "p",
+   "en": "The field of AI risk management extends beyond individual company practices to encompass a wide ecosystem of researchers across industry, government, civil society, and academia. This collective effort contributes to advancing research into AI risks, as well as developing techniques and best practices that can be adopted by model developers.",
+   "ko": "AI 위험 관리 분야는 개별 기업의 실행 방안을 넘어 산업계, 정부, 시민사회, 학계 전반의 연구자로 구성된 광범위한 생태계를 아우른다. 이러한 집단적 노력은 AI 위험에 관한 연구를 진전시키고, 모델 개발자가 채택할 수 있는 기법과 모범 사례를 개발하는 데 기여한다.",
+   "marks": [
+    {
+     "t": "AI 위험 관리 분야는 개별 기업의 실행 방안을 넘어 산업계, 정부, 시민사회, 학계 전반의 연구자로 구성된 광범위한 생태계를 아우른다.",
+     "k": "key"
+    },
+    {
+     "t": "AI 위험에 관한 연구를 진전시키고, 모델 개발자가 채택할 수 있는 기법과 모범 사례를 개발하는 데 기여한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Cohere actively contributes to this ecosystem, in large part through our open science research lab, Cohere For AI (C4AI). In addition to conducting fundamental research - on topics including, but not limited to AI risks - C4AI supports a community of over 3000 researchers around the world to connect, collaborate, and share research with one another, and expand how AI research is done and by whom. Additionally, C4AI directly supports independent researcher efforts through a Research Grant Program, which provides researchers in nonprofit, public sector, or academic settings access to use Cohere's models for research or public interest projects via subsidized access to our API.",
+   "ko": "Cohere는 주로 오픈 사이언스 연구소인 Cohere For AI(C4AI)를 통해 이러한 생태계에 적극적으로 기여하고 있다. C4AI는 AI 위험을 포함하되 이에 국한되지 않는 주제에 관한 기초 연구를 수행하는 한편, 전 세계 3000명 이상의 연구자로 구성된 커뮤니티를 지원하여 연구자들이 서로 교류하고 협업하며 연구를 공유하고, AI 연구가 수행되는 방식과 그 주체의 범위를 확장할 수 있도록 한다. 또한 C4AI는 Research Grant Program을 통해 독립 연구자의 활동을 직접 지원한다. 이 프로그램은 비영리, 공공 부문 또는 학계에 속한 연구자에게 Cohere의 API에 대한 보조금 지원 접근을 제공하여, 연구 또는 공익 프로젝트에 Cohere의 모델을 사용할 수 있도록 한다.",
+   "marks": [
+    {
+     "t": "C4AI는 AI 위험을 포함하되 이에 국한되지 않는 주제에 관한 기초 연구를 수행하는 한편",
+     "k": "safety"
+    },
+    {
+     "t": "C4AI는 Research Grant Program을 통해 독립 연구자의 활동을 직접 지원한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "With respect to AI security, Cohere's bug bounty program provides monetary incentives to promote and advance the understanding of AI security. Cohere also actively contributes to thought leadership initiatives in collaboration with industry peers to improve the overall security of the AI value chain.",
+   "ko": "AI 보안과 관련하여, Cohere의 버그바운티 프로그램은 AI 보안에 대한 이해를 증진하고 발전시키기 위해 금전적 인센티브를 제공한다. 또한 Cohere는 AI 가치사슬 전반의 보안성을 향상하기 위해 업계 동료들과 협력하여 사고 리더십(thought leadership) 이니셔티브에 적극적으로 기여하고 있다.",
+   "marks": [
+    {
+     "t": "Cohere의 버그바운티 프로그램은 AI 보안에 대한 이해를 증진하고 발전시키기 위해 금전적 인센티브를 제공한다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 가치사슬 전반의 보안성을 향상하기 위해 업계 동료들과 협력하여",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "5b) External engagement",
+   "ko": "5b) 외부 참여",
+   "id": "s119"
+  },
+  {
+   "type": "p",
+   "en": "Cohere is committed to building a responsible, safe, and secure AI ecosystem, and actively engages with external actors to continuously improve our own practices, as well as to advance the state-of-the art on AI risk management.",
+   "ko": "Cohere는 책임 있고 안전하며 보안성 있는 AI 생태계 구축에 전념하고 있으며, 자체 실행 방안을 지속적으로 개선하고 AI 위험 관리의 최첨단을 발전시키기 위해 외부 주체들과 적극적으로 협력한다.",
+   "marks": [
+    {
+     "t": "책임 있고 안전하며 보안성 있는 AI 생태계 구축에 전념",
+     "k": "safety"
+    },
+    {
+     "t": "AI 위험 관리의 최첨단을 발전시키기 위해 외부 주체들과 적극적으로 협력한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In particular, Cohere contributes to the development of critical guidance and industry standards with organisations such as:",
+   "ko": "특히 Cohere는 다음과 같은 조직과 함께 핵심 지침 및 산업 표준 개발에 기여하고 있다.",
+   "marks": [
+    {
+     "t": "핵심 지침 및 산업 표준 개발에 기여",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "OWASP Top 10 for Large Language Models and Generative AI",
+   "ko": "OWASP Top 10 for Large Language Models and Generative AI"
+  },
+  {
+   "type": "li",
+   "en": "CoSAI (Coalition for Secure AI) - founding member",
+   "ko": "CoSAI (Coalition for Secure AI) - 창립 회원",
+   "marks": [
+    {
+     "t": "CoSAI (Coalition for Secure AI) - 창립 회원",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "CSA (Cloud Security Alliance)",
+   "ko": "CSA (Cloud Security Alliance)"
+  },
+  {
+   "type": "li",
+   "en": "ML Commons",
+   "ko": "ML Commons"
+  },
+  {
+   "type": "p",
+   "en": "Cohere also engages in cooperation with international AI Safety Institutes and external researchers to advance the scientific understanding of AI risks, for example by submitting our public models for inclusion on public benchmarks and red teaming exercises.",
+   "ko": "또한 Cohere는 AI 위험에 대한 과학적 이해를 증진하기 위해 각국의 AI 안전 연구소 및 외부 연구자와 협력하고 있으며, 그 예로 공개 벤치마크 및 레드티밍 활동에 포함될 수 있도록 Cohere의 공개 모델을 제출하고 있다.",
+   "marks": [
+    {
+     "t": "AI 위험에 대한 과학적 이해를 증진하기 위해 각국의 AI 안전 연구소 및 외부 연구자와 협력",
+     "k": "key"
+    },
+    {
+     "t": "공개 벤치마크 및 레드티밍 활동에 포함될 수 있도록 Cohere의 공개 모델을 제출",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We wish to thank researchers at the Centre for Democracy and Technology and the Ada Lovelace Institute for their expertise in reviewing and providing feedback on the Cohere Secure AI Frontier Model Framework.",
+   "ko": "Cohere Secure AI Frontier Model Framework를 검토하고 피드백을 제공하는 데 전문성을 발휘해 준 Centre for Democracy and Technology와 Ada Lovelace Institute의 연구자들에게 감사를 표한다.",
+   "marks": [
+    {
+     "t": "Cohere Secure AI Frontier Model Framework를 검토하고 피드백을 제공",
+     "k": "safety"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "Enterprise customers may be subject to legal obligations not to make decisions that are discriminatory based on legally protected grounds.",
+   "ko": "기업 고객은 법적으로 보호되는 사유에 근거하여 차별적인 결정을 내리지 않을 법적 의무를 부담할 수 있다.",
+   "linked": true
+  }
+ ]
+}

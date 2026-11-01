@@ -3,9 +3,12 @@ import anthropicRsp34 from "../data/translations/anthropic-rsp-v3-4.json";
 import anthropicS1 from "../data/translations/anthropic-s1-2026-risk-factors.json";
 import caSb53 from "../data/translations/ca-sb53.json";
 import chinaFramework3 from "../data/translations/china-ai-safety-governance-3-0.json";
+import cohereSecureAi from "../data/translations/cohere-secure-ai-2025-02.json";
 import claudeConstitution from "../data/translations/claude-constitution-2026-01.json";
+import g42Fsf from "../data/translations/g42-fsf-2025-02.json";
 import gdmFsf31 from "../data/translations/gdm-fsf-v3-1.json";
 import ilSb315 from "../data/translations/il-sb315.json";
+import nvidiaFra from "../data/translations/nvidia-frontier-risk-assessment.json";
 import metaSsf21 from "../data/translations/meta-ssf-v2-1.json";
 import microsoftFgf from "../data/translations/microsoft-fgf-2026-02.json";
 import nyRaise2026 from "../data/translations/ny-raise-act-2026.json";
@@ -54,7 +57,7 @@ export type TranslationDoc = {
   blocks: TranslationBlock[];
 };
 
-export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, microsoftFgf, amazonFmsf, chinaFramework3, caSb53, nyRaise2026, ilSb315] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
+export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, microsoftFgf, amazonFmsf, chinaFramework3, nvidiaFra, cohereSecureAi, g42Fsf, caSb53, nyRaise2026, ilSb315] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
 
 export const dotDate = (iso: string) => iso.replaceAll("-", ".");
 
