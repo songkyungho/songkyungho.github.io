@@ -1,0 +1,108 @@
+{
+ "slug": "turing-heretical-1951",
+ "title": "앨런 튜링, 「지능을 가진 기계, 이단적 이론」",
+ "original_title": "Intelligent Machinery, A Heretical Theory (Alan Turing)",
+ "publisher": "Alan Turing",
+ "published": "1951",
+ "source_url": "https://turingarchive.kings.cam.ac.uk/publications-lectures-and-talks-amtb/amt-b-4",
+ "source_note": "B. J. 코플랜드 편 『The Essential Turing』(옥스퍼드대학교출판부, 2004) 12장의 튜링 본문. 킹스 칼리지 소장 타자 원고(AMT/B/4)를 편집한 판이다. 대괄호는 편자가 보충한 말이고, 그중 ‘[기계가 무슨 말을 하려는지 이해하려 노력하는 것,]’은 튜링이 손으로 써넣은 구절이다. 편자 해설과 주석은 옮기지 않았다.",
+ "source_label": "원고 보기 (튜링 아카이브)",
+ "summary": "맨체스터 BBC 라디오 토론 프로그램 「'51 Society」에서 한 발표의 원고다. '기계는 생각을 대신해 줄 수 없다'는 통념을 반박하며, 경험으로 배우는 기계를 어떻게 만들고 가르칠지 스케치한다. 마지막 문단에서 기계가 생각하기 시작하면 우리의 미약한 능력을 금세 앞지르고, 어느 단계에서는 버틀러의 『에레혼』에서처럼 통제권을 쥘 것이라 예상해야 한다고 말한다. AI가 인간을 넘어설 위험을 컴퓨터 과학의 창시자가 직접 말한 가장 이른 기록 가운데 하나다.",
+ "doc_kind": "강연",
+ "image": "/images/translations/turing-heretical-1951-cover.webp",
+ "og_image": "/images/translations/turing-heretical-1951-cover.jpg",
+ "image_caption": "원고 첫 대목 (『The Essential Turing』 판본에서 다시 짬)",
+ "translated": "2026-11-02",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 7,
+  "sections": 0,
+  "items": 0,
+  "words_en": 2059
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "‘You cannot make a machine to think for you.’ This is a commonplace that is usually accepted without question. It will be the purpose of this paper to question it.",
+   "ko": "‘기계가 당신 대신 생각하도록 만들 수는 없다.’ 이는 대개 의문 없이 받아들여지는 통념이다. 이 글의 목적은 이 통념에 의문을 제기하는 것이다."
+  },
+  {
+   "type": "p",
+   "en": "Most machinery developed for commercial purposes is intended to carry out some very specific job, and to carry it out with certainty and considerable speed. Very often it does the same series of operations over and over again without any variety. This fact about the actual machinery available is a powerful argument to many in favour of the slogan quoted above. To a mathematical logician this argument is not available, for it has been shown that there are machines theoretically possible which will do something very close to thinking. They will, for instance, test the validity of a formal proof in the system of Principia Mathematica, or even tell of a formula of that system whether it is provable or disprovable. In the case that the formula is neither provable nor disprovable such a machine certainly does not behave in a very satisfactory manner, for it continues to work indefinitely without producing any result at all, but this cannot be regarded as very different from the reaction of the mathematicians, who have for instance worked for hundreds of years on the question as to whether Fermat’s last theorem is true or not. For the case of machines of this kind a more subtle argument is necessary. By Gödel’s famous theorem, or some similar argument, one can show that however the machine is constructed there are bound to be cases where the machine fails to give an answer, but a mathematician would be able to. On the other hand, the machine has certain advantages over the mathematician. Whatever it does can be relied upon, assuming no mechanical ‘breakdown’, whereas the mathematician makes a certain proportion of mistakes. I believe that this danger of the mathematician making mistakes is an unavoidable corollary of his power of sometimes hitting upon an entirely new method. This seems to be confirmed by the well known fact that the most reliable people will not usually hit upon really new methods.",
+   "ko": "상업적 목적으로 개발된 기계 대부분은 어떤 매우 구체적인 작업을 수행하도록, 그것도 확실하고 상당히 빠르게 수행하도록 만들어진다. 이러한 기계는 아무런 변화 없이 같은 일련의 동작을 반복하는 경우가 매우 많다. 실제로 이용 가능한 기계에 관한 이러한 사실은 많은 이들에게 위에서 인용한 구호를 뒷받침하는 강력한 논거가 된다. 그러나 수리논리학자에게는 이 논거가 통하지 않는다. 이론적으로 가능한 기계 중에 생각하는 것에 매우 가까운 일을 해내는 기계가 있음이 이미 증명되었기 때문이다. 예를 들어 그러한 기계는 『수학 원리』(Principia Mathematica) 체계에서 형식적 증명의 타당성을 검사할 수 있고, 심지어 그 체계의 어떤 식이 증명 가능한지 반증 가능한지를 판별할 수도 있다. 식이 증명 가능하지도 반증 가능하지도 않은 경우, 이러한 기계는 아무런 결과도 내지 못한 채 무한정 작동을 계속하므로 그다지 만족스럽게 동작한다고 하기는 어렵다. 그러나 이는 예컨대 페르마(Fermat)의 마지막 정리가 참인지 아닌지라는 문제를 두고 수백 년 동안 매달려 온 수학자들의 반응과 크게 다르다고 볼 수 없다. 이런 종류의 기계에 대해서는 보다 정교한 논증이 필요하다. Gödel의 유명한 정리나 그와 유사한 논증을 이용하면, 기계를 어떻게 만들든 기계는 답을 내지 못하지만 수학자는 답을 낼 수 있는 경우가 반드시 존재함을 보일 수 있다. 반면 기계는 수학자에 비해 몇 가지 이점을 가진다. 기계적 ‘고장’이 없다고 가정하면 기계가 하는 일은 무엇이든 신뢰할 수 있지만, 수학자는 일정 비율로 실수를 범한다. 나는 수학자가 실수를 범할 위험이 때때로 완전히 새로운 방법을 찾아내는 그의 능력에 불가피하게 따르는 귀결이라고 본다. 가장 믿을 만한 사람들이 대개 진정으로 새로운 방법을 찾아내지 못한다는 잘 알려진 사실이 이를 뒷받침하는 것으로 보인다."
+  },
+  {
+   "type": "p",
+   "en": "My contention is that machines can be constructed which will simulate the behaviour of the human mind very closely. They will make mistakes at times, and at times they may make new and very interesting statements, and on the whole the output of them will be worth attention to the same sort of extent as the output of a human mind. The content of this statement lies in the greater frequency expected for the true statements, and it cannot, I think, be given an exact statement. It would not, for instance, be suYcient to say simply that the machine will make any true statement sooner or later, for an example of such a machine would be one which makes all possible statements sooner or later. We know how to construct these, and as they would (probably) produce true and false statements about equally frequently, their verdicts would be quite worthless. It would be the actual reaction of the machine to circumstances that would prove my contention, if indeed it can be proved at all.",
+   "ko": "나의 주장은 인간 정신의 행동을 매우 근접하게 모사하는 기계를 만들 수 있다는 것이다. 그러한 기계는 때로 실수를 범할 것이고, 때로는 새롭고 매우 흥미로운 진술을 내놓을 수도 있으며, 전체적으로 그 출력은 인간 정신의 출력과 같은 정도로 주목할 가치가 있을 것이다. 이 진술의 핵심은 참인 진술이 더 높은 빈도로 나올 것으로 기대된다는 데 있으며, 나는 이를 정확한 형태로 진술할 수는 없다고 생각한다. 예를 들어 기계가 조만간 어떤 참인 진술이든 내놓을 것이라고 말하는 것만으로는 충분하지 않다. 그러한 기계의 예로, 가능한 모든 진술을 조만간 내놓는 기계를 들 수 있기 때문이다. 우리는 이런 기계를 만드는 방법을 알고 있으며, 이런 기계는 (아마도) 참인 진술과 거짓인 진술을 거의 같은 빈도로 내놓을 것이므로 그 판정은 전혀 쓸모가 없을 것이다. 나의 주장이 애초에 증명될 수 있다면, 그것을 증명하는 것은 상황에 대한 기계의 실제 반응일 것이다.",
+   "marks": [
+    {
+     "t": "나의 주장은 인간 정신의 행동을 매우 근접하게 모사하는 기계를 만들 수 있다는 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Let us go rather more carefully into the nature of this ‘proof ’. It is clearly possible to produce a machine which would give a very good account of itself for any range of tests, if the machine were made suYciently elaborate. However, this again would hardly be considered an adequate proof. Such a machine would give itself away by making the same sort of mistake over and over again, and being quite unable to correct itself, or to be corrected by argument from outside. If the machine were able in some way to ‘learn by experience’ it would be much more impressive. If this were the case there seems to be no real reason why one should not start from a comparatively simple machine, and, by subjecting it to a suitable range of ‘experience’ transform it into one which was more elaborate, and was able to deal with a far greater range of contingencies. This process could probably be hastened by a suitable selection of the experiences to which it was subjected. This might be called ‘education’. But here we have to be careful. It would be quite easy to arrange the experiences in such a way that they automatically caused the structure of the machine to build up into a previously intended form, and this would obviously be a gross form of cheating, almost on a par with having a man inside the machine. Here again the criterion as to what would be considered reasonable in the way of ‘education’ cannot be put into mathematical terms, but I suggest that the following would be adequate in practice. Let us suppose that it is intended that the machine shall understand English, and that owing to its having no hands or feet, and not needing to eat, nor desiring to smoke, it will occupy its time mostly in playing games such as Chess and GO, and possibly Bridge. The machine is provided with a typewriter keyboard on which any remarks to it are typed, and it also types out any remarks that it wishes to make. I suggest that the education of the machine should be entrusted to some highly competent schoolmaster who is interested in the project but who is forbidden any detailed knowledge of the inner workings of the machine. The mechanic who has constructed the machine, however, is permitted to keep the machine in running order, and if he suspects that the machine has been operating incorrectly may put it back to one of its previous positions and ask the schoolmaster to repeat his lessons from that point on, but he may not take any part in the teaching. Since this procedure would only serve to test the bona fides of the mechanic, I need hardly say that it would not be adopted in the experimental stages. As I see it, this education process would in practice be an essential to the production of a reasonably intelligent machine within a reasonably short space of time. The human analogy alone suggests this.",
+   "ko": "이 ‘증명’의 성격을 좀 더 신중하게 살펴보자. 기계를 충분히 정교하게 만든다면, 어떤 범위의 시험에 대해서도 매우 훌륭한 성과를 보이는 기계를 만들어 내는 것은 분명 가능하다. 그러나 이 역시 적절한 증명으로 여겨지기는 어려울 것이다. 그러한 기계는 같은 종류의 실수를 반복해서 범하면서 스스로 바로잡지도, 외부의 논증으로 바로잡히지도 못함으로써 정체를 드러낼 것이다. 만약 기계가 어떤 식으로든 ‘경험을 통해 학습’할 수 있다면 훨씬 더 인상적일 것이다. 그렇다면 비교적 단순한 기계에서 출발하여 적절한 범위의 ‘경험’을 거치게 함으로써, 더 정교하고 훨씬 더 넓은 범위의 우발적 상황에 대처할 수 있는 기계로 변모시키지 못할 진정한 이유는 없어 보인다. 이 과정은 기계가 거치는 경험을 적절히 선별함으로써 아마도 앞당길 수 있을 것이다. 이를 ‘교육’이라 부를 수 있을 것이다. 그러나 여기서 우리는 주의해야 한다. 경험을 배열하여 기계의 구조가 자동적으로 미리 의도된 형태로 구축되도록 하는 것은 아주 쉬울 것이며, 이는 명백히 노골적인 속임수로서 기계 안에 사람을 넣어 두는 것과 거의 다를 바 없을 것이다. 여기서도 ‘교육’으로서 무엇이 합당한 것으로 여겨질지에 대한 기준을 수학적 용어로 표현할 수는 없지만, 나는 다음과 같은 방식이 실제로는 적절할 것이라고 제안한다. 기계가 영어를 이해하도록 하는 것이 목표이고, 기계는 손발이 없고 먹을 필요도 없으며 담배를 피우고 싶어 하지도 않으므로 체스, 바둑, 그리고 어쩌면 브리지 같은 게임을 하며 대부분의 시간을 보낸다고 가정하자. 기계에는 타자기 자판이 제공되며, 기계에게 하는 말은 모두 이 자판으로 입력되고, 기계 역시 하고 싶은 말을 이 자판으로 타이핑해 출력한다. 나는 기계의 교육을 이 프로젝트에 관심이 있지만 기계의 내부 작동에 대해 상세히 아는 것은 금지된, 매우 유능한 교사에게 맡겨야 한다고 제안한다. 다만 기계를 만든 기계공은 기계가 정상적으로 작동하도록 유지하는 것이 허용되며, 기계가 잘못 작동해 왔다고 의심되면 기계를 이전 상태 중 하나로 되돌리고 교사에게 그 시점부터 수업을 반복해 달라고 요청할 수 있지만, 가르치는 일에는 어떤 식으로도 관여할 수 없다. 이 절차는 기계공의 진정성을 검증하는 역할만 할 것이므로, 실험 단계에서는 채택되지 않으리라는 점은 굳이 말할 필요도 없다. 내가 보기에 이러한 교육 과정은 실제로 합리적으로 짧은 기간 안에 상당히 지능적인 기계를 만들어 내는 데 필수적일 것이다. 인간과의 유비만으로도 이를 짐작할 수 있다.",
+   "marks": [
+    {
+     "t": "경험을 배열하여 기계의 구조가 자동적으로 미리 의도된 형태로 구축되도록 하는 것은 아주 쉬울 것이며",
+     "k": "safety"
+    },
+    {
+     "t": "기계가 잘못 작동해 왔다고 의심되면 기계를 이전 상태 중 하나로 되돌리고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "I may now give some indication of the way in which such a machine might be expected to function. The machine would incorporate a memory. This does not need very much explanation. It would simply be a list of all the statements that had been made to it or by it, and all the moves it had made and the cards it had played in its games. This would be listed in chronological order. Besides this straightforward memory there would be a number of ‘indexes of experiences’. To explain this idea I will suggest the form which one such index might possibly take. It might be an alphabetical index of the words that had been used giving the ‘times’ at which they had been used, so that they could be looked up in the memory. Another such index might contain patterns of men on parts of a GO board that had occurred. At comparatively late stages of education the memory might be extended to include important parts of the configuration of the machine at each moment, or in other words it would begin to remember what its thoughts had been. This would give rise to fruitful new forms of indexing. New forms of index might be introduced on account of special features observed in the indexes already used. The indexes would be used in this sort of way. Whenever a choice has to be made as to what to do next, features of the present situation are looked up in the indexes available, and the previous choice in the similar situations, and the outcome, good or bad, is discovered. The new choice is made accordingly. This raises a number of problems. If some of the indications are favourable and some are unfavourable what is one to do? The answer to this will probably differ from machine to machine and will also vary with its degree of education. At first probably some quite crude rule will suYce, e.g. to do whichever has the greatest number of votes in its favour. At a very late stage of education the whole question of procedure in such cases will probably have been investigated by the machine itself, by means of some kind of index, and this may result in some highly sophisticated, and, one hopes, highly satisfactory, form of rule. It seems probable however that the comparatively crude forms of rule will themselves be reasonably satisfactory, so that progress can on the whole be made in spite of the crudeness of the choice [of] rules. This seems to be verified by the fact that engineering problems are sometimes solved by the crudest rule of thumb procedure which only deals with the most superficial aspects of the problem, e.g. whether a function increases or decreases with one of its variables. Another problem raised by this picture of the way behaviour is determined is the idea of ‘favourable outcome’. Without some such idea, corresponding to the ‘pleasure principle’ of the psychologists, it is very diYcult to see how to proceed. Certainly it would be most natural to introduce some such thing into the machine. I suggest that there should be two keys which can be manipulated by the schoolmaster, and which represent the ideas of pleasure and pain. At later stages in education the machine would recognise certain other conditions as desirable owing to their having been constantly associated in the past with pleasure, and likewise certain others as undesirable. Certain expressions of anger on the part of the schoolmaster might, for instance, be recognised as so ominous that they could never be overlooked, so that the schoolmaster would find that it became unnecessary to ‘apply the cane’ any more.",
+   "ko": "이제 그러한 기계가 어떤 방식으로 작동하리라 예상할 수 있는지 어느 정도 제시할 수 있겠다. 기계에는 기억이 포함될 것이다. 이는 그다지 많은 설명이 필요하지 않다. 그것은 단순히 기계에게 했거나 기계가 한 모든 진술, 그리고 기계가 게임에서 둔 모든 수와 낸 모든 카드의 목록일 것이다. 이는 시간순으로 기록될 것이다. 이러한 단순한 기억 외에도 여러 개의 ‘경험 색인’이 있을 것이다. 이 개념을 설명하기 위해 그러한 색인 하나가 취할 수 있는 형태를 제시하겠다. 그것은 사용된 단어들의 알파벳순 색인으로, 각 단어가 사용된 ‘시각’을 기재하여 기억에서 찾아볼 수 있게 하는 것일 수 있다. 또 다른 색인은 바둑판의 일부 영역에 나타났던 돌의 배치 패턴을 담을 수 있다. 교육의 비교적 후반 단계에서는 기억이 매 순간 기계 구성(configuration)의 중요한 부분까지 포함하도록 확장될 수 있으며, 다시 말해 기계는 자신의 생각이 무엇이었는지 기억하기 시작할 것이다. 이는 새롭고 유익한 형태의 색인을 낳을 것이다. 이미 사용 중인 색인에서 관찰된 특수한 특징 때문에 새로운 형태의 색인이 도입될 수도 있다. 색인은 대략 다음과 같은 방식으로 사용될 것이다. 다음에 무엇을 할지 선택해야 할 때마다 현재 상황의 특징을 이용 가능한 색인에서 찾아보고, 유사한 상황에서 이전에 했던 선택과 그 결과가 좋았는지 나빴는지를 알아낸다. 그에 따라 새로운 선택이 이루어진다. 이는 여러 문제를 제기한다. 일부 지표는 유리하고 일부는 불리하다면 어떻게 해야 하는가? 이에 대한 답은 아마 기계마다 다를 것이며, 기계의 교육 정도에 따라서도 달라질 것이다. 처음에는 아마 꽤 조잡한 규칙, 예컨대 찬성 표가 가장 많은 쪽을 택하는 규칙으로도 충분할 것이다. 교육의 아주 후반 단계에서는 그러한 경우의 처리 절차에 관한 문제 전체를 기계 스스로 어떤 종류의 색인을 통해 조사했을 것이며, 그 결과 매우 정교하고, 바라건대 매우 만족스러운 형태의 규칙이 나올 수 있다. 그러나 비교적 조잡한 형태의 규칙 자체도 상당히 만족스러울 것으로 보이며, 따라서 선택[의] 규칙이 조잡함에도 불구하고 전반적으로는 진전이 이루어질 수 있을 것이다. 이는 공학 문제가 때때로 문제의 가장 피상적인 측면, 예컨대 어떤 함수가 그 변수 중 하나에 따라 증가하는지 감소하는지만을 다루는 가장 조잡한 경험칙 절차로 해결된다는 사실로 확인되는 듯하다. 행동이 결정되는 방식에 대한 이러한 그림이 제기하는 또 다른 문제는 ‘유리한 결과’라는 개념이다. 심리학자들의 ‘쾌락 원리’에 해당하는 그러한 개념 없이는 어떻게 진행해야 할지 알기가 매우 어렵다. 분명 그런 것을 기계에 도입하는 것이 가장 자연스러울 것이다. 나는 교사가 조작할 수 있으며 쾌락과 고통이라는 개념을 나타내는 두 개의 키를 두어야 한다고 제안한다. 교육의 후반 단계에서 기계는 과거에 쾌락과 지속적으로 연관되어 왔다는 이유로 특정한 다른 조건들을 바람직한 것으로 인식하고, 마찬가지로 다른 특정 조건들을 바람직하지 않은 것으로 인식할 것이다. 예를 들어 교사의 특정한 분노 표현은 결코 간과할 수 없을 만큼 불길한 것으로 인식되어, 교사는 더 이상 ‘회초리를 들’ 필요가 없게 되었음을 알게 될 것이다.",
+   "marks": [
+    {
+     "t": "기계는 자신의 생각이 무엇이었는지 기억하기 시작할 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "교사가 조작할 수 있으며 쾌락과 고통이라는 개념을 나타내는 두 개의 키를 두어야 한다고 제안한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To make further suggestions along these lines would perhaps be unfruitful at this stage, as they are likely to consist of nothing more than an analysis of actual methods of education applied to human children. There is, however, one feature that I would like to suggest should be incorporated in the machines, and that is a ‘random element’. Each machine should be supplied with a tape bearing a random series of figures, e.g. 0 and 1 in equal quantities, and this series of figures should be used in the choices made by the machine. This would result in the behaviour of the machine not being by any means completely determined by the experiences to which it was subjected, and would have some valuable uses when one was experimenting with it. By faking the choices made one would be able to control the development of the machine to some extent. One might, for instance, insist on the choice made being a particular one at, say, 10 particular places, and this would mean that about one machine in 1024 or more would develop to as high a degree as the one which had been faked. This cannot very well be given an accurate statement because of the subjective nature of the idea of ‘degree of development’ to say nothing of the fact that the machine that had been faked might have been also fortunate in its unfaked choices.",
+   "ko": "이러한 방향으로 더 많은 제안을 하는 것은 현 단계에서는 아마 별 성과가 없을 것이다. 그러한 제안은 인간 아이들에게 적용되는 실제 교육 방법을 분석하는 것 이상이 되지 않을 가능성이 크기 때문이다. 그러나 기계에 포함되어야 한다고 제안하고 싶은 특징이 하나 있는데, 바로 ‘무작위 요소’이다. 각 기계에는 무작위 숫자열, 예컨대 0과 1이 같은 수만큼 기록된 테이프가 제공되어야 하며, 이 숫자열은 기계가 하는 선택에 사용되어야 한다. 그 결과 기계의 행동은 기계가 겪은 경험에 의해 결코 완전히 결정되지 않게 될 것이며, 이는 기계를 대상으로 실험할 때 몇 가지 귀중한 용도가 있을 것이다. 이루어지는 선택을 조작함으로써 기계의 발달을 어느 정도 통제할 수 있을 것이다. 예를 들어 이를테면 10개의 특정 지점에서 특정한 선택이 이루어지도록 강제할 수 있는데, 이는 1024대 또는 그 이상 중 약 한 대의 기계가 조작된 기계만큼 높은 수준으로 발달하리라는 것을 의미한다. 이를 정확하게 진술하기는 어려운데, ‘발달 정도’라는 개념이 주관적이기 때문이며, 조작된 기계가 조작되지 않은 선택에서도 운이 좋았을 수 있다는 사실은 말할 것도 없다.",
+   "marks": [
+    {
+     "t": "기계의 행동은 기계가 겪은 경험에 의해 결코 완전히 결정되지 않게 될 것이며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Let us now assume, for the sake of argument, that these machines are a genuine possibility, and look at the consequences of constructing them. To do so would of course meet with great opposition, unless we have advanced greatly in religious toleration from the days of Galileo. There would be great opposition from the intellectuals who were afraid of being put out of a job. It is probable though that the intellectuals would be mistaken about this. There would be plenty to do, [trying to understand what the machines were trying to say,] i.e. in trying to keep one’s intelligence up to the standard set by the machines, for it seems probable that once the machine thinking method had started, it would not take long to outstrip our feeble powers. There would be no question of the machines dying, and they would be able to converse with each other to sharpen their wits. At some stage therefore we should have to expect the machines to take control, in the way that is mentioned in Samuel Butler’s ‘Erewhon’.",
+   "ko": "이제 논의를 위해 이러한 기계가 실제로 가능하다고 가정하고, 이를 만드는 일이 가져올 결과를 살펴보자. 우리가 갈릴레이(Galileo) 시대 이후 종교적 관용 면에서 크게 진보하지 않았다면, 그런 기계를 만드는 일은 물론 큰 반대에 부딪힐 것이다. 일자리를 잃을까 두려워하는 지식인들로부터 큰 반대가 있을 것이다. 그러나 지식인들은 이에 대해 아마 잘못 생각하고 있는 것일 터이다. 할 일은 많을 것이다. [기계가 무슨 말을 하려는지 이해하려 노력하는 것,] 즉 자신의 지능을 기계가 설정한 수준에 맞추어 유지하려 노력하는 일 말이다. 기계적 사고 방식이 일단 시작되면 우리의 미약한 능력을 앞지르는 데 오래 걸리지 않을 것으로 보이기 때문이다. 기계가 죽는 일은 없을 것이며, 기계들은 서로 대화하며 지혜를 연마할 수 있을 것이다. 따라서 어느 단계에서는 새뮤얼 버틀러(Samuel Butler)의 『에레혼』(Erewhon)에 언급된 방식으로 기계가 통제권을 장악할 것을 예상해야 할 것이다.",
+   "marks": [
+    {
+     "t": "기계적 사고 방식이 일단 시작되면 우리의 미약한 능력을 앞지르는 데 오래 걸리지 않을 것으로 보이기 때문이다",
+     "k": "safety"
+    },
+    {
+     "t": "기계가 죽는 일은 없을 것이며, 기계들은 서로 대화하며 지혜를 연마할 수 있을 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "따라서 어느 단계에서는 새뮤얼 버틀러(Samuel Butler)의 『에레혼』(Erewhon)에 언급된 방식으로 기계가 통제권을 장악할 것을 예상해야 할 것이다.",
+     "k": "key"
+    }
+   ]
+  }
+ ]
+}
