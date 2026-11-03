@@ -13,11 +13,11 @@ export default function WritingPage() {
     .map(({ slug, title, publication, issue, year, month, day, section, kind, sourceUrl, migrationStatus, note }) => ({
       slug, title, publication, issue, year, month, day, section, kind, sourceUrl, migrationStatus, note,
     }));
-  // 번역은 '번역' 카테고리로 따로 둔다. 본문은 /translations에 있고 목록에만 섞는다.
+  // 번역은 '번역' 카테고리로 따로 둔다. 본문은 /translations에 있고 목록에만 섞는다. 매체 자리에는 원문 발행 기관을 쓴다.
   const translated = translations.map((doc) => {
     const [year, month, day] = doc.translated.split("-");
     return {
-      slug: doc.slug, title: listTitle(doc), publication: "번역", issue: null, year, month: String(Number(month)), day: String(Number(day)),
+      slug: doc.slug, title: listTitle(doc), publication: doc.publisher, issue: null, year, month: String(Number(month)), day: String(Number(day)),
       section: "번역", kind: "translation", sourceUrl: null, migrationStatus: "상세 페이지 완료", note: null,
       href: `/translations/${doc.slug}`,
     };
