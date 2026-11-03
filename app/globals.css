@@ -115,7 +115,7 @@ main { min-height: calc(100vh - 68px); }
 
 .talk-photos, .writing-photos, .media-photos { gap: 12px; }
 .talk-photos img, .writing-photos img, .media-photos img { width: 190px; height: 130px; object-fit: cover; border-radius: 3px; box-shadow: var(--shadow-img); transition: transform .3s cubic-bezier(.2,.7,.2,1); }
-.writing-photos a:hover img { transform: translateY(-4px); }
+.writing-photos a:hover img, .media-photos a:hover img { transform: translateY(-4px); }
 
 .award-row { display: flex; align-items: center; gap: 14px; }
 .award-row img { width: 56px; height: auto; box-shadow: var(--shadow-img); }
