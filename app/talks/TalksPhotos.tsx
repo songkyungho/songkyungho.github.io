@@ -1,4 +1,8 @@
 const photos = [
+  { src: "/images/talks/talk-yonsei-ai-safety-2026.jpg", alt: "연세대 정치외교학과 학술강연 「AI 안전은 누가 정하는가: 평가 기준을 둘러싼 정치」 포스터" },
+  { src: "/images/talks/talk-aisi-openai-workshop-2026.jpg", alt: "Korea AISI × OpenAI Joint Safety & Security Intelligence Workshop 참석자 단체사진" },
+  { src: "/images/talks/talk-symposium-2026-panel.jpg", alt: "2026 AI 연구기관 성과공유 심포지엄 패널 발언" },
+  { src: "/images/talks/talk-symposium-2026-group.jpg", alt: "2026 AI 연구기관 성과공유 심포지엄 참석자 단체사진" },
   { src: "/images/talks/talk-soongsil-baird-2026.jpg", alt: "2026 베어드 AI 렉처 「AI는 전쟁을 어떻게 바꾸는가?」 포스터" },
   { src: "/images/talks/talk-nazarbayev-2026.jpg", alt: "Nazarbayev University 특강 AI Governance and Safety in Korea 포스터" },
   { src: "/images/talks/talk-symposium-2025.webp", alt: "2025 AI 연구기관 성과공유 심포지엄 발표" },
