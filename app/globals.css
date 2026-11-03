@@ -124,8 +124,6 @@ main { min-height: calc(100vh - 68px); }
 .note-with-badge img { width: 26px; height: auto; border-radius: 3px; }
 
 .archive-block { padding-top: 28px; }
-.press-block .archive-tools { justify-content: flex-start; border-bottom: 1px solid var(--ink); }
-.press-block .archive-tools h2 { margin: 0; font-size: 1rem; }
 .archive-tools { display: flex; justify-content: space-between; gap: 24px; align-items: end; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
 .filter-row { display: flex; flex-wrap: wrap; gap: 20px; }
 .filter-row button { padding: 4px 0; border: 0; border-bottom: 1px solid transparent; background: transparent; color: var(--muted); font: inherit; font-size: .73rem; cursor: pointer; }
@@ -158,6 +156,8 @@ main { min-height: calc(100vh - 68px); }
 .archive-section-line { margin-top: 18px; }
 .writing-tools { padding-top: 17px; }
 .archive-writing-list { padding: 0; }
+.media-press-list { margin-top: 28px; }
+.media-press-list .writing-row:first-child { border-top: 1px solid var(--line); }
 .archive-writing-list .writing-row { grid-template-columns: 70px minmax(0, 1fr) 18px; }
 .archive-writing-list .writing-meta { margin: 0 0 3px; color: var(--accent); font-size: .66rem; }
 .archive-migration-note { max-width: 690px; margin: 18px 0 10px; color: var(--muted); font-size: .72rem; }
