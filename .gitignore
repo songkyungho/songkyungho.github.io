@@ -39,3 +39,7 @@ yarn-error.log*
 
 .claude/launch.json
 tsconfig.tsbuildinfo
+
+# 빌드 산출물 (dist는 git 밖)
+/dist
+/.wrangler
