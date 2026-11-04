@@ -1,0 +1,270 @@
+{
+ "slug": "new-delhi-declaration-2026",
+ "title": "뉴델리 AI 임팩트 정상회의 선언",
+ "original_title": "AI Impact Summit Declaration (New Delhi Declaration on AI Impact)",
+ "publisher": "AI Impact Summit",
+ "published": "2026-02-21",
+ "source_url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2231208&reg=1&lang=1",
+ "source_note": "인도 정부 보도자료 부록에 실린 전문. 지지국 표는 옮기지 않았다.",
+ "source_label": "원문 보기 (인도 PIB)",
+ "summary": "2026년 2월 뉴델리 AI 임팩트 정상회의 선언이다. 인적 자본, 사회적 역량 강화, 신뢰, 효율, 과학, AI 자원 민주화, 경제 성장의 일곱 축에 따라 자발적 이니셔티브를 정리했다. 구속력은 없고 각국 주권 존중을 강조한다. 미국, 영국, 중국을 포함한 나라들이 지지했다.",
+ "doc_kind": "선언",
+ "translated": "2026-11-05",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/new-delhi-declaration-2026-cover.webp",
+ "og_image": "/images/translations/new-delhi-declaration-2026-cover.jpg",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "stats": {
+  "blocks": 28,
+  "sections": 9,
+  "items": 0,
+  "words_en": 918
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Preamble",
+   "ko": "전문",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "Inspired by the principle of “ सर्वजन हिताय, सर्वजन सुखाय ” (Welfare for all, Happiness of all), we believe that AI’s promise is best realized only when its benefits are shared by humanity.",
+   "ko": "\"सर्वजन हिताय, सर्वजन सुखाय\"(모두의 복지, 모두의 행복)라는 원칙에 따라, 우리는 AI의 혜택이 인류 전체에 공유될 때에만 AI의 가능성이 가장 잘 실현된다고 믿는다."
+  },
+  {
+   "type": "p",
+   "en": "We, the participants from countries and international organizations, gathered in New Delhi on 19 February 2026 to hold the AI Impact Summit. The advent of AI marks an inflection point in the trajectory of technological evolution. The choices that we make today will shape the AI-enabled world that future generations will inherit.",
+   "ko": "각국과 국제기구에서 온 참가자인 우리는 2026년 2월 19일 뉴델리에 모여 AI Impact Summit을 개최하였다. AI의 등장은 기술 진화의 궤적에서 하나의 변곡점이다. 오늘 우리가 내리는 선택이 미래 세대가 물려받을 AI 기반 세계를 형성할 것이다."
+  },
+  {
+   "type": "p",
+   "en": "This calls for further international cooperation and multistakeholder engagement across our countries along the seven Chakras (pillars) of the AI Impact Summit centred around the principles of development of human capital; broadening access for social empowerment; trustworthiness of AI systems; energy efficiency of AI systems; use of AI in science; democratizing AI resources; and use of AI for economic growth and social good. In complementarity with existing international and other initiatives, we will work to foster shared understanding, while respecting national sovereignty, on how AI could be made to serve humanity, noting the initiatives across the seven Chakras (pillars) of the Summit.",
+   "ko": "이에 따라 AI Impact Summit의 일곱 개 Chakras(축)를 따라 우리 국가들 사이에서 국제 협력과 다중 이해관계자 참여를 한층 더 강화할 필요가 있다. 일곱 개 Chakras(축)는 인적 자본 개발, 사회적 역량 강화를 위한 접근성 확대, AI 시스템의 신뢰성, AI 시스템의 에너지 효율성, 과학 분야의 AI 활용, AI 자원의 민주화, 경제 성장과 사회적 공익을 위한 AI 활용이라는 원칙을 중심으로 한다. 우리는 기존의 국제적 이니셔티브 및 기타 이니셔티브와 상호 보완적으로, 국가 주권을 존중하면서 AI가 인류에 봉사하도록 하는 방안에 관한 공동의 이해를 증진하기 위해 노력할 것이며, 정상회의의 일곱 개 Chakras(축) 전반에 걸친 이니셔티브에 주목한다.",
+   "marks": [
+    {
+     "t": "우리 국가들 사이에서 국제 협력과 다중 이해관계자 참여를 한층 더 강화할 필요가 있다",
+     "k": "key"
+    },
+    {
+     "t": "AI 시스템의 신뢰성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Democratizing AI Resources",
+   "ko": "AI 자원의 민주화",
+   "id": "s4"
+  },
+  {
+   "type": "p",
+   "en": "Robust digital infrastructure and meaningful and affordable connectivity are prerequisites for deploying AI and unlocking its full potential. Inspired by the principle of “Vasudhaiva Kutumbakam” (the world is one family), we recognize the importance of enhancing the affordability of and access to AI resources that would be critical to enabling all countries to develop, adopt and deploy AI for the benefit of their citizens.",
+   "ko": "견고한 디지털 인프라와 실질적이고 저렴한 연결성은 AI를 배치하고 그 잠재력을 온전히 발현하기 위한 전제 조건이다. \"Vasudhaiva Kutumbakam\"(세계는 한 가족이다)이라는 원칙에 따라, 우리는 AI 자원의 경제적 부담 가능성과 접근성을 높이는 것이 중요함을 인식한다. 이는 모든 국가가 자국 시민의 이익을 위해 AI를 개발·도입·배치할 수 있도록 하는 데 핵심적이다.",
+   "marks": [
+    {
+     "t": "우리는 AI 자원의 경제적 부담 가능성과 접근성을 높이는 것이 중요함을 인식한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To this effect, we take note of the Charter for the Democratic Diffusion of AI as a voluntary and non-binding framework to promote access to foundational AI resources, support locally relevant innovation, and strengthen resilient AI ecosystems while respecting national laws.",
+   "ko": "이를 위해 우리는 Charter for the Democratic Diffusion of AI에 주목한다. 이 헌장은 국내법을 존중하면서 기초 AI 자원에 대한 접근을 촉진하고, 지역 실정에 맞는 혁신을 지원하며, 회복력 있는 AI 생태계를 강화하기 위한 자발적이고 비구속적인 프레임워크이다.",
+   "marks": [
+    {
+     "t": "기초 AI 자원에 대한 접근을 촉진하고, 지역 실정에 맞는 혁신을 지원하며, 회복력 있는 AI 생태계를 강화하기 위한 자발적이고 비구속적인 프레임워크",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Economic Growth and Social Good",
+   "ko": "경제 성장과 사회적 공익",
+   "id": "s7"
+  },
+  {
+   "type": "p",
+   "en": "Wide-scale adoption of AI and AI-based applications hold unprecedented potential to drive economic and social development. Open-source AI applications and other accessible AI approaches, where appropriate, and wide-scale diffusion of AI use cases can contribute to scalability, replicability, and adaptability of AI systems across sectors.",
+   "ko": "AI와 AI 기반 애플리케이션의 광범위한 도입은 경제적·사회적 발전을 견인할 전례 없는 잠재력을 지닌다. 적절한 경우 오픈소스 AI 애플리케이션과 기타 접근 가능한 AI 방식을 활용하고 AI 활용 사례를 광범위하게 확산하면, 여러 부문에 걸쳐 AI 시스템의 확장가능성, 재현 가능성 및 적응성을 높이는 데 기여할 수 있다.",
+   "marks": [
+    {
+     "t": "AI와 AI 기반 애플리케이션의 광범위한 도입은 경제적·사회적 발전을 견인할 전례 없는 잠재력을 지닌다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We take note of the Global AI Impact Commons as a voluntary initiative that provides a practical platform to encourage and enable the adoption, replication, and scale-up of successful AI use cases across regions.",
+   "ko": "우리는 Global AI Impact Commons에 주목한다. 이는 성공적인 AI 활용 사례를 지역 전반에서 도입·재현·확대하도록 장려하고 이를 가능하게 하는 실질적인 플랫폼을 제공하는 자발적 이니셔티브이다."
+  },
+  {
+   "type": "h2",
+   "en": "Secure and Trusted AI",
+   "ko": "보안성이 확보되고 신뢰받는 AI",
+   "id": "s10"
+  },
+  {
+   "type": "p",
+   "en": "Advancing secure, trustworthy and robust AI is foundational to building trust and maximizing societal and economic benefits. Noting that deepening our understanding of the potential security aspects remains important, we recognize the importance of security in AI systems, industry-led voluntary measures, and the adoption of technical solutions, and appropriate policy frameworks that enable innovation while promoting the public interest throughout the AI’s lifecycle.",
+   "ko": "보안성이 확보되고 신뢰할 수 있으며 견고한 AI를 발전시키는 것은 신뢰를 구축하고 사회적·경제적 편익을 극대화하는 데 기초가 된다. 잠재적 보안 측면에 대한 이해를 심화하는 일이 여전히 중요함에 주목하면서, 우리는 AI의 수명주기 전반에 걸쳐 AI 시스템의 보안, 산업계 주도의 자발적 조치, 기술적 해법의 도입, 그리고 공익을 증진하면서도 혁신을 가능하게 하는 적절한 정책 프레임워크가 중요함을 인식한다.",
+   "marks": [
+    {
+     "t": "보안성이 확보되고 신뢰할 수 있으며 견고한 AI를 발전시키는 것은 신뢰를 구축하고 사회적·경제적 편익을 극대화하는 데 기초가 된다.",
+     "k": "key"
+    },
+    {
+     "t": "잠재적 보안 측면에 대한 이해를 심화하는 일이 여전히 중요함",
+     "k": "safety"
+    },
+    {
+     "t": "AI의 수명주기 전반에 걸쳐 AI 시스템의 보안",
+     "k": "safety"
+    },
+    {
+     "t": "공익을 증진하면서도 혁신을 가능하게 하는 적절한 정책 프레임워크",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We recognize the development of the voluntary and non-binding Trusted AI Commons, a collaborative platform consolidating technical resources, tools, benchmarks and best practices that all can access and adapt to their contexts; as well as its voluntary guidance note.",
+   "ko": "우리는 자발적이고 비구속적인 Trusted AI Commons의 개발을 인정한다. Trusted AI Commons는 누구나 접근하여 각자의 맥락에 맞게 조정할 수 있는 기술 자원, 도구, 벤치마크 및 모범 사례를 통합한 협력 플랫폼이며, 우리는 이와 함께 마련된 자발적 지침 문서(guidance note)도 인정한다.",
+   "marks": [
+    {
+     "t": "기술 자원, 도구, 벤치마크 및 모범 사례를 통합한 협력 플랫폼",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Science",
+   "ko": "과학",
+   "id": "s13"
+  },
+  {
+   "type": "p",
+   "en": "We recognize that removing structural barriers to and increasing availability of AI research infrastructure can promote the use of AI in scientific research and development across countries. International scientific collaborations can unlock the potential of AI in research and development by bringing unique expertise, perspectives, and resources.",
+   "ko": "우리는 AI 연구 인프라에 대한 구조적 장벽을 제거하고 그 가용성을 높이면 각국의 과학 연구개발에서 AI 활용을 촉진할 수 있음을 인식한다. 국제 과학 협력은 고유한 전문성, 관점 및 자원을 결집함으로써 연구개발 분야에서 AI의 잠재력을 발현할 수 있다.",
+   "marks": [
+    {
+     "t": "AI 연구 인프라에 대한 구조적 장벽을 제거하고 그 가용성을 높이면 각국의 과학 연구개발에서 AI 활용을 촉진할 수 있음을 인식한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We take note of the voluntary and collaborative International Network of AI for Science Institutions as a platform to connect scientific communities and pool AI research capabilities across regions among participating institutions, in order to accelerate the impactful adoption of AI.",
+   "ko": "우리는 자발적이고 협력적인 International Network of AI for Science Institutions에 주목한다. 이는 AI의 실효성 있는 도입을 가속화하기 위해, 참여 기관 간에 지역을 넘어 과학 공동체를 연결하고 AI 연구 역량을 결집하는 플랫폼이다."
+  },
+  {
+   "type": "h2",
+   "en": "Access for Social Empowerment",
+   "ko": "사회적 역량 강화를 위한 접근성",
+   "id": "s16"
+  },
+  {
+   "type": "p",
+   "en": "AI holds the potential to uplift all sections of society by enabling individuals to access knowledge, cross-border AI solutions, information, services, opportunities and enhancing participation in social and economic activities. We recognize the importance of collaborations that would facilitate AI adoption for social empowerment.",
+   "ko": "AI는 개인이 지식, 국경을 넘는 AI 솔루션, 정보, 서비스, 기회에 접근할 수 있도록 하고 사회적·경제적 활동 참여를 확대함으로써 사회 모든 계층에 업리프트를 제공할 잠재력을 지닌다. 우리는 사회적 역량 강화를 위한 AI 도입을 촉진할 협력의 중요성을 인식한다.",
+   "marks": [
+    {
+     "t": "우리는 사회적 역량 강화를 위한 AI 도입을 촉진할 협력의 중요성을 인식한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We take note of the development of a voluntary and collaborative platform to facilitate exchange of learning, knowledge, and scalable practices to advance AI adoption for social empowerment.",
+   "ko": "우리는 사회적 역량 강화를 위한 AI 도입을 진전시키기 위해 학습, 지식 및 확장 가능한 실행 방안의 교류를 촉진하는 자발적이고 협력적인 플랫폼의 개발에 주목한다."
+  },
+  {
+   "type": "h2",
+   "en": "Human Capital",
+   "ko": "인적 자본",
+   "id": "s19"
+  },
+  {
+   "type": "p",
+   "en": "Realizing the full promise of AI requires equipping individuals with relevant skills by expanding AI human resource development, specific initiatives on education, AI workforce development, training of public officials, enhancing public awareness of AI capabilities, increasing AI literacy as well as upgrading vocational and training ecosystems.",
+   "ko": "AI의 가능성을 온전히 실현하려면 AI 인적자원 개발 확대, 교육 관련 구체적 이니셔티브, AI 인력 개발, 공무원 교육, AI 역량에 대한 대중의 인식 제고, AI 리터러시 향상, 직업 및 훈련 생태계 고도화를 통해 개인이 관련 역량을 갖추도록 해야 한다.",
+   "marks": [
+    {
+     "t": "개인이 관련 역량을 갖추도록 해야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "While encouraging international collaboration on meaningful skilling and reskilling AI initiatives, we take note of the voluntary guiding principles for reskilling in the age of AI and the playbook on AI workforce development, which would support participants in preparation for a future AI driven economy.",
+   "ko": "우리는 실질적인 AI 역량 개발(skilling) 및 재교육(reskilling) 이니셔티브에 관한 국제 협력을 장려하는 한편, AI 시대의 재교육을 위한 자발적 지도 원칙과 AI 인력 개발에 관한 플레이북에 주목한다. 이는 참가자들이 미래의 AI 주도 경제에 대비하는 데 도움이 될 것이다."
+  },
+  {
+   "type": "h2",
+   "en": "Resilience, Innovation, and Efficiency",
+   "ko": "회복력, 혁신 및 효율성",
+   "id": "s22"
+  },
+  {
+   "type": "p",
+   "en": "Recognizing the growing demands of AI on energy, infrastructure, and natural resources, we underscore the importance of developing energy efficient AI systems. Affordable AI systems may expand access to AI and accelerate local innovation that would advance shared developmental aspirations.",
+   "ko": "AI가 에너지, 인프라 및 천연자원에 대해 갖는 수요가 증가하고 있음을 인식하며, 우리는 에너지 효율적인 AI 시스템 개발의 중요성을 강조한다. 경제적 부담이 적은 AI 시스템은 AI에 대한 접근성을 넓히고, 공동의 발전 열망을 진전시킬 지역 혁신을 가속화할 수 있다.",
+   "marks": [
+    {
+     "t": "우리는 에너지 효율적인 AI 시스템 개발의 중요성을 강조한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We recognize that the Voluntary Guiding Principles on Resilient, Innovative, and Efficient Artificial Intelligence would guide us towards development of resilient and efficient AI systems. We also take note of the Playbook on Advancing Resilient AI Infrastructure as a knowledge output, which is a reference resource to support resilient AI development.",
+   "ko": "우리는 Voluntary Guiding Principles on Resilient, Innovative, and Efficient Artificial Intelligence가 회복력 있고 효율적인 AI 시스템 개발로 우리를 이끌 것임을 인식한다. 또한 우리는 지식 산출물로서 Playbook on Advancing Resilient AI Infrastructure에 주목한다. 이는 회복력 있는 AI 개발을 지원하기 위한 참고 자료이다.",
+   "marks": [
+    {
+     "t": "회복력 있고 효율적인 AI 시스템 개발로 우리를 이끌 것임을 인식한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Conclusion",
+   "ko": "결론",
+   "id": "s25"
+  },
+  {
+   "type": "p",
+   "en": "We acknowledge that the AI Impact Summit will contribute to strengthening international cooperation and multistakeholder approach to advance shared priorities as well as voluntary and non-binding guidelines and principles, which can promote AI for ensuring a prosperous future for humanity.",
+   "ko": "우리는 AI Impact Summit이 공동의 우선순위를 진전시키기 위한 국제 협력과 다중 이해관계자 접근 방식을 강화하고, 인류의 번영하는 미래를 보장하기 위한 AI를 촉진할 수 있는 자발적이고 비구속적인 지침과 원칙을 진전시키는 데 기여할 것임을 인정한다.",
+   "marks": [
+    {
+     "t": "인류의 번영하는 미래를 보장하기 위한 AI를 촉진할 수 있는 자발적이고 비구속적인 지침과 원칙을 진전시키는 데 기여할 것임을 인정한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We remain committed to advancing our shared aspirations for realizing the benefits of AI and look forward to continued cooperation for translating these aspirations into concrete actions for the three Sutras of the India AI Impact Summit 2026.",
+   "ko": "우리는 AI의 혜택을 실현하기 위한 공동의 열망을 진전시키는 데 계속 전념하며, India AI Impact Summit 2026의 세 가지 Sutras에 따라 이러한 열망을 구체적인 행동으로 옮기기 위한 지속적인 협력을 기대한다.",
+   "marks": [
+    {
+     "t": "이러한 열망을 구체적인 행동으로 옮기기 위한 지속적인 협력을 기대한다",
+     "k": "key"
+    }
+   ]
+  }
+ ]
+}

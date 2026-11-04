@@ -1,0 +1,404 @@
+{
+ "slug": "reaim-pathways-2026",
+ "title": "REAIM 2026 「행동을 위한 경로」",
+ "original_title": "REAIM Pathways to Action",
+ "publisher": "REAIM Summit 2026",
+ "published": "2026-02-05",
+ "source_url": "https://www.exteriores.gob.es/en/REAIM2026/Documents/REAIM%202026%20Pathways%20to%20Action.pdf",
+ "source_note": "스페인 외교부 REAIM 2026 누리집의 공식 영문 PDF.",
+ "source_label": "원문 보기 (스페인 외교부)",
+ "summary": "스페인 아 코루냐에서 열린 제3차 REAIM의 결과문서로, 네덜란드와 한국이 공동 주최했다. 2024년 서울의 「행동을 위한 청사진」을 이어 군사 AI 원칙을 국가, 국제, 산업·학계 차원에서 실행할 권고를 제시한다. 앞선 두 문서보다 지지국이 적고 미국과 중국은 지지하지 않았다고 보도됐다.",
+ "doc_kind": "공동 문서",
+ "translated": "2026-11-05",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/reaim-pathways-2026-cover.webp",
+ "og_image": "/images/translations/reaim-pathways-2026-cover.jpg",
+ "image_caption": "문건 첫 쪽",
+ "stats": {
+  "blocks": 38,
+  "sections": 5,
+  "items": 0,
+  "words_en": 1502
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "REAIM Pathways to Action",
+   "ko": "REAIM 행동을 위한 경로(Pathways to Action)",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "1. We recognise that the responsible use and development of Artificial Intelligence (AI) in the military domain can and should contribute to international peace and security. When appropriately applied throughout their life cycles, military AI capabilities can help reduce the exposure of personnel to danger, improve the protection of civilians, and support more timely and better-informed decisionmaking, facilitating enhanced compliance with international law, including international humanitarian law, as applicable. At the same time, the use of AI can present risks across various facets of the military domain. Therefore, we also recognise the need for enhanced shared understandings of risks that may be presented throughout the life cycles of AI in the military domain, including miscalculation, bias, loss of control or escalation.",
+   "ko": "1. 우리는 군사 영역에서 인공지능(AI)을 책임 있게 사용하고 개발하는 것이 국제 평화와 안보에 기여할 수 있으며 또한 기여해야 한다는 점을 인식한다. 군사 AI 역량은 수명주기 전반에 걸쳐 적절하게 적용될 경우 인원의 위험 노출을 줄이고, 민간인 보호를 개선하며, 보다 시의적절하고 정보에 기반한 의사결정을 지원함으로써, 해당되는 경우 국제인도법을 포함한 국제법에 대한 규정 준수 강화를 촉진할 수 있다. 동시에 AI의 사용은 군사 영역의 다양한 측면에 걸쳐 위험을 초래할 수 있다. 따라서 우리는 오판, 편향, 통제 상실 또는 확전을 포함하여 군사 영역에서 AI의 수명주기 전반에 걸쳐 나타날 수 있는 위험에 대한 공동의 이해를 증진할 필요성 또한 인식한다.",
+   "marks": [
+    {
+     "t": "동시에 AI의 사용은 군사 영역의 다양한 측면에 걸쳐 위험을 초래할 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "오판, 편향, 통제 상실 또는 확전을 포함하여 군사 영역에서 AI의 수명주기 전반에 걸쳐 나타날 수 있는 위험에 대한 공동의 이해를 증진할 필요성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "2. We underline that REAIM is a State-led, multistakeholder initiative that seeks to provide an agile, robust, and evidence-based platform to incubate and nurture ideas to complement and reinforce parallel initiatives for the promotion of responsible AI in the military domain.",
+   "ko": "2. 우리는 REAIM이 국가 주도의 다중이해관계자 이니셔티브로서, 군사 영역에서 책임 있는 AI를 증진하기 위해 병행되는 여러 이니셔티브를 보완하고 강화할 아이디어를 발굴하고 육성하는 민첩하고 견고하며 증거에 기반한 플랫폼을 제공하고자 한다는 점을 강조한다."
+  },
+  {
+   "type": "p",
+   "en": "3. We note related developments since the last 2024 REAIM Summit, in Seoul, including the UN Secretary-General´s report (A/80/78), particularly States' contributions included therein, and the adoption of UNGA Resolutions 79/239 and 80/58 on 'Artificial intelligence in the military domain and its implications for international peace and security' , and the ongoing work of the Group of Governmental Experts (GGE) on Emerging Technologies in the Area of Lethal Autonomous Weapons Systems (LAWS) convened under the auspices of the Convention on Certain Conventional Weapons (CCW).",
+   "ko": "3. 우리는 서울에서 열린 지난 2024년 REAIM 정상회의 이후의 관련 진전에 주목한다. 여기에는 유엔 사무총장(UN Secretary-General) 보고서(A/80/78), 특히 그 보고서에 수록된 각국의 기고, 'Artificial intelligence in the military domain and its implications for international peace and security'에 관한 유엔총회(UNGA) 결의 79/239 및 80/58의 채택, 그리고 특정재래식무기금지협약(CCW)의 주관하에 소집된 치명적 자율무기체계(LAWS) 분야 신기술에 관한 정부전문가그룹(GGE)의 진행 중인 작업이 포함된다.",
+   "marks": [
+    {
+     "t": "치명적 자율무기체계(LAWS) 분야 신기술에 관한 정부전문가그룹(GGE)의 진행 중인 작업",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "4. We also take note of the Global Commission REAIM´s report 'Responsible by Design: Strategic Guidance Report on the Risks, Opportunities, and Governance of Artificial Intelligence in the Military Domain' and the recommendations therein, in particular its emphasis on responsibility by design, risk-based governance approaches, and the need for robust oversight and accountability mechanisms throughout the life cycles of the military AI capabilities.",
+   "ko": "4. 우리는 또한 Global Commission REAIM의 보고서 'Responsible by Design: Strategic Guidance Report on the Risks, Opportunities, and Governance of Artificial Intelligence in the Military Domain'과 그 권고사항에 주목하며, 특히 설계 단계부터의 책임성(responsibility by design), 위험 기반 거버넌스 접근법, 그리고 군사 AI 역량의 수명주기 전반에 걸친 견고한 감독 및 책임성 메커니즘의 필요성을 강조한 점에 주목한다.",
+   "marks": [
+    {
+     "t": "위험 기반 거버넌스 접근법, 그리고 군사 AI 역량의 수명주기 전반에 걸친 견고한 감독 및 책임성 메커니즘의 필요성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "5. We consider that REAIM's distinct added value lies in its multistakeholder character and its ability to leverage technical, industry, operational, legal, societal, ethical and regional expertise to generate, test, and refine practical ideas to harness the benefits of AI in the military domain while anticipating and addressing challenges to its implementation through foresight, forwardlooking assessments, as well as the identification, sharing, and applications of lessons learned and good practices in this regard.",
+   "ko": "5. 우리는 REAIM의 고유한 부가가치가 다중이해관계자적 성격, 그리고 기술·산업·작전·법률·사회·윤리·지역 전문성을 활용하여 실용적인 아이디어를 창출하고 시험하며 정교화하는 능력에 있다고 본다. 이를 통해 군사 영역에서 AI의 이점을 활용하는 동시에, 전략적 예측(foresight), 미래지향적 평가(assessment), 그리고 이와 관련된 교훈과 모범 실행 방안의 식별·공유·적용을 통해 그 이행에 따르는 과제를 예견하고 해결할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "6. We stress the importance of capacity-building, and underline the role of REAIM to promote cooperation and to help bridge gaps between and within regions in the ability to, inter alia, develop policies, frameworks and guidelines, as well as create and sustain an environment conducive to the responsible design, development, testing, deployment, and use of AI in the military domain, through cooperation and knowledge-sharing.",
+   "ko": "6. 우리는 역량 강화의 중요성을 강조하며, 협력과 지식 공유를 통해 특히 정책, 프레임워크 및 지침을 개발하고, 군사 영역에서 AI의 책임 있는 설계, 개발, 시험, 배포 및 사용에 유리한 환경을 조성하고 유지하는 능력에 있어 지역 간 및 지역 내 격차를 해소하는 데 기여하고 협력을 증진하는 REAIM의 역할을 강조한다."
+  },
+  {
+   "type": "p",
+   "en": "7. Building on the Call to Action advanced at the REAIM Summit 2023 in The Hague and the Blueprint for Action advanced at the REAIM Summit 2024 in Seoul, convinced that the time has come to take steps towards operationalization of the principles reflected in these documents, we invite all stakeholders, as applicable - including States, industry, academia, civil society, and regional and international organizations - to:",
+   "ko": "7. 2023년 헤이그 REAIM 정상회의에서 제시된 행동 촉구(Call to Action)와 2024년 서울 REAIM 정상회의에서 제시된 행동을 위한 청사진(Blueprint for Action)을 토대로, 이들 문서에 반영된 원칙의 실행을 향한 조치를 취할 때가 왔다고 확신하며, 우리는 국가, 산업계, 학계, 시민사회, 지역 및 국제기구를 포함한 모든 이해관계자에게 해당되는 바에 따라 다음과 같이 할 것을 요청한다:",
+   "marks": [
+    {
+     "t": "이들 문서에 반영된 원칙의 실행을 향한 조치를 취할 때가 왔다고 확신하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Legal frameworks and general practices",
+   "ko": "법적 프레임워크 및 일반 실행 방안",
+   "id": "s8"
+  },
+  {
+   "type": "p",
+   "en": "8. Uphold compliance with applicable international law, including international humanitarian law and international human rights law, as required throughout the life cycles of AI capabilities in the military domain.",
+   "ko": "8. 군사 영역에서 AI 역량의 수명주기 전반에 걸쳐 요구되는 바에 따라 국제인도법 및 국제인권법을 포함하여 적용 가능한 국제법에 대한 규정 준수를 견지한다.",
+   "marks": [
+    {
+     "t": "국제인도법 및 국제인권법을 포함하여 적용 가능한 국제법에 대한 규정 준수를 견지한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "9. Develop and promote a 'responsible by design' approach, integrating principles of responsible use of AI from the earliest planning stages through designing, developing, testing, deployment, monitoring and decommissioning.",
+   "ko": "9. 최초 기획 단계부터 설계, 개발, 시험, 배포, 모니터링 및 폐기에 이르기까지 AI의 책임 있는 사용 원칙을 통합하는 '설계 단계부터의 책임(responsible by design)' 접근법을 개발하고 증진한다.",
+   "marks": [
+    {
+     "t": "'설계 단계부터의 책임(responsible by design)' 접근법을 개발하고 증진한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "10. Ensure that States and individuals remain accountable for decisions, including both actions and omissions, taken throughout the life cycles of AI military capabilities, consistent with their respective obligations under international law; recognizing that States and individuals (rather than machines and algorithms) bear legal and ethical responsibility; and avoiding the creation of 'accountability gaps' in the use of AI in the military domain.",
+   "ko": "10. 국가와 개인이 국제법상 각자의 의무에 부합하게 AI 군사 역량의 수명주기 전반에 걸쳐 내려진 결정(작위와 누락을 모두 포함)에 대해 계속 책임을 지도록 보장한다. 이때 (기계와 알고리즘이 아닌) 국가와 개인이 법적·윤리적 책임을 진다는 점을 인식하고, 군사 영역에서의 AI 사용에 있어 '책임성 공백(accountability gaps)'이 발생하지 않도록 한다.",
+   "marks": [
+    {
+     "t": "(기계와 알고리즘이 아닌) 국가와 개인이 법적·윤리적 책임을 진다는 점을 인식하고",
+     "k": "key"
+    },
+    {
+     "t": "군사 영역에서의 AI 사용에 있어 '책임성 공백(accountability gaps)'이 발생하지 않도록 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "11. Recognise the challenges related to reliability, security, resilience, unintended biases, traceability and explainability, which can be addressed by advancing the field of AI assurance, including through assessments of reliability, security, and resilience. It is also critical to consider potential risks such as cyber threats and adversarial manipulation of data, models and outputs, while also anticipating",
+   "ko": "11. 신뢰성, 보안성, 회복탄력성, 의도하지 않은 편향, 추적가능성 및 설명가능성과 관련된 과제를 인식한다. 이러한 과제는 신뢰성, 보안성 및 회복탄력성에 대한 평가(assessment) 등을 통해 AI 신뢰보증 분야를 발전시킴으로써 해결할 수 있다. 또한 사이버 위협 및 데이터·모델·출력에 대한 적대적 조작과 같은 잠재적 위험을 고려하는 동시에 다음을 예견하는 것이 매우 중요하다.",
+   "marks": [
+    {
+     "t": "신뢰성, 보안성, 회복탄력성, 의도하지 않은 편향, 추적가능성 및 설명가능성과 관련된 과제를 인식한다",
+     "k": "safety"
+    },
+    {
+     "t": "사이버 위협 및 데이터·모델·출력에 대한 적대적 조작과 같은 잠재적 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "fast capability advances that may outpace assurance methods, including Artificial General Intelligence (AGI) or even Artificial Superintelligence (ASI).",
+   "ko": "인공일반지능(AGI) 또는 나아가 인공초지능(ASI)을 포함하여, 신뢰보증 방법을 앞지를 수 있는 급속한 역량 발전.",
+   "marks": [
+    {
+     "t": "인공일반지능(AGI) 또는 나아가 인공초지능(ASI)을 포함하여, 신뢰보증 방법을 앞지를 수 있는 급속한 역량 발전.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "12. Emphasise that AI-enabled decision support systems should support, not replace, the exercise of human judgement. The nature and degree of human involvement should be appropriate considering, among other factors, the operational context, the function performed, the technical characteristics and capabilities, as well as human factors such as training and fatigue, and the risks and benefits involved.",
+   "ko": "12. AI 기반 의사결정 지원 시스템은 인간 판단의 행사를 대체하는 것이 아니라 지원해야 한다는 점을 강조한다. 인간 관여의 성격과 정도는 무엇보다도 작전 상황, 수행되는 기능, 기술적 특성 및 역량, 훈련 및 피로와 같은 인적 요인, 그리고 관련 위험과 이점을 고려하여 적절해야 한다.",
+   "marks": [
+    {
+     "t": "AI 기반 의사결정 지원 시스템은 인간 판단의 행사를 대체하는 것이 아니라 지원해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Recommendations for the operationalization of REAIM principles at the national level",
+   "ko": "국가 차원에서의 REAIM 원칙 실행을 위한 권고사항",
+   "id": "s15"
+  },
+  {
+   "type": "p",
+   "en": "13. Ensure relevant personnel are actively involved in the development and testing phases of AI systems in the military domain. Ensure as well that personnel operating military AI capabilities and those in the chain of command receive appropriate training and education, including a structured training and familiarisation phase before operational use, so they understand systems' capabilities as well as limitations.",
+   "ko": "13. 관련 인원이 군사 영역 AI 시스템의 개발 및 시험 단계에 적극적으로 참여하도록 보장한다. 또한 군사 AI 역량을 운용하는 인원과 지휘 계통(chain of command)에 있는 인원이 시스템의 역량과 한계를 이해할 수 있도록, 작전 사용 이전의 체계적인 훈련 및 숙달 단계를 포함하여 적절한 훈련과 교육을 받도록 보장한다.",
+   "marks": [
+    {
+     "t": "시스템의 역량과 한계를 이해할 수 있도록",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "14. Consider risk assessments, which take into account specific legal, humanitarian and operational risks of AI-enabled military systems, prior to deployment and use of AI-enabled systems in the military domain, and to regularly update such assessments as systems, operational environments and threat landscapes evolve. Recognise the need to consider the potential risks around unanticipated, emergent behaviours, and explainability.",
+   "ko": "14. 군사 영역에서 AI 기반 시스템을 배포하고 사용하기 전에 AI 기반 군사 시스템의 구체적인 법적·인도적·작전적 위험을 고려하는 위험 평가를 고려하고, 시스템, 작전 환경 및 위협 양상이 변화함에 따라 해당 평가를 정기적으로 갱신한다. 예상치 못한 창발적 행동 및 설명가능성과 관련된 잠재적 위험을 고려할 필요성을 인식한다.",
+   "marks": [
+    {
+     "t": "AI 기반 군사 시스템의 구체적인 법적·인도적·작전적 위험을 고려하는 위험 평가",
+     "k": "safety"
+    },
+    {
+     "t": "예상치 못한 창발적 행동 및 설명가능성과 관련된 잠재적 위험을 고려할 필요성을 인식한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "15. Promote robust testing, evaluation, validation and verification (TEVV) and integrate TEVV requirements in relevant policies, doctrines, and procurement processes. TEVV efforts should include qualification and/or certification, where appropriate, against requirements proportionate to intended benefits and risks, and the association of systems with defined use cases for which they have been tested and validated.",
+   "ko": "15. 견고한 시험, 평가, 검증 및 확인(TEVV)을 증진하고, TEVV 요구사항을 관련 정책, 교리 및 획득 절차에 통합한다. TEVV 활동에는 적절한 경우 의도된 이점 및 위험에 비례하는 요구사항에 따른 적격성 판정 및/또는 인증, 그리고 시스템을 그것이 시험 및 확인을 거친 정의된 사용 사례와 연계하는 것이 포함되어야 한다.",
+   "marks": [
+    {
+     "t": "견고한 시험, 평가, 검증 및 확인(TEVV)을 증진하고",
+     "k": "safety"
+    },
+    {
+     "t": "시스템을 그것이 시험 및 확인을 거친 정의된 사용 사례와 연계하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "16. Conduct legal reviews of weapons, means, and methods of warfare enabled by AI, consistent with applicable international legal obligations and relevant national laws and procedures.",
+   "ko": "16. 적용 가능한 국제법적 의무 및 관련 국내법과 절차에 부합하게 AI 기반 무기, 전쟁 수단 및 방법에 대한 법적 검토를 실시한다.",
+   "marks": [
+    {
+     "t": "AI 기반 무기, 전쟁 수단 및 방법에 대한 법적 검토를 실시한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "17. Strengthen measures to protect the integrity, availability and confidentiality of data and to mitigate risks of data compromise, poisoning or other manipulation, also by non-state actors, including terrorist groups.",
+   "ko": "17. 데이터의 무결성, 가용성 및 기밀성을 보호하고, 테러 단체를 포함한 비국가 행위자에 의한 경우를 포함하여 데이터 침해, 오염 또는 기타 조작의 위험을 완화하기 위한 조치를 강화한다.",
+   "marks": [
+    {
+     "t": "테러 단체를 포함한 비국가 행위자에 의한 경우를 포함하여 데이터 침해, 오염 또는 기타 조작의 위험을 완화",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "18. Maintain audit trails and documentation across the life cycle, including mechanisms for incident reporting and lessons learned, to strengthen traceability, explainability and oversight.",
+   "ko": "18. 추적가능성, 설명가능성 및 감독을 강화하기 위해 사고 보고 및 교훈 도출 메커니즘을 포함하여 수명주기 전반에 걸쳐 감사 추적 기록과 문서를 유지한다.",
+   "marks": [
+    {
+     "t": "사고 보고 및 교훈 도출 메커니즘",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "19. Identify and adopt appropriate operational requirements and procedures to ensure accountability for decisions in the use of AI capabilities, including through doctrine, Tactics, Techniques and Procedures (TTPs), rules of engagement where relevant, and system/interface design and development.",
+   "ko": "19. 교리, 전술·기술·절차(TTPs), 해당되는 경우 교전규칙, 시스템/인터페이스 설계 및 개발 등을 통해 AI 역량 사용에 관한 결정에 대한 책임성을 보장하기 위한 적절한 작전 요구사항과 절차를 식별하고 채택한다.",
+   "marks": [
+    {
+     "t": "AI 역량 사용에 관한 결정에 대한 책임성을 보장하기 위한 적절한 작전 요구사항과 절차를 식별하고 채택한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "20. Encourage the delineation of clear chains of command and control to ensure individual responsibility for operations involving AI-enabled systems and for relevant functions across the life cycles. Consider developing and implementing measures that could facilitate accountability, such as digital forensics, documentation, and clear processes for after-action reviews and investigations.",
+   "ko": "20. AI 기반 시스템이 관여하는 작전과 수명주기 전반의 관련 기능에 대한 개인의 책임을 보장하기 위해 명확한 지휘·통제 계통을 설정하도록 장려한다. 디지털 포렌식, 문서화, 사후 검토(after-action review) 및 조사를 위한 명확한 절차 등 책임성을 촉진할 수 있는 조치를 개발하고 이행하는 것을 고려한다.",
+   "marks": [
+    {
+     "t": "명확한 지휘·통제 계통을 설정하도록 장려한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "21. Encourage the designation of a national focal point within relevant departments (for example, a Chief Responsible AI Officer or equivalent) to facilitate whole-of-government coordination, the implementation of practices for the responsible use of AI, and international cooperation.",
+   "ko": "21. 범정부 차원의 조정, AI의 책임 있는 사용을 위한 실행 방안의 이행, 그리고 국제협력을 촉진하기 위해 관련 부처 내에 국가 연락창구(focal point)(예: 최고 책임 있는 AI 책임자(Chief Responsible AI Officer) 또는 이에 상응하는 직위)를 지정하도록 장려한다."
+  },
+  {
+   "type": "h2",
+   "en": "Recommendations for the operationalization of REAIM principles at the international level",
+   "ko": "국제 차원에서의 REAIM 원칙 실행을 위한 권고사항",
+   "id": "s25"
+  },
+  {
+   "type": "p",
+   "en": "22. Develop shared understandings regarding AI functions or capabilities across military applications.",
+   "ko": "22. 군사적 응용 전반에 걸친 AI 기능 또는 역량에 관한 공유된 이해를 발전시킨다.",
+   "marks": [
+    {
+     "t": "군사적 응용 전반에 걸친 AI 기능 또는 역량에 관한 공유된 이해를 발전시킨다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "23. Undertake confidence-building measures on a voluntary basis and as appropriate to strengthen trust and transparency where AI is applied in the military domain, that may complement existing multilateral mechanisms, to reduce possible risks of misunderstanding, miscalculation, and unintended escalation, including by:",
+   "ko": "23. 군사 영역에서 AI가 적용되는 경우 신뢰와 투명성을 강화하기 위해, 기존 다자 메커니즘을 보완할 수 있는 신뢰구축조치를 자발적으로 그리고 적절한 경우에 시행하여 오해, 오판 및 의도하지 않은 확전의 가능한 위험을 줄인다. 여기에는 다음이 포함된다.",
+   "marks": [
+    {
+     "t": "군사 영역에서 AI가 적용되는 경우 신뢰와 투명성을 강화하기 위해",
+     "k": "safety"
+    },
+    {
+     "t": "오해, 오판 및 의도하지 않은 확전의 가능한 위험을 줄인다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "a. Sharing appropriate information on national policies, principles, governance structures and oversight arrangements, as well as frameworks, guidelines, approaches and methodologies for legal reviews and risk-assessment approaches and methodologies, where consistent with national security, including through the contribution of military academies.",
+   "ko": "a. 국가안보에 부합하는 경우, 군사학교의 기여 등을 통해 국가 정책, 원칙, 거버넌스 구조 및 감독 체계뿐만 아니라 법적 검토를 위한 프레임워크, 지침, 접근법 및 방법론, 그리고 위험 평가 접근법 및 방법론에 관한 적절한 정보를 공유함.",
+   "marks": [
+    {
+     "t": "위험 평가 접근법 및 방법론에 관한 적절한 정보를 공유함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "b. Encouraging outreach activities, regional cooperation, including through joint seminars, table-top exercises, inter-regional dialogue, workshops, and the exchange of lessons learned and good practices.",
+   "ko": "b. 공동 세미나, 도상훈련, 지역 간 대화, 워크숍, 교훈 및 우수 실행 방안의 교환 등을 통한 아웃리치 활동 및 지역 협력을 장려함."
+  },
+  {
+   "type": "li",
+   "en": "c. Exploring opportunities for visits or exchanges related to facilities or centres of excellence, where feasible and consistent with national security.",
+   "ko": "c. 실현 가능하고 국가안보에 부합하는 경우, 시설 또는 우수센터(centres of excellence)와 관련된 방문 또는 교류 기회를 모색함."
+  },
+  {
+   "type": "li",
+   "en": "d. Considering crisis-communication arrangements to reduce risks of potential unintended escalation.",
+   "ko": "d. 잠재적인 의도하지 않은 확전의 위험을 줄이기 위해 위기 소통 체계를 고려함.",
+   "marks": [
+    {
+     "t": "잠재적인 의도하지 않은 확전의 위험을 줄이기 위해 위기 소통 체계를 고려함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "24. Promote capacity-building, including for developing countries, through regional centres of excellence, knowledge-sharing hubs, exchanges of best practices, point of contact directories, and technology cooperation taking into account different national contexts, needs and levels of technological development, and recognizing existing asymmetries.",
+   "ko": "24. 서로 다른 국가적 맥락, 필요 및 기술 발전 수준을 고려하고 기존의 비대칭성을 인식하면서, 지역 우수센터, 지식 공유 허브, 모범 사례 교환, 연락처 명부 및 기술 협력을 통해 개발도상국을 포함한 역량 강화를 증진한다."
+  },
+  {
+   "type": "h2",
+   "en": "Recommendations for engagement with industry, academia and civil society",
+   "ko": "산업계, 학계 및 시민사회와의 협력을 위한 권고사항",
+   "id": "s33"
+  },
+  {
+   "type": "p",
+   "en": "25. Participate in and support initiatives between States, industry, and academia, aimed at promoting responsible AI in the military domain and advancing foundational research to enable AI security and reliability, including research on AI interpretability and robustness.",
+   "ko": "25. 군사 영역에서 책임 있는 AI를 증진하고, AI 해석 가능성 및 강건성에 관한 연구를 포함하여 AI 보안 및 신뢰성을 가능하게 하는 기초 연구를 발전시키는 것을 목표로 하는 국가, 산업계 및 학계 간 이니셔티브에 참여하고 이를 지원한다.",
+   "marks": [
+    {
+     "t": "군사 영역에서 책임 있는 AI를 증진하고",
+     "k": "safety"
+    },
+    {
+     "t": "AI 해석 가능성 및 강건성에 관한 연구를 포함하여 AI 보안 및 신뢰성을 가능하게 하는 기초 연구",
+     "k": "safety"
+    },
+    {
+     "t": "국가, 산업계 및 학계 간 이니셔티브에 참여하고 이를 지원한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "26. Further engage with our respective national industrial ecosystems and raise awareness of the approaches and principles advanced in the 2023 REAIM Call to Action, the 2024 REAIM Blueprint for Action, as well as the 2026 REAIM Pathways to Action.",
+   "ko": "26. 우리 각자의 국가 산업 생태계와의 관여를 더욱 확대하고, 2023년 REAIM 행동 촉구(REAIM Call to Action), 2024년 REAIM 행동을 위한 청사진(REAIM Blueprint for Action), 그리고 2026년 REAIM 행동을 위한 경로(REAIM Pathways to Action)에서 제시된 접근법과 원칙에 대한 인식을 제고한다."
+  },
+  {
+   "type": "p",
+   "en": "27. Invite industry and other relevant stakeholders to address design challenges around human-machine interaction and user interfaces proactively.",
+   "ko": "27. 산업계 및 기타 관련 이해관계자가 인간-기계 상호작용 및 사용자 인터페이스와 관련된 설계 과제에 선제적으로 대응하도록 요청한다.",
+   "marks": [
+    {
+     "t": "인간-기계 상호작용 및 사용자 인터페이스와 관련된 설계 과제에 선제적으로 대응하도록 요청한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "28. Call on upcoming REAIM hosts and the wider REAIM community to build on these efforts to further strengthen links with industry aimed at jointly translating principles into practical recommendations and guidance.",
+   "ko": "28. 향후 REAIM 개최국과 더 넓은 REAIM 공동체가 이러한 노력을 토대로, 원칙을 실질적인 권고사항과 지침으로 공동으로 전환하는 것을 목표로 산업계와의 연계를 더욱 강화할 것을 촉구한다.",
+   "marks": [
+    {
+     "t": "원칙을 실질적인 권고사항과 지침으로 공동으로 전환하는 것을 목표로 산업계와의 연계를 더욱 강화할 것을 촉구한다.",
+     "k": "key"
+    }
+   ]
+  }
+ ]
+}

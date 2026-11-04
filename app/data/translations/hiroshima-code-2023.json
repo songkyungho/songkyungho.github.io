@@ -1,0 +1,475 @@
+{
+ "slug": "hiroshima-code-2023",
+ "title": "히로시마 프로세스: 첨단 AI 시스템 개발 조직을 위한 국제 행동강령",
+ "original_title": "Hiroshima Process International Code of Conduct for Organizations Developing Advanced AI Systems",
+ "publisher": "G7",
+ "published": "2023-10-30",
+ "source_url": "https://www.soumu.go.jp/hiroshimaaiprocess/pdf/document05_en.pdf",
+ "source_note": "일본 총무성 히로시마 AI 프로세스 누리집의 공식 영문 PDF.",
+ "source_label": "원문 보기 (일본 총무성)",
+ "summary": "국제 지도 원칙 11개를 조직이 자발적으로 실행할 구체적 행동으로 풀어 쓴 강령이다. 내외부 시험과 레드팀, 화생방·사이버·자기복제 같은 평가 위험 목록, 사고 공유, 투명성 보고를 포함한다. 뒷날 OECD의 히로시마 AI 프로세스 보고 틀의 바탕이 됐다.",
+ "doc_kind": "행동강령",
+ "translated": "2026-11-05",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/hiroshima-code-2023-cover.webp",
+ "og_image": "/images/translations/hiroshima-code-2023-cover.jpg",
+ "image_caption": "문건 첫 쪽",
+ "stats": {
+  "blocks": 53,
+  "sections": 1,
+  "items": 0,
+  "words_en": 2449
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Hiroshima Process International Code of Conduct for Organizations Developing Advanced AI Systems",
+   "ko": "히로시마 프로세스 첨단 AI 시스템 개발 조직을 위한 국제 행동 강령(Hiroshima Process International Code of Conduct for Organizations Developing Advanced AI Systems)",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "On the basis of the Hiroshima Process International Guiding Principles for Organizations Developing Advanced AI systems, the Hiroshima Process International Code of Conduct for Organizations Developing Advanced AI Systems aims to promote safe, secure, and trustworthy AI worldwide and will provide voluntary guidance for actions by organizations developing the most advanced AI systems, including the most advanced foundation models and generative AI systems (henceforth \"advanced AI systems\"). Organizations should follow these actions in line with a risk-based approach. Organizations that may endorse this Code of Conduct may include, among others, entities from academia, civil society, the private sector, and/or the public sector. This non-exhaustive list of actions is discussed and elaborated as a living document to build on the existing OECD AI Principles in response to the recent developments in advanced AI systems and is meant to help seize the benefits and address the risks and challenges brought by these technologies. Organizations should apply these actions to all stages of the lifecycle to cover, when and as applicable, the design, development, deployment and use of advanced AI systems. This document will be reviewed and updated as necessary, including through ongoing inclusive multistakeholder consultations, in order to ensure it remains fit for purpose and responsive to this rapidly evolving technology. Different jurisdictions may take their own unique approaches to implementing these actions in different ways. We call on organizations in consultation with other relevant stakeholders to follow these actions, in line with a risk-based approach, while governments develop more enduring and/or detailed governance and regulatory approaches. We also commit to develop proposals, in consultation with the OECD, GPAI and other stakeholders, to introduce monitoring tools and mechanisms to help organizations stay accountable for the implementation of these actions. We encourage organizations to support the development of effective monitoring mechanisms, which we may explore to develop, by contributing best practices.",
+   "ko": "「히로시마 프로세스 첨단 AI 시스템 개발 조직을 위한 국제 지침 원칙(Hiroshima Process International Guiding Principles for Organizations Developing Advanced AI systems)」을 토대로 하는 「히로시마 프로세스 첨단 AI 시스템 개발 조직을 위한 국제 행동 강령」은 전 세계적으로 안전하고 보안성이 확보된 신뢰할 수 있는 AI를 증진하는 것을 목표로 하며, 최첨단 파운데이션 모델 및 생성형 AI 시스템을 포함한 최첨단 AI 시스템(이하 \"첨단 AI 시스템\")을 개발하는 조직의 행동에 대해 자발적 지침을 제공한다. 조직은 위험 기반 접근법에 따라 이러한 행동을 이행해야 한다. 이 행동 강령을 지지할 수 있는 조직에는 특히 학계, 시민사회, 민간 부문 및/또는 공공 부문의 주체가 포함될 수 있다. 이 비망라적 행동 목록은 첨단 AI 시스템의 최근 발전에 대응하여 기존 경제협력개발기구(OECD) AI 원칙(OECD AI Principles)을 발전시키기 위한 지속적으로 갱신되는 문서(living document)로서 논의되고 구체화되며, 이러한 기술이 가져오는 혜택을 포착하고 위험과 과제에 대응하는 데 도움을 주기 위한 것이다. 조직은 해당되는 경우 첨단 AI 시스템의 설계, 개발, 배포 및 사용을 포괄하도록 수명주기의 모든 단계에 이러한 행동을 적용해야 한다. 이 문서는 목적에 부합하고 빠르게 발전하는 이 기술에 대응할 수 있도록 지속적이고 포용적인 다중 이해관계자 협의를 포함하여 필요에 따라 검토되고 갱신될 것이다. 각 관할권은 이러한 행동을 서로 다른 방식으로 이행하기 위해 고유한 접근법을 취할 수 있다. 우리는 각국 정부가 보다 지속적이고/이거나 상세한 거버넌스 및 규제 접근법을 마련하는 동안, 조직이 다른 관련 이해관계자와 협의하여 위험 기반 접근법에 따라 이러한 행동을 이행할 것을 촉구한다. 또한 우리는 조직이 이러한 행동의 이행에 대해 책임을 다할 수 있도록 지원하는 모니터링 도구와 메커니즘을 도입하기 위해 OECD, 글로벌 AI 파트너십(GPAI) 및 기타 이해관계자와 협의하여 제안을 마련할 것을 약정한다. 우리는 조직이 모범 사례를 제공함으로써 효과적인 모니터링 메커니즘의 개발을 지원할 것을 권장하며, 우리는 이러한 메커니즘의 개발을 모색할 수 있다.",
+   "marks": [
+    {
+     "t": "전 세계적으로 안전하고 보안성이 확보된 신뢰할 수 있는 AI를 증진하는 것을 목표로 하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In addition, we encourage organizations to set up internal AI governance structures and policies, including self-assessment mechanisms, to facilitate a responsible and accountable approach to implementation of these actions and in AI development. While harnessing the opportunities of innovation, organizations should respect the rule of law, human rights, due process, diversity, fairness and non-discrimination, democracy, and humancentricity, in the design, development and deployment of advanced AI systems. Organizations should not develop or deploy advanced AI systems in ways that undermine democratic values, are particularly harmful to individuals or communities, facilitate terrorism, promote criminal misuse, or pose substantial risks to safety, security and human rights, and are thus not acceptable. States must abide by their obligations under international human rights law to ensure that human rights are fully respected and protected, while private sector activities should be in line with international frameworks such as the United Nations Guiding Principles on Business and Human Rights and the OECD Guidelines for Multinational Enterprises.",
+   "ko": "아울러 우리는 조직이 이러한 행동의 이행과 AI 개발에서 책임감 있고 책무성 있는 접근법을 촉진하기 위해 자체 평가(assessment) 메커니즘을 포함한 내부 AI 거버넌스 구조와 정책을 수립할 것을 권장한다. 조직은 혁신의 기회를 활용하는 동시에 첨단 AI 시스템의 설계, 개발 및 배포에 있어 법치, 인권, 적법 절차, 다양성, 공정성 및 비차별, 민주주의, 인간 중심성을 존중해야 한다. 조직은 민주적 가치를 훼손하거나, 개인 또는 공동체에 특히 해롭거나, 테러리즘을 조장하거나, 범죄적 오용을 부추기거나, 안전, 보안 및 인권에 상당한 위험을 초래하여 용인될 수 없는 방식으로 첨단 AI 시스템을 개발하거나 배포해서는 안 된다. 국가는 인권이 충분히 존중되고 보호되도록 국제인권법상의 의무를 준수해야 하며, 민간 부문의 활동은 유엔 기업과 인권 이행원칙(United Nations Guiding Principles on Business and Human Rights) 및 OECD 다국적기업 가이드라인(OECD Guidelines for Multinational Enterprises)과 같은 국제 프레임워크에 부합해야 한다.",
+   "marks": [
+    {
+     "t": "테러리즘을 조장하거나, 범죄적 오용을 부추기거나, 안전, 보안 및 인권에 상당한 위험을 초래하여 용인될 수 없는 방식으로 첨단 AI 시스템을 개발하거나 배포해서는 안 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Specifically, we call on organizations to abide by the following actions, in a manner that is commensurate to the risks: 1. Take appropriate measures throughout the development of advanced AI systems, including prior to and throughout their deployment and placement on the market, to identify, evaluate, and mitigate risks across the AI lifecycle.",
+   "ko": "구체적으로, 우리는 조직이 위험에 상응하는 방식으로 다음 행동을 준수할 것을 촉구한다: 1. 배포 및 시장 출시 이전과 그 전 과정을 포함하여 첨단 AI 시스템의 개발 전반에 걸쳐 AI 수명주기 전반의 위험을 식별, 평가(evaluation) 및 완화하기 위한 적절한 조치를 취한다.",
+   "marks": [
+    {
+     "t": "첨단 AI 시스템의 개발 전반에 걸쳐 AI 수명주기 전반의 위험을 식별, 평가(evaluation) 및 완화하기 위한 적절한 조치를 취한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This includes employing diverse internal and independent external testing measures, through a combination of methods for evaluations, such as red-teaming, and implementing appropriate mitigation to address identified risks and vulnerabilities. Testing and mitigation measures, should, for example, seek to ensure the trustworthiness, safety and security of systems throughout their entire lifecycle so that they do not pose unreasonable risks. In support of such testing, developers should seek to enable traceability, in relation to datasets, processes, and decisions made during system development. These measures should be documented and supported by regularly updated technical documentation.",
+   "ko": "여기에는 레드티밍과 같은 평가(evaluation) 방법의 조합을 통해 다양한 내부 및 독립적 외부 테스트 조치를 활용하고, 식별된 위험과 취약점에 대응하기 위해 적절한 완화 조치를 이행하는 것이 포함된다. 예를 들어 테스트 및 완화 조치는 시스템이 불합리한 위험을 초래하지 않도록 전체 수명주기에 걸쳐 시스템의 신뢰성, 안전성 및 보안성을 보장하는 것을 추구해야 한다. 이러한 테스트를 지원하기 위해 개발자는 시스템 개발 과정에서의 데이터세트, 프로세스 및 의사결정과 관련하여 추적 가능성을 확보하도록 노력해야 한다. 이러한 조치는 문서화되어야 하며 정기적으로 갱신되는 기술 문서로 뒷받침되어야 한다.",
+   "marks": [
+    {
+     "t": "레드티밍과 같은 평가(evaluation) 방법의 조합을 통해 다양한 내부 및 독립적 외부 테스트 조치를 활용하고",
+     "k": "safety"
+    },
+    {
+     "t": "시스템이 불합리한 위험을 초래하지 않도록 전체 수명주기에 걸쳐 시스템의 신뢰성, 안전성 및 보안성을 보장하는 것을 추구해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This testing should take place in secure environments and be performed at several checkpoints throughout the AI lifecycle in particular before deployment and placement on the market to identify risks and vulnerabilities, and to inform action to address the identified AI risks to security, safety and societal and other risks, whether accidental or intentional. In designing and implementing testing measures, organizations commit to devote attention to the following risks as appropriate:",
+   "ko": "이러한 테스트는 보안이 확보된 환경에서 이루어져야 하며, 위험과 취약점을 식별하고 우발적이든 의도적이든 보안, 안전, 사회적 위험 및 기타 위험과 관련하여 식별된 AI 위험에 대응하는 조치에 정보를 제공하기 위해 AI 수명주기 전반의 여러 점검 시점, 특히 배포 및 시장 출시 이전에 수행되어야 한다. 조직은 테스트 조치를 설계하고 이행할 때 적절한 경우 다음 위험에 주의를 기울일 것을 약정한다:",
+   "marks": [
+    {
+     "t": "특히 배포 및 시장 출시 이전에 수행되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Chemical, biological, radiological, and nuclear risks, such as the ways in which advanced AI systems can lower barriers to entry, including for non-state actors, for weapons development, design acquisition, or use.",
+   "ko": "화학, 생물학, 방사능 및 핵 위험. 예를 들어 첨단 AI 시스템이 비국가 행위자를 포함한 주체의 무기 개발, 설계 획득 또는 사용에 대한 진입 장벽을 낮출 수 있는 방식 등.",
+   "marks": [
+    {
+     "t": "화학, 생물학, 방사능 및 핵 위험",
+     "k": "safety"
+    },
+    {
+     "t": "비국가 행위자를 포함한 주체의 무기 개발, 설계 획득 또는 사용에 대한 진입 장벽을 낮출 수 있는 방식",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Offensive cyber capabilities, such as the ways in which systems can enable vulnerability discovery, exploitation, or operational use, bearing in mind that such capabilities could also have useful defensive applications and might be appropriate to include in a system.",
+   "ko": "공격적 사이버 역량. 예를 들어 시스템이 취약점 발견, 악용 또는 작전적 활용을 가능하게 할 수 있는 방식 등. 단, 이러한 역량은 유용한 방어적 활용도 가질 수 있으며 시스템에 포함하는 것이 적절할 수도 있다는 점을 유념한다.",
+   "marks": [
+    {
+     "t": "공격적 사이버 역량",
+     "k": "safety"
+    },
+    {
+     "t": "시스템이 취약점 발견, 악용 또는 작전적 활용을 가능하게 할 수 있는 방식",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Risks to health and/or Safety, including the effects of system interaction and tool use, including for example the capacity to control physical systems and interfere with critical infrastructure.",
+   "ko": "건강 및/또는 안전에 대한 위험. 예를 들어 물리적 시스템을 통제하고 핵심 기반시설에 간섭하는 능력을 포함하여 시스템 상호작용 및 도구 사용의 영향 등.",
+   "marks": [
+    {
+     "t": "물리적 시스템을 통제하고 핵심 기반시설에 간섭하는 능력",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Risks from models of making copies of themselves or 'self-replicating' or training other models.",
+   "ko": "모델이 자신을 복제하거나 '자기 복제(self-replicating)'하거나 다른 모델을 훈련시키는 데서 비롯되는 위험.",
+   "marks": [
+    {
+     "t": "모델이 자신을 복제하거나 '자기 복제(self-replicating)'하거나 다른 모델을 훈련시키는 데서 비롯되는 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Societal risks, as well as risks to individuals and communities such as the ways in which advanced",
+   "ko": "사회적 위험 및 개인과 공동체에 대한 위험. 예를 들어 첨단"
+  },
+  {
+   "type": "p",
+   "en": "AI systems or models can give rise to harmful bias and discrimination or lead to violation of applicable legal frameworks, including on privacy and data protection.",
+   "ko": "AI 시스템 또는 모델이 유해한 편향과 차별을 초래하거나 프라이버시 및 개인정보 보호에 관한 법적 프레임워크를 포함한 관련 법적 프레임워크의 위반으로 이어질 수 있는 방식 등."
+  },
+  {
+   "type": "li",
+   "en": "Threats to democratic values and human rights, including the facilitation of disinformation or harming privacy.",
+   "ko": "허위 정보의 조장 또는 프라이버시 침해를 포함한 민주적 가치와 인권에 대한 위협.",
+   "marks": [
+    {
+     "t": "허위 정보의 조장 또는 프라이버시 침해를 포함한 민주적 가치와 인권에 대한 위협",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Risk that a particular event could lead to a chain reaction with considerable negative effects that could affect up to an entire city, an entire domain activity or an entire community.",
+   "ko": "특정 사건이 도시 전체, 활동 영역 전체 또는 공동체 전체에까지 영향을 미칠 수 있는 상당한 부정적 효과를 동반한 연쇄 반응으로 이어질 수 있는 위험.",
+   "marks": [
+    {
+     "t": "상당한 부정적 효과를 동반한 연쇄 반응으로 이어질 수 있는 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Organizations commit to work in collaboration with relevant actors across sectors, to assess and adopt mitigation measures to address these risks, in particular systemic risks.",
+   "ko": "조직은 이러한 위험, 특히 시스템적 위험에 대응하기 위한 완화 조치를 평가(assessment)하고 채택하기 위해 여러 부문의 관련 주체와 협력할 것을 약정한다.",
+   "marks": [
+    {
+     "t": "특히 시스템적 위험에 대응하기 위한 완화 조치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Organizations making these commitments should also endeavor to advance research and investment on the security, safety, bias and disinformation, fairness, explainability and interpretability, and transparency of advanced AI systems and on increasing robustness and trustworthiness of advanced AI systems against misuse.",
+   "ko": "이러한 약정을 하는 조직은 또한 첨단 AI 시스템의 보안, 안전, 편향 및 허위 정보, 공정성, 설명 가능성 및 해석 가능성, 투명성에 관한 연구와 투자, 그리고 오용에 대한 첨단 AI 시스템의 강건성과 신뢰성 제고에 관한 연구와 투자를 증진하기 위해 노력해야 한다.",
+   "marks": [
+    {
+     "t": "설명 가능성 및 해석 가능성",
+     "k": "safety"
+    },
+    {
+     "t": "오용에 대한 첨단 AI 시스템의 강건성과 신뢰성 제고에 관한 연구와 투자",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "2. Identify and mitigate vulnerabilities, and, where appropriate, incidents and patterns of misuse, after deployment including placement on the market.",
+   "ko": "2. 시장 출시를 포함한 배포 이후 취약점을 식별하고 완화하며, 적절한 경우 사고 및 오용 패턴을 식별하고 완화한다.",
+   "marks": [
+    {
+     "t": "배포 이후 취약점을 식별하고 완화하며, 적절한 경우 사고 및 오용 패턴을 식별하고 완화한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Organizations should use, as and when appropriate commensurate to the level of risk, AI systems as intended and monitor for vulnerabilities, incidents, emerging risks and misuse after deployment, and take appropriate action to address these. Organizations are encouraged to consider, for example, facilitating third-party and user discovery and reporting of issues and vulnerabilities after deployment such as through bounty systems, contests, or prizes to incentivize the responsible disclosure of weaknesses. Organizations are further encouraged to maintain appropriate documentation of reported incidents and to mitigate the identified risks and vulnerabilities, in collaboration with other stakeholders. Mechanisms to report vulnerabilities, where appropriate, should be accessible to a diverse set of stakeholders.",
+   "ko": "조직은 위험 수준에 상응하여 적절한 시기와 방식으로 AI 시스템을 의도된 대로 사용하고, 배포 이후 취약점, 사고, 신흥 위험 및 오용을 모니터링하며, 이에 대응하기 위한 적절한 조치를 취해야 한다. 조직은 예를 들어 약점의 책임 있는 공개를 장려하기 위한 포상금 제도, 경진대회 또는 상금 등을 통해 배포 이후 제3자와 이용자가 문제와 취약점을 발견하고 보고할 수 있도록 지원하는 방안을 고려하도록 권장된다. 조직은 또한 보고된 사고에 관한 적절한 문서를 유지하고, 다른 이해관계자와 협력하여 식별된 위험과 취약점을 완화하도록 권장된다. 취약점을 보고하는 메커니즘은 적절한 경우 다양한 이해관계자가 접근할 수 있어야 한다.",
+   "marks": [
+    {
+     "t": "배포 이후 취약점, 사고, 신흥 위험 및 오용을 모니터링하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "3. Publicly report advanced AI systems' capabilities, limitations and domains of appropriate and inappropriate use, to support ensuring sufficient transparency, thereby contributing to increase accountability.",
+   "ko": "3. 충분한 투명성 확보를 뒷받침하고 이를 통해 책임성 제고에 기여하기 위해, 첨단 AI 시스템의 역량, 한계, 그리고 적절한 사용 및 부적절한 사용 영역을 공개적으로 보고한다."
+  },
+  {
+   "type": "p",
+   "en": "This should include publishing transparency reports containing meaningful information for all new significant releases of advanced AI systems.",
+   "ko": "여기에는 첨단 AI 시스템의 모든 새로운 주요 출시에 대해 의미 있는 정보를 담은 투명성 보고서를 발행하는 것이 포함되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "These reports, instruction for use and relevant technical documentation, as appropriate as, should be kept up-to-date and should include, for example;",
+   "ko": "이러한 보고서, 사용 설명서 및 관련 기술 문서는 적절한 경우 최신 상태로 유지되어야 하며, 예를 들어 다음을 포함해야 한다;"
+  },
+  {
+   "type": "li",
+   "en": "Details of the evaluations conducted for potential safety, security, and societal risks, as well as risks to human rights,",
+   "ko": "잠재적인 안전, 보안 및 사회적 위험과 인권에 대한 위험에 관해 수행된 평가(evaluation)의 세부 내용,",
+   "marks": [
+    {
+     "t": "잠재적인 안전, 보안 및 사회적 위험과 인권에 대한 위험에 관해 수행된 평가(evaluation)의 세부 내용",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Capacities of a model/system and significant limitations in performance that have implications for the domains of appropriate use,",
+   "ko": "모델/시스템의 역량, 그리고 적절한 사용 영역에 영향을 미치는 성능상의 중대한 한계,"
+  },
+  {
+   "type": "li",
+   "en": "Discussion and assessment of the model's or system's effects and risks to safety and society such as harmful bias, discrimination, threats to protection of privacy or personal data, and effects on fairness, and",
+   "ko": "유해한 편향, 차별, 프라이버시 또는 개인정보 보호에 대한 위협, 공정성에 미치는 영향 등 모델 또는 시스템이 안전과 사회에 미치는 영향과 위험에 대한 논의 및 평가(assessment), 그리고"
+  },
+  {
+   "type": "li",
+   "en": "The results of red-teaming conducted to evaluate the model's/system's fitness for moving beyond the development stage.",
+   "ko": "모델/시스템이 개발 단계를 넘어 진행하기에 적합한지 평가(evaluation)하기 위해 수행된 레드티밍의 결과.",
+   "marks": [
+    {
+     "t": "모델/시스템이 개발 단계를 넘어 진행하기에 적합한지 평가(evaluation)하기 위해 수행된 레드티밍의 결과",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Organizations should make the information in the transparency reports sufficiently clear and understandable to enable deployers and users as appropriate and relevant to interpret the model/system's output and to enable users to use it appropriately; and that transparency reporting should be supported and informed by robust documentation processes such as technical documentation and instructions for use.",
+   "ko": "조직은 투명성 보고서의 정보를 충분히 명확하고 이해하기 쉽게 작성하여, 적절하고 관련성 있는 경우 배포자와 이용자가 모델/시스템의 출력을 해석할 수 있도록 하고 이용자가 이를 적절하게 사용할 수 있도록 해야 한다. 또한 투명성 보고는 기술 문서 및 사용 설명서와 같은 견고한 문서화 프로세스에 의해 뒷받침되고 그로부터 정보를 얻어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "4. Work towards responsible information sharing and reporting of incidents among organizations developing advanced AI systems including with industry, governments, civil society, and academia",
+   "ko": "4. 산업계, 정부, 시민사회 및 학계를 포함하여 첨단 AI 시스템을 개발하는 조직 간의 책임 있는 정보 공유 및 사고 보고를 위해 노력한다"
+  },
+  {
+   "type": "p",
+   "en": "This includes responsibly sharing information, as appropriate, including, but not limited to evaluation reports, information on security and safety risks, dangerous intended or unintended capabilities, and attempts by AI actors to circumvent safeguards across the AI lifecycle. Organizations should establish or join mechanisms to develop, advance, and adopt, where appropriate, shared standards, tools, mechanisms, and best practices for ensuring the safety, security, and trustworthiness of advanced AI systems. This should also include ensuring appropriate and relevant documentation and transparency across the AI lifecycle in particular for advanced AI systems that cause significant risks to safety and society. Organizations should collaborate with other organizations across the AI lifecycle to share and report relevant information to the public with a view to advancing safety, security and trustworthiness of advanced AI systems. Organizations should also collaborate and share the aforementioned information with relevant public authorities, as appropriate. Such reporting should safeguard intellectual property rights.",
+   "ko": "여기에는 평가(evaluation) 보고서, 보안 및 안전 위험에 관한 정보, 의도되었거나 의도되지 않은 위험한 역량, 그리고 AI 수명주기 전반에 걸쳐 AI 행위자가 안전장치를 우회하려는 시도 등을 포함하되 이에 국한되지 않는 정보를 적절한 경우 책임 있게 공유하는 것이 포함된다. 조직은 첨단 AI 시스템의 안전, 보안 및 신뢰성을 보장하기 위한 공유 표준, 도구, 메커니즘 및 모범 사례를 적절한 경우 개발, 발전 및 채택하기 위한 메커니즘을 구축하거나 이에 참여해야 한다. 여기에는 특히 안전과 사회에 중대한 위험을 초래하는 첨단 AI 시스템에 대해 AI 수명주기 전반에 걸쳐 적절하고 관련성 있는 문서화와 투명성을 보장하는 것도 포함되어야 한다. 조직은 첨단 AI 시스템의 안전, 보안 및 신뢰성을 증진하기 위해 AI 수명주기 전반에 걸쳐 다른 조직과 협력하여 관련 정보를 공유하고 대중에게 보고해야 한다. 조직은 또한 적절한 경우 관련 공공 당국과 협력하고 앞서 언급한 정보를 공유해야 한다. 이러한 보고는 지식재산권을 보호해야 한다.",
+   "marks": [
+    {
+     "t": "의도되었거나 의도되지 않은 위험한 역량, 그리고 AI 수명주기 전반에 걸쳐 AI 행위자가 안전장치를 우회하려는 시도",
+     "k": "safety"
+    },
+    {
+     "t": "관련 공공 당국과 협력하고 앞서 언급한 정보를 공유해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "5. Develop, implement and disclose AI governance and risk management policies, grounded in a risk-based approach - including privacy policies, and mitigation measures.",
+   "ko": "5. 프라이버시 정책 및 완화 조치를 포함하여, 위험 기반 접근법에 근거한 AI 거버넌스 및 위험 관리 정책을 개발, 이행 및 공개한다."
+  },
+  {
+   "type": "p",
+   "en": "Organizations should put in place appropriate organizational mechanisms to develop, disclose and implement risk management and governance policies, including for example accountability and governance processes to identify, assess, prevent, and address risks, where feasible throughout the",
+   "ko": "조직은 위험 관리 및 거버넌스 정책을 개발, 공개 및 이행하기 위한 적절한 조직적 메커니즘을 마련해야 하며, 여기에는 예를 들어 가능한 경우 전체"
+  },
+  {
+   "type": "p",
+   "en": "AI lifecycle.",
+   "ko": "AI 수명주기에 걸쳐 위험을 식별, 평가(assessment), 예방 및 대응하기 위한 책임성 및 거버넌스 프로세스가 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "This includes disclosing where appropriate privacy policies, including for personal data, user prompts and advanced AI system outputs. Organizations are expected to establish and disclose their AI governance policies and organizational mechanisms to implement these policies in accordance with a risk-based approach. This should include accountability and governance processes to evaluate and mitigate risks, where feasible throughout the AI lifecycle.",
+   "ko": "여기에는 적절한 경우 개인정보, 이용자 프롬프트 및 첨단 AI 시스템 출력에 관한 것을 포함한 프라이버시 정책을 공개하는 것이 포함된다. 조직은 위험 기반 접근법에 따라 AI 거버넌스 정책과 이러한 정책을 이행하기 위한 조직적 메커니즘을 수립하고 공개할 것으로 기대된다. 여기에는 가능한 경우 AI 수명주기 전반에 걸쳐 위험을 평가(evaluation)하고 완화하기 위한 책임성 및 거버넌스 프로세스가 포함되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "The risk management policies should be developed in accordance with a risk-based approach and apply a risk management framework across the AI lifecycle as appropriate and relevant, to address the range of risks associated with AI systems, and policies should also be regularly updated.",
+   "ko": "위험 관리 정책은 위험 기반 접근법에 따라 개발되어야 하며, AI 시스템과 관련된 다양한 위험에 대응하기 위해 적절하고 관련성 있는 경우 AI 수명주기 전반에 걸쳐 위험 관리 프레임워크를 적용해야 하고, 정책은 또한 정기적으로 갱신되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "Organizations should establish policies, procedures, and training to ensure that staff are familiar with their duties and the organization's risk management practices",
+   "ko": "조직은 직원이 자신의 직무와 조직의 위험 관리 실행 방안을 숙지할 수 있도록 정책, 절차 및 교육을 마련해야 한다"
+  },
+  {
+   "type": "p",
+   "en": "6. Invest in and implement robust security controls, including physical security, cybersecurity and insider threat safeguards across the AI lifecycle.",
+   "ko": "6. AI 수명주기 전반에 걸쳐 물리적 보안, 사이버 보안 및 내부자 위협 안전장치를 포함한 견고한 보안 통제에 투자하고 이를 이행한다.",
+   "marks": [
+    {
+     "t": "물리적 보안, 사이버 보안 및 내부자 위협 안전장치를 포함한 견고한 보안 통제",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "These may include securing model weights and, algorithms, servers, and datasets, such as through operational security measures for information security and appropriate cyber/physical access controls.",
+   "ko": "여기에는 정보 보안을 위한 운영 보안 조치와 적절한 사이버/물리적 접근 통제 등을 통해 모델 가중치 및 알고리즘, 서버, 데이터세트를 보호하는 것이 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "모델 가중치 및 알고리즘, 서버, 데이터세트를 보호하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This also includes performing an assessment of cybersecurity risks and implementing cybersecurity policies and adequate technical and institutional solutions to ensure that the cybersecurity of advanced AI systems is appropriate to the relevant circumstances and the risks involved. Organizations should also have in place measures to require storing and working with the model weights of advanced AI systems in an appropriately secure environment with limited access to reduce both the risk of unsanctioned release and the risk of unauthorized access. This includes a commitment to have in place a vulnerability management process and to regularly review security measures to ensure they are maintained to a high standard and remain suitable to address risks.",
+   "ko": "여기에는 또한 사이버 보안 위험에 대한 평가(assessment)를 수행하고, 첨단 AI 시스템의 사이버 보안이 관련 상황과 수반되는 위험에 적절하도록 보장하기 위한 사이버 보안 정책과 충분한 기술적·제도적 해결책을 이행하는 것이 포함된다. 조직은 또한 승인되지 않은 공개의 위험과 무단 접근의 위험을 모두 줄이기 위해, 첨단 AI 시스템의 모델 가중치를 접근이 제한된 적절히 안전한 환경에서 저장하고 다루도록 요구하는 조치를 마련해야 한다. 여기에는 취약점 관리 프로세스를 마련하고, 보안 조치가 높은 수준으로 유지되며 위험에 대응하기에 계속 적합하도록 이를 정기적으로 검토하겠다는 약정이 포함된다.",
+   "marks": [
+    {
+     "t": "첨단 AI 시스템의 모델 가중치를 접근이 제한된 적절히 안전한 환경에서 저장하고 다루도록 요구하는 조치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This further includes establishing a robust insider threat detection program consistent with protections provided for their most valuable intellectual property and trade secrets, for example, by limiting access to proprietary and unreleased model weights.",
+   "ko": "여기에는 나아가, 예를 들어 독점적이고 공개되지 않은 모델 가중치에 대한 접근을 제한하는 등, 가장 가치 있는 지식재산권 및 영업비밀에 제공되는 보호 조치와 일관된 견고한 내부자 위협 탐지 프로그램을 구축하는 것이 포함된다.",
+   "marks": [
+    {
+     "t": "견고한 내부자 위협 탐지 프로그램을 구축하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "7. Develop and deploy reliable content authentication and provenance mechanisms, where technically feasible, such as watermarking or other techniques to enable users to identify AI-generated content",
+   "ko": "7. 기술적으로 가능한 경우, 이용자가 AI 생성 콘텐츠를 식별할 수 있도록 워터마킹 또는 기타 기법과 같은 신뢰할 수 있는 콘텐츠 인증 및 출처 증명(provenance) 메커니즘을 개발하고 배포한다",
+   "marks": [
+    {
+     "t": "이용자가 AI 생성 콘텐츠를 식별할 수 있도록 워터마킹 또는 기타 기법과 같은 신뢰할 수 있는 콘텐츠 인증 및 출처 증명(provenance) 메커니즘",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This includes, where appropriate and technically feasible, content authentication and provenance mechanisms for content created with an organization's advanced AI system. The provenance data should include an identifier of the service or model that created the content, but need not include user information. Organizations should also endeavor to develop tools or APIs to allow users to determine if particular content was created with their advanced AI system, such as via watermarks. Organizations should collaborate and invest in research, as appropriate, to advance the state of the field.",
+   "ko": "여기에는 적절하고 기술적으로 가능한 경우, 조직의 첨단 AI 시스템으로 생성된 콘텐츠에 대한 콘텐츠 인증 및 출처 증명 메커니즘이 포함된다. 출처 증명 데이터에는 콘텐츠를 생성한 서비스 또는 모델의 식별자가 포함되어야 하나, 이용자 정보는 포함될 필요가 없다. 조직은 또한 워터마크 등을 통해 이용자가 특정 콘텐츠가 자사의 첨단 AI 시스템으로 생성되었는지 확인할 수 있도록 하는 도구 또는 애플리케이션 프로그래밍 인터페이스 (API)를 개발하도록 노력해야 한다. 조직은 해당 분야의 수준을 발전시키기 위해 적절한 경우 협력하고 연구에 투자해야 한다."
+  },
+  {
+   "type": "p",
+   "en": "Organizations are further encouraged to implement other mechanisms such as labeling or disclaimers to enable users, where possible and appropriate, to know when they are interacting with an AI system.",
+   "ko": "조직은 나아가, 가능하고 적절한 경우 이용자가 AI 시스템과 상호작용하고 있음을 알 수 있도록 라벨링이나 고지 문구와 같은 기타 메커니즘을 이행하도록 권장된다."
+  },
+  {
+   "type": "p",
+   "en": "8. Prioritize research to mitigate societal, safety and security risks and prioritize investment in effective mitigation measures.",
+   "ko": "8. 사회적, 안전 및 보안 위험을 완화하기 위한 연구를 우선시하고, 효과적인 완화 조치에 대한 투자를 우선시한다.",
+   "marks": [
+    {
+     "t": "사회적, 안전 및 보안 위험을 완화하기 위한 연구를 우선시하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This includes conducting, collaborating on and investing in research that supports the advancement of AI safety, security, and trust, and addressing key risks, as well as investing in developing appropriate mitigation tools.",
+   "ko": "여기에는 AI 안전, 보안 및 신뢰의 증진과 주요 위험에 대한 대응을 뒷받침하는 연구를 수행하고, 이에 협력하며, 투자하는 것과 적절한 완화 도구 개발에 투자하는 것이 포함된다.",
+   "marks": [
+    {
+     "t": "AI 안전, 보안 및 신뢰의 증진과 주요 위험에 대한 대응을 뒷받침하는 연구",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Organizations commit to conducting, collaborating on and investing in research that supports the advancement of AI safety, security, trustworthiness and addressing key risks, such as prioritizing research on upholding democratic values, respecting human rights, protecting children and vulnerable groups, safeguarding intellectual property rights and privacy, and avoiding harmful bias, mis- and disinformation, and information manipulation. Organizations also commit to invest in developing appropriate mitigation tools, and work to proactively manage the risks of advanced AI systems, including environmental and climate impacts, so that their benefits can be realized.",
+   "ko": "조직은 AI 안전, 보안, 신뢰성의 증진과 주요 위험에 대한 대응을 뒷받침하는 연구를 수행하고, 이에 협력하며, 투자할 것을 약속한다. 예를 들어 민주적 가치의 수호, 인권 존중, 아동 및 취약 집단의 보호, 지식재산권 및 프라이버시 보호, 그리고 유해한 편향, 오정보(misinformation) 및 허위 정보, 정보 조작의 방지에 관한 연구를 우선시하는 것이 이에 해당한다. 조직은 또한 적절한 완화 도구 개발에 투자하고, 첨단 AI 시스템의 편익이 실현될 수 있도록 환경 및 기후 영향을 포함한 첨단 AI 시스템의 위험을 선제적으로 관리하기 위해 노력할 것을 약속한다.",
+   "marks": [
+    {
+     "t": "오정보(misinformation) 및 허위 정보, 정보 조작의 방지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Organizations are encouraged to share research and best practices on risk mitigation.",
+   "ko": "조직은 위험 완화에 관한 연구 및 모범 사례를 공유하도록 권장된다."
+  },
+  {
+   "type": "p",
+   "en": "9. Prioritize the development of advanced AI systems to address the world's greatest challenges, notably but not limited to the climate crisis, global health and education",
+   "ko": "9. 특히 기후 위기, 세계 보건 및 교육을 비롯하되 이에 국한되지 않는 세계의 가장 큰 과제를 해결하기 위한 첨단 AI 시스템의 개발을 우선시한다"
+  },
+  {
+   "type": "p",
+   "en": "These efforts are undertaken in support of progress on the United Nations Sustainable Development Goals, and to encourage AI development for global benefit.",
+   "ko": "이러한 노력은 유엔 지속가능발전목표(United Nations Sustainable Development Goals)의 진전을 지원하고, 전 세계의 이익을 위한 AI 개발을 장려하기 위해 수행된다."
+  },
+  {
+   "type": "p",
+   "en": "Organizations should prioritize responsible stewardship of trustworthy and human-centric AI and also support digital literacy initiatives that promote the education and training of the public, including students and workers, to enable them to benefit from the use of advanced AI systems, and to help individuals and communities better understand the nature, capabilities, limitations, and impact of these technologies. Organizations should work with civil society and community groups to identify priority challenges and develop innovative solutions to address the world's greatest challenges.",
+   "ko": "조직은 신뢰할 수 있고 인간 중심적인 AI의 책임 있는 관리(stewardship)를 우선시해야 하며, 학생과 근로자를 포함한 대중이 첨단 AI 시스템의 활용으로부터 혜택을 누릴 수 있도록 하고, 개인과 공동체가 이러한 기술의 본질, 역량, 한계 및 영향을 더 잘 이해하도록 돕기 위해, 대중의 교육과 훈련을 촉진하는 디지털 리터러시 이니셔티브도 지원해야 한다. 조직은 시민사회 및 지역사회 단체와 협력하여 우선 과제를 파악하고, 세계의 가장 큰 과제를 해결하기 위한 혁신적인 해결책을 개발해야 한다."
+  },
+  {
+   "type": "p",
+   "en": "10. Advance the development of and, where appropriate, adoption of international technical standards",
+   "ko": "10. 국제 기술 표준의 개발 및, 적절한 경우, 채택을 촉진한다"
+  },
+  {
+   "type": "p",
+   "en": "Organizations are encouraged to contribute to the development and, where appropriate, use of international technical standards and best practices, including for watermarking, and working with Standards Development Organizations (SDOs), also when developing organizations' testing methodologies, content authentication and provenance mechanisms, cybersecurity policies, public reporting, and other measures. In particular, organizations also are encouraged to work to develop interoperable international technical standards and frameworks to help users distinguish content generated by AI from non-AI generated content.",
+   "ko": "조직은 워터마킹에 관한 것을 포함하여 국제 기술 표준 및 모범 사례의 개발과, 적절한 경우, 그 활용에 기여하고, 조직의 시험 방법론, 콘텐츠 인증 및 출처 증명 메커니즘, 사이버 보안 정책, 공개 보고 및 기타 조치를 개발할 때에도 표준개발기구(Standards Development Organizations, SDOs)와 협력하도록 권장된다. 특히, 조직은 또한 이용자가 AI가 생성한 콘텐츠를 AI가 생성하지 않은 콘텐츠와 구별하는 데 도움이 되는 상호운용 가능한 국제 기술 표준 및 프레임워크를 개발하기 위해 노력하도록 권장된다."
+  },
+  {
+   "type": "p",
+   "en": "11. Implement appropriate data input measures and protections for personal data and intellectual property",
+   "ko": "11. 적절한 데이터 입력 조치와 개인정보 및 지식재산권에 대한 보호 조치를 이행한다"
+  },
+  {
+   "type": "p",
+   "en": "Organizations are encouraged to take appropriate measures to manage data quality, including training data and data collection, to mitigate against harmful biases. Appropriate measures could include transparency, privacy-preserving training techniques, and/or testing and fine-tuning to ensure that systems do not divulge confidential or sensitive data. Organizations are encouraged to implement appropriate safeguards, to respect rights related to privacy and intellectual property, including copyright-protected content.",
+   "ko": "조직은 유해한 편향을 완화하기 위해 학습 데이터 및 데이터 수집을 포함한 데이터 품질을 관리하는 적절한 조치를 취하도록 권장된다. 적절한 조치에는 시스템이 기밀 데이터나 민감 데이터를 누설하지 않도록 보장하기 위한 투명성, 프라이버시 보호 학습 기법, 및/또는 시험과 미세조정(Fine-Tuning)이 포함될 수 있다. 조직은 저작권으로 보호되는 콘텐츠를 포함하여 프라이버시 및 지식재산권과 관련된 권리를 존중하기 위해 적절한 안전장치를 이행하도록 권장된다.",
+   "marks": [
+    {
+     "t": "시스템이 기밀 데이터나 민감 데이터를 누설하지 않도록 보장하기 위한",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Organizations should also comply with applicable legal frameworks.",
+   "ko": "조직은 또한 적용 가능한 법적 프레임워크를 준수해야 한다."
+  }
+ ]
+}

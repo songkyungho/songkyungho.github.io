@@ -32,6 +32,14 @@ import openaiNewsomLetter from "../data/translations/openai-newsom-letter-2026-1
 import googlePragmaticAi from "../data/translations/google-pragmatic-ai-governance-2026-06.json";
 import cohereWhoDefines from "../data/translations/cohere-who-defines-rules-2026-09.json";
 import aiiaCommitments2025 from "../data/translations/aiia-china-safety-commitments-2025.json";
+import hiroshimaPrinciples2023 from "../data/translations/hiroshima-principles-2023.json";
+import hiroshimaCode2023 from "../data/translations/hiroshima-code-2023.json";
+import hiroshimaAllActors2023 from "../data/translations/hiroshima-all-actors-2023.json";
+import reaimCall2023 from "../data/translations/reaim-call-2023.json";
+import reaimPathways2026 from "../data/translations/reaim-pathways-2026.json";
+import globalDigitalCompact2024 from "../data/translations/global-digital-compact-2024.json";
+import parisStatement2025 from "../data/translations/paris-statement-2025.json";
+import newDelhiDeclaration2026 from "../data/translations/new-delhi-declaration-2026.json";
 import xrTuringHeretical1951 from "../data/translations/turing-heretical-1951.json";
 import xrTuringBbc1951 from "../data/translations/turing-bbc-1951.json";
 import xrButlerErewhon1872 from "../data/translations/butler-erewhon-1872.json";
@@ -89,7 +97,7 @@ export type TranslationDoc = {
   blocks: TranslationBlock[];
 };
 
-export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, microsoftFgf, amazonFmsf, chinaFramework3, nvidiaFra, cohereSecureAi, g42Fsf, xrButler1863, xrButler1865, xrButlerErewhon1872, xrTuringBbc1951, xrTuringHeretical1951, xrFliResearchPriorities2015, xrAsilomar2017, xrFliPause2023, xrCaisStatement2023, xrIdaisOxford2023, xrBletchley2023, xrEldersLongview2024, xrIdaisBeijing2024, xrRightToWarn2024, xrIdaisVenice2024, xrIdaisShanghai2025, xrRedLines2025, xrSuperintelligenceStatement2025, xrProHuman2026, xrIdaisLondon2026, xrAiCyberLetter2026, pacingFrontier, amodeiPaceFrontier, anthropicAdvancedAi, anthropicEconomicPolicy, openaiFederalBlueprint, openaiBuildingStandards, openaiNewsomLetter, googlePragmaticAi, cohereWhoDefines, aiiaCommitments2025, caSb53, nyRaise2026, ilSb315] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
+export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, microsoftFgf, amazonFmsf, chinaFramework3, nvidiaFra, cohereSecureAi, g42Fsf, xrButler1863, xrButler1865, xrButlerErewhon1872, xrTuringBbc1951, xrTuringHeretical1951, xrFliResearchPriorities2015, xrAsilomar2017, xrFliPause2023, xrCaisStatement2023, xrIdaisOxford2023, xrBletchley2023, xrEldersLongview2024, xrIdaisBeijing2024, xrRightToWarn2024, xrIdaisVenice2024, xrIdaisShanghai2025, xrRedLines2025, xrSuperintelligenceStatement2025, xrProHuman2026, xrIdaisLondon2026, xrAiCyberLetter2026, pacingFrontier, amodeiPaceFrontier, anthropicAdvancedAi, anthropicEconomicPolicy, openaiFederalBlueprint, openaiBuildingStandards, openaiNewsomLetter, googlePragmaticAi, cohereWhoDefines, aiiaCommitments2025, hiroshimaPrinciples2023, hiroshimaCode2023, hiroshimaAllActors2023, reaimCall2023, reaimPathways2026, globalDigitalCompact2024, parisStatement2025, newDelhiDeclaration2026, caSb53, nyRaise2026, ilSb315] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
 
 export const dotDate = (iso: string) => iso.replaceAll("-", ".");
 

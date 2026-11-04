@@ -1,0 +1,281 @@
+{
+ "slug": "reaim-call-2023",
+ "title": "REAIM 2023 「행동 촉구」",
+ "original_title": "REAIM Call to Action",
+ "publisher": "REAIM Summit 2023",
+ "published": "2023-02-16",
+ "source_url": "https://www.government.nl/documents/publications/2023/02/16/reaim-2023-call-to-action",
+ "source_note": "네덜란드 정부 누리집의 공식 영문 PDF.",
+ "source_label": "원문 보기 (네덜란드 정부)",
+ "summary": "네덜란드와 한국이 함께 연 첫 군사 영역 책임 있는 AI 정상회의의 결과문서다. AI가 군사 작전을 크게 바꾸리라고 보면서 그 영향을 아직 다 이해하지 못한다고 인정하고, 인간의 책임과 국제법 준수, 다자 논의를 촉구한다. 미국과 중국이 모두 지지했다.",
+ "doc_kind": "공동 문서",
+ "translated": "2026-11-05",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/reaim-call-2023-cover.webp",
+ "og_image": "/images/translations/reaim-call-2023-cover.jpg",
+ "image_caption": "문건 첫 쪽",
+ "stats": {
+  "blocks": 33,
+  "sections": 1,
+  "items": 0,
+  "words_en": 1360
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "REAIM Call to Action",
+   "ko": "REAIM 행동 촉구(Call to Action)",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "Artificial intelligence (AI) is influencing and changing our world fundamentally.",
+   "ko": "인공지능(AI)은 우리 세계에 근본적인 영향을 미치며 세계를 변화시키고 있다."
+  },
+  {
+   "type": "p",
+   "en": "We are aware that AI will drastically impact the future of military operations, just as it impacts the way we work and live. Militaries are increasing their use of AI across a range of applications and contexts.",
+   "ko": "우리는 AI가 우리의 일하고 살아가는 방식에 영향을 미치는 것과 마찬가지로 향후 군사 작전에도 극적인 영향을 미칠 것임을 인식하고 있다. 군은 다양한 응용 분야와 맥락에서 AI 활용을 늘리고 있다."
+  },
+  {
+   "type": "p",
+   "en": "AI offers great opportunities and has extraordinary potential as an enabling technology, enabling us among other benefits to make powerful use of previously unimaginable quantities of data and improving decision-making. However, we recognise that there are also risks involved, many of which we cannot foresee to date.",
+   "ko": "AI는 조력 기술(enabling technology)로서 큰 기회와 비상한 잠재력을 제공하며, 무엇보다 이전에는 상상할 수 없었던 양의 데이터를 강력하게 활용하고 의사결정을 개선할 수 있게 해 준다. 그러나 우리는 위험 또한 수반되며, 그중 상당수는 현재로서는 예견할 수 없다는 점을 인정한다.",
+   "marks": [
+    {
+     "t": "그러나 우리는 위험 또한 수반되며, 그중 상당수는 현재로서는 예견할 수 없다는 점을 인정한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "There are concerns worldwide around the use of AI in the military domain and about the potential unreliability of AI systems, the issue of human involvement, the lack of clarity with regards to liability and potential unintended consequences, and the risk of unintended escalation within the spectrum of armed force, amongst other potential impacts.",
+   "ko": "군사 영역에서의 AI 사용과 관련하여, 특히 AI 시스템의 잠재적 신뢰성 결여, 인간 관여의 문제, 법적 책임 및 잠재적인 의도치 않은 결과와 관련된 불명확성, 무력 사용 스펙트럼 내에서의 의도치 않은 확전 위험 등 잠재적 영향에 대해 전 세계적으로 우려가 존재한다.",
+   "marks": [
+    {
+     "t": "AI 시스템의 잠재적 신뢰성 결여, 인간 관여의 문제, 법적 책임 및 잠재적인 의도치 않은 결과와 관련된 불명확성",
+     "k": "safety"
+    },
+    {
+     "t": "무력 사용 스펙트럼 내에서의 의도치 않은 확전 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We stress the paramount importance of the responsible use of AI in the military domain, employed in full accordance with international legal obligations and in a way that does not undermine international security, stability and accountability.",
+   "ko": "우리는 군사 영역에서 AI를 국제법상 의무에 완전히 부합하게, 그리고 국제 보안, 안정성 및 책임성을 훼손하지 않는 방식으로 책임 있게 사용하는 것이 무엇보다 중요함을 강조한다.",
+   "marks": [
+    {
+     "t": "우리는 군사 영역에서 AI를 국제법상 의무에 완전히 부합하게, 그리고 국제 보안, 안정성 및 책임성을 훼손하지 않는 방식으로 책임 있게 사용하는 것이 무엇보다 중요함을 강조한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "With this Call to Action we invite governments, industry, knowledge institutions, international organisations and others to support the following:",
+   "ko": "이 행동 촉구를 통해 우리는 정부, 산업계, 지식 기관, 국제기구 및 기타 주체가 다음 사항을 지지할 것을 요청한다."
+  },
+  {
+   "type": "p",
+   "en": "1. We acknowledge the potential impact, including opportunities and challenges, as a result of the rapid adoption of AI systems in the military domain on international security and stability.",
+   "ko": "1. 우리는 군사 영역에서 AI 시스템이 빠르게 도입됨에 따라 국제 보안과 안정성에 미칠 수 있는 기회와 도전을 포함한 잠재적 영향을 인정한다."
+  },
+  {
+   "type": "p",
+   "en": "2. We recognise the potential of AI applications in the military domain for a wide variety of purposes, at the service of humanity, including AI applications to reduce the risk of harm to civilians and civilian objects in armed conflicts.",
+   "ko": "2. 우리는 무력 충돌 시 민간인 및 민간 물자에 대한 피해 위험을 줄이기 위한 AI 응용을 포함하여, 인류에 기여하는 다양한 목적을 위한 군사 영역 AI 응용의 잠재력을 인정한다."
+  },
+  {
+   "type": "p",
+   "en": "3. We recognise that we do not and cannot fully comprehend and anticipate the implications and challenges resulting from the introduction of AI across a wide range of applications in the military domain.",
+   "ko": "3. 우리는 군사 영역의 광범위한 응용 분야에 AI를 도입함으로써 발생하는 함의와 도전을 우리가 완전히 이해하고 예측하지 못하며, 또 그렇게 할 수 없다는 점을 인정한다.",
+   "marks": [
+    {
+     "t": "함의와 도전을 우리가 완전히 이해하고 예측하지 못하며, 또 그렇게 할 수 없다는 점을 인정한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "4. We see a need to increasing our comprehension of the impact of AI in the military domain. That includes myth busting as well as improving knowledge and literacy regarding the benefits, risks and limitations of AI in the military domain.",
+   "ko": "4. 우리는 군사 영역에서 AI가 미치는 영향에 대한 이해를 증진할 필요가 있다고 본다. 여기에는 잘못된 통념을 바로잡는 것과 더불어 군사 영역 AI의 이점, 위험 및 한계에 관한 지식과 이해력을 향상하는 것이 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "5. We recognise the work done by many actors on responsible development, deployment and use of military AI, including relevant national strategies, AI principles and international initiatives, and the expertise build-up by different stakeholder groups to effectively respond to the challenges posed by embedding AI in the military domain.",
+   "ko": "5. 우리는 관련 국가 전략, AI 원칙 및 국제 이니셔티브를 포함하여 군사 AI의 책임 있는 개발, 배포 및 사용을 위해 많은 행위자가 수행해 온 작업과, 군사 영역에 AI를 임베딩함으로써 제기되는 도전에 효과적으로 대응하기 위해 다양한 이해관계자 집단이 축적해 온 전문성을 인정한다."
+  },
+  {
+   "type": "p",
+   "en": "6. We note that AI can be used to shape and impact decision making, and we will work to ensure that humans remain responsible and accountable for decisions when using AI in the military domain.",
+   "ko": "6. 우리는 AI가 의사결정을 형성하고 그에 영향을 미치는 데 사용될 수 있음에 주목하며, 군사 영역에서 AI를 사용할 때 인간이 결정에 대한 책임과 책임성을 계속 유지하도록 노력할 것이다.",
+   "marks": [
+    {
+     "t": "인간이 결정에 대한 책임과 책임성을 계속 유지하도록 노력할 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "7. We recognise the need to assess the risks involved in the various types of current and future application of various AI techniques in the military domain and the different military contexts in which AI is applied.",
+   "ko": "7. 우리는 군사 영역에서 다양한 AI 기법이 현재 및 미래에 응용되는 여러 유형과 AI가 적용되는 다양한 군사적 맥락에 수반되는 위험을 평가할 필요성을 인정한다.",
+   "marks": [
+    {
+     "t": "AI가 적용되는 다양한 군사적 맥락에 수반되는 위험을 평가할 필요성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "8. We recognise that failure to adopt AI in a timely manner may result in a military disadvantage, while premature adoption without sufficient research, testing and assurance may result in inadvertent harm. We see the need to increase the exchange of lessons learnt regarding risk mitigation practices and procedures.",
+   "ko": "8. 우리는 AI를 적시에 도입하지 못하면 군사적 열세를 초래할 수 있는 반면, 충분한 연구, 시험 및 보증 없이 성급하게 도입하면 의도치 않은 피해를 초래할 수 있음을 인정한다. 우리는 위험 완화 실행 방안 및 절차에 관한 교훈의 교류를 확대할 필요가 있다고 본다.",
+   "marks": [
+    {
+     "t": "우리는 AI를 적시에 도입하지 못하면 군사적 열세를 초래할 수 있는 반면, 충분한 연구, 시험 및 보증 없이 성급하게 도입하면 의도치 않은 피해를 초래할 수 있음을 인정한다.",
+     "k": "key"
+    },
+    {
+     "t": "위험 완화 실행 방안 및 절차에 관한 교훈의 교류를 확대할 필요",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "9. We stress the importance of a holistic, inclusive and comprehensive approach in addressing the possible impacts, opportunities and challenges of the use of AI in the military domain and the need for all stakeholders, including states, private sector, civil society and academia, to collaborate and exchange information on responsible AI in the military domain.",
+   "ko": "9. 우리는 군사 영역에서의 AI 사용이 가져올 수 있는 영향, 기회 및 도전에 대응함에 있어 총체적이고 포용적이며 포괄적인 접근의 중요성을 강조하며, 국가, 민간 부문, 시민사회 및 학계를 포함한 모든 이해관계자가 군사 영역의 책임 있는 AI에 관해 협력하고 정보를 교환할 필요성을 강조한다."
+  },
+  {
+   "type": "p",
+   "en": "10. We affirm that data for AI systems should be collected, used, shared, archived and deleted, as applicable, in ways that are consistent with international law, as well as relevant national, regional and international legal frameworks and data standards. Adequate data protection and data quality governance mechanisms should be established and ensured from the early design phase onwards, including in obtaining and using AI training data.",
+   "ko": "10. 우리는 AI 시스템을 위한 데이터가 해당되는 경우 국제법뿐만 아니라 관련 국가, 지역 및 국제 법적 프레임워크와 데이터 표준에 부합하는 방식으로 수집, 사용, 공유, 보관 및 삭제되어야 함을 확인한다. AI 학습 데이터의 확보 및 사용을 포함하여, 초기 설계 단계부터 적절한 개인정보 보호 및 데이터 품질 거버넌스 메커니즘이 수립되고 보장되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "11. We realise that due to the distributed nature of military decision making and the complexities of AI systems require us to pay close attention to all stages of development, deployment and use of AI in the military domain. We encourage collaboration between the public and private sector and strive to continue to engage with multiple stakeholders involved in the development, deployment and use of AI in the military domain.",
+   "ko": "11. 우리는 군사적 의사결정의 분산적 특성과 AI 시스템의 복잡성으로 인해 군사 영역에서 AI의 개발, 배포 및 사용의 모든 단계에 세심한 주의를 기울여야 함을 인식한다. 우리는 공공 부문과 민간 부문 간의 협력을 장려하며, 군사 영역에서 AI의 개발, 배포 및 사용에 관여하는 다수의 이해관계자와 지속적으로 소통하기 위해 노력한다."
+  },
+  {
+   "type": "p",
+   "en": "12. We reiterate the importance of ensuring appropriate safeguards and human oversight of the use of AI systems, bearing in mind human limitations due to constraints in time and capacities.",
+   "ko": "12. 우리는 시간과 역량의 제약으로 인한 인간의 한계를 염두에 두면서, AI 시스템 사용에 대한 적절한 안전장치와 인간 감독을 보장하는 것의 중요성을 재차 강조한다.",
+   "marks": [
+    {
+     "t": "시간과 역량의 제약으로 인한 인간의 한계",
+     "k": "safety"
+    },
+    {
+     "t": "AI 시스템 사용에 대한 적절한 안전장치와 인간 감독을 보장하는 것의 중요성을 재차 강조한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "13. We recognise that military personnel who utilise AI should sufficiently understand the characteristics of AI systems, the potential consequences of the use of these systems, including consequences resulting from any limitations, such as potential biases in data, thus requiring research, education and training on the manner of user interaction and reliance on the AI systems to avoid an undesirable effect.",
+   "ko": "13. 우리는 AI를 활용하는 군 인력이 AI 시스템의 특성과, 데이터의 잠재적 편향과 같은 한계로 인한 결과를 포함하여 이러한 시스템 사용의 잠재적 결과를 충분히 이해해야 함을 인정하며, 따라서 바람직하지 않은 효과를 피하기 위해 사용자의 상호작용 방식 및 AI 시스템에 대한 의존에 관한 연구, 교육 및 훈련이 필요함을 인정한다.",
+   "marks": [
+    {
+     "t": "데이터의 잠재적 편향과 같은 한계로 인한 결과",
+     "k": "safety"
+    },
+    {
+     "t": "바람직하지 않은 효과를 피하기 위해 사용자의 상호작용 방식 및 AI 시스템에 대한 의존에 관한 연구, 교육 및 훈련이 필요함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "14. We promote the exchange of good practices and lessons learnt among states to increase the mutual comprehension of states' national frameworks and policies with regard to the use of AI in the military domain. We also affirm the importance of sharing good practices and lessons learnt by the private sector on norms, policies, principles and technological expertise.",
+   "ko": "14. 우리는 군사 영역에서의 AI 사용과 관련한 각국의 국가 프레임워크 및 정책에 대한 상호 이해를 증진하기 위해 국가 간 모범 실행 방안 및 교훈의 교류를 촉진한다. 우리는 또한 규범, 정책, 원칙 및 기술 전문성에 관해 민간 부문이 얻은 모범 실행 방안과 교훈을 공유하는 것의 중요성을 확인한다."
+  },
+  {
+   "type": "p",
+   "en": "15. We recognise that the implementation of AI in the military domain differs per state. The responsible use of AI in the military domain requires international and multi-stakeholder exchange in order for all states, especially developing countries, to benefit from the opportunities and to address the challenges and risks.",
+   "ko": "15. 우리는 군사 영역에서의 AI 구현이 국가마다 다르다는 점을 인정한다. 군사 영역에서 AI를 책임 있게 사용하려면, 모든 국가, 특히 개발도상국이 기회의 혜택을 누리고 도전과 위험에 대응할 수 있도록 국제적이고 다중 이해관계자적인 교류가 필요하다."
+  },
+  {
+   "type": "p",
+   "en": "16. We see a need for a continuation of a balanced international and multi-stakeholder discussion on the benefits, dilemmas, risks and challenges arising from the use of AI in the military domain. We invite the international private sector, academia, civil society and other relevant stakeholders to actively contribute to the discussions at the multilateral level and promote responsible AI in the military domain.",
+   "ko": "16. 우리는 군사 영역에서의 AI 사용으로 발생하는 이점, 딜레마, 위험 및 도전에 관하여 균형 잡힌 국제적·다중 이해관계자 논의를 지속할 필요가 있다고 본다. 우리는 국제 민간 부문, 학계, 시민사회 및 기타 관련 이해관계자가 다자 차원의 논의에 적극적으로 기여하고 군사 영역에서 책임 있는 AI를 증진할 것을 요청한다.",
+   "marks": [
+    {
+     "t": "군사 영역에서의 AI 사용으로 발생하는 이점, 딜레마, 위험 및 도전",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our call to action:",
+   "ko": "우리의 행동 촉구:"
+  },
+  {
+   "type": "p",
+   "en": "17. The technological developments in the area of AI take place primarily in the civil domain. We therefore acknowledge that the introduction of AI in the military domain is a multi-stakeholder challenge. We are committed to continuing the global dialogue on responsible AI in the military domain in a multi-stakeholder and inclusive manner and call on all stakeholders to take their responsibility in contributing to international security and stability in accordance with international law.",
+   "ko": "17. AI 분야의 기술 발전은 주로 민간 영역에서 이루어진다. 따라서 우리는 군사 영역에 AI를 도입하는 것이 다중 이해관계자의 도전 과제임을 인정한다. 우리는 군사 영역의 책임 있는 AI에 관한 글로벌 대화를 다중 이해관계자적이고 포용적인 방식으로 지속할 것을 약속하며, 모든 이해관계자가 국제법에 따라 국제 보안과 안정성에 기여하는 데 있어 각자의 책임을 다할 것을 촉구한다."
+  },
+  {
+   "type": "p",
+   "en": "18. We invite states to increase general comprehension of military AI by knowledge-building through research, training courses and capacity-building activities. We encourage states to work together, share knowledge by exchanging good practices and lessons learnt, building their capacity and involve the private sector, civil society and academia to promote responsible AI in the military domain.",
+   "ko": "18. 우리는 국가들이 연구, 교육 과정 및 역량 구축 활동을 통한 지식 축적으로 군사 AI에 대한 전반적인 이해를 높일 것을 요청한다. 우리는 국가들이 함께 협력하고, 모범 실행 방안과 교훈을 교환함으로써 지식을 공유하며, 역량을 구축하고, 민간 부문, 시민사회 및 학계를 참여시켜 군사 영역에서 책임 있는 AI를 증진할 것을 장려한다."
+  },
+  {
+   "type": "p",
+   "en": "19. We invite states to develop national frameworks, strategies and principles on responsible AI in the military domain.",
+   "ko": "19. 우리는 국가들이 군사 영역의 책임 있는 AI에 관한 국가 프레임워크, 전략 및 원칙을 수립할 것을 요청한다."
+  },
+  {
+   "type": "p",
+   "en": "20. We welcome initiatives by states, academia, civil society, industry and other stakeholders that promote responsible AI in the military domain.",
+   "ko": "20. 우리는 군사 영역에서 책임 있는 AI를 증진하는 국가, 학계, 시민사회, 산업계 및 기타 이해관계자의 이니셔티브를 환영한다."
+  },
+  {
+   "type": "p",
+   "en": "21. We support academia, knowledge institutes and think tanks globally to conduct additional research in order to better comprehend the impact, opportunities and challenges of rapidly adopting AI in the military domain, especially in the field of human machine teaming, cognisant of the multifaceted use cases of different AI systems in different military contexts.",
+   "ko": "21. 우리는 상이한 군사적 맥락에서 상이한 AI 시스템이 갖는 다면적 사용 사례를 인식하면서, 군사 영역에서 AI를 신속하게 도입하는 것의 영향, 기회 및 도전을 특히 인간-기계 협업(human machine teaming) 분야에서 더 잘 이해할 수 있도록 전 세계의 학계, 지식 기관 및 싱크탱크가 추가 연구를 수행하는 것을 지원한다.",
+   "marks": [
+    {
+     "t": "군사 영역에서 AI를 신속하게 도입하는 것의 영향, 기회 및 도전을 특히 인간-기계 협업(human machine teaming) 분야에서 더 잘 이해할 수 있도록",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "22. We invite academia, knowledge institutes and think tanks to propose methods and contribute to practical solutions to the challenges that the use of AI in the military domain poses, in order to contribute to international security and stability.",
+   "ko": "22. 우리는 국제 보안과 안정성에 기여하기 위해 학계, 지식 기관 및 싱크탱크가 군사 영역에서의 AI 사용이 제기하는 도전에 대한 방법을 제안하고 실질적인 해결책에 기여할 것을 요청한다."
+  },
+  {
+   "type": "p",
+   "en": "23. We call on the private sector to support and promote the responsible use of AI in the military domain. We encourage the sharing of good practices and policies on responsible use of AI by companies with other stakeholders, especially those good practices and policies that may be relevant to the use of AI in the military domain, bearing in mind national security considerations and restrictions on commercial proprietary information.",
+   "ko": "23. 우리는 민간 부문이 군사 영역에서 AI의 책임 있는 사용을 지지하고 증진할 것을 촉구한다. 우리는 국가안보상의 고려 사항과 상업적 독점 정보에 대한 제한을 염두에 두면서, 기업이 AI의 책임 있는 사용에 관한 모범 실행 방안과 정책, 특히 군사 영역에서의 AI 사용과 관련될 수 있는 모범 실행 방안과 정책을 다른 이해관계자와 공유할 것을 장려한다.",
+   "marks": [
+    {
+     "t": "민간 부문이 군사 영역에서 AI의 책임 있는 사용을 지지하고 증진할 것을 촉구한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "24. We encourage multi-stakeholder dialogue on best practices to guide the development, deployment and use of AI in the military domain to ensure an interdisciplinary discussion throughout of good practices and policies on responsible use of AI in the military domain.",
+   "ko": "24. 우리는 군사 영역에서 AI의 책임 있는 사용에 관한 모범 실행 방안과 정책에 대해 전 과정에 걸쳐 학제 간 논의가 이루어지도록, 군사 영역에서 AI의 개발, 배포 및 사용을 이끌 모범 사례에 관한 다중 이해관계자 대화를 장려한다."
+  },
+  {
+   "type": "p",
+   "en": "25. We invite all stakeholders worldwide to join this Call to Action.",
+   "ko": "25. 우리는 전 세계 모든 이해관계자가 이 행동 촉구(Call to Action)에 동참할 것을 요청한다."
+  }
+ ]
+}

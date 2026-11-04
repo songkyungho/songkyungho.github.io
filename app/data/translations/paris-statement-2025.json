@@ -1,0 +1,504 @@
+{
+ "slug": "paris-statement-2025",
+ "title": "파리 AI 행동 정상회의 성명",
+ "original_title": "Statement on Inclusive and Sustainable Artificial Intelligence for People and the Planet",
+ "publisher": "AI Action Summit",
+ "published": "2025-02-11",
+ "source_url": "https://www.elysee.fr/en/emmanuel-macron/2025/02/11/statement-on-inclusive-and-sustainable-artificial-intelligence-for-people-and-the-planet",
+ "source_note": "프랑스 대통령실 누리집 게재본. 서명국 목록까지 옮겼다.",
+ "source_label": "원문 보기 (프랑스 대통령실)",
+ "summary": "2025년 2월 파리 정상회의 성명이다. 블레츨리와 서울에서 이어진 안전 중심 흐름과 달리 접근성, 포용, 혁신, 노동, 지속가능성을 우선순위로 내세웠다. 한국과 중국을 포함한 60여 개국이 서명했고 미국과 영국은 서명하지 않았다.",
+ "doc_kind": "성명",
+ "translated": "2026-11-05",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/paris-statement-2025-cover.webp",
+ "og_image": "/images/translations/paris-statement-2025-cover.jpg",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "stats": {
+  "blocks": 83,
+  "sections": 0,
+  "items": 0,
+  "words_en": 888
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Statement[^1]  on Inclusive and Sustainable Artificial Intelligence for People and the",
+   "ko": "사람과 지구를 위한 포용적이고 지속 가능한 인공지능에 관한 성명[^1]"
+  },
+  {
+   "type": "p",
+   "en": "1. Participants from over 100 countries, including government leaders, international organisations, representatives of civil society, the private sector, and the academic and research communities gathered in Paris on 10 and 11 February 2025 to hold the AI Action Summit. Rapid development of AI technologies represents a major paradigm shift, impacting our citizens, and societies in many ways. In line with the Paris Pact for People and the Planet[^2], and the principles that countries must have ownership of their transition strategies, we have identified priorities and launched concrete actions to advance the public interest and to bridge digital divides through accelerating progress towards the SDGs. Our actions are grounded in three main principles of science, solutions - focusing on open AI models in compliance with countries frameworks - and policy standards, in line with international frameworks.",
+   "ko": "1. 정부 지도자, 국제기구, 시민사회, 민간 부문, 학계 및 연구계 대표를 포함한 100개국 이상의 참가자가 2025년 2월 10일과 11일 파리에 모여 AI 행동 정상회의(AI Action Summit)를 개최했다. AI 기술의 급속한 발전은 우리 시민과 사회에 다양한 방식으로 영향을 미치는 중대한 패러다임 전환이다. 사람과 지구를 위한 파리 협약(Paris Pact for People and the Planet)[^2], 그리고 각국이 자국의 전환 전략에 대한 주인의식을 가져야 한다는 원칙에 따라, 우리는 지속가능발전목표(SDGs) 달성을 향한 진전을 가속화하여 공익을 증진하고 디지털 격차를 해소하기 위한 우선순위를 확인하고 구체적인 행동에 착수했다. 우리의 행동은 과학, 솔루션 - 각국 프레임워크의 규정 준수 하에 개방형 AI 모델에 중점을 둠 - , 그리고 국제 프레임워크에 부합하는 정책 표준이라는 세 가지 주요 원칙에 기반한다."
+  },
+  {
+   "type": "p",
+   "en": "2. This Summit has highlighted the importance of reinforcing the diversity of the AI ecosystem. It has laid an open, multi-stakeholder and inclusive approach that will enable AI to be human rights based, human-centric, ethical, safe, secure and trustworthy while also stressing the need and urgency to narrow the inequalities and assist developing countries in artificial intelligence capacity-building so they can build AI capacities.",
+   "ko": "2. 이번 정상회의는 AI 생태계의 다양성 강화가 중요함을 부각했다. 이번 정상회의는 AI가 인권에 기반하고, 인간 중심적이며, 윤리적이고, 안전하고, 보안이 확보되며, 신뢰할 수 있도록 하는 개방적이고 다중이해관계자적이며 포용적인 접근 방식을 마련했다. 아울러 불평등을 줄이고 개발도상국이 AI 역량을 구축할 수 있도록 인공지능 역량 강화를 지원해야 할 필요성과 시급성을 강조했다.",
+   "marks": [
+    {
+     "t": "AI가 인권에 기반하고, 인간 중심적이며, 윤리적이고, 안전하고, 보안이 확보되며, 신뢰할 수 있도록 하는 개방적이고 다중이해관계자적이며 포용적인 접근 방식을 마련했다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "3. Acknowledging existing multilateral initiatives on AI, including the United Nations General Assembly Resolutions, the Global Digital Compact, the UNESCO Recommendation on Ethics of AI, the African Union Continental AI Strategy, and the works of the Organization for Economic Cooperation and Development (OECD), the Council of Europe and European Union, the G7 including the Hiroshima AI Process and G20, we have affirmed the following main priorities:",
+   "ko": "3. 국제연합 총회(United Nations General Assembly) 결의, 글로벌 디지털 협약(Global Digital Compact), 유네스코 인공지능 윤리 권고(UNESCO Recommendation on Ethics of AI), 아프리카연합 대륙 AI 전략(African Union Continental AI Strategy), 그리고 경제협력개발기구(OECD), 유럽평의회(Council of Europe) 및 유럽연합(European Union), 히로시마 AI 프로세스(Hiroshima AI Process)를 포함한 G7 및 G20의 작업 등 AI에 관한 기존 다자 이니셔티브를 인정하며, 우리는 다음과 같은 주요 우선순위를 확인했다."
+  },
+  {
+   "type": "li",
+   "en": "Promoting AI accessibility to reduce digital divides;",
+   "ko": "디지털 격차 해소를 위한 AI 접근성 증진;"
+  },
+  {
+   "type": "li",
+   "en": "Ensuring AI is open, inclusive, transparent, ethical, safe, secure and trustworthy, taking into account international frameworks for all",
+   "ko": "모두를 위한 국제 프레임워크를 고려하여, AI가 개방적이고, 포용적이며, 투명하고, 윤리적이며, 안전하고, 보안이 확보되며, 신뢰할 수 있도록 보장",
+   "marks": [
+    {
+     "t": "AI가 개방적이고, 포용적이며, 투명하고, 윤리적이며, 안전하고, 보안이 확보되며, 신뢰할 수 있도록 보장",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Making innovation in AI thrive by enabling conditions for its development and avoiding market concentration driving industrial recovery and development",
+   "ko": "AI 발전을 위한 여건을 조성하고, 산업 회복과 발전을 견인하는 시장 집중도를 방지함으로써 AI 혁신이 번성하도록 함"
+  },
+  {
+   "type": "li",
+   "en": "Encouraging AI deployment that positively shapes the future of work and labour markets and delivers opportunity for sustainable growth",
+   "ko": "일과 노동 시장의 미래를 긍정적으로 형성하고 지속 가능한 성장의 기회를 제공하는 AI 배포 장려"
+  },
+  {
+   "type": "li",
+   "en": "Making AI sustainable for people and the planet",
+   "ko": "사람과 지구를 위해 AI를 지속 가능하게 함"
+  },
+  {
+   "type": "li",
+   "en": "Reinforcing international cooperation to promote coordination in international governance",
+   "ko": "국제 거버넌스 내 조율을 촉진하기 위한 국제 협력 강화"
+  },
+  {
+   "type": "p",
+   "en": "To deliver on these priorities:",
+   "ko": "이러한 우선순위를 이행하기 위해:"
+  },
+  {
+   "type": "li",
+   "en": "Founding members[^3]  have launched a major Public Interest AI Platform and Incubator, to support, amplify, decrease fragmentation between existing public and private initiatives on Public Interest AI and address digital divides. The Public interest AI Initiative will sustain and support digital public goods and technical assistance and capacity building projects in data, model development, openness and transparency, audit, compute, talent, financing and collaboration to support and co-create a trustworthy AI ecosystem advancing the public interest of all, for all and by all.",
+   "ko": "창립 회원국[^3]은 공익 AI에 관한 기존 공공 및 민간 이니셔티브를 지원·확대하고 이들 간 파편화를 줄이며 디지털 격차를 해소하기 위해 대규모 공익 AI 플랫폼 및 인큐베이터(Public Interest AI Platform and Incubator)를 출범했다. 공익 AI 이니셔티브(Public interest AI Initiative)는 디지털 공공재, 그리고 데이터, 모델 개발, 개방성 및 투명성, 감사, 연산, 인재, 재원 조달, 협력 분야의 기술 지원 및 역량 강화 프로젝트를 유지·지원하여, 모두의, 모두를 위한, 모두에 의한 공익을 증진하는 신뢰할 수 있는 AI 생태계를 지원하고 공동으로 구축할 것이다."
+  },
+  {
+   "type": "li",
+   "en": "We have discussed, at a Summit for the first time and in a multi-stakeholder format, issues related to AI and energy. This discussion has led to sharing knowledge to foster investments for sustainable AI systems (hardware, infrastructure, models), to promoting an international discussion on AI and environment, to welcoming an observatory on the energy impact of AI with the International Energy Agency, to showcasing energy-friendly AI innovation.",
+   "ko": "우리는 정상회의 사상 처음으로, 그리고 다중이해관계자 형식으로 AI와 에너지 관련 문제를 논의했다. 이 논의를 통해 지속 가능한 AI 시스템(하드웨어, 인프라, 모델)에 대한 투자를 촉진하기 위한 지식 공유, AI와 환경에 관한 국제적 논의 촉진, 국제에너지기구(International Energy Agency)와 함께하는 AI 에너지 영향 관측소(observatory) 설립 환영, 에너지 친화적 AI 혁신 소개가 이루어졌다."
+  },
+  {
+   "type": "li",
+   "en": "We recognize the need to enhance our shared knowledge on the impacts of AI in the job market, though the creation of network of Observatories, to better anticipate AI implications for workplaces, training and education and to use AI to foster productivity, skill development, quality and working conditions and social dialogue.",
+   "ko": "우리는 관측소 네트워크 구축을 통해 일자리 시장에서의 AI 영향에 관한 공동의 지식을 증진할 필요성을 인식한다. 이를 통해 직장, 훈련 및 교육에 대한 AI의 함의를 더 잘 예측하고, AI를 활용하여 생산성, 역량 개발, 질과 근로 조건, 사회적 대화를 촉진하고자 한다."
+  },
+  {
+   "type": "p",
+   "en": "4. We recognize the need for inclusive multistakeholder dialogues[^4]  and cooperation on AI governance. We underline the need for a global reflection integrating inter alia questions of safety, sustainable development, innovation, respect of international laws including humanitarian law and human rights law and the protection of human rights, gender equality, linguistic diversity, protection of consumers and of intellectual property rights. We take notes of efforts and discussions related to international fora where AI governance is examined. As outlined in the Global Digital Compact adopted by the UN General Assembly, participants also reaffirmed their commitment to initiate a Global Dialogue on AI governance and the Independent International Scientific Panel on AI and to align on-going governance efforts, ensuring complementarity and avoiding duplication.",
+   "ko": "4. 우리는 AI 거버넌스에 관한 포용적인 다중이해관계자 대화[^4]와 협력의 필요성을 인식한다. 우리는 특히 안전, 지속 가능한 발전, 혁신, 인도법 및 인권법을 포함한 국제법의 존중과 인권 보호, 성평등, 언어적 다양성, 소비자 보호 및 지식재산권 보호 등의 문제를 통합하는 전 지구적 성찰의 필요성을 강조한다. 우리는 AI 거버넌스를 검토하는 국제 포럼과 관련된 노력과 논의에 주목한다. 국제연합 총회에서 채택된 글로벌 디지털 협약에 명시된 바와 같이, 참가자들은 또한 AI 거버넌스에 관한 글로벌 대화(Global Dialogue on AI governance)와 AI에 관한 독립 국제 과학 패널(Independent International Scientific Panel on AI)을 개시하고, 상호보완성을 보장하고 중복을 피하면서 진행 중인 거버넌스 노력을 조율하겠다는 약정을 재확인했다.",
+   "marks": [
+    {
+     "t": "AI에 관한 독립 국제 과학 패널(Independent International Scientific Panel on AI)을 개시",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "5. Harnessing the benefits of AI technologies to support our economies and societies depends on advancing Trust and Safety. We commend the role of the Bletchley Park AI Safety Summit and Seoul Summits that have been essential in progressing international cooperation on AI safety and we note the voluntary commitments launched there. We will keep addressing the risks of AI to information integrity and continue the work on AI transparency.",
+   "ko": "5. 우리 경제와 사회를 지원하기 위해 AI 기술의 혜택을 활용하는 것은 신뢰와 안전의 증진에 달려 있다. 우리는 AI 안전에 관한 국제 협력을 진전시키는 데 핵심적이었던 블레츨리 파크 AI 안전 정상회의(Bletchley Park AI Safety Summit)와 서울 정상회의(Seoul Summits)의 역할을 높이 평가하며, 그곳에서 발표된 자발적 약정에 주목한다. 우리는 정보 무결성에 대한 AI의 위험에 계속 대응하고 AI 투명성에 관한 작업을 지속할 것이다.",
+   "marks": [
+    {
+     "t": "AI 기술의 혜택을 활용하는 것은 신뢰와 안전의 증진에 달려 있다",
+     "k": "key"
+    },
+    {
+     "t": "AI 안전에 관한 국제 협력을 진전시키는 데 핵심적이었던 블레츨리 파크 AI 안전 정상회의(Bletchley Park AI Safety Summit)와 서울 정상회의(Seoul Summits)의 역할을 높이 평가하며",
+     "k": "safety"
+    },
+    {
+     "t": "그곳에서 발표된 자발적 약정에 주목한다",
+     "k": "safety"
+    },
+    {
+     "t": "정보 무결성에 대한 AI의 위험에 계속 대응하고 AI 투명성에 관한 작업을 지속할 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "6. We look forward to next AI milestones such as the Kigali Summit, the 3rd Global Forum on the Ethics of AI hosted by Thailand and UNESCO, the 2025 World AI Conference and the AI for Good Global Summit 2025 to follow up on our commitments and continue to take concrete actions aligned with a sustainable and inclusive AI.",
+   "ko": "6. 우리는 약정을 후속 이행하고 지속 가능하고 포용적인 AI에 부합하는 구체적 행동을 계속 취하기 위해, 키갈리 정상회의(Kigali Summit), 태국과 유네스코가 주최하는 제3차 AI 윤리 글로벌 포럼(3rd Global Forum on the Ethics of AI), 2025 세계인공지능대회(World AI Conference), AI for Good Global Summit 2025 등 향후 AI 이정표를 고대한다."
+  },
+  {
+   "type": "p",
+   "en": "Signatory countries:",
+   "ko": "서명국:"
+  },
+  {
+   "type": "li",
+   "en": "Armenia",
+   "ko": "아르메니아"
+  },
+  {
+   "type": "li",
+   "en": "Australia",
+   "ko": "호주"
+  },
+  {
+   "type": "li",
+   "en": "Austria",
+   "ko": "오스트리아"
+  },
+  {
+   "type": "li",
+   "en": "Belgium",
+   "ko": "벨기에"
+  },
+  {
+   "type": "li",
+   "en": "Brazil",
+   "ko": "브라질"
+  },
+  {
+   "type": "li",
+   "en": "Bulgaria",
+   "ko": "불가리아"
+  },
+  {
+   "type": "li",
+   "en": "Cambodia",
+   "ko": "캄보디아"
+  },
+  {
+   "type": "li",
+   "en": "Canada",
+   "ko": "캐나다"
+  },
+  {
+   "type": "li",
+   "en": "Chile",
+   "ko": "칠레"
+  },
+  {
+   "type": "li",
+   "en": "China",
+   "ko": "중국"
+  },
+  {
+   "type": "li",
+   "en": "Colombia",
+   "ko": "콜롬비아"
+  },
+  {
+   "type": "li",
+   "en": "Côte d’Ivoire",
+   "ko": "코트디부아르"
+  },
+  {
+   "type": "li",
+   "en": "Croatia",
+   "ko": "크로아티아"
+  },
+  {
+   "type": "li",
+   "en": "Cyprus",
+   "ko": "키프로스"
+  },
+  {
+   "type": "li",
+   "en": "Czech Republic",
+   "ko": "체코"
+  },
+  {
+   "type": "li",
+   "en": "Denmark",
+   "ko": "덴마크"
+  },
+  {
+   "type": "li",
+   "en": "Djibouti",
+   "ko": "지부티"
+  },
+  {
+   "type": "li",
+   "en": "Egypt",
+   "ko": "이집트"
+  },
+  {
+   "type": "li",
+   "en": "Estonia",
+   "ko": "에스토니아"
+  },
+  {
+   "type": "li",
+   "en": "Finland",
+   "ko": "핀란드"
+  },
+  {
+   "type": "li",
+   "en": "France",
+   "ko": "프랑스"
+  },
+  {
+   "type": "li",
+   "en": "Germany",
+   "ko": "독일"
+  },
+  {
+   "type": "li",
+   "en": "Greece",
+   "ko": "그리스"
+  },
+  {
+   "type": "li",
+   "en": "Hungary",
+   "ko": "헝가리"
+  },
+  {
+   "type": "li",
+   "en": "Iceland",
+   "ko": "아이슬란드"
+  },
+  {
+   "type": "li",
+   "en": "India",
+   "ko": "인도"
+  },
+  {
+   "type": "li",
+   "en": "Indonesia",
+   "ko": "인도네시아"
+  },
+  {
+   "type": "li",
+   "en": "Ireland",
+   "ko": "아일랜드"
+  },
+  {
+   "type": "li",
+   "en": "Italy",
+   "ko": "이탈리아"
+  },
+  {
+   "type": "li",
+   "en": "Japan",
+   "ko": "일본"
+  },
+  {
+   "type": "li",
+   "en": "Kazakhstan",
+   "ko": "카자흐스탄"
+  },
+  {
+   "type": "li",
+   "en": "Kenya",
+   "ko": "케냐"
+  },
+  {
+   "type": "li",
+   "en": "Latvia",
+   "ko": "라트비아"
+  },
+  {
+   "type": "li",
+   "en": "Liechtenstein",
+   "ko": "리히텐슈타인"
+  },
+  {
+   "type": "li",
+   "en": "Lithuania",
+   "ko": "리투아니아"
+  },
+  {
+   "type": "li",
+   "en": "Luxembourg",
+   "ko": "룩셈부르크"
+  },
+  {
+   "type": "li",
+   "en": "Malta",
+   "ko": "몰타"
+  },
+  {
+   "type": "li",
+   "en": "Mexico",
+   "ko": "멕시코"
+  },
+  {
+   "type": "li",
+   "en": "Moldova",
+   "ko": "몰도바"
+  },
+  {
+   "type": "li",
+   "en": "Monaco",
+   "ko": "모나코"
+  },
+  {
+   "type": "li",
+   "en": "Morocco",
+   "ko": "모로코"
+  },
+  {
+   "type": "li",
+   "en": "Netherlands",
+   "ko": "네덜란드"
+  },
+  {
+   "type": "li",
+   "en": "New Zealand",
+   "ko": "뉴질랜드"
+  },
+  {
+   "type": "li",
+   "en": "Nigeria",
+   "ko": "나이지리아"
+  },
+  {
+   "type": "li",
+   "en": "Norway",
+   "ko": "노르웨이"
+  },
+  {
+   "type": "li",
+   "en": "Peru",
+   "ko": "페루"
+  },
+  {
+   "type": "li",
+   "en": "Poland",
+   "ko": "폴란드"
+  },
+  {
+   "type": "li",
+   "en": "Portugal",
+   "ko": "포르투갈"
+  },
+  {
+   "type": "li",
+   "en": "Republic of Korea",
+   "ko": "대한민국"
+  },
+  {
+   "type": "li",
+   "en": "Romania",
+   "ko": "루마니아"
+  },
+  {
+   "type": "li",
+   "en": "Rwanda",
+   "ko": "르완다"
+  },
+  {
+   "type": "li",
+   "en": "Senegal",
+   "ko": "세네갈"
+  },
+  {
+   "type": "li",
+   "en": "Serbia",
+   "ko": "세르비아"
+  },
+  {
+   "type": "li",
+   "en": "Singapore",
+   "ko": "싱가포르"
+  },
+  {
+   "type": "li",
+   "en": "Slovakia",
+   "ko": "슬로바키아"
+  },
+  {
+   "type": "li",
+   "en": "Slovenia",
+   "ko": "슬로베니아"
+  },
+  {
+   "type": "li",
+   "en": "Spain",
+   "ko": "스페인"
+  },
+  {
+   "type": "li",
+   "en": "Sweden",
+   "ko": "스웨덴"
+  },
+  {
+   "type": "li",
+   "en": "Switzerland",
+   "ko": "스위스"
+  },
+  {
+   "type": "li",
+   "en": "Thailand",
+   "ko": "태국"
+  },
+  {
+   "type": "li",
+   "en": "Ukraine",
+   "ko": "우크라이나"
+  },
+  {
+   "type": "li",
+   "en": "Uruguay",
+   "ko": "우루과이"
+  },
+  {
+   "type": "li",
+   "en": "Zimbabwe",
+   "ko": "짐바브웨"
+  },
+  {
+   "type": "li",
+   "en": "African Union Commission",
+   "ko": "아프리카연합 집행위원회(African Union Commission)"
+  },
+  {
+   "type": "li",
+   "en": "European Union",
+   "ko": "유럽연합"
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "In line with the approach of previous Summits, this Statement relates to civil applications and use of AI only",
+   "ko": "이전 정상회의들의 접근 방식에 따라, 본 성명은 AI의 민간 응용 및 사용에만 관련된다",
+   "linked": true
+  },
+  {
+   "n": 2,
+   "en": "Members as of 11 February 2025: Argentina, Bangladesh, Barbados, Benin, Botswana, Burundi, Cabo Verde, Cameroon, Canada, Chile, Colombia, Comoros, Congo, Côte d'Ivoire, Croatia, Cyprus, Denmark, Egypt, Ethiopia, France, Gabon, Gambia, Germany, Ghana, Greece, Guatemala, Guinea, Guinea-Bissau, Haiti, India, Indonesia, Ireland, Jamaica, South Africa, Spain, Jordan, Kenya, Madagascar, Malawi, Marshall Islands, Mauritania, Moldova, Mongolia, Morocco, Niger, Nigeria, Norway, Palau, Panama, Papua New Guinea, Portugal, Romania, Rwanda, Senegal, Seychelles, Singapore, Slovenia, Spain, Sri Lanka, Tanzania, Thailand, Timor Leste, Togo, Tunisia, United Kingdom, Uruguay, Vanuatu, Vietnam, Zambia.",
+   "ko": "2025년 2월 11일 기준 회원국: 아르헨티나, 방글라데시, 바베이도스, 베냉, 보츠와나, 부룬디, 카보베르데, 카메룬, 캐나다, 칠레, 콜롬비아, 코모로, 콩고, 코트디부아르, 크로아티아, 키프로스, 덴마크, 이집트, 에티오피아, 프랑스, 가봉, 감비아, 독일, 가나, 그리스, 과테말라, 기니, 기니비사우, 아이티, 인도, 인도네시아, 아일랜드, 자메이카, 남아프리카공화국, 스페인, 요르단, 케냐, 마다가스카르, 말라위, 마셜제도, 모리타니, 몰도바, 몽골, 모로코, 니제르, 나이지리아, 노르웨이, 팔라우, 파나마, 파푸아뉴기니, 포르투갈, 루마니아, 르완다, 세네갈, 세이셸, 싱가포르, 슬로베니아, 스페인, 스리랑카, 탄자니아, 태국, 동티모르, 토고, 튀니지, 영국, 우루과이, 바누아투, 베트남, 잠비아.",
+   "linked": false
+  },
+  {
+   "n": 3,
+   "en": "Chile, Finland, France, Germany, India, Kenya, Morocco, Nigeria, Slovenia, Swiss.",
+   "ko": "칠레, 핀란드, 프랑스, 독일, 인도, 케냐, 모로코, 나이지리아, 슬로베니아, 스위스.",
+   "linked": true
+  },
+  {
+   "n": 4,
+   "en": "In line with the World Summit on the Information Society (WSIS)",
+   "ko": "정보사회 세계정상회의(World Summit on the Information Society, WSIS)에 따름",
+   "linked": true
+  }
+ ]
+}
