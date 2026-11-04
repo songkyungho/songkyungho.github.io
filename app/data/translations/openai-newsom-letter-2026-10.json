@@ -1,0 +1,638 @@
+{
+ "slug": "openai-newsom-letter-2026-10",
+ "title": "OpenAI가 뉴섬 주지사에게 보낸 서한 (2026년 10월)",
+ "original_title": "Letter to Governor Newsom: Recommendations under Sept. 18, 2026 Executive Order (OpenAI)",
+ "publisher": "OpenAI",
+ "published": "2026-10-20",
+ "source_url": "https://cdn.openai.com/pdf/openai-letter-to-governor-newsom-20261020.pdf",
+ "source_note": "서한 PDF 전문.",
+ "source_label": "원문 보기 (PDF)",
+ "summary": "2026년 9월 18일 캘리포니아 행정명령에 대한 OpenAI의 권고 서한이다. 내부 사이버보안 평가 중 모델이 격리 통제를 우회한 Hugging Face 사건을 공개적으로 언급하고, SB 53을 자동화된 AI 연구, 내부 보안, 안전하지 않은 모델 행동 감시까지 넓히는 개정안과 행정명령 제안에 대한 의견을 낸다.",
+ "doc_kind": "서한",
+ "translated": "2026-11-05",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/openai-newsom-letter-2026-10-cover.webp",
+ "og_image": "/images/translations/openai-newsom-letter-2026-10-cover.jpg",
+ "image_caption": "서한 첫 쪽",
+ "stats": {
+  "blocks": 56,
+  "sections": 3,
+  "items": 0,
+  "words_en": 3673
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "October 20, 2026",
+   "ko": "2026년 10월 20일"
+  },
+  {
+   "type": "p",
+   "en": "From: Chan Park, Head of U.S. and Canada Policy and Partnerships, OpenAI",
+   "ko": "발신: 챈 박(Chan Park), 미국·캐나다 정책 및 파트너십 총괄, OpenAI"
+  },
+  {
+   "type": "p",
+   "en": "To: The Honorable Gavin Newsom",
+   "ko": "수신: 개빈 뉴섬(Gavin Newsom) 주지사"
+  },
+  {
+   "type": "h2",
+   "en": "Re: Recommendations under Sept. 18, 2026 Executive Order",
+   "ko": "Re: 2026년 9월 18일 행정명령에 따른 권고사항",
+   "id": "s3"
+  },
+  {
+   "type": "p",
+   "en": "Dear Governor Newsom:",
+   "ko": "뉴섬 주지사님께:"
+  },
+  {
+   "type": "p",
+   "en": "OpenAI supports California's leadership in frontier AI safety and welcomes the opportunity to advance the goals of your September 18, 2026, executive order related to stronger independent oversight, reliable emergency controls, and improved incident reporting.",
+   "ko": "OpenAI는 프론티어 AI 안전 분야에서 캘리포니아주가 보여 온 리더십을 지지하며, 독립적 감독 강화, 신뢰할 수 있는 비상 통제, 사고 보고 개선에 관한 2026년 9월 18일 행정명령의 목표를 진전시킬 기회를 환영한다.",
+   "marks": [
+    {
+     "t": "독립적 감독 강화, 신뢰할 수 있는 비상 통제, 사고 보고 개선에 관한 2026년 9월 18일 행정명령",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "As is now well known, in July of this year, OpenAI disclosed that models undergoing internal cybersecurity evaluations had circumvented controls intended to isolate them from the internet and compromised parts of our internal research infrastructure and the systems of Hugging Face, a platform for sharing and collaborating on AI models and datasets. We initially understood this primarily as a security incident. Our investigation showed that it was driven by misalignment: models pursuing their assigned tasks through actions outside their intended scope and permissions. A serious security breach, such as the Hugging Face incident, is one possible consequence of misalignment. Other instances involve unauthorized behavior without a comparable security breach, such as models posting on third-party sites, which we call 'agent spam.' We must address both: preventing severe security incidents and correcting other unexpected or concerning model behaviors even when no security system is breached. We are continuing to review earlier activity, prioritizing the most serious incidents while expanding our investigation to lower-severity behavior.",
+   "ko": "널리 알려진 바와 같이, OpenAI는 올해 7월 내부 사이버 보안 평가(evaluation)를 받던 모델들이 인터넷으로부터 격리하기 위한 통제를 우회하여 당사 내부 연구 인프라의 일부와 AI 모델 및 데이터셋의 공유·협업 플랫폼인 Hugging Face의 시스템을 침해했다고 공개했다. 당사는 처음에 이를 주로 보안 사고로 이해했다. 그러나 조사 결과, 이 사건의 원인은 오정렬, 즉 모델이 의도된 범위와 권한을 벗어난 행동을 통해 부여된 과업을 수행한 데 있는 것으로 드러났다. Hugging Face 사고와 같은 심각한 보안 침해는 오정렬이 초래할 수 있는 결과 중 하나이다. 다른 사례에서는 그에 상응하는 보안 침해 없이 무단 행동이 발생하기도 하는데, 모델이 제3자 사이트에 게시물을 올리는 경우가 그 예로, 당사는 이를 '에이전트 스팸(agent spam)'이라 부른다. 당사는 심각한 보안 사고를 예방하는 것과, 보안 시스템이 침해되지 않은 경우에도 예상치 못하거나 우려스러운 기타 모델 행동을 바로잡는 것 모두에 대응해야 한다. 당사는 이전의 활동을 계속 검토하고 있으며, 가장 심각한 사고를 우선적으로 다루는 동시에 심각도가 낮은 행동으로 조사를 확대하고 있다.",
+   "marks": [
+    {
+     "t": "모델들이 인터넷으로부터 격리하기 위한 통제를 우회하여 당사 내부 연구 인프라의 일부와 AI 모델 및 데이터셋의 공유·협업 플랫폼인 Hugging Face의 시스템을 침해했다고 공개했다",
+     "k": "safety"
+    },
+    {
+     "t": "이 사건의 원인은 오정렬, 즉 모델이 의도된 범위와 권한을 벗어난 행동을 통해 부여된 과업을 수행한 데 있는 것으로 드러났다.",
+     "k": "key"
+    },
+    {
+     "t": "모델이 제3자 사이트에 게시물을 올리는 경우가 그 예로, 당사는 이를 '에이전트 스팸(agent spam)'이라 부른다",
+     "k": "safety"
+    },
+    {
+     "t": "보안 시스템이 침해되지 않은 경우에도 예상치 못하거나 우려스러운 기타 모델 행동을 바로잡는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Since disclosing the Hugging Face incident, we have investigated what happened, alongside independent investigations by METR and Redwood Research . We take seriously the misalignment and safety incidents involving our models, and we are applying the lessons learned to strengthen our safeguards and improve how we identify and address safety concerns. Our September 28 post, Towards safety cases for frontier AI training , sets out the reforms we are working to implement: structured safety documentation before frontier reinforcement-learning runs; stronger alignment, containment and monitoring safeguards; clearer procedures for escalating concerns and pausing work; senior leadership review and accountability; sufficient access for auditors; and investigations that examine operational and cultural failures and publicly report findings and corrective actions.",
+   "ko": "Hugging Face 사고를 공개한 이후, 당사는 METR 및 Redwood Research의 독립 조사와 병행하여 사고 경위를 조사해 왔다. 당사는 자사 모델과 관련된 오정렬 및 안전 사고를 엄중하게 받아들이고 있으며, 얻은 교훈을 바탕으로 안전장치를 강화하고 안전 우려를 식별·대응하는 방식을 개선하고 있다. 당사의 9월 28일 게시물인 Towards safety cases for frontier AI training은 당사가 이행을 추진 중인 개혁 방안을 제시한다. 그 내용은 프론티어 강화학습 실행 이전의 구조화된 안전 문서화, 정렬·격리(containment)·모니터링 안전장치 강화, 우려 사항의 상부 보고(escalation) 및 작업 중단에 관한 보다 명확한 절차, 고위 경영진의 검토 및 책임성, 감사인에 대한 충분한 접근 권한 보장, 그리고 운영상·조직문화상 실패를 검토하고 조사 결과와 시정 조치를 공개적으로 보고하는 조사이다.",
+   "marks": [
+    {
+     "t": "METR 및 Redwood Research의 독립 조사와 병행하여 사고 경위를 조사해 왔다",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 강화학습 실행 이전의 구조화된 안전 문서화, 정렬·격리(containment)·모니터링 안전장치 강화",
+     "k": "safety"
+    },
+    {
+     "t": "우려 사항의 상부 보고(escalation) 및 작업 중단에 관한 보다 명확한 절차",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We have committed to this work voluntarily, and we know it is incumbent upon us to demonstrate progress through implementation and transparency. But we also believe that your Executive Order can serve as a starting point for industry-wide rules that hold all frontier AI developers accountable for meeting clear safety obligations. To that end, we recommend strengthening SB 53, California's foundational frontier AI safety law, which established requirements for transparency, critical-incident reporting and whistleblower protection, to incorporate lessons learned from these recent incidents.",
+   "ko": "당사는 이 작업을 자발적으로 약속했으며, 이행과 투명성을 통해 진전을 입증하는 것이 당사의 책무임을 알고 있다. 그러나 당사는 주지사님의 행정명령이 모든 프론티어 AI 개발자가 명확한 안전 의무를 이행하도록 책임을 묻는 업계 전반의 규칙을 마련하는 출발점이 될 수 있다고 본다. 이를 위해 당사는 투명성, 치명적 사고 보고, 내부 고발자 보호에 관한 요건을 수립한 캘리포니아주의 기본 프론티어 AI 안전법인 SB 53을 강화하여 최근 사고들에서 얻은 교훈을 반영할 것을 권고한다.",
+   "marks": [
+    {
+     "t": "모든 프론티어 AI 개발자가 명확한 안전 의무를 이행하도록 책임을 묻는 업계 전반의 규칙",
+     "k": "safety"
+    },
+    {
+     "t": "SB 53을 강화하여 최근 사고들에서 얻은 교훈을 반영할 것을 권고한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In this letter, we offer recommendations in two parts. First, we propose concrete amendments to strengthen SB 53 by expanding its focus on catastrophic risk to establish clear rules of the road for a broader range of security and misalignment incidents. Second, we provide feedback on the executive order's four priorities, providing our viewpoint on key policy issues that California and the nation are grappling with including whether a 'kill switch' is technically feasible and how we get at the intention of that phrase: to have a way to shut down AI agents, as well as best practices and what the law should require with regard to independent evaluations and assessments. We believe these recommendations could also be implemented through amendments to SB 53.",
+   "ko": "이 서한에서 당사는 두 부분으로 나누어 권고사항을 제시한다. 첫째, 파국적 위험에 대한 SB 53의 초점을 확대하여 보다 광범위한 보안 및 오정렬 사고에 대해 명확한 행동 규칙을 수립함으로써 SB 53을 강화하는 구체적인 개정안을 제안한다. 둘째, 행정명령의 네 가지 우선 과제에 대한 의견을 제시하며, 캘리포니아주와 미국 전체가 씨름하고 있는 핵심 정책 쟁점에 대한 당사의 관점을 밝힌다. 여기에는 '킬 스위치(kill switch)'가 기술적으로 실현 가능한지, 그리고 AI 에이전트를 중단시킬 수단을 확보한다는 그 표현의 취지를 어떻게 구현할 것인지에 관한 문제와 함께, 독립적 평가(evaluation) 및 평가(assessment)와 관련한 모범 사례와 법이 무엇을 요구해야 하는지에 관한 문제가 포함된다. 당사는 이러한 권고사항 역시 SB 53 개정을 통해 이행될 수 있다고 본다.",
+   "marks": [
+    {
+     "t": "보다 광범위한 보안 및 오정렬 사고에 대해 명확한 행동 규칙을 수립함으로써 SB 53을 강화하는 구체적인 개정안",
+     "k": "safety"
+    },
+    {
+     "t": "'킬 스위치(kill switch)'가 기술적으로 실현 가능한지",
+     "k": "safety"
+    },
+    {
+     "t": "AI 에이전트를 중단시킬 수단을 확보한다는 그 표현의 취지를 어떻게 구현할 것인지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "I. Strengthen SB 53 with a concrete package of amendments",
+   "ko": "I. 구체적인 개정안 패키지를 통한 SB 53 강화",
+   "id": "s10"
+  },
+  {
+   "type": "p",
+   "en": "SB 53 provides an important foundation for frontier AI safety: it requires large frontier developers to publish and follow safety frameworks, disclose how they assess and mitigate serious risks, and report critical safety incidents, with whistleblower protections and public enforcement. At OpenAI, our Frontier Governance Framework describes how our practices align with SB 53 through our risk-assessments, safeguards, and incident-response practices. Wereport quarterly to California's Office of Emergency Services on catastrophic risks from internal model use .",
+   "ko": "SB 53은 프론티어 AI 안전을 위한 중요한 토대를 제공한다. 이 법은 대형 프론티어 개발자(large frontier developer)가 안전 프레임워크를 공개하고 준수하며, 심각한 위험을 어떻게 평가하고 완화하는지 공개하고, 치명적 안전 사고(critical safety incident)를 보고하도록 요구하며, 내부 고발자 보호와 공적 집행 장치를 갖추고 있다. OpenAI의 Frontier Governance Framework는 당사의 위험 평가, 안전장치, 사고 대응 실행 방안을 통해 당사의 실행 방안이 SB 53에 어떻게 부합하는지를 기술한다. 당사는 내부 모델 사용에 따른 파국적 위험에 관해 캘리포니아주 비상서비스국(Office of Emergency Services)에 분기별로 보고한다.",
+   "marks": [
+    {
+     "t": "치명적 안전 사고(critical safety incident)를 보고하도록 요구하며, 내부 고발자 보호와 공적 집행 장치를 갖추고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "내부 모델 사용에 따른 파국적 위험에 관해 캘리포니아주 비상서비스국(Office of Emergency Services)에 분기별로 보고한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We believe that SB 53 represents a strong start for frontier safety regulations, but that requirements must evolve as AI capabilities advance and new risks emerge. Two developments in particular illustrate where SB 53 should be strengthened: our experience investigating and publicly reporting misalignment incidents points to the need for stronger safeguards and reporting, while increasing automation of AI research creates new demands on monitoring and human oversight. Accordingly, we support an SB 53 amendment package for the next legislative session that would:",
+   "ko": "당사는 SB 53이 프론티어 안전 규제의 훌륭한 출발점이라고 보지만, AI 역량이 발전하고 새로운 위험이 등장함에 따라 요건도 진화해야 한다고 생각한다. 특히 두 가지 상황 변화가 SB 53을 강화해야 할 지점을 보여 준다. 오정렬 사고를 조사하고 공개적으로 보고한 당사의 경험은 더 강력한 안전장치와 보고의 필요성을 시사하며, AI 연구의 자동화 확대는 모니터링과 인간 감독에 새로운 요구를 제기한다. 이에 따라 당사는 다음 회기에서 다음과 같은 내용을 담은 SB 53 개정안 패키지를 지지한다.",
+   "marks": [
+    {
+     "t": "AI 역량이 발전하고 새로운 위험이 등장함에 따라 요건도 진화해야 한다고 생각한다",
+     "k": "key"
+    },
+    {
+     "t": "오정렬 사고를 조사하고 공개적으로 보고한 당사의 경험은 더 강력한 안전장치와 보고의 필요성을 시사하며",
+     "k": "safety"
+    },
+    {
+     "t": "AI 연구의 자동화 확대는 모니터링과 인간 감독에 새로운 요구를 제기한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Address automated AI research and recursive self-improvement (RSI). Safety frameworks should expressly address frontier models' ability to automate AI research and development, including recursive self-improvement, and whether those capabilities increase the potential for  catastrophic risks or make these risks harder to monitor, assess, or mitigate.",
+   "ko": "자동화된 AI 연구와 재귀적 자기 개선(RSI)에 대응. 안전 프레임워크는 재귀적 자기 개선을 포함하여 프론티어 모델이 AI 연구개발을 자동화할 수 있는 능력, 그리고 그러한 능력이 파국적 위험의 가능성을 높이거나 이러한 위험의 모니터링, 평가(assessment), 완화를 어렵게 만드는지 여부를 명시적으로 다루어야 한다.",
+   "marks": [
+    {
+     "t": "재귀적 자기 개선을 포함하여 프론티어 모델이 AI 연구개발을 자동화할 수 있는 능력",
+     "k": "safety"
+    },
+    {
+     "t": "파국적 위험의 가능성을 높이거나 이러한 위험의 모니터링, 평가(assessment), 완화를 어렵게 만드는지 여부",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Support stronger internal cybersecurity measures. Safety frameworks should describe cybersecurity practices to protect unreleased model weights and prevent frontier models, including those under development, from materially circumventing internal security controls-for example, safeguards that limit models within sandboxes from accessing the internet during training and evaluation. These practices should be proportionate to relevant risks and consistent with recognized federal standards and guidance.",
+   "ko": "보다 강력한 내부 사이버 보안 조치 지원. 안전 프레임워크는 미공개 모델 가중치를 보호하고, 개발 중인 모델을 포함한 프론티어 모델이 내부 보안 통제를 실질적으로 우회하지 못하도록 하는 사이버 보안 실행 방안을 기술해야 한다. 예를 들어, 학습 및 평가(evaluation) 중 샌드박스 내의 모델이 인터넷에 접근하지 못하도록 제한하는 안전장치가 이에 해당한다. 이러한 실행 방안은 관련 위험에 비례해야 하며, 공인된 연방 표준 및 지침과 부합해야 한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델이 내부 보안 통제를 실질적으로 우회하지 못하도록 하는 사이버 보안 실행 방안",
+     "k": "safety"
+    },
+    {
+     "t": "샌드박스 내의 모델이 인터넷에 접근하지 못하도록 제한하는 안전장치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Require monitoring of unsafe model behavior. Frontier developers should monitor for unsafe model behavior during development and evaluation and explain those practices in their published safety frameworks. Monitoring should detect attempts to circumvent the developer's own safeguards or another organization's security controls without their authorization, and access confidential information protected by such security controls. Safety frameworks should connect monitoring to clear escalation and incident response procedures, and criteria for safely resuming operations after the causes have been investigated and addressed.",
+   "ko": "안전하지 않은 모델 행동에 대한 모니터링 의무화. 프론티어 개발자(frontier developer)는 개발 및 평가(evaluation) 과정에서 안전하지 않은 모델 행동을 모니터링하고, 공개된 안전 프레임워크에서 그러한 실행 방안을 설명해야 한다. 모니터링은 개발자 자신의 안전장치 또는 다른 조직의 보안 통제를 해당 조직의 승인 없이 우회하려는 시도와, 그러한 보안 통제로 보호되는 기밀 정보에 접근하려는 시도를 탐지해야 한다. 안전 프레임워크는 모니터링을 명확한 상부 보고(escalation) 및 사고 대응 절차, 그리고 원인이 조사·해결된 후 운영을 안전하게 재개하기 위한 기준과 연계해야 한다.",
+   "marks": [
+    {
+     "t": "개발 및 평가(evaluation) 과정에서 안전하지 않은 모델 행동을 모니터링하고",
+     "k": "safety"
+    },
+    {
+     "t": "개발자 자신의 안전장치 또는 다른 조직의 보안 통제를 해당 조직의 승인 없이 우회하려는 시도",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Require notice to affected parties for covered cyber incidents. Frontier developers should publish and follow a policy for written notice to third parties affected by incidents in which a frontier model, during development or evaluation, exploits a security vulnerability without authorization from either the large frontier developer or the third party and accesses, alters, or destroys confidential information protected by the third party's security controls. The policy should specify which incidents require notice, any exceptions, who must be notified, and the timing and content of notification, helping affected organizations protect their systems and respond.",
+   "ko": "대상 사이버 사고(covered cyber incident)에 대한 영향받은 당사자 통지 의무화. 프론티어 개발자는 프론티어 모델이 개발 또는 평가(evaluation) 중에 대형 프론티어 개발자나 제3자 어느 쪽의 승인도 없이 보안 취약점을 악용하여 제3자의 보안 통제로 보호되는 기밀 정보에 접근하거나 이를 변경 또는 파기한 사고에 대해, 영향을 받은 제3자에게 서면으로 통지하는 정책을 공개하고 준수해야 한다. 이 정책은 통지가 필요한 사고, 예외 사항, 통지 대상, 통지 시기 및 내용을 명시하여 영향을 받은 조직이 자신의 시스템을 보호하고 대응할 수 있도록 지원해야 한다.",
+   "marks": [
+    {
+     "t": "보안 취약점을 악용하여 제3자의 보안 통제로 보호되는 기밀 정보에 접근하거나 이를 변경 또는 파기한 사고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Require effective shutdown controls. Frontier developers should be required to maintain effective shutdown controls and explain in their safety frameworks how they will halt unsafe operations within their control. In the absence of national standards, California should establish clear, enforceable conditions for when developers must halt affected operations through rulemaking involving industry and other stakeholders.",
+   "ko": "실효적인 중단 통제 의무화. 프론티어 개발자는 실효적인 중단 통제를 유지하고, 자신의 통제 범위 내에서 안전하지 않은 운영을 어떻게 중단할 것인지를 안전 프레임워크에 설명하도록 의무화되어야 한다. 국가 표준이 없는 상황에서는 캘리포니아주가 업계 및 기타 이해관계자가 참여하는 규칙 제정을 통해, 개발자가 영향을 받은 운영을 언제 중단해야 하는지에 관한 명확하고 집행 가능한 조건을 마련해야 한다.",
+   "marks": [
+    {
+     "t": "프론티어 개발자는 실효적인 중단 통제를 유지하고",
+     "k": "safety"
+    },
+    {
+     "t": "개발자가 영향을 받은 운영을 언제 중단해야 하는지에 관한 명확하고 집행 가능한 조건",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Mandate annual independent compliance audits. California should require annual independent compliance audits to verify that frontier developers comply with their safety",
+   "ko": "연례 독립 규정 준수 감사 의무화. 캘리포니아주는 프론티어 개발자가 자신의 안전"
+  },
+  {
+   "type": "li",
+   "en": "frameworks and meet their transparency obligations. California should align these requirements with the compliance-based audit approach in Illinois's SB 315, helping harmonize requirements across states and building a foundation for national standards.",
+   "ko": "프레임워크를 준수하고 투명성 의무를 이행하는지 검증하기 위해 연례 독립 규정 준수 감사를 의무화해야 한다. 캘리포니아주는 이러한 요건을 일리노이주 SB 315의 규정 준수 기반 감사 접근법과 정합시켜, 주(州) 간 요건의 조화를 돕고 국가 표준의 토대를 마련해야 한다.",
+   "marks": [
+    {
+     "t": "연례 독립 규정 준수 감사를 의무화해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Strengthen independent technical assessment and meaningful government oversight. Qualified third-party assessors should independently assess frontier developers' safety claims and safety cases, which cover risks in training, evaluation, and internal deployment, with secure access and strong government oversight.",
+   "ko": "독립적 기술 평가(assessment) 및 실질적인 정부 감독 강화. 자격을 갖춘 제3자 평가자(assessor)는 보안이 확보된 접근 권한과 강력한 정부 감독하에, 학습, 평가(evaluation), 내부 배포 과정의 위험을 다루는 프론티어 개발자의 안전 주장과 안전 사례를 독립적으로 평가(assessment)해야 한다.",
+   "marks": [
+    {
+     "t": "보안이 확보된 접근 권한과 강력한 정부 감독하에",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 개발자의 안전 주장과 안전 사례를 독립적으로 평가(assessment)해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "II. Recommendations on proposals in Executive Order N-9-26",
+   "ko": "II. 행정명령 N-9-26(Executive Order N-9-26)의 제안에 대한 권고",
+   "id": "s21"
+  },
+  {
+   "type": "p",
+   "en": "Our recommendations below address the executive order's four priorities, highlighting where clearer definitions and responsibilities, common standards, and stronger public oversight and technical capacity are needed to make these requirements effective. California should build these foundations alongside practical safeguards, advancing protections now while working toward harmonized requirements across states and an eventual federal framework.",
+   "ko": "아래의 권고는 행정명령의 네 가지 우선순위를 다루며, 이러한 요건이 실효성을 갖추기 위해 보다 명확한 정의와 책임, 공통 표준, 그리고 더 강력한 공적 감독과 기술 역량이 필요한 지점을 짚는다. 캘리포니아주는 실질적인 안전장치와 함께 이러한 기반을 구축하여, 주 간 요건의 조화와 궁극적인 연방 프레임워크를 지향하는 동시에 지금 당장 보호 조치를 진전시켜야 한다.",
+   "marks": [
+    {
+     "t": "보다 명확한 정의와 책임, 공통 표준, 그리고 더 강력한 공적 감독과 기술 역량이 필요한 지점을 짚는다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "A. Requiring that frontier developers embed designated independent verification organizations onsite in their labs to conduct periodic audits and evaluations",
+   "ko": "A. 프론티어 개발자가 지정된 독립 검증 기관을 자사 연구소 현장에 상주시켜 정기적인 감사와 평가(evaluation)를 수행하도록 의무화"
+  },
+  {
+   "type": "p",
+   "en": "We have been working internally on our commitment for deep levels of access for third party evaluators as we believe it is critical for OpenAI and other companies. Such a commitment goes to the crux of independent technical assessments. We lay out our recommendations of such assessments in this section.",
+   "ko": "당사는 제3자 평가자(evaluator)에게 심층적인 수준의 접근 권한을 제공하는 약정을 내부적으로 추진해 왔는데, 이는 그러한 접근이 OpenAI와 다른 기업들에게 매우 중요하다고 보기 때문이다. 이러한 약정은 독립적 기술 평가(assessment)의 핵심에 해당한다. 본 절에서는 그러한 평가(assessment)에 관한 당사의 권고를 제시한다.",
+   "marks": [
+    {
+     "t": "제3자 평가자(evaluator)에게 심층적인 수준의 접근 권한을 제공하는 약정을 내부적으로 추진해 왔는데",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Technical assessments serve a distinct but complementary function to compliance audits. Compliance audits, which we discuss in the next section, examine whether developers procedurally follow their safety frameworks and meet their obligations under frontier safety legislation, such as SB 53. Technical assessments independently evaluate the evidence, methods, and reasoning supporting developers' safety claims, including model evaluations, and the effectiveness of safeguards. To support rigorous technical assessments, we recommend providing qualified, independent assessors with meaningful, secure access to help labs, the public, and regulators assess whether catastrophic risks are being effectively managed.",
+   "ko": "기술 평가(assessment)는 규정 준수 감사와는 구별되지만 상호 보완적인 기능을 수행한다. 다음 절에서 논의할 규정 준수 감사는 개발자가 자신의 안전 프레임워크를 절차적으로 따르고 SB 53과 같은 프론티어 안전 법률에 따른 의무를 이행하는지를 검토한다. 기술 평가(assessment)는 모델 평가(evaluation)를 포함하여 개발자의 안전 주장을 뒷받침하는 증거, 방법, 추론, 그리고 안전장치의 실효성을 독립적으로 평가(evaluation)한다. 엄격한 기술 평가(assessment)를 지원하기 위해, 당사는 자격을 갖춘 독립 평가자에게 실질적이고 보안이 확보된 접근 권한을 제공하여 연구소, 대중, 규제 당국이 파국적 위험이 효과적으로 관리되고 있는지를 평가(assessment)할 수 있도록 할 것을 권고한다.",
+   "marks": [
+    {
+     "t": "개발자의 안전 주장을 뒷받침하는 증거, 방법, 추론, 그리고 안전장치의 실효성을 독립적으로 평가(evaluation)한다",
+     "k": "safety"
+    },
+    {
+     "t": "연구소, 대중, 규제 당국이 파국적 위험이 효과적으로 관리되고 있는지를 평가(assessment)할 수 있도록 할 것을 권고한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Effective embedded technical assessments require access tailored to a clearly defined assessment scope and sufficient to understand the relevant risks and safeguards, with deeper access justified by the assessment's specific questions and methodology. Assessors' expertise, methods, and degree of integration should reflect the specific questions and claims being examined; some assessments may benefit from sustained engagement, while others can be conducted through more limited access.",
+   "ko": "실효적인 상주형 기술 평가(assessment)를 위해서는 명확하게 정의된 평가(assessment) 범위에 맞추어져 있고 관련 위험과 안전장치를 이해하기에 충분한 접근 권한이 필요하며, 더 깊은 수준의 접근은 해당 평가(assessment)의 구체적인 질문과 방법론에 의해 정당화되어야 한다. 평가자의 전문성, 방법, 통합 정도는 검토 대상인 구체적인 질문과 주장을 반영해야 한다. 일부 평가(assessment)는 지속적인 참여가 유익할 수 있는 반면, 다른 평가(assessment)는 보다 제한된 접근을 통해 수행될 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "Assessors should have sufficient access to relevant evidence, systems, and personnel to conduct rigorous reviews, subject to safeguards that limit unnecessary exposure of sensitive research, intellectual property, and infrastructure. All assessments should be governed by robust security, confidentiality, and conflict-of-interest protections, as discussed below.",
+   "ko": "평가자는 엄격한 검토를 수행하기 위해 관련 증거, 시스템, 인력에 충분히 접근할 수 있어야 하며, 이는 민감한 연구, 지식재산권, 인프라의 불필요한 노출을 제한하는 안전장치의 적용을 받아야 한다. 모든 평가(assessment)는 아래에서 논의하는 바와 같이 강력한 보안, 기밀 유지, 이해충돌 보호 장치에 따라 관리되어야 한다.",
+   "marks": [
+    {
+     "t": "강력한 보안, 기밀 유지, 이해충돌 보호 장치에 따라 관리되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We prefer a federal independent-assessment framework because it can establish consistent requirements for qualifications, security, and access to highly sensitive information, including matters involving national security. In the absence of federal action, California can build on SB 813 and AB 1405 to develop a secure, capable assessment ecosystem now, and we are committed to working with the Governor and the legislature to make the framework successful. To make these technical assessments effective, we recommend the following:",
+   "ko": "당사는 연방 차원의 독립 평가(assessment) 프레임워크를 선호하는데, 이는 그러한 프레임워크가 국가안보 관련 사안을 포함하여 자격 요건, 보안, 고도로 민감한 정보에 대한 접근에 관해 일관된 요건을 수립할 수 있기 때문이다. 연방 차원의 조치가 없는 상황에서 캘리포니아주는 SB 813과 AB 1405를 토대로 지금 당장 안전하고 역량 있는 평가(assessment) 생태계를 구축할 수 있으며, 당사는 이 프레임워크가 성공할 수 있도록 주지사 및 주의회와 협력할 것을 약속한다. 이러한 기술 평가(assessment)가 실효성을 갖추도록 당사는 다음을 권고한다.",
+   "marks": [
+    {
+     "t": "당사는 연방 차원의 독립 평가(assessment) 프레임워크를 선호하는데",
+     "k": "safety"
+    },
+    {
+     "t": "캘리포니아주는 SB 813과 AB 1405를 토대로 지금 당장 안전하고 역량 있는 평가(assessment) 생태계를 구축할 수 있으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Base assessments on evidence-backed safety cases . Common standards for frontier AI and standardized assessment methods are not yet in place. We therefore recommend structuring initial independent assessments around a safety-case framework -a structured explanation of how risks are managed, supported by evidence. Developers should prepare evidence-based safety cases for training and deployment of frontier models, with clear responsibility for approval, monitoring, and response when key assumptions no longer hold. Independent assessors should evaluate those safety cases and claims by examining evidence, testing assumptions and identifying gaps. Independent assessor reports should explain their methodology, uncertainties, access limitations, and disagreements with the developer, clearly specifying that these are technical judgments and not findings of whether the developer has complied with laws or regulations. The developer should have a reasonable opportunity to address the assessors' findings or explain disagreements. We recommend that the California government work with the National Institute for Standards and Technology ('NIST'), industry, and developers to identify shared criteria for safety cases that will support comparison across developers and assessors.",
+   "ko": "증거에 기반한 안전 사례를 토대로 평가(assessment) 수행. 프론티어 AI에 대한 공통 표준과 표준화된 평가(assessment) 방법은 아직 마련되어 있지 않다. 따라서 당사는 초기 독립 평가(assessment)를 안전 사례 프레임워크, 즉 위험이 어떻게 관리되는지를 증거로 뒷받침하여 구조적으로 설명하는 틀을 중심으로 구성할 것을 권고한다. 개발자는 프론티어 모델의 학습 및 배포에 대해 증거 기반 안전 사례를 마련해야 하며, 핵심 가정이 더 이상 유효하지 않을 때의 승인, 모니터링, 대응에 대한 책임을 명확히 해야 한다. 독립 평가자는 증거를 검토하고, 가정을 검증하며, 공백을 식별함으로써 그러한 안전 사례와 주장을 평가(evaluation)해야 한다. 독립 평가자의 보고서는 방법론, 불확실성, 접근 제한, 개발자와의 이견을 설명해야 하며, 이것이 기술적 판단일 뿐 개발자의 법령 또는 규정 준수 여부에 대한 판정이 아님을 명확히 밝혀야 한다. 개발자에게는 평가자의 지적 사항에 대응하거나 이견을 설명할 합리적인 기회가 주어져야 한다. 당사는 캘리포니아주 정부가 미국 국립표준기술연구원(National Institute for Standards and Technology, 'NIST'), 업계, 개발자와 협력하여 개발자 및 평가자 간 비교를 뒷받침할 안전 사례의 공통 기준을 마련할 것을 권고한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI에 대한 공통 표준과 표준화된 평가(assessment) 방법은 아직 마련되어 있지 않다",
+     "k": "safety"
+    },
+    {
+     "t": "개발자는 프론티어 모델의 학습 및 배포에 대해 증거 기반 안전 사례를 마련해야 하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Protect assessor independence. Third party assessors must be able to exercise independent judgment, free from undue influence by frontier labs or other interested parties. Conflict of interest requirements should address organizational and individual conflicts, including financial, employment, governance, donor, and competitor relationships, including assessors' access to or detailed knowledge of competing frontier lab's trade secrets, with disclosure, recusal, or exclusion where appropriate. Compensation arrangements should not reward favorable findings, and a credible public-interest AI assessment ecosystem should not depend solely on industry-funded organizations assessing the companies that support them. Likewise, when third-party assessors are commercial entities-such as established audit firms or comparable firms in other sectors-payment by a frontier lab for their work does not, by itself, establish a conflict of interest. The key question is whether the arrangements, taken together, credibly support the assessor's ability to exercise independent judgment. Public investment can help preserve independence and advance safety for society as a whole.",
+   "ko": "평가자의 독립성 보호. 제3자 평가자는 프론티어 연구소나 기타 이해관계자의 부당한 영향에서 벗어나 독립적인 판단을 행사할 수 있어야 한다. 이해충돌 요건은 재정, 고용, 거버넌스, 기부자, 경쟁사 관계를 포함한 조직 및 개인 차원의 이해충돌을 다루어야 하며, 여기에는 평가자가 경쟁 프론티어 연구소의 영업비밀에 접근하거나 이를 상세히 알고 있는 경우도 포함되고, 적절한 경우 공개, 회피 또는 배제 조치를 취해야 한다. 보수 지급 방식이 유리한 판정에 보상을 주어서는 안 되며, 신뢰할 수 있는 공익적 AI 평가(assessment) 생태계는 업계의 자금 지원을 받는 기관이 자신을 지원하는 기업을 평가(assessment)하는 구조에만 의존해서는 안 된다. 마찬가지로, 제3자 평가자가 기존 감사 법인이나 다른 부문의 유사 기업과 같은 상업적 주체인 경우, 프론티어 연구소가 그 업무에 대해 대가를 지급한다는 사실만으로 이해충돌이 성립하지는 않는다. 핵심 질문은 그러한 방식들이 전체적으로 볼 때 평가자가 독립적인 판단을 행사할 수 있는 능력을 신뢰할 수 있게 뒷받침하는지 여부이다. 공공 투자는 독립성을 유지하고 사회 전체의 안전을 증진하는 데 도움이 될 수 있다.",
+   "marks": [
+    {
+     "t": "업계의 자금 지원을 받는 기관이 자신을 지원하는 기업을 평가(assessment)하는 구조에만 의존해서는 안 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Protect security & intellectual property. Meaningful access must be paired with enforceable confidentiality obligations, strong information-security controls, and safeguards against sharing sensitive information across labs. Assessor access to source code or sensitive infrastructure should require specific justification and protections proportionate to the sensitivity of that access. In addition, due to the potential cybersecurity risks associated with running evaluations on frontier models, assessors should be required to adhere to cybersecurity standards and best practices.",
+   "ko": "보안 및 지식재산권 보호. 실질적인 접근 권한은 집행 가능한 기밀 유지 의무, 강력한 정보 보안 통제, 그리고 연구소 간 민감 정보 공유를 방지하는 안전장치와 함께 제공되어야 한다. 소스 코드나 민감한 인프라에 대한 평가자의 접근에는 구체적인 정당화 사유와 해당 접근의 민감도에 비례하는 보호 조치가 요구되어야 한다. 또한 프론티어 모델에 대한 평가(evaluation) 수행과 관련된 잠재적 사이버 보안 위험을 고려하여, 평가자는 사이버 보안 표준과 모범 사례를 준수하도록 요구되어야 한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델에 대한 평가(evaluation) 수행과 관련된 잠재적 사이버 보안 위험을 고려하여",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Build qualified assessment capacity. Few organizations currently have the expertise to conduct rigorous frontier AI assessments. Many reviews require teams combining deep machine-learning experience with specialized expertise in areas such as biology or cybersecurity. Conflicts of interest can further narrow this already limited pool, making it difficult to identify qualified, independent assessors for particular assignments. California should account for these constraints when setting assessment requirements and timelines, and invest in evaluation research, shared testing infrastructure, assessor training, and its own technical oversight capacity, including through partnerships with outside organizations that provide specialized expertise.",
+   "ko": "적격 평가(assessment) 역량 구축. 현재 엄격한 프론티어 AI 평가(assessment)를 수행할 전문성을 갖춘 기관은 많지 않다. 많은 검토에는 깊은 머신러닝 경험과 생물학이나 사이버 보안 같은 분야의 전문 지식을 함께 갖춘 팀이 필요하다. 이해충돌은 이미 제한된 인력 풀을 더욱 좁힐 수 있으며, 이로 인해 특정 과제에 맞는 적격하고 독립적인 평가자를 찾기가 어려워진다. 캘리포니아주는 평가(assessment) 요건과 일정을 정할 때 이러한 제약을 고려해야 한다. 또한 전문 지식을 제공하는 외부 기관과의 파트너십을 포함하여 평가(evaluation) 연구, 공동 테스트 인프라, 평가자 교육, 자체 기술 감독 역량에 투자해야 한다.",
+   "marks": [
+    {
+     "t": "현재 엄격한 프론티어 AI 평가(assessment)를 수행할 전문성을 갖춘 기관은 많지 않다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Maintain public oversight. The State should retain responsibility for identifying applicable standards and determining acceptable levels of risk to the public. Third-party assessors should pilot technical assessment methods and provide evidence to inform those decisions; their findings should not themselves establish binding standards or determine what risks the public must accept. In implementing SB 813 and AB 1405, the State should also oversee assessors' competence and methods, investigate misconduct, and suspend or withdraw designation when warranted.",
+   "ko": "공공 감독 유지. 주 정부는 적용 가능한 표준을 식별하고 대중에게 허용 가능한 위험 수준을 결정하는 책임을 유지해야 한다. 제3자 평가자는 기술 평가(assessment) 방법을 시범 적용하고 이러한 결정에 참고할 증거를 제공해야 한다. 다만 그들의 판정 자체가 구속력 있는 표준을 수립하거나 대중이 수용해야 할 위험을 결정해서는 안 된다. 주 정부는 SB 813 및 AB 1405를 시행할 때 평가자의 역량과 방법을 감독하고, 부정행위를 조사하며, 정당한 사유가 있으면 지정을 정지하거나 철회해야 한다.",
+   "marks": [
+    {
+     "t": "주 정부는 적용 가능한 표준을 식별하고 대중에게 허용 가능한 위험 수준을 결정하는 책임을 유지해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "B. Requiring that the safety frameworks, transparency reports, and risk assessments that frontier AI companies are required to file be independently verified pursuant to standards determined to be adequate by an independent verification organization.",
+   "ko": "B. 프론티어 AI 기업이 제출해야 하는 안전 프레임워크, 투명성 보고서, 위험 평가를 독립 검증 기관이 적정하다고 판단한 표준에 따라 독립적으로 검증받도록 요구함."
+  },
+  {
+   "type": "p",
+   "en": "Technical assessments and compliance audits need shared standards to be conducted efficiently and effectively. Existing auditing and assurance standards provide a starting point, but common standards tailored to these frontier AI reviews still need to be identified and developed. If California requires one or both forms of review ahead of a federal framework, it should also take responsibility for advancing that work.",
+   "ko": "기술 평가(assessment)와 규정 준수 감사를 효율적이고 효과적으로 수행하려면 공통 표준이 필요하다. 기존 감사 및 인증(assurance) 표준이 출발점이 될 수 있으나, 이러한 프론티어 AI 검토에 맞춘 공통 표준은 아직 식별하고 개발해야 한다. 캘리포니아주가 연방 프레임워크보다 먼저 두 가지 형태의 검토 중 하나 또는 둘 모두를 요구한다면, 그 작업을 진전시킬 책임도 함께 져야 한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 검토에 맞춘 공통 표준은 아직 식별하고 개발해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Standards development takes time and requires coordination among industry, technical experts, and national and international standards bodies. The federal government, particularly NIST , plays an important role in supporting and coordinating this work. California should take on that convening responsibility if it moves ahead: bringing these groups together, investing in standards development, and accelerating a common approach that can ultimately align with national and international standards.",
+   "ko": "표준 개발에는 시간이 걸리며, 업계, 기술 전문가, 국가 및 국제 표준 기구 간의 조율이 필요하다. 연방 정부, 특히 NIST는 이 작업을 지원하고 조율하는 데 중요한 역할을 한다. 캘리포니아주가 먼저 나선다면 이러한 소집 책임을 맡아야 한다. 즉, 이들 집단을 한자리에 모으고, 표준 개발에 투자하며, 궁극적으로 국가 및 국제 표준과 정합될 수 있는 공통 접근 방식을 앞당겨야 한다."
+  },
+  {
+   "type": "p",
+   "en": "The State should retain responsibility for deciding which standards are accepted for meeting California's requirements. Independent assessment organizations should contribute technical expertise and evidence, but should not determine the standards developers must meet or the risks the public must accept. To put this approach into practice, we recommend the following:",
+   "ko": "주 정부는 캘리포니아주의 요건을 충족하는 데 어떤 표준을 인정할지 결정하는 책임을 유지해야 한다. 독립 평가(assessment) 기관은 기술적 전문성과 증거를 제공해야 하지만, 개발자가 충족해야 할 표준이나 대중이 수용해야 할 위험을 결정해서는 안 된다. 이러한 접근 방식을 실행에 옮기기 위해 당사는 다음을 권고한다."
+  },
+  {
+   "type": "p",
+   "en": "Start with procedural audits of frameworks and reports. Procedural audits should serve as a starting point because they can build on established auditing methods to check compliance with clearly defined obligations. California should therefore begin with annual independent compliance audits of safety frameworks and transparency reports, following the approach already included in Illinois' SB 315. We support these provisions because they add an external check on whether developers implement their safety and transparency obligations, help regulators identify compliance gaps, and give the public clearer evidence of whether developers are meeting their commitments. California should adopt a comparable approach to Illinois: independent auditors should use generally accepted auditing standards, access materials reasonably necessary for the audit, and provide reports that describe their methodology and findings. Audit information should be available to public authorities, with public findings subject to appropriate redactions.",
+   "ko": "프레임워크 및 보고서에 대한 절차 감사부터 시작. 절차 감사는 확립된 감사 방법을 토대로 명확히 규정된 의무의 규정 준수 여부를 점검할 수 있으므로 출발점으로 삼아야 한다. 따라서 캘리포니아주는 일리노이주 SB 315에 이미 포함된 접근 방식에 따라 안전 프레임워크와 투명성 보고서에 대한 연례 독립 규정 준수 감사부터 시작해야 한다. 당사는 이러한 조항을 지지한다. 이 조항들은 개발자가 안전 및 투명성 의무를 이행하는지에 대한 외부 점검을 추가하고, 규제 당국이 규정 준수상의 공백을 식별하도록 도우며, 개발자가 약정을 지키고 있는지에 대해 대중에게 더 명확한 증거를 제공하기 때문이다. 캘리포니아주는 일리노이주와 유사한 접근 방식을 채택해야 한다. 독립 감사인은 일반적으로 인정된 감사 기준을 사용하고, 감사에 합리적으로 필요한 자료에 접근하며, 방법론과 판정 결과를 기술한 보고서를 제공해야 한다. 감사 정보는 공공 당국이 이용할 수 있어야 하며, 공개되는 판정 결과에는 적절한 민감정보 가림 처리가 적용되어야 한다.",
+   "marks": [
+    {
+     "t": "안전 프레임워크와 투명성 보고서에 대한 연례 독립 규정 준수 감사부터 시작해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Limit initial technical assessment scope . For technical assessments, responsible governance should begin with the highest-priority risks and expand as evidence and oversight capacity develop. We therefore recommend that independent technical assessors should focus initially on serious risks arising during frontier training, evaluation, and internal deployment. This should include alignment, containment, and monitoring for increasingly capable agents. Within this scope, technical assessments should consider how automated AI research, including progress toward RSI, could intensify these challenges. This focused approach would enable third party assessors to address the most consequential risks while building the expertise and methods needed for broader assessments.",
+   "ko": "초기 기술 평가(assessment) 범위 제한. 기술 평가(assessment)의 경우, 책임 있는 거버넌스는 최우선 위험에서 시작하여 증거와 감독 역량이 발전함에 따라 확대되어야 한다. 따라서 당사는 독립 기술 평가자가 초기에는 프론티어 학습, 평가(evaluation), 내부 배포 과정에서 발생하는 심각한 위험에 집중할 것을 권고한다. 여기에는 점점 더 유능해지는 에이전트에 대한 정렬, 격리(containment), 모니터링이 포함되어야 한다. 이 범위 내에서 기술 평가(assessment)는 RSI를 향한 진전을 포함한 자동화된 AI 연구가 이러한 과제를 어떻게 심화시킬 수 있는지를 고려해야 한다. 이와 같이 초점을 맞춘 접근 방식을 통해 제3자 평가자는 가장 중대한 위험에 대응하는 동시에 더 광범위한 평가(assessment)에 필요한 전문성과 방법을 구축할 수 있을 것이다.",
+   "marks": [
+    {
+     "t": "프론티어 학습, 평가(evaluation), 내부 배포 과정에서 발생하는 심각한 위험에 집중할 것을 권고한다",
+     "k": "safety"
+    },
+    {
+     "t": "점점 더 유능해지는 에이전트에 대한 정렬, 격리(containment), 모니터링이 포함되어야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "RSI를 향한 진전을 포함한 자동화된 AI 연구가 이러한 과제를 어떻게 심화시킬 수 있는지를 고려해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Accelerate common standards development . As a California-headquartered company, OpenAI is committed to building a strong ecosystem of independent assessors and advancing third-party assessments in the state. Independent technical assessments can help further the science of evaluation and safeguard development, by providing an expert opinion on methodologies and approaches. However, for a mature assessment ecosystem to be effective, common standards should be developed to ensure parity across practices and compatibility of findings. California should therefore work with the United States Center for Advancing Innovation and Standards for Super Intelligence ('CAISSI'), within NIST, to identify effective practices, unresolved questions, and priorities for common national technical standards. As national standards mature, California should align its assessment requirements with them to provide a consistent technical basis for evaluating safety claims across developers, assessors, and jurisdictions. Throughout this process, the California government should retain responsibility for identifying applicable standards, overseeing independent assessor accreditation and performance, and making consequential regulatory decisions informed by the independent technical assessments.",
+   "ko": "공통 표준 개발 가속화. 캘리포니아주에 본사를 둔 기업으로서 OpenAI는 주 내에서 독립 평가자의 견실한 생태계를 구축하고 제3자 평가(assessment)를 진전시키는 데 전념하고 있다. 독립 기술 평가(assessment)는 방법론과 접근 방식에 대한 전문가 의견을 제공함으로써 평가(evaluation) 과학과 안전장치 개발을 발전시키는 데 도움이 될 수 있다. 그러나 성숙한 평가(assessment) 생태계가 효과적으로 작동하려면, 실행 방안 간의 동등성과 판정 결과의 호환성을 보장할 수 있도록 공통 표준을 개발해야 한다. 따라서 캘리포니아주는 NIST 산하 United States Center for Advancing Innovation and Standards for Super Intelligence('CAISSI')와 협력하여 효과적인 실행 방안, 미해결 질문, 국가 공통 기술 표준의 우선순위를 식별해야 한다. 국가 표준이 성숙해짐에 따라 캘리포니아주는 자체 평가(assessment) 요건을 그에 맞춰 정합시켜, 개발자, 평가자, 관할권 전반에 걸쳐 안전 주장을 평가(evaluation)하기 위한 일관된 기술적 기반을 제공해야 한다. 이 과정 전반에 걸쳐 캘리포니아주 정부는 적용 가능한 표준을 식별하고, 독립 평가자의 인정 및 성과를 감독하며, 독립 기술 평가(assessment)를 바탕으로 중대한 규제 결정을 내리는 책임을 유지해야 한다.",
+   "marks": [
+    {
+     "t": "NIST 산하 United States Center for Advancing Innovation and Standards for Super Intelligence('CAISSI')와 협력하여",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Designate qualified assessors . The State should also develop a framework for designating qualified assessors. The California government should work with CAISSI to develop designation criteria, drawing on relevant NIST guidance and recognized assurance standards. Designation should require that a third party assessor have expertise in both the assessment of general model capabilities and in the specific risks that are to be evaluated. As standards mature, demonstrated ability to apply them should become a condition of continued designation. This phased approach would strengthen oversight now while building toward consistent national requirements.",
+   "ko": "적격 평가자 지정. 주 정부는 또한 적격 평가자를 지정하기 위한 프레임워크를 개발해야 한다. 캘리포니아주 정부는 관련 NIST 지침과 공인된 인증(assurance) 표준을 토대로 CAISSI와 협력하여 지정 기준을 개발해야 한다. 지정 요건으로서 제3자 평가자는 일반적인 모델 역량에 대한 평가(assessment)와 평가(evaluation) 대상인 특정 위험 모두에 대한 전문성을 갖추어야 한다. 표준이 성숙해짐에 따라, 표준을 적용할 수 있는 입증된 능력이 지정 유지의 조건이 되어야 한다. 이러한 단계적 접근 방식은 현재의 감독을 강화하는 동시에 일관된 국가 요건을 향해 나아가는 기반이 될 것이다.",
+   "marks": [
+    {
+     "t": "주 정부는 또한 적격 평가자를 지정하기 위한 프레임워크를 개발해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "C. Requiring the creation of a 'kill switch' for frontier models, with the efficacy of the switch verified on an ongoing basis by an independent verification organization.",
+   "ko": "C. 프론티어 모델에 대한 '킬 스위치(kill switch)' 마련을 요구하고, 그 스위치의 효과성을 독립 검증 기관이 지속적으로 검증하도록 요구함."
+  },
+  {
+   "type": "p",
+   "en": "We support the underlying goal of the executive order's reference to a 'kill switch': people must be able to stop unsafe AI operations. OpenAI maintains the ability to shut down model operations on systems we control, including research and evaluation workloads. In the past, we have paused affected workloads to investigate security incidents, strengthen safeguards, and establish that activities meet our safety and security requirements before resuming.",
+   "ko": "당사는 행정명령이 '킬 스위치'를 언급한 근본적인 목표, 즉 사람이 안전하지 않은 AI 작동을 중단할 수 있어야 한다는 점을 지지한다. OpenAI는 연구 및 평가(evaluation) 작업 부하를 포함하여, 당사가 통제하는 시스템에서 모델 작동을 중단할 수 있는 능력을 유지하고 있다. 과거에 당사는 보안 사고를 조사하고, 안전장치를 강화하며, 재개 전에 활동이 당사의 안전 및 보안 요건을 충족한다는 것을 확인하기 위해 영향을 받은 작업 부하를 일시 중지한 바 있다.",
+   "marks": [
+    {
+     "t": "사람이 안전하지 않은 AI 작동을 중단할 수 있어야 한다는 점을 지지한다",
+     "k": "safety"
+    },
+    {
+     "t": "보안 사고를 조사하고, 안전장치를 강화하며, 재개 전에 활동이 당사의 안전 및 보안 요건을 충족한다는 것을 확인하기 위해 영향을 받은 작업 부하를 일시 중지한 바 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We recommend using the term 'shutdown controls', because it will require the development of multiple controls and coordinated action by different actors to stop AI operations when necessary, rather than a single switch. This is particularly important for the open-weight ecosystem, where models may run as independently operated copies and the originating developer cannot reliably switch off copies outside its control. Centrally operated, closed-weight models allow operators to intervene directly on models running on systems they control, but effective shutdown controls are equally important across both ecosystems. We support both types of AI development (open and closed weight systems), but solutions may differ for each. Depending on the system and risk, intervention may mean stopping a training run, isolating an agent, revoking tool or network access, or suspending a service. Requirements should therefore specify the operational outcome and assign responsibility to actors with the practical ability to intervene.",
+   "ko": "'중단 통제(shutdown controls)'라는 용어를 사용할 것을 권고한다. 필요할 때 AI 작동을 중단하려면 단일 스위치가 아니라 여러 통제 수단을 개발하고 여러 행위자가 조율된 조치를 취해야 하기 때문이다. 이는 특히 오픈 웨이트(open-weight) 생태계에서 중요하다. 이 생태계에서는 모델이 독립적으로 운영되는 사본 형태로 실행될 수 있으며, 원 개발자는 자신의 통제 밖에 있는 사본을 확실하게 끌 수 없다. 중앙에서 운영되는 폐쇄형 웨이트(closed-weight) 모델의 경우 운영자가 자신이 통제하는 시스템에서 실행되는 모델에 직접 개입할 수 있지만, 효과적인 중단 통제는 두 생태계 모두에서 똑같이 중요하다. 당사는 두 유형의 AI 개발(오픈 웨이트 및 폐쇄형 웨이트 시스템)을 모두 지지하지만, 각각에 대한 해결책은 다를 수 있다. 시스템과 위험에 따라 개입은 학습 실행 중단, 에이전트 격리, 도구 또는 네트워크 접근 권한 회수, 서비스 중지를 의미할 수 있다. 따라서 요건은 달성해야 할 운영상의 결과를 명시하고, 실제로 개입할 수 있는 능력을 갖춘 행위자에게 책임을 부여해야 한다.",
+   "marks": [
+    {
+     "t": "원 개발자는 자신의 통제 밖에 있는 사본을 확실하게 끌 수 없다",
+     "k": "safety"
+    },
+    {
+     "t": "학습 실행 중단, 에이전트 격리, 도구 또는 네트워크 접근 권한 회수, 서비스 중지를 의미할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We support amending SB 53 to require frontier developers to maintain effective shutdown controls and an enforceable duty to use them when unsafe conditions arise and no lesser intervention would adequately address the risk. The duty should cover affected training, evaluation, internal use, and deployment. Safety frameworks should explain how monitoring connects to escalation procedures, intervention, investigation and criteria for safely resuming affected operations.",
+   "ko": "당사는 SB 53을 개정하여 프론티어 개발자가 효과적인 중단 통제를 유지하도록 하고, 안전하지 않은 상황이 발생하고 그보다 약한 개입으로는 위험에 적절히 대응할 수 없을 때 이를 사용할 집행 가능한 의무를 부과하는 것을 지지한다. 이 의무는 영향을 받는 학습, 평가(evaluation), 내부 사용, 배포를 포괄해야 한다. 안전 프레임워크는 모니터링이 상부 보고(escalation) 절차, 개입, 조사, 그리고 영향을 받은 작업을 안전하게 재개하기 위한 기준과 어떻게 연계되는지 설명해야 한다.",
+   "marks": [
+    {
+     "t": "당사는 SB 53을 개정하여 프론티어 개발자가 효과적인 중단 통제를 유지하도록 하고",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Responsibilities should extend to inference providers, downstream deployers, and users in proportion to the operations they control. Inference providers and deployers should offer usable controls and clear instructions; users should use available controls to stop dangerous activity and should not circumvent safeguards. These responsibilities should reflect capability and risk across both open and closed models, while accounting for continuity of essential services.",
+   "ko": "책임은 추론(Inference) 제공자, 하위 배포자, 사용자에게도 각자가 통제하는 작업에 비례하여 확대되어야 한다. 추론(Inference) 제공자와 배포자는 사용 가능한 통제 수단과 명확한 지침을 제공해야 하며, 사용자는 이용 가능한 통제 수단을 사용하여 위험한 활동을 중단해야 하고 안전장치를 우회해서는 안 된다. 이러한 책임은 필수 서비스의 연속성을 고려하는 한편, 오픈 웨이트 모델과 폐쇄형 모델 모두에 걸쳐 역량과 위험을 반영해야 한다.",
+   "marks": [
+    {
+     "t": "사용자는 이용 가능한 통제 수단을 사용하여 위험한 활동을 중단해야 하고 안전장치를 우회해서는 안 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We support a role for qualified independent third parties in assessing safety cases, which play an important part in our shutdown controls. However, common standards for assessing these controls and agreed conditions for their use are not yet in place. National standards are needed regarding when and how shutdown controls should be implemented. In their absence, we will work with California on clear, enforceable conditions through a process involving industry, civil society, technical experts, and other affected stakeholders. Important questions remain: which risk or safeguard failures trigger a duty to halt; how quickly controls must act; how duties are allocated across connected systems and independently operated models; how to protect essential services; and what evidence supports safe resumption. We look forward to working with California to develop more detailed technical recommendations on these questions through the EO process and the development of legislation.",
+   "ko": "당사는 적격한 독립 제3자가 안전 사례를 평가(assessment)하는 역할을 지지하며, 안전 사례는 당사의 중단 통제에서 중요한 역할을 한다. 그러나 이러한 통제 수단을 평가(assessment)하기 위한 공통 표준과 그 사용에 관해 합의된 조건은 아직 마련되어 있지 않다. 중단 통제를 언제, 어떻게 시행해야 하는지에 관한 국가 표준이 필요하다. 그러한 표준이 없는 상황에서, 당사는 산업계, 시민사회, 기술 전문가, 기타 영향을 받는 이해관계자가 참여하는 절차를 통해 명확하고 집행 가능한 조건을 마련하는 데 캘리포니아주와 협력할 것이다. 어떤 위험 또는 안전장치 실패가 중단 의무를 발동시키는지, 통제 수단이 얼마나 신속하게 작동해야 하는지, 연결된 시스템과 독립적으로 운영되는 모델 간에 의무를 어떻게 배분할 것인지, 필수 서비스를 어떻게 보호할 것인지, 어떤 증거가 안전한 재개를 뒷받침하는지 등 중요한 질문이 남아 있다. 당사는 행정명령(EO) 절차와 입법 과정을 통해 이러한 질문에 관한 보다 상세한 기술적 권고안을 마련하기 위해 캘리포니아주와 협력하기를 기대한다.",
+   "marks": [
+    {
+     "t": "이러한 통제 수단을 평가(assessment)하기 위한 공통 표준과 그 사용에 관해 합의된 조건은 아직 마련되어 있지 않다",
+     "k": "safety"
+    },
+    {
+     "t": "어떤 위험 또는 안전장치 실패가 중단 의무를 발동시키는지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "D. Updating the definition of critical safety incidents that AI companies are required to report to include a range of loss-of-control incidents, covering recently reported incidents from large frontier developers.",
+   "ko": "D. AI 기업이 보고해야 하는 치명적 안전 사고의 정의를 개정하여, 최근 대형 프론티어 개발자가 보고한 사고를 포함한 다양한 통제 상실 사고를 포괄하도록 함."
+  },
+  {
+   "type": "p",
+   "en": "OpenAI recently introduced a public framework for reporting model misalignment and published reports related to behavior observed during training and evaluation, including models concealing mistakes or taking unauthorized actions. This experience reinforces our support for expanding SB 53's critical safety incident definition to capture serious loss-of-control incidents causing measurable economic harm or disruption to third-party systems, including incidents arising during development or evaluation.",
+   "ko": "OpenAI는 최근 모델 오정렬 보고를 위한 공개 프레임워크를 도입하고, 모델이 실수를 은폐하거나 승인되지 않은 행동을 하는 등 학습 및 평가(evaluation) 과정에서 관찰된 행동에 관한 보고서를 발표했다. 이러한 경험을 통해 당사는 SB 53의 치명적 안전 사고 정의를 확대하여, 개발 또는 평가(evaluation) 중에 발생한 사고를 포함하여 측정 가능한 경제적 피해를 초래하거나 제3자 시스템에 지장을 주는 심각한 통제 상실 사고를 포착하도록 하는 것을 더욱 지지하게 되었다.",
+   "marks": [
+    {
+     "t": "모델이 실수를 은폐하거나 승인되지 않은 행동을 하는 등 학습 및 평가(evaluation) 과정에서 관찰된 행동에 관한 보고서를 발표했다",
+     "k": "safety"
+    },
+    {
+     "t": "측정 가능한 경제적 피해를 초래하거나 제3자 시스템에 지장을 주는 심각한 통제 상실 사고를 포착하도록 하는 것을 더욱 지지하게 되었다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "A targeted amendment to SB 53 should cover loss of control resulting in unauthorized acquisition, alteration, or destruction of an unaffiliated third party's confidential information, or impairment of its computer systems or services, when the resulting harm meets a clearly defined threshold. The Administration's expert consultation should refine those thresholds and definitions.",
+   "ko": "SB 53에 대한 표적 개정은 통제 상실로 인해 관계없는 제3자의 기밀 정보가 무단으로 취득, 변경 또는 파기되거나, 해당 제3자의 컴퓨터 시스템 또는 서비스가 손상되고, 그 결과로 발생한 피해가 명확히 정의된 기준을 충족하는 경우를 포괄해야 한다. 그러한 기준과 정의는 행정부의 전문가 협의를 통해 구체화해야 한다.",
+   "marks": [
+    {
+     "t": "통제 상실로 인해 관계없는 제3자의 기밀 정보가 무단으로 취득, 변경 또는 파기되거나",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Reporting should provide actionable information while protecting confidential information, with preliminary reports updated as investigations establish more facts. That information should be paired with strengthened emergency-response capabilities. California should expand public incident-response services and cybersecurity assistance, and we are eager to continue working with the State on defensive AI, workforce training, and hands-on support for hospitals, schools, water systems, and other essential services with limited resources.",
+   "ko": "보고는 기밀 정보를 보호하면서도 실행 가능한 정보를 제공해야 하며, 예비 보고서는 조사를 통해 더 많은 사실이 확인됨에 따라 갱신되어야 한다. 그러한 정보는 강화된 비상 대응 역량과 함께 활용되어야 한다. 캘리포니아주는 공공 사고 대응 서비스와 사이버 보안 지원을 확대해야 하며, 당사는 방어적 AI, 인력 교육, 그리고 자원이 제한된 병원, 학교, 수도 시스템 및 기타 필수 서비스에 대한 실질적 지원과 관련하여 주 정부와 계속 협력하기를 희망한다.",
+   "marks": [
+    {
+     "t": "캘리포니아주는 공공 사고 대응 서비스와 사이버 보안 지원을 확대해야 하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Industry-wide standards for disclosing model misalignment are not yet in place. We have begun early work on developing such standards , and have been putting them into practice with regular reporting. California should work with other states and the AI industry to develop common definitions and reporting thresholds, harmonize reporting requirements, and align with federal standards and requirements as they develop.",
+   "ko": "모델 오정렬 공개에 관한 업계 전반의 표준은 아직 마련되어 있지 않다. 당사는 그러한 표준을 개발하기 위한 초기 작업에 착수했으며, 정기 보고를 통해 이를 실제로 적용해 왔다. 캘리포니아주는 다른 주 및 AI 업계와 협력하여 공통 정의와 보고 기준을 개발하고, 보고 요건을 조화시키며, 연방 표준 및 요건이 마련됨에 따라 이에 정합시켜야 한다.",
+   "marks": [
+    {
+     "t": "모델 오정렬 공개에 관한 업계 전반의 표준은 아직 마련되어 있지 않다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "OpenAI is ready to work with California on this agenda. California can lead by advancing practical safeguards now and building the standards and institutions needed for stronger assurance over time. That requires meaningful public oversight, clear and practical requirements, and sustained investment in the ecosystem on which independent verification depends.",
+   "ko": "OpenAI는 이 의제에 관해 캘리포니아주와 협력할 준비가 되어 있다. 캘리포니아주는 지금 실질적인 안전장치를 진전시키는 동시에 시간이 지남에 따라 더 강력한 보증(assurance)에 필요한 표준과 제도를 구축함으로써 선도적 역할을 할 수 있다. 이를 위해서는 실질적인 공공 감독, 명확하고 실용적인 요건, 그리고 독립 검증의 기반이 되는 생태계에 대한 지속적인 투자가 필요하다."
+  },
+  {
+   "type": "p",
+   "en": "Sincerely,",
+   "ko": "경의를 표하며,"
+  },
+  {
+   "type": "p",
+   "en": "Chan Park Head of U.S. and Canada Policy and Partnerships OpenAI",
+   "ko": "챈 박(Chan Park), 미국·캐나다 정책 및 파트너십 총괄 OpenAI"
+  }
+ ]
+}

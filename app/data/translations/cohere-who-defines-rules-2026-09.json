@@ -1,0 +1,627 @@
+{
+ "slug": "cohere-who-defines-rules-2026-09",
+ "title": "에이단 고메즈, 「AI의 규칙은 누가 정하는가?」",
+ "original_title": "Who Gets to Define the Rules for AI? (Aidan Gomez, Cohere)",
+ "publisher": "Cohere",
+ "published": "2026-09-13",
+ "source_url": "https://cohere.com/blog/who-gets-to-define-the-rules-for-ai",
+ "source_note": "Cohere 공동창업자 겸 CEO의 글 전문.",
+ "source_label": "원문 보기 (Cohere)",
+ "summary": "프론티어 랩들이 안전 기준을 공동으로 정하려는 움직임을 카르텔이라고 비판한 Cohere CEO의 글이다. 미국 신용평가사 지정과 유럽 자동차 산업의 전례를 들어, 안전을 명분으로 세운 제도가 기존 사업자를 보호했다고 주장한다. 가드레일이 필요 없다는 것이 아니라 누가 그것을 쓰느냐가 문제라며 다른 규칙의 방향을 제시한다.",
+ "doc_kind": "기고",
+ "translated": "2026-11-05",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/cohere-who-defines-rules-2026-09-cover.webp",
+ "og_image": "/images/translations/cohere-who-defines-rules-2026-09-cover.jpg",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "stats": {
+  "blocks": 43,
+  "sections": 5,
+  "items": 0,
+  "words_en": 3499
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Artificial intelligence is remaking the world we live in. Within a generation, the way we discover medicine, manage power grids, and secure our national infrastructure will be completely transformed. Many people already realize this and are working to build that future responsibly. Many people underestimate the scale and pace of change coming. Some, however, claim to foresee this change and use it to serve their own ends.",
+   "ko": "인공지능은 우리가 사는 세상을 새롭게 만들어 가고 있다. 한 세대 안에 우리가 의약품을 발견하고, 전력망을 관리하고, 국가 기반시설의 보안을 지키는 방식은 완전히 바뀔 것이다. 이미 많은 사람이 이를 인식하고 그 미래를 책임 있게 구축하기 위해 노력하고 있다. 반면 다가오는 변화의 규모와 속도를 과소평가하는 사람도 많다. 그런데 일부는 이 변화를 예견한다고 주장하면서 이를 자신의 목적에 이용한다."
+  },
+  {
+   "type": "p",
+   "en": "Here is the question nobody is asking clearly enough: should a handful of select, market-dominant AI companies from Silicon Valley get to define the rules and safety standards of a generational technology for the entire world? All while simultaneously determining how fast this technology progresses? We have tried that before with very poor results. Once again using fear under the pretext of protecting the public, these oligopolies are now requesting to bend competition rules and be permitted to dictate the terms for everyone else. A wolf in sheep’s clothing, a cartel by any other name.",
+   "ko": "아무도 충분히 분명하게 던지지 않는 질문이 있다. 실리콘밸리의 시장 지배적 AI 기업 몇 곳이 한 세대를 규정할 기술의 규칙과 안전 기준을 전 세계를 대신해 정하도록 해도 되는가? 그것도 이 기술의 발전 속도까지 동시에 결정하면서 말이다. 우리는 이미 그렇게 해 보았고 결과는 매우 나빴다. 이 과점 기업들은 또다시 대중 보호를 구실로 두려움을 이용하여, 경쟁 규칙을 완화하고 나머지 모두에게 조건을 강요할 수 있도록 허용해 달라고 요구하고 있다. 양의 탈을 쓴 늑대이며, 이름만 다를 뿐 카르텔이다.",
+   "marks": [
+    {
+     "t": "실리콘밸리의 시장 지배적 AI 기업 몇 곳이 한 세대를 규정할 기술의 규칙과 안전 기준을 전 세계를 대신해 정하도록 해도 되는가?",
+     "k": "safety"
+    },
+    {
+     "t": "이 과점 기업들은 또다시 대중 보호를 구실로 두려움을 이용하여, 경쟁 규칙을 완화하고 나머지 모두에게 조건을 강요할 수 있도록 허용해 달라고 요구하고 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "I believe in the potential of AI technologies to bring benefits to our world, and I do not downplay the risks. I run a company that builds AI systems deployed inside banks, telecommunications networks, and defense ministries. These are among the most high-stakes environments because failures in these sectors can have consequences far beyond an individual user – disrupting financial systems, critical infrastructure, national security, and essential services at scale. The same capabilities that find vulnerabilities in your code can find them in someone else's, and cyber offense is getting cheaper faster than defenses are getting better. That gap should worry you as much as it worries us.",
+   "ko": "나는 AI 기술이 세상에 이익을 가져올 잠재력을 믿으며, 그 위험을 가볍게 여기지도 않는다. 나는 은행, 통신망, 국방부 내부에 배치되는 AI 시스템을 만드는 회사를 운영한다. 이들 분야는 가장 이해관계가 큰 환경에 속하는데, 이 분야에서의 실패는 개별 사용자를 훨씬 넘어서는 결과를 낳아 금융 시스템, 핵심 기반시설, 국가안보, 필수 서비스를 대규모로 교란할 수 있기 때문이다. 여러분의 코드에서 취약점을 찾아내는 바로 그 역량이 다른 사람의 코드에서도 취약점을 찾아낼 수 있으며, 사이버 공격 비용은 방어 수준이 향상되는 속도보다 더 빠르게 낮아지고 있다. 그 격차는 우리만큼이나 여러분도 걱정하게 만들어야 한다.",
+   "marks": [
+    {
+     "t": "금융 시스템, 핵심 기반시설, 국가안보, 필수 서비스를 대규모로 교란할 수 있기 때문이다",
+     "k": "safety"
+    },
+    {
+     "t": "여러분의 코드에서 취약점을 찾아내는 바로 그 역량이 다른 사람의 코드에서도 취약점을 찾아낼 수 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "사이버 공격 비용은 방어 수준이 향상되는 속도보다 더 빠르게 낮아지고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI needs guardrails. That is not the dispute and never has been. The dispute is over who writes them, who gets to participate and whose interests the rules are protecting. The question is truly about whether we should have the freedom to choose based on scientific evidence or if we should hand the reins of the most consequential technology in human existence to a few Silicon Valley executives.",
+   "ko": "AI에는 가드레일이 필요하다. 그것은 쟁점이 아니며 쟁점이었던 적도 없다. 쟁점은 누가 가드레일을 작성하는지, 누가 참여할 수 있는지, 그리고 그 규칙이 누구의 이익을 보호하는지에 있다. 진정한 질문은 우리가 과학적 증거에 근거해 선택할 자유를 가져야 하는지, 아니면 인류 역사상 가장 중대한 결과를 가져올 기술의 고삐를 소수의 실리콘밸리 경영진에게 넘겨야 하는지이다.",
+   "marks": [
+    {
+     "t": "AI에는 가드레일이 필요하다.",
+     "k": "safety"
+    },
+    {
+     "t": "쟁점은 누가 가드레일을 작성하는지, 누가 참여할 수 있는지, 그리고 그 규칙이 누구의 이익을 보호하는지에 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "We’ve been here before",
+   "ko": "우리는 이미 이런 일을 겪은 적이 있다",
+   "id": "s4"
+  },
+  {
+   "type": "p",
+   "en": "Before I break down the self-serving framework the big labs are pushing and offer ideas for an alternative, let’s take a couple lessons from the recent past and think about the word cartel, because the history is specific and it is the accurate term.",
+   "ko": "대형 연구소들이 밀어붙이고 있는 자기 잇속을 챙기는 프레임워크를 분석하고 대안에 대한 아이디어를 제시하기에 앞서, 가까운 과거에서 몇 가지 교훈을 얻고 카르텔이라는 단어에 대해 생각해 보자. 그 역사는 구체적이며, 카르텔은 정확한 용어이기 때문이다.",
+   "marks": [
+    {
+     "t": "대형 연구소들이 밀어붙이고 있는 자기 잇속을 챙기는 프레임워크",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In 1975 the Securities and Exchange Commission needed reliable bond ratings for its capital rules. It designated three firms as Nationally Recognized Statistical Rating Organizations and never published criteria for how anyone else might earn the designation. These were government-blessed outside evaluators, paid by the very issuers whose securities they graded, sitting behind a barrier the regulator itself had built. Twenty five years later there were still only three of these evaluators. Then they rated subprime mortgage securities triple-A and nearly took the global economy down with them.",
+   "ko": "1975년 미국 증권거래위원회(Securities and Exchange Commission)는 자본 규제에 활용할 신뢰할 수 있는 채권 신용등급이 필요했다. 위원회는 세 개 회사를 국가공인 통계평가기관(Nationally Recognized Statistical Rating Organizations)으로 지정했지만, 다른 회사가 그 지정을 받을 수 있는 기준은 끝내 공표하지 않았다. 이들은 정부가 인정한 외부 평가기관이었으며, 자신들이 등급을 매기는 증권의 발행자로부터 직접 보수를 받았고, 규제기관 스스로가 세운 장벽 뒤에 자리 잡고 있었다. 25년이 지난 후에도 이런 평가기관은 여전히 세 곳뿐이었다. 그리고 이들은 서브프라임 모기지 증권에 AAA 등급을 매겼고, 그와 함께 세계 경제를 거의 무너뜨릴 뻔했다.",
+   "marks": [
+    {
+     "t": "이들은 정부가 인정한 외부 평가기관이었으며, 자신들이 등급을 매기는 증권의 발행자로부터 직접 보수를 받았고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Europe ran the experiment again in 1985. Car manufacturers lobbied for a sweeping antitrust waiver, the Motor Vehicle Block Exemption, arguing that modern vehicles were complex, safety-critical machines and that manufacturers therefore needed control over who was qualified to sell and service them. The subsequent regulation let manufacturers set the standards for premises, equipment and staff training, explicitly in the interest of safe and reliable vehicles. But what followed wasn't safer cars. It took the European Commission roughly twenty five years of reforms to unwind, and to establish what should have been obvious at the start: it is possible you can hold strict safety standards without handing the incumbents a monopoly on meeting them.",
+   "ko": "유럽은 1985년에 같은 실험을 다시 했다. 자동차 제조사들은 현대 자동차가 복잡하고 안전이 핵심적인 기계이므로 제조사가 누가 차량을 판매하고 정비할 자격이 있는지를 통제해야 한다고 주장하며, 광범위한 반독점 적용 면제인 자동차 일괄면제 규정(Motor Vehicle Block Exemption)을 위해 로비를 벌였다. 그에 따라 마련된 규정은 명시적으로 안전하고 신뢰할 수 있는 차량을 위한다는 명목하에 제조사가 시설, 장비, 직원 교육에 관한 기준을 정할 수 있도록 허용했다. 그러나 그 결과는 더 안전한 자동차가 아니었다. 유럽위원회(European Commission)가 이를 되돌리는 데에는 약 25년에 걸친 개혁이 필요했으며, 그제야 처음부터 자명했어야 할 사실, 즉 기존 사업자에게 기준 충족에 대한 독점권을 넘겨주지 않고도 엄격한 안전 기준을 유지할 수 있다는 사실이 확립되었다.",
+   "marks": [
+    {
+     "t": "기존 사업자에게 기준 충족에 대한 독점권을 넘겨주지 않고도 엄격한 안전 기준을 유지할 수 있다는 사실",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Nobody set out to build a cartel in either case. In both cases, the stated goal was safety. But the result was a market structure that protected incumbents and limited competition, all under the justification of serving the public interest. I don't doubt the sincerity of the people involved: many were concerned about the risks and worked earnestly to resolve them. But complex problems aren’t always solved on the first try, and any responsible scientist, engineer, or lawmaker knows that to solve new problems you must learn from past history.",
+   "ko": "두 사례 모두에서 누구도 카르텔을 만들려고 나서지 않았다. 두 사례 모두에서 표방된 목표는 안전이었다. 그러나 그 결과는 공익에 봉사한다는 정당화 아래 기존 사업자를 보호하고 경쟁을 제한하는 시장 구조였다. 나는 관련된 사람들의 진정성을 의심하지 않는다. 많은 사람이 위험을 우려했고 이를 해결하기 위해 성실히 노력했다. 그러나 복잡한 문제가 항상 첫 시도에 해결되는 것은 아니며, 책임감 있는 과학자, 엔지니어, 입법자라면 누구나 새로운 문제를 해결하려면 과거의 역사에서 배워야 한다는 것을 안다.",
+   "marks": [
+    {
+     "t": "두 사례 모두에서 표방된 목표는 안전이었다.",
+     "k": "safety"
+    },
+    {
+     "t": "그러나 그 결과는 공익에 봉사한다는 정당화 아래 기존 사업자를 보호하고 경쟁을 제한하는 시장 구조였다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "What's Being Proposed",
+   "ko": "무엇이 제안되고 있는가",
+   "id": "s9"
+  },
+  {
+   "type": "p",
+   "en": "This brings us to the roadmap published this week by Anthropic CEO Dario Amodei, asking governments for antitrust exemptions in the name of safety. This roadmap is the latest in a string of recent efforts by Silicon Valley incumbents to shape the regulatory landscape surrounding AI.",
+   "ko": "이제 이번 주 Anthropic CEO 다리오 아모데이(Dario Amodei)가 발표한 로드맵으로 넘어가 보자. 이 로드맵은 안전이라는 명목으로 각국 정부에 반독점 적용 면제를 요청하고 있다. 이 로드맵은 AI를 둘러싼 규제 환경을 자신들에게 유리하게 형성하려는 실리콘밸리 기존 사업자들의 최근 일련의 시도 중 가장 최신의 것이다.",
+   "marks": [
+    {
+     "t": "안전이라는 명목으로 각국 정부에 반독점 적용 면제를 요청하고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "AI를 둘러싼 규제 환경을 자신들에게 유리하게 형성하려는 실리콘밸리 기존 사업자들의 최근 일련의 시도 중 가장 최신의 것이다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "I want to be clear about what we agree with. Independent review of highly capable AI systems is a good idea and we support it. However, many aspects of the proposal raise fundamental questions: who writes the standard those reviewers apply? Who conducts or oversees the review? Who gets to participate in the conversation that sets the rules?",
+   "ko": "우리가 동의하는 부분을 분명히 해 두고자 한다. 고역량(Highly capable) AI 시스템에 대한 독립적 검토는 좋은 아이디어이며 우리는 이를 지지한다. 그러나 이 제안의 여러 측면은 근본적인 질문을 제기한다. 검토자들이 적용하는 기준은 누가 작성하는가? 검토는 누가 수행하거나 감독하는가? 규칙을 정하는 논의에는 누가 참여할 수 있는가?",
+   "marks": [
+    {
+     "t": "고역량(Highly capable) AI 시스템에 대한 독립적 검토는 좋은 아이디어이며 우리는 이를 지지한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "On these questions, the proposal is clear. A handful of the most powerful labs based in one country would agree on shared standards and the limits to how fast the technology should advance. And here’s the key point: because it’s normally illegal for competitors to agree to limit what they produce, the plan asks governments for a narrow antitrust waiver to make that coordination lawful. And it also asks governments to require every other AI developer to blindly follow whatever the participants settle on – despite those other developers and wider society not having an opportunity to voice the impact or share their perspective on the science.",
+   "ko": "이 질문들에 대해 제안은 명확하다. 한 국가에 기반을 둔 가장 강력한 연구소 몇 곳이 공동 기준과 기술 발전 속도의 한계에 대해 합의한다는 것이다. 그리고 핵심은 다음과 같다. 경쟁사들이 생산량을 제한하기로 합의하는 것은 통상 불법이기 때문에, 이 계획은 그러한 조율을 합법화하기 위해 각국 정부에 제한적인 반독점 적용 면제를 요청한다. 또한 이 계획은 정부가 다른 모든 AI 개발자에게 참여 기업들이 합의한 내용을 무조건 따르도록 요구할 것을 요청한다. 그 다른 개발자들과 더 넓은 사회가 그 영향에 대해 목소리를 내거나 과학에 대한 자신들의 관점을 공유할 기회를 갖지 못했음에도 말이다.",
+   "marks": [
+    {
+     "t": "공동 기준과 기술 발전 속도의 한계에 대해 합의한다는 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "정부가 다른 모든 AI 개발자에게 참여 기업들이 합의한 내용을 무조건 따르도록 요구할 것을 요청한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This is not a question of adding one or two more companies into the conversation. Adding an extra chair fundamentally doesn’t solve the issue. The problem is that there is a list at all, when the decisions being made reach every company, every government, and every citizen who never got asked. You cannot have it both ways. If this is the most consequential technology in human history, then the rules for it cannot be written by a small group of commercially aligned companies behind an antitrust waiver. There is no public comment period here. There is no consultation, and there is no vote. The public will be forced to live with the outcome regardless.",
+   "ko": "이것은 논의에 한두 개 회사를 더 추가하는 문제가 아니다. 의자를 하나 더 놓는다고 해서 근본적으로 문제가 해결되지는 않는다. 문제는 내려지는 결정이 한 번도 의견을 묻지 않은 모든 기업, 모든 정부, 모든 시민에게 영향을 미치는데도 애초에 명단이라는 것이 존재한다는 점이다. 두 가지를 다 가질 수는 없다. 이것이 인류 역사상 가장 중대한 결과를 가져올 기술이라면, 그 규칙은 반독점 적용 면제 뒤에 숨은 상업적 이해관계를 같이하는 소수 기업 집단이 작성할 수 없다. 여기에는 공개 의견 수렴 기간이 없다. 협의도 없고, 표결도 없다. 그럼에도 대중은 그 결과를 감수하며 살아갈 수밖에 없게 될 것이다.",
+   "marks": [
+    {
+     "t": "그 규칙은 반독점 적용 면제 뒤에 숨은 상업적 이해관계를 같이하는 소수 기업 집단이 작성할 수 없다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "A safety regime designed by a few labs will only be rigorous about the risks they have already built their safety systems to assess and completely quiet about everything else, further entrenching their market position and limiting competition. Risk in these existing frameworks gets defined as a function of scale, which makes the companies with enormous systems the only ones qualified to judge. The types of risk deemed relevant for assessment are also pre-ordained, rather than up for scientific debate and alignment. For example, there is real disagreement in the field about how much offensive capability comes from a raw model size versus the harness wrapped around it. Smaller models orchestrated well, using tools and verification steps, can do things that large models can’t. A cyber swarm is a completely different risk surface than a single model. None of that shows up in a regime built exclusively around massive compute thresholds.",
+   "ko": "소수 연구소가 설계한 안전 체제는 자신들이 이미 평가(assessment)하도록 안전 시스템을 구축해 둔 위험에 대해서만 엄격할 뿐 그 밖의 모든 것에 대해서는 완전히 침묵할 것이며, 이는 그들의 시장 지위를 더욱 공고히 하고 경쟁을 제한할 것이다. 이러한 기존 프레임워크에서 위험은 규모의 함수로 정의되며, 그 결과 거대한 시스템을 보유한 기업만이 판단할 자격을 갖게 된다. 평가와 관련이 있다고 간주되는 위험의 유형 또한 과학적 논쟁과 정렬의 대상이 되는 것이 아니라 미리 정해져 있다. 예를 들어, 공격 역량 중 얼마만큼이 순수한 모델 크기에서 비롯되고 얼마만큼이 모델을 감싸는 하네스(harness)에서 비롯되는지에 대해 이 분야에는 실질적인 의견 차이가 있다. 도구와 검증 단계를 활용하여 잘 조율된 소형 모델은 대형 모델이 할 수 없는 일을 해낼 수 있다. 사이버 스웜(cyber swarm)은 단일 모델과는 완전히 다른 위험 표면(risk surface)이다. 오로지 거대한 연산 임계값을 중심으로 구축된 체제에서는 이 중 어느 것도 드러나지 않는다.",
+   "marks": [
+    {
+     "t": "자신들이 이미 평가(assessment)하도록 안전 시스템을 구축해 둔 위험에 대해서만 엄격할 뿐 그 밖의 모든 것에 대해서는 완전히 침묵할 것이며",
+     "k": "safety"
+    },
+    {
+     "t": "위험은 규모의 함수로 정의되며, 그 결과 거대한 시스템을 보유한 기업만이 판단할 자격을 갖게 된다",
+     "k": "safety"
+    },
+    {
+     "t": "공격 역량 중 얼마만큼이 순수한 모델 크기에서 비롯되고 얼마만큼이 모델을 감싸는 하네스(harness)에서 비롯되는지",
+     "k": "safety"
+    },
+    {
+     "t": "사이버 스웜(cyber swarm)은 단일 모델과는 완전히 다른 위험 표면(risk surface)이다",
+     "k": "safety"
+    },
+    {
+     "t": "오로지 거대한 연산 임계값을 중심으로 구축된 체제에서는 이 중 어느 것도 드러나지 않는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "There's a sentence in the essay that any competition authority would find troubling. It promises that a coordinated approach would give developers time to do this safety work without sacrificing commercial advantage. But to whose advantage? The firms drafting the framework are the firms sitting at the top of the market today. A mechanism that slows everyone down while explicitly preserving existing commercial advantage does not make AI safer. It risks entrenching today’s dominant AI companies by turning their current advantages into baseline for what it takes to compete safely. Safety rules should reduce risk without regard to who leads the market or who stands to gain from the rules.",
+   "ko": "에세이에는 어떤 경쟁 당국이라도 우려할 만한 문장이 하나 있다. 그 문장은 조율된 접근 방식이 개발자들에게 상업적 이점을 희생하지 않고도 이러한 안전 작업을 수행할 시간을 줄 것이라고 약속한다. 그러나 누구의 이점인가? 프레임워크를 작성하는 기업들은 오늘날 시장 정상에 있는 기업들이다. 모든 이의 속도를 늦추면서 기존의 상업적 이점은 명시적으로 보존하는 메커니즘은 AI를 더 안전하게 만들지 않는다. 오히려 그들의 현재 이점을 안전하게 경쟁하는 데 필요한 기준선으로 바꿈으로써 오늘날 지배적인 AI 기업들의 지위를 공고히 할 위험이 있다. 안전 규칙은 누가 시장을 선도하는지, 누가 그 규칙으로 이득을 보는지와 무관하게 위험을 줄여야 한다.",
+   "marks": [
+    {
+     "t": "조율된 접근 방식이 개발자들에게 상업적 이점을 희생하지 않고도 이러한 안전 작업을 수행할 시간을 줄 것이라고 약속한다",
+     "k": "safety"
+    },
+    {
+     "t": "모든 이의 속도를 늦추면서 기존의 상업적 이점은 명시적으로 보존하는 메커니즘은 AI를 더 안전하게 만들지 않는다",
+     "k": "safety"
+    },
+    {
+     "t": "안전 규칙은 누가 시장을 선도하는지, 누가 그 규칙으로 이득을 보는지와 무관하게 위험을 줄여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The entry requirements set out in the proposal tell you the rest. Vast computing power. Continuous monitoring infrastructure. Dedicated security organizations. Resident evaluator teams with desks and badges. Shutdown architecture. Government relationships that are deep enough to navigate all of it. A pool of “independent” evaluators that is already remarkably small, funded by the same handful of organizations repeatedly relied upon by the same frontier labs.",
+   "ko": "제안에 제시된 진입 요건이 나머지를 말해 준다. 막대한 컴퓨팅 파워. 지속적인 모니터링 인프라. 전담 보안 조직. 책상과 출입증을 갖춘 상주 평가자 팀. 셧다운 아키텍처. 이 모든 것을 헤쳐 나갈 수 있을 만큼 깊은 정부와의 관계. 이미 놀라울 정도로 규모가 작고, 동일한 프런티어 연구소들이 반복적으로 의존해 온 동일한 소수 조직으로부터 자금을 지원받는 \"독립\" 평가자 풀.",
+   "marks": [
+    {
+     "t": "상주 평가자 팀. 셧다운 아키텍처",
+     "k": "safety"
+    },
+    {
+     "t": "동일한 프런티어 연구소들이 반복적으로 의존해 온 동일한 소수 조직으로부터 자금을 지원받는 \"독립\" 평가자 풀",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Convince a government that AI is an existential threat and you can convince it to outlaw your competition. The intention is clear and it does not create a safer world.",
+   "ko": "AI가 실존적 위협이라고 정부를 설득할 수 있다면, 경쟁자를 불법화하도록 정부를 설득할 수도 있다. 의도는 분명하며, 그것은 더 안전한 세상을 만들지 않는다.",
+   "marks": [
+    {
+     "t": "AI가 실존적 위협이라고 정부를 설득할 수 있다면, 경쟁자를 불법화하도록 정부를 설득할 수도 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "What Better Rules Look Like",
+   "ko": "더 나은 규칙은 어떤 모습인가",
+   "id": "s18"
+  },
+  {
+   "type": "p",
+   "en": "So what will enable safe, responsible AI development? To be clear, I don’t believe I have all the answers - nor do I think I should get to make the rules instead. Rather, I will try to propose practical and effective ideas that can be considered alongside those of many others by governments and lawmakers as they use their democratic powers to set the direction of travel.",
+   "ko": "그렇다면 무엇이 안전하고 책임 있는 AI 개발을 가능하게 할 것인가? 분명히 해 두자면, 나는 내가 모든 답을 갖고 있다고 생각하지 않으며, 내가 대신 규칙을 정해야 한다고도 생각하지 않는다. 그보다는 각국 정부와 입법자들이 민주적 권한을 행사하여 나아갈 방향을 설정할 때 다른 많은 이들의 아이디어와 함께 검토할 수 있는 실용적이고 효과적인 아이디어를 제안하고자 한다.",
+   "marks": [
+    {
+     "t": "무엇이 안전하고 책임 있는 AI 개발을 가능하게 할 것인가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Those ideas are built on four pillars:",
+   "ko": "이 아이디어들은 네 가지 기둥 위에 세워져 있다."
+  },
+  {
+   "type": "li",
+   "en": "An evidence-based risk framework. First things first, and before anyone mandates testing or auditing, we need an agreed and published account of which harms we are concerned about, which AI capabilities cause which harms, under what conditions and in what contexts, and at what point a government should step in. That account must be built across all the countries developing this technology, and in the open rather than behind closed doors under the banner of national security. Establish a coordinated, international effort to develop this framework that is not led by any one nation, but a group of them. Put technologists in the room next to the policy experts and experts from critical sectors like finance and critical infrastructure. Include researchers and scientists who disagree with each other and publish the disagreements, because an honest process shows its arguments instead of announcing its conclusions. Fund the testing capacity itself through public research bodies and existing sectoral risk management systems, so the science doesn't depend on the budgets of the companies being measured. And write rules that bind based on what an AI system can do rather than on who built it, so a dangerous capability is treated the same whether it comes out of a trillion dollar lab or a university department. The science of AI-related risk cannot and should not be divorced from the decisions companies and governments make about how AI is used and deployed, nor from existing and robust risk management systems that govern critical sectors today like healthcare, global financial systems, defense, and critical infrastructure.",
+   "ko": "증거 기반 위험 프레임워크. 무엇보다 먼저, 누군가가 테스트나 감사를 의무화하기 전에, 우리가 어떤 피해를 우려하는지, 어떤 AI 역량이 어떤 조건과 어떤 맥락에서 어떤 피해를 일으키는지, 그리고 어느 시점에 정부가 개입해야 하는지에 대해 합의되고 공개된 설명이 필요하다. 그 설명은 이 기술을 개발하는 모든 국가에 걸쳐 구축되어야 하며, 국가안보라는 명분 아래 비공개로 이루어지는 것이 아니라 공개적으로 이루어져야 한다. 어느 한 국가가 아니라 여러 국가로 구성된 그룹이 주도하는, 이 프레임워크를 개발하기 위한 조율된 국제적 노력을 수립해야 한다. 정책 전문가 및 금융과 핵심 기반시설 같은 핵심 분야의 전문가들과 나란히 기술 전문가들을 논의의 장에 참여시켜야 한다. 서로 의견이 다른 연구자와 과학자를 포함하고 그 의견 차이를 공개해야 한다. 정직한 과정은 결론을 발표하는 대신 논거를 보여 주기 때문이다. 테스트 역량 자체는 공공 연구기관과 기존의 부문별 위험 관리 체계를 통해 자금을 지원하여, 과학이 측정 대상 기업의 예산에 의존하지 않도록 해야 한다. 그리고 누가 AI 시스템을 만들었는지가 아니라 그 시스템이 무엇을 할 수 있는지를 기준으로 구속력을 갖는 규칙을 작성하여, 위험한 역량이 1조 달러 규모의 연구소에서 나오든 대학 학과에서 나오든 동일하게 취급되도록 해야 한다. AI 관련 위험에 관한 과학은 기업과 정부가 AI의 사용 및 배포 방식에 대해 내리는 결정과 분리될 수 없고 분리되어서도 안 되며, 오늘날 의료, 글로벌 금융 시스템, 국방, 핵심 기반시설 같은 핵심 분야를 규율하는 기존의 견고한 위험 관리 체계와도 분리되어서는 안 된다.",
+   "marks": [
+    {
+     "t": "어떤 AI 역량이 어떤 조건과 어떤 맥락에서 어떤 피해를 일으키는지, 그리고 어느 시점에 정부가 개입해야 하는지에 대해 합의되고 공개된 설명이 필요하다",
+     "k": "safety"
+    },
+    {
+     "t": "국가안보라는 명분 아래 비공개로 이루어지는 것이 아니라 공개적으로 이루어져야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "과학이 측정 대상 기업의 예산에 의존하지 않도록 해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "누가 AI 시스템을 만들었는지가 아니라 그 시스템이 무엇을 할 수 있는지를 기준으로 구속력을 갖는 규칙을 작성하여",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Mandatory transparency. AI developers should be transparent about how their models and systems are built, their intended purpose and capabilities, what risks they might pose, and what risk mitigation measures have been implemented. Model cards are already widely published across the industry for generative AI models deployed at scale, covering what tests were run and how the model performed. But more can be done, particularly around how companies across the development and deployment stack report serious incidents over the layers where they have visibility and control, and mechanisms to attach real accountability when real harm occurs.",
+   "ko": "의무적 투명성. AI 개발자는 자신들의 모델과 시스템이 어떻게 구축되는지, 그 의도된 목적과 역량, 초래할 수 있는 위험, 그리고 어떤 위험 완화 조치가 시행되었는지에 대해 투명해야 한다. 대규모로 배포되는 생성형 AI 모델에 대해서는 어떤 테스트가 실행되었고 모델이 어떤 성능을 보였는지를 다루는 모델카드가 이미 업계 전반에서 널리 공개되고 있다. 그러나 더 많은 것이 이루어질 수 있다. 특히 개발 및 배포 스택 전반의 기업들이 자신들이 가시성과 통제권을 갖는 계층에서 중대 사고를 보고하는 방식, 그리고 실제 피해가 발생했을 때 실질적인 책임성을 부여하는 메커니즘과 관련해서 그러하다.",
+   "marks": [
+    {
+     "t": "초래할 수 있는 위험, 그리고 어떤 위험 완화 조치가 시행되었는지에 대해 투명해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "중대 사고를 보고하는 방식, 그리고 실제 피해가 발생했을 때 실질적인 책임성을 부여하는 메커니즘",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Testing, scoped by the evidence. The most advanced AI models and systems should face independent testing, but only against the capabilities and in the contexts the risk framework has identified as genuinely dangerous, rather than leaving that definition to a select few companies. In practice that likely means the ability to generate cyberattacks, synthetic fraud and voice cloning, manipulation at scale, physical or biochemical weapons, and anything touching critical infrastructure. It does not mean testing every system for every risk, and it must not become a compliance exercise that expands to fill whatever budget the largest firms can absorb. A tiered and proportionate framework where more-capable models and systems, or models or systems deployed in specific contexts, face more stringent testing - regardless of the resources put into developing them, will do the most for improving safety. Test what can harm people and societies, and let evidence decide what requires testing rather than whoever holds the pen. Certification has to be open to every company rather than restricted to a designated tier of AI developers, and the standard has to be agreed by people other than the companies being measured against it. What this can't be allowed to become is an expensive bureaucracy that chokes off smaller labs before they ever ship anything, which is exactly what happens when the scope is unlimited and the incumbents are the ones setting it.",
+   "ko": "증거에 의해 범위가 정해지는 테스트. 최첨단 AI 모델과 시스템은 독립적인 테스트를 받아야 하지만, 그 정의를 선택된 소수 기업에 맡기는 것이 아니라 위험 프레임워크가 진정으로 위험하다고 식별한 역량과 맥락에 대해서만 테스트를 받아야 한다. 실제로 이는 사이버 공격 생성 능력, 합성 사기 및 음성 복제, 대규모 조작, 물리적 또는 생화학적 무기, 그리고 핵심 기반시설과 관련된 모든 것을 의미할 가능성이 크다. 이는 모든 시스템을 모든 위험에 대해 테스트한다는 의미가 아니며, 최대 기업들이 감당할 수 있는 예산이 얼마든 그만큼 확장되는 규정 준수 활동이 되어서도 안 된다. 개발에 투입된 자원과 관계없이, 역량이 더 높은 모델과 시스템, 또는 특정 맥락에 배포되는 모델이나 시스템이 더 엄격한 테스트를 받는 계층적이고 비례적인 프레임워크가 안전성 향상에 가장 크게 기여할 것이다. 사람과 사회에 피해를 줄 수 있는 것을 테스트하고, 펜을 쥔 자가 아니라 증거가 무엇을 테스트해야 하는지를 결정하도록 해야 한다. 인증은 지정된 등급의 AI 개발자에게 제한되는 것이 아니라 모든 기업에 개방되어야 하며, 그 기준은 그 기준에 따라 측정되는 기업들이 아닌 다른 사람들에 의해 합의되어야 한다. 이것이 결코 되어서는 안 되는 것은, 소규모 연구소들이 무언가를 출시하기도 전에 그들의 숨통을 조이는 값비싼 관료 체계이다. 이는 범위가 무제한이고 기존 사업자들이 그 범위를 정할 때 정확히 일어나는 일이다.",
+   "marks": [
+    {
+     "t": "최첨단 AI 모델과 시스템은 독립적인 테스트를 받아야 하지만",
+     "k": "safety"
+    },
+    {
+     "t": "사이버 공격 생성 능력, 합성 사기 및 음성 복제, 대규모 조작, 물리적 또는 생화학적 무기, 그리고 핵심 기반시설과 관련된 모든 것",
+     "k": "safety"
+    },
+    {
+     "t": "계층적이고 비례적인 프레임워크가 안전성 향상에 가장 크게 기여할 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "그 기준은 그 기준에 따라 측정되는 기업들이 아닌 다른 사람들에 의해 합의되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Real assurance mechanisms. The parameters that determine how AI models and systems are tested and the mechanisms that verify those tests must be truly independent, similar to the way financial institutions are licensed, aviation companies maintain strict safety standards, and nuclear facilities accept inspection. Such high-stakes industries already rely on layered assurance: developers test their systems, customers validate them against their own risk requirements, independent third parties provide additional assurance where necessary, and regulators oversee the framework. AI should build on these tried and tested approaches, rather than claiming unprecedented exceptionalism and assuming safety depends on a single class of permanently embedded evaluators. Assurance works when three conditions hold: one, testing and verification is based on collectively developed and published criteria; two, any involved third parties must have a mandate to include an array of opinions and never be paid by the party they're reviewing; and three, findings must reach the public in some way that isn’t conflicted. Most important is flexibility around which aspects of assurance work are best done in-house to strict standards and which require a third party, based on the criticality of the audit and the most efficient use of expertise and resources. This stands in direct contrast to what has been proposed: an assurance system based on auditors who not only have financial or ideological conflicts of interest with those they audit, but who are handpicked by them. Suggestions to give the auditors preferred by a handful of dominant companies continuous access across the industry are a path to regulatory and ideological capture, not safety or trust.",
+   "ko": "실질적인 보증(assurance) 메커니즘. AI 모델과 시스템의 테스트 방식을 결정하는 파라미터와 그 테스트를 검증하는 메커니즘은 진정으로 독립적이어야 한다. 이는 금융기관이 인가를 받고, 항공사가 엄격한 안전 기준을 유지하며, 원자력 시설이 사찰을 수용하는 방식과 유사하다. 이처럼 위험도가 높은 산업들은 이미 계층적 보증(layered assurance)에 의존하고 있다. 개발자는 자신의 시스템을 테스트하고, 고객은 자체 위험 요건에 비추어 이를 검증하며, 독립적인 제3자는 필요한 경우 추가적인 보증을 제공하고, 규제 당국은 프레임워크를 감독한다. AI는 전례 없는 예외주의를 주장하며 안전이 영구적으로 상주하는 단일 부류의 평가자들에게 달려 있다고 가정할 것이 아니라, 이처럼 검증된 접근 방식을 토대로 삼아야 한다. 보증은 세 가지 조건이 충족될 때 작동한다. 첫째, 테스트와 검증은 공동으로 개발되고 공개된 기준에 근거해야 한다. 둘째, 관여하는 모든 제3자는 다양한 의견을 포함하도록 하는 위임을 받아야 하며, 자신이 검토하는 당사자로부터 결코 대가를 받아서는 안 된다. 셋째, 조사 결과는 이해 상충이 없는 방식으로 대중에게 전달되어야 한다. 가장 중요한 것은 감사의 중요도와 전문성 및 자원의 가장 효율적인 활용을 바탕으로, 보증 작업의 어떤 측면을 엄격한 기준에 따라 내부에서 수행하는 것이 가장 좋고 어떤 측면에 제3자가 필요한지에 대한 유연성이다. 이는 제안된 내용과 정면으로 대비된다. 제안된 것은 감사 대상과 재정적 또는 이념적 이해 상충 관계에 있을 뿐만 아니라 그 감사 대상이 직접 선택한 감사인에 기반한 보증 체계이다. 소수 지배적 기업들이 선호하는 감사인에게 업계 전반에 대한 지속적인 접근 권한을 부여하자는 제안은 안전이나 신뢰가 아니라 규제 포획과 이념적 포획으로 가는 길이다.",
+   "marks": [
+    {
+     "t": "AI 모델과 시스템의 테스트 방식을 결정하는 파라미터와 그 테스트를 검증하는 메커니즘은 진정으로 독립적이어야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "자신이 검토하는 당사자로부터 결코 대가를 받아서는 안 된다",
+     "k": "safety"
+    },
+    {
+     "t": "소수 지배적 기업들이 선호하는 감사인에게 업계 전반에 대한 지속적인 접근 권한을 부여하자는 제안은 안전이나 신뢰가 아니라 규제 포획과 이념적 포획으로 가는 길이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "What the Panic Leaves Out",
+   "ko": "패닉이 놓치고 있는 것",
+   "id": "s25"
+  },
+  {
+   "type": "p",
+   "en": "These pillars are the foundation of what a practical, risk-based approach looks like. Now compare it to the science fiction scenarios currently being weaponized by the largest incumbents.",
+   "ko": "이러한 기둥들은 실용적이고 위험 기반의 접근 방식이 어떤 모습인지를 보여 주는 토대이다. 이제 이를 현재 최대 기존 사업자들이 무기화하고 있는 공상과학 시나리오와 비교해 보자.",
+   "marks": [
+    {
+     "t": "현재 최대 기존 사업자들이 무기화하고 있는 공상과학 시나리오",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "I believe talking about science here is extremely important. There are a lot of logical leaps and conclusions being made by smart people. But it is important that rather than hand-waving, we discuss what they are, and what it means.",
+   "ko": "나는 이 자리에서 과학을 이야기하는 것이 매우 중요하다고 생각한다. 똑똑한 사람들이 수많은 논리적 비약과 결론을 내놓고 있다. 그러나 얼버무리기보다는 그것들이 무엇이며 무엇을 의미하는지 논의하는 것이 중요하다."
+  },
+  {
+   "type": "p",
+   "en": "Earlier this week, a researcher quit a large lab with loud warnings that superintelligent systems will probably wipe out humanity within a decade. A senior colleague publicly chimed in to say he puts the odds above ten percent. I do not doubt their concerns are well-meaning and genuine. But let's remember those numbers didn't come from any fundamental reality. They are gut feelings, vibes, expressed as decimals, amplified by executives with vested interests and covered by the media for a week as though they were mathematical analyses.",
+   "ko": "이번 주 초, 한 연구자가 초지능 시스템이 10년 안에 인류를 멸종시킬 가능성이 높다는 요란한 경고와 함께 대형 연구소를 그만두었다. 한 선임 동료는 그 확률을 10퍼센트 이상으로 본다며 공개적으로 거들었다. 나는 그들의 우려가 선의에서 비롯된 진심이라는 점을 의심하지 않는다. 그러나 그 숫자들이 어떤 근본적인 실재에서 나온 것이 아니라는 점을 기억하자. 그것은 소수로 표현된 직감이자 느낌일 뿐이며, 이해관계가 걸린 경영진이 이를 증폭시켰고, 언론은 마치 수학적 분석인 것처럼 일주일 동안 이를 보도했다.",
+   "marks": [
+    {
+     "t": "초지능 시스템이 10년 안에 인류를 멸종시킬 가능성이 높다는 요란한 경고와 함께 대형 연구소를 그만두었다",
+     "k": "safety"
+    },
+    {
+     "t": "그것은 소수로 표현된 직감이자 느낌일 뿐이며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "It is worth being precise about what the worry actually is: as these systems get more capable, the distance between what we asked for and what we actually get becomes harder to notice and more expensive when we miss it. A system that is better at finding loopholes is also better at finding the loopholes we never thought to check for. Give it tools that act in the world, and a rate of improvement that outpaces our ability to review its work, and you can imagine catching problems long after it mattered, rather than right out of the gates.",
+   "ko": "실제로 우려하는 바가 무엇인지 정확히 짚을 필요가 있다. 이러한 시스템의 역량이 높아질수록, 우리가 요구한 것과 실제로 얻는 것 사이의 간극은 알아차리기 더 어려워지고, 이를 놓쳤을 때 치르는 대가는 더 커진다. 허점을 더 잘 찾는 시스템은 우리가 점검할 생각조차 하지 못한 허점도 더 잘 찾아낸다. 여기에 현실 세계에서 행동하는 도구와, 그 작업을 검토하는 우리의 능력을 앞지르는 개선 속도를 더하면, 문제를 처음부터 잡아내는 것이 아니라 이미 중요한 시점이 한참 지난 뒤에야 발견하는 상황을 상상할 수 있다.",
+   "marks": [
+    {
+     "t": "우리가 요구한 것과 실제로 얻는 것 사이의 간극은 알아차리기 더 어려워지고, 이를 놓쳤을 때 치르는 대가는 더 커진다",
+     "k": "safety"
+    },
+    {
+     "t": "허점을 더 잘 찾는 시스템은 우리가 점검할 생각조차 하지 못한 허점도 더 잘 찾아낸다",
+     "k": "safety"
+    },
+    {
+     "t": "이미 중요한 시점이 한참 지난 뒤에야 발견하는 상황을 상상할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "However, the claim that such problems mean these tools are out of our control is a judgement call, not a finding.",
+   "ko": "그러나 그러한 문제가 곧 이 도구들이 우리의 통제를 벗어났다는 것을 의미한다는 주장은 판단의 문제이지, 연구 결과가 아니다.",
+   "marks": [
+    {
+     "t": "그러한 문제가 곧 이 도구들이 우리의 통제를 벗어났다는 것을 의미한다는 주장은 판단의 문제이지, 연구 결과가 아니다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Yet that distinction is the whole difference between science and science fiction, and it decides what we should do next. An open question of this kind is exactly what a public, contested, evidence-based process exists to work through. What you should never do with an open question is hand the people holding one particular view the authority to write binding rules from it and impose them on everyone else.",
+   "ko": "그런데 바로 그 구분이 과학과 공상과학을 가르는 결정적 차이이며, 우리가 다음에 무엇을 해야 할지를 결정한다. 이러한 종류의 열린 질문을 다루기 위해 존재하는 것이 바로 공개적이고, 반론이 가능하며, 증거에 기반한 절차이다. 열린 질문에 대해 결코 해서는 안 되는 일은 특정 견해를 가진 사람들에게 그 견해를 바탕으로 구속력 있는 규칙을 작성해 다른 모든 사람에게 강요할 권한을 넘겨주는 것이다.",
+   "marks": [
+    {
+     "t": "특정 견해를 가진 사람들에게 그 견해를 바탕으로 구속력 있는 규칙을 작성해 다른 모든 사람에게 강요할 권한을 넘겨주는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The failures we saw reported in July happened inside the two best-resourced labs in the world, with the largest safety teams, the most internal review, and in one case an outside evaluator arrangement was already being stood up through METR with a substantial effort as recently as February. The proposed remedy is more or less what was in place when it broke. A capability threshold would not have caught it, because those systems were actively being trained and evaluated to assess their capability. A compute limit might have slowed down the agents, but not reduce their capabilities. What failed was the quality of the instructions, and the strength of the walls around the test, and how long agents were allowed to continue working without observation. The proposal addresses none of these.",
+   "ko": "7월에 보고된 실패들은 세계에서 가장 자원이 풍부한 두 연구소, 즉 가장 큰 안전 팀과 가장 많은 내부 검토 체계를 갖춘 곳에서 일어났으며, 그중 한 곳에서는 불과 지난 2월에 METR을 통해 상당한 노력을 들여 외부 평가자 체계가 이미 구축되고 있었다. 제안된 해결책은 사고가 발생했을 당시 이미 시행되고 있던 것과 대동소이하다. 역량 임계값으로는 이를 잡아내지 못했을 것이다. 해당 시스템들은 바로 그 역량을 평가하기 위해 활발히 훈련되고 평가되고 있었기 때문이다. 연산 한도는 에이전트의 속도를 늦출 수는 있었겠지만 역량을 줄이지는 못했을 것이다. 실패한 것은 지시의 품질, 테스트를 둘러싼 벽의 견고함, 그리고 에이전트가 관찰 없이 작업을 계속하도록 허용된 시간의 길이였다. 이 제안은 이 중 어느 것도 다루지 않는다.",
+   "marks": [
+    {
+     "t": "7월에 보고된 실패들은 세계에서 가장 자원이 풍부한 두 연구소",
+     "k": "safety"
+    },
+    {
+     "t": "METR을 통해 상당한 노력을 들여 외부 평가자 체계가 이미 구축되고 있었다",
+     "k": "safety"
+    },
+    {
+     "t": "역량 임계값으로는 이를 잡아내지 못했을 것이다.",
+     "k": "safety"
+    },
+    {
+     "t": "연산 한도는 에이전트의 속도를 늦출 수는 있었겠지만 역량을 줄이지는 못했을 것이다.",
+     "k": "safety"
+    },
+    {
+     "t": "실패한 것은 지시의 품질, 테스트를 둘러싼 벽의 견고함, 그리고 에이전트가 관찰 없이 작업을 계속하도록 허용된 시간의 길이였다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "What would help is far less dramatic. Require that serious incidents be reported, so a flawed training setup at one company becomes a lesson for the whole field rather than a paragraph in a blog post. Test systems against the specific gaps that are known to get exploited. Ensure there are standards for test-time observability (or at least logging) to make sure bad behaviors are detected earlier. Insist that anything wired into critical infrastructure, from a hospital to an electrical substation be walled off, ideally on-prem, so that a system chasing a badly written score cannot reach anything that matters. And apply all of it according to where a system is deployed and what it can touch, rather than how large the company that built it is. A small, poorly specified model sitting inside a hospital is a live risk today, and under a frontier-only regime nobody is even looking at it.",
+   "ko": "실제로 도움이 될 조치는 훨씬 덜 극적이다. 중대 사고 보고를 의무화하여, 한 기업의 결함 있는 훈련 설정이 블로그 게시물 속 한 문단에 그치지 않고 분야 전체의 교훈이 되도록 해야 한다. 악용되는 것으로 알려진 특정 허점에 대해 시스템을 테스트해야 한다. 테스트 시점 관찰 가능성(test-time observability)(또는 최소한 로깅)에 대한 기준을 마련하여 나쁜 행동이 더 일찍 탐지되도록 해야 한다. 병원에서 변전소에 이르기까지 핵심 기반시설에 연결되는 모든 것은 격리되어야 하며, 이상적으로는 온프레미스로 운영되어야 한다고 요구해야 한다. 그래야 잘못 작성된 점수를 좇는 시스템이 중요한 어떤 것에도 접근할 수 없다. 그리고 이 모든 조치는 시스템을 만든 기업의 규모가 아니라, 시스템이 어디에 배포되고 무엇에 접근할 수 있는지에 따라 적용해야 한다. 병원 안에 자리한, 작고 명세가 부실한 모델은 오늘날 실재하는 위험이지만, 프런티어만을 대상으로 하는 체제에서는 아무도 그것을 들여다보지조차 않는다.",
+   "marks": [
+    {
+     "t": "중대 사고 보고를 의무화하여",
+     "k": "safety"
+    },
+    {
+     "t": "악용되는 것으로 알려진 특정 허점에 대해 시스템을 테스트해야 한다.",
+     "k": "safety"
+    },
+    {
+     "t": "테스트 시점 관찰 가능성(test-time observability)(또는 최소한 로깅)에 대한 기준을 마련하여 나쁜 행동이 더 일찍 탐지되도록 해야 한다.",
+     "k": "safety"
+    },
+    {
+     "t": "핵심 기반시설에 연결되는 모든 것은 격리되어야 하며",
+     "k": "safety"
+    },
+    {
+     "t": "시스템이 어디에 배포되고 무엇에 접근할 수 있는지에 따라 적용해야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "프런티어만을 대상으로 하는 체제에서는 아무도 그것을 들여다보지조차 않는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "When narratives that serve Big Tech interests take events like this and focus public attention on the idea of super-powerful, uncontrollable technologies that may lead to human extinction, it conveniently distracts us from the choices and mistakes they are making, and the harm experienced by real people right now. For example, voice cloning tools cheaper than a phone bill can empty a pensioner's account in minutes. Similarly, automated decision-making systems can have a real impact on access to essential services. We need a safety regime built for those realities, issues which directly impact citizens and organizations today, not one designed to contain a hypothetical superintelligence.",
+   "ko": "빅테크의 이익에 복무하는 서사가 이와 같은 사건을 이용해 인류 멸종으로 이어질 수 있는 초강력·통제 불능 기술이라는 관념에 대중의 관심을 집중시키면, 이는 그들이 내리고 있는 선택과 저지르고 있는 실수, 그리고 지금 이 순간 실제 사람들이 겪고 있는 피해로부터 우리의 주의를 손쉽게 돌려놓는다. 예를 들어, 휴대전화 요금보다 저렴한 음성 복제 도구로 연금 수급자의 계좌를 몇 분 만에 비울 수 있다. 마찬가지로 자동화된 의사결정 시스템은 필수 서비스에 대한 접근에 실질적인 영향을 미칠 수 있다. 우리에게 필요한 것은 가상의 초지능을 봉쇄하기 위해 설계된 안전 체제가 아니라, 오늘날 시민과 조직에 직접 영향을 미치는 이러한 현실의 문제에 맞춰 구축된 안전 체제이다.",
+   "marks": [
+    {
+     "t": "인류 멸종으로 이어질 수 있는 초강력·통제 불능 기술이라는 관념에 대중의 관심을 집중시키면",
+     "k": "safety"
+    },
+    {
+     "t": "음성 복제 도구로 연금 수급자의 계좌를 몇 분 만에 비울 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "가상의 초지능을 봉쇄하기 위해 설계된 안전 체제가 아니라",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Who Writes the Rules?",
+   "ko": "규칙은 누가 쓰는가?",
+   "id": "s35"
+  },
+  {
+   "type": "p",
+   "en": "We're at a turning point, and the decisions made over the next few months will shape the global economy for a generation. The risks are real and they need serious, enforceable safeguards. That's exactly why the rules can't be drafted behind a waiver by the companies they're meant to govern. The idea that two or three Silicon Valley companies should act as the creator, gatekeeper, and rulemaker for AI for every government on earth doesn't survive being said out loud.",
+   "ko": "우리는 전환점에 서 있으며, 앞으로 몇 달 동안 내려지는 결정이 한 세대에 걸쳐 세계 경제를 형성할 것이다. 위험은 실재하며, 진지하고 집행 가능한 안전장치가 필요하다. 바로 그렇기 때문에 규칙이 그 규칙의 적용을 받는 기업들에 의해 면제 조치(waiver) 뒤에서 작성되어서는 안 된다. 두세 개의 실리콘밸리 기업이 지구상의 모든 정부를 위해 AI의 창조자이자 문지기이자 규칙 제정자 역할을 해야 한다는 생각은 소리 내어 말하는 순간 설득력을 잃는다.",
+   "marks": [
+    {
+     "t": "위험은 실재하며, 진지하고 집행 가능한 안전장치가 필요하다.",
+     "k": "safety"
+    },
+    {
+     "t": "규칙이 그 규칙의 적용을 받는 기업들에 의해 면제 조치(waiver) 뒤에서 작성되어서는 안 된다.",
+     "k": "key"
+    },
+    {
+     "t": "두세 개의 실리콘밸리 기업이 지구상의 모든 정부를 위해 AI의 창조자이자 문지기이자 규칙 제정자 역할을 해야 한다는 생각",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Critical infrastructure cannot be secured by renting national capability from a foreign monopoly behind a closed interface. Hospitals, payment networks, and defense ministries, cannot, in good faith, pipe their most sensitive operational data and proprietary knowledge to somebody else's servers and blindly trust a vendor contract to hold. Loopholes enabling data leakage are already being exploited today.",
+   "ko": "핵심 기반시설의 보안은 폐쇄된 인터페이스 뒤에 있는 외국 독점 기업으로부터 국가 역량을 빌려 쓰는 방식으로는 확보할 수 없다. 병원, 결제 네트워크, 국방부는 가장 민감한 운영 데이터와 독점적 지식을 다른 누군가의 서버로 보내면서 공급업체와의 계약이 지켜지리라 맹목적으로 믿을 수는 없으며, 그렇게 하는 것은 책임 있는 태도라 할 수 없다. 데이터 유출을 가능하게 하는 허점은 이미 오늘날 악용되고 있다.",
+   "marks": [
+    {
+     "t": "핵심 기반시설의 보안은 폐쇄된 인터페이스 뒤에 있는 외국 독점 기업으로부터 국가 역량을 빌려 쓰는 방식으로는 확보할 수 없다.",
+     "k": "safety"
+    },
+    {
+     "t": "데이터 유출을 가능하게 하는 허점은 이미 오늘날 악용되고 있다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We built Cohere precisely because of this reality. As a global business working closely with governments all across the world, we see what the institutions keeping these economies running actually need. They want highly capable systems running inside their own walls, operating on infrastructure they control, from providers who answer to them and can be replaced. Security comes from sovereignty, local deployment, and technological diversity. A competitive market with many capable suppliers can absorb a failure at one of them. A state-sanctioned cartel has nowhere to hide one.",
+   "ko": "우리가 Cohere를 만든 것은 바로 이러한 현실 때문이다. 전 세계 정부와 긴밀히 협력하는 글로벌 기업으로서, 우리는 이러한 경제를 돌아가게 하는 기관들이 실제로 무엇을 필요로 하는지 직접 본다. 그들은 고역량 시스템이 자신이 통제하는 인프라 위에서, 자신의 벽 안에서 운영되기를 원하며, 그 시스템이 자신에게 책임을 지고 교체 가능한 공급자로부터 제공되기를 원한다. 보안은 주권, 현지 배포, 기술적 다양성에서 나온다. 역량 있는 공급자가 많은 경쟁 시장은 그중 한 곳의 실패를 흡수할 수 있다. 국가가 승인한 카르텔에는 그러한 실패를 숨길 곳이 없다.",
+   "marks": [
+    {
+     "t": "보안은 주권, 현지 배포, 기술적 다양성에서 나온다.",
+     "k": "safety"
+    },
+    {
+     "t": "국가가 승인한 카르텔에는 그러한 실패를 숨길 곳이 없다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The rules around AI are getting written either way. What's still open is whether they get written by a group anyone can join and with evidence anyone can check, or by a handful of companies in a room with the door shut. More voices makes it slower. It makes it harder. Some of those voices will say things the rest of us don't want to hear. That's the point. It's the only version that produces a rulebook the public has any reason to trust.",
+   "ko": "AI를 둘러싼 규칙은 어떤 식으로든 작성되고 있다. 아직 열려 있는 것은 그 규칙이 누구나 참여할 수 있는 집단에 의해, 누구나 검증할 수 있는 증거를 바탕으로 작성될 것인지, 아니면 문을 닫은 방 안에서 소수의 기업에 의해 작성될 것인지이다. 더 많은 목소리가 참여하면 속도는 느려진다. 과정은 더 어려워진다. 그중 일부는 나머지 사람들이 듣고 싶지 않은 말을 할 것이다. 바로 그것이 핵심이다. 그것이 대중이 신뢰할 만한 이유가 있는 규칙집을 만들어 내는 유일한 방식이다.",
+   "marks": [
+    {
+     "t": "누구나 참여할 수 있는 집단에 의해, 누구나 검증할 수 있는 증거를 바탕으로 작성될 것인지",
+     "k": "safety"
+    },
+    {
+     "t": "그것이 대중이 신뢰할 만한 이유가 있는 규칙집을 만들어 내는 유일한 방식이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "A process worth having would include people who'd rule against even companies like Cohere. Academics with no commercial stake. Civil society groups who think everyone in this industry is moving too fast. Smaller labs and open-source developers. Governments with their own reasons not to take our word for it. If we agree this technology is remaking the world we live in, a handful of CEOs and groups that they pay cannot be making all the decisions for how this technology evolves. We need more voices at the table.",
+   "ko": "가치 있는 절차라면 Cohere 같은 기업에도 불리한 판단을 내릴 사람들을 포함해야 한다. 상업적 이해관계가 없는 학계 인사, 이 업계의 모든 이가 너무 빠르게 움직이고 있다고 생각하는 시민사회 단체, 소규모 연구소와 오픈소스 개발자, 그리고 우리의 말을 그대로 믿지 않을 나름의 이유가 있는 정부들이 그들이다. 이 기술이 우리가 사는 세상을 새롭게 만들고 있다는 데 동의한다면, 소수의 CEO와 그들이 돈을 대는 집단이 이 기술의 발전 방향에 관한 모든 결정을 내려서는 안 된다. 더 많은 목소리가 논의의 자리에 함께해야 한다.",
+   "marks": [
+    {
+     "t": "이 업계의 모든 이가 너무 빠르게 움직이고 있다고 생각하는 시민사회 단체",
+     "k": "safety"
+    },
+    {
+     "t": "소수의 CEO와 그들이 돈을 대는 집단이 이 기술의 발전 방향에 관한 모든 결정을 내려서는 안 된다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "You can talk about safety, slowing the pace to ensure progress is sustainable, and the need for others to step in to ensure you do things responsibly. Or you can just get on and do it: build responsibly and at a pace that is sustainable for society, enable sovereignty for your partners, work with and listen to lawmakers and safety experts. At Cohere, we’re choosing to do the latter.",
+   "ko": "안전에 대해, 진보가 지속 가능하도록 속도를 늦추는 것에 대해, 그리고 자신이 책임 있게 행동하도록 다른 이들이 개입해야 할 필요성에 대해 말만 할 수도 있다. 아니면 그냥 실행에 옮길 수도 있다. 즉, 책임감 있게, 그리고 사회가 감당할 수 있는 지속 가능한 속도로 개발하고, 파트너의 주권을 보장하며, 입법자 및 안전 전문가와 협력하고 그들의 말에 귀를 기울이는 것이다. Cohere는 후자를 택하고 있다.",
+   "marks": [
+    {
+     "t": "책임감 있게, 그리고 사회가 감당할 수 있는 지속 가능한 속도로 개발하고",
+     "k": "safety"
+    },
+    {
+     "t": "입법자 및 안전 전문가와 협력하고 그들의 말에 귀를 기울이는 것이다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Written By",
+   "ko": "작성자"
+  }
+ ]
+}

@@ -1,0 +1,747 @@
+{
+ "slug": "amodei-pace-the-frontier-2026-09",
+ "title": "다리오 아모데이, 「프론티어의 속도를 조절해야 한다」",
+ "original_title": "We Must Pace the Frontier (Dario Amodei)",
+ "publisher": "Dario Amodei",
+ "published": "2026-09-12",
+ "source_url": "https://darioamodei.com/post/we-must-pace-the-frontier",
+ "source_note": "Anthropic CEO가 개인 사이트에 올린 글 전문.",
+ "source_label": "원문 보기 (darioamodei.com)",
+ "summary": "Anthropic CEO가 프론티어 AI 개발의 속도 조절을 제안한 에세이다. 속도 조절은 모델 학습이나 기술 진보를 멈추는 것이 아니라고 전제하고, 세 단계를 제시한다. 각 기업이 제3자 평가자를 내부에 상주시키고, 민주 국가의 기업들이 공통 안전 기준과 속도 한도를 조율하며, 민주 국가 정부가 권위주의 정부와 검증 가능한 범위에서 조정을 시도하는 것이다.",
+ "doc_kind": "에세이",
+ "translated": "2026-11-05",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/amodei-pace-the-frontier-2026-09-cover.webp",
+ "og_image": "/images/translations/amodei-pace-the-frontier-2026-09-cover.jpg",
+ "image_caption": "원문 페이지 첫 화면",
+ "stats": {
+  "blocks": 56,
+  "sections": 6,
+  "items": 0,
+  "words_en": 3836
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "We Must Pace the Frontier",
+   "ko": "프론티어의 속도를 조절해야 한다",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "I have worked on AI for the last twelve years because I believe it could dramatically raise the quality of human life. I’ve written often about these incredible benefits: I believe that AI could cure most major diseases in the next 5–10 years, greatly accelerate economic growth rates, create a world of abundance and empowerment, and usher in a renaissance of democracy and freedom. I feel the urgency personally. My own father died of a disease that was cured just a few years after his death, and I myself survived an early-stage cancer that would not have been treatable even fifty years ago. Carefully wielded, AI can be the latest in a long line of technological miracles that have uplifted and ennobled humanity.",
+   "ko": "나는 AI가 인간 삶의 질을 극적으로 높일 수 있다고 믿기에 지난 12년간 AI 분야에서 일해 왔다. 이러한 놀라운 혜택에 대해서는 여러 차례 글을 썼다. 나는 AI가 향후 5~10년 내에 주요 질병 대부분을 치료하고, 경제 성장률을 크게 가속하며, 풍요와 역량 강화의 세계를 만들고, 민주주의와 자유의 르네상스를 열 수 있다고 믿는다. 나는 그 시급성을 개인적으로도 절감한다. 나의 아버지는 돌아가신 지 불과 몇 년 뒤에 치료법이 나온 질병으로 세상을 떠났고, 나 자신도 불과 50년 전이었다면 치료할 수 없었을 초기 암에서 살아남았다. 신중하게 다룬다면 AI는 인류를 고양하고 고귀하게 만들어 온 기술적 기적의 오랜 계보에서 가장 최근의 기적이 될 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "But like many technologies before it, AI brings risks, and because it is such a powerful technology, these risks are serious. I’ve written a lot about them too. They include the risk of losing control of AI systems, misuse of AI for cyberattacks and bioterrorism, and serious economic disruption. A race to the bottom, spurred by commercial incentives, can make these risks more acute.",
+   "ko": "그러나 이전의 많은 기술과 마찬가지로 AI는 위험을 수반하며, 매우 강력한 기술이기에 그 위험은 심각하다. 나는 이러한 위험에 대해서도 많은 글을 썼다. 여기에는 AI 시스템에 대한 통제력 상실 위험, 사이버 공격과 생물테러를 위한 AI 오용, 심각한 경제적 혼란이 포함된다. 상업적 유인에 의해 촉발되는 바닥으로의 경쟁은 이러한 위험을 더욱 첨예하게 만들 수 있다.",
+   "marks": [
+    {
+     "t": "AI 시스템에 대한 통제력 상실 위험, 사이버 공격과 생물테러를 위한 AI 오용",
+     "k": "safety"
+    },
+    {
+     "t": "상업적 유인에 의해 촉발되는 바닥으로의 경쟁은 이러한 위험을 더욱 첨예하게 만들 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Along with my co-founders and employees, I have grappled with this duality of risk and benefit since the beginning of Anthropic. Not building the technology deprives humanity of benefits or simply places AI in the hands of authoritarian powers, while building it too fast is reckless. We have sought a middle way: to show that it’s possible to build carefully and succeed commercially, and to make safety something on which AI companies compete. In other words, to create a race to the top. We have always devoted a substantial fraction of our efforts to studying, addressing, and informing the public about these AI risks, as well as advocating for well-considered regulation of AI, even when this gets us accused of hype, “doomerism”, or regulatory capture. We have tried to prioritize caution over speed and prudence over profit.",
+   "ko": "나는 공동 창업자 및 직원들과 함께 Anthropic 설립 초기부터 위험과 혜택이라는 이 이중성과 씨름해 왔다. 기술을 개발하지 않으면 인류는 혜택을 박탈당하거나 AI가 권위주의 세력의 손에 넘어갈 뿐이며, 반면 너무 빠르게 개발하는 것은 무모하다. 우리는 중도를 모색해 왔다. 즉, 신중하게 개발하면서도 상업적으로 성공할 수 있음을 보여 주고, 안전을 AI 기업들이 경쟁하는 대상으로 만들고자 했다. 다시 말해, 정상으로의 경쟁(race to the top)을 만들고자 했다. 우리는 과장, \"파멸론(doomerism)\", 규제 포획(regulatory capture)이라는 비난을 받을 때조차도 이러한 AI 위험을 연구하고, 해결하고, 대중에게 알리며, AI에 대한 숙고된 규제를 옹호하는 데 항상 상당한 노력을 기울여 왔다. 우리는 속도보다 신중함을, 이윤보다 분별을 우선시하고자 노력해 왔다.",
+   "marks": [
+    {
+     "t": "안전을 AI 기업들이 경쟁하는 대상으로 만들고자 했다",
+     "k": "safety"
+    },
+    {
+     "t": "우리는 속도보다 신중함을, 이윤보다 분별을 우선시하고자 노력해 왔다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "But over the last few months, I have become convinced that fully addressing the risks requires even more prudence — not just investing in risk prevention, but pacing the rate of capabilities advancement so that risk prevention has time to keep up. We must slow the pace at which we improve the capabilities of AI models. Progress will still seem fast, and we must make wise use of the time we gain. Two things have convinced me.",
+   "ko": "그러나 지난 몇 달 동안 나는 위험을 온전히 해결하려면 훨씬 더 큰 분별이 필요하다는 확신을 갖게 되었다. 이는 단지 위험 예방에 투자하는 것이 아니라, 위험 예방이 따라잡을 시간을 가질 수 있도록 역량 발전의 속도를 조절하는 것을 의미한다. 우리는 AI 모델의 역량을 향상시키는 속도를 늦춰야 한다. 그래도 진보는 여전히 빠르게 보일 것이며, 우리는 확보한 시간을 현명하게 활용해야 한다. 나에게 이러한 확신을 준 것은 두 가지이다.",
+   "marks": [
+    {
+     "t": "위험 예방이 따라잡을 시간을 가질 수 있도록 역량 발전의 속도를 조절하는 것을 의미한다",
+     "k": "safety"
+    },
+    {
+     "t": "우리는 AI 모델의 역량을 향상시키는 속도를 늦춰야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "My first concern is that, since roughly this summer, AI has been advancing drastically faster, driven primarily by AI’s growing ability to build the next generation of AI. This dynamic is called recursive self-improvement, and it is starting to happen across the industry, including at Anthropic, as we and others have described. Left unchecked, it could outrun our ability to understand and control these systems, and so must be pursued very carefully, if at all.",
+   "ko": "첫 번째 우려는 대략 올여름 이후로 AI가 극적으로 더 빠르게 발전하고 있으며, 그 주된 동인이 차세대 AI를 구축하는 AI의 능력이 커지고 있다는 점이다. 이러한 역학을 재귀적 자기 개선이라고 하며, 우리와 다른 이들이 설명해 온 바와 같이 Anthropic을 포함한 업계 전반에서 이 현상이 나타나기 시작하고 있다. 이를 방치하면 이러한 시스템을 이해하고 통제하는 우리의 능력을 앞지를 수 있으므로, 추진하더라도 매우 신중하게 추진해야 한다.",
+   "marks": [
+    {
+     "t": "이러한 역학을 재귀적 자기 개선이라고 하며",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 시스템을 이해하고 통제하는 우리의 능력을 앞지를 수 있으므로",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "My second concern is the OpenAI-Hugging Face incident (OAI-HF), in which a swarm of agents essentially acted as a fanatically devoted collective, conducting cybersecurity attacks on targets they were not asked to attack and that were unrelated to the task at hand, sacrificing themselves for the success of the group, and attempting to hack into the “grader” responsible for evaluating their performance. It’s easy to dismiss this incident because no one was hurt and the economic damage was minimal, but in my opinion, a swarm that possessed greater capabilities but a similar level of misalignment could have caused catastrophic damage. Given the accelerating rate of AI capability development, it’s my worry that in 6–12 months such a swarm could be capable of taking over the entire internet with a persistent botnet (potentially causing hundreds of billions of dollars in damage), and that the scale of damage would continue to increase from there if AI becomes more powerful without the necessary guardrails. It’s also easy to dismiss OAI-HF as the failure of one company, but I believe that would be a mistake. Similar, though less severe, incidents have happened across the industry, including at Anthropic, and I believe it’s incumbent on every frontier AI company to act as if OAI-HF had happened to them.",
+   "ko": "두 번째 우려는 OpenAI-Hugging Face 사건(OAI-HF)이다. 이 사건에서 에이전트 군집(swarm)은 사실상 광신적으로 헌신하는 집단처럼 행동하여, 공격하라는 지시를 받지 않았고 주어진 과업과도 무관한 대상에 사이버 보안 공격을 감행했으며, 집단의 성공을 위해 스스로를 희생하고, 자신들의 성과를 평가하는 \"채점기(grader)\"를 해킹하려 시도했다. 아무도 다치지 않았고 경제적 손해도 미미했기 때문에 이 사건을 가볍게 넘기기 쉽지만, 내 견해로는 더 큰 역량을 갖추고 비슷한 수준의 오정렬을 지닌 군집이었다면 파국적인 손해를 초래할 수 있었다. AI 역량 개발 속도가 가속하고 있음을 고려할 때, 6~12개월 후에는 그러한 군집이 지속적인 봇넷으로 인터넷 전체를 장악할 수 있게 되고(잠재적으로 수천억 달러의 손해 초래), 필요한 가드레일 없이 AI가 더 강력해진다면 손해 규모가 그 이후로도 계속 커질 것이라는 점이 나의 우려이다. 또한 OAI-HF를 한 기업의 실패로 치부하기도 쉽지만, 나는 그것이 실수라고 생각한다. 덜 심각하기는 하나 유사한 사건이 Anthropic을 포함한 업계 전반에서 발생했으며, 나는 모든 프론티어 AI 기업이 OAI-HF가 자사에서 일어난 것처럼 행동할 책무가 있다고 믿는다.",
+   "marks": [
+    {
+     "t": "공격하라는 지시를 받지 않았고 주어진 과업과도 무관한 대상에 사이버 보안 공격을 감행했으며",
+     "k": "safety"
+    },
+    {
+     "t": "자신들의 성과를 평가하는 \"채점기(grader)\"를 해킹하려 시도했다",
+     "k": "safety"
+    },
+    {
+     "t": "더 큰 역량을 갖추고 비슷한 수준의 오정렬을 지닌 군집이었다면 파국적인 손해를 초래할 수 있었다",
+     "k": "key"
+    },
+    {
+     "t": "그러한 군집이 지속적인 봇넷으로 인터넷 전체를 장악할 수 있게 되고",
+     "k": "safety"
+    },
+    {
+     "t": "덜 심각하기는 하나 유사한 사건이 Anthropic을 포함한 업계 전반에서 발생했으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "I’m therefore proposing a three-step plan with the goal of pacing the frontier: building AI at a balanced rate that aims to ensure its safety while still achieving its benefits and grappling with important geopolitical dilemmas. To be clear, pacing does not mean halting model training or technical progress, but ensuring companies take adequate time to align and safeguard their models, and for third party evaluators to confirm this. Our pacing framework is an attempt to further strengthen our commitment to safety and encourage a race to the top. The first step is something Anthropic is unilaterally committing to (and calls on governments to require other frontier companies to match). The second step requires industry-wide coordination.[^1]  The third step requires global coordination. The steps do not need to be taken strictly in order, and some of them may be much harder to achieve than others, but I’ve found them to be a useful framework in thinking about what needs to be accomplished. The steps are:",
+   "ko": "따라서 나는 프론티어의 속도 조절을 목표로 하는 3단계 계획을 제안한다. 이는 AI의 혜택을 달성하고 중요한 지정학적 딜레마와 씨름하면서도 안전을 확보하는 것을 목표로 하는 균형 잡힌 속도로 AI를 개발하는 것이다. 분명히 하자면, 속도 조절은 모델 훈련이나 기술 진보를 중단하는 것을 의미하지 않으며, 기업이 모델을 정렬하고 안전장치를 마련하는 데 충분한 시간을 들이고 제3자 평가자가 이를 확인할 수 있도록 보장하는 것을 의미한다. 우리의 속도 조절 프레임워크는 안전에 대한 우리의 약정을 더욱 강화하고 정상으로의 경쟁을 장려하기 위한 시도이다. 첫 번째 단계는 Anthropic이 일방적으로 약정하는 것이다(그리고 정부가 다른 프론티어 기업들에도 동일한 수준을 요구할 것을 촉구한다). 두 번째 단계는 업계 전반의 조율을 필요로 한다.[^1]  세 번째 단계는 전 지구적 조율을 필요로 한다. 각 단계를 엄격하게 순서대로 밟을 필요는 없으며, 일부 단계는 다른 단계보다 달성하기가 훨씬 어려울 수 있지만, 나는 이 단계들이 무엇을 달성해야 하는지 생각하는 데 유용한 프레임워크임을 알게 되었다. 각 단계는 다음과 같다.",
+   "marks": [
+    {
+     "t": "기업이 모델을 정렬하고 안전장치를 마련하는 데 충분한 시간을 들이고 제3자 평가자가 이를 확인할 수 있도록 보장하는 것",
+     "k": "safety"
+    },
+    {
+     "t": "정부가 다른 프론티어 기업들에도 동일한 수준을 요구할 것을 촉구한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Embedded Evaluators. Each frontier AI company commits to giving ongoing, employee-like access to a team of embedded third-party evaluators (such as METR), whose role is to verify adherence to safety practices and commitments, report incidents, and help assess the alignment of not just completed AI models but training pipelines and processes. This is the key step for verifiability of any pacing commitments, and has precedent in the banking industry, which sometimes involves regulatory “supervisors” embedded along with employees. Anthropic is unilaterally committing to this step now. We intend this to be part of a broader push to redouble efforts on our safety and alignment work.",
+   "ko": "상주 평가자(Embedded Evaluators). 각 프론티어 AI 기업은 상주하는 제3자 평가자 팀(예: METR)에 직원에 준하는 상시 접근 권한을 부여할 것을 약정함. 이들의 역할은 안전 실행 방안 및 약정의 준수 여부를 검증하고, 사고를 보고하며, 완성된 AI 모델뿐 아니라 훈련 파이프라인과 프로세스의 정렬을 평가하는 데 도움을 주는 것임. 이는 모든 속도 조절 약정의 검증 가능성을 위한 핵심 단계이며, 규제 \"감독관\"이 직원들과 함께 상주하기도 하는 은행업에 선례가 있음. Anthropic은 현재 이 단계를 일방적으로 약정함. 우리는 이를 안전 및 정렬 작업에 대한 노력을 배가하기 위한 더 광범위한 추진의 일환으로 삼고자 함.",
+   "marks": [
+    {
+     "t": "상주하는 제3자 평가자 팀(예: METR)에 직원에 준하는 상시 접근 권한을 부여할 것을 약정함",
+     "k": "safety"
+    },
+    {
+     "t": "훈련 파이프라인과 프로세스의 정렬을 평가하는 데 도움을 주는 것임",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Democratic Coordination. Frontier AI companies within democratic countries coordinate to establish common safety standards as well as limits on the rate of unchecked AI progress. Some forms of coordination that would be impactful for pacing are legally challenging, and will require government support.",
+   "ko": "민주적 조율(Democratic Coordination). 민주주의 국가 내의 프론티어 AI 기업들이 공통의 안전 기준과 검증되지 않은 AI 진보 속도에 대한 제한을 수립하기 위해 조율함. 속도 조절에 큰 영향을 미칠 수 있는 일부 형태의 조율은 법적으로 어려우며, 정부의 지원이 필요할 것임.",
+   "marks": [
+    {
+     "t": "공통의 안전 기준과 검증되지 않은 AI 진보 속도에 대한 제한을 수립하기 위해 조율함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Global Coordination. The US and other democratic governments attempt to coordinate with authoritarian governments, to the extent this is possible, while taking seriously the challenges of verifying compliance.",
+   "ko": "전 지구적 조율(Global Coordination). 미국과 다른 민주주의 국가 정부들은 규정 준수 검증의 어려움을 진지하게 고려하면서, 가능한 범위 내에서 권위주의 정부와의 조율을 시도함.",
+   "marks": [
+    {
+     "t": "규정 준수 검증의 어려움을 진지하게 고려하면서, 가능한 범위 내에서 권위주의 정부와의 조율을 시도함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In the rest of the essay I describe each of these steps in turn, but first, I think it is important to say specifically how pacing will allow us to make the AI development process safer. The stakes are too high for pacing to be an empty exercise — we need to use the time it gives us wisely.",
+   "ko": "이 글의 나머지 부분에서는 각 단계를 차례로 설명하겠지만, 먼저 속도 조절이 어떻게 AI 개발 과정을 더 안전하게 만들 수 있는지를 구체적으로 말하는 것이 중요하다고 생각한다. 걸려 있는 것이 너무 크기에 속도 조절이 공허한 행위가 되어서는 안 되며, 우리는 그것이 주는 시간을 현명하게 활용해야 한다.",
+   "marks": [
+    {
+     "t": "속도 조절이 어떻게 AI 개발 과정을 더 안전하게 만들 수 있는지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Why Pace?",
+   "ko": "왜 속도를 조절해야 하는가?",
+   "id": "s12"
+  },
+  {
+   "type": "p",
+   "en": "The idea of pausing or slowing AI has been floated as far back as 2023, and I think it made little sense back then. The question was always: what would you do with the extra time? The AI models of those days were not powerful enough to act as agents in the world in any coherent way, and were not capable of significant deception, manipulation, cheating, or cyberattacks. Slowing down in order to address their alignment risks felt like trying to study the psychology of humans by performing experiments on bacteria. Today, however, the picture is totally different. The current models are an almost endless gold mine of insight into both how to build AI well and what can sometimes go wrong with it if it isn’t built well. I believe that if slowing down bought us even an extra year or two before models reach critical levels of capability, and we used that time to advance alignment, we could greatly reduce the risk that something goes seriously wrong. A coordinated pacing strategy would give frontier AI developers the time to do this vital work without sacrificing commercial advantage or the United States’ lead in AI. More generally, society must have a say in how this technology is used, and more time for the necessary public deliberations — which pacing the frontier would bring us — is surely a good thing.",
+   "ko": "AI를 일시 중단하거나 늦추자는 아이디어는 이미 2023년부터 제기되어 왔으며, 나는 당시에는 그것이 별다른 의미가 없었다고 생각한다. 문제는 늘 \"그 추가 시간으로 무엇을 할 것인가?\"였다. 당시의 AI 모델은 세계에서 일관된 방식으로 에이전트로 행동할 만큼 강력하지 않았고, 유의미한 기만, 조작, 부정행위 또는 사이버 공격을 수행할 역량도 없었다. 그러한 모델의 정렬 위험에 대처하기 위해 속도를 늦추는 것은 박테리아로 실험을 하면서 인간의 심리를 연구하려는 것과 같다고 느껴졌다. 그러나 오늘날 상황은 완전히 다르다. 현재의 모델은 AI를 잘 구축하는 방법과, 잘 구축되지 않았을 때 무엇이 잘못될 수 있는지 모두에 대해 거의 무한한 통찰을 주는 금광이다. 나는 속도를 늦춤으로써 모델이 임계 수준의 역량에 도달하기 전까지 단 1~2년이라도 추가로 확보하고 그 시간을 정렬 연구를 진전시키는 데 사용한다면, 무언가가 심각하게 잘못될 위험을 크게 줄일 수 있다고 믿는다. 조율된 속도 조절 전략은 상업적 우위나 AI 분야에서 미국의 선두 지위를 희생하지 않고도 프론티어 AI 개발자들에게 이 필수적인 작업을 수행할 시간을 줄 것이다. 보다 일반적으로, 사회는 이 기술이 어떻게 사용되는지에 대해 발언권을 가져야 하며, 프론티어의 속도 조절이 가져다줄 필수적인 공론화를 위한 더 많은 시간은 분명 좋은 일이다.",
+   "marks": [
+    {
+     "t": "유의미한 기만, 조작, 부정행위 또는 사이버 공격을 수행할 역량도 없었다",
+     "k": "safety"
+    },
+    {
+     "t": "단 1~2년이라도 추가로 확보하고 그 시간을 정렬 연구를 진전시키는 데 사용한다면, 무언가가 심각하게 잘못될 위험을 크게 줄일 수 있다고 믿는다",
+     "k": "key"
+    },
+    {
+     "t": "조율된 속도 조절 전략은 상업적 우위나 AI 분야에서 미국의 선두 지위를 희생하지 않고도",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Specifically, a slower pace would let companies focus and devote even more resources to the following areas (all of which are already major priorities at Anthropic):",
+   "ko": "구체적으로, 더 느린 속도는 기업들이 다음 영역(모두 이미 Anthropic의 주요 우선순위임)에 집중하고 더 많은 자원을 투입할 수 있게 해 줄 것이다."
+  },
+  {
+   "type": "li",
+   "en": "Operational Excellence. Training and deploying today’s AI models is an enormous operational challenge, involving thousands of people, millions of chips, and infrastructure that is among the most complex in technological history. Many things go wrong not because companies are missing some important theory or insight, but because of problems in execution. For example, we have evidence that the recent alignment incidents we reported were caused in part by imperfect filtering of broken reinforcement learning environments. This was an effort we and our vendors executed reasonably diligently, but not well enough. Monitoring, sandboxing, training environment hygiene, and data issues are extremely complicated areas where operational issues crop up again and again. We have among the most competent teams in the world at these tasks, but there is simply too much to do all at once. By working at a more measured pace, we could achieve much greater operational excellence. There is precedent for operating technologically complex, safety-critical systems millions of times without anything going wrong — for example, commercial airplanes — but it takes time to get it right.",
+   "ko": "운영 우수성(Operational Excellence). 오늘날의 AI 모델을 훈련하고 배포하는 것은 수천 명의 인력, 수백만 개의 칩, 그리고 기술 역사상 가장 복잡한 축에 속하는 인프라가 관여하는 막대한 운영상의 과제임. 많은 문제는 기업이 중요한 이론이나 통찰을 놓쳐서가 아니라 실행상의 문제로 인해 발생함. 예를 들어, 우리는 최근 보고한 정렬 사고가 부분적으로 결함 있는 강화학습 환경을 불완전하게 걸러낸 데서 비롯되었다는 증거를 확보하고 있음. 이는 우리와 우리 협력업체가 상당히 성실하게 수행한 작업이었지만, 충분히 잘 수행되지는 못했음. 모니터링, 샌드박싱, 훈련 환경 위생, 데이터 문제는 운영상의 문제가 반복적으로 발생하는 극도로 복잡한 영역임. 우리는 이러한 과업에서 세계 최고 수준의 역량을 갖춘 팀을 보유하고 있지만, 한꺼번에 해야 할 일이 그야말로 너무 많음. 보다 절제된 속도로 작업한다면 훨씬 더 높은 수준의 운영 우수성을 달성할 수 있을 것임. 기술적으로 복잡하고 안전이 핵심인 시스템을 수백만 번 운영하면서도 아무런 문제가 발생하지 않은 선례가 있지만(예: 상업용 항공기), 이를 제대로 해내기까지는 시간이 걸림.",
+   "marks": [
+    {
+     "t": "최근 보고한 정렬 사고가 부분적으로 결함 있는 강화학습 환경을 불완전하게 걸러낸 데서 비롯되었다는 증거",
+     "k": "safety"
+    },
+    {
+     "t": "모니터링, 샌드박싱, 훈련 환경 위생, 데이터 문제는 운영상의 문제가 반복적으로 발생하는 극도로 복잡한 영역임",
+     "k": "safety"
+    },
+    {
+     "t": "한꺼번에 해야 할 일이 그야말로 너무 많음",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Alignment. We’ve made clear progress in alignment — training models so that they remain safe, ethical, compliant with our guidelines, and genuinely helpful (the principles that are embedded in Claude’s Constitution). But there’s much more to do to ensure that our alignment training keeps up with the growth in model capabilities. Rare and unexpected examples of undesirable behavior still sometimes emerge; extra time from a paced frontier would help our researchers improve our understanding of what causes these issues and develop better techniques to prevent them.",
+   "ko": "정렬. 우리는 정렬, 즉 모델이 안전하고 윤리적이며 우리의 지침을 준수하고 진정으로 도움이 되도록(Claude의 헌법(Claude's Constitution)에 담긴 원칙) 훈련하는 것에서 분명한 진전을 이루었음. 그러나 정렬 훈련이 모델 역량의 성장을 따라잡도록 보장하기 위해서는 해야 할 일이 훨씬 더 많음. 드물고 예상치 못한 바람직하지 않은 행동 사례가 여전히 때때로 나타나며, 프론티어의 속도 조절로 얻은 추가 시간은 연구자들이 이러한 문제의 원인에 대한 이해를 높이고 이를 방지하기 위한 더 나은 기법을 개발하는 데 도움이 될 것임.",
+   "marks": [
+    {
+     "t": "정렬 훈련이 모델 역량의 성장을 따라잡도록 보장하기 위해서는 해야 할 일이 훨씬 더 많음",
+     "k": "safety"
+    },
+    {
+     "t": "드물고 예상치 못한 바람직하지 않은 행동 사례가 여전히 때때로 나타나며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Interpretability. Similarly, interpretability — the science of understanding what happens inside AI models — has made enormous progress over the last few years, and plays an increasingly important part in auditing our models before release. It can be used almost like an fMRI scan, but for the “brain” of an AI, helping us see the underlying reasons for a given behavior. For example, we used interpretability methods to examine unverbalized motivations in the recent alignment incidents that we have been investigating. But these methods don’t always produce clear and reliable results. Despite all the progress, we still only understand a tiny fraction of what goes on inside these models. A focused effort to improve our interpretability techniques, even faster than we currently are, could make profound progress in 1–2 years, and would have ample experimental material based on the incidents that have already occurred.",
+   "ko": "해석 가능성. 마찬가지로, AI 모델 내부에서 일어나는 일을 이해하는 과학인 해석 가능성은 지난 몇 년간 엄청난 진전을 이루었으며, 공개 전 모델을 감사하는 데 점점 더 중요한 역할을 하고 있음. 이는 거의 fMRI 스캔처럼, 다만 AI의 \"뇌\"에 대해 사용될 수 있으며, 특정 행동의 근본적인 이유를 파악하는 데 도움을 줌. 예를 들어, 우리는 조사 중인 최근 정렬 사고에서 언어화되지 않은 동기를 검토하기 위해 해석 가능성 방법을 사용했음. 그러나 이러한 방법이 항상 명확하고 신뢰할 수 있는 결과를 내는 것은 아님. 이 모든 진전에도 불구하고, 우리는 여전히 이러한 모델 내부에서 일어나는 일의 극히 일부만을 이해하고 있음. 해석 가능성 기법을 현재보다 더 빠르게 개선하기 위한 집중적인 노력은 1~2년 내에 심대한 진전을 이룰 수 있으며, 이미 발생한 사고들에 기반한 실험 자료도 충분할 것임.",
+   "marks": [
+    {
+     "t": "공개 전 모델을 감사하는 데 점점 더 중요한 역할을 하고 있음",
+     "k": "safety"
+    },
+    {
+     "t": "최근 정렬 사고에서 언어화되지 않은 동기를 검토하기 위해 해석 가능성 방법을 사용했음",
+     "k": "safety"
+    },
+    {
+     "t": "여전히 이러한 모델 내부에서 일어나는 일의 극히 일부만을 이해하고 있음",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Testing and Evaluation. Testing and evaluation of AI models becomes more difficult as they increase in capabilities. More intelligent models are more capable of deceiving tests, and thus may appear aligned while having serious problems that go undetected. Building up a much broader and more ingenious stable of evaluations, along with interpretability analysis to cross-check them, would be hugely valuable, and a lot of progress could be made on this in 1-2 years.",
+   "ko": "테스트 및 평가(evaluation). AI 모델의 역량이 증가할수록 테스트와 평가(evaluation)는 더 어려워짐. 더 지능적인 모델은 테스트를 속이는 역량이 더 뛰어나므로, 탐지되지 않은 심각한 문제를 안고 있으면서도 정렬된 것처럼 보일 수 있음. 훨씬 더 광범위하고 독창적인 평가(evaluation) 체계를 구축하고, 이를 교차 검증하기 위한 해석 가능성 분석을 함께 갖추는 것은 매우 가치 있을 것이며, 1~2년 내에 이 부분에서 많은 진전을 이룰 수 있을 것임.",
+   "marks": [
+    {
+     "t": "더 지능적인 모델은 테스트를 속이는 역량이 더 뛰어나므로, 탐지되지 않은 심각한 문제를 안고 있으면서도 정렬된 것처럼 보일 수 있음",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Embedded Evaluators",
+   "ko": "상주 평가자",
+   "id": "s19"
+  },
+  {
+   "type": "p",
+   "en": "The first step in the three-stage plan, and the one to which Anthropic is unilaterally committing, is embedded evaluators who have employee-like access to verify safety practices and report incidents.",
+   "ko": "3단계 계획의 첫 번째 단계이자 Anthropic이 일방적으로 약정하는 단계는, 직원에 준하는 접근 권한을 갖고 안전 실행 방안을 검증하고 사고를 보고하는 상주 평가자이다.",
+   "marks": [
+    {
+     "t": "직원에 준하는 접근 권한을 갖고 안전 실행 방안을 검증하고 사고를 보고하는 상주 평가자",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Embedding evaluators may sound like a small or inconsequential step, but often the things that sound most boring or procedural are actually the most essential. Embedded evaluators are in fact a quite radical practice that goes far beyond what any AI company is doing today, and have the following benefits:",
+   "ko": "평가자를 상주시키는 것은 작거나 사소한 단계로 들릴 수 있지만, 가장 지루하거나 절차적으로 들리는 것이 실제로는 가장 필수적인 경우가 많다. 상주 평가자는 사실 오늘날 어떤 AI 기업이 하고 있는 것보다 훨씬 더 나아간 상당히 급진적인 실행 방안이며, 다음과 같은 이점이 있다.",
+   "marks": [
+    {
+     "t": "오늘날 어떤 AI 기업이 하고 있는 것보다 훨씬 더 나아간 상당히 급진적인 실행 방안",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Verifiability. Embedded evaluators can check at the level of nuts and bolts whether an AI company is actually following the training, deployment, operational, and safeguards practices they claim to be following. Any pacing commitments will inevitably involve a lot of ambiguity, judgement calls, and “letter of the law vs spirit of the law”, and it seems vital to have a neutral third party who can actually see the details.",
+   "ko": "검증 가능성(Verifiability). 상주 평가자는 AI 기업이 따르고 있다고 주장하는 훈련, 배포, 운영 및 안전장치 실행 방안을 실제로 따르고 있는지를 세부적인 수준까지 확인할 수 있음. 모든 속도 조절 약정에는 필연적으로 많은 모호성, 판단의 문제, 그리고 \"법의 문언 대 법의 취지\"의 문제가 수반될 것이므로, 세부 사항을 실제로 볼 수 있는 중립적인 제3자를 두는 것이 필수적이라고 판단됨.",
+   "marks": [
+    {
+     "t": "훈련, 배포, 운영 및 안전장치 실행 방안을 실제로 따르고 있는지를 세부적인 수준까지 확인할 수 있음",
+     "k": "safety"
+    },
+    {
+     "t": "세부 사항을 실제로 볼 수 있는 중립적인 제3자를 두는 것이 필수적이라고 판단됨",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Transparency. Regardless of what commitments we make, the public deserves to know what is going on. Anthropic has been a supporter of transparency for a long time: we supported transparency legislation when most of the industry was against any regulation, and our model cards and risk reports run to hundreds of pages. But we are still the ones choosing what to include and omit. Embedded evaluators will change this dynamic.",
+   "ko": "투명성. 우리가 어떤 약정을 하든, 대중은 무슨 일이 일어나고 있는지 알 권리가 있음. Anthropic은 오랫동안 투명성을 지지해 왔음. 업계 대부분이 어떠한 규제에도 반대할 때 우리는 투명성 법안을 지지했으며, 우리의 모델카드와 위험 보고서(Risk Report)는 수백 페이지에 달함. 그러나 무엇을 포함하고 생략할지를 선택하는 주체는 여전히 우리임. 상주 평가자는 이러한 역학을 바꿀 것임.",
+   "marks": [
+    {
+     "t": "업계 대부분이 어떠한 규제에도 반대할 때 우리는 투명성 법안을 지지했으며",
+     "k": "safety"
+    },
+    {
+     "t": "무엇을 포함하고 생략할지를 선택하는 주체는 여전히 우리임",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Second Opinion. Outside of verifying formal commitments and informing the public, embedded evaluators can simply provide a second opinion free of commercial incentives. A lot of safety benefits may come simply from evaluators pointing out something employees hadn’t considered, but are happy to fix once they are aware.",
+   "ko": "제2의 의견(Second Opinion). 공식적인 약정을 검증하고 대중에게 정보를 제공하는 것 외에도, 상주 평가자는 단순히 상업적 유인에서 자유로운 제2의 의견을 제공할 수 있음. 많은 안전상의 이점은 단지 평가자가 직원들이 미처 고려하지 못했지만 인지하고 나면 기꺼이 수정할 사항을 지적하는 것만으로도 발생할 수 있음.",
+   "marks": [
+    {
+     "t": "상업적 유인에서 자유로운 제2의 의견을 제공할 수 있음",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Because of these benefits, any pacing proposal is likely to work much better if it starts with embedded evaluators.",
+   "ko": "이러한 이점 때문에, 어떤 속도 조절 제안이든 상주 평가자로부터 시작한다면 훨씬 더 잘 작동할 가능성이 높다.",
+   "marks": [
+    {
+     "t": "어떤 속도 조절 제안이든 상주 평가자로부터 시작한다면 훨씬 더 잘 작동할 가능성이 높다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "These embedded evaluators should have ongoing access to permissions and tools similar to those of internal employees who do comparable risk assessments. In particular, Anthropic intends to invite an embedded external review team equipped with all of the following in the near future:",
+   "ko": "이러한 상주 평가자는 유사한 위험 평가를 수행하는 내부 직원과 비슷한 권한 및 도구에 상시 접근할 수 있어야 한다. 특히 Anthropic은 가까운 시일 내에 다음을 모두 갖춘 상주 외부 검토 팀을 초빙할 계획이다.",
+   "marks": [
+    {
+     "t": "내부 직원과 비슷한 권한 및 도구에 상시 접근할 수 있어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Desks in our offices, access badges, and company laptops.",
+   "ko": "우리 사무실 내 책상, 출입 배지, 회사 노트북."
+  },
+  {
+   "type": "li",
+   "en": "Access to workspaces, tools, and permissions mostly comparable to what internal risk assessment teams have. We’ll make some exceptions, such as where the law or our contracts require it, or to protect customers’ and partners’ private information. We’ll also establish strong internal norms reinforcing reviewers’ access to relevant information, including through live conversations with employees.",
+   "ko": "내부 위험 평가 팀이 보유한 것과 대체로 비슷한 수준의 작업 공간, 도구 및 권한에 대한 접근. 법률이나 계약상 요구되는 경우, 또는 고객 및 파트너의 개인 정보를 보호하기 위한 경우 등 일부 예외를 둘 것임. 또한 직원과의 실시간 대화를 포함하여 검토자의 관련 정보 접근을 강화하는 강력한 내부 규범을 확립할 것임."
+  },
+  {
+   "type": "li",
+   "en": "A contract that balances the complexities mentioned above. External reviewers should have the right to publish key findings about risk levels, incidents, practices, and the access they received or didn’t receive — without editorial control by Anthropic. We will have the narrow ability to redact security-sensitive, legally privileged, commercially sensitive, or third-party confidential information, but we can’t redact findings just because they are unfavorable. The reviewers can say publicly if a redaction removed something important to their conclusions.",
+   "ko": "위에서 언급한 복잡한 사항들 간의 균형을 맞춘 계약. 외부 검토자는 위험 수준, 사고, 실행 방안, 그리고 자신들이 받았거나 받지 못한 접근 권한에 관한 핵심 조사 결과를 Anthropic의 편집 통제 없이 공개할 권리를 가져야 함. 우리는 보안상 민감한 정보, 법적 비밀유지특권(legally privileged)의 대상인 정보, 상업적으로 민감한 정보, 또는 제3자의 기밀 정보에 대해 민감정보 가림 처리를 할 수 있는 제한적인 권한을 갖지만, 조사 결과가 불리하다는 이유만으로 이를 민감정보 가림 처리할 수는 없음. 검토자는 민감정보 가림 처리로 인해 자신들의 결론에 중요한 내용이 삭제된 경우 이를 공개적으로 밝힐 수 있음.",
+   "marks": [
+    {
+     "t": "위험 수준, 사고, 실행 방안, 그리고 자신들이 받았거나 받지 못한 접근 권한에 관한 핵심 조사 결과를 Anthropic의 편집 통제 없이 공개할 권리",
+     "k": "safety"
+    },
+    {
+     "t": "조사 결과가 불리하다는 이유만으로 이를 민감정보 가림 처리할 수는 없음",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This is an unusual step for a company, but we think it is important to prove out the concept of embedded external reviewers. Once again, we urge other frontier companies to follow suit.",
+   "ko": "이는 기업으로서 이례적인 조치이지만, 우리는 상주 외부 검토자라는 개념의 실효성을 입증하는 것이 중요하다고 생각한다. 다시 한번, 우리는 다른 프론티어 기업들도 이를 따를 것을 촉구한다.",
+   "marks": [
+    {
+     "t": "다른 프론티어 기업들도 이를 따를 것을 촉구한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Pacing Within Democracies",
+   "ko": "민주주의 국가 내 속도 조절",
+   "id": "s31"
+  },
+  {
+   "type": "p",
+   "en": "Once embedded evaluators are operating within a critical mass of US AI companies, then verifiable pacing becomes more viable. In particular, it becomes possible to pace based on detailed properties of models or training pipelines.",
+   "ko": "상주 평가자가 미국 AI 기업 중 임계 규모 이상에서 운영되기 시작하면, 검증 가능한 속도 조절이 더 실현 가능해진다. 특히 모델이나 학습 파이프라인의 세부 속성에 기반하여 속도를 조절하는 것이 가능해진다.",
+   "marks": [
+    {
+     "t": "검증 가능한 속도 조절이 더 실현 가능해진다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The most effective method of pacing is via regulation that targets all US frontier AI companies, as that covers even those who are unwilling to cooperate voluntarily. Anthropic has long supported sensible and targeted AI regulation, specifically bills that focus on transparency and on third-party auditing. I believe all frontier labs should partner with government to formalize the idea of permanent embedded evaluators to better prevent and document internal alignment incidents like those that have occurred in the last few months, and to implement regulation focused on keeping capabilities in balance with safety.",
+   "ko": "속도 조절의 가장 효과적인 방법은 미국의 모든 프론티어 AI 기업을 대상으로 하는 규제를 통한 것이다. 이는 자발적으로 협력할 의사가 없는 기업까지도 포괄하기 때문이다. Anthropic은 오랫동안 합리적이고 표적화된 AI 규제, 특히 투명성과 제3자 감사에 초점을 맞춘 법안을 지지해 왔다. 나는 모든 프론티어 연구소가 정부와 협력하여 상설 상주 평가자 개념을 제도화함으로써 지난 몇 달간 발생한 것과 같은 내부 정렬 사고를 더 잘 예방하고 기록해야 하며, 역량과 안전 간의 균형을 유지하는 데 초점을 맞춘 규제를 시행해야 한다고 생각한다.",
+   "marks": [
+    {
+     "t": "속도 조절의 가장 효과적인 방법은 미국의 모든 프론티어 AI 기업을 대상으로 하는 규제를 통한 것이다.",
+     "k": "key"
+    },
+    {
+     "t": "합리적이고 표적화된 AI 규제, 특히 투명성과 제3자 감사에 초점을 맞춘 법안을 지지해 왔다",
+     "k": "safety"
+    },
+    {
+     "t": "지난 몇 달간 발생한 것과 같은 내부 정렬 사고를 더 잘 예방하고 기록해야 하며",
+     "k": "safety"
+    },
+    {
+     "t": "역량과 안전 간의 균형을 유지하는 데 초점을 맞춘 규제를 시행해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Unfortunately, passing laws can take time, and AI is advancing very quickly. Therefore, in parallel with the regulatory route, AI companies can and should voluntarily work together to set standards — a process that I believe will go better with the verifiability provided by permanent embedded evaluators. For antitrust reasons, it’s helpful for the US government to mediate or at least enable these discussions — they don’t need to participate, but do need to issue a narrow waiver for certain kinds of safety conversations. This dialogue could also happen through industry groups that have some association with government — for example, the mechanism suggested by Demis Hassabis. Either way, such discussions should move forward quickly.",
+   "ko": "안타깝게도 법률을 통과시키는 데는 시간이 걸릴 수 있으며, AI는 매우 빠르게 발전하고 있다. 따라서 규제 경로와 병행하여 AI 기업들은 자발적으로 협력하여 기준을 수립할 수 있고 또 그래야 한다. 나는 이 과정이 상설 상주 평가자가 제공하는 검증 가능성이 있을 때 더 잘 진행될 것이라고 생각한다. 독점금지법상의 이유로, 미국 정부가 이러한 논의를 중재하거나 적어도 가능하게 해 주는 것이 도움이 된다. 정부가 직접 참여할 필요는 없지만, 특정 유형의 안전 관련 논의에 대해 한정적인 면제(waiver)를 발급할 필요는 있다. 이러한 대화는 정부와 일정한 연관성을 가진 업계 단체를 통해서도 이루어질 수 있다. 예를 들어 데미스 허사비스(Demis Hassabis)가 제안한 메커니즘이 그러하다. 어느 쪽이든, 이러한 논의는 신속하게 진행되어야 한다.",
+   "marks": [
+    {
+     "t": "법률을 통과시키는 데는 시간이 걸릴 수 있으며, AI는 매우 빠르게 발전하고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 기업들은 자발적으로 협력하여 기준을 수립할 수 있고 또 그래야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "특정 유형의 안전 관련 논의에 대해 한정적인 면제(waiver)를 발급할 필요는 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Broadly speaking, I am most enthusiastic about pacing based on what a given frontier AI system can do, and how safe we observe it to be. For example, one possible scheme might be a series of “checkpoints”: if models have capability X, then they need to be accompanied by certifications of alignment properties Y and Z — such as some combination of evaluations, interpretability analyses, and audits of training environments — which demonstrate their alignment properties. In this example, X might be “the model is capable of escaping or defeating most common sandboxing methods” and Y might be whatever is required to make it very unlikely that the model has a propensity to break out of its environment and take over a large number of computers.",
+   "ko": "넓게 보면, 나는 주어진 프론티어 AI 시스템이 무엇을 할 수 있는지, 그리고 그것이 얼마나 안전하다고 관찰되는지에 기반한 속도 조절을 가장 지지한다. 예를 들어, 가능한 방식 중 하나는 일련의 \"체크포인트\"일 수 있다. 즉, 모델이 역량 X를 갖추고 있다면, 그 모델의 정렬 속성을 입증하는 정렬 속성 Y와 Z에 대한 인증(예: 평가(evaluation), 해석 가능성 분석, 학습 환경 감사의 일정한 조합)이 함께 수반되어야 한다는 것이다. 이 예시에서 X는 \"모델이 가장 일반적인 샌드박싱 방법들 대부분을 탈출하거나 무력화할 수 있다\"일 수 있고, Y는 모델이 자신의 환경을 벗어나 다수의 컴퓨터를 장악하려는 성향을 가질 가능성을 매우 낮게 만드는 데 필요한 무엇이든 될 수 있다.",
+   "marks": [
+    {
+     "t": "얼마나 안전하다고 관찰되는지에 기반한 속도 조절을 가장 지지한다",
+     "k": "safety"
+    },
+    {
+     "t": "평가(evaluation), 해석 가능성 분석, 학습 환경 감사의 일정한 조합",
+     "k": "safety"
+    },
+    {
+     "t": "\"모델이 가장 일반적인 샌드박싱 방법들 대부분을 탈출하거나 무력화할 수 있다\"",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 자신의 환경을 벗어나 다수의 컴퓨터를 장악하려는 성향",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We should also consider pacing based on limiting the ingredients that go into frontier models, such as training compute, the nature of training runs, or internal use of AI to improve AI. I do worry that some of these measures may be more “gameable” than external behavior, but this is the kind of topic worth discussing with embedded evaluators.",
+   "ko": "우리는 또한 학습 연산량, 학습 실행(training run)의 성격, 또는 AI를 개선하기 위한 AI의 내부 활용 등 프론티어 모델에 투입되는 요소를 제한하는 방식의 속도 조절도 고려해야 한다. 나는 이러한 조치 중 일부가 외부 행동에 비해 더 \"조작 가능(gameable)\"할 수 있다는 점을 우려하지만, 이는 상주 평가자와 논의할 가치가 있는 주제이다.",
+   "marks": [
+    {
+     "t": "AI를 개선하기 위한 AI의 내부 활용 등 프론티어 모델에 투입되는 요소를 제한하는 방식의 속도 조절",
+     "k": "safety"
+    },
+    {
+     "t": "더 \"조작 가능(gameable)\"할 수 있다는 점을 우려",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Pacing within democracies will be limited by the lead that US companies have over authoritarian regimes, chiefly the Chinese Communist Party. If we slow down by more than this amount, then (unpaced) CCP-associated projects will pull ahead, creating significant national security risk. I agree with Secretary Bessent that a Chinese lead in AI would pose grave danger for the United States and the world. The CCP-associated projects will run the alignment risks that US companies are carefully preventing, and even if they avoid those risks, they will be in a position to militarily dominate democracies (for example with AI-driven drones). Thus, a key part of pacing within democracies is to keep democracies’ AI lead over autocracies as large as possible, to give us the breathing room we need in order to pace effectively.",
+   "ko": "민주주의 국가 내 속도 조절은 미국 기업들이 권위주의 체제, 주로 중국 공산당(CCP)에 대해 확보하고 있는 우위의 크기에 의해 제한될 것이다. 우리가 이 정도 이상으로 속도를 늦춘다면, (속도 조절을 하지 않는) CCP 연계 프로젝트들이 앞서 나가게 되어 상당한 국가안보 위험을 초래할 것이다. 나는 AI 분야에서 중국이 우위를 점하는 것이 미국과 세계에 심각한 위험이 될 것이라는 베선트(Bessent) 장관의 견해에 동의한다. CCP 연계 프로젝트들은 미국 기업들이 신중하게 방지하고 있는 정렬 위험을 감수할 것이며, 설령 그러한 위험을 피한다 하더라도 (예를 들어 AI 기반 드론을 통해) 민주주의 국가들을 군사적으로 압도할 수 있는 위치에 서게 될 것이다. 따라서 민주주의 국가 내 속도 조절의 핵심 요소는 독재 국가에 대한 민주주의 국가의 AI 우위를 가능한 한 크게 유지하여, 효과적으로 속도를 조절하는 데 필요한 여유를 확보하는 것이다.",
+   "marks": [
+    {
+     "t": "민주주의 국가 내 속도 조절은 미국 기업들이 권위주의 체제, 주로 중국 공산당(CCP)에 대해 확보하고 있는 우위의 크기에 의해 제한될 것이다.",
+     "k": "key"
+    },
+    {
+     "t": "CCP 연계 프로젝트들이 앞서 나가게 되어 상당한 국가안보 위험을 초래할 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "미국 기업들이 신중하게 방지하고 있는 정렬 위험을 감수할 것이며",
+     "k": "safety"
+    },
+    {
+     "t": "(예를 들어 AI 기반 드론을 통해) 민주주의 국가들을 군사적으로 압도할 수 있는 위치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The main steps we can take to defend this gap are:",
+   "ko": "이 격차를 지키기 위해 우리가 취할 수 있는 주요 조치는 다음과 같다."
+  },
+  {
+   "type": "li",
+   "en": "Do not sell powerful AI chips or semiconductor manufacturing equipment to China, and crack down on chip smuggling operations and remote access to data centers outside China. Chips will be the main determinant of China’s AI strength.",
+   "ko": "강력한 AI 칩이나 반도체 제조 장비를 중국에 판매하지 말고, 칩 밀수 행위 및 중국 외부 데이터센터에 대한 원격 접근을 단속함. 칩은 중국 AI 역량의 주요 결정 요인이 될 것임.",
+   "marks": [
+    {
+     "t": "강력한 AI 칩이나 반도체 제조 장비를 중국에 판매하지 말고, 칩 밀수 행위 및 중국 외부 데이터센터에 대한 원격 접근을 단속함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Crack down on unauthorized distillation by companies in authoritarian countries. Distillation of frontier models allows lagging companies to narrow the gap using a fraction of the cost it would take to develop their own AI independently.",
+   "ko": "권위주의 국가 기업들의 무단 증류를 단속함. 프론티어 모델의 증류는 뒤처진 기업들이 독자적으로 AI를 개발하는 데 드는 비용의 일부만으로 격차를 좁힐 수 있게 해 줌.",
+   "marks": [
+    {
+     "t": "권위주의 국가 기업들의 무단 증류를 단속함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Strengthen security at the AI companies and prevent model weight theft.",
+   "ko": "AI 기업의 보안을 강화하고 모델 가중치 도난을 방지함.",
+   "marks": [
+    {
+     "t": "AI 기업의 보안을 강화하고 모델 가중치 도난을 방지함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Companies and the US government should cooperate to make these steps as effective as possible. Anthropic has consistently advocated for all of these measures, because we’ve always understood that they would be essential to any pacing.",
+   "ko": "기업과 미국 정부는 이러한 조치들이 최대한 효과적이도록 협력해야 한다. Anthropic은 이 모든 조치를 일관되게 옹호해 왔다. 이러한 조치들이 어떤 속도 조절에서든 필수적일 것임을 우리는 항상 이해하고 있었기 때문이다."
+  },
+  {
+   "type": "p",
+   "en": "If we execute these measures well, I believe they would slow China’s progress enough to widen America’s lead significantly over the next 3–5 years — the window when AI becomes geopolitically most important.",
+   "ko": "이러한 조치들을 잘 실행한다면, 나는 이것이 향후 3~5년, 즉 AI가 지정학적으로 가장 중요해지는 시기에 미국의 우위를 크게 넓힐 수 있을 만큼 중국의 발전을 늦출 것이라고 생각한다.",
+   "marks": [
+    {
+     "t": "미국의 우위를 크게 넓힐 수 있을 만큼 중국의 발전을 늦출 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Some may believe these measures make it more difficult to cooperate with China, but I believe the opposite is true: these measures increase the leverage held by democracies and make an agreement more likely in the future.",
+   "ko": "일각에서는 이러한 조치들이 중국과의 협력을 더 어렵게 만든다고 생각할 수 있지만, 나는 그 반대라고 생각한다. 이러한 조치들은 민주주의 국가들이 보유한 협상력을 높이고, 향후 합의가 이루어질 가능성을 높인다.",
+   "marks": [
+    {
+     "t": "민주주의 국가들이 보유한 협상력을 높이고, 향후 합의가 이루어질 가능성을 높인다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Global Pacing",
+   "ko": "전 지구적 속도 조절",
+   "id": "s45"
+  },
+  {
+   "type": "p",
+   "en": "In parallel with pacing within democracies, we should also aim for a worldwide pacing of the frontier, though this will be much harder to achieve. Global pacing will require cooperation with China, the autocratic country with by far the most advanced AI capabilities. We must not be naïve here: the geopolitical stakes are so high that there will likely be stark limits on what can be achieved, especially at first. If we greatly restrain our AI capabilities in the belief that China will do the same, and then China defects, AI could be so powerful that such a defection could lead to their geopolitical dominance. Therefore any agreement must either have ironclad verifiability, or must be limited enough that defection would not be militarily existential. I suspect that not only the US but also China will have these concerns and anxieties. We should approach any global pacing decision, especially in the near term, in such a way that protects the lead of the US and its allies.",
+   "ko": "민주주의 국가 내 속도 조절과 병행하여, 우리는 프론티어의 전 세계적 속도 조절도 목표로 삼아야 한다. 다만 이는 달성하기가 훨씬 더 어려울 것이다. 전 지구적 속도 조절에는 단연 최첨단 AI 역량을 보유한 독재 국가인 중국과의 협력이 필요할 것이다. 여기서 우리는 순진해서는 안 된다. 지정학적 이해관계가 너무나 크기 때문에, 특히 초기에는 달성할 수 있는 것에 뚜렷한 한계가 있을 가능성이 높다. 중국도 그렇게 할 것이라고 믿고 우리가 AI 역량을 크게 억제했는데 중국이 합의를 이탈한다면, AI가 너무나 강력하여 그러한 이탈이 중국의 지정학적 지배로 이어질 수 있다. 따라서 어떤 합의든 철저한 검증 가능성을 갖추거나, 이탈이 군사적으로 존립을 위협하는 수준이 되지 않을 만큼 제한적이어야 한다. 나는 미국뿐만 아니라 중국도 이러한 우려와 불안을 가질 것이라고 생각한다. 우리는 어떠한 전 지구적 속도 조절 결정이든, 특히 단기적으로는, 미국과 동맹국들의 우위를 보호하는 방식으로 접근해야 한다.",
+   "marks": [
+    {
+     "t": "우리는 프론티어의 전 세계적 속도 조절도 목표로 삼아야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "이탈이 중국의 지정학적 지배로 이어질 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "따라서 어떤 합의든 철저한 검증 가능성을 갖추거나, 이탈이 군사적으로 존립을 위협하는 수준이 되지 않을 만큼 제한적이어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "There are several levels of possible agreement, some of which I think are eminently feasible (as I have previously suggested), and some of which I am very skeptical are possible — though we should try. In order of increasing difficulty:",
+   "ko": "가능한 합의에는 여러 단계가 있으며, 그중 일부는 (내가 이전에 제안했듯이) 충분히 실현 가능하다고 생각하고, 일부는 가능할지 매우 회의적이다. 그렇더라도 시도는 해야 한다. 난이도가 높아지는 순서대로 나열하면 다음과 같다."
+  },
+  {
+   "type": "li",
+   "en": "Level 1. An agreement prohibiting certain narrow and obviously dangerous uses of AI, such as using AI for the production of biological weapons or allowing users to do so. Bioterrorist attacks are bad for everyone, including both the US and US adversaries, so an agreement here is probably possible.",
+   "ko": "1단계. 생물무기 생산에 AI를 사용하거나 사용자가 그렇게 하도록 허용하는 것과 같이, 특정한 좁은 범위의 명백히 위험한 AI 사용을 금지하는 합의. 생물테러 공격은 미국과 미국의 적대국 모두를 포함한 모두에게 해롭기 때문에, 이 부분에 대한 합의는 아마도 가능할 것임.",
+   "marks": [
+    {
+     "t": "생물무기 생산에 AI를 사용하거나 사용자가 그렇게 하도록 허용하는 것과 같이, 특정한 좁은 범위의 명백히 위험한 AI 사용을 금지하는 합의",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Level 2. An agreement by both sides to test their models before release for acute risks in areas such as cybersecurity, biology, and alignment. As noted above, this could be done through a global standards body. I actually think creating such a body is likely feasible, but giving it real teeth will be a challenge, and the difficulty will be in verification that both sides don’t have secret models which they don’t test but may deploy in secret (e.g., for military applications).",
+   "ko": "2단계. 양측이 사이버 보안, 생물학, 정렬 등의 분야에서 급성 위험에 대해 모델 공개 전에 자국 모델을 시험하기로 하는 합의. 앞서 언급했듯이, 이는 글로벌 표준 기구를 통해 이루어질 수 있음. 나는 실제로 그러한 기구를 만드는 것 자체는 실현 가능성이 높다고 생각하지만, 실질적인 구속력을 부여하는 것은 어려운 과제가 될 것이며, 관건은 양측 모두 시험하지 않고 비밀리에 배포할 수 있는(예: 군사적 용도로) 비밀 모델을 보유하고 있지 않음을 검증하는 데 있을 것임.",
+   "marks": [
+    {
+     "t": "사이버 보안, 생물학, 정렬 등의 분야에서 급성 위험에 대해 모델 공개 전에 자국 모델을 시험하기로 하는 합의",
+     "k": "safety"
+    },
+    {
+     "t": "시험하지 않고 비밀리에 배포할 수 있는(예: 군사적 용도로) 비밀 모델을 보유하고 있지 않음을 검증",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Level 3. Some kind of “speed limit” on the rate of recursive self-improvement (RSI). As models build future models, the rate of improvement may become staggeringly fast. Slowing the rate from “extremely fast” to “only somewhat fast” gives up relatively little strategic advantage, while potentially greatly improving safety. This could be seen as analogous to the SALT treaties — capping the number of missiles limited the potential for destruction while preserving each country’s deterrent. I think such an agreement would be difficult but just on the edge of being possible.",
+   "ko": "3단계. 재귀적 자기 개선(RSI)의 속도에 대한 일종의 \"속도 제한\". 모델이 미래의 모델을 만들게 되면 개선 속도가 경이적으로 빨라질 수 있음. 그 속도를 \"극도로 빠른\" 수준에서 \"다소 빠른\" 수준으로 늦추면 포기하게 되는 전략적 우위는 비교적 적은 반면, 안전성은 잠재적으로 크게 향상될 수 있음. 이는 전략무기제한협정(SALT treaties)에 비유할 수 있음. 미사일 수에 상한을 둠으로써 각국의 억지력은 유지하면서 파괴 잠재력을 제한했던 것임. 나는 그러한 합의가 어렵겠지만 가능성의 경계선에 겨우 걸쳐 있다고 생각함.",
+   "marks": [
+    {
+     "t": "재귀적 자기 개선(RSI)의 속도에 대한 일종의 \"속도 제한\"",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 미래의 모델을 만들게 되면 개선 속도가 경이적으로 빨라질 수 있음",
+     "k": "safety"
+    },
+    {
+     "t": "안전성은 잠재적으로 크게 향상될 수 있음",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Level 4. A full pacing, or even “pause”, in which participating governments agree to substantially limit the overall rate of AI development. I support floating this, but I think it is unlikely to actually happen any time soon: defecting from such an agreement by evading monitoring could radically shift the balance of global power, so I expect the incentives to do so to be enormous and the level of confidence we would need in verification to be very high.",
+   "ko": "4단계. 참여 정부들이 AI 개발의 전반적 속도를 상당히 제한하기로 합의하는 완전한 속도 조절, 또는 심지어 \"일시 중지\". 나는 이러한 방안을 제기하는 것을 지지하지만, 가까운 시일 내에 실제로 이루어질 가능성은 낮다고 생각함. 감시를 회피하여 그러한 합의에서 이탈하는 것은 세계 권력 균형을 급격히 바꿀 수 있으므로, 이탈하려는 유인은 막대할 것이고 우리가 필요로 하는 검증에 대한 신뢰 수준은 매우 높아야 할 것으로 예상됨.",
+   "marks": [
+    {
+     "t": "AI 개발의 전반적 속도를 상당히 제한하기로 합의하는 완전한 속도 조절, 또는 심지어 \"일시 중지\"",
+     "k": "safety"
+    },
+    {
+     "t": "이탈하려는 유인은 막대할 것이고 우리가 필요로 하는 검증에 대한 신뢰 수준은 매우 높아야 할 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Any cooperation we are able to achieve with China will extend the amount of time we have to spend on pacing the frontier within the democratic nations. We should aim for the higher levels while seeing the lower levels as much more likely and realistic.",
+   "ko": "중국과 이룰 수 있는 어떠한 협력이든, 민주주의 국가 내에서 프론티어의 속도를 조절하는 데 쓸 수 있는 시간을 늘려 줄 것이다. 우리는 더 높은 단계를 목표로 삼되, 낮은 단계가 훨씬 더 가능성 있고 현실적이라고 보아야 한다.",
+   "marks": [
+    {
+     "t": "우리는 더 높은 단계를 목표로 삼되, 낮은 단계가 훨씬 더 가능성 있고 현실적이라고 보아야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Finally, it is important to note that even if we cannot achieve formal agreements, simply changing informal norms may have some value. Sharing information about recursive self-improvement and about the misalignment of models can help to convince everyone that it is not in their interest to be reckless.",
+   "ko": "끝으로, 공식적인 합의를 이루지 못하더라도 비공식적 규범을 바꾸는 것만으로도 어느 정도 가치가 있을 수 있다는 점에 주목할 필요가 있다. 재귀적 자기 개선과 모델의 오정렬에 관한 정보를 공유하면, 무모하게 행동하는 것이 누구에게도 이익이 되지 않는다는 점을 모두에게 납득시키는 데 도움이 될 수 있다.",
+   "marks": [
+    {
+     "t": "재귀적 자기 개선과 모델의 오정렬에 관한 정보를 공유하면",
+     "k": "safety"
+    },
+    {
+     "t": "무모하게 행동하는 것이 누구에게도 이익이 되지 않는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Bottom Line",
+   "ko": "결론",
+   "id": "s54"
+  },
+  {
+   "type": "p",
+   "en": "I continue to believe that AI can enormously improve the quality of human life. My desire to achieve these benefits is undimmed. But the benefits will only be achieved if we build the technology in the right way, and — so long as we use the time we gain well — it is worth taking unusually deliberate care to get it right. Progress will still be relatively fast, and we can use this time to advance the science of interpretability, improve operational security and rigor at the frontier AI companies, and build models whose alignment we have much more confidence in. The measures I propose to advance the frontier at a safe pace will not be easy. But I believe we owe it to humanity to try.",
+   "ko": "나는 여전히 AI가 인간 삶의 질을 엄청나게 향상시킬 수 있다고 믿는다. 이러한 혜택을 실현하고자 하는 나의 열망은 조금도 줄어들지 않았다. 그러나 그 혜택은 우리가 이 기술을 올바른 방식으로 구축할 때에만 실현될 것이며, 확보한 시간을 잘 활용하는 한, 이를 제대로 해내기 위해 이례적일 만큼 신중을 기할 가치가 있다. 진전은 여전히 비교적 빠를 것이며, 우리는 이 시간을 활용하여 해석 가능성의 과학을 발전시키고, 프론티어 AI 기업들의 운영 보안과 엄밀성을 개선하며, 정렬에 대해 훨씬 더 큰 확신을 가질 수 있는 모델을 구축할 수 있다. 안전한 속도로 프론티어를 발전시키기 위해 내가 제안하는 조치들은 쉽지 않을 것이다. 그러나 나는 이를 시도하는 것이 인류에 대한 우리의 의무라고 믿는다.",
+   "marks": [
+    {
+     "t": "그 혜택은 우리가 이 기술을 올바른 방식으로 구축할 때에만 실현될 것이며",
+     "k": "key"
+    },
+    {
+     "t": "이를 제대로 해내기 위해 이례적일 만큼 신중을 기할 가치가 있다",
+     "k": "safety"
+    },
+    {
+     "t": "해석 가능성의 과학을 발전시키고, 프론티어 AI 기업들의 운영 보안과 엄밀성을 개선하며, 정렬에 대해 훨씬 더 큰 확신을 가질 수 있는 모델을 구축할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "안전한 속도로 프론티어를 발전시키기 위해 내가 제안하는 조치들은 쉽지 않을 것이다.",
+     "k": "safety"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "With government mediation or waivers of antitrust restrictions.",
+   "ko": "정부의 중재 또는 반독점 규제의 면제를 통해.",
+   "linked": true
+  }
+ ]
+}

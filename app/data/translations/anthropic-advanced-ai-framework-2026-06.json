@@ -1,0 +1,1526 @@
+{
+ "slug": "anthropic-advanced-ai-framework-2026-06",
+ "title": "Anthropic 첨단 AI 프레임워크",
+ "original_title": "Anthropic's Advanced AI Framework",
+ "publisher": "Anthropic",
+ "published": "2026-06-11",
+ "source_url": "https://www-cdn.anthropic.com/files/4zrzovbb/website/0a58d567024a8b448ff15158ebc3625328dfcc1f.pdf",
+ "source_note": "2026년 6월 공개된 PDF 전문.",
+ "source_label": "원문 보기 (PDF)",
+ "summary": "Anthropic이 미국 연방정부를 주된 독자로 삼아 낸 입법·정책 제안이다. 1부는 학습 연산량과 매출·연구개발비 기준을 넘는 프론티어 개발사에 시험, 외부 평가, 공개, 보안, 집행 의무를 지우고, 안전하지 않은 모델을 막거나 억제할 권한의 방안을 비교한다. 2부는 어디서 나온 위협이든 생물·사이버 공격에 견디도록 사회 회복력에 투자하자고 제안하고, 통제 상실과 자동화된 연구개발은 더 연구가 필요한 영역으로 둔다.",
+ "doc_kind": "정책 제안",
+ "translated": "2026-11-05",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/anthropic-advanced-ai-framework-2026-06-cover.webp",
+ "og_image": "/images/translations/anthropic-advanced-ai-framework-2026-06-cover.jpg",
+ "image_caption": "원문 표지",
+ "stats": {
+  "blocks": 134,
+  "sections": 12,
+  "items": 15,
+  "words_en": 5045
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Anthropic's Advanced AI Framework",
+   "ko": "Anthropic의 첨단 AI 프레임워크",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "June 2026",
+   "ko": "2026년 6월"
+  },
+  {
+   "type": "p",
+   "en": "This framework lays out what we think governments should do in the near term about the most serious risks from frontier AI.",
+   "ko": "이 프레임워크는 프론티어 AI의 가장 심각한 위험에 대해 정부가 단기적으로 무엇을 해야 하는지에 관한 우리의 견해를 제시한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI의 가장 심각한 위험에 대해 정부가 단기적으로 무엇을 해야 하는지에 관한 우리의 견해",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The framework has two parts. The first is a set of obligations on frontier AI developers. These include testing the most capable models for catastrophic risks; engaging external evaluators; disclosing results, risks, and incidents on an ongoing basis; and being accountable to the government. These responsibilities are designed to prevent and mitigate potential catastrophic harms while preserving the conditions for continued innovation.",
+   "ko": "이 프레임워크는 두 부분으로 구성된다. 첫 번째는 프론티어 AI 개발자에게 부과되는 일련의 의무이다. 여기에는 가장 높은 역량을 갖춘 모델을 대상으로 파국적 위험을 시험하는 것, 외부 평가자를 참여시키는 것, 결과·위험·사고를 지속적으로 공개하는 것, 정부에 대해 책임을 지는 것이 포함된다. 이러한 책임은 지속적인 혁신의 여건을 유지하면서 잠재적인 파국적 피해를 예방하고 완화하도록 설계되었다.",
+   "marks": [
+    {
+     "t": "가장 높은 역량을 갖춘 모델을 대상으로 파국적 위험을 시험하는 것, 외부 평가자를 참여시키는 것",
+     "k": "safety"
+    },
+    {
+     "t": "결과·위험·사고를 지속적으로 공개하는 것, 정부에 대해 책임을 지는 것",
+     "k": "safety"
+    },
+    {
+     "t": "지속적인 혁신의 여건을 유지하면서 잠재적인 파국적 피해를 예방하고 완화하도록 설계되었다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The second part is a set of cross-government and cross-sector investments in societal resilience, so that a biological or cyber attack is harder to carry out and easier to recover from, wherever the capability originates. Building that resilience is not something any one actor can do alone. It requires governments, industry, and civil society working in concert.",
+   "ko": "두 번째는 사회적 회복력을 위한 범정부·범부문 차원의 일련의 투자로, 그 역량이 어디에서 비롯되었든 생물학적 공격이나 사이버 공격을 실행하기는 더 어렵게, 그로부터 회복하기는 더 쉽게 만드는 것이다. 이러한 회복력 구축은 어느 한 주체가 단독으로 할 수 있는 일이 아니다. 정부, 산업계, 시민사회가 함께 협력해야 한다.",
+   "marks": [
+    {
+     "t": "생물학적 공격이나 사이버 공격을 실행하기는 더 어렵게, 그로부터 회복하기는 더 쉽게 만드는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This framework is written primarily with the US federal government in mind, but many of the underlying principles and concepts apply more broadly. Where other countries or subnational governments (such as states) choose to act, not all of these recommendations will translate exactly as written. We encourage policymakers to tailor them to their jurisdiction's capacity and authority.",
+   "ko": "이 프레임워크는 주로 미국 연방정부를 염두에 두고 작성되었으나, 그 기저의 원칙과 개념 중 다수는 보다 폭넓게 적용된다. 다른 국가나 지방정부(예: 주(州))가 조치를 취하기로 하는 경우, 이 권고 사항 모두가 작성된 그대로 적용되지는 않을 것이다. 우리는 정책입안자들이 각자 관할권의 역량과 권한에 맞게 이를 조정할 것을 권장한다."
+  },
+  {
+   "type": "p",
+   "en": "Frontier AI is moving fast, and the discipline of evaluating and governing it is young. We are more confident about some parts of this framework than others, and recognize it draws from both existing and novel concepts. Readers will not agree with every proposal, but we think the exercise of laying out concrete policy proposals is useful even where the specifics are contested.",
+   "ko": "프론티어 AI는 빠르게 발전하고 있으며, 이를 평가(evaluation)하고 거버넌스하는 분야는 아직 초기 단계이다. 우리는 이 프레임워크의 일부 내용에 대해 다른 부분보다 더 큰 확신을 가지고 있으며, 이 프레임워크가 기존 개념과 새로운 개념 모두에 기반하고 있음을 인정한다. 독자들이 모든 제안에 동의하지는 않겠지만, 세부 사항에 이견이 있더라도 구체적인 정책 제안을 제시하는 작업 자체가 유용하다고 생각한다.",
+   "marks": [
+    {
+     "t": "이를 평가(evaluation)하고 거버넌스하는 분야는 아직 초기 단계이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Part 1: Frontier developer obligations",
+   "ko": "제1부: 프론티어 개발자의 의무",
+   "id": "s7"
+  },
+  {
+   "type": "p",
+   "en": "The following sections set out proposed obligations for the companies building the most capable AI models. Under these obligations, frontier developers would test their models for a defined set of catastrophic risks, show how those risks have been mitigated, publish what they find, and answer to a government agency with the authority to act on the results.",
+   "ko": "다음 절에서는 가장 높은 역량을 갖춘 AI 모델을 구축하는 기업에 대해 제안하는 의무를 제시한다. 이 의무에 따라 프론티어 개발자(frontier developer)는 정해진 일련의 파국적 위험에 대해 자사 모델을 시험하고, 해당 위험이 어떻게 완화되었는지 입증하며, 그 결과를 공개하고, 결과에 따라 조치를 취할 권한을 가진 정부 기관에 대해 책임을 지게 된다.",
+   "marks": [
+    {
+     "t": "정해진 일련의 파국적 위험에 대해 자사 모델을 시험하고, 해당 위험이 어떻게 완화되었는지 입증하며",
+     "k": "key"
+    },
+    {
+     "t": "결과에 따라 조치를 취할 권한을 가진 정부 기관에 대해 책임을 지게 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Scope: who and what is covered",
+   "ko": "적용 범위: 적용 대상자와 대상",
+   "id": "s9"
+  },
+  {
+   "type": "p",
+   "en": "Models are covered when they have strong enough capabilities to pose catastrophic risks, with revenue- and spending-based thresholds to capture very large developers, based on our current understanding of training requirements for potentially dangerous models.",
+   "ko": "모델은 파국적 위험을 초래할 수 있을 만큼 강력한 역량을 갖추었을 때 적용 대상이 되며, 잠재적으로 위험한 모델의 학습 요건에 대한 현재의 이해를 바탕으로, 초대형 개발자를 포착하기 위해 매출 및 지출 기반 임계값을 둔다.",
+   "marks": [
+    {
+     "t": "모델은 파국적 위험을 초래할 수 있을 만큼 강력한 역량을 갖추었을 때 적용 대상이 되며",
+     "k": "key"
+    },
+    {
+     "t": "초대형 개발자를 포착하기 위해 매출 및 지출 기반 임계값을 둔다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The obligations in this part of the framework focus on four risk categories: biological weapons, offensive cyber operations, loss of control of AI systems, and automated research and development. In our view, these are the risks where the potential harm is severe, difficult to reverse, and plausibly enabled by frontier AI systems in the near term. We expect that the set of covered risks, and the requirements attached to them, may need to be adjusted over time as our understanding of frontier AI capabilities evolves.",
+   "ko": "프레임워크의 이 부분에 규정된 의무는 생물학 무기, 공격적 사이버 작전, AI 시스템의 통제 상실, 자동화된 연구개발이라는 네 가지 위험 범주에 초점을 맞춘다. 우리가 보기에 이들은 잠재적 피해가 심각하고 되돌리기 어려우며, 단기적으로 프론티어 AI 시스템에 의해 가능해질 개연성이 있는 위험이다. 프론티어 AI 역량에 대한 우리의 이해가 발전함에 따라, 적용 대상 위험의 범위와 그에 따른 요건은 시간이 지나면서 조정이 필요할 수 있다고 예상한다.",
+   "marks": [
+    {
+     "t": "생물학 무기, 공격적 사이버 작전, AI 시스템의 통제 상실, 자동화된 연구개발이라는 네 가지 위험 범주에 초점을 맞춘다",
+     "k": "key"
+    },
+    {
+     "t": "잠재적 피해가 심각하고 되돌리기 어려우며, 단기적으로 프론티어 AI 시스템에 의해 가능해질 개연성이 있는 위험",
+     "k": "safety"
+    },
+    {
+     "t": "적용 대상 위험의 범위와 그에 따른 요건은 시간이 지나면서 조정이 필요할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "RECOMMENDED SCOPE PROVISIONS",
+   "ko": "권고 적용 범위 조항",
+   "id": "s12"
+  },
+  {
+   "type": "p",
+   "en": "Covered Developer. The proposed obligations apply to AI developers that meet both of the following criteria:",
+   "ko": "적용 대상 개발자(Covered Developer). 제안된 의무는 다음 두 기준을 모두 충족하는 AI 개발자에게 적용된다."
+  },
+  {
+   "type": "li",
+   "en": "Develop AI models requiring more than 10²⁵ training FLOP.",
+   "ko": "10²⁵ 학습 부동 소수점 연산 초과가 필요한 AI 모델을 개발함."
+  },
+  {
+   "type": "li",
+   "en": "Earn more than $500 million[^1]  in annual AI-derived revenue, or spend more than $1 billion per year on AI research and development.",
+   "ko": "연간 AI 관련 매출이 5억 달러[^1]를 초과하거나, 연간 AI 연구개발에 10억 달러 초과를 지출함."
+  },
+  {
+   "type": "p",
+   "en": "Capability threshold. Over time, the FLOP needed to train dangerous models may fall, and it may make sense to introduce a threshold based on capabilities rather than simply on training costs.",
+   "ko": "역량 임계값. 시간이 지나면서 위험한 모델을 학습시키는 데 필요한 부동 소수점 연산은 감소할 수 있으며, 단순히 학습 비용이 아닌 역량에 기반한 임계값을 도입하는 것이 타당해질 수 있다.",
+   "marks": [
+    {
+     "t": "단순히 학습 비용이 아닌 역량에 기반한 임계값을 도입하는 것이 타당해질 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Catastrophic Risk. Consistent with existing US state law, 'Catastrophic Risk' means a foreseeable and material risk that a Covered Developer's development, storage, use, or deployment of a covered model will materially contribute to significant death, injury, or damage.[^2]",
+   "ko": "파국적 위험. 기존 미국 주법에 따라, '파국적 위험'이란 적용 대상 개발자의 적용 대상 모델 개발, 저장, 사용 또는 배포가 상당한 사망, 부상 또는 손해에 실질적으로 기여할, 예견 가능하고 중대한 위험을 의미한다.[^2]",
+   "marks": [
+    {
+     "t": "상당한 사망, 부상 또는 손해에 실질적으로 기여할, 예견 가능하고 중대한 위험을 의미한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Critical Safety Incident. Refers to any of the following: (a) unauthorized exfiltration of a covered model's weights, or unauthorized, deliberate, malicious modification of a covered model's weights; (b) harm resulting from the materialization of a Catastrophic Risk; (c) loss of control of a model causing death or bodily injury; (d) a model that uses deceptive techniques against the Covered Developer to subvert its controls or monitoring outside the context of an evaluation designed to elicit this behavior and in a manner that demonstrates materially increased Catastrophic Risk.",
+   "ko": "치명적 안전 사고(critical safety incident). 다음 중 어느 하나를 말한다. (a) 적용 대상 모델 가중치의 무단 유출(exfiltration) 또는 적용 대상 모델 가중치에 대한 무단의, 고의적이고 악의적인 수정, (b) 파국적 위험의 현실화로 인한 피해, (c) 사망 또는 신체 상해를 초래하는 모델의 통제 상실, (d) 해당 행동을 유도하도록 설계된 평가 맥락 밖에서, 파국적 위험이 실질적으로 증가했음을 보여주는 방식으로, 적용 대상 개발자를 상대로 기만적 기법을 사용하여 그 통제나 모니터링을 무력화하는 모델.",
+   "marks": [
+    {
+     "t": "적용 대상 모델 가중치의 무단 유출(exfiltration)",
+     "k": "safety"
+    },
+    {
+     "t": "사망 또는 신체 상해를 초래하는 모델의 통제 상실",
+     "k": "safety"
+    },
+    {
+     "t": "적용 대상 개발자를 상대로 기만적 기법을 사용하여 그 통제나 모니터링을 무력화하는 모델",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Enumerated Risk categories. The obligations in this framework prioritize catastrophic risks related to (a) biological weapons, (b) offensive cyber operations, (c) loss of control, and (d) automated research and development in key domains that could accelerate or amplify risks (a)-(c).",
+   "ko": "열거된 위험 범주(Enumerated Risk categories). 이 프레임워크의 의무는 (a) 생물학 무기, (b) 공격적 사이버 작전, (c) 통제 상실, (d) (a)~(c)의 위험을 가속하거나 증폭할 수 있는 핵심 분야에서의 자동화된 연구개발과 관련된 파국적 위험을 우선시한다.",
+   "marks": [
+    {
+     "t": "(a) 생물학 무기, (b) 공격적 사이버 작전, (c) 통제 상실",
+     "k": "safety"
+    },
+    {
+     "t": "자동화된 연구개발과 관련된 파국적 위험을 우선시한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Periodic review. A government agency ('Agency') should review the criteria for Covered Developers at least annually, with input from industry, academia, governmental entities, and civil society. Agency rulemaking can also potentially play a broader role in keeping implementation guidance current as the frontier advances. That authority should be paired with safeguards-procedural, judicial, and structural-against overbroad discretion.",
+   "ko": "정기 검토. 정부 기관('기관')은 산업계, 학계, 정부 기관, 시민사회의 의견을 수렴하여 적어도 매년 적용 대상 개발자의 기준을 검토해야 한다. 기관의 규칙 제정은 프론티어가 발전함에 따라 이행 지침을 최신 상태로 유지하는 데 보다 폭넓은 역할을 할 수도 있다. 이러한 권한에는 과도한 재량을 방지하는 절차적·사법적·구조적 안전장치가 함께 수반되어야 한다.",
+   "marks": [
+    {
+     "t": "적어도 매년 적용 대상 개발자의 기준을 검토해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Preemption. In the US context, Congress should not preempt state law unless it enacts a rigorous federal regime that meets or exceeds the strongest measures proposed in this framework for addressing catastrophic AI risks. Even then, preemption should be limited to the specific frontier governance functions Congress has expressly chosen to occupy, such as catastrophic-risk testing of covered models, evaluator licensing, or closely related reporting obligations. Outside those functions, federal law should not be read to occupy the field of AI regulation, to displace state law by implication, or to preempt state statutory or common-law claims. Any preemption should be construed narrowly, with ambiguity resolved in favor of preserving state authority outside the specifically occupied federal function. Compliance with a federal regime should not itself confer immunity, a safe harbor, or a presumption against liability under otherwise applicable state law. Absent a strong federal law, states should retain full authority to legislate.",
+   "ko": "선점(preemption). 미국의 맥락에서, 의회는 AI의 파국적 위험에 대응하기 위해 이 프레임워크에서 제안하는 가장 강력한 조치와 동등하거나 이를 능가하는 엄격한 연방 체제를 제정하지 않는 한 주법을 선점해서는 안 된다. 그러한 경우에도 선점은 적용 대상 모델의 파국적 위험 시험, 평가자 인가, 또는 이와 밀접하게 관련된 보고 의무 등 의회가 명시적으로 규율하기로 선택한 특정 프론티어 거버넌스 기능으로 한정되어야 한다. 이러한 기능 외에는 연방법이 AI 규제 분야를 선점하거나, 묵시적으로 주법을 대체하거나, 주의 성문법상 또는 보통법상 청구를 선점하는 것으로 해석되어서는 안 된다. 모든 선점은 좁게 해석되어야 하며, 모호한 부분은 특정하게 규율된 연방 기능 외의 주 권한을 보존하는 방향으로 해소되어야 한다. 연방 체제의 규정 준수 자체가 달리 적용 가능한 주법상의 면책, 면책 특례(safe harbor), 또는 책임 부정 추정을 부여해서는 안 된다. 강력한 연방법이 없는 경우, 주는 입법에 관한 완전한 권한을 보유해야 한다.",
+   "marks": [
+    {
+     "t": "이 프레임워크에서 제안하는 가장 강력한 조치와 동등하거나 이를 능가하는 엄격한 연방 체제를 제정하지 않는 한 주법을 선점해서는 안 된다",
+     "k": "key"
+    },
+    {
+     "t": "적용 대상 모델의 파국적 위험 시험, 평가자 인가",
+     "k": "safety"
+    },
+    {
+     "t": "연방 체제의 규정 준수 자체가 달리 적용 가능한 주법상의 면책, 면책 특례(safe harbor), 또는 책임 부정 추정을 부여해서는 안 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Transparency: what developers should publish",
+   "ko": "투명성: 개발자가 공개해야 할 사항",
+   "id": "s22"
+  },
+  {
+   "type": "p",
+   "en": "While transparency alone is not sufficient for advanced AI, it gives governments, evaluators, and the public a record of what a developer's models can do and how risk is being managed. Developers should test their models against each of the four Enumerated Risk categories and publish a summary of the results. They should publish a safety framework explaining how they evaluate those risks, a system card whenever they release a covered model or add a major new capability, and a risk report at least every six months describing their overall posture across Enumerated Risks. They should also report Critical Safety Incidents to the government soon after they occur.",
+   "ko": "투명성만으로는 첨단 AI에 충분하지 않지만, 투명성은 정부, 평가자, 대중에게 개발자의 모델이 무엇을 할 수 있으며 위험이 어떻게 관리되고 있는지에 대한 기록을 제공한다. 개발자는 네 가지 열거된 위험 범주 각각에 대해 자사 모델을 시험하고 그 결과 요약을 공개해야 한다. 개발자는 해당 위험을 어떻게 평가하는지 설명하는 안전 프레임워크, 적용 대상 모델을 출시하거나 주요 신규 역량을 추가할 때마다 시스템 카드(system card), 그리고 열거된 위험 전반에 걸친 전반적 대응 태세를 기술하는 위험 보고서(Risk Report)를 적어도 6개월마다 공개해야 한다. 또한 치명적 안전 사고가 발생한 후 신속하게 정부에 보고해야 한다.",
+   "marks": [
+    {
+     "t": "위험이 어떻게 관리되고 있는지에 대한 기록을 제공한다",
+     "k": "safety"
+    },
+    {
+     "t": "개발자는 네 가지 열거된 위험 범주 각각에 대해 자사 모델을 시험하고 그 결과 요약을 공개해야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "해당 위험을 어떻게 평가하는지 설명하는 안전 프레임워크",
+     "k": "safety"
+    },
+    {
+     "t": "열거된 위험 전반에 걸친 전반적 대응 태세를 기술하는 위험 보고서(Risk Report)",
+     "k": "safety"
+    },
+    {
+     "t": "치명적 안전 사고가 발생한 후 신속하게 정부에 보고해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "RECOMMENDED TRANSPARENCY PROVISIONS",
+   "ko": "권고 투명성 조항",
+   "id": "s24"
+  },
+  {
+   "type": "p",
+   "en": "Develop and publish a safety framework. Require Covered Developers to develop, publish, and follow a safety framework that sets out how they evaluate risks and how they make decisions about AI development and deployment. The safety framework should, at minimum:",
+   "ko": "안전 프레임워크의 수립 및 공개. 적용 대상 개발자가 위험을 어떻게 평가하고 AI 개발 및 배포에 관한 결정을 어떻게 내리는지를 규정하는 안전 프레임워크를 수립·공개·준수하도록 요구한다. 안전 프레임워크는 최소한 다음을 포함해야 한다.",
+   "marks": [
+    {
+     "t": "적용 대상 개발자가 위험을 어떻게 평가하고 AI 개발 및 배포에 관한 결정을 어떻게 내리는지를 규정하는 안전 프레임워크를 수립·공개·준수하도록 요구한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Identify the covered model(s) to which it applies.",
+   "ko": "프레임워크가 적용되는 적용 대상 모델을 명시함."
+  },
+  {
+   "type": "li",
+   "en": "Describe how the developer evaluates each Enumerated Risk, including the standards relied on, capability evaluations performed, and mitigations applied.",
+   "ko": "의존하는 표준, 수행한 역량 평가, 적용한 완화 조치를 포함하여, 개발자가 각 열거된 위험을 어떻게 평가하는지 기술함.",
+   "marks": [
+    {
+     "t": "수행한 역량 평가, 적용한 완화 조치를 포함하여, 개발자가 각 열거된 위험을 어떻게 평가하는지 기술함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Identify the corporate officer primarily accountable for the framework's implementation.",
+   "ko": "프레임워크 이행에 일차적 책임을 지는 기업 임원을 명시함."
+  },
+  {
+   "type": "li",
+   "en": "Describe the developer's process for modifying the safety framework.",
+   "ko": "개발자가 안전 프레임워크를 수정하는 절차를 기술함."
+  },
+  {
+   "type": "p",
+   "en": "Annual certification. Require Covered Developers to certify annual compliance with their safety framework to the Agency, with civil penalties for material misrepresentation.",
+   "ko": "연례 인증. 적용 대상 개발자가 자사 안전 프레임워크의 규정 준수 여부를 매년 기관에 인증하도록 요구하며, 중대한 허위 진술에 대해서는 민사 제재금을 부과한다.",
+   "marks": [
+    {
+     "t": "자사 안전 프레임워크의 규정 준수 여부를 매년 기관에 인증하도록 요구하며, 중대한 허위 진술에 대해서는 민사 제재금을 부과한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Risk reports. Require Covered Developers to publish a risk report at least every six months that offers an overall assessment of each of the Enumerated Risks posed by the developer's models. As noted below, this assessment is also updated on a per-model basis via system cards. Risk reports should, at minimum, include:",
+   "ko": "위험 보고서. 적용 대상 개발자가 자사 모델이 초래하는 각 열거된 위험에 대한 전반적 평가(assessment)를 제공하는 위험 보고서를 적어도 6개월마다 공개하도록 요구한다. 아래에서 언급하듯이, 이 평가는 시스템 카드를 통해 모델별로도 갱신된다. 위험 보고서는 최소한 다음을 포함해야 한다.",
+   "marks": [
+    {
+     "t": "자사 모델이 초래하는 각 열거된 위험에 대한 전반적 평가(assessment)를 제공하는 위험 보고서를 적어도 6개월마다 공개하도록 요구한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "A summary of relevant capabilities across the models the developer deploys, covering each Enumerated Risk category and discussing material changes in capabilities since the prior report. This summary should give a representative picture of what the developer knows about its models' Enumerated Risk-relevant capabilities. This report should cover all models the developer serves externally, as well as any substantially riskier models the developer deploys internally.",
+   "ko": "개발자가 배포하는 모델 전반의 관련 역량 요약으로, 각 열거된 위험 범주를 다루고 직전 보고서 이후 역량의 중대한 변화를 논의함. 이 요약은 개발자가 자사 모델의 열거된 위험 관련 역량에 대해 알고 있는 바를 대표성 있게 보여 주어야 한다. 이 보고서는 개발자가 외부에 제공하는 모든 모델과 개발자가 내부적으로 배포하는 모델 중 위험성이 상당히 더 높은 모델을 모두 다루어야 한다.",
+   "marks": [
+    {
+     "t": "개발자가 내부적으로 배포하는 모델 중 위험성이 상당히 더 높은 모델을 모두 다루어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "The threat models being tracked, how observed capabilities map to them, and the mitigations addressing each.",
+   "ko": "추적 중인 위협 모델(Threat model), 관찰된 역량이 이에 어떻게 대응되는지, 그리고 각각을 다루는 완화 조치.",
+   "marks": [
+    {
+     "t": "추적 중인 위협 모델(Threat model), 관찰된 역량이 이에 어떻게 대응되는지, 그리고 각각을 다루는 완화 조치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "An assessment of the risk in each Enumerated Risk category that remains after accounting for the safety mitigations the developer has in place. Risks from internal model deployments should be considered, as appropriate, in addition to risks from external deployments. It should be possible to understand most of the reasoning behind the risk assessment from public information, and to reach a similar overall conclusion about the level of risk as one would reach with access to all the information the developer has.",
+   "ko": "개발자가 시행 중인 안전 위험 완화조치를 고려한 후에도 남아 있는 각 열거된 위험 범주의 위험에 대한 평가. 외부 배포로 인한 위험에 더해, 적절한 경우 내부 모델 배포로 인한 위험도 고려해야 한다. 공개 정보만으로 위험 평가의 근거가 되는 추론 대부분을 이해할 수 있어야 하며, 개발자가 보유한 모든 정보에 접근할 수 있는 경우에 도달할 결론과 유사한, 위험 수준에 관한 전반적 결론에 도달할 수 있어야 한다.",
+   "marks": [
+    {
+     "t": "안전 위험 완화조치를 고려한 후에도 남아 있는 각 열거된 위험 범주의 위험에 대한 평가",
+     "k": "safety"
+    },
+    {
+     "t": "적절한 경우 내부 모델 배포로 인한 위험도 고려해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Risk reports should be required every six months to start, but a higher frequency may be needed in the future if AI progress accelerates.",
+   "ko": "위험 보고서는 우선 6개월마다 요구되어야 하나, AI 발전이 가속화되면 향후 더 높은 빈도가 필요할 수 있다.",
+   "marks": [
+    {
+     "t": "AI 발전이 가속화되면 향후 더 높은 빈도가 필요할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "System cards. Require Covered Developers to publish a system card or equivalent documentation when deploying a covered model for general access that, in any Enumerated Risk category, (a) is materially more capable than any covered model it has previously deployed; or (b) is deployed under materially weaker safeguards for an Enumerated Risk than a previously deployed covered model of comparable or greater capability. This document should include a summary of:",
+   "ko": "시스템 카드. 적용 대상 개발자가 일반 접근(general access)용으로 적용 대상 모델을 배포할 때, 해당 모델이 어느 열거된 위험 범주에서든 (a) 이전에 배포한 어떤 적용 대상 모델보다 역량이 상당히 높거나, (b) 역량이 대등하거나 더 높은 기존 배포 적용 대상 모델보다 열거된 위험에 대해 상당히 약한 안전장치 하에서 배포되는 경우, 시스템 카드 또는 이에 상응하는 문서를 공개하도록 요구한다. 이 문서는 다음 사항에 대한 요약을 포함해야 한다.",
+   "marks": [
+    {
+     "t": "이전에 배포한 어떤 적용 대상 모델보다 역량이 상당히 높거나",
+     "k": "safety"
+    },
+    {
+     "t": "열거된 위험에 대해 상당히 약한 안전장치 하에서 배포되는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Testing methodologies and results.",
+   "ko": "시험 방법론 및 결과."
+  },
+  {
+   "type": "li",
+   "en": "Model capabilities and limitations, as well as intended and observed model behaviors.",
+   "ko": "모델의 역량 및 한계, 그리고 의도된 모델 행동 및 관찰된 모델 행동.",
+   "marks": [
+    {
+     "t": "의도된 모델 행동 및 관찰된 모델 행동",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "How, if at all, the model's internal or external deployment changes the risk assessment compared to prior public analyses in system cards and risk reports.",
+   "ko": "시스템 카드 및 위험 보고서의 기존 공개 분석과 비교하여, 모델의 내부 배포 또는 외부 배포가 위험 평가를 변화시키는지 여부 및 그 방식."
+  },
+  {
+   "type": "p",
+   "en": "Critical Safety Incidents. Require Covered Developers to report Critical Safety Incidents to the designated Agency within 15 days of the Covered Developer discovering the Critical Safety Incident or facts that would lead the Covered Developer to have a reasonable belief that a Critical Safety Incident has occurred. Reports should be shared with relevant federal government agencies and national laboratories. Information shared should be exempt from public records disclosure laws, consistent with existing state law.",
+   "ko": "치명적 안전 사고. 적용 대상 개발자가 치명적 안전 사고를 발견하거나, 치명적 안전 사고가 발생했다고 합리적으로 믿게 할 사실을 발견한 날로부터 15일 이내에 지정된 기관에 치명적 안전 사고를 보고하도록 요구한다. 보고서는 관련 연방 정부 기관 및 국립연구소와 공유되어야 한다. 공유된 정보는 기존 주법에 부합하게 공공기록 공개법의 적용에서 면제되어야 한다.",
+   "marks": [
+    {
+     "t": "15일 이내에 지정된 기관에 치명적 안전 사고를 보고하도록 요구한다",
+     "k": "safety"
+    },
+    {
+     "t": "보고서는 관련 연방 정부 기관 및 국립연구소와 공유되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Redactions. For public-facing documents, Covered Developers may redact information that constitutes the developer's trade secrets, that would materially compromise public safety, model security, or national security if disclosed, or that should be withheld to comply with applicable law. Public-facing materials should be redacted only as necessary, and developers should note the nature of the redaction in any published version.",
+   "ko": "민감정보 가림 처리. 대외 공개 문서의 경우, 적용 대상 개발자는 개발자의 영업비밀에 해당하는 정보, 공개 시 공공 안전·모델 보안·국가안보를 중대하게 저해할 정보, 또는 관련 법률 준수를 위해 공개를 보류해야 하는 정보에 대해 민감정보 가림 처리를 할 수 있다. 대외 공개 자료는 필요한 경우에만 가림 처리되어야 하며, 개발자는 공개하는 모든 버전에 가림 처리의 성격을 명시해야 한다.",
+   "marks": [
+    {
+     "t": "공개 시 공공 안전·모델 보안·국가안보를 중대하게 저해할 정보",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Independent evaluation",
+   "ko": "독립 평가",
+   "id": "s42"
+  },
+  {
+   "type": "p",
+   "en": "Self-assessment is not enough. At the same time, we recognize that a mature independent evaluation ecosystem does not yet exist. This framework aims to bridge that gap by requiring developers to run their own evaluations and risk assessments on the Enumerated Risks and, within six months of the enactment of the regulation, to regularly engage at least one qualified evaluator for an independent, external point of view on those risk assessments.",
+   "ko": "자체 평가만으로는 충분하지 않다. 동시에, 우리는 성숙한 독립 평가(evaluation) 생태계가 아직 존재하지 않음을 인정한다. 이 프레임워크는 개발자가 열거된 위험에 대해 자체 평가 및 위험 평가를 수행하고, 규정 제정 후 6개월 이내에 그러한 위험 평가에 대한 독립적·외부적 관점을 얻기 위해 적어도 하나의 자격을 갖춘 평가자를 정기적으로 참여시키도록 요구함으로써 그 공백을 메우는 것을 목표로 한다.",
+   "marks": [
+    {
+     "t": "자체 평가만으로는 충분하지 않다.",
+     "k": "key"
+    },
+    {
+     "t": "성숙한 독립 평가(evaluation) 생태계가 아직 존재하지 않음을 인정한다",
+     "k": "safety"
+    },
+    {
+     "t": "위험 평가에 대한 독립적·외부적 관점을 얻기 위해 적어도 하나의 자격을 갖춘 평가자를 정기적으로 참여시키도록 요구함으로써",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "RECOMMENDED INDEPENDENT EVALUATION PROVISIONS",
+   "ko": "권고 독립 평가 조항",
+   "id": "s44"
+  },
+  {
+   "type": "p",
+   "en": "Require independent evaluation. Within six months of the enactment of the regulation, require Covered Developers to regularly engage at least one qualified independent evaluator to examine the relevant covered models, gather information about safeguards, and provide their own assessment of Enumerated Risks.",
+   "ko": "독립 평가 요구. 규정 제정 후 6개월 이내에, 적용 대상 개발자가 적어도 하나의 자격을 갖춘 독립 평가자를 정기적으로 참여시켜 관련 적용 대상 모델을 검토하고, 안전장치에 관한 정보를 수집하며, 열거된 위험에 대한 평가자 고유의 평가를 제공하도록 요구한다.",
+   "marks": [
+    {
+     "t": "적용 대상 개발자가 적어도 하나의 자격을 갖춘 독립 평가자를 정기적으로 참여시켜 관련 적용 대상 모델을 검토하고, 안전장치에 관한 정보를 수집하며, 열거된 위험에 대한 평가자 고유의 평가를 제공하도록 요구한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "The evaluator should be independent in the sense of not having a financial interest in the developer and being free of major conflicts of interest with respect to the individuals involved in conducting the review.",
+   "ko": "평가자는 개발자에 대해 재정적 이해관계가 없고, 검토 수행에 관여하는 개인과 관련하여 중대한 이해상충이 없다는 의미에서 독립적이어야 한다.",
+   "marks": [
+    {
+     "t": "개발자에 대해 재정적 이해관계가 없고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "The evaluator should receive access to an unredacted version of the developer's most recent risk report and system cards, access to the developer's most capable models, and the opportunity to ask and receive reasonable responses to relevant questions about models, likelihood of catastrophic risks, and safeguards.",
+   "ko": "평가자는 개발자의 최신 위험 보고서 및 시스템 카드의 가림 처리되지 않은 버전에 대한 접근권, 개발자의 가장 역량 높은 모델에 대한 접근권, 그리고 모델, 파국적 위험의 가능성, 안전장치에 관한 관련 질문을 하고 합리적인 답변을 받을 기회를 제공받아야 한다.",
+   "marks": [
+    {
+     "t": "개발자의 가장 역량 높은 모델에 대한 접근권",
+     "k": "safety"
+    },
+    {
+     "t": "모델, 파국적 위험의 가능성, 안전장치에 관한 관련 질문을 하고 합리적인 답변을 받을 기회",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "The evaluator should publish a review of the developer's most recent risk report, addressing the adequacy of the report's information; its analytical rigor; the appropriateness and materiality of any redactions made to the public version; and whether the evaluator disagrees with any of the report's key claims, especially its overall assessment of the level of risk for each Enumerated Risk category.",
+   "ko": "평가자는 개발자의 최신 위험 보고서에 대한 검토 결과를 공개해야 하며, 여기서는 보고서 정보의 충분성, 분석의 엄밀성, 공개본에 적용된 가림 처리의 적절성 및 중대성, 그리고 평가자가 보고서의 핵심 주장, 특히 각 열거된 위험 범주별 위험 수준에 대한 전반적 평가에 동의하지 않는지 여부를 다루어야 한다.",
+   "marks": [
+    {
+     "t": "평가자는 개발자의 최신 위험 보고서에 대한 검토 결과를 공개해야 하며",
+     "k": "safety"
+    },
+    {
+     "t": "특히 각 열거된 위험 범주별 위험 수준에 대한 전반적 평가에 동의하지 않는지 여부",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Evaluators should be bound by obligations not to copy, retain, or disclose confidential information (e.g., confidential intellectual property, matters of national security, or proprietary details such as model architecture, cost, or size), but beyond that should generally not be restricted in what they can publish, including concerns about the risk report or the developer's conduct in connection with the review process.",
+   "ko": "평가자는 기밀 정보(예: 기밀 지식재산권, 국가안보 관련 사항, 또는 모델 아키텍처·비용·규모 등 독점적 세부 사항)를 복제, 보유 또는 공개하지 않을 의무를 지되, 그 외에는 위험 보고서나 검토 과정과 관련한 개발자의 행위에 대한 우려를 포함하여 공개할 수 있는 내용에 일반적으로 제한을 받지 않아야 한다.",
+   "marks": [
+    {
+     "t": "위험 보고서나 검토 과정과 관련한 개발자의 행위에 대한 우려를 포함하여 공개할 수 있는 내용에 일반적으로 제한을 받지 않아야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Independent evaluator ecosystem. Take steps to grow an independent evaluation ecosystem, including developing and publishing standards for evaluators; exploring a licensing system to qualify evaluators; providing government funding or arranging pooled funding so that evaluators can do their work while remaining financially independent of any given developer; and providing resources and funding for nascent organizations seeking to become evaluators.",
+   "ko": "독립 평가자 생태계. 독립 평가 생태계를 육성하기 위한 조치를 취한다. 여기에는 평가자 기준의 개발 및 공개, 평가자 자격 부여를 위한 인허가 제도 검토, 평가자가 특정 개발자로부터 재정적 독립성을 유지하면서 업무를 수행할 수 있도록 정부 재원을 제공하거나 공동 재원을 마련하는 것, 그리고 평가자가 되고자 하는 신생 조직에 자원과 재원을 제공하는 것이 포함된다.",
+   "marks": [
+    {
+     "t": "평가자가 특정 개발자로부터 재정적 독립성을 유지하면서 업무를 수행할 수 있도록 정부 재원을 제공하거나 공동 재원을 마련하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Evaluator independence safeguards. Require evaluators to certify their independence from AI developers as a condition of qualification or licensure. This may include providing information regarding funding and remuneration, conflict-of-interest and equity-ownership disclosures, board participation, and employment. Additional safeguards could include post-employment cooling-off periods or pooled funding through a common industry fund.",
+   "ko": "평가자 독립성 안전장치. 자격 부여 또는 인허가의 조건으로 평가자가 AI 개발자로부터의 독립성을 인증하도록 요구한다. 여기에는 자금 및 보수에 관한 정보, 이해상충 및 지분 보유 공시, 이사회 참여, 고용에 관한 정보 제공이 포함될 수 있다. 추가적 안전장치로는 퇴직 후 냉각 기간 또는 업계 공동 기금을 통한 공동 재원 조성 등이 있을 수 있다.",
+   "marks": [
+    {
+     "t": "평가자가 AI 개발자로부터의 독립성을 인증하도록 요구한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Avoid 'evaluator shopping.' There is a risk that companies seek out whichever evaluator(s) will ask the least of them and be most generous in their assessments. To mitigate this, relevant government agencies could rate evaluators based on predefined criteria such as rigor of public reasoning. Highly rated evaluators could be randomly assigned to AI developers, particularly in high-stakes cases.",
+   "ko": "'평가자 쇼핑(evaluator shopping)' 방지. 기업이 자사에 가장 적은 것을 요구하고 평가에서 가장 관대한 평가자를 찾아 나설 위험이 있다. 이를 완화하기 위해 관련 정부 기관은 공개된 추론의 엄밀성 등 사전에 정의된 기준에 따라 평가자를 등급화할 수 있다. 높은 등급을 받은 평가자는 특히 위험성이 큰 사안에서 AI 개발자에게 무작위로 배정될 수 있다.",
+   "marks": [
+    {
+     "t": "기업이 자사에 가장 적은 것을 요구하고 평가에서 가장 관대한 평가자를 찾아 나설 위험이 있다.",
+     "k": "key"
+    },
+    {
+     "t": "높은 등급을 받은 평가자는 특히 위험성이 큰 사안에서 AI 개발자에게 무작위로 배정될 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Build government capacity to fulfill the independent evaluator function.",
+   "ko": "독립 평가자 기능을 수행할 정부 역량을 구축한다.",
+   "marks": [
+    {
+     "t": "독립 평가자 기능을 수행할 정부 역량을 구축한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Ideally, a government agency would be able to fulfill the functions above—including capability evaluations as well as holistic risk assessment that takes threat models, model capabilities, and developer safeguards into account. A government evaluation function could eventually supplement or even substitute for an independent evaluator ecosystem.",
+   "ko": "이상적으로는, 정부 기관이 위의 기능—역량 평가뿐 아니라 위협 모델, 모델 역량, 개발자 안전장치를 고려하는 총체적 위험 평가를 포함하여—을 수행할 수 있어야 한다. 정부의 평가 기능은 궁극적으로 독립 평가자 생태계를 보완하거나 심지어 대체할 수도 있다.",
+   "marks": [
+    {
+     "t": "위협 모델, 모델 역량, 개발자 안전장치를 고려하는 총체적 위험 평가",
+     "k": "safety"
+    },
+    {
+     "t": "정부의 평가 기능은 궁극적으로 독립 평가자 생태계를 보완하거나 심지어 대체할 수도 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Security",
+   "ko": "보안",
+   "id": "s55"
+  },
+  {
+   "type": "p",
+   "en": "Frontier model weights and training infrastructure are high-value targets, including for sophisticated state actors, and a model that is safe to deploy is not safe if it can be stolen or quietly copied. Covered Developers should maintain a security program across the full development environment, robust to both external and insider threats and scaled to the consequences of compromise. They should describe that program publicly at a general level and give the Agency detailed documentation on request. They should also monitor for unauthorized distillation attacks on their models and run regular penetration testing of their own defenses (against external and insider threats), reporting findings to the government.",
+   "ko": "모델 가중치와 학습 인프라는 고도화된 국가 행위자를 포함한 공격자들에게 가치가 높은 표적이며, 배포하기에 안전한 모델이라도 탈취되거나 은밀히 복제될 수 있다면 안전하다고 할 수 없다. 적용 대상 개발자는 전체 개발 환경에 걸쳐 보안 프로그램을 유지해야 하며, 이 프로그램은 외부 위협과 내부자 위협 모두에 견고하고 침해 시의 결과에 비례하는 수준이어야 한다. 개발자는 해당 프로그램을 일반적인 수준에서 공개적으로 기술하고, 요청 시 기관(Agency)에 상세 문서를 제공해야 한다. 또한 자사 모델에 대한 무단 증류 공격을 모니터링하고, (외부 위협 및 내부자 위협에 대비한) 자체 방어 체계에 대해 정기적으로 침투 테스트를 실시하여 그 결과를 정부에 보고해야 한다.",
+   "marks": [
+    {
+     "t": "모델 가중치와 학습 인프라는 고도화된 국가 행위자를 포함한 공격자들에게 가치가 높은 표적이며",
+     "k": "safety"
+    },
+    {
+     "t": "배포하기에 안전한 모델이라도 탈취되거나 은밀히 복제될 수 있다면 안전하다고 할 수 없다",
+     "k": "key"
+    },
+    {
+     "t": "외부 위협과 내부자 위협 모두에 견고하고 침해 시의 결과에 비례하는 수준이어야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "자사 모델에 대한 무단 증류 공격을 모니터링하고",
+     "k": "safety"
+    },
+    {
+     "t": "정기적으로 침투 테스트를 실시하여 그 결과를 정부에 보고해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "RECOMMENDED SECURITY PROVISIONS",
+   "ko": "권고 보안 조항",
+   "id": "s57"
+  },
+  {
+   "type": "p",
+   "en": "Security program. Require Covered Developers to maintain a security program covering the full AI development environment (model weights, training and inference infrastructure, trusted partner access controls, and internal development processes), robust to external and insider threats and scaled to the consequences of compromise.",
+   "ko": "보안 프로그램. 적용 대상 개발자가 AI 개발 환경 전체(모델 가중치, 학습 및 추론(Inference) 인프라, 신뢰할 수 있는 파트너의 접근 통제, 내부 개발 프로세스)를 포괄하는 보안 프로그램을 유지하도록 요구한다. 이 프로그램은 외부 위협과 내부자 위협에 견고하고 침해 시의 결과에 비례하는 수준이어야 한다.",
+   "marks": [
+    {
+     "t": "AI 개발 환경 전체(모델 가중치, 학습 및 추론(Inference) 인프라, 신뢰할 수 있는 파트너의 접근 통제, 내부 개발 프로세스)를 포괄하는 보안 프로그램",
+     "k": "safety"
+    },
+    {
+     "t": "외부 위협과 내부자 위협에 견고하고 침해 시의 결과에 비례하는 수준이어야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Disclosure. Require Covered Developers to describe their security program at a general level in their public safety framework and to provide detailed documentation to the Agency on request.",
+   "ko": "공개. 적용 대상 개발자가 공개 안전 프레임워크에 자사 보안 프로그램을 일반적인 수준에서 기술하고, 요청 시 기관에 상세 문서를 제공하도록 요구한다.",
+   "marks": [
+    {
+     "t": "공개 안전 프레임워크에 자사 보안 프로그램을 일반적인 수준에서 기술하고, 요청 시 기관에 상세 문서를 제공",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Monitoring for distillation attacks. Create channels for Covered Developers to report known model extraction and distillation attacks as well as detection efforts and prevention measures to the Agency and to other Covered Developers.",
+   "ko": "증류 공격 모니터링. 적용 대상 개발자가 알려진 모델 추출 및 증류 공격과 함께 탐지 노력 및 예방 조치를 기관과 다른 적용 대상 개발자에게 보고할 수 있는 채널을 마련한다.",
+   "marks": [
+    {
+     "t": "알려진 모델 추출 및 증류 공격과 함께 탐지 노력 및 예방 조치를 기관과 다른 적용 대상 개발자에게 보고할 수 있는 채널을 마련",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Penetration testing. Require Covered Developers to conduct regular red teaming and penetration testing covering model weights, algorithmic secrets, training infrastructure, and insider threats. Require Covered Developers to inform the Agency of the categories of findings and the status of remediation. As the field matures, support trials of penetration testing and red teaming run by, or jointly with, government agencies.",
+   "ko": "침투 테스트. 적용 대상 개발자가 모델 가중치, 알고리즘 비밀, 학습 인프라, 내부자 위협을 포괄하는 레드티밍과 침투 테스트를 정기적으로 실시하도록 요구한다. 적용 대상 개발자가 발견 사항의 범주와 시정 현황을 기관에 통보하도록 요구한다. 해당 분야가 성숙함에 따라 정부 기관이 주관하거나 정부 기관과 공동으로 수행하는 침투 테스트 및 레드티밍의 시범 운영을 지원한다.",
+   "marks": [
+    {
+     "t": "모델 가중치, 알고리즘 비밀, 학습 인프라, 내부자 위협을 포괄하는 레드티밍과 침투 테스트를 정기적으로 실시",
+     "k": "safety"
+    },
+    {
+     "t": "정부 기관이 주관하거나 정부 기관과 공동으로 수행하는 침투 테스트 및 레드티밍의 시범 운영을 지원",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Security of privileged-access parties. Require independent evaluators, and any third party granted privileged or pre-deployment access to covered models in a way that could be misused (e.g., access to versions with safety mitigations reduced or removed), to maintain security protections commensurate with the sensitivity of that access and scaled to the consequences of compromise.",
+   "ko": "특권적 접근 당사자의 보안. 독립 평가자, 그리고 오용될 수 있는 방식으로(예: 안전 위험 완화조치가 축소되거나 제거된 버전에 대한 접근) 적용 대상 모델에 대한 특권적 접근 또는 배포 전 접근을 부여받은 모든 제3자가, 해당 접근의 민감도에 상응하고 침해 시의 결과에 비례하는 보안 보호 조치를 유지하도록 요구한다.",
+   "marks": [
+    {
+     "t": "안전 위험 완화조치가 축소되거나 제거된 버전에 대한 접근",
+     "k": "safety"
+    },
+    {
+     "t": "해당 접근의 민감도에 상응하고 침해 시의 결과에 비례하는 보안 보호 조치를 유지하도록 요구한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Enforcement and regulatory authority",
+   "ko": "집행 및 규제 권한",
+   "id": "s63"
+  },
+  {
+   "type": "p",
+   "en": "Transparency and independent evaluation make it easier to assess which models are safe. They need to be paired with real enforcement: developers who lie about compliance should face meaningful penalties, and employees and contractors should be able to raise concerns without retaliation. The provisions in the first box below should hold under any enforcement design a jurisdiction chooses.",
+   "ko": "투명성과 독립 평가(evaluation)는 어떤 모델이 안전한지 평가(assessment)하는 것을 더 쉽게 만든다. 다만 이는 실질적인 집행과 결합되어야 한다. 규정 준수에 관해 거짓을 말하는 개발자는 의미 있는 제재를 받아야 하며, 직원과 계약자는 보복 없이 우려를 제기할 수 있어야 한다. 아래 첫 번째 상자의 조항은 관할권이 어떤 집행 설계를 선택하든 적용되어야 한다.",
+   "marks": [
+    {
+     "t": "투명성과 독립 평가(evaluation)는 어떤 모델이 안전한지 평가(assessment)하는 것을 더 쉽게 만든다",
+     "k": "safety"
+    },
+    {
+     "t": "다만 이는 실질적인 집행과 결합되어야 한다.",
+     "k": "safety"
+    },
+    {
+     "t": "규정 준수에 관해 거짓을 말하는 개발자는 의미 있는 제재를 받아야 하며, 직원과 계약자는 보복 없이 우려를 제기할 수 있어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Ultimately, there should also be a way to block or deter deployment of models that pose significant catastrophic risks. There is much room for debate on how best to accomplish this, while avoiding overly broad or heavy-handed regulatory power. Recognizing the difficulty of this topic, we lay out a range of options for policymakers. Policymakers could begin with a lighter-touch model and revisit that choice as model capabilities advance and the independent evaluation ecosystem matures.",
+   "ko": "궁극적으로는 중대한 파국적 위험을 초래하는 모델의 배포를 차단하거나 억제할 수 있는 방법도 마련되어야 한다. 지나치게 광범위하거나 고압적인 규제 권한을 피하면서 이를 가장 잘 달성하는 방법에 대해서는 논쟁의 여지가 많다. 이 주제의 어려움을 인식하여, 우리는 정책입안자를 위해 다양한 선택지를 제시한다. 정책입안자는 보다 가벼운 규제 모델로 시작한 후, 모델 역량이 발전하고 독립 평가 생태계가 성숙함에 따라 그 선택을 재검토할 수 있다.",
+   "marks": [
+    {
+     "t": "궁극적으로는 중대한 파국적 위험을 초래하는 모델의 배포를 차단하거나 억제할 수 있는 방법도 마련되어야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "지나치게 광범위하거나 고압적인 규제 권한을 피하면서",
+     "k": "safety"
+    },
+    {
+     "t": "모델 역량이 발전하고 독립 평가 생태계가 성숙함에 따라 그 선택을 재검토할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "RECOMMENDED ENFORCEMENT PROVISIONS: Applicable under any enforcement model",
+   "ko": "권고 집행 조항: 모든 집행 모델에 적용 가능",
+   "id": "s66"
+  },
+  {
+   "type": "p",
+   "en": "False statements. Prohibit intentionally false or materially misleading statements related to safety framework compliance, required evaluations, or required disclosures.",
+   "ko": "허위 진술. 안전 프레임워크 규정 준수, 필수 평가 또는 필수 공개와 관련하여 고의적으로 허위이거나 중대하게 오해를 유발하는 진술을 금지한다.",
+   "marks": [
+    {
+     "t": "안전 프레임워크 규정 준수, 필수 평가 또는 필수 공개와 관련하여 고의적으로 허위이거나 중대하게 오해를 유발하는 진술을 금지한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Civil penalties. Authorize the Agency to seek civil penalties for failure to conduct required evaluations, publish a safety framework, or report incidents. Penalties should escalate with repeated violations and scale with global annual revenue.",
+   "ko": "민사 제재금. 필수 평가 미실시, 안전 프레임워크 미공개 또는 사고 미보고에 대해 기관이 민사 제재금을 청구할 수 있도록 권한을 부여한다. 제재금은 위반이 반복될수록 가중되고 전 세계 연간 매출에 비례해야 한다.",
+   "marks": [
+    {
+     "t": "필수 평가 미실시, 안전 프레임워크 미공개 또는 사고 미보고에 대해 기관이 민사 제재금을 청구할 수 있도록 권한을 부여한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Whistleblower protections. Require Covered Developers to maintain anonymous internal channels for employees and contractors to flag compliance concerns or activities that pose serious public safety risks. Prohibit retaliation against persons who report in good faith to the Agency, federal authorities, or other appropriate recipients, and prohibit contractual restrictions on such reporting. Existing federal and state whistleblower protections apply.",
+   "ko": "내부 고발자 보호. 적용 대상 개발자가 직원과 계약자가 규정 준수 관련 우려나 심각한 공공 안전 위험을 초래하는 활동을 제기할 수 있는 익명 내부 채널을 유지하도록 요구한다. 기관, 연방 당국 또는 기타 적절한 수신처에 선의로 신고하는 자에 대한 보복을 금지하고, 그러한 신고에 대한 계약상 제한을 금지한다. 기존 연방 및 주의 내부 고발자 보호 제도가 적용된다.",
+   "marks": [
+    {
+     "t": "규정 준수 관련 우려나 심각한 공공 안전 위험을 초래하는 활동을 제기할 수 있는 익명 내부 채널을 유지하도록 요구한다",
+     "k": "safety"
+    },
+    {
+     "t": "선의로 신고하는 자에 대한 보복을 금지하고, 그러한 신고에 대한 계약상 제한을 금지한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "POSSIBLE APPROACHES TO ESTABLISHING AUTHORITY TO BLOCK OR DETER UNSAFE MODELS",
+   "ko": "안전하지 않은 모델을 차단하거나 억제할 권한을 확립하기 위한 가능한 접근법",
+   "id": "s70"
+  },
+  {
+   "type": "p",
+   "en": "Government agency review. Empower an Agency to review the information available in system cards, risk reports, and reports from independent evaluations, discussed above, and identify cases where one of the following violations has occurred:",
+   "ko": "정부 기관 검토. 기관에 앞서 논의한 시스템 카드, 위험 보고서, 독립 평가 보고서에 담긴 정보를 검토하고, 다음 위반 중 하나가 발생한 사례를 식별할 권한을 부여한다.",
+   "marks": [
+    {
+     "t": "기관에 앞서 논의한 시스템 카드, 위험 보고서, 독립 평가 보고서에 담긴 정보를 검토하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "The required system cards, risk reports, and/or independent evaluations have not been completed and published as required.",
+   "ko": "필수 시스템 카드, 위험 보고서 및/또는 독립 평가가 요구된 대로 완료 및 공개되지 않았다."
+  },
+  {
+   "type": "li",
+   "en": "The independent evaluation was not done by a sufficiently disinterested or qualified evaluator. Determining whether an evaluator is sufficiently qualified could involve requiring licensing for evaluators, setting standards for evaluator qualifications, establishing an evaluator rating system, or simply reviewing evaluator qualifications qualitatively.",
+   "ko": "독립 평가가 충분히 이해관계가 없거나 자격을 갖춘 평가자에 의해 수행되지 않았다. 평가자가 충분한 자격을 갖추었는지 판단하는 데에는 평가자 인허가 요구, 평가자 자격 기준 설정, 평가자 등급 체계 수립, 또는 단순히 평가자 자격에 대한 정성적 검토가 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "독립 평가가 충분히 이해관계가 없거나 자격을 갖춘 평가자에 의해 수행되지 않았다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "The independent evaluator did not have sufficient time and/or access to conduct a high-integrity evaluation.",
+   "ko": "독립 평가자가 무결성 높은 평가를 수행하기에 충분한 시간 및/또는 접근권을 갖지 못했다.",
+   "marks": [
+    {
+     "t": "독립 평가자가 무결성 높은 평가를 수행하기에 충분한 시간 및/또는 접근권을 갖지 못했다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "The risk assessment and/or independent evaluation found that the developer's covered models, as deployed, pose a significant risk of catastrophic harm in an Enumerated Risk category, even taking active safeguards into account.",
+   "ko": "위험 평가 및/또는 독립 평가 결과, 개발자의 적용 대상 모델이 배포된 상태에서 활성화된 안전장치를 고려하더라도 열거된 위험 범주에서 파국적 피해의 중대한 위험을 초래하는 것으로 나타났다.",
+   "marks": [
+    {
+     "t": "안전장치를 고려하더라도 열거된 위험 범주에서 파국적 피해의 중대한 위험을 초래하는 것으로 나타났다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Remedies. Where a violation has occurred, the Agency may pursue remedies including:",
+   "ko": "구제조치. 위반이 발생한 경우, 기관은 다음을 포함한 구제조치를 추진할 수 있다."
+  },
+  {
+   "type": "li",
+   "en": "Fines for deployment of models with inadequately mitigated risks.",
+   "ko": "위험이 부적절하게 완화된 모델의 배포에 대한 벌금.",
+   "marks": [
+    {
+     "t": "위험이 부적절하게 완화된 모델의 배포에 대한 벌금.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Prohibitions on deployment of further covered models until the developer corrects the violations.",
+   "ko": "개발자가 위반 사항을 시정할 때까지 추가 적용 대상 모델의 배포 금지.",
+   "marks": [
+    {
+     "t": "개발자가 위반 사항을 시정할 때까지 추가 적용 대상 모델의 배포 금지.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "In extreme cases, requirements to restrict usage of, and access to, already-deployed models as needed to reduce catastrophic risks.",
+   "ko": "극단적인 경우, 파국적 위험을 줄이기 위해 필요한 범위에서 이미 배포된 모델의 사용 및 접근을 제한하도록 하는 요구.",
+   "marks": [
+    {
+     "t": "파국적 위험을 줄이기 위해 필요한 범위에서 이미 배포된 모델의 사용 및 접근을 제한하도록 하는 요구.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Safeguards against overreach. A number of options are available for avoiding overbroad or inappropriate use of Agency authority, including:",
+   "ko": "월권 방지 안전장치. 기관 권한의 과도하거나 부적절한 행사를 방지하기 위해 다음을 포함한 여러 선택지가 있다."
+  },
+  {
+   "type": "li",
+   "en": "Court enforcement. Rather than having the authority to impose remedies directly, the Agency may pursue them only by initiating a lawsuit seeking the appropriate remedies. In cases of imminent catastrophic risks, provisional remedies could be permitted (reversed after a set period if a court does not uphold them), or lawsuits could be fast-tracked.",
+   "ko": "법원을 통한 집행. 기관은 구제조치를 직접 부과할 권한을 갖는 대신, 적절한 구제조치를 청구하는 소송을 제기하는 방식으로만 이를 추진할 수 있다. 임박한 파국적 위험이 있는 경우에는 잠정적 구제조치를 허용하거나(법원이 이를 인용하지 않으면 일정 기간 후 취소됨), 소송을 신속 절차로 진행할 수 있다.",
+   "marks": [
+    {
+     "t": "임박한 파국적 위험이 있는 경우에는 잠정적 구제조치를 허용하거나",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Cabined discretion. The Agency may not pursue remedies based on its own assessment of risk, but only based on the specific violations listed above.",
+   "ko": "재량의 제한. 기관은 자체적인 위험 평가에 근거해서는 구제조치를 추진할 수 없으며, 위에 열거된 특정 위반에 근거해서만 추진할 수 있다.",
+   "marks": [
+    {
+     "t": "기관은 자체적인 위험 평가에 근거해서는 구제조치를 추진할 수 없으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Consistent treatment and judicial review. The Agency should apply a fact-based review process consistently across developers, holding all covered models of equivalent capabilities to the same standards. No developer may be advantaged or disadvantaged on grounds unrelated to the model's evaluation record or capabilities related to the Enumerated Risk categories, and a developer may challenge remedies through an expedited judicial review process.",
+   "ko": "일관된 처우 및 사법 심사. 기관은 사실에 기반한 검토 절차를 개발자 전반에 일관되게 적용하여, 동등한 역량을 가진 모든 적용 대상 모델에 동일한 기준을 적용해야 한다. 모델의 평가 이력이나 열거된 위험 범주와 관련된 역량과 무관한 이유로 어떤 개발자도 유리하거나 불리한 처우를 받아서는 안 되며, 개발자는 신속 사법 심사 절차를 통해 구제조치에 이의를 제기할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "The remedies and safeguards specified above can be mixed and matched to achieve different tradeoffs between the risks of inadequately safeguarded models and the risks of overbroad regulation. The specifics of these enforcement and regulatory approaches may vary depending on the unique legal and jurisdictional context.",
+   "ko": "위에 명시된 구제조치와 안전장치는 부적절하게 보호된 모델의 위험과 과도한 규제의 위험 사이에서 서로 다른 균형점을 달성하도록 자유롭게 조합할 수 있다. 이러한 집행 및 규제 접근법의 구체적 내용은 고유한 법적·관할권적 맥락에 따라 달라질 수 있다.",
+   "marks": [
+    {
+     "t": "부적절하게 보호된 모델의 위험과 과도한 규제의 위험 사이에서 서로 다른 균형점을 달성하도록 자유롭게 조합할 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Part 2: Societal resilience measures",
+   "ko": "제2부: 사회적 회복력 조치",
+   "id": "s85"
+  },
+  {
+   "type": "p",
+   "en": "The preceding sections address the conduct of AI developers and how to build the right governance framework to shape that conduct. The following sections address a different question: how society can prepare to withstand the threats-particularly biological and cyber-that advancing AI capabilities may accelerate or enable. This distinction matters because the most consequential resilience investments (e.g., surveillance systems, stockpiles, hardened infrastructure, and response capacity) take years to build and cannot be stood up in a crisis. The recommendations that follow are about building them now, and many are worth making regardless of how AI develops.",
+   "ko": "앞선 절들은 AI 개발자의 행위와 그 행위를 이끌 적절한 거버넌스 프레임워크를 구축하는 방법을 다루었다. 이어지는 절들은 다른 질문을 다룬다. 즉, AI 역량의 발전이 가속하거나 가능하게 할 수 있는 위협, 특히 생물학적 위협과 사이버 위협에 사회가 어떻게 대비할 수 있는가이다. 이러한 구분이 중요한 이유는 가장 중대한 회복력 투자(예: 감시 체계, 비축물자, 강화된 기반시설, 대응 역량)는 구축하는 데 수년이 걸리며 위기 상황에서 급히 갖출 수 없기 때문이다. 이하의 권고는 이를 지금 구축하는 데 관한 것이며, 상당수는 AI가 어떻게 발전하든 시행할 가치가 있다.",
+   "marks": [
+    {
+     "t": "AI 역량의 발전이 가속하거나 가능하게 할 수 있는 위협, 특히 생물학적 위협과 사이버 위협에 사회가 어떻게 대비할 수 있는가",
+     "k": "safety"
+    },
+    {
+     "t": "가장 중대한 회복력 투자(예: 감시 체계, 비축물자, 강화된 기반시설, 대응 역량)는 구축하는 데 수년이 걸리며 위기 상황에서 급히 갖출 수 없기 때문이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "These are not new policy areas. Biological and cyber resilience have deep bodies of work, established institutions, and live debates that long predate frontier AI. The recommendations below are meant to build on that work, not restart it. We offer them as priorities and directions rather than finished policy designs; detailed proposals should be shaped with the experts and communities already active in these fields.",
+   "ko": "이들은 새로운 정책 영역이 아니다. 생물학적 회복력과 사이버 회복력 분야에는 프론티어 AI보다 훨씬 앞서 형성된 방대한 연구 성과, 확립된 기관, 활발한 논쟁이 존재한다. 아래 권고는 그러한 성과를 처음부터 다시 시작하려는 것이 아니라 그 위에 쌓아 올리려는 것이다. 우리는 이를 완성된 정책 설계가 아니라 우선순위와 방향으로 제시한다. 세부 제안은 이 분야에서 이미 활동하고 있는 전문가 및 공동체와 함께 구체화해야 한다."
+  },
+  {
+   "type": "p",
+   "en": "This part focuses on biological and cyber threats, where the resilience interventions are clearest and most tractable today. We believe analogous resilience measures exist for additional emerging risks where the agenda is less developed, including loss of control and automated R&D, and will share findings and proposals as we learn more.",
+   "ko": "이 부는 오늘날 회복력 개입이 가장 명확하고 실행 가능한 생물학적 위협과 사이버 위협에 초점을 맞춘다. 우리는 통제 상실과 자동화된 연구개발(R&D) 등 의제가 덜 발전된 추가적 신흥 위험에 대해서도 유사한 회복력 조치가 존재한다고 보며, 더 많은 것을 파악하는 대로 연구 결과와 제안을 공유할 것이다.",
+   "marks": [
+    {
+     "t": "오늘날 회복력 개입이 가장 명확하고 실행 가능한 생물학적 위협과 사이버 위협에 초점",
+     "k": "safety"
+    },
+    {
+     "t": "통제 상실과 자동화된 연구개발(R&D) 등 의제가 덜 발전된 추가적 신흥 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Biological resilience",
+   "ko": "생물학적 회복력",
+   "id": "s89"
+  },
+  {
+   "type": "p",
+   "en": "Biological threats are unique in that a released agent replicates, spreads person-to-person, and evolves under selection pressure. A small breach can become a large one without further action by the attacker, and the agent can adapt to evade countermeasures developed against it. The developer obligations in Part 1 are the upstream end of that defense: testing frontier models for biological-weapons uplift, securing model weights, and giving an Agency authority to act on what evaluations find. The recommendations below are the societal complement, organized as layers of defense. Prevention raises the cost of acquiring the materials and expertise needed to build a biological weapon; detection builds the surveillance needed to spot a threat early enough to act; and preparedness puts protective equipment, medical countermeasures, a more resilient built environment, and hardened public health and response infrastructure in place before they are needed. These investments pay off regardless of where a threat originates-they protect against natural outbreaks with pandemic potential and conventional bioterrorism, as well as against AI-enabled attacks.",
+   "ko": "생물학적 위협은 방출된 작용제가 복제되고, 사람 간에 전파되며, 선택압 아래에서 진화한다는 점에서 독특하다. 작은 침해도 공격자의 추가 행위 없이 대규모 침해로 커질 수 있으며, 작용제는 그에 맞서 개발된 대응수단을 회피하도록 적응할 수 있다. 제1부의 개발자 의무는 이러한 방어의 상류 단계에 해당한다. 즉, 프론티어 모델의 생물무기 업리프트를 시험하고, 모델 가중치를 보호하며, 평가(evaluation) 결과에 따라 조치할 권한을 기관에 부여하는 것이다. 아래 권고는 이를 보완하는 사회적 차원의 조치로서, 방어의 계층별로 구성된다. 예방은 생물무기 제조에 필요한 물질과 전문지식을 획득하는 비용을 높이고, 탐지는 조치를 취할 수 있을 만큼 조기에 위협을 포착하는 데 필요한 감시를 구축하며, 대비는 보호장비, 의료 대응수단, 보다 회복력 있는 건조 환경(built environment), 강화된 공중보건 및 대응 기반시설을 필요해지기 전에 마련한다. 이러한 투자는 위협이 어디에서 비롯되든 효과를 거둔다. 즉, AI 기반 공격뿐 아니라 팬데믹 잠재력이 있는 자연 발생 유행과 재래식 생물테러에 대해서도 보호를 제공한다.",
+   "marks": [
+    {
+     "t": "작은 침해도 공격자의 추가 행위 없이 대규모 침해로 커질 수 있으며, 작용제는 그에 맞서 개발된 대응수단을 회피하도록 적응할 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "프론티어 모델의 생물무기 업리프트를 시험하고, 모델 가중치를 보호하며, 평가(evaluation) 결과에 따라 조치할 권한을 기관에 부여하는 것",
+     "k": "safety"
+    },
+    {
+     "t": "예방은 생물무기 제조에 필요한 물질과 전문지식을 획득하는 비용을 높이고",
+     "k": "safety"
+    },
+    {
+     "t": "AI 기반 공격뿐 아니라 팬데믹 잠재력이 있는 자연 발생 유행과 재래식 생물테러에 대해서도 보호를 제공한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "RECOMMENDED BIOLOGICAL RESILIENCE MEASURES",
+   "ko": "권고되는 생물학적 회복력 조치",
+   "id": "s91"
+  },
+  {
+   "type": "h3",
+   "en": "PREVENTION",
+   "ko": "예방",
+   "id": "s92"
+  },
+  {
+   "type": "p",
+   "en": "Modernizing biosafety and biosecurity standards. Update and unify national biosafety and biosecurity rules such as lab safety protocols-many of which predate synthetic biology, directed evolution, and AI-assisted design tools-into a coherent, enforceable framework that reflects today's threat landscape.",
+   "ko": "생물안전 및 생물안보 기준의 현대화. 실험실 안전 프로토콜 등 국가 생물안전 및 생물안보 규정(상당수는 합성생물학, 유도 진화, AI 지원 설계 도구보다 먼저 만들어졌다)을 갱신하고 통합하여, 오늘날의 위협 지형을 반영하는 일관되고 집행 가능한 프레임워크로 정비한다.",
+   "marks": [
+    {
+     "t": "상당수는 합성생물학, 유도 진화, AI 지원 설계 도구보다 먼저 만들어졌다",
+     "k": "safety"
+    },
+    {
+     "t": "오늘날의 위협 지형을 반영하는 일관되고 집행 가능한 프레임워크로 정비한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Closing oversight gaps. Extend enforceable biosafety and biosecurity standards to privately funded research, strengthen institutional review committees as a front line of local oversight, and require personnel vetting for access to the most dangerous pathogens.",
+   "ko": "감독 공백 해소. 집행 가능한 생물안전 및 생물안보 기준을 민간 재원 연구로 확대하고, 지역 차원 감독의 최전선인 기관 검토 위원회를 강화하며, 가장 위험한 병원체에 대한 접근에 인력 신원 검증을 의무화한다.",
+   "marks": [
+    {
+     "t": "가장 위험한 병원체에 대한 접근에 인력 신원 검증을 의무화한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Gene synthesis screening. Require gene synthesis providers and benchtop synthesizer manufacturers to screen requested sequences for known or predicted hazards and verify customers seeking sequences of concern.",
+   "ko": "유전자 합성 선별. 유전자 합성 업체와 탁상형 합성기 제조업체가 요청된 서열에 알려진 또는 예측된 위험원이 있는지 선별하고, 우려 서열을 요청하는 고객을 검증하도록 의무화한다.",
+   "marks": [
+    {
+     "t": "요청된 서열에 알려진 또는 예측된 위험원이 있는지 선별하고, 우려 서열을 요청하는 고객을 검증하도록 의무화한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Threat monitoring and intelligence sharing. Dedicate new intelligence and law enforcement resources to monitoring and disrupting actors pursuing biological weapons and to deterring and attributing state-level bioweapons activity. Establish structured, two-way channels for governments and AI developers to share CBRN threat intelligence, supported by legal safe harbors, information sharing protections, and antitrust carve-outs. Allow AI and biotechnology companies to share threat intelligence with each other and with the government, and provide for independent stress testing of biosecurity safeguards.",
+   "ko": "위협 모니터링 및 정보 공유. 생물무기를 추구하는 행위자를 모니터링하고 저지하며, 국가 차원의 생물무기 활동을 억지하고 그 책임 소재를 규명하는 데 새로운 정보 및 법 집행 자원을 투입한다. 정부와 AI 개발자가 화학·생물·방사능·핵(CBRN) 위협 정보를 공유할 수 있도록 체계화된 양방향 채널을 구축하고, 이를 법적 면책 조항(safe harbor), 정보 공유 보호, 반독점 예외로 뒷받침한다. AI 기업과 생명공학 기업이 상호 간에, 그리고 정부와 위협 정보를 공유할 수 있도록 허용하고, 생물안보 안전장치에 대한 독립적 스트레스 테스트를 마련한다.",
+   "marks": [
+    {
+     "t": "생물무기를 추구하는 행위자를 모니터링하고 저지하며",
+     "k": "safety"
+    },
+    {
+     "t": "정부와 AI 개발자가 화학·생물·방사능·핵(CBRN) 위협 정보를 공유할 수 있도록 체계화된 양방향 채널을 구축하고",
+     "k": "key"
+    },
+    {
+     "t": "생물안보 안전장치에 대한 독립적 스트레스 테스트를 마련한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "DETECTION",
+   "ko": "탐지",
+   "id": "s97"
+  },
+  {
+   "type": "p",
+   "en": "Pathogen-agnostic biosurveillance. Establish, fund, and maintain pathogen-agnostic biosurveillance systems at the national, subnational, and international levels, designed to provide actionable early warning and characterization of biological threats.",
+   "ko": "병원체 비특이적(pathogen-agnostic) 생물감시. 생물학적 위협에 대해 실행 가능한 조기 경보와 특성 분석을 제공하도록 설계된 병원체 비특이적 생물감시 체계를 국가, 지방, 국제 차원에서 구축하고, 재원을 지원하며, 유지한다.",
+   "marks": [
+    {
+     "t": "생물학적 위협에 대해 실행 가능한 조기 경보와 특성 분석을 제공하도록 설계된 병원체 비특이적 생물감시 체계를 국가, 지방, 국제 차원에서 구축하고",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Microbial forensics and attribution. Build, fund, and exercise federal capabilities for rapid attribution of biological incidents to enable accountability for state and non-state actors and underwrite deterrence-by-denial. Maintain reference databases, accredited laboratories, standing rapid-deployment forensic teams, and international channels for cross-border evidence sharing and joint attribution.",
+   "ko": "미생물 법의학 및 책임 소재 규명. 생물학적 사고의 책임 소재를 신속하게 규명할 수 있는 연방 역량을 구축하고, 재원을 지원하며, 훈련을 실시하여 국가 및 비국가 행위자에 대한 책임성을 확보하고 거부적 억지(deterrence-by-denial)를 뒷받침한다. 참조 데이터베이스, 인증 실험실, 상설 신속 배치 법의학팀, 국경 간 증거 공유 및 공동 책임 소재 규명을 위한 국제 채널을 유지한다.",
+   "marks": [
+    {
+     "t": "생물학적 사고의 책임 소재를 신속하게 규명할 수 있는 연방 역량을 구축하고",
+     "k": "safety"
+    },
+    {
+     "t": "국가 및 비국가 행위자에 대한 책임성을 확보하고 거부적 억지(deterrence-by-denial)를 뒷받침한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "PREPAREDNESS AND RESPONSE",
+   "ko": "대비 및 대응",
+   "id": "s100"
+  },
+  {
+   "type": "p",
+   "en": "Public health infrastructure and planning. Maintain and harden public health and emergency response infrastructure, workforce, and logistics at all levels of government. Test and strengthen plans for protecting critical infrastructure and population centers during a severe biological event, accounting for worst-case outcomes enabled by advances in biotechnology, and exercise them in live operational drills.",
+   "ko": "공중보건 기반시설 및 계획. 모든 정부 수준에서 공중보건 및 비상 대응 기반시설, 인력, 물류를 유지하고 강화한다. 생명공학 발전으로 가능해진 최악의 결과를 고려하여 심각한 생물학적 사건 발생 시 핵심 기반시설과 인구 밀집 지역을 보호하기 위한 계획을 시험하고 강화하며, 실제 작전 훈련을 통해 이를 연습한다.",
+   "marks": [
+    {
+     "t": "모든 정부 수준에서 공중보건 및 비상 대응 기반시설, 인력, 물류를 유지하고 강화한다.",
+     "k": "key"
+    },
+    {
+     "t": "생명공학 발전으로 가능해진 최악의 결과를 고려하여 심각한 생물학적 사건 발생 시 핵심 기반시설과 인구 밀집 지역을 보호하기 위한 계획을 시험하고 강화하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Protective equipment for the essential workforce. Stockpile pandemic-grade respiratory protection, especially reusable respirators, for the essential workforce at the national, subnational, and international levels, and maintain surge manufacturing capacity.",
+   "ko": "필수 인력을 위한 보호장비. 국가, 지방, 국제 차원에서 필수 인력을 위해 팬데믹 대응 등급의 호흡 보호구, 특히 재사용 가능한 호흡기를 비축하고, 긴급 증산 역량을 유지한다."
+  },
+  {
+   "type": "p",
+   "en": "Airborne transmission suppression. Support standard-setting, research and development, incentives, and investment in measures that make the built environment more resistant to respiratory pathogen transmission in critical infrastructure (e.g., public utilities, schools, hospitals, transit hubs, and government facilities).",
+   "ko": "공기 전파 억제. 핵심 기반시설(예: 공공시설, 학교, 병원, 교통 거점, 정부 시설)에서 건조 환경이 호흡기 병원체 전파에 보다 강한 저항력을 갖추도록 하는 조치에 대해 표준 설정, 연구개발, 인센티브, 투자를 지원한다."
+  },
+  {
+   "type": "p",
+   "en": "AI-accelerated countermeasure development. Leverage AI-accelerated drug discovery and protein design to shorten development timelines for novel countermeasures, and fund partnerships between AI developers and biodefense research institutions to build this capacity before it is needed.",
+   "ko": "AI로 가속화된 대응수단 개발. AI로 가속화된 신약 발굴과 단백질 설계를 활용하여 새로운 대응수단의 개발 기간을 단축하고, 이러한 역량을 필요해지기 전에 구축할 수 있도록 AI 개발자와 생물방어 연구기관 간 협력에 재원을 지원한다.",
+   "marks": [
+    {
+     "t": "AI로 가속화된 신약 발굴과 단백질 설계를 활용하여 새로운 대응수단의 개발 기간을 단축하고",
+     "k": "key"
+    },
+    {
+     "t": "이러한 역량을 필요해지기 전에 구축할 수 있도록 AI 개발자와 생물방어 연구기관 간 협력에 재원을 지원한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Broad-spectrum antivirals. Increase investment in research and development of broad-spectrum antiviral medicines, which have the potential to provide resilience by reducing the pressure to rapidly characterize a pathogen and develop novel countermeasures.",
+   "ko": "광범위 항바이러스제. 광범위 항바이러스제 연구개발에 대한 투자를 확대한다. 광범위 항바이러스제는 병원체의 특성을 신속하게 분석하고 새로운 대응수단을 개발해야 하는 압박을 줄여 회복력을 제공할 잠재력이 있다."
+  },
+  {
+   "type": "p",
+   "en": "Responsive medical countermeasures. Invest in adaptable platforms and manufacturing capacity to rapidly produce vaccines, therapeutics, and diagnostics against novel or engineered pathogens. Prioritize countermeasures that are readily scalable, broad spectrum, and transmission suppressing. Stockpile precursors and maintain pre-established clinical trial protocols.",
+   "ko": "신속 대응형 의료 대응수단. 새로운 병원체나 조작된 병원체에 대한 백신, 치료제, 진단 도구를 신속하게 생산할 수 있도록 적응형 플랫폼과 제조 역량에 투자한다. 쉽게 규모를 확대할 수 있고, 광범위하며, 전파를 억제하는 대응수단을 우선시한다. 전구물질을 비축하고 사전에 수립된 임상시험 프로토콜을 유지한다.",
+   "marks": [
+    {
+     "t": "새로운 병원체나 조작된 병원체에 대한 백신, 치료제, 진단 도구를 신속하게 생산할 수 있도록",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "After-action institutionalization. Require binding after-action reviews following any nationally significant biological incident, with public reporting, statutory deadlines for corrective action, and independent oversight for unimplemented findings. Codify lessons-learned cycles to prevent the recurrent erosion of institutional memory between events.",
+   "ko": "사후 검토의 제도화. 국가적으로 중대한 생물학적 사고가 발생한 후에는 구속력 있는 사후 검토(after-action review)를 의무화하고, 공개 보고, 시정 조치에 대한 법정 기한, 미이행 사항에 대한 독립적 감독을 함께 규정한다. 사건과 사건 사이에 기관의 기억이 반복적으로 약화되는 것을 막기 위해 교훈 도출 주기를 법제화한다.",
+   "marks": [
+    {
+     "t": "국가적으로 중대한 생물학적 사고가 발생한 후에는 구속력 있는 사후 검토(after-action review)를 의무화하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Cyber resilience",
+   "ko": "사이버 회복력",
+   "id": "s108"
+  },
+  {
+   "type": "p",
+   "en": "Frontier AI is shifting the economics of cyber offense, accelerating vulnerability discovery and exploit development at a scale that will spread well beyond the handful of developers covered by Part 1 of this framework. The recommendations below aim to make sure the same technology that lowers the cost of attack also lowers the cost of defense. Prevention hardens the open-source and legacy systems the internet depends on and supports the operators least able to defend themselves; measurement and situational awareness builds the government's ability to track how frontier cyber capabilities are advancing and who is misusing them; defender advantage puts AI-enabled defensive tools and faster patching in the hands of defenders; and security modernization updates policies built for a slower era, from replacing legacy systems in critical infrastructure to funding experimental research into new security paradigms.",
+   "ko": "프론티어 AI는 사이버 공격의 경제성을 바꾸고 있으며, 취약점 발견과 익스플로잇 개발을 가속화하고 있다. 그 규모는 본 프레임워크 제1부가 다루는 소수의 개발자를 훨씬 넘어 확산될 것이다. 아래 권고사항은 공격 비용을 낮추는 바로 그 기술이 방어 비용도 낮추도록 하는 데 목적이 있다. 예방은 인터넷이 의존하는 오픈소스 및 레거시 시스템을 강화하고 스스로를 방어할 역량이 가장 부족한 운영자를 지원한다. 측정 및 상황 인식은 프론티어 사이버 역량이 어떻게 발전하고 있으며 누가 이를 오용하고 있는지 추적하는 정부의 역량을 구축한다. 방어자 우위는 AI 기반 방어 도구와 더 빠른 패치 적용 수단을 방어자에게 제공한다. 보안 현대화는 핵심 기반시설의 레거시 시스템 교체부터 새로운 보안 패러다임에 관한 실험적 연구에 대한 재원 지원에 이르기까지, 더 느린 시대에 맞춰 만들어진 정책을 갱신한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI는 사이버 공격의 경제성을 바꾸고 있으며, 취약점 발견과 익스플로잇 개발을 가속화하고 있다",
+     "k": "key"
+    },
+    {
+     "t": "공격 비용을 낮추는 바로 그 기술이 방어 비용도 낮추도록 하는 데 목적이 있다",
+     "k": "key"
+    },
+    {
+     "t": "인터넷이 의존하는 오픈소스 및 레거시 시스템을 강화하고",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 사이버 역량이 어떻게 발전하고 있으며 누가 이를 오용하고 있는지 추적하는 정부의 역량",
+     "k": "safety"
+    },
+    {
+     "t": "AI 기반 방어 도구와 더 빠른 패치 적용 수단을 방어자에게 제공한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "RECOMMENDED CYBER RESILIENCE MEASURES",
+   "ko": "권고되는 사이버 회복력 조치",
+   "id": "s110"
+  },
+  {
+   "type": "h3",
+   "en": "PREVENTION",
+   "ko": "예방",
+   "id": "s111"
+  },
+  {
+   "type": "p",
+   "en": "Open-source and legacy software security. Fund sustained maintenance, security auditing, AI-assisted vulnerability remediation, and migration to more secure software development practices (e.g., memory-safe languages) for open-source and legacy software underpinning critical infrastructure and the internet.",
+   "ko": "오픈소스 및 레거시 소프트웨어 보안. 핵심 기반시설과 인터넷을 뒷받침하는 오픈소스 및 레거시 소프트웨어에 대해 지속적인 유지보수, 보안 감사, AI 지원 취약점 해소, 보다 안전한 소프트웨어 개발 실행 방안(예: 메모리 안전 언어)으로의 전환에 재원을 지원한다.",
+   "marks": [
+    {
+     "t": "핵심 기반시설과 인터넷을 뒷받침하는 오픈소스 및 레거시 소프트웨어에 대해 지속적인 유지보수, 보안 감사",
+     "k": "key"
+    },
+    {
+     "t": "AI 지원 취약점 해소",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Phishing-resistant identity and provenance. Accelerate ecosystem-wide adoption of phishing-resistant authentication and content provenance standards.",
+   "ko": "피싱 저항성 신원 확인 및 출처 증명. 피싱 저항성 인증(phishing-resistant authentication) 및 콘텐츠 출처 증명(content provenance) 표준이 생태계 전반에서 채택되도록 가속화한다.",
+   "marks": [
+    {
+     "t": "피싱 저항성 인증(phishing-resistant authentication) 및 콘텐츠 출처 증명(content provenance) 표준",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Forward-deployed support for under-resourced operators. Fund forward-deployed engineers, shared regional security operations centers, and managed security services for critical-infrastructure operators that lack the resources to defend themselves (e.g., water and wastewater utilities, municipal governments, school districts, regional hospitals, and rural electric cooperatives). This work should prioritize the basics with the highest payoff against known-but-unpatched vulnerabilities: maintaining asset inventories, deploying patches promptly, and reducing internet exposure of operational technology (via data diodes).",
+   "ko": "자원이 부족한 운영자를 위한 현장 파견 지원. 스스로를 방어할 자원이 부족한 핵심 기반시설 운영자(예: 상하수도 사업자, 지방자치단체, 학군, 지역 병원, 농촌 전력협동조합)를 위해 현장 파견 엔지니어(forward-deployed engineer), 공동 지역 보안관제센터, 관리형 보안 서비스에 재원을 지원한다. 이 작업은 알려져 있으나 패치되지 않은 취약점에 대해 효과가 가장 큰 기본 조치, 즉 자산 목록 유지, 신속한 패치 배포, (데이터 다이오드를 통한) 운영기술의 인터넷 노출 축소를 우선시해야 한다.",
+   "marks": [
+    {
+     "t": "스스로를 방어할 자원이 부족한 핵심 기반시설 운영자",
+     "k": "safety"
+    },
+    {
+     "t": "알려져 있으나 패치되지 않은 취약점에 대해 효과가 가장 큰 기본 조치",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "MEASUREMENT AND SITUATIONAL AWARENESS",
+   "ko": "측정 및 상황 인식",
+   "id": "s115"
+  },
+  {
+   "type": "p",
+   "en": "Tracking frontier-model cyber capability. Direct the national AI safety institute or equivalent body to develop and maintain cyber capability evaluations, in partnership with the intelligence community and national laboratory operational-technology testbeds, and to issue capability guidance to government, AI developers, and critical-infrastructure sectors as thresholds are crossed.",
+   "ko": "프론티어 모델의 사이버 역량 추적. 국가 AI 안전 연구소 또는 이에 상응하는 기관이 정보기관 및 국립연구소의 운영기술 테스트베드와 협력하여 사이버 역량 평가를 개발·유지하고, 임계치가 넘어설 때 정부, AI 개발자, 핵심 기반시설 부문에 역량 관련 지침을 발령하도록 지시한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델의 사이버 역량 추적",
+     "k": "safety"
+    },
+    {
+     "t": "국가 AI 안전 연구소 또는 이에 상응하는 기관이 정보기관 및 국립연구소의 운영기술 테스트베드와 협력하여",
+     "k": "safety"
+    },
+    {
+     "t": "사이버 역량 평가를 개발·유지하고, 임계치가 넘어설 때 정부, AI 개발자, 핵심 기반시설 부문에 역량 관련 지침을 발령하도록 지시한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Threat intelligence on AI-enabled cyber operations. Establish a dedicated threat-intelligence function, in coordination with the intelligence community, that fuses developer abuse monitoring, government reporting, and incident-response telemetry into a single picture of which actors are misusing or distilling frontier cyber capabilities. Encourage short-term data retention to enable this function.",
+   "ko": "AI 기반 사이버 작전에 관한 위협 정보. 정보기관과 협력하여 전담 위협 정보 기능을 설치하고, 개발자의 남용 모니터링, 정부 보고, 사고 대응 원격측정 데이터를 통합하여 어떤 행위자가 프론티어 사이버 역량을 오용하거나 증류하고 있는지에 대한 단일한 상황도를 마련한다. 이 기능이 작동할 수 있도록 단기 데이터 보존을 장려한다.",
+   "marks": [
+    {
+     "t": "AI 기반 사이버 작전에 관한 위협 정보",
+     "k": "safety"
+    },
+    {
+     "t": "개발자의 남용 모니터링, 정부 보고, 사고 대응 원격측정 데이터를 통합하여",
+     "k": "safety"
+    },
+    {
+     "t": "어떤 행위자가 프론티어 사이버 역량을 오용하거나 증류하고 있는지에 대한 단일한 상황도를 마련한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Safe harbor for defensive coordination. Provide legal safe harbor and information protections for AI developers to share defensive research, vetting practices, jailbreak data, distillation defenses, and threat intelligence with each other, with the government, and with the broader ecosystem.",
+   "ko": "방어 협력을 위한 면책(safe harbor). AI 개발자가 방어 연구, 심사 실행 방안, 탈옥(Jailbreak) 데이터, 증류 방어 수단, 위협 정보를 상호 간에, 정부와, 그리고 더 넓은 생태계와 공유할 수 있도록 법적 면책과 정보 보호를 제공한다.",
+   "marks": [
+    {
+     "t": "탈옥(Jailbreak) 데이터, 증류 방어 수단, 위협 정보를 상호 간에, 정부와, 그리고 더 넓은 생태계와 공유할 수 있도록 법적 면책과 정보 보호를 제공한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "DEFENDER ADVANTAGE",
+   "ko": "방어자 우위",
+   "id": "s119"
+  },
+  {
+   "type": "p",
+   "en": "Designing for breach. Direct the government to distribute best practices on hardware-root-of-trust network isolation that prevent attackers from moving laterally inside of networks.",
+   "ko": "침해를 전제로 한 설계. 공격자가 네트워크 내부에서 측면 이동(lateral movement)하는 것을 방지하는 하드웨어 신뢰 루트(hardware root of trust) 기반 네트워크 격리에 관한 모범 사례를 정부가 배포하도록 지시한다."
+  },
+  {
+   "type": "p",
+   "en": "AI-enabled breach remediation. Direct the government to distribute best practices on utilizing ML and AI systems to detect and remediate breaches within minutes or hours instead of days or weeks.",
+   "ko": "AI 기반 침해 복구. 머신러닝 및 AI 시스템을 활용하여 침해를 며칠 또는 몇 주가 아닌 몇 분 또는 몇 시간 내에 탐지하고 복구하는 방법에 관한 모범 사례를 정부가 배포하도록 지시한다.",
+   "marks": [
+    {
+     "t": "침해를 며칠 또는 몇 주가 아닌 몇 분 또는 몇 시간 내에 탐지하고 복구하는 방법에 관한 모범 사례",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Safeguards for broad release of defensive capability. Direct the government to assist AI developers in co-developing safeguards (e.g., vetting, user verification, misuse and distillation safeguards, and threat intelligence sharing) that enable the responsible release of cyber capabilities to large numbers of defending organizations.",
+   "ko": "방어 역량의 광범위한 공개를 위한 안전장치. 다수의 방어 조직에 사이버 역량을 책임 있게 공개할 수 있도록 하는 안전장치(예: 심사, 사용자 검증, 오용 및 증류 안전장치, 위협 정보 공유)를 AI 개발자와 공동 개발하도록 정부가 지원하게 한다.",
+   "marks": [
+    {
+     "t": "다수의 방어 조직에 사이버 역량을 책임 있게 공개할 수 있도록 하는 안전장치(예: 심사, 사용자 검증, 오용 및 증류 안전장치, 위협 정보 공유)를 AI 개발자와 공동 개발하도록 정부가 지원하게 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Strategic reserve of operational-technology hardware. Use existing industrial-base and defense-production authorities to build a strategic reserve of long-lead-time operational-technology hardware (e.g., protective relays, remote terminal units, and programmable logic controllers) for grid and water operators whose equipment a destructive attack would otherwise render inoperable.",
+   "ko": "운영기술 하드웨어의 전략 비축. 기존의 산업기반 및 국방생산 권한을 활용하여, 파괴적 공격을 받으면 장비가 작동 불능 상태가 될 수 있는 전력망 및 수도 운영자를 위해 조달 기간이 긴 운영기술 하드웨어(예: 보호 계전기, 원격 단말 장치, 프로그래머블 로직 컨트롤러)의 전략 비축분을 구축한다.",
+   "marks": [
+    {
+     "t": "파괴적 공격을 받으면 장비가 작동 불능 상태가 될 수 있는 전력망 및 수도 운영자",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Software supply chain mapping. Analyze and identify the most critical components in the software supply chain. Fund the national cybersecurity agency to map out the most critical and wide-reaching AI and software supply chain nodes. Use this mapping to inform and prioritize coordinated vulnerability disclosure at scale.",
+   "ko": "소프트웨어 공급망 매핑. 소프트웨어 공급망에서 가장 중요한 구성요소를 분석하고 식별한다. 국가 사이버 보안 기관이 가장 중요하고 영향 범위가 넓은 AI 및 소프트웨어 공급망 노드를 매핑하도록 재원을 지원한다. 이 매핑을 활용하여 대규모 조정된 취약점 공개의 방향을 설정하고 우선순위를 정한다.",
+   "marks": [
+    {
+     "t": "가장 중요하고 영향 범위가 넓은 AI 및 소프트웨어 공급망 노드를 매핑하도록 재원을 지원한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Coordinated vulnerability remediation at scale. Fund the national cybersecurity agency and coordinated defense bodies to handle 10-100 times the current disclosure volume with sub-seven-day turnaround, as frontier models accelerate vulnerability discovery beyond what the current pipeline can absorb. Direct the relevant standards body to revisit disclosure timeline norms for the AI era.",
+   "ko": "대규모 조정된 취약점 해소. 프론티어 모델이 현재의 처리 체계가 감당할 수 있는 수준 이상으로 취약점 발견을 가속화함에 따라, 국가 사이버 보안 기관과 조정된 방어 기구가 현재 공개 물량의 10-100배를 7일 미만의 처리 기간으로 다룰 수 있도록 재원을 지원한다. 관련 표준기구가 AI 시대에 맞춰 공개 일정 규범을 재검토하도록 지시한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델이 현재의 처리 체계가 감당할 수 있는 수준 이상으로 취약점 발견을 가속화함에 따라",
+     "k": "key"
+    },
+    {
+     "t": "현재 공개 물량의 10-100배를 7일 미만의 처리 기간으로 다룰 수 있도록 재원을 지원한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Patching at scale. Establish binding patch-deployment frequency for critical infrastructure operators calibrated to sector-specific operational constraints. Fund research, development, and broad deployment of AI-assisted patch generation, backporting, and validation tooling so that faster timelines are achievable rather than aspirational.",
+   "ko": "대규모 패치 적용. 부문별 운영상 제약에 맞게 조정된, 핵심 기반시설 운영자에 대한 구속력 있는 패치 배포 주기를 수립한다. 더 빠른 일정이 이상에 그치지 않고 실제로 달성 가능하도록 AI 지원 패치 생성, 백포팅, 확인 도구의 연구, 개발, 광범위한 배포에 재원을 지원한다.",
+   "marks": [
+    {
+     "t": "핵심 기반시설 운영자에 대한 구속력 있는 패치 배포 주기를 수립한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "SECURITY MODERNIZATION",
+   "ko": "보안 현대화",
+   "id": "s127"
+  },
+  {
+   "type": "p",
+   "en": "End-of-life and legacy system replacement. Require vendors of software and connected devices used in critical infrastructure to publish support lifecycles and end-of-life dates; fund operators to inventory and isolate systems that can no longer receive security updates; and establish a funded replacement program—modeled on prior national-security-driven equipment replacement efforts—prioritized by exposure and consequence.",
+   "ko": "지원 종료 및 레거시 시스템 교체. 핵심 기반시설에서 사용되는 소프트웨어 및 연결 기기의 공급업체가 지원 수명주기와 지원 종료일을 공개하도록 의무화한다. 더 이상 보안 업데이트를 받을 수 없는 시스템을 운영자가 목록화하고 격리할 수 있도록 재원을 지원한다. 그리고 과거 국가안보 차원의 장비 교체 사업을 모델로 하여, 노출 정도와 결과의 심각성에 따라 우선순위를 정한 재원 지원형 교체 프로그램을 수립한다.",
+   "marks": [
+    {
+     "t": "핵심 기반시설에서 사용되는 소프트웨어 및 연결 기기의 공급업체가 지원 수명주기와 지원 종료일을 공개하도록 의무화한다",
+     "k": "safety"
+    },
+    {
+     "t": "더 이상 보안 업데이트를 받을 수 없는 시스템을 운영자가 목록화하고 격리할 수 있도록 재원을 지원한다.",
+     "k": "key"
+    },
+    {
+     "t": "노출 정도와 결과의 심각성에 따라 우선순위를 정한 재원 지원형 교체 프로그램을 수립한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Experimental research into new security paradigms. Fund research that transcends find-and-patch (e.g., formal verification, runtime patching, and polymorphic defense), with a requirement that it demonstrate value beyond what frontier models can already do, rather than reproducing their capabilities.",
+   "ko": "새로운 보안 패러다임에 관한 실험적 연구. 발견 후 패치(find-and-patch) 방식을 넘어서는 연구(예: 형식 검증, 런타임 패치, 다형성 방어(polymorphic defense))에 재원을 지원하되, 프론티어 모델의 역량을 재현하는 것이 아니라 프론티어 모델이 이미 할 수 있는 것 이상의 가치를 입증하도록 요구한다.",
+   "marks": [
+    {
+     "t": "발견 후 패치(find-and-patch) 방식을 넘어서는 연구",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 모델의 역량을 재현하는 것이 아니라 프론티어 모델이 이미 할 수 있는 것 이상의 가치를 입증하도록 요구한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Loss of control and automated R&D",
+   "ko": "통제 상실 및 자동화된 연구개발",
+   "id": "s130"
+  },
+  {
+   "type": "p",
+   "en": "Part 1 of this framework addresses risks from loss of control and AI R&D on the developer side, through capability testing, incident reporting, and security requirements. The societal resilience agenda for loss of control and automated R&D is less mature than it is for biological and cyber risks, and we believe it needs much more active work across the field, from governments, researchers, and industry alike. Promising directions include the capacity to detect and respond to AI systems acting outside their developers' control, and infrastructure for containing or shutting down such systems. We continue to conduct research in this space and will share more as our understanding matures.",
+   "ko": "본 프레임워크 제1부는 역량 시험, 사고 보고, 보안 요건을 통해 개발자 측면에서 통제 상실 및 AI 연구개발로 인한 위험을 다룬다. 통제 상실 및 자동화된 연구개발에 대한 사회적 회복력 의제는 생물학적 위험 및 사이버 위험에 비해 성숙도가 낮으며, 우리는 정부, 연구자, 산업계를 막론하고 이 분야 전반에서 훨씬 더 적극적인 작업이 필요하다고 본다. 유망한 방향으로는 개발자의 통제를 벗어나 행동하는 AI 시스템을 탐지하고 대응하는 역량, 그리고 그러한 시스템을 격리하거나 중단시키기 위한 기반시설이 있다. 우리는 이 분야에서 연구를 계속하고 있으며, 이해가 성숙해짐에 따라 더 많은 내용을 공유할 것이다.",
+   "marks": [
+    {
+     "t": "개발자 측면에서 통제 상실 및 AI 연구개발로 인한 위험을 다룬다",
+     "k": "safety"
+    },
+    {
+     "t": "통제 상실 및 자동화된 연구개발에 대한 사회적 회복력 의제는 생물학적 위험 및 사이버 위험에 비해 성숙도가 낮으며",
+     "k": "key"
+    },
+    {
+     "t": "개발자의 통제를 벗어나 행동하는 AI 시스템을 탐지하고 대응하는 역량",
+     "k": "safety"
+    },
+    {
+     "t": "그러한 시스템을 격리하거나 중단시키기 위한 기반시설",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Conclusion",
+   "ko": "결론",
+   "id": "s132"
+  },
+  {
+   "type": "p",
+   "en": "The measures proposed in this framework-imposing clear obligations on developers of the most capable models and strengthening society's resilience against the threats those models may accelerate-are necessary first steps. There will be more work ahead as the technology matures. But the cost of waiting for perfect policy is having none during a critical period: when the most severe risks of AI are in view, but not yet realized. We invite feedback on these proposals, and we are ready to work with policymakers and experts to put them into practice.",
+   "ko": "본 프레임워크에서 제안한 조치, 즉 가장 역량이 뛰어난 모델의 개발자에게 명확한 의무를 부과하고 그러한 모델이 가속화할 수 있는 위협에 대한 사회의 회복력을 강화하는 것은 필요한 첫걸음이다. 기술이 성숙해짐에 따라 앞으로 해야 할 일이 더 있을 것이다. 그러나 완벽한 정책을 기다리는 대가는 AI의 가장 심각한 위험이 가시화되었지만 아직 현실화되지 않은 중대한 시기에 아무런 정책도 갖지 못하는 것이다. 우리는 이 제안에 대한 의견을 환영하며, 이를 실행에 옮기기 위해 정책입안자 및 전문가와 협력할 준비가 되어 있다.",
+   "marks": [
+    {
+     "t": "가장 역량이 뛰어난 모델의 개발자에게 명확한 의무를 부과하고 그러한 모델이 가속화할 수 있는 위협에 대한 사회의 회복력을 강화하는 것",
+     "k": "safety"
+    },
+    {
+     "t": "완벽한 정책을 기다리는 대가는 AI의 가장 심각한 위험이 가시화되었지만 아직 현실화되지 않은 중대한 시기에 아무런 정책도 갖지 못하는 것이다.",
+     "k": "key"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "Adjusted for inflation",
+   "ko": "물가상승률 반영 기준",
+   "linked": true
+  },
+  {
+   "n": 2,
+   "en": "We recommend a definition of Catastrophic Risk that is in line with the definition provided in California SB 53",
+   "ko": "우리는 California SB 53에 규정된 정의에 부합하는 파국적 위험의 정의를 권고한다",
+   "linked": true
+  }
+ ]
+}

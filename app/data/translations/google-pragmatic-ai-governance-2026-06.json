@@ -1,0 +1,1170 @@
+{
+ "slug": "google-pragmatic-ai-governance-2026-06",
+ "title": "Google, 「미국 AI 거버넌스를 위한 실용적 접근」",
+ "original_title": "A Pragmatic Approach to AI Governance in America",
+ "publisher": "Google",
+ "published": "2026-06-25",
+ "source_url": "https://publicpolicy.google/resources/a-pragmatic-approach-to-ai-governance-in-america",
+ "source_note": "2026년 6월 백서 전문. 앞의 목차는 뺐다.",
+ "source_label": "원문 보기 (Google)",
+ "summary": "과잉 규제와 무규제 사이의 중간 길을 내세운 Google의 백서다. 프론티어 AI는 연방 감독을 받는 독립·업계 재원 기구인 프론티어 AI 규제 조직(FARO)이 표준을 정하고 연례 독립 감사를 맡게 하자고 제안한다. 널리 쓰이는 AI에 대해서는 노동, 아동 보호, 에너지, 정보 진위, 저작권, 개인정보 분야별 정책을 제시한다.",
+ "doc_kind": "백서",
+ "translated": "2026-11-05",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/google-pragmatic-ai-governance-2026-06-cover.webp",
+ "og_image": "/images/translations/google-pragmatic-ai-governance-2026-06-cover.jpg",
+ "image_caption": "원문 표지",
+ "stats": {
+  "blocks": 113,
+  "sections": 24,
+  "items": 0,
+  "words_en": 5200
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Executive Summary",
+   "ko": "요약본",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "The debate over AI governance is stuck in a false choice between over-regulation and no regulation. There is a middle way: a pragmatic, dynamic, and evidence-based approach that recognizes the unique challenges and opportunities posed by frontier AI on the one hand and widely-deployed AI on the other.",
+   "ko": "AI 거버넌스를 둘러싼 논쟁은 과잉 규제와 무규제 사이의 잘못된 양자택일에 갇혀 있다. 그러나 중도의 길이 있다. 한편으로는 프론티어 AI가, 다른 한편으로는 광범위하게 배포된 AI가 제기하는 고유한 과제와 기회를 인식하는 실용적이고 역동적이며 증거 기반의 접근법이다.",
+   "marks": [
+    {
+     "t": "AI 거버넌스를 둘러싼 논쟁은 과잉 규제와 무규제 사이의 잘못된 양자택일에 갇혀 있다",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 AI가, 다른 한편으로는 광범위하게 배포된 AI가 제기하는 고유한 과제와 기회를 인식하는 실용적이고 역동적이며 증거 기반의 접근법",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Standard-Setting for Frontier AI Models",
+   "ko": "프론티어 AI 모델을 위한 표준 설정",
+   "id": "s2"
+  },
+  {
+   "type": "p",
+   "en": "Frontier AI is moving too fast for traditional bureaucracy, and we need a balanced approach to both drive progress and address risks. The good news is that America has solved similar challenges in the past through independent, industry-funded bodies that operate under federal oversight and establish guardrails to protect the public. Examples include the North American Electric Reliability Corporation (overseen by the Federal Energy Regulatory Commission), the Financial Industry Regulatory Authority (overseen by the Securities & Exchange Commission), the American Medical Association (overseen by federal and state health authorities), state bar associations (overseen by state supreme courts), and others.",
+   "ko": "프론티어 AI는 전통적인 관료제가 따라잡기에는 너무 빠르게 발전하고 있으며, 발전을 촉진하는 동시에 위험에 대응하는 균형 잡힌 접근법이 필요하다. 다행히 미국은 과거에도 연방의 감독하에 운영되고 공공을 보호하기 위한 가드레일을 수립하는, 업계가 재원을 부담하는 독립 기구를 통해 유사한 과제를 해결해 왔다. 예로는 북미전력신뢰성공사(North American Electric Reliability Corporation, 연방에너지규제위원회(Federal Energy Regulatory Commission) 감독), 금융산업규제청(Financial Industry Regulatory Authority, 증권거래위원회(Securities & Exchange Commission) 감독), 미국의사협회(American Medical Association, 연방 및 주 보건 당국 감독), 주 변호사협회(주 대법원 감독) 등이 있다.",
+   "marks": [
+    {
+     "t": "발전을 촉진하는 동시에 위험에 대응하는 균형 잡힌 접근법이 필요하다",
+     "k": "safety"
+    },
+    {
+     "t": "공공을 보호하기 위한 가드레일을 수립하는, 업계가 재원을 부담하는 독립 기구",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We suggest federal policymakers consider a frontier AI regulatory organization (FARO), which could follow those models and enable:",
+   "ko": "우리는 연방 정책입안자들이 이러한 모델을 따르는 프론티어 AI 규제 기구(frontier AI regulatory organization, FARO)를 검토할 것을 제안한다. FARO는 다음을 가능하게 할 수 있다.",
+   "marks": [
+    {
+     "t": "우리는 연방 정책입안자들이 이러한 모델을 따르는 프론티어 AI 규제 기구(frontier AI regulatory organization, FARO)를 검토할 것을 제안한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Frontier Safety Standards",
+   "ko": "프론티어 안전 표준",
+   "id": "s5"
+  },
+  {
+   "type": "p",
+   "en": "A FARO could progress and promote national and international standards, guiding requirements for how developers should identify and mitigate risks and verifying that companies implement security practices and incident response plans before releasing frontier models publicly, building on efforts like Google DeepMind's Frontier Safety Framework and similar efforts from other leading labs.",
+   "ko": "FARO는 국가 및 국제 표준을 발전시키고 확산할 수 있다. 이를 통해 개발자가 위험을 식별하고 완화하는 방식에 관한 요건을 제시하고, 기업이 프론티어 모델을 공개하기 전에 보안 실행 방안과 사고 대응 계획을 이행하는지 검증할 수 있다. 이는 Google DeepMind의 Frontier Safety Framework 및 다른 선도 연구소의 유사한 노력을 토대로 한다.",
+   "marks": [
+    {
+     "t": "FARO는 국가 및 국제 표준을 발전시키고 확산할 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "개발자가 위험을 식별하고 완화하는 방식에 관한 요건을 제시하고",
+     "k": "safety"
+    },
+    {
+     "t": "기업이 프론티어 모델을 공개하기 전에 보안 실행 방안과 사고 대응 계획을 이행하는지 검증할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "Google DeepMind의 Frontier Safety Framework",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Annual Independent Procedural Audits",
+   "ko": "연례 독립 절차 감사",
+   "id": "s7"
+  },
+  {
+   "type": "p",
+   "en": "In the near term, a FARO could oversee an independent procedural audit regime for frontier AI companies. Such audits could be performed by well-established professional audit organizations on an annual basis, with reports provided to the FARO. Over time, as the FARO has identified appropriate standards, audits could shift to reviewing compliance with those standards.",
+   "ko": "단기적으로 FARO는 프론티어 AI 기업을 대상으로 하는 독립 절차 감사 체제를 감독할 수 있다. 이러한 감사는 충분히 자리 잡은 전문 감사 기관이 매년 수행하고, 보고서를 FARO에 제출하는 방식으로 이루어질 수 있다. 시간이 지나 FARO가 적절한 표준을 마련하면, 감사는 해당 표준의 규정 준수 여부를 검토하는 방향으로 전환될 수 있다.",
+   "marks": [
+    {
+     "t": "FARO는 프론티어 AI 기업을 대상으로 하는 독립 절차 감사 체제를 감독할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "충분히 자리 잡은 전문 감사 기관이 매년 수행하고, 보고서를 FARO에 제출하는 방식으로 이루어질 수 있다",
+     "k": "key"
+    },
+    {
+     "t": "감사는 해당 표준의 규정 준수 여부를 검토하는 방향으로 전환될 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Policies for Widely-Deployed AI (Below the Frontier)",
+   "ko": "광범위하게 배포된 AI(프론티어 이하)를 위한 정책",
+   "id": "s9"
+  },
+  {
+   "type": "p",
+   "en": "For AI applications enabled by models at lower levels of capability, the federal government does not need new regulatory regimes that duplicate or conflict with existing law. AI applications like chatbots raise social and consumer safety issues distinct from the national security issues raised by the most advanced frontier AI models. For these widespread applications the federal government can draw on, and in some cases amend, existing laws and rules to address real-world outputs and specific harms.",
+   "ko": "낮은 수준의 역량을 갖춘 모델로 구현되는 AI 애플리케이션의 경우, 연방 정부는 기존 법률과 중복되거나 상충하는 새로운 규제 체제를 둘 필요가 없다. 챗봇과 같은 AI 애플리케이션은 최첨단 프론티어 AI 모델이 제기하는 국가안보 문제와는 다른 사회적·소비자 안전 문제를 제기한다. 이처럼 널리 쓰이는 애플리케이션에 대해 연방 정부는 기존 법률과 규칙을 활용하고 경우에 따라 개정하여 실제 산출물과 구체적인 피해에 대응할 수 있다.",
+   "marks": [
+    {
+     "t": "연방 정부는 기존 법률과 중복되거나 상충하는 새로운 규제 체제를 둘 필요가 없다",
+     "k": "key"
+    },
+    {
+     "t": "최첨단 프론티어 AI 모델이 제기하는 국가안보 문제와는 다른 사회적·소비자 안전 문제를 제기한다",
+     "k": "safety"
+    },
+    {
+     "t": "기존 법률과 규칙을 활용하고 경우에 따라 개정하여 실제 산출물과 구체적인 피해에 대응할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Such an approach to widely-deployed AI applications could:",
+   "ko": "광범위하게 배포된 AI 애플리케이션에 대한 이러한 접근법은 다음을 실현할 수 있다."
+  },
+  {
+   "type": "h2",
+   "en": "Shape the Future of Work",
+   "ko": "일의 미래 형성",
+   "id": "s12"
+  },
+  {
+   "type": "p",
+   "en": "National workforce policies should gather data to inform sound public investments, skilling initiatives to facilitate worker transitions, and where warranted, modernization of unemployment insurance.",
+   "ko": "국가 인력 정책은 데이터를 수집하여 건전한 공공 투자의 근거로 삼아야 하며, 노동자의 전환을 지원하는 기술 역량 강화 계획을 추진하고, 필요한 경우 실업보험을 현대화해야 한다.",
+   "marks": [
+    {
+     "t": "국가 인력 정책은 데이터를 수집하여 건전한 공공 투자의 근거로 삼아야 하며, 노동자의 전환을 지원하는 기술 역량 강화 계획을 추진하고, 필요한 경우 실업보험을 현대화해야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Promote Copyright and Creativity",
+   "ko": "저작권 및 창작 활동 증진",
+   "id": "s14"
+  },
+  {
+   "type": "p",
+   "en": "While AI training on public data is subject to fair use and text-and-data-mining exemptions, the industry is progressing mechanisms for value exchange with creators and governing infringing outputs under established copyright and notice-and-takedown regimes.",
+   "ko": "공개 데이터를 활용한 AI 학습은 공정 이용 및 텍스트·데이터 마이닝 예외의 적용을 받는 한편, 업계는 창작자와의 가치 교환 메커니즘을 발전시키고 기존의 저작권 및 통지 후 삭제(notice-and-takedown) 체제하에서 침해 산출물을 관리하는 방안을 진전시키고 있다.",
+   "marks": [
+    {
+     "t": "기존의 저작권 및 통지 후 삭제(notice-and-takedown) 체제하에서 침해 산출물을 관리하는 방안을 진전시키고 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Protect Minors",
+   "ko": "미성년자 보호",
+   "id": "s16"
+  },
+  {
+   "type": "p",
+   "en": "Federal law should mandate evidence-backed AI interaction guidelines, disclaimers stating chatbots are not sentient, bans on gamified rewards, and \"pause-and-direct\" protocols for self-harm related queries.",
+   "ko": "연방법은 증거에 기반한 AI 상호작용 지침, 챗봇에 의식이 없음을 밝히는 고지문, 게임화된 보상의 금지, 자해 관련 질의에 대한 \"일시 중지 및 안내(pause-and-direct)\" 프로토콜을 의무화해야 한다.",
+   "marks": [
+    {
+     "t": "챗봇에 의식이 없음을 밝히는 고지문",
+     "k": "safety"
+    },
+    {
+     "t": "자해 관련 질의에 대한 \"일시 중지 및 안내(pause-and-direct)\" 프로토콜을 의무화해야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Develop Energy Infrastructure",
+   "ko": "에너지 인프라 개발",
+   "id": "s18"
+  },
+  {
+   "type": "p",
+   "en": "Policymakers should launch a public-private initiative to scale America's energy generation and transmission system, with large AI data centers helping amortize fixed legacy grid costs and ultimately lowering residential electric rates.",
+   "ko": "정책입안자들은 미국의 에너지 발전 및 송전 시스템을 확충하기 위한 민관 협력 계획을 추진해야 한다. 대규모 AI 데이터 센터는 기존 전력망의 고정 비용을 분담하는 데 기여하여 궁극적으로 가정용 전기 요금을 낮출 수 있다.",
+   "marks": [
+    {
+     "t": "정책입안자들은 미국의 에너지 발전 및 송전 시스템을 확충하기 위한 민관 협력 계획을 추진해야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Ensure Information Integrity",
+   "ko": "정보 무결성 보장",
+   "id": "s20"
+  },
+  {
+   "type": "p",
+   "en": "Congress should require watermarks like SynthID and tamper-resistant cryptographic provenance standards like C2PA for generative AI services, while companies use contextual transparency to avoid user \"label fatigue.\"",
+   "ko": "의회는 생성형 AI 서비스에 SynthID와 같은 워터마크와 C2PA와 같은 변조 방지 암호화 출처 표준을 의무화해야 하며, 기업은 맥락적 투명성(contextual transparency)을 활용하여 이용자의 \"라벨 피로(label fatigue)\"를 방지해야 한다.",
+   "marks": [
+    {
+     "t": "SynthID와 같은 워터마크와 C2PA와 같은 변조 방지 암호화 출처 표준을 의무화해야 하며",
+     "k": "safety"
+    },
+    {
+     "t": "기업은 맥락적 투명성(contextual transparency)을 활용하여 이용자의 \"라벨 피로(label fatigue)\"를 방지해야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Protect Privacy",
+   "ko": "프라이버시 보호",
+   "id": "s22"
+  },
+  {
+   "type": "p",
+   "en": "Lawmakers should encourage development of Privacy Enhancing Technologies and build new technical standards for AI tools.",
+   "ko": "입법자들은 프라이버시 강화 기술(Privacy Enhancing Technologies)의 개발을 장려하고 AI 도구를 위한 새로운 기술 표준을 마련해야 한다.",
+   "marks": [
+    {
+     "t": "프라이버시 강화 기술(Privacy Enhancing Technologies)의 개발을 장려하고 AI 도구를 위한 새로운 기술 표준을 마련해야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "While the federal government should actively manage the risks of AI through balanced regulatory frameworks, the greatest risk of all would be missing out on AI's life-changing benefits. A federally overseen frontier AI regulatory organization, coupled with targeted policies for widely deployed AI applications and evidence-based adjustments to existing law, can address both national security and consumer protection risks while promoting economic, scientific, and social progress.",
+   "ko": "연방 정부는 균형 잡힌 규제 프레임워크를 통해 AI의 위험을 적극적으로 관리해야 하지만, 가장 큰 위험은 삶을 바꾸는 AI의 혜택을 놓치는 것이다. 연방의 감독을 받는 프론티어 AI 규제 기구를 광범위하게 배포된 AI 애플리케이션을 위한 표적 정책 및 기존 법률에 대한 증거 기반 조정과 결합하면, 국가안보 위험과 소비자 보호 위험에 모두 대응하는 동시에 경제적·과학적·사회적 발전을 촉진할 수 있다.",
+   "marks": [
+    {
+     "t": "연방 정부는 균형 잡힌 규제 프레임워크를 통해 AI의 위험을 적극적으로 관리해야 하지만, 가장 큰 위험은 삶을 바꾸는 AI의 혜택을 놓치는 것이다.",
+     "k": "key"
+    },
+    {
+     "t": "연방의 감독을 받는 프론티어 AI 규제 기구",
+     "k": "safety"
+    },
+    {
+     "t": "국가안보 위험과 소비자 보호 위험에 모두 대응하는",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Introduction",
+   "ko": "서론",
+   "id": "s25"
+  },
+  {
+   "type": "p",
+   "en": "We are at a pivotal moment in AI development. AI's impact is visible in both everyday life and in extraordinary discoveries. While AI promises to drive scientific and economic progress, it also poses new challenges.",
+   "ko": "우리는 AI 발전의 중대한 전환점에 서 있다. AI의 영향은 일상생활과 놀라운 발견 모두에서 드러나고 있다. AI는 과학적·경제적 발전을 이끌 것으로 기대되지만, 동시에 새로운 과제도 제기한다."
+  },
+  {
+   "type": "p",
+   "en": "Recent advances in the capabilities of frontier AI models in areas like cybersecurity and biology have highlighted the need for appropriate safeguards and protocols for the most advanced models. And the widespread adoption of AI tools has raised concerns about the future of work, information integrity, energy infrastructure, and consumer well-being.",
+   "ko": "사이버 보안과 생물학 등의 분야에서 프론티어 AI 모델의 역량이 최근 크게 발전하면서, 최첨단 모델에 대한 적절한 안전장치와 프로토콜의 필요성이 부각되었다. 또한 AI 도구가 널리 도입되면서 일의 미래, 정보 무결성, 에너지 인프라, 소비자 후생에 대한 우려가 제기되었다.",
+   "marks": [
+    {
+     "t": "사이버 보안과 생물학 등의 분야에서 프론티어 AI 모델의 역량이 최근 크게 발전하면서, 최첨단 모델에 대한 적절한 안전장치와 프로토콜의 필요성이 부각되었다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Google has long called for an approach to AI that is both bold and responsible. Today, we and others are asking important questions and offering different approaches to the challenges that come with any new general-purpose technology - questions like:",
+   "ko": "Google은 오랫동안 대담하면서도 책임 있는 AI 접근법을 촉구해 왔다. 오늘날 우리를 비롯한 여러 주체는 새로운 범용 기술에 수반되는 과제에 대해 중요한 질문을 던지고 다양한 접근법을 제시하고 있다. 그러한 질문은 다음과 같다."
+  },
+  {
+   "type": "li",
+   "en": "How should America balance technological leadership and security risks?",
+   "ko": "미국은 기술적 주도권과 보안 위험 사이에서 어떻게 균형을 잡아야 하는가?",
+   "marks": [
+    {
+     "t": "미국은 기술적 주도권과 보안 위험 사이에서 어떻게 균형을 잡아야 하는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "How can the country promote AI's economic, scientific, and social benefits while limiting the potential for harmful impacts?",
+   "ko": "미국은 유해한 영향의 가능성을 제한하면서 어떻게 AI의 경제적·과학적·사회적 혜택을 증진할 수 있는가?"
+  },
+  {
+   "type": "li",
+   "en": "Should governments oversee AI development, availability, and applications?",
+   "ko": "정부는 AI의 개발, 이용 가능성, 응용을 감독해야 하는가?",
+   "marks": [
+    {
+     "t": "정부는 AI의 개발, 이용 가능성, 응용을 감독해야 하는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "How can we base policy and regulation on objective evidence and standards, so that we intervene neither too soon nor too late?",
+   "ko": "너무 이르지도 늦지도 않게 개입하기 위해, 어떻게 정책과 규제를 객관적인 증거와 표준에 근거하도록 할 수 있는가?"
+  },
+  {
+   "type": "li",
+   "en": "How can leading AI labs and broad AI deployers help address the disruptions that often accompany progress?",
+   "ko": "선도 AI 연구소와 광범위한 AI 배포자는 발전에 흔히 수반되는 혼란에 대응하는 데 어떻게 기여할 수 있는가?"
+  },
+  {
+   "type": "p",
+   "en": "Just as there isn't a single question about AI, or a single goal policy can achieve, there is no single answer to what AI policy should be. In this paper, we build on the best ideas we have seen to separately address the national security risks of frontier AI and the economic and social impacts of widely deployed AI . These two types of AI pose different risks that demand different solutions and different regulatory regimes. We draw on frontier governance work from Google DeepMind, including lessons from the implementation of Google DeepMind's Frontier Safety Framework. Our thinking is also informed by years of work on the public policy issues addressed here, along with thoughtful approaches proposed by other companies and frontier labs, federal and state legislators, and civil society groups.",
+   "ko": "AI에 관한 질문이 하나가 아니고 정책이 달성할 수 있는 목표가 하나가 아니듯, AI 정책이 어떠해야 하는지에 대한 답도 하나가 아니다. 본 보고서에서 우리는 그간 접한 최선의 아이디어를 토대로 프론티어 AI의 국가안보 위험과 광범위하게 배포된 AI의 경제적·사회적 영향을 별도로 다룬다. 이 두 유형의 AI는 서로 다른 위험을 제기하며, 이에 따라 서로 다른 해법과 서로 다른 규제 체제를 요구한다. 우리는 Google DeepMind의 Frontier Safety Framework 이행에서 얻은 교훈을 포함하여 Google DeepMind의 프론티어 거버넌스 작업을 참고한다. 또한 우리의 구상은 여기서 다루는 공공 정책 문제에 관한 수년간의 작업과 더불어, 다른 기업 및 프론티어 연구소, 연방 및 주 입법자, 시민사회 단체가 제안한 사려 깊은 접근법에서도 영향을 받았다.",
+   "marks": [
+    {
+     "t": "프론티어 AI의 국가안보 위험과 광범위하게 배포된 AI의 경제적·사회적 영향을 별도로 다룬다",
+     "k": "key"
+    },
+    {
+     "t": "Google DeepMind의 Frontier Safety Framework 이행에서 얻은 교훈",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our aim is to promote a dialogue about practical ways to ensure the United States leads the world in the responsible and secure development and deployment of AI. As we have long said, AI is too important not to regulate, and too important not to regulate well.",
+   "ko": "우리의 목표는 미국이 책임 있고 안전한 AI 개발 및 배포에서 세계를 선도하도록 보장하는 실질적인 방안에 관한 논의를 촉진하는 것이다. 우리가 오랫동안 말해 왔듯이, AI는 규제하지 않기에는 너무 중요하며, 제대로 규제하지 않기에도 너무 중요하다.",
+   "marks": [
+    {
+     "t": "AI는 규제하지 않기에는 너무 중요하며, 제대로 규제하지 않기에도 너무 중요하다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Standard-Setting for Frontier AI",
+   "ko": "프론티어 AI를 위한 표준 설정",
+   "id": "s36"
+  },
+  {
+   "type": "p",
+   "en": "To protect American innovation and ensure global AI leadership while providing for a safe and secure digital future, leading labs need a unified framework for frontier AI safety, security, incident reporting, and transparency.",
+   "ko": "미국의 혁신을 보호하고 글로벌 AI 주도권을 확보하는 동시에 안전하고 보안이 확보된 디지털 미래를 마련하기 위해, 선도 연구소들에는 프론티어 AI의 안전, 보안, 사고 보고, 투명성에 관한 통합 프레임워크가 필요하다.",
+   "marks": [
+    {
+     "t": "선도 연구소들에는 프론티어 AI의 안전, 보안, 사고 보고, 투명성에 관한 통합 프레임워크가 필요하다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "While we have supported initiatives in various states, most people agree that given its unique role, capabilities, and access to intelligence, the federal government should ultimately be the lead jurisdiction on issues of importance to national security.",
+   "ko": "여러 주(州)의 이니셔티브를 지지해 왔지만, 대다수는 연방정부가 고유한 역할과 역량, 정보 접근성을 고려할 때 궁극적으로 국가안보상 중요한 사안에서 주도적 관할권을 가져야 한다는 데 동의한다.",
+   "marks": [
+    {
+     "t": "연방정부가 고유한 역할과 역량, 정보 접근성을 고려할 때 궁극적으로 국가안보상 중요한 사안에서 주도적 관할권을 가져야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Having studied the regulatory debates over frontier AI regulation and drawing on the ideas of others, we believe meaningful frontier AI safety and security policy should include the following elements:",
+   "ko": "우리는 프론티어 AI 규제를 둘러싼 논쟁을 검토하고 다른 이들의 아이디어를 참고한 결과, 의미 있는 프론티어 AI 안전 및 보안 정책에는 다음 요소가 포함되어야 한다고 본다.",
+   "marks": [
+    {
+     "t": "의미 있는 프론티어 AI 안전 및 보안 정책에는 다음 요소가 포함되어야 한다고 본다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "An independent regulatory organization that can keep pace with fast-moving AI research and development.",
+   "ko": "빠르게 진행되는 AI 연구개발 속도에 보조를 맞출 수 있는 독립 규제 기구.",
+   "marks": [
+    {
+     "t": "빠르게 진행되는 AI 연구개발 속도에 보조를 맞출 수 있는 독립 규제 기구",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Scientific benchmarks for identifying frontier capabilities in the cyber and chemical, biological, radiological, and nuclear (CBRN) domains, complemented by clear safety and security standards for building, testing, and deploying the most advanced AI systems.",
+   "ko": "사이버 및 화학·생물·방사능·핵(CBRN) 분야의 프론티어 역량을 식별하기 위한 과학적 벤치마크, 그리고 이를 보완하는 최첨단 AI 시스템의 구축, 시험, 배포에 관한 명확한 안전 및 보안 표준.",
+   "marks": [
+    {
+     "t": "사이버 및 화학·생물·방사능·핵(CBRN) 분야의 프론티어 역량을 식별하기 위한 과학적 벤치마크",
+     "k": "safety"
+    },
+    {
+     "t": "최첨단 AI 시스템의 구축, 시험, 배포에 관한 명확한 안전 및 보안 표준",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Annual audits to demonstrate procedural, and ultimately substantive, compliance with safety standards, supported by model transparency and reporting requirements.",
+   "ko": "안전 표준에 대한 절차적, 나아가 궁극적으로는 실질적 규정 준수를 입증하기 위한 연례 감사, 그리고 이를 뒷받침하는 모델 투명성 및 보고 요건.",
+   "marks": [
+    {
+     "t": "안전 표준에 대한 절차적, 나아가 궁극적으로는 실질적 규정 준수를 입증하기 위한 연례 감사",
+     "k": "safety"
+    },
+    {
+     "t": "모델 투명성 및 보고 요건",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Below, we propose a framework for national-level regulation of frontier AI that incorporates these ideas.",
+   "ko": "아래에서는 이러한 아이디어를 반영한 국가 차원의 프론티어 AI 규제 프레임워크를 제안한다.",
+   "marks": [
+    {
+     "t": "국가 차원의 프론티어 AI 규제 프레임워크를 제안한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Building an independent regulatory organization for frontier AI with government oversight",
+   "ko": "정부 감독하의 프론티어 AI 독립 규제 기구 구축",
+   "id": "s44"
+  },
+  {
+   "type": "p",
+   "en": "In response to AI's growing capabilities, there is an emerging consensus around the need for a regulatory approach of some kind, coupling expertise in state-of-the-art technologies with independent checks and balances. At the same time, the debate over AI governance often conjures a false dichotomy between innovation-halting regulation and the Wild West.",
+   "ko": "AI의 역량이 커지면서, 최첨단 기술에 대한 전문성과 독립적인 견제와 균형을 결합한 어떤 형태의 규제 접근법이 필요하다는 공감대가 형성되고 있다. 그러나 AI 거버넌스 논쟁은 흔히 혁신을 가로막는 규제와 무법지대(Wild West)라는 잘못된 이분법을 불러일으킨다.",
+   "marks": [
+    {
+     "t": "최첨단 기술에 대한 전문성과 독립적인 견제와 균형을 결합한 어떤 형태의 규제 접근법이 필요하다는 공감대가 형성되고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "There is a middle path that would balance market-driven innovation and independent oversight: a federally overseen frontier AI regulatory organization (FARO) . A FARO could standardize and verify frontier AI labs' safety and security practices prior to launching frontier models on the U.S. market, including by ensuring that companies are publishing and complying with frontier AI frameworks and engaging with annual governance process audits.",
+   "ko": "시장 주도 혁신과 독립적 감독 사이에서 균형을 이룰 수 있는 중간 경로가 있다. 바로 연방정부가 감독하는 프론티어 AI 규제 기구(frontier AI regulatory organization, FARO)이다. FARO는 프론티어 모델이 미국 시장에 출시되기 전에 프론티어 AI 연구소의 안전 및 보안 실행 방안을 표준화하고 검증할 수 있다. 여기에는 기업이 프론티어 AI 프레임워크를 공개하고 준수하는지, 그리고 연례 거버넌스 프로세스 감사에 참여하는지를 확인하는 일이 포함된다.",
+   "marks": [
+    {
+     "t": "FARO는 프론티어 모델이 미국 시장에 출시되기 전에 프론티어 AI 연구소의 안전 및 보안 실행 방안을 표준화하고 검증할 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "기업이 프론티어 AI 프레임워크를 공개하고 준수하는지, 그리고 연례 거버넌스 프로세스 감사에 참여하는지를 확인하는 일",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The concept isn't a new one. Prominent examples of independent, government-supervised, industry-backed regulators include professional organizations like the North American Electric Reliability Corporation (overseen by the Federal Energy Regulatory Commission), the American Medical Association (overseen by federal and state health authorities), state bar associations (overseen by state supreme courts), and other groups overseen by the Securities & Exchange Commission, such as the Financial Industry Regulatory Authority (FINRA), the Public Company Accounting Oversight Board (which oversees audits of public companies), the New York Stock Exchange, and the NASDAQ. These organizations (and many more) are private, industry-funded bodies that write and enforce binding rules on their members, but operate under the supervision (and ultimate veto) of a government agency.",
+   "ko": "이는 새로운 개념이 아니다. 정부의 감독을 받고 업계가 지원하는 독립 규제 기관의 대표적 사례로는 다음과 같은 전문 조직이 있다. North American Electric Reliability Corporation(연방에너지규제위원회(Federal Energy Regulatory Commission)의 감독), 미국의사협회(American Medical Association)(연방 및 주 보건 당국의 감독), 주 변호사협회(주 대법원의 감독), 그리고 미국 증권거래위원회(Securities & Exchange Commission)의 감독을 받는 금융산업규제기구(Financial Industry Regulatory Authority, FINRA), 상장회사회계감독위원회(Public Company Accounting Oversight Board)(상장회사 감사를 감독함), 뉴욕증권거래소(New York Stock Exchange), NASDAQ 등이다. 이들 조직(및 그 외 다수)은 업계가 재원을 부담하는 민간 기구로, 회원에게 구속력 있는 규칙을 제정하고 집행하되 정부 기관의 감독(및 최종 거부권)하에서 운영된다.",
+   "marks": [
+    {
+     "t": "회원에게 구속력 있는 규칙을 제정하고 집행하되 정부 기관의 감독(및 최종 거부권)하에서 운영된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The FARO approach allows for nimble and informed decision-making particularly well-suited to the fast-evolving world of AI.",
+   "ko": "FARO 접근법은 빠르게 변화하는 AI 분야에 특히 적합한, 신속하고 전문성에 기반한 의사결정을 가능하게 한다."
+  },
+  {
+   "type": "p",
+   "en": "A FARO could pay market-rate salaries that would allow it to attract staff with significant AI expertise. Its employees could have security clearances necessary to access classified information relevant to various safety domains. And it could address coordination problems and information asymmetries across the AI industry. The FARO board would include a combination of independent directors and industry representatives, balancing considerations of safety and security against the need for bold innovation and speed to market in a global race.",
+   "ko": "FARO는 시장 수준의 급여를 지급하여 AI 전문성을 갖춘 인력을 유치할 수 있다. 직원은 다양한 안전 분야와 관련된 기밀 정보에 접근하는 데 필요한 보안 인가를 받을 수 있다. 또한 FARO는 AI 업계 전반의 조정 문제와 정보 비대칭을 해소할 수 있다. FARO 이사회는 독립 이사와 업계 대표로 구성되며, 안전 및 보안에 대한 고려와 글로벌 경쟁 속에서 요구되는 과감한 혁신 및 신속한 시장 출시의 필요성 사이에서 균형을 맞추게 된다.",
+   "marks": [
+    {
+     "t": "직원은 다양한 안전 분야와 관련된 기밀 정보에 접근하는 데 필요한 보안 인가를 받을 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "안전 및 보안에 대한 고려와 글로벌 경쟁 속에서 요구되는 과감한 혁신 및 신속한 시장 출시의 필요성 사이에서 균형을 맞추게 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Government oversight could be provided by any number of agencies, including the Commerce Department, the Treasury Department, or the Department of Energy. Importantly, the FARO would complement - but not supplant - programs that provide U.S. national security agencies with early access to certain models with advanced cyber capabilities.",
+   "ko": "정부 감독은 상무부(Department of Commerce), 재무부(Department of the Treasury), 에너지부(Department of Energy) 등 여러 기관 중 어느 기관이든 맡을 수 있다. 중요한 점은 FARO가 고급 사이버 역량을 갖춘 특정 모델에 대한 조기 접근권을 미국 국가안보 기관에 제공하는 프로그램을 대체하는 것이 아니라 보완한다는 것이다.",
+   "marks": [
+    {
+     "t": "고급 사이버 역량을 갖춘 특정 모델에 대한 조기 접근권을 미국 국가안보 기관에 제공하는 프로그램",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Defining benchmarks for frontier capabilities and setting standards",
+   "ko": "프론티어 역량에 대한 벤치마크 정의 및 표준 설정",
+   "id": "s51"
+  },
+  {
+   "type": "p",
+   "en": "Part of building a meaningful FARO would be empowering it to identify and enforce objective scientific measures for model safety and security. Developing evaluation frameworks that are applied consistently across frontier models and that evolve at the pace of AI technology development would facilitate consistent application of safety and security practices around frontier AI deployed on the U.S. market.",
+   "ko": "의미 있는 FARO를 구축하려면 모델 안전 및 보안에 관한 객관적인 과학적 척도를 식별하고 집행할 권한을 FARO에 부여해야 한다. 프론티어 모델 전반에 일관되게 적용되고 AI 기술 발전 속도에 맞춰 진화하는 평가(evaluation) 프레임워크를 개발하면, 미국 시장에 배포되는 프론티어 AI에 대해 안전 및 보안 실행 방안을 일관되게 적용할 수 있다.",
+   "marks": [
+    {
+     "t": "모델 안전 및 보안에 관한 객관적인 과학적 척도를 식별하고 집행할 권한을 FARO에 부여해야 한다",
+     "k": "key"
+    },
+    {
+     "t": "미국 시장에 배포되는 프론티어 AI에 대해 안전 및 보안 실행 방안을 일관되게 적용할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Working in concert with federal government experts in different safety domains, the FARO should maintain a repository of standards and benchmarks for building, testing, and deploying the most advanced AI systems.",
+   "ko": "FARO는 여러 안전 분야의 연방정부 전문가와 협력하여 최첨단 AI 시스템의 구축, 시험, 배포를 위한 표준과 벤치마크의 저장소를 유지해야 한다.",
+   "marks": [
+    {
+     "t": "최첨단 AI 시스템의 구축, 시험, 배포를 위한 표준과 벤치마크의 저장소를 유지해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "It could also establish other safety rules based on industry best practices, guidelines from industry bodies like the Frontier Model Forum, and standards from the American National Standards Institute and the International Standards Organization. Ideally, governments around the world would implement international reciprocity agreements with the U.S. government, such that models verified by the FARO would be automatically verified in reciprocal jurisdictions. In this way, the FARO could set the global benchmark for safe and secure frontier AI models.",
+   "ko": "또한 FARO는 업계 모범 사례, Frontier Model Forum과 같은 업계 단체의 지침, 미국국가표준협회(American National Standards Institute) 및 국제표준화기구(International Standards Organization)의 표준에 기반하여 그 밖의 안전 규칙을 수립할 수 있다. 이상적으로는 세계 각국 정부가 미국 정부와 국제 상호인정 협정을 체결하여, FARO가 검증한 모델이 상호인정 관할권에서 자동으로 검증된 것으로 인정되도록 해야 한다. 이를 통해 FARO는 안전하고 보안이 확보된 프론티어 AI 모델의 글로벌 기준을 설정할 수 있다.",
+   "marks": [
+    {
+     "t": "FARO가 검증한 모델이 상호인정 관할권에서 자동으로 검증된 것으로 인정되도록 해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "안전하고 보안이 확보된 프론티어 AI 모델의 글로벌 기준을 설정할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Companies would become FARO members if they have developed a frontier model. While AI researchers debate the technical definition of a frontier model, most agree that a mere recital of the number of floating point operations (FLOPs) used in training is insufficient and both over- and under-broad in assessing risks. That said, the 10^26 FLOPs standard used as a placeholder in other regulations could serve as an initial criterion, while the National Institute for Standards and Technology or the FARO promptly develop a capability-based standard to replace it. That standard should assess a model's ability to meaningfully facilitate cyberattacks or provide expert-level assistance in the creation of CBRN tools that pose risks to national security or public safety.",
+   "ko": "프론티어 모델을 개발한 기업은 FARO 회원이 된다. AI 연구자들 사이에서 프론티어 모델의 기술적 정의에 대한 논쟁이 이어지고 있지만, 훈련에 사용된 부동 소수점 연산(FLOPs) 횟수만 제시하는 것은 위험을 평가하기에 불충분하며 그 범위가 지나치게 넓기도 하고 지나치게 좁기도 하다는 데 대체로 의견이 일치한다. 그렇지만 다른 규제에서 임시 기준으로 사용된 10^26 FLOPs 기준을 초기 기준으로 삼을 수 있으며, 그동안 국립표준기술연구소(National Institute for Standards and Technology) 또는 FARO가 이를 대체할 역량 기반 기준을 신속히 개발해야 한다. 이 기준은 모델이 사이버 공격을 의미 있게 용이하게 하거나, 국가안보 또는 공공 안전에 위험을 초래하는 CBRN 도구 제작에 전문가 수준의 지원을 제공할 수 있는지를 평가해야 한다.",
+   "marks": [
+    {
+     "t": "부동 소수점 연산(FLOPs) 횟수만 제시하는 것은 위험을 평가하기에 불충분하며",
+     "k": "safety"
+    },
+    {
+     "t": "이를 대체할 역량 기반 기준을 신속히 개발해야 한다",
+     "k": "key"
+    },
+    {
+     "t": "모델이 사이버 공격을 의미 있게 용이하게 하거나, 국가안보 또는 공공 안전에 위험을 초래하는 CBRN 도구 제작에 전문가 수준의 지원을 제공할 수 있는지를 평가해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Promoting frontier model transparency and audits",
+   "ko": "프론티어 모델 투명성 및 감사 촉진",
+   "id": "s56"
+  },
+  {
+   "type": "p",
+   "en": "By centralizing cross-industry standards for frontier AI safety, a FARO could enable the development of an independent AI auditing ecosystem.",
+   "ko": "FARO는 프론티어 AI 안전에 관한 업계 공통 표준을 일원화함으로써 독립적인 AI 감사 생태계의 발전을 가능하게 할 수 있다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 안전에 관한 업계 공통 표준을 일원화함으로써 독립적인 AI 감사 생태계의 발전을 가능하게 할 수 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Until substantive benchmarks and standards exist, the focus should be on standardizing model safety and security protocols. Each developer of a frontier model should publish and adhere to its own comprehensive frontier AI framework. These frameworks should have clear requirements: they should define tiered risk thresholds and corresponding mitigations, outline cybersecurity practices designed to secure unreleased model weights against unauthorized modification or transfer, establish critical incident response plans, and institute internal governance and oversight.",
+   "ko": "실질적인 벤치마크와 표준이 마련되기 전까지는 모델 안전 및 보안 프로토콜의 표준화에 중점을 두어야 한다. 프론티어 모델의 각 개발자는 자체적인 포괄적 프론티어 AI 프레임워크를 공개하고 이를 준수해야 한다. 이러한 프레임워크에는 명확한 요건이 있어야 한다. 즉, 단계별 위험 임계값과 그에 상응하는 완화 조치를 정의하고, 공개되지 않은 모델 가중치를 무단 수정이나 유출로부터 보호하기 위한 사이버 보안 실행 방안을 제시하며, 중대 사고 대응 계획을 수립하고, 내부 거버넌스 및 감독 체계를 마련해야 한다.",
+   "marks": [
+    {
+     "t": "모델 안전 및 보안 프로토콜의 표준화에 중점을 두어야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "단계별 위험 임계값과 그에 상응하는 완화 조치를 정의하고",
+     "k": "safety"
+    },
+    {
+     "t": "공개되지 않은 모델 가중치를 무단 수정이나 유출로부터 보호하기 위한 사이버 보안 실행 방안",
+     "k": "safety"
+    },
+    {
+     "t": "중대 사고 대응 계획을 수립하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Most frontier labs already have such frameworks, and we have supported U.S. state legislation requiring frontier AI frameworks and other safety measures such as transparency and incident reporting.",
+   "ko": "대부분의 프론티어 연구소는 이미 이러한 프레임워크를 갖추고 있으며, 우리는 프론티어 AI 프레임워크와 투명성 및 사고 보고 등 기타 안전 조치를 요구하는 미국 주 차원의 입법을 지지해 왔다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 프레임워크와 투명성 및 사고 보고 등 기타 안전 조치를 요구하는 미국 주 차원의 입법을 지지해 왔다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Pending agreed national benchmarks, frontier labs could also contract with independent auditors to perform annual 'procedural' audits to assess whether they have adhered to that framework. And before releasing a materially new frontier model, labs would attest to the FARO that they have adhered to their published framework and applied appropriate standards for testing and risk mitigation. In parallel, frontier labs should notify and provide early access to the U.S. government of models that advance the state of the art in sensitive national security domains, as outlined in the Administration's recent Executive Order on Promoting Advanced Artificial Intelligence Innovation and Security.",
+   "ko": "대상 국가 벤치마크가 합의되기 전까지, 프론티어 연구소는 독립 감사인과 계약하여 해당 프레임워크 준수 여부를 평가하는 연례 '절차적' 감사를 수행할 수도 있다. 또한 실질적으로 새로운 프론티어 모델을 출시하기 전에, 연구소는 공개한 프레임워크를 준수했으며 시험 및 위험 완화에 적절한 표준을 적용했음을 FARO에 증명하게 된다. 이와 병행하여, 행정부가 최근 발표한 첨단 인공지능 혁신 및 보안 촉진에 관한 행정명령(Executive Order on Promoting Advanced Artificial Intelligence Innovation and Security)에 명시된 바와 같이, 프론티어 연구소는 민감한 국가안보 분야에서 최첨단 수준을 진전시키는 모델에 대해 미국 정부에 통지하고 조기 접근 권한을 제공해야 한다.",
+   "marks": [
+    {
+     "t": "독립 감사인과 계약하여 해당 프레임워크 준수 여부를 평가하는 연례 '절차적' 감사",
+     "k": "safety"
+    },
+    {
+     "t": "시험 및 위험 완화에 적절한 표준을 적용했음을 FARO에 증명하게 된다",
+     "k": "safety"
+    },
+    {
+     "t": "민감한 국가안보 분야에서 최첨단 수준을 진전시키는 모델에 대해 미국 정부에 통지하고 조기 접근 권한을 제공해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To ensure audits are effective and secure, three core operational protections should guide the requirements:",
+   "ko": "감사가 효과적이고 안전하게 이루어지도록 하기 위해, 다음 세 가지 핵심 운영상 보호 장치가 요건의 지침이 되어야 한다."
+  },
+  {
+   "type": "li",
+   "en": "Standardized Reviews : Auditors should have access to predefined, standardized, and focused sets of documents (such as model cards) to promote consistency and prevent the risk of loss or disclosure of sensitive IP.",
+   "ko": "표준화된 검토 : 일관성을 높이고 민감한 지식재산권의 손실이나 노출 위험을 방지하기 위해, 감사인은 사전에 정의되고 표준화되었으며 범위가 한정된 문서 세트(모델카드 등)에 접근할 수 있어야 한다."
+  },
+  {
+   "type": "li",
+   "en": "Remediation : Companies should have the opportunity to address audit findings and provide a plan to implement corrective changes before an audit report is finalized.",
+   "ko": "시정 : 기업은 감사 보고서가 확정되기 전에 감사 결과에 대응하고 시정 조치 이행 계획을 제출할 기회를 가져야 한다."
+  },
+  {
+   "type": "li",
+   "en": "Confidentiality : To prevent misuse of sensitive security findings and protect intellectual property, all final audit reports should be submitted confidentially to the FARO.",
+   "ko": "기밀성 : 민감한 보안 관련 결과의 오용을 방지하고 지식재산권을 보호하기 위해, 모든 최종 감사 보고서는 FARO에 기밀로 제출되어야 한다.",
+   "marks": [
+    {
+     "t": "민감한 보안 관련 결과의 오용을 방지하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In the longer term, as standards bodies make progress and the FARO adopts and validates substantive benchmarks and technical standards, AI labs could be required to submit frontier models to substantive audits performed by independent auditors.",
+   "ko": "장기적으로는 표준 기구의 작업이 진전되고 FARO가 실질적인 벤치마크와 기술 표준을 채택·검증함에 따라, AI 연구소에 프론티어 모델을 독립 감사인이 수행하는 실질적 감사에 제출하도록 요구할 수 있을 것이다.",
+   "marks": [
+    {
+     "t": "프론티어 모델을 독립 감사인이 수행하는 실질적 감사에 제출하도록 요구할 수 있을 것이다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Policies for Widely-Deployed AI",
+   "ko": "광범위하게 배포된 AI에 관한 정책",
+   "id": "s66"
+  },
+  {
+   "type": "p",
+   "en": "The issues raised by the widespread use of AI applications like chatbots are distinct from the kinds of national security issues posed by advanced frontier AI models. The U.S. federal government should also, but separately, address everyday uses of AI across the economy through a series of discrete frameworks.",
+   "ko": "챗봇과 같은 AI 애플리케이션의 광범위한 사용으로 제기되는 문제는 첨단 프론티어 AI 모델이 야기하는 국가안보 문제와는 성격이 다르다. 미국 연방정부는 이와 별도로, 일련의 개별 프레임워크를 통해 경제 전반에 걸친 AI의 일상적 사용에도 대응해야 한다.",
+   "marks": [
+    {
+     "t": "첨단 프론티어 AI 모델이 야기하는 국가안보 문제와는 성격이 다르다",
+     "k": "safety"
+    },
+    {
+     "t": "미국 연방정부는 이와 별도로, 일련의 개별 프레임워크를 통해 경제 전반에 걸친 AI의 일상적 사용에도 대응해야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Rules for the use of AI in daily life need to both minimize harms and maximize benefits. That means figuring out how our existing laws apply to this new technology. People on the left and the right agree that if something is illegal to do without AI, it's illegal to do with AI - we don't need to reinvent the wheel.  Rather than replacing existing legal concepts wholesale, or coming up with AI versions of existing laws, we should work out how to apply time-tested rules to AI applications. In fact AI is already posing new questions under long-established law, like when to entrust fiduciary duty, how to determine intent and assign responsibility, and whether an AI can be the 'author' of a patent or the creator of a new work of art.",
+   "ko": "일상생활에서의 AI 사용에 관한 규칙은 피해를 최소화하는 동시에 편익을 극대화해야 한다. 이는 기존 법률이 이 새로운 기술에 어떻게 적용되는지를 파악해야 한다는 의미이다. 진보와 보수를 막론하고, AI 없이 하면 불법인 행위는 AI를 이용해 해도 불법이라는 데 동의한다. 바퀴를 새로 발명할 필요는 없는 것이다. 기존 법 개념을 통째로 대체하거나 기존 법률의 AI 버전을 새로 만들기보다는, 오랜 시간 검증된 규칙을 AI 애플리케이션에 어떻게 적용할지를 정립해야 한다. 실제로 AI는 언제 신인의무(fiduciary duty)를 맡길 수 있는지, 의도를 어떻게 판단하고 책임을 어떻게 귀속시킬 것인지, AI가 특허의 '발명자'나 새로운 예술 작품의 창작자가 될 수 있는지 등 오래 확립된 법률 하에서 이미 새로운 질문을 제기하고 있다.",
+   "marks": [
+    {
+     "t": "AI 없이 하면 불법인 행위는 AI를 이용해 해도 불법이라는 데 동의한다",
+     "k": "key"
+    },
+    {
+     "t": "의도를 어떻게 판단하고 책임을 어떻게 귀속시킬 것인지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We believe in an approach that is fundamentally data-driven, focuses on evidence of real-world benefits and harms, and accepts a degree of uncertainty to avoid regulations that slow progress without addressing real challenges. This approach would address outputs, not inputs, looking to prevent and mitigate specific harms rather than micromanaging the science behind these new tools.  Among the challenges that Americans care most about, we believe the federal government should focus on jobs and the economy; kids' safety; the role of energy in our shared prosperity; protecting privacy and information integrity; and the important contributions of creators and publishers.",
+   "ko": "우리는 근본적으로 데이터에 기반하고, 실제 편익과 피해에 대한 증거에 초점을 맞추며, 실질적인 문제는 해결하지 못하면서 발전만 늦추는 규제를 피하기 위해 어느 정도의 불확실성을 수용하는 접근 방식을 지지한다. 이 접근 방식은 입력이 아닌 출력을 다루며, 이러한 새로운 도구의 이면에 있는 과학을 세세하게 관리하기보다는 구체적인 피해를 예방하고 완화하는 데 주안점을 둔다. 미국인들이 가장 중요하게 여기는 과제 가운데, 연방정부는 일자리와 경제, 아동 안전, 공동 번영에서 에너지가 하는 역할, 프라이버시 및 정보 무결성 보호, 그리고 창작자와 출판사의 중요한 기여에 초점을 맞춰야 한다고 우리는 생각한다.",
+   "marks": [
+    {
+     "t": "실질적인 문제는 해결하지 못하면서 발전만 늦추는 규제를 피하기 위해 어느 정도의 불확실성을 수용하는 접근 방식을 지지한다",
+     "k": "safety"
+    },
+    {
+     "t": "구체적인 피해를 예방하고 완화하는 데 주안점을 둔다",
+     "k": "safety"
+    },
+    {
+     "t": "아동 안전",
+     "k": "safety"
+    },
+    {
+     "t": "프라이버시 및 정보 무결성 보호",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Workforce preparedness and economic opportunity",
+   "ko": "인력 대비 및 경제적 기회",
+   "id": "s70"
+  },
+  {
+   "type": "p",
+   "en": "There is a great deal of uncertainty around how AI will impact the future of work and our economy. It's likely that AI will create new jobs (through growing some existing jobs and creating some new job categories), replace some roles, and change most jobs over the long run. We saw similar patterns with prior general-purpose technologies like electrification, computers, and the internet, each of which ultimately created many net new jobs. AI might concentrate wealth, but it could also make blue-collar jobs more valuable and shrink the pay disparity between white-collar and blue-collar jobs, trending toward a 'convergence economy' rather than a 'K-shaped' one.",
+   "ko": "AI가 미래의 일자리와 경제에 어떤 영향을 미칠지에 대해서는 불확실성이 매우 크다. 장기적으로 AI는 (일부 기존 일자리를 확대하고 일부 새로운 직종을 창출함으로써) 새로운 일자리를 만들고, 일부 직무를 대체하며, 대부분의 일자리를 변화시킬 가능성이 높다. 전기화, 컴퓨터, 인터넷 등 과거의 범용 기술에서도 유사한 양상이 나타났으며, 이들 기술은 각각 결국 많은 일자리 순증을 가져왔다. AI는 부를 집중시킬 수도 있지만, 블루칼라 일자리의 가치를 높이고 화이트칼라와 블루칼라 일자리 간 임금 격차를 줄여 'K자형' 경제가 아닌 '수렴 경제(convergence economy)'로 나아가게 할 수도 있다."
+  },
+  {
+   "type": "p",
+   "en": "We believe that with the right policy frameworks and investments in American workers, AI can be steered to augment the capabilities of the labor force, ultimately driving broader economic growth and social welfare.",
+   "ko": "우리는 올바른 정책 프레임워크와 미국 노동자에 대한 투자가 뒷받침된다면, AI가 노동력의 역량을 증강하는 방향으로 이끌어져 궁극적으로 보다 폭넓은 경제 성장과 사회 복지를 견인할 수 있다고 믿는다.",
+   "marks": [
+    {
+     "t": "AI가 노동력의 역량을 증강하는 방향으로 이끌어져 궁극적으로 보다 폭넓은 경제 성장과 사회 복지를 견인할 수 있다고 믿는다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The best response to uncertainty is usually to seek more information. In this case, that means better assessments of AI's economic impact. Workers need clear career pathways, and policymakers need robust and up-to-date evidence. Google is committed to sharing our detailed insights on how people use our AI tools at work and home, and we will be launching initiatives to support this vision soon. We are also committed to helping the U.S. overhaul its fragmented labor data infrastructure to help states better match job-seekers' skills with employer needs. Maintaining a nimble and flexible labor market is always important, but never more so than at a time of potentially rapid technological change.",
+   "ko": "불확실성에 대한 최선의 대응은 대개 더 많은 정보를 구하는 것이다. 이 경우에는 AI의 경제적 영향에 대한 더 나은 평가(assessment)를 의미한다. 노동자에게는 명확한 경력 경로가 필요하고, 정책 입안자에게는 견고하고 최신의 증거가 필요하다. Google은 사람들이 직장과 가정에서 우리의 AI 도구를 어떻게 사용하는지에 대한 상세한 통찰을 공유하는 데 전념하고 있으며, 이러한 비전을 지원하기 위한 이니셔티브를 곧 출범할 예정이다. 또한 우리는 각 주가 구직자의 역량과 고용주의 수요를 더 잘 연결할 수 있도록, 미국이 파편화된 노동 데이터 인프라를 전면 개편하는 것을 지원하는 데 전념하고 있다. 민첩하고 유연한 노동시장을 유지하는 것은 언제나 중요하지만, 잠재적으로 급격한 기술 변화가 일어나는 시기에는 그 어느 때보다 중요하다."
+  },
+  {
+   "type": "p",
+   "en": "There is also broad agreement that the workforce should be equipped with relevant AI skills. AI training has several advantages. It is relatively short and inexpensive compared to many forms of traditional training. Unlike most tools, AI itself can help people learn to use it better. And AI training is also highly adaptable: once they learn AI skills, workers can apply them across different AI models and in different professions. Many employers and governments at every level are already putting policies in place to upskill their current employees, enabling public-private partnerships such as AI Ready Ohio and ensuring that skills learned are relevant to workplaces.",
+   "ko": "노동력이 관련 AI 역량을 갖추어야 한다는 데에도 폭넓은 공감대가 형성되어 있다. AI 교육에는 몇 가지 장점이 있다. 여러 형태의 전통적인 교육에 비해 기간이 비교적 짧고 비용이 저렴하다. 대부분의 도구와 달리, AI는 그 자체로 사람들이 AI를 더 잘 사용하는 법을 배우도록 도울 수 있다. 또한 AI 교육은 적응성이 매우 높다. 노동자는 일단 AI 역량을 습득하면 이를 다양한 AI 모델과 다양한 직종에 적용할 수 있다. 많은 고용주와 각급 정부는 이미 현직 직원의 역량을 향상시키기 위한 정책을 시행하고 있으며, AI Ready Ohio와 같은 민관 파트너십을 가능하게 하고 습득한 역량이 직장과 관련성을 갖도록 보장하고 있다."
+  },
+  {
+   "type": "p",
+   "en": "Google is also working closely with partners to equip the workforce, including a manufacturing vocational partnership, and initiatives to train over 300,000 American workers and all six million U.S. educators.",
+   "ko": "Google 또한 제조업 직업훈련 파트너십을 비롯하여, 30만 명 이상의 미국 노동자와 미국의 모든 교육자 600만 명을 교육하기 위한 이니셔티브 등 인력 역량 강화를 위해 파트너들과 긴밀히 협력하고 있다."
+  },
+  {
+   "type": "p",
+   "en": "To help scale these kinds of efforts, we encourage policymakers to support private-sector, \"earn-and-learn\" training models. Funding employer-driven upskilling can offset the financial risk for businesses while helping workers acquire the specific, transferable skills that industry demands. And policy responses can encourage companies to invest in apprenticeship programs and skilling employees even when those employees may use those skills to find roles with other firms. We have endorsed a range of bills at the federal level that would help create these opportunities and incentives.",
+   "ko": "이러한 노력의 확대를 돕기 위해, 우리는 정책 입안자들이 민간 부문의 \"일하며 배우는(earn-and-learn)\" 교육 모델을 지원할 것을 권장한다. 고용주 주도의 역량 향상에 자금을 지원하면 기업의 재정적 위험을 상쇄하는 동시에 노동자가 업계가 요구하는 구체적이고 이전 가능한 역량을 습득하도록 도울 수 있다. 또한 정책적 대응을 통해, 직원들이 습득한 역량을 활용해 다른 기업에서 일자리를 찾을 가능성이 있더라도 기업이 도제 프로그램과 직원 역량 강화에 투자하도록 장려할 수 있다. 우리는 이러한 기회와 인센티브를 창출하는 데 도움이 될 연방 차원의 다양한 법안을 지지해 왔다."
+  },
+  {
+   "type": "p",
+   "en": "If and when evidence shows an uptick in unemployment as part of an AI-driven transition, the federal government may need to strengthen unemployment insurance and administration, potentially including portable benefits, broadened wage insurance, and reemployment support to help displaced individuals get back to work. Crucially, we must also protect worker dignity, promoting AI applications that augment workers' capabilities and frameworks that incorporate meaningful human oversight in critical employment decisions.",
+   "ko": "AI 주도 전환의 일환으로 실업이 증가한다는 증거가 나타날 경우, 연방정부는 실업보험과 그 운영을 강화해야 할 수 있으며, 여기에는 이동 가능한 급여(portable benefits), 확대된 임금 보험, 그리고 일자리를 잃은 사람들의 직장 복귀를 돕는 재취업 지원이 포함될 수 있다. 결정적으로, 우리는 노동자의 존엄성도 보호해야 하며, 노동자의 역량을 증강하는 AI 애플리케이션과 중요한 고용 결정에 의미 있는 인간 감독을 포함하는 프레임워크를 장려해야 한다.",
+   "marks": [
+    {
+     "t": "AI 주도 전환의 일환으로 실업이 증가한다는 증거가 나타날 경우, 연방정부는 실업보험과 그 운영을 강화해야 할 수 있으며",
+     "k": "key"
+    },
+    {
+     "t": "중요한 고용 결정에 의미 있는 인간 감독을 포함하는 프레임워크를 장려해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Public policy can also encourage AI adoption that benefits workers across all sectors. By embedding technical experts into small businesses, non-profits, and local governments for short-term, high-impact residencies, we and others across the AI industry are working to democratize the knowledge required to deploy enterprise-quality AI.",
+   "ko": "공공정책은 또한 모든 부문의 노동자에게 이익이 되는 AI 도입을 장려할 수 있다. 우리와 AI 업계의 여러 주체는 기술 전문가를 소규모 기업, 비영리 단체, 지방정부에 임베딩하여 단기·고효과 레지던시를 운영함으로써, 기업 수준의 AI를 배포하는 데 필요한 지식을 대중화하기 위해 노력하고 있다."
+  },
+  {
+   "type": "h2",
+   "en": "Protecting kids and families in the digital world",
+   "ko": "디지털 세계에서 아동과 가족 보호",
+   "id": "s79"
+  },
+  {
+   "type": "p",
+   "en": "The widespread adoption of generative AI chatbots in the U.S. has highlighted concerns around potential harms to our children. AI developers and deployers should offer high-quality, privacy-protective, and age-appropriate AI experiences that empower kids, protect them from inappropriate content, and recognize their developmental needs. And rules should empower parents, who are typically in the best position to assess and address the unique needs of their children.",
+   "ko": "미국에서 생성형 AI 챗봇이 널리 도입되면서 아동에게 미칠 수 있는 잠재적 피해에 대한 우려가 부각되었다. AI 개발자와 배포자는 아동에게 힘을 실어 주고, 부적절한 콘텐츠로부터 아동을 보호하며, 아동의 발달상 요구를 인정하는 고품질의, 프라이버시를 보호하는, 연령에 적절한 AI 경험을 제공해야 한다. 또한 규칙은 일반적으로 자녀의 고유한 요구를 평가하고 해결하기에 가장 좋은 위치에 있는 부모에게 권한을 부여해야 한다.",
+   "marks": [
+    {
+     "t": "생성형 AI 챗봇이 널리 도입되면서 아동에게 미칠 수 있는 잠재적 피해에 대한 우려가 부각되었다",
+     "k": "key"
+    },
+    {
+     "t": "부적절한 콘텐츠로부터 아동을 보호하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "When it comes to school, we are seeing risks of AI tools helping students cheat on essays or do 'cognitive offloading', but also a growing range of ways teachers are using personalized tutors and programs to enrich education and equip today's kids for the world of tomorrow. Some studies even show that students using AI tools tailored to their needs can learn much faster than students in traditional classrooms. But the details of implementation matter, and it is critical that companies work with educators, administrators, and academic experts to promote constructive learning environments and avoid negative or distracting uses. To empower younger users, platforms should also include tailored onboarding experiences and youth-friendly prompts that build AI literacy and teach about the technology's limitations.",
+   "ko": "학교의 경우, AI 도구가 학생들의 에세이 부정행위나 '인지적 오프로딩(cognitive offloading)'을 돕는 위험이 나타나고 있지만, 동시에 교사들이 개인 맞춤형 튜터와 프로그램을 활용하여 교육을 풍부하게 하고 오늘날의 아이들이 내일의 세계에 대비하도록 하는 방식도 점점 다양해지고 있다. 일부 연구는 자신의 요구에 맞춤화된 AI 도구를 사용하는 학생들이 전통적인 교실의 학생들보다 훨씬 빠르게 학습할 수 있음을 보여 주기도 한다. 그러나 구현의 세부 사항이 중요하며, 기업은 교육자, 학교 행정가, 학계 전문가와 협력하여 건설적인 학습 환경을 조성하고 부정적이거나 주의를 산만하게 하는 사용을 피하는 것이 매우 중요하다. 어린 사용자에게 힘을 실어 주기 위해, 플랫폼은 AI 리터러시를 기르고 기술의 한계를 가르쳐 주는 맞춤형 온보딩 경험과 청소년 친화적인 프롬프트도 포함해야 한다.",
+   "marks": [
+    {
+     "t": "AI 도구가 학생들의 에세이 부정행위나 '인지적 오프로딩(cognitive offloading)'을 돕는 위험이 나타나고 있지만",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "There are also concerns that this new generation of AI tools might echo some of the features and challenges of digital technology and social media that have sparked a prior generation of concerns. Of course AI tools differ in important respects, and it's important not to fight the last war. But as conversational AI becomes more common, companies should follow strict guidelines for such interactions informed by child development experts.",
+   "ko": "또한 이 새로운 세대의 AI 도구가 이전 세대의 우려를 불러일으켰던 디지털 기술과 소셜 미디어의 일부 특징과 과제를 되풀이할 수 있다는 우려도 있다. 물론 AI 도구는 중요한 측면에서 다르며, 지난 전쟁의 방식으로 싸우지 않는 것이 중요하다. 그러나 대화형 인공지능이 더욱 보편화됨에 따라, 기업은 아동 발달 전문가의 의견을 반영한 엄격한 지침을 이러한 상호작용에 적용해야 한다.",
+   "marks": [
+    {
+     "t": "이전 세대의 우려를 불러일으켰던 디지털 기술과 소셜 미디어의 일부 특징과 과제를 되풀이할 수 있다는 우려",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI platforms should be required to take reasonable measures to feature persistent disclaimers, filter out sexually explicit or romantic content, avoid claims the model is a person (and regularly point out that it's not), and not promote emotional dependency. Platforms should be required to ban unpredictable, engagement-focused rewards and gamification techniques that encourage unhealthy usage patterns for kids.",
+   "ko": "AI 플랫폼에는 지속적인 고지 문구를 표시하고, 성적으로 노골적이거나 연애적인 콘텐츠를 걸러 내며, 모델이 사람이라고 주장하지 않고(그리고 사람이 아니라는 점을 정기적으로 알리고), 정서적 의존을 조장하지 않도록 합리적인 조치를 취할 의무가 부과되어야 한다. 플랫폼에는 아동의 건강하지 않은 사용 패턴을 부추기는 예측 불가능한 참여 중심 보상과 게임화(gamification) 기법을 금지할 의무가 부과되어야 한다.",
+   "marks": [
+    {
+     "t": "성적으로 노골적이거나 연애적인 콘텐츠를 걸러 내며, 모델이 사람이라고 주장하지 않고",
+     "k": "safety"
+    },
+    {
+     "t": "정서적 의존을 조장하지 않도록 합리적인 조치를 취할 의무가 부과되어야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "아동의 건강하지 않은 사용 패턴을 부추기는 예측 불가능한 참여 중심 보상과 게임화(gamification) 기법을 금지할 의무",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Federal regulation should also require that chatbots integrate robust suicide and self-harm protocols directly into AI systems. When a user searches or prompts for concerning topics the chatbot should pause the query and present \"crisis resource pages,\" coordinating directly with lifeline services.",
+   "ko": "연방 규제는 또한 챗봇이 강력한 자살 및 자해 대응 프로토콜을 AI 시스템에 직접 통합하도록 요구해야 한다. 사용자가 우려스러운 주제를 검색하거나 프롬프트로 입력하면, 챗봇은 해당 질의를 중단하고 \"위기 지원 자원 페이지\"를 제시하며 생명의 전화 서비스와 직접 연계해야 한다.",
+   "marks": [
+    {
+     "t": "챗봇이 강력한 자살 및 자해 대응 프로토콜을 AI 시스템에 직접 통합하도록 요구해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "A principled and research-backed approach to kids' experiences with AI could form the foundation for operational, design, and reporting requirements focused on specific features of concern. Interaction disclosures, emotional dependency protections, tailored content restrictions, bans on gamified engagement, and self-harm interventions should all be considered as part of government-mandated child safety regulation for AI.",
+   "ko": "아동의 AI 경험에 대한 원칙에 기반하고 연구로 뒷받침되는 접근 방식은 우려되는 특정 기능에 초점을 맞춘 운영, 설계, 보고 요건의 토대가 될 수 있다. 상호작용 고지, 정서적 의존 보호 조치, 맞춤형 콘텐츠 제한, 게임화된 참여 유도 금지, 자해 관련 개입은 모두 정부가 의무화하는 AI 아동 안전 규제의 일부로 고려되어야 한다.",
+   "marks": [
+    {
+     "t": "상호작용 고지, 정서적 의존 보호 조치, 맞춤형 콘텐츠 제한, 게임화된 참여 유도 금지, 자해 관련 개입은 모두 정부가 의무화하는 AI 아동 안전 규제의 일부로 고려되어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Modern energy infrastructure and data center ecosystems",
+   "ko": "현대적 에너지 인프라와 데이터센터 생태계",
+   "id": "s86"
+  },
+  {
+   "type": "p",
+   "en": "America needs to build an energy system that is equipped to meet tomorrow's opportunities smarter, cleaner, more affordable, and more reliable than ever before. Achieving this vision requires a generational shift in the pace and scale at which we construct energy infrastructure - an 'Eisenhower Highway Program' for the American electric grid.",
+   "ko": "미국은 그 어느 때보다 더 스마트하고, 더 깨끗하며, 더 저렴하고, 더 신뢰할 수 있는 방식으로 미래의 기회에 대응할 수 있는 에너지 시스템을 구축해야 한다. 이 비전을 실현하려면 에너지 인프라를 건설하는 속도와 규모에서 세대적 전환, 즉 미국 전력망을 위한 '아이젠하워 고속도로 계획'(Eisenhower Highway Program)이 필요하다."
+  },
+  {
+   "type": "p",
+   "en": "Data centers and associated power generation are essential components of realizing the opportunity to create a better electric grid. Research shows that data center growth can actually reduce electricity rates and create a more affordable energy system for all Americans, by spreading the fixed costs of the energy grid across a larger volume of energy use. But America also needs legislation that unlocks our ability to build power generation and transmission infrastructure at pace and scale. That's why we support comprehensive federal permitting reform legislation that can speed infrastructure construction while protecting the environment, unlock development of critical transmission lines to power growth, and establish permitting certainty for energy generation projects. Our U.S. energy policy agenda lays out a comprehensive framework for powering American growth while protecting affordability.",
+   "ko": "데이터센터와 관련 발전 설비는 더 나은 전력망을 만들 기회를 실현하는 데 필수적인 구성 요소이다. 연구에 따르면, 데이터센터의 성장은 에너지망의 고정비용을 더 많은 에너지 사용량에 분산시킴으로써 실제로 전기 요금을 낮추고 모든 미국인에게 더 저렴한 에너지 시스템을 만들 수 있다. 그러나 미국에는 발전 및 송전 인프라를 신속하고 대규모로 건설할 수 있는 역량을 열어 줄 입법도 필요하다. 이에 우리는 환경을 보호하면서 인프라 건설을 가속화하고, 성장에 전력을 공급할 핵심 송전선 개발을 가능하게 하며, 발전 프로젝트에 대한 인허가 확실성을 확립할 수 있는 포괄적인 연방 인허가 개혁 법안을 지지한다. 우리의 미국 에너지 정책 의제는 요금 부담 완화를 지키면서 미국의 성장에 전력을 공급하기 위한 포괄적인 프레임워크를 제시한다.",
+   "marks": [
+    {
+     "t": "포괄적인 연방 인허가 개혁 법안을 지지한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Data centers power the technology America relies on - everything from online banking to hospitals and 911 systems. The question is not data centers or no data centers, but how to build data centers the right way, responsibly and in partnership with communities. That entails:",
+   "ko": "데이터센터는 온라인 뱅킹에서 병원, 911 시스템에 이르기까지 미국이 의존하는 기술에 동력을 공급한다. 문제는 데이터센터를 지을 것인가 말 것인가가 아니라, 어떻게 책임감 있게, 그리고 지역사회와 협력하여 올바른 방식으로 데이터센터를 건설할 것인가이다. 여기에는 다음이 수반된다.",
+   "marks": [
+    {
+     "t": "어떻게 책임감 있게, 그리고 지역사회와 협력하여 올바른 방식으로 데이터센터를 건설할 것인가이다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Expanding energy capacity for each new data center, because energy growth and ratepayer protection go hand-in-hand.",
+   "ko": "신규 데이터센터마다 에너지 용량을 확충한다. 에너지 증대와 요금 납부자 보호는 함께 가기 때문이다."
+  },
+  {
+   "type": "li",
+   "en": "Paying for energy and infrastructure , and not passing on costs to others. Long-term energy commitments should have built-in safeguards for local residents.",
+   "ko": "에너지와 인프라 비용을 부담하고, 그 비용을 타인에게 전가하지 않는다. 장기 에너지 약정에는 지역 주민을 위한 안전장치가 내장되어야 한다."
+  },
+  {
+   "type": "li",
+   "en": "Supporting local communities . Being a good neighbor means investing in the things that matter most - local jobs, schools, nonprofits, and the responsible stewardship of shared resources.",
+   "ko": "지역사회를 지원한다. 좋은 이웃이 된다는 것은 지역 일자리, 학교, 비영리 단체, 공유 자원의 책임 있는 관리 등 가장 중요한 것에 투자하는 것을 의미한다."
+  },
+  {
+   "type": "p",
+   "en": "Google has signed up for the Ratepayer Protection Pledge, and supports enacting its provisions into federal law. Structures like the Capacity Commitment Framework and the Clean Transition Tariff help ensure that the costs of growth do not fall on other customers. These frameworks operate in multiple states and we continue to work with energy sector partners and policy makers to roll them out across the country.",
+   "ko": "Google은 Ratepayer Protection Pledge에 서명했으며, 그 조항을 연방법으로 제정하는 것을 지지한다. Capacity Commitment Framework와 Clean Transition Tariff 같은 구조는 성장에 따른 비용이 다른 고객에게 전가되지 않도록 하는 데 도움이 된다. 이러한 프레임워크는 여러 주에서 운영되고 있으며, 우리는 이를 전국으로 확대하기 위해 에너지 부문 파트너 및 정책 입안자들과 계속 협력하고 있다."
+  },
+  {
+   "type": "p",
+   "en": "The industry will need to drive data center efficiency at every level of the AI stack - from models to chips to data centers - as well as adding new energy to the grid to meet growing energy needs. Google has spent more than a decade contracting to add nearly 35 gigawatts of power to global grids - enough new capacity to power over 28 million American homes. We are also working to accelerate the next generation of energy technologies - advanced nuclear, natural gas with carbon capture, demand response, virtual power plants, fusion energy, geothermal, long-duration storage, and more - to assure a reliable, clean, and abundant supply of energy.",
+   "ko": "업계는 증가하는 에너지 수요를 충족하기 위해 전력망에 새로운 에너지를 추가하는 것과 더불어, 모델에서 칩, 데이터센터에 이르기까지 AI 스택의 모든 수준에서 데이터센터 효율성을 높여야 할 것이다. Google은 10년 넘게 전 세계 전력망에 약 35기가와트의 전력을 추가하는 계약을 체결해 왔으며, 이는 2,800만 가구 이상의 미국 가정에 전력을 공급하기에 충분한 신규 용량이다. 우리는 또한 신뢰할 수 있고 깨끗하며 풍부한 에너지 공급을 보장하기 위해 첨단 원자력, 탄소 포집을 결합한 천연가스, 수요 반응, 가상 발전소, 핵융합 에너지, 지열, 장주기 저장 등 차세대 에너지 기술을 가속화하기 위해 노력하고 있다."
+  },
+  {
+   "type": "p",
+   "en": "And energy is only one part of the picture. Robust water stewardship practices are another core component of our responsible growth strategy. That's why Google has committed to replenishing more water than we consume at our sites by 2030, and we encourage others to adopt similar practices.",
+   "ko": "에너지는 전체 그림의 일부일 뿐이다. 견고한 물 관리 실행 방안은 우리의 책임 있는 성장 전략의 또 다른 핵심 구성 요소이다. 이에 Google은 2030년까지 사업장에서 소비하는 것보다 더 많은 물을 보충하겠다는 약정을 했으며, 다른 기업들도 유사한 실행 방안을 채택할 것을 권장한다."
+  },
+  {
+   "type": "p",
+   "en": "Finally, leading companies are increasingly looking to help build the workforce of skilled tradespeople that are essential to constructing and maintaining the electrical infrastructure America needs - from the welders and pipefitters securing complex cooling systems, to the electricians and fiber technicians powering advanced network grids.",
+   "ko": "마지막으로, 선도 기업들은 복잡한 냉각 시스템을 설치하는 용접공과 배관공부터 첨단 네트워크망에 동력을 공급하는 전기 기술자와 광섬유 기술자에 이르기까지, 미국에 필요한 전기 인프라를 건설하고 유지하는 데 필수적인 숙련 기능 인력 양성을 지원하는 데 점점 더 관심을 기울이고 있다."
+  },
+  {
+   "type": "h2",
+   "en": "Provenance and information integrity",
+   "ko": "출처(provenance)와 정보 무결성",
+   "id": "s97"
+  },
+  {
+   "type": "p",
+   "en": "AI, particularly high-quality image and video generation, has renewed debate in the U.S. about the authenticity of content and the resulting quality of information exchange. As generative media becomes more advanced and accessible, it's helpful to know where content comes from, and whether it's been altered. We need a mix of policy and technical solutions to help verify whether content is generated or modified by AI in materially misleading ways, as well as providing other helpful context relevant to the origin and authenticity of content.",
+   "ko": "AI, 특히 고품질 이미지 및 동영상 생성은 미국에서 콘텐츠의 진위와 그에 따른 정보 교류의 질에 관한 논쟁을 다시 불러일으켰다. 생성형 미디어가 더욱 발전하고 접근하기 쉬워짐에 따라, 콘텐츠가 어디에서 왔는지, 그리고 변경되었는지 여부를 아는 것이 도움이 된다. 콘텐츠가 실질적으로 오해를 불러일으키는 방식으로 AI에 의해 생성되거나 수정되었는지를 검증하고, 콘텐츠의 출처와 진위와 관련된 기타 유용한 맥락을 제공하는 데 도움이 되는 정책적·기술적 해결책의 조합이 필요하다.",
+   "marks": [
+    {
+     "t": "콘텐츠가 실질적으로 오해를 불러일으키는 방식으로 AI에 의해 생성되거나 수정되었는지를 검증하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "That will take a holistic approach that gives users tools and information to make informed decisions about content and its context, from the hardware where an image is captured to the platforms where it's displayed. Addressing these challenges requires robust, scalable, cross-industry solutions that provide transparency without hindering innovation. Federal regulation requiring reasonable measures to implement machine-readable, tamper-resistant watermarking and cryptographic metadata standards for generative AI services is an essential part of such efforts.",
+   "ko": "그러려면 이미지가 촬영되는 하드웨어부터 그것이 표시되는 플랫폼에 이르기까지, 사용자가 콘텐츠와 그 맥락에 대해 정보에 입각한 결정을 내릴 수 있도록 도구와 정보를 제공하는 총체적 접근이 필요하다. 이러한 과제를 해결하려면 혁신을 저해하지 않으면서 투명성을 제공하는 견고하고 확장 가능한 업계 전반의 해결책이 필요하다. 생성형 AI 서비스에 기계 판독 가능하고 변조 방지가 가능한 워터마킹 및 암호화 메타데이터 표준을 구현하기 위한 합리적 조치를 요구하는 연방 규제는 이러한 노력의 필수적인 부분이다.",
+   "marks": [
+    {
+     "t": "생성형 AI 서비스에 기계 판독 가능하고 변조 방지가 가능한 워터마킹 및 암호화 메타데이터 표준을 구현하기 위한 합리적 조치를 요구하는 연방 규제는 이러한 노력의 필수적인 부분이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To ensure transparency remains meaningful, we will need to differentiate between routine, harmless AI edits (like red-eye reduction or stock backgrounds) and genuinely deceptive content. Failing to make this distinction risks accelerating a crisis of information fatigue. Regulatory frameworks should also avoid defaulting to mere labels. A labeling strategy that is not applied responsibly can lead users to incorrectly conclude that any unlabeled content is 'real' or more trustworthy. Instead, we should use provenance signals to surface helpful information to users. For example, content-sharing platforms can read signals like C2PA Content Credentials and share them with users through techniques like labels and visible metadata. Ultimately, effective transparency will be contextual, not merely technical, and regulation should prioritize a holistic approach to information integrity.",
+   "ko": "투명성이 계속 의미를 갖도록 하려면, 일상적이고 무해한 AI 편집(적목 현상 보정이나 스톡 배경 등)과 실제로 기만적인 콘텐츠를 구별해야 한다. 이러한 구별을 하지 못하면 정보 피로(information fatigue)의 위기를 가속화할 위험이 있다. 규제 프레임워크는 또한 단순한 라벨에 기본적으로 의존하는 것을 피해야 한다. 책임 있게 적용되지 않는 라벨링 전략은 사용자가 라벨이 없는 콘텐츠는 모두 '진짜'이거나 더 신뢰할 만하다고 잘못 결론 내리게 만들 수 있다. 대신, 출처 신호를 활용하여 사용자에게 유용한 정보를 제시해야 한다. 예를 들어, 콘텐츠 공유 플랫폼은 C2PA Content Credentials와 같은 신호를 읽고 라벨이나 가시적 메타데이터 같은 기법을 통해 이를 사용자와 공유할 수 있다. 궁극적으로 효과적인 투명성은 단순히 기술적인 것이 아니라 맥락적인 것이며, 규제는 정보 무결성에 대한 총체적 접근을 우선시해야 한다.",
+   "marks": [
+    {
+     "t": "일상적이고 무해한 AI 편집(적목 현상 보정이나 스톡 배경 등)과 실제로 기만적인 콘텐츠를 구별해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "사용자가 라벨이 없는 콘텐츠는 모두 '진짜'이거나 더 신뢰할 만하다고 잘못 결론 내리게 만들 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "규제는 정보 무결성에 대한 총체적 접근을 우선시해야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We've been pleased at the cross-industry support for our SynthID digital watermarking technology, and proud of our collaboration to develop the cross-industry C2PA Content Credentials specification . Generative AI systems designed to provide information to the public should embed these kinds of provenance data in video, image, and audio content, and use commonly supported technical standards for watermarking or metadata.",
+   "ko": "우리는 SynthID 디지털 워터마킹 기술에 대한 업계 전반의 지지를 기쁘게 생각하며, 업계 공통의 C2PA Content Credentials 명세 개발을 위한 협력을 자랑스럽게 여긴다. 대중에게 정보를 제공하도록 설계된 생성형 AI 시스템은 동영상, 이미지, 오디오 콘텐츠에 이러한 종류의 출처 데이터를 내장하고, 워터마킹 또는 메타데이터에 대해 널리 지원되는 기술 표준을 사용해야 한다.",
+   "marks": [
+    {
+     "t": "동영상, 이미지, 오디오 콘텐츠에 이러한 종류의 출처 데이터를 내장하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Creativity, copyright, and the AI value exchange",
+   "ko": "창의성, 저작권, 그리고 AI 가치 교환",
+   "id": "s102"
+  },
+  {
+   "type": "p",
+   "en": "Balanced copyright frameworks enable innovation while providing the certainty required for AI model providers and rights holders to collaborate on mutually beneficial partnerships and commercial agreements. Using publicly available web data for training models is a transformative, non-expressive use - like an art student taking inspiration from walking through a gallery - that should remain protected under fair use in the U.S. and text-and-data-mining exceptions abroad. While this use is legally protected, responsible model developers should give website owners choice and control over whether their content is used in model development via simple, machine-readable robots.txt tags, like the Google-Extended control. Such controls enable markets to work and allocate value where appropriate.",
+   "ko": "균형 잡힌 저작권 프레임워크는 혁신을 가능하게 하는 동시에, AI 모델 제공자와 권리자가 상호 이익이 되는 파트너십과 상업적 계약을 위해 협력하는 데 필요한 확실성을 제공한다. 공개적으로 이용 가능한 웹 데이터를 모델 학습에 사용하는 것은 미술 학도가 갤러리를 거닐며 영감을 얻는 것과 같은 변형적이고 비표현적인 이용이며, 미국에서는 공정 이용으로, 해외에서는 텍스트 및 데이터 마이닝 예외로 계속 보호받아야 한다. 이러한 이용은 법적으로 보호되지만, 책임 있는 모델 개발자는 Google-Extended 통제와 같은 간단하고 기계 판독 가능한 robots.txt 태그를 통해 웹사이트 소유자에게 자신의 콘텐츠가 모델 개발에 사용되는지 여부에 대한 선택권과 통제권을 부여해야 한다. 이러한 통제 수단은 시장이 작동하고 적절한 곳에 가치를 배분할 수 있게 한다.",
+   "marks": [
+    {
+     "t": "미국에서는 공정 이용으로, 해외에서는 텍스트 및 데이터 마이닝 예외로 계속 보호받아야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "At the same time, companies developing and deploying AI broadly should recognize rights holders' desires to find beneficial pathways for creative professionals and knowledge workers. Like other platforms and AI model developers, Google is exploring new types of partnership and value-exchange models. For instance, we are piloting novel ways to partner with websites whose content meaningfully contributes to the freshness and factuality of generative AI responses through the process of grounding. We have also entered into deals in which we are paying for access to and delivery of diverse types of specialized, non-public content, including creative and educational content. Collaborations like these are the ones most likely to be sustainable for developers and meaningful for the ecosystem.",
+   "ko": "동시에, AI를 개발하고 광범위하게 배포하는 기업은 창작 전문가와 지식 노동자를 위한 유익한 경로를 찾고자 하는 권리자들의 바람을 인식해야 한다. 다른 플랫폼 및 AI 모델 개발자와 마찬가지로, Google은 새로운 유형의 파트너십과 가치 교환 모델을 모색하고 있다. 예를 들어, 우리는 그라운딩(grounding) 과정을 통해 생성형 AI 응답의 최신성과 사실성에 의미 있게 기여하는 콘텐츠를 보유한 웹사이트와 협력하는 새로운 방식을 시범 운영하고 있다. 또한 창작 및 교육 콘텐츠를 포함하여 다양한 유형의 전문적인 비공개 콘텐츠에 대한 접근과 제공에 대가를 지불하는 계약도 체결했다. 이와 같은 협력이야말로 개발자에게 지속 가능하고 생태계에 의미 있을 가능성이 가장 높다."
+  },
+  {
+   "type": "p",
+   "en": "In addressing copyright concerns, the focus should again be on outputs - in this case, whether a specific image or piece of text actually copies an existing work, regardless of how it was created. Technical safeguards can help prevent models from generating outputs that reproduce works they were trained on. However, to protect the open space needed for new forms of creative expression, it is important that filters do not try to automate subjective decisions like whether something is 'too similar' to a prior work. Here, the appropriate mechanism is through established notice-and-action frameworks that use standard reporting and takedown mechanisms to remove infringing content. We have also supported regulatory proposals that can help protect individual voices and likenesses by establishing a balanced national standard against unauthorized digital replicas.",
+   "ko": "저작권 우려를 다룰 때에도 초점은 다시 출력물에 맞춰져야 한다. 즉, 이 경우에는 특정 이미지나 텍스트가 어떻게 만들어졌는지와 관계없이 실제로 기존 저작물을 복제하는지 여부이다. 기술적 안전장치는 모델이 학습한 저작물을 재현하는 출력물을 생성하지 않도록 방지하는 데 도움이 될 수 있다. 그러나 새로운 형태의 창작적 표현에 필요한 열린 공간을 보호하기 위해서는, 필터가 어떤 것이 기존 저작물과 '지나치게 유사한지' 같은 주관적 판단을 자동화하려 하지 않는 것이 중요하다. 여기서 적절한 메커니즘은 표준적인 신고 및 삭제 메커니즘을 활용하여 침해 콘텐츠를 제거하는, 확립된 통지 및 조치(notice-and-action) 프레임워크이다. 우리는 또한 무단 디지털 복제물에 대한 균형 잡힌 국가 표준을 수립함으로써 개인의 목소리와 초상을 보호하는 데 도움이 될 수 있는 규제 제안을 지지해 왔다.",
+   "marks": [
+    {
+     "t": "저작권 우려를 다룰 때에도 초점은 다시 출력물에 맞춰져야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "기술적 안전장치는 모델이 학습한 저작물을 재현하는 출력물을 생성하지 않도록 방지하는 데 도움이 될 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "무단 디지털 복제물에 대한 균형 잡힌 국가 표준을 수립함으로써 개인의 목소리와 초상을 보호하는 데 도움이 될 수 있는 규제 제안을 지지해 왔다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Generative AI is a powerful tool for human creativity. When a user prompts, selects, and refines an AI tool's output, they can engage in a creative act. We see this next chapter as an expansionary opportunity for human creativity, and balanced copyright frameworks are a key to enabling that transition.",
+   "ko": "생성형 AI는 인간의 창의성을 위한 강력한 도구이다. 사용자가 AI 도구의 출력물을 프롬프트로 지시하고, 선택하고, 다듬을 때, 그들은 창작 행위에 참여할 수 있다. 우리는 이 새로운 장을 인간 창의성의 확장 기회로 보며, 균형 잡힌 저작권 프레임워크는 그러한 전환을 가능하게 하는 핵심이다."
+  },
+  {
+   "type": "h2",
+   "en": "Protecting privacy",
+   "ko": "프라이버시 보호",
+   "id": "s107"
+  },
+  {
+   "type": "p",
+   "en": "Precisely because consumer AI models are so responsive to individual user prompts, users need to be confident that their data will remain secure. User data should be protected at each stage of AI development and deployment, from when a model is created through when it is adapted and distributed. And as AI becomes woven into daily life, users' reasonable expectations for personalization and privacy are also evolving. People are prepared to share more specific information precisely because they get greater benefit when they do so. As innovation evolves, so should privacy rules. This requires a shift from 'privacy by design' toward \"privacy by innovation,\" where developers and deployers compete on responsiveness and privacy as core aspects of product quality, empowering users with new forms of transparency and control.",
+   "ko": "소비자용 AI 모델은 개별 사용자의 프롬프트에 매우 민감하게 반응하기 때문에, 바로 그 이유로 사용자는 자신의 데이터가 안전하게 유지될 것이라고 확신할 수 있어야 한다. 사용자 데이터는 모델이 만들어질 때부터 조정되고 배포될 때까지 AI 개발과 배포의 각 단계에서 보호되어야 한다. 그리고 AI가 일상생활에 녹아들면서, 개인화와 프라이버시에 대한 사용자의 합리적 기대 또한 변화하고 있다. 사람들은 더 구체적인 정보를 공유할 때 더 큰 혜택을 얻기 때문에 바로 그런 정보를 공유할 준비가 되어 있다. 혁신이 진화함에 따라 프라이버시 규칙도 진화해야 한다. 이를 위해서는 '프라이버시 중심 설계(privacy by design)'에서 \"혁신을 통한 프라이버시(privacy by innovation)\"로의 전환이 필요하다. 이는 개발자와 배포자가 응답성과 프라이버시를 제품 품질의 핵심 요소로 삼아 경쟁하고, 새로운 형태의 투명성과 통제를 통해 사용자에게 권한을 부여하는 것이다.",
+   "marks": [
+    {
+     "t": "사용자 데이터는 모델이 만들어질 때부터 조정되고 배포될 때까지 AI 개발과 배포의 각 단계에서 보호되어야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "'프라이버시 중심 설계(privacy by design)'에서 \"혁신을 통한 프라이버시(privacy by innovation)\"로의 전환이 필요하다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The federal government should build on the tried-and-tested foundations of existing privacy laws to guide responsible development practices, including through new technical standards. Experts in AI and privacy can advise on the prospects for privacy-enhancing technologies (PETs) like 'zero-knowledge proof' tools. Regulatory incentives for investing in and deploying PETs can spur innovation while reinforcing trust across the global digital ecosystem. More work is needed to explore concepts like contextual integrity, where data is handled appropriately to the context of the interaction. And the privacy community should explore ways to embed privacy principles like data minimization and user control into the agentic ecosystem and protocols.",
+   "ko": "연방 정부는 새로운 기술 표준을 포함하여 책임 있는 개발 실행 방안을 이끌기 위해, 기존 프라이버시 법률이라는 검증된 기반 위에 구축해야 한다. AI 및 프라이버시 전문가들은 '영지식 증명(zero-knowledge proof)' 도구와 같은 개인정보보호 강화 기술(PETs)의 전망에 대해 조언할 수 있다. 개인정보보호 강화 기술(PETs)에 대한 투자와 배포를 장려하는 규제 인센티브는 혁신을 촉진하는 동시에 글로벌 디지털 생태계 전반의 신뢰를 강화할 수 있다. 상호작용의 맥락에 적절하게 데이터를 처리하는 맥락적 무결성(contextual integrity)과 같은 개념을 탐구하기 위해 더 많은 작업이 필요하다. 그리고 프라이버시 커뮤니티는 데이터 최소화와 사용자 통제 같은 프라이버시 원칙을 에이전트형 생태계와 프로토콜에 내장하는 방안을 모색해야 한다.",
+   "marks": [
+    {
+     "t": "연방 정부는 새로운 기술 표준을 포함하여 책임 있는 개발 실행 방안을 이끌기 위해, 기존 프라이버시 법률이라는 검증된 기반 위에 구축해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "데이터 최소화와 사용자 통제 같은 프라이버시 원칙을 에이전트형 생태계와 프로토콜에 내장하는 방안을 모색해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Conclusion",
+   "ko": "결론",
+   "id": "s110"
+  },
+  {
+   "type": "p",
+   "en": "As the Collingridge Dilemma reminds us, it is possible to regulate new technologies too soon or too late, and errors in either direction come at a cost. To solve this dilemma now, the U.S. federal government should focus on data-driven regulatory approaches, not guesswork.",
+   "ko": "Collingridge Dilemma가 일깨워 주듯이, 새로운 기술은 너무 이르게 또는 너무 늦게 규제될 수 있으며, 어느 방향으로든 오류에는 대가가 따른다. 지금 이 딜레마를 해결하기 위해 미국 연방 정부는 추측이 아닌 데이터 기반의 규제 접근 방식에 집중해야 한다.",
+   "marks": [
+    {
+     "t": "새로운 기술은 너무 이르게 또는 너무 늦게 규제될 수 있으며, 어느 방향으로든 오류에는 대가가 따른다",
+     "k": "safety"
+    },
+    {
+     "t": "미국 연방 정부는 추측이 아닌 데이터 기반의 규제 접근 방식에 집중해야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "A federally overseen frontier AI regulatory organization, coupled with targeted policies for widely deployed AI models, can address both national security and consumer protection risks while promoting economic, scientific, and social progress. Achieving this vision depends on proactive, evidence-based collaboration among policymakers, industry leaders, and civil society. Together, we can build a secure and prosperous future where technological advances enhance human capability and contribute to human flourishing.",
+   "ko": "연방 정부가 감독하는 프론티어 AI 규제 기구는, 광범위하게 배포된 AI 모델에 대한 표적화된 정책과 결합될 때, 경제적·과학적·사회적 진보를 촉진하면서 국가안보와 소비자 보호 위험을 모두 다룰 수 있다. 이러한 비전의 실현은 정책 입안자, 업계 리더, 시민사회 간의 선제적이고 증거 기반의 협력에 달려 있다. 우리는 함께 기술 발전이 인간의 역량을 강화하고 인간의 번영에 기여하는 안전하고 번영하는 미래를 만들어 갈 수 있다.",
+   "marks": [
+    {
+     "t": "연방 정부가 감독하는 프론티어 AI 규제 기구는",
+     "k": "safety"
+    },
+    {
+     "t": "국가안보와 소비자 보호 위험을 모두 다룰 수 있다",
+     "k": "key"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,725 @@
+{
+ "slug": "anthropic-economic-policy-framework-2026-06",
+ "title": "Anthropic 경제 정책 프레임워크",
+ "original_title": "Anthropic's Economic Policy Framework",
+ "publisher": "Anthropic",
+ "published": "2026-06-11",
+ "source_url": "https://www-cdn.anthropic.com/files/4zrzovbb/website/9ea607a5dd67c168093829b701f3a0a6d21156d5.pdf",
+ "source_note": "2026년 6월 공개된 PDF 전문.",
+ "source_label": "원문 보기 (PDF)",
+ "summary": "첨단 AI 프레임워크와 함께 낸 노동시장 대응 제안이다. AI가 인간 노동의 일반적 대체재가 될 수 있다는 전제에서, 핵심 과제를 성장 촉진이 아니라 이익의 폭넓은 분배로 본다. 실업률에 따라 기준선(약 5%), 불황 수준(약 10%), 역사적 정점을 넘는 전환적 충격의 세 단계로 나누어 단계별 정책 수단을 제시한다.",
+ "doc_kind": "정책 제안",
+ "translated": "2026-11-05",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/anthropic-economic-policy-framework-2026-06-cover.webp",
+ "og_image": "/images/translations/anthropic-economic-policy-framework-2026-06-cover.jpg",
+ "image_caption": "원문 표지",
+ "stats": {
+  "blocks": 65,
+  "sections": 11,
+  "items": 0,
+  "words_en": 3619
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Anthropic's Economic Policy Framework",
+   "ko": "Anthropic 경제 정책 프레임워크",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "June 2026",
+   "ko": "2026년 6월"
+  },
+  {
+   "type": "p",
+   "en": "We're still early in AI's adoption, but evidence from the US already suggests that entry-level workers in occupations most exposed to AI have seen weaker employment growth in recent years.[^1]  Economists' models of the future range from modest productivity-driven growth[^2]  to scenarios where economic output doubles but wages collapse.[^3]",
+   "ko": "AI 도입은 아직 초기 단계이지만, 미국의 증거는 AI에 가장 많이 노출된 직종의 신입 근로자들이 최근 몇 년간 더 약한 고용 증가세를 보였음을 이미 시사한다.[^1]  미래에 대한 경제학자들의 모형은 생산성 주도의 완만한 성장[^2] 부터 경제 산출이 두 배로 늘어나지만 임금은 붕괴하는 시나리오까지 다양하다.[^3]",
+   "marks": [
+    {
+     "t": "경제 산출이 두 배로 늘어나지만 임금은 붕괴하는 시나리오",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "If AI capabilities continue to advance, AI may become a general substitute for human labor, with effects on work that are broad and, for many, difficult to absorb. At the same time, AI could generate economic growth on a scale the modern world hasn't seen. The central challenge isn't how to stimulate growth; it is making sure the gains are widely shared.",
+   "ko": "AI 역량이 계속 발전한다면, AI는 인간 노동의 전반적 대체재(general substitute)가 될 수 있으며, 일자리에 미치는 영향은 광범위하고 많은 이들에게 감당하기 어려운 것이 될 수 있다. 동시에 AI는 현대 세계가 경험하지 못한 규모의 경제 성장을 창출할 수 있다. 핵심 과제는 성장을 어떻게 촉진하느냐가 아니라, 그 이익이 널리 공유되도록 보장하는 것이다.",
+   "marks": [
+    {
+     "t": "AI는 인간 노동의 전반적 대체재(general substitute)가 될 수 있으며, 일자리에 미치는 영향은 광범위하고 많은 이들에게 감당하기 어려운 것이 될 수 있다",
+     "k": "key"
+    },
+    {
+     "t": "핵심 과제는 성장을 어떻게 촉진하느냐가 아니라, 그 이익이 널리 공유되도록 보장하는 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Our values",
+   "ko": "우리의 가치",
+   "id": "s4"
+  },
+  {
+   "type": "p",
+   "en": "We are not seeking job displacement. We are working to prevent or minimize it. Some amount of displacement, though we cannot say how much, may be an intrinsic consequence of the technology, and our responsibility is to prepare for it and respond to it. That is what this framework is for.",
+   "ko": "우리는 일자리 대체(job displacement)를 추구하지 않는다. 우리는 이를 방지하거나 최소화하기 위해 노력하고 있다. 얼마나 될지는 말할 수 없지만, 어느 정도의 대체는 이 기술의 본질적 결과일 수 있으며, 우리의 책임은 이에 대비하고 대응하는 것이다. 이 프레임워크는 바로 그것을 위한 것이다.",
+   "marks": [
+    {
+     "t": "어느 정도의 대체는 이 기술의 본질적 결과일 수 있으며, 우리의 책임은 이에 대비하고 대응하는 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Supporting people financially is necessary, and it is the primary focus of this document because it is the more tractable of the two problems. It is not sufficient. There is dignity in work. We should help people find work wherever we can, and society should keep searching for ways to remain at full employment.",
+   "ko": "사람들을 재정적으로 지원하는 것은 필요하며, 두 문제 중 더 다루기 쉬운 문제이기 때문에 이 문서의 주된 초점이다. 그러나 그것만으로는 충분하지 않다. 일에는 존엄이 있다. 우리는 가능한 모든 곳에서 사람들이 일자리를 찾도록 도와야 하며, 사회는 완전고용을 유지할 방법을 계속 모색해야 한다."
+  },
+  {
+   "type": "p",
+   "en": "At the same time, people are more than their jobs. Over a longer horizon, AI may move society toward a world in which people work far less, or in which work carries a different meaning than it does today. Changes of that scale would reach beyond labor policy into how society is organized and how it relates to work.",
+   "ko": "동시에 사람은 직업 이상의 존재이다. 더 긴 시간 지평에서 보면, AI는 사람들이 훨씬 적게 일하거나 일이 오늘날과는 다른 의미를 갖는 세계로 사회를 이끌 수 있다. 그러한 규모의 변화는 노동 정책을 넘어 사회가 조직되는 방식과 사회가 일과 관계 맺는 방식에까지 미칠 것이다.",
+   "marks": [
+    {
+     "t": "AI는 사람들이 훨씬 적게 일하거나 일이 오늘날과는 다른 의미를 갖는 세계로 사회를 이끌 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Whatever happens, we are on the side of people. We are trying to solve these problems. We take no satisfaction in contributing to them, and we are not working to make them more likely.",
+   "ko": "무슨 일이 일어나든 우리는 사람들의 편에 선다. 우리는 이러한 문제를 해결하려 노력하고 있다. 우리는 이러한 문제에 기여하는 데서 어떠한 만족도 얻지 않으며, 그러한 문제가 발생할 가능성을 높이기 위해 일하고 있지도 않다.",
+   "marks": [
+    {
+     "t": "무슨 일이 일어나든 우리는 사람들의 편에 선다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "About this framework",
+   "ko": "이 프레임워크에 관하여",
+   "id": "s9"
+  },
+  {
+   "type": "p",
+   "en": "This document sets out an initial framework for US policy responses, organized by how severe the impact on jobs turns out to be. It separates the steps that make sense now in almost any scenario from the responses worth having ready if conditions worsen, and from the harder questions where research and dialogue should inform decisions.",
+   "ko": "이 문서는 미국의 정책 대응을 위한 초기 프레임워크를 제시하며, 일자리에 미치는 영향이 얼마나 심각한 것으로 드러나는지에 따라 구성된다. 이 문서는 거의 모든 시나리오에서 지금 시행하는 것이 타당한 조치와, 상황이 악화될 경우에 대비해 준비해 둘 가치가 있는 대응, 그리고 연구와 대화를 바탕으로 결정해야 할 더 어려운 질문을 구분한다."
+  },
+  {
+   "type": "p",
+   "en": "We can't forecast with confidence where AI capabilities will be even a few years from now. The recommendations here are calibrated to what we expect from the broad diffusion of AI capabilities that exist today or will arrive within roughly the next year.",
+   "ko": "우리는 불과 몇 년 후에도 AI 역량이 어디에 이를지 확신을 갖고 예측할 수 없다. 여기서 제시하는 권고는 현재 존재하거나 대략 향후 1년 이내에 등장할 AI 역량의 광범위한 확산으로부터 우리가 예상하는 바에 맞추어 조정되었다.",
+   "marks": [
+    {
+     "t": "우리는 불과 몇 년 후에도 AI 역량이 어디에 이를지 확신을 갖고 예측할 수 없다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In the face of this uncertainty, our aim is to buy time-month by month, and year by year-by making the economy more flexible and resilient as AI accelerates, so that workers, firms, and governments have room to adapt. Whether an AI-fueled economy offers people new kinds of work, and whether workers can actually reach those opportunities, depends on the choices we as a society make. The economy has real capacity to adapt, but adaptation is not automatic.",
+   "ko": "이러한 불확실성 앞에서 우리의 목표는 AI가 가속화됨에 따라 경제를 더 유연하고 회복력 있게 만듦으로써 한 달 한 달, 한 해 한 해 시간을 벌어, 근로자·기업·정부가 적응할 여지를 갖도록 하는 것이다. AI가 주도하는 경제가 사람들에게 새로운 종류의 일을 제공할지, 그리고 근로자가 실제로 그러한 기회에 도달할 수 있을지는 우리가 사회로서 내리는 선택에 달려 있다. 경제는 실질적인 적응 능력을 갖추고 있지만, 적응이 자동으로 이루어지는 것은 아니다.",
+   "marks": [
+    {
+     "t": "경제를 더 유연하고 회복력 있게 만듦으로써 한 달 한 달, 한 해 한 해 시간을 벌어, 근로자·기업·정부가 적응할 여지를 갖도록 하는 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This document is focused on public policy, but governments are not the only actors whose choices matter. Firms, including Anthropic, will shape this transition by how they deploy AI, and where possible they should choose the path that gives workers and the economy room to adapt. AI can be used to produce the same output with fewer people, or to accomplish more with the same number of people: building new products, serving markets that were previously out of reach, and raising the capability of less-experienced workers.",
+   "ko": "이 문서는 공공 정책에 초점을 맞추지만, 그 선택이 중요한 행위자는 정부만이 아니다. Anthropic을 포함한 기업들은 AI를 어떻게 배포하느냐에 따라 이 전환의 양상을 결정할 것이며, 가능한 경우 근로자와 경제에 적응할 여지를 주는 경로를 선택해야 한다. AI는 더 적은 인원으로 같은 산출을 내는 데 쓰일 수도 있고, 같은 인원으로 더 많은 것을 달성하는 데 쓰일 수도 있다. 즉, 새로운 제품을 만들고, 이전에는 닿을 수 없었던 시장에 서비스를 제공하며, 경험이 적은 근로자의 역량을 높이는 데 쓰일 수 있다.",
+   "marks": [
+    {
+     "t": "Anthropic을 포함한 기업들은 AI를 어떻게 배포하느냐에 따라 이 전환의 양상을 결정할 것이며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "There are concrete steps firms can take. Companies adopting AI can build workforce training into deployment; decide in advance how freed-up capacity will be used, rather than defaulting to headcount reductions; retrain and redeploy people as roles change; and redesign early-career roles around AI. We are trying to make that path easier to take by providing training and enablement to our business customers alongside the technology, encouraging deployments that build worker capacity, giving them tools to measure their workforce's growing fluency, and building products that make the people using them more capable, not just faster.",
+   "ko": "기업이 취할 수 있는 구체적 조치가 있다. AI를 도입하는 기업은 배포 과정에 인력 교육을 포함할 수 있고, 인력 감축을 기본값으로 삼는 대신 확보된 여력을 어떻게 활용할지 사전에 결정할 수 있으며, 역할이 변화함에 따라 사람들을 재교육하고 재배치할 수 있고, AI를 중심으로 초기 경력 직무를 재설계할 수 있다. 우리는 기업 고객에게 기술과 함께 교육 및 활용 지원(enablement)을 제공하고, 근로자의 역량을 키우는 배포를 장려하며, 고객이 자사 인력의 숙련도(fluency) 향상을 측정할 수 있는 도구를 제공하고, 사용자를 단지 더 빠르게가 아니라 더 유능하게 만드는 제품을 구축함으로써 그러한 경로를 더 쉽게 택할 수 있도록 노력하고 있다."
+  },
+  {
+   "type": "p",
+   "en": "Yet adaptability has limits. If AI becomes a general substitute for human labor across most of the economy, realistic combinations of retraining, job matching, and mobility policy may fail to deliver a stable, full-employment equilibrium.",
+   "ko": "그러나 적응력에는 한계가 있다. AI가 경제 대부분에 걸쳐 인간 노동의 전반적 대체재가 된다면, 재교육, 일자리 매칭, 이동성 정책을 현실적으로 조합하더라도 안정적인 완전고용 균형을 달성하지 못할 수 있다.",
+   "marks": [
+    {
+     "t": "AI가 경제 대부분에 걸쳐 인간 노동의 전반적 대체재가 된다면, 재교육, 일자리 매칭, 이동성 정책을 현실적으로 조합하더라도 안정적인 완전고용 균형을 달성하지 못할 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In this case, policymakers will need to carefully consider the pace of AI rollout. When technological progress causes large disruption and the available redistributive tools are imperfect, economic theory suggests the technology's rollout should be steered, or sequenced.[^4]  In normal times, the economy is built to absorb disruptions. But if disruption happens beyond the economy's ability to adapt, at the levels described in Tier 2, we would support government regulations and incentives at the firm level that manage the pace of displacement. Uniform application across the field is essential: any firm that slows down alone simply cedes the market to those that do not.",
+   "ko": "이 경우 정책 입안자는 AI 보급 속도를 신중하게 고려해야 할 것이다. 기술 진보가 큰 혼란을 초래하고 이용 가능한 재분배 수단이 불완전할 때, 경제 이론은 기술의 보급을 조절하거나 단계적으로 진행해야 한다고 시사한다.[^4]  평상시에는 경제가 혼란을 흡수할 수 있도록 구축되어 있다. 그러나 2단계(Tier 2)에서 설명하는 수준으로 경제의 적응 능력을 넘어서는 혼란이 발생한다면, 우리는 대체의 속도를 관리하는 기업 차원의 정부 규제와 인센티브를 지지할 것이다. 업계 전반에 걸친 균일한 적용이 필수적이다. 단독으로 속도를 늦추는 기업은 그렇지 않은 기업에 시장을 내줄 뿐이기 때문이다.",
+   "marks": [
+    {
+     "t": "정책 입안자는 AI 보급 속도를 신중하게 고려해야 할 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "우리는 대체의 속도를 관리하는 기업 차원의 정부 규제와 인센티브를 지지할 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "단독으로 속도를 늦추는 기업은 그렇지 않은 기업에 시장을 내줄 뿐이기 때문이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Each tier buys time for workers and the economy to adapt, and eventually judge whether the interventions in the next tier are needed. More difficult, longer-term questions around what happens if the link between work and income breaks are addressed in the highest-disruption tier.",
+   "ko": "각 단계는 근로자와 경제가 적응하고, 궁극적으로 다음 단계의 개입이 필요한지 판단할 시간을 벌어 준다. 일과 소득 사이의 연결이 끊어지면 어떤 일이 일어나는지에 관한 더 어렵고 장기적인 질문은 혼란이 가장 큰 단계에서 다룬다.",
+   "marks": [
+    {
+     "t": "일과 소득 사이의 연결이 끊어지면 어떤 일이 일어나는지에 관한 더 어렵고 장기적인 질문",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "While this particular proposal is focused on the US, the principles underpinning this framework are intended to be global. Preparing institutions ahead of disruption, sharing AI's gains broadly, and modernizing the systems workers depend on will be necessary anywhere AI touches. We recognize that the right policy mix in any country will turn on its labor law, social contract, and where models are developed. We have started with the US because Anthropic is headquartered in San Francisco, and because Claude is used more in the US than any other country.[^5]",
+   "ko": "이 제안은 미국에 초점을 맞추고 있지만, 이 프레임워크의 기반이 되는 원칙은 전 세계적으로 적용되도록 의도되었다. 혼란에 앞서 제도를 준비하고, AI의 이익을 널리 공유하며, 근로자가 의존하는 시스템을 현대화하는 것은 AI가 영향을 미치는 모든 곳에서 필요할 것이다. 우리는 각국에 적합한 정책 조합이 그 나라의 노동법, 사회 계약, 그리고 모델이 개발되는 장소에 따라 달라질 것임을 인식한다. 우리가 미국에서 시작한 것은 Anthropic의 본사가 샌프란시스코에 있고, Claude가 다른 어떤 나라보다 미국에서 더 많이 사용되기 때문이다.[^5]"
+  },
+  {
+   "type": "h2",
+   "en": "The foundation",
+   "ko": "기반",
+   "id": "s19"
+  },
+  {
+   "type": "p",
+   "en": "The framework that follows depends on three foundations: the ability to see AI-driven labor market disruption as it develops, the analytical capacity to interpret what we see, and the delivery infrastructure to act on it.",
+   "ko": "이어지는 프레임워크는 세 가지 기반에 의존한다. AI로 인한 노동시장 혼란을 전개 과정에서 파악하는 능력, 파악한 바를 해석하는 분석 능력, 그리고 이에 따라 조치를 실행하기 위한 전달 인프라이다.",
+   "marks": [
+    {
+     "t": "AI로 인한 노동시장 혼란을 전개 과정에서 파악하는 능력, 파악한 바를 해석하는 분석 능력, 그리고 이에 따라 조치를 실행하기 위한 전달 인프라이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Measurement. Governments' statistical infrastructure was built for slower-moving economies; it does not yet track AI adoption or its labor-market effects with the speed or granularity this moment requires. We need expanded investment in our statistical agencies, sustained funding for AI-specific survey instruments, and reporting requirements for AI labs and firms-including Anthropic-on deployment patterns and workforce effects.[^6]  Instruments should focus on directly observable metrics like AI usage rates and intensity of use, and worker productivity indicators by level of AI adoption.",
+   "ko": "측정. 정부의 통계 인프라는 더 느리게 움직이는 경제를 위해 구축되었으며, 지금 이 시점이 요구하는 속도나 세분성으로 AI 도입이나 그것이 노동시장에 미치는 영향을 아직 추적하지 못한다. 통계 기관에 대한 투자 확대, AI 특화 조사 도구에 대한 지속적인 자금 지원, 그리고 Anthropic을 포함한 AI 연구소와 기업을 대상으로 배포 패턴과 인력에 미치는 영향에 관한 보고 요건이 필요하다.[^6]  조사 도구는 AI 사용률 및 사용 강도, AI 도입 수준별 근로자 생산성 지표와 같이 직접 관찰 가능한 지표에 초점을 맞추어야 한다.",
+   "marks": [
+    {
+     "t": "Anthropic을 포함한 AI 연구소와 기업을 대상으로 배포 패턴과 인력에 미치는 영향에 관한 보고 요건이 필요하다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Anthropic is contributing to this effort through the Anthropic Economic Index, which uses Claude usage data to track how AI is being used across occupations and industries.[^7]  We believe transparency about AI's economic effects is a precondition for informed policymaking, but data from a single company cannot tell the whole story.",
+   "ko": "Anthropic은 Claude 사용 데이터를 활용해 직종과 산업 전반에서 AI가 어떻게 사용되고 있는지 추적하는 Anthropic Economic Index를 통해 이러한 노력에 기여하고 있다.[^7]  우리는 AI의 경제적 영향에 관한 투명성이 정보에 기반한 정책 결정의 전제 조건이라고 믿지만, 단일 기업의 데이터로는 전체 그림을 보여 줄 수 없다."
+  },
+  {
+   "type": "p",
+   "en": "A government unit focused on tracking AI's effects. Visibility is necessary but not sufficient. Governments also need a small, dedicated unit to track how AI is moving through the economy sector by sector, stress-test the institutions that will have to absorb the shock, and flag the early signals that should trigger a policy response. Governments have built this kind of cross-cutting analytical function before-the Council of Economic Advisers was created for the postwar transition-and we need an equivalent for AI.",
+   "ko": "정부 내 AI 영향 추적 전담 조직. 가시성은 필요조건이지만 충분조건은 아니다. 정부에는 AI가 경제 전반에 부문별로 어떻게 확산되고 있는지 추적하고, 충격을 흡수해야 할 제도를 스트레스 테스트하며, 정책 대응을 촉발해야 할 조기 신호를 포착하는 소규모 전담 조직도 필요하다. 정부는 이전에도 이러한 범부처적 분석 기능을 구축한 바 있으며(대통령경제자문위원회(Council of Economic Advisers)는 전후 전환기에 대응하기 위해 설립되었다), AI에 대해서도 이에 상응하는 조직이 필요하다.",
+   "marks": [
+    {
+     "t": "정책 대응을 촉발해야 할 조기 신호를 포착하는 소규모 전담 조직도 필요하다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Delivery infrastructure. The delivery infrastructure for Unemployment Insurance (UI), which provides workers time to navigate job loss and transition, is not sufficiently prepared for a large labor market shock.[^8]  Many states still run UI on legacy systems that buckled under pandemic claim volumes, took months to implement emergency extensions, and made billions of dollars worth of improper payments.[^9]  Modernized systems could process claims faster, flex quickly when Congress or states adjust benefits, and run real-time identity and cross-state fraud matching.",
+   "ko": "전달 인프라. 근로자에게 실직과 전환에 대처할 시간을 제공하는 실업보험(Unemployment Insurance, UI)의 전달 인프라는 대규모 노동시장 충격에 충분히 대비되어 있지 않다.[^8]  여러 주는 여전히 레거시 시스템으로 UI를 운영하고 있으며, 이 시스템은 팬데믹 당시 급증한 청구량을 감당하지 못했고, 긴급 연장 조치를 시행하는 데 수개월이 걸렸으며, 수십억 달러 규모의 부정 지급을 초래했다.[^9]  현대화된 시스템이라면 청구를 더 빠르게 처리하고, 의회나 주가 급여를 조정할 때 신속하게 대응하며, 실시간 신원 확인과 주 간 부정수급 대조를 수행할 수 있을 것이다.",
+   "marks": [
+    {
+     "t": "실업보험(Unemployment Insurance, UI)의 전달 인프라는 대규모 노동시장 충격에 충분히 대비되어 있지 않다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Only 52% of the world's population is covered by any social protection scheme,[^10]  and in many countries the delivery systems that do exist cannot absorb a fast-moving labor market shock. Countries should invest now in the rails required to expand and adjust coverage quickly. The same logic extends to revenue collection and the underlying digital public infrastructure-identity, payments, data exchange-that any of these programs would run on.",
+   "ko": "세계 인구 중 어떤 형태로든 사회보장 제도의 적용을 받는 비율은 52%에 불과하며,[^10]  많은 국가에서는 기존 전달 시스템조차 빠르게 전개되는 노동시장 충격을 흡수하지 못한다. 각국은 커버리지를 신속하게 확대·조정하는 데 필요한 기반에 지금 투자해야 한다. 같은 논리는 세입 징수와, 이러한 프로그램이 운영될 토대인 디지털 공공 인프라(신원, 결제, 데이터 교환)에도 적용된다."
+  },
+  {
+   "type": "h2",
+   "en": "The policy framework",
+   "ko": "정책 프레임워크",
+   "id": "s26"
+  },
+  {
+   "type": "p",
+   "en": "We cannot know today which scenario will unfold, but we believe this uncertainty warrants preparation. We need to invest now in measures that make sense in any scenario, and design in advance the responses we would want ready if disruption deepens. For this reason, our policy recommendations anchor on three possible scenarios.",
+   "ko": "어떤 시나리오가 전개될지 현재로서는 알 수 없지만, 우리는 이러한 불확실성이 대비의 필요성을 뒷받침한다고 본다. 어떤 시나리오에서도 타당한 조치에 지금 투자하고, 혼란이 심화될 경우 준비해 두고자 하는 대응책을 사전에 설계해야 한다. 이러한 이유로 우리의 정책 권고는 세 가지 가능한 시나리오를 축으로 삼는다."
+  },
+  {
+   "type": "p",
+   "en": "We suggest calibrating responses to the severity of AI-driven labor market disruption, using the unemployment rate as the primary trigger because it is widely understood, regularly measured, and directly captures labor market health. But the unemployment rate is not the only thing that matters. People may keep their jobs while the pay, security, and quality of that work erode. Governments should therefore watch a broader set of signals alongside unemployment: labor force participation, underemployment, wages, and labor's share of national income.",
+   "ko": "우리는 AI로 인한 노동시장 혼란의 심각도에 맞추어 대응을 조정할 것을 제안하며, 실업률을 주요 촉발 지표로 사용한다. 실업률은 널리 이해되고, 정기적으로 측정되며, 노동시장의 건전성을 직접 포착하기 때문이다. 그러나 실업률만이 중요한 것은 아니다. 사람들이 일자리를 유지하더라도 그 일자리의 임금, 고용 보안성, 질이 악화될 수 있다. 따라서 정부는 실업률과 함께 경제활동참가율, 불완전고용, 임금, 국민소득 중 노동소득분배율 등 더 폭넓은 신호를 관찰해야 한다.",
+   "marks": [
+    {
+     "t": "우리는 AI로 인한 노동시장 혼란의 심각도에 맞추어 대응을 조정할 것을 제안하며, 실업률을 주요 촉발 지표로 사용한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We also cannot know for certain what form disruption will take. One possibility is a temporary shock, after which the labor market re-stabilizes. The other is an enduring restructuring, in which the demand for human labor is significantly and persistently lower. These are different problems. A temporary shock calls for temporary supports withdrawn as the labor market recovers; an enduring restructuring calls for more permanent responses.",
+   "ko": "혼란이 어떤 형태를 띨지도 확실히 알 수 없다. 한 가지 가능성은 일시적 충격으로, 이후 노동시장이 다시 안정되는 경우이다. 다른 가능성은 지속적 구조 재편으로, 인간 노동에 대한 수요가 상당하고 지속적으로 낮아지는 경우이다. 이 둘은 서로 다른 문제이다. 일시적 충격에는 노동시장이 회복됨에 따라 철회되는 일시적 지원이 필요하고, 지속적 구조 재편에는 보다 항구적인 대응이 필요하다.",
+   "marks": [
+    {
+     "t": "인간 노동에 대한 수요가 상당하고 지속적으로 낮아지는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our suggested interventions serve one or both of two aims: stability and adaptability. Some help keep the macroeconomy stable, through income support and transfers that cushion the shock and sustain demand. Others build the economy's adaptability, by moving people toward more durable work, easing transitions between jobs, and, where possible, slowing the pace of displacement. Neither is enough on its own, and our key interventions do both: unemployment insurance, for example, stabilizes demand while giving displaced workers the time and tools to find a well-matched job. As disruption increases, the balance shifts from adaptability toward income support and redistribution.",
+   "ko": "우리가 제안하는 개입은 안정성과 적응력이라는 두 가지 목표 중 하나 또는 둘 모두에 기여한다. 일부는 충격을 완화하고 수요를 유지하는 소득 지원과 이전을 통해 거시경제의 안정을 돕는다. 다른 일부는 사람들을 보다 지속 가능한 일자리로 이동시키고, 일자리 간 전환을 원활하게 하며, 가능한 경우 대체 속도를 늦춤으로써 경제의 적응력을 높인다. 어느 쪽도 단독으로는 충분하지 않으며, 우리의 핵심 개입은 두 가지를 모두 수행한다. 예를 들어 실업보험은 수요를 안정시키는 동시에 일자리를 잃은 근로자에게 적합한 일자리를 찾을 시간과 수단을 제공한다. 혼란이 커질수록 무게중심은 적응력에서 소득 지원과 재분배로 옮겨 간다.",
+   "marks": [
+    {
+     "t": "혼란이 커질수록 무게중심은 적응력에서 소득 지원과 재분배로 옮겨 간다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The policies within each tier are those we currently find most promising on our reading of the existing evidence; we expect our thinking to evolve as more accumulates. Some measures that make sense in a near-term, transitory shock could make matters worse in an enduring restructuring by entrenching the link between income and employment that a Tier 3 world may need to loosen. We flag those measures below, and we expect to phase out some Tier 1 and Tier 2 tools if conditions move toward Tier 3.",
+   "ko": "각 단계에 포함된 정책은 기존 증거에 대한 우리의 해석에 비추어 현재 가장 유망하다고 판단하는 것들이며, 증거가 더 축적됨에 따라 우리의 생각도 발전할 것으로 예상한다. 단기적·일시적 충격에서 타당한 일부 조치는 3단계(Tier 3)의 세계에서 느슨하게 해야 할 수도 있는 소득과 고용 간의 연결을 고착시킴으로써, 지속적 구조 재편 상황에서는 오히려 사태를 악화시킬 수 있다. 아래에서 그러한 조치를 표시하며, 상황이 3단계(Tier 3)로 이동할 경우 1단계(Tier 1)와 2단계(Tier 2)의 일부 수단은 단계적으로 폐지할 것으로 예상한다."
+  },
+  {
+   "type": "h2",
+   "en": "Tier 1: Baseline economy (~5% unemployment with churn)",
+   "ko": "1단계(Tier 1): 기본 경제(실업률 약 5%, 노동 이동(churn) 동반)",
+   "id": "s32"
+  },
+  {
+   "type": "p",
+   "en": "Prepare for disruption and ensure families share in AI's upside",
+   "ko": "혼란에 대비하고 가계가 AI의 이익을 공유하도록 보장"
+  },
+  {
+   "type": "p",
+   "en": "At 5% unemployment, the headline numbers look normal. But underneath, the labor market may be churning faster than workers can adapt. AI is automating tasks across occupations simultaneously, steadily compressing the value of skills that workers spent years acquiring.",
+   "ko": "실업률이 5%일 때 표면적인 수치는 정상으로 보인다. 그러나 그 이면에서는 노동시장이 근로자가 적응할 수 있는 속도보다 빠르게 요동치고 있을 수 있다. AI는 여러 직종에 걸쳐 과업을 동시에 자동화하고 있으며, 근로자가 수년에 걸쳐 습득한 기술의 가치를 꾸준히 떨어뜨리고 있다.",
+   "marks": [
+    {
+     "t": "그 이면에서는 노동시장이 근로자가 적응할 수 있는 속도보다 빠르게 요동치고 있을 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Establish universal pre-distributive capital accounts. We should give every American a direct financial stake in the economy at the moment when AI is fueling growth. The federal government has already taken a step in this direction with new capital accounts seeded at birth. We believe these accounts should be made permanent and expanded towards universal coverage, with initial priority given to the cohorts most exposed to near-term AI disruption:",
+   "ko": "보편적 사전분배 자본 계좌 도입. AI가 성장을 견인하는 이 시점에 모든 미국인에게 경제에 대한 직접적인 금융 지분을 부여해야 한다. 연방정부는 출생 시 초기 자금이 적립되는 새로운 자본 계좌를 통해 이미 이 방향으로 한 걸음을 내디뎠다. 우리는 이 계좌를 항구화하고 보편적 커버리지를 향해 확대해야 하며, 초기에는 단기적 AI 혼란에 가장 많이 노출된 집단을 우선해야 한다고 본다."
+  },
+  {
+   "type": "li",
+   "en": "Phased eligibility expansion: beyond children, accounts should be extended to young adults entering the workforce and to incumbent workers in occupations most exposed to AI-driven displacement, with a defined path to coverage for all working-age adults.",
+   "ko": "단계적 수급 자격 확대: 아동을 넘어, 노동시장에 진입하는 청년층과 AI로 인한 대체에 가장 많이 노출된 직종의 현직 근로자에게 계좌를 확대하고, 모든 생산가능 연령 성인으로 커버리지를 넓히는 명확한 경로를 마련해야 한다."
+  },
+  {
+   "type": "li",
+   "en": "Flexible withdrawal for workforce transitions: account holders should be able to draw on funds for retraining, relocation, credentialing, and other transition expenses.",
+   "ko": "노동 전환을 위한 유연한 인출: 계좌 보유자는 재교육, 이주, 자격 취득 및 기타 전환 비용을 위해 자금을 인출할 수 있어야 한다."
+  },
+  {
+   "type": "li",
+   "en": "Equity funding: policymakers should expand the mechanisms by which these accounts can be funded, including with equity in AI companies, so that beneficiaries share directly in nearer-term gains from AI-driven growth.",
+   "ko": "지분 출자: 정책 입안자는 AI 기업의 지분을 포함하여 이 계좌에 자금을 적립할 수 있는 메커니즘을 확대해야 하며, 이를 통해 수혜자가 AI 주도 성장에서 발생하는 단기적 이익을 직접 공유하도록 해야 한다."
+  },
+  {
+   "type": "p",
+   "en": "To be clear, this measure does not cushion near-term displacement. We propose it in Tier 1 because, for the intervention to matter, it must start before disruption is visible. Accounts compound; the earlier they are seeded, the more they are worth when they are needed. We recognize that pre-distributive accounts are slow-compounding and cannot alone compensate for permanent job loss that happens soon-they must be paired with the income support and transition mechanisms in Tiers 2 and 3.",
+   "ko": "분명히 해 두자면, 이 조치는 단기적 대체를 완화하지 않는다. 우리가 이를 1단계(Tier 1)에서 제안하는 이유는, 이 개입이 의미를 가지려면 혼란이 가시화되기 전에 시작되어야 하기 때문이다. 계좌는 복리로 불어나므로, 일찍 적립될수록 필요한 시점에 더 큰 가치를 갖는다. 우리는 사전분배 계좌가 복리 증식 속도가 느리고, 조만간 발생하는 영구적 실직을 단독으로 보상할 수 없음을 인식한다. 따라서 이 계좌는 2단계(Tier 2)와 3단계(Tier 3)의 소득 지원 및 전환 메커니즘과 결합되어야 한다.",
+   "marks": [
+    {
+     "t": "이 개입이 의미를 가지려면 혼란이 가시화되기 전에 시작되어야 하기 때문이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Additional Tier 1 interventions",
+   "ko": "1단계(Tier 1) 추가 개입",
+   "id": "s40"
+  },
+  {
+   "type": "table",
+   "en": "| INTERVENTION | DESCRIPTION | ⏎ | Wage insurance | Time-limited, capped supplemental income for workers who take lower-paying jobs after displacement, funded by the government. US evidence suggests wage insurance decreases nonemployment and increases employment rates such that it is funded by avoided UI payments and increased income tax.[^11] Evidence from studies in Canada and Germany is less encouraging.[^12] | ⏎ | Occupational licensing reform | Federal funding for states that make it easier to enter licensed occupations, for example by recognizing licenses issued in other states or shortening the path to qualification, without weakening the rules on what licensed workers may do or who supervises them. Roughly 24% of US workers hold a certification or license[^13] and evidence shows licensing requirements reduce employment and raise prices without corresponding net welfare gains.[^14] | ⏎ | Retention tax incentives | Multi-year tax credits for companies that retain and redeploy workers into substantially different roles when adopting AI. Such incentives can reduce distributional harm[^15] and preserve employment during shocks, but can also prop up low-productivity firms.[^16] Design would need to overcome implementation challenges including noncompliance[^17] and fraud.[^18] |",
+   "ko": "| 개입 | 설명 | ⏎ | 임금 보험 | 일자리를 잃은 후 더 낮은 임금의 일자리를 수락한 근로자에게 정부 재원으로 기간과 상한이 정해진 보충 소득을 지급함. 미국의 증거에 따르면 임금 보험은 비고용을 줄이고 고용률을 높여, 회피된 UI 지급액과 증가한 소득세로 그 비용이 충당되는 것으로 나타남.[^11] 캐나다와 독일 연구의 증거는 이보다 덜 고무적임.[^12] | ⏎ | 직업 면허 제도 개혁 | 면허 소지 근로자가 수행할 수 있는 업무나 그 감독 주체에 관한 규정을 약화시키지 않으면서, 다른 주에서 발급한 면허를 인정하거나 자격 취득 경로를 단축하는 등의 방식으로 면허 직종 진입을 용이하게 하는 주에 연방 자금을 지원함. 미국 근로자의 약 24%가 인증이나 면허를 보유하고 있으며[^13] 증거에 따르면 면허 요건은 이에 상응하는 순 후생 증가 없이 고용을 감소시키고 가격을 상승시킴.[^14] | ⏎ | 고용 유지 세제 인센티브 | AI 도입 시 근로자를 유지하고 상당히 다른 직무로 재배치하는 기업에 다년간 세액공제를 제공함. 이러한 인센티브는 분배적 피해를 줄이고[^15] 충격 시 고용을 유지할 수 있으나, 생산성이 낮은 기업을 연명시킬 수도 있음.[^16] 제도 설계 시 불이행[^17] 및 부정행위[^18] 등 시행상의 과제를 극복해야 함. |"
+  },
+  {
+   "type": "h2",
+   "en": "Additional Tier 1 interventions (continued)",
+   "ko": "1단계(Tier 1) 추가 개입(계속)",
+   "id": "s42"
+  },
+  {
+   "type": "table",
+   "en": "| INTERVENTION | DESCRIPTION | ⏎ | Workforce training grants | Grants for employer-connected sectoral training programs that place workers into roles with strong current demand. Evidence is mixed on traditional government retraining,[^19] but shorter-term programs connected to specific employers and sectors have shown significant income gains for participants.[^20] | ⏎ | Job matching infrastructure | Invest in AI-powered skills-based labor market platforms, Learning and Employment Records, and skills wallets. Rigorous evaluations of job recommendation systems in a number of countries find modest effects on reemployment.[^21] |",
+   "ko": "| 개입 | 설명 | ⏎ | 인력 훈련 보조금 | 현재 수요가 높은 직무에 근로자를 배치하는, 고용주와 연계된 부문별 훈련 프로그램에 보조금을 지급함. 전통적인 정부 재교육에 관한 증거는 엇갈리지만,[^19] 특정 고용주 및 부문과 연계된 단기 프로그램은 참가자에게 상당한 소득 증가를 가져온 것으로 나타남.[^20] | ⏎ | 일자리 매칭 인프라 | AI 기반의 기술 중심 노동시장 플랫폼, Learning and Employment Records, 기술 지갑(skills wallet)에 투자함. 여러 국가의 일자리 추천 시스템에 대한 엄밀한 평가(evaluation)에 따르면 재취업에 미치는 효과는 크지 않음.[^21] |"
+  },
+  {
+   "type": "h2",
+   "en": "Tier 2: Recession-level disruption (~10% unemployment)",
+   "ko": "2단계(Tier 2): 경기침체 수준의 혼란(실업률 ~10%)",
+   "id": "s44"
+  },
+  {
+   "type": "p",
+   "en": "Expand temporary income support and retraining",
+   "ko": "한시적 소득 지원 및 재교육 확대"
+  },
+  {
+   "type": "p",
+   "en": "At 10% unemployment, disruption is a fact of life for tens of millions of American families. Professions no longer need the expertise they once demanded, careers end earlier than planned and begin later than expected, job searches stretch from months into years. Families revise plans-for homes, for children's education, for retirements, or abandon them. Communities that depended on a stable base of steady employment find that base eroding faster than new sources of work can replace it. Familiar pathways-from education to career, from effort to advancement, from work to stability-have become less reliable, and for many, impassable. The question shifts from whether to intervene to how fast existing systems can scale.",
+   "ko": "실업률이 10%에 이르면, 혼란은 수천만 미국 가정에 일상적인 현실이 된다. 직업들은 더 이상 과거에 요구하던 전문성을 필요로 하지 않고, 경력은 계획보다 일찍 끝나고 예상보다 늦게 시작되며, 구직 기간은 수개월에서 수년으로 늘어난다. 가족들은 주택, 자녀 교육, 퇴역에 대한 계획을 수정하거나 포기한다. 안정적인 고용 기반에 의존하던 지역사회는 새로운 일자리 원천이 이를 대체하는 속도보다 그 기반이 더 빠르게 잠식되고 있음을 깨닫는다. 교육에서 경력으로, 노력에서 승진으로, 노동에서 안정으로 이어지던 익숙한 경로는 신뢰성이 떨어졌으며, 많은 이들에게는 통과할 수 없는 길이 되었다. 질문은 개입할 것인가에서 기존 시스템을 얼마나 빨리 확장할 수 있는가로 옮겨 간다.",
+   "marks": [
+    {
+     "t": "실업률이 10%에 이르면, 혼란은 수천만 미국 가정에 일상적인 현실이 된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This framework's aim is to use the safety net as a launchpad to help workers pursue new vocations. This will require investing, in parallel, in the opportunities and industries where meaningful work will be.",
+   "ko": "이 프레임워크의 목표는 사회안전망을 근로자가 새로운 직업을 추구하도록 돕는 발판으로 활용하는 것이다. 이를 위해서는 의미 있는 일자리가 생겨날 기회와 산업에 병행하여 투자해야 한다.",
+   "marks": [
+    {
+     "t": "이 프레임워크의 목표는 사회안전망을 근로자가 새로운 직업을 추구하도록 돕는 발판으로 활용하는 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Expand unemployment insurance. UI is the most direct, tested, and rapidly scalable mechanism for supporting displaced workers. The Extended Benefits program established in 1970 extends UI when state unemployment is high, but its triggers can fire late and unevenly, and Congress has repeatedly had to legislate emergency extensions on top of it. We should consider reforming the trigger, so that extension is automatic and uniform across states.[^22]  Macroeconomic evidence supports extending the duration of UI during periods of elevated unemployment: during the Great Recession and COVID pandemic, extended benefits did little to discourage people from looking for work, while helping families keep up with essential spending.[^23][^24]",
+   "ko": "실업보험 확대. UI는 일자리를 잃은 근로자를 지원하는 가장 직접적이고, 검증되었으며, 신속하게 확장 가능한 메커니즘이다. 1970년에 도입된 연장급여(Extended Benefits) 프로그램은 주(州) 실업률이 높을 때 UI를 연장하지만, 그 발동 요건은 늦게 그리고 불균등하게 작동할 수 있으며, 의회는 그 위에 긴급 연장 조치를 반복적으로 입법해야 했다. 우리는 연장이 자동적이고 모든 주에 걸쳐 균일하게 이루어지도록 발동 요건의 개혁을 검토해야 한다.[^22]  거시경제적 증거는 실업률이 높은 시기에 UI 기간을 연장하는 것을 뒷받침한다. 대침체(Great Recession)와 COVID 팬데믹 기간 동안 연장 급여는 사람들의 구직 의욕을 거의 꺾지 않았으며, 가계가 필수 지출을 유지하는 데 도움을 주었다.[^23][^24]"
+  },
+  {
+   "type": "h2",
+   "en": "Additional Tier 2 interventions",
+   "ko": "2단계(Tier 2) 추가 개입",
+   "id": "s49"
+  },
+  {
+   "type": "table",
+   "en": "| INTERVENTION | DESCRIPTION | ⏎ | Sector-specific transition support | Targeted assistance for workers in industries facing acute AI-driven displacement. Could include extended income support, subsidized retraining, job search allowances, and relocation assistance. Evidence suggests that intensive reemployment services, including career counseling and job search assistance, produce modest positive effects on earnings.[^25] | ⏎ | Basic needs relief | Monthly payments to displaced workers who have exhausted UI benefits or labor market entrants unable to secure employment after some period of documented search, ensuring continued access to food, housing, and healthcare. Enhanced benefit levels for those who opt into roles addressing labor shortages in healthcare, education, child and elder care, infrastructure, ecosystem restoration, and public safety. Research shows consumption drops sharply when workers exhaust UI benefits,[^26] and existing safety net programs only partially fill the gap.[^27] This relief is structured to reach a broader population and could be delivered either as a new instrument or as an expansion of those existing programs. |",
+   "ko": "| 개입 | 설명 | ⏎ | 부문별 전환 지원 | AI로 인한 급격한 대체에 직면한 산업의 근로자에 대한 표적 지원. 연장된 소득 지원, 재교육 보조, 구직 수당, 이주 지원 등을 포함할 수 있음. 증거에 따르면 진로 상담과 구직 지원을 포함한 집중적인 재취업 서비스는 소득에 다소 긍정적인 효과를 낳음.[^25] | ⏎ | 기본 생계 지원 | UI 급여를 소진한 실직 근로자, 또는 일정 기간 기록된 구직 활동 후에도 일자리를 얻지 못한 노동시장 신규 진입자에게 월별 급여를 지급하여 식량, 주거, 의료에 대한 지속적인 접근을 보장함. 의료, 교육, 아동 및 노인 돌봄, 인프라, 생태계 복원, 공공 안전 분야의 인력 부족을 해소하는 직무를 선택하는 사람에게는 상향된 급여 수준을 적용함. 연구에 따르면 근로자가 UI 급여를 소진하면 소비가 급격히 감소하며,[^26] 기존 사회안전망 프로그램은 그 격차를 부분적으로만 메움.[^27] 이 지원은 더 넓은 인구에 도달하도록 설계되었으며, 새로운 제도로 시행하거나 기존 프로그램의 확대로 시행할 수 있음. |"
+  },
+  {
+   "type": "h2",
+   "en": "Tier 3: Transformative disruption (unemployment exceeding historical peaks)",
+   "ko": "3단계(Tier 3): 변혁적 혼란(역사적 최고치를 넘는 실업률)",
+   "id": "s51"
+  },
+  {
+   "type": "p",
+   "en": "Broaden and deepen existing support while building new mechanisms for redistribution",
+   "ko": "기존 지원을 확대·심화하는 동시에 새로운 재분배 메커니즘 구축"
+  },
+  {
+   "type": "p",
+   "en": "At this level of disruption, we are past the edge of the maps that policymakers and economists have historically used to navigate: unemployment at levels never before sustained alongside an economy generating record output. The search for work stretches past a year, then past two, and for some, eventually stops. Savings built over a working life are drawn down; rent is paid late, then not at all. The link Americans have long taken for granted-between contributing to the economy and sharing in its rewards-is strained or broken.",
+   "ko": "이 정도 수준의 혼란에서는 정책 입안자와 경제학자들이 역사적으로 길잡이로 삼아 온 지도의 경계를 넘어서게 된다. 즉, 경제가 기록적인 산출을 만들어 내는 가운데 실업률이 전례 없는 수준으로 지속되는 상황이다. 구직 기간은 1년을 넘고, 이어 2년을 넘으며, 일부에게는 결국 구직 자체가 멈춘다. 평생 일하며 모은 저축은 소진되고, 임대료는 연체되다가 결국 아예 지불되지 못한다. 미국인들이 오랫동안 당연하게 여겨 온, 경제에 기여하는 것과 그 보상을 나누는 것 사이의 연결고리는 약화되거나 끊어진다.",
+   "marks": [
+    {
+     "t": "경제가 기록적인 산출을 만들어 내는 가운데 실업률이 전례 없는 수준으로 지속되는 상황이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The policy challenge shifts from temporary transition support to sustained income replacement for a large share of the workforce. We are less certain about the right answers here than in earlier tiers, and we expect to develop this thinking in partnership with The Anthropic Institute, policymakers, and external researchers. What follows is our current assessment of the directions most worth exploring.",
+   "ko": "정책 과제는 한시적 전환 지원에서 노동력의 상당 부분에 대한 지속적인 소득 대체로 옮겨 간다. 이 단계의 올바른 해답에 대해 우리는 이전 단계보다 확신이 적으며, The Anthropic Institute, 정책 입안자, 외부 연구자들과 협력하여 이에 대한 사고를 발전시켜 나갈 것으로 예상한다. 이하는 가장 탐구할 가치가 있는 방향에 대한 우리의 현재 평가(assessment)이다.",
+   "marks": [
+    {
+     "t": "정책 과제는 한시적 전환 지원에서 노동력의 상당 부분에 대한 지속적인 소득 대체로 옮겨 간다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Sustain income through existing systems. We should consider automatically extending UI duration as labor market conditions deteriorate. That extension should come alongside enhanced wage insurance with higher caps and longer duration, and expanded basic needs relief with broader eligibility, covering both underemployed workers and those who never qualified for traditional UI. As extensions lengthen, benefit levels should converge toward a common floor rather than continuing to track prior wages indefinitely. When displacement stretches into years, paying people in proportion to what they used to earn is harder to rationalize on fairness or fiscal grounds, and a common floor creates a natural on-ramp to the mechanisms below.",
+   "ko": "기존 시스템을 통한 소득 유지. 우리는 노동시장 여건이 악화됨에 따라 UI 기간을 자동으로 연장하는 방안을 검토해야 한다. 이러한 연장은 상한을 높이고 기간을 늘린 강화된 임금 보험, 그리고 불완전 고용 근로자와 전통적 UI 수급 자격을 갖추지 못했던 사람들을 모두 포괄하도록 자격 요건을 넓힌 기본 생계 지원 확대와 함께 이루어져야 한다. 연장 기간이 길어질수록 급여 수준은 이전 임금을 무기한 반영하기보다는 공통의 하한선으로 수렴해야 한다. 대체가 수년간 이어질 경우, 과거 소득에 비례하여 지급하는 것은 공정성이나 재정적 근거로 정당화하기 어려워지며, 공통 하한선은 아래 메커니즘으로 자연스럽게 이어지는 진입로가 된다."
+  },
+  {
+   "type": "p",
+   "en": "In the case of a rapid and large rise in unemployment, deficit-financed income support is textbook countercyclical policy. But if AI delivers transformative productivity gains, the aggregate economy may grow substantially alongside sustained technological displacement-an unemployment scenario that is more structural than cyclical. This calls for policies that are likewise structural and fiscally sustainable. Historically, rapid productivity growth has expanded the tax base and improved fiscal positions. However, the US may enter this period with elevated deficits and recent inflationary experience, limiting fiscal headroom for large-scale interventions. And if displacement instead coincides with continued inflation or fiscal crisis, the toolkit would need to differ-prioritizing reforms that don't require new spending, such as regulatory adjustments, private insurance mandates, or reallocation within existing budgets.",
+   "ko": "실업이 급격하고 크게 증가하는 경우, 적자 재정을 통한 소득 지원은 교과서적인 경기 대응 정책이다. 그러나 AI가 변혁적인 생산성 향상을 가져온다면, 지속적인 기술적 대체와 함께 경제 전체는 상당히 성장할 수 있으며, 이는 경기적이라기보다 구조적인 실업 시나리오이다. 이는 마찬가지로 구조적이고 재정적으로 지속 가능한 정책을 요구한다. 역사적으로 급속한 생산성 증가는 과세 기반을 확대하고 재정 상황을 개선해 왔다. 그러나 미국은 높은 재정적자와 최근의 인플레이션 경험을 안은 채 이 시기에 진입할 수 있으며, 이는 대규모 개입을 위한 재정 여력을 제한한다. 또한 대체가 지속적인 인플레이션이나 재정 위기와 동시에 발생한다면, 정책 수단은 달라져야 한다. 즉, 규제 조정, 민간 보험 의무화, 기존 예산 내 재배분 등 새로운 지출이 필요 없는 개혁을 우선해야 한다."
+  },
+  {
+   "type": "p",
+   "en": "Establish new tax bases and redistribution mechanisms. If AI capabilities advance rapidly and broadly, we may face labor market conditions without historical precedent-not merely high unemployment, but a structural decoupling of productive contribution from income. Because effective tax rates on labor substantially exceed those on capital, a shift in national income from labor toward capital means the current tax system captures a shrinking share of a growing economy, even as the cost of sustained income support rises.[^28]  We will need new revenue sources. Traditional safety net tools may not be sufficient.",
+   "ko": "새로운 과세 기반 및 재분배 메커니즘 구축. AI 역량이 빠르고 광범위하게 발전한다면, 우리는 역사적 전례가 없는 노동시장 여건에 직면할 수 있다. 이는 단순히 높은 실업률이 아니라, 생산적 기여와 소득 간의 구조적 분리이다. 노동에 대한 실효세율이 자본에 대한 실효세율을 상당히 웃돌기 때문에, 국민소득이 노동에서 자본으로 이동하면 지속적인 소득 지원 비용이 증가하는 와중에도 현행 조세 체계는 성장하는 경제에서 점점 줄어드는 몫만을 거둬들이게 된다.[^28]  우리에게는 새로운 세원이 필요할 것이다. 전통적인 사회안전망 도구만으로는 충분하지 않을 수 있다.",
+   "marks": [
+    {
+     "t": "생산적 기여와 소득 간의 구조적 분리",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We are not yet ready to advocate specific policies for this scenario. But we can name a few candidate mechanisms that may become necessary and invest in the research required to evaluate them:",
+   "ko": "우리는 아직 이 시나리오에 대한 구체적인 정책을 주창할 준비가 되어 있지 않다. 그러나 필요해질 수 있는 몇 가지 후보 메커니즘을 제시하고, 이를 평가(evaluation)하는 데 필요한 연구에 투자할 수는 있다."
+  },
+  {
+   "type": "li",
+   "en": "Potential revenue sources could include increasing the capital gains tax, broad-based consumption taxes, sector-specific levies on AI use (measured by tokens, compute, or revenue), and scalable 'digital dividends' funded by taxes on the digital sector.[^29]",
+   "ko": "잠재적 세원으로는 자본이득세 인상, 광범위한 소비세, AI 사용에 대한 부문별 부담금(토큰, 연산, 또는 매출로 측정), 디지털 부문에 대한 과세로 재원을 마련하는 확장 가능한 '디지털 배당(digital dividend)' 등이 포함될 수 있다.[^29]",
+   "marks": [
+    {
+     "t": "AI 사용에 대한 부문별 부담금(토큰, 연산, 또는 매출로 측정)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Potential redistribution mechanisms could include universal basic income, AI sovereign wealth funds funded by investment stakes in AI-driven productivity, equity-sharing mechanisms giving workers partial ownership in AI enterprises, and dramatically expanded pre-distributive capital accounts building on existing models.",
+   "ko": "잠재적 재분배 메커니즘으로는 보편적 기본소득, AI 주도 생산성에 대한 투자 지분으로 재원을 마련하는 AI 국부펀드, 근로자에게 AI 기업의 일부 소유권을 부여하는 지분 공유 메커니즘, 그리고 기존 모델을 토대로 대폭 확대한 사전분배적 자본 계좌(pre-distributive capital account) 등이 포함될 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "Substantially expand public investment in human- and community-facing work. Some of the roles that may prove more resistant to AI substitution are also where the US faces well-documented, persistent workforce shortages.[^30] Directing a portion of any AI-driven surplus toward this work serves two goals: it closes staffing gaps that current funding levels have not, and it keeps paid work available for those who want it. We recognize the second rationale rests on a value judgment-that work confers something income alone does not-which not everyone shares and which future generations may weigh differently. The case here does not depend on it.",
+   "ko": "인간 및 공동체 대면 업무에 대한 공공투자의 대폭 확대. AI 대체에 상대적으로 강한 것으로 드러날 수 있는 일부 직무는 미국이 충분히 입증된 만성적 인력 부족을 겪고 있는 분야이기도 하다.[^30] AI 주도 잉여의 일부를 이러한 업무에 투입하는 것은 두 가지 목표에 기여한다. 현행 재원 수준으로는 메우지 못한 인력 공백을 해소하고, 일하기를 원하는 사람들에게 유급 일자리를 계속 제공하는 것이다. 우리는 두 번째 근거가 노동이 소득만으로는 주지 못하는 무언가를 부여한다는 가치 판단에 기반하고 있으며, 모든 사람이 이 판단에 동의하는 것은 아니고 미래 세대는 이를 다르게 평가할 수 있음을 인정한다. 다만 여기서의 논거는 이 판단에 의존하지 않는다."
+  },
+  {
+   "type": "p",
+   "en": "We're actively studying these mechanisms, and we plan to invest in the research required to better evaluate them. Some are more promising than others, and some carry distinct trade-offs. For example, broad-based approaches offer simplicity but may lack precision, while displacement indexed mechanisms are more targeted but harder to administer.",
+   "ko": "우리는 이러한 메커니즘을 적극적으로 연구하고 있으며, 이를 더 잘 평가(evaluation)하는 데 필요한 연구에 투자할 계획이다. 일부 메커니즘은 다른 것보다 더 유망하며, 일부는 고유한 상충관계를 수반한다. 예를 들어, 광범위한 접근법은 단순하지만 정밀성이 부족할 수 있는 반면, 대체 연동형 메커니즘은 대상을 더 잘 겨냥하지만 운영하기가 더 어렵다."
+  },
+  {
+   "type": "p",
+   "en": "Regardless of the tax base or distribution mechanism: we are ready and willing to pay our fair share. We believe that if AI companies generate transformative returns, they have an obligation to ensure those returns are broadly shared.",
+   "ko": "과세 기반이나 분배 메커니즘이 무엇이든, 우리는 정당한 몫을 부담할 준비와 의지가 있다. 우리는 AI 기업이 변혁적인 수익을 창출한다면, 그 수익이 널리 공유되도록 보장할 의무가 있다고 믿는다.",
+   "marks": [
+    {
+     "t": "AI 기업이 변혁적인 수익을 창출한다면, 그 수익이 널리 공유되도록 보장할 의무가 있다고 믿는다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We have significant agency to shape how the future unfolds, even with significant uncertainty about the curve ahead. If we do face an economy in which most income no longer comes from work, we expect society's responses will necessarily rely on help we do not yet have, including from increasingly capable AI systems themselves. For now, our commitment is narrower and concrete: to be specific about what we propose to do at each step along the path, to fund the research that tells us whether it is working, and to revise as the evidence and the technology change.",
+   "ko": "앞으로의 궤적에 상당한 불확실성이 있더라도, 우리에게는 미래가 어떻게 전개될지를 형성할 상당한 주체성이 있다. 대부분의 소득이 더 이상 노동에서 나오지 않는 경제에 실제로 직면하게 된다면, 사회의 대응은 점점 더 유능해지는 AI 시스템 자체를 포함하여 우리가 아직 갖추지 못한 도움에 의존할 수밖에 없을 것으로 예상한다. 현재로서 우리의 약정은 더 좁고 구체적이다. 즉, 경로의 각 단계에서 우리가 무엇을 하고자 하는지 구체적으로 밝히고, 그것이 효과가 있는지 알려주는 연구에 자금을 지원하며, 증거와 기술이 변화함에 따라 이를 수정하는 것이다.",
+   "marks": [
+    {
+     "t": "점점 더 유능해지는 AI 시스템 자체를 포함하여 우리가 아직 갖추지 못한 도움에 의존할 수밖에 없을 것으로 예상한다.",
+     "k": "safety"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "Brynjolfsson et al (2025), “Canaries in the Coal Mine”; Massenkoff and McCrory (2026), “Labor market impacts of AI: A new measure and early evidence”",
+   "ko": "Brynjolfsson et al (2025), “Canaries in the Coal Mine”; Massenkoff and McCrory (2026), “Labor market impacts of AI: A new measure and early evidence”",
+   "linked": true
+  },
+  {
+   "n": 2,
+   "en": "Acemoglu (2024), “The Simple Macroeconomics of AI”",
+   "ko": "Acemoglu (2024), “The Simple Macroeconomics of AI”",
+   "linked": true
+  },
+  {
+   "n": 3,
+   "en": "Korinek and Suh (2024), “Scenarios for the Transition to AGI”",
+   "ko": "Korinek and Suh (2024), “Scenarios for the Transition to AGI”",
+   "linked": true
+  },
+  {
+   "n": 4,
+   "en": "Korinek and Stiglitz (2026), “Steering Technological Progress”",
+   "ko": "Korinek and Stiglitz (2026), “Steering Technological Progress”",
+   "linked": true
+  },
+  {
+   "n": 5,
+   "en": "Appel et al (2026), “Anthropic Economic Index report: economic primitives”",
+   "ko": "Appel et al (2026), “Anthropic Economic Index report: economic primitives”",
+   "linked": true
+  },
+  {
+   "n": 6,
+   "en": "The American Economic Association Committee on Economic Statistics (2025), “Measuring the Economic Effects of Artificial Intelligence”",
+   "ko": "미국경제학회 경제통계위원회(The American Economic Association Committee on Economic Statistics) (2025), “Measuring the Economic Effects of Artificial Intelligence”",
+   "linked": true
+  },
+  {
+   "n": 7,
+   "en": "Anthropic (2026), “Anthropic Economic Index”",
+   "ko": "Anthropic (2026), “Anthropic Economic Index”",
+   "linked": true
+  },
+  {
+   "n": 8,
+   "en": "Ganong et al (2022), “Lessons Learned from Expanded Unemployment Insurance during COVID-19”",
+   "ko": "Ganong et al (2022), “Lessons Learned from Expanded Unemployment Insurance during COVID-19”",
+   "linked": true
+  },
+  {
+   "n": 9,
+   "en": "US Government Accountability Office (2022), “Unemployment Insurance: Transformation Needed to Address Program Design, Infrastructure, and Integrity Risks”",
+   "ko": "미국 회계감사원(US Government Accountability Office) (2022), “Unemployment Insurance: Transformation Needed to Address Program Design, Infrastructure, and Integrity Risks”",
+   "linked": true
+  },
+  {
+   "n": 10,
+   "en": "International Labour Organization (2024), “World Social Protection Report 2024-26”",
+   "ko": "국제노동기구(International Labour Organization) (2024), “World Social Protection Report 2024-26”",
+   "linked": true
+  },
+  {
+   "n": 11,
+   "en": "Hyman et al (2024), “Wage Insurance for Displaced Workers”",
+   "ko": "Hyman et al (2024), “Wage Insurance for Displaced Workers”",
+   "linked": true
+  },
+  {
+   "n": 12,
+   "en": "Bloom et al (2001), “Testing a Financial Incentive to Promote Re-Employment among Displaced Workers: The Canadian Earnings Supplement Project (ESP)”; Brussig et al (2006), “Entgeltsicherung — Befunde einer Evaluation”",
+   "ko": "Bloom et al (2001), “Testing a Financial Incentive to Promote Re-Employment among Displaced Workers: The Canadian Earnings Supplement Project (ESP)”; Brussig et al (2006), “Entgeltsicherung — Befunde einer Evaluation”",
+   "linked": true
+  },
+  {
+   "n": 13,
+   "en": "Bureau of Labor Statistics (2026), “Certification and licensing status of the employed by occupation, 2025 annual averages”",
+   "ko": "미국 노동통계국(Bureau of Labor Statistics) (2026), “Certification and licensing status of the employed by occupation, 2025 annual averages”",
+   "linked": true
+  },
+  {
+   "n": 14,
+   "en": "Kleiner and Soltas (2023), “A Welfare Analysis of Occupational Licensing in US States”",
+   "ko": "Kleiner and Soltas (2023), “A Welfare Analysis of Occupational Licensing in US States”",
+   "linked": true
+  },
+  {
+   "n": 15,
+   "en": "Lehr and Restrepo (2023), “Optimal Gradualism”; Beraja and Zorzi (2025), “Inefficient Automation”",
+   "ko": "Lehr and Restrepo (2023), “Optimal Gradualism”; Beraja and Zorzi (2025), “Inefficient Automation”",
+   "linked": true
+  },
+  {
+   "n": 16,
+   "en": "Giupponi and Landais (2023), “Subsidizing Labour Hoarding in Recessions: The Employment and Welfare Effects of Short-time Work”",
+   "ko": "Giupponi and Landais (2023), “Subsidizing Labour Hoarding in Recessions: The Employment and Welfare Effects of Short-time Work”",
+   "linked": true
+  },
+  {
+   "n": 17,
+   "en": "US Government Accountability Office (2003), “The Worker Adjustment and Retraining Notification Act: Revising the Act and Educational Materials Could Clarify Employer Responsibilities and Employee Rights”",
+   "ko": "미국 회계감사원 (2003), “The Worker Adjustment and Retraining Notification Act: Revising the Act and Educational Materials Could Clarify Employer Responsibilities and Employee Rights”",
+   "linked": true
+  },
+  {
+   "n": 18,
+   "en": "Beebe (2023), “A Lesser-Known Pandemic Relief Program Inspires Widespread Fraud”",
+   "ko": "Beebe (2023), “A Lesser-Known Pandemic Relief Program Inspires Widespread Fraud”",
+   "linked": true
+  },
+  {
+   "n": 19,
+   "en": "Bloom et al (1997), “The Benefits and Costs of JTPA Title II-A Programs: Key Findings from the National Job Training Partnership Act Study”; Card et al (2018), “What Works? A Meta Analysis of Recent Active Labor Market Program Evaluations”",
+   "ko": "Bloom et al (1997), “The Benefits and Costs of JTPA Title II-A Programs: Key Findings from the National Job Training Partnership Act Study”; Card et al (2018), “What Works? A Meta Analysis of Recent Active Labor Market Program Evaluations”",
+   "linked": true
+  },
+  {
+   "n": 20,
+   "en": "Katz et al (2020), “Why do sectoral employment programs work? Lessons from WorkAdvance”",
+   "ko": "Katz et al (2020), “Why do sectoral employment programs work? Lessons from WorkAdvance”",
+   "linked": true
+  },
+  {
+   "n": 21,
+   "en": "Belot et al (2019), “Providing Advice to Jobseekers at Low Cost: An Experimental Study on Online Advice”; Behaghel et al (2025), “The Potential of Recommender Systems for Directing Job Search: A Large-Scale Experiment”; Le Barbanchon et al (2023), “How can AI improve search and matching? Evidence from 59 million personalized job recommendations”",
+   "ko": "Belot et al (2019), “Providing Advice to Jobseekers at Low Cost: An Experimental Study on Online Advice”; Behaghel et al (2025), “The Potential of Recommender Systems for Directing Job Search: A Large-Scale Experiment”; Le Barbanchon et al (2023), “How can AI improve search and matching? Evidence from 59 million personalized job recommendations”",
+   "linked": true
+  },
+  {
+   "n": 22,
+   "en": "Chodorow-Reich and Coglianese (2019), “Unemployment Insurance and Macroeconomic Stabilization”",
+   "ko": "Chodorow-Reich and Coglianese (2019), “Unemployment Insurance and Macroeconomic Stabilization”",
+   "linked": true
+  },
+  {
+   "n": 23,
+   "en": "Chodorow-Reich et al (2019), “The Macro Effects of Unemployment Benefit Extensions: a Measurement Error Approach”",
+   "ko": "Chodorow-Reich et al (2019), “The Macro Effects of Unemployment Benefit Extensions: a Measurement Error Approach”",
+   "linked": true
+  },
+  {
+   "n": 24,
+   "en": "Ganong et al (2021), “Micro and Macro Disincentive Effects of Expanded Unemployment Benefits”",
+   "ko": "Ganong et al (2021), “Micro and Macro Disincentive Effects of Expanded Unemployment Benefits”",
+   "linked": false
+  },
+  {
+   "n": 25,
+   "en": "Mathematica (2008-17), “Workforce Investment Act Adult and Dislocated Worker Programs Gold Standard Evaluation”",
+   "ko": "Mathematica (2008-17), “Workforce Investment Act Adult and Dislocated Worker Programs Gold Standard Evaluation”",
+   "linked": true
+  },
+  {
+   "n": 26,
+   "en": "Ganong and Noel (2019), “Consumer Spending during Unemployment: Positive and Normative Implications”",
+   "ko": "Ganong and Noel (2019), “Consumer Spending during Unemployment: Positive and Normative Implications”",
+   "linked": true
+  },
+  {
+   "n": 27,
+   "en": "Rothstein and Valletta (2017), “Scraping By: Income and Program Participation After the Loss of Extended Unemployment Benefits”",
+   "ko": "Rothstein and Valletta (2017), “Scraping By: Income and Program Participation After the Loss of Extended Unemployment Benefits”",
+   "linked": true
+  },
+  {
+   "n": 28,
+   "en": "Korinek and Lockwood (2025), “Preserving Fiscal Stability in the Age of Transformative AI”",
+   "ko": "Korinek and Lockwood (2025), “Preserving Fiscal Stability in the Age of Transformative AI”",
+   "linked": true
+  },
+  {
+   "n": 29,
+   "en": "Marinescu (2025), “Resilient by Design”",
+   "ko": "Marinescu (2025), “Resilient by Design”",
+   "linked": true
+  },
+  {
+   "n": 30,
+   "en": "US Government Accountability Office (2022), “K-12 Education: Education Should Assess Its Efforts to Address T eacher Shortages”; US Health Resources & Services Administration (2025), “Health Workforce Projections, 2023–2038”",
+   "ko": "미국 회계감사원 (2022), “K-12 Education: Education Should Assess Its Efforts to Address T eacher Shortages”; 미국 보건자원서비스청(US Health Resources & Services Administration) (2025), “Health Workforce Projections, 2023–2038”",
+   "linked": true
+  }
+ ]
+}
