@@ -633,10 +633,10 @@
   {
    "type": "p",
    "en": "Frontier model weights and training infrastructure are high-value targets, including for sophisticated state actors, and a model that is safe to deploy is not safe if it can be stolen or quietly copied. Covered Developers should maintain a security program across the full development environment, robust to both external and insider threats and scaled to the consequences of compromise. They should describe that program publicly at a general level and give the Agency detailed documentation on request. They should also monitor for unauthorized distillation attacks on their models and run regular penetration testing of their own defenses (against external and insider threats), reporting findings to the government.",
-   "ko": "모델 가중치와 학습 인프라는 고도화된 국가 행위자를 포함한 공격자들에게 가치가 높은 표적이며, 배포하기에 안전한 모델이라도 탈취되거나 은밀히 복제될 수 있다면 안전하다고 할 수 없다. 적용 대상 개발자는 전체 개발 환경에 걸쳐 보안 프로그램을 유지해야 하며, 이 프로그램은 외부 위협과 내부자 위협 모두에 견고하고 침해 시의 결과에 비례하는 수준이어야 한다. 개발자는 해당 프로그램을 일반적인 수준에서 공개적으로 기술하고, 요청 시 기관(Agency)에 상세 문서를 제공해야 한다. 또한 자사 모델에 대한 무단 증류 공격을 모니터링하고, (외부 위협 및 내부자 위협에 대비한) 자체 방어 체계에 대해 정기적으로 침투 테스트를 실시하여 그 결과를 정부에 보고해야 한다.",
+   "ko": "프론티어 모델 가중치와 학습 인프라는 고도화된 국가 행위자를 포함한 공격자들에게 가치가 높은 표적이며, 배포하기에 안전한 모델이라도 탈취되거나 은밀히 복제될 수 있다면 안전하다고 할 수 없다. 적용 대상 개발자는 전체 개발 환경에 걸쳐 보안 프로그램을 유지해야 하며, 이 프로그램은 외부 위협과 내부자 위협 모두에 견고하고 침해 시의 결과에 비례하는 수준이어야 한다. 개발자는 해당 프로그램을 일반적인 수준에서 공개적으로 기술하고, 요청 시 기관(Agency)에 상세 문서를 제공해야 한다. 또한 자사 모델에 대한 무단 증류 공격을 모니터링하고, (외부 위협 및 내부자 위협에 대비한) 자체 방어 체계에 대해 정기적으로 침투 테스트를 실시하여 그 결과를 정부에 보고해야 한다.",
    "marks": [
     {
-     "t": "모델 가중치와 학습 인프라는 고도화된 국가 행위자를 포함한 공격자들에게 가치가 높은 표적이며",
+     "t": "프론티어 모델 가중치와 학습 인프라는 고도화된 국가 행위자를 포함한 공격자들에게 가치가 높은 표적이며",
      "k": "safety"
     },
     {

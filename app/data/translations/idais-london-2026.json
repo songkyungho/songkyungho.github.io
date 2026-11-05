@@ -130,14 +130,14 @@
   {
    "type": "p",
    "en": "On current trajectories, non-state actors 1 with minimal capacity will gain access to certain state-level cyberattack capabilities within the next year, creating unprecedented risks to critical infrastructure and national security. Some damage is now likely, as preparation has lagged. But urgent action can still contain harm to remain below societal-scale and build the defensive capabilities needed for what comes next.",
-   "ko": "현재 추세대로라면, 역량이 미미한 비국가 행위자 1 도 향후 1년 이내에 특정 국가 수준의 사이버 공격 역량에 접근할 수 있게 되어 핵심 기반시설과 국가안보에 전례 없는 위험을 초래할 것이다. 대비가 뒤처진 탓에 일부 손해는 이제 불가피할 가능성이 높다. 그러나 긴급한 조치를 통해 여전히 피해를 사회적 규모 미만으로 억제하고, 향후 닥칠 상황에 필요한 방어 역량을 구축할 수 있다.",
+   "ko": "현재 추세대로라면, 역량이 미미한 비국가 행위자 1 도 향후 1년 이내에 특정 국가 수준의 사이버 공격 역량에 접근할 수 있게 되어 핵심 기반시설과 국가안보에 전례 없는 위험을 초래할 것이다. 대비가 뒤처진 탓에 이제 일부 손해는 발생할 가능성이 높다. 그러나 긴급한 조치를 통해 여전히 피해를 사회적 규모 미만으로 억제하고, 향후 닥칠 상황에 필요한 방어 역량을 구축할 수 있다.",
    "marks": [
     {
      "t": "역량이 미미한 비국가 행위자 1 도 향후 1년 이내에 특정 국가 수준의 사이버 공격 역량에 접근할 수 있게 되어 핵심 기반시설과 국가안보에 전례 없는 위험을 초래할 것이다",
      "k": "key"
     },
     {
-     "t": "대비가 뒤처진 탓에 일부 손해는 이제 불가피할 가능성이 높다",
+     "t": "대비가 뒤처진 탓에 이제 일부 손해는 발생할 가능성이 높다",
      "k": "safety"
     }
    ]

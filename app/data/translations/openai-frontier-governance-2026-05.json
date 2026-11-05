@@ -872,14 +872,14 @@
   {
    "type": "p",
    "en": "Framework Assessments will consider the adequacy of our FGF and our factors for determining whether updates are required. For the EU Code of Practice, if we identify any instances of nonadherence or any measures that are required to be implemented to ensure continued adherence, we will draft and implement a remediation plan, and update the FGF as appropriate.",
-   "ko": "프레임워크 평가에서는 FGF의 적정성과 업데이트 필요 여부를 판단하기 위한 요인을 검토한다. EU 실천 강령과 관련하여, 미준수 사례 또는 지속적인 준수를 보장하기 위해 시행이 요구되는 조치가 식별되는 경우, 우리는 시정 계획을 수립 및 시행하고 FGF를 적절히 업데이트한다.",
+   "ko": "프레임워크 평가에서는 FGF의 적정성과 업데이트 필요 여부를 판단하기 위한 요인을 검토한다. EU 실천 강령과 관련하여, 미준수 사례 또는 지속적인 준수를 보장하기 위해 시행이 요구되는 조치가 식별되는 경우, 우리는 시정 계획을 수립 및 시행하고 필요한 경우 FGF를 업데이트한다.",
    "marks": [
     {
      "t": "프레임워크 평가에서는 FGF의 적정성과 업데이트 필요 여부를 판단하기 위한 요인을 검토한다.",
      "k": "key"
     },
     {
-     "t": "미준수 사례 또는 지속적인 준수를 보장하기 위해 시행이 요구되는 조치가 식별되는 경우, 우리는 시정 계획을 수립 및 시행하고 FGF를 적절히 업데이트한다",
+     "t": "미준수 사례 또는 지속적인 준수를 보장하기 위해 시행이 요구되는 조치가 식별되는 경우, 우리는 시정 계획을 수립 및 시행하고 필요한 경우 FGF를 업데이트한다",
      "k": "safety"
     }
    ]

@@ -52,10 +52,10 @@
   {
    "type": "p",
    "en": "“There is no security”—to quote his own words—“against the ultimate development of mechanical consciousness, in the fact of machines possessing little consciousness now. A mollusc has not much consciousness. Reflect upon the extraordinary advance which machines have made during the last few hundred years, and note how slowly the animal and vegetable kingdoms are advancing. The more highly organised machines are creatures not so much of yesterday, as of the last five minutes, so to speak, in comparison with past time. Assume for the sake of argument that conscious beings have existed for some twenty million years: see what strides machines have made in the last thousand! May not the world last twenty million years longer? If so, what will they not in the end become? Is it not safer to nip the mischief in the bud and to forbid them further progress?",
-   "ko": "“기계가 지금은 의식을 거의 갖고 있지 않다는 사실이,”—그의 말을 그대로 인용하면—“기계적 의식의 궁극적 발달에 대한 보안이 되지는 못한다. 연체동물도 의식이 많지 않다. 지난 수백 년 동안 기계가 이룬 비상한 진보를 돌이켜 보고, 동물계와 식물계가 얼마나 느리게 진보하고 있는지 주목해 보라. 고도로 조직된 기계들은 과거의 시간에 비하면 이른바 어제의 피조물이라기보다 지난 5분의 피조물이다. 논의를 위해 의식 있는 존재가 약 2000만 년 동안 존재해 왔다고 가정해 보자. 그리고 기계가 지난 1000년 동안 얼마나 성큼성큼 나아갔는지 보라! 세계가 앞으로 2000만 년 더 지속되지 않겠는가? 그렇다면 기계는 결국 무엇이 되지 않겠는가? 화근을 싹부터 잘라 내고 기계의 더 이상의 진보를 금지하는 편이 더 안전하지 않겠는가?",
+   "ko": "“기계가 지금은 의식을 거의 갖고 있지 않다는 사실이,”—그의 말을 그대로 인용하면—“기계적 의식이 궁극적으로 발달하지 않으리라는 보장이 되지는 못한다. 연체동물도 의식이 많지 않다. 지난 수백 년 동안 기계가 이룬 비상한 진보를 돌이켜 보고, 동물계와 식물계가 얼마나 느리게 진보하고 있는지 주목해 보라. 고도로 조직된 기계들은 과거의 시간에 비하면 이른바 어제의 피조물이라기보다 지난 5분의 피조물이다. 논의를 위해 의식 있는 존재가 약 2000만 년 동안 존재해 왔다고 가정해 보자. 그리고 기계가 지난 1000년 동안 얼마나 성큼성큼 나아갔는지 보라! 세계가 앞으로 2000만 년 더 지속되지 않겠는가? 그렇다면 기계는 결국 무엇이 되지 않겠는가? 화근을 싹부터 잘라 내고 기계의 더 이상의 진보를 금지하는 편이 더 안전하지 않겠는가?",
    "marks": [
     {
-     "t": "기계적 의식의 궁극적 발달에 대한 보안이 되지는 못한다",
+     "t": "기계적 의식이 궁극적으로 발달하지 않으리라는 보장이 되지는 못한다",
      "k": "safety"
     },
     {
@@ -320,7 +320,7 @@
   {
    "type": "p",
    "en": "“The main point, however, to be observed as affording cause for alarm is, that whereas animals were formerly the only stomachs of the machines, there are now many which have stomachs of their own, and consume their food themselves. This is a great step towards their becoming, if not animate, yet something so near akin to it, as not to differ more widely from our own life than animals do from vegetables. And though man should remain, in some respects, the higher creature, is not this in accordance with the practice of nature, which allows superiority in some things to animals which have, on the whole, been long surpassed? Has she not allowed the ant and the bee to retain superiority over man in the organisation of their communities and social arrangements, the bird in traversing the air, the fish in swimming, the horse in strength and fleetness, and the dog in self-sacrifice?",
-   "ko": "“그러나 경계해야 할 이유로서 주목해야 할 요점은, 예전에는 동물만이 기계의 위장 노릇을 했지만 이제는 자기 자신의 위장을 지니고 스스로 음식을 소비하는 기계가 많다는 점이다. 이는 기계가 생명체가 되지는 않더라도, 그것과 아주 가까운 무언가—동물이 식물과 다른 정도 이상으로는 우리의 생명과 다르지 않은 무언가—가 되는 방향으로 크게 한 걸음 나아간 것이다. 그리고 인간이 어떤 면에서는 여전히 더 고등한 피조물로 남는다 하더라도, 그것은 전체적으로는 오래전에 추월당한 동물들에게도 어떤 일에서는 우월성을 허락하는 자연의 실행 방안에 부합하는 것이 아닌가? 자연은 개미와 벌에게는 공동체 조직과 사회적 체계에서, 새에게는 하늘을 가로지르는 일에서, 물고기에게는 헤엄에서, 말에게는 힘과 빠르기에서, 개에게는 자기희생에서 인간보다 우월한 지위를 유지하도록 허락하지 않았는가?"
+   "ko": "“그러나 경계해야 할 이유로서 주목해야 할 요점은, 예전에는 동물만이 기계의 위장 노릇을 했지만 이제는 자기 자신의 위장을 지니고 스스로 음식을 소비하는 기계가 많다는 점이다. 이는 기계가 생명체가 되지는 않더라도, 그것과 아주 가까운 무언가—동물이 식물과 다른 정도 이상으로는 우리의 생명과 다르지 않은 무언가—가 되는 방향으로 크게 한 걸음 나아간 것이다. 그리고 인간이 어떤 면에서는 여전히 더 고등한 피조물로 남는다 하더라도, 그것은 전체적으로는 오래전에 추월당한 동물들에게도 어떤 일에서는 우월성을 허락하는 자연의 관행에 부합하는 것이 아닌가? 자연은 개미와 벌에게는 공동체 조직과 사회적 체계에서, 새에게는 하늘을 가로지르는 일에서, 물고기에게는 헤엄에서, 말에게는 힘과 빠르기에서, 개에게는 자기희생에서 인간보다 우월한 지위를 유지하도록 허락하지 않았는가?"
   },
   {
    "type": "p",
@@ -388,7 +388,7 @@
   {
    "type": "p",
    "en": "I left the translation of this part of the treatise, which, by the way, was far longer than all that I have given here, for a later opportunity. Unfortunately, I left Erewhon before I could return to the subject; and though I saved my translation and other papers at the hazard of my life, I was a obliged to sacrifice the original work. It went to my heart to do so; but I thus gained ten minutes of invaluable time, without which both Arowhena and myself must have certainly perished.",
-   "ko": "나는 논문의 이 부분—덧붙이자면, 여기에 옮긴 모든 내용보다 훨씬 길었다—의 번역을 나중으로 미루어 두었다. 불행히도 나는 이 주제로 돌아가기 전에 Erewhon을 떠났다. 그리고 목숨이 걸린 위험원을 무릅쓰고 번역문과 다른 문서들은 지켜 냈지만, 원본은 희생할 수밖에 없었다. 그렇게 하는 것은 가슴이 아팠다. 그러나 그 덕분에 나는 더없이 귀중한 10분을 벌었으며, 그것이 없었다면 Arowhena와 나는 틀림없이 목숨을 잃었을 것이다."
+   "ko": "나는 논문의 이 부분—덧붙이자면, 여기에 옮긴 모든 내용보다 훨씬 길었다—의 번역을 나중으로 미루어 두었다. 불행히도 나는 이 주제로 돌아가기 전에 Erewhon을 떠났다. 그리고 목숨을 걸고 번역문과 다른 문서들은 지켜 냈지만, 원본은 희생할 수밖에 없었다. 그렇게 하는 것은 가슴이 아팠다. 그러나 그 덕분에 나는 더없이 귀중한 10분을 벌었으며, 그것이 없었다면 Arowhena와 나는 틀림없이 목숨을 잃었을 것이다."
   },
   {
    "type": "p",
@@ -629,10 +629,10 @@
   {
    "type": "p",
    "en": "And so he went on at considerable length, attempting to show what changes in the distribution of animal and vegetable life throughout the kingdom had been caused by this and that of man’s inventions, and in what way each was connected with the moral and intellectual development of the human species: he even allotted to some the share which they had had in the creation and modification of man’s body, and that which they would hereafter have in its destruction; but the other writer was considered to have the best of it, and in the end succeeded in destroying all the inventions that had been discovered for the preceding 271 years, a period which was agreed upon by all parties after several years of wrangling as to whether a certain kind of mangle which was much in use among washerwomen should be saved or no. It was at last ruled to be dangerous, and was just excluded by the limit of 271 years. Then came the reactionary civil wars which nearly ruined the country, but which it would be beyond my present scope to describe.",
-   "ko": "그는 이렇게 상당히 길게 이야기를 이어 가며, 인간의 이런저런 발명이 왕국 전역에 걸쳐 동식물 생명의 분포에 어떤 변화를 일으켰는지, 그리고 각각의 발명이 인류의 도덕적·지적 발달과 어떻게 연결되어 있는지를 보여 주려 했다. 그는 심지어 일부 발명에 대해서는 그것이 인간 신체의 창조와 변형에서 차지했던 몫과 앞으로 그 파괴에서 차지할 몫까지 할당했다. 그러나 다른 저자 쪽이 우세하다고 여겨졌고, 결국 그는 이전 271년 동안 발견된 모든 발명을 파괴하는 데 성공했다. 이 기간은 세탁부들 사이에서 널리 쓰이던 어떤 종류의 세탁물 압착기를 보존할 것인지 말 것인지를 두고 수년간 논쟁을 벌인 끝에 모든 당사자가 합의한 것이었다. 그 압착기는 마침내 위험한 것으로 판정되었고, 271년이라는 한계에 의해 간신히 제외되었다. 그 뒤에 나라를 거의 파멸시킨 반동적 내전들이 이어졌지만, 그것을 묘사하는 일은 지금 나의 범위를 벗어난다.",
+   "ko": "그는 이렇게 상당히 길게 이야기를 이어 가며, 인간의 이런저런 발명이 왕국 전역에 걸쳐 동식물 생명의 분포에 어떤 변화를 일으켰는지, 그리고 각각의 발명이 인류의 도덕적·지적 발달과 어떻게 연결되어 있는지를 보여 주려 했다. 그는 심지어 일부 발명에 대해서는 그것이 인간 신체의 창조와 변형에서 차지했던 몫과 앞으로 그 파괴에서 차지할 몫까지 할당했다. 그러나 다른 저자 쪽이 우세하다고 여겨졌고, 결국 그 저자가 이전 271년 동안 발견된 모든 발명을 파괴하는 데 성공했다. 이 기간은 세탁부들 사이에서 널리 쓰이던 어떤 종류의 세탁물 압착기를 보존할 것인지 말 것인지를 두고 수년간 논쟁을 벌인 끝에 모든 당사자가 합의한 것이었다. 그 압착기는 마침내 위험한 것으로 판정되었고, 271년이라는 한계에 의해 간신히 제외되었다. 그 뒤에 나라를 거의 파멸시킨 반동적 내전들이 이어졌지만, 그것을 묘사하는 일은 지금 나의 범위를 벗어난다.",
    "marks": [
     {
-     "t": "결국 그는 이전 271년 동안 발견된 모든 발명을 파괴하는 데 성공했다",
+     "t": "결국 그 저자가 이전 271년 동안 발견된 모든 발명을 파괴하는 데 성공했다",
      "k": "safety"
     },
     {

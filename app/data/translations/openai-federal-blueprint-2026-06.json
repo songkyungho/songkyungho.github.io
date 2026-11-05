@@ -154,7 +154,7 @@
   {
    "type": "p",
    "en": "This  blueprint  outlines  a  three-part  strategy  for  achieving  those  goals:  1)  building  a  national framework  that  leverages  the  emerging  consensus  reflected  in  state  frontier  safety  laws;  2) strengthening CAISI as the US federal government's primary institution for frontier AI safety; and, 3) mobilizing a broader resilience plan across government to address the national security and public safety challenges posed by frontier AI.",
-   "ko": "본 청사진은 이러한 목표를 달성하기 위한 3단계 전략을 제시한다. 1) 주 차원의 프론티어 안전법에 반영된 새로운 합의를 활용하는 국가 프레임워크를 구축하고, 2) 프론티어 AI 안전을 담당하는 미국 연방정부의 핵심 기관으로서 CAISI를 강화하며, 3) 프론티어 AI가 제기하는 국가안보 및 공공 안전 과제에 대응하기 위해 정부 전반에 걸쳐 더 광범위한 회복력 계획을 추진하는 것이다.",
+   "ko": "본 청사진은 이러한 목표를 달성하기 위한 세 가지 축으로 구성된 전략을 제시한다. 1) 주 차원의 프론티어 안전법에 반영된 새로운 합의를 활용하는 국가 프레임워크를 구축하고, 2) 프론티어 AI 안전을 담당하는 미국 연방정부의 핵심 기관으로서 CAISI를 강화하며, 3) 프론티어 AI가 제기하는 국가안보 및 공공 안전 과제에 대응하기 위해 정부 전반에 걸쳐 더 광범위한 회복력 계획을 추진하는 것이다.",
    "marks": [
     {
      "t": "프론티어 AI 안전을 담당하는 미국 연방정부의 핵심 기관으로서 CAISI를 강화하며",
@@ -308,7 +308,7 @@
   {
    "type": "p",
    "en": "The requirements reflected in SB 53, RAISE, and SB 315 should serve as the foundation for federal frontier safety legislation-not its endpoint. Policymakers should build beyond them by establishing a  formal  role  for  CAISI,  strengthening  federal  evaluation  and  assessment  capabilities,  and advancing  the  broader  resilience  measures  described  below.  With  this  comprehensive  federal framework in place, policymakers should also preempt state laws that seek to regulate the same frontier  safety  risks,  creating  a  single  national  framework  that  combines  strong  safeguards  with regulatory certainty.  States  should  continue serving as laboratories of democracy in areas beyond frontier  safety,  including  youth  protection,  electricity  and  environmental  policy,  and  AI  education and literacy.",
-   "ko": "SB 53, RAISE, SB 315에 반영된 요건은 연방 프론티어 안전 입법의 토대가 되어야 하며, 그 엔드포인트(Endpoint)가 되어서는 안 된다. 정책 입안자는 CAISI에 공식적인 역할을 부여하고, 연방 차원의 평가(evaluation) 및 평가(assessment) 역량을 강화하며, 아래에서 설명하는 보다 광범위한 회복력 조치를 추진함으로써 이를 넘어서야 한다. 이러한 포괄적인 연방 프레임워크가 마련되면, 정책 입안자는 동일한 프론티어 안전 위험을 규제하려는 주법을 연방법으로 선점(preempt)해야 한다. 이를 통해 강력한 안전장치와 규제 확실성을 결합한 단일 국가 프레임워크를 만들 수 있다. 각 주는 청소년 보호, 전력 및 환경 정책, AI 교육 및 리터러시 등 프론티어 안전 이외의 분야에서 민주주의의 실험실 역할을 계속해야 한다.",
+   "ko": "SB 53, RAISE, SB 315에 반영된 요건은 연방 프론티어 안전 입법의 토대가 되어야 하며, 그 종착점이 되어서는 안 된다. 정책 입안자는 CAISI에 공식적인 역할을 부여하고, 연방 차원의 평가(evaluation) 및 평가(assessment) 역량을 강화하며, 아래에서 설명하는 보다 광범위한 회복력 조치를 추진함으로써 이를 넘어서야 한다. 이러한 포괄적인 연방 프레임워크가 마련되면, 정책 입안자는 동일한 프론티어 안전 위험을 규제하려는 주법을 연방법으로 선점(preempt)해야 한다. 이를 통해 강력한 안전장치와 규제 확실성을 결합한 단일 국가 프레임워크를 만들 수 있다. 각 주는 청소년 보호, 전력 및 환경 정책, AI 교육 및 리터러시 등 프론티어 안전 이외의 분야에서 민주주의의 실험실 역할을 계속해야 한다.",
    "marks": [
     {
      "t": "CAISI에 공식적인 역할을 부여하고, 연방 차원의 평가(evaluation) 및 평가(assessment) 역량을 강화하며",
@@ -373,7 +373,7 @@
   {
    "type": "li",
    "en": "Authorize CAISI and appropriate funding. Establish CAISI as a permanent institution with clear  statutory  authorities  and  sufficient  funding  to  conduct  frontier  model  evaluations, develop  safety  standards,  certify  third-party  assessors,  and  coordinate  with  national security and scientific agencies, as well as with international partners.",
-   "ko": "CAISI 설립 및 적절한 예산의 법적 승인. 명확한 법적 권한을 갖춘 상설 기관으로 CAISI를 설립하고, 프론티어 모델 평가(evaluation) 수행, 안전 표준 개발, 제3자 평가 기관 인증, 국가안보 및 과학 기관과의 조정, 국제 파트너와의 조정에 충분한 예산을 확보해야 한다.",
+   "ko": "CAISI의 법적 승인 및 예산 책정. 명확한 법적 권한을 갖춘 상설 기관으로 CAISI를 설립하고, 프론티어 모델 평가(evaluation) 수행, 안전 표준 개발, 제3자 평가 기관 인증, 국가안보 및 과학 기관과의 조정, 국제 파트너와의 조정에 충분한 예산을 확보해야 한다.",
    "marks": [
     {
      "t": "프론티어 모델 평가(evaluation) 수행, 안전 표준 개발, 제3자 평가 기관 인증",
@@ -641,7 +641,7 @@
   {
    "type": "p",
    "en": "Frontier  AI  will  help  shape  the  balance  of  economic,  scientific,  and  geopolitical  power in the 21st century.  Democratic societies have a narrowing window to build the institutions needed to govern increasingly  capable  AI  systems  before  frontier  capabilities  outpace  existing  frameworks.  States have helped establish an emerging frontier safety baseline. Policymakers should now build on that foundation by creating a national framework, strengthening CAISI as the US federal government's primary frontier AI institution, and mobilizing a broader resilience strategy.",
-   "ko": "프론티어 AI는 21세기 경제적, 과학적, 지정학적 힘의 균형을 형성하는 데 영향을 미칠 것이다. 민주주의 사회가 프론티어 역량이 기존 프레임워크를 앞지르기 전에 점점 더 높은 역량을 갖춘 AI 시스템을 관리하는 데 필요한 기관을 구축할 수 있는 시간은 점점 줄어들고 있다. 주(州)들은 새롭게 형성되고 있는 프론티어 안전 기준선의 확립에 기여해 왔다. 이제 정책 입안자는 그 토대 위에서 국가 프레임워크를 수립하고, CAISI를 미국 연방정부의 주요 프론티어 AI 기관으로 강화하며, 보다 폭넓은 회복력 전략을 추진해야 한다.",
+   "ko": "프론티어 AI는 21세기 경제적, 과학적, 지정학적 힘의 균형을 형성하는 데 영향을 미칠 것이다. 민주주의 사회가 프론티어 역량이 기존 프레임워크를 앞지르기 전에 점점 더 높은 역량을 갖춘 AI 시스템을 관리하는 데 필요한 기관을 구축할 수 있는 시간은 점점 줄어들고 있다. 주(州)들은 새롭게 형성되고 있는 프론티어 안전 기준선의 확립에 기여해 왔다. 이제 정책 입안자는 그 토대 위에서 국가 프레임워크를 수립하고, CAISI를 미국 연방정부의 중추적인 프론티어 AI 기관으로 강화하며, 보다 폭넓은 회복력 전략을 추진해야 한다.",
    "marks": [
     {
      "t": "민주주의 사회가 프론티어 역량이 기존 프레임워크를 앞지르기 전에 점점 더 높은 역량을 갖춘 AI 시스템을 관리하는 데 필요한 기관을 구축할 수 있는 시간은 점점 줄어들고 있다.",
@@ -652,7 +652,7 @@
      "k": "safety"
     },
     {
-     "t": "CAISI를 미국 연방정부의 주요 프론티어 AI 기관으로 강화하며",
+     "t": "CAISI를 미국 연방정부의 중추적인 프론티어 AI 기관으로 강화하며",
      "k": "safety"
     }
    ]

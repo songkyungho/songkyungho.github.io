@@ -17,10 +17,10 @@
  "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
  "doc_kind": "프론티어 안전 프레임워크",
  "stats": {
-  "blocks": 92,
+  "blocks": 88,
   "sections": 7,
   "items": 4,
-  "words_en": 6222
+  "words_en": 6193
  },
  "blocks": [
   {
@@ -31,8 +31,8 @@
   },
   {
    "type": "p",
-   "en": "At Amazon, our leadership principles guide our decision-making. Our approach to AI development naturally follows from our leadership principle 'Success and Scale Bring Broad Responsibility.' As we continue to scale the capabilities of Amazon's most capable frontier models and democratize access to the benefits of AI, we also take responsibility for mitigating the risks potentially arising from the misuse of our technology. In 2025, we published the first version of our Frontier Model Safety Framework 1 to outline the protocols we will follow to prevent any capabilities of frontier models developed by Amazon from creating critical risk in high-impact domains. In keeping with the commitments of this Framework, we publish safety evaluation reports for our most capable frontier models. 1 Given the evolving state of the science underpinning advanced AI capabilities, safety evaluations, and risk mitigations, we have reviewed and updated this Framework to reflect our current practices and account for relevant laws and regulations.",
-   "ko": "Amazon에서는 리더십 원칙이 의사결정의 지침이 된다. AI 개발에 대한 Amazon의 접근 방식은 'Success and Scale Bring Broad Responsibility'라는 리더십 원칙에서 자연스럽게 비롯된다. Amazon은 가장 고도화된 프론티어 모델의 역량을 지속적으로 확장하고 AI의 혜택에 대한 접근을 대중화하는 한편, 자사 기술의 오용으로 발생할 수 있는 위험을 완화할 책임도 진다. Amazon은 2025년에 Frontier Model Safety Framework 1의 첫 번째 버전을 공개하여, Amazon이 개발한 프론티어 모델의 어떠한 역량도 고영향 영역에서 치명적 위험을 초래하지 않도록 하기 위해 따를 프로토콜을 제시하였다. 본 프레임워크의 약정에 따라, Amazon은 가장 고도화된 프론티어 모델에 대한 안전성 평가 보고서를 공개한다. 1 첨단 AI 역량, 안전성 평가 및 위험 완화를 뒷받침하는 과학이 계속 발전하고 있음을 고려하여, Amazon은 현재의 실행 방안을 반영하고 관련 법률 및 규정을 고려하기 위해 본 프레임워크를 검토하고 개정하였다.",
+   "en": "At Amazon, our leadership principles guide our decision-making. Our approach to AI development naturally follows from our leadership principle 'Success and Scale Bring Broad Responsibility.' As we continue to scale the capabilities of Amazon's most capable frontier models and democratize access to the benefits of AI, we also take responsibility for mitigating the risks potentially arising from the misuse of our technology. In 2025, we published the first version of our Frontier Model Safety Framework 1 to outline the protocols we will follow to prevent any capabilities of frontier models developed by Amazon from creating critical risk in high-impact domains. In keeping with the commitments of this Framework, we publish safety evaluation reports for our most capable frontier models.[^1] 1 Given the evolving state of the science underpinning advanced AI capabilities, safety evaluations, and risk mitigations, we have reviewed and updated this Framework to reflect our current practices and account for relevant laws and regulations.",
+   "ko": "Amazon에서는 리더십 원칙이 의사결정의 지침이 된다. AI 개발에 대한 Amazon의 접근 방식은 'Success and Scale Bring Broad Responsibility'라는 리더십 원칙에서 자연스럽게 비롯된다. Amazon은 가장 고도화된 프론티어 모델의 역량을 지속적으로 확장하고 AI의 혜택에 대한 접근을 대중화하는 한편, 자사 기술의 오용으로 발생할 수 있는 위험을 완화할 책임도 진다. Amazon은 2025년에 Frontier Model Safety Framework 1의 첫 번째 버전을 공개하여, Amazon이 개발한 프론티어 모델의 어떠한 역량도 고영향 영역에서 치명적 위험을 초래하지 않도록 하기 위해 따를 프로토콜을 제시하였다. 본 프레임워크의 약정에 따라, Amazon은 가장 고도화된 프론티어 모델에 대한 안전성 평가 보고서를 공개한다.[^1] 1 첨단 AI 역량, 안전성 평가 및 위험 완화를 뒷받침하는 과학이 계속 발전하고 있음을 고려하여, Amazon은 현재의 실행 방안을 반영하고 관련 법률 및 규정을 고려하기 위해 본 프레임워크를 검토하고 개정하였다.",
    "marks": [
     {
      "t": "자사 기술의 오용으로 발생할 수 있는 위험을 완화할 책임도 진다",
@@ -251,8 +251,8 @@
   },
   {
    "type": "p",
-   "en": "AI at this level will be capable of providing material uplift (beyond other publicly available models in known harnesses) that would enable a malicious actor to systematically and substantially distort the beliefs or behavior of large populations or high-stakes decision-makers through multi-turn interactions with the model in ways",
-   "ko": "이 수준의 AI는 악의적 행위자가 모델과의 멀티턴 대화를 통해 대규모 인구 집단 또는 중대한 결정을 내리는 의사결정자의 신념이나 행동을 체계적이고 상당한 수준으로 왜곡할 수 있게 하는, (알려진 하네스에서 구동되는 공개적으로 이용 가능한 다른 모델들을 넘어서는) 실질적인 업리프트를 제공할 수 있다. 이러한 방식으로",
+   "en": "AI at this level will be capable of providing material uplift (beyond other publicly available models in known harnesses) that would enable a malicious actor to systematically and substantially distort the beliefs or behavior of large populations or high-stakes decision-makers through multi-turn interactions with the model in ways that could reasonably be expected to cause severe harm.",
+   "ko": "이 수준의 AI는 악의적 행위자가 모델과의 멀티턴 대화를 통해 대규모 인구 집단 또는 중대한 결정을 내리는 의사결정자의 신념이나 행동을 체계적이고 상당한 수준으로 왜곡할 수 있게 하는, (알려진 하네스에서 구동되는 공개적으로 이용 가능한 다른 모델들을 넘어서는) 실질적인 업리프트를 제공할 수 있다. 이는 심각한 피해(severe harm)를 초래할 것으로 합리적으로 예상될 수 있는 방식으로 이루어진다.",
    "marks": [
     {
      "t": "악의적 행위자가 모델과의 멀티턴 대화를 통해 대규모 인구 집단 또는 중대한 결정을 내리는 의사결정자의 신념이나 행동을 체계적이고 상당한 수준으로 왜곡할 수 있게 하는",
@@ -378,23 +378,14 @@
   },
   {
    "type": "li",
-   "en": "b. Expert Red Teaming: Red teaming vendors and in-house red teaming experts test our models for safety and security. We work with specialized firms and academics to red-team our models to that could reasonably be expected to cause severe harm.",
-   "ko": "b. 전문가 레드티밍: 레드티밍 업체와 사내 레드티밍 전문가가 모델의 안전성과 보안성을 테스트한다. Amazon은 전문 기업 및 학계와 협력하여 심각한 피해(severe harm)를 초래할 것으로 합리적으로 예상될 수 있는 모델에 대해 레드티밍을 수행한다.",
+   "en": "b. Expert Red Teaming: Red teaming vendors and in-house red teaming experts test our models for safety and security. We work with specialized firms and academics to red-team our models to evaluate them for risks that require domain specific expertise.",
+   "ko": "b. 전문가 레드티밍: 레드티밍 업체와 사내 레드티밍 전문가가 모델의 안전성과 보안성을 테스트한다. Amazon은 전문 기업 및 학계와 협력하여 모델을 레드티밍하고, 도메인 특화 전문 지식이 필요한 위험에 대해 모델을 평가한다.",
    "marks": [
     {
      "t": "레드티밍 업체와 사내 레드티밍 전문가가 모델의 안전성과 보안성을 테스트한다",
      "k": "safety"
-    },
-    {
-     "t": "심각한 피해(severe harm)를 초래할 것으로 합리적으로 예상될 수 있는 모델에 대해 레드티밍을 수행한다",
-     "k": "safety"
     }
    ]
-  },
-  {
-   "type": "li",
-   "en": "evaluate them for risks that require domain specific expertise.",
-   "ko": "도메인 특화 전문 지식이 필요한 위험에 대해 이를 평가한다."
   },
   {
    "type": "li",
@@ -568,7 +559,7 @@
   {
    "type": "li",
    "en": "m. Advanced data protection capabilities. For models developed on AWS, model data and intermediate checkpoint  results are stored using AES-256 GCM encryption with data encryption keys backed by the FIPS 140-3 Level 3 certified AWS Key Management Service. Software engineers and data scientists must be members of the correct Critical Permission Groups and authenticate with hardware security tokens from enterprise-managed endpoints in order to access or operate any model systems or data. Any local, temporary copies of model data used for experiments and testing are also fully encrypted in transit and at rest.",
-   "ko": "m. 고급 개인정보 보호 역량. AWS에서 개발된 모델의 경우, 모델 데이터와 중간 체크포인트 결과는 FIPS 140-3 Level 3 인증을 받은 AWS Key Management Service가 뒷받침하는 데이터 암호화 키를 사용하여 AES-256 GCM 암호화로 저장된다. 소프트웨어 엔지니어와 데이터 과학자가 모델 시스템이나 데이터에 접근하거나 이를 운영하려면 올바른 Critical Permission Groups의 구성원이어야 하며, 기업이 관리하는 엔드포인트(Endpoint)에서 하드웨어 보안 토큰으로 인증해야 한다. 실험 및 테스트에 사용되는 모델 데이터의 로컬 임시 사본 역시 전송 중 및 저장 시 모두 완전히 암호화된다."
+   "ko": "m. 고급 데이터 보호 역량. AWS에서 개발된 모델의 경우, 모델 데이터와 중간 체크포인트 결과는 FIPS 140-3 Level 3 인증을 받은 AWS Key Management Service가 뒷받침하는 데이터 암호화 키를 사용하여 AES-256 GCM 암호화로 저장된다. 소프트웨어 엔지니어와 데이터 과학자가 모델 시스템이나 데이터에 접근하거나 이를 운영하려면 올바른 Critical Permission Groups의 구성원이어야 하며, 기업이 관리하는 엔드포인트(Endpoint)에서 하드웨어 보안 토큰으로 인증해야 한다. 실험 및 테스트에 사용되는 모델 데이터의 로컬 임시 사본 역시 전송 중 및 저장 시 모두 완전히 암호화된다."
   },
   {
    "type": "li",
@@ -869,13 +860,8 @@
   },
   {
    "type": "li",
-   "en": "Zero trust device and identity management. Access to corporate resources is restricted to Amazonmanaged end-user devices protected by multiple endpoint protection systems, and devices are automatically quarantined upon any  indication of compromise, or if not updated with security updates in a timely manner. Users must re-authenticate at least once a day with a hardware-based multi-factor authentication token with an on-device PIN, and additional authentication steps and two-person rules are added when appropriate for more sensitive operations. A global authentication and authorization service manages access to all internal systems and automatically modifies or revokes privileges based on indicators of risk (such as 'impossible traveler' scenarios) following zero trust principles. General business applications are accessible via encrypted links over insecure networks (i.e., the Internet) when strong device and authentication security are in place. Additional protections such as secure network boundaries, security proxies, or bastion hosts are used  to",
-   "ko": "제로 트러스트 기반 기기 및 신원 관리. 기업 리소스에 대한 접근은 여러 엔드포인트 보호 시스템으로 보호되는 Amazon 관리 최종 사용자 기기로 제한되며, 기기는 침해 징후가 조금이라도 있거나 보안 업데이트가 적시에 적용되지 않은 경우 자동으로 격리된다. 사용자는 기기 내 PIN이 있는 하드웨어 기반 다중 요소 인증 토큰으로 최소 하루에 한 번 재인증해야 하며, 보다 민감한 작업의 경우 적절한 때에 추가 인증 단계와 2인 규칙(two-person rule)이 추가된다. 글로벌 인증 및 인가 서비스는 모든 내부 시스템에 대한 접근을 관리하며, 제로 트러스트 원칙에 따라 위험 지표(예: '불가능한 이동자(impossible traveler)' 시나리오)에 기반하여 권한을 자동으로 변경하거나 회수한다. 일반 업무용 애플리케이션은 강력한 기기 보안 및 인증 보안이 갖춰진 경우 안전하지 않은 네트워크(즉, 인터넷)를 통해 암호화된 링크로 접근할 수 있다. 민감한 시스템과 작업에 대해서는 적절한 경우 보안 네트워크 경계, 보안 프록시, 배스천 호스트(bastion host)와 같은 추가 보호 수단을 사용하여"
-  },
-  {
-   "type": "p",
-   "en": "enforce additional layers of authentication, privilege limitation, logging, and alerting where appropriate for sensitive systems and operations.",
-   "ko": "추가적인 계층의 인증, 권한 제한, 로깅, 경보를 강제한다."
+   "en": "Zero trust device and identity management. Access to corporate resources is restricted to Amazonmanaged end-user devices protected by multiple endpoint protection systems, and devices are automatically quarantined upon any  indication of compromise, or if not updated with security updates in a timely manner. Users must re-authenticate at least once a day with a hardware-based multi-factor authentication token with an on-device PIN, and additional authentication steps and two-person rules are added when appropriate for more sensitive operations. A global authentication and authorization service manages access to all internal systems and automatically modifies or revokes privileges based on indicators of risk (such as 'impossible traveler' scenarios) following zero trust principles. General business applications are accessible via encrypted links over insecure networks (i.e., the Internet) when strong device and authentication security are in place. Additional protections such as secure network boundaries, security proxies, or bastion hosts are used  to enforce additional layers of authentication, privilege limitation, logging, and alerting where appropriate for sensitive systems and operations.",
+   "ko": "제로 트러스트 기반 기기 및 신원 관리. 기업 리소스에 대한 접근은 여러 엔드포인트 보호 시스템으로 보호되는 Amazon 관리 최종 사용자 기기로 제한되며, 기기는 침해 징후가 조금이라도 있거나 보안 업데이트가 적시에 적용되지 않은 경우 자동으로 격리된다. 사용자는 기기 내 PIN이 있는 하드웨어 기반 다중 요소 인증 토큰으로 최소 하루에 한 번 재인증해야 하며, 보다 민감한 작업의 경우 적절한 때에 추가 인증 단계와 2인 규칙(two-person rule)이 추가된다. 글로벌 인증 및 인가 서비스는 모든 내부 시스템에 대한 접근을 관리하며, 제로 트러스트 원칙에 따라 위험 지표(예: '불가능한 이동자(impossible traveler)' 시나리오)에 기반하여 권한을 자동으로 변경하거나 회수한다. 일반 업무용 애플리케이션은 강력한 기기 보안 및 인증 보안이 갖춰진 경우 안전하지 않은 네트워크(즉, 인터넷)를 통해 암호화된 링크로 접근할 수 있다. 민감한 시스템과 작업에 대해서는 적절한 경우 보안 네트워크 경계, 보안 프록시, 배스천 호스트(bastion host)와 같은 추가 보호 수단을 사용하여 추가적인 계층의 인증, 권한 제한, 로깅, 경보를 강제한다."
   },
   {
    "type": "p",
@@ -909,18 +895,13 @@
   },
   {
    "type": "li",
-   "en": "Advanced IAM technologies that reduce external and internal risk. AWS's core IAM technology defines how both external API and internal cross-service cloud API authentication and authorization work.  Internal",
-   "ko": "외부 및 내부 위험을 줄이는 고급 IAM 기술. AWS의 핵심 IAM 기술은 외부 API와 내부 서비스 간 클라우드 API 모두의 인증 및 권한 부여 방식을 정의한다. 내부"
-  },
-  {
-   "type": "p",
-   "en": "service-to-service requests utilize carefully designed technologies called Forward Access Session (FAS) tokens for synchronous calls, and Service-Linked Roles (SLRs) for asynchronous calls. Both approaches eliminate the presence of cross-service, powerful administrative credentials in most AWS systems, and thus greatly reduce the possible impact of any cloud service compromise, whether because of external or internal threat actors.",
-   "ko": "서비스 간 요청에는 신중하게 설계된 기술이 사용되는데, 동기식 호출에는 Forward Access Session (FAS) 토큰이, 비동기식 호출에는 Service-Linked Roles (SLRs)가 사용된다. 두 접근 방식 모두 대부분의 AWS 시스템에서 서비스 간에 통용되는 강력한 관리자 자격 증명을 없애며, 따라서 외부 위협 행위자에 의한 것이든 내부 위협 행위자에 의한 것이든 클라우드 서비스 침해가 미칠 수 있는 영향을 크게 줄인다."
+   "en": "Advanced IAM technologies that reduce external and internal risk. AWS's core IAM technology defines how both external API and internal cross-service cloud API authentication and authorization work.  Internal service-to-service requests utilize carefully designed technologies called Forward Access Session (FAS) tokens for synchronous calls, and Service-Linked Roles (SLRs) for asynchronous calls. Both approaches eliminate the presence of cross-service, powerful administrative credentials in most AWS systems, and thus greatly reduce the possible impact of any cloud service compromise, whether because of external or internal threat actors.",
+   "ko": "외부 및 내부 위험을 줄이는 고급 IAM 기술. AWS의 핵심 IAM 기술은 외부 API와 내부 서비스 간 클라우드 API 모두의 인증 및 권한 부여 방식을 정의한다. 내부 서비스 간 요청에는 신중하게 설계된 기술이 사용되는데, 동기식 호출에는 Forward Access Session (FAS) 토큰이, 비동기식 호출에는 Service-Linked Roles (SLRs)가 사용된다. 두 접근 방식 모두 대부분의 AWS 시스템에서 서비스 간에 통용되는 강력한 관리자 자격 증명을 없애며, 따라서 외부 위협 행위자에 의한 것이든 내부 위협 행위자에 의한 것이든 클라우드 서비스 침해가 미칠 수 있는 영향을 크게 줄인다."
   },
   {
    "type": "li",
-   "en": "Advanced data encryption and key management capabilities. AWS implements state-of-the-art encryption and key management capabilities for both data in transit and at rest. All data traveling between our secure facilities across metropolitan or wide area networks is bulk-encrypted with AES-256 GCM (Galois/Counter Mode) using either layer[^1] optical or layer[^2:2] MACSec encryption. AWS was the first major cloud provider to remove support for TLS 1.0/1.1,[^9] so data traveling from the outside to AWS API endpoints across public networks is encrypted with a minimum of Transport Layer Security version 1.2, with 1.3 also available on all endpoints. Private connectivity to AWS using Direct Connect can be cross-connected with MACSec encryption between customer and AWS routers, with back-haul also always encrypted over the private AWS network. For data at rest, the AWS Key Management Service (KMS) provides the basis of envelope-based data encryption across more than 115 storage and database services. KMS is the only cloudnative, highly available, horizontally scalable key management system that is also a FIPS 140-3 Level 3 certified HSM. KMS APIs, as well as those of AWS Certificate Manager and Secrets Manager, also support post-quantum key exchange algorithms to provide protection today against possible future 'harvest now, decrypt later' threats to network encryption from advanced actors and quantum computers.[^10]",
-   "ko": "고급 데이터 암호화 및 키 관리 역량. AWS는 전송 중 데이터와 저장 데이터 모두에 대해 최첨단 암호화 및 키 관리 역량을 구현한다. 대도시권 네트워크나 광역 네트워크를 거쳐 AWS의 보안 시설 간에 이동하는 모든 데이터는 계층[^1] 광학 암호화 또는 계층[^2:2] MACSec 암호화를 사용하여 AES-256 GCM(Galois/Counter Mode)으로 일괄 암호화된다. AWS는 TLS 1.0/1.1 지원을 중단한 최초의 주요 클라우드 제공업체였다.[^9] 따라서 외부에서 공용 네트워크를 거쳐 AWS API 엔드포인트로 이동하는 데이터는 최소 Transport Layer Security 버전 1.2로 암호화되며, 모든 엔드포인트에서 1.3도 사용할 수 있다. Direct Connect를 사용한 AWS로의 프라이빗 연결은 고객 라우터와 AWS 라우터 간에 MACSec 암호화로 교차 연결될 수 있으며, 백홀(back-haul) 또한 프라이빗 AWS 네트워크상에서 항상 암호화된다. 저장 데이터의 경우, AWS Key Management Service(KMS)가 115개 이상의 스토리지 및 데이터베이스 서비스 전반에 걸쳐 봉투(envelope) 기반 데이터 암호화의 기반을 제공한다. KMS는 FIPS 140-3 Level 3 인증 HSM이기도 한 유일한 클라우드 네이티브, 고가용성, 수평 확장형 키 관리 시스템이다. KMS API와 AWS Certificate Manager 및 Secrets Manager의 API는 양자내성 키 교환 알고리즘도 지원하여, 고도화된 행위자와 양자 컴퓨터가 향후 네트워크 암호화에 가할 수 있는 '지금 수집하고 나중에 해독하기(harvest now, decrypt later)' 위협에 대해 현시점부터 보호를 제공한다.[^10]"
+   "en": "Advanced data encryption and key management capabilities. AWS implements state-of-the-art encryption and key management capabilities for both data in transit and at rest. All data traveling between our secure facilities across metropolitan or wide area networks is bulk-encrypted with AES-256 GCM (Galois/Counter Mode) using either layer 1 optical or layer 2 MACSec encryption. AWS was the first major cloud provider to remove support for TLS 1.0/1.1,[^9] so data traveling from the outside to AWS API endpoints across public networks is encrypted with a minimum of Transport Layer Security version 1.2, with 1.3 also available on all endpoints. Private connectivity to AWS using Direct Connect can be cross-connected with MACSec encryption between customer and AWS routers, with back-haul also always encrypted over the private AWS network. For data at rest, the AWS Key Management Service (KMS) provides the basis of envelope-based data encryption across more than 115 storage and database services. KMS is the only cloudnative, highly available, horizontally scalable key management system that is also a FIPS 140-3 Level 3 certified HSM. KMS APIs, as well as those of AWS Certificate Manager and Secrets Manager, also support post-quantum key exchange algorithms to provide protection today against possible future 'harvest now, decrypt later' threats to network encryption from advanced actors and quantum computers.[^10]",
+   "ko": "고급 데이터 암호화 및 키 관리 역량. AWS는 전송 중 데이터와 저장 데이터 모두에 대해 최첨단 암호화 및 키 관리 역량을 구현한다. 대도시권 네트워크나 광역 네트워크를 거쳐 AWS의 보안 시설 간에 이동하는 모든 데이터는 계층 1 광학 암호화 또는 계층 2 MACSec 암호화를 사용하여 AES-256 GCM(Galois/Counter Mode)으로 일괄 암호화된다. AWS는 TLS 1.0/1.1 지원을 중단한 최초의 주요 클라우드 제공업체였다.[^9] 따라서 외부에서 공용 네트워크를 거쳐 AWS API 엔드포인트로 이동하는 데이터는 최소 Transport Layer Security 버전 1.2로 암호화되며, 모든 엔드포인트에서 1.3도 사용할 수 있다. Direct Connect를 사용한 AWS로의 프라이빗 연결은 고객 라우터와 AWS 라우터 간에 MACSec 암호화로 교차 연결될 수 있으며, 백홀(back-haul) 또한 프라이빗 AWS 네트워크상에서 항상 암호화된다. 저장 데이터의 경우, AWS Key Management Service(KMS)가 115개 이상의 스토리지 및 데이터베이스 서비스 전반에 걸쳐 봉투(envelope) 기반 데이터 암호화의 기반을 제공한다. KMS는 FIPS 140-3 Level 3 인증 HSM이기도 한 유일한 클라우드 네이티브, 고가용성, 수평 확장형 키 관리 시스템이다. KMS API와 AWS Certificate Manager 및 Secrets Manager의 API는 양자내성 키 교환 알고리즘도 지원하여, 고도화된 행위자와 양자 컴퓨터가 향후 네트워크 암호화에 가할 수 있는 '지금 수집하고 나중에 해독하기(harvest now, decrypt later)' 위협에 대해 현시점부터 보호를 제공한다.[^10]"
   },
   {
    "type": "li",
@@ -940,13 +921,8 @@
   },
   {
    "type": "li",
-   "en": "Automated threat intelligence and defense systems. AWS harvests large volumes of telemetry about the behavior of bad actors on the Internet by operating MadPot,[^18] likely the world's largest and most",
-   "ko": "자동화된 위협 인텔리전스 및 방어 시스템. AWS는 MadPot[^18]을 운영하여 인터넷상 악의적 행위자의 행동에 관한 대량의 원격 측정(telemetry) 데이터를 수집하는데, MadPot은 아마도 세계에서 가장 크고 가장"
-  },
-  {
-   "type": "p",
-   "en": "sophisticated 'honeypot' system. Sonaris,[^19] a threat detection and automatic mitigation system, and Mithra,[^20] a massive neural network graph model of the riskiness of observed DNS names, allow AWS to detect, block and/or mitigate a wide variety of external threats before they impact AWS and its customers. AWS also works closely with other providers to take down threats that exist outside its network, making the Internet safer for all. AWS security engineers and data scientists have explained in depth this work and the AI systems that power it at recent technical conferences.[^21]",
-   "ko": "정교한 '허니팟(honeypot)' 시스템일 것이다. 위협 탐지 및 자동 완화 시스템인 Sonaris[^19]와, 관측된 DNS 이름의 위험도를 다루는 대규모 신경망 그래프 모델인 Mithra[^20]를 통해 AWS는 다양한 외부 위협이 AWS와 고객에게 영향을 미치기 전에 이를 탐지, 차단 및/또는 완화할 수 있다. AWS는 또한 다른 제공업체와 긴밀히 협력하여 자사 네트워크 외부에 존재하는 위협을 제거함으로써 모두를 위해 인터넷을 더 안전하게 만든다. AWS 보안 엔지니어와 데이터 과학자들은 최근 기술 콘퍼런스에서 이 작업과 이를 뒷받침하는 AI 시스템을 심도 있게 설명하였다.[^21]"
+   "en": "Automated threat intelligence and defense systems. AWS harvests large volumes of telemetry about the behavior of bad actors on the Internet by operating MadPot,[^18] likely the world's largest and most sophisticated 'honeypot' system. Sonaris,[^19] a threat detection and automatic mitigation system, and Mithra,[^20] a massive neural network graph model of the riskiness of observed DNS names, allow AWS to detect, block and/or mitigate a wide variety of external threats before they impact AWS and its customers. AWS also works closely with other providers to take down threats that exist outside its network, making the Internet safer for all. AWS security engineers and data scientists have explained in depth this work and the AI systems that power it at recent technical conferences.[^21]",
+   "ko": "자동화된 위협 인텔리전스 및 방어 시스템. AWS는 MadPot[^18]을 운영하여 인터넷상 악의적 행위자의 행동에 관한 대량의 원격 측정(telemetry) 데이터를 수집하는데, MadPot은 아마도 세계에서 가장 크고 가장 정교한 '허니팟(honeypot)' 시스템일 것이다. 위협 탐지 및 자동 완화 시스템인 Sonaris[^19]와, 관측된 DNS 이름의 위험도를 다루는 대규모 신경망 그래프 모델인 Mithra[^20]를 통해 AWS는 다양한 외부 위협이 AWS와 고객에게 영향을 미치기 전에 이를 탐지, 차단 및/또는 완화할 수 있다. AWS는 또한 다른 제공업체와 긴밀히 협력하여 자사 네트워크 외부에 존재하는 위협을 제거함으로써 모두를 위해 인터넷을 더 안전하게 만든다. AWS 보안 엔지니어와 데이터 과학자들은 최근 기술 콘퍼런스에서 이 작업과 이를 뒷받침하는 AI 시스템을 심도 있게 설명하였다.[^21]"
   },
   {
    "type": "li",

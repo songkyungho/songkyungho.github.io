@@ -123,7 +123,7 @@
   {
    "type": "p",
    "en": "10. Ensure that States and individuals remain accountable for decisions, including both actions and omissions, taken throughout the life cycles of AI military capabilities, consistent with their respective obligations under international law; recognizing that States and individuals (rather than machines and algorithms) bear legal and ethical responsibility; and avoiding the creation of 'accountability gaps' in the use of AI in the military domain.",
-   "ko": "10. 국가와 개인이 국제법상 각자의 의무에 부합하게 AI 군사 역량의 수명주기 전반에 걸쳐 내려진 결정(작위와 누락을 모두 포함)에 대해 계속 책임을 지도록 보장한다. 이때 (기계와 알고리즘이 아닌) 국가와 개인이 법적·윤리적 책임을 진다는 점을 인식하고, 군사 영역에서의 AI 사용에 있어 '책임성 공백(accountability gaps)'이 발생하지 않도록 한다.",
+   "ko": "10. 국가와 개인이 국제법상 각자의 의무에 부합하게 AI 군사 역량의 수명주기 전반에 걸쳐 내려진 결정(작위와 부작위를 모두 포함)에 대해 계속 책임을 지도록 보장한다. 이때 (기계와 알고리즘이 아닌) 국가와 개인이 법적·윤리적 책임을 진다는 점을 인식하고, 군사 영역에서의 AI 사용에 있어 '책임성 공백(accountability gaps)'이 발생하지 않도록 한다.",
    "marks": [
     {
      "t": "(기계와 알고리즘이 아닌) 국가와 개인이 법적·윤리적 책임을 진다는 점을 인식하고",
@@ -164,7 +164,7 @@
   {
    "type": "p",
    "en": "12. Emphasise that AI-enabled decision support systems should support, not replace, the exercise of human judgement. The nature and degree of human involvement should be appropriate considering, among other factors, the operational context, the function performed, the technical characteristics and capabilities, as well as human factors such as training and fatigue, and the risks and benefits involved.",
-   "ko": "12. AI 기반 의사결정 지원 시스템은 인간 판단의 행사를 대체하는 것이 아니라 지원해야 한다는 점을 강조한다. 인간 관여의 성격과 정도는 무엇보다도 작전 상황, 수행되는 기능, 기술적 특성 및 역량, 훈련 및 피로와 같은 인적 요인, 그리고 관련 위험과 이점을 고려하여 적절해야 한다.",
+   "ko": "12. AI 기반 의사결정 지원 시스템은 인간 판단의 행사를 대체하는 것이 아니라 지원해야 한다는 점을 강조한다. 인간 관여의 성격과 정도는 여러 요소 중에서도 특히 작전 상황, 수행되는 기능, 기술적 특성 및 역량, 훈련 및 피로와 같은 인적 요인, 그리고 관련 위험과 이점을 고려하여 적절해야 한다.",
    "marks": [
     {
      "t": "AI 기반 의사결정 지원 시스템은 인간 판단의 행사를 대체하는 것이 아니라 지원해야 한다",

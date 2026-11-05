@@ -17,10 +17,10 @@
  "og_image": "/images/translations/global-digital-compact-2024-cover.jpg",
  "image_caption": "문건 첫 쪽",
  "stats": {
-  "blocks": 125,
+  "blocks": 124,
   "sections": 22,
   "items": 0,
-  "words_en": 7104
+  "words_en": 7084
  },
  "blocks": [
   {
@@ -215,8 +215,8 @@
   },
   {
    "type": "p",
-   "en": "(a) Develop and strengthen targets, indicators and metrics for universal meaningful and affordable connectivity, building on existing work, and integrate these into international, regional and national development strategies (SDG 9); (b) Develop innovative and blended financing mechanisms and incentives, including in collaboration with Governments, multilateral development banks, relevant international organizations and the private sector, to connect the remaining 2.6 billion people to the Internet and to improve the quality and affordability of connectivity. We will aim for entry-level broadband subscription costs that are accessible to the widest section of the population (SDGs 1 and 9); (c) Invest in and deploy resilient digital infrastructure, including satellites and local network initiatives, that provide safe and secure network coverage to all areas, including rural, remote and 'hard-to-reach' areas, and promote equitable access to satellite orbits, taking into account the needs of developing countries. We will aim for universal access at affordable rates and at sufficient speeds as well as reliability to enable meaningful use of the Internet (SDGs 9 and 11); (d) Map and connect all schools and hospitals to the Internet, building on the Giga initiative of the International Telecommunication Union and the United Nations Children's Fund, and enhance telemedicine services and capabilities (SDGs 3 and 4); (e) Promote sustainability across the life cycle of digital technologies, including context-specific measures to increase resource efficiency and to conserve A/79/L.2 and sustainably use natural resources and that aim to ensure that digital infrastructure and equipment are sustainably designed to address environmental challenges in the context of sustainable development and efforts to eradicate poverty (SDGs 1, 4, 6, 7, 8, 11, 12, and 14);",
-   "ko": "(a) 기존 작업을 토대로 보편적이고 의미 있으며 적정한 비용의 연결성을 위한 목표, 지표 및 측정 기준을 개발·강화하고, 이를 국제, 지역 및 국가 개발 전략에 통합한다(SDG 9); (b) 남은 26억 명을 인터넷에 연결하고 연결성의 품질과 적정 비용성을 개선하기 위해, 정부, 다자개발은행, 관련 국제기구 및 민간 부문과의 협력을 포함하여 혁신적이고 혼합된 금융 메커니즘과 인센티브를 개발한다. 우리는 인구의 가장 폭넓은 계층이 접근할 수 있는 수준의 기본형 광대역 가입 비용을 목표로 할 것이다(SDG 1 및 9); (c) 농촌, 원격지 및 '접근이 어려운' 지역을 포함한 모든 지역에 안전하고 보안이 확보된 네트워크 커버리지를 제공하는, 위성 및 지역 네트워크 이니셔티브를 포함한 회복력 있는 디지털 인프라에 투자하고 이를 구축하며, 개발도상국의 필요를 고려하여 위성 궤도에 대한 공평한 접근을 증진한다. 우리는 인터넷의 의미 있는 사용을 가능하게 하는 적정한 요금과 충분한 속도 및 신뢰성을 갖춘 보편적 접근을 목표로 할 것이다(SDG 9 및 11); (d) 국제전기통신연합과 유엔아동기금(United Nations Children's Fund)의 Giga 이니셔티브를 토대로 모든 학교와 병원을 파악하여 인터넷에 연결하고, 원격의료 서비스와 역량을 강화한다(SDG 3 및 4); (e) 자원 효율성을 높이고 천연자원을 보전하며 A/79/L.2 지속가능하게 이용하기 위한 맥락별 조치, 그리고 지속가능발전 및 빈곤 퇴치 노력의 맥락에서 환경적 과제에 대응하도록 디지털 인프라와 장비가 지속가능하게 설계되도록 보장하는 것을 목표로 하는 조치를 포함하여, 디지털 기술의 수명주기 전반에 걸쳐 지속가능성을 증진한다(SDG 1, 4, 6, 7, 8, 11, 12 및 14);",
+   "en": "(a) Develop and strengthen targets, indicators and metrics for universal meaningful and affordable connectivity, building on existing work, and integrate these into international, regional and national development strategies (SDG 9); (b) Develop innovative and blended financing mechanisms and incentives, including in collaboration with Governments, multilateral development banks, relevant international organizations and the private sector, to connect the remaining 2.6 billion people to the Internet and to improve the quality and affordability of connectivity. We will aim for entry-level broadband subscription costs that are accessible to the widest section of the population (SDGs 1 and 9); (c) Invest in and deploy resilient digital infrastructure, including satellites and local network initiatives, that provide safe and secure network coverage to all areas, including rural, remote and 'hard-to-reach' areas, and promote equitable access to satellite orbits, taking into account the needs of developing countries. We will aim for universal access at affordable rates and at sufficient speeds as well as reliability to enable meaningful use of the Internet (SDGs 9 and 11); (d) Map and connect all schools and hospitals to the Internet, building on the Giga initiative of the International Telecommunication Union and the United Nations Children's Fund, and enhance telemedicine services and capabilities (SDGs 3 and 4); (e) Promote sustainability across the life cycle of digital technologies, including context-specific measures to increase resource efficiency and to conserve and sustainably use natural resources and that aim to ensure that digital infrastructure and equipment are sustainably designed to address environmental challenges in the context of sustainable development and efforts to eradicate poverty (SDGs 1, 4, 6, 7, 8, 11, 12, 13 and 14);",
+   "ko": "(a) 기존 작업을 토대로 보편적이고 의미 있으며 적정한 비용의 연결성을 위한 목표, 지표 및 측정 기준을 개발·강화하고, 이를 국제, 지역 및 국가 개발 전략에 통합한다(SDG 9); (b) 남은 26억 명을 인터넷에 연결하고 연결성의 품질과 적정 비용성을 개선하기 위해, 정부, 다자개발은행, 관련 국제기구 및 민간 부문과의 협력을 포함하여 혁신적이고 혼합된 금융 메커니즘과 인센티브를 개발한다. 우리는 인구의 가장 폭넓은 계층이 접근할 수 있는 수준의 기본형 광대역 가입 비용을 목표로 할 것이다(SDG 1 및 9); (c) 농촌, 원격지 및 '접근이 어려운' 지역을 포함한 모든 지역에 안전하고 보안이 확보된 네트워크 커버리지를 제공하는, 위성 및 지역 네트워크 이니셔티브를 포함한 회복력 있는 디지털 인프라에 투자하고 이를 구축하며, 개발도상국의 필요를 고려하여 위성 궤도에 대한 공평한 접근을 증진한다. 우리는 인터넷의 의미 있는 사용을 가능하게 하는 적정한 요금과 충분한 속도 및 신뢰성을 갖춘 보편적 접근을 목표로 할 것이다(SDG 9 및 11); (d) 국제전기통신연합과 유엔아동기금(United Nations Children's Fund)의 Giga 이니셔티브를 토대로 모든 학교와 병원을 파악하여 인터넷에 연결하고, 원격의료 서비스와 역량을 강화한다(SDG 3 및 4); (e) 자원 효율성을 높이고 천연자원을 보전하며 지속가능하게 이용하기 위한 맥락별 조치, 그리고 지속가능발전 및 빈곤 퇴치 노력의 맥락에서 환경적 과제에 대응하도록 디지털 인프라와 장비가 지속가능하게 설계되도록 보장하는 것을 목표로 하는 조치를 포함하여, 디지털 기술의 수명주기 전반에 걸쳐 지속가능성을 증진한다(SDG 1, 4, 6, 7, 8, 11, 12, 13 및 14);",
    "marks": [
     {
      "t": "남은 26억 명을 인터넷에 연결하고 연결성의 품질과 적정 비용성을 개선하기 위해",
@@ -423,8 +423,8 @@
   },
   {
    "type": "p",
-   "en": "(a) Digital technology companies and developers to respect international human rights and principles, including through the application of human rights due diligence and impact assessments throughout the technology life cycle (all SDGs); (b) Digital technology companies, developers and social media platforms to respect human rights online, be accountable for and take measures to mitigate and prevent abuses, and to provide access to effective remedy in line with the United Nations Guiding Principles on Business and Human Rights and other relevant frameworks (SDGs 5, and 16).",
-   "ko": "(a) 디지털 기술 기업과 개발자는 기술 생애주기 전반에 걸친 인권 실사 및 영향 평가의 적용 등을 통해 국제 인권과 원칙을 존중한다(모든 SDG); (b) 디지털 기술 기업, 개발자 및 소셜미디어 플랫폼은 유엔 기업과 인권 이행원칙 및 기타 관련 프레임워크에 따라 온라인에서 인권을 존중하고, 남용에 대해 책임을 지며 이를 완화하고 예방하기 위한 조치를 취하고, 효과적인 구제에 대한 접근을 제공한다(SDG 5 및 16).",
+   "en": "(a) Digital technology companies and developers to respect international human rights and principles, including through the application of human rights due diligence and impact assessments throughout the technology life cycle (all SDGs); (b) Digital technology companies, developers and social media platforms to respect human rights online, be accountable for and take measures to mitigate and prevent abuses, and to provide access to effective remedy in line with the United Nations Guiding Principles on Business and Human Rights and other relevant frameworks (SDGs 5, 10 and 16).",
+   "ko": "(a) 디지털 기술 기업과 개발자는 기술 생애주기 전반에 걸친 인권 실사 및 영향 평가의 적용 등을 통해 국제 인권과 원칙을 존중한다(모든 SDG); (b) 디지털 기술 기업, 개발자 및 소셜미디어 플랫폼은 유엔 기업과 인권 이행원칙 및 기타 관련 프레임워크에 따라 온라인에서 인권을 존중하고, 남용에 대해 책임을 지며 이를 완화하고 예방하기 위한 조치를 취하고, 효과적인 구제에 대한 접근을 제공한다(SDG 5, 10 및 16).",
    "marks": [
     {
      "t": "기술 생애주기 전반에 걸친 인권 실사 및 영향 평가의 적용",
@@ -467,7 +467,7 @@
   {
    "type": "p",
    "en": "28. We acknowledge the importance of the Internet Governance Forum as the primary multi-stakeholder platform for discussion of Internet governance issues.",
-   "ko": "28. 우리는 인터넷 거버넌스 문제를 논의하는 주요 다중이해관계자 플랫폼으로서 인터넷 거버넌스 포럼(Internet Governance Forum)의 중요성을 인정한다."
+   "ko": "28. 우리는 인터넷 거버넌스 문제를 논의하는 주된 다중이해관계자 플랫폼으로서 인터넷 거버넌스 포럼(Internet Governance Forum)의 중요성을 인정한다."
   },
   {
    "type": "p",
@@ -613,8 +613,8 @@
   },
   {
    "type": "p",
-   "en": "(a) Call on digital technology companies and social media platforms to enhance the transparency and accountability of their systems, including terms of service, content moderation and recommendation algorithms and handling of users' personal data in local languages, to empower users to make informed choices and provide or withdraw informed consent (SDGs 9 and 10); (b) Call on social media platforms to provide researchers access to data, with safeguards for user privacy, to ensure transparency and accountability to build an evidence base on how to address misinformation and disinformation and hate speech that can inform government and industry policies, standards and best practices (SDGs 9, and 17); (c) Call on digital technology companies and developers to continue to develop solutions and publicly communicate actions to counter potential harms, including hate speech and discrimination, from artificial intelligence-enabled content. Such measures include incorporation of safeguards into artificial intelligence model training processes, identification of artificial intelligence-generated material, authenticity certification for content and origins, labelling, watermarking and other techniques (SDGs 10, and 17).",
-   "ko": "(a) 디지털 기술 기업과 소셜미디어 플랫폼에게 사용자가 정보에 입각한 선택을 하고 정보에 입각한 동의를 제공하거나 철회할 수 있도록 역량을 강화하기 위해, 현지 언어로 된 이용약관, 콘텐츠 모더레이션 및 추천 알고리즘, 사용자 개인 데이터 처리 등을 포함하여 자사 시스템의 투명성과 책임성을 높일 것을 촉구한다(SDG 9 및 10); (b) 소셜미디어 플랫폼에게 사용자 프라이버시를 위한 안전장치를 갖추어 연구자에게 데이터 접근을 제공함으로써 투명성과 책임성을 보장하고, 정부 및 업계의 정책, 표준 및 모범 사례에 정보를 제공할 수 있도록 오정보, 허위 정보 및 혐오 표현에 대응하는 방법에 관한 증거 기반을 구축할 것을 촉구한다(SDG 9, 및 17); (c) 디지털 기술 기업과 개발자에게 인공지능 기반 콘텐츠로 인한 혐오 표현 및 차별을 포함한 잠재적 피해에 대응하기 위한 해결책을 지속적으로 개발하고 그 조치를 공개적으로 알릴 것을 촉구한다. 이러한 조치에는 인공지능 모델 학습 과정에 안전장치 통합, 인공지능 생성 자료의 식별, 콘텐츠 및 출처에 대한 진본성 인증, 라벨링, 워터마킹 및 기타 기법이 포함된다(SDG 10, 및 17).",
+   "en": "(a) Call on digital technology companies and social media platforms to enhance the transparency and accountability of their systems, including terms of service, content moderation and recommendation algorithms and handling of users' personal data in local languages, to empower users to make informed choices and provide or withdraw informed consent (SDGs 9 and 10); (b) Call on social media platforms to provide researchers access to data, with safeguards for user privacy, to ensure transparency and accountability to build an evidence base on how to address misinformation and disinformation and hate speech that can inform government and industry policies, standards and best practices (SDGs 9, 16 and 17); (c) Call on digital technology companies and developers to continue to develop solutions and publicly communicate actions to counter potential harms, including hate speech and discrimination, from artificial intelligence-enabled content. Such measures include incorporation of safeguards into artificial intelligence model training processes, identification of artificial intelligence-generated material, authenticity certification for content and origins, labelling, watermarking and other techniques (SDGs 10, 16 and 17).",
+   "ko": "(a) 디지털 기술 기업과 소셜미디어 플랫폼에게 사용자가 정보에 입각한 선택을 하고 정보에 입각한 동의를 제공하거나 철회할 수 있도록 역량을 강화하기 위해, 현지 언어로 된 이용약관, 콘텐츠 모더레이션 및 추천 알고리즘, 사용자 개인 데이터 처리 등을 포함하여 자사 시스템의 투명성과 책임성을 높일 것을 촉구한다(SDG 9 및 10); (b) 소셜미디어 플랫폼에게 사용자 프라이버시를 위한 안전장치를 갖추어 연구자에게 데이터 접근을 제공함으로써 투명성과 책임성을 보장하고, 정부 및 업계의 정책, 표준 및 모범 사례에 정보를 제공할 수 있도록 오정보, 허위 정보 및 혐오 표현에 대응하는 방법에 관한 증거 기반을 구축할 것을 촉구한다(SDG 9, 16 및 17); (c) 디지털 기술 기업과 개발자에게 인공지능 기반 콘텐츠로 인한 혐오 표현 및 차별을 포함한 잠재적 피해에 대응하기 위한 해결책을 지속적으로 개발하고 그 조치를 공개적으로 알릴 것을 촉구한다. 이러한 조치에는 인공지능 모델 학습 과정에 안전장치 통합, 인공지능 생성 자료의 식별, 콘텐츠 및 출처에 대한 진본성 인증, 라벨링, 워터마킹 및 기타 기법이 포함된다(SDG 10, 16 및 17).",
    "marks": [
     {
      "t": "콘텐츠 모더레이션 및 추천 알고리즘",
@@ -680,8 +680,8 @@
   },
   {
    "type": "p",
-   "en": "(c) Empower individuals and groups with the ability to consider, give and withdraw their consent to the use of their data and the ability to choose how those data are used, including through legally mandated protections for data privacy and intellectual property (SDGs and 16); (d) Ensure that data collection, access, sharing, transfer, storage and processing practices are safe, secure and proportionate for necessary, explicit and legitimate purposes, in compliance with international law (all SDGs); (e) Develop skilled workforces capable of collecting, processing, analysing, storing and transferring data safely in ways that protect privacy (SDGs 8 and 9).",
-   "ko": "(c) 데이터 프라이버시 및 지식재산권에 대한 법적으로 의무화된 보호 등을 통해, 개인과 집단이 자신의 데이터 사용에 대한 동의를 검토하고, 제공하며, 철회할 수 있는 능력과 해당 데이터의 사용 방식을 선택할 수 있는 능력을 갖추도록 역량을 강화한다(SDG 및 16); (d) 데이터의 수집, 접근, 공유, 이전, 저장 및 처리에 관한 실행 방안이 국제법에 따른 규정 준수하에, 필요하고 명시적이며 정당한 목적을 위해 안전하고 보안이 확보되며 비례적이도록 보장한다(모든 SDG); (e) 프라이버시를 보호하는 방식으로 데이터를 안전하게 수집, 처리, 분석, 저장 및 이전할 수 있는 숙련된 인력을 양성한다(SDG 8 및 9)."
+   "en": "(c) Empower individuals and groups with the ability to consider, give and withdraw their consent to the use of their data and the ability to choose how those data are used, including through legally mandated protections for data privacy and intellectual property (SDGs 10 and 16); (d) Ensure that data collection, access, sharing, transfer, storage and processing practices are safe, secure and proportionate for necessary, explicit and legitimate purposes, in compliance with international law (all SDGs); (e) Develop skilled workforces capable of collecting, processing, analysing, storing and transferring data safely in ways that protect privacy (SDGs 8 and 9).",
+   "ko": "(c) 데이터 프라이버시 및 지식재산권에 대한 법적으로 의무화된 보호 등을 통해, 개인과 집단이 자신의 데이터 사용에 대한 동의를 검토하고, 제공하며, 철회할 수 있는 능력과 해당 데이터의 사용 방식을 선택할 수 있는 능력을 갖추도록 역량을 강화한다(SDG 10 및 16); (d) 데이터의 수집, 접근, 공유, 이전, 저장 및 처리에 관한 실행 방안이 국제법에 따른 규정 준수하에, 필요하고 명시적이며 정당한 목적을 위해 안전하고 보안이 확보되며 비례적이도록 보장한다(모든 SDG); (e) 프라이버시를 보호하는 방식으로 데이터를 안전하게 수집, 처리, 분석, 저장 및 이전할 수 있는 숙련된 인력을 양성한다(SDG 8 및 9)."
   },
   {
    "type": "h2",
@@ -756,8 +756,8 @@
   },
   {
    "type": "p",
-   "en": "(a) Increase financing for data and statistics from all sources and enhance efforts to build capacity in data and related skills, as well as responsible data use, particularly in developing countries. We will scale up predictable financing for sustainable development data (SDG 17); (b) Strengthen efforts to collect, analyse and disseminate relevant, accurate, reliable and disaggregated data for better monitoring and policymaking to accelerate the achievement of the 2030 Agenda, while respecting privacy and data protection. We will aim for a per cent increase in the data available to monitor the Sustainable A/79/L.2 Development Goals, disaggregated by income, sex, age, race, ethnicity, migration status, disability and geographical location and other characteristics relevant in national contexts (all SDGs);",
-   "ko": "(a) 모든 재원으로부터 데이터 및 통계를 위한 재정 지원을 확대하고, 특히 개발도상국에서 데이터 및 관련 기술, 그리고 책임 있는 데이터 사용에 관한 역량 강화 노력을 강화한다. 우리는 지속가능발전 데이터를 위한 예측 가능한 재정 지원을 확대할 것이다(SDG 17); (b) 프라이버시와 개인정보 보호를 존중하면서, 2030 의제의 달성을 가속화하기 위한 더 나은 모니터링과 정책 결정을 위해 관련성 있고 정확하며 신뢰할 수 있는 세분화된 데이터를 수집, 분석 및 보급하는 노력을 강화한다. 우리는 소득, 성별, 연령, 인종, 민족, 이주 상태, 장애, 지리적 위치 및 국가적 맥락에서 관련된 기타 특성별로 세분화된, 지속가능발전목표 모니터링에 활용 가능한 데이터를 퍼센트 증가시키는 것을 목표로 할 A/79/L.2 것이다(모든 SDG);"
+   "en": "(a) Increase financing for data and statistics from all sources and enhance efforts to build capacity in data and related skills, as well as responsible data use, particularly in developing countries. We will scale up predictable financing for sustainable development data (SDG 17); (b) Strengthen efforts to collect, analyse and disseminate relevant, accurate, reliable and disaggregated data for better monitoring and policymaking to accelerate the achievement of the 2030 Agenda, while respecting privacy and data protection. We will aim for a 50 per cent increase in the data available to monitor the Sustainable Development Goals, disaggregated by income, sex, age, race, ethnicity, migration status, disability and geographical location and other characteristics relevant in national contexts (all SDGs);",
+   "ko": "(a) 모든 재원으로부터 데이터 및 통계를 위한 재정 지원을 확대하고, 특히 개발도상국에서 데이터 및 관련 기술, 그리고 책임 있는 데이터 사용에 관한 역량 강화 노력을 강화한다. 우리는 지속가능발전 데이터를 위한 예측 가능한 재정 지원을 확대할 것이다(SDG 17); (b) 프라이버시와 개인정보 보호를 존중하면서, 2030 의제의 달성을 가속화하기 위한 더 나은 모니터링과 정책 결정을 위해 관련성 있고 정확하며 신뢰할 수 있는 세분화된 데이터를 수집, 분석 및 보급하는 노력을 강화한다. 우리는 소득, 성별, 연령, 인종, 민족, 이주 상태, 장애, 지리적 위치 및 국가적 맥락에서 관련된 기타 특성별로 세분화된, 지속가능발전목표 모니터링에 활용 가능한 데이터를 50퍼센트 증가시키는 것을 목표로 할 것이다(모든 SDG);"
   },
   {
    "type": "p",
@@ -801,7 +801,7 @@
   {
    "type": "p",
    "en": "48. We will promote and support interoperability between national, regional and international data policy frameworks. In this context, we request the Commission on Science and Technology for Development to establish a dedicated working group to engage in a comprehensive and inclusive multi-stakeholder dialogue on data governance at all levels as relevant for development. We encourage the working group to report on its progress to the General Assembly, by no later than the eighty -first session, including on follow-up recommendations towards equitable and interoperable data governance arrangements, which may include fundamental principles of data governance at all levels as relevant for development; proposals to support interoperability between national, regional and international data systems; considerations of sharing the benefits of data; and options to facilitate safe, secure and trusted data flows, including cross-border data flows as relevant for development (all SDGs).",
-   "ko": "48. 우리는 국가, 지역 및 국제 데이터 정책 프레임워크 간의 상호운용성을 증진하고 지원할 것이다. 이와 관련하여 우리는 개발을 위한 과학기술위원회(Commission on Science and Technology for Development)에 개발과 관련된 모든 수준의 데이터 거버넌스에 관한 포괄적이고 포용적인 다중이해관계자 대화를 수행할 전담 작업반을 설치할 것을 요청한다. 우리는 작업반이 늦어도 제81차 회기까지 총회(General Assembly)에 그 진행 상황을 보고하도록 권장한다. 이 보고에는 형평성 있고 상호운용 가능한 데이터 거버넌스 체계를 위한 후속 권고가 포함되어야 하며, 여기에는 개발과 관련된 모든 수준의 데이터 거버넌스 기본 원칙, 국가·지역·국제 데이터 시스템 간 상호운용성을 지원하기 위한 제안, 데이터 혜택의 공유에 관한 고려 사항, 그리고 개발과 관련된 국경 간 데이터 흐름을 포함하여 안전하고 보안이 확보되며 신뢰할 수 있는 데이터 흐름을 촉진하기 위한 선택지가 포함될 수 있다(모든 SDG).",
+   "ko": "48. 우리는 국가, 지역 및 국제 데이터 정책 프레임워크 간의 상호운용성을 증진하고 지원할 것이다. 이와 관련하여 우리는 개발을 위한 과학기술위원회(Commission on Science and Technology for Development)에 개발과 관련된 모든 수준의 데이터 거버넌스에 관한 포괄적이고 포용적인 다중이해관계자 대화를 수행할 전담 작업반을 설치할 것을 요청한다. 우리는 작업반이 늦어도 제81차 회기까지 총회(General Assembly)에 그 진행 상황을 보고하도록 권장한다. 이 보고에는 형평성 있고 상호운용 가능한 데이터 거버넌스 체계를 위한 후속 권고도 포함하도록 하며, 여기에는 개발과 관련된 모든 수준의 데이터 거버넌스 기본 원칙, 국가·지역·국제 데이터 시스템 간 상호운용성을 지원하기 위한 제안, 데이터 혜택의 공유에 관한 고려 사항, 그리고 개발과 관련된 국경 간 데이터 흐름을 포함하여 안전하고 보안이 확보되며 신뢰할 수 있는 데이터 흐름을 촉진하기 위한 선택지가 포함될 수 있다(모든 SDG).",
    "marks": [
     {
      "t": "우리는 개발을 위한 과학기술위원회(Commission on Science and Technology for Development)에 개발과 관련된 모든 수준의 데이터 거버넌스에 관한 포괄적이고 포용적인 다중이해관계자 대화를 수행할 전담 작업반을 설치할 것을 요청한다.",
@@ -909,13 +909,8 @@
   },
   {
    "type": "p",
-   "en": "57. We therefore request the President of the General Assembly to appoint at the seventy-ninth session of the General Assembly co-facilitators, one from a developed country and one from a developing country, to identify, through an intergovernmental process and consultations with other relevant stakeholders, the terms of reference and United Nations Educational, Scientific and Cultural Organization, Records of the General Conference, Forty-first Session, Paris, 9-24 November 2021 , vol. 1, Resolutions , annex VII.",
-   "ko": "57. 이에 우리는 총회 의장에게 총회 제79차 회기에서 선진국 출신 1인과 개발도상국 출신 1인으로 구성된 공동 촉진자를 임명하여, 정부 간 절차와 기타 관련 이해관계자와의 협의를 통해 위임 사항(terms of reference) 및 유엔교육과학문화기구, 총회(General Conference) 기록, 제41차 회기, 파리, 2021년 11월 9-24일, 제1권, 결의, 부속서 VII."
-  },
-  {
-   "type": "p",
-   "en": "modalities for the establishment and functioning of the Independent International Scientific Panel on AI and the Global Dialogue on AI Governance for the adoption by the General Assembly.",
-   "ko": "총회의 채택을 위한 AI에 관한 독립 국제 과학 패널과 AI 거버넌스에 관한 글로벌 대화의 설립 및 운영을 위한 모달리티를 확인하도록 요청한다."
+   "en": "57. We therefore request the President of the General Assembly to appoint at the seventy-ninth session of the General Assembly co-facilitators, one from a developed country and one from a developing country, to identify, through an intergovernmental process and consultations with other relevant stakeholders, the terms of reference and modalities for the establishment and functioning of the Independent International Scientific Panel on AI and the Global Dialogue on AI Governance for the adoption by the General Assembly.",
+   "ko": "57. 이에 우리는 총회 의장에게 총회 제79차 회기에서 선진국 출신 1인과 개발도상국 출신 1인으로 구성된 공동 촉진자를 임명하여, 정부 간 절차와 기타 관련 이해관계자와의 협의를 통해 총회의 채택을 위해 AI에 관한 독립 국제 과학 패널과 AI 거버넌스에 관한 글로벌 대화의 설립 및 운영을 위한 위임 사항(terms of reference)과 모달리티를 확인하도록 요청한다."
   },
   {
    "type": "p",
@@ -930,8 +925,8 @@
   },
   {
    "type": "p",
-   "en": "59. We will promote safe, secure and trustworthy artificial intelligence systems that advance, protect and preserve linguistic and cultural diversity and that take into account multilingualism throughout the life cycle of these systems (SDGs and 16).",
-   "ko": "59. 우리는 언어적·문화적 다양성을 증진, 보호 및 보존하고, 시스템의 전체 수명 주기에 걸쳐 다국어주의를 고려하는, 안전하고 보안이 확보되며 신뢰할 수 있는 인공지능 시스템을 증진할 것이다(SDG 및 16).",
+   "en": "59. We will promote safe, secure and trustworthy artificial intelligence systems that advance, protect and preserve linguistic and cultural diversity and that take into account multilingualism throughout the life cycle of these systems (SDGs 10 and 16).",
+   "ko": "59. 우리는 언어적·문화적 다양성을 증진, 보호 및 보존하고, 시스템의 전체 수명 주기에 걸쳐 다국어주의를 고려하는, 안전하고 보안이 확보되며 신뢰할 수 있는 인공지능 시스템을 증진할 것이다(SDG 10 및 16).",
    "marks": [
     {
      "t": "안전하고 보안이 확보되며 신뢰할 수 있는 인공지능 시스템을 증진할 것이다",

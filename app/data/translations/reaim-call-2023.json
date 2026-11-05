@@ -42,7 +42,7 @@
   {
    "type": "p",
    "en": "AI offers great opportunities and has extraordinary potential as an enabling technology, enabling us among other benefits to make powerful use of previously unimaginable quantities of data and improving decision-making. However, we recognise that there are also risks involved, many of which we cannot foresee to date.",
-   "ko": "AI는 조력 기술(enabling technology)로서 큰 기회와 비상한 잠재력을 제공하며, 무엇보다 이전에는 상상할 수 없었던 양의 데이터를 강력하게 활용하고 의사결정을 개선할 수 있게 해 준다. 그러나 우리는 위험 또한 수반되며, 그중 상당수는 현재로서는 예견할 수 없다는 점을 인정한다.",
+   "ko": "AI는 조력 기술(enabling technology)로서 큰 기회와 비상한 잠재력을 제공하며, 여러 이점 가운데 특히 이전에는 상상할 수 없었던 양의 데이터를 강력하게 활용하고 의사결정을 개선할 수 있게 해 준다. 그러나 우리는 위험 또한 수반되며, 그중 상당수는 현재로서는 예견할 수 없다는 점을 인정한다.",
    "marks": [
     {
      "t": "그러나 우리는 위험 또한 수반되며, 그중 상당수는 현재로서는 예견할 수 없다는 점을 인정한다.",
@@ -53,7 +53,7 @@
   {
    "type": "p",
    "en": "There are concerns worldwide around the use of AI in the military domain and about the potential unreliability of AI systems, the issue of human involvement, the lack of clarity with regards to liability and potential unintended consequences, and the risk of unintended escalation within the spectrum of armed force, amongst other potential impacts.",
-   "ko": "군사 영역에서의 AI 사용과 관련하여, 특히 AI 시스템의 잠재적 신뢰성 결여, 인간 관여의 문제, 법적 책임 및 잠재적인 의도치 않은 결과와 관련된 불명확성, 무력 사용 스펙트럼 내에서의 의도치 않은 확전 위험 등 잠재적 영향에 대해 전 세계적으로 우려가 존재한다.",
+   "ko": "군사 영역에서의 AI 사용과 관련하여, 그리고 AI 시스템의 잠재적 신뢰성 결여, 인간 관여의 문제, 법적 책임 및 잠재적인 의도치 않은 결과와 관련된 불명확성, 무력 사용 스펙트럼 내에서의 의도치 않은 확전 위험 등 잠재적 영향에 대해 전 세계적으로 우려가 존재한다.",
    "marks": [
     {
      "t": "AI 시스템의 잠재적 신뢰성 결여, 인간 관여의 문제, 법적 책임 및 잠재적인 의도치 않은 결과와 관련된 불명확성",
@@ -157,7 +157,7 @@
   {
    "type": "p",
    "en": "10. We affirm that data for AI systems should be collected, used, shared, archived and deleted, as applicable, in ways that are consistent with international law, as well as relevant national, regional and international legal frameworks and data standards. Adequate data protection and data quality governance mechanisms should be established and ensured from the early design phase onwards, including in obtaining and using AI training data.",
-   "ko": "10. 우리는 AI 시스템을 위한 데이터가 해당되는 경우 국제법뿐만 아니라 관련 국가, 지역 및 국제 법적 프레임워크와 데이터 표준에 부합하는 방식으로 수집, 사용, 공유, 보관 및 삭제되어야 함을 확인한다. AI 학습 데이터의 확보 및 사용을 포함하여, 초기 설계 단계부터 적절한 개인정보 보호 및 데이터 품질 거버넌스 메커니즘이 수립되고 보장되어야 한다."
+   "ko": "10. 우리는 AI 시스템을 위한 데이터가 해당되는 경우 국제법뿐만 아니라 관련 국가, 지역 및 국제 법적 프레임워크와 데이터 표준에 부합하는 방식으로 수집, 사용, 공유, 보관 및 삭제되어야 함을 확인한다. AI 학습 데이터의 확보 및 사용을 포함하여, 초기 설계 단계부터 적절한 데이터 보호 및 데이터 품질 거버넌스 메커니즘이 수립되고 보장되어야 한다."
   },
   {
    "type": "p",

@@ -17,7 +17,7 @@
  "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
  "doc_kind": "국가 거버넌스 프레임워크",
  "stats": {
-  "blocks": 475,
+  "blocks": 474,
   "sections": 13,
   "items": 143,
   "words_en": 17401
@@ -333,10 +333,10 @@
   {
    "type": "p",
    "en": "As AI models use limited datasets to model complex real-world scenarios, and the theoretical foundations and technological capabilities for autonomous perception, cognition, understanding, and interaction are yet to achieve breakthroughs, probabilistic inference and decision-making cannot be absolutely reliable, and can therefore produce outputs that may be inconsistent with reality, fabricated out of thin air, or deviate from the given context.",
-   "ko": "AI 모델은 제한된 데이터셋을 사용하여 복잡한 현실 세계의 시나리오를 모델링한다. 또한 자율적 지각, 인지, 이해, 상호작용을 위한 이론적 기반과 기술 역량은 아직 돌파구를 마련하지 못하였다. 이 때문에 확률적 추론(Inference)과 의사결정은 절대적으로 신뢰할 수 없으며, 현실과 불일치하거나, 근거 없이 날조되었거나, 주어진 맥락에서 벗어난 출력을 생성할 수 있다.",
+   "ko": "AI 모델은 제한된 데이터셋을 사용하여 복잡한 현실 세계의 시나리오를 모델링한다. 또한 자율적 지각, 인지, 이해, 상호작용을 위한 이론적 기반과 기술 역량은 아직 돌파구를 마련하지 못하였다. 이 때문에 확률적 추론(Inference)과 의사결정은 절대적으로 신뢰할 수는 없으며, 현실과 불일치하거나, 근거 없이 날조되었거나, 주어진 맥락에서 벗어난 출력을 생성할 수 있다.",
    "marks": [
     {
-     "t": "확률적 추론(Inference)과 의사결정은 절대적으로 신뢰할 수 없으며",
+     "t": "확률적 추론(Inference)과 의사결정은 절대적으로 신뢰할 수는 없으며",
      "k": "safety"
     },
     {
@@ -881,14 +881,14 @@
   {
    "type": "p",
    "en": "Embodied AI relies on multimodal sensors such as vision, hearing, and force sensing to perceive the environment. Adversarial example attacks, sensor interference, signal spoofing, as well as occlusion and sudden changes in lighting in the physical world may result in distorted perception, erroneous environmental understanding, and deviations in target localization.",
-   "ko": "체화 AI는 시각, 청각, 역각 감지 등 멀티모달 센서에 의존하여 환경을 인지한다. 적대적 예제 공격, 센서 간섭, 신호 스푸핑, 그리고 물리 세계의 가림과 급격한 조명 변화는 인지 왜곡, 잘못된 환경 이해, 목표 현지화 편차를 초래할 수 있다.",
+   "ko": "체화 AI는 시각, 청각, 역각 감지 등 멀티모달 센서에 의존하여 환경을 인지한다. 적대적 예제 공격, 센서 간섭, 신호 스푸핑, 그리고 물리 세계의 가림과 급격한 조명 변화는 인지 왜곡, 잘못된 환경 이해, 목표 위치 추정 편차를 초래할 수 있다.",
    "marks": [
     {
      "t": "적대적 예제 공격, 센서 간섭, 신호 스푸핑",
      "k": "safety"
     },
     {
-     "t": "인지 왜곡, 잘못된 환경 이해, 목표 현지화 편차를 초래할 수 있다",
+     "t": "인지 왜곡, 잘못된 환경 이해, 목표 위치 추정 편차를 초래할 수 있다",
      "k": "key"
     }
    ]
@@ -902,10 +902,10 @@
   {
    "type": "p",
    "en": "When embodied AI is applied in scenarios involving physical interaction, such as industrial production, medical surgery, and transportation, issues such as hallucination-based decision-making by foundation models, recognition deviations in perception systems, defects in control algorithms, and hardware failures may result in production disruptions, self-harm, harm to people, and physical damage.",
-   "ko": "체화 AI가 산업 생산, 의료 수술, 교통 등 물리적 상호작용을 수반하는 시나리오에 적용될 때, 파운데이션 모델의 환각 기반 의사결정, 인지 시스템의 인식 편차, 통제 알고리즘의 결함, 하드웨어 고장 등의 문제는 생산 중단, 자기 피해, 인명 피해, 물리적 손상을 초래할 수 있다.",
+   "ko": "체화 AI가 산업 생산, 의료 수술, 교통 등 물리적 상호작용을 수반하는 시나리오에 적용될 때, 파운데이션 모델의 환각 기반 의사결정, 인지 시스템의 인식 편차, 제어 알고리즘의 결함, 하드웨어 고장 등의 문제는 생산 중단, 자기 피해, 인명 피해, 물리적 손상을 초래할 수 있다.",
    "marks": [
     {
-     "t": "파운데이션 모델의 환각 기반 의사결정, 인지 시스템의 인식 편차, 통제 알고리즘의 결함",
+     "t": "파운데이션 모델의 환각 기반 의사결정, 인지 시스템의 인식 편차, 제어 알고리즘의 결함",
      "k": "safety"
     },
     {
@@ -2444,7 +2444,7 @@
   {
    "type": "p",
    "en": "In light of the characteristics of AI technology and its applications, data security and personal information protection requirements should be clearly defined for all stages, including AI training, annotation, use, and output, and data involving personal information should undergo deidentification and other forms of desensitization. Data security protection for AI applications in key sectors such as government affairs and finance should be strengthened to prevent leakage of important data and core data. Local governments should be encouraged to explore differentiated and innovative institutional designs based on local industrial development practices.",
-   "ko": "AI 기술과 그 응용의 특성을 고려하여 AI 학습, 주석, 사용, 출력 등 모든 단계에 대한 데이터 보안 및 개인정보 보호 요건을 명확히 규정하고, 개인정보가 포함된 데이터는 비식별화 및 기타 형태의 탈민감화(desensitization) 처리를 거쳐야 한다. 정무, 금융 등 핵심 부문의 AI 응용에 대한 데이터 보안 보호를 강화하여 중요 데이터와 핵심 데이터의 유출을 방지해야 한다. 지방정부가 지역 산업 발전 실행 방안에 기반하여 차별화되고 혁신적인 제도 설계를 모색하도록 장려해야 한다.",
+   "ko": "AI 기술과 그 응용의 특성을 고려하여 AI 학습, 주석, 사용, 출력 등 모든 단계에 대한 데이터 보안 및 개인정보 보호 요건을 명확히 규정하고, 개인정보가 포함된 데이터는 비식별화 및 기타 형태의 탈민감화(desensitization) 처리를 거쳐야 한다. 정무, 금융 등 핵심 부문의 AI 응용에 대한 데이터 보안 보호를 강화하여 중요 데이터와 핵심 데이터의 유출을 방지해야 한다. 지방정부가 지역 산업 발전의 실제 상황에 기반하여 차별화되고 혁신적인 제도 설계를 모색하도록 장려해야 한다.",
    "marks": [
     {
      "t": "정무, 금융 등 핵심 부문의 AI 응용에 대한 데이터 보안 보호를 강화하여 중요 데이터와 핵심 데이터의 유출을 방지해야 한다.",
@@ -3229,7 +3229,7 @@
   {
    "type": "p",
    "en": "5.3.4 Explicit or implicit identifiers should be added to AI-generated content, and prompt and traceability management for generated and synthesized content should be properly maintained. Deepfake detection tools should be deployed in scenarios such as government information disclosure and judicial evidence collection, with source verification and cross-validation performed on information suspected to be generated by large models.",
-   "ko": "5.3.4 AI 생성 콘텐츠에 명시적 또는 암묵적 식별자를 추가하고, 생성·합성 콘텐츠에 대한 프롬프트 및 추적성 관리를 적절히 유지해야 한다. 정부 정보 공개 및 사법 증거 수집 등의 시나리오에는 딥페이크 탐지 도구를 배치하고, 대규모 모델이 생성한 것으로 의심되는 정보에 대해서는 출처 검증 및 교차 확인을 수행해야 한다.",
+   "ko": "5.3.4 AI 생성 콘텐츠에 명시적 또는 암묵적 식별자를 추가하고, 생성·합성 콘텐츠에 대한 안내(표시) 및 추적성 관리를 적절히 유지해야 한다. 정부 정보 공개 및 사법 증거 수집 등의 시나리오에는 딥페이크 탐지 도구를 배치하고, 대규모 모델이 생성한 것으로 의심되는 정보에 대해서는 출처 검증 및 교차 확인을 수행해야 한다.",
    "marks": [
     {
      "t": "딥페이크 탐지 도구를 배치하고",
@@ -4624,8 +4624,8 @@
   },
   {
    "type": "li",
-   "en": "(2) Establishing safety guardrails. Establish safety rules for task planning, tool invocation, and outputs, and take measures such as issuing alerts, imposing restrictions, intercepting, suspending, or terminating high-risk or abnormal behaviors. (3) Memory retention management. Define memory content, retention windows, and access scopes based on processing purposes and necessity, while enforcing memory isolation across users and tasks. Credentials and secret keys shall not, in principle, be stored in memory. When sensitive personal information must be retained, apply dedicated safeguards such as encryption, access controls, and the",
-   "ko": "(2) 안전 가드레일 수립. 과업 계획, 도구 호출, 출력에 대한 안전 규칙을 수립하고, 고위험 또는 비정상적 행동에 대해 경보 발령, 제한 부과, 차단, 일시 중지, 종료 등의 조치를 취한다. (3) 메모리 보존 관리. 처리 목적과 필요성에 따라 메모리 내용, 보존 기간, 접근 범위를 정의하고, 사용자 및 과업 간 메모리 격리를 시행한다. 자격 증명과 비밀 키는 원칙적으로 메모리에 저장해서는 안 된다. 민감한 개인정보를 보존해야 하는 경우에는 암호화, 접근 통제 및",
+   "en": "(2) Establishing safety guardrails. Establish safety rules for task planning, tool invocation, and outputs, and take measures such as issuing alerts, imposing restrictions, intercepting, suspending, or terminating high-risk or abnormal behaviors. (3) Memory retention management. Define memory content, retention windows, and access scopes based on processing purposes and necessity, while enforcing memory isolation across users and tasks. Credentials and secret keys shall not, in principle, be stored in memory. When sensitive personal information must be retained, apply dedicated safeguards such as encryption, access controls, and the shortest retention period.",
+   "ko": "(2) 안전 가드레일 수립. 과업 계획, 도구 호출, 출력에 대한 안전 규칙을 수립하고, 고위험 또는 비정상적 행동에 대해 경보 발령, 제한 부과, 차단, 일시 중지, 종료 등의 조치를 취한다. (3) 메모리 보존 관리. 처리 목적과 필요성에 따라 메모리 내용, 보존 기간, 접근 범위를 정의하고, 사용자 및 과업 간 메모리 격리를 시행한다. 자격 증명과 비밀 키는 원칙적으로 메모리에 저장해서는 안 된다. 민감한 개인정보를 보존해야 하는 경우에는 암호화, 접근 통제 및 최단 보존 기간 등 전용 안전장치를 적용한다.",
    "marks": [
     {
      "t": "고위험 또는 비정상적 행동에 대해 경보 발령, 제한 부과, 차단, 일시 중지, 종료 등의 조치를 취한다",
@@ -4636,11 +4636,6 @@
      "k": "safety"
     }
    ]
-  },
-  {
-   "type": "li",
-   "en": "shortest retention period.",
-   "ko": "최단 보존 기간 등 전용 안전장치를 적용한다."
   },
   {
    "type": "li",

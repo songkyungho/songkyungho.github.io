@@ -241,14 +241,14 @@
   {
    "type": "p",
    "en": "Congress should require watermarks like SynthID and tamper-resistant cryptographic provenance standards like C2PA for generative AI services, while companies use contextual transparency to avoid user \"label fatigue.\"",
-   "ko": "의회는 생성형 AI 서비스에 SynthID와 같은 워터마크와 C2PA와 같은 변조 방지 암호화 출처 표준을 의무화해야 하며, 기업은 맥락적 투명성(contextual transparency)을 활용하여 이용자의 \"라벨 피로(label fatigue)\"를 방지해야 한다.",
+   "ko": "의회는 생성형 AI 서비스에 SynthID와 같은 워터마크와 C2PA와 같은 변조 방지 암호화 출처 표준을 의무화해야 하며, 기업은 맥락적 투명성(contextual transparency)을 활용하여 이용자의 \"라벨 피로(label fatigue)\"를 방지한다.",
    "marks": [
     {
      "t": "SynthID와 같은 워터마크와 C2PA와 같은 변조 방지 암호화 출처 표준을 의무화해야 하며",
      "k": "safety"
     },
     {
-     "t": "기업은 맥락적 투명성(contextual transparency)을 활용하여 이용자의 \"라벨 피로(label fatigue)\"를 방지해야 한다",
+     "t": "기업은 맥락적 투명성(contextual transparency)을 활용하여 이용자의 \"라벨 피로(label fatigue)\"를 방지한다",
      "k": "key"
     }
    ]
@@ -399,7 +399,7 @@
   {
    "type": "p",
    "en": "While we have supported initiatives in various states, most people agree that given its unique role, capabilities, and access to intelligence, the federal government should ultimately be the lead jurisdiction on issues of importance to national security.",
-   "ko": "여러 주(州)의 이니셔티브를 지지해 왔지만, 대다수는 연방정부가 고유한 역할과 역량, 정보 접근성을 고려할 때 궁극적으로 국가안보상 중요한 사안에서 주도적 관할권을 가져야 한다는 데 동의한다.",
+   "ko": "우리는 여러 주(州)의 이니셔티브를 지지해 왔지만, 대다수는 연방정부가 고유한 역할과 역량, 정보 접근성을 고려할 때 궁극적으로 국가안보상 중요한 사안에서 주도적 관할권을 가져야 한다는 데 동의한다.",
    "marks": [
     {
      "t": "연방정부가 고유한 역할과 역량, 정보 접근성을 고려할 때 궁극적으로 국가안보상 중요한 사안에서 주도적 관할권을 가져야 한다",
@@ -664,7 +664,7 @@
   {
    "type": "p",
    "en": "Pending agreed national benchmarks, frontier labs could also contract with independent auditors to perform annual 'procedural' audits to assess whether they have adhered to that framework. And before releasing a materially new frontier model, labs would attest to the FARO that they have adhered to their published framework and applied appropriate standards for testing and risk mitigation. In parallel, frontier labs should notify and provide early access to the U.S. government of models that advance the state of the art in sensitive national security domains, as outlined in the Administration's recent Executive Order on Promoting Advanced Artificial Intelligence Innovation and Security.",
-   "ko": "대상 국가 벤치마크가 합의되기 전까지, 프론티어 연구소는 독립 감사인과 계약하여 해당 프레임워크 준수 여부를 평가하는 연례 '절차적' 감사를 수행할 수도 있다. 또한 실질적으로 새로운 프론티어 모델을 출시하기 전에, 연구소는 공개한 프레임워크를 준수했으며 시험 및 위험 완화에 적절한 표준을 적용했음을 FARO에 증명하게 된다. 이와 병행하여, 행정부가 최근 발표한 첨단 인공지능 혁신 및 보안 촉진에 관한 행정명령(Executive Order on Promoting Advanced Artificial Intelligence Innovation and Security)에 명시된 바와 같이, 프론티어 연구소는 민감한 국가안보 분야에서 최첨단 수준을 진전시키는 모델에 대해 미국 정부에 통지하고 조기 접근 권한을 제공해야 한다.",
+   "ko": "국가 벤치마크가 합의되기 전까지, 프론티어 연구소는 독립 감사인과 계약하여 해당 프레임워크 준수 여부를 평가하는 연례 '절차적' 감사를 수행할 수도 있다. 또한 실질적으로 새로운 프론티어 모델을 출시하기 전에, 연구소는 공개한 프레임워크를 준수했으며 시험 및 위험 완화에 적절한 표준을 적용했음을 FARO에 증명하게 된다. 이와 병행하여, 행정부가 최근 발표한 첨단 인공지능 혁신 및 보안 촉진에 관한 행정명령(Executive Order on Promoting Advanced Artificial Intelligence Innovation and Security)에 명시된 바와 같이, 프론티어 연구소는 민감한 국가안보 분야에서 최첨단 수준을 진전시키는 모델에 대해 미국 정부에 통지하고 조기 접근 권한을 제공해야 한다.",
    "marks": [
     {
      "t": "독립 감사인과 계약하여 해당 프레임워크 준수 여부를 평가하는 연례 '절차적' 감사",

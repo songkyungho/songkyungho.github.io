@@ -647,10 +647,10 @@
   {
    "type": "p",
    "en": "Representative mitigations include training-data filtering, behavioral fine-tuning, capability ablation, machine unlearning, retraining, and staged pre-release access where appropriate. They also include the recommended deployment mitigations Reflection publishes for deployers to adopt: prompted classifiers, introspection probes, and supervised fine-tuned classifiers, with suggested interventions (system-instruction intervention, prompt block, model routing, monitoring, account enforcement, and/or hierarchical summarization). Documentation, safety kits, and acceptable-use guidance will support deployers.",
-   "ko": "대표적인 완화조치로는 학습 데이터 필터링, 행동 미세조정(Fine-Tuning), 역량 절제 실험, 머신 언러닝, 재학습, 그리고 적절한 경우 단계적 공개 전 접근이 있다. 또한 Reflection이 배포자가 채택하도록 공개하는 권고 배포 완화조치도 포함되는데, 이는 프롬프트 기반 분류기, 내성 프로브(introspection probe), 지도 미세조정(Fine-Tuning) 분류기와 함께 제안되는 개입(시스템 지시 개입, 프롬프트 차단, 모델 라우팅, 모니터링, 계정 제재 및/또는 계층적 요약)으로 구성된다. 문서, 안전 키트 및 허용 사용 지침을 통해 배포자를 지원할 것이다.",
+   "ko": "대표적인 완화조치로는 학습 데이터 필터링, 행동 미세조정(Fine-Tuning), 역량 제거(ablation), 머신 언러닝, 재학습, 그리고 적절한 경우 단계적 공개 전 접근이 있다. 또한 Reflection이 배포자가 채택하도록 공개하는 권고 배포 완화조치도 포함되는데, 이는 프롬프트 기반 분류기, 내성 프로브(introspection probe), 지도 미세조정(Fine-Tuning) 분류기와 함께 제안되는 개입(시스템 지시 개입, 프롬프트 차단, 모델 라우팅, 모니터링, 계정 제재 및/또는 계층적 요약)으로 구성된다. 문서, 안전 키트 및 허용 사용 지침을 통해 배포자를 지원할 것이다.",
    "marks": [
     {
-     "t": "학습 데이터 필터링, 행동 미세조정(Fine-Tuning), 역량 절제 실험, 머신 언러닝, 재학습",
+     "t": "학습 데이터 필터링, 행동 미세조정(Fine-Tuning), 역량 제거(ablation), 머신 언러닝, 재학습",
      "k": "safety"
     },
     {
@@ -694,10 +694,10 @@
   {
    "type": "p",
    "en": "Governance bodies. The structure is multilayered so that decisions are taken at the appropriate level. Operational decisions are made as close as possible to the relevant model, capability, or deployment by the leaders accountable for that work. The Governance Committee, chaired by the CEO, is Reflection’s executive decision-making body for Critical systemic-risk matters and provides strategic oversight of this Framework. The Governance Council is the cross-functional management body responsible for the Framework’s day-to-day operation, coordinating systemic risk assessments, mitigation activities, and routine governance decisions. Council Working Groups support the Governance Council by conducting technical assessments and reviewing specific models, risks, or releases. This structure provides a clear and auditable path for escalation while enabling leadership to set risk calibration, strategic direction, and executive oversight.",
-   "ko": "거버넌스 기구. 이 구조는 적절한 수준에서 의사결정이 이루어지도록 다층적으로 구성되어 있다. 운영상의 의사결정은 해당 업무에 책임을 지는 리더가 관련 모델, 역량 또는 배포에 최대한 가까운 곳에서 내린다. CEO가 의장을 맡는 거버넌스 위원회(Governance Committee)는 치명(Critical) 등급의 시스템적 위험 사안에 대한 Reflection의 최고 의사결정 기구로서, 본 프레임워크에 대한 전략적 감독을 제공한다. 거버넌스 협의회(Governance Council)는 프레임워크의 일상적 운영을 담당하는 교차 기능 관리 기구로서, 시스템적 위험 평가, 완화 활동 및 일상적인 거버넌스 의사결정을 조정한다. 협의회 실무그룹(Council Working Groups)은 기술적 평가(assessment)를 수행하고 특정 모델, 위험 또는 공개를 검토함으로써 거버넌스 협의회를 지원한다. 이 구조는 명확하고 감사 가능한 상정 경로를 제공하는 동시에, 경영진이 위험 보정, 전략적 방향 및 경영진 감독을 설정할 수 있도록 한다.",
+   "ko": "거버넌스 기구. 이 구조는 적절한 수준에서 의사결정이 이루어지도록 다층적으로 구성되어 있다. 운영상의 의사결정은 해당 업무에 책임을 지는 리더가 관련 모델, 역량 또는 배포에 최대한 가까운 곳에서 내린다. CEO가 의장을 맡는 거버넌스 위원회(Governance Committee)는 치명(Critical) 등급의 시스템적 위험 사안에 대한 Reflection의 경영진 의사결정 기구로서, 본 프레임워크에 대한 전략적 감독을 제공한다. 거버넌스 협의회(Governance Council)는 프레임워크의 일상적 운영을 담당하는 교차 기능 관리 기구로서, 시스템적 위험 평가, 완화 활동 및 일상적인 거버넌스 의사결정을 조정한다. 협의회 실무그룹(Council Working Groups)은 기술적 평가(assessment)를 수행하고 특정 모델, 위험 또는 공개를 검토함으로써 거버넌스 협의회를 지원한다. 이 구조는 명확하고 감사 가능한 상정 경로를 제공하는 동시에, 경영진이 위험 보정, 전략적 방향 및 경영진 감독을 설정할 수 있도록 한다.",
    "marks": [
     {
-     "t": "치명(Critical) 등급의 시스템적 위험 사안에 대한 Reflection의 최고 의사결정 기구",
+     "t": "치명(Critical) 등급의 시스템적 위험 사안에 대한 Reflection의 경영진 의사결정 기구",
      "k": "safety"
     },
     {

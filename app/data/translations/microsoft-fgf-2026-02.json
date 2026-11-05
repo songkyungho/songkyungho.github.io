@@ -958,7 +958,7 @@
   {
    "type": "p",
    "en": "Capability thresholds and corresponding risk levels for the framework's tracked capabilities are set out below.",
-   "ko": "앞서 설명한 프레임워크의 추적 대상 역량별 역량 임계값과 이에 대응하는 위험 수준은 아래와 같다.",
+   "ko": "프레임워크의 추적 대상 역량별 역량 임계값과 이에 대응하는 위험 수준은 아래와 같다.",
    "marks": [
     {
      "t": "추적 대상 역량별 역량 임계값과 이에 대응하는 위험 수준",
@@ -1077,7 +1077,7 @@
   {
    "type": "table",
    "en": "| Date | Change summary | ⏎ | February 2025 | Initial version | ⏎ | February 2026 | One year update following finalization of the EU Code of Practice for General Purpose AI (CoP), NY RAISE Act and CA Transparency in Frontier Artificial Intelligence Act including: • Adding harmful manipulation and loss of control as tracked high-risk capabilities • Adjusting the update cadence to align with regulatory obligations • Aligning the scope our framework to that of regulations • Adjusting the cadence by which we repeat deeper capability assessment to align with emerging industry standards • Adding a definition of substantially fine-tuned models that are in scope for this framework • Other edits and additions for clarity and transparency |",
-   "ko": "| 날짜 | 변경 요약 | ⏎ | 2025년 2월 | 최초 버전 | ⏎ | 2026년 2월 | EU 범용 AI 실천 강령(CoP), NY RAISE Act 및 CA Transparency in Frontier Artificial Intelligence Act의 확정에 따른 1년 주기 업데이트로, 다음 사항을 포함함: • 유해한 조작과 통제 상실을 추적 대상 고위험 역량으로 추가 • 규제 의무에 맞추어 업데이트 주기 조정 • 본 프레임워크의 적용 범위를 규제의 적용 범위에 맞추어 조정 • 새롭게 형성되는 업계 표준에 맞추어 심층 역량 평가(assessment)의 반복 주기 조정 • 본 프레임워크의 적용 범위에 포함되는 상당한 수준으로 미세조정된 모델의 정의 추가 • 명확성 및 투명성 제고를 위한 기타 수정 및 추가 |"
+   "ko": "| 날짜 | 변경 요약 | ⏎ | 2025년 2월 | 최초 버전 | ⏎ | 2026년 2월 | EU 범용 AI 실천 강령(CoP), NY RAISE Act 및 CA Transparency in Frontier Artificial Intelligence Act의 확정에 따른 1년 만의 업데이트로, 다음 사항을 포함함: • 유해한 조작과 통제 상실을 추적 대상 고위험 역량으로 추가 • 규제 의무에 맞추어 업데이트 주기 조정 • 본 프레임워크의 적용 범위를 규제의 적용 범위에 맞추어 조정 • 새롭게 형성되는 업계 표준에 맞추어 심층 역량 평가(assessment)의 반복 주기 조정 • 본 프레임워크의 적용 범위에 포함되는 상당한 수준으로 미세조정된 모델의 정의 추가 • 명확성 및 투명성 제고를 위한 기타 수정 및 추가 |"
   }
  ],
  "notes": [

@@ -140,14 +140,14 @@
   {
    "type": "p",
    "en": "This brings us to the roadmap published this week by Anthropic CEO Dario Amodei, asking governments for antitrust exemptions in the name of safety. This roadmap is the latest in a string of recent efforts by Silicon Valley incumbents to shape the regulatory landscape surrounding AI.",
-   "ko": "이제 이번 주 Anthropic CEO 다리오 아모데이(Dario Amodei)가 발표한 로드맵으로 넘어가 보자. 이 로드맵은 안전이라는 명목으로 각국 정부에 반독점 적용 면제를 요청하고 있다. 이 로드맵은 AI를 둘러싼 규제 환경을 자신들에게 유리하게 형성하려는 실리콘밸리 기존 사업자들의 최근 일련의 시도 중 가장 최신의 것이다.",
+   "ko": "이제 이번 주 Anthropic CEO 다리오 아모데이(Dario Amodei)가 발표한 로드맵으로 넘어가 보자. 이 로드맵은 안전이라는 명목으로 각국 정부에 반독점 적용 면제를 요청하고 있다. 이 로드맵은 AI를 둘러싼 규제 환경을 형성하려는 실리콘밸리 기존 사업자들의 최근 일련의 시도 중 가장 최신의 것이다.",
    "marks": [
     {
      "t": "안전이라는 명목으로 각국 정부에 반독점 적용 면제를 요청하고 있다",
      "k": "safety"
     },
     {
-     "t": "AI를 둘러싼 규제 환경을 자신들에게 유리하게 형성하려는 실리콘밸리 기존 사업자들의 최근 일련의 시도 중 가장 최신의 것이다",
+     "t": "AI를 둘러싼 규제 환경을 형성하려는 실리콘밸리 기존 사업자들의 최근 일련의 시도 중 가장 최신의 것이다",
      "k": "key"
     }
    ]

@@ -17,7 +17,7 @@
  "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
  "doc_kind": "법률",
  "stats": {
-  "blocks": 184,
+  "blocks": 183,
   "sections": 15,
   "items": 0,
   "words_en": 5042
@@ -243,11 +243,11 @@
   },
   {
    "type": "p",
-   "en": "\"Frontier model\" means a foundation model that was trained using a quantity of computing power greater than 1026 integer or floating-point operations. The quantity of computing power described in this definition shall include computing for the original training run and for any subsequent fine-tuning, reinforcement learning, or other material modifications the developer applies to a preceding foundation model.",
-   "ko": "\"프론티어 모델\"이란 1026회를 초과하는 정수 또는 부동소수점 연산량의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델을 말한다. 이 정의에서 규정하는 컴퓨팅 파워의 양에는 최초 훈련 실행을 위한 연산과, 개발자가 선행 파운데이션 모델에 적용하는 후속 미세조정(Fine-Tuning), 강화학습 또는 그 밖의 중대한 수정을 위한 연산이 포함된다.",
+   "en": "\"Frontier model\" means a foundation model that was trained using a quantity of computing power greater than 10²⁶ integer or floating-point operations. The quantity of computing power described in this definition shall include computing for the original training run and for any subsequent fine-tuning, reinforcement learning, or other material modifications the developer applies to a preceding foundation model.",
+   "ko": "\"프론티어 모델\"이란 10²⁶회를 초과하는 정수 또는 부동소수점 연산량의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델을 말한다. 이 정의에서 규정하는 컴퓨팅 파워의 양에는 최초 훈련 실행을 위한 연산과, 개발자가 선행 파운데이션 모델에 적용하는 후속 미세조정(Fine-Tuning), 강화학습 또는 그 밖의 중대한 수정을 위한 연산이 포함된다.",
    "marks": [
     {
-     "t": "1026회를 초과하는 정수 또는 부동소수점 연산량의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델",
+     "t": "10²⁶회를 초과하는 정수 또는 부동소수점 연산량의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델",
      "k": "safety"
     }
    ]
@@ -509,13 +509,8 @@
   },
   {
    "type": "p",
-   "en": "requirements for on-premise review; and confidentiality",
-   "ko": "온프레미스 검토 요건; 및 비밀유지"
-  },
-  {
-   "type": "p",
-   "en": "requirements.",
-   "ko": "요건이 포함되나 이에 국한되지 않는다."
+   "en": "requirements for on-premise review; and confidentiality requirements.",
+   "ko": "온프레미스 검토 요건; 및 비밀유지 요건이 포함되나 이에 국한되지 않는다."
   },
   {
    "type": "p",
@@ -937,10 +932,10 @@
   {
    "type": "p",
    "en": "(a) Except as otherwise provided in this Section, beginning January 1, 2027, no large frontier developer may develop, deploy, or operate a frontier model, in whole or in part in this State, without having a current disclosure statement filed with the Agency and paying the required fee.",
-   "ko": "(a) 이 조에서 달리 규정하는 경우를 제외하고, 2027년 1월 1일부터 대형 프론티어 개발자는 기관에 제출된 유효한 공시서를 보유하고 소정의 수수료를 납부하지 아니하고는 이 주에서 프론티어 모델의 전부 또는 일부를 개발, 배포 또는 운영할 수 없다.",
+   "ko": "(a) 이 조에서 달리 규정하는 경우를 제외하고, 2027년 1월 1일부터 대형 프론티어 개발자는 기관에 제출된 유효한 공시서를 보유하고 소정의 수수료를 납부하지 아니하고는 프론티어 모델의 개발, 배포 또는 운영을 그 전부 또는 일부라도 이 주에서 할 수 없다.",
    "marks": [
     {
-     "t": "2027년 1월 1일부터 대형 프론티어 개발자는 기관에 제출된 유효한 공시서를 보유하고 소정의 수수료를 납부하지 아니하고는 이 주에서 프론티어 모델의 전부 또는 일부를 개발, 배포 또는 운영할 수 없다",
+     "t": "2027년 1월 1일부터 대형 프론티어 개발자는 기관에 제출된 유효한 공시서를 보유하고 소정의 수수료를 납부하지 아니하고는 프론티어 모델의 개발, 배포 또는 운영을 그 전부 또는 일부라도 이 주에서 할 수 없다",
      "k": "key"
     }
    ]
@@ -1341,10 +1336,10 @@
   {
    "type": "p",
    "en": "(e) An employer may not take retaliatory action against an employee for disclosing or threatening to disclose in good faith any violation of the Artificial Intelligence Safety Measures Act. (Source: P.A. 103-867, eff. 1-1-25; 104-417, eff. 8-15-25; 104-440, eff. 12-9-25.)",
-   "ko": "(e) 사용자는 직원이 인공지능 안전 조치법(Artificial Intelligence Safety Measures Act)의 위반을 선의로 공개하거나 공개하겠다고 고지한 것을 이유로 해당 직원에게 보복 조치를 취할 수 없다. (출처: P.A. 103-867, 시행 1-1-25; 104-417, 시행 8-15-25; 104-440, 시행 12-9-25.)",
+   "ko": "(e) 사용자는 직원이 인공지능 안전 조치법(Artificial Intelligence Safety Measures Act)의 위반을 선의로 공개하거나 공개하겠다고 경고한 것을 이유로 해당 직원에게 보복 조치를 취할 수 없다. (출처: P.A. 103-867, 시행 1-1-25; 104-417, 시행 8-15-25; 104-440, 시행 12-9-25.)",
    "marks": [
     {
-     "t": "사용자는 직원이 인공지능 안전 조치법(Artificial Intelligence Safety Measures Act)의 위반을 선의로 공개하거나 공개하겠다고 고지한 것을 이유로 해당 직원에게 보복 조치를 취할 수 없다.",
+     "t": "사용자는 직원이 인공지능 안전 조치법(Artificial Intelligence Safety Measures Act)의 위반을 선의로 공개하거나 공개하겠다고 경고한 것을 이유로 해당 직원에게 보복 조치를 취할 수 없다.",
      "k": "key"
     }
    ]

@@ -20,7 +20,7 @@
   "blocks": 33,
   "sections": 2,
   "items": 0,
-  "words_en": 1297
+  "words_en": 1296
  },
  "blocks": [
   {
@@ -32,7 +32,7 @@
   {
    "type": "p",
    "en": "The Hiroshima Process International Guiding Principles for Organizations Developing Advanced AI Systems aims to promote safe, secure, and trustworthy AI worldwide and will provide guidance for organizations developing and using the most advanced AI systems, including the most advanced foundation models and generative AI systems (henceforth \"advanced AI systems\"). Organizations may include, among others, entities from academia, civil society, the private sector, and the public sector.",
-   "ko": "첨단 AI 시스템을 개발하는 조직을 위한 히로시마 프로세스 국제 지침 원칙은 전 세계적으로 안전하고 보안성이 확보된 신뢰할 수 있는 AI를 증진하는 것을 목표로 한다. 또한 최첨단 파운데이션 모델 및 생성형 AI 시스템을 포함한 최첨단 AI 시스템(이하 \"첨단 AI 시스템\")을 개발하고 사용하는 조직에 지침을 제공할 것이다. 조직에는 특히 학계, 시민사회, 민간 부문, 공공 부문의 주체가 포함될 수 있다.",
+   "ko": "첨단 AI 시스템을 개발하는 조직을 위한 히로시마 프로세스 국제 지침 원칙은 전 세계적으로 안전하고 보안성이 확보된 신뢰할 수 있는 AI를 증진하는 것을 목표로 한다. 또한 최첨단 파운데이션 모델 및 생성형 AI 시스템을 포함한 최첨단 AI 시스템(이하 \"첨단 AI 시스템\")을 개발하고 사용하는 조직에 지침을 제공할 것이다. 조직에는 무엇보다도 학계, 시민사회, 민간 부문, 공공 부문의 주체 등이 포함될 수 있다.",
    "marks": [
     {
      "t": "전 세계적으로 안전하고 보안성이 확보된 신뢰할 수 있는 AI를 증진하는 것을 목표로 한다",
@@ -291,8 +291,8 @@
   },
   {
    "type": "p",
-   "en": "11. 11. Implement appropriate data input measures and protections for personal data and intellectual property",
-   "ko": "11. 11. 개인정보 및 지식재산권에 대한 적절한 데이터 입력 조치와 보호 장치를 구현한다"
+   "en": "11. Implement appropriate data input measures and protections for personal data and intellectual property",
+   "ko": "11. 개인정보 및 지식재산권에 대한 적절한 데이터 입력 조치와 보호 장치를 구현한다"
   },
   {
    "type": "p",

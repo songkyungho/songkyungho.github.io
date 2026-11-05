@@ -17,10 +17,10 @@
  "og_image": "/images/translations/meta-ssf-v2-1-cover.jpg",
  "image_caption": "원문 첫 쪽 (Meta, 2026.10 개정 2.1판)",
  "stats": {
-  "blocks": 300,
+  "blocks": 299,
   "sections": 8,
   "items": 63,
-  "words_en": 13937
+  "words_en": 13935
  },
  "blocks": [
   {
@@ -680,19 +680,14 @@
   },
   {
    "type": "li",
-   "en": "Release of one of our existing released models with significant changes that materially increase capabilities in preparedness-relevant domains. This may include, for example, integration of new tools, scaffolding, or workflows (e.g., deep research automation, biological analysis, code execution tools, or agent",
-   "ko": "대비 관련 영역에서 역량을 실질적으로 증가시키는 중대한 변경이 이루어진 기존 출시 모델의 출시. 여기에는 해당되는 범위에서, 예를 들어 새로운 도구, 스캐폴딩 또는 워크플로(예: 심층 연구 자동화, 생물학적 분석, 코드 실행 도구 또는 에이전트",
+   "en": "Release of one of our existing released models with significant changes that materially increase capabilities in preparedness-relevant domains. This may include, for example, integration of new tools, scaffolding, or workflows (e.g., deep research automation, biological analysis, code execution tools, or agent scaffolding), or new input or output modalities (e.g., vision, audio, speech, robotics control), to the extent applicable.",
+   "ko": "대비 관련 영역에서 역량을 실질적으로 증가시키는 중대한 변경이 이루어진 기존 출시 모델의 출시. 여기에는 해당되는 범위에서, 예를 들어 새로운 도구, 스캐폴딩 또는 워크플로(예: 심층 연구 자동화, 생물학적 분석, 코드 실행 도구 또는 에이전트 스캐폴딩)의 통합이나, 새로운 입력 또는 출력 모달리티(예: 시각, 오디오, 음성, 로봇 제어)가 포함될 수 있다.",
    "marks": [
     {
      "t": "대비 관련 영역에서 역량을 실질적으로 증가시키는 중대한 변경이 이루어진 기존 출시 모델의 출시",
      "k": "safety"
     }
    ]
-  },
-  {
-   "type": "li",
-   "en": "scaffolding), or new input or output modalities (e.g., vision, audio, speech, robotics control), to the extent applicable.",
-   "ko": "스캐폴딩)의 통합이나, 새로운 입력 또는 출력 모달리티(예: 시각, 오디오, 음성, 로봇 제어)가 포함될 수 있다."
   },
   {
    "type": "li",
@@ -3205,7 +3200,7 @@
   },
   {
    "type": "li",
-   "en": "Compute Threshold : We trained the model using at least 10 26 integer or floating point operations (to include material modifications to the model through fine-tuning, reinforcement learning training, and other training steps), or another threshold as may be defined by evolving standards or industry best practices.",
+   "en": "Compute Threshold : We trained the model using at least 10²⁶ integer or floating point operations (to include material modifications to the model through fine-tuning, reinforcement learning training, and other training steps), or another threshold as may be defined by evolving standards or industry best practices.",
    "ko": "연산 임계값: 최소 10²⁶회의 정수 또는 부동소수점 연산을 사용하여 모델을 훈련한 경우(미세조정, 강화학습 훈련 및 기타 훈련 단계를 통한 모델의 실질적 수정을 포함함), 또는 발전하는 표준이나 업계 모범 사례에 의해 정의될 수 있는 기타 임계값.",
    "marks": [
     {
@@ -3461,7 +3456,7 @@
   },
   {
    "type": "li",
-   "en": "Updated Frontier AI definition . Revised the definition from models \"that exceed the capabilities present in the most advanced models\" to two criteria for determining Frontier status: (1) High Capabilities in Catastrophic Risk Areas, based on comparative capability in Framework risk domains or equivalence to a model previously determined to substantially contribute to a catastrophic threat scenario; or (2) a Compute Threshold of at least 10 26 integer or floating point operations.",
+   "en": "Updated Frontier AI definition . Revised the definition from models \"that exceed the capabilities present in the most advanced models\" to two criteria for determining Frontier status: (1) High Capabilities in Catastrophic Risk Areas, based on comparative capability in Framework risk domains or equivalence to a model previously determined to substantially contribute to a catastrophic threat scenario; or (2) a Compute Threshold of at least 10²⁶ integer or floating point operations.",
    "ko": "프론티어 AI 정의를 업데이트함. \"최첨단 모델에 존재하는 역량을 초과하는\" 모델이라는 정의를 프론티어 지위를 판단하는 두 가지 기준으로 개정함: (1) 파국적 위험 분야에서의 높은 역량. 이는 프레임워크 위험 영역에서의 비교 역량 또는 파국적 위협 시나리오에 실질적으로 기여한다고 이전에 판단된 모델과의 동등성에 근거함; 또는 (2) 최소 10 26 회의 정수 또는 부동소수점 연산이라는 연산 임계값.",
    "marks": [
     {

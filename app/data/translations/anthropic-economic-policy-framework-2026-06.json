@@ -20,7 +20,7 @@
   "blocks": 65,
   "sections": 11,
   "items": 0,
-  "words_en": 3619
+  "words_en": 3618
  },
  "blocks": [
   {
@@ -397,7 +397,7 @@
   {
    "type": "p",
    "en": "At 10% unemployment, disruption is a fact of life for tens of millions of American families. Professions no longer need the expertise they once demanded, careers end earlier than planned and begin later than expected, job searches stretch from months into years. Families revise plans-for homes, for children's education, for retirements, or abandon them. Communities that depended on a stable base of steady employment find that base eroding faster than new sources of work can replace it. Familiar pathways-from education to career, from effort to advancement, from work to stability-have become less reliable, and for many, impassable. The question shifts from whether to intervene to how fast existing systems can scale.",
-   "ko": "실업률이 10%에 이르면, 혼란은 수천만 미국 가정에 일상적인 현실이 된다. 직업들은 더 이상 과거에 요구하던 전문성을 필요로 하지 않고, 경력은 계획보다 일찍 끝나고 예상보다 늦게 시작되며, 구직 기간은 수개월에서 수년으로 늘어난다. 가족들은 주택, 자녀 교육, 퇴역에 대한 계획을 수정하거나 포기한다. 안정적인 고용 기반에 의존하던 지역사회는 새로운 일자리 원천이 이를 대체하는 속도보다 그 기반이 더 빠르게 잠식되고 있음을 깨닫는다. 교육에서 경력으로, 노력에서 승진으로, 노동에서 안정으로 이어지던 익숙한 경로는 신뢰성이 떨어졌으며, 많은 이들에게는 통과할 수 없는 길이 되었다. 질문은 개입할 것인가에서 기존 시스템을 얼마나 빨리 확장할 수 있는가로 옮겨 간다.",
+   "ko": "실업률이 10%에 이르면, 혼란은 수천만 미국 가정에 일상적인 현실이 된다. 직업들은 더 이상 과거에 요구하던 전문성을 필요로 하지 않고, 경력은 계획보다 일찍 끝나고 예상보다 늦게 시작되며, 구직 기간은 수개월에서 수년으로 늘어난다. 가족들은 주택, 자녀 교육, 은퇴에 대한 계획을 수정하거나 포기한다. 안정적인 고용 기반에 의존하던 지역사회는 새로운 일자리 원천이 이를 대체하는 속도보다 그 기반이 더 빠르게 잠식되고 있음을 깨닫는다. 교육에서 경력으로, 노력에서 승진으로, 노동에서 안정으로 이어지던 익숙한 경로는 신뢰성이 떨어졌으며, 많은 이들에게는 통과할 수 없는 길이 되었다. 질문은 개입할 것인가에서 기존 시스템을 얼마나 빨리 확장할 수 있는가로 옮겨 간다.",
    "marks": [
     {
      "t": "실업률이 10%에 이르면, 혼란은 수천만 미국 가정에 일상적인 현실이 된다.",

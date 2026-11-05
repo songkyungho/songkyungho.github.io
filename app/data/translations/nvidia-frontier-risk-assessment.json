@@ -17,10 +17,10 @@
  "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
  "doc_kind": "프론티어 안전 프레임워크",
  "stats": {
-  "blocks": 100,
+  "blocks": 99,
   "sections": 7,
   "items": 6,
-  "words_en": 5766
+  "words_en": 5785
  },
  "blocks": [
   {
@@ -942,8 +942,8 @@
   },
   {
    "type": "p",
-   "en": "The rapid advancement in AI development necessitates continuous monitoring and updating of risk frameworks to stay aligned with emerging capabilities and associated risks.[^48] Rapid prototyping and evaluating AI models is also a key",
-   "ko": "AI 개발의 급속한 발전으로 인해, 새롭게 등장하는 역량 및 관련 위험과 정렬된 상태를 유지하도록 위험 프레임워크를 지속적으로 모니터링하고 업데이트할 필요가 있다.[^48] AI 모델의 신속한 프로토타이핑과 평가(evaluation) 또한 핵심적인",
+   "en": "The rapid advancement in AI development necessitates continuous monitoring and updating of risk frameworks to stay aligned with emerging capabilities and associated risks.[^48] Rapid prototyping and evaluating AI models is also a key component to support the agile risk framework. NVIDIA offers a variety of tools that can optimize the speed of model evaluation.",
+   "ko": "AI 개발의 급속한 발전으로 인해, 새롭게 등장하는 역량 및 관련 위험과 정렬된 상태를 유지하도록 위험 프레임워크를 지속적으로 모니터링하고 업데이트할 필요가 있다.[^48] AI 모델의 신속한 프로토타이핑과 평가(evaluation) 또한 핵심적인 구성 요소로서 민첩한 위험 프레임워크를 뒷받침한다. NVIDIA는 모델 평가(evaluation) 속도를 최적화할 수 있는 다양한 도구를 제공한다.",
    "marks": [
     {
      "t": "새롭게 등장하는 역량 및 관련 위험과 정렬된 상태를 유지하도록 위험 프레임워크를 지속적으로 모니터링하고 업데이트할 필요가 있다.",
@@ -1006,14 +1006,14 @@
   {
    "type": "p",
    "en": "Mitigating risks associated with frontier AI models presents a complex governance challenge for any organization, particularly for large companies developing a wide-range of diverse models across multiple industries. The breadth of applications and the dynamic nature of AI technologies make rigid, one-size-fits-all frameworks impractical.  Instead, we have adopted a governance approach centered on oversight and adaptive risk management. This strategy allows innovation to flourish while ensuring that development processes remain accountable and transparent. Key to this approach is early detection of potential risks, coupled with mechanisms to pause development when necessary. NVIDIA's i nternal governance structures clearly define roles and responsibilities for risk management. It involves separate teams tasked with risk management that have the authority and expertise to intervene in model development timelines, product launch decisions, and strategic planning.[^53] This involves embedding risk-aware practices into the daily work of engineers, researchers, and product managers, supported by ongoing training and open dialogue on ethical considerations.",
-   "ko": "프론티어 AI 모델과 관련된 위험을 완화하는 것은 모든 조직, 특히 여러 산업에 걸쳐 광범위하고 다양한 모델을 개발하는 대기업에 복잡한 거버넌스 과제를 제기한다. 응용 분야의 폭과 AI 기술의 역동적 특성으로 인해 경직된 획일적 프레임워크는 실효성이 없다. 대신 우리는 감독과 적응형 위험 관리를 중심으로 하는 거버넌스 접근법을 채택하였다. 이 전략은 개발 프로세스의 책임성과 투명성을 보장하면서도 혁신이 활성화될 수 있도록 한다. 이 접근법의 핵심은 잠재적 위험의 조기 탐지와 함께, 필요시 개발을 중단할 수 있는 메커니즘을 갖추는 것이다. NVIDIA의 내부 거버넌스 구조는 위험 관리에 대한 역할과 책임을 명확히 정의한다. 이 구조에는 위험 관리를 담당하는 별도의 팀이 포함되며, 이들 팀은 모델 개발 일정, 제품 출시 결정, 전략 기획에 개입할 수 있는 권한과 전문성을 갖추고 있다.[^53] 여기에는 지속적인 교육과 윤리적 고려 사항에 대한 열린 대화를 바탕으로, 위험을 인식하는 실행 방안을 엔지니어, 연구자, 제품 관리자의 일상 업무에 내재화하는 것이 포함된다.",
+   "ko": "프론티어 AI 모델과 관련된 위험을 완화하는 것은 모든 조직, 특히 여러 산업에 걸쳐 광범위하고 다양한 모델을 개발하는 대기업에 복잡한 거버넌스 과제를 제기한다. 응용 분야의 폭과 AI 기술의 역동적 특성으로 인해 경직된 획일적 프레임워크는 실효성이 없다. 대신 우리는 감독과 적응형 위험 관리를 중심으로 하는 거버넌스 접근법을 채택하였다. 이 전략은 개발 프로세스의 책임성과 투명성을 보장하면서도 혁신이 활성화될 수 있도록 한다. 이 접근법의 핵심은 잠재적 위험의 조기 탐지와 함께, 필요시 개발을 일시 중단할 수 있는 메커니즘을 갖추는 것이다. NVIDIA의 내부 거버넌스 구조는 위험 관리에 대한 역할과 책임을 명확히 정의한다. 이 구조에는 위험 관리를 담당하는 별도의 팀이 포함되며, 이들 팀은 모델 개발 일정, 제품 출시 결정, 전략 기획에 개입할 수 있는 권한과 전문성을 갖추고 있다.[^53] 여기에는 지속적인 교육과 윤리적 고려 사항에 대한 열린 대화를 바탕으로, 위험을 인식하는 실행 방안을 엔지니어, 연구자, 제품 관리자의 일상 업무에 내재화하는 것이 포함된다.",
    "marks": [
     {
      "t": "프론티어 AI 모델과 관련된 위험을 완화하는 것은 모든 조직",
      "k": "safety"
     },
     {
-     "t": "이 접근법의 핵심은 잠재적 위험의 조기 탐지와 함께, 필요시 개발을 중단할 수 있는 메커니즘을 갖추는 것이다.",
+     "t": "이 접근법의 핵심은 잠재적 위험의 조기 탐지와 함께, 필요시 개발을 일시 중단할 수 있는 메커니즘을 갖추는 것이다.",
      "k": "key"
     },
     {
@@ -1021,11 +1021,6 @@
      "k": "safety"
     }
    ]
-  },
-  {
-   "type": "p",
-   "en": "[Exact&\\_bt=719593723676&\\_bk=nvidia%20nim&\\_bm=e&\\_bn=g&\\_bg=169450950363&gad\\_source=1&gclid=EAIaIQobChMI2oTYkZisigMV7AKtBh3d QzMVEAAYASAAEgLc5vD\\_BwE](https://build.nvidia.com/explore/discover?&ncid=pa-srch-goog-898408-API-Build-Exact&_bt=719593723676&_bk=nvidia%20nim&_bm=e&_bn=g&_bg=169450950363&gad_source=1&gclid=EAIaIQobChMI2oTYkZisigMV7AKtBh3dQzMVEAAYASAAEgLc5vD_BwE)",
-   "ko": "[Exact&\\_bt=719593723676&\\_bk=nvidia%20nim&\\_bm=e&\\_bn=g&\\_bg=169450950363&gad\\_source=1&gclid=EAIaIQobChMI2oTYkZisigMV7AKtBh3d QzMVEAAYASAAEgLc5vD\\_BwE](https://build.nvidia.com/explore/discover?&ncid=pa-srch-goog-898408-API-Build-Exact&_bt=719593723676&_bk=nvidia%20nim&_bm=e&_bn=g&_bg=169450950363&gad_source=1&gclid=EAIaIQobChMI2oTYkZisigMV7AKtBh3dQzMVEAAYASAAEgLc5vD_BwE)"
   },
   {
    "type": "p",
