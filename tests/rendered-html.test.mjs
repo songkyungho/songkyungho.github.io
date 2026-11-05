@@ -69,7 +69,8 @@ test("exports each translation with the disclaimer and every source block paired
     assert.equal((html.match(/<strong class="tr-key">/g) ?? []).length, marks.filter((m) => m.k === "key").length, `key marks: ${doc.slug}`);
     // 번역문에 영어 원문이 그대로 남았거나(모델이 앞부분을 되풀이) 모델의 작업 흔적이 섞이지 않았는지
     for (const [n, block] of doc.blocks.entries()) {
-      if (!["p", "li"].includes(block.type) || block.untranslated) continue;
+      // verbatim: 참고문헌·기여자 이름처럼 일부러 옮기지 않은 블록
+      if (!["p", "li"].includes(block.type) || block.untranslated || block.verbatim) continue;
       for (const part of block.ko.split("\n\n")) {
         // 따옴표 안의 영어 이름('"Advanced AI Scaling Framework"에서 …로 변경')은 일부러 남긴 것이라 세지 않는다.
         // 기관 이름('OWASP Top 10 for …')과 사람 이름 목록('Dr. Andrew Jackson, Prof. …')처럼
