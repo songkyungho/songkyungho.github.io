@@ -1542,10 +1542,10 @@
   {
    "type": "p",
    "en": "(A) Providing expert-level assistance in the creation or release of a chemical, biological, radiological, or nuclear weapon.",
-   "ko": "(A) 화학, 생물학, 방사능 또는 핵무기의 제조 또는 유출에 전문가 수준의 지원을 제공하는 것",
+   "ko": "(A) 화학, 생물학, 방사능 또는 핵무기의 제조 또는 방출에 전문가 수준의 지원을 제공하는 것",
    "marks": [
     {
-     "t": "화학, 생물학, 방사능 또는 핵무기의 제조 또는 유출에 전문가 수준의 지원을 제공하는 것",
+     "t": "화학, 생물학, 방사능 또는 핵무기의 제조 또는 방출에 전문가 수준의 지원을 제공하는 것",
      "k": "safety"
     }
    ]

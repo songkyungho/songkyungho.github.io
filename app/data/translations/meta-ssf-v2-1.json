@@ -382,8 +382,8 @@
   },
   {
    "type": "p",
-   "en": "The risk assessment process involves multi-disciplinary engagement, including internal and, where appropriate, external experts from various disciplines (which could include engineering, product management, compliance and privacy, security, legal, and policy) and company leaders from multiple disciplines. The risk assessment also considers any Version 2.1 | October 2026 planned deployments, as these plans inform the type of pre-release evaluations we undertake.",
-   "ko": "위험 평가 절차에는 다양한 분야(엔지니어링, 제품 관리, 규정 준수 및 프라이버시, 보안, 법무, 정책 등이 포함될 수 있음)의 내부 전문가 및 적절한 경우 외부 전문가, 그리고 여러 분야의 회사 리더가 참여하는 다학제적 관여가 수반된다. 위험 평가는 또한 모든 Version 2.1 | October 2026 계획된 배포를 고려하는데, 이러한 계획이 우리가 수행하는 출시 전 평가(evaluation)의 유형을 결정하는 근거가 되기 때문이다.",
+   "en": "The risk assessment process involves multi-disciplinary engagement, including internal and, where appropriate, external experts from various disciplines (which could include engineering, product management, compliance and privacy, security, legal, and policy) and company leaders from multiple disciplines. The risk assessment also considers any planned deployments, as these plans inform the type of pre-release evaluations we undertake.",
+   "ko": "위험 평가 절차에는 다양한 분야(엔지니어링, 제품 관리, 규정 준수 및 프라이버시, 보안, 법무, 정책 등이 포함될 수 있음)의 내부 전문가 및 적절한 경우 외부 전문가, 그리고 여러 분야의 회사 리더가 참여하는 다학제적 관여가 수반된다. 위험 평가는 또한 모든 계획된 배포를 고려하는데, 이러한 계획이 우리가 수행하는 출시 전 평가(evaluation)의 유형을 결정하는 근거가 되기 때문이다.",
    "marks": [
     {
      "t": "이러한 계획이 우리가 수행하는 출시 전 평가(evaluation)의 유형을 결정하는 근거가 되기 때문이다",
@@ -991,14 +991,14 @@
   {
    "type": "p",
    "en": "By anchoring risk thresholds on outcomes, we aim to define a Framework that remains durable and appropriately scoped. The catastrophic outcomes we must strive to prevent are more stable and enduring than the particular capabilities of any given Frontier AI, which will inevitably evolve as technology advances. This is not to say that the outcomes identified in this Framework are fixed. It is possible that as our understanding of Frontier AI improves, defined outcomes or threat scenarios might be removed, if we determine that they no longer meet our criteria for inclusion. We also may need to add new outcomes in the future. Those outcomes might be in entirely novel risk domains, potentially as a result of novel model capabilities, or they might reflect changes to the threat landscape in existing risk domains that bring new kinds of threat actors into scope. This accounts for the ways in which Frontier AI might introduce novel harms, as well as its potential to increase the risk of catastrophe in known risk domains.",
-   "ko": "위험 임계값을 결과에 기반하여 설정함으로써, 우리는 지속성을 유지하면서도 적절한 범위를 갖춘 프레임워크를 정의하고자 한다. 우리가 방지하기 위해 노력해야 할 파국적 결과는 기술이 발전함에 따라 필연적으로 변화할 특정 프론티어 AI의 개별 역량보다 더 안정적이고 지속적이다. 그렇다고 본 프레임워크에서 식별된 결과가 고정되어 있다는 의미는 아니다. 프론티어 AI에 대한 우리의 이해가 향상됨에 따라, 정의된 결과나 위협 시나리오가 더 이상 포함 기준을 충족하지 않는다고 판단되면 이를 제외할 수도 있다. 또한 향후 새로운 결과를 추가해야 할 수도 있다. 그러한 결과는 새로운 모델 역량으로 인해 완전히 새로운 위험 영역에 속할 수도 있고, 기존 위험 영역에서 새로운 유형의 위협 행위자를 범위에 포함시키는 위협 지형의 변화를 반영할 수도 있다. 이는 프론티어 AI가 새로운 피해를 초래할 수 있는 방식뿐만 아니라, 알려진 위험 영역에서 파국의 위험을 증가시킬 수 있는 잠재력까지 고려한 것이다.",
+   "ko": "위험 임계값을 결과에 기반하여 설정함으로써, 우리는 지속성을 유지하면서도 적절한 범위를 갖춘 프레임워크를 정의하고자 한다. 우리가 방지하기 위해 노력해야 할 파국적 결과는 기술이 발전함에 따라 필연적으로 변화할 특정 프론티어 AI의 개별 역량보다 더 안정적이고 지속적이다. 그렇다고 본 프레임워크에서 식별된 결과가 고정되어 있다는 의미는 아니다. 프론티어 AI에 대한 우리의 이해가 향상됨에 따라, 정의된 결과나 위협 시나리오가 더 이상 포함 기준을 충족하지 않는다고 판단되면 이를 제외할 수도 있다. 또한 향후 새로운 결과를 추가해야 할 수도 있다. 그러한 결과는 잠재적으로 새로운 모델 역량으로 인해 완전히 새로운 위험 영역에 속할 수도 있고, 기존 위험 영역에서 새로운 유형의 위협 행위자를 범위에 포함시키는 위협 지형의 변화를 반영할 수도 있다. 이는 프론티어 AI가 새로운 피해를 초래할 수 있는 방식뿐만 아니라, 알려진 위험 영역에서 파국의 위험을 증가시킬 수 있는 잠재력까지 고려한 것이다.",
    "marks": [
     {
      "t": "위험 임계값을 결과에 기반하여 설정함으로써",
      "k": "safety"
     },
     {
-     "t": "새로운 모델 역량으로 인해 완전히 새로운 위험 영역에 속할 수도 있고",
+     "t": "잠재적으로 새로운 모델 역량으로 인해 완전히 새로운 위험 영역에 속할 수도 있고",
      "k": "safety"
     },
     {
@@ -1593,10 +1593,10 @@
   {
    "type": "p",
    "en": "Within this context, we will evaluate whether the model will materially enable any of the catastrophic outcomes we have defined, considering the way it would be deployed, the relevant threat scenarios, and the efficacy of its mitigations in that context. For instance:",
-   "ko": "이러한 맥락에서 우리는 모델의 배포 방식, 관련 위협 시나리오, 그리고 해당 맥락에서의 완화 효과를 고려하여, 모델이 우리가 정의한 치명적 결과 중 어느 하나를 실질적으로 가능하게 하는지를 평가한다. 예를 들면 다음과 같다.",
+   "ko": "이러한 맥락에서 우리는 모델의 배포 방식, 관련 위협 시나리오, 그리고 해당 맥락에서의 완화 효과를 고려하여, 모델이 우리가 정의한 파국적 결과 중 어느 하나를 실질적으로 가능하게 하는지를 평가한다. 예를 들면 다음과 같다.",
    "marks": [
     {
-     "t": "모델이 우리가 정의한 치명적 결과 중 어느 하나를 실질적으로 가능하게 하는지를 평가한다",
+     "t": "모델이 우리가 정의한 파국적 결과 중 어느 하나를 실질적으로 가능하게 하는지를 평가한다",
      "k": "key"
     }
    ]
@@ -1637,7 +1637,7 @@
   {
    "type": "p",
    "en": "During development of a model that may substantially contribute to a catastrophic outcome, strong model weight security measures are important to prevent unauthorized access, modification, or exfiltration of the model. For Frontier AI models we release under this Framework, we maintain processes to ensure our model weight security meets a baseline of controls to protect model weights from exfiltration or tampering by internal and external threat actors.",
-   "ko": "치명적 결과에 상당히 기여할 수 있는 모델을 개발하는 동안에는 모델에 대한 무단 접근, 수정 또는 유출을 방지하기 위해 강력한 모델 가중치 보안 조치가 중요하다. 이 프레임워크에 따라 공개하는 프론티어 AI 모델에 대해, 우리는 내부 및 외부 위협 행위자에 의한 유출이나 변조로부터 모델 가중치를 보호하기 위한 기본 통제 수준을 모델 가중치 보안이 충족하도록 보장하는 프로세스를 유지한다.",
+   "ko": "파국적 결과에 상당히 기여할 수 있는 모델을 개발하는 동안에는 모델에 대한 무단 접근, 수정 또는 유출을 방지하기 위해 강력한 모델 가중치 보안 조치가 중요하다. 이 프레임워크에 따라 공개하는 프론티어 AI 모델에 대해, 우리는 내부 및 외부 위협 행위자에 의한 유출이나 변조로부터 모델 가중치를 보호하기 위한 기본 통제 수준을 모델 가중치 보안이 충족하도록 보장하는 프로세스를 유지한다.",
    "marks": [
     {
      "t": "모델에 대한 무단 접근, 수정 또는 유출을 방지하기 위해 강력한 모델 가중치 보안 조치가 중요하다",
@@ -1958,10 +1958,10 @@
   {
    "type": "li",
    "en": "Consider additional alternative deployment scenarios that provide differential access to defenders, such as major software providers, widely-used open-source projects, and security services via programs",
-   "ko": "주요 소프트웨어 제공업체, 널리 사용되는 오픈소스 프로젝트, 보안 서비스 등 방어자에게 차등적 접근을 제공하는 추가적인 대안 배포 시나리오를 프로그램을 통해 검토함",
+   "ko": "주요 소프트웨어 제공업체, 널리 사용되는 오픈소스 프로젝트, 보안 서비스 등 방어자에게 프로그램을 통해 차등적 접근을 제공하는 추가적인 대안 배포 시나리오를 검토함",
    "marks": [
     {
-     "t": "방어자에게 차등적 접근을 제공하는 추가적인 대안 배포 시나리오",
+     "t": "방어자에게 프로그램을 통해 차등적 접근을 제공하는",
      "k": "safety"
     }
    ]
@@ -3103,14 +3103,14 @@
   {
    "type": "p",
    "en": "As outlined in the introduction, we expect to update our Meta Superintelligence Scaling Framework to reflect developments in both the technology and our understanding of how to manage its risks and benefits. To do so, it is necessary to observe models in their deployed context and to monitor how the AI ecosystem is evolving. These observations feed into the work of assessing the adequacy of our mitigations for deployed models, and the efficacy of our Framework. We will update our Framework based on these observations and will do so when we have reasonable grounds to believe either its adequacy or our adherence to it has been materially undermined, or at least every twelve months, whichever is sooner. Framework updates will cover both the Framework's adequacy - in light of model development, deployment, and usage practices currently and for the next 12 months - and adherence to it. After a Framework assessment, we will update our Framework, have it confirmed by our Director of Alignment and Risk and Chief AI Officer, and publish the updated version.",
-   "ko": "서론에서 밝힌 바와 같이, 우리는 기술의 발전과 그 위험 및 편익을 관리하는 방법에 대한 우리의 이해 발전을 모두 반영하기 위해 Meta Superintelligence Scaling Framework를 업데이트할 것으로 예상한다. 이를 위해서는 배포된 맥락에서 모델을 관찰하고 AI 생태계가 어떻게 진화하는지 모니터링해야 한다. 이러한 관찰은 배포된 모델에 대한 우리의 완화 조치가 적절한지, 그리고 우리 프레임워크가 효과적인지를 평가(assessment)하는 작업에 반영된다. 우리는 이러한 관찰을 바탕으로 프레임워크를 업데이트할 것이며, 프레임워크의 적절성 또는 우리의 프레임워크 준수가 실질적으로 훼손되었다고 믿을 만한 합리적 근거가 있을 때, 또는 최소한 12개월마다 중 더 이른 시점에 업데이트를 실시할 것이다. 프레임워크 업데이트는 현재 및 향후 12개월간의 모델 개발, 배포 및 사용 실행 방안에 비추어 본 프레임워크의 적절성과 프레임워크 준수 여부를 모두 다룰 것이다. 프레임워크 평가(assessment) 후, 우리는 프레임워크를 업데이트하고, 정렬 및 위험 담당 디렉터(Director of Alignment and Risk)와 최고AI책임자(Chief AI Officer)의 확인을 받은 뒤, 업데이트된 버전을 공개할 것이다.",
+   "ko": "서론에서 밝힌 바와 같이, 우리는 기술의 발전과 그 위험 및 편익을 관리하는 방법에 대한 우리의 이해 발전을 모두 반영하기 위해 Meta Superintelligence Scaling Framework를 업데이트할 것으로 예상한다. 이를 위해서는 배포된 맥락에서 모델을 관찰하고 AI 생태계가 어떻게 진화하는지 모니터링해야 한다. 이러한 관찰은 배포된 모델에 대한 우리의 완화 조치가 적절한지, 그리고 우리 프레임워크가 효과적인지를 평가(assessment)하는 작업에 반영된다. 우리는 이러한 관찰을 바탕으로 프레임워크를 업데이트할 것이며, 프레임워크의 적절성 또는 우리의 프레임워크 준수가 실질적으로 훼손되었다고 믿을 만한 합리적 근거가 있을 때, 또는 최소한 12개월마다, 둘 중 더 이른 시점에 업데이트를 실시할 것이다. 프레임워크 업데이트는 현재 및 향후 12개월간의 모델 개발, 배포 및 사용 관행에 비추어 본 프레임워크의 적절성과 프레임워크 준수 여부를 모두 다룰 것이다. 프레임워크 평가(assessment) 후, 우리는 프레임워크를 업데이트하고, 정렬 및 위험 담당 디렉터(Director of Alignment and Risk)와 최고AI책임자(Chief AI Officer)의 확인을 받은 뒤, 업데이트된 버전을 공개할 것이다.",
    "marks": [
     {
      "t": "배포된 모델에 대한 우리의 완화 조치가 적절한지, 그리고 우리 프레임워크가 효과적인지를 평가(assessment)하는 작업에 반영된다",
      "k": "safety"
     },
     {
-     "t": "프레임워크의 적절성 또는 우리의 프레임워크 준수가 실질적으로 훼손되었다고 믿을 만한 합리적 근거가 있을 때, 또는 최소한 12개월마다 중 더 이른 시점에 업데이트를 실시할 것이다.",
+     "t": "프레임워크의 적절성 또는 우리의 프레임워크 준수가 실질적으로 훼손되었다고 믿을 만한 합리적 근거가 있을 때, 또는 최소한 12개월마다, 둘 중 더 이른 시점에 업데이트를 실시할 것이다.",
      "k": "key"
     },
     {
@@ -3457,7 +3457,7 @@
   {
    "type": "li",
    "en": "Updated Frontier AI definition . Revised the definition from models \"that exceed the capabilities present in the most advanced models\" to two criteria for determining Frontier status: (1) High Capabilities in Catastrophic Risk Areas, based on comparative capability in Framework risk domains or equivalence to a model previously determined to substantially contribute to a catastrophic threat scenario; or (2) a Compute Threshold of at least 10²⁶ integer or floating point operations.",
-   "ko": "프론티어 AI 정의를 업데이트함. \"최첨단 모델에 존재하는 역량을 초과하는\" 모델이라는 정의를 프론티어 지위를 판단하는 두 가지 기준으로 개정함: (1) 파국적 위험 분야에서의 높은 역량. 이는 프레임워크 위험 영역에서의 비교 역량 또는 파국적 위협 시나리오에 실질적으로 기여한다고 이전에 판단된 모델과의 동등성에 근거함; 또는 (2) 최소 10 26 회의 정수 또는 부동소수점 연산이라는 연산 임계값.",
+   "ko": "프론티어 AI 정의를 업데이트함. \"최첨단 모델에 존재하는 역량을 초과하는\" 모델이라는 정의를 프론티어 지위를 판단하는 두 가지 기준으로 개정함: (1) 파국적 위험 분야에서의 높은 역량. 이는 프레임워크 위험 영역에서의 비교 역량 또는 파국적 위협 시나리오에 실질적으로 기여한다고 이전에 판단된 모델과의 동등성에 근거함; 또는 (2) 최소 10²⁶회의 정수 또는 부동소수점 연산이라는 연산 임계값.",
    "marks": [
     {
      "t": "(1) 파국적 위험 분야에서의 높은 역량",

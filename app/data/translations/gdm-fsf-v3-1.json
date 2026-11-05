@@ -697,10 +697,10 @@
   {
    "type": "p",
    "en": "Note: Assessing frontier AI capabilities and corresponding significant and severe risk is a complex process. Because the science of AI risk assessment is still developing, our assessments will often involve some level of subjective analysis. The concept of proportionality is central to our determination of whether a particular mitigation has sufficiently reduced the risk to acceptable levels. The mitigation and the effects of such mitigation should also be assessed holistically and be proportionate with expected impact of a model's risk, thus balancing safety with innovation.",
-   "ko": "참고: 프론티어 AI의 역량과 그에 상응하는 중대한 위험 및 심각한 위험을 평가하는 것은 복잡한 과정이다. AI 위험 평가에 관한 과학은 아직 발전 중이므로, 우리의 평가에는 상당 부분 어느 정도의 주관적 분석이 수반될 것이다. 특정 완화조치가 위험을 수용 가능한 수준으로 충분히 낮추었는지 판단할 때 비례성 개념이 핵심이다. 또한 완화조치와 그 효과는 종합적으로 평가되어야 하며, 모델 위험의 예상 영향에 비례해야 한다. 이를 통해 안전과 혁신 간의 균형을 도모한다.",
+   "ko": "참고: 프론티어 AI의 역량과 그에 상응하는 중대한 위험 및 심각한 위험을 평가하는 것은 복잡한 과정이다. AI 위험 평가에 관한 과학은 아직 발전 중이므로, 우리의 평가에는 종종 어느 정도의 주관적 분석이 수반될 것이다. 특정 완화조치가 위험을 수용 가능한 수준으로 충분히 낮추었는지 판단할 때 비례성 개념이 핵심이다. 또한 완화조치와 그 효과는 종합적으로 평가되어야 하며, 모델 위험의 예상 영향에 비례해야 한다. 이를 통해 안전과 혁신 간의 균형을 도모한다.",
    "marks": [
     {
-     "t": "AI 위험 평가에 관한 과학은 아직 발전 중이므로, 우리의 평가에는 상당 부분 어느 정도의 주관적 분석이 수반될 것이다.",
+     "t": "AI 위험 평가에 관한 과학은 아직 발전 중이므로, 우리의 평가에는 종종 어느 정도의 주관적 분석이 수반될 것이다.",
      "k": "key"
     },
     {

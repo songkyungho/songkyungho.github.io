@@ -353,11 +353,11 @@
   },
   {
    "type": "p",
-   "en": "9. (a) \"Frontier model\" means a foundation model that was trained using a quantity of computing power greater than 10§26 integer or floating-point operations.",
-   "ko": "9. (a) \"프론티어 모델\"이란 10§26회를 초과하는 정수 또는 부동소수점 연산량의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델을 말한다.",
+   "en": "9. (a) \"Frontier model\" means a foundation model that was trained using a quantity of computing power greater than 10²⁶ integer or floating-point operations.",
+   "ko": "9. (a) \"프론티어 모델\"이란 10²⁶회를 초과하는 정수 또는 부동소수점 연산량의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델을 말한다.",
    "marks": [
     {
-     "t": "10§26회를 초과하는 정수 또는 부동소수점 연산량의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델",
+     "t": "10²⁶회를 초과하는 정수 또는 부동소수점 연산량의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델",
      "k": "safety"
     }
    ]
@@ -1135,10 +1135,10 @@
   {
    "type": "p",
    "en": "5. If any person develops, deploys, or operates a large frontier model in part in New York state without a current disclosure filed with the office as required by this section, submits false information in its disclosure or fails to timely pay any assessment required by this article, in addition to any other penalty or liability that may be imposed under this article, the office may, after notice and hearing, levy civil penalties, fees, and costs as follows:",
-   "ko": "5. 어떠한 사람이 본 조가 요구하는 바에 따라 국에 제출된 유효한 공시서 없이 일부를 뉴욕주에서 대형 프론티어 모델을 개발, 배포 또는 운영하거나, 공시서에 허위 정보를 제출하거나, 본 장이 요구하는 평가에 따른 분담금을 기한 내에 납부하지 아니하는 경우, 국은 본 장에 따라 부과될 수 있는 그 밖의 제재 또는 책임에 더하여, 통지 및 청문을 거쳐 다음과 같이 민사 제재금, 수수료 및 비용을 부과할 수 있다.",
+   "ko": "5. 어떠한 사람이 본 조가 요구하는 바에 따라 국에 제출된 유효한 공시서 없이 대형 프론티어 모델을 그 일부라도 뉴욕주에서 개발, 배포 또는 운영하거나, 공시서에 허위 정보를 제출하거나, 본 장이 요구하는 평가에 따른 분담금을 기한 내에 납부하지 아니하는 경우, 국은 본 장에 따라 부과될 수 있는 그 밖의 제재 또는 책임에 더하여, 통지 및 청문을 거쳐 다음과 같이 민사 제재금, 수수료 및 비용을 부과할 수 있다.",
    "marks": [
     {
-     "t": "국에 제출된 유효한 공시서 없이 일부를 뉴욕주에서 대형 프론티어 모델을 개발, 배포 또는 운영하거나, 공시서에 허위 정보를 제출하거나",
+     "t": "국에 제출된 유효한 공시서 없이 대형 프론티어 모델을 그 일부라도 뉴욕주에서 개발, 배포 또는 운영하거나, 공시서에 허위 정보를 제출하거나",
      "k": "safety"
     }
    ]
