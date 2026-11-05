@@ -5,7 +5,7 @@
  "publisher": "전국 네트워크보안 표준화 기술위원회(TC260)",
  "published": "2026-09-14",
  "source_url": "https://www.cac.gov.cn/2026-09/14/c_1791137092283345.htm",
- "source_note": "2026년 9월 14일 국가 사이버보안 주간 개막식에서 공개된 3.0판. 발행 주체가 같은 책에 함께 실은 공식 영문본(54~136쪽)을 옮겼다",
+ "source_note": "2026년 9월 14일 국가 사이버보안 주간 개막식에서 공개된 3.0판. 발행 주체가 같은 책에 함께 실은 공식 영문본(54~136쪽)을 옮겼다. 부록 앞의 위험·조치 표는 원문의 병합 칸을 살리기 어려워, 같은 종합적 거버넌스 조치를 공유하는 묶음별로 나눠 다시 짰다.",
  "source_label": "원문 보기 (중국 국가인터넷정보판공실)",
  "summary": "중국이 2024년 1.0판, 2025년 2.0판에 이어 낸 세 번째 판이다. '위험 분류 — 기술적 대응 — 종합 거버넌스'라는 뼈대를 그대로 두고 위험 분류를 다시 정리했다. 모델·알고리즘·데이터의 내생 안전 위험과 응용 단계의 위험을 나누고, 에이전트형 AI의 자율적 사이버 공격, 물리적 구동, 다중 에이전트 협조를 새 위험으로 올렸다. 부속서로 위험 등급 판정 원칙 다섯 단계, 에이전트형 AI 위험 관리 프레임워크, 신뢰할 수 있는 AI의 기본 준칙 여덟 가지를 달았다. 국가 표준 기구가 내는 비구속 지침이지만, 중국의 AI 안전 규율이 어디를 향하는지 보여주는 문서다.",
  "image": "/images/translations/china-ai-safety-governance-3-0-cover.webp",
@@ -17,7 +17,7 @@
  "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
  "doc_kind": "국가 거버넌스 프레임워크",
  "stats": {
-  "blocks": 474,
+  "blocks": 501,
   "sections": 13,
   "items": 143,
   "words_en": 17401
@@ -3467,14 +3467,153 @@
    "id": "s322"
   },
   {
-   "type": "table",
-   "en": "| Safety risks | Safety risks | Safety risks | Technological measures | Comprehensive governance measures | ⏎ |  |  | Output \"hallucinations\" | 3.1.1 (a) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Unreliable safety mechanisms | 3.1.1 (a)(b)(c)(e) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Injection attack threats | 3.1.1 (b)(c)(d) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Unintended behaviors | 3.1.1 (e) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Insufficient explainability | 3.1.2 (a)(d)(e) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Algorithm Bias and discrimination | 3.1.2 (b)(d)(e) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Poor robustness | 3.1.2 (c)(d)(e) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Inappropriate content in training data | 3.1.3 (b)(c)(d)(f) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Unclear sources of training data | 3.1.3 (b)(d)(f) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Improper annotation of training data | 3.1.3 (c） | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Data poisoning and contamination | 3.1.3 (b) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Non-compliant data processing | 3.1.3 (a)(d)(f) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Output of inaccurate information about individuals | 3.1.3 (b)(c)(d) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Deficiencies in synthetic data | 3.1.3 (e) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  | Computing infrastructure and operating environment risks | Computing power safety risks | 3.1.4 (a)(b)(c) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  | Computing infrastructure and operating environment risks | Component safety risks | 3.1.4 (a)(b)(c) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  | Computing infrastructure and operating environment risks | Supply chain safety risks | 3.1.4 (a)(b) | Giving full play to the guiding role of technical standards Establishing an AI safety assessment system Strengthening safety management of AI R&D and application | ⏎ |  |  | Identity and permission misuse risks | 3.2.1 (a) | · Improving laws and regulations for AI safety · Establishing a rapid AI safety risk detection and response system | ⏎ |  |  | Reasoning and planning risks | 3.2.1 (c)(d) | · Improving laws and regulations for AI safety · Establishing a rapid AI safety risk detection and response system | ⏎ |  |  | Invocation and execution risks | 3.2.1 (b)(c)(d) | · Improving laws and regulations for AI safety · Establishing a rapid AI safety risk detection and response system | ⏎ |  |  | Memory storage risks | 3.2.1 (c)(d) | · Improving laws and regulations for AI safety · Establishing a rapid AI safety risk detection and response system | ⏎ |  |  | Environmental perception safety risks | 3.2.2 (a) | · Improving laws and regulations for AI safety · Establishing a rapid AI safety risk detection and response system | ⏎ |  |  | Physical actuation safety risks | 3.2.2 (b)(c) | · Improving laws and regulations for AI safety · Establishing a rapid AI safety risk detection and response system | ⏎ |  |  | Human-AI interaction safety risks | 3.2.2 (b)(c) | Promoting standardized application in key sectors | ⏎ |  |  | Multi-agent coordination safety risks | 3.2.2 (d) | · Improving laws and regulations for AI safety · Establishing a rapid AI safety risk detection and response system | ⏎ |  |  | Proliferation of cyberattack capabilities | 3.2.3 (a)(b)(c) | dynamic, and controllable | ⏎ |  | Cybersecurity risks | Lagging cyber defense capabilities | 3.2.3 (d) | regulatory sandbox mec- | ⏎ |  | Cybersecurity risks | Autonomous cyberattack threats | 3.2.3 (a)(b)(c) | hanism | ⏎ |  | Cybersecurity risks | Difficulties in attribution and accountability | 3.2.3 (d) | · Improving laws and regulations for AI safety · Establishing a rapid AI safety risk detection and response system |",
-   "ko": "| 안전 위험 | 안전 위험 | 안전 위험 | 기술적 조치 | 종합적 거버넌스 조치 | ⏎ |  |  | 출력 \"환각\" | 3.1.1 (a) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 신뢰할 수 없는 안전 메커니즘 | 3.1.1 (a)(b)(c)(e) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 주입 공격 위협 | 3.1.1 (b)(c)(d) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 의도하지 않은 행동 | 3.1.1 (e) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 불충분한 설명 가능성 | 3.1.2 (a)(d)(e) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 알고리즘 편향 및 차별 | 3.1.2 (b)(d)(e) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 낮은 강건성 | 3.1.2 (c)(d)(e) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 학습 데이터 내 부적절한 콘텐츠 | 3.1.3 (b)(c)(d)(f) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 학습 데이터의 불분명한 출처 | 3.1.3 (b)(d)(f) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 학습 데이터의 부적절한 주석 | 3.1.3 (c） | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 데이터 오염(data poisoning) 및 오염(contamination) | 3.1.3 (b) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 규정에 부합하지 않는 데이터 처리 | 3.1.3 (a)(d)(f) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 개인에 관한 부정확한 정보 출력 | 3.1.3 (b)(c)(d) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 합성 데이터의 결함 | 3.1.3 (e) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  | 컴퓨팅 인프라 및 운영 환경 위험 | 컴퓨팅 파워 안전 위험 | 3.1.4 (a)(b)(c) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  | 컴퓨팅 인프라 및 운영 환경 위험 | 구성요소 안전 위험 | 3.1.4 (a)(b)(c) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  | 컴퓨팅 인프라 및 운영 환경 위험 | 공급망 안전 위험 | 3.1.4 (a)(b) | 기술 표준의 선도적 역할 충분히 발휘 AI 안전 평가(assessment) 체계 수립 AI 연구개발 및 응용의 안전 관리 강화 | ⏎ |  |  | 신원 및 권한 오용 위험 | 3.2.1 (a) | · AI 안전 관련 법률 및 규정 정비 · 신속한 AI 안전 위험 탐지 및 대응 체계 구축 | ⏎ |  |  | 추론 및 계획 위험 | 3.2.1 (c)(d) | · AI 안전 관련 법률 및 규정 정비 · 신속한 AI 안전 위험 탐지 및 대응 체계 구축 | ⏎ |  |  | 호출 및 실행 위험 | 3.2.1 (b)(c)(d) | · AI 안전 관련 법률 및 규정 정비 · 신속한 AI 안전 위험 탐지 및 대응 체계 구축 | ⏎ |  |  | 메모리 저장 위험 | 3.2.1 (c)(d) | · AI 안전 관련 법률 및 규정 정비 · 신속한 AI 안전 위험 탐지 및 대응 체계 구축 | ⏎ |  |  | 환경 인식 안전 위험 | 3.2.2 (a) | · AI 안전 관련 법률 및 규정 정비 · 신속한 AI 안전 위험 탐지 및 대응 체계 구축 | ⏎ |  |  | 물리적 구동 안전 위험 | 3.2.2 (b)(c) | · AI 안전 관련 법률 및 규정 정비 · 신속한 AI 안전 위험 탐지 및 대응 체계 구축 | ⏎ |  |  | 인간-AI 상호작용 안전 위험 | 3.2.2 (b)(c) | 핵심 분야의 표준화된 응용 촉진 | ⏎ |  |  | 다중 에이전트 협조 안전 위험 | 3.2.2 (d) | · AI 안전 관련 법률 및 규정 정비 · 신속한 AI 안전 위험 탐지 및 대응 체계 구축 | ⏎ |  |  | 사이버 공격 역량의 확산 | 3.2.3 (a)(b)(c) | 동적이며 통제 가능한 | ⏎ |  | 사이버 보안 위험 | 뒤처진 사이버 방어 역량 | 3.2.3 (d) | 규제 샌드박스 메커- | ⏎ |  | 사이버 보안 위험 | 자율적 사이버 공격 위협 | 3.2.3 (a)(b)(c) | 니즘 | ⏎ |  | 사이버 보안 위험 | 귀속 및 책임성 규명의 어려움 | 3.2.3 (d) | · AI 안전 관련 법률 및 규정 정비 · 신속한 AI 안전 위험 탐지 및 대응 체계 구축 |"
+   "type": "h3",
+   "en": "Inherent safety risks of AI",
+   "ko": "AI의 내재적 안전 위험",
+   "id": "s322-1"
+  },
+  {
+   "type": "p",
+   "en": "Comprehensive governance measures:",
+   "ko": "종합적 거버넌스 조치:"
+  },
+  {
+   "type": "li",
+   "en": "Giving full play to the guiding role of technical standards",
+   "ko": "기술 표준의 선도적 역할의 충분한 발휘"
+  },
+  {
+   "type": "li",
+   "en": "Establishing an AI safety assessment system",
+   "ko": "AI 안전 평가(assessment) 체계 구축"
+  },
+  {
+   "type": "li",
+   "en": "Strengthening safety management of AI R&D and application",
+   "ko": "AI 연구개발 및 응용의 안전 관리 강화"
   },
   {
    "type": "table",
-   "en": "| Information and content risks | Output of illegal information | 3.2.4 (a)(b)(c)(e) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ |  | Distortion of facts and user deception | 3.2.4 (a)(b)(e) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ |  | Pollution of online content ecosystem | 3.2.4 (a)(b)(c)(e) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ |  | Exacerbation of \"information cocoons\" effects | 3.2. 4 (d) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ |  | Value biases | 3.2.4 (b) (d) (e) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ | Safety risks to personal information rights and | Non-compliant recording of individuals' behavioral information | 3.2.5 (a) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ | interests | Insufficient compliance safeguards Inadequate channels for individuals to exercise their rights | 3.2.5 (b) 3.2.5 (c) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ | Real-world safety risks | Risks to the stable operation of critical information infrastructure | 3.2.6 (a)(b)(c)(e) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ |  | Risks arising from mismatches between application and needs | 3.2.6 (d) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ |  | Misuse for illegal and criminal activities | 3.2.6 (a)(b)(c)(e) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ |  | Risks of loss of control over knowledge related to nuclear, biological, chemical, and missile weapons | 3.2.6 (a)(b)(c)(e) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ |  | Risks of manipulating of social cognition | 3.2.6 (f) | · Implementing application classification and safety risk grading management · Promoting traceable management of AI-generated synthetic content · Strengthening open-source ecosystem safety and supply chain safety management · Sharing information on AI safety risks · Optimizing an AI-driven | ⏎ | Social risks | Disruption of employment structures | 3.3.1 (a) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks | ⏎ |  | Impact on education and suppression of innovation | 3.3.1 (b) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks | ⏎ |  | Risks of social alienation | 3.3.1 (c) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks | ⏎ |  | Widening the intelligence divide | 3.3.1 (a)(b) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks | ⏎ | Environmental risks | Challenges to the balance of resource supply and demand | 3.3.2 (a)(b) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks | ⏎ |  | Challenges to green and low-carbon development | 3.3.2 (a)(b) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks | ⏎ | Cultural risks | Erosion of cultural diversity | 3.3.3 (a)(b) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks | ⏎ |  | Cultural reshaping and intrusion | 3.3.3 (a)(b) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks | ⏎ | Ethical risks | Aggravating social bias | 3.3.4 (a)(b)(c) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks | ⏎ |  | Intensifying scientific research ethics risks | 3.3.4 (a)(b)(c) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks | ⏎ |  | Risks of emotional dependency | 3.3.4 (a)(c)(d) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks | ⏎ |  | Emergence of AI \"self-consciousness\" and loss of human control | 3.3.4 (a)(b)(c) | tivate AI safety talent · Fostering consensus on collaborative response to loss-of-control AI risks |",
-   "ko": "| 정보 및 콘텐츠 위험 | 불법 정보 출력 | 3.2.4 (a)(b)(c)(e) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ |  | 사실 왜곡 및 사용자 기만 | 3.2.4 (a)(b)(e) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ |  | 온라인 콘텐츠 생태계 오염 | 3.2.4 (a)(b)(c)(e) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ |  | \"정보 고치(information cocoons)\" 효과 심화 | 3.2. 4 (d) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ |  | 가치 편향 | 3.2.4 (b) (d) (e) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ | 개인정보 권리 및 | 개인 행동 정보의 규정 미준수 기록 | 3.2.5 (a) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ | 이익에 대한 안전 위험 | 규정 준수 안전장치 미흡 개인의 권리 행사 경로 미비 | 3.2.5 (b) 3.2.5 (c) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ | 현실 세계 안전 위험 | 핵심 정보 기반시설의 안정적 운영에 대한 위험 | 3.2.6 (a)(b)(c)(e) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ |  | 응용과 수요 간 불일치로 인한 위험 | 3.2.6 (d) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ |  | 불법 및 범죄 활동을 위한 오용 | 3.2.6 (a)(b)(c)(e) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ |  | 핵·생물·화학·미사일 무기 관련 지식의 통제 상실 위험 | 3.2.6 (a)(b)(c)(e) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ |  | 사회적 인식 조작 위험 | 3.2.6 (f) | · 응용 분류 및 안전 위험 등급별 관리 시행 · AI 생성 합성 콘텐츠의 추적 가능한 관리 추진 · 오픈소스 생태계 안전 및 공급망 안전 관리 강화 · AI 안전 위험 정보 공유 · AI 기반 … 최적화 | ⏎ | 사회적 위험 | 고용 구조의 교란 | 3.3.1 (a) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 | ⏎ |  | 교육에 대한 영향 및 혁신 억제 | 3.3.1 (b) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 | ⏎ |  | 사회적 소외 위험 | 3.3.1 (c) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 | ⏎ |  | 지능 격차 확대 | 3.3.1 (a)(b) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 | ⏎ | 환경 위험 | 자원 수급 균형에 대한 도전 | 3.3.2 (a)(b) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 | ⏎ |  | 녹색·저탄소 발전에 대한 도전 | 3.3.2 (a)(b) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 | ⏎ | 문화적 위험 | 문화 다양성의 잠식 | 3.3.3 (a)(b) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 | ⏎ |  | 문화적 재편 및 침투 | 3.3.3 (a)(b) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 | ⏎ | 윤리적 위험 | 사회적 편향 심화 | 3.3.4 (a)(b)(c) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 | ⏎ |  | 과학 연구 윤리 위험 심화 | 3.3.4 (a)(b)(c) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 | ⏎ |  | 정서적 의존 위험 | 3.3.4 (a)(c)(d) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 | ⏎ |  | AI \"자의식\"의 출현 및 인간의 통제 상실 | 3.3.4 (a)(b)(c) | AI 안전 인재 육성 · 통제 상실 AI 위험에 대한 협력적 대응 관련 합의 도출 |"
+   "en": "| Risk category | Safety risk | Technological measures | ⏎ | Model risks | Output \"hallucinations\" | 3.1.1 (a) | ⏎ | Model risks | Unreliable safety mechanisms | 3.1.1 (a)(b)(c)(e) | ⏎ | Model risks | Injection attack threats | 3.1.1 (b)(c)(d) | ⏎ | Model risks | Unintended behaviors | 3.1.1 (e) | ⏎ | Algorithm risks | Insufficient explainability | 3.1.2 (a)(d)(e) | ⏎ | Algorithm risks | Algorithm Bias and discrimination | 3.1.2 (b)(d)(e) | ⏎ | Algorithm risks | Poor robustness | 3.1.2 (c)(d)(e) | ⏎ | Data risks | Inappropriate content in training data | 3.1.3 (b)(c)(d)(f) | ⏎ | Data risks | Unclear sources of training data | 3.1.3 (b)(d)(f) | ⏎ | Data risks | Improper annotation of training data | 3.1.3 (c) | ⏎ | Data risks | Data poisoning and contamination | 3.1.3 (b) | ⏎ | Data risks | Non-compliant data processing | 3.1.3 (a)(d)(f) | ⏎ | Data risks | Output of inaccurate information about individuals | 3.1.3 (b)(c)(d) | ⏎ | Data risks | Deficiencies in synthetic data | 3.1.3 (e) | ⏎ | Computing infrastructure and operating environment risks | Computing power safety risks | 3.1.4 (a)(b)(c) | ⏎ | Computing infrastructure and operating environment risks | Component safety risks | 3.1.4 (a)(b)(c) | ⏎ | Computing infrastructure and operating environment risks | Supply chain safety risks | 3.1.4 (a)(b) |",
+   "ko": "| 위험 유형 | 안전 위험 | 기술적 조치 | ⏎ | 모델 위험 | 출력 \"환각\" | 3.1.1 (a) | ⏎ | 모델 위험 | 신뢰할 수 없는 안전 메커니즘 | 3.1.1 (a)(b)(c)(e) | ⏎ | 모델 위험 | 주입 공격 위협 | 3.1.1 (b)(c)(d) | ⏎ | 모델 위험 | 의도하지 않은 행동 | 3.1.1 (e) | ⏎ | 알고리즘 위험 | 불충분한 설명 가능성 | 3.1.2 (a)(d)(e) | ⏎ | 알고리즘 위험 | 알고리즘 편향 및 차별 | 3.1.2 (b)(d)(e) | ⏎ | 알고리즘 위험 | 낮은 강건성 | 3.1.2 (c)(d)(e) | ⏎ | 데이터 위험 | 학습 데이터 내 부적절한 콘텐츠 | 3.1.3 (b)(c)(d)(f) | ⏎ | 데이터 위험 | 학습 데이터의 불분명한 출처 | 3.1.3 (b)(d)(f) | ⏎ | 데이터 위험 | 학습 데이터의 부적절한 주석 | 3.1.3 (c) | ⏎ | 데이터 위험 | 데이터 오염(data poisoning) 및 오염(contamination) | 3.1.3 (b) | ⏎ | 데이터 위험 | 규정에 부합하지 않는 데이터 처리 | 3.1.3 (a)(d)(f) | ⏎ | 데이터 위험 | 개인에 관한 부정확한 정보 출력 | 3.1.3 (b)(c)(d) | ⏎ | 데이터 위험 | 합성 데이터의 결함 | 3.1.3 (e) | ⏎ | 컴퓨팅 인프라 및 운영 환경 위험 | 컴퓨팅 파워 안전 위험 | 3.1.4 (a)(b)(c) | ⏎ | 컴퓨팅 인프라 및 운영 환경 위험 | 구성요소 안전 위험 | 3.1.4 (a)(b)(c) | ⏎ | 컴퓨팅 인프라 및 운영 환경 위험 | 공급망 안전 위험 | 3.1.4 (a)(b) |"
+  },
+  {
+   "type": "h3",
+   "en": "Safety risks in the application of AI: agentic AI, embodied AI, cybersecurity",
+   "ko": "AI 응용의 안전 위험: 에이전틱 AI, 체화 AI, 사이버 보안",
+   "id": "s322-2"
+  },
+  {
+   "type": "p",
+   "en": "Comprehensive governance measures:",
+   "ko": "종합적 거버넌스 조치:"
+  },
+  {
+   "type": "li",
+   "en": "Improving laws and regulations for AI safety",
+   "ko": "AI 안전 관련 법률 및 규정 개선"
+  },
+  {
+   "type": "li",
+   "en": "Establishing a rapid AI safety risk detection and response system",
+   "ko": "신속한 AI 안전 위험 탐지 및 대응 체계 구축"
+  },
+  {
+   "type": "li",
+   "en": "Promoting standardized application in key sectors",
+   "ko": "핵심 부문의 표준화된 응용 촉진"
+  },
+  {
+   "type": "li",
+   "en": "Establishing a flexible, dynamic, and controllable regulatory sandbox mechanism",
+   "ko": "유연하고 동적이며 통제 가능한 규제 샌드박스 메커니즘 구축"
+  },
+  {
+   "type": "table",
+   "en": "| Risk category | Safety risk | Technological measures | ⏎ | Agentic AI risks | Identity and permission misuse risks | 3.2.1 (a) | ⏎ | Agentic AI risks | Reasoning and planning risks | 3.2.1 (c)(d) | ⏎ | Agentic AI risks | Invocation and execution risks | 3.2.1 (b)(c)(d) | ⏎ | Agentic AI risks | Memory storage risks | 3.2.1 (c)(d) | ⏎ | Embodied AI risks | Environmental perception safety risks | 3.2.2 (a) | ⏎ | Embodied AI risks | Physical actuation safety risks | 3.2.2 (b)(c) | ⏎ | Embodied AI risks | Human-AI interaction safety risks | 3.2.2 (b)(c) | ⏎ | Embodied AI risks | Multi-agent coordination safety risks | 3.2.2 (d) | ⏎ | Cybersecurity risks | Proliferation of cyberattack capabilities | 3.2.3 (a)(b)(c) | ⏎ | Cybersecurity risks | Lagging cyber defense capabilities | 3.2.3 (d) | ⏎ | Cybersecurity risks | Autonomous cyberattack threats | 3.2.3 (a)(b)(c) | ⏎ | Cybersecurity risks | Difficulties in attribution and accountability | 3.2.3 (d) |",
+   "ko": "| 위험 유형 | 안전 위험 | 기술적 조치 | ⏎ | 에이전틱 AI 위험 | 신원 및 권한 오용 위험 | 3.2.1 (a) | ⏎ | 에이전틱 AI 위험 | 추론 및 계획 위험 | 3.2.1 (c)(d) | ⏎ | 에이전틱 AI 위험 | 호출 및 실행 위험 | 3.2.1 (b)(c)(d) | ⏎ | 에이전틱 AI 위험 | 메모리 저장 위험 | 3.2.1 (c)(d) | ⏎ | 체화 AI 위험 | 환경 인식 안전 위험 | 3.2.2 (a) | ⏎ | 체화 AI 위험 | 물리적 구동 안전 위험 | 3.2.2 (b)(c) | ⏎ | 체화 AI 위험 | 인간-AI 상호작용 안전 위험 | 3.2.2 (b)(c) | ⏎ | 체화 AI 위험 | 다중 에이전트 협조 안전 위험 | 3.2.2 (d) | ⏎ | 사이버 보안 위험 | 사이버 공격 역량의 확산 | 3.2.3 (a)(b)(c) | ⏎ | 사이버 보안 위험 | 뒤처진 사이버 방어 역량 | 3.2.3 (d) | ⏎ | 사이버 보안 위험 | 자율적 사이버 공격 위협 | 3.2.3 (a)(b)(c) | ⏎ | 사이버 보안 위험 | 귀속 및 책임성 규명의 어려움 | 3.2.3 (d) |"
+  },
+  {
+   "type": "h3",
+   "en": "Safety risks in the application of AI: information and content, personal information, the real world",
+   "ko": "AI 응용의 안전 위험: 정보·콘텐츠, 개인정보, 현실 세계",
+   "id": "s322-3"
+  },
+  {
+   "type": "p",
+   "en": "Comprehensive governance measures:",
+   "ko": "종합적 거버넌스 조치:"
+  },
+  {
+   "type": "li",
+   "en": "Implementing application classification and safety risk grading management",
+   "ko": "응용 분류 및 안전 위험 등급 관리 시행"
+  },
+  {
+   "type": "li",
+   "en": "Promoting traceable management of AI-generated synthetic content",
+   "ko": "AI 생성 합성 콘텐츠의 추적 가능한 관리 촉진"
+  },
+  {
+   "type": "li",
+   "en": "Strengthening open-source ecosystem safety and supply chain safety management",
+   "ko": "오픈소스 생태계 안전 및 공급망 안전 관리 강화"
+  },
+  {
+   "type": "li",
+   "en": "Sharing information on AI safety risks",
+   "ko": "AI 안전 위험 정보 공유"
+  },
+  {
+   "type": "li",
+   "en": "Optimizing an AI-driven cybersecurity protection system",
+   "ko": "AI 기반 사이버 보안 보호 체계 최적화"
+  },
+  {
+   "type": "table",
+   "en": "| Risk category | Safety risk | Technological measures | ⏎ | Information and content risks | Output of illegal information | 3.2.4 (a)(b)(c)(e) | ⏎ | Information and content risks | Distortion of facts and user deception | 3.2.4 (a)(b)(e) | ⏎ | Information and content risks | Pollution of online content ecosystem | 3.2.4 (a)(b)(c)(e) | ⏎ | Information and content risks | Exacerbation of \"information cocoons\" effects | 3.2.4 (d) | ⏎ | Information and content risks | Value biases | 3.2.4 (b)(d)(e) | ⏎ | Safety risks to personal information rights and interests | Non-compliant recording of individuals' behavioral information | 3.2.5 (a) | ⏎ | Safety risks to personal information rights and interests | Insufficient compliance safeguards | 3.2.5 (b) | ⏎ | Safety risks to personal information rights and interests | Inadequate channels for individuals to exercise their rights | 3.2.5 (c) | ⏎ | Real-world safety risks | Risks to the stable operation of critical information infrastructure | 3.2.6 (a)(b)(c)(e) | ⏎ | Real-world safety risks | Risks arising from mismatches between application and needs | 3.2.6 (d) | ⏎ | Real-world safety risks | Misuse for illegal and criminal activities | 3.2.6 (a)(b)(c)(e) | ⏎ | Real-world safety risks | Risks of loss of control over knowledge related to nuclear, biological, chemical, and missile weapons | 3.2.6 (a)(b)(c)(e) | ⏎ | Real-world safety risks | Risks of manipulating of social cognition | 3.2.6 (f) |",
+   "ko": "| 위험 유형 | 안전 위험 | 기술적 조치 | ⏎ | 정보 및 콘텐츠 위험 | 불법 정보 출력 | 3.2.4 (a)(b)(c)(e) | ⏎ | 정보 및 콘텐츠 위험 | 사실 왜곡 및 사용자 기만 | 3.2.4 (a)(b)(e) | ⏎ | 정보 및 콘텐츠 위험 | 온라인 콘텐츠 생태계 오염 | 3.2.4 (a)(b)(c)(e) | ⏎ | 정보 및 콘텐츠 위험 | \"정보 고치(information cocoons)\" 효과 심화 | 3.2.4 (d) | ⏎ | 정보 및 콘텐츠 위험 | 가치 편향 | 3.2.4 (b)(d)(e) | ⏎ | 개인정보 권익에 대한 안전 위험 | 개인 행동 정보의 규정 미준수 기록 | 3.2.5 (a) | ⏎ | 개인정보 권익에 대한 안전 위험 | 규정 준수 안전장치 미흡 | 3.2.5 (b) | ⏎ | 개인정보 권익에 대한 안전 위험 | 개인의 권리 행사 경로 미비 | 3.2.5 (c) | ⏎ | 현실 세계의 안전 위험 | 핵심 정보 기반시설의 안정적 운영에 대한 위험 | 3.2.6 (a)(b)(c)(e) | ⏎ | 현실 세계의 안전 위험 | 응용과 수요 간 불일치로 인한 위험 | 3.2.6 (d) | ⏎ | 현실 세계의 안전 위험 | 불법 및 범죄 활동을 위한 오용 | 3.2.6 (a)(b)(c)(e) | ⏎ | 현실 세계의 안전 위험 | 핵·생물·화학·미사일 무기 관련 지식의 통제 상실 위험 | 3.2.6 (a)(b)(c)(e) | ⏎ | 현실 세계의 안전 위험 | 사회적 인식 조작 위험 | 3.2.6 (f) |"
+  },
+  {
+   "type": "h3",
+   "en": "Secondary safety risks from AI",
+   "ko": "AI로 인한 2차 안전 위험",
+   "id": "s322-4"
+  },
+  {
+   "type": "p",
+   "en": "Comprehensive governance measures:",
+   "ko": "종합적 거버넌스 조치:"
+  },
+  {
+   "type": "li",
+   "en": "Strengthening governance of ethics in AI science and technology",
+   "ko": "AI 과학기술 윤리 거버넌스 강화"
+  },
+  {
+   "type": "li",
+   "en": "Increasing efforts to cultivate AI safety talent",
+   "ko": "AI 안전 인재 양성 노력 강화"
+  },
+  {
+   "type": "li",
+   "en": "Fostering consensus on collaborative response to loss-of-control AI risks",
+   "ko": "통제 상실 AI 위험에 대한 협력적 대응 합의 도출"
+  },
+  {
+   "type": "li",
+   "en": "Enhancing AI safety awareness across society",
+   "ko": "사회 전반의 AI 안전 인식 제고"
+  },
+  {
+   "type": "li",
+   "en": "Promoting international exchange and cooperation on AI safety governance",
+   "ko": "AI 안전 거버넌스에 관한 국제 교류 및 협력 촉진"
+  },
+  {
+   "type": "table",
+   "en": "| Risk category | Safety risk | Technological measures | ⏎ | Social risks | Disruption of employment structures | 3.3.1 (a) | ⏎ | Social risks | Impact on education and suppression of innovation | 3.3.1 (b) | ⏎ | Social risks | Risks of social alienation | 3.3.1 (c) | ⏎ | Social risks | Widening the intelligence divide | 3.3.1 (a)(b) | ⏎ | Environmental risks | Challenges to the balance of resource supply and demand | 3.3.2 (a)(b) | ⏎ | Environmental risks | Challenges to green and low-carbon development | 3.3.2 (a)(b) | ⏎ | Cultural risks | Erosion of cultural diversity | 3.3.3 (a)(b) | ⏎ | Cultural risks | Cultural reshaping and intrusion | 3.3.3 (a)(b) | ⏎ | Ethical risks | Aggravating social bias | 3.3.4 (a)(b)(c) | ⏎ | Ethical risks | Intensifying scientific research ethics risks | 3.3.4 (a)(b)(c) | ⏎ | Ethical risks | Risks of emotional dependency | 3.3.4 (a)(c)(d) | ⏎ | Ethical risks | Emergence of AI \"self-consciousness\" and loss of human control | 3.3.4 (a)(b)(c) |",
+   "ko": "| 위험 유형 | 안전 위험 | 기술적 조치 | ⏎ | 사회적 위험 | 고용 구조의 교란 | 3.3.1 (a) | ⏎ | 사회적 위험 | 교육에 대한 영향 및 혁신 억제 | 3.3.1 (b) | ⏎ | 사회적 위험 | 사회적 소외 위험 | 3.3.1 (c) | ⏎ | 사회적 위험 | 지능 격차 확대 | 3.3.1 (a)(b) | ⏎ | 환경적 위험 | 자원 수급 균형에 대한 도전 | 3.3.2 (a)(b) | ⏎ | 환경적 위험 | 녹색·저탄소 발전에 대한 도전 | 3.3.2 (a)(b) | ⏎ | 문화적 위험 | 문화 다양성의 잠식 | 3.3.3 (a)(b) | ⏎ | 문화적 위험 | 문화적 재편 및 침투 | 3.3.3 (a)(b) | ⏎ | 윤리적 위험 | 사회적 편향 심화 | 3.3.4 (a)(b)(c) | ⏎ | 윤리적 위험 | 과학 연구 윤리 위험 심화 | 3.3.4 (a)(b)(c) | ⏎ | 윤리적 위험 | 정서적 의존 위험 | 3.3.4 (a)(c)(d) | ⏎ | 윤리적 위험 | AI \"자의식\"의 출현 및 인간의 통제 상실 | 3.3.4 (a)(b)(c) |"
   },
   {
    "type": "h2",
