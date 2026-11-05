@@ -998,7 +998,7 @@
   {
    "type": "p",
    "en": "Risk  analysis  should  be  conducted  throughout  the  entire  AI  development  lifecycle  to determine  whether  the  AI  has  crossed  yellow  lines,  i.e.  displayed  the  early  warning indicators that require safety measures to be escalated. We recommend that AI developers conduct pre-development  and  pre-deployment  analyses  to  inform  critical  deployment decisions, as well as continuous post-deployment monitoring to guide the safe development of  next-generation  systems.  The  subsections  below  highlight  how  open-weight  release complicates  the  risk  profile  at  each  stage  of  analysis.  Most  importantly,  pre-deployment analysis must consider the distinct risk factors of open-weight release, rather than importing evaluation practices designed for closed-weight models [11]. Post-deployment monitoring is constrained by the limited traceability of open-weight models once their versions spread [38].",
-   "ko": "위험 분석은 AI가 옐로라인(yellow lines)을 넘었는지, 즉 안전 조치의 상향이 필요한 조기 경보 지표를 보였는지를 판단하기 위해 AI 개발 수명주기 전반에 걸쳐 수행해야 한다. 본 보고서는 AI 개발자가 중요한 배포 결정에 참고할 수 있도록 개발 전 및 배포 전 분석을 수행하고, 차세대 시스템의 안전한 개발을 이끌 수 있도록 지속적인 배포 후 모니터링을 수행할 것을 권고한다. 아래 하위 절에서는 오픈 웨이트 공개가 분석의 각 단계에서 위험 프로파일을 어떻게 복잡하게 만드는지 살펴본다. 가장 중요한 점은 배포 전 분석이 폐쇄형 가중치 모델을 위해 설계된 평가(evaluation) 실행 방안을 그대로 가져오는 대신, 오픈 웨이트 공개의 고유한 위험 요인을 고려해야 한다는 것이다 [11]. 배포 후 모니터링은 오픈 웨이트 모델의 버전이 확산되고 나면 추적 가능성이 제한된다는 점에서 제약을 받는다 [38].",
+   "ko": "위험 분석은 AI가 옐로라인(yellow lines)을 넘었는지, 즉 안전 조치의 상향이 필요한 조기 경보 지표를 보였는지를 판단하기 위해 AI 개발 수명주기 전반에 걸쳐 수행해야 한다. 본 보고서는 AI 개발자가 중요한 배포 결정에 참고할 수 있도록 개발 전 및 배포 전 분석을 수행하고, 차세대 시스템의 안전한 개발을 이끌 수 있도록 지속적인 배포 후 모니터링을 수행할 것을 권고한다. 아래 하위 절에서는 오픈 웨이트 공개가 분석의 각 단계에서 위험 프로파일을 어떻게 복잡하게 만드는지 살펴본다. 가장 중요한 점은 배포 전 분석이 폐쇄형 가중치 모델을 위해 설계된 평가(evaluation) 관행을 그대로 가져오는 대신, 오픈 웨이트 공개의 고유한 위험 요인을 고려해야 한다는 것이다 [11]. 배포 후 모니터링은 오픈 웨이트 모델의 버전이 확산되고 나면 추적 가능성이 제한된다는 점에서 제약을 받는다 [38].",
    "marks": [
     {
      "t": "AI가 옐로라인(yellow lines)을 넘었는지, 즉 안전 조치의 상향이 필요한 조기 경보 지표를 보였는지를 판단하기 위해",
@@ -1009,7 +1009,7 @@
      "k": "safety"
     },
     {
-     "t": "가장 중요한 점은 배포 전 분석이 폐쇄형 가중치 모델을 위해 설계된 평가(evaluation) 실행 방안을 그대로 가져오는 대신, 오픈 웨이트 공개의 고유한 위험 요인을 고려해야 한다는 것이다",
+     "t": "가장 중요한 점은 배포 전 분석이 폐쇄형 가중치 모델을 위해 설계된 평가(evaluation) 관행을 그대로 가져오는 대신, 오픈 웨이트 공개의 고유한 위험 요인을 고려해야 한다는 것이다",
      "k": "key"
     },
     {

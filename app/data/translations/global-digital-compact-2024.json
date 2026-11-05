@@ -57,7 +57,7 @@
   {
    "type": "p",
    "en": "4. Our goal is an inclusive, open, sustainable, fair, safe and secure digital future for all. This Global Digital Compact sets out the objectives, principles, commitments and actions we undertake to achieve it in the non-military domain.",
-   "ko": "4. 우리의 목표는 모두를 위한 포용적이고, 개방적이며, 지속가능하고, 공정하며, 안전하고 보안이 확보된 디지털 미래이다. 이 글로벌 디지털 협약은 비군사 영역에서 이를 달성하기 위해 우리가 수행하는 목적, 원칙, 약정 및 조치를 제시한다.",
+   "ko": "4. 우리의 목표는 모두를 위한 포용적이고, 개방적이며, 지속가능하고, 공정하며, 안전하고 보안이 확보된 디지털 미래이다. 이 글로벌 디지털 협약은 비군사 영역에서 이를 달성하기 위해 우리가 수행하는 목적, 원칙, 약속 및 조치를 제시한다.",
    "marks": [
     {
      "t": "모두를 위한 포용적이고, 개방적이며, 지속가능하고, 공정하며, 안전하고 보안이 확보된 디지털 미래이다",
@@ -171,16 +171,16 @@
   {
    "type": "h2",
    "en": "Commitments and actions",
-   "ko": "약정 및 조치",
+   "ko": "약속 및 조치",
    "id": "s18"
   },
   {
    "type": "p",
    "en": "9. We commit to pursue meaningful and measurable actions to achieve our objectives.",
-   "ko": "9. 우리는 우리의 목적을 달성하기 위해 의미 있고 측정 가능한 조치를 추진할 것을 약정한다.",
+   "ko": "9. 우리는 우리의 목적을 달성하기 위해 의미 있고 측정 가능한 조치를 추진할 것을 약속한다.",
    "marks": [
     {
-     "t": "우리는 우리의 목적을 달성하기 위해 의미 있고 측정 가능한 조치를 추진할 것을 약정한다.",
+     "t": "우리는 우리의 목적을 달성하기 위해 의미 있고 측정 가능한 조치를 추진할 것을 약속한다.",
      "k": "key"
     }
    ]
@@ -200,10 +200,10 @@
   {
    "type": "p",
    "en": "10. We acknowledge the pivotal role of universal and meaningful connectivity and affordable access in unlocking the full potential of digital and emerging technologies. We commit to connect all persons to the Internet. We recognize that this will require strong partnerships and increased financial investments in developing countries from Governments and other stakeholders, in particular the private sector. We affirm the important role of the International Telecommunication Union in advancing universal and meaningful connectivity and invite it to further continue its efforts. We recognize that innovative solutions can help deliver high-speed connectivity to, inter alia, underserved, remote and rural areas.",
-   "ko": "10. 우리는 디지털 및 신흥 기술의 잠재력을 온전히 발현하는 데 있어 보편적이고 의미 있는 연결성과 적정한 비용의 접근이 갖는 중추적 역할을 인정한다. 우리는 모든 사람을 인터넷에 연결할 것을 약정한다. 우리는 이를 위해 강력한 파트너십과 함께 정부 및 기타 이해관계자, 특히 민간 부문의 개발도상국에 대한 재정 투자 확대가 필요하다는 점을 인식한다. 우리는 보편적이고 의미 있는 연결성을 증진하는 데 있어 국제전기통신연합(International Telecommunication Union)의 중요한 역할을 확인하며, 그 노력을 더욱 지속할 것을 요청한다. 우리는 혁신적 해법이 서비스 소외 지역, 원격지 및 농촌 지역 등에 고속 연결성을 제공하는 데 도움이 될 수 있음을 인식한다.",
+   "ko": "10. 우리는 디지털 및 신흥 기술의 잠재력을 온전히 발현하는 데 있어 보편적이고 의미 있는 연결성과 적정한 비용의 접근이 갖는 중추적 역할을 인정한다. 우리는 모든 사람을 인터넷에 연결할 것을 약속한다. 우리는 이를 위해 강력한 파트너십과 함께 정부 및 기타 이해관계자, 특히 민간 부문의 개발도상국에 대한 재정 투자 확대가 필요하다는 점을 인식한다. 우리는 보편적이고 의미 있는 연결성을 증진하는 데 있어 국제전기통신연합(International Telecommunication Union)의 중요한 역할을 확인하며, 그 노력을 더욱 지속할 것을 요청한다. 우리는 혁신적 해법이 서비스 소외 지역, 원격지 및 농촌 지역 등에 고속 연결성을 제공하는 데 도움이 될 수 있음을 인식한다.",
    "marks": [
     {
-     "t": "우리는 모든 사람을 인터넷에 연결할 것을 약정한다.",
+     "t": "우리는 모든 사람을 인터넷에 연결할 것을 약속한다.",
      "k": "key"
     }
    ]
@@ -211,7 +211,7 @@
   {
    "type": "p",
    "en": "11. We commit, by 2030, to:",
-   "ko": "11. 우리는 2030년까지 다음을 약정한다:"
+   "ko": "11. 우리는 2030년까지 다음을 약속한다:"
   },
   {
    "type": "p",
@@ -249,7 +249,7 @@
   {
    "type": "p",
    "en": "13. We commit, by 2030, to:",
-   "ko": "13. 우리는 2030년까지 다음을 약정한다:"
+   "ko": "13. 우리는 2030년까지 다음을 약속한다:"
   },
   {
    "type": "p",
@@ -302,7 +302,7 @@
   {
    "type": "p",
    "en": "17. We commit by, 2030, to:",
-   "ko": "17. 우리는 2030년까지 다음을 약정한다:"
+   "ko": "17. 우리는 2030년까지 다음을 약속한다:"
   },
   {
    "type": "p",
@@ -355,7 +355,7 @@
   {
    "type": "p",
    "en": "21. We commit by, 2030, to:",
-   "ko": "21. 우리는 2030년까지 다음을 약정한다:"
+   "ko": "21. 우리는 2030년까지 다음을 약속한다:"
   },
   {
    "type": "p",
@@ -387,7 +387,7 @@
   {
    "type": "p",
    "en": "22. We commit to respect, protect and promote human rights in the digital space. We will uphold international human rights law throughout the life cycle of digital and emerging technologies so that users can safely benefit from digital technologies and are protected from violations, abuses and all forms of discrimination. We recognize the responsibilities of all stakeholders in this endeavour and also call on the private sector to apply the United Nations Guiding Principles on Business and Human Rights.",
-   "ko": "22. 우리는 디지털 공간에서 인권을 존중·보호·증진할 것을 약정한다. 우리는 사용자가 디지털 기술로부터 안전하게 혜택을 누리고 침해, 남용 및 모든 형태의 차별로부터 보호받을 수 있도록 디지털 및 신흥 기술의 생애주기 전반에 걸쳐 국제인권법을 준수할 것이다. 우리는 이러한 노력에서 모든 이해관계자의 책임을 인식하며, 민간 부문에도 유엔 기업과 인권 이행원칙(United Nations Guiding Principles on Business and Human Rights)을 적용할 것을 촉구한다.",
+   "ko": "22. 우리는 디지털 공간에서 인권을 존중·보호·증진할 것을 약속한다. 우리는 사용자가 디지털 기술로부터 안전하게 혜택을 누리고 침해, 학대 및 모든 형태의 차별로부터 보호받을 수 있도록 디지털 및 신흥 기술의 생애주기 전반에 걸쳐 국제인권법을 준수할 것이다. 우리는 이러한 노력에서 모든 이해관계자의 책임을 인식하며, 민간 부문에도 유엔 기업과 인권 이행원칙(United Nations Guiding Principles on Business and Human Rights)을 적용할 것을 촉구한다.",
    "marks": [
     {
      "t": "디지털 및 신흥 기술의 생애주기 전반에 걸쳐 국제인권법을 준수할 것이다",
@@ -398,12 +398,12 @@
   {
    "type": "p",
    "en": "23. We commit to:",
-   "ko": "23. 우리는 다음을 약정한다:"
+   "ko": "23. 우리는 다음을 약속한다:"
   },
   {
    "type": "p",
    "en": "(a) Ensure that the development and implementation of national legislation relevant to digital technologies is compliant with obligations under international law, including international human rights law (all SDGs); (b) Establish appropriate safeguards to prevent and address any adverse impact on human rights arising from the use of digital and emerging technologies and protect individuals against violations and abuses of their human rights in the digital space, including through human rights due diligence and establishing effective oversight and remedy mechanisms (all SDGs); (c) Strengthen legal and policy frameworks to protect the rights of the child in the digital space, in line with international human rights law, including the Convention on the Rights of the Child (all SDGs); (d) Refrain from imposing restrictions on the free flow of information and ideas that are inconsistent with obligations under international law (all SDGs).",
-   "ko": "(a) 디지털 기술과 관련된 국내 법령의 제정 및 이행이 국제인권법을 포함한 국제법상의 의무에 부합하도록 보장한다(모든 SDG); (b) 인권 실사와 효과적인 감독 및 구제 메커니즘의 구축 등을 통해, 디지털 및 신흥 기술의 사용으로 인해 발생하는 인권에 대한 모든 부정적 영향을 예방하고 해결하기 위한 적절한 안전장치를 마련하고, 디지털 공간에서 개인을 인권 침해 및 남용으로부터 보호한다(모든 SDG); (c) 아동권리협약(Convention on the Rights of the Child)을 포함한 국제인권법에 따라 디지털 공간에서 아동의 권리를 보호하기 위한 법률 및 정책 프레임워크를 강화한다(모든 SDG); (d) 국제법상의 의무에 부합하지 않는 정보와 사상의 자유로운 흐름에 대한 제한을 부과하지 않는다(모든 SDG).",
+   "ko": "(a) 디지털 기술과 관련된 국내 법령의 제정 및 이행이 국제인권법을 포함한 국제법상의 의무에 부합하도록 보장한다(모든 SDG); (b) 인권 실사와 효과적인 감독 및 구제 메커니즘의 구축 등을 통해, 디지털 및 신흥 기술의 사용으로 인해 발생하는 인권에 대한 모든 부정적 영향을 예방하고 해결하기 위한 적절한 안전장치를 마련하고, 디지털 공간에서 개인을 인권 침해 및 학대로부터 보호한다(모든 SDG); (c) 아동권리협약(Convention on the Rights of the Child)을 포함한 국제인권법에 따라 디지털 공간에서 아동의 권리를 보호하기 위한 법률 및 정책 프레임워크를 강화한다(모든 SDG); (d) 국제법상의 의무에 부합하지 않는 정보와 사상의 자유로운 흐름에 대한 제한을 부과하지 않는다(모든 SDG).",
    "marks": [
     {
      "t": "디지털 및 신흥 기술의 사용으로 인해 발생하는 인권에 대한 모든 부정적 영향을 예방하고 해결하기 위한 적절한 안전장치를 마련하고",
@@ -472,7 +472,7 @@
   {
    "type": "p",
    "en": "29. We commit to:",
-   "ko": "29. 우리는 다음을 약정한다:"
+   "ko": "29. 우리는 다음을 약속한다:"
   },
   {
    "type": "p",
@@ -488,14 +488,14 @@
   {
    "type": "p",
    "en": "30. We must urgently counter and address all forms of violence, including sexual and gender-based violence, which occurs through or is amplified by the use of technology, all forms of hate speech and discrimination, misinformation and disinformation, cyberbullying and child sexual exploitation and abuse. We will establish and maintain robust risk mitigation and redress measures that also protect privacy and freedom of expression.",
-   "ko": "30. 우리는 기술 사용을 통해 발생하거나 증폭되는 성폭력 및 젠더 기반 폭력을 포함한 모든 형태의 폭력, 모든 형태의 혐오 표현과 차별, 오정보와 허위 정보, 사이버 괴롭힘, 아동 성적 착취 및 남용에 시급히 대응하고 이를 해결해야 한다. 우리는 프라이버시와 표현의 자유도 보호하는 강력한 위험 완화 및 구제 조치를 마련하고 유지할 것이다.",
+   "ko": "30. 우리는 기술 사용을 통해 발생하거나 증폭되는 성폭력 및 젠더 기반 폭력을 포함한 모든 형태의 폭력, 모든 형태의 혐오 표현과 차별, 오정보와 허위 정보, 사이버 괴롭힘, 아동 성적 착취 및 학대에 시급히 대응하고 이를 해결해야 한다. 우리는 프라이버시와 표현의 자유도 보호하는 강력한 위험 완화 및 구제 조치를 마련하고 유지할 것이다.",
    "marks": [
     {
      "t": "기술 사용을 통해 발생하거나 증폭되는 성폭력 및 젠더 기반 폭력을 포함한 모든 형태의 폭력",
      "k": "safety"
     },
     {
-     "t": "오정보와 허위 정보, 사이버 괴롭힘, 아동 성적 착취 및 남용에 시급히 대응하고 이를 해결해야 한다",
+     "t": "오정보와 허위 정보, 사이버 괴롭힘, 아동 성적 착취 및 학대에 시급히 대응하고 이를 해결해야 한다",
      "k": "key"
     },
     {
@@ -507,7 +507,7 @@
   {
    "type": "p",
    "en": "31. We commit by, 2030 to:",
-   "ko": "31. 우리는 2030년까지 다음을 약정한다:"
+   "ko": "31. 우리는 2030년까지 다음을 약속한다:"
   },
   {
    "type": "p",
@@ -523,7 +523,7 @@
   {
    "type": "p",
    "en": "(d) Ensure that laws and regulations on the use of technology in areas such as surveillance and encryption are in compliance with international law ( SDGs 10 and 16); (e) Develop, in consultation with all relevant stakeholders, effective methodologies to measure, monitor and counter all forms of violence and abuse in the digital space (SDGs 5 and 16); (f) Monitor and review digital platform policies and practices on countering child sexual exploitation and abuse which occurs through or is amplified by the use of technology, including distribution over digital platforms of child sexual abuse or child sexual exploitation material, as well as solicitation or grooming for the purpose of committing a sexual offence against a child (SDG 3).",
-   "ko": "(d) 감시 및 암호화 등의 분야에서 기술 사용에 관한 법령이 국제법에 따른 규정 준수를 충족하도록 보장한다( SDG 10 및 16); (e) 모든 관련 이해관계자와 협의하여 디지털 공간에서 발생하는 모든 형태의 폭력과 남용을 측정·모니터링·대응하기 위한 효과적인 방법론을 개발한다(SDG 5 및 16); (f) 디지털 플랫폼을 통한 아동 성적 남용물 또는 아동 성적 착취물의 유포, 아동 대상 성범죄를 목적으로 한 유인 또는 그루밍을 포함하여, 기술 사용을 통해 발생하거나 증폭되는 아동 성적 착취 및 남용에 대응하기 위한 디지털 플랫폼의 정책 및 실행 방안을 모니터링하고 검토한다(SDG 3).",
+   "ko": "(d) 감시 및 암호화 등의 분야에서 기술 사용에 관한 법령이 국제법에 따른 규정 준수를 충족하도록 보장한다( SDG 10 및 16); (e) 모든 관련 이해관계자와 협의하여 디지털 공간에서 발생하는 모든 형태의 폭력과 학대를 측정·모니터링·대응하기 위한 효과적인 방법론을 개발한다(SDG 5 및 16); (f) 디지털 플랫폼을 통한 아동 성적 학대물 또는 아동 성적 착취물의 유포, 아동 대상 성범죄를 목적으로 한 유인 또는 그루밍을 포함하여, 기술 사용을 통해 발생하거나 증폭되는 아동 성적 착취 및 학대에 대응하기 위한 디지털 플랫폼의 정책 및 실행 방안을 모니터링하고 검토한다(SDG 3).",
    "marks": [
     {
      "t": "감시 및 암호화 등의 분야에서 기술 사용에 관한 법령이 국제법에 따른 규정 준수를 충족하도록 보장한다",
@@ -539,10 +539,10 @@
   {
    "type": "p",
    "en": "(a) Call on digital technology companies and developers to engage with users of all backgrounds and abilities to incorporate their perspectives and needs into the life cycle of digital technologies (SDGs 5 and 10); (b) Call on digital technology companies and developers to co-develop industry accountability frameworks, in consultation with Governments and other stakeholders, that increase transparency around their systems and processes, define responsibilities and commit to standards as well as auditable public reports (SDGs 9 and 17); (c) Call on digital technology companies and social media platforms to provide online safety-related training materials and safeguards to their users, and in particular, related to children and youth users (SDG 3); (d) Call on social media platforms to establish safe, secure and accessible reporting mechanisms for users and their advocates to report potential policy violations, including special reporting mechanisms adapted to children and persons with disabilities (SDG 3).",
-   "ko": "(a) 디지털 기술 기업과 개발자에게 다양한 배경과 능력을 지닌 사용자와 소통하여 그들의 관점과 요구를 디지털 기술의 생애주기에 반영할 것을 촉구한다(SDG 5 및 10); (b) 디지털 기술 기업과 개발자에게 정부 및 기타 이해관계자와 협의하여, 자사 시스템과 프로세스에 관한 투명성을 높이고, 책임을 규정하며, 표준 및 감사 가능한 공개 보고서를 약정하는 업계 책임성 프레임워크를 공동 개발할 것을 촉구한다(SDG 9 및 17); (c) 디지털 기술 기업과 소셜미디어 플랫폼에게 사용자, 특히 아동 및 청소년 사용자와 관련하여 온라인 안전 관련 교육 자료와 안전장치를 제공할 것을 촉구한다(SDG 3); (d) 소셜미디어 플랫폼에게 사용자와 그 옹호자가 잠재적 정책 위반을 신고할 수 있는 안전하고 보안이 확보되며 접근 가능한 신고 메커니즘을 구축할 것을 촉구하며, 여기에는 아동 및 장애인에 맞춘 특별 신고 메커니즘이 포함된다(SDG 3).",
+   "ko": "(a) 디지털 기술 기업과 개발자에게 다양한 배경과 능력을 지닌 사용자와 소통하여 그들의 관점과 요구를 디지털 기술의 생애주기에 반영할 것을 촉구한다(SDG 5 및 10); (b) 디지털 기술 기업과 개발자에게 정부 및 기타 이해관계자와 협의하여, 자사 시스템과 프로세스에 관한 투명성을 높이고, 책임을 규정하며, 표준 및 감사 가능한 공개 보고서를 약속하는 업계 책임성 프레임워크를 공동 개발할 것을 촉구한다(SDG 9 및 17); (c) 디지털 기술 기업과 소셜미디어 플랫폼에게 사용자, 특히 아동 및 청소년 사용자와 관련하여 온라인 안전 관련 교육 자료와 안전장치를 제공할 것을 촉구한다(SDG 3); (d) 소셜미디어 플랫폼에게 사용자와 그 옹호자가 잠재적 정책 위반을 신고할 수 있는 안전하고 보안이 확보되며 접근 가능한 신고 메커니즘을 구축할 것을 촉구하며, 여기에는 아동 및 장애인에 맞춘 특별 신고 메커니즘이 포함된다(SDG 3).",
    "marks": [
     {
-     "t": "표준 및 감사 가능한 공개 보고서를 약정하는 업계 책임성 프레임워크를 공동 개발할 것을 촉구한다",
+     "t": "표준 및 감사 가능한 공개 보고서를 약속하는 업계 책임성 프레임워크를 공동 개발할 것을 촉구한다",
      "k": "key"
     }
    ]
@@ -582,7 +582,7 @@
   {
    "type": "p",
    "en": "35. We commit, by 2030 to:",
-   "ko": "35. 우리는 2030년까지 다음을 약정한다:"
+   "ko": "35. 우리는 2030년까지 다음을 약속한다:"
   },
   {
    "type": "p",
@@ -671,7 +671,7 @@
   {
    "type": "p",
    "en": "39. We commit, by 2030, to:",
-   "ko": "39. 우리는 2030년까지 다음을 약정한다:"
+   "ko": "39. 우리는 2030년까지 다음을 약속한다:"
   },
   {
    "type": "p",
@@ -708,7 +708,7 @@
   {
    "type": "p",
    "en": "42. We commit, by 2030, to:",
-   "ko": "42. 우리는 2030년까지 다음을 약정한다:"
+   "ko": "42. 우리는 2030년까지 다음을 약속한다:"
   },
   {
    "type": "p",
@@ -741,10 +741,10 @@
   {
    "type": "p",
    "en": "44. We recognize that quality data is critical for tracking, targeting and accelerating progress across the Sustainable Development Goals as well as responding effectively to crises. We commit to strengthen international cooperation to close the current serious gaps on data for development and to increase its public availability. We will champion the responsible use and sharing of data within and between countries to advance progress across the Sustainable Development Goals.",
-   "ko": "44. 우리는 양질의 데이터가 지속가능발전목표 전반의 진전을 추적하고, 목표를 설정하며, 가속화하는 데뿐만 아니라 위기에 효과적으로 대응하는 데 매우 중요함을 인식한다. 우리는 현재 개발을 위한 데이터에 존재하는 심각한 격차를 해소하고 그 공개 가용성을 높이기 위해 국제 협력을 강화할 것을 약정한다. 우리는 지속가능발전목표 전반의 진전을 위해 국가 내 및 국가 간 데이터의 책임 있는 사용과 공유를 적극 옹호할 것이다.",
+   "ko": "44. 우리는 양질의 데이터가 지속가능발전목표 전반의 진전을 추적하고, 목표를 설정하며, 가속화하는 데뿐만 아니라 위기에 효과적으로 대응하는 데 매우 중요함을 인식한다. 우리는 현재 개발을 위한 데이터에 존재하는 심각한 격차를 해소하고 그 공개 가용성을 높이기 위해 국제 협력을 강화할 것을 약속한다. 우리는 지속가능발전목표 전반의 진전을 위해 국가 내 및 국가 간 데이터의 책임 있는 사용과 공유를 적극 옹호할 것이다.",
    "marks": [
     {
-     "t": "현재 개발을 위한 데이터에 존재하는 심각한 격차를 해소하고 그 공개 가용성을 높이기 위해 국제 협력을 강화할 것을 약정한다.",
+     "t": "현재 개발을 위한 데이터에 존재하는 심각한 격차를 해소하고 그 공개 가용성을 높이기 위해 국제 협력을 강화할 것을 약속한다.",
      "k": "key"
     }
    ]
@@ -752,7 +752,7 @@
   {
    "type": "p",
    "en": "45. We commit, by 2030, to:",
-   "ko": "45. 우리는 2030년까지 다음을 약정한다:"
+   "ko": "45. 우리는 2030년까지 다음을 약속한다:"
   },
   {
    "type": "p",
@@ -784,10 +784,10 @@
   {
    "type": "p",
    "en": "47. We commit, by 2030, to advance consultations among all relevant stakeholders to better understand commonalities, complementarities, convergence and divergence between regulatory approaches on how to facilitate cross-border data flows with trust so as to develop publicly available knowledge and best practices (SDG 17).",
-   "ko": "47. 우리는 2030년까지 공개적으로 이용 가능한 지식과 모범 사례를 개발하기 위해, 신뢰에 기반한 국경 간 데이터 흐름을 촉진하는 방법에 관한 규제 접근법 간의 공통점, 상호보완성, 수렴 및 차이를 더 잘 이해할 수 있도록 모든 관련 이해관계자 간의 협의를 진전시킬 것을 약정한다(SDG 17).",
+   "ko": "47. 우리는 2030년까지 공개적으로 이용 가능한 지식과 모범 사례를 개발하기 위해, 신뢰에 기반한 국경 간 데이터 흐름을 촉진하는 방법에 관한 규제 접근법 간의 공통점, 상호보완성, 수렴 및 차이를 더 잘 이해할 수 있도록 모든 관련 이해관계자 간의 협의를 진전시킬 것을 약속한다(SDG 17).",
    "marks": [
     {
-     "t": "신뢰에 기반한 국경 간 데이터 흐름을 촉진하는 방법에 관한 규제 접근법 간의 공통점, 상호보완성, 수렴 및 차이를 더 잘 이해할 수 있도록 모든 관련 이해관계자 간의 협의를 진전시킬 것을 약정한다",
+     "t": "신뢰에 기반한 국경 간 데이터 흐름을 촉진하는 방법에 관한 규제 접근법 간의 공통점, 상호보완성, 수렴 및 차이를 더 잘 이해할 수 있도록 모든 관련 이해관계자 간의 협의를 진전시킬 것을 약속한다",
      "k": "key"
     }
    ]
@@ -849,10 +849,10 @@
   {
    "type": "p",
    "en": "52. We commit to advance equitable and inclusive approaches to harnessing artificial intelligence benefits and mitigating risks in full respect of international law, including international human rights law, and taking into account other relevant frameworks such as the Recommendation on the Ethics of Artificial Intelligence of the United Nations Educational, Scientific and Cultural Organization.",
-   "ko": "52. 우리는 국제인권법을 포함한 국제법을 완전히 존중하고, 유엔교육과학문화기구(United Nations Educational, Scientific and Cultural Organization)의 인공지능 윤리에 관한 권고(Recommendation on the Ethics of Artificial Intelligence)와 같은 기타 관련 프레임워크를 고려하면서, 인공지능의 혜택을 활용하고 위험을 완화하기 위한 형평성 있고 포용적인 접근법을 진전시킬 것을 약정한다.",
+   "ko": "52. 우리는 국제인권법을 포함한 국제법을 완전히 존중하고, 유엔교육과학문화기구(United Nations Educational, Scientific and Cultural Organization)의 인공지능 윤리에 관한 권고(Recommendation on the Ethics of Artificial Intelligence)와 같은 기타 관련 프레임워크를 고려하면서, 인공지능의 혜택을 활용하고 위험을 완화하기 위한 형평성 있고 포용적인 접근법을 진전시킬 것을 약속한다.",
    "marks": [
     {
-     "t": "인공지능의 혜택을 활용하고 위험을 완화하기 위한 형평성 있고 포용적인 접근법을 진전시킬 것을 약정한다",
+     "t": "인공지능의 혜택을 활용하고 위험을 완화하기 위한 형평성 있고 포용적인 접근법을 진전시킬 것을 약속한다",
      "k": "safety"
     }
    ]
@@ -886,7 +886,7 @@
   {
    "type": "p",
    "en": "56. We therefore commit to:",
-   "ko": "56. 이에 우리는 다음을 약정한다:"
+   "ko": "56. 이에 우리는 다음을 약속한다:"
   },
   {
    "type": "p",

@@ -303,10 +303,10 @@
   {
    "type": "p",
    "en": "We have been working internally on our commitment for deep levels of access for third party evaluators as we believe it is critical for OpenAI and other companies. Such a commitment goes to the crux of independent technical assessments. We lay out our recommendations of such assessments in this section.",
-   "ko": "당사는 제3자 평가자(evaluator)에게 심층적인 수준의 접근 권한을 제공하는 약정을 내부적으로 추진해 왔는데, 이는 그러한 접근이 OpenAI와 다른 기업들에게 매우 중요하다고 보기 때문이다. 이러한 약정은 독립적 기술 평가(assessment)의 핵심에 해당한다. 본 절에서는 그러한 평가(assessment)에 관한 당사의 권고를 제시한다.",
+   "ko": "당사는 제3자 평가자(evaluator)에게 심층적인 수준의 접근 권한을 제공하는 약속을 내부적으로 추진해 왔는데, 이는 그러한 접근이 OpenAI와 다른 기업들에게 매우 중요하다고 보기 때문이다. 이러한 약속은 독립적 기술 평가(assessment)의 핵심에 해당한다. 본 절에서는 그러한 평가(assessment)에 관한 당사의 권고를 제시한다.",
    "marks": [
     {
-     "t": "제3자 평가자(evaluator)에게 심층적인 수준의 접근 권한을 제공하는 약정을 내부적으로 추진해 왔는데",
+     "t": "제3자 평가자(evaluator)에게 심층적인 수준의 접근 권한을 제공하는 약속을 내부적으로 추진해 왔는데",
      "k": "safety"
     }
    ]
@@ -445,7 +445,7 @@
   {
    "type": "p",
    "en": "Start with procedural audits of frameworks and reports. Procedural audits should serve as a starting point because they can build on established auditing methods to check compliance with clearly defined obligations. California should therefore begin with annual independent compliance audits of safety frameworks and transparency reports, following the approach already included in Illinois' SB 315. We support these provisions because they add an external check on whether developers implement their safety and transparency obligations, help regulators identify compliance gaps, and give the public clearer evidence of whether developers are meeting their commitments. California should adopt a comparable approach to Illinois: independent auditors should use generally accepted auditing standards, access materials reasonably necessary for the audit, and provide reports that describe their methodology and findings. Audit information should be available to public authorities, with public findings subject to appropriate redactions.",
-   "ko": "프레임워크 및 보고서에 대한 절차 감사부터 시작. 절차 감사는 확립된 감사 방법을 토대로 명확히 규정된 의무의 규정 준수 여부를 점검할 수 있으므로 출발점으로 삼아야 한다. 따라서 캘리포니아주는 일리노이주 SB 315에 이미 포함된 접근 방식에 따라 안전 프레임워크와 투명성 보고서에 대한 연례 독립 규정 준수 감사부터 시작해야 한다. 당사는 이러한 조항을 지지한다. 이 조항들은 개발자가 안전 및 투명성 의무를 이행하는지에 대한 외부 점검을 추가하고, 규제 당국이 규정 준수상의 공백을 식별하도록 도우며, 개발자가 약정을 지키고 있는지에 대해 대중에게 더 명확한 증거를 제공하기 때문이다. 캘리포니아주는 일리노이주와 유사한 접근 방식을 채택해야 한다. 독립 감사인은 일반적으로 인정된 감사 기준을 사용하고, 감사에 합리적으로 필요한 자료에 접근하며, 방법론과 판정 결과를 기술한 보고서를 제공해야 한다. 감사 정보는 공공 당국이 이용할 수 있어야 하며, 공개되는 판정 결과에는 적절한 민감정보 가림 처리가 적용되어야 한다.",
+   "ko": "프레임워크 및 보고서에 대한 절차 감사부터 시작. 절차 감사는 확립된 감사 방법을 토대로 명확히 규정된 의무의 규정 준수 여부를 점검할 수 있으므로 출발점으로 삼아야 한다. 따라서 캘리포니아주는 일리노이주 SB 315에 이미 포함된 접근 방식에 따라 안전 프레임워크와 투명성 보고서에 대한 연례 독립 규정 준수 감사부터 시작해야 한다. 당사는 이러한 조항을 지지한다. 이 조항들은 개발자가 안전 및 투명성 의무를 이행하는지에 대한 외부 점검을 추가하고, 규제 당국이 규정 준수상의 공백을 식별하도록 도우며, 개발자가 약속을 지키고 있는지에 대해 대중에게 더 명확한 증거를 제공하기 때문이다. 캘리포니아주는 일리노이주와 유사한 접근 방식을 채택해야 한다. 독립 감사인은 일반적으로 인정된 감사 기준을 사용하고, 감사에 합리적으로 필요한 자료에 접근하며, 방법론과 판정 결과를 기술한 보고서를 제공해야 한다. 감사 정보는 공공 당국이 이용할 수 있어야 하며, 공개되는 판정 결과에는 적절한 민감정보 가림 처리가 적용되어야 한다.",
    "marks": [
     {
      "t": "안전 프레임워크와 투명성 보고서에 대한 연례 독립 규정 준수 감사부터 시작해야 한다",

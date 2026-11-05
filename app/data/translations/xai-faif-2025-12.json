@@ -87,7 +87,7 @@
   {
    "type": "p",
    "en": "Managing the risks related to advanced AI models presents unique challenges as compared to standard risk management practices in use in other fields, such as for aerospace engineering. Given the large and continuously growing range of applications where AI models may be deployed, it is difficult to comprehensively anticipate and model all of the general public's potential applications and interactions for an AI model. Additionally, the private nature of typical AI usage by end users limits the utility of third-party reporting mechanisms that may be more effective for more publicly seen usage, such as for social media platforms where providers heavily rely upon user-submitted moderation reports to identify novel forms of abuse on their platforms.",
-   "ko": "첨단 AI 모델과 관련된 위험을 관리하는 것은 항공우주공학 등 다른 분야에서 사용되는 표준 위험 관리 실행 방안과 비교할 때 고유한 과제를 수반한다. AI 모델이 배포될 수 있는 응용 분야가 광범위하고 지속적으로 확대되고 있다는 점을 고려하면, AI 모델에 대한 일반 대중의 잠재적 활용과 상호작용을 모두 포괄적으로 예측하고 모델링하기는 어렵다. 또한 최종 사용자의 일반적인 AI 사용이 사적인 성격을 띤다는 점은 제3자 신고 메커니즘의 효용을 제한한다. 이러한 메커니즘은 보다 공개적으로 노출되는 사용에서 더 효과적일 수 있는데, 예컨대 소셜 미디어 플랫폼의 경우 제공자는 자사 플랫폼에서 새로운 형태의 남용을 식별하기 위해 사용자가 제출한 모더레이션 신고에 크게 의존한다.",
+   "ko": "첨단 AI 모델과 관련된 위험을 관리하는 것은 항공우주공학 등 다른 분야에서 사용되는 표준 위험 관리 관행과 비교할 때 고유한 과제를 수반한다. AI 모델이 배포될 수 있는 응용 분야가 광범위하고 지속적으로 확대되고 있다는 점을 고려하면, AI 모델에 대한 일반 대중의 잠재적 활용과 상호작용을 모두 포괄적으로 예측하고 모델링하기는 어렵다. 또한 최종 사용자의 일반적인 AI 사용이 사적인 성격을 띤다는 점은 제3자 신고 메커니즘의 효용을 제한한다. 이러한 메커니즘은 보다 공개적으로 노출되는 사용에서 더 효과적일 수 있는데, 예컨대 소셜 미디어 플랫폼의 경우 제공자는 자사 플랫폼에서 새로운 형태의 남용을 식별하기 위해 사용자가 제출한 모더레이션 신고에 크게 의존한다.",
    "marks": [
     {
      "t": "AI 모델에 대한 일반 대중의 잠재적 활용과 상호작용을 모두 포괄적으로 예측하고 모델링하기는 어렵다",

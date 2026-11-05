@@ -68,10 +68,10 @@
   {
    "type": "p",
    "en": "We stress the paramount importance of the responsible use of AI in the military domain, employed in full accordance with international legal obligations and in a way that does not undermine international security, stability and accountability.",
-   "ko": "우리는 군사 영역에서 AI를 국제법상 의무에 완전히 부합하게, 그리고 국제 보안, 안정성 및 책임성을 훼손하지 않는 방식으로 책임 있게 사용하는 것이 무엇보다 중요함을 강조한다.",
+   "ko": "우리는 군사 영역에서 AI를 국제법상 의무에 완전히 부합하게, 그리고 국제 안보, 안정성 및 책임성을 훼손하지 않는 방식으로 책임 있게 사용하는 것이 무엇보다 중요함을 강조한다.",
    "marks": [
     {
-     "t": "우리는 군사 영역에서 AI를 국제법상 의무에 완전히 부합하게, 그리고 국제 보안, 안정성 및 책임성을 훼손하지 않는 방식으로 책임 있게 사용하는 것이 무엇보다 중요함을 강조한다.",
+     "t": "우리는 군사 영역에서 AI를 국제법상 의무에 완전히 부합하게, 그리고 국제 안보, 안정성 및 책임성을 훼손하지 않는 방식으로 책임 있게 사용하는 것이 무엇보다 중요함을 강조한다.",
      "k": "key"
     }
    ]
@@ -84,7 +84,7 @@
   {
    "type": "p",
    "en": "1. We acknowledge the potential impact, including opportunities and challenges, as a result of the rapid adoption of AI systems in the military domain on international security and stability.",
-   "ko": "1. 우리는 군사 영역에서 AI 시스템이 빠르게 도입됨에 따라 국제 보안과 안정성에 미칠 수 있는 기회와 도전을 포함한 잠재적 영향을 인정한다."
+   "ko": "1. 우리는 군사 영역에서 AI 시스템이 빠르게 도입됨에 따라 국제 안보와 안정성에 미칠 수 있는 기회와 도전을 포함한 잠재적 영향을 인정한다."
   },
   {
    "type": "p",
@@ -197,7 +197,7 @@
   {
    "type": "p",
    "en": "14. We promote the exchange of good practices and lessons learnt among states to increase the mutual comprehension of states' national frameworks and policies with regard to the use of AI in the military domain. We also affirm the importance of sharing good practices and lessons learnt by the private sector on norms, policies, principles and technological expertise.",
-   "ko": "14. 우리는 군사 영역에서의 AI 사용과 관련한 각국의 국가 프레임워크 및 정책에 대한 상호 이해를 증진하기 위해 국가 간 모범 실행 방안 및 교훈의 교류를 촉진한다. 우리는 또한 규범, 정책, 원칙 및 기술 전문성에 관해 민간 부문이 얻은 모범 실행 방안과 교훈을 공유하는 것의 중요성을 확인한다."
+   "ko": "14. 우리는 군사 영역에서의 AI 사용과 관련한 각국의 국가 프레임워크 및 정책에 대한 상호 이해를 증진하기 위해 국가 간 모범 사례 및 교훈의 교류를 촉진한다. 우리는 또한 규범, 정책, 원칙 및 기술 전문성에 관해 민간 부문이 얻은 모범 사례와 교훈을 공유하는 것의 중요성을 확인한다."
   },
   {
    "type": "p",
@@ -223,7 +223,7 @@
   {
    "type": "p",
    "en": "17. The technological developments in the area of AI take place primarily in the civil domain. We therefore acknowledge that the introduction of AI in the military domain is a multi-stakeholder challenge. We are committed to continuing the global dialogue on responsible AI in the military domain in a multi-stakeholder and inclusive manner and call on all stakeholders to take their responsibility in contributing to international security and stability in accordance with international law.",
-   "ko": "17. AI 분야의 기술 발전은 주로 민간 영역에서 이루어진다. 따라서 우리는 군사 영역에 AI를 도입하는 것이 다중 이해관계자의 도전 과제임을 인정한다. 우리는 군사 영역의 책임 있는 AI에 관한 글로벌 대화를 다중 이해관계자적이고 포용적인 방식으로 지속할 것을 약속하며, 모든 이해관계자가 국제법에 따라 국제 보안과 안정성에 기여하는 데 있어 각자의 책임을 다할 것을 촉구한다."
+   "ko": "17. AI 분야의 기술 발전은 주로 민간 영역에서 이루어진다. 따라서 우리는 군사 영역에 AI를 도입하는 것이 다중 이해관계자의 도전 과제임을 인정한다. 우리는 군사 영역의 책임 있는 AI에 관한 글로벌 대화를 다중 이해관계자적이고 포용적인 방식으로 지속할 것을 약속하며, 모든 이해관계자가 국제법에 따라 국제 안보와 안정성에 기여하는 데 있어 각자의 책임을 다할 것을 촉구한다."
   },
   {
    "type": "p",
@@ -254,7 +254,7 @@
   {
    "type": "p",
    "en": "22. We invite academia, knowledge institutes and think tanks to propose methods and contribute to practical solutions to the challenges that the use of AI in the military domain poses, in order to contribute to international security and stability.",
-   "ko": "22. 우리는 국제 보안과 안정성에 기여하기 위해 학계, 지식 기관 및 싱크탱크가 군사 영역에서의 AI 사용이 제기하는 도전에 대한 방법을 제안하고 실질적인 해결책에 기여할 것을 요청한다."
+   "ko": "22. 우리는 국제 안보와 안정성에 기여하기 위해 학계, 지식 기관 및 싱크탱크가 군사 영역에서의 AI 사용이 제기하는 도전에 대한 방법을 제안하고 실질적인 해결책에 기여할 것을 요청한다."
   },
   {
    "type": "p",

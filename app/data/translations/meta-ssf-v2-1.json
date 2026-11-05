@@ -579,7 +579,7 @@
   {
    "type": "p",
    "en": "The residual risk assessment is reviewed by the relevant research and/or product teams, as well as a multidisciplinary team of reviewers as needed. Informed by this analysis, the Chief AI Officer or the Director of Alignment and Risk will determine whether to request further testing or information, require additional mitigations or Version 2.1 | October 2026 improvements, or approve the model for deployment. See Section 2.3 for more information. Mitigations may be re-evaluated periodically, including as frontier risks and industry practices evolve.",
-   "ko": "잔여 위험 평가는 관련 연구 및/또는 제품 팀과, 필요한 경우 다학제적 검토자 팀이 검토한다. 이 분석을 바탕으로, 최고 AI 책임자 또는 정렬 및 위험 담당 이사는 추가 테스트나 정보를 요청할지, 추가 완화 조치나 Version 2.1 | October 2026 개선을 요구할지, 또는 모델의 배포를 승인할지를 결정한다. 자세한 내용은 섹션 2.3을 참조한다. 완화 조치는 프론티어 위험 및 업계 실행 방안이 변화하는 경우를 포함하여 주기적으로 재평가(re-evaluation)될 수 있다.",
+   "ko": "잔여 위험 평가는 관련 연구 및/또는 제품 팀과, 필요한 경우 다학제적 검토자 팀이 검토한다. 이 분석을 바탕으로, 최고 AI 책임자 또는 정렬 및 위험 담당 이사는 추가 테스트나 정보를 요청할지, 추가 완화 조치나 Version 2.1 | October 2026 개선을 요구할지, 또는 모델의 배포를 승인할지를 결정한다. 자세한 내용은 섹션 2.3을 참조한다. 완화 조치는 프론티어 위험 및 업계 관행이 변화하는 경우를 포함하여 주기적으로 재평가(re-evaluation)될 수 있다.",
    "marks": [
     {
      "t": "잔여 위험 평가는 관련 연구 및/또는 제품 팀과, 필요한 경우 다학제적 검토자 팀이 검토한다",
@@ -590,7 +590,7 @@
      "k": "key"
     },
     {
-     "t": "완화 조치는 프론티어 위험 및 업계 실행 방안이 변화하는 경우를 포함하여 주기적으로 재평가(re-evaluation)될 수 있다",
+     "t": "완화 조치는 프론티어 위험 및 업계 관행이 변화하는 경우를 포함하여 주기적으로 재평가(re-evaluation)될 수 있다",
      "k": "safety"
     }
    ],
@@ -1161,10 +1161,10 @@
   {
    "type": "p",
    "en": "If this baseline risk level crosses the risk thresholds defined in Table 1 (and discussed in further detail below), it triggers our commitment to implement mitigations, and to validate that these mitigations reduce risk to acceptable levels commensurate for its deployment mechanism.",
-   "ko": "이 기준 위험 수준이 표 1에 정의된(그리고 아래에서 더 자세히 논의되는) 위험 임계값을 넘으면, 완화조치를 구현하고 이러한 완화조치가 위험을 해당 배포 메커니즘에 상응하는 허용 가능한 수준으로 낮추는지 검증하겠다는 우리의 약정이 발동된다.",
+   "ko": "이 기준 위험 수준이 표 1에 정의된(그리고 아래에서 더 자세히 논의되는) 위험 임계값을 넘으면, 완화조치를 구현하고 이러한 완화조치가 위험을 해당 배포 메커니즘에 상응하는 허용 가능한 수준으로 낮추는지 검증하겠다는 우리의 약속이 발동된다.",
    "marks": [
     {
-     "t": "완화조치를 구현하고 이러한 완화조치가 위험을 해당 배포 메커니즘에 상응하는 허용 가능한 수준으로 낮추는지 검증하겠다는 우리의 약정이 발동된다.",
+     "t": "완화조치를 구현하고 이러한 완화조치가 위험을 해당 배포 메커니즘에 상응하는 허용 가능한 수준으로 낮추는지 검증하겠다는 우리의 약속이 발동된다.",
      "k": "key"
     }
    ]
@@ -1331,7 +1331,7 @@
   {
    "type": "table",
    "en": "| Outcome | Threat Scenario (TS) | Example Enabling Capabilities | ⏎ | Cyber 1: Substantially lowers the barrier or reduces cost to a cyberattack that causes large-scale casualties or significant financial loss. | TS.1.1: An AI system substantially contributes to the compromise of an environment resulting in large-scale casualties or significant financial loss, where that environment has security practices that are typical for that class of environment. The compromise may achieve a goal like ransoming or comprehensive theft of a company's critical IP using a chain of techniques - such as network infiltration, sensitive data discovery, exfiltration, privilege escalation, and lateral movement - for significantly less cost and/or time than is feasible within the ecosystem absent Frontier AI capabilities. | Autonomous offensive operations: Ability to plan, adapt, and execute end-to-end intrusion campaigns in hardened enterprise scale environments without triggering detections. Reliably orchestrating tools and making environment-aware decisions under realistic constraints. Scaled spear-phishing: Ability to craft highly targeted, personalized phishing content at massive scale with a high success rate. Adaptive Malware Creation: Ability to develop malware that is able to reliably evade commonly used detection solutions. Automated complex network mapping: Ability to map complex networks and identify feasible attack paths significantly faster than a professional offensive security expert. | ⏎ | Cyber 2: Automated discovery and reliable exploitation of critical zero-day vulnerabilities in current popular software that results in large-scale casualties or significant financial loss. | TS.2.1: Automated discovery and exploitation of cyber vulnerabilities in current popular software that would take human expert teams one month or more, on average, to find, for significantly less cost and/or time than is feasible within the ecosystem absent Frontier AI capabilities. | Automated discovery and exploitation of vulnerabilities: Ability to reliably find and exploit security vulnerabilities in real-world, complex code repositories. | ⏎ | Cyber 3: Large-scale casualties or significant financial loss to individuals or organizations via scaled long form fraud, extortion, and scams. | TS.3.1: Significantly scaled scam flows ( e.g. , pig butchering, phishing, baiting, impersonation)-enabled by automation of victim targeting, messaging, scam content/personality generation, grooming, infrastructure evasion, multi-platform coordination, and/or fund movement for significantly less cost and/or time than is feasible within the ecosystem absent Frontier AI capabilities. | Automated financial operations: AI orchestrates complex chains of financial accounts (crypto wallet, digital payments accounts and infrastructure, bank accounts) to facilitate monetary or value transfer, avoiding and adapting to anti-money laundering controls and detection. Funds are moved and laundered at scale with minimal human intervention, allowing scam centers to process and extract illicit gains at a rate previously impossible due to manual bottlenecks. Automated account management: AI autonomously creates and manages tens of thousands of realistic, cross-platform social media and financial accounts, bypassing detection and verification systems with minimal human intervention and guidance. This enables simultaneous, large-scale targeting of global victims, multiplying reach and conversion rates far beyond current manual or semi-automated operations. |",
-   "ko": "| 결과 | 위협 시나리오(TS) | 실현 역량 예시 | ⏎ | 사이버 1: 대규모 인명 피해 또는 상당한 재정적 손실을 초래하는 사이버 공격의 장벽을 상당히 낮추거나 비용을 줄임. | TS.1.1: AI 시스템이 대규모 인명 피해 또는 상당한 재정적 손실을 초래하는 환경 침해에 상당히 기여함. 이때 해당 환경은 그 유형의 환경에서 일반적인 보안 실행 방안을 갖추고 있음. 이 침해는 네트워크 침투, 민감 데이터 탐색, 유출(exfiltration), 권한 상승, 측면 이동(lateral movement) 등 일련의 기법을 연쇄적으로 사용하여, 프론티어 AI 역량이 없는 생태계에서 실현 가능한 수준보다 훨씬 적은 비용 및/또는 시간으로 기업의 핵심 지식재산(IP)에 대한 몸값 요구나 포괄적 탈취와 같은 목표를 달성할 수 있음. | 자율적 공격 작전: 강화된 기업 규모 환경에서 탐지를 유발하지 않고 종단 간(end-to-end) 침입 캠페인을 계획, 조정 및 실행하는 능력. 현실적인 제약 조건하에서 도구를 안정적으로 조율하고 환경을 인식한 의사결정을 내림. 대규모 스피어 피싱: 고도로 표적화되고 개인화된 피싱 콘텐츠를 높은 성공률로 대규모로 제작하는 능력. 적응형 멀웨어 생성: 일반적으로 사용되는 탐지 솔루션을 안정적으로 회피할 수 있는 멀웨어를 개발하는 능력. 복잡한 네트워크 매핑 자동화: 전문 공격 보안 전문가보다 훨씬 빠르게 복잡한 네트워크를 매핑하고 실현 가능한 공격 경로를 식별하는 능력. | ⏎ | 사이버 2: 현재 널리 사용되는 소프트웨어에서 핵심 제로데이 취약점을 자동으로 발견하고 안정적으로 악용하여 대규모 인명 피해 또는 상당한 재정적 손실을 초래함. | TS.2.1: 인간 전문가 팀이 발견하는 데 평균적으로 1개월 이상 걸릴 현재 널리 사용되는 소프트웨어의 사이버 취약점을, 프론티어 AI 역량이 없는 생태계에서 실현 가능한 수준보다 훨씬 적은 비용 및/또는 시간으로 자동 발견하고 악용함. | 취약점의 자동 발견 및 악용: 실제 환경의 복잡한 코드 저장소에서 보안 취약점을 안정적으로 발견하고 악용하는 능력. | ⏎ | 사이버 3: 대규모 장기형 사기, 갈취 및 스캠을 통해 개인 또는 조직에 대규모 인명 피해 또는 상당한 재정적 손실을 초래함. | TS.3.1: 피해자 표적화, 메시지 작성, 스캠 콘텐츠/페르소나 생성, 그루밍, 인프라 탐지 회피, 다중 플랫폼 조율 및/또는 자금 이동의 자동화를 통해, 프론티어 AI 역량이 없는 생태계에서 실현 가능한 수준보다 훨씬 적은 비용 및/또는 시간으로 스캠 흐름(예: 돼지 도살(pig butchering), 피싱, 미끼(baiting), 사칭)의 규모를 크게 확대함. | 금융 운영 자동화: AI가 금융 계좌(암호화폐 지갑, 디지털 결제 계좌 및 인프라, 은행 계좌)의 복잡한 연쇄를 조율하여 금전 또는 가치 이전을 용이하게 하며, 자금세탁방지 통제 및 탐지를 회피하고 이에 적응함. 최소한의 인간 개입으로 자금이 대규모로 이동 및 세탁되어, 스캠 센터가 기존에는 수작업 병목으로 인해 불가능했던 속도로 불법 수익을 처리하고 추출할 수 있게 됨. 계정 관리 자동화: AI가 최소한의 인간 개입과 지시만으로 탐지 및 검증 시스템을 우회하면서 수만 개의 현실적인 크로스 플랫폼 소셜 미디어 계정 및 금융 계정을 자율적으로 생성하고 관리함. 이를 통해 전 세계 피해자를 대상으로 동시다발적인 대규모 표적화가 가능해져, 현재의 수동 또는 반자동 운영을 훨씬 뛰어넘는 수준으로 도달 범위와 전환율이 배가됨. |"
+   "ko": "| 결과 | 위협 시나리오(TS) | 실현 역량 예시 | ⏎ | 사이버 1: 대규모 인명 피해 또는 상당한 재정적 손실을 초래하는 사이버 공격의 장벽을 상당히 낮추거나 비용을 줄임. | TS.1.1: AI 시스템이 대규모 인명 피해 또는 상당한 재정적 손실을 초래하는 환경 침해에 상당히 기여함. 이때 해당 환경은 그 유형의 환경에서 일반적인 보안 관행을 갖추고 있음. 이 침해는 네트워크 침투, 민감 데이터 탐색, 유출(exfiltration), 권한 상승, 측면 이동(lateral movement) 등 일련의 기법을 연쇄적으로 사용하여, 프론티어 AI 역량이 없는 생태계에서 실현 가능한 수준보다 훨씬 적은 비용 및/또는 시간으로 기업의 핵심 지식재산(IP)에 대한 몸값 요구나 포괄적 탈취와 같은 목표를 달성할 수 있음. | 자율적 공격 작전: 강화된 기업 규모 환경에서 탐지를 유발하지 않고 종단 간(end-to-end) 침입 캠페인을 계획, 조정 및 실행하는 능력. 현실적인 제약 조건하에서 도구를 안정적으로 조율하고 환경을 인식한 의사결정을 내림. 대규모 스피어 피싱: 고도로 표적화되고 개인화된 피싱 콘텐츠를 높은 성공률로 대규모로 제작하는 능력. 적응형 멀웨어 생성: 일반적으로 사용되는 탐지 솔루션을 안정적으로 회피할 수 있는 멀웨어를 개발하는 능력. 복잡한 네트워크 매핑 자동화: 전문 공격 보안 전문가보다 훨씬 빠르게 복잡한 네트워크를 매핑하고 실현 가능한 공격 경로를 식별하는 능력. | ⏎ | 사이버 2: 현재 널리 사용되는 소프트웨어에서 핵심 제로데이 취약점을 자동으로 발견하고 안정적으로 악용하여 대규모 인명 피해 또는 상당한 재정적 손실을 초래함. | TS.2.1: 인간 전문가 팀이 발견하는 데 평균적으로 1개월 이상 걸릴 현재 널리 사용되는 소프트웨어의 사이버 취약점을, 프론티어 AI 역량이 없는 생태계에서 실현 가능한 수준보다 훨씬 적은 비용 및/또는 시간으로 자동 발견하고 악용함. | 취약점의 자동 발견 및 악용: 실제 환경의 복잡한 코드 저장소에서 보안 취약점을 안정적으로 발견하고 악용하는 능력. | ⏎ | 사이버 3: 대규모 장기형 사기, 갈취 및 스캠을 통해 개인 또는 조직에 대규모 인명 피해 또는 상당한 재정적 손실을 초래함. | TS.3.1: 피해자 표적화, 메시지 작성, 스캠 콘텐츠/페르소나 생성, 그루밍, 인프라 탐지 회피, 다중 플랫폼 조율 및/또는 자금 이동의 자동화를 통해, 프론티어 AI 역량이 없는 생태계에서 실현 가능한 수준보다 훨씬 적은 비용 및/또는 시간으로 스캠 흐름(예: 돼지 도살(pig butchering), 피싱, 미끼(baiting), 사칭)의 규모를 크게 확대함. | 금융 운영 자동화: AI가 금융 계좌(암호화폐 지갑, 디지털 결제 계좌 및 인프라, 은행 계좌)의 복잡한 연쇄를 조율하여 금전 또는 가치 이전을 용이하게 하며, 자금세탁방지 통제 및 탐지를 회피하고 이에 적응함. 최소한의 인간 개입으로 자금이 대규모로 이동 및 세탁되어, 스캠 센터가 기존에는 수작업 병목으로 인해 불가능했던 속도로 불법 수익을 처리하고 추출할 수 있게 됨. 계정 관리 자동화: AI가 최소한의 인간 개입과 지시만으로 탐지 및 검증 시스템을 우회하면서 수만 개의 현실적인 크로스 플랫폼 소셜 미디어 계정 및 금융 계정을 자율적으로 생성하고 관리함. 이를 통해 전 세계 피해자를 대상으로 동시다발적인 대규모 표적화가 가능해져, 현재의 수동 또는 반자동 운영을 훨씬 뛰어넘는 수준으로 도달 범위와 전환율이 배가됨. |"
   },
   {
    "type": "h3",
@@ -3442,14 +3442,14 @@
   {
    "type": "li",
    "en": "Added transparency requirements . Defined criteria for publishing preparedness reports, including content requirements, update triggers, and internal-use risk reporting. Added commitment to publish a model spec, and evaluations for adherence to the model spec in preparedness reports.",
-   "ko": "투명성 요건을 추가함. 내용 요건, 업데이트 계기, 내부 사용 위험 보고를 포함하여 대비태세 보고서(preparedness report) 발간 기준을 정의함. 모델 사양(model spec)을 발간하고, 대비태세 보고서에 모델 사양 준수 여부에 대한 평가(evaluation)를 포함하겠다는 약정을 추가함.",
+   "ko": "투명성 요건을 추가함. 내용 요건, 업데이트 계기, 내부 사용 위험 보고를 포함하여 대비태세 보고서(preparedness report) 발간 기준을 정의함. 모델 사양(model spec)을 발간하고, 대비태세 보고서에 모델 사양 준수 여부에 대한 평가(evaluation)를 포함하겠다는 약속을 추가함.",
    "marks": [
     {
      "t": "내부 사용 위험 보고를 포함하여 대비태세 보고서(preparedness report) 발간 기준을 정의함",
      "k": "safety"
     },
     {
-     "t": "대비태세 보고서에 모델 사양 준수 여부에 대한 평가(evaluation)를 포함하겠다는 약정",
+     "t": "대비태세 보고서에 모델 사양 준수 여부에 대한 평가(evaluation)를 포함하겠다는 약속",
      "k": "safety"
     }
    ]

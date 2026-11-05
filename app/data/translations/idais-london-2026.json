@@ -192,14 +192,14 @@
   {
    "type": "li",
    "en": "Require pre-deployment testing and delay wider availability where warranted. Governments and developers should jointly establish frontier cyber capability thresholds that trigger pre-deployment testing and delayed release, codified through a legal compact rather than voluntary commitments alone. Such delays are not necessarily permanent; they create space for risk evaluation and remediation, and are particularly important for frontier open-weight releases, which are irreversible.",
-   "ko": "배포 전 시험 의무화 및 필요시 광범위한 공개 지연. 정부와 개발자는 배포 전 시험과 공개 지연을 촉발하는 프론티어 사이버 역량 임계값을 공동으로 수립하고, 이를 자발적 약정에만 의존하지 않고 법적 협약을 통해 성문화해야 한다. 이러한 지연이 반드시 영구적인 것은 아니다. 지연은 위험 평가와 시정을 위한 여지를 마련하며, 되돌릴 수 없는 프론티어 오픈 웨이트(open-weight) 공개의 경우 특히 중요하다.",
+   "ko": "배포 전 시험 의무화 및 필요시 광범위한 공개 지연. 정부와 개발자는 배포 전 시험과 공개 지연을 촉발하는 프론티어 사이버 역량 임계값을 공동으로 수립하고, 이를 자발적 약속에만 의존하지 않고 법적 협약을 통해 성문화해야 한다. 이러한 지연이 반드시 영구적인 것은 아니다. 지연은 위험 평가와 시정을 위한 여지를 마련하며, 되돌릴 수 없는 프론티어 오픈 웨이트(open-weight) 공개의 경우 특히 중요하다.",
    "marks": [
     {
      "t": "배포 전 시험과 공개 지연을 촉발하는 프론티어 사이버 역량 임계값을 공동으로 수립하고",
      "k": "safety"
     },
     {
-     "t": "자발적 약정에만 의존하지 않고 법적 협약을 통해 성문화해야 한다",
+     "t": "자발적 약속에만 의존하지 않고 법적 협약을 통해 성문화해야 한다",
      "k": "safety"
     },
     {

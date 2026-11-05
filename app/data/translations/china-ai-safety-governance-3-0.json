@@ -85,10 +85,10 @@
   {
    "type": "li",
    "en": "-Commit to a vision of common, comprehensive, cooperative, and sustainable security while putting equal emphasis on development and security",
-   "ko": "-발전과 보안을 동등하게 중시하면서 공동·종합·협력·지속가능한 보안이라는 비전을 견지함",
+   "ko": "-발전과 안보를 동등하게 중시하면서 공동·종합·협력·지속가능한 안보라는 비전을 견지함",
    "marks": [
     {
-     "t": "발전과 보안을 동등하게 중시하면서",
+     "t": "발전과 안보를 동등하게 중시하면서",
      "k": "safety"
     }
    ]
@@ -1140,7 +1140,7 @@
   {
    "type": "p",
    "en": "Insufficient security capabilities of models, combined with weak application-level safeguards and malicious user manipulation, may cause AI systems to generate content involving fraud, violence, pornography, extremism, and other illegal information, threatening social stability, public security, and ideology security.",
-   "ko": "모델의 보안 역량 부족에 응용 단계의 취약한 안전장치와 악의적 사용자의 조작이 결합되면, AI 시스템이 사기, 폭력, 음란물, 극단주의 및 기타 불법 정보와 관련된 콘텐츠를 생성할 수 있다. 이는 사회 안정, 공공 보안, 이념 보안을 위협한다.",
+   "ko": "모델의 보안 역량 부족에 응용 단계의 취약한 안전장치와 악의적 사용자의 조작이 결합되면, AI 시스템이 사기, 폭력, 음란물, 극단주의 및 기타 불법 정보와 관련된 콘텐츠를 생성할 수 있다. 이는 사회 안정, 공공 보안, 이념 안보를 위협한다.",
    "marks": [
     {
      "t": "응용 단계의 취약한 안전장치와 악의적 사용자의 조작이 결합되면",
@@ -1151,7 +1151,7 @@
      "k": "key"
     },
     {
-     "t": "사회 안정, 공공 보안, 이념 보안을 위협한다",
+     "t": "사회 안정, 공공 보안, 이념 안보를 위협한다",
      "k": "safety"
     }
    ]
@@ -3852,10 +3852,10 @@
   {
    "type": "p",
    "en": "The classification and grading standards for security risks in AI applications clarify the basic workflow for classification and grading, and key grading elements such as application scenarios, intelligence levels, and application scale. They also outline procedures and methods for developing industry-specific guidelines, offering a reference framework for conducting security risk classification and grading across various sectors.",
-   "ko": "AI 응용의 안전 위험에 대한 분류 및 등급화 표준은 분류 및 등급화의 기본 업무 절차와, 응용 시나리오, 지능화 수준, 응용 규모 등 핵심 등급 분류 요소를 명확히 한다. 또한 산업별 지침 개발을 위한 절차와 방법을 제시하여, 다양한 부문에서 보안 위험 분류 및 등급화를 수행하기 위한 참고 프레임워크를 제공한다.",
+   "ko": "AI 응용의 보안 위험에 대한 분류 및 등급화 표준은 분류 및 등급화의 기본 업무 절차와, 응용 시나리오, 지능화 수준, 응용 규모 등 핵심 등급 분류 요소를 명확히 한다. 또한 산업별 지침 개발을 위한 절차와 방법을 제시하여, 다양한 부문에서 보안 위험 분류 및 등급화를 수행하기 위한 참고 프레임워크를 제공한다.",
    "marks": [
     {
-     "t": "AI 응용의 안전 위험에 대한 분류 및 등급화 표준은 분류 및 등급화의 기본 업무 절차와, 응용 시나리오, 지능화 수준, 응용 규모 등 핵심 등급 분류 요소를 명확히 한다.",
+     "t": "AI 응용의 보안 위험에 대한 분류 및 등급화 표준은 분류 및 등급화의 기본 업무 절차와, 응용 시나리오, 지능화 수준, 응용 규모 등 핵심 등급 분류 요소를 명확히 한다.",
      "k": "key"
     },
     {

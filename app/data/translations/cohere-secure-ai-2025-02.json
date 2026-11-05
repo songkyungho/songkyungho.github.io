@@ -330,10 +330,10 @@
   {
    "type": "p",
    "en": "Cohere consistently reviews state-of-the-art research and industry practice regarding the risks associated with AI, and uses this to determine our priorities. At Cohere, risks to our systems are identified through a list of continuously-expanding techniques, including:",
-   "ko": "Cohere는 AI와 관련된 위험에 관한 최첨단 연구와 업계 실행 방안을 지속적으로 검토하고, 이를 바탕으로 우선순위를 결정한다. Cohere에서는 지속적으로 확대되고 있는 다음과 같은 기법들을 통해 시스템에 대한 위험을 식별한다.",
+   "ko": "Cohere는 AI와 관련된 위험에 관한 최첨단 연구와 업계 관행을 지속적으로 검토하고, 이를 바탕으로 우선순위를 결정한다. Cohere에서는 지속적으로 확대되고 있는 다음과 같은 기법들을 통해 시스템에 대한 위험을 식별한다.",
    "marks": [
     {
-     "t": "AI와 관련된 위험에 관한 최첨단 연구와 업계 실행 방안을 지속적으로 검토",
+     "t": "AI와 관련된 위험에 관한 최첨단 연구와 업계 관행을 지속적으로 검토",
      "k": "safety"
     }
    ]
@@ -1115,7 +1115,7 @@
   {
    "type": "li",
    "en": "Incentivizing third-party vulnerability discovery via clear protections for legitimate research practices in our Responsible Disclosure Policy",
-   "ko": "Responsible Disclosure Policy에서 정당한 연구 실행 방안에 대한 명확한 보호를 제공함으로써 제3자의 취약점 발견을 장려함",
+   "ko": "Responsible Disclosure Policy에서 정당한 연구 활동에 대한 명확한 보호를 제공함으로써 제3자의 취약점 발견을 장려함",
    "marks": [
     {
      "t": "제3자의 취약점 발견을 장려함",

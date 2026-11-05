@@ -558,7 +558,7 @@
   {
    "type": "p",
    "en": "Once the investigation has been completed, OpenAI takes steps to implement longer-term solutions to address root causes.As part of our commitment to preventing similar future incidents, we may also conduct a retrospective it needed to document key learnings and address open action items.",
-   "ko": "조사가 완료되면, OpenAI는 근본 원인에 대응하기 위한 장기적 해결책을 시행하는 조치를 취한다. 향후 유사한 사고를 예방하기 위한 약정의 일환으로, OpenAI는 필요한 경우 핵심 교훈을 문서화하고 미결 조치 항목을 처리하기 위해 사후 검토를 실시할 수도 있다.",
+   "ko": "조사가 완료되면, OpenAI는 근본 원인에 대응하기 위한 장기적 해결책을 시행하는 조치를 취한다. 향후 유사한 사고를 예방하기 위한 의지의 일환으로, OpenAI는 필요한 경우 핵심 교훈을 문서화하고 미결 조치 항목을 처리하기 위해 사후 검토를 실시할 수도 있다.",
    "marks": [
     {
      "t": "OpenAI는 근본 원인에 대응하기 위한 장기적 해결책을 시행하는 조치를 취한다.",
@@ -579,14 +579,14 @@
   {
    "type": "p",
    "en": "As part of our response, we analyze whether we nave reporting obligations relating to the incident under applicable laws and regulations or if any other type of external outreach Is advisable, including under any voluntary commitments. If an incident is determined to be reportable, we will gather relevant information from the investigation and remediation phase for reporting to appropriate authorities within the required deadlines.",
-   "ko": "대응의 일환으로, OpenAI는 적용 가능한 법률 및 규정에 따라 해당 사고와 관련된 보고 의무가 있는지, 또는 자발적 약정에 따른 것을 포함하여 기타 유형의 외부 소통이 바람직한지 분석한다. 사고가 보고 대상으로 판단되면, OpenAI는 조사 및 시정 단계에서 관련 정보를 수집하여 요구되는 기한 내에 적절한 당국에 보고한다.",
+   "ko": "대응의 일환으로, OpenAI는 적용 가능한 법률 및 규정에 따라 해당 사고와 관련된 보고 의무가 있는지, 또는 자발적 약속에 따른 것을 포함하여 기타 유형의 외부 소통이 바람직한지 분석한다. 사고가 보고 대상으로 판단되면, OpenAI는 조사 및 시정 단계에서 관련 정보를 수집하여 요구되는 기한 내에 적절한 당국에 보고한다.",
    "marks": [
     {
      "t": "적용 가능한 법률 및 규정에 따라 해당 사고와 관련된 보고 의무가 있는지",
      "k": "safety"
     },
     {
-     "t": "자발적 약정에 따른 것을 포함하여 기타 유형의 외부 소통이 바람직한지 분석한다",
+     "t": "자발적 약속에 따른 것을 포함하여 기타 유형의 외부 소통이 바람직한지 분석한다",
      "k": "safety"
     },
     {

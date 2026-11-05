@@ -92,10 +92,10 @@
   {
    "type": "li",
    "en": "Build trust - we engage with subject-matter experts across and beyond OpenAI to inform these efforts and to build confidence that we are meeting our commitments and effectively managing risk.",
-   "ko": "신뢰 구축 - OpenAI 내외부의 분야별 전문가와 협력하여 이러한 활동에 반영하고, 우리가 약정을 이행하며 위험을 효과적으로 관리하고 있다는 신뢰를 구축한다.",
+   "ko": "신뢰 구축 - OpenAI 내외부의 분야별 전문가와 협력하여 이러한 활동에 반영하고, 우리가 약속을 이행하며 위험을 효과적으로 관리하고 있다는 신뢰를 구축한다.",
    "marks": [
     {
-     "t": "우리가 약정을 이행하며 위험을 효과적으로 관리하고 있다는 신뢰를 구축한다",
+     "t": "우리가 약속을 이행하며 위험을 효과적으로 관리하고 있다는 신뢰를 구축한다",
      "k": "safety"
     }
    ]
@@ -1460,7 +1460,7 @@
   {
    "type": "li",
    "en": "Introduce Research Categories , areas of capability that do not meet the criteria to be Tracked Categories, but where we believe additional work is needed now. For these areas, in collaboration with external experts, we commit to further developing the associated threat models and advancing the science of capability measurement for the area, including by investing in the development of rigorous capability evaluations. These include Long-range Autonomy, Sandbagging, Autonomous Replication and Adaptation, Undermining Safeguards, and Nuclear and Radiological.",
-   "ko": "연구 범주의 도입. 연구 범주는 추적 범주의 기준은 충족하지 않으나 현재 추가 작업이 필요하다고 판단되는 역량 영역이다. 이러한 영역에 대해 우리는 외부 전문가와 협력하여 관련 위협 모델을 추가로 개발하고, 엄밀한 역량 평가 개발에 대한 투자를 포함하여 해당 영역의 역량 측정 과학을 발전시킬 것을 약정한다. 여기에는 장기 자율성, 샌드배깅, 자율 복제 및 적응, 안전장치 무력화, 핵 및 방사능이 포함된다.",
+   "ko": "연구 범주의 도입. 연구 범주는 추적 범주의 기준은 충족하지 않으나 현재 추가 작업이 필요하다고 판단되는 역량 영역이다. 이러한 영역에 대해 우리는 외부 전문가와 협력하여 관련 위협 모델을 추가로 개발하고, 엄밀한 역량 평가 개발에 대한 투자를 포함하여 해당 영역의 역량 측정 과학을 발전시킬 것을 약속한다. 여기에는 장기 자율성, 샌드배깅, 자율 복제 및 적응, 안전장치 무력화, 핵 및 방사능이 포함된다.",
    "marks": [
     {
      "t": "장기 자율성, 샌드배깅, 자율 복제 및 적응, 안전장치 무력화, 핵 및 방사능이 포함된다",
@@ -1568,7 +1568,7 @@
   {
    "type": "p",
    "en": "We establish an operational structure to oversee our procedural commitments within the Preparedness Framework.",
-   "ko": "우리는 대비태세 프레임워크 내 절차적 약정을 감독하기 위한 운영 구조를 수립한다."
+   "ko": "우리는 대비태세 프레임워크 내 절차적 약속을 감독하기 위한 운영 구조를 수립한다."
   },
   {
    "type": "p",
@@ -2221,7 +2221,7 @@
   {
    "type": "li",
    "en": "-Transparency in Security Practices: Ensure security findings, remediation efforts, and key metrics from internal and independent audits are periodically shared with internal stakeholders and summarized publicly to demonstrate ongoing commitment and accountability.",
-   "ko": "-보안 실행 방안의 투명성: 지속적인 약정과 책임성을 입증하기 위해, 내부 감사 및 독립 감사에서 도출된 보안 관련 발견 사항, 개선 노력 및 주요 지표가 내부 이해관계자와 주기적으로 공유되고 공개적으로 요약되도록 보장한다.",
+   "ko": "-보안 실행 방안의 투명성: 지속적인 의지와 책임성을 입증하기 위해, 내부 감사 및 독립 감사에서 도출된 보안 관련 발견 사항, 개선 노력 및 주요 지표가 내부 이해관계자와 주기적으로 공유되고 공개적으로 요약되도록 보장한다.",
    "marks": [
     {
      "t": "보안 관련 발견 사항, 개선 노력 및 주요 지표가 내부 이해관계자와 주기적으로 공유되고 공개적으로 요약되도록 보장한다",

@@ -79,10 +79,10 @@
   {
    "type": "p",
    "en": "Reflection’s approach is informed by our research and development of AI models, legal requirements, voluntary commitments such as the White House Accord on Super Intelligence, standards issued by national and international standards-setting organizations (including, but not limited to NIST AI RMF and ISO 42001), and industry norms and practices. Reflection anticipates that our approach will continue to evolve as legal requirements, standards, industry practices, and our research and development evolve as well.",
-   "ko": "Reflection의 접근 방식은 AI 모델 연구·개발, 법적 요건, White House Accord on Super Intelligence와 같은 자발적 약정, 국가 및 국제 표준화 기구가 발표한 표준(NIST AI RMF 및 ISO 42001을 포함하되 이에 국한되지 않음), 그리고 업계 규범과 실행 방안에 근거한다. Reflection은 법적 요건, 표준, 업계 실행 방안, 그리고 자사의 연구·개발이 발전함에 따라 이 접근 방식도 계속 발전할 것으로 예상한다.",
+   "ko": "Reflection의 접근 방식은 AI 모델 연구·개발, 법적 요건, White House Accord on Super Intelligence와 같은 자발적 약속, 국가 및 국제 표준화 기구가 발표한 표준(NIST AI RMF 및 ISO 42001을 포함하되 이에 국한되지 않음), 그리고 업계 규범과 관행에 근거한다. Reflection은 법적 요건, 표준, 업계 관행, 그리고 자사의 연구·개발이 발전함에 따라 이 접근 방식도 계속 발전할 것으로 예상한다.",
    "marks": [
     {
-     "t": "White House Accord on Super Intelligence와 같은 자발적 약정",
+     "t": "White House Accord on Super Intelligence와 같은 자발적 약속",
      "k": "safety"
     }
    ]
@@ -90,7 +90,7 @@
   {
    "type": "p",
    "en": "To put these commitments into practice, Reflection has established a standing governance process with clearly assigned ownership, cross-functional representation across research, engineering, security, product, legal, and policy, and an auditable path for escalating the most consequential decisions to key leaders within the company and, where appropriate, Reflection’s Board of Directors.",
-   "ko": "이러한 약정을 실행하기 위해 Reflection은 상설 거버넌스 절차를 마련하였다. 이 절차는 명확하게 부여된 책임 소재, 연구·엔지니어링·보안·제품·법무·정책 부문을 아우르는 교차 기능적 대표성, 그리고 가장 중대한 결정을 사내 핵심 리더와 적절한 경우 Reflection 이사회에 상정하는 감사 가능한 경로를 갖춘다.",
+   "ko": "이러한 약속을 실행하기 위해 Reflection은 상설 거버넌스 절차를 마련하였다. 이 절차는 명확하게 부여된 책임 소재, 연구·엔지니어링·보안·제품·법무·정책 부문을 아우르는 교차 기능적 대표성, 그리고 가장 중대한 결정을 사내 핵심 리더와 적절한 경우 Reflection 이사회에 상정하는 감사 가능한 경로를 갖춘다.",
    "marks": [
     {
      "t": "가장 중대한 결정을 사내 핵심 리더와 적절한 경우 Reflection 이사회에 상정하는 감사 가능한 경로",
@@ -127,10 +127,10 @@
   {
    "type": "p",
    "en": "This OSF is Reflection’s public commitment to identifying, evaluating, and mitigating systemic risks in our model. It sets out the specific risks to be addressed, the capability threshold that separates an ordinary release from one requiring additional mitigations, and the requirements that must be satisfied before Reflection releases any model.",
-   "ko": "본 OSF는 Reflection 모델의 시스템적 위험을 식별, 평가, 완화하기 위한 Reflection의 공개 약정이다. 본 OSF는 대응해야 할 구체적 위험, 일반적 공개와 추가 완화가 필요한 공개를 구분하는 역량 임계값, 그리고 Reflection이 모델을 공개하기 전에 반드시 충족해야 하는 요건을 규정한다.",
+   "ko": "본 OSF는 Reflection 모델의 시스템적 위험을 식별, 평가, 완화하기 위한 Reflection의 공개 약속이다. 본 OSF는 대응해야 할 구체적 위험, 일반적 공개와 추가 완화가 필요한 공개를 구분하는 역량 임계값, 그리고 Reflection이 모델을 공개하기 전에 반드시 충족해야 하는 요건을 규정한다.",
    "marks": [
     {
-     "t": "본 OSF는 Reflection 모델의 시스템적 위험을 식별, 평가, 완화하기 위한 Reflection의 공개 약정이다.",
+     "t": "본 OSF는 Reflection 모델의 시스템적 위험을 식별, 평가, 완화하기 위한 Reflection의 공개 약속이다.",
      "k": "key"
     },
     {
@@ -809,10 +809,10 @@
   {
    "type": "p",
    "en": "Safety is a lifecycle commitment, not a single checkpoint. Reflection assesses systemic risk before a model is released and stays engaged with it across the model’s life.",
-   "ko": "안전은 단일 점검 시점이 아니라 수명주기 전반에 걸친 약정이다. Reflection은 모델이 공개되기 전에 시스템적 위험을 평가(assess)하며, 모델의 수명 전반에 걸쳐 지속적으로 관여한다.",
+   "ko": "안전은 단일 점검 시점이 아니라 수명주기 전반에 걸친 약속이다. Reflection은 모델이 공개되기 전에 시스템적 위험을 평가(assess)하며, 모델의 수명 전반에 걸쳐 지속적으로 관여한다.",
    "marks": [
     {
-     "t": "안전은 단일 점검 시점이 아니라 수명주기 전반에 걸친 약정이다.",
+     "t": "안전은 단일 점검 시점이 아니라 수명주기 전반에 걸친 약속이다.",
      "k": "key"
     },
     {
@@ -999,7 +999,7 @@
   {
    "type": "p",
    "en": "Reflection will continue to update this Framework as model capabilities, evaluation methods, threat landscapes, legal requirements, and industry practice evolve. The objective is to enable the responsible release of increasingly capable frontier and open models by grounding release decisions in rigorous evaluation, durable mitigations, and transparent governance.",
-   "ko": "Reflection은 모델 역량, 평가(evaluation) 방법, 위협 환경, 법적 요건 및 업계 실행 방안이 발전함에 따라 본 프레임워크를 지속적으로 갱신할 것이다. 그 목적은 엄격한 평가(evaluation), 지속적인 완화 조치 및 투명한 거버넌스에 공개 결정의 근거를 둠으로써, 점점 더 높은 역량을 갖춘 프론티어 모델 및 개방형 모델의 책임 있는 공개를 가능하게 하는 것이다.",
+   "ko": "Reflection은 모델 역량, 평가(evaluation) 방법, 위협 환경, 법적 요건 및 업계 관행이 발전함에 따라 본 프레임워크를 지속적으로 갱신할 것이다. 그 목적은 엄격한 평가(evaluation), 지속적인 완화 조치 및 투명한 거버넌스에 공개 결정의 근거를 둠으로써, 점점 더 높은 역량을 갖춘 프론티어 모델 및 개방형 모델의 책임 있는 공개를 가능하게 하는 것이다.",
    "marks": [
     {
      "t": "점점 더 높은 역량을 갖춘 프론티어 모델 및 개방형 모델의 책임 있는 공개",

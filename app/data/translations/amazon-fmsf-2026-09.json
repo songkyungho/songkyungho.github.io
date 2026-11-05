@@ -32,7 +32,7 @@
   {
    "type": "p",
    "en": "At Amazon, our leadership principles guide our decision-making. Our approach to AI development naturally follows from our leadership principle 'Success and Scale Bring Broad Responsibility.' As we continue to scale the capabilities of Amazon's most capable frontier models and democratize access to the benefits of AI, we also take responsibility for mitigating the risks potentially arising from the misuse of our technology. In 2025, we published the first version of our Frontier Model Safety Framework 1 to outline the protocols we will follow to prevent any capabilities of frontier models developed by Amazon from creating critical risk in high-impact domains. In keeping with the commitments of this Framework, we publish safety evaluation reports for our most capable frontier models.[^1] 1 Given the evolving state of the science underpinning advanced AI capabilities, safety evaluations, and risk mitigations, we have reviewed and updated this Framework to reflect our current practices and account for relevant laws and regulations.",
-   "ko": "Amazon에서는 리더십 원칙이 의사결정의 지침이 된다. AI 개발에 대한 Amazon의 접근 방식은 'Success and Scale Bring Broad Responsibility'라는 리더십 원칙에서 자연스럽게 비롯된다. Amazon은 가장 고도화된 프론티어 모델의 역량을 지속적으로 확장하고 AI의 혜택에 대한 접근을 대중화하는 한편, 자사 기술의 오용으로 발생할 수 있는 위험을 완화할 책임도 진다. Amazon은 2025년에 Frontier Model Safety Framework 1의 첫 번째 버전을 공개하여, Amazon이 개발한 프론티어 모델의 어떠한 역량도 고영향 영역에서 치명적 위험을 초래하지 않도록 하기 위해 따를 프로토콜을 제시하였다. 본 프레임워크의 약정에 따라, Amazon은 가장 고도화된 프론티어 모델에 대한 안전성 평가 보고서를 공개한다.[^1] 1 첨단 AI 역량, 안전성 평가 및 위험 완화를 뒷받침하는 과학이 계속 발전하고 있음을 고려하여, Amazon은 현재의 실행 방안을 반영하고 관련 법률 및 규정을 고려하기 위해 본 프레임워크를 검토하고 개정하였다.",
+   "ko": "Amazon에서는 리더십 원칙이 의사결정의 지침이 된다. AI 개발에 대한 Amazon의 접근 방식은 'Success and Scale Bring Broad Responsibility'라는 리더십 원칙에서 자연스럽게 비롯된다. Amazon은 가장 고도화된 프론티어 모델의 역량을 지속적으로 확장하고 AI의 혜택에 대한 접근을 대중화하는 한편, 자사 기술의 오용으로 발생할 수 있는 위험을 완화할 책임도 진다. Amazon은 2025년에 Frontier Model Safety Framework 1의 첫 번째 버전을 공개하여, Amazon이 개발한 프론티어 모델의 어떠한 역량도 고영향 영역에서 치명적 위험을 초래하지 않도록 하기 위해 따를 프로토콜을 제시하였다. 본 프레임워크의 약속에 따라, Amazon은 가장 고도화된 프론티어 모델에 대한 안전성 평가 보고서를 공개한다.[^1] 1 첨단 AI 역량, 안전성 평가 및 위험 완화를 뒷받침하는 과학이 계속 발전하고 있음을 고려하여, Amazon은 현재의 실행 방안을 반영하고 관련 법률 및 규정을 고려하기 위해 본 프레임워크를 검토하고 개정하였다.",
    "marks": [
     {
      "t": "자사 기술의 오용으로 발생할 수 있는 위험을 완화할 책임도 진다",
@@ -51,14 +51,14 @@
   {
    "type": "p",
    "en": "This Framework focuses on risks that are unique to the most capable frontier AI models as they scale in size and capability and require specialized evaluation methods and safeguards. Our approach to managing these frontier risks complements Amazon's broader approach to responsible AI, which includes comprehensive practices to control for risks across eight key dimensions.[^2] At its core, this Framework reflects our commitment that we will deploy frontier AI models developed by Amazon with appropriate safeguards in place.",
-   "ko": "본 프레임워크는 가장 고도화된 프론티어 AI 모델의 규모와 역량이 확대됨에 따라 해당 모델에서 고유하게 나타나며, 전문화된 평가(evaluation) 방법과 안전장치가 필요한 위험에 초점을 맞춘다. 이러한 프론티어 위험을 관리하는 Amazon의 접근 방식은 Amazon의 보다 광범위한 책임 있는 AI 접근 방식을 보완한다. 해당 접근 방식에는 8가지 핵심 차원에 걸쳐 위험을 통제하기 위한 포괄적인 실행 방안이 포함된다.[^2] 본 프레임워크의 핵심에는 Amazon이 개발한 프론티어 AI 모델을 적절한 안전장치를 갖춘 상태에서 배포하겠다는 Amazon의 약정이 반영되어 있다.",
+   "ko": "본 프레임워크는 가장 고도화된 프론티어 AI 모델의 규모와 역량이 확대됨에 따라 해당 모델에서 고유하게 나타나며, 전문화된 평가(evaluation) 방법과 안전장치가 필요한 위험에 초점을 맞춘다. 이러한 프론티어 위험을 관리하는 Amazon의 접근 방식은 Amazon의 보다 광범위한 책임 있는 AI 접근 방식을 보완한다. 해당 접근 방식에는 8가지 핵심 차원에 걸쳐 위험을 통제하기 위한 포괄적인 실행 방안이 포함된다.[^2] 본 프레임워크의 핵심에는 Amazon이 개발한 프론티어 AI 모델을 적절한 안전장치를 갖춘 상태에서 배포하겠다는 Amazon의 약속이 반영되어 있다.",
    "marks": [
     {
      "t": "전문화된 평가(evaluation) 방법과 안전장치가 필요한 위험에 초점을 맞춘다",
      "k": "safety"
     },
     {
-     "t": "Amazon이 개발한 프론티어 AI 모델을 적절한 안전장치를 갖춘 상태에서 배포하겠다는 Amazon의 약정이 반영되어 있다",
+     "t": "Amazon이 개발한 프론티어 AI 모델을 적절한 안전장치를 갖춘 상태에서 배포하겠다는 Amazon의 약속이 반영되어 있다",
      "k": "key"
     }
    ]
@@ -580,10 +580,10 @@
   {
    "type": "li",
    "en": "o. Alignment Training: To contain model misalignment, we identify a model persona that ensures that the model emphasizes ethical practices. We continue using the aforementioned SFT and Learning with human and AI feedback approaches. In addition to this, we gather data to be used during pre-training/mid-training exposing the model to ethical actions in the real world. We simulate scenarios identifying trajectories with ethical decision making and reinforce that back into the model.",
-   "ko": "o. 정렬 학습: 모델 오정렬을 억제하기 위해, Amazon은 모델이 윤리적 실행 방안을 중시하도록 보장하는 모델 페르소나(model persona)를 규정한다. Amazon은 앞서 언급한 SFT 및 인간과 AI 피드백을 통한 학습 접근 방식을 계속 사용한다. 이에 더하여, 사전 학습/중간 학습(mid-training) 과정에서 사용할 데이터를 수집하여 모델이 현실 세계의 윤리적 행동에 노출되도록 한다. Amazon은 시나리오를 시뮬레이션하여 윤리적 의사결정이 이루어지는 궤적(trajectory)을 식별하고 이를 다시 모델에 강화한다.",
+   "ko": "o. 정렬 학습: 모델 오정렬을 억제하기 위해, Amazon은 모델이 윤리적 실천을 중시하도록 보장하는 모델 페르소나(model persona)를 규정한다. Amazon은 앞서 언급한 SFT 및 인간과 AI 피드백을 통한 학습 접근 방식을 계속 사용한다. 이에 더하여, 사전 학습/중간 학습(mid-training) 과정에서 사용할 데이터를 수집하여 모델이 현실 세계의 윤리적 행동에 노출되도록 한다. Amazon은 시나리오를 시뮬레이션하여 윤리적 의사결정이 이루어지는 궤적(trajectory)을 식별하고 이를 다시 모델에 강화한다.",
    "marks": [
     {
-     "t": "모델 오정렬을 억제하기 위해, Amazon은 모델이 윤리적 실행 방안을 중시하도록 보장하는 모델 페르소나(model persona)를 규정한다",
+     "t": "모델 오정렬을 억제하기 위해, Amazon은 모델이 윤리적 실천을 중시하도록 보장하는 모델 페르소나(model persona)를 규정한다",
      "k": "safety"
     }
    ]
@@ -798,7 +798,7 @@
   {
    "type": "p",
    "en": "As we advance our work on frontier models, we will also continue to enhance our AI safety evaluation and risk management processes. This evolving body of work requires an evolving framework as well. We will therefore revisit this Framework at least annually and publish any material modifications, updating it as necessary so that our protocols are appropriately robust to uphold our commitment to deploy safe and secure models. We will also update this Framework as needed in connection with significant technological developments.",
-   "ko": "Amazon은 프론티어 모델에 관한 작업을 진전시킴에 따라 AI 안전성 평가 및 위험 관리 프로세스도 지속적으로 강화할 것이다. 이처럼 진화하는 작업에는 그에 맞게 진화하는 프레임워크가 필요하다. 따라서 Amazon은 최소 연 1회 이 프레임워크를 재검토하고 중대한 수정 사항을 공개하며, 안전하고 보안성 있는 모델을 배포하겠다는 약정을 이행하기에 Amazon의 프로토콜이 적절하게 견고하도록 필요에 따라 이를 갱신할 것이다. 또한 Amazon은 중대한 기술 발전과 관련하여 필요한 경우 이 프레임워크를 갱신할 것이다.",
+   "ko": "Amazon은 프론티어 모델에 관한 작업을 진전시킴에 따라 AI 안전성 평가 및 위험 관리 프로세스도 지속적으로 강화할 것이다. 이처럼 진화하는 작업에는 그에 맞게 진화하는 프레임워크가 필요하다. 따라서 Amazon은 최소 연 1회 이 프레임워크를 재검토하고 중대한 수정 사항을 공개하며, 안전하고 보안성 있는 모델을 배포하겠다는 약속을 이행하기에 Amazon의 프로토콜이 적절하게 견고하도록 필요에 따라 이를 갱신할 것이다. 또한 Amazon은 중대한 기술 발전과 관련하여 필요한 경우 이 프레임워크를 갱신할 것이다.",
    "marks": [
     {
      "t": "최소 연 1회 이 프레임워크를 재검토하고 중대한 수정 사항을 공개하며",
@@ -831,7 +831,7 @@
   {
    "type": "li",
    "en": "Culture of security. Security at Amazon is 'job zero' for all employees. Our strong security culture[^3] is built and reinforced from the top down with deep executive engagement and commitment, and from the bottom up with training, mentoring, and the implementation and modeling of strong 'see something, say something' as well as 'when in doubt, escalate' and 'no blame' principles of behavior.",
-   "ko": "보안 문화. Amazon에서 보안은 모든 직원에게 '최우선 과업(job zero)'이다. Amazon의 강력한 보안 문화[^3]는 위에서 아래로는 경영진의 깊은 참여와 약정을 통해, 아래에서 위로는 교육, 멘토링, 그리고 '무언가를 보면 말하라(see something, say something)', '의심스러우면 상부에 보고하라(when in doubt, escalate)', '비난하지 않는다(no blame)'는 강력한 행동 원칙의 시행과 모범 실천을 통해 구축되고 강화된다."
+   "ko": "보안 문화. Amazon에서 보안은 모든 직원에게 '최우선 과업(job zero)'이다. Amazon의 강력한 보안 문화[^3]는 위에서 아래로는 경영진의 깊은 참여와 헌신을 통해, 아래에서 위로는 교육, 멘토링, 그리고 '무언가를 보면 말하라(see something, say something)', '의심스러우면 상부에 보고하라(when in doubt, escalate)', '비난하지 않는다(no blame)'는 강력한 행동 원칙의 시행과 모범 실천을 통해 구축되고 강화된다."
   },
   {
    "type": "li",

@@ -1115,14 +1115,14 @@
   {
    "type": "p",
    "en": "AI systems carry risks to safety, to labor markets, to democratic institutions, to the environment that are too consequential to be left to voluntary industry commitments alone. We need binding regulatory oversight of frontier AI development and deployment now, before it's too late. This technology holds enormous potential to benefit the planet and everyone on it, but that potential won't come to fruition without proper regulation.",
-   "ko": "AI 시스템은 안전, 노동시장, 민주적 제도, 환경에 위험을 초래하며, 이러한 위험은 업계의 자발적 약정에만 맡겨 두기에는 너무나 중대하다. 너무 늦기 전에, 지금 당장 프론티어 AI 개발과 배포에 대한 구속력 있는 규제 감독이 필요하다. 이 기술은 지구와 그 위의 모든 이에게 이로움을 줄 막대한 잠재력을 지니고 있지만, 적절한 규제 없이는 그 잠재력이 결실을 맺지 못할 것이다.",
+   "ko": "AI 시스템은 안전, 노동시장, 민주적 제도, 환경에 위험을 초래하며, 이러한 위험은 업계의 자발적 약속에만 맡겨 두기에는 너무나 중대하다. 너무 늦기 전에, 지금 당장 프론티어 AI 개발과 배포에 대한 구속력 있는 규제 감독이 필요하다. 이 기술은 지구와 그 위의 모든 이에게 이로움을 줄 막대한 잠재력을 지니고 있지만, 적절한 규제 없이는 그 잠재력이 결실을 맺지 못할 것이다.",
    "marks": [
     {
      "t": "AI 시스템은 안전, 노동시장, 민주적 제도, 환경에 위험을 초래하며",
      "k": "safety"
     },
     {
-     "t": "이러한 위험은 업계의 자발적 약정에만 맡겨 두기에는 너무나 중대하다.",
+     "t": "이러한 위험은 업계의 자발적 약속에만 맡겨 두기에는 너무나 중대하다.",
      "k": "key"
     },
     {

@@ -26,7 +26,7 @@
   {
    "type": "p",
    "en": "Multiple organizations have disclosed high-profile security failures: their AI models bypassed insufficiently sandboxed environments to compromise the systems of external organizations. On the one hand, one can view these incidents as evidence for the importance of AI alignment to ensure models operate predictably. On the other hand, they can also be seen as an irresponsible lapse in standard cybersecurity practices, preventable with stronger sandboxes and procedures. We believe that both improved AI alignment, leading to more predictable model behavior, and stronger sandbox technology are required. Further, without immediate changes in AI development and deployment practices, such incidents will continue to occur, and future incidents will be far more damaging to our exposed critical infrastructure.",
-   "ko": "여러 조직이 세간의 이목을 끈 보안 실패를 공개했다. 이들 조직의 AI 모델이 충분히 샌드박싱되지 않은 환경을 우회하여 외부 조직의 시스템을 침해한 것이다. 한편으로 이러한 사고는 모델이 예측 가능하게 작동하도록 보장하는 AI 정렬이 중요하다는 증거로 볼 수 있다. 다른 한편으로는 더 강력한 샌드박스와 절차로 예방할 수 있었던, 표준적인 사이버 보안 실행 방안상의 무책임한 과실로 볼 수도 있다. 우리는 모델 행동의 예측 가능성을 높이는 AI 정렬의 개선과 더 강력한 샌드박스 기술이 모두 필요하다고 본다. 나아가 AI 개발 및 배포 실행 방안이 즉각 바뀌지 않는다면 이러한 사고는 계속 발생할 것이며, 향후의 사고는 노출된 우리의 핵심 기반시설에 훨씬 더 큰 피해를 입힐 것이다.",
+   "ko": "여러 조직이 세간의 이목을 끈 보안 실패를 공개했다. 이들 조직의 AI 모델이 충분히 샌드박싱되지 않은 환경을 우회하여 외부 조직의 시스템을 침해한 것이다. 한편으로 이러한 사고는 모델이 예측 가능하게 작동하도록 보장하는 AI 정렬이 중요하다는 증거로 볼 수 있다. 다른 한편으로는 더 강력한 샌드박스와 절차로 예방할 수 있었던, 표준적인 사이버 보안 관행상의 무책임한 과실로 볼 수도 있다. 우리는 모델 행동의 예측 가능성을 높이는 AI 정렬의 개선과 더 강력한 샌드박스 기술이 모두 필요하다고 본다. 나아가 AI 개발 및 배포 관행이 즉각 바뀌지 않는다면 이러한 사고는 계속 발생할 것이며, 향후의 사고는 노출된 우리의 핵심 기반시설에 훨씬 더 큰 피해를 입힐 것이다.",
    "marks": [
     {
      "t": "이들 조직의 AI 모델이 충분히 샌드박싱되지 않은 환경을 우회하여 외부 조직의 시스템을 침해한 것이다",
@@ -37,7 +37,7 @@
      "k": "safety"
     },
     {
-     "t": "AI 개발 및 배포 실행 방안이 즉각 바뀌지 않는다면 이러한 사고는 계속 발생할 것이며, 향후의 사고는 노출된 우리의 핵심 기반시설에 훨씬 더 큰 피해를 입힐 것이다.",
+     "t": "AI 개발 및 배포 관행이 즉각 바뀌지 않는다면 이러한 사고는 계속 발생할 것이며, 향후의 사고는 노출된 우리의 핵심 기반시설에 훨씬 더 큰 피해를 입힐 것이다.",
      "k": "key"
     }
    ]

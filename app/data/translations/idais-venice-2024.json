@@ -55,7 +55,7 @@
   {
    "type": "p",
    "en": "Promising initial steps by the international community show cooperation on AI safety and governance is achievable despite geopolitical tensions. States and AI developers around the world committed to foundational principles to foster responsible development of AI and minimize risks at two intergovernmental summits. Thanks to these summits, states established AI Safety Institutes or similar institutions to advance testing, research and standards-setting.",
-   "ko": "국제사회가 내디딘 유망한 초기 조치들은 지정학적 긴장 속에서도 AI 안전과 거버넌스에 관한 협력이 가능함을 보여준다. 전 세계 국가와 AI 개발자들은 두 차례의 정부 간 정상회의에서 책임 있는 AI 개발을 촉진하고 위험을 최소화하기 위한 기본 원칙을 약정하였다. 이 정상회의들을 계기로 각국은 시험, 연구 및 표준 제정을 진전시키기 위해 AI 안전연구소(AI Safety Institutes) 또는 이와 유사한 기관을 설립하였다.",
+   "ko": "국제사회가 내디딘 유망한 초기 조치들은 지정학적 긴장 속에서도 AI 안전과 거버넌스에 관한 협력이 가능함을 보여준다. 전 세계 국가와 AI 개발자들은 두 차례의 정부 간 정상회의에서 책임 있는 AI 개발을 촉진하고 위험을 최소화하기 위한 기본 원칙을 약속하였다. 이 정상회의들을 계기로 각국은 시험, 연구 및 표준 제정을 진전시키기 위해 AI 안전연구소(AI Safety Institutes) 또는 이와 유사한 기관을 설립하였다.",
    "marks": [
     {
      "t": "지정학적 긴장 속에서도 AI 안전과 거버넌스에 관한 협력이 가능함",
@@ -109,10 +109,10 @@
   {
    "type": "p",
    "en": "Emergency Preparedness Agreements and Institutions, through which domestic AI safety authorities convene, collaborate on, and commit to implement model registration and disclosures, incident reporting, tripwires, and contingency plans.",
-   "ko": "비상 대비 협정 및 기관: 이를 통해 각국의 AI 안전 당국이 한자리에 모여 모델 등록 및 공개, 사고 보고, 트립와이어(tripwire), 비상 계획에 관해 협력하고 그 이행을 약정한다.",
+   "ko": "비상 대비 협정 및 기관: 이를 통해 각국의 AI 안전 당국이 한자리에 모여 모델 등록 및 공개, 사고 보고, 트립와이어(tripwire), 비상 계획에 관해 협력하고 그 이행을 약속한다.",
    "marks": [
     {
-     "t": "모델 등록 및 공개, 사고 보고, 트립와이어(tripwire), 비상 계획에 관해 협력하고 그 이행을 약정한다",
+     "t": "모델 등록 및 공개, 사고 보고, 트립와이어(tripwire), 비상 계획에 관해 협력하고 그 이행을 약속한다",
      "k": "safety"
     }
    ]
@@ -175,7 +175,7 @@
   {
    "type": "p",
    "en": "Over time, this body could also set standards for and commit to using verification methods to enforce domestic implementations of the Safety Assurance Framework. These methods can be mutually enforced through incentives and penalty mechanisms, such as conditioning access to markets on compliance with global standards. Experts and safety authorities should establish incident reporting and contingency plans, and regularly update the list of verified practices to reflect current scientific understanding. This body will be a critical initial coordination mechanism. In the long run, however, states will need to go further to ensure truly global governance of risks from advanced AI.",
-   "ko": "시간이 흐르면서 이 기구는 안전 신뢰보증 체계의 국내 이행을 강제하기 위한 검증 방법에 대한 표준을 설정하고, 그러한 방법의 사용을 약정할 수도 있다. 이러한 방법은 글로벌 표준에 대한 규정 준수를 시장 접근의 조건으로 삼는 것과 같은 인센티브 및 제재 메커니즘을 통해 상호 집행될 수 있다. 전문가와 안전 당국은 사고 보고 및 비상 계획을 수립하고, 현재의 과학적 이해를 반영하도록 검증된 실행 방안 목록을 정기적으로 갱신해야 한다. 이 기구는 중요한 초기 조율 메커니즘이 될 것이다. 그러나 장기적으로 각국은 첨단 AI로 인한 위험에 대한 진정한 글로벌 거버넌스를 보장하기 위해 더 나아가야 할 것이다.",
+   "ko": "시간이 흐르면서 이 기구는 안전 신뢰보증 체계의 국내 이행을 강제하기 위한 검증 방법에 대한 표준을 설정하고, 그러한 방법의 사용을 약속할 수도 있다. 이러한 방법은 글로벌 표준에 대한 규정 준수를 시장 접근의 조건으로 삼는 것과 같은 인센티브 및 제재 메커니즘을 통해 상호 집행될 수 있다. 전문가와 안전 당국은 사고 보고 및 비상 계획을 수립하고, 현재의 과학적 이해를 반영하도록 검증된 실행 방안 목록을 정기적으로 갱신해야 한다. 이 기구는 중요한 초기 조율 메커니즘이 될 것이다. 그러나 장기적으로 각국은 첨단 AI로 인한 위험에 대한 진정한 글로벌 거버넌스를 보장하기 위해 더 나아가야 할 것이다.",
    "marks": [
     {
      "t": "안전 신뢰보증 체계의 국내 이행을 강제하기 위한 검증 방법에 대한 표준을 설정하고",
@@ -215,14 +215,14 @@
   {
    "type": "p",
    "en": "To implement this, we need to build further scientific consensus on risks and red lines. Additionally, we should set early-warning thresholds: levels of model capabilities indicating that a model may cross or come close to crossing a red line. This approach builds on and harmonizes the existing patchwork of voluntary commitments such as responsible scaling policies. Models whose capabilities fall below early-warning thresholds require only limited testing and evaluation, while more rigorous assurance mechanisms are needed for advanced AI systems exceeding these early-warning thresholds.",
-   "ko": "이를 이행하기 위해서는 위험과 레드라인에 관한 과학적 합의를 한층 더 구축해야 한다. 또한 조기 경보 임계값, 즉 모델이 레드라인을 넘거나 넘는 데 근접할 수 있음을 나타내는 모델 역량 수준을 설정해야 한다. 이 접근법은 책임 있는 스케일링 정책과 같이 현재 산발적으로 존재하는 자발적 약정들을 토대로 하며 이를 조화시킨다. 역량이 조기 경보 임계값에 미달하는 모델은 제한적인 시험 및 평가(evaluation)만 필요하지만, 이 조기 경보 임계값을 초과하는 첨단 AI 시스템에는 보다 엄격한 신뢰보증 메커니즘이 필요하다.",
+   "ko": "이를 이행하기 위해서는 위험과 레드라인에 관한 과학적 합의를 한층 더 구축해야 한다. 또한 조기 경보 임계값, 즉 모델이 레드라인을 넘거나 넘는 데 근접할 수 있음을 나타내는 모델 역량 수준을 설정해야 한다. 이 접근법은 책임 있는 스케일링 정책과 같이 현재 산발적으로 존재하는 자발적 약속들을 토대로 하며 이를 조화시킨다. 역량이 조기 경보 임계값에 미달하는 모델은 제한적인 시험 및 평가(evaluation)만 필요하지만, 이 조기 경보 임계값을 초과하는 첨단 AI 시스템에는 보다 엄격한 신뢰보증 메커니즘이 필요하다.",
    "marks": [
     {
      "t": "모델이 레드라인을 넘거나 넘는 데 근접할 수 있음을 나타내는 모델 역량 수준을 설정해야 한다",
      "k": "safety"
     },
     {
-     "t": "책임 있는 스케일링 정책과 같이 현재 산발적으로 존재하는 자발적 약정들을 토대로 하며 이를 조화시킨다",
+     "t": "책임 있는 스케일링 정책과 같이 현재 산발적으로 존재하는 자발적 약속들을 토대로 하며 이를 조화시킨다",
      "k": "safety"
     },
     {
@@ -361,7 +361,7 @@
   {
    "type": "p",
    "en": "Critically, despite broader geopolitical tensions, globally trusted verification methods have allowed, and could allow again, states to commit to specific international agreements.",
-   "ko": "결정적으로, 광범위한 지정학적 긴장에도 불구하고 전 세계적으로 신뢰받는 검증 방법은 과거에 각국이 특정 국제 협정을 약정할 수 있게 해 주었으며, 앞으로도 다시 그렇게 할 수 있을 것이다.",
+   "ko": "결정적으로, 광범위한 지정학적 긴장에도 불구하고 전 세계적으로 신뢰받는 검증 방법은 과거에 각국이 특정 국제 협정을 약속할 수 있게 해 주었으며, 앞으로도 다시 그렇게 할 수 있을 것이다.",
    "marks": [
     {
      "t": "광범위한 지정학적 긴장에도 불구하고 전 세계적으로 신뢰받는 검증 방법은",

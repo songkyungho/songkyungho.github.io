@@ -102,7 +102,7 @@
   {
    "type": "p",
    "en": "Reaching adequate safety levels for advanced AI will also require immense research progress. Advanced AI systems must be demonstrably aligned with their designer’s intent, as well as appropriate norms and values. They must also be robust against both malicious actors and rare failure modes. Sufficient human control needs to be ensured for these systems. Concerted effort by the global research community in both AI and other disciplines is essential; we need a global network of dedicated AI safety research and governance institutions. We call on leading AI developers to make a minimum spending commitment of one third of their AI R&D on AI safety and for government agencies to fund academic and non-profit AI safety and governance research in at least the same proportion.",
-   "ko": "첨단 AI가 충분한 안전 수준에 도달하려면 막대한 연구 진전 또한 필요하다. 첨단 AI 시스템은 설계자의 의도는 물론 적절한 규범 및 가치와도 정렬되어 있음이 입증 가능해야 한다. 또한 이러한 시스템은 악의적 행위자와 드문 실패 모드 모두에 대해 견고해야 한다. 이러한 시스템에 대한 충분한 인간의 통제가 보장되어야 한다. AI 및 기타 학문 분야를 아우르는 전 세계 연구 공동체의 공동 노력이 필수적이며, AI 안전 연구와 거버넌스를 전담하는 기관들의 글로벌 네트워크가 필요하다. 우리는 선도 AI 개발자들에게 AI 연구개발(R&D) 비용의 최소 3분의 1을 AI 안전에 지출하는 약정을 할 것을, 그리고 정부 기관들에게 학계 및 비영리 부문의 AI 안전·거버넌스 연구에 최소한 동일한 비율로 자금을 지원할 것을 촉구한다.",
+   "ko": "첨단 AI가 충분한 안전 수준에 도달하려면 막대한 연구 진전 또한 필요하다. 첨단 AI 시스템은 설계자의 의도는 물론 적절한 규범 및 가치와도 정렬되어 있음이 입증 가능해야 한다. 또한 이러한 시스템은 악의적 행위자와 드문 실패 모드 모두에 대해 견고해야 한다. 이러한 시스템에 대한 충분한 인간의 통제가 보장되어야 한다. AI 및 기타 학문 분야를 아우르는 전 세계 연구 공동체의 공동 노력이 필수적이며, AI 안전 연구와 거버넌스를 전담하는 기관들의 글로벌 네트워크가 필요하다. 우리는 선도 AI 개발자들에게 AI 연구개발(R&D) 비용의 최소 3분의 1을 AI 안전에 지출하는 약속을 할 것을, 그리고 정부 기관들에게 학계 및 비영리 부문의 AI 안전·거버넌스 연구에 최소한 동일한 비율로 자금을 지원할 것을 촉구한다.",
    "marks": [
     {
      "t": "설계자의 의도는 물론 적절한 규범 및 가치와도 정렬되어 있음이 입증 가능해야 한다",
@@ -113,7 +113,7 @@
      "k": "safety"
     },
     {
-     "t": "AI 연구개발(R&D) 비용의 최소 3분의 1을 AI 안전에 지출하는 약정을 할 것을",
+     "t": "AI 연구개발(R&D) 비용의 최소 3분의 1을 AI 안전에 지출하는 약속을 할 것을",
      "k": "key"
     }
    ]
