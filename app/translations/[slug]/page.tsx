@@ -335,7 +335,7 @@ export default async function TranslationPage({ params }: { params: Promise<Para
           <dl className="article-meta">
             <div><dt>원문</dt><dd>{doc.publisher}</dd></div>
             <div><dt>종류</dt><dd>{doc.doc_kind}</dd></div>
-            <div><dt>제출</dt><dd>{dotDate(doc.published)}</dd></div>
+            <div><dt>발표</dt><dd>{dotDate(doc.published)}</dd></div>
             <div><dt>번역</dt><dd>{dotDate(doc.translated)}</dd></div>
             <div><dt>분량</dt><dd>영어 {doc.stats.words_en.toLocaleString("ko-KR")}단어</dd></div>
           </dl>
