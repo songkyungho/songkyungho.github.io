@@ -351,7 +351,7 @@
   {
    "type": "p",
    "en": "AI is progressing at a rate that our society might not be ready for. Frontier labs are very close to AI that can exceed even the best people on almost every metric of intelligence. This will lead to unprecedented social and safety risks. To ensure a positive future we need to develop AI in a way that is driven by responsibility and thoughtfulness.",
-   "ko": "AI는 우리 사회가 감당할 준비가 되지 않았을 수도 있는 속도로 발전하고 있다. 프론티어 연구소들은 거의 모든 지능 지표에서 최고의 인간조차 능가할 수 있는 AI에 매우 근접해 있다. 이는 전례 없는 사회적·안전 위험으로 이어질 것이다. 긍정적인 미래를 보장하기 위해 우리는 책임감과 신중함에 기반하여 AI를 개발해야 한다.",
+   "ko": "AI는 우리 사회가 감당할 준비가 되지 않았을 수도 있는 속도로 발전하고 있다. 프론티어 랩들은 거의 모든 지능 지표에서 최고의 인간조차 능가할 수 있는 AI에 매우 근접해 있다. 이는 전례 없는 사회적·안전 위험으로 이어질 것이다. 긍정적인 미래를 보장하기 위해 우리는 책임감과 신중함에 기반하여 AI를 개발해야 한다.",
    "marks": [
     {
      "t": "AI는 우리 사회가 감당할 준비가 되지 않았을 수도 있는 속도로 발전하고 있다.",
@@ -385,14 +385,14 @@
   {
    "type": "p",
    "en": "Signed because this statement helps establish common knowledge about the possible need for coordination mechanisms as automated AI research accelerates progress. I'd also like to see labs start designing these mechanisms voluntarily, even before the USG gets involved.",
-   "ko": "자동화된 AI 연구가 발전을 가속함에 따라 공조 메커니즘이 필요할 수 있다는 점에 대한 공유 지식(common knowledge)을 확립하는 데 이 성명서가 도움이 되기에 서명했다. 또한 나는 미국 정부가 관여하기 전이라도 연구소들이 자발적으로 이러한 메커니즘을 설계하기 시작하기를 바란다.",
+   "ko": "자동화된 AI 연구가 발전을 가속함에 따라 공조 메커니즘이 필요할 수 있다는 점에 대한 공유 지식(common knowledge)을 확립하는 데 이 성명서가 도움이 되기에 서명했다. 또한 나는 미국 정부가 관여하기 전이라도 랩들이 자발적으로 이러한 메커니즘을 설계하기 시작하기를 바란다.",
    "marks": [
     {
      "t": "자동화된 AI 연구가 발전을 가속함에 따라 공조 메커니즘이 필요할 수 있다는 점에 대한 공유 지식(common knowledge)을 확립하는 데 이 성명서가 도움이 되기에 서명했다.",
      "k": "key"
     },
     {
-     "t": "미국 정부가 관여하기 전이라도 연구소들이 자발적으로 이러한 메커니즘을 설계하기 시작하기를 바란다",
+     "t": "미국 정부가 관여하기 전이라도 랩들이 자발적으로 이러한 메커니즘을 설계하기 시작하기를 바란다",
      "k": "safety"
     }
    ]
@@ -487,7 +487,7 @@
   {
    "type": "p",
    "en": "Such a capability must be international and measurable: international because no single lab or country can pace a frontier everyone else is racing toward; measurable because effective governance requires rigorous, transparent, and verifiable evaluations of frontier AI systems.",
-   "ko": "이러한 역량은 국제적이고 측정 가능해야 한다. 국제적이어야 하는 이유는 다른 모두가 앞다투어 달려가는 프론티어의 속도를 어느 한 연구소나 국가가 단독으로 조절할 수 없기 때문이다. 측정 가능해야 하는 이유는 효과적인 거버넌스를 위해서는 프론티어 AI 시스템에 대한 엄밀하고, 투명하며, 검증 가능한 평가(evaluation)가 필요하기 때문이다."
+   "ko": "이러한 역량은 국제적이고 측정 가능해야 한다. 국제적이어야 하는 이유는 다른 모두가 앞다투어 달려가는 프론티어의 속도를 어느 한 랩이나 국가가 단독으로 조절할 수 없기 때문이다. 측정 가능해야 하는 이유는 효과적인 거버넌스를 위해서는 프론티어 AI 시스템에 대한 엄밀하고, 투명하며, 검증 가능한 평가(evaluation)가 필요하기 때문이다."
   },
   {
    "type": "p",
@@ -518,7 +518,7 @@
   {
    "type": "p",
    "en": "OpenAI has said that humans should remain in control of AI development, and that decisions about the pace of progress should be made through democratic processes rather than left to individual labs. I strongly agree.",
-   "ko": "OpenAI는 인간이 AI 개발에 대한 통제를 유지해야 하며, 발전 속도에 관한 결정은 개별 연구소에 맡겨 둘 것이 아니라 민주적 절차를 통해 내려져야 한다고 밝힌 바 있다. 나는 이에 강력히 동의한다."
+   "ko": "OpenAI는 인간이 AI 개발에 대한 통제를 유지해야 하며, 발전 속도에 관한 결정은 개별 랩에 맡겨 둘 것이 아니라 민주적 절차를 통해 내려져야 한다고 밝힌 바 있다. 나는 이에 강력히 동의한다."
   },
   {
    "type": "p",
@@ -657,10 +657,10 @@
   {
    "type": "p",
    "en": "Once this becomes common knowledge - once all of us in China & the US and at the various labs see that all the rest of us also think we need to slow this down - that's when coordination becomes possible.",
-   "ko": "이것이 공유 지식(common knowledge)이 되는 순간, 즉 중국과 미국, 그리고 여러 연구소에 있는 우리 모두가 나머지 모든 이들도 속도를 늦춰야 한다고 생각한다는 사실을 알게 되는 순간, 비로소 공조가 가능해진다.",
+   "ko": "이것이 공유 지식(common knowledge)이 되는 순간, 즉 중국과 미국, 그리고 여러 랩에 있는 우리 모두가 나머지 모든 이들도 속도를 늦춰야 한다고 생각한다는 사실을 알게 되는 순간, 비로소 공조가 가능해진다.",
    "marks": [
     {
-     "t": "중국과 미국, 그리고 여러 연구소에 있는 우리 모두가 나머지 모든 이들도 속도를 늦춰야 한다고 생각한다는 사실을 알게 되는 순간",
+     "t": "중국과 미국, 그리고 여러 랩에 있는 우리 모두가 나머지 모든 이들도 속도를 늦춰야 한다고 생각한다는 사실을 알게 되는 순간",
      "k": "safety"
     },
     {
@@ -683,7 +683,7 @@
   {
    "type": "p",
    "en": "While I don't believe the pace of current AI capabilities development is *yet* dangerous, it's important to have the option to slow down in case we need it. Further, accelerating AI R&D over the next couple years could make the pace of progress dangerous. I've seen how the relentless pace of AI makes it hard for society to keep up and how it puts pressure on labs to cut corners on safety. However, currently frontier AI labs can't coordinate effectively. It's a no-brainer to have the option to slow down.",
-   "ko": "나는 현재 AI 역량 개발 속도가 *아직* 위험하다고 생각하지는 않지만, 필요할 경우를 대비해 속도를 늦출 수 있는 선택지를 갖는 것은 중요하다. 더욱이 향후 몇 년간 AI 연구개발(R&D)이 가속되면 발전 속도가 위험해질 수 있다. 나는 AI의 끊임없는 발전 속도로 인해 사회가 따라잡기 어려워지고, 연구소들이 안전에서 편법을 쓰도록 압박받는 모습을 보아 왔다. 그러나 현재 프론티어 AI 연구소들은 효과적으로 공조하지 못한다. 속도를 늦출 수 있는 선택지를 갖는 것은 당연한 일이다.",
+   "ko": "나는 현재 AI 역량 개발 속도가 *아직* 위험하다고 생각하지는 않지만, 필요할 경우를 대비해 속도를 늦출 수 있는 선택지를 갖는 것은 중요하다. 더욱이 향후 몇 년간 AI 연구개발(R&D)이 가속되면 발전 속도가 위험해질 수 있다. 나는 AI의 끊임없는 발전 속도로 인해 사회가 따라잡기 어려워지고, 랩들이 안전에서 편법을 쓰도록 압박받는 모습을 보아 왔다. 그러나 현재 프론티어 AI 랩들은 효과적으로 공조하지 못한다. 속도를 늦출 수 있는 선택지를 갖는 것은 당연한 일이다.",
    "marks": [
     {
      "t": "필요할 경우를 대비해 속도를 늦출 수 있는 선택지를 갖는 것은 중요하다",
@@ -694,11 +694,11 @@
      "k": "safety"
     },
     {
-     "t": "연구소들이 안전에서 편법을 쓰도록 압박받는 모습을 보아 왔다",
+     "t": "랩들이 안전에서 편법을 쓰도록 압박받는 모습을 보아 왔다",
      "k": "safety"
     },
     {
-     "t": "현재 프론티어 AI 연구소들은 효과적으로 공조하지 못한다",
+     "t": "현재 프론티어 AI 랩들은 효과적으로 공조하지 못한다",
      "k": "safety"
     }
    ]
@@ -717,14 +717,14 @@
   {
    "type": "p",
    "en": "It feels like all the AI labs are constrained by competition to minimize their work on catastrophic risks, even though most industry leaders have an uncomfortably high probability that things could go terribly wrong. This is a technology that doesn't have an off switch you can just flip, and it could easily do as much damage to its creators as to anyone else. Having a framework to allow labs to slow down or pull the plug in case of emergency will help us all sleep a bit better at night.",
-   "ko": "업계 리더 대부분이 상황이 끔찍하게 잘못될 수 있다는 가능성을 불편할 정도로 높게 보고 있음에도, 모든 AI 연구소가 경쟁에 얽매여 파국적 위험에 대한 작업을 최소화하고 있는 것처럼 느껴진다. 이것은 그냥 켜고 끌 수 있는 스위치가 없는 기술이며, 다른 누구에게만큼이나 그 창조자에게도 쉽게 큰 손해를 입힐 수 있다. 비상시에 연구소들이 속도를 늦추거나 플러그를 뽑을 수 있게 하는 프레임워크가 있다면 우리 모두 밤에 조금 더 편히 잠들 수 있을 것이다.",
+   "ko": "업계 리더 대부분이 상황이 끔찍하게 잘못될 수 있다는 가능성을 불편할 정도로 높게 보고 있음에도, 모든 AI 랩이 경쟁에 얽매여 파국적 위험에 대한 작업을 최소화하고 있는 것처럼 느껴진다. 이것은 그냥 켜고 끌 수 있는 스위치가 없는 기술이며, 다른 누구에게만큼이나 그 창조자에게도 쉽게 큰 손해를 입힐 수 있다. 비상시에 랩들이 속도를 늦추거나 플러그를 뽑을 수 있게 하는 프레임워크가 있다면 우리 모두 밤에 조금 더 편히 잠들 수 있을 것이다.",
    "marks": [
     {
      "t": "업계 리더 대부분이 상황이 끔찍하게 잘못될 수 있다는 가능성을 불편할 정도로 높게 보고 있음에도",
      "k": "safety"
     },
     {
-     "t": "모든 AI 연구소가 경쟁에 얽매여 파국적 위험에 대한 작업을 최소화하고 있는 것처럼 느껴진다",
+     "t": "모든 AI 랩이 경쟁에 얽매여 파국적 위험에 대한 작업을 최소화하고 있는 것처럼 느껴진다",
      "k": "key"
     },
     {
@@ -732,7 +732,7 @@
      "k": "safety"
     },
     {
-     "t": "비상시에 연구소들이 속도를 늦추거나 플러그를 뽑을 수 있게 하는 프레임워크",
+     "t": "비상시에 랩들이 속도를 늦추거나 플러그를 뽑을 수 있게 하는 프레임워크",
      "k": "key"
     }
    ]
@@ -867,7 +867,7 @@
   {
    "type": "p",
    "en": "My opinion is that while coordination between American labs is feasible and could potentially be straightforward, the much larger and more significant threat is from a geopolitical arms race with China. Much as the Manhattan Project thought they might ignite all of the oxygen in the atmosphere but chose to run a test detonation anyways, I’m afraid that due to future geopolitical competition, actors will take terribly excessive safety risks in the name of this international arms race. As a result there could be catastrophic side effects from deployment without due safeguards, potentially resulting in the destruction of key infrastructure or the general disempowerment of humanity.",
-   "ko": "내 의견으로는 미국 연구소 간의 공조는 실현 가능하고 잠재적으로 간단할 수도 있지만, 훨씬 더 크고 중대한 위협은 중국과의 지정학적 군비 경쟁에서 비롯된다. 맨해튼 프로젝트가 대기 중의 산소 전체를 점화시킬 수도 있다고 생각하면서도 결국 시험 폭발을 강행했던 것처럼, 나는 향후 지정학적 경쟁으로 인해 행위자들이 이 국제 군비 경쟁이라는 명목하에 끔찍할 정도로 과도한 안전 위험을 감수하게 될까 두렵다. 그 결과 적절한 안전장치 없는 배포로 인해 파국적인 부작용이 발생할 수 있으며, 이는 핵심 기반시설의 파괴나 인류의 전반적인 무력화(disempowerment)로 이어질 수 있다.",
+   "ko": "내 의견으로는 미국 랩 간의 공조는 실현 가능하고 잠재적으로 간단할 수도 있지만, 훨씬 더 크고 중대한 위협은 중국과의 지정학적 군비 경쟁에서 비롯된다. 맨해튼 프로젝트가 대기 중의 산소 전체를 점화시킬 수도 있다고 생각하면서도 결국 시험 폭발을 강행했던 것처럼, 나는 향후 지정학적 경쟁으로 인해 행위자들이 이 국제 군비 경쟁이라는 명목하에 끔찍할 정도로 과도한 안전 위험을 감수하게 될까 두렵다. 그 결과 적절한 안전장치 없는 배포로 인해 파국적인 부작용이 발생할 수 있으며, 이는 핵심 기반시설의 파괴나 인류의 전반적인 무력화(disempowerment)로 이어질 수 있다.",
    "marks": [
     {
      "t": "훨씬 더 크고 중대한 위협은 중국과의 지정학적 군비 경쟁에서 비롯된다",
@@ -1059,7 +1059,7 @@
   {
    "type": "p",
    "en": "I think it's inherently valuable to build international governance mechanisms to enable responsible deployment and avoid a possible race to the bottom. All labs and countries moving as fast as possible out of fear of what other actors will do seems like an easy way to incentivize individual actors to make dangerous tradeoffs between speed and safety.",
-   "ko": "나는 책임 있는 배포를 가능하게 하고 바닥으로의 경쟁 가능성을 피하기 위한 국제 거버넌스 메커니즘을 구축하는 것이 본질적으로 가치 있다고 생각한다. 모든 연구소와 국가가 다른 행위자들이 무엇을 할지에 대한 두려움 때문에 최대한 빠르게 움직이는 것은, 개별 행위자들이 속도와 안전 사이에서 위험한 절충을 하도록 쉽게 유인하는 방식으로 보인다.",
+   "ko": "나는 책임 있는 배포를 가능하게 하고 바닥으로의 경쟁 가능성을 피하기 위한 국제 거버넌스 메커니즘을 구축하는 것이 본질적으로 가치 있다고 생각한다. 모든 랩과 국가가 다른 행위자들이 무엇을 할지에 대한 두려움 때문에 최대한 빠르게 움직이는 것은, 개별 행위자들이 속도와 안전 사이에서 위험한 절충을 하도록 쉽게 유인하는 방식으로 보인다.",
    "marks": [
     {
      "t": "책임 있는 배포를 가능하게 하고 바닥으로의 경쟁 가능성을 피하기 위한 국제 거버넌스 메커니즘을 구축하는 것이 본질적으로 가치 있다고 생각한다",
@@ -1445,14 +1445,14 @@
   {
    "type": "p",
    "en": "For us to experience all the benefits of AI while preserving human empowerment and reducing the risk in fields like cybersecurity and CBRN, we need coordination between frontier labs in and outside the country. The democratically elected US government would have a crucial role to play in administering this coordination and I support this effort to get more government attention on this matter.",
-   "ko": "인간의 역량 강화를 지키고 사이버 보안 및 화학·생물·방사능·핵(CBRN) 같은 분야의 위험을 줄이면서 AI의 모든 이점을 누리려면, 국내외 프론티어 연구소 간의 공조가 필요하다. 민주적으로 선출된 미국 정부는 이러한 공조를 관리하는 데 결정적인 역할을 하게 될 것이며, 나는 이 문제에 대한 정부의 관심을 더 끌어내려는 이 노력을 지지한다.",
+   "ko": "인간의 역량 강화를 지키고 사이버 보안 및 화학·생물·방사능·핵(CBRN) 같은 분야의 위험을 줄이면서 AI의 모든 이점을 누리려면, 국내외 프론티어 랩 간의 공조가 필요하다. 민주적으로 선출된 미국 정부는 이러한 공조를 관리하는 데 결정적인 역할을 하게 될 것이며, 나는 이 문제에 대한 정부의 관심을 더 끌어내려는 이 노력을 지지한다.",
    "marks": [
     {
      "t": "사이버 보안 및 화학·생물·방사능·핵(CBRN) 같은 분야의 위험을 줄이면서",
      "k": "safety"
     },
     {
-     "t": "국내외 프론티어 연구소 간의 공조가 필요하다.",
+     "t": "국내외 프론티어 랩 간의 공조가 필요하다.",
      "k": "key"
     },
     {
@@ -2123,14 +2123,14 @@
   {
    "type": "p",
    "en": "Supportive of this, but we should be careful not to use RSI narratives to create a regulatory moat. These risks need to be properly quantified, more openly, not derived from big labs narratives only!",
-   "ko": "이를 지지하지만, RSI 서사를 이용해 규제 해자(regulatory moat)를 만들지 않도록 주의해야 한다. 이러한 위험은 거대 연구소들의 서사에서만 도출될 것이 아니라, 보다 공개적으로 적절히 정량화되어야 한다!",
+   "ko": "이를 지지하지만, RSI 서사를 이용해 규제 해자(regulatory moat)를 만들지 않도록 주의해야 한다. 이러한 위험은 거대 랩들의 서사에서만 도출될 것이 아니라, 보다 공개적으로 적절히 정량화되어야 한다!",
    "marks": [
     {
      "t": "RSI 서사를 이용해 규제 해자(regulatory moat)를 만들지 않도록 주의해야 한다",
      "k": "key"
     },
     {
-     "t": "이러한 위험은 거대 연구소들의 서사에서만 도출될 것이 아니라, 보다 공개적으로 적절히 정량화되어야 한다!",
+     "t": "이러한 위험은 거대 랩들의 서사에서만 도출될 것이 아니라, 보다 공개적으로 적절히 정량화되어야 한다!",
      "k": "safety"
     }
    ]
@@ -2651,7 +2651,7 @@
   {
    "type": "p",
    "en": "The pace of frontier AI development is currently outstripping our ability to ensure its safety, governance, and alignment with human values. We are racing to build systems with unprecedented capability without first building the guardrails, evaluation frameworks, or scientific understanding needed to control them. Proposing a slowdown is not about stalling progress or rejecting technology—it is about demanding precision and responsibility. Right now, competitive pressure forces labs (and nation state actors) to deploy systems before their full failure modes, catastrophic risks, or societal disruptions are understood. By shifting our focus from pure capability scaling to safety, alignment, and robust evaluation, we give humanity the time required to build AI that is reliable, controllable, and genuinely beneficial for everyone.",
-   "ko": "현재 프론티어 AI 개발의 속도는 그 안전, 거버넌스, 인간 가치와의 정렬을 보장하는 우리의 능력을 앞지르고 있다. 우리는 그것을 통제하는 데 필요한 가드레일, 평가 프레임워크, 과학적 이해를 먼저 구축하지 않은 채 전례 없는 역량을 지닌 시스템을 만들기 위해 경쟁하고 있다. 감속을 제안하는 것은 진보를 지연시키거나 기술을 거부하려는 것이 아니라, 정밀함과 책임을 요구하는 것이다. 지금 경쟁 압력은 연구소들(그리고 국가 행위자들)로 하여금 시스템의 실패 모드, 파국적 위험, 사회적 혼란이 완전히 이해되기 전에 시스템을 배포하도록 강요하고 있다. 순수한 역량 스케일링에서 안전, 정렬, 강건한 평가로 초점을 옮김으로써, 우리는 인류가 신뢰할 수 있고, 통제 가능하며, 모두에게 진정으로 이로운 AI를 구축하는 데 필요한 시간을 확보할 수 있다.",
+   "ko": "현재 프론티어 AI 개발의 속도는 그 안전, 거버넌스, 인간 가치와의 정렬을 보장하는 우리의 능력을 앞지르고 있다. 우리는 그것을 통제하는 데 필요한 가드레일, 평가 프레임워크, 과학적 이해를 먼저 구축하지 않은 채 전례 없는 역량을 지닌 시스템을 만들기 위해 경쟁하고 있다. 감속을 제안하는 것은 진보를 지연시키거나 기술을 거부하려는 것이 아니라, 정밀함과 책임을 요구하는 것이다. 지금 경쟁 압력은 랩들(그리고 국가 행위자들)로 하여금 시스템의 실패 모드, 파국적 위험, 사회적 혼란이 완전히 이해되기 전에 시스템을 배포하도록 강요하고 있다. 순수한 역량 스케일링에서 안전, 정렬, 강건한 평가로 초점을 옮김으로써, 우리는 인류가 신뢰할 수 있고, 통제 가능하며, 모두에게 진정으로 이로운 AI를 구축하는 데 필요한 시간을 확보할 수 있다.",
    "marks": [
     {
      "t": "현재 프론티어 AI 개발의 속도는 그 안전, 거버넌스, 인간 가치와의 정렬을 보장하는 우리의 능력을 앞지르고 있다.",
@@ -2662,7 +2662,7 @@
      "k": "safety"
     },
     {
-     "t": "경쟁 압력은 연구소들(그리고 국가 행위자들)로 하여금 시스템의 실패 모드, 파국적 위험, 사회적 혼란이 완전히 이해되기 전에 시스템을 배포하도록 강요하고 있다",
+     "t": "경쟁 압력은 랩들(그리고 국가 행위자들)로 하여금 시스템의 실패 모드, 파국적 위험, 사회적 혼란이 완전히 이해되기 전에 시스템을 배포하도록 강요하고 있다",
      "k": "safety"
     },
     {
@@ -2779,7 +2779,7 @@
   {
    "type": "p",
    "en": "We believe AI will do, and is doing, great things for the world. We are already seeing instances where pushing research maximally fast creates serious issues, and it is possible that these will get much more severe. Right now, competitive dynamics mean there is no realistic alternative to pushing maximally fast for frontier research. We need mechanisms to make slowing down possible for commercial labs in an acute situation.",
-   "ko": "우리는 AI가 세상을 위해 훌륭한 일을 할 것이며, 이미 하고 있다고 믿는다. 우리는 이미 연구를 최대한 빠르게 밀어붙이는 것이 심각한 문제를 일으키는 사례들을 목격하고 있으며, 이러한 문제가 훨씬 더 심각해질 가능성도 있다. 현재 경쟁 역학으로 인해 프론티어 연구에서 최대한 빠르게 밀어붙이는 것 외에는 현실적인 대안이 없다. 긴급한 상황에서 상업적 연구소들이 속도를 늦출 수 있도록 하는 메커니즘이 필요하다.",
+   "ko": "우리는 AI가 세상을 위해 훌륭한 일을 할 것이며, 이미 하고 있다고 믿는다. 우리는 이미 연구를 최대한 빠르게 밀어붙이는 것이 심각한 문제를 일으키는 사례들을 목격하고 있으며, 이러한 문제가 훨씬 더 심각해질 가능성도 있다. 현재 경쟁 역학으로 인해 프론티어 연구에서 최대한 빠르게 밀어붙이는 것 외에는 현실적인 대안이 없다. 긴급한 상황에서 상업적 랩들이 속도를 늦출 수 있도록 하는 메커니즘이 필요하다.",
    "marks": [
     {
      "t": "우리는 이미 연구를 최대한 빠르게 밀어붙이는 것이 심각한 문제를 일으키는 사례들을 목격하고 있으며, 이러한 문제가 훨씬 더 심각해질 가능성도 있다.",
@@ -2790,7 +2790,7 @@
      "k": "safety"
     },
     {
-     "t": "긴급한 상황에서 상업적 연구소들이 속도를 늦출 수 있도록 하는 메커니즘이 필요하다.",
+     "t": "긴급한 상황에서 상업적 랩들이 속도를 늦출 수 있도록 하는 메커니즘이 필요하다.",
      "k": "key"
     }
    ]
@@ -2809,7 +2809,7 @@
   {
    "type": "p",
    "en": "There is intense commercial pressure to win the AI race. Ensuring safety often requires making tradeoffs that hurt commercial interests. Therefore, I think its a good idea for better coordination between labs so we can build this technology safely, and for the purpose of human flourishing. There is also enormous suffering in the world today, which potentially could be mitigated by advances in medicine and biology brought about by powerful AI. Therefore, we should carefully balance tradeoffs in a way that does not stifle progress.",
-   "ko": "AI 경쟁에서 이기기 위한 상업적 압력이 극심하다. 안전을 보장하려면 종종 상업적 이익을 해치는 트레이드오프를 감수해야 한다. 따라서 이 기술을 안전하게, 그리고 인간 번영을 위해 구축할 수 있도록 연구소 간 조율을 강화하는 것이 좋은 생각이라고 본다. 또한 오늘날 세계에는 막대한 고통이 존재하며, 이는 강력한 AI가 가져올 의학과 생물학의 발전으로 완화될 수 있을 것이다. 따라서 우리는 진보를 억누르지 않는 방식으로 트레이드오프를 신중하게 저울질해야 한다.",
+   "ko": "AI 경쟁에서 이기기 위한 상업적 압력이 극심하다. 안전을 보장하려면 종종 상업적 이익을 해치는 트레이드오프를 감수해야 한다. 따라서 이 기술을 안전하게, 그리고 인간 번영을 위해 구축할 수 있도록 랩 간 조율을 강화하는 것이 좋은 생각이라고 본다. 또한 오늘날 세계에는 막대한 고통이 존재하며, 이는 강력한 AI가 가져올 의학과 생물학의 발전으로 완화될 수 있을 것이다. 따라서 우리는 진보를 억누르지 않는 방식으로 트레이드오프를 신중하게 저울질해야 한다.",
    "marks": [
     {
      "t": "AI 경쟁에서 이기기 위한 상업적 압력이 극심하다.",
@@ -2820,7 +2820,7 @@
      "k": "key"
     },
     {
-     "t": "이 기술을 안전하게, 그리고 인간 번영을 위해 구축할 수 있도록 연구소 간 조율을 강화하는 것이 좋은 생각",
+     "t": "이 기술을 안전하게, 그리고 인간 번영을 위해 구축할 수 있도록 랩 간 조율을 강화하는 것이 좋은 생각",
      "k": "safety"
     },
     {
@@ -3007,7 +3007,7 @@
   {
    "type": "p",
    "en": "Society is not prepared for AI, and that terrifies me. When I speak with politicians, or anyone outside frontier labs, it seems many people still think the capabilities might be marketing. They don't realize the debate inside the companies is if AI will be advancing itself past our control in two years or four.",
-   "ko": "사회는 AI에 대비되어 있지 않으며, 그 사실이 나를 두렵게 한다. 정치인들이나 프론티어 연구소 밖의 누구와 이야기를 나누어 보면, 많은 사람들이 여전히 그 역량이 마케팅일 수도 있다고 생각하는 것 같다. 그들은 기업 내부의 논쟁이 AI가 스스로를 발전시켜 우리의 통제를 벗어나는 시점이 2년 후일지 4년 후일지에 관한 것임을 깨닫지 못하고 있다.",
+   "ko": "사회는 AI에 대비되어 있지 않으며, 그 사실이 나를 두렵게 한다. 정치인들이나 프론티어 랩 밖의 누구와 이야기를 나누어 보면, 많은 사람들이 여전히 그 역량이 마케팅일 수도 있다고 생각하는 것 같다. 그들은 기업 내부의 논쟁이 AI가 스스로를 발전시켜 우리의 통제를 벗어나는 시점이 2년 후일지 4년 후일지에 관한 것임을 깨닫지 못하고 있다.",
    "marks": [
     {
      "t": "사회는 AI에 대비되어 있지 않으며, 그 사실이 나를 두렵게 한다.",

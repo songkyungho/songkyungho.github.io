@@ -314,14 +314,14 @@
   {
    "type": "p",
    "en": "Technical assessments serve a distinct but complementary function to compliance audits. Compliance audits, which we discuss in the next section, examine whether developers procedurally follow their safety frameworks and meet their obligations under frontier safety legislation, such as SB 53. Technical assessments independently evaluate the evidence, methods, and reasoning supporting developers' safety claims, including model evaluations, and the effectiveness of safeguards. To support rigorous technical assessments, we recommend providing qualified, independent assessors with meaningful, secure access to help labs, the public, and regulators assess whether catastrophic risks are being effectively managed.",
-   "ko": "기술 평가(assessment)는 규정 준수 감사와는 구별되지만 상호 보완적인 기능을 수행한다. 다음 절에서 논의할 규정 준수 감사는 개발자가 자신의 안전 프레임워크를 절차적으로 따르고 SB 53과 같은 프론티어 안전 법률에 따른 의무를 이행하는지를 검토한다. 기술 평가(assessment)는 모델 평가(evaluation)를 포함하여 개발자의 안전 주장을 뒷받침하는 증거, 방법, 추론, 그리고 안전장치의 실효성을 독립적으로 평가(evaluation)한다. 엄격한 기술 평가(assessment)를 지원하기 위해, 당사는 자격을 갖춘 독립 평가자에게 실질적이고 보안이 확보된 접근 권한을 제공하여 연구소, 대중, 규제 당국이 파국적 위험이 효과적으로 관리되고 있는지를 평가(assessment)할 수 있도록 할 것을 권고한다.",
+   "ko": "기술 평가(assessment)는 규정 준수 감사와는 구별되지만 상호 보완적인 기능을 수행한다. 다음 절에서 논의할 규정 준수 감사는 개발자가 자신의 안전 프레임워크를 절차적으로 따르고 SB 53과 같은 프론티어 안전 법률에 따른 의무를 이행하는지를 검토한다. 기술 평가(assessment)는 모델 평가(evaluation)를 포함하여 개발자의 안전 주장을 뒷받침하는 증거, 방법, 추론, 그리고 안전장치의 실효성을 독립적으로 평가(evaluation)한다. 엄격한 기술 평가(assessment)를 지원하기 위해, 당사는 자격을 갖춘 독립 평가자에게 실질적이고 보안이 확보된 접근 권한을 제공하여 랩, 대중, 규제 당국이 파국적 위험이 효과적으로 관리되고 있는지를 평가(assessment)할 수 있도록 할 것을 권고한다.",
    "marks": [
     {
      "t": "개발자의 안전 주장을 뒷받침하는 증거, 방법, 추론, 그리고 안전장치의 실효성을 독립적으로 평가(evaluation)한다",
      "k": "safety"
     },
     {
-     "t": "연구소, 대중, 규제 당국이 파국적 위험이 효과적으로 관리되고 있는지를 평가(assessment)할 수 있도록 할 것을 권고한다",
+     "t": "랩, 대중, 규제 당국이 파국적 위험이 효과적으로 관리되고 있는지를 평가(assessment)할 수 있도록 할 것을 권고한다",
      "k": "safety"
     }
    ]
@@ -375,7 +375,7 @@
   {
    "type": "p",
    "en": "Protect assessor independence. Third party assessors must be able to exercise independent judgment, free from undue influence by frontier labs or other interested parties. Conflict of interest requirements should address organizational and individual conflicts, including financial, employment, governance, donor, and competitor relationships, including assessors' access to or detailed knowledge of competing frontier lab's trade secrets, with disclosure, recusal, or exclusion where appropriate. Compensation arrangements should not reward favorable findings, and a credible public-interest AI assessment ecosystem should not depend solely on industry-funded organizations assessing the companies that support them. Likewise, when third-party assessors are commercial entities-such as established audit firms or comparable firms in other sectors-payment by a frontier lab for their work does not, by itself, establish a conflict of interest. The key question is whether the arrangements, taken together, credibly support the assessor's ability to exercise independent judgment. Public investment can help preserve independence and advance safety for society as a whole.",
-   "ko": "평가자의 독립성 보호. 제3자 평가자는 프론티어 연구소나 기타 이해관계자의 부당한 영향에서 벗어나 독립적인 판단을 행사할 수 있어야 한다. 이해충돌 요건은 재정, 고용, 거버넌스, 기부자, 경쟁사 관계를 포함한 조직 및 개인 차원의 이해충돌을 다루어야 하며, 여기에는 평가자가 경쟁 프론티어 연구소의 영업비밀에 접근하거나 이를 상세히 알고 있는 경우도 포함되고, 적절한 경우 공개, 회피 또는 배제 조치를 취해야 한다. 보수 지급 방식이 유리한 판정에 보상을 주어서는 안 되며, 신뢰할 수 있는 공익적 AI 평가(assessment) 생태계는 업계의 자금 지원을 받는 기관이 자신을 지원하는 기업을 평가(assessment)하는 구조에만 의존해서는 안 된다. 마찬가지로, 제3자 평가자가 기존 감사 법인이나 다른 부문의 유사 기업과 같은 상업적 주체인 경우, 프론티어 연구소가 그 업무에 대해 대가를 지급한다는 사실만으로 이해충돌이 성립하지는 않는다. 핵심 질문은 그러한 방식들이 전체적으로 볼 때 평가자가 독립적인 판단을 행사할 수 있는 능력을 신뢰할 수 있게 뒷받침하는지 여부이다. 공공 투자는 독립성을 유지하고 사회 전체의 안전을 증진하는 데 도움이 될 수 있다.",
+   "ko": "평가자의 독립성 보호. 제3자 평가자는 프론티어 랩이나 기타 이해관계자의 부당한 영향에서 벗어나 독립적인 판단을 행사할 수 있어야 한다. 이해충돌 요건은 재정, 고용, 거버넌스, 기부자, 경쟁사 관계를 포함한 조직 및 개인 차원의 이해충돌을 다루어야 하며, 여기에는 평가자가 경쟁 프론티어 랩의 영업비밀에 접근하거나 이를 상세히 알고 있는 경우도 포함되고, 적절한 경우 공개, 회피 또는 배제 조치를 취해야 한다. 보수 지급 방식이 유리한 판정에 보상을 주어서는 안 되며, 신뢰할 수 있는 공익적 AI 평가(assessment) 생태계는 업계의 자금 지원을 받는 기관이 자신을 지원하는 기업을 평가(assessment)하는 구조에만 의존해서는 안 된다. 마찬가지로, 제3자 평가자가 기존 감사 법인이나 다른 부문의 유사 기업과 같은 상업적 주체인 경우, 프론티어 랩이 그 업무에 대해 대가를 지급한다는 사실만으로 이해충돌이 성립하지는 않는다. 핵심 질문은 그러한 방식들이 전체적으로 볼 때 평가자가 독립적인 판단을 행사할 수 있는 능력을 신뢰할 수 있게 뒷받침하는지 여부이다. 공공 투자는 독립성을 유지하고 사회 전체의 안전을 증진하는 데 도움이 될 수 있다.",
    "marks": [
     {
      "t": "업계의 자금 지원을 받는 기관이 자신을 지원하는 기업을 평가(assessment)하는 구조에만 의존해서는 안 된다",
@@ -386,7 +386,7 @@
   {
    "type": "p",
    "en": "Protect security & intellectual property. Meaningful access must be paired with enforceable confidentiality obligations, strong information-security controls, and safeguards against sharing sensitive information across labs. Assessor access to source code or sensitive infrastructure should require specific justification and protections proportionate to the sensitivity of that access. In addition, due to the potential cybersecurity risks associated with running evaluations on frontier models, assessors should be required to adhere to cybersecurity standards and best practices.",
-   "ko": "보안 및 지식재산권 보호. 실질적인 접근 권한은 집행 가능한 기밀 유지 의무, 강력한 정보 보안 통제, 그리고 연구소 간 민감 정보 공유를 방지하는 안전장치와 함께 제공되어야 한다. 소스 코드나 민감한 인프라에 대한 평가자의 접근에는 구체적인 정당화 사유와 해당 접근의 민감도에 비례하는 보호 조치가 요구되어야 한다. 또한 프론티어 모델에 대한 평가(evaluation) 수행과 관련된 잠재적 사이버 보안 위험을 고려하여, 평가자는 사이버 보안 표준과 모범 사례를 준수하도록 요구되어야 한다.",
+   "ko": "보안 및 지식재산권 보호. 실질적인 접근 권한은 집행 가능한 기밀 유지 의무, 강력한 정보 보안 통제, 그리고 랩 간 민감 정보 공유를 방지하는 안전장치와 함께 제공되어야 한다. 소스 코드나 민감한 인프라에 대한 평가자의 접근에는 구체적인 정당화 사유와 해당 접근의 민감도에 비례하는 보호 조치가 요구되어야 한다. 또한 프론티어 모델에 대한 평가(evaluation) 수행과 관련된 잠재적 사이버 보안 위험을 고려하여, 평가자는 사이버 보안 표준과 모범 사례를 준수하도록 요구되어야 한다.",
    "marks": [
     {
      "t": "프론티어 모델에 대한 평가(evaluation) 수행과 관련된 잠재적 사이버 보안 위험을 고려하여",

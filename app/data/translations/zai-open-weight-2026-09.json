@@ -230,7 +230,7 @@
   {
    "type": "p",
    "en": "The benefits of open-weight release fall into four broad categories. The first is transparency and oversight :  openness can enable external actors to scrutinize and verify properties of frontier  AI  models.  The  second  is facilitating  AI  research, especially  among  AI  safety organizations and academic institutions. The third benefit is wider adoption and innovation through  expanded  and  democratized  access  to  the  model.  The  fourth  category  includes benefit-sharing and diffusion of power :  open  weights  distribute the capacity to develop, evaluate, govern, and benefit from AI beyond a small set of powerful countries and labs.",
-   "ko": "오픈 웨이트 공개의 편익은 크게 네 가지 범주로 나뉜다. 첫째는 투명성과 감독이다. 개방성은 외부 행위자가 프론티어 AI 모델의 특성을 면밀히 조사하고 검증할 수 있게 한다. 둘째는 AI 연구 촉진으로, 특히 AI 안전 조직과 학술 기관에서의 연구를 촉진한다. 셋째는 모델에 대한 접근의 확대 및 민주화를 통한 폭넓은 도입과 혁신이다. 넷째 범주는 편익 공유와 권력 분산이다. 오픈 웨이트는 AI를 개발·평가·거버넌스하고 그로부터 편익을 얻을 수 있는 역량을 소수의 강대국과 연구소를 넘어 분산시킨다.",
+   "ko": "오픈 웨이트 공개의 편익은 크게 네 가지 범주로 나뉜다. 첫째는 투명성과 감독이다. 개방성은 외부 행위자가 프론티어 AI 모델의 특성을 면밀히 조사하고 검증할 수 있게 한다. 둘째는 AI 연구 촉진으로, 특히 AI 안전 조직과 학술 기관에서의 연구를 촉진한다. 셋째는 모델에 대한 접근의 확대 및 민주화를 통한 폭넓은 도입과 혁신이다. 넷째 범주는 편익 공유와 권력 분산이다. 오픈 웨이트는 AI를 개발·평가·거버넌스하고 그로부터 편익을 얻을 수 있는 역량을 소수의 강대국과 랩을 넘어 분산시킨다.",
    "marks": [
     {
      "t": "오픈 웨이트 공개의 편익은 크게 네 가지 범주로 나뉜다",
@@ -245,7 +245,7 @@
      "k": "safety"
     },
     {
-     "t": "소수의 강대국과 연구소를 넘어 분산시킨다",
+     "t": "소수의 강대국과 랩을 넘어 분산시킨다",
      "k": "safety"
     }
    ]
@@ -425,10 +425,10 @@
   {
    "type": "li",
    "en": "Decentralized  governance: open  weight  releases  expand  the  set  of  actors  with meaningful influence over how AI is developed, evaluated, and governed, supporting decentralized  mitigation  strategies  and  oversight  that  reflect  perspectives  beyond those of frontier labs [13].",
-   "ko": "탈중앙화된 거버넌스: 오픈 웨이트 공개는 AI의 개발·평가·거버넌스 방식에 실질적인 영향력을 행사하는 행위자의 범위를 넓혀, 프론티어 연구소의 관점을 넘어서는 다양한 관점을 반영한 탈중앙화된 완화 전략과 감독을 뒷받침한다 [13].",
+   "ko": "탈중앙화된 거버넌스: 오픈 웨이트 공개는 AI의 개발·평가·거버넌스 방식에 실질적인 영향력을 행사하는 행위자의 범위를 넓혀, 프론티어 랩의 관점을 넘어서는 다양한 관점을 반영한 탈중앙화된 완화 전략과 감독을 뒷받침한다 [13].",
    "marks": [
     {
-     "t": "프론티어 연구소의 관점을 넘어서는 다양한 관점을 반영한 탈중앙화된 완화 전략과 감독을 뒷받침한다",
+     "t": "프론티어 랩의 관점을 넘어서는 다양한 관점을 반영한 탈중앙화된 완화 전략과 감독을 뒷받침한다",
      "k": "safety"
     }
    ]

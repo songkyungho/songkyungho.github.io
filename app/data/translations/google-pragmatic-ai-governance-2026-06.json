@@ -85,7 +85,7 @@
   {
    "type": "p",
    "en": "A FARO could progress and promote national and international standards, guiding requirements for how developers should identify and mitigate risks and verifying that companies implement security practices and incident response plans before releasing frontier models publicly, building on efforts like Google DeepMind's Frontier Safety Framework and similar efforts from other leading labs.",
-   "ko": "FARO는 국가 및 국제 표준을 발전시키고 확산할 수 있다. 이를 통해 개발자가 위험을 식별하고 완화하는 방식에 관한 요건을 제시하고, 기업이 프론티어 모델을 공개하기 전에 보안 실행 방안과 사고 대응 계획을 이행하는지 검증할 수 있다. 이는 Google DeepMind의 Frontier Safety Framework 및 다른 선도 연구소의 유사한 노력을 토대로 한다.",
+   "ko": "FARO는 국가 및 국제 표준을 발전시키고 확산할 수 있다. 이를 통해 개발자가 위험을 식별하고 완화하는 방식에 관한 요건을 제시하고, 기업이 프론티어 모델을 공개하기 전에 보안 실행 방안과 사고 대응 계획을 이행하는지 검증할 수 있다. 이는 Google DeepMind의 Frontier Safety Framework 및 다른 선도 랩의 유사한 노력을 토대로 한다.",
    "marks": [
     {
      "t": "FARO는 국가 및 국제 표준을 발전시키고 확산할 수 있다.",
@@ -351,12 +351,12 @@
   {
    "type": "li",
    "en": "How can leading AI labs and broad AI deployers help address the disruptions that often accompany progress?",
-   "ko": "선도 AI 연구소와 광범위한 AI 배포자는 발전에 흔히 수반되는 혼란에 대응하는 데 어떻게 기여할 수 있는가?"
+   "ko": "선도 AI 랩과 광범위한 AI 배포자는 발전에 흔히 수반되는 혼란에 대응하는 데 어떻게 기여할 수 있는가?"
   },
   {
    "type": "p",
    "en": "Just as there isn't a single question about AI, or a single goal policy can achieve, there is no single answer to what AI policy should be. In this paper, we build on the best ideas we have seen to separately address the national security risks of frontier AI and the economic and social impacts of widely deployed AI . These two types of AI pose different risks that demand different solutions and different regulatory regimes. We draw on frontier governance work from Google DeepMind, including lessons from the implementation of Google DeepMind's Frontier Safety Framework. Our thinking is also informed by years of work on the public policy issues addressed here, along with thoughtful approaches proposed by other companies and frontier labs, federal and state legislators, and civil society groups.",
-   "ko": "AI에 관한 질문이 하나가 아니고 정책이 달성할 수 있는 목표가 하나가 아니듯, AI 정책이 어떠해야 하는지에 대한 답도 하나가 아니다. 본 보고서에서 우리는 그간 접한 최선의 아이디어를 토대로 프론티어 AI의 국가안보 위험과 광범위하게 배포된 AI의 경제적·사회적 영향을 별도로 다룬다. 이 두 유형의 AI는 서로 다른 위험을 제기하며, 이에 따라 서로 다른 해법과 서로 다른 규제 체제를 요구한다. 우리는 Google DeepMind의 Frontier Safety Framework 이행에서 얻은 교훈을 포함하여 Google DeepMind의 프론티어 거버넌스 작업을 참고한다. 또한 우리의 구상은 여기서 다루는 공공 정책 문제에 관한 수년간의 작업과 더불어, 다른 기업 및 프론티어 연구소, 연방 및 주 입법자, 시민사회 단체가 제안한 사려 깊은 접근법에서도 영향을 받았다.",
+   "ko": "AI에 관한 질문이 하나가 아니고 정책이 달성할 수 있는 목표가 하나가 아니듯, AI 정책이 어떠해야 하는지에 대한 답도 하나가 아니다. 본 보고서에서 우리는 그간 접한 최선의 아이디어를 토대로 프론티어 AI의 국가안보 위험과 광범위하게 배포된 AI의 경제적·사회적 영향을 별도로 다룬다. 이 두 유형의 AI는 서로 다른 위험을 제기하며, 이에 따라 서로 다른 해법과 서로 다른 규제 체제를 요구한다. 우리는 Google DeepMind의 Frontier Safety Framework 이행에서 얻은 교훈을 포함하여 Google DeepMind의 프론티어 거버넌스 작업을 참고한다. 또한 우리의 구상은 여기서 다루는 공공 정책 문제에 관한 수년간의 작업과 더불어, 다른 기업 및 프론티어 랩, 연방 및 주 입법자, 시민사회 단체가 제안한 사려 깊은 접근법에서도 영향을 받았다.",
    "marks": [
     {
      "t": "프론티어 AI의 국가안보 위험과 광범위하게 배포된 AI의 경제적·사회적 영향을 별도로 다룬다",
@@ -388,10 +388,10 @@
   {
    "type": "p",
    "en": "To protect American innovation and ensure global AI leadership while providing for a safe and secure digital future, leading labs need a unified framework for frontier AI safety, security, incident reporting, and transparency.",
-   "ko": "미국의 혁신을 보호하고 글로벌 AI 주도권을 확보하는 동시에 안전하고 보안이 확보된 디지털 미래를 마련하기 위해, 선도 연구소들에는 프론티어 AI의 안전, 보안, 사고 보고, 투명성에 관한 통합 프레임워크가 필요하다.",
+   "ko": "미국의 혁신을 보호하고 글로벌 AI 주도권을 확보하는 동시에 안전하고 보안이 확보된 디지털 미래를 마련하기 위해, 선도 랩들에는 프론티어 AI의 안전, 보안, 사고 보고, 투명성에 관한 통합 프레임워크가 필요하다.",
    "marks": [
     {
-     "t": "선도 연구소들에는 프론티어 AI의 안전, 보안, 사고 보고, 투명성에 관한 통합 프레임워크가 필요하다.",
+     "t": "선도 랩들에는 프론티어 AI의 안전, 보안, 사고 보고, 투명성에 관한 통합 프레임워크가 필요하다.",
      "k": "key"
     }
    ]
@@ -490,10 +490,10 @@
   {
    "type": "p",
    "en": "There is a middle path that would balance market-driven innovation and independent oversight: a federally overseen frontier AI regulatory organization (FARO) . A FARO could standardize and verify frontier AI labs' safety and security practices prior to launching frontier models on the U.S. market, including by ensuring that companies are publishing and complying with frontier AI frameworks and engaging with annual governance process audits.",
-   "ko": "시장 주도 혁신과 독립적 감독 사이에서 균형을 이룰 수 있는 중간 경로가 있다. 바로 연방정부가 감독하는 프론티어 AI 규제 기구(frontier AI regulatory organization, FARO)이다. FARO는 프론티어 모델이 미국 시장에 출시되기 전에 프론티어 AI 연구소의 안전 및 보안 실행 방안을 표준화하고 검증할 수 있다. 여기에는 기업이 프론티어 AI 프레임워크를 공개하고 준수하는지, 그리고 연례 거버넌스 프로세스 감사에 참여하는지를 확인하는 일이 포함된다.",
+   "ko": "시장 주도 혁신과 독립적 감독 사이에서 균형을 이룰 수 있는 중간 경로가 있다. 바로 연방정부가 감독하는 프론티어 AI 규제 기구(frontier AI regulatory organization, FARO)이다. FARO는 프론티어 모델이 미국 시장에 출시되기 전에 프론티어 AI 랩의 안전 및 보안 실행 방안을 표준화하고 검증할 수 있다. 여기에는 기업이 프론티어 AI 프레임워크를 공개하고 준수하는지, 그리고 연례 거버넌스 프로세스 감사에 참여하는지를 확인하는 일이 포함된다.",
    "marks": [
     {
-     "t": "FARO는 프론티어 모델이 미국 시장에 출시되기 전에 프론티어 AI 연구소의 안전 및 보안 실행 방안을 표준화하고 검증할 수 있다.",
+     "t": "FARO는 프론티어 모델이 미국 시장에 출시되기 전에 프론티어 AI 랩의 안전 및 보안 실행 방안을 표준화하고 검증할 수 있다.",
      "k": "key"
     },
     {
@@ -653,7 +653,7 @@
   {
    "type": "p",
    "en": "Most frontier labs already have such frameworks, and we have supported U.S. state legislation requiring frontier AI frameworks and other safety measures such as transparency and incident reporting.",
-   "ko": "대부분의 프론티어 연구소는 이미 이러한 프레임워크를 갖추고 있으며, 우리는 프론티어 AI 프레임워크와 투명성 및 사고 보고 등 기타 안전 조치를 요구하는 미국 주 차원의 입법을 지지해 왔다.",
+   "ko": "대부분의 프론티어 랩은 이미 이러한 프레임워크를 갖추고 있으며, 우리는 프론티어 AI 프레임워크와 투명성 및 사고 보고 등 기타 안전 조치를 요구하는 미국 주 차원의 입법을 지지해 왔다.",
    "marks": [
     {
      "t": "프론티어 AI 프레임워크와 투명성 및 사고 보고 등 기타 안전 조치를 요구하는 미국 주 차원의 입법을 지지해 왔다",
@@ -664,7 +664,7 @@
   {
    "type": "p",
    "en": "Pending agreed national benchmarks, frontier labs could also contract with independent auditors to perform annual 'procedural' audits to assess whether they have adhered to that framework. And before releasing a materially new frontier model, labs would attest to the FARO that they have adhered to their published framework and applied appropriate standards for testing and risk mitigation. In parallel, frontier labs should notify and provide early access to the U.S. government of models that advance the state of the art in sensitive national security domains, as outlined in the Administration's recent Executive Order on Promoting Advanced Artificial Intelligence Innovation and Security.",
-   "ko": "국가 벤치마크가 합의되기 전까지, 프론티어 연구소는 독립 감사인과 계약하여 해당 프레임워크 준수 여부를 평가하는 연례 '절차적' 감사를 수행할 수도 있다. 또한 실질적으로 새로운 프론티어 모델을 출시하기 전에, 연구소는 공개한 프레임워크를 준수했으며 시험 및 위험 완화에 적절한 표준을 적용했음을 FARO에 증명하게 된다. 이와 병행하여, 행정부가 최근 발표한 첨단 인공지능 혁신 및 보안 촉진에 관한 행정명령(Executive Order on Promoting Advanced Artificial Intelligence Innovation and Security)에 명시된 바와 같이, 프론티어 연구소는 민감한 국가안보 분야에서 최첨단 수준을 진전시키는 모델에 대해 미국 정부에 통지하고 조기 접근 권한을 제공해야 한다.",
+   "ko": "국가 벤치마크가 합의되기 전까지, 프론티어 랩은 독립 감사인과 계약하여 해당 프레임워크 준수 여부를 평가하는 연례 '절차적' 감사를 수행할 수도 있다. 또한 실질적으로 새로운 프론티어 모델을 출시하기 전에, 랩은 공개한 프레임워크를 준수했으며 시험 및 위험 완화에 적절한 표준을 적용했음을 FARO에 증명하게 된다. 이와 병행하여, 행정부가 최근 발표한 첨단 인공지능 혁신 및 보안 촉진에 관한 행정명령(Executive Order on Promoting Advanced Artificial Intelligence Innovation and Security)에 명시된 바와 같이, 프론티어 랩은 민감한 국가안보 분야에서 최첨단 수준을 진전시키는 모델에 대해 미국 정부에 통지하고 조기 접근 권한을 제공해야 한다.",
    "marks": [
     {
      "t": "독립 감사인과 계약하여 해당 프레임워크 준수 여부를 평가하는 연례 '절차적' 감사",
@@ -709,7 +709,7 @@
   {
    "type": "p",
    "en": "In the longer term, as standards bodies make progress and the FARO adopts and validates substantive benchmarks and technical standards, AI labs could be required to submit frontier models to substantive audits performed by independent auditors.",
-   "ko": "장기적으로는 표준 기구의 작업이 진전되고 FARO가 실질적인 벤치마크와 기술 표준을 채택·검증함에 따라, AI 연구소에 프론티어 모델을 독립 감사인이 수행하는 실질적 감사에 제출하도록 요구할 수 있을 것이다.",
+   "ko": "장기적으로는 표준 기구의 작업이 진전되고 FARO가 실질적인 벤치마크와 기술 표준을 채택·검증함에 따라, AI 랩에 프론티어 모델을 독립 감사인이 수행하는 실질적 감사에 제출하도록 요구할 수 있을 것이다.",
    "marks": [
     {
      "t": "프론티어 모델을 독립 감사인이 수행하는 실질적 감사에 제출하도록 요구할 수 있을 것이다",

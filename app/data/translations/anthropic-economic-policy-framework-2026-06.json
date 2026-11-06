@@ -219,10 +219,10 @@
   {
    "type": "p",
    "en": "Measurement. Governments' statistical infrastructure was built for slower-moving economies; it does not yet track AI adoption or its labor-market effects with the speed or granularity this moment requires. We need expanded investment in our statistical agencies, sustained funding for AI-specific survey instruments, and reporting requirements for AI labs and firms-including Anthropic-on deployment patterns and workforce effects.[^6]  Instruments should focus on directly observable metrics like AI usage rates and intensity of use, and worker productivity indicators by level of AI adoption.",
-   "ko": "측정. 정부의 통계 인프라는 더 느리게 움직이는 경제를 위해 구축되었으며, 지금 이 시점이 요구하는 속도나 세분성으로 AI 도입이나 그것이 노동시장에 미치는 영향을 아직 추적하지 못한다. 통계 기관에 대한 투자 확대, AI 특화 조사 도구에 대한 지속적인 자금 지원, 그리고 Anthropic을 포함한 AI 연구소와 기업을 대상으로 배포 패턴과 인력에 미치는 영향에 관한 보고 요건이 필요하다.[^6]  조사 도구는 AI 사용률 및 사용 강도, AI 도입 수준별 근로자 생산성 지표와 같이 직접 관찰 가능한 지표에 초점을 맞추어야 한다.",
+   "ko": "측정. 정부의 통계 인프라는 더 느리게 움직이는 경제를 위해 구축되었으며, 지금 이 시점이 요구하는 속도나 세분성으로 AI 도입이나 그것이 노동시장에 미치는 영향을 아직 추적하지 못한다. 통계 기관에 대한 투자 확대, AI 특화 조사 도구에 대한 지속적인 자금 지원, 그리고 Anthropic을 포함한 AI 랩과 기업을 대상으로 배포 패턴과 인력에 미치는 영향에 관한 보고 요건이 필요하다.[^6]  조사 도구는 AI 사용률 및 사용 강도, AI 도입 수준별 근로자 생산성 지표와 같이 직접 관찰 가능한 지표에 초점을 맞추어야 한다.",
    "marks": [
     {
-     "t": "Anthropic을 포함한 AI 연구소와 기업을 대상으로 배포 패턴과 인력에 미치는 영향에 관한 보고 요건이 필요하다.",
+     "t": "Anthropic을 포함한 AI 랩과 기업을 대상으로 배포 패턴과 인력에 미치는 영향에 관한 보고 요건이 필요하다.",
      "k": "safety"
     }
    ]

@@ -7,7 +7,7 @@
  "source_url": "https://futureoflife.org/open-letter/pause-giant-ai-experiments/",
  "source_note": "공개서한 본문 전문(참고문헌 각주 번호는 뺐다). FAQ·정책 권고 문서는 싣지 않았다",
  "source_label": "원문 보기 (FLI)",
- "summary": "GPT-4가 공개된 지 여드레 만에, GPT-4보다 강력한 AI 시스템의 학습을 최소 6개월 멈추라고 모든 AI 연구소에 요구한 서한이다. 인간보다 수가 많고 똑똑해져 결국 우리를 대체할 비인간 지성을 만들어야 하느냐, 문명의 통제권을 잃을 위험을 감수해야 하느냐고 물었다. 중단 기간에 공유 안전 프로토콜을 만들고 AI 거버넌스 체계를 서두르라고 했다. 머스크·워즈니악·벤지오 등이 서명해 'AI 일시 중지' 논쟁의 출발점이 됐다.",
+ "summary": "GPT-4가 공개된 지 여드레 만에, GPT-4보다 강력한 AI 시스템의 학습을 최소 6개월 멈추라고 모든 AI 랩에 요구한 서한이다. 인간보다 수가 많고 똑똑해져 결국 우리를 대체할 비인간 지성을 만들어야 하느냐, 문명의 통제권을 잃을 위험을 감수해야 하느냐고 물었다. 중단 기간에 공유 안전 프로토콜을 만들고 AI 거버넌스 체계를 서두르라고 했다. 머스크·워즈니악·벤지오 등이 서명해 'AI 일시 중지' 논쟁의 출발점이 됐다.",
  "doc_kind": "공개서한",
  "translated": "2026-11-01",
  "model": "Claude Opus 5.5 (effort medium)",
@@ -26,7 +26,7 @@
   {
    "type": "p",
    "en": "AI systems with human-competitive intelligence can pose profound risks to society and humanity, as shown by extensive research  and acknowledged by top AI labs.  As stated in the widely-endorsed Asilomar AI Principles, Advanced AI could represent a profound change in the history of life on Earth, and should be planned for and managed with commensurate care and resources. Unfortunately, this level of planning and management is not happening, even though recent months have seen AI labs locked in an out-of-control race to develop and deploy ever more powerful digital minds that no one – not even their creators – can understand, predict, or reliably control.",
-   "ko": "인간과 경쟁할 수 있는 지능을 갖춘 AI 시스템은 사회와 인류에 심대한 위험을 초래할 수 있다. 이는 광범위한 연구로 입증되었고 최고 수준의 AI 연구소들도 인정하는 사실이다. 널리 지지받는 Asilomar AI Principles에 명시된 바와 같이, 첨단 AI는 지구 생명의 역사에 심대한 변화를 가져올 수 있으므로 그에 상응하는 주의와 자원을 들여 계획하고 관리해야 한다. 그러나 이러한 수준의 계획과 관리는 이루어지지 않고 있다. 최근 몇 달 동안 AI 연구소들은 그 누구도, 심지어 그것을 만든 이들조차 이해하거나 예측하거나 신뢰성 있게 통제할 수 없는 더욱 강력한 디지털 지성(digital minds)을 개발하고 배포하기 위해 통제 불능의 경쟁에 빠져 있다.",
+   "ko": "인간과 경쟁할 수 있는 지능을 갖춘 AI 시스템은 사회와 인류에 심대한 위험을 초래할 수 있다. 이는 광범위한 연구로 입증되었고 최고 수준의 AI 랩들도 인정하는 사실이다. 널리 지지받는 Asilomar AI Principles에 명시된 바와 같이, 첨단 AI는 지구 생명의 역사에 심대한 변화를 가져올 수 있으므로 그에 상응하는 주의와 자원을 들여 계획하고 관리해야 한다. 그러나 이러한 수준의 계획과 관리는 이루어지지 않고 있다. 최근 몇 달 동안 AI 랩들은 그 누구도, 심지어 그것을 만든 이들조차 이해하거나 예측하거나 신뢰성 있게 통제할 수 없는 더욱 강력한 디지털 지성(digital minds)을 개발하고 배포하기 위해 통제 불능의 경쟁에 빠져 있다.",
    "marks": [
     {
      "t": "인간과 경쟁할 수 있는 지능을 갖춘 AI 시스템은 사회와 인류에 심대한 위험을 초래할 수 있다.",
@@ -68,10 +68,10 @@
   {
    "type": "p",
    "en": "Therefore, we call on all AI labs to immediately pause for at least 6 months the training of AI systems more powerful than GPT-4. This pause should be public and verifiable, and include all key actors. If such a pause cannot be enacted quickly, governments should step in and institute a moratorium.",
-   "ko": "따라서 우리는 모든 AI 연구소에 GPT-4보다 강력한 AI 시스템의 훈련을 즉시 최소 6개월간 중단할 것을 촉구한다. 이 중단은 공개적이고 검증 가능해야 하며, 모든 핵심 행위자를 포함해야 한다. 이러한 중단이 신속히 시행될 수 없다면 정부가 개입하여 모라토리엄을 도입해야 한다.",
+   "ko": "따라서 우리는 모든 AI 랩에 GPT-4보다 강력한 AI 시스템의 훈련을 즉시 최소 6개월간 중단할 것을 촉구한다. 이 중단은 공개적이고 검증 가능해야 하며, 모든 핵심 행위자를 포함해야 한다. 이러한 중단이 신속히 시행될 수 없다면 정부가 개입하여 모라토리엄을 도입해야 한다.",
    "marks": [
     {
-     "t": "모든 AI 연구소에 GPT-4보다 강력한 AI 시스템의 훈련을 즉시 최소 6개월간 중단할 것을 촉구한다.",
+     "t": "모든 AI 랩에 GPT-4보다 강력한 AI 시스템의 훈련을 즉시 최소 6개월간 중단할 것을 촉구한다.",
      "k": "key"
     },
     {
@@ -83,7 +83,7 @@
   {
    "type": "p",
    "en": "AI labs and independent experts should use this pause to jointly develop and implement a set of shared safety protocols for advanced AI design and development that are rigorously audited and overseen by independent outside experts. These protocols should ensure that systems adhering to them are safe beyond a reasonable doubt.  This does not mean a pause on AI development in general, merely a stepping back from the dangerous race to ever-larger unpredictable black-box models with emergent capabilities.",
-   "ko": "AI 연구소와 독립 전문가들은 이 중단 기간 동안 첨단 AI의 설계 및 개발을 위한 공동 안전 프로토콜을 함께 개발하고 시행해야 하며, 이 프로토콜은 외부의 독립 전문가들이 엄격하게 감사하고 감독해야 한다. 이 프로토콜은 이를 준수하는 시스템이 합리적 의심의 여지 없이 안전하도록 보장해야 한다. 이는 AI 개발 전반을 중단하자는 것이 아니며, 창발적 역량(emergent capabilities)을 지닌 예측 불가능한 블랙박스 모델을 점점 더 크게 만들려는 위험한 경쟁에서 한발 물러서자는 것일 뿐이다.",
+   "ko": "AI 랩과 독립 전문가들은 이 중단 기간 동안 첨단 AI의 설계 및 개발을 위한 공동 안전 프로토콜을 함께 개발하고 시행해야 하며, 이 프로토콜은 외부의 독립 전문가들이 엄격하게 감사하고 감독해야 한다. 이 프로토콜은 이를 준수하는 시스템이 합리적 의심의 여지 없이 안전하도록 보장해야 한다. 이는 AI 개발 전반을 중단하자는 것이 아니며, 창발적 역량(emergent capabilities)을 지닌 예측 불가능한 블랙박스 모델을 점점 더 크게 만들려는 위험한 경쟁에서 한발 물러서자는 것일 뿐이다.",
    "marks": [
     {
      "t": "첨단 AI의 설계 및 개발을 위한 공동 안전 프로토콜을 함께 개발하고 시행해야 하며",

@@ -702,7 +702,7 @@
   {
    "type": "p",
    "en": "“The current efforts to make transformer-based AI safe have clear inadequacies, including demonstrations of modern AIs strategically blackmailing people, the persistence of (so-called) hallucinations, and the MechaHitler incident. Frontier labs openly race towards superintelligence, with no credible plan to control/align such an entity. Even those involved in the race largely agree that this poses severe risks to humankind, including extinction risks. They race on because their competitors will do so even if they stop. An international agreement to stop this race is crucial.”",
-   "ko": "\"트랜스포머 기반 AI를 안전하게 만들려는 현재의 노력에는 명백한 결함이 있다. 현대 AI가 전략적으로 사람을 협박하는 사례의 시연, (이른바) 환각의 지속, 그리고 MechaHitler 사건 등이 그 예이다. 프런티어 연구소들은 그러한 존재를 통제하거나 정렬할 신뢰할 만한 계획도 없이 공공연하게 초지능을 향해 경쟁하고 있다. 경쟁에 참여하는 이들조차 이것이 멸종 위험을 포함해 인류에게 심각한 위험을 초래한다는 데 대체로 동의한다. 그럼에도 그들이 경쟁을 계속하는 것은 자신들이 멈추더라도 경쟁자들은 계속할 것이기 때문이다. 이 경쟁을 멈추기 위한 국제적 합의가 매우 중요하다.\"",
+   "ko": "\"트랜스포머 기반 AI를 안전하게 만들려는 현재의 노력에는 명백한 결함이 있다. 현대 AI가 전략적으로 사람을 협박하는 사례의 시연, (이른바) 환각의 지속, 그리고 MechaHitler 사건 등이 그 예이다. 프론티어 랩들은 그러한 존재를 통제하거나 정렬할 신뢰할 만한 계획도 없이 공공연하게 초지능을 향해 경쟁하고 있다. 경쟁에 참여하는 이들조차 이것이 멸종 위험을 포함해 인류에게 심각한 위험을 초래한다는 데 대체로 동의한다. 그럼에도 그들이 경쟁을 계속하는 것은 자신들이 멈추더라도 경쟁자들은 계속할 것이기 때문이다. 이 경쟁을 멈추기 위한 국제적 합의가 매우 중요하다.\"",
    "marks": [
     {
      "t": "트랜스포머 기반 AI를 안전하게 만들려는 현재의 노력에는 명백한 결함이 있다.",
@@ -713,7 +713,7 @@
      "k": "safety"
     },
     {
-     "t": "프런티어 연구소들은 그러한 존재를 통제하거나 정렬할 신뢰할 만한 계획도 없이 공공연하게 초지능을 향해 경쟁하고 있다.",
+     "t": "프론티어 랩들은 그러한 존재를 통제하거나 정렬할 신뢰할 만한 계획도 없이 공공연하게 초지능을 향해 경쟁하고 있다.",
      "k": "key"
     },
     {

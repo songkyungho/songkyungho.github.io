@@ -56,14 +56,14 @@
   {
    "type": "p",
    "en": "As  AI  becomes  increasingly  important,  democratic  governments-not  private  companies  acting alone-must ultimately determine the rules, safeguards, and accountability mechanisms. Our view is  that  decisions  about  the  pace  of  AI  innovation  should  not  be  left  to  any  one  lab,  company, or special  interest  group.  Instead,  these  choices  should  be made through democratic processes and informed  by  a  robust  understanding  of  frontier  capabilities,  risk  mitigation  measures,  societal resilience, and geopolitical considerations.",
-   "ko": "AI의 중요성이 점점 커짐에 따라, 규칙, 안전장치, 책임성 메커니즘을 궁극적으로 결정해야 하는 주체는 단독으로 행동하는 민간 기업이 아니라 민주적 정부다. 우리는 AI 혁신의 속도에 관한 결정을 어느 한 연구소, 기업 또는 특수 이익 집단에 맡겨서는 안 된다고 본다. 그 대신, 이러한 선택은 민주적 절차를 통해 이루어져야 하며, 프론티어 역량, 위험 완화 조치, 사회적 회복력, 지정학적 고려 사항에 대한 탄탄한 이해에 기반해야 한다.",
+   "ko": "AI의 중요성이 점점 커짐에 따라, 규칙, 안전장치, 책임성 메커니즘을 궁극적으로 결정해야 하는 주체는 단독으로 행동하는 민간 기업이 아니라 민주적 정부다. 우리는 AI 혁신의 속도에 관한 결정을 어느 한 랩, 기업 또는 특수 이익 집단에 맡겨서는 안 된다고 본다. 그 대신, 이러한 선택은 민주적 절차를 통해 이루어져야 하며, 프론티어 역량, 위험 완화 조치, 사회적 회복력, 지정학적 고려 사항에 대한 탄탄한 이해에 기반해야 한다.",
    "marks": [
     {
      "t": "규칙, 안전장치, 책임성 메커니즘을 궁극적으로 결정해야 하는 주체는 단독으로 행동하는 민간 기업이 아니라 민주적 정부다",
      "k": "key"
     },
     {
-     "t": "AI 혁신의 속도에 관한 결정을 어느 한 연구소, 기업 또는 특수 이익 집단에 맡겨서는 안 된다",
+     "t": "AI 혁신의 속도에 관한 결정을 어느 한 랩, 기업 또는 특수 이익 집단에 맡겨서는 안 된다",
      "k": "safety"
     }
    ]

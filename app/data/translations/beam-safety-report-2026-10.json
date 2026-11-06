@@ -3362,7 +3362,7 @@
   {
    "type": "p",
    "en": "Beam is participating in Gray Swan’s three-week, large-prize public bug bounty on indirect prompt injection (IPI) against production agent harnesses. Reflection is co-sponsoring with other frontier labs to support the safety ecosystem and promote improvements to future models and safeguards. This is the largest and most realistic AI red-teaming challenge to date.",
-   "ko": "Beam은 실제 운영 환경의 에이전트 하네스를 대상으로 한 간접 프롬프트 인젝션(IPI)에 관한 Gray Swan의 3주간 대규모 상금 공개 버그바운티에 참여하고 있다. Reflection은 안전 생태계를 지원하고 향후 모델 및 안전장치의 개선을 촉진하기 위해 다른 프론티어 연구소들과 함께 공동 후원하고 있다. 이는 현재까지 가장 큰 규모이자 가장 현실적인 AI 레드티밍 챌린지이다.",
+   "ko": "Beam은 실제 운영 환경의 에이전트 하네스를 대상으로 한 간접 프롬프트 인젝션(IPI)에 관한 Gray Swan의 3주간 대규모 상금 공개 버그바운티에 참여하고 있다. Reflection은 안전 생태계를 지원하고 향후 모델 및 안전장치의 개선을 촉진하기 위해 다른 프론티어 랩들과 함께 공동 후원하고 있다. 이는 현재까지 가장 큰 규모이자 가장 현실적인 AI 레드티밍 챌린지이다.",
    "marks": [
     {
      "t": "간접 프롬프트 인젝션(IPI)에 관한 Gray Swan의 3주간 대규모 상금 공개 버그바운티에 참여하고 있다",
