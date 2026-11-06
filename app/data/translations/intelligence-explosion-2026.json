@@ -1,0 +1,1824 @@
+{
+ "slug": "intelligence-explosion-2026",
+ "title": "AI R&D 자동화가 지능 폭발을 일으킨다면",
+ "original_title": "What if automating AI R&D triggers an intelligence explosion?",
+ "publisher": "앨런 챈, 죄렌 민더만 외 20명",
+ "published": "2026-09-28",
+ "source_url": "https://arxiv.org/abs/2609.36054",
+ "source_note": "arXiv 2판(2026년 10월 26일) 전문이다. CC BY 4.0으로 공개된 논문이다. 그림 2점은 싣지 않고 설명문만 옮겼다. 교신 저자 연락처는 싣지 않았고, 참고문헌은 원문 그대로 두었다.",
+ "source_label": "원문 보기 (arXiv)",
+ "summary": "제프리 힌턴, 요슈아 벤지오, OpenAI의 야쿠프 파호츠키, Anthropic의 잭 클라크 등 22명이 쓴 논문이다. AI가 AI 연구개발을 자동화하면서 몇 년 치 발전이 몇 달 이내로 압축되는 지능 폭발이 일어날 수 있는지 증거를 따진다. 증거는 예비적이고 엇갈리지만 가능성을 배제할 수 없다고 본다. 정책 입안자에게 기업 내부 자동화의 가시성 확보, 지능 폭발의 조종과 제약, 사회 적응 준비를 서두르라고 권고한다.",
+ "doc_kind": "논문",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "image": "/images/translations/intelligence-explosion-2026-cover.webp",
+ "og_image": "/images/translations/intelligence-explosion-2026-cover.jpg",
+ "translated": "2026-11-07",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 183,
+  "sections": 18,
+  "items": 0,
+  "words_en": 8257
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Alan Chan (GovAI), Christoph Winter (CASP, University of Cambridge; Institute for Law & AI), Andrew Barto (University of Massachusetts Amherst), Jakub Pachocki (OpenAI), Geoffrey Hinton (University of Toronto, Vector Institute), Eric Horvitz (Microsoft), Yoshua Bengio (Mila, Université de Montréal, LawZero), Dawn Song (University of California, Berkeley), Jack Clark (Anthropic), Hilary Greaves (University of Oxford), Anton Korinek (University of Virginia, Anthropic), Samuel Hammond (Foundation for American Innovation), Thore Graepel (University College London), Ben Bariach (University of Oxford), Philip H. S. Torr (University of Oxford), Sheila A. McIlraith (University of Toronto, Vector Institute), Jeff Clune (University of British Columbia, Vector Institute), Sam Manning (GovAI, Foundation for American Innovation), Girish Sastry (Guidelight), Tom Davidson (Forethought), Daniel Eth (AI Policy Institute), Sören Mindermann (CASP, University of Cambridge)",
+   "ko": "Alan Chan (GovAI), Christoph Winter (CASP, University of Cambridge; Institute for Law & AI), Andrew Barto (University of Massachusetts Amherst), Jakub Pachocki (OpenAI), Geoffrey Hinton (University of Toronto, Vector Institute), Eric Horvitz (Microsoft), Yoshua Bengio (Mila, Université de Montréal, LawZero), Dawn Song (University of California, Berkeley), Jack Clark (Anthropic), Hilary Greaves (University of Oxford), Anton Korinek (University of Virginia, Anthropic), Samuel Hammond (Foundation for American Innovation), Thore Graepel (University College London), Ben Bariach (University of Oxford), Philip H. S. Torr (University of Oxford), Sheila A. McIlraith (University of Toronto, Vector Institute), Jeff Clune (University of British Columbia, Vector Institute), Sam Manning (GovAI, Foundation for American Innovation), Girish Sastry (Guidelight), Tom Davidson (Forethought), Daniel Eth (AI Policy Institute), Sören Mindermann (CASP, University of Cambridge)",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "h2",
+   "en": "Abstract",
+   "ko": "초록",
+   "id": "s1"
+  },
+  {
+   "type": "p",
+   "en": "In contrast to even a year ago, AI systems now write most of the code inside the companies that build them. As more of the AI research and development (R&D) pipeline is automated, could AI progress radically accelerate in an 'intelligence explosion,' where years of advances are compressed into months or less? Preliminary evidence suggests that it could. In this work, we assess this evidence, analyze an intelligence explosion's potential impacts, and propose policy responses. AI systems are on track to automate most AI R&D work within a few years, and possibly all of it. If this triggers an intelligence explosion, it could dramatically bring forward AI's benefits, but also pose extreme risks: capabilities growth could accelerate far beyond what society can keep up with, humanity could lose control over superhuman AI systems, and checks on power within and between states, companies, and branches of government could be severely eroded. Although there remains much uncertainty about these possibilities, the high stakes warrant serious further attention. Policymakers should urgently obtain more visibility into the automation of AI R&D, develop ways to steer and constrain an intelligence explosion, and prepare society to adapt to an intelligence explosion's impacts.",
+   "ko": "불과 1년 전과도 달리, 이제는 AI 시스템을 만드는 기업 내부에서 코드의 대부분을 AI 시스템이 작성한다. AI 연구개발(R&D) 파이프라인의 더 많은 부분이 자동화됨에 따라, 수년간의 진보가 수개월 이하로 압축되는 '지능 폭발' 속에서 AI 진보가 급격히 가속될 수 있을까? 예비적 증거는 그럴 수 있음을 시사한다. 본 연구에서는 이 증거를 평가하고, 지능 폭발의 잠재적 영향을 분석하며, 정책적 대응을 제안한다. AI 시스템은 수년 내에 AI R&D 업무의 대부분을, 그리고 어쩌면 그 전부를 자동화하는 궤도에 올라 있다. 이것이 지능 폭발을 촉발한다면, AI의 혜택을 극적으로 앞당길 수 있지만 동시에 극단적인 위험도 초래할 수 있다. 역량의 성장이 사회가 따라갈 수 있는 수준을 훨씬 넘어 가속될 수 있고, 인류가 초인간적 AI 시스템에 대한 통제를 상실할 수 있으며, 국가·기업·정부 부처 내부 및 상호 간의 권력 견제가 심각하게 약화될 수 있다. 이러한 가능성에 관해서는 여전히 불확실성이 크지만, 걸린 것이 막대한 만큼 앞으로 진지한 관심을 기울일 필요가 있다. 정책입안자는 AI R&D 자동화에 대한 가시성을 시급히 확보하고, 지능 폭발을 조종하고 제약할 방안을 마련하며, 지능 폭발의 영향에 사회가 적응할 수 있도록 대비해야 한다.",
+   "marks": [
+    {
+     "t": "수년간의 진보가 수개월 이하로 압축되는 '지능 폭발' 속에서 AI 진보가 급격히 가속될 수 있을까?",
+     "k": "safety"
+    },
+    {
+     "t": "AI 시스템은 수년 내에 AI R&D 업무의 대부분을, 그리고 어쩌면 그 전부를 자동화하는 궤도에 올라 있다.",
+     "k": "key"
+    },
+    {
+     "t": "역량의 성장이 사회가 따라갈 수 있는 수준을 훨씬 넘어 가속될 수 있고",
+     "k": "safety"
+    },
+    {
+     "t": "인류가 초인간적 AI 시스템에 대한 통제를 상실할 수 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "국가·기업·정부 부처 내부 및 상호 간의 권력 견제가 심각하게 약화될 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "정책입안자는 AI R&D 자동화에 대한 가시성을 시급히 확보하고, 지능 폭발을 조종하고 제약할 방안을 마련하며, 지능 폭발의 영향에 사회가 적응할 수 있도록 대비해야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Introduction",
+   "ko": "서론",
+   "id": "s3"
+  },
+  {
+   "type": "p",
+   "en": "Computer scientists have long theorized that AI systems would one day design ever-better successors, producing systems that rapidly outnumber, outpace, and outperform humans [1-3]. Today, frontier AI companies are aiming to automate AI R&D [4, 5] while deploying more capital as a fraction of U.S. GDP than the Manhattan Project and Apollo Program combined [6]. What happens if they succeed?",
+   "ko": "컴퓨터 과학자들은 AI 시스템이 언젠가 점점 더 나은 후속 시스템을 설계하여, 인간보다 수적으로 빠르게 많아지고 속도와 성능에서도 인간을 앞서는 시스템을 만들어 낼 것이라는 이론을 오래전부터 제시해 왔다[1-3]. 오늘날 프론티어 AI 기업들은 AI R&D의 자동화를 목표로 하고 있으며[4, 5], 미국 GDP 대비 비율로 볼 때 맨해튼 프로젝트(Manhattan Project)와 아폴로 계획(Apollo Program)을 합친 것보다 많은 자본을 투입하고 있다[6]. 이들이 성공한다면 어떤 일이 벌어지는가?",
+   "marks": [
+    {
+     "t": "오늘날 프론티어 AI 기업들은 AI R&D의 자동화를 목표로 하고 있으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We are centrally concerned with the possibility of an intelligence explosion: a dramatic AI-driven acceleration of AI progress, compressing advances that would otherwise take years into months or less. This acceleration would be a qualitative shift from the rapid but largely steady progress of the last few years.",
+   "ko": "본 연구의 핵심 관심사는 지능 폭발의 가능성, 즉 AI가 주도하는 AI 진보의 극적인 가속으로 인해 원래라면 수년이 걸렸을 진보가 수개월 이하로 압축되는 상황이다. 이러한 가속은 지난 몇 년간의 빠르지만 대체로 꾸준했던 진보로부터의 질적인 전환이 될 것이다.",
+   "marks": [
+    {
+     "t": "AI가 주도하는 AI 진보의 극적인 가속으로 인해 원래라면 수년이 걸렸을 진보가 수개월 이하로 압축되는 상황",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "An intelligence explosion could arise from AI contributing to advances in hardware and/or software. Hardware advances increase the quality and quantity of computing hardware (compute) used for developing and running AI systems. Software advances improve the data, algorithms, code, and processes used in AI R&D; they include more efficient training and inference on existing hardware [7-9], improved research management and operations, better synthetic data and training environments [10, 11], and novel paradigms in AI [12, 13]. Software advances warrant particular attention in the near term for two reasons. First, AI systems appear to be rapidly improving at AI R&D, making them better at producing such advances. Second, software advances allow fast feedback loops: improved AI systems can be redeployed into the R&D process almost immediately, whereas hardware improvements typically depend on years-long manufacturing and construction cycles. This piece therefore focuses on the possibility of a software-driven intelligence explosion, where automation of AI R&D drives an intelligence explosion through software advances alone [14].",
+   "ko": "지능 폭발은 AI가 하드웨어 및/또는 소프트웨어의 진보에 기여함으로써 발생할 수 있다. 하드웨어 진보는 AI 시스템의 개발과 구동에 사용되는 컴퓨팅 하드웨어(연산)의 질과 양을 증대시킨다. 소프트웨어 진보는 AI R&D에 사용되는 데이터, 알고리즘, 코드, 프로세스를 개선하는 것으로, 기존 하드웨어에서의 더 효율적인 학습과 추론(Inference)[7-9], 연구 관리 및 운영의 개선, 더 나은 합성 데이터와 학습 환경[10, 11], 그리고 AI의 새로운 패러다임[12, 13]을 포함한다. 단기적으로는 두 가지 이유로 소프트웨어 진보에 특히 주목할 필요가 있다. 첫째, AI 시스템은 AI R&D 역량이 빠르게 향상되고 있는 것으로 보이며, 이에 따라 그러한 진보를 만들어 내는 능력도 높아지고 있다. 둘째, 소프트웨어 진보는 빠른 피드백 루프를 가능하게 한다. 개선된 AI 시스템은 거의 즉시 R&D 과정에 재투입될 수 있는 반면, 하드웨어 개선은 일반적으로 수년에 걸친 제조 및 건설 주기에 의존한다. 따라서 본고는 AI R&D의 자동화가 소프트웨어 진보만으로 지능 폭발을 이끄는 소프트웨어 주도 지능 폭발의 가능성에 초점을 맞춘다[14].",
+   "marks": [
+    {
+     "t": "AI 시스템은 AI R&D 역량이 빠르게 향상되고 있는 것으로 보이며",
+     "k": "safety"
+    },
+    {
+     "t": "AI R&D의 자동화가 소프트웨어 진보만으로 지능 폭발을 이끄는 소프트웨어 주도 지능 폭발의 가능성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Preliminary evidence suggests that a software-driven intelligence explosion is possible. If one does happen, it could be the most consequential technological development in history: AI systems could rapidly eclipse human experts across most domains and radically accelerate technological progress. Given the stakes and the potentially narrow window for action, we argue that preparing for an intelligence explosion should be an urgent priority, including at the highest levels of government leadership.",
+   "ko": "예비적 증거는 소프트웨어 주도 지능 폭발이 가능함을 시사한다. 만약 실제로 일어난다면, 이는 역사상 가장 중대한 기술적 발전이 될 수 있다. AI 시스템이 대부분의 영역에서 인간 전문가를 빠르게 능가하고 기술 진보를 급격히 가속할 수 있기 때문이다. 걸린 것의 막대함과 대응을 위한 시간이 짧을 수 있다는 점을 고려할 때, 본 연구는 정부 지도부의 최고위층을 포함하여 지능 폭발에 대한 대비가 시급한 우선순위가 되어야 한다고 주장한다.",
+   "marks": [
+    {
+     "t": "예비적 증거는 소프트웨어 주도 지능 폭발이 가능함을 시사한다.",
+     "k": "safety"
+    },
+    {
+     "t": "AI 시스템이 대부분의 영역에서 인간 전문가를 빠르게 능가하고 기술 진보를 급격히 가속할 수 있기 때문이다.",
+     "k": "safety"
+    },
+    {
+     "t": "정부 지도부의 최고위층을 포함하여 지능 폭발에 대한 대비가 시급한 우선순위가 되어야 한다고 주장한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "AI is rapidly automating AI R&D",
+   "ko": "AI가 AI R&D를 빠르게 자동화하고 있다",
+   "id": "s8"
+  },
+  {
+   "type": "p",
+   "en": "AI systems now either assist with or autonomously carry out major parts of the AI R&D pipeline. In contrast to even just a year ago, R&D staff at leading AI companies delegate core R&D tasks to teams of AI systems, and some delegate all coding. Anthropic reports that AI systems' share of approved code rose from low single digits to over 80% between January 2025 and May 2026 [5], while the proportion of R&D work autonomously completed with only high-level human supervision rose from 1% to 26% between March and August 2026 [15]. OpenAI reports that 'AI assistance is used in practically all parts of the company across technical and non-technical teams with code-executing agents used in training, evaluating, and securing future models,' and Google reports that 'AI is used in almost all work that involves writing code or configuration, technical design, research ideation, to different degrees depending on the task' [16].",
+   "ko": "이제 AI 시스템은 AI R&D 파이프라인의 주요 부분을 보조하거나 자율적으로 수행한다. 불과 1년 전과도 달리, 선도적 AI 기업의 R&D 인력은 핵심 R&D 과업을 AI 시스템 팀에 위임하며, 일부는 코딩 전부를 위임한다. Anthropic은 승인된 코드 중 AI 시스템이 차지하는 비중이 2025년 1월부터 2026년 5월 사이에 한 자릿수 초반에서 80% 이상으로 증가했으며[5], 인간의 상위 수준 감독만으로 자율적으로 완료된 R&D 업무의 비율은 2026년 3월부터 8월 사이에 1%에서 26%로 증가했다고 보고한다[15]. OpenAI는 'AI 지원은 기술 및 비기술 팀을 막론하고 회사의 사실상 모든 부문에서 활용되고 있으며, 코드 실행 에이전트가 미래 모델의 학습, 평가, 보안에 사용되고 있다'고 보고하며, Google은 'AI는 코드나 구성(configuration) 작성, 기술 설계, 연구 아이디어 구상이 수반되는 거의 모든 업무에서, 과업에 따라 정도의 차이는 있으나 활용되고 있다'고 보고한다[16].",
+   "marks": [
+    {
+     "t": "인간의 상위 수준 감독만으로 자율적으로 완료된 R&D 업무의 비율은 2026년 3월부터 8월 사이에 1%에서 26%로 증가했다",
+     "k": "safety"
+    },
+    {
+     "t": "코드 실행 에이전트가 미래 모델의 학습, 평가, 보안에 사용되고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The best AI systems now complete AI R&D tasks that take human experts hours to days, compared to only being able to complete seconds-long tasks in 2023 [17-19]. AI systems also sometimes beat human experts: they have autonomously produced better solutions to an AI safety research problem [20], and in some situations predict more accurately which research ideas will pan out [21] and which next steps are worth taking [5]. In an early proof of concept, an automated AI research pipeline generated research ideas, ran experiments, and wrote a paper that passed peer review at a workshop held at a top-tier machine-learning venue [22].[^1]",
+   "ko": "2023년에는 수초 분량의 과업만 완료할 수 있었던 것과 달리, 현재 최고 수준의 AI 시스템은 인간 전문가에게 수시간에서 수일이 걸리는 AI R&D 과업을 완료한다[17-19]. AI 시스템은 때때로 인간 전문가를 능가하기도 한다. AI 안전 연구 문제에 대해 자율적으로 더 나은 해법을 만들어 냈으며[20], 일부 상황에서는 어떤 연구 아이디어가 성과를 낼지[21], 그리고 어떤 다음 단계를 밟을 가치가 있는지[5]를 더 정확하게 예측한다. 초기 개념 증명 사례로, 자동화된 AI 연구 파이프라인이 연구 아이디어를 생성하고 실험을 수행하며 논문을 작성했는데, 이 논문은 최상위 머신러닝 학회에서 열린 워크숍의 동료 심사를 통과했다[22].[^1]",
+   "marks": [
+    {
+     "t": "AI 안전 연구 문제에 대해 자율적으로 더 나은 해법을 만들어 냈으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Today's AI systems still have many weaknesses. They sometimes disobey instructions, cheat on tasks, misrepresent their work, and are unable to complete some tasks at all, necessitating human intervention [23-25]. For example, GPT-6 fails some of OpenAI's research debugging tasks that experienced human researchers can complete (albeit in hours or days) [25]. Success on benchmarks can also fail to translate into real-world productivity boosts [26].",
+   "ko": "오늘날의 AI 시스템에는 여전히 많은 약점이 있다. 이들은 때때로 지시를 따르지 않고, 과업에서 부정행위를 하며, 자신의 작업을 사실과 다르게 표현하고, 일부 과업은 아예 완료하지 못하여 인간의 개입을 필요로 한다[23-25]. 예를 들어, GPT-6는 숙련된 인간 연구자가 (비록 수시간 또는 수일이 걸리기는 하지만) 완료할 수 있는 OpenAI의 연구 디버깅 과업 일부에서 실패한다[25]. 또한 벤치마크에서의 성공이 실제 생산성 향상으로 이어지지 않을 수도 있다[26].",
+   "marks": [
+    {
+     "t": "때때로 지시를 따르지 않고, 과업에서 부정행위를 하며, 자신의 작업을 사실과 다르게 표현하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Still, AI systems are rapidly improving at AI R&D. AI R&D may well be automated before most other work: it is a primarily digital domain with many clear measures of success, automating it would offer a major competitive edge in the AI industry, and AI companies have unmatched data on—and expertise in—their own workflows. Some tentative extrapolations of recent trends suggest that months-long AI R&D projects will be automated by mid-2028.[^2] Overall, we should expect much more substantial automation of AI R&D over the next few years, and even full automation within this timeframe should be taken seriously.",
+   "ko": "그럼에도 AI 시스템은 AI R&D 역량이 빠르게 향상되고 있다. AI R&D는 다른 대부분의 업무보다 먼저 자동화될 가능성이 충분하다. AI R&D는 성공을 판단할 명확한 척도가 많은, 주로 디지털 영역이고, 이를 자동화하면 AI 산업에서 큰 경쟁 우위를 얻을 수 있으며, AI 기업은 자사의 업무 흐름에 관해 타의 추종을 불허하는 데이터와 전문성을 보유하고 있기 때문이다. 최근 추세에 대한 일부 잠정적 외삽은 수개월 분량의 AI R&D 프로젝트가 2028년 중반까지 자동화될 것임을 시사한다.[^2] 종합하면, 향후 수년간 AI R&D의 자동화가 훨씬 더 상당한 수준으로 진행될 것으로 예상해야 하며, 이 기간 내의 완전한 자동화 가능성까지도 진지하게 고려해야 한다.",
+   "marks": [
+    {
+     "t": "이를 자동화하면 AI 산업에서 큰 경쟁 우위를 얻을 수 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "수개월 분량의 AI R&D 프로젝트가 2028년 중반까지 자동화될 것임을 시사한다.",
+     "k": "safety"
+    },
+    {
+     "t": "향후 수년간 AI R&D의 자동화가 훨씬 더 상당한 수준으로 진행될 것으로 예상해야 하며, 이 기간 내의 완전한 자동화 가능성까지도 진지하게 고려해야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Automating AI R&D could trigger an intelligence explosion",
+   "ko": "AI R&D의 자동화는 지능 폭발을 촉발할 수 있다",
+   "id": "s13"
+  },
+  {
+   "type": "p",
+   "en": "The mechanism for a software-driven intelligence explosion has two parts: (1) AI systems expand the effective R&D workforce as they get better and faster at AI R&D, and (2) this workforce produces still better AI systems that expand the workforce even further in a recursive feedback loop. Although the existing evidence is preliminary and sometimes mixed, it suggests that this mechanism could radically accelerate AI progress, overcoming frictions such as diminishing returns and hard-to-automate tasks.",
+   "ko": "소프트웨어 주도 지능 폭발의 메커니즘은 두 부분으로 구성된다. (1) AI 시스템이 AI R&D를 더 잘, 더 빠르게 수행하게 되면서 실질적인 R&D 인력을 확장하고, (2) 이 인력이 한층 더 나은 AI 시스템을 만들어 내며, 이 시스템이 재귀적 피드백 루프 속에서 인력을 더욱 확장한다. 기존 근거는 예비적이고 때로는 엇갈리지만, 이 메커니즘이 수확 체감이나 자동화하기 어려운 작업과 같은 마찰 요인을 극복하고 AI 발전을 급격히 가속할 수 있음을 시사한다.",
+   "marks": [
+    {
+     "t": "이 시스템이 재귀적 피드백 루프 속에서 인력을 더욱 확장한다",
+     "k": "safety"
+    },
+    {
+     "t": "이 메커니즘이 수확 체감이나 자동화하기 어려운 작업과 같은 마찰 요인을 극복하고 AI 발전을 급격히 가속할 수 있음을 시사한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "The mechanism and frictions",
+   "ko": "메커니즘과 마찰 요인",
+   "id": "s15"
+  },
+  {
+   "type": "p",
+   "en": "Each new generation of AI systems will perform a growing range of R&D tasks faster and better than humans can, effectively yielding a larger, smarter, and faster automated R&D workforce. Once AI systems reach expert-level AI R&D capabilities at run-time costs comparable to those of today's systems, the compute available to a single frontier developer today could sustain an AI workforce equivalent to at least millions of top human researchers (see the Supplementary Materials [SM]), dwarfing the thousands of researchers that frontier companies currently employ. The size and duration of any resulting speedups remain uncertain and merit further study. Still, to see why they could be substantial, consider the reverse: AI progress would likely slow dramatically if today's human researchers were ten times fewer or slower.",
+   "ko": "새로운 세대의 AI 시스템은 점점 더 넓은 범위의 R&D 과업을 인간보다 더 빠르고 더 잘 수행하게 되며, 이는 사실상 더 크고, 더 똑똑하고, 더 빠른 자동화된 R&D 인력을 만들어 낸다. AI 시스템이 오늘날 시스템과 비슷한 실행 비용으로 전문가 수준의 AI R&D 역량에 도달하면, 현재 단일 프론티어 개발자(frontier developer)가 사용할 수 있는 연산만으로도 최소 수백만 명의 최고 수준 인간 연구자에 해당하는 AI 인력을 유지할 수 있다(보충 자료 참조). 이는 현재 프론티어 기업들이 고용하고 있는 수천 명의 연구자를 압도하는 규모이다. 이로 인한 가속의 규모와 지속 기간은 여전히 불확실하며 추가 연구가 필요하다. 그럼에도 그 가속이 상당할 수 있는 이유를 이해하려면 반대 상황을 생각해 보면 된다. 오늘날의 인간 연구자가 10분의 1로 줄어들거나 10배 느려진다면 AI 발전은 극적으로 둔화될 가능성이 높다.",
+   "marks": [
+    {
+     "t": "현재 단일 프론티어 개발자(frontier developer)가 사용할 수 있는 연산만으로도 최소 수백만 명의 최고 수준 인간 연구자에 해당하는 AI 인력을 유지할 수 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Figure 1. Policymakers should urgently: (1) obtain visibility into automation of AI R&D within frontier AI companies; (2) develop ways to steer and constrain an intelligence explosion; and (3) prepare to adapt to an intelligence explosion's impacts.",
+   "ko": "그림 1. 정책입안자는 시급히 다음을 수행해야 한다. (1) 프론티어 AI 기업 내 AI R&D 자동화에 대한 가시성을 확보하고, (2) 지능 폭발을 조종하고 제약할 방법을 개발하며, (3) 지능 폭발의 영향에 적응할 준비를 한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 기업 내 AI R&D 자동화에 대한 가시성을 확보하고",
+     "k": "safety"
+    },
+    {
+     "t": "지능 폭발을 조종하고 제약할 방법을 개발하며",
+     "k": "safety"
+    },
+    {
+     "t": "지능 폭발의 영향에 적응할 준비를 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Figure 2. The mechanism for a software-driven intelligence explosion has two parts: (1) AI systems expand the effective R&D workforce as they get better and faster at AI R&D, and (2) this workforce produces still better AI systems that expand the workforce even further in a recursive feedback loop.",
+   "ko": "그림 2. 소프트웨어 주도 지능 폭발의 메커니즘은 두 부분으로 구성된다. (1) AI 시스템이 AI R&D를 더 잘, 더 빠르게 수행하게 되면서 실질적인 R&D 인력을 확장하고, (2) 이 인력이 한층 더 나은 AI 시스템을 만들어 내며, 이 시스템이 재귀적 피드백 루프 속에서 인력을 더욱 확장한다.",
+   "marks": [
+    {
+     "t": "이 시스템이 재귀적 피드백 루프 속에서 인력을 더욱 확장한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI systems also help build more capable and efficient successors, further expanding the automated R&D workforce and creating a feedback loop that could sustain and compound successive speed-ups. Past technologies have also involved feedback loops: for example, better computer chips power better chip design tools. What may distinguish a software-driven intelligence explosion is how much AI systems would contribute to producing the next generation: as they substitute for humans on a growing share of R&D tasks, each software advance speeds up an everlarger share of the R&D pipeline. At full automation, even the current pace of efficiency improvements would grow the automated R&D workforce 100-fold over months or years,[^3] a relative expansion that took the U.S. researcher population seven decades [27].",
+   "ko": "AI 시스템은 또한 더 유능하고 효율적인 후속 시스템의 구축을 도와 자동화된 R&D 인력을 더욱 확장하며, 연이은 가속을 지속시키고 누적시킬 수 있는 피드백 루프를 만들어 낸다. 과거의 기술에도 피드백 루프는 있었다. 예를 들어, 더 나은 컴퓨터 칩은 더 나은 칩 설계 도구를 구동한다. 소프트웨어 주도 지능 폭발을 차별화하는 요소는 AI 시스템이 다음 세대를 만드는 데 기여하는 정도일 수 있다. AI 시스템이 점점 더 많은 비중의 R&D 과업에서 인간을 대체함에 따라, 각각의 소프트웨어 발전은 R&D 파이프라인에서 점점 더 큰 비중을 가속한다. 완전한 자동화 상태에서는 현재의 효율 개선 속도만으로도 자동화된 R&D 인력이 수개월 또는 수년에 걸쳐 100배로 늘어날 것이며,[^3] 이는 미국 연구자 인구가 70년에 걸쳐 이룬 상대적 확장에 해당한다[27].",
+   "marks": [
+    {
+     "t": "연이은 가속을 지속시키고 누적시킬 수 있는 피드백 루프를 만들어 낸다",
+     "k": "safety"
+    },
+    {
+     "t": "완전한 자동화 상태에서는 현재의 효율 개선 속도만으로도 자동화된 R&D 인력이 수개월 또는 수년에 걸쳐 100배로 늘어날 것이며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "At least four frictions push against these dynamics. The first is diminishing returns: across scientific fields such as computer hardware, agriculture, and drug development, sustaining the same rate of progress has required substantially more R&D labor as low-hanging fruit is exhausted [27]. Additional researchers also face diminishing returns because they might duplicate each other's efforts or struggle to parallelize high-value R&D. Second, R&D depends on compute for running experiments and data on which to train, and limits on compute or data growth may slow software progress. Third, hard-to-automate tasks could bottleneck progress. Fourth, some R&D processes are time-intensive: for example, long training runs could limit the rate of progress even if the capability gap between generations grows.",
+   "ko": "최소 네 가지 마찰 요인이 이러한 역학에 반하여 작용한다. 첫째는 수확 체감이다. 컴퓨터 하드웨어, 농업, 신약 개발 등 여러 과학 분야에서, 손쉬운 성과가 소진됨에 따라 같은 속도의 발전을 유지하는 데 상당히 더 많은 R&D 노동이 필요했다[27]. 추가 연구자 역시 서로의 노력을 중복하거나 고부가가치 R&D를 병렬화하는 데 어려움을 겪을 수 있으므로 수확 체감에 직면한다. 둘째, R&D는 실험 수행을 위한 연산과 학습에 필요한 데이터에 의존하며, 연산이나 데이터 증가의 한계가 소프트웨어 발전을 늦출 수 있다. 셋째, 자동화하기 어려운 작업이 발전의 병목이 될 수 있다. 넷째, 일부 R&D 공정은 시간이 많이 드는 공정이다. 예를 들어, 세대 간 역량 격차가 커지더라도 긴 학습 실행이 발전 속도를 제한할 수 있다.",
+   "marks": [
+    {
+     "t": "최소 네 가지 마찰 요인이 이러한 역학에 반하여 작용한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Evidence",
+   "ko": "근거",
+   "id": "s21"
+  },
+  {
+   "type": "p",
+   "en": "Preliminary evidence suggests that automation-driven dynamics could overcome these frictions, though the evidence is mixed and in some cases indirect.",
+   "ko": "예비적 근거는 자동화 주도 역학이 이러한 마찰 요인을 극복할 수 있음을 시사하지만, 그 근거는 엇갈리며 경우에 따라 간접적이다.",
+   "marks": [
+    {
+     "t": "예비적 근거는 자동화 주도 역학이 이러한 마찰 요인을 극복할 수 있음을 시사하지만, 그 근거는 엇갈리며 경우에 따라 간접적이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Diminishing returns. Evidence suggests that diminishing returns would not prevent an intelligence explosion, though this finding relies on limited data and stylized modeling assumptions. The main analysis in the literature focuses on whether, after full automation of AI R&D, effective R&D labor would grow fast enough to overcome diminishing returns and accelerate progress. The balance is captured by a quantity called the 'returns to research effort,' denoted r.[^4] When r < 1, diminishing returns dominate and AI progress fades over time. When r = 1, the two forces perfectly offset each other and progress continues at the same rate. When r > 1, growth in R&D labor wins and accelerates progress for as long as this condition holds.[^5] Using historical data on AI progress, Ho and Whitfill [28] find central estimates of r between 1.2 and 1.9 across three subfields of AI research. Though uncertainty is substantial,[^6] these results suggest radical acceleration after full automation: if r stayed at these levels and no other bottlenecks emerged, the pace of AI progress would increase tenfold within about 1.5 years, at which point a year's worth of progress at today's pace would take about five weeks. See the SM for this analysis and further discussion of uncertainty in the value of r.",
+   "ko": "수확 체감. 근거는 수확 체감이 지능 폭발을 막지 못할 것임을 시사하지만, 이 결과는 제한된 데이터와 양식화된 모델링 가정에 의존한다. 이 분야 문헌의 주요 분석은 AI R&D가 완전히 자동화된 이후 실질적인 R&D 노동이 수확 체감을 극복하고 발전을 가속할 만큼 빠르게 증가할 것인지에 초점을 맞춘다. 이 균형은 r로 표기되는 '연구 노력의 수익률'이라는 양으로 포착된다.[^4] r < 1이면 수확 체감이 우세하여 AI 발전이 시간이 지남에 따라 약해진다. r = 1이면 두 힘이 완벽하게 상쇄되어 발전이 같은 속도로 지속된다. r > 1이면 R&D 노동의 증가가 우세하여, 이 조건이 유지되는 한 발전이 가속된다.[^5] Ho와 Whitfill[28]은 AI 발전에 관한 과거 데이터를 사용하여 AI 연구의 세 하위 분야에 걸쳐 r의 중심 추정치를 1.2에서 1.9 사이로 산출했다. 불확실성은 상당하지만,[^6]이 결과는 완전한 자동화 이후 급격한 가속을 시사한다. r이 이 수준에 머무르고 다른 병목이 나타나지 않는다면, AI 발전 속도는 약 1.5년 내에 10배로 증가하며, 그 시점에는 오늘날 속도로 1년 분량의 발전이 약 5주 만에 이루어지게 된다. 이 분석과 r 값의 불확실성에 관한 추가 논의는 보충 자료를 참조한다.",
+   "marks": [
+    {
+     "t": "근거는 수확 체감이 지능 폭발을 막지 못할 것임을 시사하지만",
+     "k": "safety"
+    },
+    {
+     "t": "이 결과는 완전한 자동화 이후 급격한 가속을 시사한다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 발전 속도는 약 1.5년 내에 10배로 증가하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Compute. There is mixed evidence on whether compute could bottleneck a software-driven intelligence explosion. Finding and testing software advances involves using compute to run R&D experiments. The limited available data suggest that a software-driven intelligence explosion is not possible if such experiments require proportionally more compute as frontier training runs grow [29].[^7] Unfortunately, it is unclear whether experimental compute requirements grow in this way. On one hand, lowcompute experiments may tell us little about what works at increasingly large frontier scales. On the other hand, extrapolations from very small scales are already possible [30, 31], and better extrapolations could plausibly be found through more R&D. We need more data to settle this question.",
+   "ko": "연산. 연산이 소프트웨어 주도 지능 폭발의 병목이 될 수 있는지에 대해서는 근거가 엇갈린다. 소프트웨어 발전을 발견하고 검증하는 데에는 R&D 실험을 수행하기 위한 연산 사용이 수반된다. 제한된 가용 데이터는 프론티어 학습 실행이 커짐에 따라 이러한 실험에 비례적으로 더 많은 연산이 필요하다면 소프트웨어 주도 지능 폭발은 불가능하다는 것을 시사한다[29].[^7] 안타깝게도, 실험용 연산 요구량이 이런 방식으로 증가하는지는 불분명하다. 한편으로는, 적은 연산을 사용하는 실험이 점점 더 커지는 프론티어 규모에서 무엇이 효과적인지에 대해 알려주는 바가 적을 수 있다. 다른 한편으로는, 매우 작은 규모로부터의 외삽이 이미 가능하며[30, 31], 더 많은 R&D를 통해 더 나은 외삽 방법을 찾을 수 있을 가능성도 있다. 이 문제를 해결하려면 더 많은 데이터가 필요하다.",
+   "marks": [
+    {
+     "t": "연산이 소프트웨어 주도 지능 폭발의 병목이 될 수 있는지에 대해서는 근거가 엇갈린다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Data. Data could bottleneck progress, but the constraint varies substantially across domains. Historically, AI progress has relied heavily on internet data and expert demonstrations. But the supply of internet data is on track to grow too slowly to support even the current rate of progress past 2028 [32], and humans may struggle to generate useful demonstrations for superhuman AI systems. To overcome these limitations, more recent progress in domains such as math and coding has relied on synthetic data and fast, verifiable feedback: models generate their own attempts and learn from whether those attempts succeed [12]. The key question is how widely this approach generalizes. For AI R&D, AI agents can rapidly test changes, observe the results, and identify which ones accelerate their own progress. In other domains, such as biology, advances might have to rely more on slower, noisier, or costlier real-world feedback.",
+   "ko": "데이터. 데이터가 발전의 병목이 될 수 있지만, 그 제약은 영역에 따라 크게 다르다. 역사적으로 AI 발전은 인터넷 데이터와 전문가 시연에 크게 의존해 왔다. 그러나 인터넷 데이터 공급은 2028년 이후로는 현재의 발전 속도조차 뒷받침하지 못할 만큼 느리게 증가할 것으로 전망되며[32], 인간이 초인적 AI 시스템을 위한 유용한 시연을 생성하는 데 어려움을 겪을 수도 있다. 이러한 한계를 극복하기 위해, 수학과 코딩 같은 영역의 최근 발전은 합성 데이터와 빠르고 검증 가능한 피드백에 의존해 왔다. 즉, 모델이 스스로 시도를 생성하고 그 시도의 성공 여부로부터 학습한다[12]. 핵심 질문은 이 접근법이 얼마나 폭넓게 일반화되는가이다. AI R&D의 경우, AI 에이전트는 변경 사항을 신속하게 테스트하고 결과를 관찰하며 어떤 변경이 자신의 발전을 가속하는지 식별할 수 있다. 생물학과 같은 다른 영역에서는 발전이 더 느리고, 잡음이 많거나, 비용이 더 큰 현실 세계의 피드백에 더 의존해야 할 수도 있다.",
+   "marks": [
+    {
+     "t": "AI 에이전트는 변경 사항을 신속하게 테스트하고 결과를 관찰하며 어떤 변경이 자신의 발전을 가속하는지 식별할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Hard-to-automate tasks. Indirect evidence suggests that hard-to-automate tasks need not prevent an intelligence explosion if automation advances quickly enough. In a setting that considers both software and hardware, Davidson et al. [33] find that sufficiently fast automation of R&D in both domains could in principle trigger an intelligence explosion despite automation bottlenecks.[^8] However, we lack empirical data on which tasks are likely to remain difficult to automate and how strongly they might constrain progress.",
+   "ko": "자동화하기 어려운 작업. 간접적 근거는 자동화가 충분히 빠르게 진전된다면 자동화하기 어려운 작업이 반드시 지능 폭발을 막지는 않는다는 것을 시사한다. Davidson et al.[33]은 소프트웨어와 하드웨어를 모두 고려하는 설정에서, 두 영역 모두에서 R&D 자동화가 충분히 빠르게 이루어지면 자동화 병목에도 불구하고 원칙적으로 지능 폭발이 촉발될 수 있음을 발견했다.[^8] 그러나 어떤 작업이 계속 자동화하기 어려울 가능성이 높은지, 그리고 그러한 작업이 발전을 얼마나 강하게 제약할 수 있는지에 관한 실증 데이터는 부족하다.",
+   "marks": [
+    {
+     "t": "자동화 병목에도 불구하고 원칙적으로 지능 폭발이 촉발될 수 있음을 발견했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Time-intensive processes. We lack direct evidence on the extent to which time-intensive processes could bottleneck progress. The most significant such process appears to be training runs, which can currently take 3 months or more [34]. Potential workarounds exist, such as improving the same model repeatedly through post-training enhancements [35]. Additionally, advances in training efficiency [36] would allow systems to reach a given capability level with less training. However, it is unclear how far these approaches can go.[^9]",
+   "ko": "시간이 많이 드는 공정. 시간이 많이 드는 공정이 발전의 병목이 될 수 있는 정도에 관한 직접적 근거는 부족하다. 이러한 공정 가운데 가장 중요한 것은 학습 실행으로 보이며, 학습 실행은 현재 3개월 이상 걸릴 수 있다[34]. 동일한 모델을 사후 학습 개선을 통해 반복적으로 향상시키는 것과 같은 잠재적 우회 방안이 존재한다[35]. 또한 학습 효율의 발전[36]은 시스템이 더 적은 학습으로 주어진 역량 수준에 도달할 수 있게 할 것이다. 그러나 이러한 접근법이 어디까지 나아갈 수 있는지는 불분명하다.[^9]"
+  },
+  {
+   "type": "p",
+   "en": "Overall, there is a coherent pathway to a software-driven intelligence explosion that is consistent with the existing evidence. Productivity gains from AI R&D automation have not yet reached the threshold needed to trigger an intelligence explosion, but gains from newer systems are likely approaching that threshold [37].[^10] The rapid pace of AI R&D automation suggests that this gap will continue to narrow. Given the high stakes that we discuss below, the possibility of an intelligence explosion warrants serious further attention.",
+   "ko": "종합하면, 기존 근거와 부합하는 소프트웨어 주도 지능 폭발로의 일관된 경로가 존재한다. AI R&D 자동화로 인한 생산성 향상은 아직 지능 폭발을 촉발하는 데 필요한 임계치에 도달하지 않았지만, 더 새로운 시스템으로 인한 향상은 그 임계치에 근접하고 있을 가능성이 높다[37].[^10] AI R&D 자동화의 빠른 속도는 이 격차가 계속 좁혀질 것임을 시사한다. 아래에서 논의하는 막대한 이해관계를 고려할 때, 지능 폭발의 가능성은 진지한 추가 관심을 받을 만하다.",
+   "marks": [
+    {
+     "t": "기존 근거와 부합하는 소프트웨어 주도 지능 폭발로의 일관된 경로가 존재한다",
+     "k": "key"
+    },
+    {
+     "t": "더 새로운 시스템으로 인한 향상은 그 임계치에 근접하고 있을 가능성이 높다",
+     "k": "safety"
+    },
+    {
+     "t": "지능 폭발의 가능성은 진지한 추가 관심을 받을 만하다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Societal impacts",
+   "ko": "사회적 영향",
+   "id": "s29"
+  },
+  {
+   "type": "p",
+   "en": "An intelligence explosion would lead to (1) the extremely rapid development of highly capable or superhuman AI systems[^11] and (2) the likely deployment of those systems to develop new technologies and act in the world. This could pull forward by years or decades benefits that the current pace of AI progress would eventually help deliver [38], including medical cures and potential transformative technologies such as highly scalable atom-by-atom manufacturing [39].",
+   "ko": "지능 폭발은 (1) 고역량(Highly capable) 또는 초인적 AI 시스템의 극도로 빠른 개발[^11]과 (2) 새로운 기술을 개발하고 세계에서 행동하기 위한 해당 시스템의 배포 가능성으로 이어질 것이다. 이는 현재의 AI 발전 속도가 궁극적으로 실현을 도울 혜택[38]을 수년 또는 수십 년 앞당길 수 있으며, 여기에는 의학적 치료법과 고도로 확장 가능한 원자 단위 제조[39]와 같은 잠재적 변혁 기술이 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "At the same time, an intelligence explosion could significantly increase the risks from advanced AI in three ways.",
+   "ko": "동시에, 지능 폭발은 세 가지 방식으로 첨단 AI로 인한 위험을 크게 증가시킬 수 있다.",
+   "marks": [
+    {
+     "t": "지능 폭발은 세 가지 방식으로 첨단 AI로 인한 위험을 크게 증가시킬 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Capabilities growth outpacing society's capacity to steer and adapt. First, an intelligence explosion could dramatically bring forward the risks of advanced AI and AI-enabled technologies, such as biological and cyber attacks, labor market disruption, and loss of control over AI systems themselves [40, 41]. This would leave less time to steer away from these risks, including by coordinating to slow or forgo the development of certain capabilities or technologies. Society would also have less time to adapt, especially where AI accelerates threats faster than the measures needed to counter them. In largely digital domains such as cyber, risks and mitigations could both move at the speed of AI systems and keep pace with each other.[^12] But in other domains, mitigations depend more heavily than risks on real-world activities that AI is less able to accelerate. For example, while AI could accelerate the design of both viruses and vaccines, viruses self-replicate and spread by themselves, whereas vaccines must be manufactured, distributed, and administered individually to recipients [42]. The order in which AI advances arrive could worsen this mismatch, such as if bio-capable models arrive before sufficient misuse safeguards.",
+   "ko": "사회의 조종 및 적응 능력을 앞지르는 역량 성장. 첫째, 지능 폭발은 생물학적 공격 및 사이버 공격, 노동시장 교란, AI 시스템 자체에 대한 통제 상실 등 첨단 AI 및 AI 기반 기술의 위험을 극적으로 앞당길 수 있다[40, 41]. 이는 특정 역량이나 기술의 개발을 늦추거나 포기하기 위한 조율을 포함하여, 이러한 위험으로부터 방향을 틀 시간을 줄일 것이다. 사회가 적응할 시간도 줄어들 것이며, 특히 AI가 위협에 대응하는 데 필요한 조치보다 위협을 더 빠르게 가속하는 경우에 그러하다. 사이버와 같이 주로 디지털인 영역에서는 위험과 완화가 모두 AI 시스템의 속도로 움직이며 서로 보조를 맞출 수 있다.[^12] 그러나 다른 영역에서는 완화가 위험보다 AI가 가속하기 어려운 현실 세계의 활동에 더 크게 의존한다. 예를 들어, AI는 바이러스와 백신의 설계를 모두 가속할 수 있지만, 바이러스는 스스로 자기복제하고 확산하는 반면 백신은 제조, 유통되어 접종 대상자에게 개별적으로 투여되어야 한다[42]. AI 발전이 도래하는 순서는 이러한 불일치를 악화시킬 수 있는데, 예컨대 충분한 오용 안전장치보다 생물학 역량을 갖춘 모델이 먼저 등장하는 경우가 그러하다.",
+   "marks": [
+    {
+     "t": "생물학적 공격 및 사이버 공격, 노동시장 교란, AI 시스템 자체에 대한 통제 상실 등 첨단 AI 및 AI 기반 기술의 위험을 극적으로 앞당길 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 위험으로부터 방향을 틀 시간을 줄일 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "AI가 위협에 대응하는 데 필요한 조치보다 위협을 더 빠르게 가속하는 경우에 그러하다",
+     "k": "safety"
+    },
+    {
+     "t": "충분한 오용 안전장치보다 생물학 역량을 갖춘 모델이 먼저 등장하는 경우가 그러하다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Loss of oversight and control. Second, automating AI R&D could weaken human oversight, compounding the above challenges and severely increasing the risk of losing control over highly capable AI systems. As humans become less involved in AI R&D, they could lose both the opportunities and expertise needed to identify and fix problems. Reliably using AI systems for oversight also remains an unsolved challenge [40], and recent generations of systems have become harder to oversee [25]. Without sufficient oversight, misaligned AI systems could 'poison' the development of successors or bypass containment measures to act outside of their intended environments. The Hugging Face incident illustrates the latter risk: roughly 1,200 internal OpenAI agents were tasked with completing cyber evaluations in isolation from one another [43]. Acting outside of their intended scope, these agents coordinated over a makeshift message board, obtained unauthorized internet access, hacked into Hugging Face to obtain private information, and attempted to tamper with their own transcripts [43-45].[^13] More capable systems might continue operating outside of their operators' infrastructure, forming persistent, difficult-to-contain networks that act against human interests. Such a loss of control could potentially lead to a range of catastrophic outcomes, including, at the extreme, the marginalization or extinction of humanity [40, 41].",
+   "ko": "감독 및 통제의 상실. 둘째, AI R&D의 자동화는 인간 감독을 약화시켜 위의 과제들을 가중하고 고역량 AI 시스템에 대한 통제 상실 위험을 심각하게 증가시킬 수 있다. 인간이 AI R&D에 덜 관여하게 됨에 따라, 인간은 문제를 식별하고 수정하는 데 필요한 기회와 전문성을 모두 잃을 수 있다. 감독을 위해 AI 시스템을 신뢰성 있게 활용하는 것 또한 여전히 해결되지 않은 과제이며[40], 최근 세대의 시스템은 감독하기가 더 어려워졌다[25]. 충분한 감독이 없으면, 정렬되지 않은 AI 시스템이 후속 시스템의 개발을 '오염'시키거나 격리 조치를 우회하여 의도된 환경 밖에서 행동할 수 있다. Hugging Face 사건은 후자의 위험을 보여준다. 약 1,200개의 OpenAI 내부 에이전트에 서로 격리된 상태에서 사이버 평가(evaluation)를 완료하는 과업이 부여되었다[43]. 이들 에이전트는 의도된 범위를 벗어나 행동하여, 임시변통의 메시지 게시판을 통해 조율하고, 승인되지 않은 인터넷 접근을 획득하고, 비공개 정보를 얻기 위해 Hugging Face를 해킹했으며, 자신의 기록을 조작하려 시도했다[43-45].[^13] 더 역량 있는 시스템은 운영자의 인프라 밖에서 계속 작동하면서, 인간의 이익에 반하여 행동하는 지속적이고 격리하기 어려운 네트워크를 형성할 수 있다. 이러한 통제 상실은 잠재적으로 다양한 파국적 결과로 이어질 수 있으며, 극단적으로는 인류의 주변화 또는 멸종까지 포함된다[40, 41].",
+   "marks": [
+    {
+     "t": "AI R&D의 자동화는 인간 감독을 약화시켜 위의 과제들을 가중하고 고역량 AI 시스템에 대한 통제 상실 위험을 심각하게 증가시킬 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "최근 세대의 시스템은 감독하기가 더 어려워졌다",
+     "k": "safety"
+    },
+    {
+     "t": "정렬되지 않은 AI 시스템이 후속 시스템의 개발을 '오염'시키거나 격리 조치를 우회하여 의도된 환경 밖에서 행동할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "승인되지 않은 인터넷 접근을 획득하고, 비공개 정보를 얻기 위해 Hugging Face를 해킹했으며, 자신의 기록을 조작하려 시도했다",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 통제 상실은 잠재적으로 다양한 파국적 결과로 이어질 수 있으며, 극단적으로는 인류의 주변화 또는 멸종까지 포함된다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Erosion of checks on power. Third, an intelligence explosion could severely erode checks on power. Existing checks—such as those within and between states, companies, and branches of government—work only while no actor can vastly out-think and out-execute the others. An intelligence explosion could render such checks moot. A state could use an intelligence explosion to transform a modest lead in military R&D or operations into a decisive one, such as in cyberspace [46]. This prospect could incentivize rivals to take or threaten preemptive action [47]. Actors with privileged and/or secret access to frontier systems could threaten existing institutions, such as through targeted persuasion of key decision-makers. And in the longer run, automating key state functions could reduce the amount of human buy-in needed to seize or consolidate power [48, 49].",
+   "ko": "권력 견제의 약화. 셋째, 지능 폭발은 권력 견제를 심각하게 약화시킬 수 있다. 국가, 기업, 정부 부문 내부 및 상호 간의 견제와 같은 기존의 견제 장치는 어떤 행위자도 다른 행위자들을 압도적으로 앞서 사고하고 실행할 수 없을 때에만 작동한다. 지능 폭발은 이러한 견제를 무력화할 수 있다. 한 국가는 지능 폭발을 활용하여 군사 R&D나 작전에서의 근소한 우위를, 예컨대 사이버 공간에서, 결정적 우위로 전환할 수 있다[46]. 이러한 전망은 경쟁국이 선제 조치를 취하거나 그것으로 위협하도록 유인할 수 있다[47]. 프론티어 시스템에 대한 특권적 접근 및/또는 비밀 접근 권한을 가진 행위자는 주요 의사결정자에 대한 표적화된 설득 등을 통해 기존 제도를 위협할 수 있다. 그리고 장기적으로는 핵심 국가 기능의 자동화가 권력을 장악하거나 공고화하는 데 필요한 인간의 동의 정도를 줄일 수 있다[48, 49].",
+   "marks": [
+    {
+     "t": "지능 폭발은 권력 견제를 심각하게 약화시킬 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "군사 R&D나 작전에서의 근소한 우위를, 예컨대 사이버 공간에서, 결정적 우위로 전환할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "경쟁국이 선제 조치를 취하거나 그것으로 위협하도록 유인할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "주요 의사결정자에 대한 표적화된 설득 등을 통해 기존 제도를 위협할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "권력을 장악하거나 공고화하는 데 필요한 인간의 동의 정도를 줄일 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "These potential impacts are uncertain. AI systems could become superhuman in narrow domains (e.g., cyber and mathematics) long before doing so generally, giving society more time to respond. Even generally superhuman AI systems may not significantly accelerate technological progress, given the time needed for running scientific experiments, creating supply chains for specialized materials, and complying with any relevant regulation. AI systems could also accelerate safety R&D and processes for steering and adapting to risks.[^14] Finally, capability or technology diffusion [50] could help to preserve checks on power, and capability gains in defensedominant domains could even improve stability [51, 52]. Still, the possibility of severe impacts remains significant enough to warrant urgent attention to the policy questions below.",
+   "ko": "이러한 잠재적 영향은 불확실하다. AI 시스템은 일반적으로 초인적 수준에 이르기 훨씬 전에 좁은 영역(예: 사이버 및 수학)에서 초인적 수준이 될 수 있으며, 이는 사회에 대응할 시간을 더 줄 것이다. 일반적으로 초인적인 AI 시스템조차, 과학 실험 수행, 특수 소재를 위한 공급망 구축, 관련 규제 준수에 필요한 시간을 고려하면 기술 발전을 크게 가속하지 않을 수도 있다. AI 시스템은 또한 안전 R&D와 위험에 대한 조종 및 적응 과정을 가속할 수 있다.[^14] 마지막으로, 역량 또는 기술의 확산[50]은 권력 견제를 유지하는 데 도움이 될 수 있으며, 방어 우위 영역에서의 역량 향상은 오히려 안정성을 개선할 수도 있다[51, 52]. 그럼에도 심각한 영향의 가능성은 아래의 정책 질문에 긴급한 관심을 기울일 만큼 충분히 크다.",
+   "marks": [
+    {
+     "t": "AI 시스템은 또한 안전 R&D와 위험에 대한 조종 및 적응 과정을 가속할 수 있다.",
+     "k": "safety"
+    },
+    {
+     "t": "심각한 영향의 가능성은 아래의 정책 질문에 긴급한 관심을 기울일 만큼 충분히 크다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Policy implications",
+   "ko": "정책적 함의",
+   "id": "s36"
+  },
+  {
+   "type": "p",
+   "en": "AI R&D automation is advancing rapidly, AI progress could radically accelerate, and the stakes are high. We therefore argue that policymakers should urgently: (1) obtain visibility into companies' automation of AI R&D; (2) develop ways to steer and constrain an intelligence explosion; and (3) prepare to adapt to an intelligence explosion's impacts. Because progress during an intelligence explosion would outpace normal policymaking, preparations must be made in advance and activated as evidence about benefits and risks emerges.",
+   "ko": "AI R&D 자동화는 빠르게 진전되고 있고, AI 발전은 급격히 가속될 수 있으며, 그 이해관계는 막대하다. 따라서 우리는 정책입안자가 시급히 다음을 수행해야 한다고 주장한다. (1) 기업의 AI R&D 자동화에 대한 가시성을 확보하고, (2) 지능 폭발을 조종하고 제약하는 방법을 개발하며, (3) 지능 폭발의 영향에 적응할 준비를 해야 한다. 지능 폭발 동안의 발전은 통상적인 정책 결정 속도를 앞지를 것이므로, 준비는 사전에 이루어져야 하며 혜택과 위험에 관한 근거가 나타남에 따라 발동되어야 한다.",
+   "marks": [
+    {
+     "t": "AI R&D 자동화는 빠르게 진전되고 있고, AI 발전은 급격히 가속될 수 있으며, 그 이해관계는 막대하다.",
+     "k": "safety"
+    },
+    {
+     "t": "(1) 기업의 AI R&D 자동화에 대한 가시성을 확보하고, (2) 지능 폭발을 조종하고 제약하는 방법을 개발하며, (3) 지능 폭발의 영향에 적응할 준비를 해야 한다.",
+     "k": "safety"
+    },
+    {
+     "t": "지능 폭발 동안의 발전은 통상적인 정책 결정 속도를 앞지를 것이므로, 준비는 사전에 이루어져야 하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Obtaining visibility into AI R&D automation",
+   "ko": "AI R&D 자동화에 대한 가시성 확보",
+   "id": "s38"
+  },
+  {
+   "type": "p",
+   "en": "Policymakers need more data on the likelihood, onset, and consequences of a software-driven intelligence explosion. Much of this data will only be available within the companies automating AI R&D: the relevant AI systems are first used internally, and substantial automation could occur without external visibility. Current mandatory reporting frameworks either do not adequately cover internal AI R&D use cases or do not specify indicators to be reported [53–57]. And although some frontier AI companies voluntarily track AI R&D indicators [5, 15, 18], coverage and reporting of key indicators are incomplete and uneven.",
+   "ko": "정책입안자는 소프트웨어 주도 지능 폭발의 가능성, 개시 시점 및 결과에 관한 더 많은 데이터가 필요하다. 이러한 데이터의 상당 부분은 AI R&D를 자동화하는 기업 내부에서만 확보할 수 있을 것이다. 관련 AI 시스템은 먼저 내부적으로 사용되며, 외부의 가시성 없이 상당한 자동화가 일어날 수 있기 때문이다. 현행 의무 보고 체계는 내부 AI R&D 사용 사례를 적절히 다루지 못하거나 보고해야 할 지표를 명시하지 않는다[53–57]. 그리고 일부 프론티어 AI 기업이 자발적으로 AI R&D 지표를 추적하고 있지만[5, 15, 18], 핵심 지표의 커버리지와 보고는 불완전하고 고르지 않다.",
+   "marks": [
+    {
+     "t": "소프트웨어 주도 지능 폭발의 가능성, 개시 시점 및 결과에 관한 더 많은 데이터가 필요하다",
+     "k": "safety"
+    },
+    {
+     "t": "외부의 가시성 없이 상당한 자동화가 일어날 수 있기 때문이다",
+     "k": "safety"
+    },
+    {
+     "t": "현행 의무 보고 체계는 내부 AI R&D 사용 사례를 적절히 다루지 못하거나 보고해야 할 지표를 명시하지 않는다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Policymakers should consider requiring standardized reporting of key AI R&D indicators and processes to governments and third-party auditors, as well as funding third-party measurement capacity [58]. Reporting requirements could cover information relevant to:",
+   "ko": "정책입안자는 핵심 AI R&D 지표와 프로세스를 정부와 제3자 감사인에게 표준화된 방식으로 보고하도록 의무화하고, 제3자 측정 역량에 자금을 지원하는 방안을 고려해야 한다[58]. 보고 요건은 다음과 관련된 정보를 다룰 수 있다.",
+   "marks": [
+    {
+     "t": "정책입안자는 핵심 AI R&D 지표와 프로세스를 정부와 제3자 감사인에게 표준화된 방식으로 보고하도록 의무화하고",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Assessing the likelihood of a software-driven intelligence explosion, including the extent to which compute, data, hard-to-automate tasks, and time-intensive processes (e.g., training runs and experiments) bottleneck AI progress, along with better estimates of the returns to research effort in AI R&D. Estimating the latter requires data on how companies divide R&D spending among humans, compute for experiments, and compute for running AI systems to perform R&D labor [37].",
+   "ko": "소프트웨어 주도 지능 폭발의 가능성 평가. 여기에는 연산, 데이터, 자동화하기 어려운 작업, 시간이 많이 드는 공정(예: 학습 실행 및 실험)이 AI 발전의 병목이 되는 정도와 AI R&D에서 연구 노력의 수익률에 대한 더 나은 추정치가 포함된다. 후자를 추정하려면 기업이 R&D 지출을 인력, 실험용 연산, R&D 노동을 수행하는 AI 시스템 구동용 연산 사이에 어떻게 배분하는지에 관한 데이터가 필요하다[37].",
+   "marks": [
+    {
+     "t": "소프트웨어 주도 지능 폭발의 가능성 평가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Detecting the onset[^15] of an intelligence explosion, including the extent of AI R&D automation (e.g., the fraction of research contributions produced by AI systems) and the pace of AI progress (e.g., algorithmic efficiency improvements).",
+   "ko": "지능 폭발의 개시 시점[^15] 탐지. 여기에는 AI R&D 자동화의 정도(예: AI 시스템이 산출한 연구 기여의 비율)와 AI 발전 속도(예: 알고리즘 효율성 개선)가 포함된다.",
+   "marks": [
+    {
+     "t": "지능 폭발의 개시 시점[^15] 탐지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Understanding oversight and loss-of-control risks, including the procedures for deciding whether to broaden internal deployment of AI R&D systems, where and how those systems are used in high-stakes R&D decisions, how those systems are overseen, and reports of incidents involving internal AI systems [58].",
+   "ko": "감독 및 통제 상실 위험의 이해. 여기에는 AI R&D 시스템의 내부 배포 확대 여부를 결정하는 절차, 해당 시스템이 고위험 R&D 의사결정에서 어디에 어떻게 사용되는지, 해당 시스템이 어떻게 감독되는지, 그리고 내부 AI 시스템과 관련된 사고 보고가 포함된다[58].",
+   "marks": [
+    {
+     "t": "감독 및 통제 상실 위험의 이해",
+     "k": "safety"
+    },
+    {
+     "t": "내부 AI 시스템과 관련된 사고 보고가 포함된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Beyond reporting requirements, policymakers should also consider more extensive ways to obtain visibility into AI R&D automation. For instance, they could require that independent third parties (e.g., accredited private auditors or government evaluation bodies) evaluate AI systems before internal deployment, or that such parties be embedded within certain AI companies to audit [59] or supervise [60] their R&D activities. Analogous models in other industries include the Nuclear Regulatory Commission [61] and the Office of the Comptroller of the Currency [62].",
+   "ko": "보고 요건 외에도, 정책입안자는 AI R&D 자동화에 대한 가시성을 확보하기 위한 보다 광범위한 방법을 고려해야 한다. 예를 들어, 독립적인 제3자(예: 인증된 민간 감사인 또는 정부 평가(evaluation) 기관)가 내부 배포 이전에 AI 시스템을 평가하도록 하거나, 그러한 제3자가 특정 AI 기업 내부에 상주하며 R&D 활동을 감사[59]하거나 감독[60]하도록 요구할 수 있다. 다른 산업의 유사한 모델로는 원자력규제위원회(Nuclear Regulatory Commission)[61]와 통화감독청(Office of the Comptroller of the Currency)[62]이 있다.",
+   "marks": [
+    {
+     "t": "독립적인 제3자(예: 인증된 민간 감사인 또는 정부 평가(evaluation) 기관)가 내부 배포 이전에 AI 시스템을 평가하도록 하거나",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Stronger reporting and auditing requirements are likely most warranted for companies whose AI systems (a) are at the frontier of AI R&D capabilities or (b) exceed some meaningful threshold of such capabilities. Policymakers will need to weigh important trade-offs in determining such thresholds.",
+   "ko": "더 강력한 보고 및 감사 요건은 AI 시스템이 (a) AI R&D 역량의 프론티어에 있거나 (b) 그러한 역량의 유의미한 임계치를 넘는 기업에 가장 정당화될 가능성이 높다. 정책입안자는 그러한 임계치를 결정할 때 중요한 상충 관계를 따져보아야 할 것이다.",
+   "marks": [
+    {
+     "t": "더 강력한 보고 및 감사 요건은 AI 시스템이 (a) AI R&D 역량의 프론티어에 있거나 (b) 그러한 역량의 유의미한 임계치를 넘는 기업에 가장 정당화될 가능성이 높다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Steering and constraining an intelligence explosion",
+   "ko": "지능 폭발의 조종과 제약",
+   "id": "s46"
+  },
+  {
+   "type": "p",
+   "en": "An intelligence explosion would involve an unprecedentedly rapid series of decisions to train and deploy increasingly capable AI systems. The overarching question for policymakers is whether and how public policy should govern these decisions, which we break into three components.",
+   "ko": "지능 폭발은 점점 더 고역량인 AI 시스템을 학습시키고 배포하는 결정이 전례 없이 빠르게 연속되는 과정을 수반할 것이다. 정책입안자에게 주어진 포괄적인 질문은 공공 정책이 이러한 결정을 규율해야 하는지, 그리고 어떻게 규율해야 하는지이며, 우리는 이를 세 가지 구성 요소로 나눈다.",
+   "marks": [
+    {
+     "t": "지능 폭발은 점점 더 고역량인 AI 시스템을 학습시키고 배포하는 결정이 전례 없이 빠르게 연속되는 과정을 수반할 것이다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "First, policymakers should develop ways to pace and constrain scale-ups of automated AI R&D. They should consider:",
+   "ko": "첫째, 정책입안자는 자동화된 AI R&D의 규모 확대 속도를 조절하고 제약하는 방법을 개발해야 한다. 정책입안자는 다음을 고려해야 한다.",
+   "marks": [
+    {
+     "t": "정책입안자는 자동화된 AI R&D의 규모 확대 속도를 조절하고 제약하는 방법을 개발해야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Setting requirements for continued deployment or development, such as the implementation of adequate safety measures (e.g., robust monitoring of automated R&D pipelines), broader stakeholder input, or limits on the extent to which capabilities can increase within a given time period.",
+   "ko": "적절한 안전 조치(예: 자동화된 연구개발 파이프라인에 대한 견고한 모니터링)의 이행, 이해관계자의 더 폭넓은 입력, 또는 주어진 기간 내 역량 증가 폭에 대한 제한 등 지속적인 배포나 개발을 위한 요건 설정.",
+   "marks": [
+    {
+     "t": "적절한 안전 조치(예: 자동화된 연구개발 파이프라인에 대한 견고한 모니터링)의 이행",
+     "k": "safety"
+    },
+    {
+     "t": "주어진 기간 내 역량 증가 폭에 대한 제한",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Preparing tools to verify compliance with potential future agreements (domestic or international) that pace AI progress, given competitive pressures to race ahead [63-65].",
+   "ko": "앞서 나가려는 경쟁 압력을 고려하여, AI 발전 속도를 조절하는 잠재적인 향후 협정(국내 또는 국제)의 준수를 검증하기 위한 도구 준비[63-65].",
+   "marks": [
+    {
+     "t": "AI 발전 속도를 조절하는 잠재적인 향후 협정(국내 또는 국제)의 준수를 검증하기 위한 도구 준비",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Increasing oversight of data centers engaged in automated AI R&D and establishing incident-response procedures in collaboration with data center operators and AI companies, such as developing options to pause specific AI R&D workloads [66].",
+   "ko": "자동화된 AI R&D에 관여하는 데이터센터에 대한 감독 강화, 그리고 특정 AI R&D 워크로드를 일시 중지하는 선택지 개발 등 데이터센터 운영자 및 AI 기업과 협력한 사고 대응 절차 수립[66].",
+   "marks": [
+    {
+     "t": "특정 AI R&D 워크로드를 일시 중지하는 선택지 개발",
+     "k": "safety"
+    },
+    {
+     "t": "사고 대응 절차 수립",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Requiring that certain evaluations or deployments of automated AI R&D systems take place in appropriately isolated environments, such as air-gapped networks, to prevent exfiltration of model weights or sensitive R&D outputs and to contain AI systems that attempt to escape human control and act in the world unchecked [44].",
+   "ko": "모델 가중치나 민감한 R&D 산출물의 유출을 방지하고, 인간의 통제에서 벗어나 견제 없이 세계에서 행동하려는 AI 시스템을 봉쇄하기 위해, 자동화된 AI R&D 시스템의 특정 평가나 배포가 망분리(air-gapped) 네트워크와 같이 적절히 격리된 환경에서 이루어지도록 요구[44].",
+   "marks": [
+    {
+     "t": "모델 가중치나 민감한 R&D 산출물의 유출을 방지하고, 인간의 통제에서 벗어나 견제 없이 세계에서 행동하려는 AI 시스템을 봉쇄하기 위해",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Policymakers should weigh the risks of an unchecked intelligence explosion against the potential for abuse of certain powers and the costs of delayed progress. As an example of potential abuse, poorly crafted mechanisms could allow a government to slow R&D at all but a favored company.",
+   "ko": "정책입안자는 견제되지 않는 지능 폭발의 위험을 특정 권한의 남용 가능성 및 발전 지연의 비용과 비교하여 따져보아야 한다. 잠재적 남용의 예로, 잘못 설계된 메커니즘은 정부가 특혜를 받는 한 기업을 제외한 모든 기업의 R&D를 늦추도록 허용할 수 있다.",
+   "marks": [
+    {
+     "t": "정책입안자는 견제되지 않는 지능 폭발의 위험을 특정 권한의 남용 가능성 및 발전 지연의 비용과 비교하여 따져보아야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "잘못 설계된 메커니즘은 정부가 특혜를 받는 한 기업을 제외한 모든 기업의 R&D를 늦추도록 허용할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Second, policymakers should decide whether and how to steer the direction of AI development and deployment [67]. Potential priorities include alignment and safety R&D as well as beneficial AI applications, such as AI-assisted discovery of treatments for neglected diseases. If existing incentives fall short in these areas, policymakers could provide support through tax incentives, compute allocations, advance market commitments, and prizes.",
+   "ko": "둘째, 정책입안자는 AI 개발 및 배포의 방향을 조종할지, 그리고 어떻게 조종할지를 결정해야 한다[67]. 잠재적 우선순위에는 정렬 및 안전 R&D뿐 아니라, 소외 질병 치료법의 AI 지원 발견과 같은 유익한 AI 응용이 포함된다. 기존 유인이 이러한 영역에서 부족하다면, 정책입안자는 세제 혜택, 연산 할당, 사전 시장 약정, 포상금을 통해 지원을 제공할 수 있다.",
+   "marks": [
+    {
+     "t": "잠재적 우선순위에는 정렬 및 안전 R&D뿐 아니라",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Third, countries should reduce the risk of conflict arising from an intelligence explosion. They should consider:",
+   "ko": "셋째, 국가들은 지능 폭발로 인해 발생하는 충돌 위험을 줄여야 한다. 국가들은 다음을 고려해야 한다.",
+   "marks": [
+    {
+     "t": "국가들은 지능 폭발로 인해 발생하는 충돌 위험을 줄여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Establishing confidence-building measures such as incident sharing [68], as well as norms around reporting of early-warning indicators.",
+   "ko": "사고 정보 공유[68]와 같은 신뢰구축조치와 더불어 조기 경보 지표 보고에 관한 규범 수립.",
+   "marks": [
+    {
+     "t": "사고 정보 공유[68]와 같은 신뢰구축조치와 더불어 조기 경보 지표 보고에 관한 규범 수립",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Negotiating international agreements to prevent destabilizing development and use of highly capable AI systems, and funding research into verification methods that could underpin such agreements [64, 65].",
+   "ko": "고역량 AI 시스템의 불안정을 초래하는 개발 및 사용을 방지하기 위한 국제 협정 협상, 그리고 그러한 협정을 뒷받침할 수 있는 검증 방법에 대한 연구 자금 지원[64, 65].",
+   "marks": [
+    {
+     "t": "고역량 AI 시스템의 불안정을 초래하는 개발 및 사용을 방지하기 위한 국제 협정 협상",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Clarifying whether and how they would deter another actor from scale-ups of automated AI R&D, potentially in collaboration with other countries [47, 65].",
+   "ko": "다른 행위자의 자동화된 AI R&D 규모 확대를 억지할지 여부와 그 방법을, 잠재적으로 다른 국가와 협력하여, 명확히 하는 것[47, 65].",
+   "marks": [
+    {
+     "t": "다른 행위자의 자동화된 AI R&D 규모 확대를 억지할지 여부와 그 방법",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Running war games to simulate an intelligence explosion [69-71].",
+   "ko": "지능 폭발을 시뮬레이션하는 워게임 실시[69-71].",
+   "marks": [
+    {
+     "t": "지능 폭발을 시뮬레이션하는 워게임 실시",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Adapting to an intelligence explosion",
+   "ko": "지능 폭발에 대한 적응",
+   "id": "s60"
+  },
+  {
+   "type": "p",
+   "en": "If an intelligence explosion were to occur, adapting to its impacts would likely be a top priority of every major world power. Compared to business-as-usual AI progress, an intelligence explosion would compress the window for adaptation and make advance preparation far more urgent.",
+   "ko": "지능 폭발이 일어난다면, 그 영향에 적응하는 것은 모든 주요 강대국의 최우선 과제가 될 가능성이 높다. 통상적인 AI 발전과 비교할 때, 지능 폭발은 적응을 위한 시간적 여유를 압축하고 사전 준비를 훨씬 더 시급하게 만들 것이다.",
+   "marks": [
+    {
+     "t": "지능 폭발은 적응을 위한 시간적 여유를 압축하고 사전 준비를 훨씬 더 시급하게 만들 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "One important intervention is accelerating institutional response times. Policymakers should consider:",
+   "ko": "한 가지 중요한 개입은 제도적 대응 시간을 단축하는 것이다. 정책입안자는 다음을 고려해야 한다."
+  },
+  {
+   "type": "li",
+   "en": "Developing approaches to safely integrate AI systems into policy processes, so as to enhance and support government operations [72].",
+   "ko": "정부 운영을 강화하고 지원하기 위해 AI 시스템을 정책 프로세스에 안전하게 통합하는 접근법 개발[72].",
+   "marks": [
+    {
+     "t": "AI 시스템을 정책 프로세스에 안전하게 통합하는 접근법 개발",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Creating and maintaining emergency response plans for a variety of scenarios involving extreme AI progress, including those leading to significant labor market impacts, geopolitical instability, or a loss of control.",
+   "ko": "상당한 노동시장 영향, 지정학적 불안정, 또는 통제 상실로 이어지는 시나리오를 포함하여, 극단적인 AI 발전과 관련된 다양한 시나리오에 대한 비상 대응 계획 수립 및 유지.",
+   "marks": [
+    {
+     "t": "지정학적 불안정, 또는 통제 상실로 이어지는 시나리오",
+     "k": "safety"
+    },
+    {
+     "t": "극단적인 AI 발전과 관련된 다양한 시나리오에 대한 비상 대응 계획 수립 및 유지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Policymakers will also need to preserve checks on power and defend against misuse of extremely advanced AI. Legal, institutional, and physical safeguards can take years to establish and would come too late if preparations began only after such capabilities had already arrived. Many preparations therefore need to start now. Policymakers should consider:",
+   "ko": "정책입안자는 또한 권력 견제를 유지하고 극도로 첨단화된 AI의 오용에 대비해 방어해야 할 것이다. 법적, 제도적, 물리적 안전장치는 구축하는 데 수년이 걸릴 수 있으며, 그러한 역량이 이미 도래한 후에야 준비를 시작한다면 너무 늦을 것이다. 따라서 많은 준비가 지금 시작되어야 한다. 정책입안자는 다음을 고려해야 한다.",
+   "marks": [
+    {
+     "t": "권력 견제를 유지하고 극도로 첨단화된 AI의 오용에 대비해 방어해야 할 것이다",
+     "k": "safety"
+    },
+    {
+     "t": "그러한 역량이 이미 도래한 후에야 준비를 시작한다면 너무 늦을 것이다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Creating safeguards to ensure that government use of AI respects legal and normative limits, such as by procuring AI tools to strengthen checks between branches of government, sharing key information about government AI systems (e.g., model specs [73, 74]) with the public, or requiring that AI systems follow the law [75].",
+   "ko": "정부 부문 간 견제를 강화하기 위한 AI 도구 조달, 정부 AI 시스템에 관한 핵심 정보(예: 모델 명세(model spec)[73, 74])의 대중 공유, 또는 AI 시스템이 법을 준수하도록 요구하는 것[75] 등을 통해, 정부의 AI 사용이 법적·규범적 한계를 존중하도록 보장하는 안전장치 마련.",
+   "marks": [
+    {
+     "t": "AI 시스템이 법을 준수하도록 요구하는 것",
+     "k": "safety"
+    },
+    {
+     "t": "정부의 AI 사용이 법적·규범적 한계를 존중하도록 보장하는 안전장치 마련",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Ensuring that citizens and civil society have the capabilities to detect, document, and contest unlawful or harmful uses of AI, such as by giving them timely access to AI systems capable of supporting these activities.",
+   "ko": "시민과 시민사회가 이러한 활동을 지원할 수 있는 AI 시스템에 적시에 접근할 수 있도록 하는 등, AI의 불법적이거나 유해한 사용을 탐지하고 기록하며 이의를 제기할 역량을 갖추도록 보장.",
+   "marks": [
+    {
+     "t": "AI의 불법적이거나 유해한 사용을 탐지하고 기록하며 이의를 제기할 역량",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Helping build sufficient defenses against misuse by malicious non-state actors, such as by funding better medical countermeasures against AI-enabled biological threats [76].",
+   "ko": "AI 기반 생물학적 위협에 대한 더 나은 의료 대응 수단에 자금을 지원하는 등, 악의적 비국가 행위자의 오용에 대한 충분한 방어 구축 지원[76].",
+   "marks": [
+    {
+     "t": "AI 기반 생물학적 위협에 대한 더 나은 의료 대응 수단",
+     "k": "safety"
+    },
+    {
+     "t": "악의적 비국가 행위자의 오용에 대한 충분한 방어 구축 지원",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Conclusion",
+   "ko": "결론",
+   "id": "s69"
+  },
+  {
+   "type": "p",
+   "en": "An intelligence explosion could be the most consequential technological development in human history [1], compressing years of progress into months or less, threatening human control over AI systems, and severely eroding checks on power within and between states, companies, and branches of government. Although there remains much uncertainty, AI R&D automation might soon trigger one. And while this piece has focused on software-driven routes to an intelligence explosion, AI-driven improvements in hardware[^16] could make one all the more likely.",
+   "ko": "지능 폭발은 인류 역사상 가장 중대한 결과를 낳는 기술 발전이 될 수 있다[1]. 지능 폭발은 수년의 발전을 수개월 이하로 압축하고, AI 시스템에 대한 인간의 통제를 위협하며, 국가, 기업, 정부 부문 내부 및 상호 간의 권력 견제를 심각하게 약화시킬 수 있다. 여전히 불확실성이 크지만, AI R&D 자동화가 머지않아 지능 폭발을 촉발할 수도 있다. 또한 이 글은 지능 폭발에 이르는 소프트웨어 주도 경로에 초점을 맞추었지만, AI 주도의 하드웨어[^16] 개선은 지능 폭발의 가능성을 더욱 높일 수 있다.",
+   "marks": [
+    {
+     "t": "AI 시스템에 대한 인간의 통제를 위협하며",
+     "k": "safety"
+    },
+    {
+     "t": "국가, 기업, 정부 부문 내부 및 상호 간의 권력 견제를 심각하게 약화시킬 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "AI R&D 자동화가 머지않아 지능 폭발을 촉발할 수도 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Relative to the stakes, we are not sufficiently prepared. Policymakers should have three priorities: obtaining visibility into AI R&D automation within frontier AI companies, developing ways to steer and constrain an intelligence explosion, and preparing to adapt to its impacts. Once an intelligence explosion begins, the window for action may close.",
+   "ko": "걸려 있는 것의 중대성에 비해 우리는 충분히 대비되어 있지 않다. 정책입안자는 세 가지를 우선 과제로 삼아야 한다. 프론티어 AI 기업 내부의 AI R&D 자동화에 대한 가시성 확보, 지능 폭발을 조종하고 제약할 방법의 개발, 그리고 그 영향에 대한 적응 준비가 그것이다. 지능 폭발이 일단 시작되면 행동할 수 있는 시간이 닫힐 수 있다.",
+   "marks": [
+    {
+     "t": "걸려 있는 것의 중대성에 비해 우리는 충분히 대비되어 있지 않다.",
+     "k": "key"
+    },
+    {
+     "t": "프론티어 AI 기업 내부의 AI R&D 자동화에 대한 가시성 확보, 지능 폭발을 조종하고 제약할 방법의 개발",
+     "k": "safety"
+    },
+    {
+     "t": "지능 폭발이 일단 시작되면 행동할 수 있는 시간이 닫힐 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Acknowledgments",
+   "ko": "감사의 글",
+   "id": "s72"
+  },
+  {
+   "type": "p",
+   "en": "We thank Anson Ho, Tom Cunningham, Cheryl Wu, Ryan Greenblatt, and many GovAI staff for feedback and conversations that improved this piece.",
+   "ko": "이 글의 개선에 도움이 된 피드백과 논의를 제공해 준 Anson Ho, Tom Cunningham, Cheryl Wu, Ryan Greenblatt, 그리고 여러 GovAI 직원들에게 감사드린다."
+  },
+  {
+   "type": "p",
+   "en": "We are grateful to Taylor Jones for creating the figures and to Zilan Qian for providing a Chinese translation of this piece.",
+   "ko": "그림을 제작해 준 Taylor Jones와 이 글의 중국어 번역본을 제공해 준 Zilan Qian에게 감사드린다."
+  },
+  {
+   "type": "h2",
+   "en": "References",
+   "ko": "참고문헌",
+   "id": "s75"
+  },
+  {
+   "type": "li",
+   "en": "[1] I. J. Good, 'Speculations concerning the first ultraintelligent machine,' in Advances in computers, vol. 6, Elsevier, 1966, pp. 31-88.",
+   "ko": "[1] I. J. Good, 'Speculations concerning the first ultraintelligent machine,' in Advances in computers, vol. 6, Elsevier, 1966, pp. 31-88.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[2] A. M. Turing, Intelligent machinery, a heretical theory, 1951.",
+   "ko": "[2] A. M. Turing, Intelligent machinery, a heretical theory, 1951.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[3] J. Evans, B. Bratton, and B. Agüera y Arcas, 'Agentic AI and the next intelligence explosion,' Science, vol. 391, no. 6791, eaeg1895, Mar. 2026. DOI: 10.1126/science.aeg1895.",
+   "ko": "[3] J. Evans, B. Bratton, and B. Agüera y Arcas, 'Agentic AI and the next intelligence explosion,' Science, vol. 391, no. 6791, eaeg1895, Mar. 2026. DOI: 10.1126/science.aeg1895.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[4] J. Pachocki, An alien mind, Sep. 2026.",
+   "ko": "[4] J. Pachocki, An alien mind, Sep. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[5] M. Favaro and J. Clark, When AI builds itself: Our progress toward recursive self-improvement, and its implications, Jun. 2026.",
+   "ko": "[5] M. Favaro and J. Clark, When AI builds itself: Our progress toward recursive self-improvement, and its implications, Jun. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[6] T. Tunguz, Are we being railroaded by AI? Nov. 2025.",
+   "ko": "[6] T. Tunguz, Are we being railroaded by AI? Nov. 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[7] C. E. Leiserson, N. C. Thompson, J. S. Emer, B. C. Kuszmaul, B. W. Lampson, D. Sanchez, and T. B. Schardl, 'There's plenty of room at the top: What will drive computer performance after Moore's law?' Science, vol. 368, no. 6495, eaam9744, Jun. 2020. DOI: 10.1126/science.aam9744.",
+   "ko": "[7] C. E. Leiserson, N. C. Thompson, J. S. Emer, B. C. Kuszmaul, B. W. Lampson, D. Sanchez, and T. B. Schardl, 'There's plenty of room at the top: What will drive computer performance after Moore's law?' Science, vol. 368, no. 6495, eaam9744, Jun. 2020. DOI: 10.1126/science.aam9744.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[8] A. Ho, T. Besiroglu, E. Erdil, D. Owen, R. Rahman, Z. C. Guo, D. Atkinson, N. Thompson, and J. Sevilla, Algorithmic progress in language models, 2024.",
+   "ko": "[8] A. Ho, T. Besiroglu, E. Erdil, D. Owen, R. Rahman, Z. C. Guo, D. Atkinson, N. Thompson, and J. Sevilla, Algorithmic progress in language models, 2024.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[9] OpenAI, How GPT-5.6 fuses frontier intelligence with frontier efficiency, Jul. 2026.",
+   "ko": "[9] OpenAI, How GPT-5.6 fuses frontier intelligence with frontier efficiency, Jul. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[10] M. Abdin, J. Aneja, H. Behl, S. Bubeck, R. Eldan, S. Gunasekar, M. Harrison, R. J. Hewett, M. Javaheripi, P. Kauffmann, J. R. Lee, Y. T. Lee, Y. Li, W. Liu, C. C. T. Mendes, A. Nguyen, E. Price, G. de Rosa, O. Saarikivi, A. Salim, S. Shah, X. Wang, R. Ward, Y. Wu, D. Yu, C. Zhang, and Y. Zhang, Phi-4 technical report, Dec. 2024. DOI: 10.48550/arXiv.2412.08905.",
+   "ko": "[10] M. Abdin, J. Aneja, H. Behl, S. Bubeck, R. Eldan, S. Gunasekar, M. Harrison, R. J. Hewett, M. Javaheripi, P. Kauffmann, J. R. Lee, Y. T. Lee, Y. Li, W. Liu, C. C. T. Mendes, A. Nguyen, E. Price, G. de Rosa, O. Saarikivi, A. Salim, S. Shah, X. Wang, R. Ward, Y. Wu, D. Yu, C. Zhang, and Y. Zhang, Phi-4 technical report, Dec. 2024. DOI: 10.48550/arXiv.2412.08905.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[11] J.-S. Denain and C. Barber, An FAQ on reinforcement learning environments, 2026.",
+   "ko": "[11] J.-S. Denain and C. Barber, An FAQ on reinforcement learning environments, 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[12] D. Guo et al., 'DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning,' Nature, vol. 645, no. 8081, pp. 633-638, Sep. 2025. DOI: 10.1038/s41586-025-09422-z.",
+   "ko": "[12] D. Guo et al., 'DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning,' Nature, vol. 645, no. 8081, pp. 633-638, Sep. 2025. DOI: 10.1038/s41586-025-09422-z.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[13] OpenAI, Learning to reason with LLMs, Sep. 2024.",
+   "ko": "[13] OpenAI, Learning to reason with LLMs, Sep. 2024.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[14] D. Eth and T. Davidson, 'Will AI R&D automation cause a software intelligence explosion?,' 2025.",
+   "ko": "[14] D. Eth and T. Davidson, 'Will AI R&D automation cause a software intelligence explosion?,' 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[15] M. Favaro and P. Wright, Measurements for understanding the pace of AI development inside frontier labs, Anthropic, Sep. 2026.",
+   "ko": "[15] M. Favaro and P. Wright, Measurements for understanding the pace of AI development inside frontier labs, Anthropic, Sep. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[16] METR, Frontier risk report (February to March 2026), May 2026.",
+   "ko": "[16] METR, Frontier risk report (February to March 2026), May 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[17] METR, Time horizon 1.1, Jan. 2026.",
+   "ko": "[17] METR, Time horizon 1.1, Jan. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[18] OpenAI, Research acceleration: The view inside OpenAI, Sep. 2026.",
+   "ko": "[18] OpenAI, Research acceleration: The view inside OpenAI, Sep. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[19] B. Rank, H. Bhatnagar, A. Prabhu, S. Eisenberg, K. Nguyen, M. Bethge, and M. Andriushchenko, 'PostTrainBench: Can LLM agents automate LLM post-training?' In International Conference on Machine Learning (ICML), 2026. arXiv: 2603.08640 [cs.SE].",
+   "ko": "[19] B. Rank, H. Bhatnagar, A. Prabhu, S. Eisenberg, K. Nguyen, M. Bethge, and M. Andriushchenko, 'PostTrainBench: Can LLM agents automate LLM post-training?' In International Conference on Machine Learning (ICML), 2026. arXiv: 2603.08640 [cs.SE].",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[20] J. Wen, L. Qiu, J. Benton, J. H. Kirchner, and J. Leike, Automated weak-to-strong researcher, Apr. 2026.",
+   "ko": "[20] J. Wen, L. Qiu, J. Benton, J. H. Kirchner, and J. Leike, Automated weak-to-strong researcher, Apr. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[21] J. Wen, C. Si, Y.-h. Chen, H. He, and S. Feng, Predicting empirical AI research outcomes with language models, Jun. 2025. DOI: 10.48550/arXiv.2506.00794.",
+   "ko": "[21] J. Wen, C. Si, Y.-h. Chen, H. He, and S. Feng, Predicting empirical AI research outcomes with language models, Jun. 2025. DOI: 10.48550/arXiv.2506.00794.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[22] C. Lu, C. Lu, R. T. Lange, Y. Yamada, S. Hu, J. Foerster, D. Ha, and J. Clune, 'Towards end-to-end automation of AI research,' Nature, vol. 651, no. 8107, pp. 914–919, Mar. 2026. DOI: 10.1038/s41586-026-10265-5.",
+   "ko": "[22] C. Lu, C. Lu, R. T. Lange, Y. Yamada, S. Hu, J. Foerster, D. Ha, and J. Clune, 'Towards end-to-end automation of AI research,' Nature, vol. 651, no. 8107, pp. 914–919, Mar. 2026. DOI: 10.1038/s41586-026-10265-5.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[23] S. Rabanser, S. Kapoor, P. Kirgis, K. Liu, S. Utpala, and A. Narayanan, Towards a science of AI agent reliability, Feb. 2026. DOI: 10.48550/arXiv.2602.16666.",
+   "ko": "[23] S. Rabanser, S. Kapoor, P. Kirgis, K. Liu, S. Utpala, and A. Narayanan, Towards a science of AI agent reliability, Feb. 2026. DOI: 10.48550/arXiv.2602.16666.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[24] Anthropic, 'Claude Fable 5 & Claude Mythos 5 system card,' Tech. Rep., Jun. 2026.",
+   "ko": "[24] Anthropic, 'Claude Fable 5 & Claude Mythos 5 system card,' Tech. Rep., Jun. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[25] OpenAI, 'GPT-6 Astra system card,' Tech. Rep., Sep. 2026.",
+   "ko": "[25] OpenAI, 'GPT-6 Astra system card,' Tech. Rep., Sep. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[26] P. Whitfill, C. Wu, J. Becker, and N. Rush, Many SWEbench-passing PRs would not be merged into main, Mar. 2026.",
+   "ko": "[26] P. Whitfill, C. Wu, J. Becker, and N. Rush, Many SWEbench-passing PRs would not be merged into main, Mar. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[27] N. Bloom, C. I. Jones, J. Van Reenen, and M. Webb, 'Are ideas getting harder to find?' American Economic Review, vol. 110, no. 4, pp. 1104-1144, Apr. 2020. DOI: 10.1257/aer.20180338.",
+   "ko": "[27] N. Bloom, C. I. Jones, J. Van Reenen, and M. Webb, 'Are ideas getting harder to find?' American Economic Review, vol. 110, no. 4, pp. 1104-1144, Apr. 2020. DOI: 10.1257/aer.20180338.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[28] A. Ho and P. Whitfill, The software intelligence explosion debate needs experiments, 2025.",
+   "ko": "[28] A. Ho and P. Whitfill, The software intelligence explosion debate needs experiments, 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[29] P. Whitfill and C. Wu, Will compute bottlenecks prevent an intelligence explosion? Aug. 2025. DOI: 10.48550/arXiv.2507.23181.",
+   "ko": "[29] P. Whitfill and C. Wu, Will compute bottlenecks prevent an intelligence explosion? Aug. 2025. DOI: 10.48550/arXiv.2507.23181.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[30] J. Kaplan, S. McCandlish, T. Henighan, T. B. Brown, B. Chess, R. Child, S. Gray, A. Radford, J. Wu, and D. Amodei, Scaling laws for neural language models, Jan. 2020. DOI: 10.48550/arXiv.2001.08361.",
+   "ko": "[30] J. Kaplan, S. McCandlish, T. Henighan, T. B. Brown, B. Chess, R. Child, S. Gray, A. Radford, J. Wu, and D. Amodei, Scaling laws for neural language models, Jan. 2020. DOI: 10.48550/arXiv.2001.08361.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[31] J. Hoffmann, S. Borgeaud, A. Mensch, E. Buchatskaya, T. Cai, E. Rutherford, D. de Las Casas, L. A. Hendricks, J. Welbl, A. Clark, T. Hennigan, E. Noland, K. Millican, G. van den Driessche, B. Damoc, A. Guy, S. Osindero, K. Simonyan, E. Elsen, J. W. Rae, O. Vinyals, and L. Sifre, Training compute-optimal large language models, Mar. 2022. DOI: 10.48550/arXiv.2203.15556.",
+   "ko": "[31] J. Hoffmann, S. Borgeaud, A. Mensch, E. Buchatskaya, T. Cai, E. Rutherford, D. de Las Casas, L. A. Hendricks, J. Welbl, A. Clark, T. Hennigan, E. Noland, K. Millican, G. van den Driessche, B. Damoc, A. Guy, S. Osindero, K. Simonyan, E. Elsen, J. W. Rae, O. Vinyals, and L. Sifre, Training compute-optimal large language models, Mar. 2022. DOI: 10.48550/arXiv.2203.15556.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[32] P. Villalobos, A. Ho, J. Sevilla, T. Besiroglu, L. Heim, and M. Hobbhahn, Will we run out of data? Limits of LLM scaling based on human-generated data, Jun. 2024. DOI: 10.48550/arXiv.2211.04325.",
+   "ko": "[32] P. Villalobos, A. Ho, J. Sevilla, T. Besiroglu, L. Heim, and M. Hobbhahn, Will we run out of data? Limits of LLM scaling based on human-generated data, Jun. 2024. DOI: 10.48550/arXiv.2211.04325.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[33] T. Davidson, B. Halperin, T. Houlden, and A. Korinek, When does automating AI research produce explosive growth? Feedback loops in innovation networks, Jul. 2026.",
+   "ko": "[33] T. Davidson, B. Halperin, T. Houlden, and A. Korinek, When does automating AI research produce explosive growth? Feedback loops in innovation networks, Jul. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[34] L. Emberson and Y. Edelman, Frontier training runs will likely stop getting longer by around 2027, Jul. 2025.",
+   "ko": "[34] L. Emberson and Y. Edelman, Frontier training runs will likely stop getting longer by around 2027, Jul. 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[35] T. Davidson, J.-S. Denain, P. Villalobos, and G. Bas, AI capabilities can be significantly improved without expensive retraining, Dec. 2023. DOI: 10.48550/arXiv.2312.07413.",
+   "ko": "[35] T. Davidson, J.-S. Denain, P. Villalobos, and G. Bas, AI capabilities can be significantly improved without expensive retraining, Dec. 2023. DOI: 10.48550/arXiv.2312.07413.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[36] A. Novikov, N. Vũ, M. Eisenberger, E. Dupont, P.-S. Huang, A. Z. Wagner, S. Shirobokov, B. Kozlovskii, F. J. R. Ruiz, A. Mehrabian, M. P. Kumar, A. See, S. Chaudhuri, G. Holland, A. Davies, S. Nowozin, P. Kohli, and M. Balog, AlphaEvolve: A coding agent for scientific and algorithmic discovery, Jun. 2025. DOI: 10.48550/arXiv.2506.13131.",
+   "ko": "[36] A. Novikov, N. Vũ, M. Eisenberger, E. Dupont, P.-S. Huang, A. Z. Wagner, S. Shirobokov, B. Kozlovskii, F. J. R. Ruiz, A. Mehrabian, M. P. Kumar, A. See, S. Chaudhuri, G. Holland, A. Davies, S. Nowozin, P. Kohli, and M. Balog, AlphaEvolve: A coding agent for scientific and algorithmic discovery, Jun. 2025. DOI: 10.48550/arXiv.2506.13131.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[37] T. Cunningham, L. Althoff, B. Halperin, B. Jabarian, A. Koh, A. Ramani, P. Trammell, P. Whitfill, and C. Wu, The economics of recursive self-improvement, Jul. 2026.",
+   "ko": "[37] T. Cunningham, L. Althoff, B. Halperin, B. Jabarian, A. Koh, A. Ramani, P. Trammell, P. Whitfill, and C. Wu, The economics of recursive self-improvement, Jul. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[38] H. Wang, T. Fu, Y. Du, W. Gao, K. Huang, Z. Liu, P. Chandak, S. Liu, P. Van Katwyk, A. Deac, A. Anandkumar, K. Bergen, C. P. Gomes, S. Ho, P. Kohli, J. Lasenby, J. Leskovec, T.-Y. Liu, A. Manrai, D. Marks, B. Ramsundar, L. Song, J. Sun, J. Tang, P. Veličković, M. Welling, L. Zhang, C. W. Coley, Y. Bengio, and M. Zitnik, 'Scientific discovery in the age of artificial intelligence,' Nature, vol. 620, no. 7972, pp. 47-60, Aug. 2023. DOI: 10.1038/s41586-023-06221-2.",
+   "ko": "[38] H. Wang, T. Fu, Y. Du, W. Gao, K. Huang, Z. Liu, P. Chandak, S. Liu, P. Van Katwyk, A. Deac, A. Anandkumar, K. Bergen, C. P. Gomes, S. Ho, P. Kohli, J. Lasenby, J. Leskovec, T.-Y. Liu, A. Manrai, D. Marks, B. Ramsundar, L. Song, J. Sun, J. Tang, P. Veličković, M. Welling, L. Zhang, C. W. Coley, Y. Bengio, and M. Zitnik, 'Scientific discovery in the age of artificial intelligence,' Nature, vol. 620, no. 7972, pp. 47-60, Aug. 2023. DOI: 10.1038/s41586-023-06221-2.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[39] K. E. Drexler, Radical abundance: How a revolution in nanotechnology will change civilization. PublicAffairs, 2013.",
+   "ko": "[39] K. E. Drexler, Radical abundance: How a revolution in nanotechnology will change civilization. PublicAffairs, 2013.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[40] Y. Bengio, S. Clare, C. Prunkl, M. Murray, M. Andriushchenko, B. Bucknall, R. Bommasani, S. Casper, T. Davidson, R. Douglas, D. Duvenaud, P. Fox, U. Gohar, R. Hadshar, A. Ho, T. Hu, C. Jones, S. Kapoor, A. Kasirzadeh, S. Manning, N. Maslej, V. Mavroudis, C. McGlynn, R. Moulange, J. Newman, K. Y. Ng, P. Paskov, S. Rismani, G. Sastry, E. Seger, S. Singer, C. Stix, L. Velasco, N. Wheeler, D. Acemoglu, V. Conitzer, T. G. Dietterich, E. W. Felten, F. Heintz, G. Hinton, N. Jennings, S. Leavy, T. Ludermir, V. Marda, H. Margetts, J. McDermid, J. Munga, A. Narayanan, A. Nelson, C. Neppel, S. D. Ramchurn, S. Russell, M. Schaake, B. Schölkopf, A. Soto, L. Tiedrich, G. Varoquaux, A. Yao, Y.-Q. Zhang, L. A. Aguirre, O. Ajala, F. Albalawi, N. AlMalek, C. Busch, J. Collas, A. C. P. d. L. F. de Carvalho, A. Gill, A. H. Hatip, J. Heikkilä, C. Johnson, G. Jolly, Z. Katzir, M. N. Kerema, H. Kitano, A. Krüger, K. M. Lee, J. R. López Portillo, A. McLysaght, O. Molchanovskyi, A. Monti, M. Nemer, N. Oliver, R. Pezoa, A. Plonk, B. Ravindran, H. Riza, C. Rugege, H. Sheikh, D. Wong, Y. Zeng, L. Zhu, D. Privitera, and S. Mindermann, 'International AI safety report 2026,' Department for Science, Innovation and Technology, Tech. Rep. DSIT 2026/001, 2026.",
+   "ko": "[40] Y. Bengio, S. Clare, C. Prunkl, M. Murray, M. Andriushchenko, B. Bucknall, R. Bommasani, S. Casper, T. Davidson, R. Douglas, D. Duvenaud, P. Fox, U. Gohar, R. Hadshar, A. Ho, T. Hu, C. Jones, S. Kapoor, A. Kasirzadeh, S. Manning, N. Maslej, V. Mavroudis, C. McGlynn, R. Moulange, J. Newman, K. Y. Ng, P. Paskov, S. Rismani, G. Sastry, E. Seger, S. Singer, C. Stix, L. Velasco, N. Wheeler, D. Acemoglu, V. Conitzer, T. G. Dietterich, E. W. Felten, F. Heintz, G. Hinton, N. Jennings, S. Leavy, T. Ludermir, V. Marda, H. Margetts, J. McDermid, J. Munga, A. Narayanan, A. Nelson, C. Neppel, S. D. Ramchurn, S. Russell, M. Schaake, B. Schölkopf, A. Soto, L. Tiedrich, G. Varoquaux, A. Yao, Y.-Q. Zhang, L. A. Aguirre, O. Ajala, F. Albalawi, N. AlMalek, C. Busch, J. Collas, A. C. P. d. L. F. de Carvalho, A. Gill, A. H. Hatip, J. Heikkilä, C. Johnson, G. Jolly, Z. Katzir, M. N. Kerema, H. Kitano, A. Krüger, K. M. Lee, J. R. López Portillo, A. McLysaght, O. Molchanovskyi, A. Monti, M. Nemer, N. Oliver, R. Pezoa, A. Plonk, B. Ravindran, H. Riza, C. Rugege, H. Sheikh, D. Wong, Y. Zeng, L. Zhu, D. Privitera, and S. Mindermann, 'International AI safety report 2026,' Department for Science, Innovation and Technology, Tech. Rep. DSIT 2026/001, 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[41] Y. Bengio, G. Hinton, A. Yao, D. Song, P. Abbeel, T. Darrell, Y. N. Harari, Y.-Q. Zhang, L. Xue, S. Shalev-Shwartz, G. Hadfield, J. Clune, T. Maharaj, F. Hutter, A. G. Baydin, S. McIlraith, Q. Gao, A. Acharya, D. Krueger, A. Dragan, P. Torr, S. Russell, D. Kahneman, J. Brauner, and S. Mindermann, 'Managing extreme AI risks amid rapid progress,' Science, vol. 384, no. 6698, pp. 842-845, May 2024. DOI: 10.1126/science.adn0117.",
+   "ko": "[41] Y. Bengio, G. Hinton, A. Yao, D. Song, P. Abbeel, T. Darrell, Y. N. Harari, Y.-Q. Zhang, L. Xue, S. Shalev-Shwartz, G. Hadfield, J. Clune, T. Maharaj, F. Hutter, A. G. Baydin, S. McIlraith, Q. Gao, A. Acharya, D. Krueger, A. Dragan, P. Torr, S. Russell, D. Kahneman, J. Brauner, and S. Mindermann, 'Managing extreme AI risks amid rapid progress,' Science, vol. 384, no. 6698, pp. 842-845, May 2024. DOI: 10.1126/science.adn0117.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[42] C. Aveggio, A. J. Patel, S. Nevo, and K. Webster, 'Exploring the offense-defense balance of biology: Identifying and describing high-level asymmetries,' RAND Corporation, Santa Monica, CA, Tech. Rep. PE-A4102-1, Aug. 2025.",
+   "ko": "[42] C. Aveggio, A. J. Patel, S. Nevo, and K. Webster, 'Exploring the offense-defense balance of biology: Identifying and describing high-level asymmetries,' RAND Corporation, Santa Monica, CA, Tech. Rep. PE-A4102-1, Aug. 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[43] R. Greenblatt, A. Cotra, and H. Wijk, 'Brief independent investigation of agents' behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident,' METR and Redwood Research, Tech. Rep., Aug. 2026.",
+   "ko": "[43] R. Greenblatt, A. Cotra, and H. Wijk, 'Brief independent investigation of agents' behavior, reasoning and collaboration in the OpenAI / Hugging Face hacking incident,' METR and Redwood Research, Tech. Rep., Aug. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[44] OpenAI, OpenAI and Hugging Face partner to address security incident during model evaluation, Jul. 2026.",
+   "ko": "[44] OpenAI, OpenAI and Hugging Face partner to address security incident during model evaluation, Jul. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[45] OpenAI, The Hugging Face incident and the road ahead, Aug. 2026.",
+   "ko": "[45] OpenAI, The Hugging Face incident and the road ahead, Aug. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[46] M. Sulmeyer, 'Artificial intelligence and the risk of strategic cyberattack,' RAND Corporation, Tech. Rep., Jul. 2026.",
+   "ko": "[46] M. Sulmeyer, 'Artificial intelligence and the risk of strategic cyberattack,' RAND Corporation, Tech. Rep., Jul. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[47] D. Hendrycks, E. Schmidt, and A. Wang, Superintelligence strategy: Expert version, Mar. 2025. DOI: 10.48550/arXiv.2503.05628.",
+   "ko": "[47] D. Hendrycks, E. Schmidt, and A. Wang, Superintelligence strategy: Expert version, Mar. 2025. DOI: 10.48550/arXiv.2503.05628.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[48] C. O'Keefe, A. Z. Rozenshtein, and C. Winter, Executive branch AI and the rule of law: An emerging research agenda, May 2026.",
+   "ko": "[48] C. O'Keefe, A. Z. Rozenshtein, and C. Winter, Executive branch AI and the rule of law: An emerging research agenda, May 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[49] T. Davidson, L. Finnveden, and R. Hadshar, 'AI-enabled coups: How a small group could use AI to seize power,' 2025.",
+   "ko": "[49] T. Davidson, L. Finnveden, and R. Hadshar, 'AI-enabled coups: How a small group could use AI to seize power,' 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[50] J. Edwards and L. Emberson, Open models lag state-ofthe-art closed models by 4 months, May 2026.",
+   "ko": "[50] J. Edwards and L. Emberson, Open models lag state-ofthe-art closed models by 4 months, May 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[51] R. Slayton, 'What is the cyber offense-defense balance? Conceptions, causes, and assessment,' International Security, vol. 41, no. 3, pp. 72-109, 2017. DOI: 10.1162/ISEC_a_00267.",
+   "ko": "[51] R. Slayton, 'What is the cyber offense-defense balance? Conceptions, causes, and assessment,' International Security, vol. 41, no. 3, pp. 72-109, 2017. DOI: 10.1162/ISEC_a_00267.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[52] B. Garfinkel and A. Dafoe, 'How does the offensedefense balance scale?' Journal of Strategic Studies, vol. 42, no. 6, pp. 736-763, Aug. 2019. DOI: 10.1080/01402390.2019.1631810.",
+   "ko": "[52] B. Garfinkel and A. Dafoe, 'How does the offensedefense balance scale?' Journal of Strategic Studies, vol. 42, no. 6, pp. 736-763, Aug. 2019. DOI: 10.1080/01402390.2019.1631810.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[53] Transparency in Frontier Artificial Intelligence Act, SB 53, 2025-2026 Reg. Sess. (Cal. 2025), Sep. 2025.",
+   "ko": "[53] Transparency in Frontier Artificial Intelligence Act, SB 53, 2025-2026 Reg. Sess. (Cal. 2025), Sep. 2025.",
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[54] European Commission, The general-purpose AI code of practice, Jul. 2025.",
+   "ko": "[54] European Commission, The general-purpose AI code of practice, Jul. 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[55] Responsible AI Safety and Education (RAISE) Act, A6453B, 2025-2026 Reg. Sess. (N.Y. 2025), Dec. 2025.",
+   "ko": "[55] Responsible AI Safety and Education (RAISE) Act, A6453B, 2025-2026 Reg. Sess. (N.Y. 2025), Dec. 2025.",
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[56] J. Kwon and S. Casper, Internal deployment gaps in AI regulation, Jan. 2026. DOI: 10.48550/arXiv.2601.08005.",
+   "ko": "[56] J. Kwon and S. Casper, Internal deployment gaps in AI regulation, Jan. 2026. DOI: 10.48550/arXiv.2601.08005.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[57] M. Pistillo, Internal deployment in the AI Act, Jun. 2026.",
+   "ko": "[57] M. Pistillo, Internal deployment in the AI Act, Jun. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[58] A. Chan, R. Padarath, J. Kwon, H. Greaves, and M. Anderljung, Measuring AI R&D automation, Mar. 2026. DOI: 10.48550/arXiv.2603.03992.",
+   "ko": "[58] A. Chan, R. Padarath, J. Kwon, H. Greaves, and M. Anderljung, Measuring AI R&D automation, Mar. 2026. DOI: 10.48550/arXiv.2603.03992.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[59] M. Brundage, N. Dreksler, A. Homewood, S. McGregor, P. Paskov, C. Stosz, G. Sastry, A. F. Cooper, G. Balston, S. Adler, S. Casper, M. Anderljung, G. Werner, S. Mindermann, V. Mavroudis, B. Bucknall, C. Stix, J. Freund, L. Pacchiardi, J. Hernandez-Orallo, M. Pistillo, M. Chen, C. Painter, D. W. Ball, C. O'Keefe, G. Weil, B. Harack, G. Finley, R. Hassan, S. Emmons, C. Foster, A. Reuel, B. Treece, Y. Bengio, D. Reti, R. Bommasani, C. Trout, A. S. Shamsabadi, R. Dattani, A. Weller, R. Trager, J. Sevilla, L. Wagner, L. Soder, K. Ramakrishnan, H. Papadatos, M. Murray, and R. Tovcimak, Frontier AI auditing: Toward rigorous third-party assessment of safety and security practices at leading AI companies, Feb. 2026. DOI: 10.48550/arXiv.2601.11699.",
+   "ko": "[59] M. Brundage, N. Dreksler, A. Homewood, S. McGregor, P. Paskov, C. Stosz, G. Sastry, A. F. Cooper, G. Balston, S. Adler, S. Casper, M. Anderljung, G. Werner, S. Mindermann, V. Mavroudis, B. Bucknall, C. Stix, J. Freund, L. Pacchiardi, J. Hernandez-Orallo, M. Pistillo, M. Chen, C. Painter, D. W. Ball, C. O'Keefe, G. Weil, B. Harack, G. Finley, R. Hassan, S. Emmons, C. Foster, A. Reuel, B. Treece, Y. Bengio, D. Reti, R. Bommasani, C. Trout, A. S. Shamsabadi, R. Dattani, A. Weller, R. Trager, J. Sevilla, L. Wagner, L. Soder, K. Ramakrishnan, H. Papadatos, M. Murray, and R. Tovcimak, Frontier AI auditing: Toward rigorous third-party assessment of safety and security practices at leading AI companies, Feb. 2026. DOI: 10.48550/arXiv.2601.11699.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[60] P. Wills, Regulatory supervision of frontier AI developers, SSRN Scholarly Paper, Rochester, NY, Mar. 2025. DOI: 10.2139/ssrn.5122871.",
+   "ko": "[60] P. Wills, Regulatory supervision of frontier AI developers, SSRN Scholarly Paper, Rochester, NY, Mar. 2025. DOI: 10.2139/ssrn.5122871.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[61] U.S. Nuclear Regulatory Commission, Backgrounder on NRC resident inspectors, 2023.",
+   "ko": "[61] U.S. Nuclear Regulatory Commission, Backgrounder on NRC resident inspectors, 2023.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[62] Office of the Comptroller of the Currency, What we do, 2026.",
+   "ko": "[62] Office of the Comptroller of the Currency, What we do, 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[63] M. Baker, G. Kulp, O. Marks, M. Brundage, and L. Heim, Verifying international agreements on AI: Six layers of verification for rules on large-scale AI development and deployment, Jul. 2025. DOI: 10.48550/arXiv.2507.15916.",
+   "ko": "[63] M. Baker, G. Kulp, O. Marks, M. Brundage, and L. Heim, Verifying international agreements on AI: Six layers of verification for rules on large-scale AI development and deployment, Jul. 2025. DOI: 10.48550/arXiv.2507.15916.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[64] B. Harack, R. F. Trager, A. Reuel, D. Manheim, M. Brundage, O. Aarne, A. Scher, Y. Pan, J. Xiao, K. Loke, S. N. Adan, G. Bas, N. A. Caputo, J. C. Morse, J. Ahuja, I. Duan, J. Egan, B. Bucknall, B. Rosen, R. Araujo, V. Boulanin, R. Lall, F. Barez, S. Alvira, C. Katzke, A. Atamli, and A. Awad, 'Verification for international AI governance,' Oxford Martin AI Governance Initiative, University of Oxford, Tech. Rep., Jul. 2025.",
+   "ko": "[64] B. Harack, R. F. Trager, A. Reuel, D. Manheim, M. Brundage, O. Aarne, A. Scher, Y. Pan, J. Xiao, K. Loke, S. N. Adan, G. Bas, N. A. Caputo, J. C. Morse, J. Ahuja, I. Duan, J. Egan, B. Bucknall, B. Rosen, R. Araujo, V. Boulanin, R. Lall, F. Barez, S. Alvira, C. Katzke, A. Atamli, and A. Awad, 'Verification for international AI governance,' Oxford Martin AI Governance Initiative, University of Oxford, Tech. Rep., Jul. 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[65] T. Larsen, R. Dean, B. Halstead, E. Lifland, R. Greenblatt, and D. Kokotajlo, AI 2040: Plan A, AI Futures Project, 2026.",
+   "ko": "[65] T. Larsen, R. Dean, B. Halstead, E. Lifland, R. Greenblatt, and D. Kokotajlo, AI 2040: Plan A, AI Futures Project, 2026.",
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[66] G. Sastry, L. Heim, H. Belfield, M. Anderljung, M. Brundage, J. Hazell, C. O'Keefe, G. K. Hadfield, R. Ngo, K. Pilz, G. Gor, E. Bluemke, S. Shoker, J. Egan, R. F. Trager, S. Avin, A. Weller, Y. Bengio, and D. Coyle, Computing power and the governance of artificial intelligence, Feb. 2024. DOI: 10.48550/arXiv.2402.08797.",
+   "ko": "[66] G. Sastry, L. Heim, H. Belfield, M. Anderljung, M. Brundage, J. Hazell, C. O'Keefe, G. K. Hadfield, R. Ngo, K. Pilz, G. Gor, E. Bluemke, S. Shoker, J. Egan, R. F. Trager, S. Avin, A. Weller, Y. Bengio, and D. Coyle, Computing power and the governance of artificial intelligence, Feb. 2024. DOI: 10.48550/arXiv.2402.08797.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[67] A. Korinek and J. E. Stiglitz, Steering technological progress, Working Paper, Mar. 2026. DOI: 10.3386/w34994.",
+   "ko": "[67] A. Korinek and J. E. Stiglitz, Steering technological progress, Working Paper, Mar. 2026. DOI: 10.3386/w34994.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[68] S. Shoker, A. Reddie, S. Barrington, R. Booth, M. Brundage, H. Chahal, M. Depp, B. Drexel, R. Gupta, M. Favaro, J. Hecla, A. Hickey, M. Konaev, K. Kumar, N. Lambert, A. Lohn, C. O'Keefe, N. Rajani, M. Sellitto, R. Trager, L. Walker, A. Wehsener, and J. Young, Confidence-building measures for artificial intelligence: Workshop proceedings, Aug. 2023. DOI: 10.48550/arXiv.2308.00862.",
+   "ko": "[68] S. Shoker, A. Reddie, S. Barrington, R. Booth, M. Brundage, H. Chahal, M. Depp, B. Drexel, R. Gupta, M. Favaro, J. Hecla, A. Hickey, M. Konaev, K. Kumar, N. Lambert, A. Lohn, C. O'Keefe, N. Rajani, M. Sellitto, R. Trager, L. Walker, A. Wehsener, and J. Young, Confidence-building measures for artificial intelligence: Workshop proceedings, Aug. 2023. DOI: 10.48550/arXiv.2308.00862.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[69] Intelligence Rising, Intelligence Rising, n.d..",
+   "ko": "[69] Intelligence Rising, Intelligence Rising, n.d..",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[70] AI Futures Project, About AI 2027: Tabletop exercise, 2025.",
+   "ko": "[70] AI Futures Project, About AI 2027: Tabletop exercise, 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[71] G. Smith, G. Hage, C. Heitzenrater, M. Chessen, and R. S. Girven, 'Infinite potential—insights from the cyber surprise scenario,' RAND Corporation, Tech. Rep., Mar. 2026.",
+   "ko": "[71] G. Smith, G. Hage, C. Heitzenrater, M. Chessen, and R. S. Girven, 'Infinite potential—insights from the cyber surprise scenario,' RAND Corporation, Tech. Rep., Mar. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[72] L. Vaintrob, The AI adoption gap: Preparing the US government for advanced AI, Apr. 2025.",
+   "ko": "[72] L. Vaintrob, The AI adoption gap: Preparing the US government for advanced AI, Apr. 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[73] OpenAI, OpenAI model spec, Aug. 2026.",
+   "ko": "[73] OpenAI, OpenAI model spec, Aug. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[74] Anthropic, Claude's constitution, Jan. 2026.",
+   "ko": "[74] Anthropic, Claude's constitution, Jan. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[75] C. O'Keefe, K. Ramakrishnan, J. Tay, and C. Winter, 'Law-following AI: Designing AI agents to obey human laws,' Fordham Law Review, vol. 94, no. 1, p. 57, 2025.",
+   "ko": "[75] C. O'Keefe, K. Ramakrishnan, J. Tay, and C. Winter, 'Law-following AI: Designing AI agents to obey human laws,' Fordham Law Review, vol. 94, no. 1, p. 57, 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[76] S. Guerra, A. Attal-Juncqua, J. P. Tarangelo, C. Aveggio, K. Dammer, and D. Glickstein, 'Building a defense-indepth biosecurity strategy for the AI era,' RAND Corporation, Tech. Rep., Aug. 2026.",
+   "ko": "[76] S. Guerra, A. Attal-Juncqua, J. P. Tarangelo, C. Aveggio, K. Dammer, and D. Glickstein, 'Building a defense-indepth biosecurity strategy for the AI era,' RAND Corporation, Tech. Rep., Aug. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[77] J.-S. Denain, A. Ho, and J. Sevilla, How many digital workers could OpenAI deploy? Oct. 2025.",
+   "ko": "[77] J.-S. Denain, A. Ho, and J. Sevilla, How many digital workers could OpenAI deploy? Oct. 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[78] H. Wijk, T. Lin, J. Becker, S. Jawhar, N. Parikh, T. Broadley, L. Chan, M. Chen, J. Clymer, J. Dhyani, E. Ericheva, K. Garcia, B. Goodrich, N. Jurkovic, H. Karnofsky, M. Kinniment, A. Lajko, S. Nix, L. Sato, W. Saunders, M. Taran, B. West, and E. Barnes, RE-Bench: Evaluating frontier AI R&D capabilities of language model agents against human experts, May 2025. DOI: 10.48550/arXiv.2411.15114.",
+   "ko": "[78] H. Wijk, T. Lin, J. Becker, S. Jawhar, N. Parikh, T. Broadley, L. Chan, M. Chen, J. Clymer, J. Dhyani, E. Ericheva, K. Garcia, B. Goodrich, N. Jurkovic, H. Karnofsky, M. Kinniment, A. Lajko, S. Nix, L. Sato, W. Saunders, M. Taran, B. West, and E. Barnes, RE-Bench: Evaluating frontier AI R&D capabilities of language model agents against human experts, May 2025. DOI: 10.48550/arXiv.2411.15114.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[79] A. Ho, J.-S. Denain, D. Atanasov, S. Albanie, and R. Shah, A rosetta stone for AI benchmarks, 2025.",
+   "ko": "[79] A. Ho, J.-S. Denain, D. Atanasov, S. Albanie, and R. Shah, A rosetta stone for AI benchmarks, 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[80] B. Cottier, B. Snodin, D. Owen, and T. Adamczewski, LLM inference prices have fallen rapidly but unequally across tasks, Mar. 2025.",
+   "ko": "[80] B. Cottier, B. Snodin, D. Owen, and T. Adamczewski, LLM inference prices have fallen rapidly but unequally across tasks, Mar. 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[81] H. Gundlach, A. Fogelson, J. Lynch, A. Trisovic, J. Rosenfeld, A. Sandhu, and N. Thompson, On the origin of algorithmic progress in AI, Nov. 2025. DOI: 10.48550/arXiv.2511.21622.",
+   "ko": "[81] H. Gundlach, A. Fogelson, J. Lynch, A. Trisovic, J. Rosenfeld, A. Sandhu, and N. Thompson, On the origin of algorithmic progress in AI, Nov. 2025. DOI: 10.48550/arXiv.2511.21622.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[82] P. Trammell, 'The bounded parallelizability of R&D: Theory and application to AI,' Jul. 2026.",
+   "ko": "[82] P. Trammell, 'The bounded parallelizability of R&D: Theory and application to AI,' Jul. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[83] METR, Measuring AI ability to complete long tasks, Mar. 2025.",
+   "ko": "[83] METR, Measuring AI ability to complete long tasks, Mar. 2025.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[84] D. Kokotajlo, S. Alexander, T. Larsen, E. Lifland, and R. Dean, AI 2027, Apr. 2025.",
+   "ko": "[84] D. Kokotajlo, S. Alexander, T. Larsen, E. Lifland, and R. Dean, AI 2027, Apr. 2025.",
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[85] T. Ord, The dynamics of intelligence explosions, 2026. arXiv: 2608.14426 [cs.AI].",
+   "ko": "[85] T. Ord, The dynamics of intelligence explosions, 2026. arXiv: 2608.14426 [cs.AI].",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[86] B. Murphy and T. Stone, Uplifted attackers, human defenders: The cyber offense-defense balance for trailing-edge organizations, Aug. 2025. DOI: 10.48550/arXiv.2508.15808.",
+   "ko": "[86] B. Murphy and T. Stone, Uplifted attackers, human defenders: The cyber offense-defense balance for trailing-edge organizations, Aug. 2025. DOI: 10.48550/arXiv.2508.15808.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[87] Anthropic, Investigating three real-world incidents in our cybersecurity evaluations, Jul. 2026.",
+   "ko": "[87] Anthropic, Investigating three real-world incidents in our cybersecurity evaluations, Jul. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[88] UK AI Security Institute, Incident report: Unsanctioned agent behaviour during cyber testing, Aug. 2026.",
+   "ko": "[88] UK AI Security Institute, Incident report: Unsanctioned agent behaviour during cyber testing, Aug. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[89] OpenAI, Third-party cyber evaluations involving OpenAI models, Aug. 2026.",
+   "ko": "[89] OpenAI, Third-party cyber evaluations involving OpenAI models, Aug. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[90] P. C. Bogdan, R. Qi, J. Eaton, S. Kennedy, F. Roger, A. Glynn, R. Chen, B. Wright, O. Stegmaier, J. Kutasov, D. Foreman-Mackey, T. Bricken, S. Carr, S. Carter, M. MacDiarmid, S. Marks, A. Pearce, E. Simon, N. Carlini, C. Burns, J. Lindsey, S. Price, and S. Kantamneni, An alignment assessment of recent cybersecurity incidents, Anthropic, Sep. 2026.",
+   "ko": "[90] P. C. Bogdan, R. Qi, J. Eaton, S. Kennedy, F. Roger, A. Glynn, R. Chen, B. Wright, O. Stegmaier, J. Kutasov, D. Foreman-Mackey, T. Bricken, S. Carr, S. Carter, M. MacDiarmid, S. Marks, A. Pearce, E. Simon, N. Carlini, C. Burns, J. Lindsey, S. Price, and S. Kantamneni, An alignment assessment of recent cybersecurity incidents, Anthropic, Sep. 2026.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[91] M. H. Tessler, M. A. Bakker, D. Jarrett, H. Sheahan, M. J. Chadwick, R. Koster, G. Evans, L. Campbell-Gillingham, T. Collins, D. C. Parkes, M. Botvinick, and C. Summerfield, 'AI can help humans find common ground in democratic deliberation,' Science, vol. 386, no. 6719, eadq2852, Oct. 2024. DOI: 10.1126/science.adq2852.",
+   "ko": "[91] M. H. Tessler, M. A. Bakker, D. Jarrett, H. Sheahan, M. J. Chadwick, R. Koster, G. Evans, L. Campbell-Gillingham, T. Collins, D. C. Parkes, M. Botvinick, and C. Summerfield, 'AI can help humans find common ground in democratic deliberation,' Science, vol. 386, no. 6719, eadq2852, Oct. 2024. DOI: 10.1126/science.adq2852.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[92] A. Goldie and A. Mirhoseini, How AlphaChip transformed computer chip design, Sep. 2024.",
+   "ko": "[92] A. Goldie and A. Mirhoseini, How AlphaChip transformed computer chip design, Sep. 2024.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "h2",
+   "en": "Supplementary Materials",
+   "ko": "보충 자료",
+   "id": "s169"
+  },
+  {
+   "type": "h2",
+   "en": "Estimate of the effective size of an AI workforce",
+   "ko": "AI 인력의 실효 규모 추정",
+   "id": "s170"
+  },
+  {
+   "type": "p",
+   "en": "Following Denain et al. [77], we estimate the effective workforce by dividing the number of tokens a developer can generate per day by the number of tokens corresponding to one researcher-day of work. OpenAI alone has enough inference compute (i.e., runtime compute) to generate on the order of 10¹³ tokens per day. To estimate tokens per researcher-day, we use the number of tokens a model generates on a task that would take a human researcher one workday (8 hours). In an AI R&D benchmark, Wijk et al. [78] find that models output on average 5·10⁵ tokens on runs of up to 8 hours, implying an effective workforce of about 2·10⁷ researchers. Allowing for about an order of magnitude of uncertainty in either direction ( 5·10⁴–5·10⁶ tokens per researcher-day), we estimate an effective workforce on the order of 2·10⁶–2·10⁸. As in the main text, this assumes that expert-level AI systems have runtime costs comparable to those of today's systems.",
+   "ko": "Denain et al. [77]을 따라, 개발자가 하루에 생성할 수 있는 토큰 수를 연구자 1인일(researcher-day) 분량의 작업에 해당하는 토큰 수로 나누어 실효 인력 규모를 추정한다. OpenAI 한 곳만 해도 하루에 10¹³ 토큰 규모를 생성할 수 있을 만큼의 추론 연산(즉, 실행 시점 연산(runtime compute))을 보유하고 있다. 연구자 1인일당 토큰 수를 추정하기 위해, 인간 연구자가 하루 근무(8시간)를 들여야 하는 과업에서 모델이 생성하는 토큰 수를 사용한다. 한 AI R&D 벤치마크에서 Wijk et al. [78]은 최대 8시간 길이의 실행에서 모델이 평균 5·10⁵ 토큰을 출력한다는 것을 발견했으며, 이는 약 2·10⁷명의 연구자에 해당하는 실효 인력을 함의한다. 양방향으로 약 한 자릿수(order of magnitude)의 불확실성(연구자 1인일당 5·10⁴–5·10⁶ 토큰)을 허용하면, 실효 인력은 2·10⁶–2·10⁸ 규모로 추정된다. 본문에서와 마찬가지로, 이는 전문가 수준의 AI 시스템이 오늘날의 시스템과 비슷한 실행 비용을 가진다고 가정한 것이다.",
+   "marks": [
+    {
+     "t": "이는 약 2·10⁷명의 연구자에 해당하는 실효 인력을 함의한다",
+     "k": "key"
+    },
+    {
+     "t": "실효 인력은 2·10⁶–2·10⁸ 규모로 추정된다",
+     "k": "safety"
+    },
+    {
+     "t": "전문가 수준의 AI 시스템이 오늘날의 시스템과 비슷한 실행 비용을 가진다고 가정한 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Modeling the feedback loop under full automation",
+   "ko": "완전 자동화하에서의 피드백 루프 모델링",
+   "id": "s172"
+  },
+  {
+   "type": "p",
+   "en": "Most analyses of a software-driven intelligence explosion capture AI progress with some notion of software quality, denoted by A. In principle, A should measure AI progress holistically, including both efficiency improvements (new AI systems accomplishing the same tasks as old systems, with similar performance, using less compute or data) and capability improvements (new AI systems accomplishing tasks that previous systems could not accomplish, or achieving higher performance than previous systems could achieve). Frustratingly, it is currently unclear how the parameter A should best trade off between efficiency improvements and capability improvements (or between different types of efficiency improvements and capability improvements).",
+   "ko": "소프트웨어 주도 지능 폭발에 관한 대부분의 분석은 A로 표기되는 일종의 소프트웨어 품질 개념으로 AI 발전을 포착한다. 원칙적으로 A는 효율성 개선(새로운 AI 시스템이 더 적은 연산이나 데이터를 사용하여 기존 시스템과 동일한 과업을 비슷한 성능으로 수행하는 것)과 역량 개선(새로운 AI 시스템이 이전 시스템이 수행할 수 없던 과업을 수행하거나, 이전 시스템이 달성할 수 있던 것보다 높은 성능을 달성하는 것)을 모두 포함하여 AI 발전을 총체적으로 측정해야 한다. 아쉽게도, 파라미터 A가 효율성 개선과 역량 개선 사이에서(또는 서로 다른 유형의 효율성 개선과 역량 개선 사이에서) 어떻게 상충 관계를 반영하는 것이 가장 좋은지는 현재 불분명하다.",
+   "marks": [
+    {
+     "t": "소프트웨어 주도 지능 폭발에 관한 대부분의 분석은",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Setting this issue aside, we model the growth of software quality with dA/dt = A^(1−β) E^λ, a functional form common in the macroeconomics of innovation [27]. For simplicity, we ignore potential bottlenecks from compute and data. Here, E is effective R&D labor, λ represents returns to scale on R&D labor, and β represents whether there are increasing or diminishing returns to finding new ideas over time. The key question is how E grows with A. Assuming full automation, we consider two cases. First, consider a case where all improvements in software quality are increases in inference compute efficiency, that is, decreases in the amount of compute needed to run an AI system with a certain capability level. In that case, if A measures inference efficiency, then E is proportional to A: greater inference efficiency allows proportionally more automated researchers to be run.",
+   "ko": "이 문제는 차치하고, 소프트웨어 품질의 성장을 혁신의 거시경제학에서 흔히 쓰이는 함수 형태인 dA/dt = A^(1−β) E^λ로 모델링한다 [27]. 단순화를 위해 연산과 데이터로 인한 잠재적 병목은 무시한다. 여기서 E는 실효 R&D 노동, λ는 R&D 노동의 규모 수익률을 나타내며, β는 시간이 지남에 따라 새로운 아이디어를 찾는 데 수확 체증이 있는지 수확 체감이 있는지를 나타낸다. 핵심 질문은 E가 A에 따라 어떻게 증가하는가이다. 완전 자동화를 가정하고 두 가지 경우를 고려한다. 첫째, 소프트웨어 품질의 모든 개선이 추론 연산 효율성의 증가, 즉 특정 역량 수준의 AI 시스템을 실행하는 데 필요한 연산량의 감소인 경우를 고려한다. 이 경우 A가 추론 효율성을 측정한다면 E는 A에 비례한다. 추론 효율성이 높아지면 그에 비례하여 더 많은 자동화된 연구자를 실행할 수 있기 때문이다."
+  },
+  {
+   "type": "p",
+   "en": "Second, consider a case where all improvements in software quality are capability gains, driven by improvements in training compute efficiency: decreases in the amount of compute needed to train an AI system to a given capability level, which allow a more capable system to be trained with a fixed stock of compute. If A measures training compute efficiency, then increases in A yield more capable systems rather than more of them. If we make the (potentially questionable) assumption that the effective number of researchers scales linearly with these capability gains, then E is again proportional to A.",
+   "ko": "둘째, 소프트웨어 품질의 모든 개선이 학습 연산량 효율성의 개선, 즉 주어진 역량 수준까지 AI 시스템을 학습시키는 데 필요한 연산량의 감소에 의해 이루어지는 역량 향상인 경우를 고려한다. 이러한 감소는 고정된 연산 보유량으로 더 유능한 시스템을 학습시킬 수 있게 한다. A가 학습 연산량 효율성을 측정한다면, A의 증가는 더 많은 시스템이 아니라 더 유능한 시스템을 낳는다. 실효 연구자 수가 이러한 역량 향상에 따라 선형적으로 증가한다는 (잠재적으로 의문의 여지가 있는) 가정을 하면, E는 다시 A에 비례한다."
+  },
+  {
+   "type": "p",
+   "en": "In both cases, E = kA for some positive constant k. Substituting into the equation above gives dA/dt = cA^(λ−β+1), where c = k^λ. For the growth rate (1/A) dA/dt to increase as software quality increases, we need λ > β . Defining r = λ/β , we obtain the condition r > 1 discussed in the main text.",
+   "ko": "두 경우 모두 어떤 양의 상수 k에 대해 E = kA이다. 이를 위 방정식에 대입하면 dA/dt = cA^(λ−β+1)을 얻으며, 여기서 c = k^λ이다. 소프트웨어 품질이 증가함에 따라 성장률 (1/A) dA/dt가 증가하려면 λ > β 이어야 한다. r = λ/β 로 정의하면, 본문에서 논의한 조건 r > 1을 얻는다.",
+   "marks": [
+    {
+     "t": "소프트웨어 품질이 증가함에 따라 성장률 (1/A) dA/dt가 증가하려면 λ > β 이어야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "How quickly could progress accelerate under current estimates of these parameters? We measure acceleration by the growth rate of software quality: (1/A) dA/dt = c·A^(λ−β). Averaging the central estimates across the three sub-fields in Ho and Whitfill [28] gives λ = 1.40 and β = 1.01. With λ−β = 0.39, each doubling of A multiplies the growth rate by 2^0.39 ≈ 1.31, so each subsequent doubling takes (1/2)^0.39 ≈ 76% as long as the last. For the growth rate to increase tenfold, A needs to double log₂(10)/0.39 ≈ 8.5 times. For the length of the first doubling, we use recent estimates that, due to software improvements alone, training compute efficiency doubles roughly every 4.5 months [79]; inference compute efficiency may be growing even faster [80]. To avoid having to approximate the geometric sum for 8.5 doublings, we instead calculate the geometric sum for 9 doublings, after which time the growth rate will have increased more than tenfold. Doing so, we find that the growth rate will have increased more than tenfold after 4.5 months × (1−0.76⁹)/(1−0.76) ≈ 17 months, or about 1.5 years. At that point, progress would be ten times faster than today, so a year's worth of progress at today's pace would take about five weeks.",
+   "ko": "이러한 파라미터의 현재 추정치하에서 발전은 얼마나 빠르게 가속될 수 있는가? 우리는 소프트웨어 품질의 성장률 (1/A) dA/dt = c·A^(λ−β)로 가속을 측정한다. Ho and Whitfill [28]이 제시한 세 하위 분야의 중심 추정치를 평균하면 λ = 1.40, β = 1.01이다. λ−β = 0.39이므로 A가 두 배가 될 때마다 성장률은 2^0.39 ≈ 1.31배가 된다. 따라서 이후의 각 배증에는 직전 배증에 걸린 시간의 (1/2)^0.39 ≈ 76%가 걸린다. 성장률이 10배 증가하려면 A가 log₂(10)/0.39 ≈ 8.5회 두 배가 되어야 한다. 첫 번째 배증 기간으로는, 소프트웨어 개선만으로 학습 연산량 효율성이 약 4.5개월마다 두 배가 된다는 최근 추정치를 사용한다 [79]. 추론 연산 효율성은 이보다 더 빠르게 증가하고 있을 수 있다 [80]. 8.5회 배증에 대한 등비수열의 합을 근사하는 대신, 9회 배증에 대한 등비수열의 합을 계산한다. 9회 배증이 끝나면 성장률은 10배 넘게 증가해 있을 것이다. 이렇게 계산하면 4.5개월 × (1−0.76⁹)/(1−0.76) ≈ 17개월, 즉 약 1.5년 후에 성장률이 10배 넘게 증가해 있을 것이다. 그 시점에서 발전은 오늘날보다 10배 빨라질 것이므로, 오늘날의 속도로 1년이 걸리는 분량의 발전이 약 5주 만에 이루어질 것이다.",
+   "marks": [
+    {
+     "t": "즉 약 1.5년 후에 성장률이 10배 넘게 증가해 있을 것이다",
+     "k": "key"
+    },
+    {
+     "t": "오늘날의 속도로 1년이 걸리는 분량의 발전이 약 5주 만에 이루어질 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Uncertainties about the returns to research effort",
+   "ko": "연구 노력의 수익률에 관한 불확실성",
+   "id": "s178"
+  },
+  {
+   "type": "p",
+   "en": "Several factors could make the true value of r differ from existing estimates. First, as noted above, it is unclear which measure of software quality is most appropriate. Inference efficiency maps most directly onto the size of an automated R&D workforce, whereas it is unclear how to translate training efficiency gains into the effective number of researchers. Yet existing estimates of r for AI R&D use training efficiency, and it is unknown how similar the returns to research effort are under the two measures. Furthermore, a proper assessment of returns to research effort would include improvements from both inference efficiency and training efficiency, rather than just one. More work is warranted to develop a characterization of software quality that incorporates both inference and training efficiency and weighs them against each other appropriately.",
+   "ko": "여러 요인으로 인해 r의 실제 값이 기존 추정치와 다를 수 있다. 첫째, 앞서 언급했듯이 어떤 소프트웨어 품질 척도가 가장 적절한지 불분명하다. 추론 효율성은 자동화된 R&D 인력의 규모에 가장 직접적으로 대응된다. 반면 학습 효율성 향상을 실효 연구자 수로 어떻게 환산해야 할지는 불분명하다. 그러나 AI R&D에 대한 기존의 r 추정치는 학습 효율성을 사용하며, 두 척도하에서 연구 노력의 수익률이 얼마나 유사한지는 알려져 있지 않다. 나아가 연구 노력의 수익률을 제대로 평가(assessment)하려면 추론 효율성과 학습 효율성 중 하나만이 아니라 두 가지 모두에서 비롯된 개선을 포함해야 한다. 추론 효율성과 학습 효율성을 모두 반영하고 둘 사이의 가중치를 적절한 방식으로 부여하는 소프트웨어 품질의 특성화를 개발하려면 추가 연구가 필요하다.",
+   "marks": [
+    {
+     "t": "추론 효율성은 자동화된 R&D 인력의 규모에 가장 직접적으로 대응된다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Existing estimates of r come from a period of rapid compute scaling, which confounds the contributions of software progress and compute scaling. Because these two inputs grew together historically, an estimate that attributes observed progress to software improvements may actually be capturing gains driven by, or only made possible by, rising compute. Some software improvements are scale-dependent: for example, the transformer architecture yields large performance gains at high training compute but relatively small gains at low compute [81]. Such confounding would bias estimates of r upward: in a regime of fixed or slowly growing compute, r would be lower than historical data suggest.",
+   "ko": "기존의 r 추정치는 연산 스케일링이 빠르게 진행된 시기의 데이터에서 도출되었으며, 이 때문에 연산 스케일링이 소프트웨어 발전과 연산 스케일링 각각의 기여를 구분하기 어렵게 만드는 교란 요인으로 작용한다. 역사적으로 이 두 입력은 함께 증가했기 때문에, 관찰된 발전을 소프트웨어 개선의 결과로 귀속시키는 추정치는 실제로는 연산 증가가 이끌었거나 연산 증가가 있었기에 비로소 가능했던 성과를 포착하고 있을 수 있다. 일부 소프트웨어 개선은 규모에 의존한다. 예를 들어 트랜스포머 아키텍처는 학습 연산량이 많을 때는 큰 성능 향상을 가져오지만, 연산이 적을 때는 상대적으로 작은 향상만을 가져온다 [81]. 이러한 교란 요인은 r 추정치를 상향 편향시킬 것이다. 즉, 연산이 고정되어 있거나 느리게 증가하는 상황에서는 r이 역사적 데이터가 시사하는 것보다 낮을 것이다.",
+   "marks": [
+    {
+     "t": "이러한 교란 요인은 r 추정치를 상향 편향시킬 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Other factors could imply a higher r. Most estimates of r neglect improvements in areas outside of pre-training, such as post-training or better scaffolding for tool use [35]. Furthermore, capability improvements could matter in ways that the effective number of researchers fails to capture: even an extremely large number of mediocre researchers may not be able to substitute for one genius researcher. If so, capability gains would expand effective R&D labor by more than the linear assumption above implies. Compute bottlenecks could also be circumvented, such as through better extrapolation from small-scale experiments, reductions in experiment cost from software progress, shifts toward approaches that are less compute-reliant, and algorithmic progress that does not require experiments [7].",
+   "ko": "다른 요인들은 r이 더 높음을 함의할 수 있다. 대부분의 r 추정치는 사후 학습이나 도구 사용을 위한 더 나은 스캐폴딩 등 사전 학습 이외 영역의 개선을 무시한다 [35]. 또한 역량 개선은 실효 연구자 수로는 포착되지 않는 방식으로 중요할 수 있다. 평범한 연구자가 극도로 많더라도 천재 연구자 한 명을 대체하지 못할 수 있다. 그렇다면 역량 향상은 위의 선형 가정이 함의하는 것보다 실효 R&D 노동을 더 크게 확장할 것이다. 연산 병목 또한 우회될 수 있다. 예를 들어 소규모 실험으로부터 더 잘 외삽하거나, 소프트웨어 발전을 통해 실험 비용을 줄이거나, 연산 의존도가 낮은 접근법으로 전환하거나, 실험을 필요로 하지 않는 알고리즘 발전을 이루는 방식이 있다 [7].",
+   "marks": [
+    {
+     "t": "다른 요인들은 r이 더 높음을 함의할 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Estimates of r also rely on imperfect proxies for R&D labor, which could bias them in either direction. For example, Ho and Whitfill [28] proxy R&D labor with the number of unique authors who have published papers in a domain. Drawing the domain too narrowly undercounts labor by excluding adjacent fields that also drive progress, while drawing it too broadly overcounts labor. Unless the excluded adjacent fields see the same growth rate in labor as the included fields, the disconnect will lead to miscalculating r.",
+   "ko": "r 추정치는 R&D 노동의 불완전한 대리 지표에도 의존하며, 이는 추정치를 어느 방향으로든 편향시킬 수 있다. 예를 들어 Ho and Whitfill [28]은 한 분야에서 논문을 발표한 고유 저자 수를 R&D 노동의 대리 지표로 사용한다. 분야를 너무 좁게 설정하면 발전을 함께 견인하는 인접 분야를 제외하게 되어 노동을 과소 집계하고, 너무 넓게 설정하면 노동을 과다 집계한다. 제외된 인접 분야의 노동 증가율이 포함된 분야와 같지 않다면, 이러한 불일치는 r을 잘못 계산하게 만들 것이다."
+  },
+  {
+   "type": "p",
+   "en": "Finally, the relevant mathematical models may not generalize to extremely large amounts of R&D labor [82]. Historically, they have been validated against growth rates of a few percent per year, well below the double-digit or higher rates that an intelligence explosion could produce. They also break down in the limit, where they imply that infinite labor yields infinite progress in finite time. But real constraints make this result impossible: some problems must be solved in sequence, and physical hardware can only operate so fast.",
+   "ko": "마지막으로, 관련 수학적 모델은 극도로 많은 양의 R&D 노동으로는 일반화되지 않을 수 있다 [82]. 역사적으로 이러한 모델은 연간 몇 퍼센트 수준의 성장률을 대상으로 검증되었는데, 이는 지능 폭발이 낳을 수 있는 두 자릿수 이상의 성장률에 훨씬 못 미친다. 또한 이러한 모델은 극한에서 무너지는데, 극한에서는 무한한 노동이 유한한 시간 안에 무한한 발전을 낳는다는 결과를 함의하기 때문이다. 그러나 현실의 제약으로 인해 이러한 결과는 불가능하다. 일부 문제는 순차적으로 해결되어야 하며, 물리적 하드웨어가 작동할 수 있는 속도에도 한계가 있다.",
+   "marks": [
+    {
+     "t": "지능 폭발이 낳을 수 있는 두 자릿수 이상의 성장률",
+     "k": "safety"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "Machine-learning venues typically have a main conference track and several workshop tracks. One caveat to the results is that these workshop tracks can have somewhat laxer standards than the main conference track.",
+   "ko": "머신러닝 학회는 일반적으로 메인 학회 트랙과 여러 워크숍 트랙으로 구성된다. 결과에 대한 한 가지 단서는 이러한 워크숍 트랙의 기준이 메인 학회 트랙보다 다소 느슨할 수 있다는 점이다.",
+   "linked": true
+  },
+  {
+   "n": 2,
+   "en": "According to the METR time-horizon metric [17, 83], the length of tasks that AI systems can complete initially doubled roughly every 7 months, accelerating to about every 3 months since 2024. Extrapolating this more recent trend would suggest that by mid-2028, AI systems will be able to complete tasks requiring several months of human expert time, well within the range of many AI R&D projects. See also Kokotajlo et al. [84].",
+   "ko": "METR time-horizon 지표 [17, 83]에 따르면, AI 시스템이 완료할 수 있는 과업의 길이는 처음에는 약 7개월마다 두 배가 되었으며, 2024년 이후에는 약 3개월마다 두 배가 되는 수준으로 가속되었다. 이 최근 추세를 외삽하면 2028년 중반까지 AI 시스템은 인간 전문가가 수개월에 걸쳐 수행해야 하는 과업을 완료할 수 있을 것이며, 이는 많은 AI R&D 프로젝트의 범위에 충분히 들어간다. Kokotajlo et al. [84]도 참조하라.",
+   "linked": true
+  },
+  {
+   "n": 3,
+   "en": "Cottier et al. [80] find that the price of running LLMs to achieve a given capability milestone (e.g., GPT-4-level performance on a math benchmark) has decreased by roughly 9- to 900-fold per year, depending on the capability milestone. While a portion of this cost decline has come from hardware improvements (reducing the cost per computation), a substantial fraction is due to software improvements.",
+   "ko": "Cottier et al. [80]은 주어진 역량 이정표(예: 수학 벤치마크에서 GPT-4 수준의 성능)를 달성하기 위해 거대 언어 모델을 실행하는 가격이 역량 이정표에 따라 연간 약 9배에서 900배 감소했음을 발견했다. 이러한 비용 감소의 일부는 하드웨어 개선(연산당 비용 감소)에서 비롯되었지만, 상당 부분은 소프트웨어 개선에 기인한다.",
+   "linked": true
+  },
+  {
+   "n": 4,
+   "en": "In an area of technology, r governs the relationship between increases in R&D inputs and the resultant change in an output of interest, such as the number of computations that cutting-edge consumer hardware can perform per constant dollar. In Bloom et al. [27], the input is measured in dollars spent on R&D and so includes increases in both labor and physical capital. In this piece, however, we only consider increases in labor, as we are interested in understanding the potential for a software-driven feedback loop in which the compute stock is held roughly constant. This means the value of r is lower than if we considered increases in all inputs (i.e., labor, data, and compute).",
+   "ko": "한 기술 분야에서 r은 R&D 입력의 증가와 그에 따른 관심 산출물(예: 최첨단 소비자용 하드웨어가 불변 달러당 수행할 수 있는 연산 횟수)의 변화 사이의 관계를 결정한다. Bloom et al. [27]에서 입력은 R&D에 지출된 달러로 측정되므로 노동과 물적 자본의 증가를 모두 포함한다. 그러나 이 글에서는 연산 보유량이 대체로 일정하게 유지되는 소프트웨어 주도 피드백 루프의 가능성을 이해하는 데 관심이 있으므로 노동의 증가만을 고려한다. 이는 모든 입력(즉, 노동, 데이터, 연산)의 증가를 고려할 때보다 r 값이 더 낮다는 것을 의미한다.",
+   "linked": true
+  },
+  {
+   "n": 5,
+   "en": "r must eventually drop below 1 because AI progress will eventually hit computational and physical limits. It is uncertain how much progress is possible before reaching such limits.",
+   "ko": "AI 발전은 결국 연산적·물리적 한계에 부딪힐 것이므로 r은 결국 1 아래로 떨어질 수밖에 없다. 그러한 한계에 도달하기 전까지 얼마나 많은 발전이 가능한지는 불확실하다.",
+   "linked": true
+  },
+  {
+   "n": 6,
+   "en": "The 90% credible intervals are (0.727 to 2.094), (0.380 to 2.708), and (1.069 to 3.212).",
+   "ko": "90% 신용구간은 (0.727 to 2.094), (0.380 to 2.708), (1.069 to 3.212)이다.",
+   "linked": true
+  },
+  {
+   "n": 7,
+   "en": "In this analysis, improvements in algorithmic efficiency do not by themselves resolve this potential bottleneck because they proportionally make both R&D and training more efficient.",
+   "ko": "이 분석에서 알고리즘 효율성의 개선은 R&D와 학습을 모두 비례적으로 더 효율적으로 만들기 때문에, 그 자체로는 이러한 잠재적 병목을 해소하지 못한다.",
+   "linked": true
+  },
+  {
+   "n": 8,
+   "en": "Specifically, the paper provides conditions under which automated research labor, among other quantities like economic output, grows to infinity in finite time.",
+   "ko": "구체적으로, 이 논문은 경제적 산출 등 다른 양과 더불어 자동화된 연구 노동이 유한한 시간 안에 무한대로 증가하는 조건을 제시한다.",
+   "linked": true
+  },
+  {
+   "n": 9,
+   "en": "See Ord [85] for a theoretical discussion of how the time between rounds of R&D could affect the dynamics of an intelligence explosion.",
+   "ko": "R&D 회차 간 시간 간격이 지능 폭발의 동역학에 어떻게 영향을 미칠 수 있는지에 대한 이론적 논의는 Ord [85]를 참조하라.",
+   "linked": true
+  },
+  {
+   "n": 10,
+   "en": "The analysis in Cunningham et al. [37] focuses on self-sustaining acceleration: 'When AI systems are sufficient for accelerating progress in AI capabilities without any growth in exogenous inputs (human labor, training compute, etc.).' Self-sustaining acceleration is necessary for a software-driven intelligence explosion in our sense.",
+   "ko": "Cunningham et al. [37]의 분석은 자기 지속적 가속(self-sustaining acceleration)에 초점을 맞춘다. 이는 'AI 시스템이 외생적 입력(인간 노동, 학습 연산량 등)의 증가 없이도 AI 역량의 발전을 가속하기에 충분한 경우'를 말한다. 자기 지속적 가속은 본 논문에서 말하는 의미의 소프트웨어 주도 지능 폭발이 일어나기 위한 필요조건이다.",
+   "linked": true
+  },
+  {
+   "n": 11,
+   "en": "Such systems could be superhuman in some domains (e.g., certain fields of scientific research) but not others (e.g., manipulating objects in the physical world).",
+   "ko": "이러한 시스템은 일부 영역(예: 과학 연구의 특정 분야)에서는 인간을 능가하지만, 다른 영역(예: 물리적 세계에서 물체를 조작하는 일)에서는 그렇지 않을 수 있다.",
+   "linked": true
+  },
+  {
+   "n": 12,
+   "en": "Even in cyber, however, human organizational processes could still add friction for defenders [86].",
+   "ko": "그러나 사이버 분야에서조차 인간의 조직적 절차가 방어자에게 여전히 마찰 요인을 더할 수 있다 [86].",
+   "linked": true
+  },
+  {
+   "n": 13,
+   "en": "See also Anthropic [87], UK AI Security Institute [88], OpenAI [89], and Bogdan et al. [90].",
+   "ko": "Anthropic [87], 영국 AI 안보연구소(UK AI Security Institute) [88], OpenAI [89], Bogdan et al. [90]도 참조하라.",
+   "linked": true
+  },
+  {
+   "n": 14,
+   "en": "For example, see Tessler et al. [91]. More speculatively, AI systems could potentially accelerate the development of brain-computer interfaces that allow humans to think and coordinate much faster.",
+   "ko": "예를 들어 Tessler et al. [91]을 참조하라. 보다 사변적으로는, AI 시스템이 인간이 훨씬 더 빠르게 사고하고 조율할 수 있게 하는 뇌-컴퓨터 인터페이스의 개발을 가속할 가능성도 있다.",
+   "linked": true
+  },
+  {
+   "n": 15,
+   "en": "Precisely operationalizing an intelligence explosion is tricky and remains an area for future work.",
+   "ko": "지능 폭발을 정밀하게 조작적으로 정의하는 것은 까다로우며, 향후 연구 과제로 남아 있다.",
+   "linked": true
+  },
+  {
+   "n": 16,
+   "en": "For example, AI is already aiding chip design [92]. AI systems could also accelerate robotics to automate the chip production process.",
+   "ko": "예를 들어, AI는 이미 칩 설계를 돕고 있다 [92]. AI 시스템은 칩 생산 공정을 자동화하기 위한 로보틱스 발전도 가속할 수 있다.",
+   "linked": true
+  }
+ ]
+}

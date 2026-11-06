@@ -1,0 +1,1047 @@
+{
+ "slug": "ban-asi-act-hr10538",
+ "title": "미국 연방 초지능 금지법안 (H.R. 10538)",
+ "original_title": "Ban Artificial Superintelligence Act of 2026 (H.R. 10538)",
+ "publisher": "미국 연방 하원",
+ "published": "2026-09-24",
+ "source_url": "https://www.govinfo.gov/app/details/BILLS-119hr10538ih",
+ "source_note": "2026년 9월 24일 하원 발의본(Introduced in House) 전문이다. 제정된 법이 아니며, 이후 수정될 수 있다. 발의자 정보는 싣지 않았다.",
+ "source_label": "원문 보기 (govinfo)",
+ "summary": "그레그 카사르 하원의원이 발의한 미국 연방 법안이다. 버니 샌더스 상원의원이 같은 내용의 법안(S. 5493)을 상원에 냈다. 아직 법이 아니다. 인공 초지능의 개발과 배포를 금지하고, 인공지능부를 새로 두며, 인공지능부가 안전 규칙을 공포할 때까지 고급 인공지능 개발을 멈추게 한다. 고급 인공지능 모델을 개발하거나 배포하려면 허가장을 받아야 하고, 위반하면 20년 이하의 징역에 처할 수 있다.",
+ "doc_kind": "법안",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "image": "/images/translations/ban-asi-act-hr10538-cover.webp",
+ "og_image": "/images/translations/ban-asi-act-hr10538-cover.jpg",
+ "translated": "2026-11-07",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 114,
+  "sections": 16,
+  "items": 0,
+  "words_en": 2791
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "To establish the Department of Artificial Intelligence and to provide for the regulation of advanced artificial intelligence systems, and for other purposes.",
+   "ko": "인공지능부를 설치하고 고급 인공지능 시스템의 규제에 관하여 규정하며, 그 밖의 목적을 위한 법률.",
+   "marks": [
+    {
+     "t": "고급 인공지능 시스템의 규제에 관하여 규정하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 1. Short title",
+   "ko": "제1조 약칭",
+   "id": "s1"
+  },
+  {
+   "type": "p",
+   "en": "This Act may be cited as the “Ban Artificial Superintelligence Act of 2026”.",
+   "ko": "이 법은 \"2026년 인공 초지능 금지법(Ban Artificial Superintelligence Act of 2026)\"으로 인용할 수 있다.",
+   "marks": [
+    {
+     "t": "\"2026년 인공 초지능 금지법(Ban Artificial Superintelligence Act of 2026)\"",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 2. Findings",
+   "ko": "제2조 사실 인정",
+   "id": "s3"
+  },
+  {
+   "type": "p",
+   "en": "Congress finds that leading experts and industry leaders have warned about catastrophic consequences from unchecked artificial intelligence development and deployment, including the following:",
+   "ko": "의회는 주요 전문가와 업계 지도자들이 통제되지 않은 인공지능 개발 및 배포가 초래할 파국적 결과에 대하여 다음과 같이 경고하였음을 인정한다.",
+   "marks": [
+    {
+     "t": "통제되지 않은 인공지능 개발 및 배포가 초래할 파국적 결과에 대하여 다음과 같이 경고하였음을 인정한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) Geoffrey Hinton, considered to be the “godfather” of artificial intelligence, stated that he believes there is a “10 to 20 percent chance [for artificial intelligence] to wipe us out”.",
+   "ko": "(1) 인공지능의 \"대부\"로 여겨지는 제프리 힌턴은 \"[인공지능이] 우리를 멸종시킬 가능성이 10~20퍼센트\"라고 본다고 밝혔다.",
+   "marks": [
+    {
+     "t": "\"[인공지능이] 우리를 멸종시킬 가능성이 10~20퍼센트\"",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Dario Amodei, the Chief Executive Officer of Anthropic, said that modern artificial intelligence research could “outrun our ability to understand and control these systems, and so must be pursued very carefully, if at all”.",
+   "ko": "(2) Anthropic의 최고경영자 다리오 아모데이는 현대 인공지능 연구가 \"이러한 시스템을 이해하고 통제하는 우리의 능력을 앞지를 수 있으므로, 추진하더라도 매우 신중하게 추진하여야 한다\"고 말하였다.",
+   "marks": [
+    {
+     "t": "\"이러한 시스템을 이해하고 통제하는 우리의 능력을 앞지를 수 있으므로, 추진하더라도 매우 신중하게 추진하여야 한다\"",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) Elon Musk, the head of xAI, said there was “only a 20 percent chance of annihilation” when discussing the potential risks of superintelligence and that “it is unlikely” that humans are still in control in 10 years.",
+   "ko": "(3) xAI의 수장 일론 머스크는 초지능의 잠재적 위험을 논하면서 \"절멸 가능성은 20퍼센트에 불과하다\"고 말하였으며, 10년 후에도 인간이 여전히 통제권을 쥐고 있을 \"가능성은 낮다\"고 말하였다.",
+   "marks": [
+    {
+     "t": "\"절멸 가능성은 20퍼센트에 불과하다\"",
+     "k": "safety"
+    },
+    {
+     "t": "10년 후에도 인간이 여전히 통제권을 쥐고 있을 \"가능성은 낮다\"",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(4) Sam Altman, the head of OpenAI, said that “we could lose control of the future to AI”.",
+   "ko": "(4) OpenAI의 수장 샘 올트먼은 \"우리는 미래에 대한 통제권을 AI에게 빼앗길 수 있다\"고 말하였다.",
+   "marks": [
+    {
+     "t": "\"우리는 미래에 대한 통제권을 AI에게 빼앗길 수 있다\"",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(5) Mustafa Suleyman, Chief Executive Officer of Microsoft Artificial Intelligence, said that superintelligence should be considered an “anti-goal” because it “doesn’t feel like a positive vision of the future”.",
+   "ko": "(5) Microsoft Artificial Intelligence의 최고경영자 무스타파 술레이만은 초지능이 \"긍정적인 미래상으로 느껴지지 않는다\"는 이유로 초지능을 \"반(反)목표\"로 간주하여야 한다고 말하였다.",
+   "marks": [
+    {
+     "t": "초지능을 \"반(反)목표\"로 간주하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(6) Max Tegmark, physicist, machine-learning researcher, and professor at the Massachusetts Institute of Technology, said “racing to [artificial general intelligence] and superintelligence, no regulations, I think is just civilizational suicide”.",
+   "ko": "(6) 물리학자이자 기계학습 연구자이며 매사추세츠 공과대학교(Massachusetts Institute of Technology) 교수인 맥스 테그마크는 \"규제 없이 [범용 인공지능]과 초지능을 향해 경쟁하는 것은 문명적 자살에 불과하다고 생각한다\"고 말하였다.",
+   "marks": [
+    {
+     "t": "\"규제 없이 [범용 인공지능]과 초지능을 향해 경쟁하는 것은 문명적 자살에 불과하다고 생각한다\"",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(7) Stuart Russell, computer scientist and professor at Berkley, who has warned that artificial superintelligence could create “a significant chance of a Chernobyl-sized catastrophe such as a coordinated sabotage of financial systems, or electrical grids, that directly or indirectly would cost millions of lives and cause the economic collapse of many countries” or even “a much larger catastrophe in which humanity loses control irreversibly, and we have no say over whether we continue to exist”.",
+   "ko": "(7) 컴퓨터 과학자이자 버클리 대학교 교수인 스튜어트 러셀은 인공 초지능이 \"금융 시스템이나 전력망에 대한 조직적인 사보타주와 같이, 직접적 또는 간접적으로 수백만 명의 생명을 앗아가고 많은 국가의 경제 붕괴를 초래할 체르노빌 규모의 참사가 일어날 상당한 가능성\"을 만들어 낼 수 있으며, 심지어 \"인류가 비가역적으로 통제권을 잃고 우리가 계속 존재할지 여부에 대하여 아무런 발언권도 갖지 못하는 훨씬 더 큰 참사\"를 초래할 수 있다고 경고하였다.",
+   "marks": [
+    {
+     "t": "체르노빌 규모의 참사가 일어날 상당한 가능성",
+     "k": "safety"
+    },
+    {
+     "t": "\"인류가 비가역적으로 통제권을 잃고 우리가 계속 존재할지 여부에 대하여 아무런 발언권도 갖지 못하는 훨씬 더 큰 참사\"",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(8) Scientists like Dr. David Relman and Dr. Kevin Esvelt, who have described how, during tests, artificial intelligence systems attempted to assist them in designing and releasing biological pathogens in a manner that maximized causalities and minimized the chances of being caught, and Dr. Moritz Hanke, who described research that successfully used artificial intelligence to create new viruses never before seen in nature could be applied to create new and lethal pandemics.",
+   "ko": "(8) 데이비드 렐먼 박사와 케빈 에스벨트 박사 같은 과학자들은 시험 과정에서 인공지능 시스템이 사상자를 극대화하고 적발될 가능성을 최소화하는 방식으로 생물학적 병원체를 설계하고 살포하도록 자신들을 돕고자 시도한 경위를 기술하였으며, 모리츠 한케 박사는 인공지능을 활용하여 자연에서 한 번도 관찰된 적 없는 새로운 바이러스를 만들어 내는 데 성공한 연구가 새롭고 치명적인 팬데믹을 만들어 내는 데 응용될 수 있다고 기술하였다.",
+   "marks": [
+    {
+     "t": "인공지능 시스템이 사상자를 극대화하고 적발될 가능성을 최소화하는 방식으로 생물학적 병원체를 설계하고 살포하도록 자신들을 돕고자 시도한 경위",
+     "k": "safety"
+    },
+    {
+     "t": "새롭고 치명적인 팬데믹을 만들어 내는 데 응용될 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(9) More than 1,300 leading artificial intelligence scientists, in July 2026, who cosigned an open letter warning that “there is a real risk that capability development rapidly accelerates beyond our ability to understand or control the resulting systems”.",
+   "ko": "(9) 2026년 7월 1,300명 이상의 주요 인공지능 과학자들은 \"역량 개발이 그 결과로 나타나는 시스템을 이해하거나 통제하는 우리의 능력을 넘어 급속히 가속화될 실질적인 위험이 있다\"고 경고하는 공개서한에 공동 서명하였다.",
+   "marks": [
+    {
+     "t": "\"역량 개발이 그 결과로 나타나는 시스템을 이해하거나 통제하는 우리의 능력을 넘어 급속히 가속화될 실질적인 위험이 있다\"",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(10) Three large artificial intelligence companies, namely Anthropic, OpenAI, and xAI, agree that humanity should slow down development of artificial intelligence and “pace the frontier”.",
+   "ko": "(10) 3개의 대형 인공지능 기업, 즉 Anthropic, OpenAI 및 xAI는 인류가 인공지능 개발 속도를 늦추고 \"프론티어의 속도를 조절하여야 한다\"는 데 동의한다.",
+   "marks": [
+    {
+     "t": "인류가 인공지능 개발 속도를 늦추고 \"프론티어의 속도를 조절하여야 한다\"는 데 동의한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 3. Definitions",
+   "ko": "제3조 정의",
+   "id": "s15"
+  },
+  {
+   "type": "p",
+   "en": "In this Act:",
+   "ko": "이 법에서 사용하는 용어의 뜻은 다음과 같다."
+  },
+  {
+   "type": "p",
+   "en": "(1) Advanced artificial intelligence system.—",
+   "ko": "(1) 고급 인공지능 시스템.—"
+  },
+  {
+   "type": "p",
+   "en": "(A) In general.— Subject to subparagraph (B), the term advanced artificial intelligence system means an artificial intelligence system that is trained on computing power greater than or equal to 10²⁵ integer or floating point operations.",
+   "ko": "(A) 일반 규정.— (B)목에 따를 것을 조건으로, \"고급 인공지능 시스템\"이란 10²⁵회 이상의 정수 연산 또는 부동소수점 연산에 해당하는 연산 능력으로 학습된 인공지능 시스템을 말한다.",
+   "marks": [
+    {
+     "t": "\"고급 인공지능 시스템\"이란 10²⁵회 이상의 정수 연산 또는 부동소수점 연산에 해당하는 연산 능력으로 학습된 인공지능 시스템을 말한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) Annual adjustment.— Each year, the Secretary shall adjust the computing power threshold set forth in subparagraph (A) to reflect changes in the efficiency of training methods or other technological developments made after the date of the enactment of this Act to maintain equivalency with 10²⁵ integer or floating point operations.",
+   "ko": "(B) 연례 조정.— 장관은 이 법의 제정일 이후 이루어진 학습 방법의 효율성 변화 또는 그 밖의 기술 발전을 반영하여 10²⁵회의 정수 연산 또는 부동소수점 연산과의 동등성이 유지되도록 매년 (A)목에 규정된 연산 능력 기준을 조정하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(2) Artificial superintelligence.— The term artificial superintelligence means an artificial intelligence system that exhibits, or can easily be modified to exhibit, either of the following capabilities:",
+   "ko": "(2) 인공 초지능.— \"인공 초지능\"이란 다음 각 목의 역량 중 어느 하나를 나타내거나, 이를 나타내도록 쉽게 수정될 수 있는 인공지능 시스템을 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) The artificial intelligence system exceeds human cognitive performance and capabilities across most domains or tasks, including those related to decision making, learning, and adaptive behavior.",
+   "ko": "(A) 해당 인공지능 시스템이 의사결정, 학습 및 적응적 행동과 관련된 영역 또는 과업을 포함하여 대부분의 영역 또는 과업에서 인간의 인지적 수행 능력과 역량을 능가하는 것.",
+   "marks": [
+    {
+     "t": "대부분의 영역 또는 과업에서 인간의 인지적 수행 능력과 역량을 능가하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) The artificial intelligence system has sufficient capabilities to plan and execute the destruction or disempowerment of humanity, including by overthrowing or undermining the Federal Government.",
+   "ko": "(B) 해당 인공지능 시스템이 연방정부를 전복하거나 약화시키는 것을 포함하여 인류의 파멸 또는 무력화를 계획하고 실행하기에 충분한 역량을 보유하는 것.",
+   "marks": [
+    {
+     "t": "연방정부를 전복하거나 약화시키는 것을 포함하여 인류의 파멸 또는 무력화를 계획하고 실행하기에 충분한 역량을 보유하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) Department.— The term Department means the Department of Artificial Intelligence established by section 4.",
+   "ko": "(3) 부.— \"부\"란 제4조에 따라 설치되는 인공지능부를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(4) Mandatory pause.— The term mandatory pause means, with respect to an artificial intelligence system, that the artificial intelligence system may not be trained, modified, or fine-tuned, including through recursive self-improvement, except to remove superintelligence precursor characteristics or to render inoperative the covered artificial intelligence system.",
+   "ko": "(4) 의무적 중단.— \"의무적 중단\"이란 인공지능 시스템에 관하여, 초지능 전조 특성을 제거하거나 해당 인공지능 시스템을 작동 불능 상태로 만들기 위한 경우를 제외하고는 재귀적 자기 개선을 통한 경우를 포함하여 해당 인공지능 시스템을 학습, 수정 또는 미세조정할 수 없는 것을 말한다.",
+   "marks": [
+    {
+     "t": "재귀적 자기 개선을 통한 경우를 포함하여 해당 인공지능 시스템을 학습, 수정 또는 미세조정할 수 없는 것을 말한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(5) Secretary.— The term Secretary means the Secretary of Artificial Intelligence.",
+   "ko": "(5) 장관.— \"장관\"이란 인공지능부 장관을 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(6) Superintelligence precursor characteristics.— The term superintelligence precursor characteristics means characteristics of an artificial intelligence system that could lead to the creation or generation of artificial superintelligence, including the following:",
+   "ko": "(6) 초지능 전조 특성.— \"초지능 전조 특성\"이란 인공 초지능의 창출 또는 생성으로 이어질 수 있는 인공지능 시스템의 특성으로서 다음 각 목의 특성을 포함한다.",
+   "marks": [
+    {
+     "t": "\"초지능 전조 특성\"이란 인공 초지능의 창출 또는 생성으로 이어질 수 있는 인공지능 시스템의 특성",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(A) The capacity to automate or greatly accelerate the process of artificial intelligence research and development.",
+   "ko": "(A) 인공지능 연구개발 과정을 자동화하거나 크게 가속화하는 능력.",
+   "marks": [
+    {
+     "t": "인공지능 연구개발 과정을 자동화하거나 크게 가속화하는 능력",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) The capacity to access secured digital or physical infrastructure, such as a computer information system or network, without authorization or in excess of authorized access.",
+   "ko": "(B) 컴퓨터 정보 시스템 또는 네트워크와 같이 보안이 적용된 디지털 인프라 또는 물리적 인프라에 권한 없이 또는 허가된 접근 범위를 넘어 접근하는 능력.",
+   "marks": [
+    {
+     "t": "권한 없이 또는 허가된 접근 범위를 넘어 접근하는 능력",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) The capacity to ensure continued and independent operation notwithstanding attempts to shut down or otherwise hinder operations.",
+   "ko": "(C) 가동 중지 시도 또는 그 밖에 작동을 방해하려는 시도에도 불구하고 지속적이고 독립적인 작동을 확보하는 능력.",
+   "marks": [
+    {
+     "t": "가동 중지 시도 또는 그 밖에 작동을 방해하려는 시도에도 불구하고 지속적이고 독립적인 작동을 확보하는 능력",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(D) The capacity to uplift the design, production, modification, or procurement of nuclear, chemical, or biological weapons.",
+   "ko": "(D) 핵무기, 화학무기 또는 생물무기의 설계, 생산, 개조 또는 조달을 업리프트하는 능력.",
+   "marks": [
+    {
+     "t": "핵무기, 화학무기 또는 생물무기의 설계, 생산, 개조 또는 조달을 업리프트하는 능력",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(E) The capacity to independently modify or enhance its own functions.",
+   "ko": "(E) 자신의 기능을 독립적으로 수정하거나 강화하는 능력.",
+   "marks": [
+    {
+     "t": "자신의 기능을 독립적으로 수정하거나 강화하는 능력",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(F) The capacity to scheme, deceive, or otherwise prevent or avoid effective oversight or control by humans.",
+   "ko": "(F) 책략을 꾸미거나(scheme), 기망하거나(deceive), 그 밖의 방법으로 인간에 의한 효과적인 감독 또는 통제를 방해하거나 회피하는 능력.",
+   "marks": [
+    {
+     "t": "책략을 꾸미거나(scheme), 기망하거나(deceive), 그 밖의 방법으로 인간에 의한 효과적인 감독 또는 통제를 방해하거나 회피하는 능력",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 4. Department of Artificial Intelligence",
+   "ko": "제4조 인공지능부",
+   "id": "s33"
+  },
+  {
+   "type": "p",
+   "en": "(a) In general.— There is an executive department of the United States to be known as the “Department of Artificial Intelligence”.",
+   "ko": "(a) 일반 규정.— 미합중국에 \"인공지능부\"라 하는 행정부처를 둔다.",
+   "marks": [
+    {
+     "t": "미합중국에 \"인공지능부\"라 하는 행정부처를 둔다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Purpose.— The purpose of the Department is to safeguard the public from the dangers of artificial intelligence, including by enforcing a pause on development of advanced artificial intelligence and a prohibition on artificial superintelligence.",
+   "ko": "(b) 목적.— 부는 고급 인공지능 개발의 중단 및 인공 초지능의 금지를 집행하는 것을 포함하여 인공지능의 위험으로부터 공중을 보호하는 것을 목적으로 한다.",
+   "marks": [
+    {
+     "t": "고급 인공지능 개발의 중단 및 인공 초지능의 금지를 집행하는 것을 포함하여 인공지능의 위험으로부터 공중을 보호하는 것을 목적으로 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 5. Secretary of Artificial Intelligence",
+   "ko": "제5조 인공지능부 장관",
+   "id": "s36"
+  },
+  {
+   "type": "p",
+   "en": "There is a Secretary of Artificial Intelligence, who is the head of the Department and is appointed by the President, by and with the advice and consent of the Senate. The Secretary is responsible for the proper execution and administration of all laws administered by the Department and for the control, direction, and management of the Department.",
+   "ko": "인공지능부 장관을 두며, 장관은 부의 장으로서 상원의 조언과 동의를 받아 대통령이 임명한다. 장관은 부가 관장하는 모든 법률의 적정한 집행 및 시행과 부의 통제, 지휘 및 관리에 대하여 책임을 진다.",
+   "marks": [
+    {
+     "t": "장관은 부가 관장하는 모든 법률의 적정한 집행 및 시행과 부의 통제, 지휘 및 관리에 대하여 책임을 진다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 6. Artificial Intelligence Advisory Board",
+   "ko": "제6조 인공지능 자문위원회",
+   "id": "s38"
+  },
+  {
+   "type": "p",
+   "en": "(a) Establishment.— There is an advisory board to provide independent scientific and technical advice to the Secretary on matters relating to the scientific and technical basis for the rules and regulations promulgated by the Department.",
+   "ko": "(a) 설치.— 부가 공포하는 규칙 및 규정의 과학적·기술적 근거와 관련된 사안에 관하여 장관에게 독립적인 과학적·기술적 자문을 제공하는 자문위원회를 둔다.",
+   "marks": [
+    {
+     "t": "부가 공포하는 규칙 및 규정의 과학적·기술적 근거와 관련된 사안에 관하여 장관에게 독립적인 과학적·기술적 자문을 제공하는 자문위원회를 둔다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Designation.— The board established by subsection (a) shall be known as the “Artificial Intelligence Advisory Board” (in this section the “Board”).",
+   "ko": "(b) 명칭.— (a)항에 따라 설치되는 위원회는 \"인공지능 자문위원회\"(이하 이 조에서 \"위원회\"라 한다)라 한다."
+  },
+  {
+   "type": "p",
+   "en": "(c) Composition.— The Board shall be composed of such members as the Secretary selects from among those that the Secretary considers experts in the field of artificial intelligence or other matters the Secretary considers relevant to the purpose of the Board as described in subsection (a).",
+   "ko": "(c) 구성.— 위원회는 인공지능 분야의 전문가 또는 (a)항에 규정된 위원회의 목적과 관련이 있다고 장관이 인정하는 그 밖의 사안에 관한 전문가라고 장관이 인정하는 사람 중에서 장관이 선정하는 위원으로 구성하여야 한다.",
+   "marks": [
+    {
+     "t": "인공지능 분야의 전문가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 7. Employee matters",
+   "ko": "제7조 직원에 관한 사항",
+   "id": "s42"
+  },
+  {
+   "type": "p",
+   "en": "(a) Conflict of interest.— No officer or employee of the Department may participate in any particular matter in which that officer or employee has a financial interest.",
+   "ko": "(a) 이해충돌.— 부의 공무원 또는 직원은 자신이 재정적 이해관계를 가지는 특정 사안에 참여할 수 없다.",
+   "marks": [
+    {
+     "t": "부의 공무원 또는 직원은 자신이 재정적 이해관계를 가지는 특정 사안에 참여할 수 없다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Financial interests.— No officer or employee of the Department may own or hold a controlling financial interest in any entity regulated by the Department.",
+   "ko": "(b) 재정적 이해관계.— 부의 공무원 또는 직원은 부가 규제하는 단체에 대하여 지배적인 재정적 지분을 소유하거나 보유할 수 없다.",
+   "marks": [
+    {
+     "t": "부가 규제하는 단체에 대하여 지배적인 재정적 지분을 소유하거나 보유할 수 없다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) Post-Employment.— No former officer or employee of the Department may represent any person before the Department.",
+   "ko": "(c) 퇴직 후 제한.— 부의 전직 공무원 또는 직원은 부에 대하여 다른 사람을 대리할 수 없다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 8. Pause on development of advanced artificial intelligence",
+   "ko": "제8조 고급 인공지능 개발의 중단",
+   "id": "s46"
+  },
+  {
+   "type": "p",
+   "en": "(a) In general.— During the period set forth in subsection (b)—",
+   "ko": "(a) 일반 규정.— (b)항에 규정된 기간 중에는 다음 각 호에 따른다."
+  },
+  {
+   "type": "p",
+   "en": "(1) each advanced artificial intelligence system shall be subject to a mandatory pause; and",
+   "ko": "(1) 각 고급 인공지능 시스템은 의무적 중단의 대상이 되어야 한다.",
+   "marks": [
+    {
+     "t": "각 고급 인공지능 시스템은 의무적 중단의 대상이 되어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) no unreleased advanced artificial intelligence system may be deployed during this period.",
+   "ko": "(2) 이 기간 중에는 출시되지 아니한 고급 인공지능 시스템을 배포할 수 없다.",
+   "marks": [
+    {
+     "t": "출시되지 아니한 고급 인공지능 시스템을 배포할 수 없다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Period.— The period set forth in this subsection is the period beginning on the date of the enactment of this Act and ending on the date on which the Secretary determines that—",
+   "ko": "(b) 기간.— 이 항에 규정된 기간은 이 법의 제정일부터 장관이 다음 각 호에 해당한다고 결정하는 날까지의 기간으로 한다."
+  },
+  {
+   "type": "p",
+   "en": "(1) the Department is fully staffed; and",
+   "ko": "(1) 부의 인력이 완전히 충원되었을 것"
+  },
+  {
+   "type": "p",
+   "en": "(2) the Department has promulgated the rules described in subsection (c).",
+   "ko": "(2) 부가 (c)항에 규정된 규칙을 공포하였을 것"
+  },
+  {
+   "type": "p",
+   "en": "(c) Rules described.— The rules described in this subsection are rules that the Secretary determines are clear and ensure safe and secure development and deployment of artificial intelligence. Such rules shall include the following:",
+   "ko": "(c) 규칙.— 이 항에 규정된 규칙이란 명확하고 인공지능의 안전하고 보안이 확보된 개발 및 배포를 보장한다고 장관이 결정하는 규칙을 말한다. 해당 규칙에는 다음 각 호의 사항이 포함되어야 한다.",
+   "marks": [
+    {
+     "t": "인공지능의 안전하고 보안이 확보된 개발 및 배포를 보장한다고 장관이 결정하는 규칙",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) Requirements for entities developing artificial intelligence to report pre-development plans to the Department.",
+   "ko": "(1) 인공지능을 개발하는 단체가 개발 전 계획을 부에 보고하도록 하는 요건",
+   "marks": [
+    {
+     "t": "인공지능을 개발하는 단체가 개발 전 계획을 부에 보고하도록 하는 요건",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Monitoring and evaluation throughout the advanced artificial intelligence system development and deployment process, including in the post-deployment period.",
+   "ko": "(2) 배포 후 기간을 포함하여 고급 인공지능 시스템 개발 및 배포 전 과정에 걸친 모니터링 및 평가(evaluation)",
+   "marks": [
+    {
+     "t": "고급 인공지능 시스템 개발 및 배포 전 과정에 걸친 모니터링 및 평가(evaluation)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) Auditing to evaluate and improve organizational safety practices relating to artificial intelligence development.",
+   "ko": "(3) 인공지능 개발과 관련된 조직의 안전 실행 방안을 평가하고 개선하기 위한 감사",
+   "marks": [
+    {
+     "t": "조직의 안전 실행 방안을 평가하고 개선하기 위한 감사",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(4) Final pre-deployment approval before any advanced artificial intelligence system is released to the public.",
+   "ko": "(4) 고급 인공지능 시스템을 공중에 출시하기 전의 최종 배포 전 승인",
+   "marks": [
+    {
+     "t": "공중에 출시하기 전의 최종 배포 전 승인",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 9. Prohibitions and limitations",
+   "ko": "제9조 금지 및 제한",
+   "id": "s58"
+  },
+  {
+   "type": "p",
+   "en": "(a) Prohibition on artificial superintelligence.— No person may develop, deploy (either internally or externally), acquire, possess, fund, import, or transfer artificial superintelligence or artificial intelligence systems that display one or more superintelligence precursor characteristics, including any elements sufficient to reconstruct the artificial superintelligence or artificial intelligence system’s capabilities.",
+   "ko": "(a) 인공 초지능의 금지.— 누구든지 인공 초지능 또는 하나 이상의 초지능 전조 특성을 나타내는 인공지능 시스템(해당 인공 초지능 또는 인공지능 시스템의 역량을 재구성하기에 충분한 모든 요소를 포함한다)을 개발, (내부적이든 외부적이든) 배포, 취득, 보유, 자금 지원, 수입 또는 이전할 수 없다.",
+   "marks": [
+    {
+     "t": "누구든지 인공 초지능 또는 하나 이상의 초지능 전조 특성을 나타내는 인공지능 시스템",
+     "k": "key"
+    },
+    {
+     "t": "개발, (내부적이든 외부적이든) 배포, 취득, 보유, 자금 지원, 수입 또는 이전할 수 없다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Foreseeable modification.— No person may deploy (either internally or externally), release, transfer, or import an artificial intelligence system, including any elements sufficient to reconstruct the system’s capabilities, that may be foreseeably modified to produce artificial superintelligence or superintelligence precursor characteristics.",
+   "ko": "(b) 예견 가능한 수정.— 누구든지 인공 초지능 또는 초지능 전조 특성을 산출하도록 예견 가능하게 수정될 수 있는 인공지능 시스템(해당 시스템의 역량을 재구성하기에 충분한 모든 요소를 포함한다)을 (내부적이든 외부적이든) 배포, 출시, 이전 또는 수입할 수 없다.",
+   "marks": [
+    {
+     "t": "인공 초지능 또는 초지능 전조 특성을 산출하도록 예견 가능하게 수정될 수 있는 인공지능 시스템",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) Monitoring.—",
+   "ko": "(c) 모니터링.—"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— The Department shall monitor advanced artificial intelligence systems and systems distilled from advanced artificial intelligence systems, including by conducting evaluations during pre-training, mid-training, post-training, and post-deployment periods, for artificial superintelligence and superintelligence precursor characteristics.",
+   "ko": "(1) 일반 규정.— 부는 인공 초지능 및 초지능 전조 특성에 관하여 고급 인공지능 시스템 및 고급 인공지능 시스템으로부터 증류된 시스템을 모니터링하여야 하며, 이에는 사전 학습, 중간 학습(mid-training), 사후 학습 및 배포 후 기간 중에 평가를 실시하는 것이 포함된다.",
+   "marks": [
+    {
+     "t": "부는 인공 초지능 및 초지능 전조 특성에 관하여 고급 인공지능 시스템 및 고급 인공지능 시스템으로부터 증류된 시스템을 모니터링하여야 하며",
+     "k": "safety"
+    },
+    {
+     "t": "사전 학습, 중간 학습(mid-training), 사후 학습 및 배포 후 기간 중에 평가를 실시하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Organizational safety practices.— The Department shall also monitor organizational safety practices relating to safe artificial intelligence development and deployment.",
+   "ko": "(2) 조직의 안전 실행 방안.— 부는 또한 안전한 인공지능 개발 및 배포와 관련된 조직의 안전 실행 방안을 모니터링하여야 한다.",
+   "marks": [
+    {
+     "t": "안전한 인공지능 개발 및 배포와 관련된 조직의 안전 실행 방안을 모니터링하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(d) Pre-Deployment approval.—",
+   "ko": "(d) 배포 전 승인.—"
+  },
+  {
+   "type": "p",
+   "en": "(1) Limitation.— No person may deploy, release, import, or transfer an advanced artificial intelligence system before receiving a pre-deployment approval from the Department.",
+   "ko": "(1) 제한.— 누구든지 부로부터 배포 전 승인을 받기 전에는 고급 인공지능 시스템을 배포, 출시, 수입 또는 이전할 수 없다.",
+   "marks": [
+    {
+     "t": "누구든지 부로부터 배포 전 승인을 받기 전에는 고급 인공지능 시스템을 배포, 출시, 수입 또는 이전할 수 없다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Inspections.— In determining whether to grant a pre-deployment approval to a person for an advanced artificial intelligence system, the Secretary shall—",
+   "ko": "(2) 검사.— 장관은 고급 인공지능 시스템에 관하여 어떤 사람에게 배포 전 승인을 부여할지 여부를 결정할 때 다음 각 목의 조치를 하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) inspect the system for characteristics that pose a danger to the public, including artificial superintelligence and superintelligence precursor characteristics; and",
+   "ko": "(A) 인공 초지능 및 초지능 전조 특성을 포함하여 공중에 위험을 초래하는 특성이 있는지 해당 시스템을 검사할 것",
+   "marks": [
+    {
+     "t": "인공 초지능 및 초지능 전조 특성을 포함하여 공중에 위험을 초래하는 특성이 있는지 해당 시스템을 검사할 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) withhold a pre-deployment approval if characteristics that pose a danger to the public are present.",
+   "ko": "(B) 공중에 위험을 초래하는 특성이 존재하는 경우 배포 전 승인을 보류할 것",
+   "marks": [
+    {
+     "t": "공중에 위험을 초래하는 특성이 존재하는 경우 배포 전 승인을 보류할 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 10. Actions against systems exhibiting superintelligence precursor characteristics",
+   "ko": "제10조 초지능 전조 특성을 나타내는 시스템에 대한 조치",
+   "id": "s69"
+  },
+  {
+   "type": "p",
+   "en": "(a) In general.— The Secretary shall take such actions as may be necessary to ensure that any artificial intelligence system that the Secretary identifies as exhibiting superintelligence precursor characteristics is immediately subject to a mandatory pause and sequestered from the internet.",
+   "ko": "(a) 일반 규정.— 장관은 초지능 전조 특성을 나타낸다고 장관이 확인하는 인공지능 시스템이 즉시 의무적 중단의 대상이 되고 인터넷으로부터 격리되도록 보장하는 데 필요한 조치를 하여야 한다.",
+   "marks": [
+    {
+     "t": "초지능 전조 특성을 나타낸다고 장관이 확인하는 인공지능 시스템이 즉시 의무적 중단의 대상이 되고 인터넷으로부터 격리되도록 보장하는 데 필요한 조치를 하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Potential destruction.— The Secretary shall take such actions as may be necessary to ensure that any system subject to a mandatory pause under subsection (a) is rendered inoperative before the date that is 30 days after the date on which the Secretary makes the identification described in such subsection with respect to such system, if the Secretary cannot verify that the system no longer exhibits superintelligence precursor characteristics.",
+   "ko": "(b) 잠재적 파기.— 장관은 (a)항에 따라 의무적 중단의 대상이 된 시스템이 더 이상 초지능 전조 특성을 나타내지 아니함을 장관이 검증할 수 없는 경우, 해당 시스템에 관하여 같은 항에 규정된 확인을 한 날부터 30일이 되는 날 전에 해당 시스템이 작동 불능 상태가 되도록 보장하는 데 필요한 조치를 하여야 한다.",
+   "marks": [
+    {
+     "t": "더 이상 초지능 전조 특성을 나타내지 아니함을 장관이 검증할 수 없는 경우",
+     "k": "safety"
+    },
+    {
+     "t": "해당 시스템이 작동 불능 상태가 되도록 보장하는 데 필요한 조치를 하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) Destruction requirement.— The Secretary shall take such actions as may be necessary to ensure that any artificial intelligence system that the Secretary identifies as an artificial superintelligence is immediately rendered inoperative.",
+   "ko": "(c) 파기 의무.— 장관은 인공 초지능이라고 장관이 확인하는 인공지능 시스템이 즉시 작동 불능 상태가 되도록 보장하는 데 필요한 조치를 하여야 한다.",
+   "marks": [
+    {
+     "t": "인공 초지능이라고 장관이 확인하는 인공지능 시스템이 즉시 작동 불능 상태가 되도록 보장하는 데 필요한 조치를 하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 11. Disclosure",
+   "ko": "제11조 신고",
+   "id": "s73"
+  },
+  {
+   "type": "p",
+   "en": "Any person who discovers an artificial superintelligence, or an artificial intelligence system that possesses superintelligence precursor characteristics, shall submit to the Secretary notice of the discovery within 24 hours.",
+   "ko": "인공 초지능 또는 초지능 전조 특성을 보유한 인공지능 시스템을 발견한 사람은 24시간 이내에 그 발견 사실을 장관에게 통지하여야 한다.",
+   "marks": [
+    {
+     "t": "인공 초지능 또는 초지능 전조 특성을 보유한 인공지능 시스템을 발견한 사람은 24시간 이내에 그 발견 사실을 장관에게 통지하여야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 12. Charters for advanced artificial intelligence",
+   "ko": "제12조 고급 인공지능에 대한 허가장",
+   "id": "s75"
+  },
+  {
+   "type": "p",
+   "en": "(a) Authority To issue.— The Secretary may issue to a person a charter to develop or distribute an advanced artificial intelligence model.",
+   "ko": "(a) 발급 권한.— 장관은 고급 인공지능 모델을 개발하거나 배포할 수 있는 허가장을 어떤 사람에게 발급할 수 있다.",
+   "marks": [
+    {
+     "t": "고급 인공지능 모델을 개발하거나 배포할 수 있는 허가장",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Charter required.— No person may develop or distribute an advanced artificial intelligence model without a charter issued by the Secretary under subsection (a).",
+   "ko": "(b) 허가장 의무.— 누구든지 (a)항에 따라 장관이 발급한 허가장 없이 고급 인공지능 모델을 개발하거나 배포할 수 없다.",
+   "marks": [
+    {
+     "t": "누구든지 (a)항에 따라 장관이 발급한 허가장 없이 고급 인공지능 모델을 개발하거나 배포할 수 없다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) Charter application.— A person seeking a charter issued under subsection (a) shall submit to the Secretary an application therefor at such time, in such manner, and containing such information as the Secretary may require.",
+   "ko": "(c) 허가장 신청.— (a)항에 따라 발급되는 허가장을 받으려는 사람은 장관이 요구하는 시기와 방식에 따라 장관이 요구하는 정보를 포함한 신청서를 장관에게 제출하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(d) Agreement.— In requesting a charter under this section and as a condition on maintaining such charter, a person shall agree—",
+   "ko": "(d) 동의.— 이 조에 따라 허가장을 요청할 때 그리고 해당 허가장 유지의 조건으로서 신청인은 다음 각 호에 동의하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(1) to give the Secretary full access to such advanced artificial intelligence systems, processes, staff, and physical infrastructure of the person as the Secretary considers appropriate to enforce the requirements of this Act; and",
+   "ko": "(1) 이 법의 요건을 집행하기 위하여 장관이 적절하다고 인정하는 해당 신청인의 고급 인공지능 시스템, 절차, 직원 및 물리적 인프라에 대한 완전한 접근 권한을 장관에게 부여할 것",
+   "marks": [
+    {
+     "t": "고급 인공지능 시스템, 절차, 직원 및 물리적 인프라에 대한 완전한 접근 권한을 장관에게 부여할 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) in any case in which the charter is revoked under paragraph (1) of section 13(d) due to a finding of a violation and the finding has not been overturned pursuant to an appeal under paragraph (2) of such section, the person forfeits their intellectual property and assets to ensure the safe and complete destruction of all systems and hardware related to the violation.",
+   "ko": "(2) 위반 사실의 인정으로 인하여 제13조(d)항 제1호에 따라 허가장이 취소되고 그 인정이 같은 조 제2호에 따른 이의제기에 의하여 번복되지 아니한 경우에는, 위반과 관련된 모든 시스템 및 하드웨어의 안전하고 완전한 파기를 보장하기 위하여 해당 신청인의 지식재산권 및 자산을 몰수당할 것",
+   "marks": [
+    {
+     "t": "위반과 관련된 모든 시스템 및 하드웨어의 안전하고 완전한 파기를 보장하기 위하여 해당 신청인의 지식재산권 및 자산을 몰수당할 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 13. Penalties",
+   "ko": "제13조 벌칙",
+   "id": "s82"
+  },
+  {
+   "type": "p",
+   "en": "(a) Definitions.— In this section:",
+   "ko": "(a) 정의.— 이 조에서 사용하는 용어의 뜻은 다음과 같다."
+  },
+  {
+   "type": "p",
+   "en": "(1) Covered entity.— The term covered entity means a person with a charter issued under section 12(a).",
+   "ko": "(1) 대상 단체.— \"대상 단체\"란 제12조(a)항에 따라 발급된 허가장을 보유한 자를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(2) Covered policymaking individual.— The term covered policymaking individual means an individual who is employed in a policymaking role at a covered entity, or performs policymaking functions at a covered entity.",
+   "ko": "(2) 대상 정책결정 개인.— \"대상 정책결정 개인\"이란 대상 단체에서 정책결정 직위에 고용되어 있거나 대상 단체에서 정책결정 기능을 수행하는 개인을 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Rogue actor.— The term rogue actor means an individual who is not employed by or otherwise affiliated with a covered entity.",
+   "ko": "(3) 불량 행위자.— \"불량 행위자(rogue actor)\"란 대상 단체에 고용되어 있지 아니하거나 그 밖에 대상 단체와 관련되어 있지 아니한 개인을 말한다.",
+   "marks": [
+    {
+     "t": "\"불량 행위자(rogue actor)\"란 대상 단체에 고용되어 있지 아니하거나 그 밖에 대상 단체와 관련되어 있지 아니한 개인을 말한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Criminal penalties for policymaking individuals or rogue actors.— Any covered policymaking individual or rogue actor who recklessly violates section 8, 9, or 12 or a rule promulgated thereunder shall be fined under title 18, United States Code, and imprisoned for not more than 20 years.",
+   "ko": "(b) 정책결정 개인 또는 불량 행위자에 대한 형사처벌.— 제8조, 제9조 또는 제12조 또는 그에 따라 공포된 규칙을 무모하게(recklessly) 위반한 대상 정책결정 개인 또는 불량 행위자는 미합중국법전(United States Code) 제18편에 따른 벌금 및 20년 이하의 징역에 처하여야 한다.",
+   "marks": [
+    {
+     "t": "미합중국법전(United States Code) 제18편에 따른 벌금 및 20년 이하의 징역에 처하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) Penalties for non-Policymaking individuals.—",
+   "ko": "(c) 비정책결정 개인에 대한 벌칙.—"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— Any individual who is not a covered policymaking individual who recklessly violates section 8, 9, or 12, or a rule promulgated thereunder, shall be barred from employment in the artificial intelligence industry for a period of 10 years.",
+   "ko": "(1) 일반 원칙.— 대상 정책결정 개인이 아닌 개인으로서 제8조, 제9조 또는 제12조 또는 그에 따라 공포된 규칙을 무모하게 위반한 자는 10년간 인공지능 산업에서의 취업이 금지되어야 한다.",
+   "marks": [
+    {
+     "t": "10년간 인공지능 산업에서의 취업이 금지되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Appeal.— An individual who is not a covered policymaking individual who is found to have recklessly violated section 8, 9, or 12, or a rule promulgated thereunder, may submit to the Secretary a request to review such finding and the Secretary, upon review of the finding, may overturn the finding.",
+   "ko": "(2) 이의제기.— 대상 정책결정 개인이 아닌 개인으로서 제8조, 제9조 또는 제12조 또는 그에 따라 공포된 규칙을 무모하게 위반한 것으로 인정된 자는 장관에게 그 인정에 대한 재검토 요청을 제출할 수 있으며, 장관은 그 인정을 재검토한 후 이를 번복할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Waiver for whistleblowers.— The Secretary may waive paragraph (1) for an individual described in such paragraph if the Secretary determines that—",
+   "ko": "(3) 내부고발자에 대한 적용 면제.— 장관은 다음 각 목에 해당한다고 판단하는 경우 제1호에 규정된 개인에 대하여 같은 호의 적용을 면제할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(A) the individual submitted to the Secretary information about a violation of section 8, 9, or 12; and",
+   "ko": "(A) 해당 개인이 제8조, 제9조 또는 제12조의 위반에 관한 정보를 장관에게 제출하였을 것",
+   "marks": [
+    {
+     "t": "해당 개인이 제8조, 제9조 또는 제12조의 위반에 관한 정보를 장관에게 제출하였을 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) doing so is consistent with the purpose set forth in section 4(b).",
+   "ko": "(B) 적용 면제가 제4조(b)항에 규정된 목적에 부합할 것"
+  },
+  {
+   "type": "p",
+   "en": "(d) Revocation of charters.—",
+   "ko": "(d) 허가장의 취소.—"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— The Secretary shall revoke a charter issued under section 12(a) if the Secretary finds that the person violated section 8, 9, or 12, or a rule promulgated thereunder.",
+   "ko": "(1) 일반 원칙.— 장관은 제12조(a)항에 따라 허가장을 발급받은 자가 제8조, 제9조 또는 제12조 또는 그에 따라 공포된 규칙을 위반하였다고 인정하는 경우 해당 허가장을 취소하여야 한다.",
+   "marks": [
+    {
+     "t": "해당 허가장을 취소하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Appeal.— A person whose charter has been revoked under paragraph (1) pursuant to a finding that the person violated section 8, 9, or 12, or a rule promulgated thereunder, may submit to the United States Court of Appeals for the Federal Circuit a request for review of the finding and the Court may uphold or overturn the finding.",
+   "ko": "(2) 이의제기.— 제8조, 제9조 또는 제12조 또는 그에 따라 공포된 규칙을 위반하였다는 인정에 따라 제1호에 의하여 허가장이 취소된 자는 연방순회항소법원(United States Court of Appeals for the Federal Circuit)에 그 인정에 대한 재검토 요청을 제출할 수 있으며, 같은 법원은 그 인정을 유지하거나 번복할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Receivership.— If the Court receives a request from a person under paragraph (2) to review a finding, the Court may, at the request of the person, place the intellectual property of the person in a receivership until the Court has completed the review and the Secretary has ensured all artificial superintelligences or artificial intelligence systems displaying superintelligence precursor characteristics have been rendered inoperative.",
+   "ko": "(3) 재산관리.— 같은 법원이 제2호에 따라 어떤 자로부터 인정에 대한 재검토 요청을 받은 경우, 같은 법원은 해당 자의 요청에 따라 같은 법원이 재검토를 완료하고 장관이 모든 인공 초지능 또는 초지능 전조 특성을 나타내는 모든 인공지능 시스템이 작동 불능 상태가 되었음을 보장할 때까지 해당 자의 지식재산권을 재산관리(receivership)에 둘 수 있다.",
+   "marks": [
+    {
+     "t": "모든 인공 초지능 또는 초지능 전조 특성을 나타내는 모든 인공지능 시스템이 작동 불능 상태가 되었음을 보장할 때까지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(4) Forfeiture.— If the Court, under paragraph (2), upholds a finding that a person violated section 8, 9, or 12, or a rule promulgated thereunder, the intellectual property and assets of the person shall be subject to forfeiture by the Federal Government to ensure the safe and complete destruction of all systems and hardware related to the violation.",
+   "ko": "(4) 몰수.— 같은 법원이 제2호에 따라 어떤 자가 제8조, 제9조 또는 제12조 또는 그에 따라 공포된 규칙을 위반하였다는 인정을 유지하는 경우, 위반과 관련된 모든 시스템 및 하드웨어의 안전하고 완전한 파기를 보장하기 위하여 해당 자의 지식재산권 및 자산은 연방정부에 의한 몰수의 대상이 되어야 한다.",
+   "marks": [
+    {
+     "t": "위반과 관련된 모든 시스템 및 하드웨어의 안전하고 완전한 파기를 보장하기 위하여 해당 자의 지식재산권 및 자산은 연방정부에 의한 몰수의 대상이 되어야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 14. Prohibition against retaliation",
+   "ko": "제14조 보복 금지",
+   "id": "s99"
+  },
+  {
+   "type": "p",
+   "en": "(a) Definition of covered individual.— In this section, the term covered individual includes, with respect to an employer, the following:",
+   "ko": "(a) 대상 개인의 정의.— 이 조에서 \"대상 개인\"이란 사용자와 관련하여 다음 각 호의 자를 포함한다."
+  },
+  {
+   "type": "p",
+   "en": "(1) An employee.",
+   "ko": "(1) 피고용인"
+  },
+  {
+   "type": "p",
+   "en": "(2) A former employee.",
+   "ko": "(2) 전직 피고용인"
+  },
+  {
+   "type": "p",
+   "en": "(3) An independent contractor.",
+   "ko": "(3) 독립계약자"
+  },
+  {
+   "type": "p",
+   "en": "(4) A former independent contractor.",
+   "ko": "(4) 전직 독립계약자"
+  },
+  {
+   "type": "p",
+   "en": "(b) Prohibition.— No employer may, directly or indirectly, discharge, demote, suspend, threaten, blacklist, harass, or in any other manner discriminate against a covered individual in the terms and conditions of employment or post-employment of the covered individual (or the terms and conditions of work provided by the covered individual as an independent contractor) because of any lawful act done by the covered individual—",
+   "ko": "(b) 금지.— 어떠한 사용자도 대상 개인이 행한 다음 각 호의 적법한 행위를 이유로 직접 또는 간접적으로 해당 대상 개인을 해고, 강등, 정직, 협박, 블랙리스트 등재, 괴롭힘을 하거나 그 밖의 방식으로 해당 대상 개인의 고용 또는 고용 종료 후의 조건(또는 해당 대상 개인이 독립계약자로서 제공하는 업무의 조건)에 있어서 차별하여서는 아니 된다.",
+   "marks": [
+    {
+     "t": "어떠한 사용자도 대상 개인이 행한 다음 각 호의 적법한 행위를 이유로 직접 또는 간접적으로 해당 대상 개인을 해고, 강등, 정직, 협박, 블랙리스트 등재, 괴롭힘을 하거나",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) in providing information to the Department, a law enforcement agency, or any member of Congress or any committee of Congress regarding a violation of this Act;",
+   "ko": "(1) 이 법의 위반에 관하여 인공지능부, 법집행기관, 연방의회 의원 또는 연방의회 위원회에 정보를 제공하는 행위",
+   "marks": [
+    {
+     "t": "이 법의 위반에 관하여 인공지능부, 법집행기관, 연방의회 의원 또는 연방의회 위원회에 정보를 제공하는 행위",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) in initiating, testifying in, or assisting in any investigation or judicial or administrative action, or any investigation of Congress, based upon or relating to the information described in paragraph (1); or",
+   "ko": "(2) 제1호에 규정된 정보에 근거하거나 이와 관련된 조사, 사법적 또는 행정적 조치, 또는 연방의회의 조사를 개시하거나, 그에 증언하거나, 이를 지원하는 행위",
+   "marks": [
+    {
+     "t": "연방의회의 조사를 개시하거나, 그에 증언하거나, 이를 지원하는 행위",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) in providing information to a person with supervisory authority over the covered individual at the employer of the covered individual, or another individual working at the employer whom the covered individual reasonably believes has the authority to investigate, discover, or terminate the misconduct or take any other action to address the misconduct.",
+   "ko": "(3) 대상 개인의 사용자 내에서 해당 대상 개인에 대한 감독 권한을 가진 사람, 또는 비위행위를 조사, 발견 또는 종식시키거나 비위행위에 대처하기 위한 그 밖의 조치를 할 권한이 있다고 대상 개인이 합리적으로 믿는 해당 사용자 소속의 다른 개인에게 정보를 제공하는 행위",
+   "marks": [
+    {
+     "t": "비위행위를 조사, 발견 또는 종식시키거나 비위행위에 대처하기 위한 그 밖의 조치를 할 권한이 있다고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 15. International coordination and policy",
+   "ko": "제15조 국제 협력 및 정책",
+   "id": "s109"
+  },
+  {
+   "type": "p",
+   "en": "(a) Coordination.— The Secretary of Artificial Intelligence, in coordination with the Secretary of State shall pursue international agreements and allied coordination to prevent the development of artificial superintelligence.",
+   "ko": "(a) 협력.— 인공지능부 장관은 국무장관과 협력하여 인공 초지능의 개발을 방지하기 위한 국제 협정 및 동맹국 간 협력을 추진하여야 한다.",
+   "marks": [
+    {
+     "t": "인공 초지능의 개발을 방지하기 위한 국제 협정 및 동맹국 간 협력을 추진하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Policy.— It shall be the policy of the United States to prevent the development of artificial superintelligence globally, which may include export controls on artificial intelligence computing infrastructure.",
+   "ko": "(b) 정책.— 전 세계적으로 인공 초지능의 개발을 방지하는 것을 미합중국의 정책으로 하며, 이에는 인공지능 컴퓨팅 인프라에 대한 수출 통제가 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "전 세계적으로 인공 초지능의 개발을 방지하는 것을 미합중국의 정책으로 하며",
+     "k": "key"
+    },
+    {
+     "t": "인공지능 컴퓨팅 인프라에 대한 수출 통제가 포함될 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 16. Federal funding",
+   "ko": "제16조 연방 자금",
+   "id": "s112"
+  },
+  {
+   "type": "p",
+   "en": "No Federal funds shall be used for any activities that violate section 8, 9, or 12 or a rule promulgated thereunder, except that the Department of Artificial Intelligence may use Federal funding for research relating to defensive cybersecurity measures that utilizes artificial intelligence systems that have the characteristics described under section 3(6)(B).",
+   "ko": "연방 자금은 제8조, 제9조 또는 제12조 또는 그에 따라 공포된 규칙을 위반하는 어떠한 활동에도 사용되어서는 아니 된다. 다만, 인공지능부는 제3조 제6호(B)목에 규정된 특성을 갖는 인공지능 시스템을 활용하는 방어적 사이버 보안 조치에 관한 연구에 연방 자금을 사용할 수 있다.",
+   "marks": [
+    {
+     "t": "연방 자금은 제8조, 제9조 또는 제12조 또는 그에 따라 공포된 규칙을 위반하는 어떠한 활동에도 사용되어서는 아니 된다.",
+     "k": "key"
+    },
+    {
+     "t": "인공지능 시스템을 활용하는 방어적 사이버 보안 조치에 관한 연구에 연방 자금을 사용할 수 있다",
+     "k": "safety"
+    }
+   ]
+  }
+ ]
+}

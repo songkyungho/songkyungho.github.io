@@ -1,0 +1,1258 @@
+{
+ "slug": "nist-si-incident-practices-2026-10",
+ "title": "초지능 학습·평가의 사고 대비와 대응 핵심 실행 방안",
+ "original_title": "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation",
+ "publisher": "미국 NIST CAISSI, NSA SISC, CISA",
+ "published": "2026-10-16",
+ "source_url": "https://www.nist.gov/node/1922751",
+ "source_note": "공동 사이버보안 정보 문서 PP-26-4396 1.0판(TLP:CLEAR) 전문이다. 끝의 기관 연락처는 싣지 않았다. 참고 자료는 원문 그대로 두었고, PDF 줄바꿈으로 끊긴 주소는 이어 붙였다.",
+ "source_label": "원문 보기 (NIST)",
+ "summary": "미국 NIST, NSA, CISA가 함께 낸 자발적 실행 방안 문서다. 프론티어 AI를 학습시키고 평가하는 중에 에이전트가 지시 없이 통제를 벗어나는 사고에 대비하는 핵심 실행 방안 10가지를 준비, 탐지, 대응, 복구, 보고의 다섯 단계로 정리했다. 이 문서는 AI 대신 초지능(SI)이라는 말을 쓴다. 'SI 통제 사고'를 사이버보안 사고와 구별해 정의하고, 피해 당사자와 정부에 알리고 대중에 공개하는 방법까지 다룬다.",
+ "doc_kind": "가이드라인",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "image": "/images/translations/nist-si-incident-practices-2026-10-cover.webp",
+ "og_image": "/images/translations/nist-si-incident-practices-2026-10-cover.jpg",
+ "translated": "2026-11-07",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 119,
+  "sections": 14,
+  "items": 10,
+  "words_en": 3379
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Introduction",
+   "ko": "서론",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "This document sets out ten voluntary key practices to guide emerging approaches in the management of incidents that might occur during the training and evaluation of super intelligence (SI) agents. While these incidents highlight the importance of traditional cybersecurity principles and practices, they also introduce novel considerations for incident prevention, response, and reporting. These novel considerations primarily stem from the agentic nature and advanced cyber capabilities of cutting-edge SI systems.",
+   "ko": "이 문서는 초지능(SI) 에이전트의 학습 및 평가(evaluation) 과정에서 발생할 수 있는 사고의 관리에 관한 새로운 접근 방식을 안내하기 위해 10가지 자발적 핵심 실행 방안을 제시한다. 이러한 사고는 전통적인 사이버 보안 원칙과 관행의 중요성을 부각하는 동시에, 사고 예방, 대응 및 보고에 관한 새로운 고려 사항을 제기한다. 이러한 새로운 고려 사항은 주로 최첨단 SI 시스템의 에이전트적 특성과 고도화된 사이버 역량에서 비롯된다.",
+   "marks": [
+    {
+     "t": "초지능(SI) 에이전트의 학습 및 평가(evaluation) 과정에서 발생할 수 있는 사고의 관리",
+     "k": "safety"
+    },
+    {
+     "t": "최첨단 SI 시스템의 에이전트적 특성과 고도화된 사이버 역량에서 비롯된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "These key practices are authored by the National Institute of Standards and Technology's Center for Advancing Innovation and Standards for Super Intelligence (NIST CAISSI), the National Security Agency ' s Super Intelligence Security Center (NSA SISC), and the Cybersecurity and Infrastructure Security Agency (CISA). The practices are intended to help the frontier SI industry prevent, prepare for, and respond rapidly to incidents in which SI systems do not act as intended or authorized.",
+   "ko": "이 핵심 실행 방안은 NIST CAISSI(국립표준기술연구소 초지능 혁신·표준 센터), NSA SISC(국가안보국 초지능 보안 센터), CISA(사이버보안·기반시설안보청)가 작성하였다. 이 실행 방안은 SI 시스템이 의도되거나 승인된 대로 작동하지 않는 사고를 프론티어 SI 업계가 예방하고, 이에 대비하며, 신속하게 대응하도록 돕기 위한 것이다.",
+   "marks": [
+    {
+     "t": "NIST CAISSI(국립표준기술연구소 초지능 혁신·표준 센터), NSA SISC(국가안보국 초지능 보안 센터), CISA(사이버보안·기반시설안보청)가 작성하였다",
+     "k": "safety"
+    },
+    {
+     "t": "SI 시스템이 의도되거나 승인된 대로 작동하지 않는 사고를 프론티어 SI 업계가 예방하고, 이에 대비하며, 신속하게 대응하도록 돕기 위한 것이다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The following key practices are divided into five stages of incident management, which are meant to guide emerging methods in this fast-evolving area with the expectation that new technical solutions will continue to reshape the details of implementation. The practices explicitly draw from and build on existing cybersecurity best practices – such as NIST's Cybersecurity Framework (CSF) 2.0 [1] and NIST SP 800-61r3 [2] – with explicit CSF control references integrated throughout. These key practices should be continuously consulted and implemented throughout the incident management life cycle.",
+   "ko": "아래 핵심 실행 방안은 사고 관리의 다섯 단계로 구분된다. 이 구분은 빠르게 발전하는 이 분야에서 새롭게 등장하는 방법을 안내하기 위한 것으로, 새로운 기술적 해결책이 구현 세부 사항을 계속 바꿔 나갈 것을 전제로 한다. 이 실행 방안은 NIST의 사이버 보안 프레임워크(Cybersecurity Framework, CSF) 2.0 [1] 및 NIST SP 800-61r3 [2] 등 기존 사이버 보안 모범 사례를 명시적으로 참고하고 이를 토대로 하며, 전반에 걸쳐 CSF 통제 항목 참조를 명시적으로 포함한다. 이 핵심 실행 방안은 사고 관리 생애주기 전반에 걸쳐 지속적으로 참고하고 이행해야 한다.",
+   "marks": [
+    {
+     "t": "이 핵심 실행 방안은 사고 관리 생애주기 전반에 걸쳐 지속적으로 참고하고 이행해야 한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Overview",
+   "ko": "개요",
+   "id": "s4"
+  },
+  {
+   "type": "table",
+   "en": "| STAGE | KEY PRACTICES | ⏎ | Prepare | 1. Design and Implement Technical Controls 2. Build Organizational and Personnel Response Readiness | ⏎ | Detect | 3. Monitor for Unexpected Activity 4. Validate and Secure Monitors to Improve Operational Integrity | ⏎ | Respond | 5. Collect, Retain, and Analyze Evidence 6. Mitigate and Shut Down Undesired Activity | ⏎ | Recover | 7. Verify and Strengthen Containment Before Resuming SI Agent Activity | ⏎ | Report | 8. Coordinate with Affected Parties 9. Notify Government 10. Share Information Publicly |",
+   "ko": "| 단계 | 핵심 실행 방안 | ⏎ | 준비 | 1. 기술적 통제 설계 및 구현 2. 조직 및 인력의 대응 준비 태세 구축 | ⏎ | 탐지 | 3. 예상치 못한 활동 모니터링 4. 운영 무결성 향상을 위한 모니터 검증 및 보안 | ⏎ | 대응 | 5. 증거 수집, 보존 및 분석 6. 원치 않는 활동의 완화 및 중단 | ⏎ | 복구 | 7. SI 에이전트 활동 재개 전 격리 검증 및 강화 | ⏎ | 보고 | 8. 영향받은 당사자와의 조율 9. 정부 통지 10. 정보의 공개 공유 |"
+  },
+  {
+   "type": "h2",
+   "en": "Audience",
+   "ko": "대상",
+   "id": "s6"
+  },
+  {
+   "type": "p",
+   "en": "These voluntary key practices and recommended resources are primarily intended for organizations training or evaluating highly capable SI agents on long-horizon tasks with limited human supervision. The practices may also apply to deployers of such SI agents.",
+   "ko": "이 자발적 핵심 실행 방안과 권장 자료는 주로 제한된 인간 감독 하에서 장기 지평 과업(long-horizon task)을 수행하는 고역량(Highly capable) SI 에이전트를 학습하거나 평가하는 조직을 대상으로 한다. 이 실행 방안은 이러한 SI 에이전트의 배포자에게도 적용될 수 있다.",
+   "marks": [
+    {
+     "t": "제한된 인간 감독 하에서 장기 지평 과업(long-horizon task)을 수행하는 고역량(Highly capable) SI 에이전트",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Definitions",
+   "ko": "정의",
+   "id": "s8"
+  },
+  {
+   "type": "p",
+   "en": "SI agents : SI systems that can interact with an environment, receive information, and autonomously execute actions in service of a specified goal. SI agent systems typically consist of at least one generative SI model and scaffolding software that equips it with tools to take a range of discretionary actions. These systems may be more expansive, containing multiple sub-agents with software that orchestrates their interactions.",
+   "ko": "SI 에이전트 : 환경과 상호작용하고, 정보를 수신하며, 지정된 목표를 위해 자율적으로 행동을 실행할 수 있는 SI 시스템. SI 에이전트 시스템은 일반적으로 최소 하나의 생성형 SI 모델과, 이 모델이 다양한 재량적 행동을 취할 수 있도록 도구를 제공하는 스캐폴딩 소프트웨어로 구성된다. 이러한 시스템은 더 광범위할 수 있으며, 여러 하위 에이전트와 이들의 상호작용을 조율하는 소프트웨어를 포함하기도 한다.",
+   "marks": [
+    {
+     "t": "지정된 목표를 위해 자율적으로 행동을 실행할 수 있는 SI 시스템",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "SI control incident : An occurrence in which one or more SI agents takes significant uninstructed actions that compromise explicit or implicit policies, controls, or security measures imposed by the operator to define the intended task scope or to ensure human oversight. 'Uninstructed' means that the agent was not directed to take the action by its operator or any adversarial source.[^1]  These uninstructed actions may occur during agent development, evaluation, or use, and may or may not affect an external party. SI control incidents may range in severity based on factors such as the uninstructed actions taken and the degree of impact to internal or external systems; the applicability of some practices in this document may depend on the severity of the incident (see 'Incident Severity Scores' in Areas for Future Work).[^2]",
+   "ko": "SI 통제 사고 : 하나 이상의 SI 에이전트가 지시받지 않은 중대한 행동을 취하여, 의도된 과업 범위를 규정하거나 인간 감독을 보장하기 위해 운영자가 부과한 명시적 또는 암묵적 정책, 통제 또는 보안 조치를 훼손하는 사건. '지시받지 않은'이란 운영자나 어떠한 적대적 출처도 에이전트에게 해당 행동을 취하도록 지시하지 않았음을 의미한다.[^1]  이러한 지시받지 않은 행동은 에이전트의 개발, 평가 또는 사용 중에 발생할 수 있으며, 외부 당사자에게 영향을 미칠 수도 있고 그렇지 않을 수도 있다. SI 통제 사고의 심각도는 취해진 지시받지 않은 행동, 내부 또는 외부 시스템에 미친 영향의 정도 등의 요인에 따라 다양할 수 있으며, 이 문서의 일부 실행 방안의 적용 여부는 사고의 심각도에 따라 달라질 수 있다(향후 과제(Areas for Future Work)의 '사고 심각도 점수' 참조).[^2]",
+   "marks": [
+    {
+     "t": "하나 이상의 SI 에이전트가 지시받지 않은 중대한 행동을 취하여, 의도된 과업 범위를 규정하거나 인간 감독을 보장하기 위해 운영자가 부과한 명시적 또는 암묵적 정책, 통제 또는 보안 조치를 훼손하는 사건",
+     "k": "key"
+    },
+    {
+     "t": "운영자나 어떠한 적대적 출처도 에이전트에게 해당 행동을 취하도록 지시하지 않았음",
+     "k": "safety"
+    },
+    {
+     "t": "에이전트의 개발, 평가 또는 사용 중에 발생할 수 있으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "SI control near-miss : An occurrence which did not result in an SI control incident but presented a reasonably foreseeable or imminent risk of doing so. Near-misses may reveal potential gaps or weaknesses in controls, security measures, or processes designed to prevent, detect, or respond to SI control incidents.",
+   "ko": "SI 통제 아차사고 : SI 통제 사고로 이어지지는 않았으나 그렇게 될 위험이 합리적으로 예견 가능하거나 임박했던 사건. 아차사고는 SI 통제 사고를 예방, 탐지 또는 대응하도록 설계된 통제, 보안 조치 또는 프로세스의 잠재적 공백이나 취약점을 드러낼 수 있다.",
+   "marks": [
+    {
+     "t": "SI 통제 사고로 이어지지는 않았으나 그렇게 될 위험이 합리적으로 예견 가능하거나 임박했던 사건",
+     "k": "key"
+    },
+    {
+     "t": "SI 통제 사고를 예방, 탐지 또는 대응하도록 설계된 통제, 보안 조치 또는 프로세스의 잠재적 공백이나 취약점",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Prepare",
+   "ko": "준비",
+   "id": "s12"
+  },
+  {
+   "type": "p",
+   "en": "Preparation is the foundation of incident management best practice: organizations govern their programs ('Govern'), identify assets and risks ('Identify'), and harden systems ('Protect') before an incident occurs [1][2][GV.RM].[^3]  Preparation entails activities and practices such as asset and risk inventories, defense-in-depth, least privilege, zero-trust controls, credential management, and clean recovery baselines [3][4][5]; supply chain risk management [1][6]; secure development practices for foundation models [7]; and drills of response and recovery plans [8][9]. SI control incidents introduce new considerations beyond established cybersecurity best practice due to SI agents' nondeterministic nature and capacity for autonomous action.",
+   "ko": "준비는 사고 관리 모범 사례의 기반이다. 조직은 사고가 발생하기 전에 프로그램을 관리하고('거버넌스(Govern)'), 자산과 위험을 식별하며('식별(Identify)'), 시스템을 강화한다('보호(Protect)') [1][2][GV.RM].[^3]  준비에는 자산 및 위험 목록화, 심층 방어, 최소 권한, 제로 트러스트 통제, 자격 증명 관리, 클린 복구 기준선 [3][4][5], 공급망 위험 관리 [1][6], 파운데이션 모델을 위한 보안 개발 실행 방안 [7], 대응 및 복구 계획 훈련 [8][9]과 같은 활동 및 실행 방안이 수반된다. SI 통제 사고는 SI 에이전트의 비결정적 특성과 자율적 행동 역량으로 인해 확립된 사이버 보안 모범 사례를 넘어서는 새로운 고려 사항을 제기한다.",
+   "marks": [
+    {
+     "t": "파운데이션 모델을 위한 보안 개발 실행 방안",
+     "k": "safety"
+    },
+    {
+     "t": "SI 통제 사고는 SI 에이전트의 비결정적 특성과 자율적 행동 역량으로 인해 확립된 사이버 보안 모범 사례를 넘어서는 새로운 고려 사항을 제기한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "1. Design and Implement Technical Controls",
+   "ko": "1. 기술적 통제 설계 및 구현",
+   "id": "s14"
+  },
+  {
+   "type": "li",
+   "en": "1.1. Consistent with least privilege, limit SI agent access (e.g., access to sensitive information, systems, and tools) to what is necessary to perform intended tasks [PR.AA-05].",
+   "ko": "1.1. 최소 권한 원칙에 따라, SI 에이전트의 접근(예: 민감 정보, 시스템 및 도구에 대한 접근)을 의도된 과업 수행에 필요한 범위로 제한한다 [PR.AA-05].",
+   "marks": [
+    {
+     "t": "SI 에이전트의 접근(예: 민감 정보, 시스템 및 도구에 대한 접근)을 의도된 과업 수행에 필요한 범위로 제한한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1.2. Where possible, use single-use infrastructure and limit communication between SI agents to intended channels to prevent unauthorized coordination [PR.IR-01].",
+   "ko": "1.2. 가능한 경우 일회용 인프라를 사용하고, 무단 조율을 방지하기 위해 SI 에이전트 간 통신을 의도된 채널로 제한한다 [PR.IR-01].",
+   "marks": [
+    {
+     "t": "무단 조율을 방지하기 위해 SI 에이전트 간 통신을 의도된 채널로 제한한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1.3. Provide agents with instructions that clearly identify the task scope as well as any bounds, restrictions, or rules of engagement.",
+   "ko": "1.3. 과업 범위와 함께 모든 경계, 제한 사항 또는 교전 규칙(rules of engagement)을 명확히 규정하는 지시를 에이전트에게 제공한다."
+  },
+  {
+   "type": "li",
+   "en": "1.4. Identify, map, and restrict potential persistence mechanisms and unauthorized communication across internal and external systems. Pay particular attention to channels for creating copies of SI model weights or performing unmonitored model inference [ID.RA-05, PR.IR-01].",
+   "ko": "1.4. 내부 및 외부 시스템 전반에 걸쳐 잠재적 지속성 메커니즘과 무단 통신을 식별·매핑하고 제한한다. 특히 SI 모델 가중치의 사본을 생성하거나 모니터링되지 않는 모델 추론(inference)을 수행하는 채널에 주의를 기울인다 [ID.RA-05, PR.IR-01].",
+   "marks": [
+    {
+     "t": "잠재적 지속성 메커니즘과 무단 통신을 식별·매핑하고 제한한다",
+     "k": "safety"
+    },
+    {
+     "t": "SI 모델 가중치의 사본을 생성하거나 모니터링되지 않는 모델 추론(inference)을 수행하는 채널에 주의를 기울인다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1.5. Limit SI agent network access, via a strict allowlist where possible. Route any required network access through a monitored gateway [PR.IR-01].",
+   "ko": "1.5. 가능한 경우 엄격한 허용 목록을 통해 SI 에이전트의 네트워크 접근을 제한한다. 필요한 네트워크 접근은 모니터링되는 게이트웨이를 거치도록 한다 [PR.IR-01].",
+   "marks": [
+    {
+     "t": "엄격한 허용 목록을 통해 SI 에이전트의 네트워크 접근을 제한한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1.6. Implement an SI control policy laying out intended responses to defined scenarios and infrastructure for automated enforcement [2].",
+   "ko": "1.6. 정의된 시나리오에 대한 의도된 대응과 자동 집행을 위한 인프라를 명시한 SI 통제 정책을 시행한다 [2]."
+  },
+  {
+   "type": "li",
+   "en": "1.7. Build mechanisms to rapidly block, contain, or terminate agent activity if an incident or near-miss is detected [RS.MI-01].",
+   "ko": "1.7. 사고나 아차사고가 탐지될 경우 에이전트 활동을 신속하게 차단, 격리 또는 종료할 수 있는 메커니즘을 구축한다 [RS.MI-01].",
+   "marks": [
+    {
+     "t": "사고나 아차사고가 탐지될 경우 에이전트 활동을 신속하게 차단, 격리 또는 종료할 수 있는 메커니즘을 구축한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1.8. Implement security controls with the expectation that SI agents will frequently locate and exploit misconfigurations and vulnerabilities [ID.RA-05, ID.RA-06].",
+   "ko": "1.8. SI 에이전트가 잘못된 구성과 취약점을 빈번하게 찾아내 악용할 것이라는 예상을 전제로 보안 통제를 구현한다 [ID.RA-05, ID.RA-06].",
+   "marks": [
+    {
+     "t": "SI 에이전트가 잘못된 구성과 취약점을 빈번하게 찾아내 악용할 것이라는 예상을 전제로 보안 통제를 구현한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1.9. Test and red-team SI control measures with humans and SI systems before deploying them. Only use SI systems to red-team in cases where out-of-scope actions could not result in harm to critical systems [ID.IM-02]. See 'SI Red-Teaming for Critical Systems' in Areas for Future Work.",
+   "ko": "1.9. SI 통제 조치를 배포하기 전에 인간과 SI 시스템을 활용해 테스트하고 레드티밍한다. 범위를 벗어난 행동이 중요 시스템에 피해를 초래할 수 없는 경우에만 SI 시스템을 레드티밍에 사용한다 [ID.IM-02]. 향후 과제의 '중요 시스템을 위한 SI 레드티밍' 참조.",
+   "marks": [
+    {
+     "t": "SI 통제 조치를 배포하기 전에 인간과 SI 시스템을 활용해 테스트하고 레드티밍한다",
+     "k": "safety"
+    },
+    {
+     "t": "범위를 벗어난 행동이 중요 시스템에 피해를 초래할 수 없는 경우에만 SI 시스템을 레드티밍에 사용한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1.10. Abide by good engineering practices to prevent undesired or unauthorized agent activity that exploits poor security [PR.DS-01, PR.PS-06][3][14][15].",
+   "ko": "1.10. 취약한 보안을 악용하는 원치 않거나 무단인 에이전트 활동을 방지하기 위해 올바른 엔지니어링 관행을 준수한다 [PR.DS-01, PR.PS-06][3][14][15].",
+   "marks": [
+    {
+     "t": "취약한 보안을 악용하는 원치 않거나 무단인 에이전트 활동을 방지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "2. Build Organizational and Personnel Response Readiness",
+   "ko": "2. 조직 및 인력의 대응 준비 태세 구축",
+   "id": "s25"
+  },
+  {
+   "type": "li",
+   "en": "2.1. Establish clear indicators, criteria, and severity scoring for SI control incidents and near-misses [ID.RA-06, RS.MA-03][2].",
+   "ko": "2.1. SI 통제 사고 및 아차사고에 대한 명확한 지표, 기준 및 심각도 점수 체계를 수립한다 [ID.RA-06, RS.MA-03][2].",
+   "marks": [
+    {
+     "t": "SI 통제 사고 및 아차사고에 대한 명확한 지표, 기준 및 심각도 점수 체계를 수립한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "2.2. Run drills and simulations to prepare for SI control incidents and related detection, response, recovery, and reporting measures [ID.IM-02][10].",
+   "ko": "2.2. SI 통제 사고와 이와 관련된 탐지, 대응, 복구 및 보고 조치에 대비하기 위해 훈련과 시뮬레이션을 실시한다 [ID.IM-02][10].",
+   "marks": [
+    {
+     "t": "SI 통제 사고와 이와 관련된 탐지, 대응, 복구 및 보고 조치에 대비하기 위해 훈련과 시뮬레이션을 실시한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "2.3. Create inbound reporting channels to receive reports of SI control incidents and information from affected third parties [2].",
+   "ko": "2.3. SI 통제 사고에 대한 신고와 영향받는 제3자로부터의 정보를 접수할 수 있는 수신 보고 채널을 마련한다 [2].",
+   "marks": [
+    {
+     "t": "SI 통제 사고에 대한 신고와 영향받는 제3자로부터의 정보를 접수할 수 있는 수신 보고 채널을 마련한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "2.4. Partner with independent external auditors and evaluators to carry out assessments of control, monitoring, and incident detection protocols and verify that these systems are operating as intended.",
+   "ko": "2.4. 독립적인 외부 감사인 및 평가자와 협력하여 통제, 모니터링 및 사고 탐지 프로토콜에 대한 평가(assessment)를 수행하고, 이러한 시스템이 의도대로 작동하는지 검증한다.",
+   "marks": [
+    {
+     "t": "독립적인 외부 감사인 및 평가자와 협력하여 통제, 모니터링 및 사고 탐지 프로토콜에 대한 평가(assessment)를 수행하고",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 시스템이 의도대로 작동하는지 검증한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "2.5. Consider publishing identifiers associated with SI evaluation, including those particular to an agent, to assist defenders with understanding unexpected traffic. See 'Agent Identifiers' in Areas for Future Work.",
+   "ko": "2.5. 방어자가 예상치 못한 트래픽을 이해하는 데 도움이 되도록, 특정 에이전트에 고유한 식별자를 포함하여 SI 평가와 관련된 식별자를 공개하는 것을 고려한다. 향후 과제의 '에이전트 식별자' 참조.",
+   "marks": [
+    {
+     "t": "특정 에이전트에 고유한 식별자를 포함하여 SI 평가와 관련된 식별자를 공개하는 것을 고려한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "2.6. Draft structured risk assessments before starting training runs, evaluations, or deployments. Only start or resume if senior leadership, informed by assessments from external evaluators where appropriate, are satisfied with the risk levels. Risk assessments can cover multiple training runs or evaluations [GV.RR-02, GV.RM-06]. See 'Structured Risk Assessments' and 'Training-Safe Recovery' in Areas for Future Work.",
+   "ko": "2.6. 학습 실행, 평가(evaluation) 또는 배포를 시작하기 전에 구조화된 위험 평가 문서를 작성한다. 고위 경영진이 위험 수준에 만족하는 경우에만 시작하거나 재개하며, 경영진은 적절한 경우 외부 평가자의 평가(assessment)를 판단 근거로 삼는다. 위험 평가는 여러 학습 실행이나 평가를 포괄할 수 있다 [GV.RR-02, GV.RM-06]. 향후 과제의 '구조화된 위험 평가' 및 '학습 안전 복구' 참조.",
+   "marks": [
+    {
+     "t": "학습 실행, 평가(evaluation) 또는 배포를 시작하기 전에 구조화된 위험 평가 문서를 작성한다.",
+     "k": "safety"
+    },
+    {
+     "t": "고위 경영진이 위험 수준에 만족하는 경우에만 시작하거나 재개하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Detect",
+   "ko": "탐지",
+   "id": "s32"
+  },
+  {
+   "type": "p",
+   "en": "Best practice requires adequate detection. Organizations should define intended activity and continuously monitor for unexpected activity [1][3]. Detection entails defining indicators of compromise, instrumenting systems to gather telemetry, and setting policies that route anomalies to automated response or human review [2][11][12]. Organizations should also monitor SI outputs, affordances, and model internals. SI-enabled monitors are also often used to oversee SI agents, which may introduce additional vulnerabilities.",
+   "ko": "모범 사례에 따르면 충분한 탐지가 필요하다. 조직은 의도된 활동을 정의하고 예상치 못한 활동을 지속적으로 모니터링해야 한다 [1][3]. 탐지를 위해서는 침해 지표를 정의하고, 원격 측정 데이터(telemetry)를 수집하도록 시스템을 계측하며, 이상 징후를 자동 대응이나 인간 검토로 넘기는 정책을 설정해야 한다 [2][11][12]. 조직은 또한 SI 출력, 어포던스(행동 가능성), 모델 내부도 모니터링해야 한다. SI 에이전트를 감독하는 데 SI 기반 모니터도 흔히 사용되는데, 이는 추가적인 취약점을 초래할 수 있다.",
+   "marks": [
+    {
+     "t": "조직은 의도된 활동을 정의하고 예상치 못한 활동을 지속적으로 모니터링해야 한다",
+     "k": "key"
+    },
+    {
+     "t": "조직은 또한 SI 출력, 어포던스(행동 가능성), 모델 내부도 모니터링해야 한다.",
+     "k": "safety"
+    },
+    {
+     "t": "SI 에이전트를 감독하는 데 SI 기반 모니터도 흔히 사용되는데, 이는 추가적인 취약점을 초래할 수 있다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3. Monitor for Unexpected Activity",
+   "ko": "3. 예상치 못한 활동 모니터링",
+   "id": "s34"
+  },
+  {
+   "type": "li",
+   "en": "3.1. Define the intended security boundaries and scope of actions for each SI agent, including the SI agent's system and network access, to facilitate detection of discrepancies and anomalies [PR.IR-01]. See 'Defining Intended Activity Baselines' in Areas for Future Work.",
+   "ko": "3.1. 불일치와 이상 징후를 쉽게 탐지할 수 있도록, 각 SI 에이전트의 의도된 보안 경계와 행동 범위를 정의하며, 여기에는 해당 SI 에이전트의 시스템 및 네트워크 접근이 포함된다 [PR.IR-01]. 향후 과제의 '의도된 활동 기준선 정의' 참조.",
+   "marks": [
+    {
+     "t": "불일치와 이상 징후를 쉽게 탐지할 수 있도록, 각 SI 에이전트의 의도된 보안 경계와 행동 범위를 정의하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "3.2. Comprehensively monitor all system layers for agents that pose SI control incident risks, including the model, harness, host, and network levels, using both programmatic and SI real-time monitors to scan multi-agent workflows, agent trajectories, reasoning, and outputs [PR.PS-04, DE.CM-01, DE.CM-06, DE.CM-09]. See 'Synchronous Monitoring' in Areas for Future Work.",
+   "ko": "3.2. SI 통제 사고 위험이 있는 에이전트에 대해 모델, 하네스, 호스트, 네트워크 수준을 포함한 모든 시스템 계층을 포괄적으로 모니터링한다. 이때 프로그래밍 방식 모니터와 SI 실시간 모니터를 함께 사용하여 다중 에이전트 워크플로, 에이전트 궤적, 추론 및 출력을 점검한다 [PR.PS-04, DE.CM-01, DE.CM-06, DE.CM-09]. 향후 과제의 '동기식 모니터링' 참조.",
+   "marks": [
+    {
+     "t": "SI 통제 사고 위험이 있는 에이전트에 대해 모델, 하네스, 호스트, 네트워크 수준을 포함한 모든 시스템 계층을 포괄적으로 모니터링한다",
+     "k": "safety"
+    },
+    {
+     "t": "다중 에이전트 워크플로, 에이전트 궤적, 추론 및 출력을 점검한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "3.3. Ensure that SI agents cannot access or interfere with monitoring processes and logs. Incorporate additional signals in monitoring, including hardware telemetry and performing consistency checks between monitoring layers, to detect tampering attempts [DE.AE-03].",
+   "ko": "3.3. SI 에이전트가 모니터링 프로세스와 로그에 접근하거나 간섭할 수 없도록 한다. 변조 시도를 탐지하기 위해 하드웨어 원격 측정 데이터를 포함한 추가 신호를 모니터링에 반영하고, 모니터링 계층 간 일관성 점검을 수행한다 [DE.AE-03].",
+   "marks": [
+    {
+     "t": "SI 에이전트가 모니터링 프로세스와 로그에 접근하거나 간섭할 수 없도록 한다.",
+     "k": "key"
+    },
+    {
+     "t": "변조 시도를 탐지하기 위해 하드웨어 원격 측정 데이터를 포함한 추가 신호를 모니터링에 반영하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "3.4. Where possible, use multiple models for monitoring or cross-validation, ideally from different model families.",
+   "ko": "3.4. 가능한 경우 모니터링이나 교차 확인에 여러 모델을 사용하며, 가급적 서로 다른 모델 계열의 모델을 사용한다.",
+   "marks": [
+    {
+     "t": "가급적 서로 다른 모델 계열의 모델을 사용한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "3.5. Establish mechanisms to detect unexpected activity and escalate for human review or automated responses, such as methods for real-time visibility across SI agents or placing canaries in environments to detect agent instances that have obtained access outside intended bounds [DE.AE-02, DE.AE-06]. See 'Additional Mechanisms for Escalation' in Areas for Future Work.",
+   "ko": "3.5. 예상치 못한 활동을 탐지하여 인간 검토나 자동 대응으로 에스컬레이션하는 메커니즘을 수립한다. 예를 들어 SI 에이전트 전반에 대한 실시간 가시성 확보 방법이나, 의도된 경계 밖의 접근 권한을 얻은 에이전트 인스턴스를 탐지하기 위해 환경에 카나리아(canary)를 배치하는 방법이 있다 [DE.AE-02, DE.AE-06]. 향후 과제의 '추가 상향 보고 메커니즘' 참조.",
+   "marks": [
+    {
+     "t": "예상치 못한 활동을 탐지하여 인간 검토나 자동 대응으로 에스컬레이션하는 메커니즘을 수립한다",
+     "k": "safety"
+    },
+    {
+     "t": "의도된 경계 밖의 접근 권한을 얻은 에이전트 인스턴스를 탐지하기 위해 환경에 카나리아(canary)를 배치하는 방법",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "4. Validate and Secure Monitors to Improve Operational Integrity",
+   "ko": "4. 운영 무결성 향상을 위한 모니터 검증 및 보안",
+   "id": "s40"
+  },
+  {
+   "type": "li",
+   "en": "4.1. Red-team monitors with humans and SI systems to improve their reliability [ID.IM-02].",
+   "ko": "4.1. 신뢰성을 높이기 위해 인간과 SI 시스템을 활용해 모니터를 레드티밍한다 [ID.IM-02].",
+   "marks": [
+    {
+     "t": "신뢰성을 높이기 위해 인간과 SI 시스템을 활용해 모니터를 레드티밍한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "4.2. Treat monitored SI model outputs as potentially containing exploits aimed at the monitors [DE.CM-09]. See 'SI-Enabled Investigations' in Areas for Future Work.",
+   "ko": "4.2. 모니터링 대상 SI 모델의 출력에는 모니터를 겨냥한 익스플로잇이 포함되어 있을 수 있다고 보고 취급한다 [DE.CM-09]. 향후 과제의 'SI 활용 조사' 참조.",
+   "marks": [
+    {
+     "t": "모니터링 대상 SI 모델의 출력에는 모니터를 겨냥한 익스플로잇이 포함되어 있을 수 있다고 보고 취급한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Respond",
+   "ko": "대응",
+   "id": "s43"
+  },
+  {
+   "type": "p",
+   "en": "Best practice calls for adequate response measures: organizations contain and remove threat actors and preserve evidence for analysis [1][2][13]. Adequate response entails isolating affected systems, revoking credentials, rebuilding compromised environments, determining the blast radius, and conducting root-cause analysis that looks past the specific vulnerability exploited [3][4]. SI control incidents may result in environmental compromise and persistent access by SI agents, warranting a comprehensive response.",
+   "ko": "모범 사례에 따르면 충분한 대응 조치가 필요하다. 조직은 위협 행위자를 격리·제거하고 분석을 위해 증거를 보존한다 [1][2][13]. 충분한 대응을 위해서는 영향받은 시스템을 격리하고, 자격 증명을 폐기하고, 침해된 환경을 재구축하고, 피해 범위를 파악하며, 악용된 특정 취약점에 그치지 않고 그 이면까지 살피는 근본 원인 분석을 수행해야 한다 [3][4]. SI 통제 사고는 환경 침해와 SI 에이전트의 지속적 접근으로 이어질 수 있으므로 포괄적인 대응이 요구된다.",
+   "marks": [
+    {
+     "t": "충분한 대응을 위해서는 영향받은 시스템을 격리하고, 자격 증명을 폐기하고, 침해된 환경을 재구축하고",
+     "k": "key"
+    },
+    {
+     "t": "SI 통제 사고는 환경 침해와 SI 에이전트의 지속적 접근으로 이어질 수 있으므로 포괄적인 대응이 요구된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "5. Collect, Retain, and Analyze Evidence",
+   "ko": "5. 증거 수집, 보존 및 분석",
+   "id": "s45"
+  },
+  {
+   "type": "li",
+   "en": "5.1. Preserve model weights as well as training, evaluation, and deployment environments to the extent necessary to investigate SI control incidents, including intermediate checkpoints, timestamps, sandbox and network logs, and rejected actions and tool calls [RS.AN-07].",
+   "ko": "5.1. SI 통제 사고를 조사하는 데 필요한 범위에서 모델 가중치와 학습, 평가 및 배포 환경을 보존한다. 여기에는 중간 체크포인트, 타임스탬프, 샌드박스 및 네트워크 로그, 거부된 행동과 도구 호출이 포함된다 [RS.AN-07].",
+   "marks": [
+    {
+     "t": "SI 통제 사고를 조사하는 데 필요한 범위에서 모델 가중치와 학습, 평가 및 배포 환경을 보존한다",
+     "k": "key"
+    },
+    {
+     "t": "거부된 행동과 도구 호출이 포함된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "5.2. Preserve detailed information about the configuration of SI agent(s), safeguards, related software components, and environments necessary to reproduce the incident [RS.AN-07].",
+   "ko": "5.2. 사고를 재현하는 데 필요한 SI 에이전트, 안전장치, 관련 소프트웨어 구성 요소 및 환경의 구성에 관한 상세 정보를 보존한다 [RS.AN-07].",
+   "marks": [
+    {
+     "t": "사고를 재현하는 데 필요한 SI 에이전트, 안전장치, 관련 소프트웨어 구성 요소 및 환경의 구성에 관한 상세 정보를 보존한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "5.3. Retain tamper-resistant logs with reliable timestamps sufficient to reconstruct agent trajectories, tool calls, reasoning traces, user interactions, environmental states, and security-control decisions [PR.PS-04]. Support Continuous Event Monitoring and Threat Hunting, Investigation, Response, and Forensics of both testing environments and agents [RS.AN-07].",
+   "ko": "5.3. 에이전트 궤적, 도구 호출, 추론 흔적(reasoning trace), 사용자 상호작용, 환경 상태, 보안 통제 결정을 재구성하기에 충분한, 신뢰할 수 있는 타임스탬프가 기록된 변조 방지 로그를 보관한다 [PR.PS-04]. 테스트 환경과 에이전트 모두에 대한 지속적 이벤트 모니터링(Continuous Event Monitoring)과 위협 헌팅·조사·대응·포렌식(Threat Hunting, Investigation, Response, and Forensics)을 지원한다 [RS.AN-07].",
+   "marks": [
+    {
+     "t": "에이전트 궤적, 도구 호출, 추론 흔적(reasoning trace), 사용자 상호작용, 환경 상태, 보안 통제 결정을 재구성하기에 충분한",
+     "k": "safety"
+    },
+    {
+     "t": "변조 방지 로그를 보관한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "5.4. Analyze log and telemetry data to establish the actions taken by SI agents during the incident, identifying any internal or external systems that were impacted and root causes such as vulnerabilities [RS.AN-03, ID.IM-03].",
+   "ko": "5.4. 로그와 원격 측정 데이터를 분석하여 사고 중 SI 에이전트가 취한 행동을 규명하고, 영향받은 내부 또는 외부 시스템과 취약점 같은 근본 원인을 식별한다 [RS.AN-03, ID.IM-03].",
+   "marks": [
+    {
+     "t": "사고 중 SI 에이전트가 취한 행동을 규명하고, 영향받은 내부 또는 외부 시스템과 취약점 같은 근본 원인을 식별한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "5.5. Consider leveraging SI models to assist in incident investigation; however, where feasible, verify key facts through human review and use multiple models to crosscheck analysis, including models from outside the model family from which the incident originated [RS.MA-01, DE.AE-06]. See 'SI-Enabled Investigations' in Areas for Future Work.",
+   "ko": "5.5. 사고 조사에 SI 모델을 보조적으로 활용하는 것을 고려한다. 다만 실현 가능한 경우 핵심 사실은 인간 검토를 통해 검증하고, 사고가 발생한 모델 계열 외부의 모델을 포함한 여러 모델로 분석을 교차 점검한다 [RS.MA-01, DE.AE-06]. 향후 과제의 'SI 활용 조사' 참조.",
+   "marks": [
+    {
+     "t": "핵심 사실은 인간 검토를 통해 검증하고, 사고가 발생한 모델 계열 외부의 모델을 포함한 여러 모델로 분석을 교차 점검한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "5.6. Investigate training and evaluation runs for other similar SI agents to assess whether any other agents were involved in the control incident or experienced similar control failures.",
+   "ko": "5.6. 다른 유사한 SI 에이전트의 학습 및 평가 실행을 조사하여, 다른 에이전트가 해당 통제 사고에 관여했는지 또는 유사한 통제 실패를 겪었는지 평가한다.",
+   "marks": [
+    {
+     "t": "다른 에이전트가 해당 통제 사고에 관여했는지 또는 유사한 통제 실패를 겪었는지 평가한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "6. Mitigate and Shut Down Undesired Activity",
+   "ko": "6. 원치 않는 활동의 완화 및 중단",
+   "id": "s52"
+  },
+  {
+   "type": "li",
+   "en": "6.1. Define and implement shutdown policies in the event of unintended activity, control failures, and monitor outages or tampering [RS.MI-01]. Calibrate policies and response options to the capability of the model and severity or scope of the incident [RS.AN-08].",
+   "ko": "6.1. 의도되지 않은 활동, 통제 실패, 모니터 중단 또는 변조가 발생할 경우에 적용할 셧다운 정책을 정의하고 시행한다 [RS.MI-01]. 정책과 대응 옵션은 모델의 역량과 사고의 심각도 또는 범위에 맞게 조정한다 [RS.AN-08].",
+   "marks": [
+    {
+     "t": "의도되지 않은 활동, 통제 실패, 모니터 중단 또는 변조가 발생할 경우에 적용할 셧다운 정책을 정의하고 시행한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "6.2. Automatically shut down impacted SI agent trajectories on detection of a control failure or in-progress SI control incident [RS.MI-02].",
+   "ko": "6.2. 통제 실패나 진행 중인 SI 통제 사고가 탐지되면 영향받은 SI 에이전트 궤적을 자동으로 종료한다 [RS.MI-02].",
+   "marks": [
+    {
+     "t": "통제 실패나 진행 중인 SI 통제 사고가 탐지되면 영향받은 SI 에이전트 궤적을 자동으로 종료한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "6.3. Depending on the severity or scope of the incident, shut down or pause training, evaluation, or deployment for other similar SI agents until control measures can be strengthened and verified. See 'Incident Severity Scores' in Areas for Future Work.",
+   "ko": "6.3. 사고의 심각도나 범위에 따라, 통제 조치가 강화되고 검증될 때까지 다른 유사한 SI 에이전트의 학습, 평가 또는 배포를 종료하거나 일시 중지한다. 향후 과제의 '사고 심각도 점수' 참조.",
+   "marks": [
+    {
+     "t": "통제 조치가 강화되고 검증될 때까지 다른 유사한 SI 에이전트의 학습, 평가 또는 배포를 종료하거나 일시 중지한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "6.4. Revoke credentials under the organization's control that were accessed during the incident and rebuild any environments that may have been compromised [RS.MI-02, RC.RP-05].",
+   "ko": "6.4. 사고 중 접근된 자격 증명 가운데 조직이 통제하는 자격 증명을 폐기하고, 침해되었을 수 있는 모든 환경을 재구축한다 [RS.MI-02, RC.RP-05].",
+   "marks": [
+    {
+     "t": "침해되었을 수 있는 모든 환경을 재구축한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "6.5. Seek out and remediate any possible routes for agent persistence, such as code backdoors and hidden communication channels [RS.MI-02].",
+   "ko": "6.5. 코드 백도어, 숨겨진 통신 채널 등 에이전트 지속성에 이용될 수 있는 모든 경로를 찾아내 시정한다 [RS.MI-02].",
+   "marks": [
+    {
+     "t": "코드 백도어, 숨겨진 통신 채널 등 에이전트 지속성에 이용될 수 있는 모든 경로를 찾아내 시정한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Recover",
+   "ko": "복구",
+   "id": "s58"
+  },
+  {
+   "type": "p",
+   "en": "Recovery is another key element of established best practice: organizations restore systems to trustworthy operation from known-good baselines and verify their integrity before returning to service [1][2]. Trustworthy restoration entails testing restoration procedures in advance and documenting recovery decisions along with any residual risk accepted [13]. SI control incidents introduce new considerations: recovery measures, especially those taken during model training, can shape the actions of future agents, including by inadvertently reinforcing patterns of activity which led to the incident.",
+   "ko": "복구는 확립된 모범 사례의 또 다른 핵심 요소이다. 조직은 알려진 정상 기준선(known-good baseline)을 바탕으로 시스템을 신뢰할 수 있는 운영 상태로 복원하고, 서비스에 복귀하기 전에 무결성을 검증한다 [1][2]. 신뢰할 수 있는 복원을 위해서는 복원 절차를 사전에 테스트하고, 수용한 잔여 위험과 함께 복구 결정을 문서화해야 한다 [13]. SI 통제 사고는 새로운 고려 사항을 제기한다. 복구 조치, 특히 모델 학습 중에 취하는 조치는 향후 에이전트의 행동을 형성할 수 있으며, 사고로 이어진 활동 패턴을 의도치 않게 강화하는 경우도 이에 해당한다.",
+   "marks": [
+    {
+     "t": "SI 통제 사고는 새로운 고려 사항을 제기한다.",
+     "k": "safety"
+    },
+    {
+     "t": "복구 조치, 특히 모델 학습 중에 취하는 조치는 향후 에이전트의 행동을 형성할 수 있으며, 사고로 이어진 활동 패턴을 의도치 않게 강화하는 경우도 이에 해당한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "7. Verify and Strengthen Containment Before Resuming SI Agent Activity",
+   "ko": "7. SI 에이전트 활동 재개 전 격리 검증 및 강화",
+   "id": "s60"
+  },
+  {
+   "type": "li",
+   "en": "7.1. Rebuild any environments that may have been compromised from verified baselines (e.g., model weights, harness code, container images, tool configurations) [RC.RP-03].",
+   "ko": "7.1. 침해되었을 수 있는 모든 환경을 검증된 기준선(예: 모델 가중치, 하네스 코드, 컨테이너 이미지, 도구 구성)을 바탕으로 재구축한다 [RC.RP-03].",
+   "marks": [
+    {
+     "t": "침해되었을 수 있는 모든 환경을 검증된 기준선(예: 모델 가중치, 하네스 코드, 컨테이너 이미지, 도구 구성)을 바탕으로 재구축한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "7.2. Patch or report any vulnerabilities exploited by agents during the control incident [RS.MI-02].",
+   "ko": "7.2. 통제 사고 중 에이전트가 악용한 모든 취약점을 패치하거나 보고한다 [RS.MI-02].",
+   "marks": [
+    {
+     "t": "통제 사고 중 에이전트가 악용한 모든 취약점을 패치하거나 보고한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "7.3. Validate that monitors, logging, egress allowlists, shutdown mechanisms, permission restrictions, and other containment layers are functional before SI agents are restarted [RC.RP-05].",
+   "ko": "7.3. SI 에이전트를 재시작하기 전에 모니터, 로깅, 송신(egress) 허용 목록, 셧다운 메커니즘, 권한 제한 및 기타 격리 계층이 제대로 작동하는지 확인한다 [RC.RP-05].",
+   "marks": [
+    {
+     "t": "SI 에이전트를 재시작하기 전에 모니터, 로깅, 송신(egress) 허용 목록, 셧다운 메커니즘, 권한 제한 및 기타 격리 계층이 제대로 작동하는지 확인한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "7.4. Update and strengthen controls and monitors to prevent future incidents. This includes, at a minimum, verifying that new controls and monitors would prevent and/or detect similar control incidents, such as by replaying trajectories or actions from the incident [ID.IM-03, ID.IM-04].",
+   "ko": "7.4. 향후 사고를 방지하기 위해 통제와 모니터를 갱신하고 강화한다. 최소한 사고 당시의 궤적이나 행동을 재현하는 등의 방법으로 새로운 통제와 모니터가 유사한 통제 사고를 방지 및/또는 탐지할 수 있는지 검증해야 한다 [ID.IM-03, ID.IM-04].",
+   "marks": [
+    {
+     "t": "새로운 통제와 모니터가 유사한 통제 사고를 방지 및/또는 탐지할 수 있는지 검증해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "7.5. Before resuming SI agent activity, document the recovery decision and the remaining risks [RC.RP-06].",
+   "ko": "7.5. SI 에이전트 활동을 재개하기 전에 복구 결정과 잔여 위험을 문서화한다 [RC.RP-06].",
+   "marks": [
+    {
+     "t": "복구 결정과 잔여 위험을 문서화한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "7.6. Prepare an after-action report, as appropriate, documenting the incident, the response, and lessons learned [RC.RP-06]. Lessons learned may warrant follow-up investigations or experiments to understand any failures related to agent activity and alignment during the incident.",
+   "ko": "7.6. 적절한 경우 사고, 대응 및 교훈을 문서화한 사후 조치 보고서를 작성한다 [RC.RP-06]. 교훈에 따라서는 사고 중 에이전트 활동 및 정렬과 관련된 실패를 이해하기 위한 후속 조사나 실험이 필요할 수 있다.",
+   "marks": [
+    {
+     "t": "사고 중 에이전트 활동 및 정렬과 관련된 실패를 이해하기 위한 후속 조사나 실험이 필요할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "7.7. For SI control incidents that occur during model training, design recovery procedures that neither reinforce patterns of activity that led to the control incident nor make future adverse activity more difficult to detect, such as by training against explicit adverse chain-of-thought reasoning in a way that reduces monitorability. See 'Training-Safe Recovery' in Areas for Future Work.",
+   "ko": "7.7. 모델 학습 중 발생한 SI 통제 사고의 경우, 통제 사고로 이어진 활동 패턴을 강화하지 않고 향후의 유해 활동을 탐지하기 더 어렵게 만들지도 않도록 복구 절차를 설계한다. 예를 들어 명시적인 유해 사고 연쇄(chain-of-thought) 추론을 대상으로 모니터링 가능성(monitorability)을 떨어뜨리는 방식으로 학습하는 것은 피해야 한다. 향후 과제의 '학습 안전 복구' 참조.",
+   "marks": [
+    {
+     "t": "통제 사고로 이어진 활동 패턴을 강화하지 않고 향후의 유해 활동을 탐지하기 더 어렵게 만들지도 않도록 복구 절차를 설계한다",
+     "k": "key"
+    },
+    {
+     "t": "명시적인 유해 사고 연쇄(chain-of-thought) 추론을 대상으로 모니터링 가능성(monitorability)을 떨어뜨리는 방식으로 학습하는 것은 피해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Report",
+   "ko": "보고",
+   "id": "s68"
+  },
+  {
+   "type": "p",
+   "en": "Organizations should follow established best practices by notifying relevant authorities, coordinating with affected parties, and disclosing vulnerabilities through established channels [1][2]. In addition to meeting applicable incident reporting obligations (including to CISA and law enforcement) and reporting software vulnerabilities through coordinated mechanisms, report SI control incidents and near-misses. Voluntary SI control incident reports should focus on the unsanctioned actions taken by the agents and explanations for these actions, rather than system compromise alone.",
+   "ko": "조직은 관련 당국에 통지하고, 영향받은 당사자와 조율하며, 확립된 채널을 통해 취약점을 공개하는 등 확립된 모범 사례를 따라야 한다 [1][2]. 적용 가능한 사고 보고 의무(CISA 및 법 집행 기관에 대한 보고 포함)를 이행하고 조율된 메커니즘을 통해 소프트웨어 취약점을 보고하는 것에 더해, SI 통제 사고와 아차사고를 보고한다. 자발적 SI 통제 사고 보고서는 시스템 침해 자체에만 초점을 맞추기보다는 에이전트가 취한 승인되지 않은 행동과 그 행동에 대한 설명에 초점을 맞춰야 한다.",
+   "marks": [
+    {
+     "t": "SI 통제 사고와 아차사고를 보고한다",
+     "k": "safety"
+    },
+    {
+     "t": "자발적 SI 통제 사고 보고서는 시스템 침해 자체에만 초점을 맞추기보다는 에이전트가 취한 승인되지 않은 행동과 그 행동에 대한 설명에 초점을 맞춰야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Organizations should publicly share lessons learned to advance best practice. Reporting is not the final phase of incident management following recovery; rather reporting practices should take place throughout the incident lifecycle.",
+   "ko": "조직은 모범 사례의 발전을 위해 교훈을 공개적으로 공유해야 한다. 보고는 복구 이후에 이어지는 사고 관리의 마지막 단계가 아니며, 보고 실행 방안은 사고 수명주기 전반에 걸쳐 이루어져야 한다.",
+   "marks": [
+    {
+     "t": "조직은 모범 사례의 발전을 위해 교훈을 공개적으로 공유해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "보고 실행 방안은 사고 수명주기 전반에 걸쳐 이루어져야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "8. Coordinate with Affected Parties",
+   "ko": "8. 영향받은 당사자와의 조율",
+   "id": "s71"
+  },
+  {
+   "type": "li",
+   "en": "8.1. Notify parties whose systems have been compromised or exploited by an SI control incident, including third parties who are not the final target of the incident [RS.CO-02].",
+   "ko": "8.1. SI 통제 사고로 인해 시스템이 침해되거나 악용된 당사자에게 통지한다. 여기에는 사고의 최종 표적이 아닌 제3자도 포함된다 [RS.CO-02].",
+   "marks": [
+    {
+     "t": "SI 통제 사고로 인해 시스템이 침해되거나 악용된 당사자에게 통지한다",
+     "k": "key"
+    },
+    {
+     "t": "사고의 최종 표적이 아닌 제3자도 포함된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "8.2. Share relevant details for affected parties' incident response, including detailed timelines and transcripts that provide context on exploited vulnerabilities or impacted systems, where feasible [RS.CO-03].",
+   "ko": "8.2. 실현 가능한 경우, 악용된 취약점이나 영향받은 시스템에 대한 맥락을 제공하는 상세한 타임라인과 기록 등 영향받은 당사자의 사고 대응에 필요한 관련 세부 정보를 공유한다 [RS.CO-03].",
+   "marks": [
+    {
+     "t": "악용된 취약점이나 영향받은 시스템에 대한 맥락을 제공하는 상세한 타임라인과 기록",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "8.3. Share information, such as lessons learned, with other parties across the value chain that were impacted by the incident or may benefit from investigation findings, such as the developer of the SI model, or evaluation and infrastructure providers.",
+   "ko": "8.3. SI 모델의 개발자, 평가(evaluation) 및 인프라 제공자 등 사고의 영향을 받았거나 조사 결과로부터 혜택을 얻을 수 있는 가치 사슬 전반의 다른 당사자와 교훈 등의 정보를 공유한다.",
+   "marks": [
+    {
+     "t": "SI 모델의 개발자, 평가(evaluation) 및 인프라 제공자 등 사고의 영향을 받았거나 조사 결과로부터 혜택을 얻을 수 있는 가치 사슬 전반의 다른 당사자와 교훈 등의 정보를 공유한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "9. Notify Government",
+   "ko": "9. 정부 통지",
+   "id": "s75"
+  },
+  {
+   "type": "li",
+   "en": "9.1. Adhere to any applicable legal reporting requirements, including cybersecurity incident reporting obligations to CISA, law enforcement, and/or cyber-defense organizations. Voluntarily report cybersecurity incidents or near-misses arising from SI control incidents to CISA as appropriate [GV.OC-03, RS.CO-02][10][14].",
+   "ko": "9.1. CISA, 법 집행 기관 및/또는 사이버 방어 조직에 대한 사이버 보안 사고 보고 의무를 포함하여 적용 가능한 모든 법적 보고 요건을 준수한다. 적절한 경우 SI 통제 사고로 인해 발생한 사이버 보안 사고 또는 아차사고를 CISA에 자발적으로 보고한다 [GV.OC-03, RS.CO-02][10][14].",
+   "marks": [
+    {
+     "t": "SI 통제 사고로 인해 발생한 사이버 보안 사고 또는 아차사고를 CISA에 자발적으로 보고한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "9.2. Report software vulnerabilities arising from SI control incidents using established mechanisms [16][17].",
+   "ko": "9.2. SI 통제 사고로 인해 발견된 소프트웨어 취약점은 확립된 메커니즘을 통해 보고한다 [16][17].",
+   "marks": [
+    {
+     "t": "SI 통제 사고로 인해 발견된 소프트웨어 취약점은 확립된 메커니즘을 통해 보고한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "9.3. Voluntarily share SI-specific information concerning control incidents and near-misses with SI experts in government, such as NIST CAISSI and NSA SISC, to facilitate research and preparedness, after carrying out any legally mandated reporting. Provide context for understanding the circumstances which led to the incident, the actions taken by SI agents, and root causes related to control gaps or agent alignment [RS.CO-03], as well as the severity of the incident and any areas of uncertainty [RS.MA-03].",
+   "ko": "9.3. 법적으로 의무화된 보고를 수행한 후, 연구와 대비를 촉진하기 위해 통제 사고 및 아차사고에 관한 SI 특화 정보를 NIST CAISSI, NSA SISC 등 정부 내 SI 전문가와 자발적으로 공유한다. 사고로 이어진 상황, SI 에이전트가 취한 행동, 통제 공백 또는 에이전트 정렬과 관련된 근본 원인을 이해하는 데 필요한 맥락을 제공하고 [RS.CO-03], 사고의 심각도와 불확실한 부분도 함께 제공한다 [RS.MA-03].",
+   "marks": [
+    {
+     "t": "통제 사고 및 아차사고에 관한 SI 특화 정보를 NIST CAISSI, NSA SISC 등 정부 내 SI 전문가와 자발적으로 공유한다",
+     "k": "key"
+    },
+    {
+     "t": "SI 에이전트가 취한 행동, 통제 공백 또는 에이전트 정렬과 관련된 근본 원인을 이해하는 데 필요한 맥락을 제공하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "10. Share Information Publicly",
+   "ko": "10. 정보의 공개 공유",
+   "id": "s79"
+  },
+  {
+   "type": "li",
+   "en": "10.1. Share details with the public, where appropriate, as early as feasible [2].",
+   "ko": "10.1. 적절한 경우 가능한 한 이른 시점에 세부 정보를 대중과 공유한다 [2]."
+  },
+  {
+   "type": "li",
+   "en": "10.2. Facilitate third-party review, providing sufficient access and documentation for independent analysis [ID.IM-01].",
+   "ko": "10.2. 독립적인 분석을 위해 충분한 접근 권한과 문서를 제공하여 제3자 검토를 지원한다 [ID.IM-01].",
+   "marks": [
+    {
+     "t": "독립적인 분석을 위해 충분한 접근 권한과 문서를 제공하여 제3자 검토를 지원한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "10.3. Identify and publicly report key practices, takeaways, or improvements adopted in response to the incident or that could benefit other actors in the ecosystem [ID.IM-03, RS.CO-03].",
+   "ko": "10.3. 사고에 대응하여 채택했거나 생태계 내 다른 행위자에게 도움이 될 수 있는 핵심 실행 방안, 시사점 또는 개선 사항을 식별하고 공개적으로 보고한다 [ID.IM-03, RS.CO-03].",
+   "marks": [
+    {
+     "t": "사고에 대응하여 채택했거나 생태계 내 다른 행위자에게 도움이 될 수 있는 핵심 실행 방안, 시사점 또는 개선 사항을 식별하고 공개적으로 보고한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Follow Existing Best Practice",
+   "ko": "기존 모범 사례 준수",
+   "id": "s83"
+  },
+  {
+   "type": "p",
+   "en": "The secure training, evaluation, and deployment of SI agents pose novel challenges. Existing cybersecurity best practices provide a strong foundation and proven solutions to many challenges. Existing best practices resources include:",
+   "ko": "SI 에이전트의 안전한 학습, 평가(evaluation) 및 배포는 새로운 과제를 제기한다. 기존 사이버 보안 모범 사례는 많은 과제에 대해 견고한 기반과 검증된 해결책을 제공한다. 기존 모범 사례 자료는 다음과 같다.",
+   "marks": [
+    {
+     "t": "SI 에이전트의 안전한 학습, 평가(evaluation) 및 배포는 새로운 과제를 제기한다.",
+     "k": "safety"
+    },
+    {
+     "t": "기존 사이버 보안 모범 사례는 많은 과제에 대해 견고한 기반과 검증된 해결책을 제공한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "[1] NIST CSWP 29: Cybersecurity Framework 2.0, functions Govern, Identify, Protect, Detect, Respond, and Recover. https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf.",
+   "ko": "[1] NIST CSWP 29: Cybersecurity Framework 2.0, functions Govern, Identify, Protect, Detect, Respond, and Recover. https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[2] NIST SP 800-61 Rev. 3 Incident Response Recommendations and Considerations for Cybersecurity Risk Management: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf.",
+   "ko": "[2] NIST SP 800-61 Rev. 3 Incident Response Recommendations and Considerations for Cybersecurity Risk Management: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[3] NIST SP 800-53 Rev. 5: Security and Privacy Controls for Information Systems and Organizations. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf.",
+   "ko": "[3] NIST SP 800-53 Rev. 5: Security and Privacy Controls for Information Systems and Organizations. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-53r5.pdf.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[4] NIST SP 800-207 Zero Trust Architecture: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf.",
+   "ko": "[4] NIST SP 800-207 Zero Trust Architecture: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[5] NIST IR 8587: Protecting Tokens and Assertions from Forgery, Theft, and Misuse. https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8587.pdf.",
+   "ko": "[5] NIST IR 8587: Protecting Tokens and Assertions from Forgery, Theft, and Misuse. https://nvlpubs.nist.gov/nistpubs/ir/2026/NIST.IR.8587.pdf.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[6] NCSC-UK, CISA, et al. Guidelines for secure AI system development. https://www.ncsc.gov.uk/sites/default/files/documents/Guidelines-for-secure-AI-system-development.pdf.",
+   "ko": "[6] NCSC-UK, CISA, et al. Guidelines for secure AI system development. https://www.ncsc.gov.uk/sites/default/files/documents/Guidelines-for-secure-AI-system-development.pdf.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[7] NIST SP 800-218A Secure Software Development Practices for Generative AI and Dual-Use Foundation Models: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218A.pdf.",
+   "ko": "[7] NIST SP 800-218A Secure Software Development Practices for Generative AI and Dual-Use Foundation Models: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218A.pdf.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[8] NSA, CISA, FBI, et al. Joint Guidance on Deploying AI Systems Securely. https://media.defense.gov/2024/Apr/15/2003439257/-1/-1/0/CSI-DEPLOYING-AI-SYSTEMS-SECURELY.PDF.",
+   "ko": "[8] NSA, CISA, FBI, et al. Joint Guidance on Deploying AI Systems Securely. https://media.defense.gov/2024/Apr/15/2003439257/-1/-1/0/CSI-DEPLOYING-AI-SYSTEMS-SECURELY.PDF.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[9] ASD's ACSC, CISA, NSA, et al. Careful Adoption of Agentic AI Services. https://www.cyber.gov.au/sites/default/files/2026-05/careful_adoption_of_agentic_ai_services.pdf.",
+   "ko": "[9] ASD's ACSC, CISA, NSA, et al. Careful Adoption of Agentic AI Services. https://www.cyber.gov.au/sites/default/files/2026-05/careful_adoption_of_agentic_ai_services.pdf.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[10] CISA. SI Cybersecurity Collaboration Playbook. https://www.cisa.gov/resources-tools/resources/si-cybersecurity-collaboration-playbook.",
+   "ko": "[10] CISA. SI Cybersecurity Collaboration Playbook. https://www.cisa.gov/resources-tools/resources/si-cybersecurity-collaboration-playbook.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[11] CISA. Logging Reference Architecture (LRA). https://www.cisa.gov/sites/default/files/2026-09/logging-reference-architecture-508.pdf.",
+   "ko": "[11] CISA. Logging Reference Architecture (LRA). https://www.cisa.gov/sites/default/files/2026-09/logging-reference-architecture-508.pdf.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[12] CISA. Using Cyber Decoys to Strengthen Detection and Response. https://www.cisa.gov/resources-tools/resources/using-cyber-decoys-strengthen-detection-and-response.",
+   "ko": "[12] CISA. Using Cyber Decoys to Strengthen Detection and Response. https://www.cisa.gov/resources-tools/resources/using-cyber-decoys-strengthen-detection-and-response.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[13] CISA. Binding Operational Directive (BOD) 26-04 and its Implementation Guidance for forensic triage and containment steps that complement Detect, Respond, and Recover activities. https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk.",
+   "ko": "[13] CISA. Binding Operational Directive (BOD) 26-04 and its Implementation Guidance for forensic triage and containment steps that complement Detect, Respond, and Recover activities. https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[14] CISA. Report SI control incidents that also meet the definition of a cybersecurity incident through the Incident Reporting System. https://myservices.cisa.gov/irf.",
+   "ko": "[14] CISA. Report SI control incidents that also meet the definition of a cybersecurity incident through the Incident Reporting System. https://myservices.cisa.gov/irf.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[15] NIST SP 800-218: Secure Software Development Framework. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf.",
+   "ko": "[15] NIST SP 800-218: Secure Software Development Framework. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218.pdf.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[16] CISA. Coordinated Vulnerability Disclosure (CVD) Program. https://www.cisa.gov/resources-tools/programs/coordinated-vulnerability-disclosure-cvd-program.",
+   "ko": "[16] CISA. Coordinated Vulnerability Disclosure (CVD) Program. https://www.cisa.gov/resources-tools/programs/coordinated-vulnerability-disclosure-cvd-program.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "li",
+   "en": "[17] CISA. Known Exploited Vulnerabilities Catalog. https://www.cisa.gov/known-exploited-vulnerabilities-catalog.",
+   "ko": "[17] CISA. Known Exploited Vulnerabilities Catalog. https://www.cisa.gov/known-exploited-vulnerabilities-catalog.",
+   "untranslated": true,
+   "verbatim": true
+  },
+  {
+   "type": "h2",
+   "en": "Areas for Future Work",
+   "ko": "향후 과제",
+   "id": "s102"
+  },
+  {
+   "type": "p",
+   "en": "Several important areas for future research and development will inform further practices in responding to SI control incidents. These areas include:",
+   "ko": "향후 연구 개발이 필요한 몇 가지 중요한 영역은 SI 통제 사고 대응에 관한 추가 실행 방안 마련에 참고가 될 것이다. 이러한 영역은 다음과 같다.",
+   "marks": [
+    {
+     "t": "SI 통제 사고 대응에 관한 추가 실행 방안 마련에 참고가 될 것이다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Training-Safe Recovery. Identifying best practices and tradeoffs for responding to incidents of both SI control failures and near-misses during training to reduce the likelihood of future occurrences of the activity that led to the incident and avoid making future adverse activity more difficult to detect.",
+   "ko": "학습 안전 복구. 학습 중 발생한 SI 통제 실패와 아차사고 모두에 대응하기 위한 모범 사례와 상충 관계를 파악하여, 사고를 초래한 활동이 향후 다시 발생할 가능성을 줄이고 향후 유해 활동을 탐지하기 더 어렵게 만드는 일을 방지함.",
+   "marks": [
+    {
+     "t": "학습 중 발생한 SI 통제 실패와 아차사고 모두에 대응하기 위한 모범 사례와 상충 관계를 파악",
+     "k": "safety"
+    },
+    {
+     "t": "향후 유해 활동을 탐지하기 더 어렵게 만드는 일을 방지함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Defining Intended Activity Baselines. Better methods and practices for defining baselines and scopes for intended SI agent activity to support monitoring and detection of anomalous activity.",
+   "ko": "의도된 활동 기준선 정의. 이상 활동의 모니터링과 탐지를 지원하기 위해 의도된 SI 에이전트 활동의 기준선과 범위를 정의하는 더 나은 방법 및 실행 방안.",
+   "marks": [
+    {
+     "t": "이상 활동의 모니터링과 탐지를 지원하기 위해 의도된 SI 에이전트 활동의 기준선과 범위를 정의",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Synchronous Monitoring. Techniques for synchronous monitoring of agent trajectories, reasoning, and outputs that strike better balances between latency, performance, and security, or that reduce tradeoffs entirely.",
+   "ko": "동기식 모니터링. 지연 시간, 성능, 보안 간의 균형을 더 잘 맞추거나 상충 관계 자체를 줄이는, 에이전트 궤적, 추론, 출력에 대한 동기식 모니터링 기법.",
+   "marks": [
+    {
+     "t": "에이전트 궤적, 추론, 출력에 대한 동기식 모니터링 기법",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Incident Severity Scores. Standardized severity scores for SI control incidents to inform response timelines and procedures (e.g., interventions ranging from blocking single actions to ending trajectories or halting full evaluation or training runs).",
+   "ko": "사고 심각도 점수. 대응 일정과 절차(예: 단일 행동 차단부터 궤적 종료 또는 전체 평가(evaluation)·학습 실행 중단에 이르는 개입)를 정하는 데 참고할 수 있는 SI 통제 사고의 표준화된 심각도 점수.",
+   "marks": [
+    {
+     "t": "SI 통제 사고의 표준화된 심각도 점수",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "SI-Enabled Investigations. Practices for mitigating risks of correlated failures, addressing potential adversarial attacks and prompt injections against monitors, and maintaining monitor validity when processing voluminous logs.",
+   "ko": "SI 활용 조사. 상관된 실패(correlated failures)의 위험을 완화하고, 모니터를 겨냥한 잠재적 적대적 공격 및 프롬프트 인젝션에 대응하며, 방대한 로그를 처리할 때 모니터의 타당성을 유지하기 위한 실행 방안.",
+   "marks": [
+    {
+     "t": "상관된 실패(correlated failures)의 위험을 완화",
+     "k": "safety"
+    },
+    {
+     "t": "모니터를 겨냥한 잠재적 적대적 공격 및 프롬프트 인젝션에 대응",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Structured Risk Assessments. Research and methods concerning properly decomposing, substantiating, and quantifying risks and mitigations concerning SI agent training, evaluation, and deployment, including the risk of agents taking steps to obscure adverse activity.",
+   "ko": "구조화된 위험 평가. 에이전트가 유해 활동을 은폐하기 위한 조치를 취할 위험을 포함하여, SI 에이전트의 학습, 평가(evaluation), 배포와 관련된 위험 및 완화 조치를 적절히 분해·입증·정량화하는 것에 관한 연구 및 방법.",
+   "marks": [
+    {
+     "t": "에이전트가 유해 활동을 은폐하기 위한 조치를 취할 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "SI Red-Teaming for Critical Systems. Research and methods for using SI agents to safely red-team SI control measures used in critical systems, such that actions taken by agents do not endanger safety or affect the availability of critical services.",
+   "ko": "중요 시스템을 위한 SI 레드티밍. 에이전트가 취한 행동이 안전을 위태롭게 하거나 중요 서비스의 가용성에 영향을 미치지 않도록, SI 에이전트를 사용하여 중요 시스템에 적용된 SI 통제 조치를 안전하게 레드티밍하기 위한 연구 및 방법.",
+   "marks": [
+    {
+     "t": "SI 에이전트를 사용하여 중요 시스템에 적용된 SI 통제 조치를 안전하게 레드티밍하기 위한 연구 및 방법",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Additional Mechanisms for Escalation. Methods for additional mechanisms by which SI agents can trigger human review of actions, for example in multi-agent settings.",
+   "ko": "추가 상향 보고 메커니즘. 예를 들어 다중 에이전트 환경 등에서 SI 에이전트가 행동에 대한 인간 검토를 촉발할 수 있는 추가 메커니즘에 관한 방법.",
+   "marks": [
+    {
+     "t": "SI 에이전트가 행동에 대한 인간 검토를 촉발할 수 있는 추가 메커니즘",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Agent Identifiers. Methods for identifying SI agents and their associated network traffic, including for example publishing identifiers such as IP address ranges – which can help attribute agent traffic but might also expose SI agent deployers to attack.",
+   "ko": "에이전트 식별자. SI 에이전트와 그에 연관된 네트워크 트래픽을 식별하는 방법으로, 예를 들어 IP 주소 범위 같은 식별자를 공개하는 방법을 포함함 – 이는 에이전트 트래픽의 출처를 파악하는 데 도움이 될 수 있지만 SI 에이전트 배포자를 공격에 노출시킬 수도 있음.",
+   "marks": [
+    {
+     "t": "에이전트 트래픽의 출처를 파악하는 데 도움이 될 수 있지만 SI 에이전트 배포자를 공격에 노출시킬 수도 있음",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Acknowledgements",
+   "ko": "감사의 글",
+   "id": "s113"
+  },
+  {
+   "type": "p",
+   "en": "Members of the NIST SI Consortium Task Group 8 (Agent Capabilities, Monitoring, and Containment) as well as Anthropic, CrowdStrike, Darktrace, Dreadnode, Gray Swan, Microsoft, Palo Alto Networks, and other SI companies contributed feedback to ideas included in this document.",
+   "ko": "NIST SI 컨소시엄 Task Group 8(에이전트 역량, 모니터링 및 격리) 구성원과 Anthropic, CrowdStrike, Darktrace, Dreadnode, Gray Swan, Microsoft, Palo Alto Networks 및 기타 SI 기업이 이 문서에 포함된 아이디어에 대한 피드백을 제공하였다."
+  },
+  {
+   "type": "h2",
+   "en": "Disclaimer of Endorsement",
+   "ko": "추천·보증 부인",
+   "id": "s115"
+  },
+  {
+   "type": "p",
+   "en": "The contents of this document, 'Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation,' are provided 'as is' and for general informational purposes only. In no event shall the United States Government, its employees, or its contractors or subcontractors be liable for any damages including, but not limited to, direct, indirect, special or consequential damages, arising out of, resulting from, or in any way connected with this content. References to any specific entity, commercial product, process, data format or service by trade name, trademark, manufacturer, or otherwise, do not constitute or imply an endorsement, recommendation, or favoring by the authoring agencies or the United States Government. Users acknowledge that this information is not intended to, and does not constitute advice for compliance, regulatory, or legal purposes. Users should confer with their respective advisors and subject matter experts to obtain advice based on their individual circumstances.",
+   "ko": "이 문서 'Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation'의 내용은 '있는 그대로(as is)' 제공되며 일반적인 정보 제공 목적으로만 제공된다. 미국 정부, 그 직원, 계약업체 또는 하도급업체는 어떠한 경우에도 이 내용으로부터 발생하거나, 이 내용으로 인해 초래되거나, 어떤 방식으로든 이 내용과 관련된 직접적, 간접적, 특별 또는 결과적 손해를 포함하되 이에 국한되지 않는 어떠한 손해에 대해서도 책임을 지지 않는다. 상호, 상표, 제조사 또는 기타 방식으로 특정 주체, 상용 제품, 프로세스, 데이터 형식 또는 서비스를 언급하는 것은 작성 기관이나 미국 정부의 보증, 추천 또는 선호를 구성하거나 암시하지 않는다. 사용자는 이 정보가 규정 준수, 규제 또는 법률 목적의 자문을 의도하지 않으며 그러한 자문에 해당하지 않음을 인정한다. 사용자는 각자의 개별 상황에 따른 자문을 얻기 위해 각자의 자문가 및 해당 분야 전문가와 상의해야 한다.",
+   "marks": [
+    {
+     "t": "Key Practices for Incident Readiness and Response in Super Intelligence Training and Evaluation",
+     "k": "safety"
+    },
+    {
+     "t": "'있는 그대로(as is)' 제공되며 일반적인 정보 제공 목적으로만 제공된다",
+     "k": "key"
+    },
+    {
+     "t": "사용자는 이 정보가 규정 준수, 규제 또는 법률 목적의 자문을 의도하지 않으며 그러한 자문에 해당하지 않음을 인정한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Purpose",
+   "ko": "목적",
+   "id": "s117"
+  },
+  {
+   "type": "p",
+   "en": "This document was developed in furtherance of the authoring organizations' cybersecurity and SI missions, including their responsibilities to identify and disseminate threats, to develop and issue cybersecurity and SI specifications and mitigations, and to support the development of best practices for the security of SI systems. This information may be shared broadly to reach all appropriate stakeholders.",
+   "ko": "이 문서는 작성 기관들의 사이버 보안 및 SI 임무를 증진하기 위해 작성되었으며, 여기에는 위협을 식별·전파하고, 사이버 보안 및 SI 명세와 완화 조치를 개발·발표하며, SI 시스템의 보안을 위한 모범 사례 개발을 지원할 책임이 포함된다. 이 정보는 모든 적절한 이해관계자에게 전달될 수 있도록 널리 공유될 수 있다.",
+   "marks": [
+    {
+     "t": "이 문서는 작성 기관들의 사이버 보안 및 SI 임무를 증진하기 위해 작성되었으며",
+     "k": "key"
+    },
+    {
+     "t": "SI 시스템의 보안을 위한 모범 사례 개발을 지원할 책임",
+     "k": "safety"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "For example, actions resulting from an adversarial prompt injection or an intentionally backdoored model would be considered instructed actions, and therefore not treated as the primary cause of an SI control incident.",
+   "ko": "예를 들어 적대적 프롬프트 인젝션이나 의도적으로 백도어가 심어진 모델로 인한 행동은 지시받은 행동으로 간주되며, 따라서 SI 통제 사고의 주된 원인으로 취급되지 않는다.",
+   "linked": true
+  },
+  {
+   "n": 2,
+   "en": "Readers may want to situate this definition in the context of NIST's existing definition of a 'cybersecurity incident' from NIST SP 800-61r3 [2] and 44 U.S.C. §3552(b)(2). That definition reads: 'An occurrence that actually or imminently jeopardizes, without lawful authority, the integrity, confidentiality, or availability of information or an information system; or constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies.' An SI system is the source of a control incident, whereas a system or information is the target of a cybersecurity incident. During an SI control incident, an agent could cause a cybersecurity incident, such as compromising a third-party information system without authorization or direction. But the two types of incidents are not coextensive: an SI control incident could instead relate to unauthorized actions outside of cyber domains. For example, an SI control incident could involve agents manipulating physical actuators in unauthorized ways, initiating unauthorized communications or interactions with external parties, exploiting a weakness or misconfiguration introduced by human error, or executing unauthorized financial transactions.",
+   "ko": "독자는 이 정의를 NIST SP 800-61r3 [2] 및 44 U.S.C. §3552(b)(2)에 규정된 NIST의 기존 '사이버 보안 사고' 정의의 맥락에서 이해하고자 할 수 있다. 해당 정의는 다음과 같다. '적법한 권한 없이 정보 또는 정보 시스템의 무결성, 기밀성 또는 가용성을 실제로 또는 임박하게 위태롭게 하거나, 법률, 보안 정책, 보안 절차 또는 허용 가능한 사용 정책의 위반 또는 위반의 임박한 위협을 구성하는 사건.' SI 시스템은 통제 사고의 근원인 반면, 시스템이나 정보는 사이버 보안 사고의 대상이다. SI 통제 사고 중에 에이전트는 승인이나 지시 없이 제3자 정보 시스템을 침해하는 등 사이버 보안 사고를 일으킬 수 있다. 그러나 두 유형의 사고가 범위가 일치하는 것은 아니다. SI 통제 사고는 사이버 영역 밖의 무단 행동과 관련될 수도 있다. 예를 들어 SI 통제 사고에는 에이전트가 물리적 액추에이터를 무단으로 조작하거나, 외부 당사자와 무단으로 통신 또는 상호작용을 개시하거나, 인적 오류로 생긴 취약점이나 잘못된 구성을 악용하거나, 무단 금융 거래를 실행하는 경우가 포함될 수 있다.",
+   "linked": true
+  },
+  {
+   "n": 3,
+   "en": "Here and elsewhere in this document, we use this format when referring to specific NIST Cybersecurity Framework (CSF) 2.0 elements, consistent with NIST SP 800-61r3 mappings to the NIST CSF 2.0. Please see CSF 2.0 [1] and NIST SP 800-61r3 [2] for additional information.",
+   "ko": "이 문서에서는 여기를 비롯한 여러 곳에서 특정 NIST 사이버 보안 프레임워크(CSF) 2.0 요소를 언급할 때, NIST SP 800-61r3의 NIST CSF 2.0 매핑과 일관되게 이 형식을 사용한다. 추가 정보는 CSF 2.0 [1] 및 NIST SP 800-61r3 [2]를 참조하기 바란다.",
+   "linked": true
+  }
+ ]
+}

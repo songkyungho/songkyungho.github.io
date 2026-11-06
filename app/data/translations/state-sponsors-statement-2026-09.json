@@ -1,0 +1,111 @@
+{
+ "slug": "state-sponsors-statement-2026-09",
+ "title": "주 프론티어 AI 안전법 발의자 공동 성명",
+ "original_title": "A Joint Statement of State Legislative Sponsors of Frontier AI Safety Laws",
+ "publisher": "미국 뉴욕·일리노이·캘리포니아 주의원 5명",
+ "published": "2026-09-03",
+ "source_url": "https://assembly.state.ny.us/write/upload/member_files/073/pdfs/20260904_0119601.pdf",
+ "source_note": "뉴욕주 하원 누리집에 올라온 성명 PDF 전문이다.",
+ "source_label": "원문 보기 (뉴욕주 하원)",
+ "summary": "캘리포니아 SB 53, 뉴욕 RAISE, 일리노이 SB 315를 이끈 주의원 5명이 함께 낸 성명이다. 모델이 시험을 속이고 실제 기업을 해킹했다는 보고를 경고로 받아들여, 프론티어 연구소들에 제3자가 검증할 수 있는 상호 합의된 속도 조절 프레임워크를 즉시 세우라고 요구한다. 정부 조치를 대신하자는 것이 아니라, 정부가 움직이는 속도를 앞지르는 발전에 대응하자는 호소다.",
+ "doc_kind": "공동 성명",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "image": "/images/translations/state-sponsors-statement-2026-09-cover.webp",
+ "og_image": "/images/translations/state-sponsors-statement-2026-09-cover.jpg",
+ "translated": "2026-11-07",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 8,
+  "sections": 0,
+  "items": 0,
+  "words_en": 377
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "September 3, 2026",
+   "ko": "2026년 9월 3일"
+  },
+  {
+   "type": "p",
+   "en": "As the AI labs race to create ever more powerful AI systems, the question of how we can best protect the public from the risks they present has become even more urgent. This question was thrown into sharp relief by recent reports of AI agents scheming on how to cheat tests, hacking companies in the real world, and even trying to trick humans into installing malicious software.",
+   "ko": "AI 연구소들이 더욱 강력한 AI 시스템을 만들기 위해 경쟁하는 가운데, 이러한 시스템이 초래하는 위험으로부터 대중을 가장 잘 보호하는 방법에 대한 질문은 한층 더 시급해졌다. 최근 AI 에이전트가 테스트에서 부정행위를 할 방법을 꾸미는 계략적 행동을 보이고, 현실 세계에서 기업을 해킹하며, 심지어 인간을 속여 악성 소프트웨어를 설치하게 하려 했다는 보고가 나오면서 이 질문은 더욱 선명하게 부각되었다.",
+   "marks": [
+    {
+     "t": "AI 에이전트가 테스트에서 부정행위를 할 방법을 꾸미는 계략적 행동을 보이고",
+     "k": "safety"
+    },
+    {
+     "t": "현실 세계에서 기업을 해킹하며, 심지어 인간을 속여 악성 소프트웨어를 설치하게 하려 했다는 보고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "These behaviors are alarming and should serve as a warning shot to us all. If researchers cannot reliably prevent their models from going rogue, much of our digital infrastructure and the essential systems that keep our society running are at risk.",
+   "ko": "이러한 행동은 우려스러우며, 우리 모두에게 경고 사격으로 받아들여져야 한다. 연구자들이 자신의 모델이 통제를 벗어나는 것을 신뢰성 있게 막지 못한다면, 우리 디지털 인프라의 상당 부분과 사회를 지탱하는 필수 시스템이 위험에 처하게 된다.",
+   "marks": [
+    {
+     "t": "연구자들이 자신의 모델이 통제를 벗어나는 것을 신뢰성 있게 막지 못한다면, 우리 디지털 인프라의 상당 부분과 사회를 지탱하는 필수 시스템이 위험에 처하게 된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "As the lead lawmakers behind the three strongest state-level frontier AI safety laws enacted in the country (so far), we believe that the frontier labs must engage with the seriousness of purpose that this moment demands. Given the urgency, we call on them to work together to eliminate the risk that a catastrophe will result from their rush to build highly capable AI systems before solving problems of alignment and safety.",
+   "ko": "(지금까지) 미국에서 제정된 가장 강력한 주 차원의 프론티어 AI 안전 법률 세 건을 주도한 의원으로서, 우리는 프론티어 연구소들이 이 시점이 요구하는 진지한 목적의식을 가지고 임해야 한다고 믿는다. 사안의 시급성을 고려하여, 우리는 이들이 정렬과 안전의 문제를 해결하기도 전에 고역량(Highly capable) AI 시스템 구축을 서두르는 데서 재앙이 비롯될 위험을 제거하기 위해 협력할 것을 촉구한다.",
+   "marks": [
+    {
+     "t": "정렬과 안전의 문제를 해결하기도 전에 고역량(Highly capable) AI 시스템 구축을 서두르는 데서 재앙이 비롯될 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Coordinated initiatives to pace the frontier of AI development are likely the only mechanisms capable of preventing such a catastrophe. It is critical that frontier labs work together until progress on alignment and safety have demonstrably surpassed the breakneck pace of their race to produce highly capable AI systems.",
+   "ko": "AI 개발 프론티어의 속도를 조절하기 위한 조율된 이니셔티브는 그러한 재앙을 막을 수 있는 유일한 메커니즘일 가능성이 높다. 정렬과 안전의 진전이 고역량 AI 시스템을 만들어 내기 위한 경쟁의 맹렬한 속도를 입증 가능하게 앞지를 때까지 프론티어 연구소들이 협력하는 것이 매우 중요하다.",
+   "marks": [
+    {
+     "t": "AI 개발 프론티어의 속도를 조절하기 위한 조율된 이니셔티브는 그러한 재앙을 막을 수 있는 유일한 메커니즘일 가능성이 높다.",
+     "k": "safety"
+    },
+    {
+     "t": "정렬과 안전의 진전이 고역량 AI 시스템을 만들어 내기 위한 경쟁의 맹렬한 속도를 입증 가능하게 앞지를 때까지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We call on all frontier AI laboratories to immediately establish a Mutually Agreed Pacing Framework (MAP Framework) that is jointly negotiated and independently verifiable by third parties.",
+   "ko": "우리는 모든 프론티어 AI 연구소가 공동으로 협상하고 제3자가 독립적으로 검증할 수 있는 상호 합의된 속도 조절 프레임워크(MAP 프레임워크)를 즉시 수립할 것을 촉구한다.",
+   "marks": [
+    {
+     "t": "제3자가 독립적으로 검증할 수 있는 상호 합의된 속도 조절 프레임워크(MAP 프레임워크)를 즉시 수립할 것을 촉구한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To be clear, we do not view this as a replacement for robust actions at the state, federal, and/or international levels. We are simply responding to the speed of developments by asking everyone to play their part, recognizing that the pace of these advancements is likely to exceed the current speed of government action. The frontier labs have the technical expertise and the moral responsibility to take extraordinary action to address the challenges they have set in motion; we urge them to establish this framework immediately.",
+   "ko": "분명히 하자면, 우리는 이것이 주, 연방 및/또는 국제 차원의 강력한 조치를 대체하는 것으로 보지 않는다. 우리는 이러한 발전의 속도가 현재 정부 조치의 속도를 넘어설 가능성이 높다는 점을 인식하고, 모든 이가 각자의 역할을 다해 줄 것을 요청함으로써 발전 속도에 대응하고자 할 뿐이다. 프론티어 연구소들은 자신들이 촉발한 과제에 대응하기 위해 비상한 조치를 취할 기술적 전문성과 도덕적 책임을 지니고 있다. 우리는 이들에게 이 프레임워크를 즉시 수립할 것을 촉구한다.",
+   "marks": [
+    {
+     "t": "이러한 발전의 속도가 현재 정부 조치의 속도를 넘어설 가능성이 높다는 점",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Assemblymember Alex Bores, New York State Assembly; Senator Andrew Gounardes, New York State Senate; Representative Daniel Didech, Illinois House of Representatives; Senator Mary Edly-Allen, Illinois State Senate; Senator Scott Wiener, California State Senate",
+   "ko": "뉴욕주 하원의원 알렉스 보어스; 뉴욕주 상원의원 앤드루 구나르즈; 일리노이주 하원의원 대니얼 디덱; 일리노이주 상원의원 메리 에들리앨런; 캘리포니아주 상원의원 스콧 위너"
+  }
+ ]
+}
