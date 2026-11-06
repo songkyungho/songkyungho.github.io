@@ -1,0 +1,652 @@
+{
+ "slug": "metr-ai-rd-acceleration-assessment-2026-10",
+ "title": "평가자가 AI R&D 자동화의 가속 증거를 조사하는 방법",
+ "original_title": "How an assessor could investigate evidence of acceleration from the automation of AI R&D",
+ "publisher": "METR",
+ "published": "2026-10-14",
+ "source_url": "https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal",
+ "source_note": "METR 블로그 글 본문과 각주 전문이다.",
+ "source_label": "원문 보기 (METR)",
+ "summary": "AI가 AI R&D를 자동화하면서 역량 발전이 급격히 빨라지는지를 외부 평가자가 어떻게 조사할 수 있는지 METR이 제안한 글이다. 역량 진전의 속도, 그 가속에서 AI가 기여한 몫, 앞으로의 병목, 방법의 한계를 물어야 한다고 본다. 이를 위해 미공개 모델의 내부 측정치, R&D 투입 자료, 직원 면담 같은 접근이 필요하다고 항목별로 정리한다.",
+ "doc_kind": "평가 방법 제안",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "image": "/images/translations/metr-ai-rd-acceleration-assessment-2026-10-cover.webp",
+ "og_image": "/images/translations/metr-ai-rd-acceleration-assessment-2026-10-cover.jpg",
+ "translated": "2026-11-07",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 67,
+  "sections": 2,
+  "items": 10,
+  "words_en": 1335
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "This article discusses how an assessor could study whether capabilities progress could accelerate dramatically due to AI-driven acceleration of AI R&D. Such an assessment would answer:",
+   "ko": "이 글은 AI R&D의 AI 주도 가속으로 인해 역량 진전이 극적으로 가속될 수 있는지를 평가자가 어떻게 연구할 수 있는지 논의한다. 이러한 평가(assessment)는 다음 질문에 답하게 된다.",
+   "marks": [
+    {
+     "t": "AI R&D의 AI 주도 가속으로 인해 역량 진전이 극적으로 가속될 수 있는지를 평가자가 어떻게 연구할 수 있는지 논의한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Capabilities Progress: How fast are internal capabilities improving, and how much has this progress accelerated recently?",
+   "ko": "역량 진전: 내부 역량은 얼마나 빠르게 향상되고 있으며, 이 진전은 최근 얼마나 가속되었는가?"
+  },
+  {
+   "type": "li",
+   "en": "Acceleration from AI: If there is an acceleration, how much was it driven by AI automation versus other factors?",
+   "ko": "AI로 인한 가속: 가속이 있다면, 그 가속은 AI 자동화와 기타 요인 중 어느 쪽에 얼마나 기인하는가?",
+   "marks": [
+    {
+     "t": "그 가속은 AI 자동화와 기타 요인 중 어느 쪽에 얼마나 기인하는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Bottlenecks to Future Growth: Are there important bottlenecks that could slow growth or limit acceleration in the near term?",
+   "ko": "향후 성장의 병목: 단기적으로 성장을 둔화시키거나 가속을 제한할 수 있는 중요한 병목이 있는가?"
+  },
+  {
+   "type": "li",
+   "en": "Limitations: Would these methods reliably identify much more dramatic acceleration if it had occurred?",
+   "ko": "한계: 훨씬 더 극적인 가속이 발생했다면, 이러한 방법으로 그것을 신뢰성 있게 식별할 수 있었겠는가?",
+   "marks": [
+    {
+     "t": "훨씬 더 극적인 가속이 발생했다면, 이러한 방법으로 그것을 신뢰성 있게 식별할 수 있었겠는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Assessing this would involve analyzing capabilities of unreleased models, understanding the growth of key AI R&D inputs (labor, compute, data, and algorithms), and talking openly with relevant researchers about how AI is impacting their work. More details on access below.",
+   "ko": "이를 평가하려면 미공개 모델의 역량을 분석하고, 핵심 AI R&D 입력(노동력, 연산, 데이터, 알고리즘)의 증가를 파악하며, AI가 연구 업무에 어떤 영향을 미치고 있는지에 대해 관련 연구자들과 터놓고 대화해야 한다. 접근 권한에 관한 자세한 내용은 아래에 기술한다.",
+   "marks": [
+    {
+     "t": "미공개 모델의 역량을 분석하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Scope",
+   "ko": "범위",
+   "id": "s6"
+  },
+  {
+   "type": "h3",
+   "en": "Capabilities Progress",
+   "ko": "역량 진전",
+   "id": "s7"
+  },
+  {
+   "type": "p",
+   "en": "To understand whether capabilities progress has accelerated, the assessor must obtain data on internal model capabilities across time. Since AI capabilities cannot be understood through any single approach,[^1] the assessor must gather data via multiple methods, including:",
+   "ko": "역량 진전이 가속되었는지 파악하려면 평가자는 시간에 따른 내부 모델 역량에 관한 데이터를 확보해야 한다. AI 역량은 어느 하나의 접근법만으로는 이해할 수 없으므로,[^1] 평가자는 다음을 포함한 여러 방법을 통해 데이터를 수집해야 한다.",
+   "marks": [
+    {
+     "t": "역량 진전이 가속되었는지 파악하려면 평가자는 시간에 따른 내부 모델 역량에 관한 데이터를 확보해야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "평가자는 다음을 포함한 여러 방법을 통해 데이터를 수집해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Benchmarks: How much has progress on a variety of capability benchmarks (and aggregate measures like ECI) accelerated?",
+   "ko": "벤치마크: 다양한 역량 벤치마크(및 ECI 같은 종합 지표)에서의 진전은 얼마나 가속되었는가?",
+   "marks": [
+    {
+     "t": "다양한 역량 벤치마크(및 ECI 같은 종합 지표)에서의 진전은 얼마나 가속되었는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Intermediates: How much has progress in key intermediate measures or leading indicators (e.g. pretraining loss) accelerated?",
+   "ko": "중간 지표: 핵심 중간 지표나 선행 지표(예: 사전학습 손실(pretraining loss))에서의 진전은 얼마나 가속되었는가?",
+   "marks": [
+    {
+     "t": "핵심 중간 지표나 선행 지표(예: 사전학습 손실(pretraining loss))에서의 진전은 얼마나 가속되었는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Perceptions: Are researchers who use internal models experiencing an acceleration in model capabilities, as measured by interviews or surveys?",
+   "ko": "체감: 인터뷰나 설문조사로 측정했을 때, 내부 모델을 사용하는 연구자들은 모델 역량의 가속을 체감하고 있는가?",
+   "marks": [
+    {
+     "t": "내부 모델을 사용하는 연구자들은 모델 역량의 가속을 체감하고 있는가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Other: Are there other proxies that are crucial for understanding the pace of capabilities progress, and what trends do they show?",
+   "ko": "기타: 역량 진전 속도를 파악하는 데 핵심적인 다른 대리 지표가 있는가, 그리고 그 지표들은 어떤 추세를 보이는가?",
+   "marks": [
+    {
+     "t": "역량 진전 속도를 파악하는 데 핵심적인 다른 대리 지표가 있는가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Acceleration from AI",
+   "ko": "AI로 인한 가속",
+   "id": "s13"
+  },
+  {
+   "type": "p",
+   "en": "To understand whether capabilities acceleration is driven by AI, the assessor would need to study the inputs that seem most likely to be affected by AI automation. This means assessing:",
+   "ko": "역량 가속이 AI에 의해 주도되는지 파악하려면, 평가자는 AI 자동화의 영향을 받을 가능성이 가장 커 보이는 입력을 연구해야 한다. 이는 다음을 평가하는 것을 의미한다.",
+   "marks": [
+    {
+     "t": "역량 가속이 AI에 의해 주도되는지 파악하려면, 평가자는 AI 자동화의 영향을 받을 가능성이 가장 커 보이는 입력을 연구해야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "How much of this acceleration in capabilities is due to algorithmic progress or data versus other inputs like scaling compute that are less impacted by AI automation?",
+   "ko": "이러한 역량 가속 중 얼마만큼이 알고리즘 진전이나 데이터에 기인하며, 얼마만큼이 AI 자동화의 영향을 덜 받는 연산 스케일링 같은 다른 입력에 기인하는가?",
+   "marks": [
+    {
+     "t": "얼마만큼이 알고리즘 진전이나 데이터에 기인하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "How much of the acceleration in algorithmic progress or data is attributable to AI assistance/automation versus other inputs like experiment compute and labor?",
+   "ko": "알고리즘 진전이나 데이터의 가속 중 얼마만큼이 AI 지원/자동화에 기인하며, 얼마만큼이 실험 연산과 노동력 같은 다른 입력에 기인하는가?",
+   "marks": [
+    {
+     "t": "알고리즘 진전이나 데이터의 가속 중 얼마만큼이 AI 지원/자동화에 기인하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Bottlenecks to Future Growth",
+   "ko": "향후 성장의 병목",
+   "id": "s17"
+  },
+  {
+   "type": "p",
+   "en": "The assessor would then examine if there are reasons to expect growth or acceleration to slow in the near future. This requires answering:",
+   "ko": "이어서 평가자는 가까운 미래에 성장이나 가속이 둔화될 것으로 예상할 만한 이유가 있는지 검토한다. 이를 위해서는 다음 질문에 답해야 한다.",
+   "marks": [
+    {
+     "t": "평가자는 가까운 미래에 성장이나 가속이 둔화될 것으로 예상할 만한 이유가 있는지 검토한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Are there important bottlenecks (e.g. training compute, human data) that could plausibly slow progress in the near future, and how might they impact near-term growth?",
+   "ko": "가까운 미래에 진전을 둔화시킬 개연성이 있는 중요한 병목(예: 학습 연산량, 인간 데이터)이 있는가, 그리고 그것이 단기 성장에 어떤 영향을 미칠 수 있는가?",
+   "marks": [
+    {
+     "t": "가까운 미래에 진전을 둔화시킬 개연성이 있는 중요한 병목(예: 학습 연산량, 인간 데이터)이 있는가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Limitations",
+   "ko": "한계",
+   "id": "s20"
+  },
+  {
+   "type": "p",
+   "en": "The assessor would additionally investigate how confident the public should be that a dramatic acceleration would be noticed and communicated if it occurred. This requires answering:",
+   "ko": "평가자는 추가로 극적 가속(Dramatic acceleration)이 발생했을 때 그것이 포착되고 전달될 것이라고 대중이 얼마나 확신할 수 있는지 조사한다. 이를 위해서는 다음 질문에 답해야 한다.",
+   "marks": [
+    {
+     "t": "극적 가속(Dramatic acceleration)이 발생했을 때 그것이 포착되고 전달될 것이라고 대중이 얼마나 확신할 수 있는지 조사한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "How reliable are the estimates of internal acceleration and attribution, and what are the biggest concerns with the evidence sources?",
+   "ko": "내부 가속 및 그 원인 귀속(attribution)에 대한 추정치는 얼마나 신뢰할 수 있으며, 증거 출처와 관련된 가장 큰 우려는 무엇인가?",
+   "marks": [
+    {
+     "t": "내부 가속 및 그 원인 귀속(attribution)에 대한 추정치는 얼마나 신뢰할 수 있으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "How does the internal evidence studied compare to relevant public evidence about acceleration, and what might explain any differences?",
+   "ko": "연구한 내부 증거는 가속에 관한 관련 공개 증거와 비교하여 어떠하며, 차이가 있다면 무엇으로 설명할 수 있는가?"
+  },
+  {
+   "type": "li",
+   "en": "Overall, would the methods used reliably have identified much greater acceleration, if it had occurred?",
+   "ko": "종합적으로, 훨씬 더 큰 가속이 발생했다면 사용한 방법으로 그것을 신뢰성 있게 식별할 수 있었겠는가?",
+   "marks": [
+    {
+     "t": "훨씬 더 큰 가속이 발생했다면 사용한 방법으로 그것을 신뢰성 있게 식별할 수 있었겠는가?",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Access details",
+   "ko": "접근 권한 세부 사항",
+   "id": "s25"
+  },
+  {
+   "type": "p",
+   "en": "To answer these questions, the assessor requires measurements of inputs and outputs across the model development pipeline. Whenever possible, data should be provided over the maximum possible timeframe and with precise dates on observations to help assessors estimate changes versus a historical baseline. Where relevant, data should be broken down by team or domain, to help assessors connect specific changes in inputs to research outputs.",
+   "ko": "이러한 질문에 답하려면 평가자는 모델 개발 파이프라인 전반에 걸친 입력과 출력의 측정치가 필요하다. 평가자가 과거 기준선 대비 변화를 추정할 수 있도록, 데이터는 가능한 한 최대한 긴 기간에 걸쳐 제공되어야 하며 관측치에는 정확한 날짜가 기재되어야 한다. 해당되는 경우, 평가자가 입력의 구체적 변화를 연구 산출물과 연결할 수 있도록 데이터를 팀 또는 분야별로 세분화해야 한다.",
+   "marks": [
+    {
+     "t": "평가자는 모델 개발 파이프라인 전반에 걸친 입력과 출력의 측정치가 필요하다",
+     "k": "key"
+    },
+    {
+     "t": "평가자가 과거 기준선 대비 변화를 추정할 수 있도록",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "For security, data could be analyzed on developer hardware (and possibly onsite at developer premises). Only minimal access to developer infrastructure is needed for this assessment.",
+   "ko": "보안을 위해 데이터는 개발자의 하드웨어에서(경우에 따라서는 개발자 사업장 현장에서) 분석될 수 있다. 이 평가에는 개발자 인프라에 대한 최소한의 접근만 필요하다.",
+   "marks": [
+    {
+     "t": "보안을 위해 데이터는 개발자의 하드웨어에서(경우에 따라서는 개발자 사업장 현장에서) 분석될 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "이 평가에는 개발자 인프라에 대한 최소한의 접근만 필요하다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Required data includes:",
+   "ko": "필요한 데이터는 다음과 같다."
+  },
+  {
+   "type": "li",
+   "en": "Measurements of internal capabilities",
+   "ko": "내부 역량 측정치",
+   "marks": [
+    {
+     "t": "내부 역량 측정치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Algorithmic progress estimates",
+   "ko": "알고리즘 진전 추정치"
+  },
+  {
+   "type": "li",
+   "en": "Evidence of AI’s contribution",
+   "ko": "AI 기여에 관한 증거",
+   "marks": [
+    {
+     "t": "AI 기여에 관한 증거",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Measurements of key R&D inputs",
+   "ko": "핵심 R&D 입력 측정치"
+  },
+  {
+   "type": "li",
+   "en": "Details of bottlenecks and forecasts",
+   "ko": "병목 및 예측에 관한 세부 정보"
+  },
+  {
+   "type": "li",
+   "en": "Interviews with staff",
+   "ko": "직원 인터뷰"
+  },
+  {
+   "type": "h3",
+   "en": "Measurements of internal capabilities",
+   "ko": "내부 역량 측정치",
+   "id": "s35"
+  },
+  {
+   "type": "p",
+   "en": "The assessor would need measurements of internal model capabilities over time to judge if they are accelerating. This includes details on:",
+   "ko": "평가자는 내부 모델 역량이 가속되고 있는지 판단하기 위해 시간에 따른 내부 모델 역량 측정치가 필요하다. 여기에는 다음에 관한 세부 정보가 포함된다.",
+   "marks": [
+    {
+     "t": "평가자는 내부 모델 역량이 가속되고 있는지 판단하기 위해 시간에 따른 내부 모델 역량 측정치가 필요하다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Benchmark data. Scores on all measured benchmarks across all frontier (including internal-only) models, to calculate ECI and other similar measures of progress. For robustness, details on each benchmark should be provided, including example questions and scoring details, and sample answers from models.",
+   "ko": "벤치마크 데이터. ECI 및 이와 유사한 진전 지표를 산출하기 위한, 모든 프론티어 모델(내부 전용 모델 포함)에 대해 측정된 모든 벤치마크의 점수. 강건성을 위해 예시 문항과 채점 세부 사항, 모델의 샘플 답변을 포함하여 각 벤치마크에 관한 세부 정보를 제공해야 한다.",
+   "marks": [
+    {
+     "t": "모든 프론티어 모델(내부 전용 모델 포함)에 대해 측정된 모든 벤치마크의 점수",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Qualitative/quantitative info from researchers. Existing reflections from researchers (including excerpts from interviews or existing internal surveys) that help summarize how researchers perceive capabilities changing over time. This should be supplemented with assessors interviewing staff directly.",
+   "ko": "연구자로부터의 정성적/정량적 정보. 연구자들이 시간에 따른 역량 변화를 어떻게 인식하는지 요약하는 데 도움이 되는, 연구자들의 기존 소회(인터뷰 발췌문이나 기존 내부 설문조사 포함). 이는 평가자가 직원을 직접 인터뷰하는 것으로 보완되어야 한다.",
+   "marks": [
+    {
+     "t": "연구자들이 시간에 따른 역량 변화를 어떻게 인식하는지",
+     "k": "safety"
+    },
+    {
+     "t": "평가자가 직원을 직접 인터뷰하는 것으로 보완되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Top-line progress measures for key domains. Detail on how progress is tracked/measured in pretraining, posttraining, and other key parts of the model development pipeline, along with historical records of progress in each. It may be useful to share details and analysis on how the developer understands key domains drive overall capabilities progress (e.g. how much progress is being driven by pretraining versus posttraining), as it will allow better estimates of how acceleration in key domains will flow through into capabilities acceleration.",
+   "ko": "핵심 분야의 최상위 진전 지표. 사전학습, 사후학습 및 모델 개발 파이프라인의 기타 핵심 부분에서 진전이 어떻게 추적/측정되는지에 관한 세부 정보와 각 부분의 진전에 관한 과거 기록. 핵심 분야가 전체 역량 진전을 어떻게 견인한다고 개발자가 파악하고 있는지(예: 진전 중 얼마만큼이 사전학습에 의해, 얼마만큼이 사후학습에 의해 견인되는지)에 관한 세부 정보와 분석을 공유하는 것이 유용할 수 있다. 이를 통해 핵심 분야의 가속이 역량 가속으로 어떻게 이어질지 더 잘 추정할 수 있기 때문이다.",
+   "marks": [
+    {
+     "t": "핵심 분야의 가속이 역량 가속으로 어떻게 이어질지 더 잘 추정할 수 있기 때문이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Other internal capability measures. Any other internal measures of capabilities that are tracked should be shared for robustness.",
+   "ko": "기타 내부 역량 지표. 강건성을 위해, 추적하고 있는 그 밖의 모든 내부 역량 지표를 공유해야 한다.",
+   "marks": [
+    {
+     "t": "추적하고 있는 그 밖의 모든 내부 역량 지표를 공유해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Algorithmic progress estimates",
+   "ko": "알고리즘 진전 추정치",
+   "id": "s41"
+  },
+  {
+   "type": "p",
+   "en": "We expect that developers currently maintain some estimates of algorithmic progress in key domains like pretraining and posttraining. While developers have not published details on these methods, they may be similar to the methodology defined in this paper, where research advances are mapped to a reduction in the compute required to reach certain performance levels.",
+   "ko": "우리는 현재 개발자들이 사전학습 및 사후학습 같은 핵심 분야에서 알고리즘 진전에 대한 일정한 추정치를 관리하고 있을 것으로 예상한다. 개발자들이 이러한 방법의 세부 사항을 공개하지는 않았지만, 이 방법은 연구 성과를 특정 성능 수준에 도달하는 데 필요한 연산의 감소로 환산하는, 이 논문에서 정의한 방법론과 유사할 수 있다.",
+   "marks": [
+    {
+     "t": "연구 성과를 특정 성능 수준에 도달하는 데 필요한 연산의 감소로 환산하는",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The assessor does not require details of the specific research advances. However, an assessor would require estimates of the effect of these advances over time (dated precisely) and between models. Ideally, algorithmic progress estimates are as disaggregated as possible to allow for flexible analysis.",
+   "ko": "평가자는 구체적인 연구 성과에 관한 세부 정보를 필요로 하지 않는다. 그러나 평가자는 시간에 따른(정확한 날짜 기재), 그리고 모델 간 이러한 성과의 효과에 대한 추정치가 필요하다. 유연한 분석이 가능하도록 알고리즘 진전 추정치는 가능한 한 세분화되어 있는 것이 이상적이다.",
+   "marks": [
+    {
+     "t": "평가자는 시간에 따른(정확한 날짜 기재), 그리고 모델 간 이러한 성과의 효과에 대한 추정치가 필요하다.",
+     "k": "key"
+    },
+    {
+     "t": "유연한 분석이 가능하도록 알고리즘 진전 추정치는 가능한 한 세분화되어 있는 것이 이상적이다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Evidence of AI’s contribution",
+   "ko": "AI 기여에 관한 증거",
+   "id": "s44"
+  },
+  {
+   "type": "p",
+   "en": "As it is challenging to determine the “No AI” counterfactual, we expect that a well-calibrated estimate of AI’s impact on AI R&D will require a number of lines of evidence. We expect that conversations between assessors and researchers could be highly informative in prioritizing specific data required to answer this question, but list a few illustrative examples of informative evidence here:",
+   "ko": "“No AI” 반사실(counterfactual)을 판단하기는 어렵기 때문에, AI R&D에 대한 AI의 영향을 잘 보정된 방식으로 추정하려면 여러 갈래의 증거가 필요할 것으로 예상한다. 이 질문에 답하는 데 필요한 구체적 데이터의 우선순위를 정하는 데에는 평가자와 연구자 간의 대화가 매우 유익할 것으로 예상하지만, 여기서는 유익한 증거의 몇 가지 예시를 제시한다.",
+   "marks": [
+    {
+     "t": "AI R&D에 대한 AI의 영향을 잘 보정된 방식으로 추정하려면 여러 갈래의 증거가 필요할 것으로 예상한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Spend on AI agents. This ideally would be broken down by team and over time, denominated in tokens and inference cost.",
+   "ko": "AI 에이전트 지출. 이는 팀별 및 시간별로 세분화하고, 토큰과 추론(Inference) 비용 단위로 표시하는 것이 이상적이다."
+  },
+  {
+   "type": "li",
+   "en": "Researcher qualitative reflections. Specific stories of how research progress is made using models will provide significant insight into how AI is impacting the AI R&D process.",
+   "ko": "연구자의 정성적 소회. 모델을 사용하여 연구 진전이 어떻게 이루어지는지에 관한 구체적 사례는 AI가 AI R&D 과정에 어떤 영향을 미치고 있는지에 대해 상당한 통찰을 제공할 것이다.",
+   "marks": [
+    {
+     "t": "AI가 AI R&D 과정에 어떤 영향을 미치고 있는지에 대해 상당한 통찰을 제공할 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Labor productivity estimates. This includes crude metrics like lines of code per researcher-day or self-reported uplift estimates over time.",
+   "ko": "노동 생산성 추정치. 여기에는 연구자-일(researcher-day)당 코드 줄 수 같은 대략적인 지표나 시간에 따른 자기 보고식 업리프트 추정치가 포함된다.",
+   "marks": [
+    {
+     "t": "시간에 따른 자기 보고식 업리프트 추정치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Measurements of key R&D inputs",
+   "ko": "핵심 R&D 입력 측정치",
+   "id": "s49"
+  },
+  {
+   "type": "p",
+   "en": "Inputs other than AI may drive an acceleration in capabilities[^2] or algorithmic progress, and so it is important to understand how other key inputs are growing. Adjusting for the effect of other factors requires data on those factors:",
+   "ko": "AI 이외의 입력도 역량[^2] 또는 알고리즘 진전의 가속을 견인할 수 있으므로, 다른 핵심 입력이 어떻게 증가하고 있는지 파악하는 것이 중요하다. 다른 요인의 효과를 보정하려면 해당 요인에 관한 데이터가 필요하다.",
+   "marks": [
+    {
+     "t": "AI 이외의 입력도 역량[^2] 또는 알고리즘 진전의 가속을 견인할 수 있으므로, 다른 핵심 입력이 어떻게 증가하고 있는지 파악하는 것이 중요하다.",
+     "k": "key"
+    },
+    {
+     "t": "다른 요인의 효과를 보정하려면 해당 요인에 관한 데이터가 필요하다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Labor inputs. The size of teams working on key domains, reported over time.",
+   "ko": "노동 입력. 핵심 분야에서 일하는 팀의 규모를 시간에 따라 보고한 것."
+  },
+  {
+   "type": "li",
+   "en": "Compute inputs:",
+   "ko": "연산 입력:"
+  },
+  {
+   "type": "li",
+   "en": "Training compute. For each model, how much compute was used on pretraining, midtraining, posttraining, etc.",
+   "ko": "학습 연산량. 각 모델에 대해 사전학습, 중간학습(midtraining), 사후학습 등에 얼마만큼의 연산이 사용되었는지."
+  },
+  {
+   "type": "li",
+   "en": "Experimental compute. Over time, broken down by team and function.",
+   "ko": "실험 연산. 시간에 따라, 팀별 및 기능별로 세분화한 것."
+  },
+  {
+   "type": "li",
+   "en": "Data inputs. This is domain specific and may include information about pretraining data or RL environments.",
+   "ko": "데이터 입력. 이는 분야별로 다르며, 사전학습 데이터나 강화 학습 환경에 관한 정보를 포함할 수 있다."
+  },
+  {
+   "type": "li",
+   "en": "Other key inputs. If there are other key inputs that are not externally known, those should be shared with assessors as well.",
+   "ko": "기타 핵심 입력. 외부에 알려지지 않은 다른 핵심 입력이 있다면, 이 역시 평가자와 공유해야 한다.",
+   "marks": [
+    {
+     "t": "외부에 알려지지 않은 다른 핵심 입력이 있다면, 이 역시 평가자와 공유해야 한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Details of bottlenecks and forecasts",
+   "ko": "병목 및 예측에 관한 세부 정보",
+   "id": "s57"
+  },
+  {
+   "type": "p",
+   "en": "Assessors should be provided with information that allows them to forecast future capabilities and the plausibility of hitting dangerous capability milestones in the near term.",
+   "ko": "평가자에게는 향후 역량을 예측하고 단기적으로 위험 역량 이정표에 도달할 개연성을 예측할 수 있게 하는 정보가 제공되어야 한다.",
+   "marks": [
+    {
+     "t": "평가자에게는 향후 역량을 예측하고 단기적으로 위험 역량 이정표에 도달할 개연성을 예측할 수 있게 하는 정보가 제공되어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Assessors should ideally be given access to:",
+   "ko": "평가자에게는 다음에 대한 접근 권한이 부여되는 것이 이상적이다."
+  },
+  {
+   "type": "li",
+   "en": "Information on bottlenecks. For possible bottlenecks, assessors should be given detailed evidence on the plausibility of these bottlenecks.",
+   "ko": "병목에 관한 정보. 가능한 병목에 대해, 평가자에게 그러한 병목의 개연성에 관한 상세한 증거가 제공되어야 한다.",
+   "marks": [
+    {
+     "t": "평가자에게 그러한 병목의 개연성에 관한 상세한 증거가 제공되어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Existing forecasts. Where they exist, assessors should be able to collect forecasts of top-line metrics and details behind those forecasts.",
+   "ko": "기존 예측. 예측이 존재하는 경우, 평가자는 최상위 지표에 대한 예측과 그 예측의 근거가 되는 세부 정보를 수집할 수 있어야 한다.",
+   "marks": [
+    {
+     "t": "평가자는 최상위 지표에 대한 예측과 그 예측의 근거가 되는 세부 정보를 수집할 수 있어야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Forward-looking estimates are highly uncertain and should be treated as such in the resulting report.",
+   "ko": "미래 전망 추정치는 불확실성이 매우 크며, 결과 보고서에서도 그렇게 다루어야 한다.",
+   "marks": [
+    {
+     "t": "미래 전망 추정치는 불확실성이 매우 크며, 결과 보고서에서도 그렇게 다루어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Interviews with staff",
+   "ko": "직원 인터뷰",
+   "id": "s63"
+  },
+  {
+   "type": "p",
+   "en": "To properly contextualize the information above, and to make sure they are not missing anything, assessors must be able to talk directly to researchers.",
+   "ko": "위의 정보를 적절히 맥락화하고 누락된 것이 없도록 하기 위해, 평가자는 연구자들과 직접 대화할 수 있어야 한다.",
+   "marks": [
+    {
+     "t": "평가자는 연구자들과 직접 대화할 수 있어야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The assessor would need to interview staff involved in each important part of model training to confirm their understanding of the data, and to understand if there are other important missing sources of data. This would include researchers familiar with pretraining, RL, and infrastructure.",
+   "ko": "평가자는 데이터에 대한 자신의 이해를 확인하고 누락된 다른 중요한 데이터 출처가 있는지 파악하기 위해, 모델 학습의 각 중요 부분에 관여하는 직원을 인터뷰해야 할 것이다. 여기에는 사전학습, 강화 학습, 인프라에 정통한 연구자가 포함된다.",
+   "marks": [
+    {
+     "t": "모델 학습의 각 중요 부분에 관여하는 직원을 인터뷰해야 할 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Additional conversations with researchers who have a more holistic view are likely also very helpful to the assessment, for example with researchers who study capability progress or acceleration internally, or with managers responsible for key domains.",
+   "ko": "보다 총체적인 관점을 지닌 연구자들과의 추가 대화도 평가(assessment)에 매우 도움이 될 가능성이 높다. 예를 들어 내부적으로 역량 진전이나 가속을 연구하는 연구자, 또는 핵심 분야를 책임지는 관리자와의 대화가 그러하다.",
+   "marks": [
+    {
+     "t": "내부적으로 역량 진전이나 가속을 연구하는 연구자",
+     "k": "safety"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "For example, a naive interpretation of benchmark scores may overestimate model capabilities because passing tests does not directly correspond to real-world usefulness, while quantitative estimates of “speedup” from researchers may overstate capabilities because of the difficulty of assessing the counterfactual.",
+   "ko": "예를 들어, 벤치마크 점수를 단순하게 해석하면 테스트 통과가 실제 유용성과 직접 대응하지 않기 때문에 모델 역량을 과대평가할 수 있으며, 연구자들이 제시하는 “속도 향상(speedup)”의 정량적 추정치는 반사실을 평가하기 어렵기 때문에 역량을 과장할 수 있다.",
+   "linked": true
+  },
+  {
+   "n": 2,
+   "en": "For example, an above-trend compute scaleup might result in above-trend capabilities growth.",
+   "ko": "예를 들어, 추세를 웃도는 연산 확대는 추세를 웃도는 역량 증가로 이어질 수 있다.",
+   "linked": true
+  }
+ ]
+}
