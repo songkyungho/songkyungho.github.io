@@ -1,0 +1,2724 @@
+{
+ "slug": "us-frontier-act-hr9925",
+ "title": "미국 연방 FRONTIER 법안 (H.R. 9925)",
+ "original_title": "Frontier Risk Oversight, National Transparency, Independent Evaluation, and Reporting Act (H.R. 9925)",
+ "publisher": "미국 연방 하원",
+ "published": "2026-07-23",
+ "source_url": "https://www.govinfo.gov/app/details/BILLS-119hr9925ih",
+ "source_note": "2026년 7월 23일 하원 발의본(Introduced in House) 전문이다. 제정된 법이 아니며, 이후 수정될 수 있다. 발의자 정보는 싣지 않았다.",
+ "source_label": "원문 보기 (govinfo)",
+ "summary": "오버놀티·트러헌 의원 등이 초당적으로 발의한 미국 연방 프론티어 AI 법안이다. 아직 법이 아니다. 개발자를 규모에 따라 나눠 프레임워크 공개, 연례 독립 감사, 투명성 보고서, 치명적 안전 사고 보고를 요구하고, 최대 규모 개발자에게는 면허를 받은 독립 검증 기관의 상시 평가를 의무화한다. 상무부 장관에게는 임박한 파국적 위험이 있을 때 모델의 개발과 배포를 멈출 긴급 명령권을 준다. 캘리포니아 SB 53, 뉴욕 RAISE, 일리노이 SB 315 같은 주법을 선점하는 조항이 가장 큰 쟁점이다.",
+ "image": "/images/translations/us-frontier-act-hr9925-cover.webp",
+ "og_image": "/images/translations/us-frontier-act-hr9925-cover.jpg",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "doc_kind": "법안",
+ "translated": "2026-11-06",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 414,
+  "sections": 9,
+  "items": 0,
+  "words_en": 11703
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "To provide for Federal oversight of the development and deployment of frontier artificial intelligence in interstate and foreign commerce, and for other purposes.",
+   "ko": "주(州) 간 및 대외 상거래에서 프론티어 인공지능의 개발 및 배포에 대한 연방 감독을 규정하고, 그 밖의 목적을 위한 법률.",
+   "marks": [
+    {
+     "t": "프론티어 인공지능의 개발 및 배포에 대한 연방 감독을 규정하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 1. Short title",
+   "ko": "제1조 약칭",
+   "id": "s1"
+  },
+  {
+   "type": "p",
+   "en": "This Act may be cited as the “Frontier Risk Oversight, National Transparency, Independent Evaluation, and Reporting Act” or the “FRONTIER Act”.",
+   "ko": "이 법은 「프론티어 위험 감독, 국가 투명성, 독립적 평가 및 보고법」(Frontier Risk Oversight, National Transparency, Independent Evaluation, and Reporting Act) 또는 「FRONTIER Act」로 인용할 수 있다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 2. Definitions",
+   "ko": "제2조 정의",
+   "id": "s3"
+  },
+  {
+   "type": "p",
+   "en": "In this Act:",
+   "ko": "이 법에서 사용하는 용어의 뜻은 다음과 같다."
+  },
+  {
+   "type": "p",
+   "en": "(1) Acceptable levels of catastrophic risk mitigation.— The term “acceptable levels of catastrophic risk mitigation” means risk mitigation adequate to ensure that the anticipated benefits of a frontier model made available or used in interstate or foreign commerce outweigh its level of catastrophic risk, taking into consideration the probability and magnitude of the model’s anticipated benefits and catastrophic risks.",
+   "ko": "(1) 허용 가능한 수준의 파국적 위험 완화 — \"허용 가능한 수준의 파국적 위험 완화\"(acceptable levels of catastrophic risk mitigation)란 주 간 또는 대외 상거래에서 제공되거나 사용되는 프론티어 모델의 예상 편익이 그 파국적 위험 수준보다 크도록 보장하기에 충분한 위험 완화를 말한다. 이때 해당 모델의 예상 편익과 파국적 위험의 발생 확률 및 규모를 고려한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델의 예상 편익이 그 파국적 위험 수준보다 크도록 보장하기에 충분한 위험 완화",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Affiliate.— The term “affiliate” means an entity that satisfies any of the following requirements:",
+   "ko": "(2) 계열사 — \"계열사\"(affiliate)란 다음 요건 중 어느 하나를 충족하는 단체를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) Controls another entity through an intermediary.",
+   "ko": "(A) 중개자를 통하여 다른 단체를 통제할 것."
+  },
+  {
+   "type": "p",
+   "en": "(B) Is through such intermediary controlled by such other entity.",
+   "ko": "(B) 그러한 중개자를 통하여 그 다른 단체의 통제를 받을 것."
+  },
+  {
+   "type": "p",
+   "en": "(C) Is through such intermediary under common control with such other entity.",
+   "ko": "(C) 그러한 중개자를 통하여 그 다른 단체와 공동 통제하에 있을 것."
+  },
+  {
+   "type": "p",
+   "en": "(3) AI; artificial intelligence; artificial intelligence model.— The terms “AI”, “artificial intelligence”, and “artificial intelligence model” have the meaning given such terms in section 5002 of the National Artificial Intelligence Initiative Act of 2020 (15 U.S.C. 9401).",
+   "ko": "(3) AI, 인공지능, 인공지능 모델 — \"AI\", \"인공지능\"(artificial intelligence) 및 \"인공지능 모델\"(artificial intelligence model)이란 「2020년 국가인공지능이니셔티브법」(National Artificial Intelligence Initiative Act of 2020) 제5002조(15 U.S.C. 9401)에서 정한 의미를 가진다."
+  },
+  {
+   "type": "p",
+   "en": "(4) AI-related development expenditures.— The term “AI-related development expenditures” means amounts paid or incurred in interstate or foreign commerce, without regard to whether such amounts are expensed, capitalized, deducted, or amortized for financial reporting or tax purposes, that are attributable to artificial intelligence development, training, fine-tuning, modification, security, or evaluation.",
+   "ko": "(4) AI 관련 개발 지출 — \"AI 관련 개발 지출\"(AI-related development expenditures)이란 주 간 또는 대외 상거래에서 지급되거나 발생한 금액으로서 인공지능의 개발, 훈련, 미세조정(fine-tuning), 수정, 보안 또는 평가(evaluation)에 귀속되는 금액을 말한다. 해당 금액이 재무 보고 또는 조세 목적상 비용 처리, 자본화, 공제 또는 상각되는지 여부는 묻지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(5) Assessment.— The term “assessment” means a review conducted by an IVO licensed under section 5 to assess the adequacy of a very large frontier developer’s frontier AI framework, governance policies and practices, risk-monitoring, and mitigation of detected risks for achieving acceptable levels of catastrophic risk mitigation.",
+   "ko": "(5) 평가 — \"평가\"(assessment)란 제5조에 따라 인가를 받은 IVO가 수행하는 검토로서, 초대규모 프론티어 개발자의 프론티어 AI 프레임워크, 거버넌스 정책 및 실행 방안, 위험 모니터링, 탐지된 위험의 완화가 허용 가능한 수준의 파국적 위험 완화를 달성하는 데 적정한지를 평가하는 것을 말한다.",
+   "marks": [
+    {
+     "t": "탐지된 위험의 완화가 허용 가능한 수준의 파국적 위험 완화를 달성하는 데 적정한지를 평가하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(6) Catastrophic risk.— The term “catastrophic risk” means—",
+   "ko": "(6) 파국적 위험 — \"파국적 위험\"(catastrophic risk)이란 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) a foreseeable and material risk that a frontier developer’s development, storage, use, or deployment of a frontier model will materially contribute to the death of, or serious injury to, more than 50 people, or more than $1,000,000,000 in damage to, or loss of, property, arising from a single incident involving a frontier model doing any of the following:",
+   "ko": "(A) 프론티어 개발자의 프론티어 모델 개발, 저장, 사용 또는 배포가 50명을 초과하는 사람의 사망 또는 중상, 또는 1,000,000,000달러를 초과하는 재산의 손해 또는 손실에 실질적으로 기여할 예견 가능하고 중대한 위험을 말한다. 이때 그 피해는 프론티어 모델이 다음 중 어느 하나를 하는 것과 관련된 단일 사고에서 발생한 것이어야 한다.",
+   "marks": [
+    {
+     "t": "50명을 초과하는 사람의 사망 또는 중상, 또는 1,000,000,000달러를 초과하는 재산의 손해 또는 손실에 실질적으로 기여할 예견 가능하고 중대한 위험",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(i) providing, in the development or release of a chemical, biological, radiological, nuclear, or cyber weapon, assistance that is not publicly available;",
+   "ko": "(i) 화학, 생물학, 방사능, 핵 또는 사이버 무기의 개발이나 유포와 관련하여 공개적으로 이용할 수 없는 지원을 제공하는 것",
+   "marks": [
+    {
+     "t": "화학, 생물학, 방사능, 핵 또는 사이버 무기의 개발이나 유포와 관련하여 공개적으로 이용할 수 없는 지원을 제공하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(ii) engaging in conduct with no meaningful human oversight or intervention, that—",
+   "ko": "(ii) 의미 있는 인간 감독이나 개입 없이 다음에 해당하는 행위를 하는 것",
+   "marks": [
+    {
+     "t": "의미 있는 인간 감독이나 개입 없이 다음에 해당하는 행위를 하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(I) is a cyberattack; or",
+   "ko": "(I) 사이버 공격에 해당하는 행위",
+   "marks": [
+    {
+     "t": "사이버 공격에 해당하는 행위",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(II) if such conduct is committed by an individual, would constitute murder, assault, extortion, or theft, including such theft by false pretense; or",
+   "ko": "(II) 개인이 저질렀다면 살인, 폭행, 갈취 또는 절도(사기에 의한 절도를 포함한다)에 해당하는 행위"
+  },
+  {
+   "type": "p",
+   "en": "(iii) evading control of such developer or a user of such model; and",
+   "ko": "(iii) 해당 개발자 또는 해당 모델 사용자의 통제를 회피하는 것",
+   "marks": [
+    {
+     "t": "해당 개발자 또는 해당 모델 사용자의 통제를 회피하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) does not include a foreseeable and material risk from any of the following:",
+   "ko": "(B) 다음 중 어느 하나로부터 발생하는 예견 가능하고 중대한 위험은 포함하지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(i) information that a frontier model outputs if the information is otherwise publicly accessible in a substantially similar form from a source other than a foundation model;",
+   "ko": "(i) 프론티어 모델이 출력하는 정보로서, 파운데이션 모델이 아닌 다른 출처에서 실질적으로 유사한 형태로 공개적으로 접근 가능한 정보"
+  },
+  {
+   "type": "p",
+   "en": "(ii) lawful activity of the Federal Government; or",
+   "ko": "(ii) 연방정부의 적법한 활동"
+  },
+  {
+   "type": "p",
+   "en": "(iii) harm caused by a frontier model in combination with other software if such model did not materially contribute to the harm.",
+   "ko": "(iii) 프론티어 모델이 다른 소프트웨어와 결합하여 야기한 피해로서, 해당 모델이 그 피해에 실질적으로 기여하지 아니한 경우의 피해"
+  },
+  {
+   "type": "p",
+   "en": "(7) Critical safety incident.— The term “critical safety incident” means any of the following:",
+   "ko": "(7) 치명적 안전 사고 — \"치명적 안전 사고(critical safety incident)\"란 다음 중 어느 하나를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) Unauthorized access to, modification of, or exfiltration of, the model weights of a frontier model.",
+   "ko": "(A) 프론티어 모델의 모델 가중치에 대한 무단 접근, 무단 수정 또는 무단 유출",
+   "marks": [
+    {
+     "t": "프론티어 모델의 모델 가중치에 대한 무단 접근, 무단 수정 또는 무단 유출",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) Harm resulting from the materialization of a catastrophic risk.",
+   "ko": "(B) 파국적 위험의 현실화로 인한 피해",
+   "marks": [
+    {
+     "t": "파국적 위험의 현실화로 인한 피해",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) Loss of control of such model.",
+   "ko": "(C) 해당 모델에 대한 통제 상실",
+   "marks": [
+    {
+     "t": "해당 모델에 대한 통제 상실",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(D) A frontier model using deceptive techniques against its frontier developer to subvert the controls or monitoring of such developer, outside the context of an evaluation designed to elicit such behavior, in a manner that demonstrates materially increased catastrophic risk.",
+   "ko": "(D) 프론티어 모델이 해당 프론티어 개발자의 통제 또는 모니터링을 무력화하기 위하여 그 개발자를 상대로 기만적 기법을 사용하는 것. 다만, 그러한 행동을 유도하도록 설계된 평가(evaluation) 상황 밖에서 발생하고, 파국적 위험이 실질적으로 증가하였음을 보여주는 방식으로 이루어진 경우에 한한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델이 해당 프론티어 개발자의 통제 또는 모니터링을 무력화하기 위하여 그 개발자를 상대로 기만적 기법을 사용하는 것",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(8) Deploy.— The term “deploy” means—",
+   "ko": "(8) 배포 — \"배포\"(deploy)란 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) to make a frontier model available in interstate or foreign commerce to a third party for use, modification, copying, or combination with other software; and",
+   "ko": "(A) 제3자가 이용, 수정, 복제하거나 다른 소프트웨어와 결합할 수 있도록 주 간 또는 대외 상거래에서 프론티어 모델을 제3자에게 제공하는 것을 말하며,"
+  },
+  {
+   "type": "p",
+   "en": "(B) does not include making such model available to such third party for the primary purpose of developing or evaluating such model.",
+   "ko": "(B) 해당 모델의 개발 또는 평가(evaluation)를 주된 목적으로 해당 모델을 그러한 제3자에게 제공하는 것은 포함하지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(9) Foundation model.— The term “foundation model” means an artificial intelligence model made available or used in interstate or foreign commerce that is all of the following:",
+   "ko": "(9) 파운데이션 모델 — \"파운데이션 모델\"(foundation model)이란 주 간 또는 대외 상거래에서 제공되거나 사용되는 인공지능 모델로서 다음 요건을 모두 충족하는 모델을 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) Trained on a broad data set.",
+   "ko": "(A) 광범위한 데이터 세트로 훈련되었을 것."
+  },
+  {
+   "type": "p",
+   "en": "(B) Designed for generality of output.",
+   "ko": "(B) 출력의 범용성을 위하여 설계되었을 것."
+  },
+  {
+   "type": "p",
+   "en": "(C) Adaptable to a wide range of distinctive tasks.",
+   "ko": "(C) 광범위한 개별 과업에 적용될 수 있을 것."
+  },
+  {
+   "type": "p",
+   "en": "(10) Frontier ai framework.— The term “frontier AI framework” means documented technical and organizational protocols to manage, assess, and mitigate catastrophic risks.",
+   "ko": "(10) 프론티어 AI 프레임워크 — \"프론티어 AI 프레임워크\"(frontier AI framework)란 파국적 위험을 관리, 평가 및 완화하기 위하여 문서화된 기술적·조직적 프로토콜을 말한다.",
+   "marks": [
+    {
+     "t": "파국적 위험을 관리, 평가 및 완화하기 위하여 문서화된 기술적·조직적 프로토콜",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(11) Frontier developer.— The term “frontier developer” means an entity operating in interstate or foreign commerce that has trained, or initiated the training of, a frontier model using a quantity of computing power that meets the technical specifications set forth in subsection (l).",
+   "ko": "(11) 프론티어 개발자 — \"프론티어 개발자\"(frontier developer)란 주 간 또는 대외 상거래에서 활동하는 단체로서, (l)항에 규정된 기술 명세를 충족하는 양의 컴퓨팅 파워를 사용하여 프론티어 모델을 훈련하였거나 그 훈련을 개시한 단체를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(12) Frontier model.— The term “frontier model” means a foundation model that was trained using a quantity of computing power greater than 10^26 integer or floating-point operations. The quantity of computing power described in this paragraph includes computing for the original training run and for any subsequent fine-tuning, reinforcement learning, or other substantial modification the developer applies to a preceding foundation model.",
+   "ko": "(12) 프론티어 모델 — \"프론티어 모델\"(frontier model)이란 10^26회를 초과하는 정수 연산 또는 부동소수점 연산에 해당하는 양의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델을 말한다. 이 호에서 규정하는 컴퓨팅 파워의 양에는 최초 훈련 실행에 사용된 연산과, 개발자가 선행 파운데이션 모델에 적용하는 후속 미세조정, 강화학습 또는 그 밖의 상당한 수정에 사용된 연산이 포함된다.",
+   "marks": [
+    {
+     "t": "10^26회를 초과하는 정수 연산 또는 부동소수점 연산에 해당하는 양의 컴퓨팅 파워를 사용하여 훈련된 파운데이션 모델",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(13) Imminent catastrophic risk.— The term “imminent catastrophic risk” means a present or impending catastrophic risk.",
+   "ko": "(13) 임박한 파국적 위험 — \"임박한 파국적 위험\"(imminent catastrophic risk)이란 현존하거나 임박한 파국적 위험을 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(14) IVO.— The term “IVO” means an independent verification organization operating in interstate or foreign commerce that is licensed under subsection (c) of section 5 and the regulations prescribed under subsection (c) of section 3.",
+   "ko": "(14) IVO — \"IVO\"란 주 간 또는 대외 상거래에서 활동하는 독립 검증 기관(independent verification organization)으로서, 제5조 (c)항 및 제3조 (c)항에 따라 제정된 규정에 따라 인가를 받은 기관을 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(15) Large frontier developer.— The term “large frontier developer” means a frontier developer that, together with its affiliates, collectively, during the preceding 36-month period, determined as of the first day of each calendar month, both—",
+   "ko": "(15) 대규모 프론티어 개발자 — \"대규모 프론티어 개발자\"(large frontier developer)란 그 계열사와 합산하여, 매 역월(曆月)의 첫날을 기준으로 산정한 직전 36개월 동안 다음 요건을 모두 충족한 프론티어 개발자를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) had gross revenues in excess of $50,000,000; and",
+   "ko": "(A) 총수입이 50,000,000달러를 초과하였을 것."
+  },
+  {
+   "type": "p",
+   "en": "(B) incurred not less than $1,000,000,000 in AI-related development expenditures.",
+   "ko": "(B) AI 관련 개발 지출이 1,000,000,000달러 이상 발생하였을 것."
+  },
+  {
+   "type": "p",
+   "en": "(16) Material modification.— The term “material modification” means with respect to a frontier AI framework, a significant change to such framework, including a significant change in the assessment, mitigation, or management of catastrophic risk carried out pursuant to such framework.",
+   "ko": "(16) 중요한 수정 — \"중요한 수정\"(material modification)이란 프론티어 AI 프레임워크와 관련하여 해당 프레임워크에 가해지는 유의미한 변경을 말하며, 해당 프레임워크에 따라 수행되는 파국적 위험의 평가, 완화 또는 관리에서의 유의미한 변경을 포함한다.",
+   "marks": [
+    {
+     "t": "파국적 위험의 평가, 완화 또는 관리에서의 유의미한 변경",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(17) Model weight.— The term “model weight” means a numerical parameter that satisfies the following requirements:",
+   "ko": "(17) 모델 가중치 — \"모델 가중치\"(model weight)란 다음 요건을 충족하는 수치 파라미터를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) Is in a frontier model.",
+   "ko": "(A) 프론티어 모델 내에 있을 것."
+  },
+  {
+   "type": "p",
+   "en": "(B) Is adjusted through training.",
+   "ko": "(B) 훈련을 통하여 조정될 것."
+  },
+  {
+   "type": "p",
+   "en": "(C) Facilitates the determination of how input data for such model is transformed into an output of such model.",
+   "ko": "(C) 해당 모델의 입력 데이터가 해당 모델의 출력으로 어떻게 변환되는지를 결정하는 데 기여할 것."
+  },
+  {
+   "type": "p",
+   "en": "(18) Property.— The term “property” includes—",
+   "ko": "(18) 재산 — \"재산\"(property)이란 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) tangible or intangible property; and",
+   "ko": "(A) 유형 또는 무형의 재산을 포함하며,"
+  },
+  {
+   "type": "p",
+   "en": "(B) does not include the loss of value of equity.",
+   "ko": "(B) 지분 가치의 손실은 포함하지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(19) Secretary.— The term “Secretary” means the Secretary of Commerce.",
+   "ko": "(19) 장관 — \"장관\"(Secretary)이란 상무부 장관(Secretary of Commerce)을 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(20) Substantial modification.— The term “substantial modification” means with respect to a frontier model, a significant change in how such model is deployed, such as enabling a new fine-tuning capability for, releasing a model weight of, or adding a new feature to such model, that necessitates for such model an assessment of catastrophic risk.",
+   "ko": "(20) 상당한 수정 — \"상당한 수정\"(substantial modification)이란 프론티어 모델과 관련하여 해당 모델의 배포 방식에 가해지는 유의미한 변경으로서, 해당 모델에 대한 파국적 위험 평가(assessment)를 필요로 하는 것을 말한다. 해당 모델에 새로운 미세조정 역량을 부여하는 것, 해당 모델의 모델 가중치를 공개하는 것, 해당 모델에 새로운 기능을 추가하는 것 등이 이에 해당한다.",
+   "marks": [
+    {
+     "t": "해당 모델에 대한 파국적 위험 평가(assessment)를 필요로 하는 것",
+     "k": "safety"
+    },
+    {
+     "t": "해당 모델의 모델 가중치를 공개하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(21) Under secretary.— The term “Under Secretary” means the Under Secretary of Commerce for AI Security, who shall be appointed by the Secretary.",
+   "ko": "(21) 차관 — \"차관\"(Under Secretary)이란 AI 안보 담당 상무부 차관(Under Secretary of Commerce for AI Security)을 말하며, 차관은 장관이 임명하여야 한다.",
+   "marks": [
+    {
+     "t": "AI 안보 담당 상무부 차관(Under Secretary of Commerce for AI Security)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(22) Very large frontier developer.— The term “very large frontier developer” means a frontier developer that, together with its affiliates, collectively, during the preceding 36-month period, determined as of the first day of each calendar month, both—",
+   "ko": "(22) 초대규모 프론티어 개발자 — \"초대규모 프론티어 개발자\"(very large frontier developer)란 그 계열사와 합산하여, 매 역월(曆月)의 첫날을 기준으로 산정한 직전 36개월 동안 다음 요건을 모두 충족한 프론티어 개발자를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) had gross revenues in excess of $5,000,000,000; and",
+   "ko": "(A) 총수입이 5,000,000,000달러를 초과하였을 것."
+  },
+  {
+   "type": "p",
+   "en": "(B) incurred not less than $10,000,000,000 in AI-related development expenditures.",
+   "ko": "(B) AI 관련 개발 지출이 10,000,000,000달러 이상 발생하였을 것."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 3. Rulemaking",
+   "ko": "제3조 규칙 제정",
+   "id": "s58"
+  },
+  {
+   "type": "p",
+   "en": "(a) Procedure.— Each regulation prescribed under this Act shall be prescribed in accordance with section 553 of title 5, United States Code.",
+   "ko": "(a) 절차 — 이 법에 따라 제정되는 각 규정은 미국법전(United States Code) 제5편 제553조에 따라 제정되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(b) Framework requirements.—",
+   "ko": "(b) 프레임워크 요건 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Deadline.— Not later than 180 days after the date of enactment of this Act, the Under Secretary shall issue, and thereafter update as appropriate, regulations establishing minimum requirements for frontier AI frameworks.",
+   "ko": "(1) 기한 — 차관은 이 법의 제정일부터 180일 이내에 프론티어 AI 프레임워크에 대한 최소 요건을 정하는 규정을 공포하여야 하며, 그 후 적절하게 이를 갱신하여야 한다.",
+   "marks": [
+    {
+     "t": "차관은 이 법의 제정일부터 180일 이내에 프론티어 AI 프레임워크에 대한 최소 요건을 정하는 규정을 공포하여야 하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Contents.— Regulations issued under this subsection shall, at a minimum, address each of the requirements of section 4(a).",
+   "ko": "(2) 내용 — 이 항에 따라 공포되는 규정은 최소한 제4조 (a)항의 각 요건을 다루어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Periodic review.— The Under Secretary shall review the regulations issued under this subsection not less frequently than once every year, and shall update such regulations as the Under Secretary determines to be necessary or appropriate.",
+   "ko": "(3) 정기 검토 — 차관은 이 항에 따라 공포된 규정을 최소 연 1회 이상 검토하여야 하며, 필요하거나 적절하다고 판단하는 바에 따라 해당 규정을 갱신하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(c) IVO licensing and oversight.— Not later than 180 days after the date of enactment of this Act, the Under Secretary shall prescribe regulations necessary to carry out the licensing and oversight of IVOs under section 5, which shall include the following:",
+   "ko": "(c) IVO 인가 및 감독 — 차관은 이 법의 제정일부터 180일 이내에 제5조에 따른 IVO의 인가 및 감독을 시행하는 데 필요한 규정을 제정하여야 하며, 해당 규정에는 다음 사항이 포함되어야 한다.",
+   "marks": [
+    {
+     "t": "차관은 이 법의 제정일부터 180일 이내에 제5조에 따른 IVO의 인가 및 감독을 시행하는 데 필요한 규정을 제정하여야 하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) Conflict-of-interest and funding-transparency requirements, including reporting requirements regarding the IVOs’ funding sources and revenue generation and self-audit requirements regarding the IVOs’ personnel and leadership to ensure adequate independence from the artificial intelligence industry.",
+   "ko": "(1) 이해충돌 및 자금 투명성 요건. 여기에는 인공지능 업계로부터 충분한 독립성을 확보하도록 보장하기 위한 IVO의 자금 출처 및 수익 창출에 관한 보고 요건과 IVO의 인력 및 지도부에 관한 자체 감사 요건이 포함된다.",
+   "marks": [
+    {
+     "t": "인공지능 업계로부터 충분한 독립성을 확보하도록 보장하기 위한 IVO의 자금 출처 및 수익 창출에 관한 보고 요건",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Procedures and requirements for entities to apply for licensure as an IVO, including the following:",
+   "ko": "(2) 단체가 IVO로서 인가를 신청하기 위한 절차 및 요건. 여기에는 다음 사항이 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "(A) Procedures and requirements for the applicant to submit a plan to the Under Secretary detailing—",
+   "ko": "(A) 신청인이 다음 사항을 상세히 기술한 계획을 차관에게 제출하기 위한 절차 및 요건"
+  },
+  {
+   "type": "p",
+   "en": "(i) the benchmarks, technologies, metrics, and methodologies the applicant proposes using to assess the adequacy of the frontier developer’s frontier AI framework, governance policies and practices, risk-monitoring, and mitigation of detected risks, to ensure acceptable levels of catastrophic risk mitigation;",
+   "ko": "(i) 수용 가능한 수준의 파국적 위험 완화를 보장하기 위하여, 프론티어 개발자의 프론티어 AI 프레임워크, 거버넌스 정책 및 실행 방안, 위험 모니터링 및 탐지된 위험의 완화가 적정한지를 평가하는 데 신청인이 사용하고자 하는 벤치마크, 기술, 지표 및 방법론",
+   "marks": [
+    {
+     "t": "수용 가능한 수준의 파국적 위험 완화를 보장하기 위하여",
+     "k": "safety"
+    },
+    {
+     "t": "위험 모니터링 및 탐지된 위험의 완화가 적정한지를 평가하는 데 신청인이 사용하고자 하는 벤치마크, 기술, 지표 및 방법론",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(ii) the applicant’s proposed procedure for prescribing and assessing implementation of corrective action to remedy any identified deficiency in achieving acceptable levels of catastrophic risk mitigation;",
+   "ko": "(ii) 수용 가능한 수준의 파국적 위험 완화를 달성하는 데 있어 확인된 결함을 시정하기 위한 시정 조치를 지시하고 그 이행을 평가하기 위하여 신청인이 제안하는 절차",
+   "marks": [
+    {
+     "t": "수용 가능한 수준의 파국적 위험 완화를 달성하는 데 있어 확인된 결함을 시정하기 위한 시정 조치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(iii) the applicant’s proposed methodology for ensuring that the benchmarks, technologies, metrics, and methodologies proposed in clause (i) keep pace with technological and organizational changes in frontier model development;",
+   "ko": "(iii) (i)세목에서 제안된 벤치마크, 기술, 지표 및 방법론이 프론티어 모델 개발에서의 기술적·조직적 변화에 발맞추도록 보장하기 위하여 신청인이 제안하는 방법론",
+   "marks": [
+    {
+     "t": "프론티어 모델 개발에서의 기술적·조직적 변화에 발맞추도록 보장",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(iv) any subcontractors that the applicant proposes to use to carry out its responsibilities under this Act; and",
+   "ko": "(iv) 이 법에 따른 책임을 수행하기 위하여 신청인이 사용하고자 하는 하도급업체"
+  },
+  {
+   "type": "p",
+   "en": "(v) the technical qualifications of the personnel the applicant proposes to use to conduct assessments and of any subcontractor the applicant plans to engage under subsection (d) of section 5 to perform any portion of an assessment.",
+   "ko": "(v) 평가를 수행하기 위하여 신청인이 사용하고자 하는 인력 및 평가의 일부를 수행하기 위하여 신청인이 제5조 (d)항에 따라 계약하고자 하는 하도급업체의 기술적 자격"
+  },
+  {
+   "type": "p",
+   "en": "(B) Findings required for the Under Secretary to license an applicant as an IVO, including—",
+   "ko": "(B) 차관이 신청인을 IVO로 인가하기 위하여 요구되는 판단 사항. 여기에는 다음이 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "(i) that the applicant has demonstrated its independence from the artificial intelligence industry; and",
+   "ko": "(i) 신청인이 인공지능 업계로부터의 독립성을 입증하였다는 것",
+   "marks": [
+    {
+     "t": "신청인이 인공지능 업계로부터의 독립성을 입증하였다는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(ii) that every element of the applicant’s plan is adequate to ensure that frontier models assessed by the IVO achieve acceptable levels of catastrophic risk mitigation.",
+   "ko": "(ii) 신청인 계획의 모든 요소가 해당 IVO가 평가한 프론티어 모델이 수용 가능한 수준의 파국적 위험 완화를 달성하도록 보장하는 데 적정하다는 것",
+   "marks": [
+    {
+     "t": "해당 IVO가 평가한 프론티어 모델이 수용 가능한 수준의 파국적 위험 완화를 달성하도록 보장하는 데 적정하다는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) Findings that require the Under Secretary to revoke an IVO’s license, including—",
+   "ko": "(C) 차관이 IVO의 인가를 취소하여야 하는 판단 사항. 여기에는 다음이 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "(i) that the IVO’s plan is materially misleading or inaccurate;",
+   "ko": "(i) IVO의 계획이 중대하게 오해를 불러일으키거나 부정확하다는 것"
+  },
+  {
+   "type": "p",
+   "en": "(ii) that the IVO fails to adhere to its plan in a manner that materially impairs its ability to fulfill its responsibilities;",
+   "ko": "(ii) IVO가 자신의 책임을 이행하는 능력을 중대하게 저해하는 방식으로 계획을 준수하지 아니한다는 것"
+  },
+  {
+   "type": "p",
+   "en": "(iii) that a material change compromises the IVO’s independence from the artificial intelligence industry;",
+   "ko": "(iii) 중대한 변경으로 인하여 IVO의 인공지능 업계로부터의 독립성이 훼손된다는 것",
+   "marks": [
+    {
+     "t": "IVO의 인공지능 업계로부터의 독립성이 훼손된다는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(iv) that models verified by the IVO fail to achieve or have failed to achieve acceptable levels of catastrophic risk mitigation, unless the IVO demonstrates that—",
+   "ko": "(iv) IVO가 검증한 모델이 수용 가능한 수준의 파국적 위험 완화를 달성하지 못하거나 달성하지 못하였다는 것. 다만, IVO가 다음 사항을 입증하는 경우에는 그러하지 아니하다.",
+   "marks": [
+    {
+     "t": "IVO가 검증한 모델이 수용 가능한 수준의 파국적 위험 완화를 달성하지 못하거나 달성하지 못하였다는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(I) the IVO identified the relevant failure, deficiency, or material weakness in an assessment report submitted under subsection (f) of section 5 or a supplemental report submitted under subsection (i) of such section, and recommended corrective actions adequate to achieve acceptable levels of catastrophic risk mitigation; and",
+   "ko": "(I) IVO가 제5조 (f)항에 따라 제출된 평가 보고서 또는 같은 조 (i)항에 따라 제출된 보충 보고서에서 관련 실패, 결함 또는 중대한 취약점을 확인하고, 수용 가능한 수준의 파국적 위험 완화를 달성하기에 적정한 시정 조치를 권고하였다는 것",
+   "marks": [
+    {
+     "t": "관련 실패, 결함 또는 중대한 취약점을 확인하고, 수용 가능한 수준의 파국적 위험 완화를 달성하기에 적정한 시정 조치를 권고하였다는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(II) such failure is attributable to the very large frontier developer’s failure to implement such corrective actions, and not to any deficiency in the IVO’s assessment, methods, or performance of its obligations under section 5;",
+   "ko": "(II) 해당 실패가 초대규모 프론티어 개발자가 해당 시정 조치를 이행하지 아니한 데 기인하며, IVO의 평가, 방법 또는 제5조에 따른 의무 이행에서의 결함에 기인하지 아니한다는 것",
+   "marks": [
+    {
+     "t": "초대규모 프론티어 개발자가 해당 시정 조치를 이행하지 아니한 데 기인하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(v) that evolution of technology renders the IVO’s methods obsolete for verifying acceptable mitigation of catastrophic risk; and",
+   "ko": "(v) 기술의 발전으로 IVO의 방법이 파국적 위험의 수용 가능한 완화를 검증하는 데 더 이상 유효하지 않게 되었다는 것",
+   "marks": [
+    {
+     "t": "기술의 발전으로 IVO의 방법이 파국적 위험의 수용 가능한 완화를 검증하는 데 더 이상 유효하지 않게 되었다는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(vi) that the IVO has failed to comply with its obligations under section 5.",
+   "ko": "(vi) IVO가 제5조에 따른 의무를 준수하지 아니하였다는 것"
+  },
+  {
+   "type": "p",
+   "en": "(D) Procedures for the formation of expert panels with respect to one or more specific catastrophic risks to advise the Under Secretary on the issuance and revocation of IVO licenses.",
+   "ko": "(D) IVO 인가의 부여 및 취소에 관하여 차관에게 자문하기 위하여 하나 이상의 특정 파국적 위험에 관한 전문가 패널을 구성하는 절차",
+   "marks": [
+    {
+     "t": "하나 이상의 특정 파국적 위험에 관한 전문가 패널을 구성하는 절차",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) Minimum requirements for assessments, taking into account relevant approaches, best practices, frameworks, and methods.",
+   "ko": "(3) 관련 접근 방식, 모범 사례, 프레임워크 및 방법을 고려한 평가의 최소 요건"
+  },
+  {
+   "type": "p",
+   "en": "(4) Provisions regarding circumstances mandating corrective action or loss of license.",
+   "ko": "(4) 시정 조치 또는 인가 상실을 의무화하는 상황에 관한 규정"
+  },
+  {
+   "type": "p",
+   "en": "(5) Rules regarding the submission and processing of assessment reports, including a secure method for submission of assessment reports under subsection (f), subsection (g), and subsection (i) of section 5 and other sensitive information, and a process for securely processing sensitive information and protecting trade secrets.",
+   "ko": "(5) 평가 보고서의 제출 및 처리에 관한 규칙. 여기에는 제5조 (f)항, (g)항 및 (i)항에 따른 평가 보고서와 그 밖의 민감한 정보를 제출하기 위한 안전한 방법, 그리고 민감한 정보를 안전하게 처리하고 영업비밀을 보호하기 위한 절차가 포함된다.",
+   "marks": [
+    {
+     "t": "민감한 정보를 안전하게 처리하고 영업비밀을 보호하기 위한 절차",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(6) Any other rules reasonably necessary to the administration of the IVO oversight and licensing regime described in section 5.",
+   "ko": "(6) 제5조에 규정된 IVO 감독 및 인가 제도의 운영에 합리적으로 필요한 그 밖의 규칙"
+  },
+  {
+   "type": "p",
+   "en": "(d) Modification criteria.— Not later than 180 days after the date of enactment of this Act, the Under Secretary shall prescribe regulations establishing criteria for determining whether a modification to a frontier model constitutes a substantial modification within the meaning of subsection (t) of section 2, and whether a modification to a frontier AI framework constitutes a material modification within the meaning of subsection (p) of section 2.",
+   "ko": "(d) 수정 기준 — 차관은 이 법의 제정일부터 180일 이내에 프론티어 모델에 대한 수정이 제2조 (t)항의 의미에 따른 상당한 수정에 해당하는지, 그리고 프론티어 AI 프레임워크에 대한 수정이 제2조 (p)항의 의미에 따른 중요한 수정에 해당하는지를 판단하기 위한 기준을 정하는 규정을 제정하여야 한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델에 대한 수정이 제2조 (t)항의 의미에 따른 상당한 수정에 해당하는지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(e) Procedures for reports, redactions, and State opt-In.— The Under Secretary may prescribe regulations establishing—",
+   "ko": "(e) 보고서, 민감정보 가림 처리 및 주 옵트인(opt-in) 절차 — 차관은 다음 사항을 정하는 규정을 제정할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(1) the approaches, formats, and procedures applicable to publications, reports, and submissions required under sections 4 and 5;",
+   "ko": "(1) 제4조 및 제5조에 따라 요구되는 공표, 보고서 및 제출물에 적용되는 접근 방식, 형식 및 절차"
+  },
+  {
+   "type": "p",
+   "en": "(2) procedures applicable to redactions made under subsection (f) of section 4 and subsection (m) of section 5, including standards for justifications required under subsection (f)(2) of section 4 and subsection (m)(2) of section 5; and",
+   "ko": "(2) 제4조 (f)항 및 제5조 (m)항에 따라 이루어지는 민감정보 가림 처리에 적용되는 절차. 여기에는 제4조 (f)항 (2)호 및 제5조 (m)항 (2)호에 따라 요구되는 정당화 사유에 관한 기준이 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "(3) the form, manner, and procedures applicable to the opt-in by State Attorneys General under subsection (i) of section 4 and subsection (k) of section 5, including the secure transmission to opted-in State Attorneys General of the reports and referrals covered by such opt-ins.",
+   "ko": "(3) 제4조 (i)항 및 제5조 (k)항에 따른 주 법무장관(State Attorney General)의 옵트인에 적용되는 형식, 방식 및 절차. 여기에는 해당 옵트인의 대상이 되는 보고서 및 회부 사항을 옵트인한 주 법무장관에게 안전하게 전송하는 것이 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "(f) Updates to coverage thresholds.—",
+   "ko": "(f) 커버리지 기준치의 갱신 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Authority.— The Under Secretary may by regulation increase—",
+   "ko": "(1) 권한 — 차관은 규정으로 다음을 상향할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(A) the threshold quantity of computing power specified in subsection (l) of section 2; or",
+   "ko": "(A) 제2조 (l)항에 규정된 컴퓨팅 파워의 기준량"
+  },
+  {
+   "type": "p",
+   "en": "(B) the threshold amounts of gross revenues and AI-related development expenditures specified in subsections (o) and (v) of section 2.",
+   "ko": "(B) 제2조 (o)항 및 (v)항에 규정된 총수입 및 AI 관련 개발 지출의 기준 금액"
+  },
+  {
+   "type": "p",
+   "en": "(2) Criteria.— The Under Secretary shall set each threshold at the level the Under Secretary determines is best calculated to ensure that the terms defined in subsections (k), (l), (o), and (v) of section 2 encompass the artificial intelligence models and developers whose activities present catastrophic risk, and do not encompass those whose activities do not, taking into account advances in algorithmic and hardware efficiency, changes in the cost of developing and training foundation models, inflation, and the anticipated effect of the modification on the entities subject to sections 5 and 6.",
+   "ko": "(2) 기준 — 차관은 각 기준치를, 제2조 (k)항, (l)항, (o)항 및 (v)항에 정의된 용어가 그 활동이 파국적 위험을 초래하는 인공지능 모델 및 개발자를 포괄하고 그 활동이 파국적 위험을 초래하지 아니하는 인공지능 모델 및 개발자는 포괄하지 아니하도록 보장하는 데 가장 적합하다고 차관이 판단하는 수준으로 설정하여야 한다. 이 경우 차관은 알고리즘 및 하드웨어 효율성의 발전, 파운데이션 모델의 개발 및 학습 비용의 변화, 인플레이션, 그리고 해당 변경이 제5조 및 제6조의 적용을 받는 주체에 미칠 것으로 예상되는 영향을 고려하여야 한다.",
+   "marks": [
+    {
+     "t": "그 활동이 파국적 위험을 초래하는 인공지능 모델 및 개발자를 포괄하고 그 활동이 파국적 위험을 초래하지 아니하는 인공지능 모델 및 개발자는 포괄하지 아니하도록 보장",
+     "k": "safety"
+    },
+    {
+     "t": "알고리즘 및 하드웨어 효율성의 발전, 파운데이션 모델의 개발 및 학습 비용의 변화",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) Periodic review.— Not less frequently than once every 2 years, the Under Secretary shall review the thresholds described in paragraph (1), determine whether an increase is warranted, and publish the determination and its basis on a website of the Department of Commerce.",
+   "ko": "(3) 정기 검토 — 차관은 최소 2년에 1회 이상 (1)호에 규정된 기준치를 검토하고, 상향이 정당한지를 판단하며, 그 판단 및 근거를 상무부(Department of Commerce) 웹사이트에 공표하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(4) Prospective application.— A regulation prescribed under this subsection shall take effect not earlier than 180 days after publication in final form and shall apply only with respect to obligations arising on or after its effective date.",
+   "ko": "(4) 장래적 적용 — 이 항에 따라 제정된 규정은 최종 형태로 공표된 날부터 180일이 경과하기 전에는 효력을 발생하지 아니하며, 그 시행일 이후에 발생하는 의무에 대하여만 적용된다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 4. Transparency and reporting",
+   "ko": "제4조 투명성 및 보고",
+   "id": "s102"
+  },
+  {
+   "type": "p",
+   "en": "(a) Frontier AI framework.— Not later than one year after the date of enactment of this Act, or 90 days after a developer first qualifies as a large frontier developer, whichever is later, a large frontier developer shall write, implement, comply with, and clearly and conspicuously publish on a publicly available website of such developer a frontier AI framework that satisfies the following requirements:",
+   "ko": "(a) 프론티어 AI 프레임워크 — 대규모 프론티어 개발자는 이 법의 제정일부터 1년 이내 또는 개발자가 처음으로 대규모 프론티어 개발자에 해당하게 된 날부터 90일 이내 중 나중에 도래하는 기한까지, 다음 요건을 충족하는 프론티어 AI 프레임워크를 작성·시행·준수하고, 해당 개발자의 공개 웹사이트에 명확하고 눈에 띄게 공표하여야 한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 프레임워크를 작성·시행·준수하고, 해당 개발자의 공개 웹사이트에 명확하고 눈에 띄게 공표하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) Applies to each frontier model of such developer.",
+   "ko": "(1) 해당 개발자의 각 프론티어 모델에 적용될 것"
+  },
+  {
+   "type": "p",
+   "en": "(2) Includes information relating to how such developer carries out the following:",
+   "ko": "(2) 해당 개발자가 다음 사항을 수행하는 방법에 관한 정보를 포함할 것"
+  },
+  {
+   "type": "p",
+   "en": "(A) Incorporating into such framework widely-accepted national, international, and industry approaches, best practices, frameworks, and methods for risk mitigation.",
+   "ko": "(A) 널리 인정되는 국가적, 국제적 및 업계의 위험 완화 접근 방식, 모범 사례, 프레임워크 및 방법을 해당 프레임워크에 반영하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(B) Identifying risk thresholds utilized by such developer to assess whether each such model has a capability that could pose a catastrophic risk.",
+   "ko": "(B) 각 모델이 파국적 위험을 초래할 수 있는 역량을 보유하는지를 평가하기 위하여 해당 개발자가 사용하는 위험 임계값을 식별하는 것",
+   "marks": [
+    {
+     "t": "각 모델이 파국적 위험을 초래할 수 있는 역량을 보유하는지를 평가하기 위하여 해당 개발자가 사용하는 위험 임계값을 식별하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) Assessing whether, based upon such thresholds, each model has a capability that could pose a catastrophic risk.",
+   "ko": "(C) 해당 임계값에 근거하여 각 모델이 파국적 위험을 초래할 수 있는 역량을 보유하는지를 평가하는 것",
+   "marks": [
+    {
+     "t": "각 모델이 파국적 위험을 초래할 수 있는 역량을 보유하는지를 평가하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(D) Reviewing the results of such assessment and such mitigation to determine—",
+   "ko": "(D) 해당 평가(assessment) 및 해당 완화의 결과를 검토하여 다음 사항을 결정하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(i) whether to deploy such model; and",
+   "ko": "(i) 해당 모델을 배포할지 여부"
+  },
+  {
+   "type": "p",
+   "en": "(ii) whether to internally utilize such model.",
+   "ko": "(ii) 해당 모델을 내부적으로 활용할지 여부",
+   "marks": [
+    {
+     "t": "해당 모델을 내부적으로 활용할지 여부",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(E) Utilizing a third party to assess the risk that such risk thresholds will be exceeded and the effectiveness of such mitigation.",
+   "ko": "(E) 해당 위험 임계값이 초과될 위험 및 해당 완화의 효과성을 평가하기 위하여 제3자를 활용하는 것",
+   "marks": [
+    {
+     "t": "해당 위험 임계값이 초과될 위험 및 해당 완화의 효과성을 평가하기 위하여 제3자를 활용하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(F) Reviewing and updating such framework, including the criteria in such framework that prompt such updating and the process through which such developer determines whether such model includes a substantial modification, such that a disclosure is required pursuant to subsection (d).",
+   "ko": "(F) 해당 프레임워크를 검토하고 갱신하는 것. 여기에는 그러한 갱신을 촉발하는 해당 프레임워크상의 기준, 그리고 (d)항에 따른 공개가 요구될 만큼 해당 모델에 상당한 수정이 포함되는지를 해당 개발자가 판단하는 절차가 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "(G) Cybersecurity to secure nonpublic model weights from unauthorized modification or transfer.",
+   "ko": "(G) 비공개 모델 가중치를 무단 수정 또는 이전으로부터 보호하기 위한 사이버 보안",
+   "marks": [
+    {
+     "t": "비공개 모델 가중치를 무단 수정 또는 이전으로부터 보호하기 위한 사이버 보안",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(H) Identifying and responding to a critical safety incident related to such developer.",
+   "ko": "(H) 해당 개발자와 관련된 치명적 안전 사고를 식별하고 이에 대응하는 것",
+   "marks": [
+    {
+     "t": "치명적 안전 사고를 식별하고 이에 대응하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(I) Implementing internal governance practices to ensure implementation of such framework.",
+   "ko": "(I) 해당 프레임워크의 이행을 보장하기 위한 내부 거버넌스 실행 방안을 시행하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(b) Updates.—",
+   "ko": "(b) 갱신 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— Not less frequently than annually after a large frontier developer publishes a frontier AI framework pursuant to subsection (a), such developer shall carry out the following:",
+   "ko": "(1) 일반 규정 — 대규모 프론티어 개발자는 (a)항에 따라 프론티어 AI 프레임워크를 공표한 후 최소 연 1회 이상 다음 사항을 수행하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) Review and, if such developer determines appropriate, update such framework.",
+   "ko": "(A) 해당 프레임워크를 검토하고, 해당 개발자가 적절하다고 판단하는 경우 이를 갱신하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(B) If such framework is so updated, publish on a publicly available website of such developer such framework, as so updated.",
+   "ko": "(B) 해당 프레임워크가 그와 같이 갱신된 경우, 갱신된 프레임워크를 해당 개발자의 공개 웹사이트에 공표하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(2) Material modification.— If a large frontier developer makes a material modification to the frontier AI framework of such developer published pursuant to subsection (a), not later than 30 days after the date of such modification, such developer shall publish on a publicly available website a justification for such modification.",
+   "ko": "(2) 중요한 수정 — 대규모 프론티어 개발자가 (a)항에 따라 공표된 자신의 프론티어 AI 프레임워크에 중요한 수정을 하는 경우, 해당 개발자는 그 수정일부터 30일 이내에 해당 수정의 정당화 사유를 공개 웹사이트에 공표하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(c) Compliance audit.— Not later than one year after the date of enactment of this Act, or 90 days after a developer first qualifies as a large frontier developer, whichever is later, and annually thereafter, a large frontier developer shall retain a third party to perform an independent audit of compliance with the frontier AI framework of such developer published pursuant to subsection (a). The third party shall conduct the audit consistent with generally accepted auditing approaches, best practices, frameworks, and methods and shall possess demonstrated competence to perform the audit, including experience employing or contracting with individuals who possess technical expertise in the safety of frontier models. A large frontier developer shall not retain a third party if either the developer or the third party has a financial interest in the other. A large frontier developer may compensate a third party for its services but shall not condition any payment, or the amount of any payment, on the results of the third party’s audit.",
+   "ko": "(c) 규정 준수 감사 — 대규모 프론티어 개발자는 이 법의 제정일부터 1년 이내 또는 개발자가 처음으로 대규모 프론티어 개발자에 해당하게 된 날부터 90일 이내 중 나중에 도래하는 기한까지, 그리고 그 이후 매년, (a)항에 따라 공표된 해당 개발자의 프론티어 AI 프레임워크의 준수 여부에 관한 독립적 감사를 수행하도록 제3자를 선임하여야 한다. 제3자는 일반적으로 인정되는 감사 접근 방식, 모범 사례, 프레임워크 및 방법에 부합하게 감사를 수행하여야 하며, 프론티어 모델의 안전에 관한 기술적 전문성을 보유한 개인을 고용하거나 그러한 개인과 계약한 경험을 포함하여 감사를 수행할 수 있는 입증된 역량을 보유하여야 한다. 대규모 프론티어 개발자는 해당 개발자 또는 제3자 중 어느 한쪽이 다른 쪽에 대하여 재정적 이해관계를 가지는 경우 그 제3자를 선임하여서는 아니 된다. 대규모 프론티어 개발자는 제3자에게 그 용역에 대한 보수를 지급할 수 있으나, 어떠한 지급 또는 지급액도 제3자의 감사 결과를 조건으로 하여서는 아니 된다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 프레임워크의 준수 여부에 관한 독립적 감사를 수행하도록 제3자를 선임하여야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "어떠한 지급 또는 지급액도 제3자의 감사 결과를 조건으로 하여서는 아니 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(1) Access.— The third party shall be granted timely access to all materials, records, personnel, systems, and all other information reasonably necessary to comply with its obligations under this subsection, including all unredacted versions of materials published pursuant to this Act. To protect the developer’s trade secrets and confidential business information, cybersecurity, national security of the United States, or public safety, a large frontier developer may impose security protocols on the third party, including restrictions on note-taking, copying, retaining, or removing materials, requirements for on-premises review, and confidentiality requirements.",
+   "ko": "(1) 접근 — 제3자에게는 이 항에 따른 의무를 준수하는 데 합리적으로 필요한 모든 자료, 기록, 인력, 시스템 및 그 밖의 모든 정보에 대한 적시의 접근이 허용되어야 한다. 여기에는 이 법에 따라 공표된 자료의 민감정보 가림 처리되지 아니한 모든 판본이 포함된다. 대규모 프론티어 개발자는 해당 개발자의 영업비밀 및 기밀 영업정보, 사이버 보안, 미국의 국가안보 또는 공공 안전을 보호하기 위하여 제3자에게 보안 프로토콜을 부과할 수 있다. 여기에는 자료의 메모 작성, 복사, 보관 또는 반출에 대한 제한, 온프레미스 검토 요건 및 비밀유지 요건이 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "(2) Report contents.— The third party shall produce a report that includes all of the following:",
+   "ko": "(2) 보고서 내용 — 제3자는 다음 사항을 모두 포함하는 보고서를 작성하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) A description of whether the large frontier developer has substantially complied with the frontier AI framework of such developer.",
+   "ko": "(A) 대규모 프론티어 개발자가 자신의 프론티어 AI 프레임워크를 실질적으로 준수하였는지에 관한 기술"
+  },
+  {
+   "type": "p",
+   "en": "(B) If applicable, a description of material deviations from such framework, an explanation of any deviation and its rationale, and any recommendations for how the developer can improve its policies and processes for ensuring compliance with such framework.",
+   "ko": "(B) 해당하는 경우, 해당 프레임워크로부터의 중대한 이탈에 관한 기술, 각 이탈 및 그 근거에 관한 설명, 그리고 해당 프레임워크의 준수를 보장하기 위한 정책 및 절차를 개발자가 개선할 수 있는 방안에 관한 권고",
+   "marks": [
+    {
+     "t": "해당 프레임워크로부터의 중대한 이탈에 관한 기술",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) A detailed assessment of the large frontier developer’s internal controls, including its designation and empowerment of senior personnel responsible for implementation of such framework by the developer, its employees, and its contractors.",
+   "ko": "(C) 대규모 프론티어 개발자의 내부 통제에 관한 상세한 평가. 여기에는 해당 개발자, 그 직원 및 그 계약자에 의한 해당 프레임워크의 이행을 책임지는 고위 인력의 지정 및 그에 대한 권한 부여가 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "(D) A list of the personnel involved in the audit.",
+   "ko": "(D) 감사에 참여한 인력의 명단"
+  },
+  {
+   "type": "p",
+   "en": "(E) The third party’s procedures for managing conflicts of interest and any conflicts of interest of personnel involved in the audit.",
+   "ko": "(E) 이해충돌 관리에 관한 제3자의 절차 및 감사에 참여한 인력의 이해충돌"
+  },
+  {
+   "type": "p",
+   "en": "(F) The methodology of the audit and the nature of the information reviewed to conduct the audit.",
+   "ko": "(F) 감사의 방법론 및 감사를 수행하기 위하여 검토한 정보의 성격"
+  },
+  {
+   "type": "p",
+   "en": "(G) The signature of the lead auditor certifying the results of the audit.",
+   "ko": "(G) 감사 결과를 인증하는 수석 감사인의 서명"
+  },
+  {
+   "type": "p",
+   "en": "(3) Retention.— A large frontier developer shall retain an unredacted copy of the report required under paragraph (2) for as long as a frontier model of such developer is deployed, plus 5 years.",
+   "ko": "(3) 보관 — 대규모 프론티어 개발자는 (2)호에 따라 요구되는 보고서의 민감정보 가림 처리되지 아니한 사본을 해당 개발자의 프론티어 모델이 배포되는 기간에 5년을 더한 기간 동안 보관하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(4) Publication and transmittal.— Not later than 30 days after receiving the audit report, a large frontier developer shall—",
+   "ko": "(4) 공표 및 송부 — 대규모 프론티어 개발자는 감사 보고서를 수령한 날부터 30일 이내에 다음 사항을 이행하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) conspicuously publish on a publicly available website of such developer a high-level summary of the audit findings and a copy of the report with appropriate redactions; and",
+   "ko": "(A) 감사 결과의 개략적 요약 및 적절한 민감정보 가림 처리를 거친 보고서 사본을 해당 개발자의 공개 웹사이트에 눈에 띄게 공표하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(B) transmit a copy of the redacted report to the Under Secretary, the Attorney General, and opted-in State Attorneys General.",
+   "ko": "(B) 민감정보 가림 처리된 보고서 사본을 차관, 법무장관 및 옵트인한 주 법무장관에게 송부하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(5) Access by under secretary and attorney general.— A large frontier developer shall grant the Under Secretary and the Attorney General access to the third party’s report, redacted consistent with subsection (f) of section 4, upon request.",
+   "ko": "(5) 차관 및 법무장관의 접근 — 대규모 프론티어 개발자는 요청이 있는 경우 차관 및 법무장관에게 제4조 (f)항에 부합하게 민감정보 가림 처리된 제3자의 보고서에 대한 접근을 허용하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(d) Transparency report.—",
+   "ko": "(d) 투명성 보고서 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— Before, or concurrently with, deploying a frontier model that is new or includes a substantial modification, the frontier developer of such model shall publish on a publicly available website of such developer a report on such model that includes information relating to the following:",
+   "ko": "(1) 일반 원칙 — 새로운 프론티어 모델 또는 실질적 변경을 포함하는 프론티어 모델을 배포하기 전에 또는 배포와 동시에, 해당 모델의 프론티어 개발자는 다음 사항에 관한 정보를 포함하는 해당 모델에 관한 보고서를 해당 개발자의 공개 웹사이트에 공표하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) A mechanism through which an individual may communicate with such developer.",
+   "ko": "(A) 개인이 해당 개발자와 소통할 수 있는 수단"
+  },
+  {
+   "type": "p",
+   "en": "(B) The release date of such model or substantial modification.",
+   "ko": "(B) 해당 모델 또는 실질적 변경의 출시일"
+  },
+  {
+   "type": "p",
+   "en": "(C) Each language supported by such model, if any.",
+   "ko": "(C) 해당 모델이 지원하는 각 언어(있는 경우)"
+  },
+  {
+   "type": "p",
+   "en": "(D) Each output modality of such model.",
+   "ko": "(D) 해당 모델의 각 출력 양식"
+  },
+  {
+   "type": "p",
+   "en": "(E) The intended utilization of such model.",
+   "ko": "(E) 해당 모델의 의도된 활용"
+  },
+  {
+   "type": "p",
+   "en": "(F) Generally applicable restrictions or conditions, if any, with respect to such model.",
+   "ko": "(F) 해당 모델에 관하여 일반적으로 적용되는 제한 또는 조건(있는 경우)"
+  },
+  {
+   "type": "p",
+   "en": "(G) Any substantial modification to such model.",
+   "ko": "(G) 해당 모델에 대한 모든 실질적 변경"
+  },
+  {
+   "type": "p",
+   "en": "(H) Each assessment of catastrophic risk with respect to such model or substantial modification, conducted pursuant to the frontier AI framework at issue.",
+   "ko": "(H) 해당 프론티어 AI 프레임워크에 따라 수행된, 해당 모델 또는 실질적 변경에 관한 각 파국적 위험 평가",
+   "marks": [
+    {
+     "t": "해당 모델 또는 실질적 변경에 관한 각 파국적 위험 평가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(I) The results of each such assessment.",
+   "ko": "(I) 각 평가의 결과"
+  },
+  {
+   "type": "p",
+   "en": "(J) The extent to which a third party was utilized in the assessment of such model.",
+   "ko": "(J) 해당 모델의 평가에 제3자가 활용된 정도",
+   "marks": [
+    {
+     "t": "해당 모델의 평가에 제3자가 활용된 정도",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(K) Any other step taken pursuant to such framework with respect to such model.",
+   "ko": "(K) 해당 모델에 관하여 해당 프레임워크에 따라 취한 그 밖의 모든 조치"
+  },
+  {
+   "type": "p",
+   "en": "(2) Machine-readable format.— The summaries described in this subsection shall be provided in a machine-readable format to facilitate verification of model claims.",
+   "ko": "(2) 기계 판독 가능 형식 — 이 항에 기술된 요약은 모델에 관한 주장의 검증을 용이하게 하기 위하여 기계 판독 가능한 형식으로 제공되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Confidential deployment.— A frontier developer may defer publication of the report required under this subsection with respect to a deployment made subject to confidentiality obligations for reasons of security or national security, until such model is first deployed other than subject to such obligations, if such developer transmits such report to the Under Secretary before or concurrently with the confidential deployment.",
+   "ko": "(3) 기밀 배포 — 프론티어 개발자는 보안 또는 국가안보상의 이유로 기밀유지 의무가 부과된 배포에 관하여, 해당 기밀 배포 전에 또는 그와 동시에 이 항에 따라 요구되는 보고서를 차관에게 송부하는 경우에는, 해당 모델이 그러한 의무가 부과되지 아니한 상태로 최초로 배포될 때까지 해당 보고서의 공표를 연기할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(e) False or misleading statements.—",
+   "ko": "(e) 허위 또는 오해를 유발하는 진술 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— Except as provided in paragraph (2), a frontier developer may not in a report under subsection (d) knowingly make an inaccurate statement about, or convey a false impression regarding, any subject on which subsection (d) requires such report to include information.",
+   "ko": "(1) 일반 원칙 — (2)호에 규정된 경우를 제외하고, 프론티어 개발자는 (d)항에 따른 보고서에서, (d)항이 해당 보고서에 정보를 포함하도록 요구하는 사항에 관하여 고의로 부정확한 진술을 하거나 허위의 인상을 전달하여서는 아니 된다.",
+   "marks": [
+    {
+     "t": "고의로 부정확한 진술을 하거나 허위의 인상을 전달하여서는 아니 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Exception.— Paragraph (1) does not apply to a statement a frontier developer made in good faith and that was reasonable under the circumstances.",
+   "ko": "(2) 예외 — (1)호는 프론티어 개발자가 선의로 행하였고 당시의 상황에서 합리적이었던 진술에는 적용되지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(f) Redactions.—",
+   "ko": "(f) 민감정보 가림 처리 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— Before publishing a report or other information pursuant to this section, a frontier developer may make a redaction in such publication to carry out any of the following:",
+   "ko": "(1) 일반 원칙 — 프론티어 개발자는 이 조에 따라 보고서 또는 그 밖의 정보를 공표하기 전에 다음 중 어느 하나를 위하여 해당 공표물에 민감정보 가림 처리를 할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(A) Protect a trade secret, the risk-prevention mechanisms, or the cybersecurity, of such developer.",
+   "ko": "(A) 해당 개발자의 영업비밀, 위험 예방 메커니즘 또는 사이버 보안의 보호"
+  },
+  {
+   "type": "p",
+   "en": "(B) Protect public safety or the national security of the United States.",
+   "ko": "(B) 공공 안전 또는 미국의 국가안보의 보호"
+  },
+  {
+   "type": "p",
+   "en": "(C) Comply with Federal or State law.",
+   "ko": "(C) 연방법 또는 주법의 준수"
+  },
+  {
+   "type": "p",
+   "en": "(2) Justification.— If a frontier developer makes a redaction pursuant to paragraph (1), such developer shall carry out the following:",
+   "ko": "(2) 정당화 사유 — 프론티어 개발자가 (1)호에 따라 민감정보 가림 처리를 하는 경우, 해당 개발자는 다음 사항을 이행하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) Include in the publication in which such redaction is made information relating to the character of such redaction and a justification for such redaction.",
+   "ko": "(A) 민감정보 가림 처리가 이루어진 공표물에 해당 가림 처리의 성격에 관한 정보 및 그 정당화 사유를 포함할 것"
+  },
+  {
+   "type": "p",
+   "en": "(B) Retain for not less than five years from the date of such publication the information so redacted.",
+   "ko": "(B) 가림 처리된 정보를 해당 공표일부터 5년 이상 보관할 것"
+  },
+  {
+   "type": "p",
+   "en": "(C) Transmit to the Under Secretary an unredacted copy of the publication in which such redaction is made.",
+   "ko": "(C) 민감정보 가림 처리가 이루어진 공표물의 가림 처리되지 아니한 사본을 차관에게 송부할 것"
+  },
+  {
+   "type": "p",
+   "en": "(g) Reporting mechanisms.—",
+   "ko": "(g) 보고 메커니즘 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Critical safety incidents.— Not later than 180 days after the date of enactment of this Act, the Under Secretary shall establish a mechanism for a frontier developer or member of the public to confidentially carry out the following:",
+   "ko": "(1) 치명적 안전 사고 — 차관은 이 법의 제정일부터 180일 이내에 프론티어 개발자 또는 일반 공중이 기밀로 다음 사항을 수행할 수 있는 메커니즘을 마련하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) Submit to the Under Secretary a report on a critical safety incident that includes the following:",
+   "ko": "(A) 다음 사항을 포함하는 치명적 안전 사고에 관한 보고서를 차관에게 제출하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(i) A specification of the date of such incident.",
+   "ko": "(i) 해당 사고 일자의 명세"
+  },
+  {
+   "type": "p",
+   "en": "(ii) Information relating to such incident, including—",
+   "ko": "(ii) 다음 사항을 포함하는 해당 사고에 관한 정보"
+  },
+  {
+   "type": "p",
+   "en": "(I) the reason why such incident is a critical safety incident; and",
+   "ko": "(I) 해당 사고가 치명적 안전 사고에 해당하는 이유"
+  },
+  {
+   "type": "p",
+   "en": "(II) whether such incident is associated with the internal utilization of a frontier model.",
+   "ko": "(II) 해당 사고가 프론티어 모델의 내부 활용과 관련되는지 여부"
+  },
+  {
+   "type": "p",
+   "en": "(iii) Any additional information required by the Under Secretary by regulation.",
+   "ko": "(iii) 차관이 규정으로 요구하는 추가 정보"
+  },
+  {
+   "type": "p",
+   "en": "(B) Amend such report, as necessary.",
+   "ko": "(B) 필요에 따라 해당 보고서를 수정하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(2) Catastrophic risk.—",
+   "ko": "(2) 파국적 위험 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) In general.— Not later than 180 days after the date of enactment of this Act, the Under Secretary shall establish a mechanism for a large frontier developer to confidentially submit to the Under Secretary a report on catastrophic risk arising from a frontier model of such developer, including internal use and internally deployed models.",
+   "ko": "(A) 일반 원칙 — 차관은 이 법의 제정일부터 180일 이내에 대규모 프론티어 개발자가 내부 사용 및 내부 배포 모델을 포함하여 해당 개발자의 프론티어 모델로부터 발생하는 파국적 위험에 관한 보고서를 차관에게 기밀로 제출할 수 있는 메커니즘을 마련하여야 한다.",
+   "marks": [
+    {
+     "t": "내부 사용 및 내부 배포 모델을 포함하여 해당 개발자의 프론티어 모델로부터 발생하는 파국적 위험에 관한 보고서",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) Periodic transmittal.— Not less frequently than every 3 months, or pursuant to another reasonable schedule specified by a large frontier developer in writing and agreed to by the Under Secretary, such developer shall transmit to the Under Secretary, through the mechanism established under subparagraph (g)(2)(A), a summary of an assessment of catastrophic risks arising from internal use of its frontier models.",
+   "ko": "(B) 정기 송부 — 대규모 프론티어 개발자는 3개월마다 1회 이상, 또는 해당 개발자가 서면으로 정하고 차관이 동의한 그 밖의 합리적인 일정에 따라, (g)(2)(A)목에 따라 마련된 메커니즘을 통하여 자신의 프론티어 모델의 내부 사용으로부터 발생하는 파국적 위험에 관한 평가의 요약을 차관에게 송부하여야 한다.",
+   "marks": [
+    {
+     "t": "자신의 프론티어 모델의 내부 사용으로부터 발생하는 파국적 위험에 관한 평가의 요약을 차관에게 송부하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) Protection of reports.— The Under Secretary shall take all necessary precautions to limit access to any reports submitted under this subsection to only personnel with a specific need to know the information and to protect the reports from unauthorized access.",
+   "ko": "(3) 보고서의 보호 — 차관은 이 항에 따라 제출된 모든 보고서에 대한 접근을 해당 정보를 알아야 할 구체적 필요가 있는 인력으로만 제한하고, 승인되지 아니한 접근으로부터 보고서를 보호하기 위하여 필요한 모든 예방 조치를 취하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(4) Review.— The Under Secretary shall review each report submitted under this subsection by a frontier developer and may review any report submitted under this subsection by a member of the public.",
+   "ko": "(4) 검토 — 차관은 프론티어 개발자가 이 항에 따라 제출한 각 보고서를 검토하여야 하며, 일반 공중이 이 항에 따라 제출한 보고서를 검토할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(h) Discovery of a critical safety incident.—",
+   "ko": "(h) 치명적 안전 사고의 발견 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— Subject to subsection (g) and except as provided in paragraph (2), not later than 72 hours after a frontier developer learns facts sufficient to establish a reasonable belief that a critical safety incident has occurred with respect to a frontier model of such developer, such developer shall submit through the mechanism established under subsection (g)(1) a report on such incident.",
+   "ko": "(1) 일반 원칙 — (g)항에 따르고 (2)호에 규정된 경우를 제외하고, 프론티어 개발자는 자신의 프론티어 모델에 관하여 치명적 안전 사고가 발생하였다는 합리적 믿음을 형성하기에 충분한 사실을 알게 된 때부터 72시간 이내에 (g)(1)에 따라 마련된 메커니즘을 통하여 해당 사고에 관한 보고서를 제출하여야 한다.",
+   "marks": [
+    {
+     "t": "72시간 이내에 (g)(1)에 따라 마련된 메커니즘을 통하여 해당 사고에 관한 보고서를 제출하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Imminent risk.— Not later than 24 hours after a frontier developer discovers a critical safety incident that poses an imminent risk of death or serious physical injury, such developer shall report such incident to a law enforcement agency with jurisdiction over such incident.",
+   "ko": "(2) 임박한 위험 — 프론티어 개발자는 사망 또는 중대한 신체 상해의 임박한 위험을 초래하는 치명적 안전 사고를 발견한 때부터 24시간 이내에 해당 사고에 대한 관할권을 가진 법 집행기관에 해당 사고를 보고하여야 한다.",
+   "marks": [
+    {
+     "t": "사망 또는 중대한 신체 상해의 임박한 위험을 초래하는 치명적 안전 사고를 발견한 때부터 24시간 이내에",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(i) State attorneys general opt-In.— Pursuant to the regulations promulgated by the Under Secretary under section 3, State Attorneys General may opt in to receive reports submitted to the Under Secretary under subsections (g) and (h).",
+   "ko": "(i) 주 법무장관의 옵트인 — 제3조에 따라 차관이 공포한 규정에 따라, 주 법무장관은 (g)항 및 (h)항에 따라 차관에게 제출된 보고서를 수령하기 위하여 옵트인할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(j) Civil penalty.—",
+   "ko": "(j) 민사 제재금 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— A frontier developer that violates this section shall be subject to a civil penalty of not more than $1,000,000 per violation. For purposes of this paragraph, each day during which a violation continues constitutes a separate violation.",
+   "ko": "(1) 일반 원칙 — 이 조를 위반한 프론티어 개발자에게는 위반 1건당 1,000,000달러 이하의 민사 제재금이 부과된다. 이 호를 적용할 때 위반이 계속되는 각 날은 별개의 위반을 구성한다.",
+   "marks": [
+    {
+     "t": "이 조를 위반한 프론티어 개발자에게는 위반 1건당 1,000,000달러 이하의 민사 제재금이 부과된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Action by attorney general.— The Attorney General may bring an action to collect a civil penalty under paragraph (1) and for an injunction ensuring compliance with the provisions of this section.",
+   "ko": "(2) 법무장관에 의한 소송 — 법무장관은 (1)호에 따른 민사 제재금을 징수하기 위하여, 그리고 이 조 규정의 준수를 보장하는 금지명령을 구하기 위하여 소송을 제기할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Action by state attorney general.—",
+   "ko": "(3) 주 법무장관에 의한 소송 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) A State Attorney General who has opted in under subsection (i) may bring an action to collect a civil penalty under paragraph (1) and for an injunction ensuring compliance with the provisions of this section.",
+   "ko": "(A) (i)항에 따라 옵트인한 주 법무장관은 (1)호에 따른 민사 제재금을 징수하기 위하여, 그리고 이 조 규정의 준수를 보장하는 금지명령을 구하기 위하여 소송을 제기할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(B) Before filing an action under subparagraph (A), the State Attorney General shall provide to the Attorney General and the Under Secretary a written notice of that action and a copy of the complaint for that action. This notice requirement shall not apply if the State Attorney General determines that it is not feasible to provide notice before the filing of the action, in which case the State Attorney General shall provide a written notice of the action and a copy of the complaint for the action at the same time the State Attorney General files the action.",
+   "ko": "(B) (A)목에 따른 소송을 제기하기 전에 주 법무장관은 법무장관 및 차관에게 해당 소송에 관한 서면 통지 및 해당 소송의 소장 사본을 제공하여야 한다. 주 법무장관이 소송 제기 전에 통지를 제공하는 것이 실행 가능하지 아니하다고 판단하는 경우에는 이 통지 요건이 적용되지 아니하며, 이 경우 주 법무장관은 소송을 제기하는 때에 동시에 해당 소송에 관한 서면 통지 및 해당 소송의 소장 사본을 제공하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(C) Upon receiving notice under subparagraph (B), the Attorney General shall have the right to intervene in the action that is the subject of the notice, in which case the Attorney General shall have the right to be heard with respect to any matter that arises in that action and to file a petition for appeal.",
+   "ko": "(C) (B)목에 따른 통지를 받은 때에 법무장관은 해당 통지의 대상인 소송에 참가할 권리를 가지며, 이 경우 법무장관은 해당 소송에서 발생하는 모든 사항에 관하여 의견을 진술할 권리와 상소를 제기할 권리를 가진다."
+  },
+  {
+   "type": "p",
+   "en": "(D) In any case in which an action is instituted by the Attorney General under subparagraph (A), no State Attorney General may, during the pendency of that action, institute an action under this subsection against any defendant named in the complaint in that action for any violation asserted in the Attorney General’s action.",
+   "ko": "(D) 법무장관이 (A)목에 따라 소송을 제기한 모든 경우에, 어떠한 주 법무장관도 해당 소송이 계속되는 동안에는 법무장관의 소송에서 주장된 위반을 이유로 해당 소송의 소장에 피고로 기재된 자를 상대로 이 항에 따른 소송을 제기할 수 없다."
+  },
+  {
+   "type": "p",
+   "en": "(E) If, after a State Attorney General institutes an action under this subsection, the Attorney General institutes an action with respect to violations at issue in the State Attorney General’s action, the State Attorney General’s action shall be stayed as to the violations at issue in the Attorney General’s action during the pendency of the Attorney General’s action. If the Attorney General’s action is dismissed with respect to any of the violations at issue in the State Attorney General’s action without a binding resolution on the merits, the stay of the State Attorney General’s action shall be lifted as to those violations.",
+   "ko": "(E) 주 법무장관이 이 항에 따라 소송을 제기한 후 법무장관이 주 법무장관의 소송에서 쟁점이 된 위반에 관하여 소송을 제기하는 경우, 주 법무장관의 소송은 법무장관의 소송이 계속되는 동안 법무장관의 소송에서 쟁점이 된 위반에 관하여 정지된다. 법무장관의 소송이 본안에 관한 구속력 있는 해결 없이 주 법무장관의 소송에서 쟁점이 된 위반 중 어느 하나에 관하여 각하되는 경우, 주 법무장관의 소송의 정지는 해당 위반에 관하여 해제된다."
+  },
+  {
+   "type": "p",
+   "en": "(k) Registration and disclosure.—",
+   "ko": "(k) 등록 및 공시 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— Beginning on the date that is 1 year after the date of enactment of this Act, or 90 days after a developer first qualifies as a large frontier developer, whichever is later, a large frontier developer may not develop, deploy, or operate a frontier model, in whole or in part, without a current disclosure statement filed with the Under Secretary and payment of the fee required under subsection (k)(4).",
+   "ko": "(1) 일반 원칙 — 이 법의 제정일부터 1년이 되는 날 또는 개발자가 최초로 대규모 프론티어 개발자에 해당하게 된 날부터 90일이 되는 날 중 늦은 날부터, 대규모 프론티어 개발자는 차관에게 제출된 유효한 공시 명세서 및 (k)(4)에 따라 요구되는 수수료의 납부 없이는 프론티어 모델의 전부 또는 일부를 개발, 배포 또는 운영할 수 없다.",
+   "marks": [
+    {
+     "t": "차관에게 제출된 유효한 공시 명세서 및 (k)(4)에 따라 요구되는 수수료의 납부 없이는 프론티어 모델의 전부 또는 일부를 개발, 배포 또는 운영할 수 없다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Contents.— A disclosure statement filed under subsection (k)(1) shall be in the form and manner prescribed by the Under Secretary and shall identify—",
+   "ko": "(2) 내용 — (k)(1)에 따라 제출되는 공시 명세서는 차관이 정하는 서식과 방식에 따라야 하며, 다음 각 목을 명시하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) the identity of the large frontier developer and all names under which it conducts business;",
+   "ko": "(A) 대규모 프론티어 개발자의 신원 및 해당 개발자가 영업에 사용하는 모든 명칭"
+  },
+  {
+   "type": "p",
+   "en": "(B) the address of the large frontier developer’s principal place of business and each office it maintains in the United States;",
+   "ko": "(B) 대규모 프론티어 개발자의 주된 영업소 및 해당 개발자가 미국 내에 유지하는 각 사무소의 주소"
+  },
+  {
+   "type": "p",
+   "en": "(C) in the case of a large frontier developer that is privately or closely held, or whose ultimate parent is privately or closely held, all persons or entities that beneficially own a 5 percent or greater interest in such developer at the time of filing, and all persons that formerly beneficially owned a 5 percent or greater interest in such developer or a predecessor of such developer during the preceding 5 years, and, in the case of a large frontier developer that is publicly traded, or whose ultimate parent is publicly traded, all persons or entities that beneficially own a 50 percent or greater interest in such developer at the time of filing; and",
+   "ko": "(C) 비공개 또는 폐쇄적으로 보유되는 대규모 프론티어 개발자, 또는 최종 모회사가 비공개 또는 폐쇄적으로 보유되는 대규모 프론티어 개발자의 경우, 제출 시점에 해당 개발자의 지분 5퍼센트 이상을 실질적으로 소유하는 모든 개인 또는 단체 및 직전 5년 동안 해당 개발자 또는 해당 개발자의 전신의 지분 5퍼센트 이상을 실질적으로 소유하였던 모든 자, 그리고 상장된 대규모 프론티어 개발자 또는 최종 모회사가 상장된 대규모 프론티어 개발자의 경우, 제출 시점에 해당 개발자의 지분 50퍼센트 이상을 실질적으로 소유하는 모든 개인 또는 단체"
+  },
+  {
+   "type": "p",
+   "en": "(D) the name and contact information of a primary, secondary, and tertiary point of contact, the primary of whom is responsible for receiving inquiries under this Act.",
+   "ko": "(D) 1차, 2차 및 3차 연락 담당자의 성명 및 연락처. 이 중 1차 연락 담당자는 이 법에 따른 문의를 접수할 책임을 진다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Renewal.— A large frontier developer shall renew its disclosure statement annually, or not later than the date of any transfer of ownership of a frontier model or material change to the information reported under paragraph (k)(2), whichever occurs earlier.",
+   "ko": "(3) 갱신 — 대규모 프론티어 개발자는 공시 명세서를 매년 갱신하거나, 프론티어 모델의 소유권 이전일 또는 (k)(2)호에 따라 보고된 정보의 중대한 변경일까지 갱신하여야 하며, 이 중 먼저 도래하는 때를 기준으로 한다."
+  },
+  {
+   "type": "p",
+   "en": "(4) Fees.— The Under Secretary shall charge and collect fees from large frontier developers sufficient to offset the expenses of administering this subsection.",
+   "ko": "(4) 수수료 — 차관은 이 항의 시행 비용을 충당하기에 충분한 수수료를 대규모 프론티어 개발자에게 부과하고 징수하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(5) Publication.— The Under Secretary shall maintain and publish a list of large frontier developers that have filed a disclosure statement under this subsection, excluding the contact information described in paragraph (k)(2).",
+   "ko": "(5) 공표 — 차관은 이 항에 따라 공시 명세서를 제출한 대규모 프론티어 개발자의 목록을 유지하고 공표하여야 하며, 이 경우 (k)(2)호에 규정된 연락처 정보는 제외한다."
+  },
+  {
+   "type": "p",
+   "en": "(6) Civil penalty.— A large frontier developer that develops, deploys, or operates a frontier model without a current disclosure statement on file under this subsection, that submits false information in such a statement, or that fails to timely pay a fee required under paragraph (k)(4), shall be subject to a civil penalty of $10,000 for each day of noncompliance, which the Attorney General or a State Attorney General who has opted in under subsection (i) may bring an action to collect.",
+   "ko": "(6) 민사 제재금 — 이 항에 따른 유효한 공시 명세서를 제출하지 아니한 상태에서 프론티어 모델을 개발, 배포 또는 운영하거나, 해당 명세서에 허위 정보를 제출하거나, (k)(4)호에 따라 요구되는 수수료를 기한 내에 납부하지 아니한 대규모 프론티어 개발자에게는 불이행 1일당 10,000달러의 민사 제재금이 부과되며, 법무장관 또는 (i)항에 따라 옵트인한 주 법무장관은 이를 징수하기 위하여 소송을 제기할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(l) Under secretary reports.— Not later than January 1, 2028, and annually thereafter, the Under Secretary shall submit to Congress and the President a report that includes, for the annual period covered by such report, anonymized and aggregated information about the critical safety incidents, if any, that have been reviewed by the Under Secretary pursuant to subsection (g)(4), excluding any information that would compromise a trade secret, risk-prevention mechanisms, or the cybersecurity of a frontier developer, public safety, or the national security of the United States.",
+   "ko": "(l) 차관 보고서 — 차관은 2028년 1월 1일까지, 그리고 그 후 매년, 해당 보고서가 다루는 연간 기간에 관하여 (g)(4)에 따라 차관이 검토한 치명적 안전 사고(있는 경우)에 관한 익명화되고 집계된 정보를 포함하는 보고서를 의회 및 대통령에게 제출하여야 하며, 영업비밀, 위험 예방 메커니즘 또는 프론티어 개발자의 사이버 보안, 공공 안전 또는 미국의 국가안보를 저해할 수 있는 정보는 제외한다.",
+   "marks": [
+    {
+     "t": "치명적 안전 사고(있는 경우)에 관한 익명화되고 집계된 정보를 포함하는 보고서",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 5. Independent verification",
+   "ko": "제5조 독립 검증",
+   "id": "s203"
+  },
+  {
+   "type": "p",
+   "en": "(a) Licensing and oversight of IVOs.— The Under Secretary shall have the power and duty to oversee the licensing of independent verification organizations, in accordance with the regulations prescribed under subsection (c) of section 3.",
+   "ko": "(a) IVO의 인가 및 감독 — 차관은 제3조 (c)항에 따라 제정된 규정에 따라 독립 검증 기관(independent verification organization, IVO)의 인가를 감독할 권한과 의무를 가진다."
+  },
+  {
+   "type": "p",
+   "en": "(b) Assessment requirement.— Not later than one year after the date on which the Under Secretary first licenses an IVO with capacity to accept an engagement under this section, or 90 days after a developer first qualifies as a very large frontier developer, whichever is later, a very large frontier developer shall retain an independent verification organization that has been licensed pursuant to the regulations prescribed under subsection (c) of section 3 to perform ongoing assessment of the adequacy of the very large frontier developer’s frontier AI framework, governance policies and practices, risk-monitoring, and mitigation of detected risks for achieving acceptable levels of catastrophic risk mitigation. All assessment, monitoring, reporting, and corrective action obligations under this section shall apply to catastrophic risks arising from a very large frontier developer’s internal use of frontier models, in addition to catastrophic risks arising from the release of such frontier models for use by third parties.",
+   "ko": "(b) 평가(assessment) 요건 — 차관이 이 조에 따른 업무 의뢰를 수임할 역량을 갖춘 IVO를 최초로 인가한 날부터 1년 이내 또는 개발자가 최초로 초대규모 프론티어 개발자에 해당하게 된 날부터 90일 이내 중 늦은 날까지, 초대규모 프론티어 개발자는 허용 가능한 수준의 파국적 위험 완화를 달성하기 위한 해당 초대규모 프론티어 개발자의 프론티어 AI 프레임워크, 거버넌스 정책 및 실행 방안, 위험 모니터링, 그리고 탐지된 위험의 완화의 적절성에 대한 지속적인 평가를 수행하도록 제3조 (c)항에 따라 제정된 규정에 따라 인가를 받은 독립 검증 기관을 선임하여야 한다. 이 조에 따른 모든 평가, 모니터링, 보고 및 시정 조치 의무는 프론티어 모델을 제3자가 사용할 수 있도록 출시하는 것으로부터 발생하는 파국적 위험에 더하여, 초대규모 프론티어 개발자의 프론티어 모델 내부 사용으로부터 발생하는 파국적 위험에도 적용된다.",
+   "marks": [
+    {
+     "t": "초대규모 프론티어 개발자는 허용 가능한 수준의 파국적 위험 완화를 달성하기 위한 해당 초대규모 프론티어 개발자의 프론티어 AI 프레임워크, 거버넌스 정책 및 실행 방안, 위험 모니터링, 그리고 탐지된 위험의 완화의 적절성에 대한 지속적인 평가를 수행하도록",
+     "k": "key"
+    },
+    {
+     "t": "초대규모 프론티어 개발자의 프론티어 모델 내부 사용으로부터 발생하는 파국적 위험에도 적용된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) Licensing.— Each person or entity seeking to act as an IVO shall obtain a license from the Under Secretary.",
+   "ko": "(c) 인가 — IVO로 활동하려는 각 개인 또는 단체는 차관으로부터 인가를 받아야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(d) Subcontracting.—",
+   "ko": "(d) 하도급 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— An IVO may subcontract one or more portions of an assessment to an organization with specialized expertise, provided that the retaining IVO remains fully responsible for the assessment, any resulting assessment report, and any other regulatory obligations of the IVO under this Act.",
+   "ko": "(1) 일반 원칙 — IVO는 평가의 하나 이상의 부분을 전문 지식을 갖춘 기관에 하도급할 수 있다. 다만, 하도급을 준 IVO는 해당 평가, 그 결과로 작성되는 평가 보고서 및 이 법에 따른 IVO의 그 밖의 모든 규제상 의무에 대하여 계속하여 전적인 책임을 진다."
+  },
+  {
+   "type": "p",
+   "en": "(2) Pass-through of obligations.— A subcontractor performing any portion of an assessment shall stand in the place of the retaining IVO and shall be subject to, and comply with, every obligation under this section and the regulations prescribed under subsection (c) of section 3 that applies to the IVO with respect to the work the subcontractor performs, including the personnel technical-qualification, conflict-of-interest, and confidentiality requirements.",
+   "ko": "(2) 의무의 전가 — 평가의 일부를 수행하는 하수급인은 하도급을 준 IVO의 지위를 대신하며, 하수급인이 수행하는 업무에 관하여 IVO에 적용되는 이 조 및 제3조 (c)항에 따라 제정된 규정에 따른 모든 의무(인력의 기술적 자격, 이해충돌 및 기밀유지 요건을 포함한다)의 적용을 받고 이를 준수하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Responsibility of retaining ivo.— Notwithstanding any subcontracting under this subsection, the retaining IVO shall remain the responsible party for the assessment and the resulting assessment report, including the certifications required under subsection (f).",
+   "ko": "(3) 하도급을 준 IVO의 책임 — 이 항에 따른 하도급에도 불구하고, 하도급을 준 IVO는 (f)항에 따라 요구되는 인증을 포함하여 해당 평가 및 그 결과로 작성되는 평가 보고서에 대한 책임 당사자로 남는다."
+  },
+  {
+   "type": "p",
+   "en": "(e) Access.—",
+   "ko": "(e) 접근 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— A very large frontier developer shall grant an IVO timely access upon request to unredacted materials, records, personnel, systems, and all other information reasonably necessary for conducting the assessments and ongoing monitoring required by this section.",
+   "ko": "(1) 일반 원칙 — 초대규모 프론티어 개발자는 IVO의 요청이 있는 경우 이 조에 따라 요구되는 평가 및 지속적 모니터링을 수행하는 데 합리적으로 필요한 비편집 자료, 기록, 인력, 시스템 및 그 밖의 모든 정보에 대한 적시의 접근을 IVO에 허용하여야 한다.",
+   "marks": [
+    {
+     "t": "비편집 자료, 기록, 인력, 시스템 및 그 밖의 모든 정보에 대한 적시의 접근을 IVO에 허용하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Security protocols.— A very large frontier developer may impose reasonable security protocols and confidentiality requirements upon IVOs that are narrowly tailored to protect trade secrets and confidential business information.",
+   "ko": "(2) 보안 프로토콜 — 초대규모 프론티어 개발자는 영업비밀 및 기밀 영업정보를 보호하기 위하여 그 범위를 좁게 한정한 합리적인 보안 프로토콜 및 기밀유지 요건을 IVO에 부과할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Limitations described.— Any material limitation on scope, access, or information available to the IVO shall be described in the assessment report.",
+   "ko": "(3) 제한 사항의 기재 — IVO가 이용할 수 있는 범위, 접근 또는 정보에 대한 중대한 제한은 평가 보고서에 기재되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(f) Assessment reports.—",
+   "ko": "(f) 평가 보고서 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Frequency.— A licensed IVO retained under subsection (b) shall determine, in its professional judgment and consistent with any regulations issued under subsection (c) of section 3, the frequency with which it prepares and submits assessment reports under this subsection, based on the nature, severity, and evolution of the catastrophic risks presented by the very large frontier developer’s development, deployment, and internal use of frontier models, provided that the IVO shall prepare and submit an assessment report not less frequently than once every 6 months.",
+   "ko": "(1) 빈도 — (b)항에 따라 선임된 인가 IVO는 초대규모 프론티어 개발자의 프론티어 모델 개발, 배포 및 내부 사용으로 인하여 제기되는 파국적 위험의 성격, 심각성 및 변화를 바탕으로, 전문적 판단에 따라 그리고 제3조 (c)항에 따라 발령된 규정에 부합하게, 이 항에 따른 평가 보고서를 작성하여 제출하는 빈도를 결정하여야 한다. 다만, IVO는 적어도 6개월에 1회 이상 평가 보고서를 작성하여 제출하여야 한다.",
+   "marks": [
+    {
+     "t": "IVO는 적어도 6개월에 1회 이상 평가 보고서를 작성하여 제출하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Contents.— Each assessment report shall be submitted simultaneously to the Under Secretary and the very large frontier developer and shall include all of the following:",
+   "ko": "(2) 내용 — 각 평가 보고서는 차관과 초대규모 프론티어 개발자에게 동시에 제출되어야 하며, 다음 사항을 모두 포함하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) A description of the scope of the assessment, the time period covered, the materials reviewed, and the methods used.",
+   "ko": "(A) 평가의 범위, 대상 기간, 검토한 자료 및 사용한 방법에 대한 설명."
+  },
+  {
+   "type": "p",
+   "en": "(B) A description of any limitations on the IVO’s ability to thoroughly and adequately assess the adequacy of the very large frontier developer’s frontier AI framework.",
+   "ko": "(B) 초대규모 프론티어 개발자의 프론티어 AI 프레임워크의 적절성을 철저하고 충분하게 평가할 수 있는 IVO의 능력에 대한 제한 사항에 관한 설명."
+  },
+  {
+   "type": "p",
+   "en": "(C) A detailed assessment of the adequacy of the very large frontier developer’s frontier AI framework, governance policies and practices, risk-monitoring, and mitigation of detected risks to ensure acceptable levels of catastrophic risk mitigation.",
+   "ko": "(C) 허용 가능한 수준의 파국적 위험 완화를 보장하기 위한 초대규모 프론티어 개발자의 프론티어 AI 프레임워크, 거버넌스 정책 및 실행 방안, 위험 모니터링, 그리고 탐지된 위험의 완화의 적절성에 대한 상세한 평가."
+  },
+  {
+   "type": "p",
+   "en": "(D) Any identified failure, deficiency, or material weakness in achieving acceptable levels of catastrophic risk mitigation.",
+   "ko": "(D) 허용 가능한 수준의 파국적 위험 완화를 달성하는 데 있어 확인된 실패, 결함 또는 중대한 취약점.",
+   "marks": [
+    {
+     "t": "허용 가능한 수준의 파국적 위험 완화를 달성하는 데 있어 확인된 실패, 결함 또는 중대한 취약점",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(E) Any corrective actions recommended to the very large frontier developer’s frontier AI framework, governance policies and practices, risk-monitoring, and mitigation of detected risks, necessary to achieve acceptable levels of catastrophic risk mitigation.",
+   "ko": "(E) 허용 가능한 수준의 파국적 위험 완화를 달성하기 위하여 필요한, 초대규모 프론티어 개발자의 프론티어 AI 프레임워크, 거버넌스 정책 및 실행 방안, 위험 모니터링, 그리고 탐지된 위험의 완화에 대하여 권고되는 시정 조치."
+  },
+  {
+   "type": "p",
+   "en": "(F) The signature of the IVO’s lead assessment partner or equivalent responsible official certifying that—",
+   "ko": "(F) 다음 사항을 인증하는 IVO의 수석 평가 파트너 또는 이에 상응하는 책임자의 서명 —"
+  },
+  {
+   "type": "p",
+   "en": "(i) the report is accurate and does not omit any material information;",
+   "ko": "(i) 보고서가 정확하며 중대한 정보를 누락하지 않았다는 것;"
+  },
+  {
+   "type": "p",
+   "en": "(ii) the IVO was qualified to conduct the assessment;",
+   "ko": "(ii) IVO가 평가를 수행할 자격을 갖추었다는 것;"
+  },
+  {
+   "type": "p",
+   "en": "(iii) the IVO is free from conflicts of interest, as defined by regulations issued under this Act; and",
+   "ko": "(iii) IVO에 이 법에 따라 발령된 규정에서 정의하는 이해충돌이 없다는 것; 그리고"
+  },
+  {
+   "type": "p",
+   "en": "(iv) the assessment complied with regulations adopted pursuant to subsection (c) of section 3.",
+   "ko": "(iv) 평가가 제3조 (c)항에 따라 채택된 규정을 준수하였다는 것."
+  },
+  {
+   "type": "p",
+   "en": "(G) Any other materials required by rules issued pursuant to subsection (c) of section 3.",
+   "ko": "(G) 제3조 (c)항에 따라 발령된 규칙이 요구하는 그 밖의 자료."
+  },
+  {
+   "type": "p",
+   "en": "(g) Post-Assessment report.—",
+   "ko": "(g) 평가 후 보고서 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Not later than fourteen days after the very large frontier developer’s receipt of an assessment report under subsection (f), the very large frontier developer shall submit to the IVO a written description of the actions that it has taken or intends to take to implement the corrective actions recommended in such assessment report.",
+   "ko": "(1) 초대규모 프론티어 개발자는 (f)항에 따른 평가 보고서를 수령한 날부터 14일 이내에, 해당 평가 보고서에서 권고된 시정 조치를 이행하기 위하여 취하였거나 취하려는 조치에 대한 서면 설명을 IVO에 제출하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(2) Not later than seven days after receiving the description under paragraph (1), the IVO shall submit to the very large frontier developer an opinion, signed by the IVO’s lead assessment partner or equivalent responsible official, stating the IVO’s professional judgment regarding whether the actions the very large frontier developer has taken or intends to take in response to the IVO’s recommendations are adequate to ensure acceptable levels of catastrophic risk mitigation.",
+   "ko": "(2) IVO는 (1)에 따른 설명을 수령한 날부터 7일 이내에, IVO의 권고에 대응하여 초대규모 프론티어 개발자가 취하였거나 취하려는 조치가 허용 가능한 수준의 파국적 위험 완화를 보장하기에 적절한지에 관한 IVO의 전문적 판단을 기술하고 IVO의 수석 평가 파트너 또는 이에 상응하는 책임자가 서명한 의견서를 초대규모 프론티어 개발자에게 제출하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Not later than 30 days after the very large frontier developer’s receipt of an assessment report under subsection (f), a very large frontier developer shall submit to the Under Secretary a post-assessment report, which shall include—",
+   "ko": "(3) 초대규모 프론티어 개발자는 (f)항에 따른 평가 보고서를 수령한 날부터 30일 이내에 평가 후 보고서를 차관에게 제출하여야 하며, 이 보고서에는 다음 사항이 포함되어야 한다 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) a copy of the frontier AI framework applicable to the assessed period;",
+   "ko": "(A) 평가 대상 기간에 적용되는 프론티어 AI 프레임워크의 사본;"
+  },
+  {
+   "type": "p",
+   "en": "(B) the name, business address, electronic mail address, and telephone number of the IVO and the lead assessment partner or equivalent responsible official;",
+   "ko": "(B) IVO 및 수석 평가 파트너 또는 이에 상응하는 책임자의 명칭 또는 성명, 사업장 주소, 전자우편 주소 및 전화번호;"
+  },
+  {
+   "type": "p",
+   "en": "(C) a summary of the key findings of the assessment, including—",
+   "ko": "(C) 다음을 포함하는 평가의 주요 결과 요약 —"
+  },
+  {
+   "type": "p",
+   "en": "(i) the IVO’s determination regarding the developer’s conformance with its frontier AI framework;",
+   "ko": "(i) 개발자의 프론티어 AI 프레임워크 준수 여부에 관한 IVO의 판정;"
+  },
+  {
+   "type": "p",
+   "en": "(ii) any significant concerns identified by the IVO regarding the adequacy of the frontier AI framework and the developer’s conformance to its frontier AI framework, governance policies and practices, risk-monitoring, and mitigation of detected risks, to ensure acceptable levels of catastrophic risk mitigation; and",
+   "ko": "(ii) 허용 가능한 수준의 파국적 위험 완화를 보장하기 위한, 프론티어 AI 프레임워크의 적절성 및 개발자의 프론티어 AI 프레임워크, 거버넌스 정책 및 실행 방안, 위험 모니터링, 그리고 탐지된 위험의 완화에 대한 준수에 관하여 IVO가 확인한 중대한 우려 사항; 그리고"
+  },
+  {
+   "type": "p",
+   "en": "(iii) the opinion rendered by the IVO under paragraph (2); and",
+   "ko": "(iii) (2)에 따라 IVO가 제시한 의견; 그리고"
+  },
+  {
+   "type": "p",
+   "en": "(D) such additional information as the Under Secretary may require by regulation.",
+   "ko": "(D) 차관이 규정으로 요구할 수 있는 추가 정보."
+  },
+  {
+   "type": "p",
+   "en": "(h) Ad hoc assessments.— At any time, and without regard to any frequency determined under paragraph (f)(1), the Under Secretary may require a very large frontier developer to obtain an ad hoc assessment, or a licensed IVO to prepare and submit an assessment report, as the Under Secretary determines necessary to—",
+   "ko": "(h) 임시 평가 — 차관은 언제든지, (f)(1)에 따라 결정된 빈도와 관계없이, 다음을 위하여 필요하다고 판단하는 바에 따라 초대규모 프론티어 개발자에게 임시 평가를 받도록 요구하거나 인가 IVO에게 평가 보고서를 작성하여 제출하도록 요구할 수 있다 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) reproduce or validate assessment findings;",
+   "ko": "(1) 평가 결과를 재현하거나 검증하는 것;"
+  },
+  {
+   "type": "p",
+   "en": "(2) evaluate implementation of corrective actions recommended under paragraph (f)(2)(E); or",
+   "ko": "(2) (f)(2)(E)에 따라 권고된 시정 조치의 이행을 평가하는 것; 또는"
+  },
+  {
+   "type": "p",
+   "en": "(3) monitor significant changes in risk, including after a critical safety incident or a substantial modification to a very large frontier developer’s model, system, or operations.",
+   "ko": "(3) 치명적 안전 사고 이후 또는 초대규모 프론티어 개발자의 모델, 시스템 또는 운영에 대한 상당한 변경 이후를 포함하여, 위험의 중대한 변화를 모니터링하는 것.",
+   "marks": [
+    {
+     "t": "치명적 안전 사고 이후 또는 초대규모 프론티어 개발자의 모델, 시스템 또는 운영에 대한 상당한 변경 이후",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(i) Out-of-Cycle assessment and reporting.— In addition to the assessment reports required under subsection (f), a licensed IVO shall prepare and submit simultaneously to the Under Secretary and the very large frontier developer supplemental reports as specified in this subsection.",
+   "ko": "(i) 주기 외 평가 및 보고 — (f)항에 따라 요구되는 평가 보고서에 더하여, 인가 IVO는 이 항에서 정하는 바에 따라 보충 보고서를 작성하여 차관과 초대규모 프론티어 개발자에게 동시에 제출하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(1) Triggering determinations.— An IVO shall submit a supplemental report not later than seven days after the IVO determines, in light of new information, emergent model capabilities, or material changes to a frontier model, that—",
+   "ko": "(1) 보고 개시 판단 — IVO는 새로운 정보, 새롭게 나타난 모델 역량 또는 프론티어 모델의 중대한 변경에 비추어 다음 중 어느 하나에 해당한다고 판단한 날부터 7일 이내에 보충 보고서를 제출하여야 한다 —",
+   "marks": [
+    {
+     "t": "새로운 정보, 새롭게 나타난 모델 역량 또는 프론티어 모델의 중대한 변경에 비추어",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(A) a prior assessment report’s finding that a very large frontier developer is achieving acceptable levels of catastrophic risk mitigation is no longer valid;",
+   "ko": "(A) 초대규모 프론티어 개발자가 허용 가능한 수준의 파국적 위험 완화를 달성하고 있다는 이전 평가 보고서의 결론이 더 이상 유효하지 않은 경우;"
+  },
+  {
+   "type": "p",
+   "en": "(B) corrective actions recommended in a prior assessment report would no longer be adequate to achieve acceptable levels of catastrophic risk mitigation; or",
+   "ko": "(B) 이전 평가 보고서에서 권고된 시정 조치가 허용 가능한 수준의 파국적 위험 완화를 달성하기에 더 이상 적절하지 않게 된 경우; 또는"
+  },
+  {
+   "type": "p",
+   "en": "(C) any representation made by a very large frontier developer in a prior post-assessment report submitted under subsection (g) is no longer accurate or is materially misleading.",
+   "ko": "(C) (g)항에 따라 제출된 이전 평가 후 보고서에서 초대규모 프론티어 개발자가 한 진술이 더 이상 정확하지 않거나 중대하게 오해를 불러일으키는 경우."
+  },
+  {
+   "type": "p",
+   "en": "(2) Contents.— A report submitted under this subsection shall include—",
+   "ko": "(2) 내용 — 이 항에 따라 제출되는 보고서에는 다음 사항이 포함되어야 한다 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) a detailed description of the information and conclusions triggering reporting under paragraph (1);",
+   "ko": "(A) (1)에 따른 보고를 개시하게 한 정보 및 결론에 대한 상세한 설명;"
+  },
+  {
+   "type": "p",
+   "en": "(B) an assessment of whether the issue triggering reporting under paragraph (1) threatens an imminent catastrophic risk; and",
+   "ko": "(B) (1)에 따른 보고를 개시하게 한 문제가 임박한 파국적 위험을 초래할 우려가 있는지에 대한 평가; 그리고",
+   "marks": [
+    {
+     "t": "임박한 파국적 위험을 초래할 우려가 있는지에 대한 평가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) any additional corrective actions or modifications to the developer’s frontier AI framework, governance policies and practices, risk-monitoring, and mitigation of detected risks necessary to restore acceptable levels of catastrophic risk mitigation.",
+   "ko": "(C) 허용 가능한 수준의 파국적 위험 완화를 회복하기 위하여 필요한 추가 시정 조치 또는 개발자의 프론티어 AI 프레임워크, 거버넌스 정책 및 실행 방안, 위험 모니터링, 그리고 탐지된 위험의 완화에 대한 수정 사항."
+  },
+  {
+   "type": "p",
+   "en": "(3) Developer response.— Not later than seven days after the very large frontier developer’s receipt of a supplemental report under this subsection, the very large frontier developer shall submit to the IVO a written description of the actions that it has taken or intends to take to implement the corrective actions recommended in such supplemental report.",
+   "ko": "(3) 개발자의 대응 — 초대규모 프론티어 개발자는 이 항에 따른 보충 보고서를 수령한 날부터 7일 이내에, 해당 보충 보고서에서 권고된 시정 조치를 이행하기 위하여 취하였거나 취하려는 조치에 대한 서면 설명을 IVO에 제출하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(4) Ivo opinion.— Not later than seven days after receiving the description under paragraph (3), the IVO shall submit to the very large frontier developer an opinion, signed by the IVO’s lead assessment partner or equivalent responsible official, stating the IVO’s professional judgment regarding whether the actions the very large frontier developer has taken or intends to take in response to the IVO’s recommendations are adequate to ensure acceptable levels of catastrophic risk mitigation.",
+   "ko": "(4) IVO 의견 — IVO는 (3)에 따른 설명을 수령한 날부터 7일 이내에, 초대규모 프론티어 개발자가 IVO의 권고에 대응하여 취하였거나 취하려는 조치가 허용 가능한 수준의 파국적 위험 완화를 보장하기에 적절한지에 관한 IVO의 전문적 판단을 기재하고 IVO의 수석 평가 파트너 또는 이에 상응하는 책임자가 서명한 의견서를 초대규모 프론티어 개발자에게 제출하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(5) Submission to under secretary.— Not later than twenty-one days after the very large frontier developer’s receipt of a supplemental report under this subsection, the very large frontier developer shall submit to the Under Secretary—",
+   "ko": "(5) 차관에 대한 제출 — 초대규모 프론티어 개발자는 이 항에 따른 보충 보고서를 수령한 날부터 21일 이내에 다음 각 호를 차관에게 제출하여야 한다 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) a response identifying any actions, including revisions to the frontier AI framework, that the developer has taken or intends to take in response; and",
+   "ko": "(A) 개발자가 이에 대응하여 취하였거나 취하려는 조치(프론티어 AI 프레임워크의 개정을 포함한다)를 밝히는 답변서; 그리고"
+  },
+  {
+   "type": "p",
+   "en": "(B) an opinion rendered by the IVO under paragraph (4).",
+   "ko": "(B) (4)에 따라 IVO가 제출한 의견서."
+  },
+  {
+   "type": "p",
+   "en": "(j) Public disclosure of assessment reports.—",
+   "ko": "(j) 평가 보고서의 공개 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— Not later than 30 days after receiving an assessment report under subsection (f), a very large frontier developer shall—",
+   "ko": "(1) 일반 원칙 — 초대규모 프론티어 개발자는 (f)항에 따른 평가 보고서를 수령한 날부터 30일 이내에 다음 각 호의 조치를 하여야 한다 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) conspicuously publish on a publicly available website of such developer a high-level summary of the findings of such report and a copy of such report, redacted consistent with subsection (m); and",
+   "ko": "(A) 해당 보고서의 결과에 관한 개략적 요약과, (m)항에 부합하도록 민감정보 가림 처리를 한 해당 보고서 사본을 해당 개발자의 공개 웹사이트에 눈에 잘 띄게 게시하는 것; 그리고"
+  },
+  {
+   "type": "p",
+   "en": "(B) transmit a copy of the report, as so redacted, to the Under Secretary, the Attorney General, and opted-in State Attorneys General.",
+   "ko": "(B) 위와 같이 민감정보 가림 처리를 한 보고서 사본을 차관, 법무장관 및 참여를 선택한 주 법무장관에게 송부하는 것."
+  },
+  {
+   "type": "p",
+   "en": "(2) Redaction disputes.— If the Under Secretary, the Attorney General, or a State Attorney General who has opted in under subsection (k) determines that a redaction made under this subsection is overbroad, such official may request that the Under Secretary review the redaction. Not later than 30 days after receiving such a request, the Under Secretary shall review the redaction, which review may include an in camera review of the unredacted assessment report, and shall determine whether the redaction is consistent with subsection (m).",
+   "ko": "(2) 민감정보 가림 처리에 관한 분쟁 — 차관, 법무장관 또는 (k)항에 따라 참여를 선택한 주 법무장관이 이 항에 따라 이루어진 민감정보 가림 처리가 과도하게 광범위하다고 판단하는 경우, 해당 공직자는 차관에게 그 민감정보 가림 처리를 검토하도록 요청할 수 있다. 차관은 그러한 요청을 수령한 날부터 30일 이내에 해당 민감정보 가림 처리를 검토하여야 하며(이 검토에는 민감정보 가림 처리를 하지 않은 평가 보고서에 대한 비공개 심리(in camera review)가 포함될 수 있다), 그 민감정보 가림 처리가 (m)항에 부합하는지를 결정하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(k) State attorneys general opt-In.— Pursuant to the regulations promulgated by the Under Secretary under section 3, State Attorneys General may opt in to receive reports pursuant to subsections (f) and (i) and referrals pursuant to subsection (p).",
+   "ko": "(k) 주 법무장관의 참여 선택 — 제3조에 따라 차관이 공포한 규정에 따라, 주 법무장관은 (f)항 및 (i)항에 따른 보고서와 (p)항에 따른 회부를 받는 데 참여하기로 선택할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(l) Recordkeeping.— Each very large frontier developer and IVO shall retain an unredacted copy of each assessment report and materials supporting the report for not less than 5 years after the date of completion of the assessment.",
+   "ko": "(l) 기록 보존 — 각 초대규모 프론티어 개발자와 IVO는 각 평가 보고서의 민감정보 가림 처리를 하지 않은 사본과 해당 보고서를 뒷받침하는 자료를 평가 완료일부터 5년 이상 보존하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(m) Public version redactions.—",
+   "ko": "(m) 공개본의 민감정보 가림 처리 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Permitted redactions.— The public version of an assessment report may redact information, or omit information included in a confidential annex, only to the extent reasonably necessary to protect—",
+   "ko": "(1) 허용되는 민감정보 가림 처리 — 평가 보고서의 공개본은 다음 각 호를 보호하기 위하여 합리적으로 필요한 범위에서만 정보에 민감정보 가림 처리를 하거나, 기밀 부속서에 포함된 정보를 누락할 수 있다 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) trade secrets;",
+   "ko": "(A) 영업비밀;"
+  },
+  {
+   "type": "p",
+   "en": "(B) cybersecurity;",
+   "ko": "(B) 사이버 보안;"
+  },
+  {
+   "type": "p",
+   "en": "(C) a frontier developer’s risk-prevention mechanisms;",
+   "ko": "(C) 프론티어 개발자의 위험 방지 메커니즘;",
+   "marks": [
+    {
+     "t": "프론티어 개발자의 위험 방지 메커니즘",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(D) public safety;",
+   "ko": "(D) 공공 안전;"
+  },
+  {
+   "type": "p",
+   "en": "(E) national security; or",
+   "ko": "(E) 국가안보; 또는"
+  },
+  {
+   "type": "p",
+   "en": "(F) personally identifiable information or other information the disclosure of which would constitute a clearly unwarranted invasion of privacy.",
+   "ko": "(F) 개인 식별 정보 또는 그 공개가 명백히 부당한 프라이버시 침해에 해당하게 되는 그 밖의 정보."
+  },
+  {
+   "type": "p",
+   "en": "(2) Description of redactions.— The public version of the assessment report shall include a description of the character and justification of any redactions or omitted material.",
+   "ko": "(2) 민감정보 가림 처리에 관한 설명 — 평가 보고서의 공개본에는 민감정보 가림 처리를 하거나 누락한 자료의 성격과 그 정당한 사유에 관한 설명이 포함되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(n) Access to unredacted materials.— The developer and IVO shall provide the Under Secretary and the Attorney General access to the unredacted assessment report and supporting materials upon request.",
+   "ko": "(n) 민감정보 가림 처리를 하지 않은 자료에 대한 접근 — 개발자와 IVO는 요청이 있는 경우 차관과 법무장관에게 민감정보 가림 처리를 하지 않은 평가 보고서와 이를 뒷받침하는 자료에 대한 접근을 제공하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(o) Prohibition on misrepresentation.— An IVO shall not knowingly make a material misrepresentation or omission in any report or opinion prepared pursuant to this section.",
+   "ko": "(o) 허위 진술의 금지 — IVO는 이 조에 따라 작성하는 보고서나 의견서에서 고의로 중대한 허위 진술 또는 누락을 하여서는 아니 된다."
+  },
+  {
+   "type": "p",
+   "en": "(p) Enforcement.—",
+   "ko": "(p) 집행 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Referral to attorney general and state attorneys general.—",
+   "ko": "(1) 법무장관 및 주 법무장관에 대한 회부 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) In general.— An IVO may refer any violation of this section to the Attorney General, and all State Attorneys General opting in under subsection (k), for enforcement action under this subsection.",
+   "ko": "(A) 일반 원칙 — IVO는 이 조의 위반 사항을 이 항에 따른 집행 조치를 위하여 법무장관 및 (k)항에 따라 참여를 선택한 모든 주 법무장관에게 회부할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(B) IVO referrals.— If, in the course of performing its responsibilities under this section, an IVO determines that a very large frontier developer’s frontier model fails to achieve acceptable levels of catastrophic risk mitigation in a manner that poses an imminent catastrophic risk, the IVO shall refer the matter to the Secretary, for consideration of an emergency order under section 8, as soon as practicable, and in any event not more than 72 hours, after its determination.",
+   "ko": "(B) IVO의 회부 — IVO가 이 조에 따른 책무를 수행하는 과정에서 초대규모 프론티어 개발자의 프론티어 모델이 임박한 파국적 위험을 초래하는 방식으로 허용 가능한 수준의 파국적 위험 완화를 달성하지 못한다고 판단하는 경우, IVO는 제8조에 따른 긴급명령의 검토를 위하여 해당 사안을 그 판단 후 실행 가능한 한 신속하게, 어떠한 경우에도 72시간 이내에 장관에게 회부하여야 한다.",
+   "marks": [
+    {
+     "t": "임박한 파국적 위험을 초래하는 방식으로 허용 가능한 수준의 파국적 위험 완화를 달성하지 못한다고 판단하는 경우",
+     "k": "safety"
+    },
+    {
+     "t": "IVO는 제8조에 따른 긴급명령의 검토를 위하여 해당 사안을 그 판단 후 실행 가능한 한 신속하게, 어떠한 경우에도 72시간 이내에 장관에게 회부하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Developer violations.—",
+   "ko": "(2) 개발자의 위반 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) In general.— A very large frontier developer that violates subsection (b), (e), (g), (h), (i), (j), or (k), or that makes a material misrepresentation or omission in a post-assessment report submitted under subsection (g), shall be subject to a civil penalty of not more than $1,000,000 per violation. For purposes of this subparagraph, each day during which a violation continues constitutes a separate violation.",
+   "ko": "(A) 일반 원칙 — (b)항, (e)항, (g)항, (h)항, (i)항, (j)항 또는 (k)항을 위반하거나, (g)항에 따라 제출한 평가 후 보고서에서 중대한 허위 진술 또는 누락을 한 초대규모 프론티어 개발자에게는 위반 1건당 1,000,000달러 이하의 민사 제재금을 부과한다. 이 목의 적용에 있어서 위반이 지속되는 각 날은 별개의 위반을 구성한다.",
+   "marks": [
+    {
+     "t": "위반 1건당 1,000,000달러 이하의 민사 제재금을 부과한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) Action by attorney general.— The Attorney General may bring an action to collect a civil penalty under subparagraph (A) and for an injunction ensuring compliance with the provisions of this section.",
+   "ko": "(B) 법무장관의 소송 — 법무장관은 (A)에 따른 민사 제재금을 징수하기 위한 소송과 이 조 규정의 준수를 보장하기 위한 금지명령을 구하는 소송을 제기할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(C) Action by state attorney general.—",
+   "ko": "(C) 주 법무장관의 소송 —"
+  },
+  {
+   "type": "p",
+   "en": "(i) A State Attorney General who has opted in under subsection (k) may bring an action to collect a civil penalty under subparagraph (A) and for an injunction ensuring compliance with the provisions of this section.",
+   "ko": "(i) (k)항에 따라 참여를 선택한 주 법무장관은 (A)에 따른 민사 제재금을 징수하기 위한 소송과 이 조 규정의 준수를 보장하기 위한 금지명령을 구하는 소송을 제기할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(ii) Before filing an action under clause (i), the State Attorney General shall provide to the Attorney General a written notice of that action and a copy of the complaint for that action. This notice requirement shall not apply if the State Attorney General determines that it is not feasible to provide notice before the filing of the action, in which case the State Attorney General shall provide a written notice of the action and a copy of the complaint for the action at the same time the State Attorney General files the action.",
+   "ko": "(ii) 주 법무장관은 (i)에 따른 소송을 제기하기 전에 해당 소송에 관한 서면 통지와 해당 소송의 소장 사본을 법무장관에게 제공하여야 한다. 이 통지 요건은 주 법무장관이 소송 제기 전에 통지하는 것이 실행 불가능하다고 판단하는 경우에는 적용되지 아니하며, 이 경우 주 법무장관은 소송을 제기하는 때에 해당 소송에 관한 서면 통지와 소장 사본을 동시에 제공하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(iii) Upon receiving notice under clause (ii), the Attorney General shall have the right to intervene in the action that is the subject of the notice, in which case the Attorney General shall have the right to be heard with respect to any matter that arises in that action and to file a petition for appeal.",
+   "ko": "(iii) (ii)에 따른 통지를 받은 경우 법무장관은 해당 통지의 대상인 소송에 참가할 권리를 가지며, 이 경우 법무장관은 그 소송에서 발생하는 모든 사항에 관하여 의견을 진술할 권리와 항소를 신청할 권리를 가진다."
+  },
+  {
+   "type": "p",
+   "en": "(iv) In any case in which an action is instituted by the Attorney General under subparagraph (B), no State Attorney General may, during the pendency of that action, institute an action under this subparagraph against any defendant named in the complaint in that action for any violation asserted in the Attorney General’s action.",
+   "ko": "(iv) 법무장관이 (B)에 따라 소송을 제기한 경우, 어떠한 주 법무장관도 그 소송이 계속 중인 동안 해당 소송의 소장에 피고로 기재된 자를 상대로 법무장관의 소송에서 주장된 위반에 관하여 이 목에 따른 소송을 제기할 수 없다."
+  },
+  {
+   "type": "p",
+   "en": "(v) If, after a State Attorney General institutes an action under this subparagraph, the Attorney General institutes an action under subparagraph (B) with respect to violations at issue in the State Attorney General’s action, the State Attorney General’s action shall be stayed as to the violations at issue in the Attorney General’s action during the pendency of the Attorney General’s action. If the Attorney General’s action is dismissed with respect to any of the violations at issue in the State Attorney General’s action without a binding resolution on the merits, the stay of the State Attorney General’s action shall be lifted as to those violations.",
+   "ko": "(v) 주 법무장관이 이 목에 따른 소송을 제기한 후 법무장관이 주 법무장관의 소송에서 다투어지는 위반에 관하여 (B)에 따른 소송을 제기한 경우, 주 법무장관의 소송은 법무장관의 소송이 계속 중인 동안 법무장관의 소송에서 다투어지는 위반에 관하여 정지된다. 법무장관의 소송이 주 법무장관의 소송에서 다투어지는 위반 중 어느 하나에 관하여 본안에 관한 구속력 있는 해결 없이 각하되는 경우, 그 위반에 관하여 주 법무장관의 소송의 정지는 해제된다."
+  },
+  {
+   "type": "p",
+   "en": "(q) Immunity from suit.—",
+   "ko": "(q) 소송으로부터의 면제 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— An IVO shall be immune from suit and liability under Federal and State law with respect to all claims for loss caused by, arising out of, relating to, or resulting from the materialization of a catastrophic risk of a frontier model assessed by the IVO if the IVO was licensed by the Under Secretary under this section at the time of the assessment.",
+   "ko": "(1) 일반 원칙 — IVO가 평가 당시 이 조에 따라 차관으로부터 인가를 받은 경우, IVO는 자신이 평가한 프론티어 모델의 파국적 위험이 현실화됨으로 인하여 야기되거나, 그로부터 발생하거나, 그와 관련되거나, 그로 인하여 초래된 손해에 관한 모든 청구에 대하여 연방법 및 주법에 따른 소송과 책임으로부터 면제된다.",
+   "marks": [
+    {
+     "t": "자신이 평가한 프론티어 모델의 파국적 위험이 현실화됨으로 인하여 야기되거나",
+     "k": "safety"
+    },
+    {
+     "t": "연방법 및 주법에 따른 소송과 책임으로부터 면제된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Exception.— The sole exception to immunity from suit and liability of a licensed IVO under this subsection shall be an exclusive Federal cause of action for death or serious physical injury proximately caused by willful misconduct, as defined by section 247d–6d(c)(1) of title 42, United States Code.",
+   "ko": "(2) 예외 — 이 항에 따른 인가받은 IVO의 소송 및 책임으로부터의 면제에 대한 유일한 예외는 미국법전(United States Code) 제42편 제247d–6d조(c)(1)에 정의된 고의적 위법행위로 인하여 근접적으로 야기된 사망 또는 중대한 신체 상해에 대한 연방의 배타적 소송원인으로 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) An action under this paragraph may be brought for wrongful death or serious physical injury by any person who suffers such injury or by any representative of such a person.",
+   "ko": "(A) 이 호에 따른 소송은 부당사망 또는 중대한 신체 상해에 대하여 그러한 피해를 입은 자 또는 그러한 자의 대리인이 제기할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(B) In an action under this paragraph, the plaintiff shall have the burden of proving by clear and convincing evidence willful misconduct by the IVO and that such willful misconduct caused death or serious physical injury. Notwithstanding any other provision of law, an IVO shall not have engaged in willful misconduct as a matter of law where such IVO acted consistent with its obligations under this section and all applicable regulations, guidelines, or recommendations by the Under Secretary.",
+   "ko": "(B) 이 호에 따른 소송에서 원고는 IVO의 고의적 위법행위 및 그 고의적 위법행위가 사망 또는 중대한 신체 상해를 야기하였다는 사실을 명백하고 설득력 있는 증거로 증명할 책임을 진다. 다른 법률 규정에도 불구하고, IVO가 이 조에 따른 자신의 의무와 차관의 모든 적용 가능한 규정, 지침 또는 권고에 부합하게 행위한 경우에는 법률상 그 IVO는 고의적 위법행위를 한 것으로 보지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(C) An action under this paragraph shall be filed and maintained only in an appropriate district court of the United States. The substantive law for decision in such an action shall be derived from the law, including choice-of-law principles, of the State in which the alleged willful misconduct occurred, unless such law is inconsistent with or preempted by Federal law, including provisions of this section.",
+   "ko": "(C) 이 호에 따른 소송은 적절한 미국 연방지방법원에서만 제기되고 유지되어야 한다. 그러한 소송의 판단을 위한 실체법은 주장된 고의적 위법행위가 발생한 주의 법(준거법 결정 원칙을 포함한다)에서 도출된다. 다만, 그 법이 연방법(이 조의 규정을 포함한다)과 상충하거나 연방법에 의하여 선점되는 경우에는 그러하지 아니하다."
+  },
+  {
+   "type": "p",
+   "en": "(D) In an action under this paragraph, no discovery shall be allowed before the IVO has had a reasonable opportunity to file a motion to dismiss, or, in the event such a motion is filed, before the court has ruled on such motion.",
+   "ko": "(D) 이 호에 따른 소송에서는 IVO가 각하 신청을 제기할 합리적인 기회를 갖기 전에는, 또는 그러한 신청이 제기된 경우 법원이 그 신청에 대하여 결정하기 전에는 증거개시를 허용하지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(r) FOIA exemption.— Assessment reports, summaries, and supporting materials disclosed to the Under Secretary pursuant to this section are exempt from disclosure under section 552 of title 5, United States Code.",
+   "ko": "(r) 정보자유법(FOIA) 적용 면제 — 이 조에 따라 차관에게 공개된 평가 보고서, 요약 및 근거 자료는 미국법전 제5편 제552조에 따른 공개 대상에서 면제된다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 6. Cumulative obligations",
+   "ko": "제6조 누적적 의무",
+   "id": "s297"
+  },
+  {
+   "type": "p",
+   "en": "Except as otherwise expressly provided, a large frontier developer shall comply with each requirement of this Act applicable to a frontier developer, and a very large frontier developer shall comply with each requirement of this Act applicable to a frontier developer and to a large frontier developer.",
+   "ko": "명시적으로 달리 규정한 경우를 제외하고, 대규모 프론티어 개발자는 프론티어 개발자에게 적용되는 이 법의 각 요건을 준수하여야 하며, 초대규모 프론티어 개발자는 프론티어 개발자 및 대규모 프론티어 개발자에게 적용되는 이 법의 각 요건을 준수하여야 한다.",
+   "marks": [
+    {
+     "t": "대규모 프론티어 개발자는 프론티어 개발자에게 적용되는 이 법의 각 요건을 준수하여야 하며",
+     "k": "safety"
+    },
+    {
+     "t": "초대규모 프론티어 개발자는 프론티어 개발자 및 대규모 프론티어 개발자에게 적용되는 이 법의 각 요건을 준수하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 7. Government accountability office report on the market for independent verification organizations",
+   "ko": "제7조 독립 검증 기관 시장에 관한 회계감사원 보고서",
+   "id": "s299"
+  },
+  {
+   "type": "p",
+   "en": "(a) Annual report.— Not later than one year after the date of enactment of this Act, and annually thereafter, the Comptroller General of the United States shall submit to the Committee on Energy and Commerce of the House of Representatives and the Committee on Commerce, Science, and Transportation of the Senate a report on the state of the market for independent verification organizations licensed under section 5.",
+   "ko": "(a) 연례 보고서 — 미국 회계감사원장(Comptroller General of the United States)은 이 법의 제정일부터 1년 이내에, 그리고 그 후 매년, 제5조에 따라 인가받은 독립 검증 기관 시장의 현황에 관한 보고서를 하원 에너지·상무위원회(Committee on Energy and Commerce of the House of Representatives) 및 상원 상무·과학·교통위원회(Committee on Commerce, Science, and Transportation of the Senate)에 제출하여야 한다.",
+   "marks": [
+    {
+     "t": "제5조에 따라 인가받은 독립 검증 기관 시장의 현황에 관한 보고서를",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Contents.— Each report submitted under subsection (a) shall include the following:",
+   "ko": "(b) 내용 — (a)항에 따라 제출되는 각 보고서에는 다음 사항이 포함되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(1) An assessment of the state of the market for independent verification organizations, including the number of licensed IVOs, their capacity to meet demand for assessments, and any barriers to entry or other factors affecting the development of a competitive and robust IVO market.",
+   "ko": "(1) 독립 검증 기관 시장의 현황에 대한 평가(assessment). 여기에는 인가받은 IVO의 수, 평가 수요를 충족할 수 있는 IVO의 역량, 그리고 경쟁적이고 견실한 IVO 시장의 발전에 영향을 미치는 진입장벽 또는 그 밖의 요인이 포함된다.",
+   "marks": [
+    {
+     "t": "평가 수요를 충족할 수 있는 IVO의 역량",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) An evaluation of the degree to which independent verification organizations are independent from the artificial intelligence industry, including any factors that threaten such independence.",
+   "ko": "(2) 독립 검증 기관이 인공지능 산업으로부터 독립되어 있는 정도에 대한 평가(evaluation). 여기에는 그러한 독립성을 위협하는 모든 요인이 포함된다.",
+   "marks": [
+    {
+     "t": "독립 검증 기관이 인공지능 산업으로부터 독립되어 있는 정도에 대한 평가(evaluation)",
+     "k": "safety"
+    },
+    {
+     "t": "그러한 독립성을 위협하는 모든 요인",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) Recommendations for legislative or administrative policy changes that would help ensure the independence of independent verification organizations from the artificial intelligence industry.",
+   "ko": "(3) 독립 검증 기관의 인공지능 산업으로부터의 독립성을 보장하는 데 도움이 될 입법적 또는 행정적 정책 변경에 관한 권고",
+   "marks": [
+    {
+     "t": "독립 검증 기관의 인공지능 산업으로부터의 독립성을 보장하는 데 도움이 될 입법적 또는 행정적 정책 변경에 관한 권고",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 8. Emergency orders addressing imminent catastrophic risk",
+   "ko": "제8조 임박한 파국적 위험에 대응하기 위한 긴급명령",
+   "id": "s305"
+  },
+  {
+   "type": "p",
+   "en": "(a) Authority.—",
+   "ko": "(a) 권한 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— The Secretary may issue an emergency order suspending or restricting a frontier developer’s development, deployment, or internal use of a frontier model upon finding that such development, deployment, or internal use of that model presents an imminent catastrophic risk.",
+   "ko": "(1) 일반 원칙 — 장관은 프론티어 개발자의 프론티어 모델 개발, 배포 또는 내부 사용이 임박한 파국적 위험을 초래한다고 판단하는 경우, 해당 모델의 개발, 배포 또는 내부 사용을 정지하거나 제한하는 긴급명령을 발할 수 있다.",
+   "marks": [
+    {
+     "t": "장관은 프론티어 개발자의 프론티어 모델 개발, 배포 또는 내부 사용이 임박한 파국적 위험을 초래한다고 판단하는 경우, 해당 모델의 개발, 배포 또는 내부 사용을 정지하거나 제한하는 긴급명령을 발할 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Emergency order.— In this section, the term “emergency order” means a provisional order issued under subsection (e) or a final order issued under subsection (f).",
+   "ko": "(2) 긴급명령 — 이 조에서 “긴급명령”이란 (e)항에 따라 발하는 잠정명령 또는 (f)항에 따라 발하는 최종명령을 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Scope.— A suspension or restriction under this section—",
+   "ko": "(3) 범위 — 이 조에 따른 정지 또는 제한은 다음과 같다."
+  },
+  {
+   "type": "p",
+   "en": "(A) may apply to the whole or any part of the development, deployment, or internal use of the frontier model, including development, deployment, or internal use by or with respect to particular persons or categories of persons, for particular purposes or uses, or through particular means or channels of access; and",
+   "ko": "(A) 프론티어 모델의 개발, 배포 또는 내부 사용의 전부 또는 일부에 적용될 수 있으며, 여기에는 특정인 또는 특정 범주의 사람에 의한 또는 그에 관한 개발, 배포 또는 내부 사용, 특정 목적 또는 용도를 위한 개발, 배포 또는 내부 사용, 또는 특정 수단이나 접근 경로를 통한 개발, 배포 또는 내부 사용이 포함된다."
+  },
+  {
+   "type": "p",
+   "en": "(B) may be defined by reference to the presence or absence of specified facts or circumstances of such development, deployment, or internal use, including specified safeguards or security measures.",
+   "ko": "(B) 그러한 개발, 배포 또는 내부 사용에 관하여 특정한 사실 또는 상황(특정한 안전장치 또는 보안 조치를 포함한다)의 존재 여부를 기준으로 정의될 수 있다.",
+   "marks": [
+    {
+     "t": "특정한 안전장치 또는 보안 조치를 포함한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Finding.—",
+   "ko": "(b) 판단 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In writing.— A finding under subsection (a) shall be set forth in a written statement that includes the factual basis for the finding and the principal reasons for the Secretary’s determination.",
+   "ko": "(1) 서면 — (a)항에 따른 판단은 그 판단의 사실적 근거와 장관의 결정의 주된 이유를 포함하는 서면 진술서로 작성되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(2) Technical assessment.— If the Secretary has published methods bearing on the finding, the Secretary shall, before the Secretary makes the finding, prepare a technical assessment applying such methods to the frontier developer’s development, deployment, or internal use, and the Secretary shall include such assessment with the written statement under paragraph (1).",
+   "ko": "(2) 기술적 평가 — 장관이 해당 판단과 관련된 방법을 공표한 경우, 장관은 판단을 하기 전에 그러한 방법을 프론티어 개발자의 개발, 배포 또는 내부 사용에 적용한 기술적 평가를 작성하여야 하며, 그 평가를 (1)에 따른 서면 진술서에 첨부하여야 한다.",
+   "marks": [
+    {
+     "t": "그러한 방법을 프론티어 개발자의 개발, 배포 또는 내부 사용에 적용한 기술적 평가를 작성하여야 하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) Consultation.— In making a finding under subsection (a), a preliminary determination under subsection (e), or a determination with respect to rescission under subsection (g), the Secretary shall consult with the Under Secretary.",
+   "ko": "(3) 협의 — 장관은 (a)항에 따른 판단, (e)항에 따른 예비적 결정 또는 (g)항에 따른 철회에 관한 결정을 할 때 차관과 협의하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(4) Final authority.— The authority to make a finding under subsection (a) and to issue, renew, or rescind an emergency order under this section is vested in the Secretary, and no consultation under paragraph (3) shall be construed to condition the exercise of such authority on the concurrence of the Under Secretary.",
+   "ko": "(4) 최종 권한 — (a)항에 따른 판단을 하고 이 조에 따른 긴급명령을 발하거나, 갱신하거나, 철회할 권한은 장관에게 귀속되며, (3)에 따른 협의는 그러한 권한의 행사를 차관의 동의를 조건으로 하는 것으로 해석되지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(c) Order.—",
+   "ko": "(c) 명령 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Contents.— An emergency order shall—",
+   "ko": "(1) 내용 — 긴급명령은 다음 각 목의 사항을 포함하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) identify the frontier developer subject to the order and the frontier model or models to which the order applies;",
+   "ko": "(A) 명령의 대상인 프론티어 개발자와 명령이 적용되는 프론티어 모델의 특정"
+  },
+  {
+   "type": "p",
+   "en": "(B) describe, with reasonable particularity, the acts, practices, or circumstances in the development, deployment, or internal use of such model or models from which the imminent catastrophic risk arises;",
+   "ko": "(B) 임박한 파국적 위험이 발생하는 원인이 되는, 해당 모델의 개발, 배포 또는 내부 사용에서의 행위, 관행 또는 상황에 대한 합리적으로 구체적인 기술",
+   "marks": [
+    {
+     "t": "임박한 파국적 위험이 발생하는 원인이 되는, 해당 모델의 개발, 배포 또는 내부 사용에서의 행위, 관행 또는 상황",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) state, in the case of a provisional order, the preliminary basis for the order, and in the case of a final order, include the written statement required by subsection (b)(1);",
+   "ko": "(C) 잠정명령의 경우에는 명령의 예비적 근거의 진술, 최종명령의 경우에는 (b)(1)에 따라 요구되는 서면 진술서"
+  },
+  {
+   "type": "p",
+   "en": "(D) describe the suspensions or restrictions imposed;",
+   "ko": "(D) 부과되는 정지 또는 제한에 대한 기술"
+  },
+  {
+   "type": "p",
+   "en": "(E) include a timeline for compliance with the order;",
+   "ko": "(E) 명령 준수를 위한 일정"
+  },
+  {
+   "type": "p",
+   "en": "(F) state the criteria for rescission of the order under subsection (g); and",
+   "ko": "(F) (g)항에 따른 명령 철회의 기준에 대한 진술"
+  },
+  {
+   "type": "p",
+   "en": "(G) if corrective action by the frontier developer could cause such development, deployment, or internal use to no longer present an imminent catastrophic risk, describe such corrective action.",
+   "ko": "(G) 프론티어 개발자의 시정조치로 인하여 그러한 개발, 배포 또는 내부 사용이 더 이상 임박한 파국적 위험을 초래하지 아니하게 될 수 있는 경우, 그러한 시정조치에 대한 기술",
+   "marks": [
+    {
+     "t": "더 이상 임박한 파국적 위험을 초래하지 아니하게 될 수 있는 경우, 그러한 시정조치에 대한 기술",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Rule of construction.— The identification or availability of corrective action described in paragraph (1)(G) shall not be a precondition to the issuance of an emergency order.",
+   "ko": "(2) 해석 규정 — (1)(G)에 기술된 시정조치의 특정 또는 이용 가능성은 긴급명령 발령의 전제조건이 되지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(d) Effectiveness and application.—",
+   "ko": "(d) 효력 및 적용 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Effectiveness.— An emergency order is effective upon service on the frontier developer and, unless set aside, limited, or suspended under subsection (j) or subsection (k), remains effective and enforceable until it lapses under subsection (e)(3) or subsection (f)(2) or is rescinded under subsection (g).",
+   "ko": "(1) 효력 — 긴급명령은 프론티어 개발자에게 송달된 때에 효력이 발생하며, (j)항 또는 (k)항에 따라 취소, 제한 또는 정지되지 아니하는 한 (e)(3) 또는 (f)(2)에 따라 실효되거나 (g)항에 따라 철회될 때까지 효력과 집행력을 유지한다."
+  },
+  {
+   "type": "p",
+   "en": "(2) Persons bound.— An emergency order binds the frontier developer subject to the order, each affiliate of such developer, and the successors and assigns of such developer and its affiliates, and any other person who, with actual notice of the order, acts in concert or participation with such developer, affiliate, successor, or assignee in the development, deployment, or internal use suspended or restricted by the order.",
+   "ko": "(2) 구속되는 자 — 긴급명령은 명령의 대상인 프론티어 개발자, 그 개발자의 각 계열회사, 그 개발자 및 그 계열회사의 승계인 및 양수인, 그리고 명령을 실제로 통지받고도 명령에 의하여 정지되거나 제한된 개발, 배포 또는 내부 사용에서 그러한 개발자, 계열회사, 승계인 또는 양수인과 공동으로 또는 이에 가담하여 행위하는 그 밖의 모든 자를 구속한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Modified and derived models.—",
+   "ko": "(3) 수정 모델 및 파생 모델 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) Modified models.— Unless the order provides otherwise, an emergency order applies to any model produced by modification of the weights or parameters of a frontier model identified in the order under subsection (c)(1), including by fine-tuning, reinforcement learning, quantization, pruning, or merging with another model.",
+   "ko": "(A) 수정 모델 — 명령에서 달리 정하지 아니하는 한, 긴급명령은 (c)(1)에 따라 명령에서 특정된 프론티어 모델의 가중치 또는 파라미터를 수정하여 생성된 모든 모델에 적용되며, 여기에는 미세조정, 강화학습, 양자화, 가지치기(pruning) 또는 다른 모델과의 병합에 의한 수정이 포함된다.",
+   "marks": [
+    {
+     "t": "미세조정, 강화학습, 양자화, 가지치기(pruning) 또는 다른 모델과의 병합에 의한 수정이 포함된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) Derived models.— Unless the order provides otherwise, an emergency order also applies to any model developed after service of the order that is trained, in substantial part, on the outputs, weights, or internal representations of a frontier model identified in the order.",
+   "ko": "(B) 파생 모델 — 명령에서 달리 정하지 아니하는 한, 긴급명령은 명령 송달 후에 개발된 모델로서 명령에서 특정된 프론티어 모델의 출력, 가중치 또는 내부 표현을 상당 부분 학습한 모든 모델에도 적용된다.",
+   "marks": [
+    {
+     "t": "명령에서 특정된 프론티어 모델의 출력, 가중치 또는 내부 표현을 상당 부분 학습한 모든 모델에도 적용된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) Rule of construction.— Nothing in this paragraph shall be construed to limit the authority of the Secretary to identify a model in an emergency order under subsection (c)(1), or by amendment to such order.",
+   "ko": "(C) 해석 규정 — 이 호의 어떠한 규정도 (c)(1)에 따른 긴급명령에서 또는 그 명령의 변경을 통하여 모델을 특정할 수 있는 장관의 권한을 제한하는 것으로 해석되지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(e) Provisional orders.—",
+   "ko": "(e) 잠정명령 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— Notwithstanding subsection (a)(1), the Secretary may issue a provisional order before making the finding required by subsection (a), upon a preliminary determination that the frontier developer’s development, deployment, or internal use of a frontier model presents an imminent catastrophic risk. A provisional order may be issued whether or not a technical assessment under subsection (b)(2) has been prepared.",
+   "ko": "(1) 일반 규정 — (a)(1)에도 불구하고, 장관은 프론티어 개발자의 프론티어 모델 개발, 배포 또는 내부 사용이 임박한 파국적 위험을 초래한다는 예비적 결정에 따라 (a)항에서 요구하는 판단을 하기 전에 잠정명령을 발할 수 있다. 잠정명령은 (b)(2)에 따른 기술적 평가(assessment)의 작성 여부와 관계없이 발할 수 있다.",
+   "marks": [
+    {
+     "t": "임박한 파국적 위험을 초래한다는 예비적 결정에 따라 (a)항에서 요구하는 판단을 하기 전에 잠정명령을 발할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Notice and opportunity to cure.— Before issuing a provisional order, the Secretary shall provide the frontier developer notice and an opportunity to cure and to be heard, unless the Secretary determines that the imminence of the catastrophic risk forecloses such notice and opportunity, in which case the Secretary shall set forth such determination, and the basis therefor, in writing, and serve such determination with the provisional order.",
+   "ko": "(2) 통지 및 시정 기회 — 장관은 잠정명령을 발하기 전에 프론티어 개발자에게 통지하고 시정 및 의견진술의 기회를 제공하여야 한다. 다만, 장관이 파국적 위험의 임박성으로 인하여 그러한 통지 및 기회를 제공할 수 없다고 판단하는 경우에는 그러하지 아니하며, 이 경우 장관은 그 판단과 그 근거를 서면으로 작성하여 잠정명령과 함께 송달하여야 한다.",
+   "marks": [
+    {
+     "t": "파국적 위험의 임박성으로 인하여 그러한 통지 및 기회를 제공할 수 없다고 판단하는 경우에는 그러하지 아니하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) Lapse.—",
+   "ko": "(3) 실효 —"
+  },
+  {
+   "type": "p",
+   "en": "(A) In general.— A provisional order shall lapse upon the earliest of—",
+   "ko": "(A) 일반 규정 — 잠정명령은 다음 중 가장 이른 날에 실효된다."
+  },
+  {
+   "type": "p",
+   "en": "(i) the date that is 45 days after the date of service of the order on the frontier developer;",
+   "ko": "(i) 명령이 프론티어 개발자에게 송달된 날부터 45일이 경과한 날"
+  },
+  {
+   "type": "p",
+   "en": "(ii) if the frontier developer has timely applied for an expedited hearing under subsection (j)(1), the date that is 7 days after the date on which the Secretary renders a final determination on such application; or",
+   "ko": "(ii) 프론티어 개발자가 (j)(1)에 따른 신속 심리를 기한 내에 신청한 경우, 장관이 그 신청에 대하여 최종 결정을 내린 날부터 7일이 경과한 날"
+  },
+  {
+   "type": "p",
+   "en": "(iii) the date on which a final order is issued under subsection (f) suspending or restricting the same or substantially similar development, deployment, or internal use.",
+   "ko": "(iii) 동일하거나 실질적으로 유사한 개발, 배포 또는 내부 사용을 정지하거나 제한하는 최종명령이 (f)항에 따라 발령된 날"
+  },
+  {
+   "type": "p",
+   "en": "(B) Orders issued without notice.— If a provisional order is issued without notice and an opportunity to cure pursuant to a determination under paragraph (2), the Secretary shall, promptly after service of the order, provide the frontier developer an opportunity to cure, and subparagraph (A) shall apply to the order.",
+   "ko": "(B) 통지 없이 발한 명령 — (2)에 따른 판단에 따라 통지 및 시정 기회 없이 잠정명령을 발한 경우, 장관은 명령 송달 후 지체 없이 프론티어 개발자에게 시정 기회를 제공하여야 하며, 그 명령에는 (A)가 적용된다."
+  },
+  {
+   "type": "p",
+   "en": "(4) Successive provisional orders.— The Secretary may not issue a provisional order to a frontier developer suspending or restricting the same or substantially similar development, deployment, or internal use as a prior provisional order, except on the basis of facts and circumstances materially different from those on which the prior provisional order rested.",
+   "ko": "(4) 연속 잠정명령 — 장관은 이전 잠정명령의 기초가 된 사실 및 상황과 중대하게 다른 사실 및 상황에 근거하는 경우를 제외하고는, 이전 잠정명령과 동일하거나 실질적으로 유사한 개발, 배포 또는 내부 사용을 정지하거나 제한하는 잠정명령을 프론티어 개발자에게 발할 수 없다."
+  },
+  {
+   "type": "p",
+   "en": "(f) Final orders.—",
+   "ko": "(f) 최종명령 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— The Secretary may issue a final order if—",
+   "ko": "(1) 일반 규정 — 장관은 다음 각 목의 요건을 모두 충족하는 경우 최종명령을 발할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(A) a provisional order suspending or restricting the same or substantially similar development, deployment, or internal use is in effect at the time the Secretary issues the final order;",
+   "ko": "(A) 장관이 최종명령을 발하는 시점에 동일하거나 실질적으로 유사한 개발, 배포 또는 내부 사용을 정지하거나 제한하는 잠정명령이 효력을 유지하고 있을 것"
+  },
+  {
+   "type": "p",
+   "en": "(B) the Secretary has made the finding required by subsection (a), set forth in the written statement required by subsection (b)(1); and",
+   "ko": "(B) 장관이 (a)항에서 요구하는 판단을 하고, 이를 (b)(1)에서 요구하는 서면 진술서에 기재하였을 것"
+  },
+  {
+   "type": "p",
+   "en": "(C) either—",
+   "ko": "(C) 다음 중 어느 하나에 해당할 것"
+  },
+  {
+   "type": "p",
+   "en": "(i) the period to apply for an expedited hearing under subsection (j)(1) has lapsed without an application; or",
+   "ko": "(i) (j)(1)에 따른 신속 심리 신청 기간이 신청 없이 경과하였을 것"
+  },
+  {
+   "type": "p",
+   "en": "(ii) the Secretary has rendered a final determination on an application under subsection (j)(1).",
+   "ko": "(ii) 장관이 (j)(1)에 따른 신청에 대하여 최종 결정을 내렸을 것"
+  },
+  {
+   "type": "p",
+   "en": "(2) Lapse.— A final order shall lapse upon the date that is 90 days after the date on which it is issued.",
+   "ko": "(2) 실효 — 최종명령은 발령일부터 90일이 경과한 날에 실효된다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Renewal.— The Secretary may renew a final order for one or more successive periods of not more than 90 days each if, before the order lapses, the Secretary makes a new finding under subsection (a), in accordance with subsection (b), based on the facts as they exist at the time of renewal. A renewal shall be treated as a final order for purposes of subsection (k).",
+   "ko": "(3) 갱신 — 장관은 명령이 실효되기 전에 갱신 시점에 존재하는 사실에 근거하여 (b)항에 따라 (a)항에 따른 새로운 판단을 하는 경우, 최종명령을 각각 90일 이하의 기간으로 1회 이상 연속하여 갱신할 수 있다. 갱신은 (k)항의 적용에 있어서 최종명령으로 본다."
+  },
+  {
+   "type": "p",
+   "en": "(g) Rescission.—",
+   "ko": "(g) 철회 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Required rescission.— The Secretary shall rescind an emergency order, in whole or in part, if—",
+   "ko": "(1) 의무적 철회 — 장관은 다음 각 목의 어느 하나에 해당하는 경우 긴급명령의 전부 또는 일부를 철회하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) the criteria for rescission stated in the order under subsection (c)(1) are satisfied; or",
+   "ko": "(A) (c)(1)에 따라 명령에 기재된 철회 기준이 충족된 경우"
+  },
+  {
+   "type": "p",
+   "en": "(B) the development, deployment, or internal use suspended or restricted by the order would not present an imminent catastrophic risk if the order were rescinded to that extent.",
+   "ko": "(B) 명령에 의하여 정지되거나 제한된 개발, 배포 또는 내부 사용이 명령을 해당 범위에서 철회하더라도 임박한 파국적 위험을 초래하지 아니하게 되는 경우",
+   "marks": [
+    {
+     "t": "명령을 해당 범위에서 철회하더라도 임박한 파국적 위험을 초래하지 아니하게 되는 경우",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Written determination.— A rescission under this subsection, and any denial of an application under paragraph (3), shall be set forth in a written determination stating the basis therefor, which shall be served on the frontier developer.",
+   "ko": "(2) 서면 결정 — 이 항에 따른 철회 및 (3)에 따른 신청의 기각은 그 근거를 기재한 서면 결정으로 하여야 하며, 그 서면 결정은 프론티어 개발자에게 송달되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Application.— A frontier developer subject to an emergency order may apply to the Secretary for rescission of the order in whole or in part. The Secretary shall grant or deny the application not later than 14 days after its receipt.",
+   "ko": "(3) 신청 — 긴급명령의 대상인 프론티어 개발자는 장관에게 명령의 전부 또는 일부의 철회를 신청할 수 있다. 장관은 신청을 접수한 날부터 14일 이내에 그 신청을 인용하거나 기각하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(4) Successive applications.— Following the denial of an application under paragraph (3), the Secretary may summarily deny a subsequent application respecting the same order that does not rest, in substantial part, on facts or circumstances arising after, or not reasonably available at the time of, the prior application.",
+   "ko": "(4) 반복 신청 — (3)에 따른 신청이 기각된 후, 동일한 명령에 관한 후속 신청이 이전 신청 이후에 발생하였거나 이전 신청 당시에 합리적으로 이용할 수 없었던 사실 또는 상황에 상당 부분 근거하지 아니하는 경우, 장관은 그 후속 신청을 약식으로 기각할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(h) Publication.—",
+   "ko": "(h) 공표 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) In general.— The Secretary shall publish each final order issued under subsection (f), each renewal of a final order under subsection (f)(3), and each written determination under subsection (g)(2) rescinding an order in whole or in part, subject to paragraph (2).",
+   "ko": "(1) 일반 규정 — 장관은 (2)에 따를 것을 조건으로, (f)항에 따라 발한 각 최종명령, (f)(3)에 따른 최종명령의 각 갱신, 그리고 명령의 전부 또는 일부를 철회하는 (g)(2)에 따른 각 서면 결정을 공표하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(2) Redactions.— Before publishing an order, renewal, or rescission under paragraph (1), the Secretary may make a redaction in such publication to protect a trade secret, risk-prevention mechanisms, or the cybersecurity, of the frontier developer, to protect public safety or the national security of the United States, or to comply with Federal or State law. If the Secretary makes such a redaction, the Secretary shall include in the publication information relating to the character of, and a justification for, such redaction.",
+   "ko": "(2) 민감정보 가림 처리 — 장관은 (1)에 따라 명령, 갱신 또는 철회를 공표하기 전에, 프론티어 개발자의 영업비밀, 위험 예방 메커니즘 또는 사이버 보안을 보호하거나, 공공의 안전 또는 미국의 국가안보를 보호하거나, 연방법 또는 주법을 준수하기 위하여 해당 공표물에 민감정보 가림 처리를 할 수 있다. 장관이 그러한 민감정보 가림 처리를 하는 경우, 장관은 그 민감정보 가림 처리의 성격 및 정당화 사유에 관한 정보를 공표물에 포함하여야 한다.",
+   "marks": [
+    {
+     "t": "위험 예방 메커니즘 또는 사이버 보안을 보호하거나, 공공의 안전 또는 미국의 국가안보를 보호하거나",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(i) Congressional notification.—",
+   "ko": "(i) 의회 통지 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Notice of orders.— Not later than 3 days after issuing an emergency order, or renewing a final order under subsection (f)(3), the Secretary shall submit to the appropriate congressional committees—",
+   "ko": "(1) 명령의 통지 — 장관은 긴급명령을 발하거나 (f)(3)에 따라 최종명령을 갱신한 후 3일 이내에 다음 각 목의 사항을 적절한 의회 위원회에 제출하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(A) a copy of the order;",
+   "ko": "(A) 명령 사본"
+  },
+  {
+   "type": "p",
+   "en": "(B) in the case of a final order or renewal, the written statement required by subsection (b)(1), and in the case of a provisional order, a statement of the preliminary basis for the order;",
+   "ko": "(B) 최종명령 또는 갱신의 경우에는 (b)(1)에서 요구하는 서면 진술서, 잠정명령의 경우에는 명령의 예비적 근거에 관한 진술서"
+  },
+  {
+   "type": "p",
+   "en": "(C) any technical assessment prepared under subsection (b)(2); and",
+   "ko": "(C) (b)(2)에 따라 작성된 기술적 평가"
+  },
+  {
+   "type": "p",
+   "en": "(D) in the case of a provisional order issued without notice and an opportunity to cure, the Secretary’s written determination under subsection (e)(2).",
+   "ko": "(D) 통지 및 시정 기회 없이 발한 잠정명령의 경우, (e)(2)에 따른 장관의 서면 판단"
+  },
+  {
+   "type": "p",
+   "en": "(2) Notice of disposition.— Not later than 7 days after an emergency order is rescinded, lapses, or is set aside, limited, suspended, or stayed in whole or in part by the Secretary or a court, the Secretary shall notify the appropriate congressional committees of such disposition and its basis.",
+   "ko": "(2) 처분의 통지 — 긴급명령이 철회되거나, 실효되거나, 장관 또는 법원에 의하여 그 전부 또는 일부가 취소, 제한, 정지 또는 집행정지된 경우, 장관은 그날부터 7일 이내에 적절한 의회 위원회에 해당 처분 및 그 근거를 통지하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Form.— Each submission under this subsection shall be in unclassified form to the maximum extent practicable, but may include a classified annex.",
+   "ko": "(3) 형식 — 이 항에 따른 각 제출은 실행 가능한 최대한의 범위에서 비밀로 분류되지 아니한 형식으로 하여야 하나, 비밀 부속서를 포함할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(4) Periodic report.— Not less frequently than semiannually, the Secretary shall submit to the appropriate congressional committees a report on the exercise of authority under this section, including each order issued, renewed, rescinded, or lapsed during the period; the outcome of each hearing under subsection (j) and each action or proceeding under subsection (k), subsection (l)(3), and subsection (m); and any changes to the methods published by the Secretary bearing on findings under this section.",
+   "ko": "(4) 정기 보고 — 장관은 최소 반기 1회 이상 이 조에 따른 권한 행사에 관한 보고서를 적절한 의회 위원회에 제출하여야 한다. 그 보고서에는 해당 기간 중 발령, 갱신, 철회 또는 실효된 각 명령, (j)항에 따른 각 심리 및 (k)항, (l)(3) 및 (m)항에 따른 각 소송 또는 절차의 결과, 그리고 이 조에 따른 판단과 관련하여 장관이 공표한 방법의 변경 사항을 포함한다."
+  },
+  {
+   "type": "p",
+   "en": "(5) Definition.— In this subsection, the term “appropriate congressional committees” means the Committee on Commerce, Science, and Transportation of the Senate, the Committee on Energy and Commerce of the House of Representatives, and the Committee on the Judiciary of each House of Congress.",
+   "ko": "(5) 정의 — 이 항에서 “적절한 의회 위원회”란 상원 상무·과학·교통위원회(Committee on Commerce, Science, and Transportation of the Senate), 하원 에너지·상무위원회(Committee on Energy and Commerce of the House of Representatives) 및 양원 각각의 법사위원회(Committee on the Judiciary)를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(j) Administrative review.—",
+   "ko": "(j) 행정심사 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Expedited hearing.— Not later than 10 days after the date on which a provisional order is served on a frontier developer, the frontier developer may apply for an expedited hearing on such order. The Secretary shall hold such hearing and render a final determination on such application not later than 30 days after the application’s receipt. The hearing may be conducted by a hearing officer designated by the Secretary.",
+   "ko": "(1) 신속 심리 — 프론티어 개발자는 잠정명령이 자신에게 송달된 날부터 10일 이내에 해당 명령에 대한 신속 심리를 신청할 수 있다. 장관은 신청을 접수한 날부터 30일 이내에 심리를 개최하고 그 신청에 대한 최종 결정을 내려야 한다. 심리는 장관이 지정하는 심리관이 진행할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(2) Record access and burden.— In a hearing under paragraph (1), the Secretary shall make available to the frontier developer any written determination under paragraph (e)(2), any technical assessment under paragraph (b)(2), and all information on which the Secretary relied in issuing the order, and shall bear the burden of demonstrating that adequate evidence supports the order.",
+   "ko": "(2) 기록 열람 및 입증 책임 — (1)에 따른 심리에서 장관은 (e)(2)에 따른 서면 판단, (b)(2)에 따른 기술적 평가 및 명령을 발할 때 근거로 삼은 모든 정보를 프론티어 개발자가 이용할 수 있도록 하여야 하며, 충분한 증거가 명령을 뒷받침한다는 점에 대한 입증 책임을 부담하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(k) Judicial review.—",
+   "ko": "(k) 사법심사 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Review of provisional orders.— A provisional order shall not be deemed final agency action for purposes of section 704 of title 5, United States Code. Except as provided in paragraph (7), no court shall have jurisdiction to review, enjoin, set aside, suspend, limit, or stay a provisional order before a final order has been issued under subsection (f); thereafter, the lawfulness of the provisional order may be reviewed only in a proceeding under paragraph (2).",
+   "ko": "(1) 잠정명령에 대한 심사 — 잠정명령은 미국법전 제5편 제704조의 적용에 있어서 최종 행정기관 행위로 보지 아니한다. (7)에 규정된 경우를 제외하고, 어떠한 법원도 (f)항에 따라 최종명령이 발해지기 전에는 잠정명령을 심사, 금지, 취소, 정지, 제한 또는 집행정지할 관할권을 갖지 아니한다. 최종명령이 발해진 이후에는 잠정명령의 적법성은 (2)에 따른 소송에서만 심사될 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(2) Exclusive jurisdiction and expedition.— Notwithstanding any other provision of law, the United States District Court for the District of Columbia shall have exclusive jurisdiction over any civil action seeking judicial review of, or any order enjoining, setting aside, limiting, suspending, staying, or otherwise affecting the effectiveness or enforcement of, an emergency order under this section or relief under paragraph (l)(3). The court shall expedite the action to the greatest possible extent, and shall establish a schedule for the proceeding not later than 10 days after the action is filed.",
+   "ko": "(2) 전속관할 및 신속 처리 — 다른 법률의 규정에도 불구하고, 컬럼비아 특별구 연방지방법원(United States District Court for the District of Columbia)은 이 조에 따른 긴급명령 또는 (l)(3)에 따른 구제에 대한 사법심사를 구하는 모든 민사소송과, 이를 금지, 취소, 제한, 정지 또는 집행정지하거나 그 밖에 그 효력이나 집행에 영향을 미치는 모든 명령에 대하여 전속관할권을 가진다. 법원은 해당 소송을 가능한 최대한 신속하게 처리하여야 하며, 소송이 제기된 날부터 10일 이내에 절차 일정을 정하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) No automatic stay.— The filing of a civil action referenced in paragraph (2) shall not operate as a stay of the emergency order unless the district court orders otherwise.",
+   "ko": "(3) 자동 집행정지 없음 — (2)에서 언급된 민사소송의 제기는 지방법원이 달리 명하지 아니하는 한 긴급명령의 집행을 정지하는 효력을 갖지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(4) Standard of review.— The district court may set aside, limit, suspend, or stay a final order only if the court determines that such order is arbitrary, capricious, an abuse of discretion, or otherwise not in accordance with law.",
+   "ko": "(4) 심사 기준 — 지방법원은 최종명령이 자의적이거나, 변덕스럽거나, 재량권 남용에 해당하거나, 그 밖에 법률에 부합하지 아니한다고 판단하는 경우에만 해당 명령을 취소, 제한, 정지 또는 집행정지할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(5) Enforcement proceedings.— The validity of a final order may not be reexamined in an action under subsection (m).",
+   "ko": "(5) 집행 절차 — 최종명령의 타당성은 (m)항에 따른 소송에서 재심사될 수 없다."
+  },
+  {
+   "type": "p",
+   "en": "(6) Appeal.— An appeal from a final judgment of the district court in an action referenced in paragraph (2) may be taken to the United States Court of Appeals for the District of Columbia Circuit not later than 30 days after the date of the judgment. The court of appeals shall expedite the appeal to the greatest possible extent. It shall be the duty of every court of the United States to advance on the docket and to expedite the disposition of any action or appeal under this subsection.",
+   "ko": "(6) 항소 — (2)에서 언급된 소송에서 지방법원의 종국판결에 대한 항소는 판결일부터 30일 이내에 컬럼비아 특별구 연방항소법원(United States Court of Appeals for the District of Columbia Circuit)에 제기할 수 있다. 항소법원은 항소를 가능한 최대한 신속하게 처리하여야 한다. 미국의 모든 법원은 이 항에 따른 모든 소송 또는 항소를 심리 일정상 우선 배정하고 신속하게 처리할 의무가 있다."
+  },
+  {
+   "type": "p",
+   "en": "(7) Constitutional claims.— Nothing in this subsection shall be construed to preclude the jurisdiction of a court of the United States over a claim that this section, or the structure or authority of the Secretary under this Act, violates the Constitution of the United States.",
+   "ko": "(7) 헌법상 청구 — 이 항의 어떠한 규정도 이 조, 또는 이 법에 따른 장관의 구조나 권한이 미국 헌법에 위반된다는 청구에 대한 미국 법원의 관할권을 배제하는 것으로 해석되지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(l) Exclusivity.—",
+   "ko": "(l) 배타성 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Exclusive means.— This section shall be the exclusive means by which any department, agency, officer, or employee of the United States, including the President, may take any action that has the purpose or effect of suspending, restricting, conditioning, or otherwise limiting a frontier developer’s development, deployment, or internal use of a frontier model, and that is taken, in whole or in substantial part, on the ground that such development, deployment, or internal use presents an imminent catastrophic risk.",
+   "ko": "(1) 배타적 수단 — 이 조는 대통령을 포함한 미국의 모든 부처, 기관, 공무원 또는 직원이 프론티어 개발자의 프론티어 모델 개발, 배포 또는 내부 사용을 정지, 제한, 조건부화하거나 그 밖에 한정하는 목적 또는 효과를 가지는 조치로서, 그 전부 또는 상당 부분이 해당 개발, 배포 또는 내부 사용이 임박한 파국적 위험을 초래한다는 이유로 취해지는 조치를 할 수 있는 배타적 수단이다.",
+   "marks": [
+    {
+     "t": "그 전부 또는 상당 부분이 해당 개발, 배포 또는 내부 사용이 임박한 파국적 위험을 초래한다는 이유로 취해지는 조치를 할 수 있는 배타적 수단이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Construction.— No other provision of law shall be construed as authorizing an action described in paragraph (1), unless such provision expressly refers to this section.",
+   "ko": "(2) 해석 — 다른 어떠한 법률 규정도 이 조를 명시적으로 언급하지 아니하는 한 (1)에 기술된 조치를 승인하는 것으로 해석되지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Unauthorized actions.— An action described in paragraph (1) that is not taken in accordance with this section shall be unenforceable, and a frontier developer against which such an action is directed may bring a civil action under paragraph (k)(2) for declaratory or injunctive relief.",
+   "ko": "(3) 승인되지 아니한 조치 — 이 조에 따라 취해지지 아니한 (1)에 기술된 조치는 집행할 수 없으며, 그러한 조치의 대상이 된 프론티어 개발자는 확인적 구제 또는 금지명령에 의한 구제를 구하기 위하여 (k)(2)에 따른 민사소송을 제기할 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "(m) Enforcement.—",
+   "ko": "(m) 집행 —"
+  },
+  {
+   "type": "p",
+   "en": "(1) Civil penalty.— A person bound by an emergency order under paragraph (d)(2) that violates the order shall be subject to a civil penalty of not more than $10,000,000 per violation. For purposes of this paragraph, each day during which a violation continues constitutes a separate violation.",
+   "ko": "(1) 민사 제재금 — (d)(2)에 따라 긴급명령의 구속을 받는 자가 그 명령을 위반한 경우, 위반 1건당 10,000,000달러 이하의 민사 제재금에 처한다. 이 호의 적용에 있어서 위반이 계속되는 각 날은 별개의 위반을 구성한다.",
+   "marks": [
+    {
+     "t": "위반 1건당 10,000,000달러 이하의 민사 제재금에 처한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Action by attorney general.— The Attorney General may bring a civil action in the United States District Court for the District of Columbia to enforce an emergency order, to collect a civil penalty under paragraph (1), or both. In such an action, upon a showing that a person has violated, or is about to violate, an emergency order, the court shall issue an injunction, restraining order, or other order requiring compliance, without the showing of irreparable harm or the inadequacy of other remedies at law otherwise required for equitable relief.",
+   "ko": "(2) 법무장관의 소송 — 법무장관(Attorney General)은 긴급명령을 집행하거나, (1)에 따른 민사 제재금을 징수하거나, 또는 그 둘 모두를 위하여 컬럼비아 특별구 연방지방법원에 민사소송을 제기할 수 있다. 그러한 소송에서 어떤 자가 긴급명령을 위반하였거나 위반하려 한다는 점이 소명되면, 법원은 형평법상 구제를 위하여 통상 요구되는 회복할 수 없는 피해 또는 다른 법적 구제수단의 불충분성에 대한 소명 없이 준수를 명하는 금지명령, 임시금지명령 또는 그 밖의 명령을 발하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) Criminal penalty.— A person that willfully violates, or willfully directs, induces, or procures a violation of, an emergency order shall be fined not more than $1,000,000 per violation, imprisoned not more than 10 years, or both.",
+   "ko": "(3) 형사처벌 — 긴급명령을 고의로 위반하거나, 고의로 그 위반을 지시, 유도 또는 교사한 자는 위반 1건당 1,000,000달러 이하의 벌금 또는 10년 이하의 징역에 처하거나 이를 병과한다.",
+   "marks": [
+    {
+     "t": "긴급명령을 고의로 위반하거나, 고의로 그 위반을 지시, 유도 또는 교사한 자는 위반 1건당 1,000,000달러 이하의 벌금 또는 10년 이하의 징역에 처하거나 이를 병과한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 9. Relationship to State laws",
+   "ko": "제9조 주법과의 관계",
+   "id": "s392"
+  },
+  {
+   "type": "p",
+   "en": "(a) Covered subject area.— For purposes of this section, the term “Covered Subject Area” means any of the following:",
+   "ko": "(a) 대상 주제 영역 — 이 조의 적용에 있어서 “대상 주제 영역”이란 다음 각 호의 어느 하나를 말한다."
+  },
+  {
+   "type": "p",
+   "en": "(1) Frontier ai risk transparency.— The disclosure by a developer, to any State, member of the public, or other person, of information regarding—",
+   "ko": "(1) 프론티어 AI 위험 투명성 — 개발자가 주, 일반 대중 또는 그 밖의 자에게 다음 각 목에 관한 정보를 공개하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(A) the policies, procedures, frameworks, or practices used by the developer to identify, assess, manage, or mitigate catastrophic risks associated with the development, training, evaluation, or release of an AI model;",
+   "ko": "(A) AI 모델의 개발, 훈련, 평가(evaluation) 또는 출시와 관련된 파국적 위험을 식별, 평가, 관리 또는 완화하기 위하여 개발자가 사용하는 정책, 절차, 프레임워크 또는 실행 방안",
+   "marks": [
+    {
+     "t": "AI 모델의 개발, 훈련, 평가(evaluation) 또는 출시와 관련된 파국적 위험을 식별, 평가, 관리 또는 완화하기 위하여 개발자가 사용하는 정책",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) the results, methodologies, benchmarks, or thresholds of testing, evaluation, or red-teaming of an AI model with respect to catastrophic risks; or",
+   "ko": "(B) 파국적 위험과 관련된 AI 모델의 시험, 평가(evaluation) 또는 레드티밍의 결과, 방법론, 벤치마크 또는 임계값",
+   "marks": [
+    {
+     "t": "파국적 위험과 관련된 AI 모델의 시험, 평가(evaluation) 또는 레드티밍의 결과, 방법론, 벤치마크 또는 임계값",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) the characteristics, capabilities, training, or deployment of an AI model, where the disclosure relates to the assessment, monitoring, communication, or mitigation of catastrophic risks.",
+   "ko": "(C) AI 모델의 특성, 역량, 훈련 또는 배포. 다만, 해당 공개가 파국적 위험의 평가(assessment), 모니터링, 소통 또는 완화와 관련된 경우에 한한다.",
+   "marks": [
+    {
+     "t": "해당 공개가 파국적 위험의 평가(assessment), 모니터링, 소통 또는 완화와 관련된 경우에 한한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(2) Frontier ai third-party auditing and independent verification.— The assessment, audit, evaluation, certification, attestation, or verification, by a person other than its developer, of—",
+   "ko": "(2) 프론티어 AI 제3자 감사 및 독립적 검증 — 개발자 외의 자가 다음 각 목에 대하여 수행하는 평가(assessment), 감사, 평가(evaluation), 인증, 증명 또는 검증",
+   "marks": [
+    {
+     "t": "프론티어 AI 제3자 감사 및 독립적 검증",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(A) activities involved in the development, training, evaluation, or deployment of an AI model by such developer that relate to the identification, assessment, management, or mitigation of catastrophic risks;",
+   "ko": "(A) 해당 개발자의 AI 모델 개발, 훈련, 평가(evaluation) 또는 배포에 수반되는 활동으로서 파국적 위험의 식별, 평가(assessment), 관리 또는 완화와 관련된 활동",
+   "marks": [
+    {
+     "t": "파국적 위험의 식별, 평가(assessment), 관리 또는 완화와 관련된 활동",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) the policies, procedures, frameworks, or practices of such developer relating to the identification, assessment, management, or mitigation of catastrophic risks; or",
+   "ko": "(B) 파국적 위험의 식별, 평가(assessment), 관리 또는 완화와 관련된 해당 개발자의 정책, 절차, 프레임워크 또는 실행 방안",
+   "marks": [
+    {
+     "t": "파국적 위험의 식별, 평가(assessment), 관리 또는 완화와 관련된 해당 개발자의 정책",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(C) the compliance of such developer with any requirement relating to the development, training, evaluation, or release of an AI model, if such requirement relates to the mitigation of catastrophic risks, including any requirement that such developer obtain certification, attestation, registration, accreditation, or other approval as a condition of, or in connection with, the development, training, evaluation, or release of an AI model, or that such developer provide access to an AI model, model weights, training data, source code, evaluation results, or other technical materials for purposes of any such assessment, audit, evaluation, or verification.",
+   "ko": "(C) AI 모델의 개발, 훈련, 평가(evaluation) 또는 출시와 관련된 요건으로서 파국적 위험의 완화와 관련된 요건에 대한 해당 개발자의 준수. 이러한 요건에는 AI 모델의 개발, 훈련, 평가(evaluation) 또는 출시의 조건으로서 또는 이와 관련하여 해당 개발자가 인증, 증명, 등록, 인가 또는 그 밖의 승인을 받도록 하는 요건, 또는 그러한 평가(assessment), 감사, 평가(evaluation) 또는 검증을 목적으로 해당 개발자가 AI 모델, 모델 가중치, 학습 데이터, 소스 코드, 평가(evaluation) 결과 또는 그 밖의 기술 자료에 대한 접근을 제공하도록 하는 요건을 포함한다.",
+   "marks": [
+    {
+     "t": "파국적 위험의 완화와 관련된 요건에 대한 해당 개발자의 준수",
+     "k": "safety"
+    },
+    {
+     "t": "AI 모델, 모델 가중치, 학습 데이터, 소스 코드, 평가(evaluation) 결과 또는 그 밖의 기술 자료에 대한 접근을 제공하도록 하는 요건",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(3) Frontier ai incident reporting.— The reporting by a developer to any State, agency, regulator, or other governmental entity of—",
+   "ko": "(3) 프론티어 AI 사고 보고 — 개발자가 주, 기관, 규제당국 또는 그 밖의 정부 실체에 다음 각 목을 보고하는 것",
+   "marks": [
+    {
+     "t": "프론티어 AI 사고 보고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(A) safety or security incidents involving an AI model, including unauthorized access to or exfiltration of model weights, loss of control over a deployed model, use of a model to cause or materially contribute to catastrophic harm, or material failure of a safety mitigation; or",
+   "ko": "(A) AI 모델과 관련된 안전 또는 보안 사고. 여기에는 모델 가중치에 대한 무단 접근 또는 모델 가중치의 유출, 배포된 모델에 대한 통제 상실, 파국적 피해를 초래하거나 이에 실질적으로 기여하는 모델의 사용, 또는 안전 완화 조치의 중대한 실패를 포함한다.",
+   "marks": [
+    {
+     "t": "모델 가중치에 대한 무단 접근 또는 모델 가중치의 유출, 배포된 모델에 대한 통제 상실",
+     "k": "safety"
+    },
+    {
+     "t": "파국적 피해를 초래하거나 이에 실질적으로 기여하는 모델의 사용, 또는 안전 완화 조치의 중대한 실패",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(B) other events involving the development, training, evaluation, or release of an AI model that bear on the potential for the model to cause or materially contribute to catastrophic harm.",
+   "ko": "(B) AI 모델의 개발, 훈련, 평가(evaluation) 또는 출시와 관련된 그 밖의 사건으로서 해당 모델이 파국적 피해를 초래하거나 이에 실질적으로 기여할 가능성과 관련된 사건",
+   "marks": [
+    {
+     "t": "해당 모델이 파국적 피해를 초래하거나 이에 실질적으로 기여할 가능성과 관련된 사건",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Preemption.— Except as provided in subsection (c), no State or political subdivision of a State may adopt or enforce any law, regulation, order, or other requirement that imposes new substantive obligations on artificial intelligence developers with respect to any Covered Subject Area.",
+   "ko": "(b) 선점 — (c)에서 규정하는 경우를 제외하고, 주 또는 주의 하위 정치단위는 대상 주제 영역에 관하여 인공지능 개발자에게 새로운 실체적 의무를 부과하는 법률, 규정, 명령 또는 그 밖의 요건을 채택하거나 집행할 수 없다.",
+   "marks": [
+    {
+     "t": "주 또는 주의 하위 정치단위는 대상 주제 영역에 관하여 인공지능 개발자에게 새로운 실체적 의무를 부과하는 법률, 규정, 명령 또는 그 밖의 요건을 채택하거나 집행할 수 없다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) Rule of construction.— Nothing in this section shall be construed to affect the authority of a State or political subdivision of a State to—",
+   "ko": "(c) 해석 규칙 — 이 조의 어떠한 규정도 주 또는 주의 하위 정치단위가 다음 각 호의 행위를 할 수 있는 권한에 영향을 미치는 것으로 해석되지 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(1) adopt or enforce generally applicable laws, regulations, orders, or other requirements that do not target artificial intelligence developers;",
+   "ko": "(1) 인공지능 개발자를 대상으로 하지 아니하는 일반적으로 적용되는 법률, 규정, 명령 또는 그 밖의 요건을 채택하거나 집행하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(2) regulate the use or deployment of AI systems by deployers or users, including via consumer protection, civil rights, contract, criminal, or privacy laws, provided that no substantive obligations are imposed on developers with respect to model development, training, evaluation, or release;",
+   "ko": "(2) 소비자 보호법, 민권법, 계약법, 형법 또는 프라이버시법을 통한 경우를 포함하여 배포자 또는 사용자의 AI 시스템 사용 또는 배포를 규제하는 것. 다만, 모델 개발, 훈련, 평가(evaluation) 또는 출시에 관하여 개발자에게 실체적 의무를 부과하지 아니하는 경우에 한한다."
+  },
+  {
+   "type": "p",
+   "en": "(3) adopt or enforce laws, regulations, orders, or other requirements specifically relating to the protection of minors from harms arising from the use of AI systems, including requirements addressing sexually explicit content, content promoting self-harm, content facilitating exploitation, age verification, parental controls, or similar matters; and",
+   "ko": "(3) 성적으로 노골적인 콘텐츠, 자해를 조장하는 콘텐츠, 착취를 용이하게 하는 콘텐츠, 연령 확인, 보호자 통제 또는 이와 유사한 사항을 다루는 요건을 포함하여, AI 시스템의 사용으로 인하여 발생하는 피해로부터 미성년자를 보호하는 것과 특별히 관련된 법률, 규정, 명령 또는 그 밖의 요건을 채택하거나 집행하는 것, 및",
+   "marks": [
+    {
+     "t": "자해를 조장하는 콘텐츠, 착취를 용이하게 하는 콘텐츠",
+     "k": "safety"
+    },
+    {
+     "t": "AI 시스템의 사용으로 인하여 발생하는 피해로부터 미성년자를 보호하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(4) adopt or enforce laws, regulations, orders, or other requirements governing the procurement or use of AI systems by State governments.",
+   "ko": "(4) 주 정부의 AI 시스템 조달 또는 사용을 규율하는 법률, 규정, 명령 또는 그 밖의 요건을 채택하거나 집행하는 것"
+  },
+  {
+   "type": "p",
+   "en": "(d) Definition.— In this section, the term “artificial intelligence developer” means—",
+   "ko": "(d) 정의 — 이 조에서 “인공지능 개발자”란 다음과 같다."
+  },
+  {
+   "type": "p",
+   "en": "(1) an entity that builds, designs, codes, produces, trains, or owns an artificial intelligence model or models for internal use or for use by a third party; and",
+   "ko": "(1) 내부 사용 또는 제3자의 사용을 위하여 하나 이상의 인공지능 모델을 구축, 설계, 코딩, 생산, 훈련 또는 소유하는 실체를 말하며,"
+  },
+  {
+   "type": "p",
+   "en": "(2) does not include an entity that is solely a deployer of the artificial intelligence model.",
+   "ko": "(2) 인공지능 모델의 배포자에 불과한 실체는 포함하지 아니한다."
+  }
+ ]
+}

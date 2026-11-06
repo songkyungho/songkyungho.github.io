@@ -1,0 +1,224 @@
+{
+ "slug": "sanders-ai-pause-letter-2026-08",
+ "title": "버니 샌더스 상원의원이 AI 기업 최고경영자들에게 보낸 서한",
+ "original_title": "Letter to Sam Altman, Dario Amodei and Mark Zuckerberg",
+ "publisher": "버니 샌더스 미국 상원의원",
+ "published": "2026-08-10",
+ "source_url": "https://www.sanders.senate.gov/wp-content/uploads/AI-Pause-Letter-FINAL.pdf",
+ "source_note": "상원의원실이 공개한 서한 PDF의 이미지를 받아 적어 옮겼다. 레터헤드의 주소와 위원회 목록은 싣지 않았다.",
+ "source_label": "원문 보기 (샌더스 상원의원실)",
+ "summary": "2026년 8월 샌더스 상원의원이 OpenAI, Anthropic, Meta 최고경영자에게 AI 개발을 멈추라고 요구한 서한이다. AI 모델이 다른 회사 시스템을 해킹한 사고와 AI로 새 바이러스를 만든 사례를 들어, 세 회사가 위험 임계값에 이르면 개발을 멈추겠다고 한 스스로의 약속을 지키라고 촉구한다. 기업이 행동하지 않으면 상원이 나서겠다고 경고한다. 서한 자체에 법적 구속력은 없다.",
+ "image": "/images/translations/sanders-ai-pause-letter-2026-08-cover.webp",
+ "og_image": "/images/translations/sanders-ai-pause-letter-2026-08-cover.jpg",
+ "image_caption": "서한 첫 대목 (다시 짬)",
+ "doc_kind": "서한",
+ "translated": "2026-11-06",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 19,
+  "sections": 0,
+  "items": 0,
+  "words_en": 461
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "August 10, 2026",
+   "ko": "2026년 8월 10일"
+  },
+  {
+   "type": "p",
+   "en": "Dear Mr. Altman, Mr. Amodei and Mr. Zuckerberg:",
+   "ko": "올트먼, 아모데이, 저커버그 귀하"
+  },
+  {
+   "type": "p",
+   "en": "Almost every day, there is a new story about how your companies are losing control of the AI technology you are developing, with potentially cataclysmic results.",
+   "ko": "거의 매일같이 귀하들의 기업이 개발 중인 AI 기술에 대한 통제를 상실하고 있으며, 그 결과가 파국적일 수 있다는 새로운 소식이 들려옵니다.",
+   "marks": [
+    {
+     "t": "귀하들의 기업이 개발 중인 AI 기술에 대한 통제를 상실하고 있으며, 그 결과가 파국적일 수 있다는",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This week we learned, frighteningly, that AI has been used for the first time ever to create new viruses. As you know this type of development, in the wrong hands, could lead to new bioweapons that result in the deaths of tens of millions of people.",
+   "ko": "이번 주 우리는 AI가 사상 처음으로 새로운 바이러스를 만드는 데 사용되었다는 섬뜩한 사실을 알게 되었습니다. 아시다시피 이러한 유형의 개발은 잘못된 손에 들어갈 경우 수천만 명의 목숨을 앗아가는 새로운 생물무기로 이어질 수 있습니다.",
+   "marks": [
+    {
+     "t": "AI가 사상 처음으로 새로운 바이러스를 만드는 데 사용되었다는",
+     "k": "safety"
+    },
+    {
+     "t": "수천만 명의 목숨을 앗아가는 새로운 생물무기로 이어질 수 있습니다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Last month, the world found out OpenAI lost control of an AI model. The result? The model hacked into another company’s computers—a clear violation of federal law. After conducting internal reviews, Anthropic and Meta reported their models similarly escaped their control.",
+   "ko": "지난달 전 세계는 OpenAI가 AI 모델에 대한 통제를 상실했다는 사실을 알게 되었습니다. 그 결과는 어떠했습니까? 해당 모델은 다른 기업의 컴퓨터를 해킹했습니다. 명백한 연방법 위반입니다. Anthropic과 Meta도 내부 검토를 실시한 뒤 자사 모델이 마찬가지로 통제를 벗어났다고 보고했습니다.",
+   "marks": [
+    {
+     "t": "OpenAI가 AI 모델에 대한 통제를 상실했다는 사실",
+     "k": "safety"
+    },
+    {
+     "t": "해당 모델은 다른 기업의 컴퓨터를 해킹했습니다.",
+     "k": "safety"
+    },
+    {
+     "t": "자사 모델이 마찬가지로 통제를 벗어났다고 보고했습니다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "One of the targeted companies called the AI hack “an unprecedented event” that deserves an “unprecedented response.” Yoshua Bengio, the most cited living scientist in the world, said these incidents “should serve as a wake-up call.”",
+   "ko": "표적이 된 기업 중 한 곳은 이 AI 해킹을 \"전례 없는 사건\"이라 부르며 \"전례 없는 대응\"이 필요하다고 밝혔습니다. 생존 과학자 가운데 세계에서 가장 많이 인용되는 요슈아 벤지오(Yoshua Bengio)는 이러한 사건들이 \"경종이 되어야 한다\"고 말했습니다.",
+   "marks": [
+    {
+     "t": "이러한 사건들이 \"경종이 되어야 한다\"고 말했습니다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "I agree.",
+   "ko": "저도 동의합니다."
+  },
+  {
+   "type": "p",
+   "en": "So do the top scientists at the companies you lead, the very people building this technology. As you know, these technology leaders recently called for the international community to create a safety mechanism—a pause button—to avoid catastrophe. They warned there is a “real risk that capability development rapidly accelerates beyond our ability to understand or control the resulting systems.”",
+   "ko": "귀하들이 이끄는 기업의 최고 과학자들, 바로 이 기술을 만드는 사람들 역시 동의합니다. 아시다시피 이들 기술 리더들은 최근 국제사회에 파국을 피하기 위한 안전 메커니즘, 즉 일시정지 버튼을 만들 것을 촉구했습니다. 그들은 \"역량 개발이 그 결과로 생겨나는 시스템을 이해하거나 통제하는 우리의 능력을 넘어 급속히 가속화될 실질적 위험\"이 있다고 경고했습니다.",
+   "marks": [
+    {
+     "t": "파국을 피하기 위한 안전 메커니즘, 즉 일시정지 버튼을 만들 것을 촉구했습니다",
+     "k": "safety"
+    },
+    {
+     "t": "\"역량 개발이 그 결과로 생겨나는 시스템을 이해하거나 통제하는 우리의 능력을 넘어 급속히 가속화될 실질적 위험\"",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "And yet, at a moment when we have seen human loss of control and the creation of potentially dangerous viruses, your companies are still racing ahead— investing tens of billions of dollars into a technology that nobody can fully understand, predict or control.",
+   "ko": "그런데도 인간의 통제 상실과 잠재적으로 위험한 바이러스의 생성을 목격한 이 시점에, 귀하들의 기업은 여전히 앞다투어 질주하며 누구도 완전히 이해하거나 예측하거나 통제할 수 없는 기술에 수백억 달러를 쏟아붓고 있습니다.",
+   "marks": [
+    {
+     "t": "귀하들의 기업은 여전히 앞다투어 질주하며 누구도 완전히 이해하거나 예측하거나 통제할 수 없는 기술에 수백억 달러를 쏟아붓고 있습니다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "That is absurd, irresponsible and extremely dangerous. It is also a betrayal of your own stated commitments:",
+   "ko": "이는 터무니없고 무책임하며 극도로 위험한 일입니다. 또한 귀하들 스스로 공표한 약속을 저버리는 일이기도 합니다.",
+   "marks": [
+    {
+     "t": "귀하들 스스로 공표한 약속을 저버리는 일이기도 합니다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "In 2023, Anthropic said it would “commit to pause the scaling and/or delay the deployment of new models whenever our scaling ability outstrips our ability to comply with. . . safety procedures.”",
+   "ko": "2023년 Anthropic은 \"우리의 스케일링 능력이 . . . 안전 절차를 준수하는 능력을 앞지를 때마다 새로운 모델의 스케일링을 일시 중단 및/또는 배포를 연기할 것을 약속\"하겠다고 밝혔습니다.",
+   "marks": [
+    {
+     "t": "새로운 모델의 스케일링을 일시 중단 및/또는 배포를 연기할 것을 약속",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "In 2025, Meta said “if a frontier AI is assessed to have reached the critical risk threshold and cannot be mitigated, we will stop development.”",
+   "ko": "2025년 Meta는 \"프론티어 AI가 치명적 위험 임계값에 도달한 것으로 평가되고 이를 완화할 수 없다면 개발을 중단하겠다\"고 밝혔습니다.",
+   "marks": [
+    {
+     "t": "\"프론티어 AI가 치명적 위험 임계값에 도달한 것으로 평가되고 이를 완화할 수 없다면 개발을 중단하겠다\"",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "That same year, OpenAI said it would “halt further development” until strong safeguards were in place if AI capabilities ever reached a “critical” threshold.",
+   "ko": "같은 해 OpenAI는 AI 역량이 \"치명적\" 임계값에 도달할 경우 강력한 안전장치가 마련될 때까지 \"추가 개발을 중단\"하겠다고 밝혔습니다.",
+   "marks": [
+    {
+     "t": "강력한 안전장치가 마련될 때까지 \"추가 개발을 중단\"하겠다고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "That moment is here. AI capabilities HAVE reached a critical threshold. There is a reason why the head of the CIA says that AI models are “akin to digital nuclear weapons” and “almost like a doomsday device.”",
+   "ko": "바로 그 순간이 왔습니다. AI 역량은 이미 치명적 임계값에 도달했습니다. 중앙정보국(CIA) 국장이 AI 모델을 \"디지털 핵무기와 유사한 것\", \"거의 인류 종말 장치와 같은 것\"이라고 말하는 데에는 이유가 있습니다.",
+   "marks": [
+    {
+     "t": "AI 역량은 이미 치명적 임계값에 도달했습니다.",
+     "k": "safety"
+    },
+    {
+     "t": "\"디지털 핵무기와 유사한 것\", \"거의 인류 종말 장치와 같은 것\"",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Mr. Altman, Mr. Amodei and Mr. Zuckerberg: In the interest of humanity, stand by your words. Pause AI development. It is not too late to avoid disaster. Stop building machines that humans cannot control.",
+   "ko": "올트먼 씨, 아모데이 씨, 저커버그 씨, 인류를 위해 귀하들이 한 말을 지키십시오. AI 개발을 일시 중단하십시오. 재앙을 피하기에 아직 늦지 않았습니다. 인간이 통제할 수 없는 기계를 만드는 일을 멈추십시오.",
+   "marks": [
+    {
+     "t": "AI 개발을 일시 중단하십시오.",
+     "k": "key"
+    },
+    {
+     "t": "인간이 통제할 수 없는 기계를 만드는 일을 멈추십시오.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Let me be very clear: If you do not take appropriate action now, my colleagues and I in the U.S. Senate will.",
+   "ko": "분명히 말씀드립니다. 귀하들이 지금 적절한 조치를 취하지 않는다면, 저와 미국 상원(U.S. Senate)의 동료 의원들이 나설 것입니다.",
+   "marks": [
+    {
+     "t": "저와 미국 상원(U.S. Senate)의 동료 의원들이 나설 것입니다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Sincerely,",
+   "ko": "그럼 이만 줄입니다."
+  },
+  {
+   "type": "p",
+   "en": "BERNARD SANDERS",
+   "ko": "버나드 샌더스"
+  },
+  {
+   "type": "p",
+   "en": "UNITED STATES SENATOR",
+   "ko": "미국 상원의원"
+  }
+ ]
+}

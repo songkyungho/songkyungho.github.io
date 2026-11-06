@@ -1,0 +1,401 @@
+{
+ "slug": "uk-aisi-technical-best-practice-2026-10",
+ "title": "프론티어 AI 개발의 기술적 모범 사례를 향하여",
+ "original_title": "Towards technical best practice for frontier AI development",
+ "publisher": "영국 AI 보안연구소(AISI)",
+ "published": "2026-10-12",
+ "source_url": "https://www.aisi.gov.uk/blog/towards-technical-best-practice-for-frontier-ai-development",
+ "source_note": "AISI 누리집 글 전문이다.",
+ "source_label": "원문 보기 (UK AISI)",
+ "summary": "영국 AI 보안연구소가 프론티어 AI 개발의 새 기술 모범 사례에 관한 입장을 밝힌 글이다. 위험이 공개 출시 전의 훈련, 내부 배포, 평가 단계에서 이미 나타나고, 평가 관행이 역량 발전을 따라가지 못한다고 진단한다. 위험 평가와 문서화, 에이전틱 AI 사고 보고, 개발 속도 정보 공유, 독립 감사자 지원 등 8개 우선 과제를 제시한다. 의무를 부과하기보다 자발적 실행 방안을 먼저 만들고, 성숙하면 국제 표준으로 공식화하는 경로를 제안한다.",
+ "image": "/images/translations/uk-aisi-technical-best-practice-2026-10-cover.webp",
+ "og_image": "/images/translations/uk-aisi-technical-best-practice-2026-10-cover.jpg",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "doc_kind": "기관 입장문",
+ "translated": "2026-11-06",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 30,
+  "sections": 0,
+  "items": 4,
+  "words_en": 1344
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "On 22 September, the Prime Minister set out steps the UK is taking to ensure AI delivers on its vast potential for good. These include a commitment to work towards principles and standards that ensure the most capable AI systems are developed securely and with appropriate transparency. The AI Security Institute (AISI) will play a key role in delivering that commitment, with partners across industry, governments and beyond.",
+   "ko": "9월 22일, 총리는 AI가 지닌 막대한 긍정적 잠재력을 실현하도록 하기 위해 영국이 취하고 있는 조치를 제시했다. 여기에는 가장 높은 역량을 갖춘 AI 시스템이 보안이 확보된 상태로, 적절한 투명성을 갖추어 개발되도록 보장하는 원칙과 표준을 마련하기 위해 노력하겠다는 약속이 포함된다. AI 보안연구소(AI Security Institute, AISI)는 업계, 각국 정부 및 그 밖의 파트너와 함께 이 약속을 이행하는 데 핵심적인 역할을 맡을 것이다.",
+   "marks": [
+    {
+     "t": "가장 높은 역량을 갖춘 AI 시스템이 보안이 확보된 상태로, 적절한 투명성을 갖추어 개발되도록 보장하는 원칙과 표준을 마련하기 위해 노력하겠다는 약속",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This work responds to continued, rapid AI capability progress in recent months. That progress promises a wide range of benefits, but it has also outpaced several practices used to manage risk and oversee frontier systems – especially with risks now emerging earlier, during AI development itself.",
+   "ko": "이 작업은 최근 몇 달간 지속된 급속한 AI 역량 발전에 대응하기 위한 것이다. 이러한 발전은 광범위한 혜택을 약속하지만, 위험을 관리하고 프론티어 시스템을 감독하는 데 사용되던 여러 실행 방안을 앞지르기도 했다. 특히 이제는 위험이 AI 개발 과정 자체에서 더 이른 시점에 나타나고 있다.",
+   "marks": [
+    {
+     "t": "위험을 관리하고 프론티어 시스템을 감독하는 데 사용되던 여러 실행 방안을 앞지르기도 했다",
+     "k": "safety"
+    },
+    {
+     "t": "특히 이제는 위험이 AI 개발 과정 자체에서 더 이른 시점에 나타나고 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Here we set out AISI’s view of these challenges and the new technical practices and controls most urgently needed to address them. We draw on three years of experience testing, evaluating and researching frontier AI models, in partnership with industry and other technical authorities such as the Center for Advancing Innovation and Standards for Super Intelligence. We also explain how we aim to work with developers and others to help establish best practice that could later inform formal technical standards.",
+   "ko": "여기서는 이러한 과제에 대한 AISI의 견해와, 이를 해결하는 데 가장 시급히 필요한 새로운 기술적 실행 방안 및 통제를 제시한다. 이는 업계 및 초지능 혁신·표준 진흥센터(Center for Advancing Innovation and Standards for Super Intelligence)와 같은 다른 기술 당국과 협력하여 프론티어 AI 모델을 시험, 평가(evaluation), 연구해 온 3년간의 경험에 기반한다. 또한 향후 공식 기술 표준의 토대가 될 수 있는 모범 사례를 확립하는 데 기여하기 위해 개발자 및 기타 이해관계자와 어떻게 협력하고자 하는지도 설명한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 모델을 시험, 평가(evaluation), 연구해 온 3년간의 경험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AISI is not seeking to mandate requirements for frontier developers, but to contribute our expertise to an industry-wide effort to advance technical standards and best practice. We welcome leading developers’ recent commitments to that effort, including through the White House Accord on Super Intelligence.",
+   "ko": "AISI는 프론티어 개발자(frontier developer)에게 요건을 의무화하려는 것이 아니라, 기술 표준과 모범 사례를 발전시키기 위한 업계 전반의 노력에 전문성을 보태고자 한다. 우리는 초지능에 관한 백악관 합의(White House Accord on Super Intelligence)를 통한 약속을 포함하여, 이러한 노력에 대해 선도적 개발자들이 최근 내놓은 약속을 환영한다.",
+   "marks": [
+    {
+     "t": "AISI는 프론티어 개발자(frontier developer)에게 요건을 의무화하려는 것이 아니라",
+     "k": "safety"
+    },
+    {
+     "t": "초지능에 관한 백악관 합의(White House Accord on Super Intelligence)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "How voluntary action already shapes AI development",
+   "ko": "자발적 조치는 이미 AI 개발을 어떻게 형성하고 있는가",
+   "id": "s4"
+  },
+  {
+   "type": "p",
+   "en": "Much of how frontier developers manage risk today is voluntary. Developers publish safety frameworks, share models with third parties for pre-release evaluation and, most recently, have begun embedding third-party evaluators.",
+   "ko": "오늘날 프론티어 개발자가 위험을 관리하는 방식의 상당 부분은 자발적이다. 개발자들은 안전 프레임워크를 공개하고, 출시 전 평가를 위해 제3자와 모델을 공유하며, 가장 최근에는 제3자 평가자를 조직 내부에 상주시키는 임베딩 방식을 도입하기 시작했다.",
+   "marks": [
+    {
+     "t": "오늘날 프론티어 개발자가 위험을 관리하는 방식의 상당 부분은 자발적이다.",
+     "k": "key"
+    },
+    {
+     "t": "안전 프레임워크를 공개하고, 출시 전 평가를 위해 제3자와 모델을 공유하며",
+     "k": "safety"
+    },
+    {
+     "t": "제3자 평가자를 조직 내부에 상주시키는 임베딩 방식을 도입하기 시작했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AISI has helped establish these practices. Working with industry, we have independently evaluated more than 55 models before release, developed principles for safeguards evaluation, helped shape risk assessments and safety frameworks, and jointly tested agent control monitors.",
+   "ko": "AISI는 이러한 실행 방안을 확립하는 데 기여해 왔다. 우리는 업계와 협력하여 55개 이상의 모델을 공개 전에 독립적으로 평가했고, 안전장치 평가 원칙을 개발했으며, 위험 평가와 안전 프레임워크의 형성을 지원했고, 에이전트 통제 모니터를 공동으로 시험했다.",
+   "marks": [
+    {
+     "t": "55개 이상의 모델을 공개 전에 독립적으로 평가했고, 안전장치 평가 원칙을 개발했으며",
+     "k": "safety"
+    },
+    {
+     "t": "에이전트 통제 모니터를 공동으로 시험했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Beyond industry collaboration, we have released open-source evaluation tools including Inspect – now the standard framework for leading third-party evaluators – and published field-building research on topics such as safety cases and monitorability and control. We have advanced the science of evaluation internationally by coordinating the Network for Advanced AI Measurement, Evaluation and Science and contributing to a NIST taxonomy. Elsewhere in government, experts at the NCSC, DSIT and DCMS have worked with industry and international partners, including the US and other governments, to develop a code of practice on AI cyber security which now forms the basis of ETSI EN 304 223.",
+   "ko": "업계 협력 외에도, 우리는 현재 선도적 제3자 평가자들의 표준 프레임워크가 된 Inspect를 포함한 오픈소스 평가 도구를 공개했으며, 안전 사례와 모니터링 가능성(monitorability) 및 통제 등의 주제에 관해 분야 기반을 구축하는 연구를 발표했다. 또한 첨단 AI 측정·평가·과학 네트워크(Network for Advanced AI Measurement, Evaluation and Science)를 조정하고 미국 국립표준기술연구소(NIST)의 분류 체계 작성에 기여함으로써 국제적으로 평가 과학을 발전시켰다. 정부 내 다른 부문에서는 국가사이버보안센터(NCSC), 과학혁신기술부(DSIT), 문화미디어스포츠부(DCMS)의 전문가들이 미국 및 기타 정부를 포함한 업계 및 국제 파트너와 협력하여 AI 사이버 보안에 관한 실천 강령을 개발했으며, 이는 현재 ETSI EN 304 223의 기반을 이루고 있다.",
+   "marks": [
+    {
+     "t": "안전 사례와 모니터링 가능성(monitorability) 및 통제 등의 주제에 관해 분야 기반을 구축하는 연구를 발표했다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 사이버 보안에 관한 실천 강령을 개발했으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Together, these practices have helped industry operate more safely and given governments and the public a clearer view of how AI capabilities and risks have progressed. The work we set out today builds on that foundation.",
+   "ko": "이러한 실행 방안들은 함께 업계가 보다 안전하게 운영되도록 돕고, 정부와 대중이 AI 역량과 위험이 어떻게 진전되어 왔는지를 보다 명확히 파악할 수 있게 해 주었다. 오늘 제시하는 작업은 이러한 토대 위에 구축된다.",
+   "marks": [
+    {
+     "t": "이러한 실행 방안들은 함께 업계가 보다 안전하게 운영되도록 돕고, 정부와 대중이 AI 역량과 위험이 어떻게 진전되어 왔는지를 보다 명확히 파악할 수 있게 해 주었다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Where new challenges have emerged",
+   "ko": "새로운 과제가 나타난 지점",
+   "id": "s9"
+  },
+  {
+   "type": "p",
+   "en": "Since these practices were established, AI capabilities have continued to advance rapidly. Through our technical work, we have identified two new challenges facing frontier AI organisations today.",
+   "ko": "이러한 실행 방안이 확립된 이후에도 AI 역량은 계속해서 빠르게 발전해 왔다. 우리는 기술적 작업을 통해 오늘날 프론티어 AI 조직이 직면한 두 가지 새로운 과제를 확인했다."
+  },
+  {
+   "type": "p",
+   "en": "First, risks are arising earlier in the development process. Evaluations and other security practices have largely centred on making models safe for public release. But today’s AI systems are autonomous and capable enough, particularly in cyber, to pose risk even while unreleased: during training, internal deployment, and evaluation itself. Recent incidents demonstrate how inadequate control and monitoring at these stages could lead to real harm.",
+   "ko": "첫째, 위험이 개발 과정의 더 이른 단계에서 발생하고 있다. 평가와 기타 보안 실행 방안은 주로 모델을 공개 출시에 안전한 상태로 만드는 데 초점을 맞춰 왔다. 그러나 오늘날의 AI 시스템은 특히 사이버 분야에서 충분히 자율적이고 높은 역량을 갖추고 있어, 공개되지 않은 상태에서도, 즉 훈련, 내부 배포, 그리고 평가 자체 과정에서도 위험을 초래할 수 있다. 최근의 사고들은 이러한 단계에서의 불충분한 통제와 모니터링이 어떻게 실제 피해로 이어질 수 있는지를 보여 준다.",
+   "marks": [
+    {
+     "t": "첫째, 위험이 개발 과정의 더 이른 단계에서 발생하고 있다.",
+     "k": "key"
+    },
+    {
+     "t": "공개되지 않은 상태에서도, 즉 훈련, 내부 배포, 그리고 평가 자체 과정에서도 위험을 초래할 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "불충분한 통제와 모니터링이 어떻게 실제 피해로 이어질 수 있는지를 보여 준다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Second, evaluation practices are struggling to keep pace. Capability benchmarks are often saturated soon after they’re created, and building credible new evaluations takes time: they now entail increasingly complex tasks, multi-agent settings, multi-day runs, and tighter security controls – all while accounting for the effects of inference compute scaling, tooling and scaffolding. Evaluation methodologies for alignment and control are still nascent, meaning they can’t assure whether increasingly autonomous AI agents will behave as intended, or whether controls will reliably catch any misbehaviour.",
+   "ko": "둘째, 평가 관행이 발전 속도를 따라가지 못하고 있다. 역량 벤치마크는 만들어진 직후 포화되는 경우가 많으며, 신뢰할 수 있는 새로운 평가를 구축하는 데는 시간이 걸린다. 이제 평가에는 점점 더 복잡한 과업, 다중 에이전트 환경, 수일에 걸친 실행, 더 엄격한 보안 통제가 수반되며, 동시에 추론(Inference) 연산 스케일링, 도구, 스캐폴딩의 효과도 고려해야 한다. 정렬 및 통제를 위한 평가 방법론은 아직 초기 단계에 있어, 점점 더 자율적인 AI 에이전트가 의도한 대로 행동할지, 또는 통제가 부적절한 행동을 신뢰성 있게 포착할지를 보증하지 못한다.",
+   "marks": [
+    {
+     "t": "둘째, 평가 관행이 발전 속도를 따라가지 못하고 있다.",
+     "k": "key"
+    },
+    {
+     "t": "역량 벤치마크는 만들어진 직후 포화되는 경우가 많으며",
+     "k": "safety"
+    },
+    {
+     "t": "정렬 및 통제를 위한 평가 방법론은 아직 초기 단계에 있어",
+     "k": "safety"
+    },
+    {
+     "t": "점점 더 자율적인 AI 에이전트가 의도한 대로 행동할지, 또는 통제가 부적절한 행동을 신뢰성 있게 포착할지를 보증하지 못한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Several trends exacerbate these challenges. As AI systems become more capable, they may become harder to oversee. Models’ growing awareness of when they’re being tested may allow them to mask how they would behave when deployed. Multi-agent settings may trigger new behaviours that have barely been studied. And, as AI contributes more to its own development, progress could accelerate, meaning these problems may arise faster and with less direct human oversight involved.",
+   "ko": "여러 추세가 이러한 과제를 악화시킨다. AI 시스템의 역량이 높아질수록 감독은 더 어려워질 수 있다. 모델이 자신이 시험받고 있는 시점을 점점 더 잘 인식하게 되면서, 배포되었을 때 어떻게 행동할지를 숨길 수 있게 될 수도 있다. 다중 에이전트 환경은 거의 연구되지 않은 새로운 행동을 유발할 수 있다. 그리고 AI가 자체 개발에 더 많이 기여함에 따라 발전이 가속화될 수 있으며, 이는 이러한 문제가 더 빠르게, 그리고 직접적인 인간 감독이 덜 개입된 상태에서 발생할 수 있음을 의미한다.",
+   "marks": [
+    {
+     "t": "AI 시스템의 역량이 높아질수록 감독은 더 어려워질 수 있다.",
+     "k": "safety"
+    },
+    {
+     "t": "모델이 자신이 시험받고 있는 시점을 점점 더 잘 인식하게 되면서, 배포되었을 때 어떻게 행동할지를 숨길 수 있게 될 수도 있다.",
+     "k": "safety"
+    },
+    {
+     "t": "다중 에이전트 환경은 거의 연구되지 않은 새로운 행동을 유발할 수 있다.",
+     "k": "safety"
+    },
+    {
+     "t": "직접적인 인간 감독이 덜 개입된 상태에서 발생할 수 있음을 의미한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "It’s these challenges that call for new technical best practice, to enable frontier AI development activities to continue safely as capabilities progress.",
+   "ko": "바로 이러한 과제들이, 역량이 발전하는 가운데에도 프론티어 AI 개발 활동이 안전하게 지속될 수 있도록 하는 새로운 기술적 모범 사례를 요구하고 있다."
+  },
+  {
+   "type": "h3",
+   "en": "Our view on priorities for new best practice",
+   "ko": "새로운 모범 사례의 우선순위에 대한 우리의 견해",
+   "id": "s15"
+  },
+  {
+   "type": "p",
+   "en": "Below we set out our view on the most urgent priorities for new technical best practice. The list is not exhaustive, and we aren’t suggesting AISI should address every item. Many priorities are interlinked, and align with practices to which companies have publicly committed:",
+   "ko": "아래에서는 새로운 기술적 모범 사례의 가장 시급한 우선순위에 대한 우리의 견해를 제시한다. 이 목록은 망라적이지 않으며, AISI가 모든 항목을 다루어야 한다고 제안하는 것도 아니다. 많은 우선순위가 서로 연결되어 있으며, 기업들이 공개적으로 약속한 실행 방안과도 부합한다:",
+   "marks": [
+    {
+     "t": "새로운 기술적 모범 사례의 가장 시급한 우선순위에 대한 우리의 견해를 제시한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Assessing and documenting risk: how should frontier AI organisations assess risk and report on it throughout development; what should risk assessments cover; and what standard of evidence and documentation should they meet.",
+   "ko": "위험 평가 및 문서화: 프론티어 AI 조직은 개발 전반에 걸쳐 위험을 어떻게 평가하고 보고해야 하는가, 위험 평가는 무엇을 다루어야 하는가, 그리고 어떤 수준의 증거 및 문서화 기준을 충족해야 하는가.",
+   "marks": [
+    {
+     "t": "프론티어 AI 조직은 개발 전반에 걸쳐 위험을 어떻게 평가하고 보고해야 하는가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Overseeing AI systems throughout their lifecycle: what controls, monitoring, detection, and other mechanisms should be used to ensure AI systems operate as intended during training, evaluation and internal and external deployment; how should frontier AI organisations share best practice; and how should existing guidelines for secure AI development be implemented and kept up to date as capabilities evolve.",
+   "ko": "수명주기 전반에 걸친 AI 시스템 감독: 훈련, 평가, 내부 배포 및 외부 배포 과정에서 AI 시스템이 의도한 대로 작동하도록 보장하기 위해 어떤 통제, 모니터링, 탐지 및 기타 메커니즘을 사용해야 하는가, 프론티어 AI 조직은 모범 사례를 어떻게 공유해야 하는가, 그리고 보안이 확보된 AI 개발을 위한 기존 지침은 역량이 진화함에 따라 어떻게 이행되고 최신 상태로 유지되어야 하는가.",
+   "marks": [
+    {
+     "t": "AI 시스템이 의도한 대로 작동하도록 보장하기 위해 어떤 통제, 모니터링, 탐지 및 기타 메커니즘을 사용해야 하는가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Preserving and evaluating oversight mechanisms: what technical choices will preserve developers’ ability to oversee AI systems as they become more capable; and how should oversight mechanisms be rigorously evaluated.",
+   "ko": "감독 메커니즘의 유지 및 평가: AI 시스템의 역량이 높아지더라도 개발자가 이를 감독할 수 있는 능력을 유지하게 해 주는 기술적 선택은 무엇인가, 그리고 감독 메커니즘은 어떻게 엄격하게 평가되어야 하는가.",
+   "marks": [
+    {
+     "t": "AI 시스템의 역량이 높아지더라도 개발자가 이를 감독할 수 있는 능력을 유지하게 해 주는 기술적 선택은 무엇인가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Detecting, responding to, and reporting agentic AI incidents: how should unsafe agent behaviour be defined and its severity determined; what technical systems are needed for rapid detection and response; and what principles will govern how incidents are reported to affected parties, governments, and the public, aligning with existing standards.",
+   "ko": "에이전틱 AI 사고의 탐지, 대응 및 보고: 안전하지 않은 에이전트 행동은 어떻게 정의되고 그 심각도는 어떻게 결정되어야 하는가, 신속한 탐지와 대응을 위해 어떤 기술 시스템이 필요한가, 그리고 기존 표준에 부합하면서 영향을 받는 당사자, 정부 및 대중에게 사고를 보고하는 방식을 규율할 원칙은 무엇인가.",
+   "marks": [
+    {
+     "t": "안전하지 않은 에이전트 행동은 어떻게 정의되고 그 심각도는 어떻게 결정되어야 하는가",
+     "k": "safety"
+    },
+    {
+     "t": "영향을 받는 당사자, 정부 및 대중에게 사고를 보고하는 방식",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Sharing information on the speed of AI development: which metrics best track progress, including AI’s use in its own development as an indicator of recursive self-improvement; and when should these metrics be shared with governments and the public, so that rapid progress (or stagnation) does not come as a surprise.",
+   "ko": "AI 개발 속도에 관한 정보 공유: 재귀적 자기 개선의 지표로서 AI가 자체 개발에 활용되는 정도를 포함하여, 어떤 지표가 발전을 가장 잘 추적하는가, 그리고 급속한 발전(또는 정체)이 예기치 않은 일이 되지 않도록 이러한 지표를 언제 정부와 대중에게 공유해야 하는가.",
+   "marks": [
+    {
+     "t": "재귀적 자기 개선의 지표로서 AI가 자체 개발에 활용되는 정도",
+     "k": "safety"
+    },
+    {
+     "t": "급속한 발전(또는 정체)이 예기치 않은 일이 되지 않도록 이러한 지표를 언제 정부와 대중에게 공유해야 하는가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Enabling independent auditors and evaluators: what expertise qualifies auditors and evaluators to make effective safety assessments; what scope should frontier AI organisations grant to embedded auditors and other independent third parties; what access and resources should they be given; and what should they report to companies, governments and the public.",
+   "ko": "독립적인 감사자 및 평가자 지원: 감사자와 평가자가 효과적인 안전성 평가(assessment)를 수행하기 위해 어떤 전문성을 갖추어야 하는가, 프론티어 AI 조직은 내부에 임베딩된 감사자 및 기타 독립적 제3자에게 어느 범위의 권한을 부여해야 하는가, 이들에게 어떤 접근 권한과 자원이 제공되어야 하는가, 그리고 이들은 기업, 정부 및 대중에게 무엇을 보고해야 하는가.",
+   "marks": [
+    {
+     "t": "감사자와 평가자가 효과적인 안전성 평가(assessment)를 수행하기 위해 어떤 전문성을 갖추어야 하는가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Measuring capabilities in security-relevant domains: how can internal and external evaluators measure the full extent of system capabilities; and which practices in elicitation, environmental realism, and evaluation design give the most accurate results.",
+   "ko": "보안 관련 영역에서의 역량 측정: 내부 및 외부 평가자는 시스템 역량의 전체 범위를 어떻게 측정할 수 있는가, 그리고 역량 이끌어내기(elicitation), 환경 현실성, 평가 설계에 있어 어떤 실행 방안이 가장 정확한 결과를 제공하는가.",
+   "marks": [
+    {
+     "t": "내부 및 외부 평가자는 시스템 역량의 전체 범위를 어떻게 측정할 수 있는가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Measuring AI alignment: which techniques robustly evaluate how a model behaves in various high-stakes situations; and what are the limits of what these evaluations show.",
+   "ko": "AI 정렬 측정: 다양한 고위험 상황에서 모델이 어떻게 행동하는지를 어떤 기법이 견고하게 평가하는가, 그리고 이러한 평가가 보여주는 바의 한계는 무엇인가.",
+   "marks": [
+    {
+     "t": "다양한 고위험 상황에서 모델이 어떻게 행동하는지를 어떤 기법이 견고하게 평가하는가",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 평가가 보여주는 바의 한계는 무엇인가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Technical practices will need to evolve as rapidly as capabilities do. What works for today’s systems may not hold for more capable ones, given the trends we identified earlier. Best practice will therefore need to be developed with future models in mind, kept under continual review, and updated as new capabilities arrive.",
+   "ko": "기술적 실행 방안은 역량만큼이나 빠르게 진화해야 할 것이다. 앞서 확인한 추세를 고려하면, 오늘날의 시스템에 효과적인 방식이 더 높은 역량을 갖춘 시스템에서는 유효하지 않을 수 있다. 따라서 모범 사례는 미래 모델을 염두에 두고 개발되어야 하고, 지속적인 검토 대상이 되어야 하며, 새로운 역량이 등장함에 따라 갱신되어야 할 것이다.",
+   "marks": [
+    {
+     "t": "오늘날의 시스템에 효과적인 방식이 더 높은 역량을 갖춘 시스템에서는 유효하지 않을 수 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "The path to technical best practice",
+   "ko": "기술적 모범 사례로 가는 길",
+   "id": "s26"
+  },
+  {
+   "type": "p",
+   "en": "An agenda so broad and complex is best delivered through collaboration between frontier developers and other technical organisations. It calls for a wide range of expertise, including in cyber security, incident response, national security and safety-critical industries with deep experience of managing risk in complex systems. Working together makes effort additive rather than duplicative, and lets each organisation’s strengths cover others’ blind spots.",
+   "ko": "이처럼 광범위하고 복잡한 과제는 프론티어 개발자와 기타 기술 조직 간의 협력을 통해 수행하는 것이 가장 바람직하다. 이 과제에는 사이버 보안, 사고 대응, 국가안보, 그리고 복잡한 시스템의 위험 관리에 깊은 경험을 지닌 안전 중요(safety-critical) 산업을 포함하여 폭넓은 전문성이 요구된다. 함께 일하면 노력이 중복되지 않고 누적되며, 각 조직의 강점이 다른 조직의 사각지대를 보완할 수 있다.",
+   "marks": [
+    {
+     "t": "사이버 보안, 사고 대응, 국가안보, 그리고 복잡한 시스템의 위험 관리에 깊은 경험을 지닌 안전 중요(safety-critical) 산업",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In our view, the first step is to meet the immediate technical need, with industry and other frontier AI organisations iteratively developing and sharing practices that address the challenges developers face today. As practices mature, and where consistency and interoperability add value, they could be formalised via international standards development organisations – establishing common security baselines that let developers around the world operate with confidence.",
+   "ko": "우리가 보기에 첫 단계는 당면한 기술적 필요를 충족하는 것으로, 업계와 기타 프론티어 AI 조직이 오늘날 개발자가 직면한 과제를 해결하는 실행 방안을 반복적으로 개발하고 공유하는 것이다. 실행 방안이 성숙해지고 일관성과 상호운용성이 가치를 더하는 경우에는, 이를 국제 표준 개발 기구를 통해 공식화할 수 있을 것이다. 이를 통해 전 세계 개발자가 확신을 갖고 운영할 수 있도록 하는 공통의 보안 기준선을 수립할 수 있다.",
+   "marks": [
+    {
+     "t": "업계와 기타 프론티어 AI 조직이 오늘날 개발자가 직면한 과제를 해결하는 실행 방안을 반복적으로 개발하고 공유하는 것이다",
+     "k": "key"
+    },
+    {
+     "t": "전 세계 개발자가 확신을 갖고 운영할 수 있도록 하는 공통의 보안 기준선을 수립할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AISI will contribute its technical expertise, built on years of experience in evaluation, research and technical collaboration. We will work with frontier developers and others to develop voluntary practices, leading where valuable, and supporting others’ efforts where we can. If you would like to collaborate on any of these problems, we’d like to hear from you.",
+   "ko": "AISI는 평가, 연구 및 기술 협력 분야에서 수년간 축적한 경험을 바탕으로 기술적 전문성을 제공할 것이다. 우리는 프론티어 개발자 및 기타 주체와 협력하여 자발적 실행 방안을 개발하고, 가치가 있는 곳에서는 주도적 역할을 하며, 가능한 곳에서는 다른 이들의 노력을 지원할 것이다. 이러한 문제 중 어느 것에 대해서든 협력을 원한다면 연락을 기다린다.",
+   "marks": [
+    {
+     "t": "AISI는 평가, 연구 및 기술 협력 분야에서 수년간 축적한 경험을 바탕으로 기술적 전문성을 제공할 것이다.",
+     "k": "safety"
+    },
+    {
+     "t": "프론티어 개발자 및 기타 주체와 협력하여 자발적 실행 방안을 개발하고",
+     "k": "key"
+    }
+   ]
+  }
+ ]
+}

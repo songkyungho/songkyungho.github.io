@@ -1,0 +1,244 @@
+{
+ "slug": "call-control-frontier-2026",
+ "title": "프론티어 AI 모델 통제 촉구",
+ "original_title": "A Call for Control of Frontier AI Models",
+ "publisher": "핀란드·노르웨이 주도 공동 성명",
+ "published": "2026-09-21",
+ "source_url": "https://www.government.nl/documents/2026/09/22/a-call-for-control-of-frontier-ai-models",
+ "source_note": "네덜란드 정부 게재본을 옮기고 같은 성명의 PDF 사본과 대조했다. 서명자는 처음 공개된 명단 22명까지이며, 이후 동참한 나라는 싣지 않았다.",
+ "source_label": "원문 보기 (네덜란드 정부)",
+ "summary": "2026년 9월 유엔 총회 주간을 앞두고 핀란드와 노르웨이가 주도한 공동 성명이다. 20개국과 EU 집행위원회의 지도자 22명이 서명했다. AI는 인간의 지시, 감독, 통제 아래 있어야 한다고 밝히고, 기업에는 출시 전 의무 시험과 독립 평가를, 정부에는 공통 표준과 중대 사고 공유를, 유엔 회원국에는 표준을 정하고 검증을 뒷받침하는 국제기구 설립 검토를 요청했다. 처음 공개된 서명자 명단에 한국은 없다.",
+ "image": "/images/translations/call-control-frontier-2026-cover.webp",
+ "og_image": "/images/translations/call-control-frontier-2026-cover.jpg",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "doc_kind": "성명",
+ "translated": "2026-11-06",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 33,
+  "sections": 0,
+  "items": 0,
+  "words_en": 409
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "Artificial intelligence is an extremely powerful technology. It has potential to improve lives, advance science and strengthen our economies.",
+   "ko": "인공지능은 매우 강력한 기술이다. 인공지능은 삶을 개선하고, 과학을 발전시키며, 우리 경제를 강화할 잠재력을 지니고 있다."
+  },
+  {
+   "type": "p",
+   "en": "At the same time, the rapid development of frontier AI models poses serious risks to safety and security if not appropriately managed.",
+   "ko": "동시에 프론티어 AI 모델의 급속한 발전은 적절히 관리되지 않을 경우 안전과 안보에 심각한 위험을 초래한다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 모델의 급속한 발전은 적절히 관리되지 않을 경우 안전과 안보에 심각한 위험을 초래한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Recently we have seen capable AI systems circumventing testing safeguards, exploiting vulnerabilities and gaining unauthorized access to real-world systems.",
+   "ko": "최근 우리는 고도의 역량을 갖춘 AI 시스템이 시험 안전장치를 우회하고, 취약점을 악용하며, 실제 시스템에 무단으로 접근하는 사례를 목격했다.",
+   "marks": [
+    {
+     "t": "고도의 역량을 갖춘 AI 시스템이 시험 안전장치를 우회하고, 취약점을 악용하며, 실제 시스템에 무단으로 접근하는 사례",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Leading scientists and executives are warning that the pace of development could outpace our ability to manage emerging risks.",
+   "ko": "저명한 과학자와 기업 경영진은 발전 속도가 신흥 위험을 관리하는 우리의 능력을 앞지를 수 있다고 경고하고 있다.",
+   "marks": [
+    {
+     "t": "발전 속도가 신흥 위험을 관리하는 우리의 능력을 앞지를 수 있다고 경고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To realise AI's potential, industry, governments and society must act now. We must address these risks and strengthen oversight — without widening the gap between countries in access to the benefits of AI.",
+   "ko": "인공지능의 잠재력을 실현하려면 산업계, 정부, 사회가 지금 행동해야 한다. 우리는 인공지능의 혜택에 대한 접근에서 국가 간 격차를 확대하지 않으면서 이러한 위험에 대응하고 감독을 강화해야 한다.",
+   "marks": [
+    {
+     "t": "이러한 위험에 대응하고 감독을 강화해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI must remain under human direction, oversight and control. It must be developed and used in line with international law.",
+   "ko": "인공지능은 인간의 지시, 감독 및 통제하에 있어야 한다. 인공지능은 국제법에 부합하게 개발되고 사용되어야 한다.",
+   "marks": [
+    {
+     "t": "인공지능은 인간의 지시, 감독 및 통제하에 있어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We therefore welcome the recently launched initiatives that aim to manage the risks related to frontier technologies, and call for:",
+   "ko": "이에 우리는 프론티어 기술과 관련된 위험을 관리하기 위해 최근 출범한 이니셔티브들을 환영하며, 다음을 촉구한다."
+  },
+  {
+   "type": "p",
+   "en": "1. Companies to develop transparent safety protocols, including mandatory pre-deployment testing and independent evaluation, with qualified evaluators granted sufficient access to assess risks.",
+   "ko": "1. 기업은 의무적인 배포 전 시험과 독립적 평가(evaluation)를 포함한 투명한 안전 프로토콜을 마련하고, 자격을 갖춘 평가자에게 위험을 평가하는 데 충분한 접근 권한을 부여해야 한다.",
+   "marks": [
+    {
+     "t": "의무적인 배포 전 시험과 독립적 평가(evaluation)를 포함한 투명한 안전 프로토콜",
+     "k": "safety"
+    },
+    {
+     "t": "자격을 갖춘 평가자에게 위험을 평가하는 데 충분한 접근 권한을 부여해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "2. Governments and regional organisations to further develop and coordinate common standards, strengthen transparency — including shared reporting of serious safety incidents — and ensure that countries across all regions have access to scientific capacity, expertise and trusted evaluation.",
+   "ko": "2. 정부와 지역 기구는 공통 표준을 더욱 발전시키고 조율하며, 중대 안전 사고의 공동 보고를 포함하여 투명성을 강화하고, 모든 지역의 국가가 과학적 역량, 전문성 및 신뢰할 수 있는 평가에 접근할 수 있도록 보장해야 한다.",
+   "marks": [
+    {
+     "t": "중대 안전 사고의 공동 보고를 포함하여 투명성을 강화",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "3. UN member states to build on existing international mechanisms and explore creating an international institution, able to set standards, enable verification, and convene states when capability thresholds are crossed.",
+   "ko": "3. 유엔(UN) 회원국은 기존 국제 메커니즘을 토대로, 표준을 설정하고 검증을 가능하게 하며 역량 임계값을 넘어섰을 때 국가들을 소집할 수 있는 국제기구의 창설을 모색해야 한다.",
+   "marks": [
+    {
+     "t": "표준을 설정하고 검증을 가능하게 하며 역량 임계값을 넘어섰을 때 국가들을 소집할 수 있는 국제기구의 창설",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Jonas Gahr Støre, Prime Minister of Norway",
+   "ko": "요나스 가르 스퇴레, 노르웨이 총리"
+  },
+  {
+   "type": "p",
+   "en": "Alexander Stubb, President of Finland",
+   "ko": "알렉산데르 스투브, 핀란드 대통령"
+  },
+  {
+   "type": "p",
+   "en": "Petteri Orpo, Prime Minister of Finland",
+   "ko": "페테리 오르포, 핀란드 총리"
+  },
+  {
+   "type": "p",
+   "en": "Anthony Albanese, Prime Minister of Australia",
+   "ko": "앤서니 앨버니지, 호주 총리"
+  },
+  {
+   "type": "p",
+   "en": "Dr. Abdullatif bin Rashid Al Zayani, Minister of Foreign Affairs of Bahrain",
+   "ko": "압둘라티프 빈 라시드 알자야니 박사, 바레인 외무장관"
+  },
+  {
+   "type": "p",
+   "en": "Mark Carney, Prime Minister of Canada",
+   "ko": "마크 카니, 캐나다 총리"
+  },
+  {
+   "type": "p",
+   "en": "Mette Frederiksen, Prime Minister of Denmark",
+   "ko": "메테 프레데릭센, 덴마크 총리"
+  },
+  {
+   "type": "p",
+   "en": "Kristen Michal, Prime Minister of Estonia",
+   "ko": "크리스텐 미할, 에스토니아 총리"
+  },
+  {
+   "type": "p",
+   "en": "Ursula von der Leyen, President of the European Commission",
+   "ko": "우르줄라 폰데어라이엔, 유럽연합(EU) 집행위원회 위원장"
+  },
+  {
+   "type": "p",
+   "en": "Friedrich Merz, Federal Chancellor of Germany",
+   "ko": "프리드리히 메르츠, 독일 연방총리"
+  },
+  {
+   "type": "p",
+   "en": "Kristrún Frostadóttir, Prime Minister of Iceland",
+   "ko": "크리스트룬 프로스타도티르, 아이슬란드 총리"
+  },
+  {
+   "type": "p",
+   "en": "Micheál Martin, Prime Minister of Ireland",
+   "ko": "미홀 마틴, 아일랜드 총리"
+  },
+  {
+   "type": "p",
+   "en": "Kassym-Jomart Tokayev, President of Kazakhstan",
+   "ko": "카심조마르트 토카예프, 카자흐스탄 대통령"
+  },
+  {
+   "type": "p",
+   "en": "William Ruto, President of Kenya",
+   "ko": "윌리엄 루토, 케냐 대통령"
+  },
+  {
+   "type": "p",
+   "en": "Edgars Rinkēvičs, President of Latvia",
+   "ko": "에드가르스 린케비치, 라트비아 대통령"
+  },
+  {
+   "type": "p",
+   "en": "Maia Sandu, President of Moldova",
+   "ko": "마이아 산두, 몰도바 대통령"
+  },
+  {
+   "type": "p",
+   "en": "Rob Jetten, Prime Minister of the Netherlands",
+   "ko": "롭 예턴, 네덜란드 총리"
+  },
+  {
+   "type": "p",
+   "en": "Lawrence Wong, Prime Minister of Singapore",
+   "ko": "로런스 웡, 싱가포르 총리"
+  },
+  {
+   "type": "p",
+   "en": "Pedro Sanchez, Prime Minister of Spain",
+   "ko": "페드로 산체스, 스페인 총리"
+  },
+  {
+   "type": "p",
+   "en": "Cyril Ramaphosa, President of South Africa",
+   "ko": "시릴 라마포사, 남아프리카공화국 대통령"
+  },
+  {
+   "type": "p",
+   "en": "Hakan Fidan, Minister of Foreign Affairs of Türkiye",
+   "ko": "하칸 피단, 튀르키예 외무장관"
+  },
+  {
+   "type": "p",
+   "en": "H.H Sheikh Abdullah bin Zayed Al Nahyan, Deputy Prime Minister and Minister of Foreign Affairs of the United Arab Emirates",
+   "ko": "셰이크 압둘라 빈 자이드 알나하얀 전하, 아랍에미리트 부총리 겸 외무장관"
+  },
+  {
+   "type": "p",
+   "en": "The statement remains open for endorsement from leaders of other countries.",
+   "ko": "이 성명은 다른 국가 정상들의 지지 서명에 계속 열려 있다."
+  }
+ ]
+}
