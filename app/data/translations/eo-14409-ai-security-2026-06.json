@@ -1,0 +1,325 @@
+{
+ "slug": "eo-14409-ai-security-2026-06",
+ "title": "첨단 AI 혁신과 보안의 촉진 (행정명령 14409호)",
+ "original_title": "Promoting Advanced Artificial Intelligence Innovation and Security (Executive Order 14409)",
+ "publisher": "미국 대통령 (트럼프 행정부)",
+ "published": "2026-06-02",
+ "source_url": "https://www.federalregister.gov/documents/2026/06/05/2026-11415/promoting-advanced-artificial-intelligence-innovation-and-security",
+ "source_note": "Federal Register 전문이다.",
+ "source_label": "원문 보기 (Federal Register)",
+ "summary": "AI 혁신과 보안을 함께 내건 트럼프 행정부의 행정명령이다. 연방 정보 시스템과 핵심 기반시설의 사이버 방어를 30일 안에 우선 조치하게 하고, 기밀 벤치마크 절차로 '대상 프론티어 모델'을 지정하는 기준을 정하게 했다. 개발자가 공개 전 최대 30일 동안 연방정부에 모델 접근을 제공하는 자발적 프레임워크를 설계하도록 했지만, 의무적 인허가나 사전 승인을 만드는 권한은 아니라고 못 박았다.",
+ "doc_kind": "행정명령",
+ "image": "/images/translations/eo-14409-ai-security-2026-06-cover.webp",
+ "og_image": "/images/translations/eo-14409-ai-security-2026-06-cover.jpg",
+ "translated": "2026-11-07",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "stats": {
+  "blocks": 33,
+  "sections": 5,
+  "items": 0,
+  "words_en": 1174
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "By the authority vested in me as President by the Constitution and the laws of the United States of America, it is hereby ordered:",
+   "ko": "미합중국 헌법과 법률이 대통령인 나에게 부여한 권한에 따라 다음과 같이 명령한다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 1. Purpose",
+   "ko": "제1조 목적",
+   "id": "s1"
+  },
+  {
+   "type": "p",
+   "en": "The United States continues to lead the world in Artificial Intelligence (AI) because of the enormous talent and innovation of our AI industry, and because we refuse to stifle this innovation with overly burdensome regulation. My Administration has unleashed tremendous technological growth and economic investment in AI by slashing the bureaucratic constraints that the prior administration placed on America's AI developers and researchers, and by instead encouraging AI innovation and accelerating responsible AI adoption across government and industry.",
+   "ko": "미국이 인공지능(AI) 분야에서 계속 세계를 선도하는 것은 미국 AI 산업의 막대한 인재와 혁신 역량 덕분이며, 과도하게 부담스러운 규제로 이러한 혁신을 억누르기를 거부하기 때문이다. 나의 행정부는 이전 행정부가 미국의 AI 개발자와 연구자에게 부과한 관료주의적 제약을 대폭 철폐하고, 그 대신 AI 혁신을 장려하며 정부와 산업 전반에서 책임 있는 AI 도입을 가속화함으로써 AI 분야에서 엄청난 기술 성장과 경제적 투자를 이끌어 냈다.",
+   "marks": [
+    {
+     "t": "과도하게 부담스러운 규제로 이러한 혁신을 억누르기를 거부하기 때문이다",
+     "k": "safety"
+    },
+    {
+     "t": "이전 행정부가 미국의 AI 개발자와 연구자에게 부과한 관료주의적 제약을 대폭 철폐하고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Advanced AI capabilities make our Nation stronger, but also introduce new national security considerations that require coordinated action across executive departments and agencies (agencies), and components. As these capabilities evolve, my Administration will continue to work closely with industry to ensure that the best and most secure technology is deployed rapidly to confront any and all threats to our country. We will continue to lead an America First cybersecurity effort that enhances both our national security and our global AI dominance.",
+   "ko": "첨단 AI 역량은 우리나라를 더욱 강하게 만들지만, 행정 부처 및 기관(이하 \"기관\")과 그 하부 조직 전반의 조율된 조치를 요구하는 새로운 국가안보상 고려 사항도 함께 가져온다. 이러한 역량이 발전함에 따라, 나의 행정부는 우리나라에 대한 모든 위협에 대응할 수 있도록 가장 우수하고 보안성이 가장 높은 기술이 신속하게 배포되도록 산업계와 계속 긴밀히 협력할 것이다. 우리는 국가안보와 전 세계 AI 주도권을 모두 강화하는 미국 우선(America First) 사이버 보안 노력을 계속 주도할 것이다.",
+   "marks": [
+    {
+     "t": "조율된 조치를 요구하는 새로운 국가안보상 고려 사항도 함께 가져온다",
+     "k": "safety"
+    },
+    {
+     "t": "가장 우수하고 보안성이 가장 높은 기술이 신속하게 배포되도록 산업계와 계속 긴밀히 협력할 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "It is the policy of the United States to promote AI innovation and security by working collaboratively with the private sector to modernize government and private sector information systems and harden them against external threats; to protect American ingenuity and intellectual property from exploitation and theft by adversaries; and to cultivate America's advanced AI-enabled capabilities.",
+   "ko": "민간 부문과 협력하여 정부 및 민간 부문의 정보 시스템을 현대화하고 외부 위협에 대비하여 이를 강화하며, 미국의 창의성과 지식재산권을 적대 세력의 악용과 탈취로부터 보호하고, 미국의 첨단 AI 기반 역량을 육성함으로써 AI 혁신과 보안을 증진하는 것이 미합중국의 정책이다.",
+   "marks": [
+    {
+     "t": "미국의 창의성과 지식재산권을 적대 세력의 악용과 탈취로부터 보호하고",
+     "k": "safety"
+    },
+    {
+     "t": "AI 혁신과 보안을 증진하는 것이 미합중국의 정책이다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 2. Upgrading American Systems for Advanced AI",
+   "ko": "제2조 첨단 AI에 대비한 미국 시스템 고도화",
+   "id": "s5"
+  },
+  {
+   "type": "p",
+   "en": "(a) Within 30 days of the date of this order, the Committee on National Security Systems shall prioritize the cyber defense of National Security Systems, as defined in 44 U.S.C. 3552(b)(6)(A), by taking appropriate and expeditious action consistent with the purpose of this order.",
+   "ko": "(a) 국가안보시스템위원회(Committee on National Security Systems)는 이 명령일부터 30일 이내에 이 명령의 목적에 부합하는 적절하고 신속한 조치를 취함으로써 44 U.S.C. 3552(b)(6)(A)에 정의된 국가안보시스템(National Security Systems)의 사이버 방어를 우선하여야 한다.",
+   "marks": [
+    {
+     "t": "국가안보시스템(National Security Systems)의 사이버 방어를 우선하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Within 30 days of the date of this order, the Secretary of War shall prioritize the cyber defense of Department of War information systems by taking appropriate and expeditious action consistent with the purpose of this order.",
+   "ko": "(b) 전쟁부 장관은 이 명령일부터 30일 이내에 이 명령의 목적에 부합하는 적절하고 신속한 조치를 취함으로써 전쟁부 정보 시스템의 사이버 방어를 우선하여야 한다.",
+   "marks": [
+    {
+     "t": "전쟁부 정보 시스템의 사이버 방어를 우선하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) Within 30 days of the date of this order, the Secretary of Homeland Security, through the Director of the Cybersecurity and Infrastructure Security Agency (CISA), in consultation with the Director of the Office of Management and Budget (OMB), the Assistant to the President for National Security Affairs, and the National Cyber Director, shall release Binding Operational Directives and other guidance as appropriate to:",
+   "ko": "(c) 국토안보부 장관(Secretary of Homeland Security)은 이 명령일부터 30일 이내에 사이버 보안 및 기반시설 보안청(Cybersecurity and Infrastructure Security Agency, CISA) 청장을 통하여, 관리예산처(OMB) 처장, 대통령 국가안보보좌관(Assistant to the President for National Security Affairs) 및 국가사이버국장(National Cyber Director)과 협의하여, 다음 각 호의 사항을 위하여 구속력 있는 운영 지침(Binding Operational Directives)과 그 밖의 적절한 지침을 발령하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(i) expedite and prioritize the cyber defense of civilian Federal Government information systems in order to protect our Nation's vital functions;",
+   "ko": "(i) 국가의 핵심 기능을 보호하기 위하여 연방정부 민간 부문 정보 시스템의 사이버 방어를 신속히 추진하고 우선함",
+   "marks": [
+    {
+     "t": "연방정부 민간 부문 정보 시스템의 사이버 방어를 신속히 추진하고 우선함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(ii) establish or expand Federal programs and cybersecurity services that enhance AI-enabled defensive tools; and",
+   "ko": "(ii) AI 기반 방어 도구를 강화하는 연방 프로그램과 사이버 보안 서비스를 신설하거나 확대함",
+   "marks": [
+    {
+     "t": "AI 기반 방어 도구를 강화하는 연방 프로그램과 사이버 보안 서비스를 신설하거나 확대함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(iii) facilitate access to cybersecurity tools and services including, where appropriate, covered frontier models for agencies, State and local authorities, and operators of critical infrastructure such as rural hospitals, community banks, and local utilities.",
+   "ko": "(iii) 기관, 주 및 지방 당국, 그리고 농촌 병원, 지역 은행, 지역 공공설비 등 핵심 기반시설 운영자가 사이버 보안 도구와 서비스(적절한 경우 대상 프론티어 모델을 포함함)를 이용할 수 있도록 지원함",
+   "marks": [
+    {
+     "t": "사이버 보안 도구와 서비스(적절한 경우 대상 프론티어 모델을 포함함)를 이용할 수 있도록 지원함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(d) Within 30 days of the date of this order, the Secretary of the Treasury, in consultation with the National Cyber Director, the Secretary of War, through the Director of the National Security Agency (NSA), and the Secretary of Homeland Security, through the Director of CISA, shall form an AI cybersecurity clearinghouse, in voluntary collaboration with the AI industry and operators of critical infrastructure, that coordinates and deconflicts scanning for software vulnerabilities, discovers and validates such vulnerabilities, and coordinates and prioritizes remediation and distribution of vulnerability patches.",
+   "ko": "(d) 재무부 장관(Secretary of the Treasury)은 이 명령일부터 30일 이내에 국가사이버국장, 국가안보국(National Security Agency, NSA) 국장을 통한 전쟁부 장관, CISA 청장을 통한 국토안보부 장관과 협의하여, AI 산업계 및 핵심 기반시설 운영자와의 자발적 협력하에 AI 사이버 보안 정보교환센터(clearinghouse)를 설립하여야 한다. 이 센터는 소프트웨어 취약점 스캐닝을 조율하고 그 중복·충돌을 조정하며, 그러한 취약점을 발견하고 검증하고, 취약점 패치의 조치 및 배포를 조율하고 우선순위를 정한다.",
+   "marks": [
+    {
+     "t": "AI 사이버 보안 정보교환센터(clearinghouse)를 설립하여야 한다",
+     "k": "key"
+    },
+    {
+     "t": "소프트웨어 취약점 스캐닝을 조율하고 그 중복·충돌을 조정하며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(e) Within 30 days of the date of this order, the Director of OMB, in coordination with the National Cyber Director and the Director of CISA, shall determine whether any Federal grant programs have available and relevant funding that can be directed toward applicants developing advanced AI vulnerability detection.",
+   "ko": "(e) 관리예산처장은 이 명령일부터 30일 이내에 국가사이버국장 및 CISA 청장과 협조하여, 첨단 AI 취약점 탐지를 개발하는 신청자에게 배정할 수 있는 가용하고 관련성 있는 재원을 보유한 연방 보조금 프로그램이 있는지 판단하여야 한다.",
+   "marks": [
+    {
+     "t": "첨단 AI 취약점 탐지를 개발하는 신청자에게 배정할 수 있는",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(f) Within 60 days of the date of this order, the Director of the Office of Personnel Management shall expand the United States Tech Force Information Cybersecurity Specialist hiring and placement pathways.",
+   "ko": "(f) 인사관리처(Office of Personnel Management) 처장은 이 명령일부터 60일 이내에 United States Tech Force의 Information Cybersecurity Specialist 채용 및 배치 경로를 확대하여야 한다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 3. Secure Frontier Model Deployment",
+   "ko": "제3조 보안이 확보된 프론티어 모델 배포",
+   "id": "s15"
+  },
+  {
+   "type": "p",
+   "en": "Within 60 days of the date of this order, the Secretary of the Treasury, the Secretary of War, through the Director of NSA, and the Secretary of Homeland Security, through the Director of CISA, in consultation with the White House Chief of Staff, through the National Cyber Director, the Assistant to the President for Science and Technology (APST), and the Secretary of Commerce, through the Director of the National Institute of Standards and Technology, and in coordination with other agencies, as appropriate, shall:",
+   "ko": "재무부 장관, NSA 국장을 통한 전쟁부 장관, CISA 청장을 통한 국토안보부 장관은 이 명령일부터 60일 이내에 국가사이버국장을 통한 백악관 비서실장(White House Chief of Staff), 대통령 과학기술 보좌관(APST), 국립표준기술연구소(National Institute of Standards and Technology) 소장을 통한 상무부 장관과 협의하고, 적절한 경우 다른 기관과 협조하여 다음 각 호의 사항을 이행하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(a) develop and maintain a classified benchmarking process to assess the advanced cyber capabilities of AI models and determine the threshold at which an AI model should be designated a “covered frontier model” for the purposes of this order, sharing such assessments with AI developers and researchers as appropriate. Such a determination shall be made by the Director of NSA, in consultation with the National Cyber Director, the APST, the Director of CISA, and other representatives of the Department of War, as appropriate.",
+   "ko": "(a) AI 모델의 첨단 사이버 역량을 평가하기 위한 기밀 벤치마크 절차를 개발·유지하고, 이 명령의 목적상 AI 모델을 “대상 프론티어 모델(covered frontier model)”로 지정하는 것이 바람직한 기준선을 결정하며, 적절한 경우 그러한 평가(assessment) 결과를 AI 개발자 및 연구자와 공유한다. 그러한 결정은 NSA 국장이 국가사이버국장, APST, CISA 청장 및 적절한 경우 전쟁부의 다른 대표자와 협의하여 내려야 한다.",
+   "marks": [
+    {
+     "t": "AI 모델의 첨단 사이버 역량을 평가하기 위한 기밀 벤치마크 절차를 개발·유지하고",
+     "k": "safety"
+    },
+    {
+     "t": "AI 모델을 “대상 프론티어 모델(covered frontier model)”로 지정하는 것이 바람직한 기준선을 결정하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) design a voluntary framework with AI developers through which developers would be able to:",
+   "ko": "(b) 개발자가 다음 각 목의 사항을 할 수 있도록 하는 자발적 프레임워크를 AI 개발자와 함께 설계한다."
+  },
+  {
+   "type": "p",
+   "en": "(i) engage the Federal Government to determine whether model(s) under development meet the designation of “covered frontier model”;",
+   "ko": "(i) 개발 중인 모델이 “대상 프론티어 모델” 지정 요건에 해당하는지 판단하기 위하여 연방정부와 협의함"
+  },
+  {
+   "type": "p",
+   "en": "(ii) provide the Federal Government with access to covered frontier models, subject to appropriate confidentiality, cybersecurity, insider-risk, and intellectual-property protection, use, and nondisclosure requirements, for a period of up to 30 days before they plan to release such models to other trusted partners; and",
+   "ko": "(ii) 적절한 기밀유지, 사이버 보안, 내부자 위험 및 지식재산권 보호, 사용 및 비공개 요건에 따라, 대상 프론티어 모델을 다른 신뢰할 수 있는 파트너에게 공개할 계획일 전 최대 30일 동안 연방정부에 해당 모델에 대한 접근을 제공함",
+   "marks": [
+    {
+     "t": "적절한 기밀유지, 사이버 보안, 내부자 위험 및 지식재산권 보호",
+     "k": "safety"
+    },
+    {
+     "t": "대상 프론티어 모델을 다른 신뢰할 수 있는 파트너에게 공개할 계획일 전 최대 30일 동안 연방정부에 해당 모델에 대한 접근을 제공함",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(iii) collaborate with the Federal Government to select trusted partners that will have early access to covered frontier models to promote secure innovation and strengthen the cybersecurity of critical infrastructure.",
+   "ko": "(iii) 안전한 혁신을 촉진하고 핵심 기반시설의 사이버 보안을 강화하기 위하여, 대상 프론티어 모델에 조기 접근할 신뢰할 수 있는 파트너를 연방정부와 협력하여 선정함",
+   "marks": [
+    {
+     "t": "안전한 혁신을 촉진하고 핵심 기반시설의 사이버 보안을 강화하기 위하여",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) Nothing in this section shall be construed to authorize the creation of a mandatory governmental licensing, preclearance, or permitting requirement for the development, publication, release, or distribution of new AI models, including frontier models.",
+   "ko": "(c) 이 조의 어떠한 규정도 프론티어 모델을 포함한 새로운 AI 모델의 개발, 공표, 공개 또는 배포에 대하여 정부의 의무적 인허가, 사전 승인 또는 허가 요건을 신설할 권한을 부여하는 것으로 해석되어서는 아니 된다.",
+   "marks": [
+    {
+     "t": "정부의 의무적 인허가, 사전 승인 또는 허가 요건을 신설할 권한을 부여하는 것으로 해석되어서는 아니 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 4. Protection Against Criminal Actors",
+   "ko": "제4조 범죄 행위자로부터의 보호",
+   "id": "s23"
+  },
+  {
+   "type": "p",
+   "en": "The Attorney General shall prioritize the enforcement of 18 U.S.C. 1028, 18 U.S.C. 1030, 18 U.S.C. 1343, and all other applicable Federal criminal laws against anyone who utilizes AI to illegally access or damage a computer without authorization, or who utilizes AI while engaged in such illegal access to further any other crime. This includes breaching any public or private information technology system, or employing AI agents to unlawfully access data or information that is subsequently used for a criminal or unlawful purpose.",
+   "ko": "법무부 장관은 AI를 이용하여 권한 없이 컴퓨터에 불법적으로 접근하거나 이를 손상하는 자, 또는 그러한 불법 접근을 하면서 다른 범죄를 조장하기 위하여 AI를 이용하는 자에 대하여 18 U.S.C. 1028, 18 U.S.C. 1030, 18 U.S.C. 1343 및 그 밖에 적용 가능한 모든 연방 형법의 집행을 우선하여야 한다. 여기에는 공공 또는 민간 정보기술 시스템을 침해하는 행위, 또는 AI 에이전트를 이용하여, 이후 범죄 또는 불법 목적에 사용되는 데이터나 정보에 불법적으로 접근하는 행위가 포함된다.",
+   "marks": [
+    {
+     "t": "AI를 이용하여 권한 없이 컴퓨터에 불법적으로 접근하거나 이를 손상하는 자",
+     "k": "safety"
+    },
+    {
+     "t": "그 밖에 적용 가능한 모든 연방 형법의 집행을 우선하여야 한다",
+     "k": "key"
+    },
+    {
+     "t": "AI 에이전트를 이용하여, 이후 범죄 또는 불법 목적에 사용되는 데이터나 정보에 불법적으로 접근하는 행위",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 5. General Provisions",
+   "ko": "제5조 일반 규정",
+   "id": "s25"
+  },
+  {
+   "type": "p",
+   "en": "(a) Nothing in this order shall be construed to impair or otherwise affect:",
+   "ko": "(a) 이 명령의 어떠한 규정도 다음 각 호의 사항을 저해하거나 달리 영향을 미치는 것으로 해석되어서는 아니 된다."
+  },
+  {
+   "type": "p",
+   "en": "(i) the authority granted by law to an executive department or agency, or the head thereof; or",
+   "ko": "(i) 법률이 행정 부처나 기관 또는 그 장에게 부여한 권한"
+  },
+  {
+   "type": "p",
+   "en": "(ii) the functions of the Director of the Office of Management and Budget relating to budgetary, administrative, or legislative proposals.",
+   "ko": "(ii) 예산, 행정 또는 입법 제안과 관련된 관리예산처장의 기능"
+  },
+  {
+   "type": "p",
+   "en": "(b) This order shall be implemented consistent with applicable law and subject to the availability of appropriations.",
+   "ko": "(b) 이 명령은 관계 법률에 부합하게, 그리고 예산의 가용 범위 내에서 시행되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(c) This order is not intended to, and does not, create any right or benefit, substantive or procedural, enforceable at law or in equity by any party against the United States, its departments, agencies, or entities, its officers, employees, or agents, or any other person.",
+   "ko": "(c) 이 명령은 어떠한 당사자가 미합중국, 그 부처, 기관 또는 단체, 그 공무원, 직원 또는 대리인, 또는 그 밖의 어떠한 자에 대하여 법률상 또는 형평법상 행사할 수 있는 실체적 또는 절차적 권리나 이익을 창설하려는 것이 아니며, 이를 창설하지도 아니한다.",
+   "marks": [
+    {
+     "t": "실체적 또는 절차적 권리나 이익을 창설하려는 것이 아니며, 이를 창설하지도 아니한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(d) The costs for publication of this order shall be borne by the Department of War.",
+   "ko": "(d) 이 명령의 공표 비용은 전쟁부가 부담하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "THE WHITE HOUSE, June 2, 2026.",
+   "ko": "백악관, 2026년 6월 2일."
+  }
+ ]
+}

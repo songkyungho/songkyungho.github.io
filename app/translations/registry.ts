@@ -22,6 +22,12 @@ import bengioWhyAgentsLie from "../data/translations/bengio-why-agents-lie-2026-
 import sgCsaAgenticTabletop from "../data/translations/sg-csa-agentic-tabletop-2026-10.json";
 import whiteHouseSiAccord from "../data/translations/white-house-si-accord-2026-09.json";
 import eo14434 from "../data/translations/eo-14434-super-intelligence-2026-09.json";
+import eo14110 from "../data/translations/eo-14110-safe-secure-ai-2023-10.json";
+import eo14179 from "../data/translations/eo-14179-removing-barriers-2025-01.json";
+import eo14320 from "../data/translations/eo-14320-ai-export-2025-07.json";
+import eo14365 from "../data/translations/eo-14365-national-framework-2025-12.json";
+import eo14409 from "../data/translations/eo-14409-ai-security-2026-06.json";
+import bisAiDiffusion from "../data/translations/bis-ai-diffusion-rule-2025-01.json";
 import nvidiaFra from "../data/translations/nvidia-frontier-risk-assessment.json";
 import metaSsf21 from "../data/translations/meta-ssf-v2-1.json";
 import microsoftFgf from "../data/translations/microsoft-fgf-2026-02.json";
@@ -112,7 +118,7 @@ export type TranslationDoc = {
   blocks: TranslationBlock[];
 };
 
-export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, beamSafetyReport, microsoftFgf, amazonFmsf, chinaFramework3, nvidiaFra, cohereSecureAi, g42Fsf, xrButler1863, xrButler1865, xrButlerErewhon1872, xrTuringBbc1951, xrTuringHeretical1951, xrFliResearchPriorities2015, xrAsilomar2017, xrFliPause2023, xrCaisStatement2023, xrIdaisOxford2023, xrBletchley2023, xrEldersLongview2024, xrIdaisBeijing2024, xrRightToWarn2024, xrIdaisVenice2024, xrIdaisShanghai2025, xrRedLines2025, xrSuperintelligenceStatement2025, xrProHuman2026, xrIdaisLondon2026, xrAiCyberLetter2026, pacingFrontier, amodeiPaceFrontier, anthropicAdvancedAi, anthropicEconomicPolicy, openaiFederalBlueprint, openaiBuildingStandards, openaiNewsomLetter, googlePragmaticAi, cohereWhoDefines, aiiaCommitments2025, hiroshimaPrinciples2023, hiroshimaCode2023, hiroshimaAllActors2023, reaimCall2023, reaimPathways2026, globalDigitalCompact2024, parisStatement2025, newDelhiDeclaration2026, caSb53, nyRaise2026, ilSb315, usFrontierAct, callControlFrontier, ukAisiBestPractice, sandersPauseLetter, intelligenceExplosion, nistSiIncidentPractices, banAsiAct, stateSponsorsStatement, anthropicAlignmentAssessment, metrAcceleration, bengioWhyAgentsLie, sgCsaAgenticTabletop, whiteHouseSiAccord, eo14434] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
+export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, beamSafetyReport, microsoftFgf, amazonFmsf, chinaFramework3, nvidiaFra, cohereSecureAi, g42Fsf, xrButler1863, xrButler1865, xrButlerErewhon1872, xrTuringBbc1951, xrTuringHeretical1951, xrFliResearchPriorities2015, xrAsilomar2017, xrFliPause2023, xrCaisStatement2023, xrIdaisOxford2023, xrBletchley2023, xrEldersLongview2024, xrIdaisBeijing2024, xrRightToWarn2024, xrIdaisVenice2024, xrIdaisShanghai2025, xrRedLines2025, xrSuperintelligenceStatement2025, xrProHuman2026, xrIdaisLondon2026, xrAiCyberLetter2026, pacingFrontier, amodeiPaceFrontier, anthropicAdvancedAi, anthropicEconomicPolicy, openaiFederalBlueprint, openaiBuildingStandards, openaiNewsomLetter, googlePragmaticAi, cohereWhoDefines, aiiaCommitments2025, hiroshimaPrinciples2023, hiroshimaCode2023, hiroshimaAllActors2023, reaimCall2023, reaimPathways2026, globalDigitalCompact2024, parisStatement2025, newDelhiDeclaration2026, caSb53, nyRaise2026, ilSb315, usFrontierAct, callControlFrontier, ukAisiBestPractice, sandersPauseLetter, intelligenceExplosion, nistSiIncidentPractices, banAsiAct, stateSponsorsStatement, anthropicAlignmentAssessment, metrAcceleration, bengioWhyAgentsLie, sgCsaAgenticTabletop, whiteHouseSiAccord, eo14434, eo14110, eo14179, eo14320, eo14365, eo14409, bisAiDiffusion] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
 
 export const dotDate = (iso: string) => iso.replaceAll("-", ".");
 

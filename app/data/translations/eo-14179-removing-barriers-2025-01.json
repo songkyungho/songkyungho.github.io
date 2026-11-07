@@ -1,0 +1,186 @@
+{
+ "slug": "eo-14179-removing-barriers-2025-01",
+ "title": "미국의 AI 리더십을 가로막는 장벽 제거 (행정명령 14179호)",
+ "original_title": "Removing Barriers to American Leadership in Artificial Intelligence (Executive Order 14179)",
+ "publisher": "미국 대통령 (트럼프 행정부)",
+ "published": "2025-01-23",
+ "source_url": "https://www.federalregister.gov/documents/2025/01/31/2025-02172/removing-barriers-to-american-leadership-in-artificial-intelligence",
+ "source_note": "Federal Register 전문이다.",
+ "source_label": "원문 보기 (Federal Register)",
+ "summary": "트럼프 대통령이 취임 직후 서명한 AI 행정명령이다. 미국의 세계적 AI 우위를 유지·강화하는 것을 정책으로 선언하고, 180일 안에 AI 행동계획을 마련하게 했다. 폐기된 행정명령 14110호에 따라 취해진 정책과 조치를 검토해 이 정책과 맞지 않는 것을 고치도록 지시한다.",
+ "doc_kind": "행정명령",
+ "image": "/images/translations/eo-14179-removing-barriers-2025-01-cover.webp",
+ "og_image": "/images/translations/eo-14179-removing-barriers-2025-01-cover.jpg",
+ "translated": "2026-11-07",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "stats": {
+  "blocks": 19,
+  "sections": 6,
+  "items": 0,
+  "words_en": 656
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "By the authority vested in me as President by the Constitution and the laws of the United States of America, it is hereby ordered:",
+   "ko": "미합중국 헌법과 법률이 대통령인 나에게 부여한 권한에 따라 다음과 같이 명령한다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 1. Purpose",
+   "ko": "제1조 목적",
+   "id": "s1"
+  },
+  {
+   "type": "p",
+   "en": "The United States has long been at the forefront of artificial intelligence (AI) innovation, driven by the strength of our free markets, world-class research institutions, and entrepreneurial spirit. To maintain this leadership, we must develop AI systems that are free from ideological bias or engineered social agendas. With the right Government policies, we can solidify our position as the global leader in AI and secure a brighter future for all Americans. This order revokes certain existing AI policies and directives that act as barriers to American AI innovation, clearing a path for the United States to act decisively to retain global leadership in artificial intelligence.",
+   "ko": "미합중국은 자유시장의 힘, 세계 최고 수준의 연구기관, 그리고 기업가 정신을 바탕으로 오랫동안 인공지능(AI) 혁신의 선두에 서 왔다. 이러한 리더십을 유지하기 위하여 우리는 이념적 편향이나 인위적으로 설계된 사회적 의제(engineered social agendas)에서 벗어난 AI 시스템을 개발하여야 한다. 올바른 정부 정책이 뒷받침된다면 우리는 AI 분야의 세계적 선도국으로서의 지위를 공고히 하고 모든 미국인을 위한 더 밝은 미래를 확보할 수 있다. 이 명령은 미국의 AI 혁신에 장벽으로 작용하는 기존의 일부 AI 정책 및 지시를 폐지함으로써, 미국이 인공지능 분야의 세계적 리더십을 유지하기 위하여 결단력 있게 행동할 수 있는 길을 연다.",
+   "marks": [
+    {
+     "t": "이념적 편향이나 인위적으로 설계된 사회적 의제(engineered social agendas)에서 벗어난 AI 시스템을 개발하여야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "미국의 AI 혁신에 장벽으로 작용하는 기존의 일부 AI 정책 및 지시를 폐지함으로써",
+     "k": "safety"
+    },
+    {
+     "t": "미국이 인공지능 분야의 세계적 리더십을 유지하기 위하여 결단력 있게 행동할 수 있는 길을 연다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 2. Policy",
+   "ko": "제2조 정책",
+   "id": "s3"
+  },
+  {
+   "type": "p",
+   "en": "It is the policy of the United States to sustain and enhance America's global AI dominance in order to promote human flourishing, economic competitiveness, and national security.",
+   "ko": "인류의 번영, 경제적 경쟁력 및 국가안보를 증진하기 위하여 미국의 세계적 AI 우위를 유지하고 강화하는 것을 미합중국의 정책으로 한다.",
+   "marks": [
+    {
+     "t": "미국의 세계적 AI 우위를 유지하고 강화하는 것을 미합중국의 정책으로 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 3. Definition",
+   "ko": "제3조 정의",
+   "id": "s5"
+  },
+  {
+   "type": "p",
+   "en": "For the purposes of this order, “artificial intelligence” or “AI” has the meaning set forth in 15 U.S.C. 9401(3).",
+   "ko": "이 명령에서 \"인공지능\" 또는 \"AI\"란 15 U.S.C. 9401(3)에 규정된 의미를 말한다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 4. Developing an Artificial Intelligence Action Plan",
+   "ko": "제4조 인공지능 실행계획의 수립",
+   "id": "s7"
+  },
+  {
+   "type": "p",
+   "en": "(a) Within 180 days of this order, the Assistant to the President for Science and Technology (APST), the Special Advisor for AI and Crypto, and the Assistant to the President for National Security Affairs (APNSA), in coordination with the Assistant to the President for Economic Policy, the Assistant to the President for Domestic Policy, the Director of the Office of Management and Budget (OMB Director), and the heads of such executive departments and agencies (agencies) as the APST and APNSA deem relevant, shall develop and submit to the President an action plan to achieve the policy set forth in section 2 of this order.",
+   "ko": "(a) 이 명령 발령일부터 180일 이내에, 대통령 과학기술 보좌관(APST), AI·암호화폐 특별보좌관(Special Advisor for AI and Crypto) 및 대통령 국가안보 보좌관(Assistant to the President for National Security Affairs, APNSA)은 대통령 경제정책 보좌관(Assistant to the President for Economic Policy), 대통령 국내정책 보좌관(Assistant to the President for Domestic Policy), 관리예산처(Office of Management and Budget) 처장(이하 \"관리예산처장\"이라 한다), 그리고 APST와 APNSA가 관련이 있다고 판단하는 행정 부처 및 기관(이하 \"기관\"이라 한다)의 장과 협조하여, 이 명령 제2조에 규정된 정책을 달성하기 위한 실행계획을 수립하여 대통령에게 제출하여야 한다.",
+   "marks": [
+    {
+     "t": "이 명령 제2조에 규정된 정책을 달성하기 위한 실행계획을 수립하여 대통령에게 제출하여야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 5. Implementation of Order Revocation",
+   "ko": "제5조 명령 폐지에 따른 시행",
+   "id": "s9"
+  },
+  {
+   "type": "p",
+   "en": "(a) The APST, the Special Advisor for AI and Crypto, and the APNSA shall immediately review, in coordination with the heads of all agencies as they deem relevant, all policies, directives, regulations, orders, and other actions taken pursuant to the revoked Executive Order 14110 of October 30, 2023 (Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence). The APST, the Special Advisor for AI and Crypto, and the APNSA shall, in coordination with the heads of relevant agencies, identify any actions taken pursuant to Executive Order 14110 that are or may be inconsistent with, or present obstacles to, the policy set forth in section 2 of this order. For any such agency actions identified, the heads of agencies shall, as appropriate and consistent with applicable law, suspend, revise, or rescind such actions, or propose suspending, revising, or rescinding such actions. If in any case such suspension, revision, or rescission cannot be finalized immediately, the APST and the heads of agencies shall promptly take steps to provide all available exemptions authorized by any such orders, rules, regulations, guidelines, or policies, as appropriate and consistent with applicable law, until such action can be finalized.",
+   "ko": "(a) APST, AI·암호화폐 특별보좌관 및 APNSA는 관련이 있다고 판단하는 모든 기관의 장과 협조하여, 폐지된 2023년 10월 30일 자 행정명령 제14110호(「안전하고 보안성 있으며 신뢰할 수 있는 인공지능의 개발 및 사용(Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence)」)에 따라 취해진 모든 정책, 지시, 규정, 명령 및 그 밖의 조치를 즉시 검토하여야 한다. APST, AI·암호화폐 특별보좌관 및 APNSA는 관련 기관의 장과 협조하여, 행정명령 제14110호에 따라 취해진 조치 중 이 명령 제2조에 규정된 정책과 상충되거나 상충될 수 있거나 그 정책에 장애가 되는 조치를 식별하여야 한다. 이와 같이 식별된 기관의 조치에 대하여, 기관의 장은 적절한 경우 관련 법률에 부합하는 범위에서 해당 조치를 중지, 수정 또는 철회하거나, 그 중지, 수정 또는 철회를 제안하여야 한다. 어떠한 경우에든 그러한 중지, 수정 또는 철회를 즉시 확정할 수 없는 때에는, APST와 기관의 장은 해당 조치가 확정될 때까지 적절한 경우 관련 법률에 부합하는 범위에서 그러한 명령, 규칙, 규정, 지침 또는 정책이 허용하는 모든 가용한 예외를 적용하기 위한 조치를 신속히 취하여야 한다.",
+   "marks": [
+    {
+     "t": "폐지된 2023년 10월 30일 자 행정명령 제14110호(「안전하고 보안성 있으며 신뢰할 수 있는 인공지능의 개발 및 사용(Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence)」)",
+     "k": "safety"
+    },
+    {
+     "t": "행정명령 제14110호에 따라 취해진 조치 중 이 명령 제2조에 규정된 정책과 상충되거나 상충될 수 있거나 그 정책에 장애가 되는 조치를 식별하여야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "해당 조치를 중지, 수정 또는 철회하거나, 그 중지, 수정 또는 철회를 제안하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Within 60 days of this order, the OMB Director, in coordination with the APST, shall revise OMB Memoranda M-24-10 and M-24-18 as necessary to make them consistent with the policy set forth in section 2 of this order.",
+   "ko": "(b) 이 명령 발령일부터 60일 이내에, 관리예산처장은 APST와 협조하여 관리예산처 메모랜덤 M-24-10 및 M-24-18을 이 명령 제2조에 규정된 정책에 부합하도록 필요에 따라 개정하여야 한다.",
+   "marks": [
+    {
+     "t": "관리예산처 메모랜덤 M-24-10 및 M-24-18을 이 명령 제2조에 규정된 정책에 부합하도록 필요에 따라 개정하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 6. General Provisions",
+   "ko": "제6조 일반 규정",
+   "id": "s12"
+  },
+  {
+   "type": "p",
+   "en": "(a) Nothing in this order shall be construed to impair or otherwise affect:",
+   "ko": "(a) 이 명령의 어떠한 내용도 다음 각 호의 사항을 침해하거나 달리 영향을 미치는 것으로 해석되어서는 아니 된다."
+  },
+  {
+   "type": "p",
+   "en": "(i) the authority granted by law to an executive department or agency, or the head thereof; or",
+   "ko": "(i) 행정 부처 또는 기관이나 그 장에게 법률로 부여된 권한, 또는"
+  },
+  {
+   "type": "p",
+   "en": "(ii) the functions of the Director of the Office of Management and Budget relating to budgetary, administrative, or legislative proposals.",
+   "ko": "(ii) 예산, 행정 또는 입법 제안과 관련된 관리예산처장의 기능."
+  },
+  {
+   "type": "p",
+   "en": "(b) This order shall be implemented consistent with applicable law and subject to the availability of appropriations.",
+   "ko": "(b) 이 명령은 관련 법률에 부합하게, 그리고 예산의 확보 여부에 따라 시행되어야 한다.",
+   "marks": [
+    {
+     "t": "이 명령은 관련 법률에 부합하게, 그리고 예산의 확보 여부에 따라 시행되어야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) This order is not intended to, and does not, create any right or benefit, substantive or procedural, enforceable at law or in equity by any party against the United States, its departments, agencies, or entities, its officers, employees, or agents, or any other person.",
+   "ko": "(c) 이 명령은 어떠한 당사자가 미합중국, 그 부처, 기관 또는 단체, 그 공무원, 직원 또는 대리인, 또는 그 밖의 어떠한 사람을 상대로 법률상 또는 형평법상 집행할 수 있는 실체적 또는 절차적 권리나 이익을 창설하기 위한 것이 아니며, 이를 창설하지도 아니한다.",
+   "marks": [
+    {
+     "t": "실체적 또는 절차적 권리나 이익을 창설하기 위한 것이 아니며, 이를 창설하지도 아니한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "THE WHITE HOUSE, January 23, 2025.",
+   "ko": "백악관, 2025년 1월 23일"
+  }
+ ]
+}

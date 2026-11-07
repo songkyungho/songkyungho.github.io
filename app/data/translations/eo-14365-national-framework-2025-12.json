@@ -1,0 +1,344 @@
+{
+ "slug": "eo-14365-national-framework-2025-12",
+ "title": "AI 국가 정책 프레임워크의 보장 (행정명령 14365호)",
+ "original_title": "Ensuring a National Policy Framework for Artificial Intelligence (Executive Order 14365)",
+ "publisher": "미국 대통령 (트럼프 행정부)",
+ "published": "2025-12-11",
+ "source_url": "https://www.federalregister.gov/documents/2025/12/16/2025-23092/ensuring-a-national-policy-framework-for-artificial-intelligence",
+ "source_note": "Federal Register 전문이다.",
+ "source_label": "원문 보기 (Federal Register)",
+ "summary": "주별로 갈라진 AI 규제를 억제하고 연방 차원의 틀을 세우려는 행정명령이다. 주 AI 법률에 소송으로 맞설 태스크포스를 법무부에 두고, 문제가 되는 주법을 평가하며, 연방 재정 지원을 주법과 연계하고, 주법을 선점하는 연방 입법 권고안을 마련하게 했다. SB 53, RAISE 같은 주법을 둘러싼 선점 논쟁의 배경이 되는 문서다.",
+ "doc_kind": "행정명령",
+ "image": "/images/translations/eo-14365-national-framework-2025-12-cover.webp",
+ "og_image": "/images/translations/eo-14365-national-framework-2025-12-cover.jpg",
+ "translated": "2026-11-07",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "stats": {
+  "blocks": 34,
+  "sections": 9,
+  "items": 0,
+  "words_en": 1380
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "By the authority vested in me as President by the Constitution and the laws of the United States of America, it is hereby ordered:",
+   "ko": "미합중국 헌법과 법률이 대통령인 나에게 부여한 권한에 따라 다음과 같이 명령한다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 1. Purpose",
+   "ko": "제1조 목적",
+   "id": "s1"
+  },
+  {
+   "type": "p",
+   "en": "United States leadership in Artificial Intelligence (AI) will promote United States national and economic security and dominance across many domains. Pursuant to Executive Order 14179 of January 23, 2025 (Removing Barriers to American Leadership in Artificial Intelligence), I revoked my predecessor's attempt to paralyze this industry and directed my Administration to remove barriers to United States AI leadership. My Administration has already done tremendous work to advance that objective, including by updating existing Federal regulatory frameworks to remove barriers to and encourage adoption of AI applications across sectors. These efforts have already delivered tremendous benefits to the American people and led to trillions of dollars of investments across the country. But we remain in the earliest days of this technological revolution and are in a race with adversaries for supremacy within it.",
+   "ko": "인공지능(AI) 분야에서 미국의 주도권은 미국의 국가안보 및 경제안보를 증진하고, 여러 영역에서 미국의 우위를 강화할 것이다. 나는 2025년 1월 23일자 행정명령 제14179호(인공지능 분야 미국 주도권에 대한 장벽 제거(Removing Barriers to American Leadership in Artificial Intelligence))에 따라 이 산업을 마비시키려 한 전임자의 시도를 철회하였고, 미국 AI 주도권을 가로막는 장벽을 제거하도록 행정부에 지시하였다. 행정부는 이미 그 목표를 진전시키기 위해 막대한 노력을 기울여 왔으며, 여기에는 기존 연방 규제 프레임워크를 개정하여 여러 부문에서 AI 응용의 장벽을 제거하고 그 도입을 장려한 것이 포함된다. 이러한 노력은 이미 미국 국민에게 막대한 혜택을 가져다주었고, 전국적으로 수조 달러 규모의 투자로 이어졌다. 그러나 우리는 여전히 이 기술 혁명의 초기 단계에 있으며, 그 안에서 패권을 차지하기 위해 적대국들과 경쟁하고 있다.",
+   "marks": [
+    {
+     "t": "이 산업을 마비시키려 한 전임자의 시도를 철회하였고",
+     "k": "safety"
+    },
+    {
+     "t": "그 안에서 패권을 차지하기 위해 적대국들과 경쟁하고 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To win, United States AI companies must be free to innovate without cumbersome regulation. But excessive State regulation thwarts this imperative. First, State-by-State regulation by definition creates a patchwork of 50 different regulatory regimes that makes compliance more challenging, particularly for start-ups. Second, State laws are increasingly responsible for requiring entities to embed ideological bias within models. For example, a new Colorado law banning “algorithmic discrimination” may even force AI models to produce false results in order to avoid a “differential treatment or impact” on protected groups. Third, State laws sometimes impermissibly regulate beyond State borders, impinging on interstate commerce.",
+   "ko": "이 경쟁에서 승리하려면 미국 AI 기업은 번거로운 규제 없이 자유롭게 혁신할 수 있어야 한다. 그러나 과도한 주(State) 규제는 이 필수 과제를 가로막는다. 첫째, 주별 규제는 본질적으로 50개의 서로 다른 규제 체계가 뒤섞인 상태를 만들어 내며, 이는 특히 스타트업의 규정 준수를 더욱 어렵게 만든다. 둘째, 주법은 점점 더 각 주체에게 모델에 이념적 편향을 심도록 요구하는 원인이 되고 있다. 예를 들어, \"알고리즘 차별\"을 금지하는 콜로라도주의 새로운 법은 보호 대상 집단에 대한 \"차별적 대우 또는 영향\"을 피하기 위해 AI 모델이 허위 결과를 산출하도록 강제할 수도 있다. 셋째, 주법은 때때로 허용되지 않는 방식으로 주 경계를 넘어 규제함으로써 주간 통상을 침해한다.",
+   "marks": [
+    {
+     "t": "이 경쟁에서 승리하려면 미국 AI 기업은 번거로운 규제 없이 자유롭게 혁신할 수 있어야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "과도한 주(State) 규제는 이 필수 과제를 가로막는다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 모델이 허위 결과를 산출하도록 강제할 수도 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "My Administration must act with the Congress to ensure that there is a minimally burdensome national standard—not 50 discordant State ones. The resulting framework must forbid State laws that conflict with the policy set forth in this order. That framework should also ensure that children are protected, censorship is prevented, copyrights are respected, and communities are safeguarded. A carefully crafted national framework can ensure that the United States wins the AI race, as we must.",
+   "ko": "행정부는 50개의 서로 상충하는 주 기준이 아니라 부담을 최소화한 단일한 국가 기준이 마련되도록 의회와 함께 행동하여야 한다. 그 결과로 마련되는 프레임워크는 이 명령에 규정된 정책과 상충하는 주법을 금지하여야 한다. 또한 그 프레임워크는 아동이 보호되고, 검열이 방지되며, 저작권이 존중되고, 지역사회가 보호되도록 보장하는 것이 바람직하다. 신중하게 설계된 국가 프레임워크는 미국이 마땅히 그래야 하듯 AI 경쟁에서 승리하도록 보장할 수 있다.",
+   "marks": [
+    {
+     "t": "부담을 최소화한 단일한 국가 기준이 마련되도록 의회와 함께 행동하여야 한다",
+     "k": "key"
+    },
+    {
+     "t": "이 명령에 규정된 정책과 상충하는 주법을 금지하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Until such a national standard exists, however, it is imperative that my Administration takes action to check the most onerous and excessive laws emerging from the States that threaten to stymie innovation.",
+   "ko": "다만 그러한 국가 기준이 마련되기 전까지는, 혁신을 저해할 우려가 있는 주들의 가장 부담스럽고 과도한 법률을 견제하기 위해 행정부가 조치를 취하는 것이 필수적이다.",
+   "marks": [
+    {
+     "t": "주들의 가장 부담스럽고 과도한 법률을 견제하기 위해 행정부가 조치를 취하는 것이 필수적이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 2. Policy",
+   "ko": "제2조 정책",
+   "id": "s6"
+  },
+  {
+   "type": "p",
+   "en": "It is the policy of the United States to sustain and enhance the United States' global AI dominance through a minimally burdensome national policy framework for AI.",
+   "ko": "부담을 최소화한 AI 국가 정책 프레임워크를 통해 미국의 세계적 AI 우위를 유지하고 강화하는 것을 미국의 정책으로 한다.",
+   "marks": [
+    {
+     "t": "부담을 최소화한 AI 국가 정책 프레임워크를 통해 미국의 세계적 AI 우위를 유지하고 강화하는 것을 미국의 정책으로 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 3. AI Litigation Task Force",
+   "ko": "제3조 AI 소송 전담반",
+   "id": "s8"
+  },
+  {
+   "type": "p",
+   "en": "Within 30 days of the date of this order, the Attorney General shall establish an AI Litigation Task Force (Task Force) whose sole responsibility shall be to challenge State AI laws inconsistent with the policy set forth in section 2 of this order, including on grounds that such laws unconstitutionally regulate interstate commerce, are preempted by existing Federal regulations, or are otherwise unlawful in the Attorney General's judgment, including, if appropriate, those laws identified pursuant to section 4 of this order. The Task Force shall consult from time to time with the Special Advisor for AI and Crypto, the Assistant to the President for Science and Technology, the Assistant to the President for Economic Policy, and the Assistant to the President and Counsel to the President regarding the emergence of specific State AI laws that warrant challenge.",
+   "ko": "법무부 장관은 이 명령일부터 30일 이내에 AI 소송 전담반(AI Litigation Task Force)(이하 \"전담반\")을 설치하여야 하며, 전담반의 유일한 책무는 이 명령 제2조에 규정된 정책과 부합하지 않는 주 AI 법률에 이의를 제기하는 것으로 한다. 이의 제기의 근거에는 해당 법률이 위헌적으로 주간 통상을 규제한다는 점, 기존 연방 규정에 의해 선점(preempted)된다는 점, 또는 그 밖에 법무부 장관의 판단으로 위법하다는 점이 포함되며, 이의 제기 대상에는 적절한 경우 이 명령 제4조에 따라 식별된 법률이 포함된다. 전담반은 이의 제기가 필요한 특정 주 AI 법률의 등장과 관련하여 AI·암호화폐 특별보좌관(Special Advisor for AI and Crypto), 대통령 과학기술 보좌관(APST), 대통령 경제정책 보좌관(Assistant to the President for Economic Policy), 대통령 보좌관 겸 법률고문(Assistant to the President and Counsel to the President)과 수시로 협의하여야 한다.",
+   "marks": [
+    {
+     "t": "법무부 장관은 이 명령일부터 30일 이내에 AI 소송 전담반(AI Litigation Task Force)(이하 \"전담반\")을 설치하여야 하며",
+     "k": "safety"
+    },
+    {
+     "t": "전담반의 유일한 책무는 이 명령 제2조에 규정된 정책과 부합하지 않는 주 AI 법률에 이의를 제기하는 것으로 한다",
+     "k": "key"
+    },
+    {
+     "t": "해당 법률이 위헌적으로 주간 통상을 규제한다는 점, 기존 연방 규정에 의해 선점(preempted)된다는 점",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 4. Evaluation of State AI Laws",
+   "ko": "제4조 주 AI 법률의 평가(evaluation)",
+   "id": "s10"
+  },
+  {
+   "type": "p",
+   "en": "Within 90 days of the date of this order, the Secretary of Commerce, consistent with the Secretary's authorities under 47 U.S.C. 902(b), shall, in consultation with the Special Advisor for AI and Crypto, the Assistant to the President for Economic Policy, the Assistant to the President for Science and Technology, and the Assistant to the President and Counsel to the President, publish an evaluation of existing State AI laws that identifies onerous laws that conflict with the policy set forth in section 2 of this order, as well as laws that should be referred to the Task Force established pursuant to section 3 of this order. That evaluation of State AI laws shall, at a minimum, identify laws that require AI models to alter their truthful outputs, or that may compel AI developers or deployers to disclose or report information in a manner that would violate the First Amendment or any other provision of the Constitution. The evaluation may additionally identify State laws that promote AI innovation consistent with the policy set forth in section 2 of this order.",
+   "ko": "상무부 장관은 이 명령일부터 90일 이내에 47 U.S.C. 902(b)에 따른 장관의 권한에 부합하게, AI·암호화폐 특별보좌관, 대통령 경제정책 보좌관, 대통령 과학기술 보좌관, 대통령 보좌관 겸 법률고문과 협의하여 기존 주 AI 법률에 대한 평가를 공표하여야 한다. 이 평가는 이 명령 제2조에 규정된 정책과 상충하는 부담스러운 법률과 이 명령 제3조에 따라 설치된 전담반에 회부하는 것이 바람직한 법률을 식별하여야 한다. 주 AI 법률에 대한 이 평가는 최소한 AI 모델에 진실한 출력을 변경하도록 요구하는 법률, 또는 AI 개발자나 배포자에게 수정헌법 제1조나 그 밖의 헌법 조항을 위반하는 방식으로 정보를 공개하거나 보고하도록 강제할 수 있는 법률을 식별하여야 한다. 이 평가는 추가로 이 명령 제2조에 규정된 정책에 부합하게 AI 혁신을 촉진하는 주법을 식별할 수 있다.",
+   "marks": [
+    {
+     "t": "이 평가는 이 명령 제2조에 규정된 정책과 상충하는 부담스러운 법률과 이 명령 제3조에 따라 설치된 전담반에 회부하는 것이 바람직한 법률을 식별하여야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "AI 모델에 진실한 출력을 변경하도록 요구하는 법률",
+     "k": "safety"
+    },
+    {
+     "t": "AI 개발자나 배포자에게 수정헌법 제1조나 그 밖의 헌법 조항을 위반하는 방식으로 정보를 공개하거나 보고하도록 강제할 수 있는 법률",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 5. Restrictions on State Funding",
+   "ko": "제5조 주에 대한 자금 지원 제한",
+   "id": "s12"
+  },
+  {
+   "type": "p",
+   "en": "(a) Within 90 days of the date of this order, the Secretary of Commerce, through the Assistant Secretary of Commerce for Communications and Information, shall issue a Policy Notice specifying the conditions under which States may be eligible for remaining funding under the Broadband Equity Access and Deployment (BEAD) Program that was saved through my Administration's “Benefit of the Bargain” reforms, consistent with 47 U.S.C. 1702(e)-(f). That Policy Notice must provide that States with onerous AI laws identified pursuant to section 4 of this order are ineligible for non-deployment funds, to the maximum extent allowed by Federal law. The Policy Notice must also describe how a fragmented State regulatory landscape for AI threatens to undermine BEAD-funded deployments, the growth of AI applications reliant on high-speed networks, and BEAD's mission of delivering universal, high-speed connectivity.",
+   "ko": "(a) 상무부 장관은 이 명령일부터 90일 이내에 상무부 통신정보 담당 차관보(Assistant Secretary of Commerce for Communications and Information)를 통하여, 47 U.S.C. 1702(e)-(f)에 부합하게, 행정부의 \"Benefit of the Bargain\" 개혁을 통해 절감된 Broadband Equity Access and Deployment(BEAD) Program의 잔여 자금을 주가 지원받을 수 있는 조건을 명시하는 정책 고시(Policy Notice)를 발령하여야 한다. 그 정책 고시는 이 명령 제4조에 따라 식별된 부담스러운 AI 법률을 보유한 주는 연방법이 허용하는 최대한의 범위에서 비배포(non-deployment) 자금을 지원받을 자격이 없다고 규정하여야 한다. 또한 그 정책 고시는 AI에 관한 주 규제 환경의 파편화가 어떻게 BEAD 자금으로 이루어지는 배포, 고속 네트워크에 의존하는 AI 응용의 성장, 그리고 보편적 고속 연결을 제공한다는 BEAD의 사명을 훼손할 우려가 있는지 기술하여야 한다.",
+   "marks": [
+    {
+     "t": "그 정책 고시는 이 명령 제4조에 따라 식별된 부담스러운 AI 법률을 보유한 주는 연방법이 허용하는 최대한의 범위에서 비배포(non-deployment) 자금을 지원받을 자격이 없다고 규정하여야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "AI에 관한 주 규제 환경의 파편화",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Executive departments and agencies (agencies) shall assess their discretionary grant programs in consultation with the Special Advisor for AI and Crypto and determine whether agencies may condition such grants on States either not enacting an AI law that conflicts with the policy of this order, including any AI law identified pursuant to section 4 or challenged pursuant to section 3 of this order, or, for those States that have enacted such laws, on those States entering into a binding agreement with the relevant agency not to enforce any such laws during the performance period in which it receives the discretionary funding.",
+   "ko": "(b) 행정 부처 및 기관(이하 \"기관\")은 AI·암호화폐 특별보좌관과 협의하여 각자의 재량적 보조금 프로그램을 검토하고, 다음 중 어느 하나를 조건으로 그러한 보조금을 지급할 수 있는지 판단하여야 한다. 즉, 주가 이 명령 제4조에 따라 식별되거나 제3조에 따라 이의 제기된 AI 법률을 포함하여 이 명령의 정책과 상충하는 AI 법률을 제정하지 않는 것, 또는 이미 그러한 법률을 제정한 주의 경우에는 재량적 자금을 지원받는 사업 수행 기간 동안 그러한 법률을 집행하지 않기로 해당 기관과 구속력 있는 합의를 체결하는 것이다.",
+   "marks": [
+    {
+     "t": "이 명령의 정책과 상충하는 AI 법률을 제정하지 않는 것",
+     "k": "safety"
+    },
+    {
+     "t": "그러한 법률을 집행하지 않기로 해당 기관과 구속력 있는 합의를 체결하는 것",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 6. Federal Reporting and Disclosure Standard",
+   "ko": "제6조 연방 보고 및 공개 기준",
+   "id": "s15"
+  },
+  {
+   "type": "p",
+   "en": "Within 90 days of the publication of the identification specified in section 4 of this order, the Chairman of the Federal Communications Commission shall, in consultation with the Special Advisor for AI and Crypto, initiate a proceeding to determine whether to adopt a Federal reporting and disclosure standard for AI models that preempts conflicting State laws.",
+   "ko": "연방통신위원회(Federal Communications Commission) 위원장은 이 명령 제4조에 명시된 식별 결과가 공표된 날부터 90일 이내에 AI·암호화폐 특별보좌관과 협의하여, 상충하는 주법을 선점하는 AI 모델에 대한 연방 보고 및 공개 기준을 채택할지 여부를 결정하기 위한 절차를 개시하여야 한다.",
+   "marks": [
+    {
+     "t": "상충하는 주법을 선점하는 AI 모델에 대한 연방 보고 및 공개 기준",
+     "k": "safety"
+    },
+    {
+     "t": "채택할지 여부를 결정하기 위한 절차를 개시하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 7. Preemption of State Laws Mandating Deceptive Conduct in AI Models",
+   "ko": "제7조 AI 모델에 기만적 행위를 의무화하는 주법의 선점",
+   "id": "s17"
+  },
+  {
+   "type": "p",
+   "en": "Within 90 days of the date of this order, the Chairman of the Federal Trade Commission shall, in consultation with the Special Advisor for AI and Crypto, issue a policy statement on the application of the Federal Trade Commission Act's prohibition on unfair and deceptive acts or practices under 15 U.S.C. 45 to AI models. That policy statement must explain the circumstances under which State laws that require alterations to the truthful outputs of AI models are preempted by the Federal Trade Commission Act's prohibition on engaging in deceptive acts or practices affecting commerce.",
+   "ko": "연방거래위원회(Federal Trade Commission) 위원장은 이 명령일부터 90일 이내에 AI·암호화폐 특별보좌관과 협의하여, 15 U.S.C. 45에 따른 연방거래위원회법(Federal Trade Commission Act)의 불공정하고 기만적인 행위 또는 관행 금지 규정을 AI 모델에 적용하는 것에 관한 정책 성명을 발표하여야 한다. 그 정책 성명은 AI 모델의 진실한 출력을 변경하도록 요구하는 주법이 통상에 영향을 미치는 기만적인 행위 또는 관행을 금지하는 연방거래위원회법에 의해 선점되는 상황을 설명하여야 한다.",
+   "marks": [
+    {
+     "t": "불공정하고 기만적인 행위 또는 관행 금지 규정을 AI 모델에 적용하는 것에 관한 정책 성명",
+     "k": "safety"
+    },
+    {
+     "t": "AI 모델의 진실한 출력을 변경하도록 요구하는 주법이 통상에 영향을 미치는 기만적인 행위 또는 관행을 금지하는 연방거래위원회법에 의해 선점되는 상황을 설명하여야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 8. Legislation",
+   "ko": "제8조 입법",
+   "id": "s19"
+  },
+  {
+   "type": "p",
+   "en": "(a) The Special Advisor for AI and Crypto and the Assistant to the President for Science and Technology shall jointly prepare a legislative recommendation establishing a uniform Federal policy framework for AI that preempts State AI laws that conflict with the policy set forth in this order.",
+   "ko": "(a) AI·암호화폐 특별보좌관과 대통령 과학기술 보좌관은 이 명령에 규정된 정책과 상충하는 주 AI 법률을 선점하는 통일적인 연방 AI 정책 프레임워크를 수립하기 위한 입법 권고안을 공동으로 작성하여야 한다.",
+   "marks": [
+    {
+     "t": "이 명령에 규정된 정책과 상충하는 주 AI 법률을 선점하는 통일적인 연방 AI 정책 프레임워크를 수립하기 위한 입법 권고안을 공동으로 작성하여야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) The legislative recommendation called for in subsection (a) of this section shall not propose preempting otherwise lawful State AI laws relating to:",
+   "ko": "(b) 이 조 (a)항에서 요구하는 입법 권고안은 다음 사항과 관련된, 달리 적법한 주 AI 법률의 선점을 제안해서는 아니 된다.",
+   "marks": [
+    {
+     "t": "달리 적법한 주 AI 법률의 선점을 제안해서는 아니 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(i) child safety protections;",
+   "ko": "(i) 아동 안전 보호",
+   "marks": [
+    {
+     "t": "아동 안전 보호",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(ii) AI compute and data center infrastructure, other than generally applicable permitting reforms;",
+   "ko": "(ii) 일반적으로 적용되는 인허가 개혁을 제외한 AI 연산 및 데이터 센터 인프라"
+  },
+  {
+   "type": "p",
+   "en": "(iii) State government procurement and use of AI; and",
+   "ko": "(iii) 주 정부의 AI 조달 및 사용"
+  },
+  {
+   "type": "p",
+   "en": "(iv) other topics as shall be determined.",
+   "ko": "(iv) 추후 정하는 그 밖의 사항"
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 9. General Provisions",
+   "ko": "제9조 일반 규정",
+   "id": "s26"
+  },
+  {
+   "type": "p",
+   "en": "(a) Nothing in this order shall be construed to impair or otherwise affect:",
+   "ko": "(a) 이 명령의 어떠한 규정도 다음 사항을 저해하거나 달리 영향을 미치는 것으로 해석되어서는 아니 된다."
+  },
+  {
+   "type": "p",
+   "en": "(i) the authority granted by law to an executive department or agency, or the head thereof; or",
+   "ko": "(i) 법률에 의하여 행정 부처 또는 기관이나 그 장에게 부여된 권한"
+  },
+  {
+   "type": "p",
+   "en": "(ii) the functions of the Director of the Office of Management and Budget relating to budgetary, administrative, or legislative proposals.",
+   "ko": "(ii) 예산, 행정 또는 입법 제안에 관한 관리예산처장의 기능"
+  },
+  {
+   "type": "p",
+   "en": "(b) This order shall be implemented consistent with applicable law and subject to the availability of appropriations.",
+   "ko": "(b) 이 명령은 관련 법률에 부합하게, 그리고 예산의 가용성에 따라 시행되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(c) This order is not intended to, and does not, create any right or benefit, substantive or procedural, enforceable at law or in equity by any party against the United States, its departments, agencies, or entities, its officers, employees, or agents, or any other person.",
+   "ko": "(c) 이 명령은 어느 당사자가 미합중국, 그 부처·기관 또는 기구, 그 공무원·직원 또는 대리인, 또는 그 밖의 어떠한 자를 상대로 보통법 또는 형평법상 집행할 수 있는 실체적 또는 절차적 권리나 이익을 창설하려는 의도가 없으며, 이를 창설하지도 아니한다.",
+   "marks": [
+    {
+     "t": "실체적 또는 절차적 권리나 이익을 창설하려는 의도가 없으며, 이를 창설하지도 아니한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(d) The costs for publication of this order shall be borne by the Department of Commerce.",
+   "ko": "(d) 이 명령의 공표에 드는 비용은 상무부가 부담한다."
+  },
+  {
+   "type": "p",
+   "en": "THE WHITE HOUSE, December 11, 2025.",
+   "ko": "백악관, 2025년 12월 11일"
+  }
+ ]
+}

@@ -1,0 +1,289 @@
+{
+ "slug": "eo-14320-ai-export-2025-07",
+ "title": "미국 AI 기술 스택의 수출 촉진 (행정명령 14320호)",
+ "original_title": "Promoting the Export of the American AI Technology Stack (Executive Order 14320)",
+ "publisher": "미국 대통령 (트럼프 행정부)",
+ "published": "2025-07-23",
+ "source_url": "https://www.federalregister.gov/documents/2025/07/28/2025-14218/promoting-the-export-of-the-american-ai-technology-stack",
+ "source_note": "Federal Register 전문이다.",
+ "source_label": "원문 보기 (Federal Register)",
+ "summary": "상무부에 미국 AI 수출 프로그램(American AI Exports Program)을 세우게 한 행정명령이다. 반도체와 서버, 데이터센터, 모델, 보안 조치, 응용을 묶은 풀스택 수출 패키지를 업계 컨소시엄이 제안하도록 하고, 연방 금융 수단으로 지원한다. 수출을 막는 통제가 아니라 미국 AI 기술의 해외 채택을 넓히는 촉진 정책이다.",
+ "doc_kind": "행정명령",
+ "image": "/images/translations/eo-14320-ai-export-2025-07-cover.webp",
+ "og_image": "/images/translations/eo-14320-ai-export-2025-07-cover.jpg",
+ "translated": "2026-11-07",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "stats": {
+  "blocks": 39,
+  "sections": 5,
+  "items": 0,
+  "words_en": 1025
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "By the authority vested in me as President by the Constitution and the laws of the United States of America, including section 301 of title 3, United States Code, it is hereby ordered:",
+   "ko": "미합중국 헌법과 미국법전(United States Code) 제3편 제301조를 포함한 법률이 대통령인 나에게 부여한 권한에 따라 다음과 같이 명령한다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 1. Purpose",
+   "ko": "제1조 목적",
+   "id": "s1"
+  },
+  {
+   "type": "p",
+   "en": "Artificial intelligence (AI) is a foundational technology that will define the future of economic growth, national security, and global competitiveness for decades to come. The United States must not only lead in developing general-purpose and frontier AI capabilities, but also ensure that American AI technologies, standards, and governance models are adopted worldwide to strengthen relationships with our allies and secure our continued technological dominance. This order establishes a coordinated national effort to support the American AI industry by promoting the export of full-stack American AI technology packages.",
+   "ko": "인공지능(AI)은 향후 수십 년간 경제 성장, 국가안보, 글로벌 경쟁력의 미래를 규정할 기반 기술이다. 미국은 범용 및 프론티어 AI 역량 개발을 선도하여야 할 뿐만 아니라, 동맹국과의 관계를 강화하고 미국의 기술적 우위를 지속적으로 확보하기 위하여 미국의 AI 기술, 표준 및 거버넌스 모델이 전 세계적으로 채택되도록 하여야 한다. 이 명령은 미국 풀스택 AI 기술 패키지의 수출을 촉진함으로써 미국 AI 산업을 지원하기 위한 범국가적 조정 노력을 수립한다.",
+   "marks": [
+    {
+     "t": "미국의 AI 기술, 표준 및 거버넌스 모델이 전 세계적으로 채택되도록 하여야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "이 명령은 미국 풀스택 AI 기술 패키지의 수출을 촉진함으로써 미국 AI 산업을 지원하기 위한 범국가적 조정 노력을 수립한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 2. Policy",
+   "ko": "제2조 정책",
+   "id": "s3"
+  },
+  {
+   "type": "p",
+   "en": "It is the policy of the United States to preserve and extend American leadership in AI and decrease international dependence on AI technologies developed by our adversaries by supporting the global deployment of United States-origin AI technologies.",
+   "ko": "미국산 AI 기술의 전 세계적 배포를 지원함으로써 AI 분야에서 미국의 주도권을 유지·확대하고 적대국이 개발한 AI 기술에 대한 국제적 의존도를 낮추는 것이 미국의 정책이다.",
+   "marks": [
+    {
+     "t": "미국산 AI 기술의 전 세계적 배포를 지원함으로써 AI 분야에서 미국의 주도권을 유지·확대하고",
+     "k": "key"
+    },
+    {
+     "t": "적대국이 개발한 AI 기술에 대한 국제적 의존도를 낮추는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 3. Establishment of the American AI Exports Program",
+   "ko": "제3조 미국 AI 수출 프로그램의 설립",
+   "id": "s5"
+  },
+  {
+   "type": "p",
+   "en": "(a) Within 90 days of the date of this order, the Secretary of Commerce shall, in consultation with the Secretary of State and the Director of the Office of Science and Technology Policy (OSTP), establish and implement the American AI Exports Program (Program) to support the development and deployment of United States full-stack AI export packages.",
+   "ko": "(a) 상무부 장관은 이 명령일부터 90일 이내에 국무부 장관 및 과학기술정책실(Office of Science and Technology Policy, OSTP) 실장과 협의하여, 미국 풀스택 AI 수출 패키지의 개발 및 배포를 지원하기 위한 미국 AI 수출 프로그램(American AI Exports Program, 이하 \"프로그램\"이라 한다)을 설립하고 시행하여야 한다.",
+   "marks": [
+    {
+     "t": "미국 풀스택 AI 수출 패키지의 개발 및 배포를 지원하기 위한 미국 AI 수출 프로그램(American AI Exports Program, 이하 \"프로그램\"이라 한다)을 설립하고 시행하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) The Secretary of Commerce shall issue a public call for proposals from industry-led consortia for inclusion in the Program. The public call shall require that each proposal must:",
+   "ko": "(b) 상무부 장관은 프로그램에 포함될 산업계 주도 컨소시엄의 제안서를 공개 모집하여야 한다. 공개 모집 시 각 제안서는 다음 요건을 갖추도록 하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(i) include a full-stack AI technology package, which encompasses:",
+   "ko": "(i) 다음을 포괄하는 풀스택 AI 기술 패키지를 포함할 것"
+  },
+  {
+   "type": "p",
+   "en": "(A) AI-optimized computer hardware (e.g., chips, servers, and accelerators), data center storage, cloud services, and networking, as well as a description of whether and to what extent such items are manufactured in the United States;",
+   "ko": "(A) AI에 최적화된 컴퓨터 하드웨어(예: 칩, 서버, 가속기), 데이터센터 스토리지, 클라우드 서비스 및 네트워킹, 그리고 해당 품목이 미국에서 제조되는지 여부와 그 정도에 관한 설명"
+  },
+  {
+   "type": "p",
+   "en": "(B) data pipelines and labeling systems;",
+   "ko": "(B) 데이터 파이프라인 및 라벨링 시스템"
+  },
+  {
+   "type": "p",
+   "en": "(C) AI models and systems;",
+   "ko": "(C) AI 모델 및 시스템"
+  },
+  {
+   "type": "p",
+   "en": "(D) measures to ensure the security and cybersecurity of AI models and systems; and",
+   "ko": "(D) AI 모델 및 시스템의 보안 및 사이버 보안을 보장하기 위한 조치",
+   "marks": [
+    {
+     "t": "AI 모델 및 시스템의 보안 및 사이버 보안을 보장하기 위한 조치",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(E) AI applications for specific use cases (e.g., software engineering, education, healthcare, agriculture, or transportation);",
+   "ko": "(E) 특정 활용 사례(예: 소프트웨어 엔지니어링, 교육, 의료, 농업 또는 교통)를 위한 AI 응용 프로그램"
+  },
+  {
+   "type": "p",
+   "en": "(ii) identify specific target countries or regional blocs for export engagement;",
+   "ko": "(ii) 수출 대상이 되는 특정 국가 또는 지역 블록을 명시할 것"
+  },
+  {
+   "type": "p",
+   "en": "(iii) describe a business and operational model to explain, at a high level, which entities will build, own, and operate data centers and associated infrastructure;",
+   "ko": "(iii) 데이터센터 및 관련 인프라를 어느 주체가 구축·소유·운영할 것인지를 개괄적으로 설명하는 사업 및 운영 모델을 기술할 것"
+  },
+  {
+   "type": "p",
+   "en": "(iv) detail requested Federal incentives and support mechanisms; and",
+   "ko": "(iv) 요청하는 연방 인센티브 및 지원 메커니즘을 상세히 기술할 것"
+  },
+  {
+   "type": "p",
+   "en": "(v) comply with all relevant United States export control regimes, outbound investment regulations, and end-user policies, including chapter 58 of title 50, United States Code, and relevant guidance from the Bureau of Industry and Security within the Department of Commerce.",
+   "ko": "(v) 미국법전 제50편 제58장 및 상무부 산업안보국(Bureau of Industry and Security)의 관련 지침을 포함하여, 모든 관련 미국 수출 통제 체제, 해외투자 규제 및 최종사용자 정책을 준수할 것",
+   "marks": [
+    {
+     "t": "모든 관련 미국 수출 통제 체제, 해외투자 규제 및 최종사용자 정책을 준수할 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(c) The Department of Commerce shall require proposals to be submitted no later than 90 days after the public call for proposals is issued, and shall consider proposals on a rolling basis for inclusion in the Program.",
+   "ko": "(c) 상무부는 제안서 공개 모집일부터 90일 이내에 제안서를 제출하도록 하여야 하며, 프로그램 포함 여부를 위하여 제안서를 수시로 검토하여야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(d) The Secretary of Commerce shall, in consultation with the Secretary of State, the Secretary of Defense, the Secretary of Energy, and the Director of OSTP, evaluate submitted proposals for inclusion under the Program. Proposals selected by the Secretary of Commerce, in consultation with the Secretary of State, the Secretary of Defense, the Secretary of Energy, and the Director of OSTP, will be designated as priority AI export packages and will be supported through priority access to the tools identified in section 4 of this order, as consistent with applicable law.",
+   "ko": "(d) 상무부 장관은 국무부 장관, 국방부 장관(Secretary of Defense), 에너지부 장관(Secretary of Energy) 및 OSTP 실장과 협의하여, 제출된 제안서의 프로그램 포함 여부를 평가하여야 한다. 상무부 장관이 국무부 장관, 국방부 장관, 에너지부 장관 및 OSTP 실장과 협의하여 선정한 제안서는 우선 AI 수출 패키지로 지정되며, 관련 법률에 부합하는 범위에서 이 명령 제4조에 규정된 수단에 대한 우선적 접근을 통하여 지원을 받는다.",
+   "marks": [
+    {
+     "t": "우선 AI 수출 패키지로 지정되며, 관련 법률에 부합하는 범위에서 이 명령 제4조에 규정된 수단에 대한 우선적 접근을 통하여 지원을 받는다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 4. Mobilization of Federal Financing Tools",
+   "ko": "제4조 연방 금융 수단의 동원",
+   "id": "s20"
+  },
+  {
+   "type": "p",
+   "en": "(a) The Economic Diplomacy Action Group (EDAG), established in the Presidential Memorandum of June 21, 2024, chaired by the Secretary of State, in consultation with the Secretary of Commerce and the United States Trade Representative, and as described in section 708 of the Championing American Business Through Diplomacy Act of 2019 (Title VII of Division J of Public Law 116-94) (CABDA), shall coordinate mobilization of Federal financing tools in support of priority AI export packages.",
+   "ko": "(a) 2024년 6월 21일자 대통령 각서(Presidential Memorandum)로 설치되고 국무부 장관이 의장을 맡으며, 「2019년 외교를 통한 미국 기업 지원법」(Championing American Business Through Diplomacy Act of 2019, 공법 116-94 제J편 제VII장, 이하 \"CABDA\"라 한다) 제708조에 규정된 경제외교행동그룹(Economic Diplomacy Action Group, EDAG)은 상무부 장관 및 미국 무역대표부 대표(United States Trade Representative)와 협의하여 우선 AI 수출 패키지를 지원하기 위한 연방 금융 수단의 동원을 조정하여야 한다.",
+   "marks": [
+    {
+     "t": "우선 AI 수출 패키지를 지원하기 위한 연방 금융 수단의 동원을 조정하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) I delegate to the Administrator of the Small Business Administration and the Director of OSTP the authority under section 708(c)(3) of CABDA to appoint senior officials from their respective executive departments and agencies to serve as members of the EDAG.",
+   "ko": "(b) 나는 CABDA 제708조(c)(3)에 따른 권한, 즉 각자의 행정부처 및 기관의 고위 공무원을 EDAG 위원으로 임명할 수 있는 권한을 중소기업청(Small Business Administration) 청장과 OSTP 실장에게 위임한다."
+  },
+  {
+   "type": "p",
+   "en": "(c) The Secretary of State, in consultation with the EDAG, shall be responsible for:",
+   "ko": "(c) 국무부 장관은 EDAG와 협의하여 다음 사항에 대한 책임을 진다."
+  },
+  {
+   "type": "p",
+   "en": "(i) developing and executing a unified Federal Government strategy to promote the export of American AI technologies and standards;",
+   "ko": "(i) 미국 AI 기술 및 표준의 수출을 촉진하기 위한 연방정부 차원의 통합 전략 수립 및 실행"
+  },
+  {
+   "type": "p",
+   "en": "(ii) aligning technical, financial, and diplomatic resources to accelerate deployment of priority AI export packages under the Program;",
+   "ko": "(ii) 프로그램에 따른 우선 AI 수출 패키지의 배포를 가속화하기 위한 기술·금융·외교 자원의 연계"
+  },
+  {
+   "type": "p",
+   "en": "(iii) coordinating United States participation in multilateral initiatives and country-specific partnerships for AI deployment and export promotion;",
+   "ko": "(iii) AI 배포 및 수출 촉진을 위한 다자 이니셔티브 및 국가별 파트너십에 대한 미국의 참여 조정"
+  },
+  {
+   "type": "p",
+   "en": "(iv) supporting partner countries in fostering pro-innovation regulatory, data, and infrastructure environments conducive to the deployment of American AI systems;",
+   "ko": "(iv) 파트너 국가가 미국 AI 시스템의 배포에 유리한 혁신 친화적 규제·데이터·인프라 환경을 조성하도록 지원",
+   "marks": [
+    {
+     "t": "파트너 국가가 미국 AI 시스템의 배포에 유리한 혁신 친화적 규제·데이터·인프라 환경을 조성하도록 지원",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(v) analyzing market access, including technical barriers to trade and regulatory measures that may impede the competitiveness of United States offerings; and",
+   "ko": "(v) 미국 제품·서비스의 경쟁력을 저해할 수 있는 무역기술장벽 및 규제 조치를 포함한 시장 접근성 분석"
+  },
+  {
+   "type": "p",
+   "en": "(vi) coordinating with the Small Business Administration's Office of Investment and Innovation to facilitate, to the extent permitted under applicable law, investment in United States small businesses to the development of American AI technologies and the manufacture of AI infrastructure, hardware, and systems.",
+   "ko": "(vi) 관련 법률이 허용하는 범위에서, 미국 AI 기술의 개발 및 AI 인프라·하드웨어·시스템의 제조를 위한 미국 중소기업에 대한 투자를 촉진하기 위하여 중소기업청 투자혁신실(Office of Investment and Innovation)과 조정"
+  },
+  {
+   "type": "p",
+   "en": "(d) Members of the EDAG shall deploy, to the maximum extent permitted by law, available Federal tools to support the priority export packages selected for participation in the Program, including direct loans and loan guarantees (12 U.S.C.635); equity investments, co-financing, political risk insurance, and credit guarantees (22 U.S.C.9621); and technical assistance and feasibility studies (22 U.S.C. 2421(b)).",
+   "ko": "(d) EDAG 위원은 법률이 허용하는 최대한의 범위에서, 직접 대출 및 대출 보증(12 U.S.C.635), 지분 투자, 공동 금융, 정치적 위험 보험 및 신용 보증(22 U.S.C.9621), 기술 지원 및 타당성 조사(22 U.S.C. 2421(b))를 포함하여 이용 가능한 연방 수단을 활용하여 프로그램 참여 대상으로 선정된 우선 수출 패키지를 지원하여야 한다.",
+   "marks": [
+    {
+     "t": "이용 가능한 연방 수단을 활용하여 프로그램 참여 대상으로 선정된 우선 수출 패키지를 지원하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 5. General Provisions",
+   "ko": "제5조 일반 조항",
+   "id": "s31"
+  },
+  {
+   "type": "p",
+   "en": "(a) Nothing in this order shall be construed to impair or otherwise affect:",
+   "ko": "(a) 이 명령의 어떠한 내용도 다음 사항을 침해하거나 달리 영향을 미치는 것으로 해석되어서는 아니 된다."
+  },
+  {
+   "type": "p",
+   "en": "(i) the authority granted by law to an executive department or agency, or the head thereof; or",
+   "ko": "(i) 법률에 의하여 행정부처 또는 기관이나 그 장에게 부여된 권한"
+  },
+  {
+   "type": "p",
+   "en": "(ii) the functions of the Director of the Office of Management and Budget relating to budgetary, administrative, or legislative proposals.",
+   "ko": "(ii) 예산, 행정 또는 입법 제안과 관련된 관리예산처 처장의 기능"
+  },
+  {
+   "type": "p",
+   "en": "(b) This order shall be implemented consistent with applicable law and subject to the availability of appropriations.",
+   "ko": "(b) 이 명령은 관련 법률에 부합하게, 그리고 예산 확보를 조건으로 시행되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(c) This order is not intended to, and does not, create any right or benefit, substantive or procedural, enforceable at law or in equity by any party against the United States, its departments, agencies, or entities, its officers, employees, or agents, or any other person.",
+   "ko": "(c) 이 명령은 어떠한 당사자가 미국, 그 부처·기관·조직, 그 공무원·직원·대리인 또는 그 밖의 어떠한 사람을 상대로 보통법 또는 형평법상 행사할 수 있는 실체적 또는 절차적 권리나 이익을 창설하려는 것이 아니며, 이를 창설하지도 아니한다."
+  },
+  {
+   "type": "p",
+   "en": "(d) The costs for publication of this order shall be borne by the Department of Commerce.",
+   "ko": "(d) 이 명령의 공표 비용은 상무부가 부담한다."
+  },
+  {
+   "type": "p",
+   "en": "THE WHITE HOUSE, July 23, 2025.",
+   "ko": "백악관, 2025년 7월 23일"
+  }
+ ]
+}
