@@ -1,0 +1,161 @@
+{
+ "slug": "sg-csa-agentic-tabletop-2026-10",
+ "title": "에이전틱 AI 보안·통제 도상훈련 결과 성명",
+ "original_title": "Outcome Statement – Tabletop Exercise on Agentic AI Security and Control at the Singapore International Cyber Week 2026",
+ "publisher": "싱가포르 사이버보안청(CSA)",
+ "published": "2026-10-15",
+ "source_url": "https://csa.gov.sg/news-events/press-releases/outcome-statement-tabletop-exercise-on-agentic-ai-security-and-control-at-the-singapore-international-cyber-week-2026",
+ "source_note": "싱가포르 사이버보안청 보도자료 전문이다.",
+ "source_label": "원문 보기 (CSA)",
+ "summary": "싱가포르 사이버보안청과 구글이 제11회 싱가포르 국제 사이버 주간에서 연 에이전틱 AI 보안 도상훈련의 결과를 정리한 성명이다. 경계 방어와 수동 검토만으로는 의도하지 않은 에이전트 행동을 잡기 어렵다는 점을 짚고, 모델 바깥의 시스템 수준 안전장치를 논의했다. 정보 공유, AI 보안과 시험, 사고 대응과 인간 감독을 후속 논의 분야로 꼽았다.",
+ "doc_kind": "결과 성명",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "image": "/images/translations/sg-csa-agentic-tabletop-2026-10-cover.webp",
+ "og_image": "/images/translations/sg-csa-agentic-tabletop-2026-10-cover.jpg",
+ "translated": "2026-11-07",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 12,
+  "sections": 0,
+  "items": 0,
+  "words_en": 550
+ },
+ "blocks": [
+  {
+   "type": "li",
+   "en": "Senior cyber policymakers, critical infrastructure leaders, and AI safety and security experts convened at SICW 2026 to examine the operational security of autonomous AI agents through a scenario-based exercise.",
+   "ko": "고위 사이버 정책 입안자, 핵심 기반시설 리더, AI 안전 및 보안 전문가들이 SICW 2026에 모여 시나리오 기반 훈련을 통해 자율 AI 에이전트의 운영 보안을 검토했다.",
+   "marks": [
+    {
+     "t": "시나리오 기반 훈련을 통해 자율 AI 에이전트의 운영 보안을 검토했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Participants highlighted the need for system-level safeguards to address the risks of increasingly autonomous agents, while identifying potential areas for public-private and international collaboration.",
+   "ko": "참가자들은 점점 더 자율화되는 에이전트의 위험에 대응하기 위해 시스템 수준의 안전장치가 필요하다는 점을 강조했으며, 민관 협력 및 국제 협력이 가능한 잠재적 분야도 파악했다.",
+   "marks": [
+    {
+     "t": "점점 더 자율화되는 에이전트의 위험에 대응하기 위해 시스템 수준의 안전장치가 필요하다는 점을 강조했으며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "SINGAPORE, 14 October 2026 – At the 11th Singapore International Cyber Week (SICW 2026), the Cyber Security Agency of Singapore (CSA) and Google convened senior cyber policymakers, critical infrastructure leaders, and AI safety experts for scenario-based exercise on agent security. The exercise aimed to build a shared understanding of developments in agentic AI and their security implications, discuss best practices and policy priorities, and strengthen public-private partnerships on agentic AI security.",
+   "ko": "싱가포르, 2026년 10월 14일 – 제11회 싱가포르 국제 사이버 주간(SICW 2026)에서 싱가포르 사이버보안청(CSA)과 Google은 고위 사이버 정책 입안자, 핵심 기반시설 리더, AI 안전 전문가들을 초청해 에이전트 보안에 관한 시나리오 기반 훈련을 진행했다. 이번 훈련은 에이전틱 AI의 발전 동향과 그 보안상 함의에 대한 공동의 이해를 구축하고, 모범 사례와 정책 우선순위를 논의하며, 에이전틱 AI 보안 분야의 민관 파트너십을 강화하는 것을 목표로 했다.",
+   "marks": [
+    {
+     "t": "AI 안전 전문가들을 초청해 에이전트 보안에 관한 시나리오 기반 훈련을 진행했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants discussed the need for greater international alignment between public and private stakeholders. This includes the value of AI to help cyber defenders to detect, analyse, and patch vulnerabilities at machine speed. The ultimate goal of addressing security risks in AI systems is to build trust and confidence so that society can harness the full potential of AI.",
+   "ko": "참가자들은 공공 및 민간 이해관계자 간 국제적 정렬을 강화할 필요성을 논의했다. 여기에는 사이버 방어자가 기계 속도로 취약점을 탐지·분석·패치하도록 돕는 AI의 가치도 포함된다. AI 시스템의 보안 위험에 대응하는 궁극적인 목표는 신뢰와 확신을 구축하여 사회가 AI의 잠재력을 온전히 활용할 수 있도록 하는 것이다."
+  },
+  {
+   "type": "p",
+   "en": "Participants examined how the rapid expansion of autonomous AI agents and their growing cyber capabilities is reshaping the operational landscape. Organisations face new challenges as they entrust core functions to autonomous AI agents that operate at machine scale. Relying solely on perimeter defenses or manual human review can lead to inadequate coverage or operational bottlenecks. This makes it more difficult to detect unintended agent behaviour, compromised AI agents, or unexpected multi-agent coordination. Where AI agents perform highly privileged tasks such as monitoring and cybersecurity, organisations should also consider the risks of over-reliance on a single model. Independent verification and model diversity can strengthen resilience.",
+   "ko": "참가자들은 자율 AI 에이전트의 급속한 확산과 점점 고도화되는 사이버 역량이 운영 환경을 어떻게 재편하고 있는지 검토했다. 조직이 기계 규모로 작동하는 자율 AI 에이전트에 핵심 기능을 맡기면서 새로운 과제에 직면하고 있다. 경계 방어나 인간의 수동 검토에만 의존하면 커버리지가 불충분해지거나 운영상 병목이 발생할 수 있다. 이로 인해 의도하지 않은 에이전트 행동, 침해된 AI 에이전트, 또는 예상치 못한 다중 에이전트 간 공조를 탐지하기가 더 어려워진다. AI 에이전트가 모니터링이나 사이버 보안처럼 높은 권한이 필요한 과업을 수행하는 경우, 조직은 단일 모델에 대한 과도한 의존이 초래하는 위험도 고려해야 한다. 독립적 검증과 모델 다양성은 회복탄력성을 강화할 수 있다.",
+   "marks": [
+    {
+     "t": "이로 인해 의도하지 않은 에이전트 행동, 침해된 AI 에이전트, 또는 예상치 못한 다중 에이전트 간 공조를 탐지하기가 더 어려워진다.",
+     "k": "key"
+    },
+    {
+     "t": "단일 모델에 대한 과도한 의존이 초래하는 위험도 고려해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "독립적 검증과 모델 다양성은 회복탄력성을 강화할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "To address these risks, participants discussed practical safeguards, inspired by industry research on agent control. Rather than assuming models will always behave as intended, safeguards should include system-level (“outside the model”) protections – including continuous runtime monitoring, hardened execution environments, and strict access controls. For deployers, effective oversight requires a layered approach. For example, real-time, deterministic guardrails can prevent unauthorised high-impact actions, combined with asynchronous monitoring to audit agent reasoning and tool use at scale.",
+   "ko": "이러한 위험에 대응하기 위해 참가자들은 에이전트 통제에 관한 업계 연구에서 착안한 실질적인 안전장치를 논의했다. 모델이 항상 의도대로 작동할 것이라고 가정하기보다, 안전장치에는 지속적인 런타임 모니터링, 강화된 실행 환경, 엄격한 접근 통제 등 시스템 수준의(\"모델 외부의\") 보호 조치가 포함되어야 한다. 배포자 입장에서 효과적인 감독을 위해서는 계층적 접근 방식이 필요하다. 예를 들어 실시간 결정론적 가드레일로 승인되지 않은 고영향 행동을 차단하고, 이를 비동기식 모니터링과 결합하여 에이전트의 추론과 도구 사용을 대규모로 감사할 수 있다.",
+   "marks": [
+    {
+     "t": "모델이 항상 의도대로 작동할 것이라고 가정하기보다",
+     "k": "safety"
+    },
+    {
+     "t": "지속적인 런타임 모니터링, 강화된 실행 환경, 엄격한 접근 통제 등 시스템 수준의(\"모델 외부의\") 보호 조치",
+     "k": "safety"
+    },
+    {
+     "t": "실시간 결정론적 가드레일로 승인되지 않은 고영향 행동을 차단하고",
+     "k": "safety"
+    },
+    {
+     "t": "에이전트의 추론과 도구 사용을 대규모로 감사할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The exercise also surfaced practical recommendations, such as the need to prepare for the rapid escalation of novel agentic threats through short-term incident response plans and long-term resilience measures. Other recommendations included standardising protocols around verifiable agent identities and transitioning to contextual, machine-speed access controls, such as those outlined in Google’s “Beyond Zero (opens in new tab)” security framework.",
+   "ko": "이번 훈련에서는 실질적인 권고 사항도 도출되었다. 예를 들어 단기적 사고 대응 계획과 장기적 회복탄력성 조치를 통해 새로운 에이전틱 위협의 급속한 확대에 대비해야 한다는 점이 제시되었다. 이 밖에 검증 가능한 에이전트 신원과 관련된 프로토콜을 표준화하고, Google의 \"Beyond Zero (opens in new tab)\" 보안 프레임워크에 제시된 것과 같은 맥락 기반의 기계 속도 접근 통제로 전환해야 한다는 권고도 나왔다.",
+   "marks": [
+    {
+     "t": "새로운 에이전틱 위협의 급속한 확대에 대비해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants raised three areas for further discussion and collaborative exploration:",
+   "ko": "참가자들은 추가 논의와 공동 탐구가 필요한 세 가지 분야를 제기했다."
+  },
+  {
+   "type": "p",
+   "en": "1. Collaborative information sharing: Establishing trusted channels for stakeholders to share threat intelligence and report observations of emerging operational anomalies and unexpected agent behaviours.",
+   "ko": "1. 협력적 정보 공유: 이해관계자들이 위협 인텔리전스를 공유하고, 새롭게 나타나는 운영상 이상 징후와 예상치 못한 에이전트 행동에 대한 관찰 결과를 보고할 수 있는 신뢰할 수 있는 채널을 구축함.",
+   "marks": [
+    {
+     "t": "예상치 못한 에이전트 행동에 대한 관찰 결과를 보고할 수 있는 신뢰할 수 있는 채널을 구축함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "2. AI security and testing: Using AI stress-testing, behaviour evaluations, security guardrails, and pilot testing models to ensure the safety and security of autonomous agents and multi-agent interactions before widespread deployment.",
+   "ko": "2. AI 보안 및 테스트: 광범위한 배포에 앞서 자율 에이전트와 다중 에이전트 상호작용의 안전성과 보안성을 확보하기 위해 AI 스트레스 테스트, 행동 평가(evaluation), 보안 가드레일, 시범 테스트 모델을 활용함.",
+   "marks": [
+    {
+     "t": "광범위한 배포에 앞서 자율 에이전트와 다중 에이전트 상호작용의 안전성과 보안성을 확보하기 위해 AI 스트레스 테스트, 행동 평가(evaluation), 보안 가드레일",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "3. Incident response and human oversight: Investing in preparedness and capacity for incident response while navigating resource limitations, legal and compliance obligations in decision-making, and ensuring appropriate human oversight of consequential actions and decisions.",
+   "ko": "3. 사고 대응 및 인간 감독: 자원 제약과 의사결정상의 법적·규정 준수 의무에 대처하면서 사고 대응을 위한 대비 태세와 역량에 투자하고, 중대한 행동 및 결정에 대한 적절한 인간 감독을 보장함.",
+   "marks": [
+    {
+     "t": "중대한 행동 및 결정에 대한 적절한 인간 감독을 보장함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants welcomed the constructive exchange between cybersecurity policymakers, industry leaders, and AI safety experts. They reaffirmed the importance of sustained international co-operation to build a secure, resilient, and trustworthy agentic ecosystem.",
+   "ko": "참가자들은 사이버 보안 정책 입안자, 업계 리더, AI 안전 전문가 간의 건설적인 의견 교환을 환영했다. 이들은 안전하고 회복탄력적이며 신뢰할 수 있는 에이전틱 생태계를 구축하기 위해 지속적인 국제 협력이 중요하다는 점을 재확인했다."
+  }
+ ]
+}
