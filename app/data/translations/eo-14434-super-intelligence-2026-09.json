@@ -1,0 +1,188 @@
+{
+ "slug": "eo-14434-super-intelligence-2026-09",
+ "title": "초지능 시대의 개막 (행정명령 14434호)",
+ "original_title": "Inaugurating the Era of Super Intelligence (Executive Order 14434)",
+ "publisher": "미국 대통령",
+ "published": "2026-09-29",
+ "source_url": "https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/",
+ "source_note": "백악관 누리집에 실린 행정명령 전문이다. 이 명령에서 '초지능'은 기존 법률의 인공지능 정의를 그대로 가리키며, 흔히 말하는 인간을 뛰어넘는 초지능과 같은 뜻이 아니다.",
+ "source_label": "원문 보기 (백악관)",
+ "summary": "연방 행정부가 '인공지능'과 'AI' 대신 '초지능(Super Intelligence)'과 'SI'를 쓰도록 한 행정명령이다. 초지능의 뜻은 당분간 기존 법률의 인공지능 정의를 따르고, 대통령 과학기술 보좌관이 60일 안에 연방 차원의 새 정의를 담은 입법안을 내도록 했다. 이미 나온 규정과 문서는 고치지 않아도 된다.",
+ "doc_kind": "행정명령",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "image": "/images/translations/eo-14434-super-intelligence-2026-09-cover.webp",
+ "og_image": "/images/translations/eo-14434-super-intelligence-2026-09-cover.jpg",
+ "translated": "2026-11-07",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 23,
+  "sections": 4,
+  "items": 0,
+  "words_en": 690
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "By the authority vested in me as President by the Constitution and the laws of the United States of America, it is hereby ordered:",
+   "ko": "미합중국 헌법과 법률이 대통령인 나에게 부여한 권한에 따라 다음과 같이 명령한다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 1. Purpose",
+   "ko": "제1조 목적",
+   "id": "s1"
+  },
+  {
+   "type": "p",
+   "en": "America stands at the forefront of a new technological revolution in intelligence. The modern field of artificial intelligence was born in the United States, where American scientists first gave the field its name and laid the foundations for its development. Seventy years later, powered by our Nation’s unmatched culture of innovation, world-leading companies and research institutions, and entrepreneurial spirit, America is once again pushing the technological frontier forward.",
+   "ko": "미국은 지능 분야의 새로운 기술 혁명의 최전선에 서 있다. 현대 인공지능 분야는 미국에서 탄생하였으며, 미국 과학자들이 처음으로 이 분야에 이름을 붙이고 그 발전의 토대를 마련하였다. 70년이 지난 지금, 미국은 타의 추종을 불허하는 혁신 문화, 세계 최고 수준의 기업과 연구 기관, 그리고 기업가 정신에 힘입어 다시 한번 기술의 최전선을 넓혀 가고 있다."
+  },
+  {
+   "type": "p",
+   "en": "The extraordinary technologies being pioneered by American innovators far exceed what was envisioned when the term “Artificial Intelligence” first came into use. The capabilities of today’s frontier systems do much more than imitate or automate discrete aspects of human intelligence. They increasingly amplify human ingenuity and unlock new forms of creativity, empowering Americans to achieve what was previously impossible across science, medicine, and nearly every other domain of human endeavor. As these capabilities continue to improve, they increasingly represent not merely artificial intelligence, but a new era of Super Intelligence.",
+   "ko": "미국의 혁신가들이 개척하고 있는 놀라운 기술은 \"인공지능(Artificial Intelligence)\"이라는 용어가 처음 사용되던 당시에 구상한 수준을 훨씬 넘어선다. 오늘날 프론티어 시스템의 역량은 인간 지능의 개별적 측면을 모방하거나 자동화하는 데 그치지 않는다. 이러한 시스템은 점점 더 인간의 창의성을 증폭하고 새로운 형태의 창조성을 열어 주며, 미국인이 과학, 의학, 그리고 인간 활동의 거의 모든 영역에서 이전에는 불가능했던 일을 이룰 수 있게 한다. 이러한 역량이 계속 향상됨에 따라, 이 기술은 점점 더 단순한 인공지능이 아니라 초지능이라는 새로운 시대를 대표하게 되었다."
+  },
+  {
+   "type": "p",
+   "en": "The terminology used by the Federal Government should reflect the transformative capabilities of these technologies and the limitless opportunities they create for the American people. Accordingly, the term “Super Intelligence” more appropriately captures the promise, potential, and rapidly advancing capabilities of these technologies. It is therefore the policy of my Administration that, to the maximum extent permitted by law, the executive branch shall use the terms “Super Intelligence” and “SI” in place of “Artificial Intelligence” and “AI” and will not acknowledge the usage of “Artificial Intelligence” and “AI” in any applicable setting.",
+   "ko": "연방정부가 사용하는 용어는 이러한 기술의 변혁적 역량과 이 기술이 미국 국민에게 열어 주는 무한한 기회를 반영하여야 한다. 따라서 \"초지능(Super Intelligence)\"이라는 용어가 이러한 기술의 가능성, 잠재력, 그리고 빠르게 발전하는 역량을 더 적절하게 담아낸다. 이에 법률이 허용하는 최대한의 범위에서, 행정부는 \"인공지능(Artificial Intelligence)\" 및 \"AI\" 대신 \"초지능(Super Intelligence)\" 및 \"SI\"라는 용어를 사용하여야 하며, 적용되는 모든 상황에서 \"인공지능(Artificial Intelligence)\" 및 \"AI\"의 사용을 인정하지 아니하는 것을 우리 행정부의 정책으로 한다.",
+   "marks": [
+    {
+     "t": "행정부는 \"인공지능(Artificial Intelligence)\" 및 \"AI\" 대신 \"초지능(Super Intelligence)\" 및 \"SI\"라는 용어를 사용하여야 하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 2. Implementation",
+   "ko": "제2조 시행",
+   "id": "s5"
+  },
+  {
+   "type": "p",
+   "en": "(a) To the maximum extent permitted by law, executive departments and agencies (agencies) shall use “Super Intelligence” and “SI” in place of “Artificial Intelligence” and “AI” in official correspondence, public communications, websites, reports, policy documents, and other non-statutory documents within the executive branch.",
+   "ko": "(a) 법률이 허용하는 최대한의 범위에서, 행정 부처와 기관(이하 \"기관\")은 행정부 내의 공문, 대국민 소통, 웹사이트, 보고서, 정책 문서 및 그 밖의 비법정(non-statutory) 문서에서 \"인공지능(Artificial Intelligence)\" 및 \"AI\" 대신 \"초지능(Super Intelligence)\" 및 \"SI\"를 사용하여야 한다.",
+   "marks": [
+    {
+     "t": "\"인공지능(Artificial Intelligence)\" 및 \"AI\" 대신 \"초지능(Super Intelligence)\" 및 \"SI\"를 사용하여야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Nothing in this section requires the alteration of previously issued regulations, Presidential actions, contracts, grants, or other historical documents.",
+   "ko": "(b) 이 조의 어떠한 규정도 이전에 발령된 규정, 대통령 조치, 계약, 보조금 또는 그 밖의 기존 문서의 변경을 요구하지 아니한다."
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 3. Definition",
+   "ko": "제3조 정의",
+   "id": "s8"
+  },
+  {
+   "type": "p",
+   "en": "(a) For purposes of this order, and except where otherwise provided by law, the terms “Super Intelligence” and “SI” mean the technologies and systems encompassed by the term “artificial intelligence” as defined in section 9401(3) of title 15, United States Code. This definition shall govern the implementation of this order unless and until superseded by subsequent Presidential action consistent with applicable law or by an Act of Congress.",
+   "ko": "(a) 이 명령의 적용에 있어, 법률에 달리 규정된 경우를 제외하고, \"초지능(Super Intelligence)\" 및 \"SI\"라는 용어는 미국법전(United States Code) 제15편 제9401조(3)에 정의된 \"인공지능(artificial intelligence)\"이라는 용어에 포함되는 기술 및 시스템을 의미한다. 이 정의는 관련 법률에 부합하는 후속 대통령 조치 또는 의회 법률(Act of Congress)에 의하여 대체되기 전까지 이 명령의 시행에 적용된다.",
+   "marks": [
+    {
+     "t": "\"초지능(Super Intelligence)\" 및 \"SI\"라는 용어는 미국법전(United States Code) 제15편 제9401조(3)에 정의된 \"인공지능(artificial intelligence)\"이라는 용어에 포함되는 기술 및 시스템을 의미한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(b) Within 60 days of the date of this order, the Assistant to the President for Science and Technology (APST), in consultation with the heads of other agencies as the APST deems appropriate, shall submit to the President proposed legislative language to establish a Federal definition of “Super Intelligence” and “SI” that reflects the capabilities described in section 1 of this order. The proposal shall include:",
+   "ko": "(b) 대통령 과학기술 보좌관(APST)은 이 명령일로부터 60일 이내에 APST가 적절하다고 판단하는 다른 기관의 장과 협의하여, 이 명령 제1조에 기술된 역량을 반영하는 \"초지능(Super Intelligence)\" 및 \"SI\"의 연방 정의를 수립하기 위한 법률안 문안을 대통령에게 제출하여야 한다. 해당 제안에는 다음 사항이 포함되어야 한다.",
+   "marks": [
+    {
+     "t": "이 명령 제1조에 기술된 역량을 반영하는 \"초지능(Super Intelligence)\" 및 \"SI\"의 연방 정의를 수립하기 위한 법률안 문안을 대통령에게 제출하여야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(i) an assessment of whether, and to what extent, the definition of “Super Intelligence” and “SI” should modify, expand upon, or otherwise supersede the existing statutory definition of “artificial intelligence”;",
+   "ko": "(i) \"초지능(Super Intelligence)\" 및 \"SI\"의 정의가 기존 \"인공지능(artificial intelligence)\"의 법정 정의를 수정하거나, 확장하거나, 그 밖의 방식으로 대체하여야 하는지 여부 및 그 범위에 대한 평가(assessment)",
+   "marks": [
+    {
+     "t": "기존 \"인공지능(artificial intelligence)\"의 법정 정의를 수정하거나, 확장하거나, 그 밖의 방식으로 대체하여야 하는지 여부",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(ii) any proposed conforming amendments, as appropriate, to existing statutory references to “artificial intelligence” and “AI”; and",
+   "ko": "(ii) 적절한 경우, \"인공지능(artificial intelligence)\" 및 \"AI\"에 대한 기존 법령상 언급에 관한 정합성 개정안"
+  },
+  {
+   "type": "p",
+   "en": "(iii) recommendations for any additional Presidential or executive action necessary to implement the proposed definition throughout the executive branch.",
+   "ko": "(iii) 제안된 정의를 행정부 전반에서 시행하는 데 필요한 추가적인 대통령 조치 또는 행정 조치에 관한 권고",
+   "marks": [
+    {
+     "t": "제안된 정의를 행정부 전반에서 시행하는 데 필요한 추가적인 대통령 조치 또는 행정 조치에 관한 권고",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Sec. 4. General Provisions",
+   "ko": "제4조 일반 규정",
+   "id": "s14"
+  },
+  {
+   "type": "p",
+   "en": "(a) Nothing in this order shall be construed to impair or otherwise affect:",
+   "ko": "(a) 이 명령의 어떠한 규정도 다음 사항을 침해하거나 그 밖에 영향을 미치는 것으로 해석되어서는 아니 된다."
+  },
+  {
+   "type": "p",
+   "en": "(i) the authority granted by law to an executive department or agency, or the head thereof; or",
+   "ko": "(i) 법률에 의하여 행정 부처나 기관 또는 그 장에게 부여된 권한"
+  },
+  {
+   "type": "p",
+   "en": "(ii) the functions of the Director of the Office of Management and Budget relating to budgetary, administrative, or legislative proposals.",
+   "ko": "(ii) 예산, 행정 또는 입법 제안과 관련된 관리예산처(Office of Management and Budget) 처장의 기능"
+  },
+  {
+   "type": "p",
+   "en": "(b) This order shall be implemented consistent with applicable law and subject to the availability of appropriations.",
+   "ko": "(b) 이 명령은 관련 법률에 부합하게, 그리고 예산 확보 여부에 따라 시행되어야 한다."
+  },
+  {
+   "type": "p",
+   "en": "(c) This order is not intended to, and does not, create any right or benefit, substantive or procedural, enforceable at law or in equity by any party against the United States, its departments, agencies, or entities, its officers, employees, or agents, or any other person.",
+   "ko": "(c) 이 명령은 어떠한 당사자가 미합중국, 그 부처, 기관 또는 단체, 그 공무원, 직원 또는 대리인, 또는 그 밖의 어떠한 자를 상대로 보통법 또는 형평법상 행사할 수 있는 실체적 또는 절차적 권리나 이익을 창설하려는 것이 아니며, 이를 창설하지도 아니한다.",
+   "marks": [
+    {
+     "t": "이 명령은 어떠한 당사자가 미합중국, 그 부처, 기관 또는 단체, 그 공무원, 직원 또는 대리인, 또는 그 밖의 어떠한 자를 상대로 보통법 또는 형평법상 행사할 수 있는 실체적 또는 절차적 권리나 이익을 창설하려는 것이 아니며, 이를 창설하지도 아니한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "(d) The costs for publication of this order shall be borne by the Office of Science and Technology Policy.",
+   "ko": "(d) 이 명령의 공포 비용은 과학기술정책실(Office of Science and Technology Policy)이 부담한다."
+  },
+  {
+   "type": "p",
+   "en": "DONALD J. TRUMP",
+   "ko": "도널드 J. 트럼프"
+  },
+  {
+   "type": "p",
+   "en": "THE WHITE HOUSE, September 29, 2026.",
+   "ko": "백악관, 2026년 9월 29일"
+  }
+ ]
+}
