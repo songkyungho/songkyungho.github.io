@@ -14,6 +14,20 @@
     "slug": "2026-040"
   },
   {
+    "tag": "국내/토론",
+    "year": "2026",
+    "detail": "“종합토론 토론자,” <2026 IT정책대학원 세미나: AI 시대, 어디로 갈 것인가? New Renaissance 혹은 Upcoming Inferno> 서울과학기술대학교 IT정책전문대학원 (한국프레스센터)",
+    "month": 12,
+    "day": 10,
+    "title": "종합토론 토론자",
+    "authors": null,
+    "text": "2026. 12. 10. “종합토론 토론자,” <2026 IT정책대학원 세미나: AI 시대, 어디로 갈 것인가? New Renaissance 혹은 Upcoming Inferno> 서울과학기술대학교 IT정책전문대학원 (한국프레스센터)",
+    "kind": "토론",
+    "region": "국내",
+    "venue": "<2026 IT정책대학원 세미나: AI 시대, 어디로 갈 것인가? New Renaissance 혹은 Upcoming Inferno> 서울과학기술대학교 IT정책전문대학원 (한국프레스센터)",
+    "slug": "2026-044"
+  },
+  {
     "tag": "특강",
     "year": "2026",
     "detail": "\"민주적 AI 거버넌스가 지금 왜 필요한가,\" <이슈밋업 연속 특강 시즌 2: AI 시대에 '모두'의 민주주의를 다시 묻다 2> 사회적협동조합 빠띠 (온라인)",
@@ -26,6 +40,20 @@
     "region": null,
     "venue": "<이슈밋업 연속 특강 시즌 2: AI 시대에 '모두'의 민주주의를 다시 묻다 2> 사회적협동조합 빠띠 (온라인)",
     "slug": "2026-038"
+  },
+  {
+    "tag": "국제/발표",
+    "year": "2026",
+    "detail": "[국제] Kyungho Song. “Who’s Your Bias? Cross-Language Consensus in Large Language Model Assessments of Northeast Asian Relations,” <Asia Pacific Conference 2026> Panel “Perception, Identity, and Alignment in East Asia: Korea, Its Neighbors, and the Age of AI,” Ritsumeikan Asia Pacific University (Beppu, Japan)",
+    "month": 11,
+    "day": 14,
+    "title": "Who’s Your Bias? Cross-Language Consensus in Large Language Model Assessments of Northeast Asian Relations",
+    "authors": "Kyungho Song",
+    "text": "Kyungho Song. 2026. 11. 14. “Who’s Your Bias? Cross-Language Consensus in Large Language Model Assessments of Northeast Asian Relations,” <Asia Pacific Conference 2026> Panel “Perception, Identity, and Alignment in East Asia: Korea, Its Neighbors, and the Age of AI,” Ritsumeikan Asia Pacific University (Beppu, Japan)",
+    "kind": "발표",
+    "region": "국제",
+    "venue": "<Asia Pacific Conference 2026> Panel “Perception, Identity, and Alignment in East Asia: Korea, Its Neighbors, and the Age of AI,” Ritsumeikan Asia Pacific University (Beppu, Japan)",
+    "slug": "2026-043"
   },
   {
     "tag": "국제/발표",

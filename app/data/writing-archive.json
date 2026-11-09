@@ -1,6 +1,29 @@
 [
   {
     "logNo": null,
+    "slug": "col-aibasicact-2026-02",
+    "title": "The Trustworthiness Framework of the Korea AI Basic Act: Three Regulatory Axes",
+    "rawTitle": "The Trustworthiness Framework of the Korea AI Basic Act: Three Regulatory Axes",
+    "publication": "AI Basic Act (aibasicact.kr)",
+    "issue": null,
+    "year": "2026",
+    "month": "11",
+    "day": "6",
+    "naverCategory": null,
+    "section": "이슈브리프",
+    "sourceUrl": "https://aibasicact.kr/blog/three-regulatory-axes/",
+    "naverImportedAt": null,
+    "image": null,
+    "imageSource": null,
+    "body": [
+      "Jiyeon Cho & Kyungho Song. 한국 AI 기본법에는 EU식 위험 피라미드가 없고, 신뢰성 장(제4장)이 고영향 AI·생성형 AI 투명성·고성능 AI(제32조) 세 축으로 규율한다는 점을 EU AI법의 병렬 트랙과 비교해 정리한 aibasicact.kr의 둘째 블로그 글."
+    ],
+    "kind": "post",
+    "note": null,
+    "migrationStatus": "외부 링크만 (전문 미이전)"
+  },
+  {
+    "logNo": null,
     "slug": "blog-nk-openweight-2026-10",
     "title": "북한은 AI를 자체 운용할 수 있을까: 공개 자료로 따져 본 오픈웨이트 모델 운용의 가능성",
     "rawTitle": "북한은 AI를 자체 운용할 수 있을까: 공개 자료로 따져 본 오픈웨이트 모델 운용의 가능성",
