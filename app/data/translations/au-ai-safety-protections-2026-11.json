@@ -322,10 +322,10 @@
   {
    "type": "p",
    "en": "“The National AI Plan released last year put safety at the core of the Government’s AI agenda - capturing the opportunities of AI while keeping Australians safe.",
-   "ko": "“지난해 발표된 국가 AI 계획은 안전을 정부 AI 의제의 중심에 두었으며, 이는 AI의 기회를 포착하는 동시에 호주 국민의 안전을 지키는 것이다.",
+   "ko": "“지난해 발표된 국가 AI 계획은 안전을 정부 AI 의제의 중심에 두었다. AI의 기회를 포착하면서도 호주 국민의 안전을 지키려는 것이다.",
    "marks": [
     {
-     "t": "국가 AI 계획은 안전을 정부 AI 의제의 중심에 두었으며",
+     "t": "국가 AI 계획은 안전을 정부 AI 의제의 중심에 두었다",
      "k": "safety"
     }
    ]

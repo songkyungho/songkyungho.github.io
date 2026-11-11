@@ -54,10 +54,10 @@
   {
    "type": "p",
    "en": "Today’s discussions have highlighted three fundamental areas of consensus: the need for a clear, understandable, and predictable regulatory framework; the urgency of achieving tangible and immediate results in transparency, incident reporting, risk management and verification; and the absolute necessity of implementing rigorous evaluation standards.",
-   "ko": "오늘의 논의에서는 세 가지 근본적 합의 영역이 부각되었다. 명확하고 이해 가능하며 예측 가능한 규제 프레임워크의 필요성, 투명성, 사고 보고, 위험 관리, 검증에서 가시적이고 즉각적인 성과를 거두어야 할 시급성, 그리고 엄격한 평가(evaluation) 기준을 이행해야 할 절대적 필요성이 그것이다.",
+   "ko": "오늘의 논의에서는 세 가지 근본적 합의 영역이 부각되었다. 명확하고 이해 가능하며 예측 가능한 규제 프레임워크의 필요성; 투명성·사고 보고·위험 관리·검증에서 가시적이고 즉각적인 성과를 거두어야 할 시급성; 그리고 엄격한 평가(evaluation) 기준을 이행해야 할 절대적 필요성이 그것이다.",
    "marks": [
     {
-     "t": "투명성, 사고 보고, 위험 관리, 검증에서 가시적이고 즉각적인 성과를 거두어야 할 시급성",
+     "t": "투명성·사고 보고·위험 관리·검증에서 가시적이고 즉각적인 성과를 거두어야 할 시급성",
      "k": "safety"
     },
     {
@@ -79,7 +79,7 @@
   {
    "type": "p",
    "en": "First, policy makers, researchers and developers are committed to establishing a common framework for the evaluation and risk management of frontier models, building on existing frameworks. This framework would be supported by common technical standards, evaluation tools and methodologies that keep pace with advances in frontier model capabilities, with particular focus on mitigating dangerous misuse, including in the cyber and CBRN domains, and risks arising from growing autonomy or model misalignment, including loss of control. In this regard, we are committed to reinforcing technical cooperation, and recognize the role that existing networks, including International Network for Advanced AI Measurement, Evaluation and Science (NAAIMES) can play in making evaluation methods and results more comparable and accessible to countries across different regions.",
-   "ko": "첫째, 정책 입안자, 연구자, 개발자는 기존 프레임워크를 기반으로 프론티어 모델의 평가 및 위험 관리를 위한 공통 프레임워크를 수립할 것을 약속한다. 이 프레임워크는 프론티어 모델 역량의 발전에 보조를 맞추는 공통 기술 표준, 평가 도구 및 방법론의 뒷받침을 받으며, 특히 사이버 및 화학·생물·방사능·핵(CBRN) 영역을 포함한 위험한 오용, 그리고 통제 상실을 포함하여 자율성 증대나 모델 오정렬에서 비롯되는 위험의 완화에 중점을 둔다. 이와 관련하여 우리는 기술 협력을 강화할 것을 약속하며, 첨단 AI 측정·평가·과학 국제 네트워크(NAAIMES)를 비롯한 기존 네트워크가 평가 방법과 결과의 비교 가능성을 높이고 여러 지역의 국가들이 이에 더 쉽게 접근할 수 있도록 하는 데 수행할 수 있는 역할을 인정한다.",
+   "ko": "첫째, 정책 입안자, 연구자, 개발자는 기존 프레임워크를 기반으로 프론티어 모델의 평가 및 위험 관리를 위한 공통 프레임워크를 수립할 것을 약속한다. 이 프레임워크는 프론티어 모델 역량의 발전에 보조를 맞추는 공통 기술 표준, 평가 도구 및 방법론의 뒷받침을 받게 될 것이며, 특히 사이버 및 화학·생물·방사능·핵(CBRN) 영역을 포함한 위험한 오용, 그리고 통제 상실을 포함하여 자율성 증대나 모델 오정렬에서 비롯되는 위험의 완화에 중점을 두게 될 것이다. 이와 관련하여 우리는 기술 협력을 강화할 것을 약속하며, 첨단 AI 측정·평가·과학 국제 네트워크(NAAIMES)를 비롯한 기존 네트워크가 평가 방법과 결과의 비교 가능성을 높이고 여러 지역의 국가들이 이에 더 쉽게 접근할 수 있도록 하는 데 수행할 수 있는 역할을 인정한다.",
    "marks": [
     {
      "t": "프론티어 모델의 평가 및 위험 관리를 위한 공통 프레임워크를 수립할 것을 약속한다",
@@ -168,7 +168,7 @@
   {
    "type": "li",
    "en": "Acknowledge the risk posed by the removal or circumvention of safeguards and the importance of addressing that risk while preserving the benefits of open-weight development for research, innovation and safety purposes;",
-   "ko": "안전장치의 제거 또는 우회로 인해 발생하는 위험을 인정하고, 연구, 혁신 및 안전 목적을 위한 오픈웨이트 개발의 이점을 유지하면서 그 위험에 대응하는 것의 중요성을 인정한다;",
+   "ko": "안전장치의 제거 또는 우회로 인해 발생하는 위험을 인정하고, 연구, 혁신 및 안전 목적을 위한 오픈 웨이트 개발의 이점을 유지하면서 그 위험에 대응하는 것의 중요성을 인정한다;",
    "marks": [
     {
      "t": "안전장치의 제거 또는 우회로 인해 발생하는 위험",
@@ -205,7 +205,7 @@
   {
    "type": "p",
    "en": "We recognize the value of strengthening existing reporting arrangements to align on incident classification and share timely information on serious cyber and AI control incidents and other material precursor signals of serious harm, whether it's between companies and government, between governments or between AI companies, and of exploring whether a cooperation mechanism would help, and what its scope could be.",
-   "ko": "우리는 기업과 정부 간, 정부 간, 또는 AI 기업 간을 막론하고 사고 분류 기준을 일치시키고 중대한 사이버 사고 및 AI 통제 사고, 그리고 심각한 피해의 기타 중요한 전조 신호에 관한 정보를 적시에 공유하도록 기존 보고 체계를 강화하는 것의 가치를 인정하며, 협력 메커니즘이 도움이 될지 여부와 그 범위가 어떠할 수 있는지를 모색하는 것의 가치 또한 인정한다.",
+   "ko": "우리는 기업과 정부 사이든, 정부들 사이든, AI 기업들 사이든 사고 분류 기준을 일치시키고 중대한 사이버 사고 및 AI 통제 사고, 그리고 심각한 피해의 기타 중요한 전조 신호에 관한 정보를 적시에 공유하도록 기존 보고 체계를 강화하는 것의 가치를 인정하며, 협력 메커니즘이 도움이 될지 여부와 그 범위가 어떠할 수 있는지를 모색하는 것의 가치 또한 인정한다.",
    "marks": [
     {
      "t": "중대한 사이버 사고 및 AI 통제 사고, 그리고 심각한 피해의 기타 중요한 전조 신호에 관한 정보를 적시에 공유",
