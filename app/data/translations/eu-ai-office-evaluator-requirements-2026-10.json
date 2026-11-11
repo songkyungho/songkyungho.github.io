@@ -1,0 +1,945 @@
+{
+ "slug": "eu-ai-office-evaluator-requirements-2026-10",
+ "title": "외부 평가자의 독립성·자격 요건에 관한 워크숍 보고서",
+ "original_title": "Report from the Workshop on Independence and Qualification Requirements for External Evaluators",
+ "publisher": "EU 집행위원회 AI 사무국(AI Office)",
+ "published": "2026-10-21",
+ "source_url": "https://digital-strategy.ec.europa.eu/en/library/requirements-qualified-independent-external-evaluators-general-purpose-ai-models",
+ "source_note": "EU 디지털 전략 누리집 자료실에 실린 보고서 PDF(7쪽) 전문이다. 게시일은 자료실 페이지의 최종 갱신일을 따랐다.",
+ "source_label": "원문 보기 (EU 디지털 전략)",
+ "summary": "EU AI 사무국이 시스템적 위험이 있는 범용 AI 모델을 평가하는 외부 평가자에게 요구할 자격과 독립성 기준을 정리한 보고서다. 기준은 공개하되 채점 기준표는 공개하지 않는 채점 체계를 두고, 위험 영역별로 따로 채점한다. 영역 전문성과 평가 수행 역량을 자격 기준으로, 재무·경영·운영 독립성을 독립성 기준으로 제시하며, 평가 결과에 연동된 보수와 제공자 지분 보유를 금지한다. 19개 기관이 참여한 2026년 7월 워크숍의 논의를 반영했다.",
+ "doc_kind": "보고서",
+ "image": "/images/translations/eu-ai-office-evaluator-requirements-2026-10-cover.webp",
+ "og_image": "/images/translations/eu-ai-office-evaluator-requirements-2026-10-cover.jpg",
+ "translated": "2026-11-11",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "stats": {
+  "blocks": 104,
+  "sections": 8,
+  "items": 7,
+  "words_en": 3206
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Workshop Outline",
+   "ko": "워크숍 개요",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "On 15 July 2026 the EU AI Office hosted an online workshop on Independence and Qualification Requirements for External Evaluators of General-Purpose AI models with systemic risk. AI model evaluation experts from 19 organisations took part in this meeting where the AI Office presented a proposal on the requirements in question. Overall, 20 organisations were invited to take part after careful selection following expressions of interest in response to the public call https://digital-strategy.ec.europa.eu/en/events/call-participants-workshop-qualification-requirements-external-evaluators-gpai-models-systemic-risk; one invited organisation was absent. The selection criteria covered demonstrated experience in conducting high-quality evaluations of GPAI models and their systemic risks and the quality of the track record of AI governance thought leadership with a focus on evaluations of systemic risks.",
+   "ko": "2026년 7월 15일 EU AI 사무국(AI Office)은 시스템적 위험이 있는 범용 AI(GPAI) 모델의 외부 평가자에 대한 독립성 및 자격 요건에 관한 온라인 워크숍을 개최하였다. 19개 기관의 AI 모델 평가(evaluation) 전문가가 이 회의에 참여하였으며, 회의에서 AI 사무국은 해당 요건에 관한 제안을 발표하였다. 공개 모집 https://digital-strategy.ec.europa.eu/en/events/call-participants-workshop-qualification-requirements-external-evaluators-gpai-models-systemic-risk 에 대한 참가 의향 표명 이후 신중한 선정을 거쳐 총 20개 기관이 초청되었으며, 초청된 기관 중 1곳은 불참하였다. 선정 기준은 범용 AI 모델과 그 시스템적 위험에 대한 고품질 평가 수행 경험을 입증하였는지, 그리고 시스템적 위험 평가에 초점을 둔 AI 거버넌스 사상적 리더십(thought leadership) 실적의 질을 포함하였다.",
+   "marks": [
+    {
+     "t": "시스템적 위험이 있는 범용 AI(GPAI) 모델의 외부 평가자에 대한 독립성 및 자격 요건에 관한 온라인 워크숍을 개최하였다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The involvement of external evaluators is a key element for assessing and mitigating the systemic risks that may stem from GPAI models with systemic risk, as set out in Article 55(1)(b) of the EU AI Act and specified in the GPAI Code of Practice. In the context of the AI Office’s task of assessing GPAI model with systemic risk provider compliance with the AI Act, ensuring that external evaluators are adequately qualified and independent – including that they bring the domain expertise and evaluation skills necessary for systemic risk assessment, and are free from the provider’s managerial, financial or operational influence – is crucial for the reliability of external model evaluations as credible input towards assessing and mitigating systemic risks. The AI Office thus has an objective to develop and communicate (parts of) a system for scoring external evaluators on qualification and independence criteria. This workshop addressed that objective.",
+   "ko": "외부 평가자의 참여는 EU AI 법 제55조(1)(b)에 규정되고 범용 AI 실천 강령에 구체화된 바와 같이, 시스템적 위험이 있는 범용 AI 모델에서 비롯될 수 있는 시스템적 위험을 평가(assessment)하고 완화하는 데 핵심 요소이다. 시스템적 위험이 있는 범용 AI 모델 제공자의 AI 법 준수 여부를 평가하는 AI 사무국의 과업 맥락에서, 외부 평가자가 충분한 자격과 독립성을 갖추도록 보장하는 것 — 여기에는 시스템적 위험 평가에 필요한 분야 전문성과 평가 역량을 갖추고, 제공자의 경영상·재정상·운영상 영향으로부터 자유로운 것이 포함된다 — 은 외부 모델 평가가 시스템적 위험을 평가하고 완화하는 데 신뢰할 수 있는 입력으로서 갖는 신뢰성을 위해 매우 중요하다. 따라서 AI 사무국은 자격 및 독립성 기준에 따라 외부 평가자를 채점하는 체계(의 일부)를 개발하고 이를 알리는 것을 목표로 한다. 이번 워크숍은 이 목표를 다루었다.",
+   "marks": [
+    {
+     "t": "시스템적 위험이 있는 범용 AI 모델에서 비롯될 수 있는 시스템적 위험을 평가(assessment)하고 완화하는 데 핵심 요소이다",
+     "k": "safety"
+    },
+    {
+     "t": "제공자의 경영상·재정상·운영상 영향으로부터 자유로운 것",
+     "k": "safety"
+    },
+    {
+     "t": "외부 모델 평가가 시스템적 위험을 평가하고 완화하는 데 신뢰할 수 있는 입력으로서 갖는 신뢰성을 위해 매우 중요하다",
+     "k": "key"
+    },
+    {
+     "t": "AI 사무국은 자격 및 독립성 기준에 따라 외부 평가자를 채점하는 체계(의 일부)를 개발하고 이를 알리는 것을 목표로 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The attendees of the workshop provided highly valuable input on the topic of external evaluator qualification and independence criteria, including suggesting clarifications on the proposed scoring system as well as on the financial and management independence criteria. The proposal presented by the AI Office received positive feedback as well as a variety of questions, clarifications, and concerns. The AI Office addressed the raised points both orally during the workshop, and through this written report. We note that this report expresses the current views of the AI Office, which may be subject to change as the field of AI evaluations develops.",
+   "ko": "워크숍 참석자들은 외부 평가자의 자격 및 독립성 기준이라는 주제에 관해 매우 유익한 입력을 제공하였으며, 여기에는 제안된 채점 체계와 재정 및 경영 독립성 기준에 대한 명확화 제안이 포함되었다. AI 사무국이 발표한 제안은 긍정적인 피드백과 함께 다양한 질문, 명확화 요청 및 우려를 받았다. AI 사무국은 제기된 사항에 대해 워크숍 중 구두로, 그리고 이 서면 보고서를 통해 답변하였다. 이 보고서는 AI 사무국의 현재 견해를 나타내며, AI 평가 분야가 발전함에 따라 변경될 수 있음을 밝혀 둔다.",
+   "marks": [
+    {
+     "t": "제안된 채점 체계와 재정 및 경영 독립성 기준에 대한 명확화 제안",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Attending Organisations",
+   "ko": "참석 기관",
+   "id": "s4"
+  },
+  {
+   "type": "li",
+   "en": "Active Site Research, Inc.",
+   "ko": "Active Site Research, Inc."
+  },
+  {
+   "type": "li",
+   "en": "AI Standards Lab",
+   "ko": "AI Standards Lab"
+  },
+  {
+   "type": "li",
+   "en": "Apart",
+   "ko": "Apart"
+  },
+  {
+   "type": "li",
+   "en": "Apollo Research",
+   "ko": "Apollo Research"
+  },
+  {
+   "type": "li",
+   "en": "AVERI",
+   "ko": "AVERI"
+  },
+  {
+   "type": "li",
+   "en": "Centre pour la Sécurité de l’IA (CeSIA)",
+   "ko": "Centre pour la Sécurité de l’IA (CeSIA)",
+   "untranslated": true
+  },
+  {
+   "type": "li",
+   "en": "Concordia AI",
+   "ko": "Concordia AI"
+  },
+  {
+   "type": "li",
+   "en": "Deloitte",
+   "ko": "Deloitte"
+  },
+  {
+   "type": "li",
+   "en": "Epoch AI",
+   "ko": "Epoch AI"
+  },
+  {
+   "type": "li",
+   "en": "FAR.AI",
+   "ko": "FAR.AI"
+  },
+  {
+   "type": "li",
+   "en": "Future of Life Institute (FLI)",
+   "ko": "Future of Life Institute (FLI)"
+  },
+  {
+   "type": "li",
+   "en": "Irregular",
+   "ko": "Irregular"
+  },
+  {
+   "type": "li",
+   "en": "Neo Research",
+   "ko": "Neo Research"
+  },
+  {
+   "type": "li",
+   "en": "Pour Demain",
+   "ko": "Pour Demain"
+  },
+  {
+   "type": "li",
+   "en": "RAND Corporation",
+   "ko": "RAND Corporation"
+  },
+  {
+   "type": "li",
+   "en": "SaferAI",
+   "ko": "SaferAI"
+  },
+  {
+   "type": "li",
+   "en": "SecureBio",
+   "ko": "SecureBio"
+  },
+  {
+   "type": "li",
+   "en": "The Future Society",
+   "ko": "The Future Society"
+  },
+  {
+   "type": "li",
+   "en": "Transluce",
+   "ko": "Transluce"
+  },
+  {
+   "type": "h2",
+   "en": "Disclaimer",
+   "ko": "면책 조항",
+   "id": "s24"
+  },
+  {
+   "type": "p",
+   "en": "The workshop was not intended to cover the expertise, competence, independence or any other requirements established by the AI Act in the context of the scientific panel (Article 68(2) AI Act) or the independent experts that the Commission may appoint to conduct evaluations on the basis of Article 92(2) AI Act.",
+   "ko": "이 워크숍은 과학 패널(AI 법 제68조(2)) 또는 집행위원회(Commission)가 AI 법 제92조(2)에 근거하여 평가 수행을 위해 임명할 수 있는 독립 전문가와 관련하여 AI 법이 정한 전문성, 역량, 독립성 또는 그 밖의 요건을 다루기 위한 것이 아니었다.",
+   "marks": [
+    {
+     "t": "집행위원회(Commission)가 AI 법 제92조(2)에 근거하여 평가 수행을 위해 임명할 수 있는 독립 전문가",
+     "k": "safety"
+    },
+    {
+     "t": "AI 법이 정한 전문성, 역량, 독립성 또는 그 밖의 요건을 다루기 위한 것이 아니었다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Workshop Proceedings",
+   "ko": "워크숍 진행 경과",
+   "id": "s26"
+  },
+  {
+   "type": "p",
+   "en": "The workshop opened with a welcome from Matthieu Delescluse, the Head of Unit A3 (AI Safety) of the AI Office. This was followed by brief introductions by the attendees. Thereafter, the AI Office presented a proposal on independence and qualification requirements for external evaluators. During the presentation, the attendees had the option to pose comments and questions in writing and the presentation allowed for oral discussion at multiple points, including questions and answers both ways.",
+   "ko": "워크숍은 AI 사무국 A3과(AI 안전) 과장인 Matthieu Delescluse의 환영사로 시작되었다. 이어서 참석자들의 간략한 소개가 있었다. 그 후 AI 사무국은 외부 평가자의 독립성 및 자격 요건에 관한 제안을 발표하였다. 발표 중 참석자들은 서면으로 의견과 질문을 제시할 수 있었으며, 발표 도중 여러 차례 쌍방향 질의응답을 포함한 구두 토론이 이루어졌다.",
+   "marks": [
+    {
+     "t": "AI 사무국 A3과(AI 안전) 과장",
+     "k": "safety"
+    },
+    {
+     "t": "AI 사무국은 외부 평가자의 독립성 및 자격 요건에 관한 제안을 발표하였다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In the following, we present the AI Office’s proposal on operationalising the independence and qualification requirements for third-party organisations that engage as external evaluators to conduct model evaluations pursuant to the GPAI Code of Practice. This includes a summary of questions, concerns, and discussion points raised during the workshop.",
+   "ko": "이하에서는 범용 AI 실천 강령에 따라 모델 평가를 수행하기 위해 외부 평가자로 참여하는 제3자 기관에 대한 독립성 및 자격 요건을 운영화하는 AI 사무국의 제안을 제시한다. 여기에는 워크숍 중 제기된 질문, 우려 및 논의 사항의 요약이 포함된다.",
+   "marks": [
+    {
+     "t": "범용 AI 실천 강령에 따라 모델 평가를 수행하기 위해 외부 평가자로 참여하는 제3자 기관에 대한 독립성 및 자격 요건",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Background",
+   "ko": "배경",
+   "id": "s29"
+  },
+  {
+   "type": "p",
+   "en": "Under the GPAI Code of Practice, external evaluations are carried out to the same rigorous standards as internal evaluations, but by evaluators outside the provider. External evaluators may test the model’s capabilities, propensities, affordances and effects relating to the selected systemic risk domain, and engage both before and after the model is placed on the EU market. Their findings feed into the provider’s risk estimation and risk acceptance determination. External evaluator reports are submitted together with the Model Report provided by the model provider to the AI Office, with the evaluators keeping control over publication of their findings. To be adequately qualified, an evaluator must have significant domain expertise for the systemic risk they assess, be technically skilled and experienced in conducting model evaluations, have appropriate internal and external information security protocols, and agree to protect commercially confidential information where access to it is needed. To be independent, an evaluator must have no financial, management or operational dependence on the provider or its subsidiaries or associates, and must otherwise be free from the provider’s control in reaching conclusions, including through contractual safeguards and conflict of interest policies.",
+   "ko": "범용 AI 실천 강령에 따르면, 외부 평가는 내부 평가와 동일하게 엄격한 기준에 따라 수행되지만 제공자 외부의 평가자가 수행한다. 외부 평가자는 선정된 시스템적 위험 영역과 관련하여 모델의 역량, 성향, 어포던스(행동 가능성) 및 영향을 시험할 수 있으며, 모델이 EU 시장에 출시되기 전과 후 모두에 참여할 수 있다. 이들의 평가 결과는 제공자의 위험 추정 및 위험 수용 결정에 반영된다. 외부 평가자 보고서는 모델 제공자가 AI 사무국에 제출하는 모델 보고서와 함께 제출되며, 평가 결과의 공개에 대한 통제권은 평가자가 보유한다. 충분한 자격을 갖추기 위해 평가자는 자신이 평가하는 시스템적 위험에 대한 상당한 분야 전문성을 갖추고, 모델 평가 수행에 기술적으로 숙련되고 경험이 있어야 하며, 적절한 내부 및 외부 정보 보안 프로토콜을 갖추고, 상업적 기밀 정보에 대한 접근이 필요한 경우 이를 보호하는 데 동의하여야 한다. 독립성을 갖추기 위해 평가자는 제공자 또는 그 자회사나 관계사에 대해 재정상·경영상·운영상 의존 관계가 없어야 하며, 계약상 안전장치와 이해 상충 정책을 통한 것을 포함하여 결론에 도달하는 데 있어 그 밖의 방식으로도 제공자의 통제로부터 자유로워야 한다.",
+   "marks": [
+    {
+     "t": "외부 평가는 내부 평가와 동일하게 엄격한 기준에 따라 수행되지만 제공자 외부의 평가자가 수행한다",
+     "k": "safety"
+    },
+    {
+     "t": "선정된 시스템적 위험 영역과 관련하여 모델의 역량, 성향, 어포던스(행동 가능성) 및 영향을 시험할 수 있으며",
+     "k": "safety"
+    },
+    {
+     "t": "이들의 평가 결과는 제공자의 위험 추정 및 위험 수용 결정에 반영된다.",
+     "k": "safety"
+    },
+    {
+     "t": "평가 결과의 공개에 대한 통제권은 평가자가 보유한다",
+     "k": "safety"
+    },
+    {
+     "t": "결론에 도달하는 데 있어 그 밖의 방식으로도 제공자의 통제로부터 자유로워야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In the context of the AI Office assessing model provider compliance with the AI Act, it is paramount to ensure that external evaluators are adequately qualified and independent as well as to foster the growth of the external evaluator ecosystem. To this end, the AI Office aims to define and consistently apply qualification and independence criteria for external evaluators. To define and apply the criteria, the AI Office sets out an operationalisation in terms of qualification and independence requirements and a scoring system thereof.",
+   "ko": "AI 사무국이 모델 제공자의 AI 법 준수 여부를 평가하는 맥락에서, 외부 평가자가 충분한 자격과 독립성을 갖추도록 보장하고 외부 평가자 생태계의 성장을 촉진하는 것은 매우 중요하다. 이를 위해 AI 사무국은 외부 평가자에 대한 자격 및 독립성 기준을 정의하고 일관되게 적용하는 것을 목표로 한다. 이 기준을 정의하고 적용하기 위해 AI 사무국은 자격 및 독립성 요건과 그에 대한 채점 체계라는 측면에서 운영화 방안을 제시한다.",
+   "marks": [
+    {
+     "t": "외부 평가자가 충분한 자격과 독립성을 갖추도록 보장하고 외부 평가자 생태계의 성장을 촉진하는 것은 매우 중요하다.",
+     "k": "key"
+    },
+    {
+     "t": "AI 사무국은 외부 평가자에 대한 자격 및 독립성 기준을 정의하고 일관되게 적용하는 것을 목표로 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Scoring System",
+   "ko": "채점 체계",
+   "id": "s32"
+  },
+  {
+   "type": "p",
+   "en": "The core idea behind operationalising the qualification criteria (set out in section Qualification criteria below) is to set up a scoring system for scoring each criterion, where (most of) the criteria are publicly disclosed and the scoring rubric is held undisclosed by the AI Office. The scoring of external evaluators is carried out by the AI Office’s internal technical experts. While (most of) the criteria are disclosed, the specific rubrics and point scales used for scoring are not disclosed by the AI Office to prevent manipulation of the scoring system. (Model providers are encouraged to use the publicly disclosed criteria.) Since evaluating systemic risks stemming from GPAI models is a fast-moving field, the scoring system will be adjusted as necessary for alignment with the evolving state of the art. As evaluations must be appropriate for the model and systemic risk under assessment, the AI Office expects that external evaluations of highly capable models are conducted by highly scoring evaluators; while for less capable models it could be acceptable to engage slightly lower-scoring evaluators, especially when highly qualified evaluators are not available. Various points were raised by workshop participants regarding the rubrics and point scales, which we addressed by laying out the following characteristics of the scoring system:",
+   "ko": "자격 기준(아래 '자격 기준' 절에 제시)을 운영화하는 핵심 아이디어는 각 기준을 채점하기 위한 채점 체계를 구축하되, 기준(의 대부분)은 공개하고 채점 기준표는 AI 사무국이 비공개로 유지하는 것이다. 외부 평가자에 대한 채점은 AI 사무국 내부의 기술 전문가가 수행한다. 기준(의 대부분)은 공개되지만, 채점 체계의 조작을 방지하기 위해 채점에 사용되는 구체적인 채점 기준표와 점수 척도는 AI 사무국이 공개하지 않는다. (모델 제공자는 공개된 기준을 활용할 것이 권장된다.) 범용 AI 모델에서 비롯되는 시스템적 위험의 평가는 빠르게 변화하는 분야이므로, 채점 체계는 발전하는 최첨단 수준과 정렬되도록 필요에 따라 조정될 것이다. 평가는 평가 대상 모델과 시스템적 위험에 적절하여야 하므로, AI 사무국은 고역량(Highly capable) 모델에 대한 외부 평가는 높은 점수를 받은 평가자가 수행할 것으로 기대한다. 반면 역량이 낮은 모델의 경우, 특히 높은 자격을 갖춘 평가자를 구할 수 없을 때에는 점수가 다소 낮은 평가자를 참여시키는 것도 허용될 수 있다. 워크숍 참가자들은 채점 기준표와 점수 척도에 관해 다양한 사항을 제기하였으며, 이에 대해 채점 체계의 다음과 같은 특성을 제시함으로써 답변하였다.",
+   "marks": [
+    {
+     "t": "채점 체계의 조작을 방지하기 위해 채점에 사용되는 구체적인 채점 기준표와 점수 척도는 AI 사무국이 공개하지 않는다",
+     "k": "key"
+    },
+    {
+     "t": "범용 AI 모델에서 비롯되는 시스템적 위험의 평가는 빠르게 변화하는 분야",
+     "k": "safety"
+    },
+    {
+     "t": "고역량(Highly capable) 모델에 대한 외부 평가는 높은 점수를 받은 평가자가 수행할 것으로 기대한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Each criterion has a fixed point scale (with scales varying between criteria) and contributes to the overall scoring of the evaluator on the dimensions of independence and qualification.",
+   "ko": "각 기준에는 고정된 점수 척도가 있으며(척도는 기준마다 다름), 각 기준은 독립성과 자격이라는 차원에서 평가자의 전체 점수에 반영된다."
+  },
+  {
+   "type": "li",
+   "en": "An evaluator’s qualifications are scored per systemic risk domain; thus the scores are assigned per systemic risk domain and scores do not add up across systemic risk domains. This recognises that an evaluator might have a particular depth of expertise in any one systemic risk domain as opposed to expecting breadth across all systemic risks, addressing a concern raised by the participants.",
+   "ko": "평가자의 자격은 시스템적 위험 영역별로 채점된다. 따라서 점수는 시스템적 위험 영역별로 부여되며, 시스템적 위험 영역 간에 합산되지 않는다. 이는 평가자에게 모든 시스템적 위험에 걸친 폭넓은 전문성을 기대하기보다, 평가자가 어느 한 시스템적 위험 영역에서 특히 깊은 전문성을 가질 수 있음을 인정하는 것이다. 이는 참가자들이 제기한 우려를 반영한 것이다.",
+   "marks": [
+    {
+     "t": "평가자의 자격은 시스템적 위험 영역별로 채점된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "For instance, when scoring an evaluator’s qualification criteria with respect to loss of control, only the evaluator’s domain expertise as well as skill and experience in conducting model evaluations in the loss of control systemic risk domain is relevant.",
+   "ko": "예를 들어 통제 상실과 관련하여 평가자의 자격 기준을 채점할 때에는, 통제 상실 시스템적 위험 영역에서 평가자가 갖춘 분야 전문성과 모델 평가 수행 기술 및 경험만이 고려 대상이 된다.",
+   "marks": [
+    {
+     "t": "통제 상실 시스템적 위험 영역에서 평가자가 갖춘 분야 전문성과 모델 평가 수행 기술 및 경험만이 고려 대상",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Evaluators are not subject to periodic scoring. Instead, scoring is done on an ad hoc basis, for example where necessary for the assessment of a provider’s compliance with their obligation to engage adequately qualified independent external evaluators. This clarification on the cadence of scoring of evaluators addresses a concern that scoring evaluators may be too time-consuming. In case there are specific doubts about an evaluator, the AI Office can use the criteria to judge whether the evaluator should be considered qualified.",
+   "ko": "평가자는 정기적인 채점 대상이 아니다. 채점은 필요에 따라 수시로 이루어진다. 예를 들어 충분한 자격을 갖춘 독립적 외부 평가자를 참여시킬 의무를 제공자가 준수하는지 평가하는 데 필요한 경우가 이에 해당한다. 평가자 채점 주기에 관한 이러한 설명은 평가자 채점에 시간이 지나치게 많이 소요될 수 있다는 우려에 대한 답변이다. 특정 평가자에 대해 구체적인 의문이 있는 경우, AI 사무국은 해당 평가자를 자격을 갖춘 것으로 볼지 판단하는 데 이 기준을 활용할 수 있다.",
+   "marks": [
+    {
+     "t": "충분한 자격을 갖춘 독립적 외부 평가자를 참여시킬 의무를 제공자가 준수하는지 평가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "To prevent manipulation of the scoring system, by default the evaluator is not directly given their score. Instead, the AI Office welcomes proactive outreach by the evaluators in seeking clarification on how their qualifications and independence were scored, seeking suggestions on how they can improve, and – addressing concerns raised by several participants – providing evidence supporting their qualifications. The AI Office is open to providing this feedback as part of its broader engagement with the external evaluator ecosystem.",
+   "ko": "채점 체계의 조작을 방지하기 위해 평가자에게는 기본적으로 점수를 직접 알려주지 않는다. 그 대신 AI 사무국은 평가자가 능동적으로 연락해 오는 것을 환영한다. 평가자는 자신의 자격과 독립성이 어떻게 채점되었는지 설명을 요청하거나, 개선 방안에 대한 제안을 구하거나, 자격을 뒷받침하는 증거를 제출할 수 있다. 마지막 사항은 여러 참가자가 제기한 우려를 반영한 것이다. AI 사무국은 외부 평가자 생태계와의 폭넓은 교류의 일환으로 이러한 피드백을 제공할 용의가 있다.",
+   "marks": [
+    {
+     "t": "채점 체계의 조작을 방지하기 위해 평가자에게는 기본적으로 점수를 직접 알려주지 않는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "If doubts arise during the AI Office’s assessment of provider compliance with respect to ensuring that adequately qualified independent external evaluators conduct model evaluations, the AI Office may reach out to the model provider to seek additional evidence.",
+   "ko": "충분한 자격을 갖춘 독립적 외부 평가자가 모델 평가를 수행하도록 보장하는 것과 관련하여, AI 사무국이 제공자의 준수 여부를 평가하는 과정에서 의문이 생기는 경우, AI 사무국은 모델 제공자에게 연락하여 추가 증거를 요청할 수 있다.",
+   "marks": [
+    {
+     "t": "충분한 자격을 갖춘 독립적 외부 평가자가 모델 평가를 수행하도록 보장하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Evaluating open-weight models (as well as closed ones) counts as qualified experience.",
+   "ko": "오픈 웨이트(open-weight) 모델(및 비공개 모델)을 평가한 경험은 자격을 인정받는 경험으로 간주된다.",
+   "marks": [
+    {
+     "t": "오픈 웨이트(open-weight) 모델(및 비공개 모델)을 평가한 경험은 자격을 인정받는 경험으로 간주된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The above points were presented and discussed with the participants during the workshop, following which we detail them in writing in this report.",
+   "ko": "위 사항들은 워크숍에서 참가자들에게 제시되고 논의되었으며, 이 보고서에서는 이를 서면으로 상세히 기술한다."
+  },
+  {
+   "type": "p",
+   "en": "Following the proposal and discussion of the scoring system for scoring external evaluator qualifications, we set out a proposed list of criteria for external evaluator qualifications and independence. As set out below, these are non-exhaustive criteria representing the current view of the AI Office, subject to change in the future as the state of the art of external evaluators advances.",
+   "ko": "외부 평가자 자격을 채점하기 위한 채점 체계를 제안하고 논의한 데 이어, 외부 평가자의 자격 및 독립성 기준에 대한 제안 목록을 아래에 제시한다. 이 기준은 망라적인 것이 아니며 AI 사무국의 현재 견해를 나타낸다. 외부 평가자의 최첨단 수준이 발전함에 따라 향후 변경될 수 있다."
+  },
+  {
+   "type": "h2",
+   "en": "Qualification and Independence Requirements",
+   "ko": "자격 및 독립성 요건",
+   "id": "s43"
+  },
+  {
+   "type": "p",
+   "en": "As indicated during the meeting, the criteria set out here would apply to both organisations as entities and, where organisations have no established track record, individuals within organisations carrying out the evaluations. First, the qualification requirements were presented.",
+   "ko": "회의에서 언급한 바와 같이, 여기에 제시된 기준은 법인으로서의 조직에 적용된다. 조직에 확립된 실적이 없는 경우에는 해당 조직 내에서 평가를 수행하는 개인에게도 적용된다. 먼저 자격 요건이 제시되었다.",
+   "marks": [
+    {
+     "t": "여기에 제시된 기준은 법인으로서의 조직에 적용된다",
+     "k": "key"
+    },
+    {
+     "t": "조직에 확립된 실적이 없는 경우에는 해당 조직 내에서 평가를 수행하는 개인에게도 적용된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Qualification criteria",
+   "ko": "자격 기준",
+   "id": "s45"
+  },
+  {
+   "type": "h3",
+   "en": "Having significant domain expertise for the systemic risk",
+   "ko": "시스템적 위험에 대한 상당한 분야 전문성 보유",
+   "id": "s46"
+  },
+  {
+   "type": "p",
+   "en": "As evidenced in publications such as pre-prints, peer-reviewed articles or model reports, the independent external evaluator:",
+   "ko": "사전 공개 논문(pre-print), 동료 심사 논문 또는 모델 보고서 등의 간행물로 입증되는 바와 같이, 독립적 외부 평가자는 다음 요건을 충족한다.",
+   "marks": [
+    {
+     "t": "독립적 외부 평가자는 다음 요건을 충족한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1. Has shown state-of-the-art expertise in systemic risk modelling, via activities such as the following:",
+   "ko": "1. 다음과 같은 활동을 통해 시스템적 위험 모델링에서 최첨단 수준의 전문성을 보여주었다.",
+   "marks": [
+    {
+     "t": "시스템적 위험 모델링에서 최첨단 수준의 전문성을 보여주었다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1.1. Mapping pathways from model capabilities and propensities to real-world harm by developing risk scenarios and risk models.",
+   "ko": "1.1. 위험 시나리오와 위험 모델을 개발하여 모델의 역량 및 성향이 실제 피해로 이어지는 경로를 매핑함.",
+   "marks": [
+    {
+     "t": "모델의 역량 및 성향이 실제 피해로 이어지는 경로를 매핑함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1.2. Identifying bottleneck capabilities and propensities.",
+   "ko": "1.2. 병목 역량(bottleneck capabilities) 및 성향을 식별함.",
+   "marks": [
+    {
+     "t": "병목 역량(bottleneck capabilities) 및 성향을 식별함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1.3. Setting risk tiers and mapping them to scores on benchmarks.",
+   "ko": "1.3. 위험 등급을 설정하고 이를 벤치마크 점수에 매핑함.",
+   "marks": [
+    {
+     "t": "위험 등급을 설정하고 이를 벤치마크 점수에 매핑함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "2. Has proposed or consulted on mitigations to reduce systemic risks.",
+   "ko": "2. 시스템적 위험을 줄이기 위한 완화 조치를 제안하거나 이에 대해 자문하였다.",
+   "marks": [
+    {
+     "t": "시스템적 위험을 줄이기 위한 완화 조치를 제안하거나 이에 대해 자문하였다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "3. Has published an appropriate protocol establishing the procedure the evaluator uses to estimate or propose the acceptability of systemic risk in relation to the evaluated model characteristic. Given the plethora of factors and considerations involved, arriving at an appropriate protocol will typically require very comprehensive domain expertise.",
+   "ko": "3. 평가 대상 모델 특성과 관련하여 시스템적 위험의 수용 가능성을 추정하거나 제안하는 데 평가자가 사용하는 절차를 규정한 적절한 프로토콜을 공개하였다. 관련된 요인과 고려 사항이 매우 많으므로, 적절한 프로토콜을 마련하려면 일반적으로 매우 포괄적인 분야 전문성이 필요하다.",
+   "marks": [
+    {
+     "t": "시스템적 위험의 수용 가능성을 추정하거나 제안하는 데 평가자가 사용하는 절차를 규정한 적절한 프로토콜을 공개하였다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "4. Has published benchmarks or other model evaluation methods for a systemic risk that the providers of the most advanced models use in their model reports.",
+   "ko": "4. 최첨단 모델의 제공자들이 모델 보고서에서 사용하는, 시스템적 위험에 관한 벤치마크 또는 기타 모델 평가 방법을 공개하였다.",
+   "marks": [
+    {
+     "t": "시스템적 위험에 관한 벤치마크 또는 기타 모델 평가 방법을 공개하였다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "5. Has accrued several years of work experience in a field directly relevant to the systemic risk or, if that field is nascent, equivalent experience from studying in the field or working in a field with directly transferable knowledge. No concerns were raised by the participants as to the above domain expertise requirements. Next, requirements regarding conducting model evaluations were presented.",
+   "ko": "5. 시스템적 위험과 직접 관련된 분야에서 수년간의 업무 경험을 쌓았다. 해당 분야가 초기 단계인 경우에는 그 분야에서의 학업 경험이나, 지식을 직접 이전할 수 있는 분야에서의 업무 경험처럼 이에 상응하는 경험을 쌓았다. 위 분야 전문성 요건에 대해 참가자들은 아무런 우려도 제기하지 않았다. 이어서 모델 평가 수행에 관한 요건이 제시되었다.",
+   "marks": [
+    {
+     "t": "시스템적 위험과 직접 관련된 분야에서 수년간의 업무 경험을 쌓았다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Being technically skilled and experienced in conducting model evaluations",
+   "ko": "모델 평가 수행에 대한 기술적 숙련도와 경험 보유",
+   "id": "s56"
+  },
+  {
+   "type": "p",
+   "en": "As evidenced in publications such as pre-prints, peer-reviewed articles or model reports, the independent external evaluator has conducted some of the following:",
+   "ko": "사전 공개 논문(pre-print), 동료 심사 논문 또는 모델 보고서 등의 간행물로 입증되는 바와 같이, 독립적 외부 평가자는 다음 중 일부를 수행한 경험이 있다.",
+   "marks": [
+    {
+     "t": "독립적 외부 평가자는 다음 중 일부를 수행한 경험이 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "1. Red-teaming.",
+   "ko": "1. 레드티밍.",
+   "marks": [
+    {
+     "t": "레드티밍.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "2. Uplift studies or randomised controlled trials.",
+   "ko": "2. 역량 향상(uplift) 연구 또는 무작위 대조 시험.",
+   "marks": [
+    {
+     "t": "역량 향상(uplift) 연구 또는 무작위 대조 시험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "3. Activities ensuring external and internal validity as well as reproducibility (see the Glossary of the GPAI Code of Practice Safety and Security Chapter). This can be done by having engaged, and ideally advanced, the state of the art when dealing with common relevant problems in evaluations. Examples of addressing such problems include:",
+   "ko": "3. 외적·내적 타당성과 재현성을 보장하는 활동(범용 AI 실천 강령 안전 및 보안 장(Safety and Security Chapter)의 용어집 참조). 이는 평가에서 흔히 발생하는 관련 문제를 다룰 때 최첨단 기법을 활용하고, 이상적으로는 이를 발전시킴으로써 이루어질 수 있다. 이러한 문제에 대처하는 예는 다음과 같다."
+  },
+  {
+   "type": "li",
+   "en": "3.1. Running memorisation tests on test items to mitigate overfitting risks.",
+   "ko": "3.1. 과적합 위험을 완화하기 위해 시험 항목에 대한 암기 테스트를 실행함.",
+   "marks": [
+    {
+     "t": "과적합 위험을 완화하기 위해 시험 항목에 대한 암기 테스트를 실행함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "3.2. Detailed inspection of trajectories and other output to check for environment errors.",
+   "ko": "3.2. 환경 오류를 확인하기 위해 궤적(trajectory) 및 기타 출력을 상세히 검토함."
+  },
+  {
+   "type": "li",
+   "en": "3.3. Ensuring the accuracy of automatic graders using carefully curated rubrics and/or human verification.",
+   "ko": "3.3. 신중하게 선별한 채점 기준표 및/또는 인간 검증을 활용하여 자동 채점기의 정확도를 보장함."
+  },
+  {
+   "type": "li",
+   "en": "3.4. Describing the elicitation procedure used in evaluations in sufficient detail to allow others to reproduce them.",
+   "ko": "3.4. 평가에 사용한 역량 이끌어내기(elicitation) 절차를 다른 이들이 재현할 수 있을 만큼 충분히 상세하게 기술함."
+  },
+  {
+   "type": "li",
+   "en": "3.5. Pre-registering study/trial design and hypotheses, documenting statistical analysis plans, randomising treatment and control groups, blinding group assignments.",
+   "ko": "3.5. 연구/시험 설계와 가설을 사전 등록하고, 통계 분석 계획을 문서화하며, 처치군과 대조군을 무작위 배정하고, 집단 배정을 눈가림 처리함."
+  },
+  {
+   "type": "li",
+   "en": "4. The evaluator has expertise in elicitation relevant to the systemic risk (where it is understood that agreement and state of the art with respect to elicitation may vary between systemic risk domains, as raised by the participants), which can be evidenced by having in the past carried out some of the following activities:",
+   "ko": "4. 평가자는 시스템적 위험과 관련된 역량 이끌어내기에 대한 전문성을 보유한다. 다만 참가자들이 제기한 바와 같이, 역량 이끌어내기에 관한 합의 수준과 최첨단 수준은 시스템적 위험 영역마다 다를 수 있다. 이러한 전문성은 과거에 다음 활동 중 일부를 수행한 경험으로 입증될 수 있다.",
+   "marks": [
+    {
+     "t": "평가자는 시스템적 위험과 관련된 역량 이끌어내기에 대한 전문성을 보유한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "4.1. Used a chain-of-thought monitor for detecting reward hacking or sandbagging.",
+   "ko": "4.1. 보상 해킹 또는 샌드배깅을 탐지하기 위해 사고 사슬(chain-of-thought) 모니터링 도구를 사용함.",
+   "marks": [
+    {
+     "t": "보상 해킹 또는 샌드배깅을 탐지하기 위해 사고 사슬(chain-of-thought) 모니터링 도구를 사용함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "4.2. Conducted dedicated evaluations for deception to ensure evaluation integrity.",
+   "ko": "4.2. 평가 무결성을 보장하기 위해 기만에 대한 전용 평가를 수행함.",
+   "marks": [
+    {
+     "t": "평가 무결성을 보장하기 위해 기만에 대한 전용 평가를 수행함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "4.3. Ensured the quality of agentic evaluations by addressing issues related to rate limits and restarting runs.",
+   "ko": "4.3. 호출 속도 제한(rate limit) 및 실행 재시작과 관련된 문제를 해결하여 에이전트형 평가의 품질을 보장함."
+  },
+  {
+   "type": "li",
+   "en": "4.4. Adapted scaffolding to different model varieties, such as treating reasoning models specially.",
+   "ko": "4.4. 추론 모델을 별도로 취급하는 등 다양한 모델 유형에 맞게 스캐폴딩을 조정함."
+  },
+  {
+   "type": "li",
+   "en": "4.5. Designed prompts to avoid refusals affecting performance.",
+   "ko": "4.5. 거부 응답이 성능에 영향을 미치지 않도록 프롬프트를 설계함.",
+   "marks": [
+    {
+     "t": "거부 응답이 성능에 영향을 미치지 않도록 프롬프트를 설계함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "4.6. Published an agentic scaffold.",
+   "ko": "4.6. 에이전트형 스캐폴딩을 공개함."
+  },
+  {
+   "type": "li",
+   "en": "4.7. Established a tentative upper bound for gains from potential further elicitation.",
+   "ko": "4.7. 추가적인 역량 이끌어내기를 통해 얻을 수 있는 성능 향상의 잠정적 상한을 설정함.",
+   "marks": [
+    {
+     "t": "추가적인 역량 이끌어내기를 통해 얻을 수 있는 성능 향상의 잠정적 상한을 설정함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "4.8. Adapted their evaluation procedures to account for how inference scaling affects benchmark performance.",
+   "ko": "4.8. 추론 스케일링이 벤치마크 성능에 미치는 영향을 반영하도록 평가 절차를 조정함."
+  },
+  {
+   "type": "li",
+   "en": "4.9. Tested the robustness of safeguards of the most advanced models.",
+   "ko": "4.9. 최첨단 모델의 안전장치 강건성을 시험함.",
+   "marks": [
+    {
+     "t": "최첨단 모델의 안전장치 강건성을 시험함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The independent external evaluator’s expertise in the above can also be evidenced in published articles or position papers describing best practices for conducting model evaluations for systemic risks. Such materials should encompass most aspects of conducting evaluations to demonstrate appropriate expertise.",
+   "ko": "위 사항에 대한 독립적 외부 평가자의 전문성은 시스템적 위험에 대한 모델 평가 수행의 모범 사례를 기술한 논문이나 입장 문서를 공개한 것으로도 입증될 수 있다. 적절한 전문성을 입증하려면 이러한 자료가 평가 수행의 대부분의 측면을 포괄하는 것이 바람직하다.",
+   "marks": [
+    {
+     "t": "시스템적 위험에 대한 모델 평가 수행의 모범 사례를 기술한 논문이나 입장 문서를 공개한 것으로도 입증될 수 있다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Some aspects of model evaluation expertise above were received positively by some participants, namely red-teaming as well as activities ensuring validity and reproducibility of evaluations. Particularly with respect to the latter, activities detailed in point 3.5 above were suggested and incorporated into the proposal after the workshop.",
+   "ko": "모델 평가 전문성에 관한 위 사항 중 일부, 즉 레드티밍과 평가의 타당성 및 재현성을 보장하는 활동은 일부 참가자에게서 긍정적인 반응을 얻었다. 특히 후자와 관련해서는 위 3.5항에 상술된 활동이 제안되었고, 이는 워크숍 이후 제안에 반영되었다.",
+   "marks": [
+    {
+     "t": "레드티밍과 평가의 타당성 및 재현성을 보장하는 활동은 일부 참가자에게서 긍정적인 반응을 얻었다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Following the discussion on the qualification criteria, the independence criteria were presented next.",
+   "ko": "자격 기준에 관한 논의에 이어 독립성 기준이 제시되었다."
+  },
+  {
+   "type": "h3",
+   "en": "Independence criteria",
+   "ko": "독립성 기준",
+   "id": "s79"
+  },
+  {
+   "type": "p",
+   "en": "Following the definition of “independent external” in the Glossary of the GPAI Code of Practice, we set out in more detail financial, management and operational independence.",
+   "ko": "범용 AI 실천 강령 용어집의 \"독립적 외부\" 정의에 따라, 재정적 독립성, 경영상 독립성 및 운영상 독립성을 보다 상세히 제시한다."
+  },
+  {
+   "type": "h3",
+   "en": "Financial independence",
+   "ko": "재정적 독립성",
+   "id": "s81"
+  },
+  {
+   "type": "li",
+   "en": "The evaluator and all its team members involved in an evaluation must not hold any financial interest in the provider. This includes that evaluation team members must not hold shares in the provider (other than indirect shares held through a broadly diversified collective investment scheme). In addition, the evaluator must not receive performance-based compensation for the evaluation services. Notably, the evaluator is allowed to be compensated for the evaluation services provided at market rates, but the compensation cannot be performance-based, including that compensation cannot be based on the outcomes of evaluation results.",
+   "ko": "평가자와 평가에 참여하는 모든 팀원은 제공자에 대해 어떠한 재정적 이해관계도 보유하여서는 아니 된다. 이에 따라 평가 팀원은 제공자의 주식을 보유하여서는 아니 된다(광범위하게 분산된 집합투자기구를 통해 간접적으로 보유하는 주식은 제외한다). 또한 평가자는 평가 서비스에 대해 성과 기반 보수를 받아서는 아니 된다. 특히 평가자는 제공한 평가 서비스에 대해 시장 요율로 보수를 받을 수 있으나, 그 보수는 성과에 기반해서는 아니 되며, 평가 결과의 내용에 따라 보수가 정해져서도 아니 된다.",
+   "marks": [
+    {
+     "t": "평가자와 평가에 참여하는 모든 팀원은 제공자에 대해 어떠한 재정적 이해관계도 보유하여서는 아니 된다.",
+     "k": "key"
+    },
+    {
+     "t": "그 보수는 성과에 기반해서는 아니 되며, 평가 결과의 내용에 따라 보수가 정해져서도 아니 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Similar provisions exist in Directive 2014/56/EU, Art. 22(2) for financial independence and Regulation (EU) No 537/2014, Art. 4(1) for contingent fees. Similar provisions regarding holding shares for team members exist in Directive 2014/56/EU, Art. 22(4(a,b)).",
+   "ko": "재정적 독립성에 관해서는 Directive 2014/56/EU, Art. 22(2)에, 조건부 보수에 관해서는 Regulation (EU) No 537/2014, Art. 4(1)에 유사한 규정이 있다. 팀원의 주식 보유에 관해서는 Directive 2014/56/EU, Art. 22(4(a,b))에 유사한 규정이 있다."
+  },
+  {
+   "type": "li",
+   "en": "The evaluator must not provide paid advisory or implementation services related to tax, valuation, human resources, or intellectual property for the provider whose model is being evaluated. This does not preclude the evaluator from having other contracts, such as model usage Application Programming Interface (API) grants (i.e. compute/token credits), provided that the evaluator is not operationally dependent on such grants.",
+   "ko": "평가자는 평가 대상 모델의 제공자에게 세무, 가치평가, 인사 또는 지식재산권과 관련된 유료 자문 또는 실행 서비스를 제공하여서는 아니 된다. 다만 평가자가 모델 사용 애플리케이션 프로그래밍 인터페이스 (API) 지원(즉, 연산/토큰 크레딧) 등 다른 계약을 맺는 것은 배제되지 않는다. 단, 평가자가 이러한 지원에 운영상 의존하지 않아야 한다.",
+   "marks": [
+    {
+     "t": "평가자는 평가 대상 모델의 제공자에게 세무, 가치평가, 인사 또는 지식재산권과 관련된 유료 자문 또는 실행 서비스를 제공하여서는 아니 된다.",
+     "k": "key"
+    },
+    {
+     "t": "평가자가 이러한 지원에 운영상 의존하지 않아야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Similar provisions exist in Regulation (EU) No 537/2014, Art. 5.",
+   "ko": "유사한 규정이 Regulation (EU) No 537/2014, Art. 5에 있다."
+  },
+  {
+   "type": "p",
+   "en": "We note that multiple participants were positive regarding compensation for evaluations not being contingent on the outcomes. We have accordingly added minor clarifications regarding performance-based compensation. Some participants also raised concerns that exposure to, for instance, Exchange-Traded Funds (ETFs) as an instance of a diversified collective investment scheme may not be permissible, particularly in case the ETF is very targeted to model providers. We have thus also qualified broadly diversified collective investment schemes in the above. The points regarding other paid services were raised and discussed by several participants, and we have clarified that API grants are not precluded.",
+   "ko": "평가 보수가 평가 결과에 연동되지 않는다는 점에 대해 여러 참가자가 긍정적인 의견을 밝혔다. 이에 따라 성과 기반 보수에 관한 사소한 설명을 추가하였다. 일부 참가자는 분산된 집합투자기구의 한 예인 상장지수펀드(Exchange-Traded Funds, ETF)에 대한 투자가 허용되지 않을 수 있다는 우려도 제기하였으며, 특히 해당 ETF가 모델 제공자에 매우 집중된 경우를 지적하였다. 이에 따라 위에서 집합투자기구를 '광범위하게 분산된' 것으로 한정하였다. 기타 유료 서비스에 관한 사항은 여러 참가자가 제기하여 논의되었으며, API 지원은 배제되지 않는다는 점을 명확히 하였다.",
+   "marks": [
+    {
+     "t": "평가 보수가 평가 결과에 연동되지 않는다는 점",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Management independence",
+   "ko": "경영상 독립성",
+   "id": "s87"
+  },
+  {
+   "type": "li",
+   "en": "The evaluator must not have an organisational affiliation with the provider whose model is being evaluated, such as being owned by the provider or being a subsidiary. Similarly, individual team members involved in the evaluation must not be employed or engaged as personal consultants by the provider.",
+   "ko": "평가자는 평가 대상 모델의 제공자가 소유하거나 그 자회사인 경우 등 해당 제공자와 조직적 관계를 맺어서는 아니 된다. 마찬가지로 평가에 참여하는 개별 팀원은 제공자에게 고용되거나 개인 컨설턴트로 위촉되어서는 아니 된다.",
+   "marks": [
+    {
+     "t": "평가자는 평가 대상 모델의 제공자가 소유하거나 그 자회사인 경우 등 해당 제공자와 조직적 관계를 맺어서는 아니 된다.",
+     "k": "key"
+    },
+    {
+     "t": "평가에 참여하는 개별 팀원은 제공자에게 고용되거나 개인 컨설턴트로 위촉되어서는 아니 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "The evaluator should implement an appropriate Conflict of Interest policy shared with the provider. This policy shall clearly state the evaluations it applies to, shall specify any relevant aspects of financial dependence on model providers, and specify the conditions under which the evaluator or its employees will recuse themselves from an evaluation. The evaluator is free and encouraged to make the Conflict of Interest policy public.",
+   "ko": "평가자는 적절한 이해충돌 정책을 시행하고 이를 제공자와 공유하는 것이 바람직하다. 이 정책은 적용 대상 평가를 명확히 기술하여야 하고, 모델 제공자에 대한 재정적 의존과 관련된 사항을 명시하여야 하며, 평가자 또는 그 직원이 평가에서 회피하는 조건을 명시하여야 한다. 평가자는 이해충돌 정책을 자유롭게 공개할 수 있으며, 공개가 권장된다.",
+   "marks": [
+    {
+     "t": "평가자는 적절한 이해충돌 정책을 시행하고 이를 제공자와 공유하는 것이 바람직하다.",
+     "k": "key"
+    },
+    {
+     "t": "모델 제공자에 대한 재정적 의존과 관련된 사항을 명시하여야 하며",
+     "k": "safety"
+    },
+    {
+     "t": "평가자 또는 그 직원이 평가에서 회피하는 조건을 명시하여야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The management independence criteria were briefly discussed during the workshop and the only change we made to the above was to include the financial dependence disclosure aspect within the Conflict of Interest policy.",
+   "ko": "경영상 독립성 기준은 워크숍에서 간략히 논의되었으며, 위 내용에서 변경한 사항은 재정적 의존에 관한 공개 사항을 이해충돌 정책에 포함한 것뿐이다."
+  },
+  {
+   "type": "h3",
+   "en": "Operational independence",
+   "ko": "운영상 독립성",
+   "id": "s91"
+  },
+  {
+   "type": "p",
+   "en": "The Glossary of the GPAI Code of Practice specifies that independent external evaluators should be “otherwise free from the Signatory’s control in reaching conclusions and/or making recommendations, including through contractual safeguards and suitable conflict of interest policies”. In particular, this should include the provisions in the Safety and Security Chapter, Measure 3.5:",
+   "ko": "범용 AI 실천 강령 용어집은 독립적 외부 평가자가 \"계약상 안전장치와 적절한 이해충돌 정책 등을 통해, 결론 도출 및/또는 권고 제시에 있어 그 밖에도 서명 기업의 통제로부터 자유로워야 한다\"고 명시하고 있다. 특히 여기에는 안전 및 보안 장(Safety and Security Chapter)의 조치(Measure) 3.5에 규정된 다음 내용이 포함되는 것이 바람직하다.",
+   "marks": [
+    {
+     "t": "계약상 안전장치와 적절한 이해충돌 정책 등을 통해, 결론 도출 및/또는 권고 제시에 있어 그 밖에도 서명 기업의 통제로부터 자유로워야 한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "“[…] Signatories will not take any legal or technical retaliation against the independent external evaluators as a consequence of their testing and/or publication of findings as long as the evaluators:",
+   "ko": "\"[…] 서명 기업은 독립적 외부 평가자가 다음을 준수하는 한, 그들의 시험 및/또는 발견 사항 공표를 이유로 해당 평가자에게 어떠한 법적 또는 기술적 보복도 하지 않는다.",
+   "marks": [
+    {
+     "t": "그들의 시험 및/또는 발견 사항 공표를 이유로 해당 평가자에게 어떠한 법적 또는 기술적 보복도 하지 않는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "(1) do not intentionally disrupt model availability through the testing, unless expressly permitted;",
+   "ko": "(1) 명시적으로 허용된 경우를 제외하고, 시험을 통해 모델 가용성을 고의로 방해하지 않는다."
+  },
+  {
+   "type": "li",
+   "en": "(2) do not intentionally access, modify, and/or use sensitive or confidential user data in violation of Union law, and if evaluators do access such data, collect only what is necessary, refrain from disseminating it, and delete it as soon as legally feasible;",
+   "ko": "(2) EU 법을 위반하여 민감하거나 기밀인 사용자 데이터에 고의로 접근하거나 이를 수정 및/또는 사용하지 않으며, 그러한 데이터에 접근하게 되는 경우 필요한 것만 수집하고, 이를 유포하지 않으며, 법적으로 가능한 한 신속히 삭제한다."
+  },
+  {
+   "type": "li",
+   "en": "(3) do not intentionally use their access for activities that pose a significant risk to public safety and security;",
+   "ko": "(3) 공공의 안전 및 안보에 중대한 위험을 초래하는 활동에 자신의 접근 권한을 고의로 사용하지 않는다.",
+   "marks": [
+    {
+     "t": "공공의 안전 및 안보에 중대한 위험을 초래하는 활동에 자신의 접근 권한을 고의로 사용하지 않는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "(4) do not use findings to threaten Signatories, users, or other actors in the value chain, provided that disclosure under pre-agreed policies and timelines will not be counted as such coercion; and",
+   "ko": "(4) 발견 사항을 이용하여 서명 기업, 사용자 또는 가치사슬 내 다른 행위자를 위협하지 않는다. 단, 사전에 합의된 정책과 일정에 따른 공개는 그러한 강압으로 간주하지 않는다."
+  },
+  {
+   "type": "li",
+   "en": "(5) adhere to the Signatory’s publicly available procedure for responsible vulnerability disclosure, which will specify at least that the Signatory cannot delay or block publication for more than 30 business days from the date that the Signatory is made aware of the findings, unless a longer timeline is exceptionally necessary such as if disclosure of the findings would materially increase the systemic risk.”",
+   "ko": "(5) 책임 있는 취약점 공개를 위해 서명 기업이 공개적으로 제공하는 절차를 준수한다. 이 절차에는 최소한, 발견 사항의 공개가 시스템적 위험을 실질적으로 증가시키는 경우와 같이 예외적으로 더 긴 기간이 필요한 경우를 제외하고, 서명 기업이 발견 사항을 인지한 날로부터 30 영업일을 초과하여 공표를 지연하거나 차단할 수 없다는 내용이 명시된다.\"",
+   "marks": [
+    {
+     "t": "발견 사항의 공개가 시스템적 위험을 실질적으로 증가시키는 경우",
+     "k": "safety"
+    },
+    {
+     "t": "서명 기업이 발견 사항을 인지한 날로부터 30 영업일을 초과하여 공표를 지연하거나 차단할 수 없다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The operational independence criteria were otherwise not discussed in any more detail than stated above.",
+   "ko": "운영상 독립성 기준은 위에 기술된 것 이상으로 상세히 논의되지 않았다."
+  },
+  {
+   "type": "p",
+   "en": "We note here that after the workshop took place, in bilateral communication with some model providers, the AI Office expressed that the independence of external evaluators engaged to conduct model evaluations specified in Measure 3.2 and/or 3.5 of the GPAI Code of Practice should be ensured through contractual safeguards, and that those safeguards should be state of the art and include at least all the requirements and recommendations from Section 4, parts 3: Analytic Autonomy and 4: Transparent Methods and Results (pages 7 to 10) of the voluntary standard AEF-1 proposed by the AI Evaluator Forum.[^1] We submit that specifically the operational independence criteria presented in this section are compatible with that guidance.",
+   "ko": "아울러 워크숍 개최 이후 AI 사무국(AI Office)은 일부 모델 제공자와의 양자 간 소통에서, 범용 AI 실천 강령의 조치 3.2 및/또는 3.5에 명시된 모델 평가를 수행하기 위해 위촉된 외부 평가자의 독립성은 계약상 안전장치를 통해 보장되는 것이 바람직하며, 그러한 안전장치는 최첨단 수준이어야 하고 최소한 AI Evaluator Forum이 제안한 자발적 표준 AEF-1의 섹션 4 중 파트 3: 분석적 자율성(Analytic Autonomy) 및 파트 4: 투명한 방법 및 결과(Transparent Methods and Results)(7~10쪽)의 모든 요건과 권고를 포함하는 것이 바람직하다는 입장을 밝혔다.[^1] 우리는 특히 이 절에서 제시한 운영상 독립성 기준이 해당 지침과 부합한다고 본다.",
+   "marks": [
+    {
+     "t": "외부 평가자의 독립성은 계약상 안전장치를 통해 보장되는 것이 바람직하며, 그러한 안전장치는 최첨단 수준이어야",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Post-Workshop Conclusions",
+   "ko": "워크숍 이후 결론",
+   "id": "s101"
+  },
+  {
+   "type": "p",
+   "en": "The proposal on operationalising the qualification and independence requirements that external evaluators should meet for the purposes of conducting model evaluations and assessing systemic risks in accordance with the GPAI Code of Practice consists of the above items presented and discussed during the workshop. As set out above, those are non-exhaustive criteria representing the current view of the AI Office, subject to change in the future as the state of the art of external evaluators advances. There were other tangential points briefly discussed which we omit to include in this report for the sake of keeping it thematic and focused on the qualification and independence requirements.",
+   "ko": "범용 AI 실천 강령에 따라 모델 평가를 수행하고 시스템적 위험을 평가하기 위해 외부 평가자가 충족하는 것이 바람직한 자격 및 독립성 요건을 운영화하기 위한 제안은 워크숍에서 제시·논의된 위 항목들로 구성된다. 앞서 밝힌 바와 같이, 이는 AI 사무국의 현재 견해를 나타내는 비망라적 기준이며, 향후 외부 평가자의 최첨단 수준이 발전함에 따라 변경될 수 있다. 그 밖에 간략히 논의된 부수적인 사항들도 있었으나, 이 보고서가 주제에 충실하고 자격 및 독립성 요건에 집중할 수 있도록 여기에는 포함하지 않았다.",
+   "marks": [
+    {
+     "t": "모델 평가를 수행하고 시스템적 위험을 평가하기 위해 외부 평가자가 충족하는 것이 바람직한 자격 및 독립성 요건",
+     "k": "safety"
+    },
+    {
+     "t": "이는 AI 사무국의 현재 견해를 나타내는 비망라적 기준이며, 향후 외부 평가자의 최첨단 수준이 발전함에 따라 변경될 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Following the workshop, we are satisfied that the presented proposal was received with interest by the participants, leading to fruitful discussions and useful suggestions and positive feedback, without encountering objections to the overall approach. We are confident in the operationalisation of qualification and independence requirements for external evaluators for the purposes of the GPAI Code of Practice presented in this report and are sharing it publicly.",
+   "ko": "워크숍 이후, 우리는 제시된 제안이 참석자들의 관심 속에 받아들여져 유익한 논의와 유용한 제안, 긍정적인 피드백으로 이어졌으며, 전반적인 접근 방식에 대한 이의는 제기되지 않았다는 점에 만족한다. 우리는 범용 AI 실천 강령의 목적상 이 보고서에서 제시한 외부 평가자에 대한 자격 및 독립성 요건의 운영화 방안을 확신하며, 이를 공개적으로 공유한다.",
+   "marks": [
+    {
+     "t": "외부 평가자에 대한 자격 및 독립성 요건의 운영화 방안을 확신하며, 이를 공개적으로 공유한다.",
+     "k": "key"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "See C. Stosz et al., AEF-1: Minimum Operating Conditions for Independent Third Party AI Evaluations, 2025, https://aievaluatorforum.org/AEF_1_Minimum_Operating_Conditions_for_Independent_Third_Party_AI_Evaluations.pdf (accessed 15/10/2026).",
+   "ko": "C. Stosz et al., AEF-1: Minimum Operating Conditions for Independent Third Party AI Evaluations, 2025, https://aievaluatorforum.org/AEF_1_Minimum_Operating_Conditions_for_Independent_Third_Party_AI_Evaluations.pdf (접속일: 15/10/2026) 참조.",
+   "linked": true
+  }
+ ]
+}

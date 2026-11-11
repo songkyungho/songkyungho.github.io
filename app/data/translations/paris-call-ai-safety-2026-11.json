@@ -1,0 +1,257 @@
+{
+ "slug": "paris-call-ai-safety-2026-11",
+ "title": "AI 안전·보안을 위한 파리 선언",
+ "original_title": "Paris Call for AI Safety and Security",
+ "publisher": "프랑스 대통령실과 서명국·기업·시민사회",
+ "published": "2026-11-09",
+ "source_url": "https://www.elysee.fr/en/emmanuel-macron/2026/11/09/paris-call-for-ai-safety-and-security",
+ "source_note": "엘리제궁 누리집에 실린 영문 선언 전문과 서명 명단(2026년 11월 11일 기준)이다. 원문은 서명이 계속 추가된다고 밝힌다.",
+ "source_label": "원문 보기 (엘리제궁)",
+ "summary": "마크롱 대통령이 파리 평화포럼에 맞춰 연 화상 회의에서 채택된 선언이다. 프론티어 모델의 공통 평가·위험관리 틀과 비민감 평가 결과의 표준화 공개, 생애주기 전반의 안전 기준 준수와 독립적 제3자 평가, 사고 보고와 조기 경보, 내부고발자 보호 채널을 약속한다. 개발자는 역량·한계·위험 공개와 오픈웨이트 안전장치 제거 위험 대응을 약속했다. 서명국 명단에 한국은 없다.",
+ "doc_kind": "공동 선언",
+ "image": "/images/translations/paris-call-ai-safety-2026-11-cover.webp",
+ "og_image": "/images/translations/paris-call-ai-safety-2026-11-cover.jpg",
+ "translated": "2026-11-11",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "stats": {
+  "blocks": 22,
+  "sections": 0,
+  "items": 0,
+  "words_en": 960
+ },
+ "blocks": [
+  {
+   "type": "p",
+   "en": "We reaffirm our shared interest and common responsibility in building advanced artificial intelligence that is safe, secure, useful, and widely available to all. The responsible development of these technologies and the adoption of reliable AI systems represent unprecedented drivers of economic, scientific, and social progress for our nations.",
+   "ko": "우리는 모두에게 안전하고, 보안이 확보되며, 유용하고, 널리 이용 가능한 첨단 인공지능을 구축하는 데 대한 공동의 이해관계와 공동의 책임을 재확인한다. 이러한 기술의 책임 있는 개발과 신뢰할 수 있는 AI 시스템의 도입은 우리 국가들의 경제적·과학적·사회적 진보를 이끄는 전례 없는 원동력이다."
+  },
+  {
+   "type": "p",
+   "en": "Our ambition is to lay the necessary foundations for safe adoption. Frontier models transcend national borders in their development, deployment and impact, and their opportunities and risks are therefore inherently global. We all have a role in protecting our societies while enabling research, innovation and the wider use of AI. It is our collective responsibility to protect citizens, businesses and institutions, while also fostering an environment conducive to research, innovation, and the widespread adoption of these technologies. No actor, be it a State, a company or an international organization, can solely manage all these risks. In this regard, continuing efforts from policymakers, researchers, and AI companies have laid the groundwork for concrete cooperation for taking actions, including through the Hiroshima process, the Frontier Safety Commitments of the Seoul AI Summit, the G7 Evian AI meeting, the United Nations Security Council meeting on AI held on 23 September and the “Call for Control of Frontier AI Models”.",
+   "ko": "우리의 목표는 안전한 도입을 위해 필요한 토대를 마련하는 것이다. 프론티어 모델은 개발, 배포, 영향의 측면에서 국경을 초월하며, 따라서 그 기회와 위험은 본질적으로 전 지구적이다. 우리 모두는 연구, 혁신, AI의 폭넓은 활용을 가능하게 하는 동시에 우리 사회를 보호하는 데 각자의 역할이 있다. 시민, 기업, 기관을 보호하는 동시에 연구, 혁신, 그리고 이러한 기술의 광범위한 도입에 도움이 되는 환경을 조성하는 것은 우리의 공동 책임이다. 국가든, 기업이든, 국제기구든 어떠한 행위자도 이 모든 위험을 단독으로 관리할 수 없다. 이와 관련하여 정책 입안자, 연구자, AI 기업의 지속적인 노력은 히로시마 프로세스(Hiroshima process), 서울 AI 정상회의의 프론티어 AI 안전 서약, G7 에비앙 AI 회의(G7 Evian AI meeting), 9월 23일 개최된 유엔 안전보장이사회(United Nations Security Council)의 AI 회의, 「프론티어 AI 모델 통제 촉구」 등을 통해 행동을 위한 구체적 협력의 토대를 마련하였다.",
+   "marks": [
+    {
+     "t": "프론티어 모델은 개발, 배포, 영향의 측면에서 국경을 초월하며, 따라서 그 기회와 위험은 본질적으로 전 지구적이다.",
+     "k": "key"
+    },
+    {
+     "t": "어떠한 행위자도 이 모든 위험을 단독으로 관리할 수 없다",
+     "k": "safety"
+    },
+    {
+     "t": "서울 AI 정상회의의 프론티어 AI 안전 서약",
+     "k": "safety"
+    },
+    {
+     "t": "「프론티어 AI 모델 통제 촉구」",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Today’s discussions have highlighted three fundamental areas of consensus: the need for a clear, understandable, and predictable regulatory framework; the urgency of achieving tangible and immediate results in transparency, incident reporting, risk management and verification; and the absolute necessity of implementing rigorous evaluation standards.",
+   "ko": "오늘의 논의에서는 세 가지 근본적 합의 영역이 부각되었다. 명확하고 이해 가능하며 예측 가능한 규제 프레임워크의 필요성, 투명성, 사고 보고, 위험 관리, 검증에서 가시적이고 즉각적인 성과를 거두어야 할 시급성, 그리고 엄격한 평가(evaluation) 기준을 이행해야 할 절대적 필요성이 그것이다.",
+   "marks": [
+    {
+     "t": "투명성, 사고 보고, 위험 관리, 검증에서 가시적이고 즉각적인 성과를 거두어야 할 시급성",
+     "k": "safety"
+    },
+    {
+     "t": "엄격한 평가(evaluation) 기준을 이행해야 할 절대적 필요성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This declaration reflects our commitment to making a substantial contribution and accelerating the implementation of these priorities.",
+   "ko": "이 선언은 이러한 우선 과제의 이행에 실질적으로 기여하고 이를 가속화하겠다는 우리의 의지를 반영한다."
+  },
+  {
+   "type": "p",
+   "en": "To operationalize this shared vision, we commit today to establishing a structured framework for cooperation based on three major strategic commitments:",
+   "ko": "이 공동의 비전을 실행에 옮기기 위해, 우리는 오늘 세 가지 주요 전략적 약속에 기반한 체계적인 협력 프레임워크를 수립할 것을 약속한다."
+  },
+  {
+   "type": "p",
+   "en": "First, policy makers, researchers and developers are committed to establishing a common framework for the evaluation and risk management of frontier models, building on existing frameworks. This framework would be supported by common technical standards, evaluation tools and methodologies that keep pace with advances in frontier model capabilities, with particular focus on mitigating dangerous misuse, including in the cyber and CBRN domains, and risks arising from growing autonomy or model misalignment, including loss of control. In this regard, we are committed to reinforcing technical cooperation, and recognize the role that existing networks, including International Network for Advanced AI Measurement, Evaluation and Science (NAAIMES) can play in making evaluation methods and results more comparable and accessible to countries across different regions.",
+   "ko": "첫째, 정책 입안자, 연구자, 개발자는 기존 프레임워크를 기반으로 프론티어 모델의 평가 및 위험 관리를 위한 공통 프레임워크를 수립할 것을 약속한다. 이 프레임워크는 프론티어 모델 역량의 발전에 보조를 맞추는 공통 기술 표준, 평가 도구 및 방법론의 뒷받침을 받으며, 특히 사이버 및 화학·생물·방사능·핵(CBRN) 영역을 포함한 위험한 오용, 그리고 통제 상실을 포함하여 자율성 증대나 모델 오정렬에서 비롯되는 위험의 완화에 중점을 둔다. 이와 관련하여 우리는 기술 협력을 강화할 것을 약속하며, 첨단 AI 측정·평가·과학 국제 네트워크(NAAIMES)를 비롯한 기존 네트워크가 평가 방법과 결과의 비교 가능성을 높이고 여러 지역의 국가들이 이에 더 쉽게 접근할 수 있도록 하는 데 수행할 수 있는 역할을 인정한다.",
+   "marks": [
+    {
+     "t": "프론티어 모델의 평가 및 위험 관리를 위한 공통 프레임워크를 수립할 것을 약속한다",
+     "k": "key"
+    },
+    {
+     "t": "사이버 및 화학·생물·방사능·핵(CBRN) 영역을 포함한 위험한 오용",
+     "k": "safety"
+    },
+    {
+     "t": "통제 상실을 포함하여 자율성 증대나 모델 오정렬에서 비롯되는 위험의 완화",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Furthermore, we agree to publish the non-sensitive findings of our evaluations in a standardized format to ensure comparability, while also creating a publicly accessible shared repository. This could encompass red-teaming protocols, benchmarking tools, risk-assessment, stress-test results.",
+   "ko": "나아가 우리는 비교 가능성을 보장하기 위해 평가 결과 중 민감하지 않은 결과를 표준화된 형식으로 공개하고, 아울러 공개적으로 접근 가능한 공유 저장소를 구축하는 데 합의한다. 여기에는 레드티밍 프로토콜, 벤치마크 도구, 위험 평가, 스트레스 테스트 결과가 포함될 수 있다.",
+   "marks": [
+    {
+     "t": "평가 결과 중 민감하지 않은 결과를 표준화된 형식으로 공개",
+     "k": "safety"
+    },
+    {
+     "t": "레드티밍 프로토콜, 벤치마크 도구, 위험 평가, 스트레스 테스트 결과",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Second, we affirm the principle of responsibility and accountability for all actors in the AI ecosystem, based on their role in this ecosystem.",
+   "ko": "둘째, 우리는 AI 생태계의 모든 행위자가 이 생태계에서 수행하는 역할에 따라 책임과 책임성을 진다는 원칙을 확인한다."
+  },
+  {
+   "type": "p",
+   "en": "We commit to ensure strict compliance with rigorous safety standards established or recognized by competent national authorities across the model lifecycle, under the oversight of those authorities and with credible, competent and independent third-party evaluation in order to foster the necessary trust among all stakeholders and enable wider adoption of AI. Clear incentives can be used to encourage prioritization of safety and security from the design phase throughout the lifecycle;",
+   "ko": "우리는 모든 이해관계자 간에 필요한 신뢰를 조성하고 AI의 폭넓은 도입을 가능하게 하기 위해, 관할 국가 당국이 수립하거나 인정한 엄격한 안전 기준을 모델 수명주기 전반에 걸쳐 해당 당국의 감독 하에, 그리고 신뢰할 수 있고 역량 있는 독립적 제3자 평가를 통해 철저히 준수하도록 보장할 것을 약속한다. 설계 단계부터 수명주기 전반에 걸쳐 안전과 보안을 우선시하도록 장려하기 위해 명확한 인센티브를 활용할 수 있다;",
+   "marks": [
+    {
+     "t": "엄격한 안전 기준을 모델 수명주기 전반에 걸쳐 해당 당국의 감독 하에",
+     "k": "safety"
+    },
+    {
+     "t": "신뢰할 수 있고 역량 있는 독립적 제3자 평가",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Policy makers recognize the need to ensure that legal frameworks clarify responsibilities and accountability in case of large-scale damages to protect the interests of those affected, including where harm crosses borders in order to provide AI companies with legal certainty for their economic development.",
+   "ko": "정책 입안자는 피해가 국경을 넘는 경우를 포함하여 대규모 손해 발생 시 영향을 받는 이들의 이익을 보호하기 위해 법적 프레임워크가 책임과 책임성을 명확히 하도록 보장할 필요성을 인정하며, 이는 AI 기업에 경제적 발전을 위한 법적 확실성을 제공하기 위함이다.",
+   "marks": [
+    {
+     "t": "대규모 손해 발생 시 영향을 받는 이들의 이익을 보호하기 위해 법적 프레임워크가 책임과 책임성을 명확히",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Developers of frontier models:",
+   "ko": "프론티어 모델 개발자는:"
+  },
+  {
+   "type": "li",
+   "en": "Commit to disclose model capabilities, limitations, and known risks and, where appropriate and proportionate to the risk, support the evaluation of models by qualified independent evaluators, as appropriate and consistent with existing practices and arrangements. Developers also commit to implement fail-safe mechanisms to shut down model operations within their control, including during training and internal use (e.g. restrictions, pauses or shutdowns);",
+   "ko": "모델의 역량, 한계, 알려진 위험을 공개하고, 적절하고 위험에 비례하는 경우 적절한 범위 내에서 기존 관행 및 체계에 부합하는 방식으로 자격을 갖춘 독립적 평가자의 모델 평가를 지원할 것을 약속한다. 개발자는 또한 학습 및 내부 사용 중을 포함하여 자신의 통제 하에 있는 모델 운영을 중단시킬 수 있는 페일세이프 메커니즘(fail-safe mechanism)(예: 제한, 일시 중지 또는 중단)을 구현할 것을 약속한다;",
+   "marks": [
+    {
+     "t": "모델의 역량, 한계, 알려진 위험을 공개",
+     "k": "safety"
+    },
+    {
+     "t": "자격을 갖춘 독립적 평가자의 모델 평가를 지원",
+     "k": "safety"
+    },
+    {
+     "t": "모델 운영을 중단시킬 수 있는 페일세이프 메커니즘(fail-safe mechanism)(예: 제한, 일시 중지 또는 중단)을 구현",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Acknowledge the risk posed by the removal or circumvention of safeguards and the importance of addressing that risk while preserving the benefits of open-weight development for research, innovation and safety purposes;",
+   "ko": "안전장치의 제거 또는 우회로 인해 발생하는 위험을 인정하고, 연구, 혁신 및 안전 목적을 위한 오픈웨이트 개발의 이점을 유지하면서 그 위험에 대응하는 것의 중요성을 인정한다;",
+   "marks": [
+    {
+     "t": "안전장치의 제거 또는 우회로 인해 발생하는 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Recognize the importance that internal governance must mandate continuous risk management practices, real-time monitoring of emergent capabilities, rigorous internal red-teaming, and transparent reporting lines that protect internal researchers. Developers are committed to working on a clear governance structure with defined responsibilities, adequate resources and independent oversight.",
+   "ko": "내부 거버넌스가 지속적인 위험 관리 실행 방안, 창발적 역량에 대한 실시간 모니터링, 엄격한 내부 레드티밍, 그리고 내부 연구자를 보호하는 투명한 보고 체계를 의무화해야 한다는 점의 중요성을 인정한다. 개발자는 명확히 규정된 책임, 충분한 자원, 독립적 감독을 갖춘 명확한 거버넌스 구조를 마련하는 데 힘쓸 것을 약속한다.",
+   "marks": [
+    {
+     "t": "창발적 역량에 대한 실시간 모니터링, 엄격한 내부 레드티밍",
+     "k": "safety"
+    },
+    {
+     "t": "독립적 감독을 갖춘 명확한 거버넌스 구조",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Thirdly, policy makers, researchers and developers are committed to information sharing, reporting and early warning systems. The deployment of rapid alert systems, building on relevant existing incident-response arrangements, including cybersecurity arrangements, is essential to prevent cascading systemic risks and to formulate collective responses to emerging threats, so as to support their timely resolution and limit their consequences and real-world impacts.",
+   "ko": "셋째, 정책 입안자, 연구자, 개발자는 정보 공유, 보고 및 조기 경보 체계에 대한 의지를 다진다. 사이버 보안 체계를 포함한 관련 기존 사고 대응 체계를 기반으로 하는 신속 경보 체계의 배포는 연쇄적인 시스템적 위험을 방지하고 새롭게 등장하는 위협에 대한 공동 대응을 마련하는 데 필수적이며, 이를 통해 해당 위협의 적시 해결을 지원하고 그 결과와 실제 영향을 제한할 수 있다.",
+   "marks": [
+    {
+     "t": "연쇄적인 시스템적 위험을 방지하고 새롭게 등장하는 위협에 대한 공동 대응",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We recognize the value of strengthening existing reporting arrangements to align on incident classification and share timely information on serious cyber and AI control incidents and other material precursor signals of serious harm, whether it's between companies and government, between governments or between AI companies, and of exploring whether a cooperation mechanism would help, and what its scope could be.",
+   "ko": "우리는 기업과 정부 간, 정부 간, 또는 AI 기업 간을 막론하고 사고 분류 기준을 일치시키고 중대한 사이버 사고 및 AI 통제 사고, 그리고 심각한 피해의 기타 중요한 전조 신호에 관한 정보를 적시에 공유하도록 기존 보고 체계를 강화하는 것의 가치를 인정하며, 협력 메커니즘이 도움이 될지 여부와 그 범위가 어떠할 수 있는지를 모색하는 것의 가치 또한 인정한다.",
+   "marks": [
+    {
+     "t": "중대한 사이버 사고 및 AI 통제 사고, 그리고 심각한 피해의 기타 중요한 전조 신호에 관한 정보를 적시에 공유",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Policy makers commit to offer secure and confidential channels through which whistleblowers, including employees and other relevant stakeholders, can raise concerns about systemic risks on reasonable grounds without fear of legal or professional retaliation.",
+   "ko": "정책 입안자는 직원 및 기타 관련 이해관계자를 포함한 내부고발자가 법적 또는 직업상 보복에 대한 두려움 없이 합리적 근거에 기반하여 시스템적 위험에 관한 우려를 제기할 수 있는 안전하고 기밀이 보장되는 경로를 제공할 것을 약속한다.",
+   "marks": [
+    {
+     "t": "내부고발자가 법적 또는 직업상 보복에 대한 두려움 없이",
+     "k": "safety"
+    },
+    {
+     "t": "시스템적 위험에 관한 우려를 제기할 수 있는 안전하고 기밀이 보장되는 경로",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The declaration has been signed on Monday 9 November 2026 by the following Heads of States and Governments and CEOs:",
+   "ko": "이 선언은 2026년 11월 9일 월요일 다음의 국가·정부 수반 및 CEO들이 서명하였다."
+  },
+  {
+   "type": "p",
+   "en": "Heads of States and Governments: Austria, Bahrain, Canada, Croatia, Cyprus, Estonia, Finland, France, Ireland, Kenya, Latvia, Liechtenstein, Luxembourg, Netherlands, Norway, Portugal.",
+   "ko": "국가·정부 수반: 오스트리아, 바레인, 캐나다, 크로아티아, 키프로스, 에스토니아, 핀란드, 프랑스, 아일랜드, 케냐, 라트비아, 리히텐슈타인, 룩셈부르크, 네덜란드, 노르웨이, 포르투갈."
+  },
+  {
+   "type": "p",
+   "en": "Companies: Anthropic, Black Forest Labs, Cohere, Domyn, Hugging Face, Microsoft, Mistral AI, OpenAI, Sakana AI, Synthesia.",
+   "ko": "기업: Anthropic, Black Forest Labs, Cohere, Domyn, Hugging Face, Microsoft, Mistral AI, OpenAI, Sakana AI, Synthesia."
+  },
+  {
+   "type": "p",
+   "en": "Civil society: LawZero, SaferAI, AI Safety Connect, Ifri, Geopolitical Center for the Datasphere, GPAI Policy Lab, CeSIA.",
+   "ko": "시민사회: LawZero, SaferAI, AI Safety Connect, 프랑스 국제관계연구소(Ifri), Geopolitical Center for the Datasphere, GPAI Policy Lab, CeSIA."
+  },
+  {
+   "type": "p",
+   "en": "The statement remains open to new endorsements and is being updated.",
+   "ko": "이 성명은 새로운 지지 참여에 계속 열려 있으며 갱신되고 있다."
+  }
+ ]
+}
