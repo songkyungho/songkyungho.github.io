@@ -49,7 +49,7 @@ const viewPref = createPref<View>("translation-view", ["ko", "both", "en"], "ko"
 const marksPref = createPref<Marks>("translation-marks", ["on", "off"], "on");
 
 // 본문(#tr-body)의 data-view·data-marks만 바꾸고, 무엇을 어떻게 보일지는 CSS가 정한다.
-export function ViewSwitch({ hasMarks }: { hasMarks: boolean }) {
+export function ViewSwitch({ hasMarks, hasChanges = false }: { hasMarks: boolean; hasChanges?: boolean }) {
   const view = useSyncExternalStore(viewPref.subscribe, viewPref.get, viewPref.server);
   const marks = useSyncExternalStore(marksPref.subscribe, marksPref.get, marksPref.server);
 
@@ -68,6 +68,13 @@ export function ViewSwitch({ hasMarks }: { hasMarks: boolean }) {
           </button>
         ))}
       </div>
+      {hasChanges && (
+        <div className="tr-legend">
+          <p><ins className="tr-added">초록 바탕</ins> 앞 판에 없던 글</p>
+          <p><del>줄 그음</del> 앞 판에서 지워진 글</p>
+          <p className="tr-legend-note">바뀐 문단만 싣습니다. 표시는 번역자가 두 판을 기계적으로 비교해 단 것입니다.</p>
+        </div>
+      )}
       {hasMarks && (
         <div className="tr-legend">
           <button aria-pressed={marks === "on"} className="tr-marks-toggle" onClick={() => marksPref.set(marks === "on" ? "off" : "on")} type="button">

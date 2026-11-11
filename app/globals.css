@@ -416,6 +416,18 @@ footer p { margin: 4px 0 0; color: var(--muted); font-size: .66rem; }
 /* 강조: 형광 밑줄(AI 안전 관련)과 굵게(핵심 결론). data-marks="off"면 평문처럼 보인다. */
 .tr-safety { padding: 0 1px; background: linear-gradient(transparent 58%, #ffe58a 58%); color: inherit; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
 .tr-key { font-weight: 720; }
+/* 정정본 비교: 새로 들어간 글(초록 바탕)과 지워진 글(줄 그음), 블록 위 꼬리표 */
+.tr-added { padding: 0 1px; background: #d8f1e0; color: inherit; text-decoration: none; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.tr-changed del, .tr-removed del, .tr-legend del { color: #8a3b3b; text-decoration: line-through; text-decoration-thickness: 1px; }
+.tr-change-tag { margin: 0 0 4px; font-family: Pretendard, "Apple SD Gothic Neo", sans-serif; font-size: .68rem; font-weight: 700; letter-spacing: .02em; color: #1f7a45; }
+.tr-change-tag span { font-weight: 500; color: var(--muted); }
+.tr-change-removed { color: #8a3b3b; }
+.tr-change-moved { color: var(--accent); }
+.tr-change-editorial { color: var(--muted); }
+.tr-removed { margin: 6px 0 0; font-size: .78rem; line-height: 1.7; color: var(--muted); }
+.tr-removed span { margin-right: 6px; font-weight: 700; }
+.tr-removed del { margin-right: 10px; }
+.tr-changed-removed p, .tr-changed-removed h3 { color: var(--muted); }
 /* 문서 안 상호 참조: 누르면 그 위험 항목 제목으로 간다 */
 .tr-ref { color: var(--accent); text-decoration: underline dotted; text-underline-offset: 3px; }
 .tr-ref:hover { text-decoration-style: solid; }

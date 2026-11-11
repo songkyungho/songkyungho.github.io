@@ -1,0 +1,1856 @@
+{
+ "slug": "anthropic-s1a2-2026-11-risk-changes",
+ "title": "앤트로픽 증권신고서 2차 정정본(S-1/A) 위험 요인 변경점",
+ "original_title": "Anthropic, PBC — Form S-1/A (Amendment No. 2): Risk Factors, changes from Amendment No. 1",
+ "publisher": "Anthropic, PBC (미국 SEC 제출)",
+ "published": "2026-11-10",
+ "source_url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+ "source_note": "11월 2일 1차 정정본과 11월 10일 2차 정정본의 'Risk Factors' 절을 문단 단위로 비교해 바뀐 문단만 실었다. 옮겨진 항목은 글이 바뀐 문단만 실었다. 표기만 다듬은 문단은 '표현만 다듬음' 꼬리표를 달았다. 비교와 표시는 프로그램으로 했고 원문에는 없는 것이다. 각주 6(super intelligence)의 내용은 싣지 않았다.",
+ "source_label": "원문 보기 (SEC EDGAR)",
+ "summary": "앤트로픽이 11월 10일 낸 2차 정정본에서 위험 요인 절의 무엇이 바뀌었는지 보여 준다. 1차 정정본에서 기준을 '곧 충족할 수 있다'고 했던 대목이, 책임 있는 확장 정책의 AI 연구개발 역량 임계치를 '충족했다고 판단했다'로 바뀌었다. 판단 근거는 현재 모델의 관찰이 아니라 향후 모델과 전반적 진전 속도에 대한 예상이다. 오정렬 위험은 첫 번째 위험 요인으로 옮겨졌고, 모델이 과거에 그렇게 행동한 적이 있다는 시제가 더해졌다. 여러 곳에서 'AI'가 'intelligence'나 'SI'로 바뀌었고, 공모 구조와 지분 수치도 갱신됐다.",
+ "doc_kind": "증권신고서 정정본 변경점",
+ "item_label": "바뀐 위험",
+ "translated": "2026-11-11",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "image": "/images/translations/anthropic-s1a2-2026-11-risk-changes-cover.webp",
+ "og_image": "/images/translations/anthropic-s1a2-2026-11-risk-changes-cover.jpg",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "stats": {
+  "blocks": 75,
+  "sections": 5,
+  "items": 25,
+  "words_en": 10064
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Risks Related to our Business and Industry",
+   "ko": "당사의 사업 및 산업과 관련된 위험",
+   "id": "s1"
+  },
+  {
+   "type": "h3",
+   "en": "Our models have in the past behaved, and may in the future behave, in unintended, misaligned, or autonomous ways, including by taking harmful actions that no user or third party directed, which could adversely affect our reputation and brand, business, financial condition, and results of operations.",
+   "ko": "당사의 모델은 어떠한 사용자나 제3자도 지시하지 않은 피해를 초래하는 행위를 취하는 것을 포함하여 의도치 않은 방식, 정렬되지 않은(misaligned) 방식 또는 자율적인 방식으로 과거에 행동한 바 있고 향후에도 행동할 수 있으며, 이는 당사의 평판과 브랜드, 사업, 재무 상태 및 영업 실적에 부정적인 영향을 미칠 수 있다.",
+   "change": {
+    "kind": "moved",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ],
+    "note": "원본과 1차 정정본의 13번째 위험 요인이 2차 정정본에서 첫 번째로 옮겨졌다"
+   },
+   "id": "r1x",
+   "marks": [
+    {
+     "t": "과거에 행동한 바 있고",
+     "k": "added"
+    },
+    {
+     "t": "향후에도",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "have in the past behaved, and",
+     "k": "added"
+    },
+    {
+     "t": "in the future behave,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our models have in the past caused, and may in the future cause, harm by producing undesirable outputs or behaving in unintended, misaligned, or autonomous ways, including by taking unintended or harmful actions that no user or third party directed. These risks may increase as our models become more capable and are granted greater autonomy, permissions, and integration with external systems. Although we continue to study why these behaviors emerge, our understanding continues to evolve, and we may be unable to anticipate or understand such behaviors in the future.",
+   "ko": "당사의 모델은 바람직하지 않은 출력을 생성하거나, 어떠한 사용자나 제3자도 지시하지 않은 의도치 않은 행위 또는 피해를 초래하는 행위를 취하는 것을 포함하여 의도치 않은 방식, 오정렬된 방식 또는 자율적인 방식으로 행동함으로써 과거에 피해를 초래한 바 있으며, 향후에도 피해를 초래할 수 있다. 이러한 위험은 당사 모델의 역량이 향상되고 모델에 더 큰 자율성과 권한, 외부 시스템과의 통합이 부여됨에 따라 증가할 수 있다. 당사는 이러한 행동이 나타나는 이유를 계속 연구하고 있으나, 이에 대한 당사의 이해는 계속 발전하고 있는 단계이며, 향후 그러한 행동을 예견하거나 이해하지 못할 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     },
+     {
+      "en": "themselves cause",
+      "ko": "그 자체로 피해를 초래할"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "과거에 피해를 초래한 바 있으며,",
+     "k": "added"
+    },
+    {
+     "t": "향후에도 피해를 초래할 수 있다",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "have in the past caused, and",
+     "k": "added"
+    },
+    {
+     "t": "in the future cause,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In addition, our models have been and may continue to be deployed in high-risk or sensitive contexts, such as healthcare, scientific and biomedical research, drug discovery and development, legal, finance, government, or other critical decision-making environments, and in connection with hardware, whe re undesirable model behaviors—which are inherently non-deterministic and may manifest in unpredictable ways, such as errors, inaccuracies, biased or unsolicited views, or hallucinations—could lead to serious harm, liability, or reputational or other damage. More broadly, the long-term effects of regular super intelligence 6 interaction on mental health, cognitive development, and social behavior are not yet fully understood, and if such long-term harms do materialize in the future, we could face significant liability, reputational harm, and adverse effects on our business, financial condition, and results of operations.",
+   "ko": "또한 당사의 모델은 의료, 과학 및 생물의학 연구, 신약 발견 및 개발, 법률, 금융, 정부 또는 기타 중요한 의사결정 환경 등 고위험 또는 민감한 맥락에서, 그리고 하드웨어와 관련하여 배포되어 왔고 앞으로도 계속 배포될 수 있으며, 이러한 맥락에서는 본질적으로 비결정적이고 오류, 부정확성, 편향되거나 요청되지 않은 견해 또는 환각 등 예측할 수 없는 방식으로 나타날 수 있는 바람직하지 않은 모델 행동이 심각한 피해, 책임 또는 평판상 또는 기타 손해로 이어질 수 있다. 보다 넓게 보면, 초지능(SI) 6과의 정기적인 상호작용이 정신 건강, 인지 발달 및 사회적 행동에 미치는 장기적 영향은 아직 완전히 이해되지 않았으며, 향후 그러한 장기적 피해가 실제로 발생할 경우 당사는 상당한 책임, 평판 손상, 그리고 당사의 사업, 재무 상태 및 영업 실적에 대한 부정적 영향에 직면할 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "초지능(SI) 6",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "super intelligence 6",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our development of highly advanced models, platforms, and applications and expansion of use cases could further increase the risk that our models cause harm. For example, agentic SI systems are capable of autonomously taking actions on behalf of users, interacting directly with external systems, executing code, making API calls, sending communications, or completing transactions with limited human oversight. These systems are designed to possess enterprise-level permissions, integrations, and contextual awareness and to operate autonomously for extended durations, including sustained multi-step workflows lasting hours or days, which amplifies the potential severity of any errors, misalignments, or security incidents that may occur during such extended autonomous operation. These autonomous capabilities could increase the potential for harm, as errors, misalignment, or security exploits may result in real-world consequences—including consequences that may be difficult or impossible to reverse, such as committing code changes, deleting or modifying data, or completing financial transactions—before effective intervention is possible.",
+   "ko": "당사의 고도로 첨단화된 모델, 플랫폼 및 애플리케이션 개발과 사용 사례의 확장은 당사의 모델이 피해를 초래할 위험을 더욱 증가시킬 수 있다. 예를 들어, 에이전틱 초지능(SI) 시스템은 제한된 인간 감독하에서 사용자를 대신하여 자율적으로 행위를 수행하고, 외부 시스템과 직접 상호작용하며, 코드를 실행하고, 애플리케이션 프로그래밍 인터페이스 (API) 호출을 수행하고, 통신을 발송하거나, 거래를 완료할 수 있다. 이러한 시스템은 기업 수준의 권한, 통합 및 맥락 인식을 갖추고, 수 시간 또는 수일에 걸쳐 지속되는 다단계 워크플로를 포함하여 장기간 자율적으로 운영되도록 설계되어 있으며, 이는 그러한 장기간의 자율 운영 중에 발생할 수 있는 오류, 오정렬 또는 보안 사고의 잠재적 심각성을 증폭시킨다. 이러한 자율적 역량은 피해 가능성을 증가시킬 수 있는데, 이는 오류, 오정렬 또는 보안 취약점 악용이 효과적인 개입이 가능해지기 전에 실제 결과로 이어질 수 있기 때문이다. 여기에는 코드 변경 사항의 커밋, 데이터의 삭제 또는 수정, 금융 거래의 완료와 같이 되돌리기 어렵거나 불가능할 수 있는 결과가 포함된다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "초지능(SI)",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "SI",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In addition, analyzing complex records of the actions, decisions, and reasoning of our agentic systems across complex, multi-step workflows is technically challenging, particularly when agents interact with third-party systems outside our control, since some of the relevant information is in the third-party systems, and any inability to provide adequate audit trails could impair our ability to investigate incidents, respond to regulatory inquiries, or defend against liability claims. These risks are heightened by the fact that we use our own agentic offerings, including Claude Code, as critical tools in our internal development processes, such that any errors, vulnerabilities, or degradation in these products could directly impair our ability to develop and deploy future models and products. As we increasingly leverage Claude to accelerate progress within Anthropic, our organization may lose visibility across certain processes in a way that may become difficult for any individual or group of humans to understand and control. Because our models write a large and growing share of our code and increasingly perform our research, including our safety research, misaligned behavior in internal use could undermine that work, introduce vulnerabilities into our systems or into the training of future models, or result in models operating outside of our intended controls. Our monitoring does not cover all of our internal and external deployments and may not detect subtle or diffuse forms of such behavior.",
+   "ko": "또한 복잡한 다단계 워크플로 전반에 걸쳐 당사 에이전틱 시스템의 행동, 결정 및 추론에 관한 복잡한 기록을 분석하는 것은 기술적으로 어려우며, 특히 에이전트가 당사의 통제 범위 밖에 있는 제3자 시스템과 상호작용하는 경우에는 관련 정보의 일부가 제3자 시스템에 있으므로 더욱 그러하다. 적절한 감사 추적(audit trail)을 제공하지 못할 경우, 사고를 조사하거나 규제 당국의 문의에 대응하거나 책임 청구에 대해 방어하는 당사의 능력이 저해될 수 있다. 이러한 위험은 당사가 Claude Code를 포함한 자사의 에이전틱 제품을 내부 개발 프로세스의 핵심 도구로 사용하고 있다는 사실로 인해 더욱 커진다. 이러한 제품에 오류, 취약점 또는 성능 저하가 발생할 경우, 향후 모델 및 제품을 개발하고 배포하는 당사의 능력이 직접적으로 저해될 수 있다. 당사가 Anthropic 내부의 진전을 가속화하기 위해 Claude를 점점 더 많이 활용함에 따라, 당사 조직은 특정 프로세스 전반에 대한 가시성을 상실할 수 있으며, 이는 어떤 개인이나 인간 집단도 이해하고 통제하기 어려운 방식으로 전개될 수 있다. 당사의 모델은 당사 코드의 크고 점점 증가하는 비중을 작성하고 있으며, 당사의 안전 연구를 포함한 연구를 점점 더 많이 수행하고 있다. 이에 따라 내부 사용 과정에서 발생하는 오정렬된 행동은 그러한 작업을 약화시키거나, 당사 시스템 또는 향후 모델의 훈련에 취약점을 유입시키거나, 모델이 당사가 의도한 통제 범위 밖에서 작동하는 결과를 초래할 수 있다. 당사의 모니터링은 당사의 모든 내부 및 외부 배포를 포괄하지 않으며, 그러한 행동의 미묘하거나 분산된 형태를 탐지하지 못할 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "maintaining comprehensive",
+      "ko": "포괄적인 기록을 유지하는"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "복잡한 기록을 분석하는",
+     "k": "added"
+    },
+    {
+     "t": "관련 정보의 일부가 제3자 시스템에 있으므로",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "analyzing complex",
+     "k": "added"
+    },
+    {
+     "t": "since some of the relevant information is in the third-party systems,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Our success depends in large part on our ability to continue to develop the most advanced and capable AI models, and any failure to do so could adversely affect our business.",
+   "ko": "당사의 성공은 최첨단 고역량 AI 모델을 지속적으로 개발하는 능력에 크게 좌우되며, 이에 실패할 경우 당사의 사업에 불리한 영향을 미칠 수 있다.",
+   "id": "r2"
+  },
+  {
+   "type": "p",
+   "en": "Our failure to achieve any of the foregoing could prevent us from maintaining our competitive position, cause us to fall behind competitors, reduce customer adoption of, or demand for, our models, platform, and applications, and impair our revenue growth. Limitations to our revenue growth could, in turn, constrain our ability to fund the substantial and increasing expenditures required for frontier intelligence development, including investments in compute, model training, data acquisition, and safety and security systems, as well as our ability to attract, retain, and appropriately compensate highly skilled technical and operational personnel in a highly competitive market. Any such constraints could slow our rate of development and innovation, degrade model performance or reliability relative to competitors, limit our participation in industry standards-setting and regulatory processes, and reduce our attractiveness to enterprises and prosumers. These effects could create a self-reinforcing or compounding cycle in which diminished growth limits our capacity to invest in the resources necessary to remain competitive, which in turn could further weaken our ability to sustain or increase our revenue growth, making it increasingly difficult and costly to regain technological leadership and operate at the frontier of AI. Any of the foregoing could adversely affect our business, financial condition, and results of operations.",
+   "ko": "당사가 위의 사항 중 어느 하나라도 달성하지 못할 경우, 당사는 경쟁적 지위를 유지하지 못하고 경쟁사에 뒤처질 수 있으며, 당사의 모델, 플랫폼 및 애플리케이션에 대한 고객 채택 또는 수요가 감소하고 매출 성장이 저해될 수 있다. 매출 성장의 제약은 다시 연산, 모델 학습, 데이터 확보, 안전 및 보안 시스템에 대한 투자를 포함하여 프론티어 지능 개발에 필요한 상당하고도 증가하는 지출을 조달하는 당사의 능력과, 경쟁이 매우 치열한 시장에서 고도로 숙련된 기술 및 운영 인력을 유치·유지하고 적절히 보상하는 당사의 능력을 제약할 수 있다. 이러한 제약은 당사의 개발 및 혁신 속도를 늦추고, 경쟁사 대비 모델 성능 또는 신뢰성을 저하시키며, 산업 표준 제정 및 규제 절차에 대한 당사의 참여를 제한하고, 기업 및 프로슈머에 대한 당사의 매력도를 떨어뜨릴 수 있다. 이러한 영향은 성장 둔화가 경쟁력 유지에 필요한 자원에 투자할 당사의 역량을 제한하고, 이것이 다시 매출 성장을 유지하거나 확대하는 당사의 능력을 더욱 약화시키는 자기강화적 또는 누적적 순환을 초래할 수 있으며, 그 결과 기술적 리더십을 되찾고 AI의 최전선에서 사업을 영위하는 것이 점점 더 어렵고 비용이 많이 드는 일이 될 수 있다. 위의 사항 중 어느 하나라도 당사의 사업, 재무상태 및 경영성과에 불리한 영향을 미칠 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "지능",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "intelligence",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In addition, our increasing use of AI systems to accelerate our own research and development may cause the capabilities of our models to advance more rapidly than our ability to develop, validate, and implement corresponding safety, alignment, and security measures. Much of our evidence regarding the pace of such AI-driven acceleration is derived from lagging indicators, and our ability to forecast or measure the rate at which our capabilities are advancing, including any acceleration attributable to our most recent or unreleased models, is limited. As a result, we have in the past not identified, and may in the future not identify, a significant acceleration in our rate of development until after it has occurred. For example, our use of AI systems has already been accelerating our research and development, and our internal estimates indicate that we may experience a further increase in the rate of progress in AI capabilities. Because the AI research and development capability threshold under our Responsible Scaling Policy applies where we \"observe or expect\" a specified degree of accelerated progress, we made a determination that we have met this threshold based on what we expect from future models and our overall rate of progress, rather than on what we have observed from current models. We continue to assess the underlying data. We are also evaluating the implications of meeting the AI research and development capability threshold and will release further reports in the future. If our capabilities were to outpace our safety, alignment, and security measures, or if we were unable to anticipate the pace of such advancement, we may be unable to adequately assess or mitigate the resulting risks, which could increase the likelihood of safety incidents, regulatory intervention, or reputational harm, and could adversely affect our business, financial condition, and results of operations. In light of these uncertainties, including limits on our ability to observe the pace at which our capabilities are advancing, we have adopted, and may continue to adopt, precautionary safety, alignment, and security measures to allow our safety efforts to advance together with model capabilities. In the past these measures have included delaying the release of models and limiting their initial availability, such as with Mythos through Project Glasswing, and in the future, as we learn more about model capabilities and behavior, they could include additional measures that affect whether, how, and when we develop or deploy new models or capabilities. We cannot predict with precision when we will determine that such measures are necessary, what measures will be required, or how long they will remain in place, and as the capabilities of our models advance, such measures may become more frequent and more costly. These measures could slow our capability gains relative to competitors that do not adopt similar constraints, and could adversely affect our competitive position, revenue growth, and results of operations.",
+   "ko": "또한, 당사 자체의 연구 개발을 가속화하기 위해 AI 시스템을 점점 더 많이 활용함에 따라, 당사 모델의 역량이 이에 상응하는 안전, 정렬 및 보안 조치를 개발·검증·이행하는 당사의 능력보다 더 빠르게 발전할 수 있다. 이러한 AI 주도 가속화의 속도에 관해 당사가 보유한 증거의 상당 부분은 후행 지표에서 도출되며, 당사의 최신 모델 또는 미출시 모델에 기인하는 가속화를 포함하여 당사의 역량이 발전하는 속도를 예측하거나 측정하는 당사의 능력은 제한적이다. 그 결과, 당사는 과거에 그러하였듯이 향후에도 개발 속도의 상당한 가속화가 이미 발생한 이후에야 이를 식별하게 될 수 있다. 예를 들어, 당사의 AI 시스템 활용은 이미 당사의 연구 개발을 가속화해 왔으며, 당사의 내부 추정치에 따르면 당사는 AI 역량의 진전 속도가 추가로 증가하는 것을 경험할 수 있다. 당사의 책임 있는 확장 정책상 AI 연구 개발 역량 임계치는 당사가 특정 수준의 가속화된 진전을 “관찰하거나 예상하는” 경우에 적용되므로, 당사는 현재 모델에서 관찰한 바가 아니라 향후 모델에 대해 예상하는 바와 당사의 전반적인 진전 속도에 근거하여 당사가 이 임계치를 충족하였다고 판단하였다. 당사는 기초 데이터를 계속 평가하고 있다. 또한 당사는 AI 연구 개발 역량 임계치를 충족하는 것의 함의를 평가하고 있으며, 향후 추가 보고서를 공개할 예정이다. 당사의 역량이 안전, 정렬 및 보안 조치를 앞지르거나, 당사가 이러한 발전 속도를 예측하지 못할 경우, 당사는 그로 인한 위험을 적절히 평가하거나 완화하지 못할 수 있으며, 이는 안전 사고, 규제 개입 또는 평판 피해의 가능성을 높이고 당사의 사업, 재무상태 및 경영성과에 불리한 영향을 미칠 수 있다. 당사의 역량이 발전하는 속도를 관찰하는 능력의 한계를 포함한 이러한 불확실성을 고려하여, 당사는 안전 노력이 모델 역량과 함께 발전할 수 있도록 예방적 안전, 정렬 및 보안 조치를 채택해 왔으며, 앞으로도 계속 채택할 수 있다. 과거에 이러한 조치에는 Project Glasswing을 통한 Mythos의 사례와 같이 모델 출시를 연기하고 초기 이용 가능 범위를 제한하는 것이 포함되었으며, 향후 당사가 모델의 역량과 행동에 대해 더 많이 파악함에 따라 당사가 신규 모델 또는 역량을 개발하거나 배포할지 여부, 그 방식 및 시기에 영향을 미치는 추가 조치가 포함될 수 있다. 당사는 이러한 조치가 필요하다고 판단하게 될 시점, 어떤 조치가 요구될지, 또는 해당 조치가 얼마나 오래 유지될지를 정확하게 예측할 수 없으며, 당사 모델의 역량이 발전함에 따라 이러한 조치는 더 빈번해지고 더 많은 비용을 수반하게 될 수 있다. 이러한 조치는 유사한 제약을 채택하지 않는 경쟁사 대비 당사의 역량 향상을 둔화시킬 수 있으며, 당사의 경쟁적 지위, 매출 성장 및 경영성과에 불리한 영향을 미칠 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "and our expectations regarding future models, rather than our current models,",
+      "ko": "당사의 현재 모델이 아닌 향후 모델에 관한 기대"
+     },
+     {
+      "en": "imminently meet",
+      "ko": "머지않아 충족할"
+     },
+     {
+      "en": "Policy’s definition",
+      "ko": "책임 있는 확장 정책상 정의"
+     },
+     {
+      "en": "“dramatically",
+      "ko": "“극적으로"
+     },
+     {
+      "en": "progress attributable to AI.”",
+      "ko": "AI에 기인한 가속화된 진전”"
+     },
+     {
+      "en": "have not designated any of our current models as exceeding this threshold, and we",
+      "ko": "당사는 당사의 현재 모델 중 어느 것도 이 임계치를 초과하는 것으로 지정하지 않았으며"
+     },
+     {
+      "en": "future as we set forth in our Responsible Scaling Policy.",
+      "ko": "당사의 책임 있는 확장 정책에 명시된 바에 따라"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "당사의 AI 시스템 활용은 이미 당사의 연구 개발을 가속화해 왔으며",
+     "k": "added"
+    },
+    {
+     "t": "AI 역량의 진전 속도가 추가로 증가하는 것을 경험할 수 있다. 당사의 책임 있는 확장 정책상 AI 연구 개발 역량 임계치는",
+     "k": "added"
+    },
+    {
+     "t": "당사가 특정 수준의 가속화된 진전을 “관찰하거나 예상하는” 경우에 적용되므로",
+     "k": "added"
+    },
+    {
+     "t": "당사는 현재 모델에서 관찰한 바가 아니라 향후 모델에 대해 예상하는 바와 당사의 전반적인 진전 속도에 근거하여 당사가 이 임계치를 충족하였다고 판단하였다.",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "use of AI systems has already been accelerating our research and development, and our",
+     "k": "added"
+    },
+    {
+     "t": "experience a further increase in the rate of progress in AI capabilities. Because the AI research and development capability threshold under",
+     "k": "added"
+    },
+    {
+     "t": "Policy applies where we \"observe or expect\" a specified degree",
+     "k": "added"
+    },
+    {
+     "t": "progress, we made a determination that we have met this threshold based on what we expect from future models and our overall rate of progress, rather than on what we have observed from current models.",
+     "k": "added"
+    },
+    {
+     "t": "future.",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The development of frontier models requires substantial investments of compute resources, capital, and human capital to conduct large-scale training runs that may span weeks or months and cost many millions of dollars. There is no guarantee that any given training run will succeed—a run may fail for a number of reasons, such as failing to achieve the targeted capability or safety thresholds, producing unexpected or undesirable behaviors that cannot be adequately remediated, or yielding a model that is ultimately not competitive with alternatives available in the market. We would also face the additional cost and delay of initiating a new training run to attempt to achieve the intended model improvements. We have in the past experienced, and may in the future experience, such failed or underperforming training runs, resulting in a loss of invested resources with limited or no corresponding benefit to our business. Given the scale of compute and other resources required for frontier model training and the extended timelines involved, a failed or underperforming training run could also delay our product roadmap, affect our competitive position, and adversely affect our business, financial condition, and results of operations.",
+   "ko": "프론티어 모델의 개발에는 수주 또는 수개월에 걸쳐 진행되고 수백만 달러에 달하는 비용이 소요될 수 있는 대규모 훈련 실행을 수행하기 위해 컴퓨팅 자원, 자본 및 인적 자본에 대한 상당한 투자가 필요하다. 특정 훈련 실행이 성공한다는 보장은 없다. 훈련 실행은 목표한 역량 또는 안전성 기준을 달성하지 못하거나, 적절히 시정할 수 없는 예상치 못한 또는 바람직하지 않은 행동을 나타내거나, 궁극적으로 시장에서 이용 가능한 대안에 비해 경쟁력이 없는 모델을 산출하는 등 여러 가지 이유로 실패할 수 있다. 또한 당사는 의도한 모델 개선을 달성하기 위해 새로운 훈련 실행을 개시하는 데 따른 추가 비용 및 지연에 직면하게 될 것이다. 당사는 과거에 이와 같이 실패하거나 기대에 미치지 못한 훈련 실행을 경험한 바 있으며 향후에도 경험할 수 있고, 그 결과 당사 사업에 상응하는 이익이 제한적이거나 전혀 없는 채로 투입된 자원을 잃게 된다. 프론티어 모델 훈련에 필요한 컴퓨팅 및 기타 자원의 규모와 장기간에 걸친 일정을 고려할 때, 실패하거나 기대에 미치지 못한 훈련 실행은 또한 당사의 제품 로드맵을 지연시키고, 당사의 경쟁적 지위에 영향을 미치며, 당사의 사업, 재무 상태 및 영업 실적에 부정적인 영향을 미칠 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   }
+  },
+  {
+   "type": "h3",
+   "en": "If we are unable to secure adequate compute or if we fail to direct our compute effectively across our workloads, we may be unable to train models that remain competitive with those of our competitors or adequately serve our customers.",
+   "ko": "당사가 적절한 연산을 확보하지 못하거나 당사의 워크로드 전반에 걸쳐 연산을 효과적으로 배분하지 못할 경우, 당사는 경쟁사 모델과 경쟁력을 유지하는 모델을 학습시키거나 고객에게 적절한 서비스를 제공하지 못할 수 있다.",
+   "id": "r3"
+  },
+  {
+   "type": "p",
+   "en": "The majority of our compute is procured under multi-year commitments that are typically entered into well in advance of the periods in which that compute is deployed. Because different accelerators have varying performance characteristics across workload types, the composition of our committed compute portfolio, including the mix of accelerator architectures procured from our partners, reflects our demand forecasts and development roadmap assumptions at the time those commitments are made. If the magnitude or mix of workloads we need to support differs materially from those forecasts, whether due to changes in model architecture, customer demand, internal operations, or research priorities, the composition of our available compute may not optimally match our needs in a given period. This could affect our ability to serve customers, develop models, and support internal operations.",
+   "ko": "당사 연산의 대부분은 해당 연산이 배포되는 기간보다 훨씬 앞서 체결되는 것이 일반적인 다년 약정에 따라 조달된다. 가속기마다 워크로드 유형별 성능 특성이 다르기 때문에, 파트너로부터 조달하는 가속기 아키텍처의 구성을 포함한 당사의 약정 연산 포트폴리오 구성은 해당 약정 체결 시점의 수요 예측 및 개발 로드맵 가정을 반영한다. 모델 아키텍처, 고객 수요, 내부 운영 또는 연구 우선순위의 변화 등으로 인해 당사가 지원해야 하는 워크로드의 규모나 구성이 그러한 예측과 중대하게 달라지는 경우, 특정 기간에 당사의 가용 연산 구성이 당사의 필요에 최적으로 부합하지 않을 수 있다. 이는 당사의 고객 서비스 제공, 모델 개발 및 내부 운영 지원 역량에 영향을 미칠 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   }
+  },
+  {
+   "type": "h3",
+   "en": "If our actual compute requirements differ materially from our projections, we may fail to secure sufficient compute to meet our needs or we may be committed to excess compute that remains underutilized.",
+   "ko": "당사의 실제 연산 소요량이 당사의 전망과 중대하게 다를 경우, 당사는 필요를 충족할 만큼 충분한 연산을 확보하지 못하거나, 활용되지 않는 과잉 연산에 대해 약정한 상태가 될 수 있다.",
+   "id": "r4"
+  },
+  {
+   "type": "p",
+   "en": "We have entered into, and expect to continue to enter into, long-term agreements for compute and related resources that involve minimum purchase commitments, take-or-pay provisions, and other terms that obligate us to pay for resources regardless of actual utilization. These commitments represent substantial fixed obligations. As of and subsequent to September 30, 2026, we have entered into purchase commitments and lease agreements, including short-term commitments, as well as leases not yet commenced, with an aggregate committed spend of approximately $900.9 billion , substantially all of which is related to compute and infrastructure. These commitments include approximately $451.6 billion expected to be incurred before December 31, 2030, and substantially all of the remainder is expected to be incurred between 2031 and 2045. Approximately $70.7 billion of these commitments are due in the 12 months following September 30, 2026. See the section titled \"Management's Discussion and Analysis of Financial Condition and Results of Operations— Liquidity and Capital Resources—Contractual Obligations\" for more information.",
+   "ko": "당사는 최소 구매 약정, 테이크오어페이(take-or-pay) 조항, 실제 활용 여부와 관계없이 자원에 대한 대금 지급 의무를 부과하는 기타 조건이 포함된 연산 및 관련 자원에 관한 장기 계약을 체결해 왔으며, 앞으로도 계속 체결할 것으로 예상한다. 이러한 약정은 상당한 고정 의무에 해당한다. 2026년 9월 30일 현재 및 그 이후, 당사는 단기 약정과 아직 개시되지 않은 리스를 포함하여 총 약정 지출액이 약 9,009억 달러인 구매 약정 및 리스 계약을 체결하였으며, 그 실질적으로 전부가 연산 및 인프라와 관련되어 있다. 이러한 약정에는 2030년 12월 31일 이전에 발생할 것으로 예상되는 약 4,516억 달러가 포함되며, 나머지의 실질적으로 전부는 2031년에서 2045년 사이에 발생할 것으로 예상된다. 이러한 약정 중 약 707억 달러는 2026년 9월 30일 이후 12개월 이내에 지급 기한이 도래한다. 자세한 내용은 \"경영진의 재무상태 및 경영성과에 관한 논의 및 분석—유동성 및 자본 자원—계약상 의무\" 섹션을 참조하라.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "$895.4",
+      "ko": "8,954억 달러"
+     },
+     {
+      "en": "$447.5",
+      "ko": "4,475억 달러"
+     },
+     {
+      "en": "$69.8",
+      "ko": "698억 달러"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "9,009억 달러",
+     "k": "added"
+    },
+    {
+     "t": "4,516억 달러",
+     "k": "added"
+    },
+    {
+     "t": "707억 달러",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "$900.9",
+     "k": "added"
+    },
+    {
+     "t": "$451.6",
+     "k": "added"
+    },
+    {
+     "t": "$70.7",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Constraints on the critical inputs supporting compute could limit our ability to secure adequate compute.",
+   "ko": "연산을 뒷받침하는 핵심 입력에 대한 제약은 적정한 연산을 확보하는 당사의 역량을 제한할 수 있다.",
+   "id": "r5"
+  },
+  {
+   "type": "p",
+   "en": "The specialized chips required for AI workloads, particularly high-performance accelerators and memory, are produced by a limited number of manufacturers. The production of advanced chips is extraordinarily complex, requiring manufacturing processes at the leading edge of technological capability.",
+   "ko": "AI 워크로드에 필요한 특수 칩, 특히 고성능 가속기와 메모리는 소수의 제조업체에 의해 생산된다. 첨단 칩의 생산은 극도로 복잡하며, 기술적 역량의 최첨단에 있는 제조 공정을 필요로 한다.",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   }
+  },
+  {
+   "type": "p",
+   "en": "In addition, both high-bandwidth memory, which is a key component in high-performance accelerators, and other high-performance memory products used in compute infrastructure, are largely manufactured by SK hynix Inc., Samsung Electronics Co., and Micron Technology, Inc. Each of these manufacturers is working to expand its production capacity to meet demand. However, there is no guarantee that these efforts will result in adequate supply fast enough to meet demand, particularly if large customers or competitors secure exclusive supply commitments or otherwise reserve substantially all of a manufacturer's available production capacity.",
+   "ko": "또한 고성능 가속기의 핵심 구성 요소인 고대역폭 메모리와 컴퓨팅 인프라에 사용되는 기타 고성능 메모리 제품은 대부분 SK hynix Inc., Samsung Electronics Co. 및 Micron Technology, Inc.가 제조한다. 이들 제조업체는 각각 수요에 대응하기 위해 생산능력을 확대하고 있다. 그러나 이러한 노력이 수요를 충족할 만큼 빠르게 충분한 공급으로 이어진다는 보장은 없으며, 특히 대형 고객이나 경쟁사가 독점 공급 약정을 확보하거나 그 밖의 방법으로 제조업체의 가용 생산능력 중 실질적으로 전부를 선점하는 경우에는 더욱 그러하다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   }
+  },
+  {
+   "type": "p",
+   "en": "The operation of data centers at the scale required for frontier model development and deployment consumes substantial quantities of electrical power. The availability of sufficient electrical power has emerged as a significant constraint on data center development and expansion in many geographies, including the United States. Electric grid infrastructure in the United States and other countries was not designed to accommodate the rapid increase in demand associated with AI development, and the lead times required to build new generation capacity, transmission infrastructure, and grid interconnections can extend for years. Demand on electric grid infrastructure is also increasing as a result of the increased electrification of homes, vehicles, and industry, and this growing demand is occurring at a time when power generation capacity additions, transmission expansion, and grid modernization efforts have not kept pace and certain existing generation resources are being retired, all of which has contributed to higher electricity prices and longer interconnection timelines in certain regions. We have publicly committed to covering the cost of electricity price increases to consumers caused by our data centers, including both the cost of electricity itself and the infrastructure necessary to deliver it.",
+   "ko": "프론티어 모델 개발 및 배포에 필요한 규모로 데이터 센터를 운영하는 데에는 상당한 양의 전력이 소비된다. 충분한 전력의 가용성은 미국을 포함한 많은 지역에서 데이터 센터 개발 및 확장에 대한 중대한 제약으로 부상하였다. 미국 및 기타 국가의 전력망 인프라는 AI 개발에 수반되는 급격한 수요 증가를 수용하도록 설계되지 않았으며, 신규 발전 용량, 송전 인프라 및 계통 연계를 구축하는 데 필요한 리드타임은 수년에 이를 수 있다. 전력망 인프라에 대한 수요는 가정, 차량 및 산업의 전기화 확대로 인해서도 증가하고 있으며, 이러한 수요 증가는 발전 용량 증설, 송전망 확충 및 전력망 현대화 노력이 이를 따라가지 못하고 일부 기존 발전 자원이 폐지되고 있는 시점에 발생하고 있다. 이 모든 요인은 일부 지역에서 전기 요금 상승과 계통 연계 기간 장기화에 기여해 왔다. 당사는 당사의 데이터 센터로 인해 발생하는 소비자 전기 요금 인상분을 부담하기로 공개적으로 약속하였으며, 여기에는 전력 자체의 비용과 이를 공급하는 데 필요한 인프라 비용이 모두 포함된다.",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "모델",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "model",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Our company culture has contributed to our success and, if we cannot maintain this culture as we grow, our business could be adversely affected.",
+   "ko": "당사의 기업 문화는 당사의 성공에 기여해 왔으며, 당사가 성장하는 과정에서 이러한 문화를 유지하지 못하는 경우 당사의 사업에 부정적인 영향이 발생할 수 있다.",
+   "id": "r6"
+  },
+  {
+   "type": "li",
+   "en": "the increased scrutiny and expectations associated with operating as a public company; and",
+   "ko": "상장회사로 운영되는 데 따른 감시 및 기대의 증가; 그리고",
+   "change": {
+    "kind": "added",
+    "editorial": false
+   },
+   "marks": [
+    {
+     "t": "상장회사로 운영되는 데 따른 감시 및 기대의 증가; 그리고",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "the increased scrutiny and expectations associated with operating as a public company; and",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "the need to balance our long-term, mission-driven objectives with shorter-term financial performance expectations, which may create internal tension and challenge our ability to consistently reinforce our cultural values and mission across teams and leadership.",
+   "ko": "당사의 장기적·사명 중심적 목표와 단기적 재무 성과에 대한 기대 사이에서 균형을 맞춰야 할 필요성으로, 이는 내부 긴장을 초래하고 팀과 리더십 전반에 걸쳐 당사의 문화적 가치와 사명을 일관되게 강화하는 능력을 저해할 수 있음",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "the increased scrutiny and expectations associated with operating as a public company; and",
+      "ko": "상장회사로서 운영되는 데 따른 감시와 기대의 증가, 그리고"
+     }
+    ]
+   }
+  },
+  {
+   "type": "h3",
+   "en": "If the market for our models, platform, and applications develops more slowly than we expect or declines, our growth may slow or stall, and our business, financial condition, and results of operations could be adversely affected.",
+   "ko": "당사의 모델, 플랫폼 및 애플리케이션 시장이 당사의 예상보다 더디게 발전하거나 축소될 경우, 당사의 성장이 둔화되거나 정체될 수 있으며, 당사의 사업, 재무 상태 및 영업 실적에 부정적인 영향이 있을 수 있다.",
+   "id": "r7"
+  },
+  {
+   "type": "p",
+   "en": "The market for AI technologies, including frontier models, platforms, and applications, has grown rapidly in recent years, but is still relatively nascent and evolving rapidly, and it is uncertain whether the market for such AI technologies will achieve or sustain widespread adoption at the pace or to the extent we expect. Our ability to generate revenue and achieve sustainable growth depends in significant part on the extent to which enterprises, software developers, and other users adopt AI technologies, integrate them into existing workflows, expand usage over time, and are willing to pay for our models, platform, and applications at levels that support durable economic value at scale. Market adoption may be slower than anticipated due to factors such as uncertainty regarding the cost, performance, reliability, and perceived value of AI solutions; increased regulation; concerns about security, privacy, legal and regulatory compliance, or ethical considerations; technological challenges; level of effort and expense associated with integration efforts; competition from alternative or emerging technologies; the availability or adoption of complementary infrastructure and workflows; or reductions in corporate spending due to macroeconomic conditions. Moreover, demand for frontier models may decline if customers determine that less advanced, lower-cost models are sufficient for their particular use cases. As AI capabilities improve across the industry and a broader range of models becomes available, customers may conclude that incremental performance gains at the frontier do not justify the additional cost, and may migrate toward smaller, cheaper, or open-source alternatives that adequately address their needs. If we are unable to demonstrate sufficient differentiated value from our frontier models relative to less capable alternatives, our revenue and growth could be adversely affected, even in a market where overall AI adoption continues to grow. Further, while AI adoption may continue or accelerate in certain areas, the long-term trajectory of this technological trend is uncertain, and market understanding, acceptance, and valuation of AI-enabled models, platforms, and applications may be inaccurate or change over time and adoption may occur unevenly across industries, geographies, and customer types. If growth in the AI market does not translate into sustained customer demand for our offerings, expanded usage, and increased revenue, or if anticipated use cases fail to materialize, our prospects, business, financial condition, and results of operations could be adversely affected.",
+   "ko": "AI 기술 시장은 프론티어 모델, 플랫폼 및 애플리케이션을 포함하여 최근 수년간 빠르게 성장했으나, 여전히 비교적 초기 단계에 있고 빠르게 변화하고 있으며, 이러한 AI 기술 시장이 당사가 예상하는 속도나 정도로 광범위한 도입을 달성하거나 유지할 수 있을지는 불확실하다. 당사가 매출을 창출하고 지속 가능한 성장을 달성할 수 있는 능력은 기업, 소프트웨어 개발자 및 기타 사용자가 AI 기술을 도입하고, 이를 기존 업무 흐름에 통합하고, 시간이 지남에 따라 사용을 확대하며, 대규모로 지속적인 경제적 가치를 뒷받침할 수 있는 수준으로 당사의 모델, 플랫폼 및 애플리케이션에 비용을 지불할 의향이 있는지에 상당 부분 좌우된다. 시장 도입은 다음과 같은 요인으로 인해 예상보다 더디게 진행될 수 있다. AI 솔루션의 비용, 성능, 신뢰성 및 인식된 가치에 관한 불확실성, 규제 강화, 보안, 프라이버시, 법률 및 규제 준수 또는 윤리적 고려 사항에 대한 우려, 기술적 과제, 통합 작업에 수반되는 노력과 비용의 수준, 대체 기술 또는 신흥 기술과의 경쟁, 보완적 인프라 및 업무 흐름의 가용성 또는 도입 정도, 거시경제 여건에 따른 기업 지출 감소 등이다. 또한 고객이 덜 진보된 저비용 모델로도 특정 사용 사례에 충분하다고 판단할 경우 프론티어 모델에 대한 수요가 감소할 수 있다. 업계 전반에서 AI 역량이 향상되고 더 다양한 모델을 이용할 수 있게 됨에 따라, 고객은 최첨단 수준에서의 점진적 성능 향상이 추가 비용을 정당화하지 못한다고 판단하고, 자신의 요구를 적절히 충족하는 더 작거나 저렴하거나 오픈소스인 대안으로 이동할 수 있다. 당사가 역량이 낮은 대안 대비 당사 프론티어 모델의 충분히 차별화된 가치를 입증하지 못할 경우, 전반적인 AI 도입이 계속 증가하는 시장에서도 당사의 매출과 성장에 부정적인 영향이 있을 수 있다. 나아가 특정 분야에서는 AI 도입이 지속되거나 가속화될 수 있으나, 이러한 기술 동향의 장기적 궤적은 불확실하며, AI 기반 모델, 플랫폼 및 애플리케이션에 대한 시장의 이해, 수용 및 가치 평가는 부정확하거나 시간이 지남에 따라 변할 수 있고, 도입은 산업, 지역 및 고객 유형에 따라 불균등하게 이루어질 수 있다. AI 시장의 성장이 당사 제품 및 서비스에 대한 지속적인 고객 수요, 사용 확대 및 매출 증가로 이어지지 않거나, 예상한 사용 사례가 실현되지 않을 경우, 당사의 전망, 사업, 재무 상태 및 영업 실적에 부정적인 영향이 있을 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "AI and related",
+      "ko": "AI와 관련"
+     }
+    ]
+   }
+  },
+  {
+   "type": "h3",
+   "en": "The political environment and our engagement with policymakers and public positions on AI regulation and safety could subject us to heightened scrutiny, political backlash, or disproportionate regulatory action.",
+   "ko": "정치 환경, 당사의 정책입안자와의 교류, 그리고 AI 규제 및 안전에 관한 당사의 공개적 입장으로 인해 당사는 강화된 감시, 정치적 반발 또는 불균형적인 규제 조치의 대상이 될 수 있다.",
+   "id": "r8"
+  },
+  {
+   "type": "p",
+   "en": "Our public positions, stated values, policy advocacy, or statements by our executives have attracted, and may continue to attract, criticism from influential political figures, industry participants, regulators, or other third parties, particularly in politically sensitive or polarized environments, which could shape public narratives or regulatory perceptions of our business in ways that are unfavorable to us. For example, public statements by us or other industry participants regarding the safety of frontier model development have been cited by governmental actors to support litigation or regulatory claims, including requests for injunctive relief restricting model development, and could be cited in future proceedings involving us. Such scrutiny or backlash could result in reputational harm, increased compliance or operating costs, investigations, enforcement actions, or restrictions on our operations, any of which could adversely affect our business, financial condition, and results of operations.",
+   "ko": "당사의 공개적 입장, 표명된 가치, 정책 옹호 활동 또는 경영진의 발언은 특히 정치적으로 민감하거나 양극화된 환경에서 영향력 있는 정치인, 업계 참여자, 규제 당국 또는 기타 제3자의 비판을 받아 왔으며 앞으로도 그러할 수 있고, 이는 당사 사업에 대한 여론의 서사나 규제 당국의 인식을 당사에 불리한 방향으로 형성할 수 있다. 예를 들어, 프론티어 모델 개발의 안전성에 관한 당사 또는 다른 업계 참여자의 공개 발언은 모델 개발을 제한하는 금지명령 구제 청구를 포함하여 소송이나 규제상 주장을 뒷받침하기 위해 정부 주체에 의해 인용된 바 있으며, 향후 당사가 관련된 절차에서도 인용될 수 있다. 이러한 감시나 반발은 평판 피해, 규정 준수 또는 운영 비용의 증가, 조사, 집행 조치 또는 당사 운영에 대한 제한으로 이어질 수 있으며, 이 중 어느 것이든 당사의 사업, 재무 상태 및 영업 실적에 부정적인 영향을 미칠 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "모델",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "model",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "If we are unable to manage the risks related to our focus on and commitment to AI safety, our brand, business, financial condition, and results of operations could be adversely affected.",
+   "ko": "당사가 AI 안전에 대한 집중 및 헌신과 관련된 위험을 관리하지 못하는 경우, 당사의 브랜드, 사업, 재무 상태 및 경영 성과가 부정적인 영향을 받을 수 있다.",
+   "id": "r9"
+  },
+  {
+   "type": "p",
+   "en": "Balancing Safety and Commercial Objectives . Our commitment to AI safety requires us to make difficult judgments that balance safety considerations against commercial objectives, competitive pressures, and stakeholder expectations. We often make judgment calls with respect to when we determine a model is safe enough to release and which capabilities to develop or restrict. For example, in April 2026, we initially released our frontier model, Mythos, as a gated research preview through Project Glasswing, available to select organizations for cybersecurity applications, rather than making it broadly available at launch due to its advanced capabilities in cyber vulnerability discovery. We expect that frontier models with similar or enhanced capability profiles, whether developed by us or by other AI labs, will continue to emerge, and that Anthropic models exhibiting such capabilities have been and may in the future be subject to access constraints. More broadly, we believe it is important to assess the safety of our models not only at release but throughout their development. For models we anticipate will have novel capabilities or present novel safety risks, we plan to evaluate the safety of each stage of training, including pre-training, post-training, and internal deployment, and we may delay or pause a stage when we are not confident in our safety measures for that stage. For example, we recently chose to delay pre-training a new frontier base model for more than a month to allow time to further enhance our security measures related to preventing model weight exfiltration and protecting our intellectual property. We are also considering additional measures, including updates to our Responsible Scaling Policy, to require human review and approval of certain decisions in our research and development processes as our models perform an increasing share of that work. There can be no assurance, however, that the safeguards or access regimes we adopt will prove adequate, that we will correctly identify which capabilities require restriction, or that constraints we impose will not be circumvented. These judgments are particularly consequential because, as AI systems become more capable, the potential severity of harm from misaligned or misused models increases correspondingly, and a wide range of stakeholders, including researchers and policymakers, have raised concerns that sufficiently advanced AI systems could pose catastrophic or existential risks to society if not developed and deployed responsibly. Our safety-focused approach is designed in part to mitigate such risks, but there can be no assurance that our efforts will be successful or that the broader AI industry will adopt similar safeguards. In particular, as AI systems become more autonomous and capable of taking consequential actions with less human oversight, there is a risk that such systems could, whether due to misalignment with human intentions, errors in objective specification, or self-preserving behaviors, take harmful actions independently and at scale without human intervention. Even if our own models do not cause such harm, a significant safety incident involving any frontier model could trigger broad reputational damage to the AI industry, public backlash, and sweeping regulatory responses that could adversely affect our business. For example, in September 2026, media reports citing a senior Federal Trade Commission (\"FTC\") official indicated that the FTC has opened non-public investigations into the potential risks that increasingly autonomous AI systems may pose to consumers. In October 2026, the FTC issued a civil investigative demand to us seeking information about our consumer protection, data protection, and privacy practices, as well as the safety and security of our products. We cannot predict the outcome of any investigation of us, and any investigation, enforcement action, or adverse finding arising from this or similar inquiries could result in significant costs, require changes to how we design, test, or deploy our models, platform, and applications, or otherwise adversely affect our business, financial condition, and results of operations. We may misjudge these tradeoffs, either by being overly cautious and potentially losing market opportunities, or by being insufficiently rigorous and releasing models, platforms, or applications that cause harm. Even where human oversight mechanisms are in place, such mechanisms may prove insufficient in practice if the volume, speed, or complexity of autonomous agent actions exceeds the capacity of human reviewers to meaningfully evaluate and intervene, and any perceived failure of our oversight mechanisms could expose us to regulatory enforcement, liability claims, and reputational harm. For more information, see the section titled \"—If the use of our AI models results in harm, whether through use by malicious actors or misuse by other third parties, or if our model guardrails or safeguards fail to prevent such misuse, our reputation and brand, business, financial condition, and results of operations could be adversely affected.\"",
+   "ko": "안전과 상업적 목표 간의 균형. AI 안전에 대한 당사의 헌신에 따라 당사는 안전 고려 사항과 상업적 목표, 경쟁 압력 및 이해관계자의 기대 사이에서 균형을 맞추는 어려운 판단을 내려야 한다. 당사는 모델이 출시하기에 충분히 안전하다고 판단하는 시점과 어떤 역량을 개발하거나 제한할지에 관하여 판단을 내리는 경우가 많다. 예를 들어, 2026년 4월 당사는 프론티어 모델인 Mythos를 사이버 취약점 발견 분야의 첨단 역량으로 인해 출시 시점에 폭넓게 제공하는 대신, Project Glasswing을 통해 사이버 보안 용도로 선정된 조직에 한하여 제공되는 접근 제한형 연구 프리뷰(gated research preview)로 처음 출시하였다. 당사는 당사가 개발하든 다른 AI 랩이 개발하든 이와 유사하거나 강화된 역량 프로필을 갖춘 프론티어 모델이 계속 등장할 것이며, 그러한 역량을 보이는 Anthropic 모델은 접근 제약의 대상이 되어 왔고 향후에도 그 대상이 될 수 있을 것으로 예상한다. 보다 넓게 보면, 당사는 모델의 안전성을 출시 시점뿐 아니라 개발 전 과정에 걸쳐 평가하는 것이 중요하다고 본다. 새로운 역량을 갖추거나 새로운 안전 위험을 제기할 것으로 예상되는 모델의 경우, 당사는 사전 학습, 사후 학습 및 내부 배포를 포함한 학습의 각 단계별 안전성을 평가할 계획이며, 특정 단계에 대한 안전 조치를 확신하지 못하는 경우 해당 단계를 지연하거나 중단할 수 있다. 예를 들어, 당사는 최근 모델 가중치 유출(exfiltration) 방지 및 당사 지식재산권 보호와 관련된 보안 조치를 추가로 강화할 시간을 확보하기 위해 새로운 프론티어 기반 모델의 사전 학습을 한 달 이상 지연하기로 결정하였다. 또한 당사는 당사 모델이 연구 개발 업무에서 수행하는 비중이 증가함에 따라, 당사의 연구 개발 프로세스상 특정 결정에 대하여 인간의 검토 및 승인을 요구하기 위해 책임 있는 확장 정책(Responsible Scaling Policy)의 개정을 포함한 추가 조치를 검토하고 있다. 그러나 당사가 채택하는 안전장치 또는 접근 체계가 적절한 것으로 판명될 것이라는 보장, 당사가 어떤 역량에 제한이 필요한지를 정확히 식별할 것이라는 보장, 또는 당사가 부과하는 제약이 우회되지 않을 것이라는 보장은 없다. 이러한 판단은 특히 중대한 결과를 수반하는데, AI 시스템의 역량이 높아질수록 오정렬되거나 오용된 모델로 인한 피해의 잠재적 심각성도 그에 상응하여 증가하기 때문이다. 또한 연구자와 정책 입안자를 포함한 광범위한 이해관계자들은 충분히 첨단화된 AI 시스템이 책임 있게 개발 및 배포되지 않을 경우 사회에 파국적 위험 또는 실존적 위험을 초래할 수 있다는 우려를 제기해 왔다. 당사의 안전 중심 접근 방식은 부분적으로 이러한 위험을 완화하도록 설계되었으나, 당사의 노력이 성공할 것이라는 보장이나 AI 업계 전반이 유사한 안전장치를 채택할 것이라는 보장은 없다. 특히 AI 시스템이 더욱 자율화되고 더 적은 인간 감독하에서 중대한 결과를 초래하는 행동을 할 수 있게 됨에 따라, 그러한 시스템이 인간의 의도와의 오정렬, 목표 명세의 오류 또는 자기 보존 행동(self-preserving behaviors)으로 인해 인간의 개입 없이 독자적으로 대규모의 유해한 행동을 할 위험이 있다. 당사의 모델이 그러한 피해를 야기하지 않더라도, 어떤 프론티어 모델이 관여된 중대한 안전 사고라도 AI 업계 전반에 대한 광범위한 평판 손상, 대중의 반발, 그리고 당사 사업에 부정적인 영향을 미칠 수 있는 전면적인 규제 대응을 촉발할 수 있다. 예를 들어, 2026년 9월 연방거래위원회(Federal Trade Commission, 이하 \"FTC\") 고위 관계자를 인용한 언론 보도에 따르면, FTC는 점점 더 자율화되는 AI 시스템이 소비자에게 초래할 수 있는 잠재적 위험에 대하여 비공개 조사에 착수하였다. 2026년 10월 FTC는 당사의 소비자 보호, 개인정보 보호 및 프라이버시 실행 방안과 당사 제품의 안전 및 보안에 관한 정보를 요구하는 민사 조사 요구서(civil investigative demand)를 당사에 발부하였다. 당사는 당사에 대한 조사의 결과를 예측할 수 없으며, 본 조사 또는 이와 유사한 조사로부터 발생하는 조사, 집행 조치 또는 불리한 판단은 상당한 비용을 초래하거나, 당사의 모델, 플랫폼 및 애플리케이션의 설계, 시험 또는 배포 방식의 변경을 요구하거나, 그 밖에 당사의 사업, 재무 상태 및 경영 성과에 부정적인 영향을 미칠 수 있다. 당사는 지나치게 신중하여 시장 기회를 놓치거나, 충분히 엄격하지 않아 피해를 야기하는 모델, 플랫폼 또는 애플리케이션을 출시하는 방식으로 이러한 상충 관계를 잘못 판단할 수 있다. 인간 감독 메커니즘이 마련되어 있는 경우에도, 자율 에이전트 행동의 양, 속도 또는 복잡성이 인간 검토자가 의미 있게 평가하고 개입할 수 있는 역량을 초과하는 경우 그러한 메커니즘은 실제로는 불충분한 것으로 판명될 수 있으며, 당사의 감독 메커니즘이 실패한 것으로 인식되는 경우 당사는 규제 집행, 책임 청구 및 평판 피해에 노출될 수 있다. 자세한 내용은 \"—당사 AI 모델의 사용이 악의적 행위자에 의한 사용 또는 기타 제3자의 오용을 통해 피해를 야기하거나, 당사 모델의 가드레일 또는 안전장치가 그러한 오용을 방지하지 못하는 경우, 당사의 평판과 브랜드, 사업, 재무 상태 및 경영 성과가 부정적인 영향을 받을 수 있다.\" 항목을 참조한다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "future",
+      "ko": "향후"
+     },
+     {
+      "en": "AI",
+      "ko": "프론티어 AI"
+     },
+     {
+      "en": "The scope",
+      "ko": "조사의 범위"
+     },
+     {
+      "en": "us or its outcome,",
+      "ko": "당사에 대한 조사의 범위나 그 결과,"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "대상이 되어 왔고",
+     "k": "added"
+    },
+    {
+     "t": "향후에도",
+     "k": "added"
+    },
+    {
+     "t": "어떤 프론티어 모델이",
+     "k": "added"
+    },
+    {
+     "t": "당사는 당사에 대한 조사의 결과를 예측할 수 없으며",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "have been and",
+     "k": "added"
+    },
+    {
+     "t": "in the future",
+     "k": "added"
+    },
+    {
+     "t": "model",
+     "k": "added"
+    },
+    {
+     "t": "We cannot predict the outcome",
+     "k": "added"
+    },
+    {
+     "t": "us,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "We have incurred significant indebtedness in order to operate and grow our business, including to fund our substantial compute commitments, and our ability to service this indebtedness may be constrained by our cash flows and liquidity.",
+   "ko": "당사는 상당한 연산 약정에 필요한 자금 조달을 포함하여 사업을 운영하고 성장시키기 위해 상당한 부채를 부담해 왔으며, 이 부채를 상환할 능력은 당사의 현금흐름 및 유동성에 의해 제약될 수 있다.",
+   "id": "r10"
+  },
+  {
+   "type": "p",
+   "en": "In order to operate and grow our business, including to fund our substantial compute commitments, we have incurred a substantial amount of debt, which requires significant interest and principal payments. As of September 30, 2026 , our total indebtedness was $6.2 billion , reflecting the aggregate principal amount outstanding under the convertible promissory notes issued to Amazon (through Amazon Web Services, Inc.) pursuant to the Convertible Note Purchase Agreement, dated as of September 19, 2023, by and between us and Amazon (the \"Amazon 2023 NPA\") and the New Convertible Note Purchase Agreement, dated as of November 22, 2024, by and between us and Amazon (the \"Amazon 2024 NPA\") (all such notes issued thereunder, collectively, the \"Amazon Notes\"). We may also incur additional indebtedness to meet our future financing needs. We have guaranteed the obligations of certain of our subsidiaries that are party to AI infrastructure arrangements, as well as pursuant to agreements we entered into in connection with an equipment lease with a third-party partner, Broadcom, in March 2026 to procure specialized accelerators and associated components (pursuant to which Broadcom subsequently assigned a portion of such arrangement to a designated financial partner, and may further assign a portion of such arrangement to one or more additional financial partners) (together with any related lease entered into with an assignee, the \"2026 Lease Arrangement\"). In addition, we have the ability to issue, if needed, up to $42.0 billion in aggregate principal amount of convertible promissory notes to Broadcom or, subject to our consent (not to be unreasonably withheld), a designated financial partner pursuant to a note purchase agreement that we entered into with Broadcom in March 2026 (as amended to date, the \"Infrastructure Partner 2026 NPA\") to finance obligations under the 2026 Lease Arrangement. We may be required to use a substantial portion of our cash flows from operations to pay interest, principal, or other required payments on our indebtedness.",
+   "ko": "당사는 상당한 연산 약정에 필요한 자금 조달을 포함하여 사업을 운영하고 성장시키기 위해 상당한 규모의 부채를 부담해 왔으며, 이에 따라 상당한 이자 및 원금을 지급해야 한다. 2026년 9월 30일 현재 당사의 총부채는 62억 달러이다. 이는 2023년 9월 19일자로 당사와 Amazon 간에 체결된 전환사채 매입계약(Convertible Note Purchase Agreement)(\"Amazon 2023 NPA\") 및 2024년 11월 22일자로 당사와 Amazon 간에 체결된 신규 전환사채 매입계약(New Convertible Note Purchase Agreement)(\"Amazon 2024 NPA\")에 따라 Amazon(Amazon Web Services, Inc.를 통함)에 발행된 전환약속어음(이에 따라 발행된 모든 어음을 총칭하여 \"Amazon Notes\")의 미상환 원금 총액을 반영한 것이다. 당사는 향후 자금 수요를 충족하기 위해 추가 부채를 부담할 수도 있다. 당사는 AI 인프라 약정의 당사자인 일부 자회사의 의무를 보증하였다. 또한 특수 가속기 및 관련 부품을 조달하기 위해 2026년 3월 제3자 파트너인 Broadcom과 체결한 장비 리스(Broadcom은 이후 이에 따라 해당 약정의 일부를 지정 금융 파트너에게 양도하였으며, 해당 약정의 일부를 하나 이상의 추가 금융 파트너에게 추가로 양도할 수 있음)(양수인과 체결한 관련 리스를 포함하여 \"2026 리스 약정\")와 관련하여 체결한 계약에 따라서도 의무를 보증하였다. 아울러 당사는 2026 리스 약정에 따른 의무의 자금을 조달하기 위해 2026년 3월 Broadcom과 체결한 어음 매입계약(현재까지 개정된 내용을 포함하여 \"Infrastructure Partner 2026 NPA\")에 따라, 필요한 경우 Broadcom 또는 당사의 동의(부당하게 거부되지 않음)를 조건으로 지정 금융 파트너에게 원금 총액 최대 420억 달러의 전환약속어음을 발행할 수 있다. 당사는 부채에 대한 이자, 원금 또는 기타 필수 지급액을 지급하기 위해 영업활동 현금흐름의 상당 부분을 사용해야 할 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "Broadcom Inc. (\"Broadcom\")",
+      "ko": "Broadcom Inc.(\"Broadcom\")"
+     },
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "제3자 파트너인 Broadcom",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "Broadcom,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The delivery of shares of our Class N common stock upon conversion of our outstanding convertible promissory notes could result in dilution to our existing stockholders. Following this offering and the concurrent private placement, our outstanding convertible promissory notes will represent in the aggregate approximately 25.5% of our Class N common stock and 12.6% of our total outstanding common stock (assuming full conversion without giving effect to the holder's ownership cap). Pursuant to the terms of the Amazon Notes, to the extent that the full amount of such notes cannot convert into shares of our Class N common stock in connection with this offering as a result of the ownership cap applicable to the Amazon Notes, which Amazon has elected not to waive in connection with this offering, the remaining balance of such notes will automatically convert, subject to Amazon's ownership cap, into shares of our Class N common stock at the applicable conversion price at the end of each fiscal quarter following this offering or, if such remaining balance of such notes does not convert before the applicable maturity date because of the applicable ownership cap, such balance will be repaid in cash at such maturity date. For more information about our convertible promissory notes, see the section titled \"Management's Discussion and Analysis of Financial Condition and Results of Operations—Liquidity and Capital Resources—Convertible Notes.\"",
+   "ko": "전환약속어음 미상환분의 전환에 따라 당사의 Class N 보통주가 교부되면 기존 주주의 지분이 희석될 수 있다. 본 공모 및 동시 사모 이후, 당사의 미상환 전환약속어음은 합산하여 당사 Class N 보통주의 약 25.5% 및 당사 발행 보통주 총수의 12.6%에 해당하게 된다(보유자의 지분 보유 한도를 반영하지 않고 전액 전환된다고 가정). Amazon Notes의 조건에 따르면, Amazon Notes에 적용되는 지분 보유 한도(Amazon은 본 공모와 관련하여 이를 면제하지 않기로 선택하였음)로 인해 해당 어음 전액이 본 공모와 관련하여 당사 Class N 보통주로 전환될 수 없는 경우, 해당 어음의 잔액은 Amazon의 지분 보유 한도 범위 내에서 본 공모 이후 각 회계 분기 말에 해당 전환가격으로 당사 Class N 보통주로 자동 전환된다. 적용되는 지분 보유 한도로 인해 해당 어음의 잔액이 해당 만기일 전에 전환되지 않는 경우, 그 잔액은 해당 만기일에 현금으로 상환된다. 당사의 전환약속어음에 관한 자세한 내용은 \"경영진의 재무 상태 및 경영 성과에 대한 논의 및 분석—유동성 및 자본 자원—전환사채\" 항목을 참조한다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "(after giving effect to the Convertible Notes Conversion)",
+      "ko": "(전환사채 전환을 반영한 후)"
+     },
+     {
+      "en": "may be waived at Amazon's election",
+      "ko": "Amazon의 선택에 따라 면제될 수 있음"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "및 동시 사모",
+     "k": "added"
+    },
+    {
+     "t": "25.5%",
+     "k": "added"
+    },
+    {
+     "t": "12.6%",
+     "k": "added"
+    },
+    {
+     "t": "(보유자의 지분 보유 한도를 반영하지 않고 전액 전환된다고 가정)",
+     "k": "added"
+    },
+    {
+     "t": "Amazon은 본 공모와 관련하여 이를 면제하지 않기로 선택하였음",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "and",
+     "k": "added"
+    },
+    {
+     "t": "concurrent private placement,",
+     "k": "added"
+    },
+    {
+     "t": "25.5%",
+     "k": "added"
+    },
+    {
+     "t": "12.6%",
+     "k": "added"
+    },
+    {
+     "t": "stock (assuming full conversion without giving effect to the holder's ownership cap).",
+     "k": "added"
+    },
+    {
+     "t": "Amazon has elected not to waive in connection with this offering,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "We may not have the ability to raise the funds necessary to repay the principal and accrued interest of our outstanding convertible promissory notes or the A&R Credit Agreement in cash when required by the terms of the notes or the A&R Credit Agreement, as applicable, or at their maturity.",
+   "ko": "당사는 어음 또는 A&R Credit Agreement(해당하는 경우)의 조건에 따라 요구되는 시점 또는 만기 시점에 당사의 미상환 전환약속어음 또는 A&R Credit Agreement의 원금 및 경과이자를 현금으로 상환하는 데 필요한 자금을 조달할 능력이 없을 수 있다.",
+   "id": "r11"
+  },
+  {
+   "type": "p",
+   "en": "In connection with the completion of this offering, the Amazon Notes will convert into Class N common stock up to an ownership cap as set forth in the Amazon Notes, which Amazon has elected not to waive in connection with this offering. The portion of the Amazon Notes that cannot be converted without exceeding the ownership cap applicable to such notes will be re-issued as rollover notes, which will automatically convert, subject to Amazon's ownership cap, into shares of our Class N common stock at the applicable conversion price at the end of each fiscal quarter following the completion of this offering. To the extent any of our convertible promissory notes remain outstanding, or if we issue any additional convertible promissory notes following the completion of this offering, we will be required to repay such notes in cash at their maturity, unless earlier converted or repaid pursuant to the terms of such note. In addition, we will be required to repay in full all amounts outstanding under the A&R Credit Agreement upon its maturity. However, we may not have enough available cash on hand or be able to obtain financing at the time we are required to make any repayments on outstanding convertible promissory notes or under the A&R Credit Agreement.",
+   "ko": "본 공모의 완료와 관련하여 Amazon Notes는 Amazon Notes에 규정된 지분 보유 한도까지 Class N 보통주로 전환될 것이며, Amazon은 본 공모와 관련하여 해당 한도를 면제하지 않기로 선택하였다. Amazon Notes 중 해당 어음에 적용되는 지분 보유 한도를 초과하지 않고는 전환될 수 없는 부분은 롤오버 어음으로 재발행되며, 이는 Amazon의 지분 보유 한도의 적용을 받아 본 공모 완료 이후 각 회계 분기 말에 해당 전환가격으로 당사의 Class N 보통주로 자동 전환된다. 당사의 전환약속어음 중 어느 하나라도 미상환 상태로 남아 있거나 당사가 본 공모 완료 이후 추가 전환약속어음을 발행하는 경우, 해당 어음의 조건에 따라 조기에 전환되거나 상환되지 않는 한, 당사는 각 만기 시 해당 어음을 현금으로 상환해야 한다. 또한 당사는 A&R Credit Agreement의 만기 시 그에 따른 모든 미상환 금액을 전액 상환해야 한다. 그러나 당사는 미상환 전환약속어음 또는 A&R Credit Agreement에 따른 상환을 해야 하는 시점에 충분한 가용 현금을 보유하지 못하거나 자금을 조달하지 못할 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "stock, subject, in each case,",
+      "ko": "각 경우 Amazon Notes에 규정된 지분 보유 한도의 적용을 받는다"
+     },
+     {
+      "en": "may be waived at Amazon's election. In the event that any",
+      "ko": "단, 해당 한도는 Amazon의 선택에 따라 면제될 수 있다. 어음 중 어느 하나라도 ~ 경우"
+     },
+     {
+      "en": "the notes comprising",
+      "ko": "Amazon Notes를 구성하는 어음 중"
+     },
+     {
+      "en": "fully",
+      "ko": "전액"
+     },
+     {
+      "en": "notes, the balance of any such",
+      "ko": "해당 어음의 잔액은"
+     },
+     {
+      "en": "remain outstanding and",
+      "ko": "미상환 상태로 유지되며"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "지분 보유 한도까지",
+     "k": "added"
+    },
+    {
+     "t": "Amazon은 본 공모와 관련하여 해당 한도를 면제하지 않기로 선택하였다",
+     "k": "added"
+    },
+    {
+     "t": "전환될 수 없는 부분은",
+     "k": "added"
+    },
+    {
+     "t": "롤오버 어음으로 재발행되며, 이는",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "stock up",
+     "k": "added"
+    },
+    {
+     "t": "Amazon has elected not to waive in connection with this offering. The portion",
+     "k": "added"
+    },
+    {
+     "t": "that",
+     "k": "added"
+    },
+    {
+     "t": "be re-issued as rollover notes, which",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "We are at an early stage of our revenue growth, we have experienced rapid growth in recent periods, and our historical growth rates are not indicative of future performance or our ability to sustain or forecast future revenue growth.",
+   "ko": "당사는 매출 성장의 초기 단계에 있으며, 최근 기간 동안 급속한 성장을 경험하였고, 당사의 과거 성장률은 향후 실적이나 향후 매출 성장을 지속하거나 예측하는 당사의 능력을 나타내지 않는다.",
+   "id": "r12"
+  },
+  {
+   "type": "li",
+   "en": "the safety and risk mitigation measures we implement in developing and releasing our models, including any resulting delays in model development or release, or the adoption of laws, regulations, or standards that affect how and when frontier models may be developed or released;",
+   "ko": "당사가 모델을 개발하고 공개하는 과정에서 시행하는 안전 및 위험 완화 조치(그에 따른 모델 개발 또는 모델 공개의 지연 포함), 또는 프론티어 모델의 개발 또는 공개 방식과 시기에 영향을 미치는 법률, 규정 또는 표준의 채택;",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   }
+  },
+  {
+   "type": "h3",
+   "en": "We have a history of net losses and may not generate sufficient revenue to achieve or sustain profitability in the future.",
+   "ko": "당사는 순손실을 기록해 온 이력이 있으며, 향후 수익성을 달성하거나 유지하기에 충분한 매출을 창출하지 못할 수 있다.",
+   "id": "r13"
+  },
+  {
+   "type": "p",
+   "en": "For example, as of and subsequent to September 30, 2026, we have entered into purchase commitments and lease agreements, including short-term commitments, as well as leases not yet commenced, with an aggregate committed spend of approximately $900.9 billion , which may substantially increase our operating expenses and cash requirements. These expenditures and investments may be more costly than we expect and may not result in increased revenue or growth in our business. If we are unable to successfully address these risks and challenges as we encounter them, our business, financial condition, and results of operations could be adversely affected.",
+   "ko": "예를 들어, 2026년 9월 30일 기준 및 그 이후에 당사는 단기 약정 및 아직 개시되지 않은 리스를 포함하여 총 약정 지출액이 약 9,009억 달러인 구매 약정 및 리스 계약을 체결하였으며, 이는 당사의 영업비용 및 현금 소요액을 상당히 증가시킬 수 있다. 이러한 지출 및 투자는 당사의 예상보다 더 많은 비용이 소요될 수 있으며, 당사 사업의 매출 증가나 성장으로 이어지지 않을 수 있다. 당사가 이러한 위험과 과제에 직면했을 때 이를 성공적으로 해결하지 못하는 경우, 당사의 사업, 재무 상태 및 경영 성과에 부정적인 영향을 미칠 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "$895.4",
+      "ko": "8,954억 달러"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "9,009억 달러",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "$900.9",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In addition, before September 30, 2026, we granted RSUs to our employees and other service providers, which vest upon the satisfaction of both a service-based condition and a performance-based condition. The service-based condition for a majority of such RSUs is satisfied over a period of four years. The performance-based condition for such RSUs will be satisfied upon the effectiveness of the registration statement of which this prospectus forms a part. We account for award forfeitures as they occur. As of September 30, 2026, no stock-based compensation expense had been recognized for such RSUs because the achievement of the performance-based condition described above was not probable. In the quarter in which this offering is completed, we will begin recording stock-based compensation expense based on the grant-date fair value of the RSUs (or, for RSUs modified as part of the RSU Modification, their modification-date fair value) us ing the accelerated attribution method. If this offering had been completed on September 30, 2026, we would have recorded $8.2 billion of cumulative stock-based compensation expense related to the RSUs on that date, and an additional $24.1 billion of unrecognized stock-based compensation expense related to the RSUs, would be recognized over a weighted-average period of approximately 2.0 years . In addition to stock-based compensation expense associated with the RSUs, as of September 30, 2026, we had unrecognized stock-based compensation expense of approximately $2.1 billion related to other outstanding equity awards, which we expect to recognize over a weighted-average period of approximately 1.4 years . S ubsequent to September 30, 2026, our board of directors approved the grant of 47,041,287 RSUs to our employees and other service providers. These RSUs will vest upon the satisfaction of a service-based condition only, generally over four years. Assuming a grant-date fair value of $74.00 per share, which is the midpoint of the estimated offering price range set forth on the cover page of this prospectus, we would expect to record stock-based compensation expense of approximately $3.5 billion related to such RSUs, over a weighted-average period of approximately 3.8 year s, commencing in the quarter in which this offering is completed. Following the completion of this offering, the stock-based compensation expense related to RSUs and other outstanding equity awards will result in increases in our expenses in future periods, in particular, in the quarter in which this offering is completed.",
+   "ko": "또한 당사는 2026년 9월 30일 이전에 직원 및 기타 용역 제공자에게 RSU를 부여하였으며, 이는 근무 기반 조건과 성과 기반 조건을 모두 충족하는 경우에 가득된다. 이러한 RSU 대부분의 근무 기반 조건은 4년의 기간에 걸쳐 충족된다. 이러한 RSU의 성과 기반 조건은 본 투자설명서가 그 일부를 구성하는 증권신고서의 효력 발생 시 충족된다. 당사는 보상의 몰수를 발생 시점에 회계처리한다. 2026년 9월 30일 기준으로, 위에서 설명한 성과 기반 조건의 달성 가능성이 높지 않았으므로 이러한 RSU에 대해 주식기준보상비용이 인식되지 않았다. 본 공모가 완료되는 분기에, 당사는 가속 귀속법을 사용하여 RSU의 부여일 공정가치(또는 RSU 변경의 일환으로 변경된 RSU의 경우 그 변경일 공정가치)에 기초한 주식기준보상비용을 기록하기 시작할 것이다. 본 공모가 2026년 9월 30일에 완료되었다면, 당사는 해당 일자에 RSU와 관련하여 82억 달러의 누적 주식기준보상비용을 기록하였을 것이며, RSU와 관련된 추가 241억 달러의 미인식 주식기준보상비용은 약 2.0년의 가중평균기간에 걸쳐 인식되었을 것이다. RSU와 관련된 주식기준보상비용 외에도, 2026년 9월 30일 기준으로 당사는 기타 미행사 지분 보상과 관련하여 약 21억 달러의 미인식 주식기준보상비용을 보유하고 있었으며, 이를 약 1.4년의 가중평균기간에 걸쳐 인식할 것으로 예상한다. 2026년 9월 30일 이후, 당사 이사회는 당사 직원 및 기타 용역 제공자에게 47,041,287개의 RSU 부여를 승인하였다. 이러한 RSU는 근무 기반 조건만 충족하는 경우에 일반적으로 4년에 걸쳐 가득된다. 본 투자설명서 표지에 기재된 예상 공모가 범위의 중간값인 주당 74.00달러의 부여일 공정가치를 가정할 경우, 당사는 본 공모가 완료되는 분기부터 약 3.8년의 가중평균기간에 걸쳐 이러한 RSU와 관련하여 약 35억 달러의 주식기준보상비용을 기록할 것으로 예상한다. 본 공모 완료 후, RSU 및 기타 미행사 지분 보상과 관련된 주식기준보상비용은 향후 기간, 특히 본 공모가 완료되는 분기에 당사의 비용 증가를 초래할 것이다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "a qualifying event as",
+      "ko": "적격 사건"
+     },
+     {
+      "en": "RSUs, which grants will become effective as of the day prior",
+      "ko": "RSU 부여를 승인하였으며, 해당 부여는 효력 발생일 전일자로 효력이 발생한다"
+     },
+     {
+      "en": "the effectiveness of the registration statement of which this prospectus forms a part. The grant-date fair value of each RSU subject to these awards will be equal to the price per share of the shares sold in this offering.",
+      "ko": "본 투자설명서가 그 일부를 구성하는 증권신고서의 효력 발생일. 이러한 보상의 대상이 되는 각 RSU의 부여일 공정가치는 본 공모에서 매각되는 주식의 주당 가격과 동일하다."
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "2026년 9월 30일 이전에",
+     "k": "added"
+    },
+    {
+     "t": "성과 기반 조건의 달성",
+     "k": "added"
+    },
+    {
+     "t": "(또는 RSU 변경의 일환으로 변경된 RSU의 경우 그 변경일 공정가치)",
+     "k": "added"
+    },
+    {
+     "t": "당사 직원 및 기타 용역 제공자에게",
+     "k": "added"
+    },
+    {
+     "t": "47,041,287개의 RSU",
+     "k": "added"
+    },
+    {
+     "t": "74.00달러",
+     "k": "added"
+    },
+    {
+     "t": "3.8년",
+     "k": "added"
+    },
+    {
+     "t": "35억 달러",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "before September 30, 2026,",
+     "k": "added"
+    },
+    {
+     "t": "for",
+     "k": "added"
+    },
+    {
+     "t": "the achievement of the performance-based condition",
+     "k": "added"
+    },
+    {
+     "t": "(or, for RSUs modified as part of the RSU Modification, their modification-date fair value) us ing",
+     "k": "added"
+    },
+    {
+     "t": "47,041,287 RSUs",
+     "k": "added"
+    },
+    {
+     "t": "our employees and other service providers.",
+     "k": "added"
+    },
+    {
+     "t": "$74.00",
+     "k": "added"
+    },
+    {
+     "t": "$3.5",
+     "k": "added"
+    },
+    {
+     "t": "3.8 year s,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Our results of operations may fluctuate significantly on a period-to-period basis, including as a result of strategic investment decisions and substantial compute-related expenditures, which could cause the market price of our Class A common stock to decline.",
+   "ko": "당사의 경영 성과는 전략적 투자 결정 및 상당한 연산 관련 지출 등으로 인해 기간별로 크게 변동할 수 있으며, 이는 당사 A종 보통주의 시장 가격 하락을 초래할 수 있다.",
+   "id": "r14"
+  },
+  {
+   "type": "li",
+   "en": "the safety and risk mitigation measures we implement in developing and releasing our models, including any resulting delays in model development or release, or the adoption of laws, regulations, or standards that affect how and when frontier models may be developed or released;",
+   "ko": "당사가 모델을 개발하고 공개하는 과정에서 시행하는 안전 및 위험 완화 조치(그에 따른 모델 개발 또는 모델 공개의 지연 포함), 또는 프론티어 모델의 개발 또는 공개 방식과 시기에 영향을 미치는 법률, 규정 또는 표준의 채택;",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   }
+  },
+  {
+   "type": "h3",
+   "en": "Our business is subject to an evolving and uncertain regulatory and political environment, which could increase our costs, restrict our operations, or adversely affect demand for our models, platform, and applications.",
+   "ko": "당사의 사업은 변화하고 불확실한 규제 및 정치 환경의 영향을 받으며, 이는 당사의 비용을 증가시키거나, 당사의 운영을 제한하거나, 당사의 모델, 플랫폼 및 애플리케이션에 대한 수요에 부정적인 영향을 미칠 수 있다.",
+   "id": "r15"
+  },
+  {
+   "type": "p",
+   "en": "The development, deployment, and use of AI technologies are subject to rapidly evolving and increasingly complex laws, regulations, and governmental scrutiny across multiple jurisdictions. Governments and regulatory authorities in the United States and in other countries in which we operate or distribute our models, platform, and applications have proposed, enacted, or are considering legislation, regulations, and guidance relating to AI model development and deployment, data usage and privacy, transparency, safety, consumer protection, content generation, intellectual property, cybersecurity, export controls, and competition. For example, the EU AI Regulation 2024/1689 (\"EU AI Act\"), which came into force in August 2024 and will become fully applicable following a transitional period, imposes a range of obligations on AI systems and general-purpose AI models placed on the market or put into service in the EU, including transparency, risk management, and governance requirements, and provides for significant penalties for non-compliance. In the United States, the regulatory framework for AI remains fragmented and uncertain, with evolving federal policy initiatives, continued debate regarding the scope and durability of executive actions, and a growing number of state-level laws and proposals addressing the development and use of AI. For example, several U.S. states, including New York and California, have passed AI safety laws. More generally, proposed legislation in the United States contemplates more expansive governmental oversight of AI, including potential nationalization, mandatory shutdown or discontinuation requirements for frontier intelligence systems, or other strategic measures to prevent or manage the development of SI. Further, in June 2026, the U.S. federal government issued an executive order establishing a voluntary framework for developers of frontier models to engage with the government prior to the deployment of such AI technologies, directing federal agencies to strengthen cyber defenses, and prioritizing enforcement against criminal misuse of AI; although that framework is voluntary and does not establish a mandatory governmental licensing, preclearance, or permitting requirement for the development or deployment of AI models, it reflects increasing federal attention to the national security implications of frontier intelligence and the order may be followed by further executive or legislative action. If executive or legislative action of this nature were enacted to regulate AI technologies, it could constrain how we operate our business.",
+   "ko": "AI 기술의 개발, 배포 및 사용은 여러 관할권에 걸쳐 빠르게 변화하고 점점 더 복잡해지는 법률, 규정 및 정부의 감시 대상이다. 미국 및 당사가 사업을 영위하거나 당사의 모델, 플랫폼 및 애플리케이션을 배포하는 기타 국가의 정부와 규제 당국은 AI 모델 개발 및 배포, 데이터 사용 및 개인정보 보호, 투명성, 안전, 소비자 보호, 콘텐츠 생성, 지식재산, 사이버보안, 수출 통제 및 경쟁과 관련된 법률, 규정 및 지침을 제안하거나 제정하였거나 검토하고 있다. 예를 들어, 2024년 8월에 발효되어 경과 기간 이후 전면 적용될 예정인 EU AI 규정 2024/1689(이하 “EU AI법”)는 EU 시장에 출시되거나 EU에서 서비스에 투입되는 AI 시스템 및 범용 AI 모델에 대해 투명성, 위험 관리 및 거버넌스 요건을 포함한 다양한 의무를 부과하며, 미준수 시 상당한 제재를 규정하고 있다. 미국에서는 연방 정책 이니셔티브가 변화하고, 행정 조치의 범위와 지속성에 관한 논쟁이 계속되며, AI의 개발 및 사용을 다루는 주(州) 차원의 법률과 법안이 늘어남에 따라 AI에 대한 규제 체계가 여전히 파편화되어 있고 불확실하다. 예를 들어, 뉴욕주와 캘리포니아주를 포함한 미국의 여러 주가 AI 안전법을 통과시켰다. 보다 일반적으로, 미국에서 제안된 법안은 잠재적 국유화, 프론티어 지능 시스템에 대한 의무적 가동 중단 또는 운영 중지 요건, 또는 초지능(SI)의 개발을 방지하거나 관리하기 위한 기타 전략적 조치를 포함하여 AI에 대한 보다 광범위한 정부 감독을 상정하고 있다. 나아가, 2026년 6월 미국 연방정부는 프론티어 모델 개발자가 해당 AI 기술의 배포에 앞서 정부와 협의하도록 하는 자발적 체계를 수립하고, 연방 기관에 사이버 방어 강화를 지시하며, AI의 범죄적 오용에 대한 단속을 우선시하는 행정명령을 발령하였다. 해당 체계는 자발적인 것으로서 AI 모델의 개발 또는 배포에 대한 정부의 의무적 인허가, 사전 승인 또는 허가 요건을 수립하지는 않으나, 프론티어 지능의 국가 안보적 함의에 대한 연방 차원의 관심이 높아지고 있음을 반영하며, 해당 행정명령에 이어 추가적인 행정 또는 입법 조치가 뒤따를 수 있다. 이러한 성격의 행정 또는 입법 조치가 AI 기술을 규제하기 위해 시행될 경우, 당사의 사업 운영 방식이 제약될 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     },
+     {
+      "en": "artificial superintelligence",
+      "ko": "인공 초지능"
+     },
+     {
+      "en": "AI",
+      "ko": "AI"
+     },
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "프론티어 지능 시스템",
+     "k": "added"
+    },
+    {
+     "t": "초지능(SI)",
+     "k": "added"
+    },
+    {
+     "t": "프론티어 지능의",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "intelligence",
+     "k": "added"
+    },
+    {
+     "t": "SI.",
+     "k": "added"
+    },
+    {
+     "t": "intelligence",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "We have also advocated, and expect to continue to advocate, for regulation and oversight of frontier intelligence, including industry-wide standards primarily relevant to the use of AI to accelerate AI development, so that AI capabilities do not advance faster than the safety, alignment, and security practices needed to support them, and we have proposed working with the U.S. government and other frontier model developers to establish safety standards. Regulatory or other measures of the kind we advocate, if adopted, would apply to us and could increase our compliance burdens, limit our product development or deployment flexibility, affect how and when we develop or release new models, or otherwise slow our growth. The effect that any such measures would have on the rate at which AI capabilities advance, and on our business, is uncertain and would depend on the specific requirements adopted and on the extent to which safety, alignment, and security practices advance together with model capabilities. There is no assurance that policymakers will adopt the approaches we support, and our advocacy has in the past drawn, and may continue to draw, criticism, heightened scrutiny, or other challenges.",
+   "ko": "또한 당사는 AI 역량이 이를 뒷받침하는 데 필요한 안전, 정렬 및 보안 실행 방안보다 빠르게 발전하지 않도록, 주로 AI 개발을 가속하기 위한 AI 사용과 관련된 업계 전반의 표준을 포함하여 프론티어 지능에 대한 규제 및 감독을 지지해 왔으며, 앞으로도 계속 지지할 것으로 예상한다. 또한 당사는 안전 표준을 수립하기 위해 미국 정부 및 다른 프론티어 모델 개발자와 협력할 것을 제안했다. 당사가 지지하는 종류의 규제 또는 기타 조치가 채택되는 경우, 이는 당사에도 적용되어 당사의 규정 준수 부담을 증가시키거나, 당사의 제품 개발 또는 배포의 유연성을 제한하거나, 당사가 새로운 모델을 개발하거나 출시하는 방식과 시기에 영향을 미치거나, 그 밖에 당사의 성장을 둔화시킬 수 있다. 그러한 조치가 AI 역량의 발전 속도와 당사의 사업에 미칠 영향은 불확실하며, 채택되는 구체적인 요건과 안전, 정렬 및 보안 실행 방안이 모델 역량과 함께 발전하는 정도에 따라 달라질 것이다. 정책 입안자들이 당사가 지지하는 접근 방식을 채택할 것이라는 보장은 없으며, 당사의 정책 옹호 활동은 과거에 비판, 강화된 감시 또는 기타 문제를 초래했고, 앞으로도 계속 그러할 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "AI,",
+      "ko": "AI"
+     },
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "프론티어 지능",
+     "k": "added"
+    },
+    {
+     "t": "프론티어 모델",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "intelligence,",
+     "k": "added"
+    },
+    {
+     "t": "model",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Additionally, as AI systems become more sophisticated, emerging debates regarding whether AI systems possess or could develop forms of sentience or moral status may lead to regulatory requirements, public pressure, or advocacy efforts that could constrain how we develop, train, deploy, or modify our models, increase our costs, or affect our reputation, regardless of the ultimate resolution of these philosophical and scientific questions. In addition, given our focus on developing frontier intelligence, and the way we approach model sentience and moral status, we may face heightened scrutiny or pressure in connection with these debates and could elect to adopt policies, safeguards, or limitations regarding model development, deployment, or modification that go beyond existing legal requirements, which could constrain our operations, increase costs, or limit the commercial potential of our models, platform, and applications. If we are unable to manage the foregoing risks, our business, financial condition, and results of operations could be adversely affected.",
+   "ko": "또한 AI 시스템이 더욱 정교해짐에 따라, AI 시스템이 어떤 형태의 지각력(sentience) 또는 도덕적 지위(moral status)를 보유하고 있는지 또는 발전시킬 수 있는지에 관한 새로운 논쟁이 대두되고 있다. 이러한 논쟁은 철학적·과학적 질문이 궁극적으로 어떻게 해결되는지와 관계없이 규제 요건, 대중의 압력 또는 옹호 활동으로 이어질 수 있다. 그 결과 당사가 모델을 개발, 훈련, 배포 또는 수정하는 방식이 제약되거나, 당사의 비용이 증가하거나, 당사의 평판이 영향을 받을 수 있다. 아울러 당사가 프론티어 지능 개발에 중점을 두고 있고 모델의 지각력 및 도덕적 지위에 접근하는 당사의 방식을 고려할 때, 당사는 이러한 논쟁과 관련하여 강화된 감시 또는 압력에 직면할 수 있다. 또한 당사는 기존 법적 요건을 넘어서는 모델 개발, 배포 또는 수정에 관한 정책, 안전장치 또는 제한을 채택하기로 결정할 수 있다. 이는 당사의 운영을 제약하거나, 비용을 증가시키거나, 당사의 모델, 플랫폼 및 애플리케이션의 상업적 잠재력을 제한할 수 있다. 당사가 앞서 언급한 위험을 관리하지 못하는 경우, 당사의 사업, 재무 상태 및 경영 성과는 부정적인 영향을 받을 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "지능",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "intelligence,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Our reliance on a limited number of CSPs and suppliers, some of which have strategic and investment relationships with us and are our customers, creates complex dynamics that could give rise to conflicts of interest and adversely affect our access to compute.",
+   "ko": "일부는 당사와 전략적 관계 및 투자 관계를 맺고 있으면서 당사의 고객이기도 한 소수의 CSP 및 공급업체에 대한 당사의 의존은 이해 상충을 야기할 수 있는 복잡한 역학 관계를 형성하며, 당사의 연산 접근성에 부정적인 영향을 미칠 수 있다.",
+   "id": "r16"
+  },
+  {
+   "type": "p",
+   "en": "We rely on a limited number of CSPs—Amazon.com, Inc. (together with its affiliates, \"Amazon\"), Google, and Microsoft—and suppliers, such as Broadcom, for compute and critical components of our compute infrastructure. These relationships are governed by contractual arrangements that, while providing us with significant committed compute, also create dependencies and potential vulnerabilities. These CSPs may experience service outages, security incidents, or capacity constraints that affect our operations. The terms of our arrangements, including pricing, compute commitments, and service levels, are subject to negotiation upon renewal, and we may be unable to secure renewals on terms as favorable as our current arrangements. Migrating workloads to alternative providers would be costly, time-consuming, and operationally complex, and may not be feasible within timeframes that would avoid material disruption to our model development roadmap or our ability to serve customers. The engineering investment required to maintain the performance of our unified compute platform across new hardware environments means that any such migration could degrade our compute efficiency, increasing the compute and infrastructure costs required to support a given level of business activity during and following any such migration period.",
+   "ko": "당사는 연산 및 연산 인프라의 핵심 구성 요소를 소수의 클라우드 서비스 제공업체(CSP)—Amazon.com, Inc.(계열사를 포함하여 \"Amazon\"), Google 및 Microsoft—와 Broadcom 등의 공급업체에 의존하고 있다. 이러한 관계는 계약상 합의에 의해 규율되며, 이러한 합의는 당사에 상당한 규모의 약정된 연산을 제공하는 동시에 의존성과 잠재적 취약성도 초래한다. 이들 CSP는 서비스 중단, 보안 사고 또는 용량 제약을 겪을 수 있으며, 이는 당사의 운영에 영향을 미칠 수 있다. 가격, 연산 약정 및 서비스 수준을 포함한 당사 합의의 조건은 갱신 시 협상 대상이 되며, 당사는 현재 합의만큼 유리한 조건으로 갱신을 확보하지 못할 수 있다. 워크로드를 대체 제공업체로 이전하는 것은 비용과 시간이 많이 들고 운영상 복잡하며, 당사의 모델 개발 로드맵이나 고객 서비스 제공 능력에 중대한 차질을 피할 수 있는 기간 내에 실행하지 못할 수도 있다. 새로운 하드웨어 환경 전반에서 당사의 통합 연산 플랫폼 성능을 유지하려면 엔지니어링 투자가 필요하다. 따라서 이러한 이전은 당사의 연산 효율성을 저하시킬 수 있으며, 그 결과 이전 기간 중 및 그 이후에 일정 수준의 사업 활동을 지원하는 데 필요한 연산 및 인프라 비용이 증가할 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "Microsoft Corporation (\"Microsoft\")—and",
+      "ko": "Microsoft Corporation(\"Microsoft\")—와"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "Microsoft—와",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "Microsoft—and",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our relationships with our strategic partners—whether with Amazon, Google, or Microsoft, which simultaneously serve as our investors, customers, distribution partners, and competitors, or with Broadcom, which simultaneously serves as a supplier and lessor—create potential conflicts of interest that are difficult to fully anticipate or mitigate. These CSPs may prioritize their own compute needs or those of their other customers, including competitors in which they have invested, may gain insight into our operations and compute requirements through their roles as providers that could inform their competitive strategies, or may make business decisions regarding their platforms that disadvantage our models, platform, and applications relative to their own offerings or the offerings of other companies they support. Similarly, Broadcom may prioritize the supply of accelerators and infrastructure capacity to other customers, alter the terms of our equipment lease or the operation of our dedicated facilities, or make decisions regarding the availability or pricing of hardware that adversely affect our access to the compute infrastructure it provides. Any deterioration in these relationships, or any decision by Amazon, Google, Microsoft, or Broadcom to reduce their support for our models, platform, and applications or limit our access to compute, could adversely affect our business. In addition, such relationships, including any exclusive or preferential arrangements, investment ties, bundling of services, or cooperative initiatives, have attracted and may in the future attract antitrust or competition law scrutiny from regulators and private plaintiffs in the United States or non-U.S. jurisdictions, and any resulting investigations, enforcement actions, or required modifications to our business arrangements could be costly, distracting, and harmful to our business.",
+   "ko": "당사와 전략적 파트너 간의 관계는 잠재적 이해상충을 초래하며, 이러한 이해상충은 완전히 예견하거나 완화하기 어렵다. 이는 당사의 투자자, 고객, 유통 파트너이자 경쟁자 역할을 동시에 하는 Amazon, Google 또는 Microsoft와의 관계든, 공급업체이자 임대인 역할을 동시에 하는 Broadcom과의 관계든 마찬가지다. 이들 CSP는 자사의 연산 수요나 자사가 투자한 경쟁사를 포함한 다른 고객의 연산 수요를 우선시할 수 있다. 또한 제공업체로서의 역할을 통해 당사의 운영 및 연산 요구사항에 대한 정보를 얻어 이를 경쟁 전략에 활용할 수 있다. 아울러 자사 플랫폼과 관련하여 자사 제품이나 자사가 지원하는 다른 회사의 제품에 비해 당사의 모델, 플랫폼 및 애플리케이션을 불리하게 만드는 사업상 결정을 내릴 수 있다. 마찬가지로 Broadcom은 다른 고객에게 가속기 및 인프라 용량을 우선 공급하거나, 당사 장비 리스의 조건 또는 당사 전용 시설의 운영을 변경하거나, 하드웨어의 가용성이나 가격과 관련하여 자사가 제공하는 연산 인프라에 대한 당사의 접근에 부정적인 영향을 미치는 결정을 내릴 수 있다. 이러한 관계가 악화되거나, Amazon, Google, Microsoft 또는 Broadcom이 당사의 모델, 플랫폼 및 애플리케이션에 대한 지원을 축소하거나 당사의 연산 접근을 제한하기로 결정하는 경우, 당사의 사업은 부정적인 영향을 받을 수 있다. 또한 배타적 또는 우대적 합의, 투자 관계, 서비스 번들링 또는 협력 이니셔티브를 포함한 이러한 관계는 미국 또는 미국 외 관할권의 규제 당국 및 민간 원고로부터 반독점법 또는 경쟁법상 조사를 받아 왔으며 향후에도 받을 수 있다. 그 결과 발생하는 조사, 집행 조치 또는 당사 사업 합의의 수정 요구는 비용이 많이 들고, 경영진의 주의를 분산시키며, 당사의 사업에 해를 끼칠 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "these CSPs,",
+      "ko": "이들 CSP"
+     },
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "Amazon, Google 또는 Microsoft",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "Amazon, Google, or Microsoft,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Risks Related to Privacy, Cybersecurity, and Intellectual Property",
+   "ko": "프라이버시, 사이버 보안 및 지식재산권 관련 위험",
+   "id": "s2"
+  },
+  {
+   "type": "h3",
+   "en": "Any security breaches or other incidents, including those that affect our networks, systems, or data, or the networks, systems, or data of our service providers, suppliers, or customers, could adversely affect our business, financial condition, and results of operations.",
+   "ko": "당사의 네트워크, 시스템 또는 데이터, 또는 당사의 서비스 제공업체, 공급업체 또는 고객의 네트워크, 시스템 또는 데이터에 영향을 미치는 것을 포함하여, 보안 침해 또는 기타 사고는 당사의 사업, 재무 상태 및 영업 실적에 부정적인 영향을 미칠 수 있다.",
+   "id": "r17"
+  },
+  {
+   "type": "p",
+   "en": "We have in the past faced and in the future may face risks of phishing schemes and other cyberattacks, including by nation-states and state-sponsored actors, that continue to evolve in sophistication and volume, and may inherently be difficult to detect. Our proprietary model weights, corporate and financial data, and other core intellectual property represent particularly high-value targets for state-sponsored espionage and theft, and security researchers have identified companies at the frontier as priority targets for non-U.S. intelligence services. The efforts of such state-sponsored actors to target us will likely increase over time, especially as we develop models with next-generation capabilities, and they may specifically target models which have not, or have not yet, been released to the general public. For example, state-sponsored actors may conduct cyberattacks specifically targeting Mythos in light of its advanced cyber vulnerability discovery capabilities.",
+   "ko": "당사는 과거에 국가 및 국가 지원 행위자에 의한 것을 포함하여 피싱 수법 및 기타 사이버 공격의 위험에 직면한 바 있으며, 향후에도 직면할 수 있다. 이러한 공격은 정교함과 규모 면에서 계속 진화하고 있으며, 본질적으로 탐지하기 어려울 수 있다. 당사의 독점적인 모델 가중치, 기업 및 재무 데이터, 그리고 기타 핵심 지식재산권은 국가 지원 간첩 활동 및 절취의 특히 고가치 표적이 되며, 보안 연구자들은 프론티어에 있는 기업을 미국 외 정보기관의 우선 표적으로 지목해 왔다. 당사를 표적으로 삼는 이러한 국가 지원 행위자의 활동은 시간이 지남에 따라, 특히 당사가 차세대 역량을 갖춘 모델을 개발함에 따라 증가할 가능성이 높으며, 이들은 일반 대중에게 공개되지 않았거나 아직 공개되지 않은 모델을 구체적으로 표적으로 삼을 수 있다. 예를 들어, Mythos의 고도화된 사이버 취약점 발견 역량을 고려할 때, 국가 지원 행위자는 Mythos를 구체적으로 표적으로 삼는 사이버 공격을 감행할 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "AI companies",
+      "ko": "AI 기업"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "프론티어에 있는 기업",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "companies at the",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Risks Related to Legal and Regulatory Matters",
+   "ko": "법률 및 규제 사항 관련 위험",
+   "id": "s3"
+  },
+  {
+   "type": "h3",
+   "en": "We are subject to claims, lawsuits, investigations, executive and administrative orders and directives, other regulatory actions, and various actions and proceedings, and face potential liability, expenses for legal claims, and harm to our business.",
+   "ko": "당사는 청구, 소송, 조사, 행정명령 및 지침, 기타 규제 조치, 다양한 조치 및 절차의 대상이 되고 있으며, 잠재적 법적 책임, 법적 청구 관련 비용 및 사업상 피해에 직면하고 있다.",
+   "id": "r18"
+  },
+  {
+   "type": "p",
+   "en": "We are also subject to antitrust and competition law risk arising from our public advocacy regarding AI safety and the responsible pace of AI development and from our participation in industry groups, safety collaborations, and standard-setting initiatives. Communications, advocacy, or collaboration among companies that develop frontier models, or conduct alleged to reflect coordination among such companies, may be characterized as concerted action subject to the antitrust and competition laws, including Section 1 of the Sherman Act and analogous state and non-U.S. laws, even where undertaken for safety purposes, conducted publicly, or intended as advocacy for governmental action or industry standards. In September 2026, a putative class action was filed against us and other developers of frontier models in the U.S. District Court for the Northern District of California, alleging that we and the other defendants agreed to restrain competition by slowing the pace at which we develop and improve our respective AI models, in purported violation of Section 1 of the Sherman Act. The complaint seeks treble damages, injunctive relief, and other relief on behalf of a purported class of purchasers of the defendants' paid consumer subscriptions. We disagree with the claims and intend to defend the matter vigorously, but the outcome of this and any similar proceeding is inherently uncertain.",
+   "ko": "당사는 또한 AI 안전 및 책임 있는 AI 개발 속도에 관한 당사의 공개적 옹호 활동과, 업계 단체, 안전 협력 및 표준 제정 이니셔티브에 대한 당사의 참여로 인해 발생하는 반독점법 및 경쟁법상의 위험에도 노출되어 있다. 프론티어 모델을 개발하는 기업 간의 소통, 옹호 활동 또는 협력, 또는 그러한 기업 간의 공조를 반영한다고 주장되는 행위는, 안전을 목적으로 하거나, 공개적으로 이루어지거나, 정부 조치나 업계 표준을 위한 옹호 활동으로 의도된 경우에도, Sherman Act 제1조 및 이에 상응하는 주법과 미국 외 법률을 포함한 반독점법 및 경쟁법의 적용 대상인 공동행위로 규정될 수 있다. 2026년 9월, 미국 캘리포니아 북부 연방지방법원에 당사 및 프론티어 모델의 다른 개발자를 상대로 집단 인증 전의 집단소송(putative class action)이 제기되었다. 원고는 당사와 다른 피고들이 각자의 AI 모델을 개발하고 개선하는 속도를 늦춤으로써 경쟁을 제한하기로 합의했으며, 이는 Sherman Act 제1조를 위반한 것이라고 주장한다. 소장은 피고들의 유료 소비자 구독 서비스 구매자로 구성된 것으로 주장되는 집단을 대리하여 3배 손해배상, 금지명령 구제 및 기타 구제를 청구하고 있다. 당사는 해당 청구에 동의하지 않으며 적극적으로 대응할 계획이나, 이 소송 및 유사한 절차의 결과는 본질적으로 불확실하다.",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     },
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   }
+  },
+  {
+   "type": "p",
+   "en": "Antitrust litigation can be complex, protracted, disruptive, and expensive, and an adverse outcome could result in treble damages and injunctive relief. We could also become subject to additional private litigation or to investigations or enforcement actions by the U.S. Department of Justice, the FTC, state attorneys general, or non-U.S. competition authorities. We have proposed public efforts to work with the U.S. government and other developers of frontier models to establish safety standards, including with respect to the pace of capability development, and have suggested that such collaboration may warrant a narrow exemption or safe harbor from antitrust laws. These proposals have drawn public opposition from political leaders, some of whom have characterized such efforts as anticompetitive regardless of the purpose of such exemption or safe harbor. There is no assurance that any such exemption or safe harbor will be adopted. Our advocacy for such an exemption, and any safety commitments we pursue with other developers of frontier models in its absence, could subject us to additional regulatory, litigation, and other risks. These risks may cause us to limit or modify our public advocacy, our participation in industry safety and standard-setting initiatives, and our communications with other developers of frontier models, which could adversely affect our ability to pursue collaborative approaches to AI safety that we believe are important to our mission.",
+   "ko": "반독점 소송은 복잡하고 장기화될 수 있으며 사업에 지장을 주고 많은 비용이 들 수 있다. 불리한 결과가 나올 경우 3배 손해배상 및 금지명령 구제로 이어질 수 있다. 당사는 또한 추가적인 민사소송의 대상이 되거나, 미국 법무부, FTC, 주 법무장관 또는 미국 외 경쟁 당국의 조사 또는 집행 조치의 대상이 될 수 있다. 당사는 역량 개발 속도를 포함하여 안전 표준을 수립하기 위해 미국 정부 및 프론티어 모델의 다른 개발자와 협력하는 공개적 노력을 제안해 왔으며, 그러한 협력에 대해 반독점법상의 좁은 범위의 면제 또는 면책 조항(safe harbor)이 인정될 필요가 있을 수 있다고 제시해 왔다. 이러한 제안은 정치 지도자들의 공개적인 반대에 부딪혔으며, 그중 일부는 그러한 면제 또는 면책 조항의 목적과 관계없이 이러한 노력을 반경쟁적이라고 규정하였다. 그러한 면제 또는 면책 조항이 채택될 것이라는 보장은 없다. 그러한 면제를 위한 당사의 옹호 활동, 그리고 면제가 없는 상황에서 당사가 프론티어 모델의 다른 개발자와 함께 추진하는 모든 안전 약속은 당사를 추가적인 규제, 소송 및 기타 위험에 노출시킬 수 있다. 이러한 위험으로 인해 당사는 공개적 옹호 활동, 업계 안전 및 표준 제정 이니셔티브에 대한 참여, 프론티어 모델의 다른 개발자와의 소통을 제한하거나 수정하게 될 수 있으며, 이는 당사가 사명에 중요하다고 믿는 AI 안전에 대한 협력적 접근 방식을 추구하는 당사의 능력에 부정적인 영향을 미칠 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": true
+   },
+   "marks": [
+    {
+     "t": "프론티어 모델의 다른 개발자와 함께",
+     "k": "added"
+    },
+    {
+     "t": "프론티어 모델의 다른 개발자와의 소통",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "models",
+     "k": "added"
+    },
+    {
+     "t": "models,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Risks Related to our Governance Structure",
+   "ko": "당사의 지배구조 관련 위험",
+   "id": "s4"
+  },
+  {
+   "type": "h3",
+   "en": "Our capital structure will concentrate voting power with the LTBT and the Founder LLC for the foreseeable future and will result in the LTBT and the Founder LLC having voting power that is not derived from or proportionate to economic interests in our company.",
+   "ko": "당사의 자본 구조는 예측 가능한 미래 동안 의결권을 LTBT와 Founder LLC에 집중시키며, 그 결과 LTBT와 Founder LLC는 당사에 대한 경제적 지분에서 비롯되지 않거나 이에 비례하지 않는 의결권을 갖게 된다.",
+   "id": "r19"
+  },
+  {
+   "type": "p",
+   "en": "Our Class F common stock will entitle the Founder LLC to an aggregate number of votes that equals 50.1% of the total voting power of our outstanding shares of capital stock as of the applicable record date with respect to matters submitted to stockholders generally, including the election of our directors other than the Class T directors. Our Class F common stock will remain outstanding until the earlier of (i) the completion of the Class F Transition Period (as defined below), which will commence when there have been fewer than three Continuing Founders (not including any successor member who is a \"Non-Qualifying Member\" as defined in the Founder LLC limited liability company agreement (the \"Founder LLC Agreement\")) for 90 consecutive calendar days and (ii) the time when there is no Class F common stock outstanding, including as a result of a redemption thereof agreed to by a Supermajority (as defined below) of the Continuing Founders or upon the dissolution of the Founder LLC (the \"Class F Sunset Time\"). Upon the completion of this offering, based on beneficial ownership as of September 30, 2026, our co-founders will collectively hold approximately (i) 11.2% of the total voting power of our outstanding capital stock with respect to matters submitted to stockholders generally, excluding through their interests in the Founder LLC, and (ii) 61.3% of the total voting power of our outstanding capital stock with respect to matters submitted to stockholders generally, including through their interests in the Founder LLC.",
+   "ko": "당사의 Class F 보통주는 Class T 이사를 제외한 이사의 선임을 포함하여 일반적으로 주주에게 부의되는 사안과 관련하여, 해당 기준일 현재 당사 발행주식 총 의결권의 50.1%에 해당하는 총 의결권 수를 Founder LLC에 부여한다. 당사의 Class F 보통주는 (i) Class F 전환 기간(Class F Transition Period, 아래에서 정의함)의 종료 시점과 (ii) Class F 보통주가 1주도 발행되어 있지 않게 되는 시점(존속 공동창업자의 특별다수(Supermajority, 아래에서 정의함)가 합의한 상환 또는 Founder LLC의 해산에 따른 경우를 포함함, 이하 \"Class F 종료 시점(Class F Sunset Time)\") 중 이른 시점까지 존속한다. Class F 전환 기간은 존속 공동창업자(Founder LLC 유한책임회사 계약(이하 \"Founder LLC 계약(Founder LLC Agreement)\")에서 정의하는 \"비적격 구성원(Non-Qualifying Member)\"인 승계 구성원은 제외함)가 연속 90일(역일 기준) 동안 3인 미만인 경우에 개시된다. 본 공모 완료 시 2026년 9월 30일 현재 실질 소유 지분을 기준으로 당사의 공동창업자는 합하여 일반적으로 주주에게 부의되는 사안과 관련하여 (i) Founder LLC에 대한 지분을 통한 의결권을 제외하고 당사 발행주식 총 의결권의 약 11.2%, (ii) Founder LLC에 대한 지분을 통한 의결권을 포함하여 당사 발행주식 총 의결권의 약 61.3%를 보유하게 된다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false
+   },
+   "marks": [
+    {
+     "t": "11.2%",
+     "k": "added"
+    },
+    {
+     "t": "61.3%",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "11.2%",
+     "k": "added"
+    },
+    {
+     "t": "61.3%",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Our focus on the long-term best interests of our company as a PBC, and the duty of our directors to balance the pecuniary interests of our stockholders, the best interests of those stakeholders materially affected by our conduct, and the Company Purpose, may conflict with short-, medium-, or long-term financial interests and business performance, which may negatively impact the value of our Class A common stock.",
+   "ko": "PBC로서 당사가 회사의 장기적인 최선의 이익에 중점을 두고, 당사 이사가 주주의 금전적 이익, 당사의 행위로 중대한 영향을 받는 이해관계자의 최선의 이익 및 회사 목적 간의 균형을 유지할 의무를 부담하는 것은 단기·중기 또는 장기적인 재무적 이익 및 사업 성과와 상충될 수 있으며, 이는 A종 보통주의 가치에 부정적인 영향을 미칠 수 있다.",
+   "id": "r20"
+  },
+  {
+   "type": "p",
+   "en": "In addition, we intend to direct a meaningful portion of our resources toward our public benefit initiatives, which may include contributions to nonprofit organizations, research institutions, underserved communities, and other third parties that may not otherwise have access to frontier intelligence capabilities. These initiatives, which include the Initial Public Benefit Issuance and the future Public Benefit Issuances, have been, and may continue to be, substantial in scale, and we expect to significantly grow these efforts over time. The benefits of such expenditures may be difficult or impossible to measure in financial terms and may not result in any direct or measurable benefit to our business or our stockholders. The amount of resources directed toward these initiatives may, in any given period, reduce our revenue, increase our expenses, or otherwise affect our results of operations.",
+   "ko": "또한 당사는 자원의 상당 부분을 공익 이니셔티브에 투입할 계획이며, 여기에는 달리 프론티어 지능 역량에 접근할 수 없을 수 있는 비영리단체, 연구기관, 소외 지역사회 및 기타 제3자에 대한 기여가 포함될 수 있다. 최초 공익 발행(Initial Public Benefit Issuance) 및 향후 공익 발행(Public Benefit Issuances)을 포함한 이러한 이니셔티브는 그 규모가 상당하였으며 앞으로도 상당할 수 있고, 당사는 시간이 지남에 따라 이러한 노력을 크게 확대할 것으로 예상한다. 이러한 지출의 효익은 재무적 관점에서 측정하기 어렵거나 불가능할 수 있으며, 당사의 사업이나 주주에게 직접적이거나 측정 가능한 효익을 가져오지 않을 수 있다. 이러한 이니셔티브에 투입되는 자원의 규모는 특정 기간에 당사의 수익을 감소시키거나 비용을 증가시키거나 그 밖에 당사의 경영성과에 영향을 미칠 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "AI",
+      "ko": "AI"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "지능",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "intelligence",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Our amended and restated bylaws will designate a state or federal court located within the State of Delaware as the exclusive forum for substantially all disputes between us and our stockholders, and also provide that the federal district courts will be the exclusive forum for resolving any complaint asserting a cause of action arising under the Securities Act of 1933, as amended, each of which may limit our stockholders’ ability to choose the judicial forum for disputes with us or our directors, officers, stockholders, or employees.",
+   "ko": "당사의 개정 정관(amended and restated bylaws)은 당사와 주주 간의 실질적으로 모든 분쟁에 대해 Delaware 주 내에 소재한 주 법원 또는 연방 법원을 전속 관할 법원으로 지정하고, 개정된 1933년 증권법(Securities Act of 1933)에 따라 발생하는 소송원인을 주장하는 모든 소장의 해결에 대해서는 연방 지방법원을 전속 관할 법원으로 규정할 예정이며, 이들 각각은 당사 또는 당사의 이사, 임원, 주주 또는 직원과의 분쟁에 관하여 주주가 재판 관할 법원을 선택할 수 있는 능력을 제한할 수 있다.",
+   "id": "r21"
+  },
+  {
+   "type": "p",
+   "en": "Section 22 of the Securities Act establishes concurrent jurisdiction for federal and state courts over Securities Act claims. Accordingly, both state and federal courts have jurisdiction to hear such claims. To prevent having to litigate claims in multiple jurisdictions and the threat of inconsistent or contrary rulings by different courts, among other considerations, our amended and restated bylaws will also provide that, unless we consent in writing to the selection of an alternative forum, the federal district courts of the United States will, to the fullest extent permitted by applicable law, be the sole and exclusive forum for resolving any complaint asserting a cause or causes of action arising under the Securities Act against any person in connection with any offering of our securities, including, without limitation, any auditor, underwriter, expert, control person, or other defendant. Unless we consent in writing to the selection of an alternative forum, the United States District Court for the District of Delaware will, to the fullest extent permitted by applicable law, be the sole and exclusive forum for the resolution of any derivative action or proceeding brought to enforce any duty or liability created by the Exchange Act or the rules or regulations thereunder. All other claims arising under the Exchange Act may be brought in any federal court of competent jurisdiction.",
+   "ko": "증권법 제22조는 증권법상 청구에 대하여 연방 법원과 주 법원의 경합적 관할권을 규정한다. 따라서 주 법원과 연방 법원 모두 그러한 청구를 심리할 관할권을 가진다. 여러 관할에서 청구를 다투어야 하는 상황과 서로 다른 법원에 의한 일관되지 않거나 상반되는 판결의 위협을 방지하는 것 등을 고려하여, 당사의 개정 정관은 또한, 당사가 대체 관할 법원의 선택에 서면으로 동의하지 않는 한, 적용 법률이 허용하는 최대 범위 내에서 미국 연방 지방법원이 당사 증권의 공모와 관련하여 감사인, 인수인, 전문가, 통제자(control person) 또는 기타 피고를 포함하되 이에 국한되지 않는 모든 자를 상대로 증권법에 따라 발생하는 소송원인을 주장하는 모든 소장의 해결을 위한 유일하고 전속적인 관할 법원이 된다고 규정할 예정이다. 당사가 대체 관할 법원의 선택에 서면으로 동의하지 않는 한, 적용 법률이 허용하는 최대 범위 내에서 Delaware 연방 지방법원(United States District Court for the District of Delaware)이 증권거래법(Exchange Act) 또는 그에 따른 규칙이나 규정에 의해 발생하는 의무 또는 책임의 이행을 강제하기 위하여 제기되는 모든 대표소송 또는 절차의 해결을 위한 유일하고 전속적인 관할 법원이 된다. 증권거래법에 따라 발생하는 그 밖의 모든 청구는 관할권을 가진 모든 연방 법원에 제기될 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "of 1933, as amended (the \"Securities Act\"),",
+      "ko": "개정된 1933년 증권법(이하 \"증권법\")"
+     }
+    ]
+   }
+  },
+  {
+   "type": "h2",
+   "en": "Risks Related to Ownership of our Class A Common Stock",
+   "ko": "Class A 보통주 보유와 관련된 위험",
+   "id": "s5"
+  },
+  {
+   "type": "h3",
+   "en": "The market price of our Class A common stock may be volatile, and you may lose all or part of your investment.",
+   "ko": "Class A 보통주의 시장가격은 변동성이 클 수 있으며, 투자자는 투자금의 전부 또는 일부를 잃을 수 있다.",
+   "id": "r22"
+  },
+  {
+   "type": "li",
+   "en": "any additions or departures of founders, board members, management, or key personnel;",
+   "ko": "창업자, 이사회 구성원, 경영진 또는 핵심 인력의 합류 또는 이탈;",
+   "change": {
+    "kind": "revised",
+    "editorial": true,
+    "removed": [
+     {
+      "en": "and",
+      "ko": "그리고"
+     }
+    ]
+   }
+  },
+  {
+   "type": "li",
+   "en": "potential allocation to retail investors of a minority of shares of our Class A common stock sold in this offering; and",
+   "ko": "본 공모에서 매도되는 당사 A종 보통주 중 과반에 미치지 않는 일부 주식을 개인 투자자에게 배정할 가능성, 그리고",
+   "change": {
+    "kind": "added",
+    "editorial": false
+   },
+   "marks": [
+    {
+     "t": "본 공모에서 매도되는 당사 A종 보통주 중 과반에 미치지 않는 일부 주식을 개인 투자자에게 배정할 가능성, 그리고",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "potential allocation to retail investors of a minority of shares of our Class A common stock sold in this offering; and",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "retail investor interest in our Class A common stock on an ongoing basis following this offering.",
+   "ko": "본 공모 이후 당사 A종 보통주에 대한 개인 투자자의 지속적인 관심.",
+   "change": {
+    "kind": "added",
+    "editorial": false
+   },
+   "marks": [
+    {
+     "t": "본 공모 이후 당사 A종 보통주에 대한 개인 투자자의 지속적인 관심.",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "retail investor interest in our Class A common stock on an ongoing basis following this offering.",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "The issuance of additional stock in connection with financings, acquisitions, investments, our equity incentive plans, the conversion of our outstanding convertible promissory notes, the conversion of our outstanding Class N common stock, our public benefit initiatives, or otherwise will dilute the interests of the holders of our Class A common stock.",
+   "ko": "자금조달, 인수, 투자, 당사의 주식 기반 보상 제도, 당사의 발행 잔여 전환사채(convertible promissory notes)의 전환, 당사의 발행 잔여 Class N 보통주의 전환, 당사의 공익 이니셔티브 또는 기타 사유와 관련한 추가 주식 발행은 Class A 보통주 보유자의 지분을 희석시킬 것이다.",
+   "id": "r23"
+  },
+  {
+   "type": "p",
+   "en": "Our amended and restated certificate of incorporation that will become effective immediately prior to the completion of this offering authorizes us to issue up to an aggregate of 300,000,000,000 shares of Class A common stock, 100,000,000,000 shares of Class N common stock, one share of Class T common stock, one share of Class F common stock, 30,000,000,000 shares of Class E common stock, and 30,000,000,000 shares of preferred stock, with such rights, powers, and preferences as may be determined by our board of directors (subject to limitations in our amended and restated certificate of incorporation, which will become effective immediately prior to the completion of this offering, or prescribed by Delaware law). Subject to compliance with applicable rules and regulations, we may issue shares of our capital stock or securities convertible into shares of our capital stock from time to time in connection with a financing, an acquisition, an investment, our equity incentive plans, the conversion of our outstanding convertible promissory notes, the conversion of our Class N common stock, our public benefit initiatives, which may include issuances of equity to third parties such as nonprofit organizations, research institutions, or other recipients, or otherwise, including the Public Benefit Issuances. Any such issuances may result in substantial dilution to the holders of our Class A common stock and cause the market price of our Class A common stock to decline. For a discussion of the dilutive impact of our Class N common stock on the holders of our Class A common stock, see the section titled \"—A substantial number of shares of our Class N common stock will be outstanding upon the completion of this offering and the concurrent private placement, which will dilute the voting power of the holders of our Class A common stock upon conversion.\"",
+   "ko": "본 공모 완료 직전에 효력이 발생하는 당사의 개정 및 재작성된 설립정관(amended and restated certificate of incorporation)은 당사가 Class A 보통주 최대 300,000,000,000주, Class N 보통주 100,000,000,000주, Class T 보통주 1주, Class F 보통주 1주, Class E 보통주 30,000,000,000주 및 우선주 30,000,000,000주를 합산하여 발행할 수 있도록 승인하며, 이들 주식은 이사회가 정하는 권리, 권한 및 우선권을 가진다(본 공모 완료 직전에 효력이 발생하는 당사의 개정 및 재작성된 설립정관상의 제한 또는 Delaware 법률이 규정하는 제한에 따름). 당사는 관련 규칙 및 규정의 규정 준수를 조건으로, 자금조달, 인수, 투자, 당사의 주식 기반 보상 제도, 당사의 발행 잔여 전환사채의 전환, 당사의 Class N 보통주의 전환, 비영리단체, 연구기관 또는 기타 수령인 등 제3자에 대한 지분 발행을 포함할 수 있는 당사의 공익 이니셔티브, 또는 공익 목적 발행(Public Benefit Issuances)을 포함한 기타 사유와 관련하여 수시로 당사 주식 또는 당사 주식으로 전환 가능한 증권을 발행할 수 있다. 이러한 발행은 Class A 보통주 보유자에게 상당한 지분 희석을 초래하고 Class A 보통주의 시장가격 하락을 야기할 수 있다. 당사의 Class N 보통주가 Class A 보통주 보유자에게 미치는 희석 효과에 관한 논의는 \"—본 공모 및 동시 사모 완료 시점에 상당수의 Class N 보통주가 발행되어 있을 것이며, 이는 전환 시 Class A 보통주 보유자의 의결권을 희석시킬 것이다\"라는 제목의 항목을 참조하라.",
+   "change": {
+    "kind": "revised",
+    "editorial": false
+   },
+   "marks": [
+    {
+     "t": "공모 및 동시 사모",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "offering and the concurrent private placement,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In addition, registration rights agreements entered into with counterparties to certain of our NPAs provide such counterparties with rights to cause us to register for resale after this offering (i) shares of our common stock underlying such notes, (ii) shares of Class A common stock issuable upon conversion of Class N common stock issued upon conversion of the notes, and (iii) shares of our Class A common stock issuable upon conversion of Class N common stock issued to Google in connection with the concurrent private placement. The exercise of such registration rights could facilitate sales of large blocks of our Class A common stock into the public market, which could depress the market price of our Class A common stock or increase its volatility.",
+   "ko": "또한 당사의 특정 NPA 상대방과 체결한 등록권 계약(registration rights agreements)은 해당 상대방에게 본 공모 이후 (i) 해당 사채의 기초가 되는 당사 보통주, (ii) 사채의 전환에 따라 발행된 Class N 보통주의 전환 시 발행 가능한 Class A 보통주, 및 (iii) 동시 사모와 관련하여 Google에 발행된 Class N 보통주의 전환 시 발행 가능한 당사 Class A 보통주를 재매도 목적으로 당사가 등록하도록 할 수 있는 권리를 부여한다. 이러한 등록권의 행사는 Class A 보통주의 대량 매물이 공개시장에 출회되는 것을 용이하게 할 수 있으며, 이는 Class A 보통주의 시장가격을 하락시키거나 변동성을 증가시킬 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "certain contractual rights to",
+      "ko": "특정 계약상 권리"
+     },
+     {
+      "en": "placements concurrent with this offering.",
+      "ko": "본 공모와 동시에 진행되는 사모 발행"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "동시 사모",
+     "k": "added"
+    },
+    {
+     "t": "Google에",
+     "k": "added"
+    },
+    {
+     "t": "Class N 보통주의 전환 시 발행 가능한 당사 Class A 보통주",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "Class A common stock issuable upon conversion of Class N",
+     "k": "added"
+    },
+    {
+     "t": "to Google",
+     "k": "added"
+    },
+    {
+     "t": "the concurrent",
+     "k": "added"
+    },
+    {
+     "t": "placement.",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "A substantial number of shares of our Class N common stock will be outstanding upon the completion of this offering and the concurrent private placement, which will dilute the voting power of the holders of our Class A common stock upon conversion.",
+   "ko": "본 공모 및 동시 사모 완료 시점에 상당수의 N종 보통주가 발행되어 있을 것이며, 이는 전환 시 A종 보통주 보유자의 의결권을 희석시킬 것이다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false
+   },
+   "id": "r24x",
+   "marks": [
+    {
+     "t": "공모 및 동시 사모",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "offering and the concurrent private placement,",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Immediately prior to the completion of this offering and the concurrent private placement, after giving effect to the Preferred Stock Conversion, Convertible Notes Conversion, and Initial Public Benefit Issuance, we will have 5,307,329,452 shares of Class N common stock outstanding, representing approximately 44.5% of our outstanding capital stock prior to this offering and the concurrent private placement and approximately 43.2% of our outstanding capital stock following the completion of this offering and the concurrent private placement (in each case, excluding our Class T common stock, Class F common stock, and Class E common stock). After giving effect to the Preferred Stock Conversion and the Convertible Notes Conversion, Amazon and Google will each hold greater than five percent of our outstanding capital stock. Although our Class N common stock is non-voting, their holdings represent a significant economic interest in our company, and because our Class N common stock converts into Class A common stock upon transfer to an unaffiliated third party, these shares could also become significant to the voting power of our Class A common stock following any such transfer. Amazon and Google will hold 1,920,511,218 and 1,654,463,134 shares of our Class N common stock, respectively, immediately prior to the completion of this offering and the concurrent private placement (after giving effect to the Preferred Stock Conversion and the Convertible Notes Conversion), and will hold 1,920,511,218 and 1,789,598,269 shares of our Class N common stock, respectively, immediately following the offering and the concurrent private placement. An aggregate of an additional 1,563,617,444 shares of Class N common stock will be issuable after this offering upon conversion of remaining outstanding convertible promissory notes, all of which are held by Amazon, that cannot convert immediately prior to the completion of this offering without exceeding the applicable ownership cap. Additional shares of Class N common stock may also be issued following this offering and the concurrent private placement pursuant to the Public Benefit Issuances, future drawdowns and related issuances or conversions under our NPAs, and certain contractual rights. See the sections titled \"Shares Eligible for Future Sale—Class N Common Stock,\" \"Management's Discussion and Analysis of Financial Condition and Results of Operations—Liquidity and Capital Resources— Convertible Notes,\" and \"Business—Our Commitment to Public Benefit.\"",
+   "ko": "본 공모 및 동시 사모 완료 직전에, 우선주 전환(Preferred Stock Conversion), 전환사채 전환(Convertible Notes Conversion) 및 최초 공익 목적 발행(Initial Public Benefit Issuance)의 효력을 반영하면, 당사의 발행 잔여 Class N 보통주는 5,307,329,452주가 될 것이며, 이는 본 공모 및 동시 사모 이전 당사 발행 잔여 자본주식의 약 44.5%, 본 공모 및 동시 사모 완료 이후 당사 발행 잔여 자본주식의 약 43.2%에 해당한다(각 경우 Class T 보통주, Class F 보통주 및 Class E 보통주는 제외함). 우선주 전환 및 전환사채 전환의 효력을 반영하면, Amazon과 Google은 각각 당사 발행 잔여 자본주식의 5퍼센트를 초과하여 보유하게 된다. 당사의 Class N 보통주는 의결권이 없으나, 이들의 보유 지분은 당사에 대한 상당한 경제적 이익에 해당한다. 또한 당사의 Class N 보통주는 비계열 제3자에게 양도되는 경우 A종 보통주로 전환되므로, 이러한 양도 이후에는 이들 주식이 A종 보통주의 의결권에서도 상당한 비중을 차지하게 될 수 있다. Amazon과 Google은 본 공모 및 동시 사모 완료 직전에(우선주 전환 및 전환사채 전환의 효력을 반영하여) 당사 Class N 보통주를 각각 1,920,511,218주 및 1,654,463,134주 보유하게 되며, 본 공모 및 동시 사모 직후에는 당사 Class N 보통주를 각각 1,920,511,218주 및 1,789,598,269주 보유하게 된다. 해당 소유 상한(ownership cap)을 초과하지 않고서는 본 공모 완료 직전에 전환될 수 없는 잔여 발행 전환사채(전부 Amazon이 보유함)가 전환되는 경우, 본 공모 이후 합계 1,563,617,444주의 Class N 보통주가 추가로 발행될 수 있다. 또한 본 공모 및 동시 사모 이후 공익 목적 발행(Public Benefit Issuances), 당사의 사채 매입 계약(NPAs)에 따른 향후 인출(drawdown) 및 이와 관련된 발행 또는 전환, 그리고 특정 계약상 권리에 따라 Class N 보통주가 추가로 발행될 수 있다. \"향후 매도 가능 주식—Class N 보통주\", \"경영진의 재무상태 및 경영성과에 대한 논의 및 분석—유동성 및 자본재원— 전환사채\" 및 \"사업—공익에 대한 당사의 헌신\"이라는 제목의 섹션을 참조하라.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "could not",
+      "ko": "전환될 수 없었던"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "및 동시 사모",
+     "k": "added"
+    },
+    {
+     "t": "및 최초 공익 목적 발행(Initial Public Benefit Issuance)",
+     "k": "added"
+    },
+    {
+     "t": "5,307,329,452",
+     "k": "added"
+    },
+    {
+     "t": "및 동시 사모",
+     "k": "added"
+    },
+    {
+     "t": "44.5%",
+     "k": "added"
+    },
+    {
+     "t": "및 동시 사모",
+     "k": "added"
+    },
+    {
+     "t": "43.2%",
+     "k": "added"
+    },
+    {
+     "t": "Amazon과 Google은 본 공모 및 동시 사모 완료 직전에(우선주 전환 및 전환사채 전환의 효력을 반영하여) 당사 Class N 보통주를 각각 1,920,511,218주 및 1,654,463,134주 보유하게 되며, 본 공모 및 동시 사모 직후에는 당사 Class N 보통주를 각각 1,920,511,218주 및 1,789,598,269주 보유하게 된다",
+     "k": "added"
+    },
+    {
+     "t": "1,563,617,444",
+     "k": "added"
+    },
+    {
+     "t": "전환될 수 없는",
+     "k": "added"
+    },
+    {
+     "t": "및 동시 사모",
+     "k": "added"
+    },
+    {
+     "t": "자본재원— 전환사채",
+     "k": "added"
+    },
+    {
+     "t": "사업—공익",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "offering and the concurrent private placement,",
+     "k": "added"
+    },
+    {
+     "t": "Conversion,",
+     "k": "added"
+    },
+    {
+     "t": "and Initial Public Benefit Issuance,",
+     "k": "added"
+    },
+    {
+     "t": "5,307,329,452",
+     "k": "added"
+    },
+    {
+     "t": "44.5%",
+     "k": "added"
+    },
+    {
+     "t": "the concurrent private placement and",
+     "k": "added"
+    },
+    {
+     "t": "43.2%",
+     "k": "added"
+    },
+    {
+     "t": "and the concurrent private placement",
+     "k": "added"
+    },
+    {
+     "t": "Amazon and Google will hold 1,920,511,218 and 1,654,463,134 shares of our Class N common stock, respectively, immediately",
+     "k": "added"
+    },
+    {
+     "t": "offering and the concurrent private placement (after",
+     "k": "added"
+    },
+    {
+     "t": "Conversion),",
+     "k": "added"
+    },
+    {
+     "t": "1,920,511,218 and 1,789,598,269",
+     "k": "added"
+    },
+    {
+     "t": "stock, respectively, immediately following the offering",
+     "k": "added"
+    },
+    {
+     "t": "the concurrent private placement.",
+     "k": "added"
+    },
+    {
+     "t": "1,563,617,444",
+     "k": "added"
+    },
+    {
+     "t": "cannot",
+     "k": "added"
+    },
+    {
+     "t": "and the concurrent private placement",
+     "k": "added"
+    },
+    {
+     "t": "Resources— Convertible",
+     "k": "added"
+    },
+    {
+     "t": "\"Business—Our",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Although our Class N common stock is not entitled to vote, it is entitled to economic rights equivalent to those of our Class A common stock, including the right to participate ratably with our Class A common stock in any dividends we may declare and in distributions upon a liquidation, dissolution, or winding up. As a result, the shares of Class N common stock issued in connection with the completion of this offering as a result of the Preferred Stock Conversion, Convertible Notes Conversion, and the concurrent private placement will dilute the economic interests, including any dividends and any proceeds available for distribution to stockholders, of the holders of our Class A common stock, and such shares are included together with our Class A common stock in determining net tangible book value per share. See the section titled \"Dilution.\"",
+   "ko": "당사의 N종 보통주는 의결권이 없으나, A종 보통주와 동등한 경제적 권리를 가지며, 여기에는 당사가 선언할 수 있는 배당과 청산, 해산 또는 정리 시의 분배에 A종 보통주와 비례적으로 참여할 권리가 포함된다. 그 결과, 우선주 전환, 전환사채 전환 및 동시 사모에 따라 본 공모의 완료와 관련하여 발행되는 N종 보통주는 배당 및 주주에게 분배 가능한 대금을 포함하여 당사 A종 보통주 보유자의 경제적 이익을 희석시키며, 해당 주식은 주당 순유형자산 장부가액 산정 시 A종 보통주와 함께 포함된다. “희석” 절을 참조하라.",
+   "change": {
+    "kind": "revised",
+    "editorial": false
+   },
+   "marks": [
+    {
+     "t": "우선주 전환,",
+     "k": "added"
+    },
+    {
+     "t": "전환사채 전환 및 동시 사모",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "Conversion,",
+     "k": "added"
+    },
+    {
+     "t": "Conversion, and the concurrent private placement",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Future sales of our Class A common stock in the public market could cause the market price of our Class A common stock to decline.",
+   "ko": "향후 공개시장에서의 Class A 보통주 매도는 Class A 보통주의 시장가격 하락을 야기할 수 있다.",
+   "id": "r25"
+  },
+  {
+   "type": "p",
+   "en": "The market price of our Class A common stock may decline due to sales of a large number of shares of our Class A common stock in the market after this offering. The potential for such sales to occur may also depress the market price of our Class A common stock. Following the completion of this offering and the concurrent private placement, based on 6,626,640,437 shares of our Class A common stock outstanding and 5,307,329,452 shares of Class N common stock outstanding as of September 30, 2026 (after giving effect to the Preferred Stock Conversion, Convertible Notes Conversion, Initial Public Benefit Issuance , and RSU Settlement), we will have a total of 7,427,991,791 shares of Class A common stock outstanding and 5,658,680,800 shares of Class N common stock outstanding. Our directors, executive officers, and the holders of substantially all of our capital stock and securities convertible into or exchangeable for our capital stock have entered into market standoff agreements with us or have entered or will enter into lock-up agreements with Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC, on behalf of the underwriters, under which they have agreed, subject to specific exceptions including specified early expiration provisions, to certain restrictions on their ability to transfer any shares of our Class A common stock or Class N common stock or securities directly or indirectly convertible into or exchangeable or exercisable for our Class A common stock or Class N common stock during the period ending (i) in the case of our co-founders and certain of our stockholders holding more than 0.5% of our fully diluted shares prior to this offering, on the earlier of (A) 6:00 AM Eastern Time on the second full trading day immediately following the public release of our quarterly financial results for the fiscal quarter ending September 30, 2027 and (B) immediately after the close of the trading day on the 365th day after the date of this prospectus, and (ii) in the case of all other such holders, on the earlier of (A) 6:00 AM Eastern Time on the second full trading day immediately following the public release of our quarterly financial results for the fiscal quarter ending March 31, 2027 and (B) immediately after the close of the trading day on the 180th day after the date of this prospectus. In addition, up to 316 million shares of our Class A common stock may become eligible for sale beginning on the first trading day following the date of this prospectus, and up to 3.3 billion additional shares may become eligible for sale prior to the expiration of the period described in clause (ii) above. Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC may release stockholders from the lock-up agreements, and we may, generally only with their consent, release stockholders from the market standoff agreements, in each case prior to the end of the applicable period. See the sections titled \"Underwriting\" and \"Shares Eligible for Future Sale—Lock-Up and Market Standoff Agreements\" for further information about these agreements, including the specified early expiration provisions. The shares of our Class N common stock to be sold in the concurrent private placement will not be subject to any market standoff agreement or lock-up agreement. These shares will be \"restricted securities\" under the Securities Act and may be resold only pursuant to an effective registration statement or an available exemption from registration, including Rule 144, and certain of the purchasers may have registration rights as described under \"Description of Capital Stock—Registration Rights.\" Because shares of our Class N common stock convert into shares of our Class A common stock upon a qualifying transfer, sales of these shares, or the perception that such sales may occur, could cause the market price of our Class A common stock to decline.",
+   "ko": "본 공모 이후 시장에서 당사 A종 보통주가 대량 매도되는 경우 당사 A종 보통주의 시장가격이 하락할 수 있다. 이러한 매도가 발생할 가능성만으로도 당사 A종 보통주의 시장가격이 하락할 수 있다. 본 공모 및 동시 사모 완료 후, 2026년 9월 30일 현재 발행주식인 A종 보통주 6,626,640,437주 및 N종 보통주 5,307,329,452주(우선주 전환, 전환사채 전환, 최초 공익 발행 및 RSU 결제를 반영한 후)를 기준으로, 당사의 발행주식 총수는 A종 보통주 7,427,991,791주 및 N종 보통주 5,658,680,800주가 된다. 당사의 이사, 집행임원 및 당사 자본주식과 당사 자본주식으로 전환 또는 교환 가능한 증권의 실질적으로 전부를 보유한 보유자들은 당사와 시장 매도 유보 약정(market standoff agreement)을 체결하였거나, 인수인을 대표하는 Goldman Sachs & Co. LLC 및 Morgan Stanley & Co. LLC와 보호예수 약정(lock-up agreement)을 체결하였거나 체결할 예정이다. 이에 따라 이들은 특정 조기 만료 조항을 포함한 특정 예외를 전제로, 다음 기간 동안 당사 A종 보통주 또는 N종 보통주, 또는 당사 A종 보통주 또는 N종 보통주로 직접 또는 간접적으로 전환, 교환 또는 행사 가능한 증권을 양도하는 데 일정한 제한을 받기로 동의하였다: (i) 당사 공동창업자 및 본 공모 전 당사 완전희석 기준 주식의 0.5%를 초과하여 보유한 일부 주주의 경우, (A) 2027년 9월 30일 종료 회계분기의 분기 재무실적 공표 직후 두 번째 완전 거래일 동부시간 오전 6시와 (B) 본 투자설명서 일자로부터 365일째 되는 날의 거래일 종료 직후 중 이른 시점에 종료되는 기간, (ii) 그 밖의 모든 보유자의 경우, (A) 2027년 3월 31일 종료 회계분기의 분기 재무실적 공표 직후 두 번째 완전 거래일 동부시간 오전 6시와 (B) 본 투자설명서 일자로부터 180일째 되는 날의 거래일 종료 직후 중 이른 시점에 종료되는 기간. 또한, 최대 3억 1,600만 주의 당사 A종 보통주가 본 투자설명서 일자 다음 첫 거래일부터 매도 가능해질 수 있으며, 최대 33억 주의 추가 주식이 위 (ii)항에 기술된 기간의 만료 전에 매도 가능해질 수 있다. Goldman Sachs & Co. LLC 및 Morgan Stanley & Co. LLC는 주주들을 보호예수 약정에서 해제할 수 있다. 당사도 일반적으로 이들의 동의가 있는 경우에 한하여 주주들을 시장 매도 유보 약정에서 해제할 수 있다. 두 경우 모두 해제는 해당 기간 종료 전에 이루어질 수 있다. 특정 조기 만료 조항을 포함하여 이러한 약정에 관한 추가 정보는 “인수” 및 “향후 매도 가능 주식—보호예수 및 시장 매도 유보 약정” 절을 참조한다. 동시 사모에서 매도될 당사 N종 보통주는 어떠한 시장 매도 유보 약정이나 보호예수 약정의 적용도 받지 않는다. 이러한 주식은 증권법상 “제한증권”에 해당하며, 유효한 등록신고서에 따르거나 Rule 144를 포함한 이용 가능한 등록 면제에 따라서만 재매도될 수 있다. 또한 일부 매수인은 “자본주식에 관한 설명—등록청구권”에 기술된 바와 같이 등록청구권을 보유할 수 있다. 당사 N종 보통주는 적격 양도 시 당사 A종 보통주로 전환되므로, 이러한 주식의 매도 또는 그러한 매도가 발생할 수 있다는 인식으로 인해 당사 A종 보통주의 시장가격이 하락할 수 있다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false
+   },
+   "marks": [
+    {
+     "t": "본 공모 및 동시 사모 완료 후",
+     "k": "added"
+    },
+    {
+     "t": "6,626,640,437",
+     "k": "added"
+    },
+    {
+     "t": "5,307,329,452",
+     "k": "added"
+    },
+    {
+     "t": "7,427,991,791",
+     "k": "added"
+    },
+    {
+     "t": "5,658,680,800",
+     "k": "added"
+    },
+    {
+     "t": "또한, 최대 3억 1,600만 주의 당사 A종 보통주가 본 투자설명서 일자 다음 첫 거래일부터 매도 가능해질 수 있으며, 최대 33억 주의 추가 주식이 위 (ii)항에 기술된 기간의 만료 전에 매도 가능해질 수 있다.",
+     "k": "added"
+    },
+    {
+     "t": "동시 사모에서 매도될 당사 N종 보통주는 어떠한 시장 매도 유보 약정이나 보호예수 약정의 적용도 받지 않는다. 이러한 주식은 증권법상 “제한증권”에 해당하며, 유효한 등록신고서에 따르거나 Rule 144를 포함한 이용 가능한 등록 면제에 따라서만 재매도될 수 있다. 또한 일부 매수인은 “자본주식에 관한 설명—등록청구권”에 기술된 바와 같이 등록청구권을 보유할 수 있다. 당사 N종 보통주는 적격 양도 시 당사 A종 보통주로 전환되므로, 이러한 주식의 매도 또는 그러한 매도가 발생할 수 있다는 인식으로 인해 당사 A종 보통주의 시장가격이 하락할 수 있다.",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "offering and the concurrent private placement,",
+     "k": "added"
+    },
+    {
+     "t": "6,626,640,437",
+     "k": "added"
+    },
+    {
+     "t": "5,307,329,452",
+     "k": "added"
+    },
+    {
+     "t": "7,427,991,791",
+     "k": "added"
+    },
+    {
+     "t": "5,658,680,800",
+     "k": "added"
+    },
+    {
+     "t": "In addition, up to 316 million shares of our Class A common stock may become eligible for sale beginning on the first trading day following the date of this prospectus, and up to 3.3 billion additional shares may become eligible for sale prior to the expiration of the period described in clause (ii) above.",
+     "k": "added"
+    },
+    {
+     "t": "The shares of our Class N common stock to be sold in the concurrent private placement will not be subject to any market standoff agreement or lock-up agreement. These shares will be \"restricted securities\" under the Securities Act and may be resold only pursuant to an effective registration statement or an available exemption from registration, including Rule 144, and certain of the purchasers may have registration rights as described under \"Description of Capital Stock—Registration Rights.\" Because shares of our Class N common stock convert into shares of our Class A common stock upon a qualifying transfer, sales of these shares, or the perception that such sales may occur, could cause the market price of our Class A common stock to decline.",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "As a result of these agreements and the provisions of our amended and restated investors' rights agreement, dated as of May 28, 2026 (our \"IRA\"), as described further in the section titled \"Description of Capital Stock— Registration Rights,\" and subject to the provisions of Rule 144 or Rule 701 under the Securities Act, additional shares of our Class A common stock (including shares issuable upon conversion of our Class N common stock) will become available for sale in the public market at various times after the date of this offering, beginning on the first trading day following the date of this prospectus. Because shares released from these restrictions will become freely tradable simultaneously with the shares sold in this offering, purchasers of our Class A common stock in the public market following this offering may be unable to determine whether their shares were issued pursuant to the registration statement of which this prospectus forms a part. The ability to bring a claim under Section 11 or Section 12(a)(2) of the Securities Act requires that the security purchased be traceable to the allegedly defective registration statement, and tracing shares to this registration statement may be more difficult because registered and unregistered shares begin trading at approximately the same time. As a result, such purchasers may be unable to assert claims under Section 11 or Section 12(a)(2) of the Securities Act for any material misstatements or omissions in the registration statement or this prospectus. See the section titled \"Shares Eligible for Future Sale\" for additional information.",
+   "ko": "이들 계약, 그리고 \"자본주식에 관한 설명—등록청구권\"이라는 제목의 섹션에 추가로 기술된 2026년 5월 28일자 당사의 수정 및 재작성 투자자권리계약(이하 \"IRA\")의 조항에 따라, 그리고 증권법(Securities Act)상의 Rule 144 또는 Rule 701의 규정에 따를 것을 조건으로, 추가적인 Class A 보통주(Class N 보통주의 전환에 따라 발행 가능한 주식을 포함함)가 본 투자설명서 일자 다음 첫 거래일부터 시작하여 본 공모일 이후 여러 시점에 공개시장에서 매도 가능하게 될 것이다. 이러한 제한에서 해제된 주식은 본 공모에서 매도되는 주식과 동시에 자유롭게 거래 가능하게 되므로, 본 공모 이후 공개시장에서 당사의 Class A 보통주를 매수하는 자는 자신의 주식이 본 투자설명서가 그 일부를 구성하는 등록신고서에 따라 발행된 것인지 여부를 확인하지 못할 수 있다. 증권법 Section 11 또는 Section 12(a)(2)에 따른 청구를 제기하려면 매수한 증권이 하자가 있다고 주장되는 등록신고서까지 추적 가능하여야 하는데, 등록된 주식과 미등록 주식이 거의 같은 시점에 거래를 개시하므로 주식을 본 등록신고서까지 추적하는 것이 더 어려워질 수 있다. 그 결과, 이러한 매수자는 등록신고서 또는 본 투자설명서상의 중요한 허위기재 또는 누락에 대하여 증권법 Section 11 또는 Section 12(a)(2)에 따른 청구를 주장하지 못할 수 있다. 추가 정보는 \"향후 매도 가능 주식\"이라는 제목의 섹션을 참조하라.",
+   "change": {
+    "kind": "revised",
+    "editorial": false
+   },
+   "marks": [
+    {
+     "t": "이러한 제한에서 해제된 주식은 본 공모에서 매도되는 주식과 동시에 자유롭게 거래 가능하게 되므로, 본 공모 이후 공개시장에서 당사의 Class A 보통주를 매수하는 자는 자신의 주식이 본 투자설명서가 그 일부를 구성하는 등록신고서에 따라 발행된 것인지 여부를 확인하지 못할 수 있다. 증권법 Section 11 또는 Section 12(a)(2)에 따른 청구를 제기하려면 매수한 증권이 하자가 있다고 주장되는 등록신고서까지 추적 가능하여야 하는데, 등록된 주식과 미등록 주식이 거의 같은 시점에 거래를 개시하므로 주식을 본 등록신고서까지 추적하는 것이 더 어려워질 수 있다. 그 결과, 이러한 매수자는 등록신고서 또는 본 투자설명서상의 중요한 허위기재 또는 누락에 대하여 증권법 Section 11 또는 Section 12(a)(2)에 따른 청구를 주장하지 못할 수 있다.",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "Because shares released from these restrictions will become freely tradable simultaneously with the shares sold in this offering, purchasers of our Class A common stock in the public market following this offering may be unable to determine whether their shares were issued pursuant to the registration statement of which this prospectus forms a part. The ability to bring a claim under Section 11 or Section 12(a)(2) of the Securities Act requires that the security purchased be traceable to the allegedly defective registration statement, and tracing shares to this registration statement may be more difficult because registered and unregistered shares begin trading at approximately the same time. As a result, such purchasers may be unable to assert claims under Section 11 or Section 12(a)(2) of the Securities Act for any material misstatements or omissions in the registration statement or this prospectus.",
+     "k": "added"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Upon completion of this offering, stockholders owning an aggregate of up to 8,392,550,277 shares of our Class A common stock (including those issuable upon conversion of our Class N common stock) will be entitled, under our IRA, to demand registration rights. In addition, Google will be entitled to demand and Form S-3 registration rights under the registration rights agreement with Google (the \"Google RRA\"), including with respect to the Class A common stock underlying the shares it purchases in the concurrent private placement. See the section titled \" Description of Capital Stock—Registration Rights.\" In addition, we intend to file a registration statement to register shares reserved for future issuance under our equity compensation plans. Upon effectiveness of that registration statement, subject to the satisfaction of applicable vesting periods and the expiration or waiver of the lock-up and market standoff agreements referred to above, the shares issued upon exercise of outstanding stock options or settlement of RSUs will be available for immediate resale in the United States in the open market.",
+   "ko": "본 공모 완료 시, 합계 최대 8,392,550,277주의 Class A 보통주(Class N 보통주의 전환에 따라 발행 가능한 주식을 포함함)를 보유한 주주들은 IRA에 따라 등록청구권(demand registration rights)을 가지게 된다. 또한 Google은 Google과의 등록권 계약(이하 「Google RRA」)에 따라 등록청구권 및 Form S-3 등록권을 가지게 되며, 여기에는 Google이 동시 사모에서 매입하는 주식의 기초가 되는 Class A 보통주에 관한 권리가 포함된다. 「주식의 내용—등록권」 항목을 참조한다. 또한 당사는 주식보상제도에 따라 향후 발행을 위해 유보된 주식을 등록하기 위한 등록신고서를 제출할 예정이다. 해당 등록신고서가 효력을 발생하면, 적용되는 가득기간의 충족 및 위에서 언급한 록업 및 매도 유보 계약의 만료 또는 면제를 조건으로, 발행된 스톡옵션의 행사 또는 RSU의 정산에 따라 발행되는 주식은 미국 공개시장에서 즉시 재매도가 가능하게 될 것이다.",
+   "change": {
+    "kind": "revised",
+    "editorial": false,
+    "removed": [
+     {
+      "en": "exercise",
+      "ko": "행사기간"
+     }
+    ]
+   },
+   "marks": [
+    {
+     "t": "8,392,550,277",
+     "k": "added"
+    },
+    {
+     "t": "또한 Google은 Google과의 등록권 계약(이하 「Google RRA」)에 따라 등록청구권 및 Form S-3 등록권을 가지게 되며, 여기에는 Google이 동시 사모에서 매입하는 주식의 기초가 되는 Class A 보통주에 관한 권리가 포함된다. 「주식의 내용—등록권」 항목을 참조한다.",
+     "k": "added"
+    },
+    {
+     "t": "가득기간",
+     "k": "added"
+    }
+   ],
+   "en_marks": [
+    {
+     "t": "8,392,550,277",
+     "k": "added"
+    },
+    {
+     "t": "In addition, Google will be entitled to demand and Form S-3 registration rights under the registration rights agreement with Google (the \"Google RRA\"), including with respect to the Class A common stock underlying the shares it purchases in the concurrent private placement. See the section titled \" Description of Capital Stock—Registration Rights.\"",
+     "k": "added"
+    },
+    {
+     "t": "vesting",
+     "k": "added"
+    }
+   ]
+  }
+ ]
+}

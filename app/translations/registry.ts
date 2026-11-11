@@ -28,6 +28,8 @@ import eo14320 from "../data/translations/eo-14320-ai-export-2025-07.json";
 import eo14365 from "../data/translations/eo-14365-national-framework-2025-12.json";
 import eo14409 from "../data/translations/eo-14409-ai-security-2026-06.json";
 import bisAiDiffusion from "../data/translations/bis-ai-diffusion-rule-2025-01.json";
+import anthropicS1a1 from "../data/translations/anthropic-s1a1-2026-11-risk-changes.json";
+import anthropicS1a2 from "../data/translations/anthropic-s1a2-2026-11-risk-changes.json";
 import nvidiaFra from "../data/translations/nvidia-frontier-risk-assessment.json";
 import metaSsf21 from "../data/translations/meta-ssf-v2-1.json";
 import microsoftFgf from "../data/translations/microsoft-fgf-2026-02.json";
@@ -83,13 +85,16 @@ import xrAiCyberLetter2026 from "../data/translations/ai-cyber-letter-2026.json"
 
 // 번역 문서 한 편 = scripts/import_translation.py가 만든 JSON 한 개. 새 문서는 여기 import만 더한다.
 // marks: 번역문 강조(scripts/emphasize_translation.py). t는 ko의 연속 부분 문자열, 블록 안 순서대로·겹치지 않음.
-export type Mark = { t: string; k: "key" | "safety" };
+export type Mark = { t: string; k: "key" | "safety" | "added" };
 // refs: 문서 안 상호 참조(scripts/link_crossrefs.py). t는 ko의 인용된 제목, to는 가리키는 제목 블록의 id.
 export type CrossRef = { t: string; to: string };
 // table: 행은 " ⏎ ", 칸은 "|"로 나눈 Markdown 표 한 줄(scripts/import_translation.py). 첫 행이 머리글.
 // example: 대화 예시(Model Spec). 줄을 " ⏎ "로 이은 '<user> ⏎ 내용 ⏎ </user> ⏎ <comparison> ⏎ <assistant> <!-- GOOD: … --> …' 꼴.
 // untranslated: 번역 모델이 거절해 원문을 그대로 둔 블록(생물·화학 무기 관련 서술 등). ko == en.
-export type TranslationBlock = { type: "h2" | "h3" | "p" | "li" | "table" | "example"; en: string; ko: string; id?: string; marks?: Mark[]; refs?: CrossRef[]; untranslated?: boolean };
+// change: 정정본 비교 페이지에서 앞 판과 달라진 블록. added 표시는 marks(번역문)와 en_marks(원문)의 k:"added"로,
+// 지워진 구절은 removed로 싣는다. kind가 removed인 블록은 앞 판에만 있던 문단이다.
+export type BlockChange = { kind: "revised" | "added" | "removed" | "moved"; editorial?: boolean; note?: string; removed?: { en: string; ko: string }[] };
+export type TranslationBlock = { type: "h2" | "h3" | "p" | "li" | "table" | "example"; en: string; ko: string; id?: string; marks?: Mark[]; en_marks?: Mark[]; refs?: CrossRef[]; untranslated?: boolean; verbatim?: boolean; change?: BlockChange };
 export type TranslationDoc = {
   slug: string;
   title: string;
@@ -118,7 +123,7 @@ export type TranslationDoc = {
   blocks: TranslationBlock[];
 };
 
-export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, beamSafetyReport, microsoftFgf, amazonFmsf, chinaFramework3, nvidiaFra, cohereSecureAi, g42Fsf, xrButler1863, xrButler1865, xrButlerErewhon1872, xrTuringBbc1951, xrTuringHeretical1951, xrFliResearchPriorities2015, xrAsilomar2017, xrFliPause2023, xrCaisStatement2023, xrIdaisOxford2023, xrBletchley2023, xrEldersLongview2024, xrIdaisBeijing2024, xrRightToWarn2024, xrIdaisVenice2024, xrIdaisShanghai2025, xrRedLines2025, xrSuperintelligenceStatement2025, xrProHuman2026, xrIdaisLondon2026, xrAiCyberLetter2026, pacingFrontier, amodeiPaceFrontier, anthropicAdvancedAi, anthropicEconomicPolicy, openaiFederalBlueprint, openaiBuildingStandards, openaiNewsomLetter, googlePragmaticAi, cohereWhoDefines, aiiaCommitments2025, hiroshimaPrinciples2023, hiroshimaCode2023, hiroshimaAllActors2023, reaimCall2023, reaimPathways2026, globalDigitalCompact2024, parisStatement2025, newDelhiDeclaration2026, caSb53, nyRaise2026, ilSb315, usFrontierAct, callControlFrontier, ukAisiBestPractice, sandersPauseLetter, intelligenceExplosion, nistSiIncidentPractices, banAsiAct, stateSponsorsStatement, anthropicAlignmentAssessment, metrAcceleration, bengioWhyAgentsLie, sgCsaAgenticTabletop, whiteHouseSiAccord, eo14434, eo14110, eo14179, eo14320, eo14365, eo14409, bisAiDiffusion] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
+export const translations = ([anthropicS1, anthropicRsp34, openaiPreparedness2, openaiFgf, gdmFsf31, metaSsf21, xaiFaif202512, claudeConstitution, openaiModelSpec, shailabFrmf2, zaiOpenWeight, reflectionOsf, beamSafetyReport, microsoftFgf, amazonFmsf, chinaFramework3, nvidiaFra, cohereSecureAi, g42Fsf, xrButler1863, xrButler1865, xrButlerErewhon1872, xrTuringBbc1951, xrTuringHeretical1951, xrFliResearchPriorities2015, xrAsilomar2017, xrFliPause2023, xrCaisStatement2023, xrIdaisOxford2023, xrBletchley2023, xrEldersLongview2024, xrIdaisBeijing2024, xrRightToWarn2024, xrIdaisVenice2024, xrIdaisShanghai2025, xrRedLines2025, xrSuperintelligenceStatement2025, xrProHuman2026, xrIdaisLondon2026, xrAiCyberLetter2026, pacingFrontier, amodeiPaceFrontier, anthropicAdvancedAi, anthropicEconomicPolicy, openaiFederalBlueprint, openaiBuildingStandards, openaiNewsomLetter, googlePragmaticAi, cohereWhoDefines, aiiaCommitments2025, hiroshimaPrinciples2023, hiroshimaCode2023, hiroshimaAllActors2023, reaimCall2023, reaimPathways2026, globalDigitalCompact2024, parisStatement2025, newDelhiDeclaration2026, caSb53, nyRaise2026, ilSb315, usFrontierAct, callControlFrontier, ukAisiBestPractice, sandersPauseLetter, intelligenceExplosion, nistSiIncidentPractices, banAsiAct, stateSponsorsStatement, anthropicAlignmentAssessment, metrAcceleration, bengioWhyAgentsLie, sgCsaAgenticTabletop, whiteHouseSiAccord, eo14434, eo14110, eo14179, eo14320, eo14365, eo14409, bisAiDiffusion, anthropicS1a1, anthropicS1a2] as TranslationDoc[]).sort((a, b) => b.published.localeCompare(a.published));
 
 export const dotDate = (iso: string) => iso.replaceAll("-", ".");
 

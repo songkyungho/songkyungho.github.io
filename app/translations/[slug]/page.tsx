@@ -40,7 +40,9 @@ function inlineSpans(text: string, marks: Mark[], refs: CrossRef[], lang: "ko" |
       start: at, end: at + mark.t.length,
       node: (key) => mark.k === "key"
         ? <strong className="tr-key" key={key}>{withNotes(mark.t, lang)}</strong>
-        : <mark className="tr-safety" key={key}>{withNotes(mark.t, lang)}</mark>,
+        : mark.k === "added"
+          ? <ins className="tr-added" key={key}>{withNotes(mark.t, lang)}</ins>
+          : <mark className="tr-safety" key={key}>{withNotes(mark.t, lang)}</mark>,
     });
     cursor = at + mark.t.length;
   }
@@ -218,7 +220,51 @@ function HeadingText({ text, lang }: { text: string; lang: "ko" | "en" }) {
 
 const UNTRANSLATED = "번역하지 않음 — 번역 모델이 생물·화학 무기 등 위험한 정보에 해당할 수 있다고 판단해 거절한 부분이라 원문을 그대로 둡니다.";
 
+const CHANGE_LABEL = { revised: "수정", added: "새 문단", removed: "삭제된 문단", moved: "옮겨진 항목" } as const;
+
+// 정정본 비교: 블록 위에 무엇이 바뀌었는지 붙이고, 지워진 구절은 블록 아래에 줄을 그어 보인다.
+function ChangeTag({ change, lang }: { change: NonNullable<TranslationBlock["change"]>; lang: "ko" | "en" }) {
+  const label = lang === "ko"
+    ? `${CHANGE_LABEL[change.kind]}${change.editorial ? " · 표현만 다듬음" : ""}`
+    : { revised: "Revised", added: "New", removed: "Removed", moved: "Moved" }[change.kind] + (change.editorial ? " · editorial" : "");
+  return (
+    <p className={`tr-change-tag tr-change-${change.kind}${change.editorial ? " tr-change-editorial" : ""}`} lang={lang}>
+      {label}{change.note && lang === "ko" ? <span> — {change.note}</span> : null}
+    </p>
+  );
+}
+
+function Removed({ change, lang }: { change: NonNullable<TranslationBlock["change"]>; lang: "ko" | "en" }) {
+  if (!change.removed?.length) return null;
+  return (
+    <p className="tr-removed" lang={lang}>
+      <span>{lang === "ko" ? "지워진 구절" : "Deleted"}</span>
+      {change.removed.map((item, i) => <del key={i}>{item[lang]}</del>)}
+    </p>
+  );
+}
+
 function Row({ block }: { block: TranslationBlock }) {
+  if (block.change) {
+    const change = block.change;
+    const Heading = block.type === "h2" || block.type === "h3" ? block.type : null;
+    const cls = `tr-row tr-${block.type} tr-changed tr-changed-${change.kind}`;
+    return (
+      <div className={cls} id={block.id}>
+        {(["ko", "en"] as const).map((lang) => (
+          <div className={`tr-${lang}`} key={lang}>
+            <ChangeTag change={change} lang={lang} />
+            {Heading
+              ? <Heading lang={lang}>{change.kind === "removed" ? <del>{block[lang]}</del> : <Paragraphs lang={lang} marks={lang === "ko" ? block.marks : block.en_marks} text={block[lang]} />}</Heading>
+              : change.kind === "removed"
+                ? <p lang={lang}><del>{block[lang]}</del></p>
+                : <Paragraphs lang={lang} marks={lang === "ko" ? block.marks : block.en_marks} text={block[lang]} />}
+            <Removed change={change} lang={lang} />
+          </div>
+        ))}
+      </div>
+    );
+  }
   if (block.untranslated) {
     const Heading = block.type === "h2" || block.type === "h3" ? block.type : null;
     return (
@@ -359,7 +405,7 @@ export default async function TranslationPage({ params }: { params: Promise<Para
 
         <div className="tr-layout">
           <aside className="tr-rail">
-            <ViewSwitch hasMarks={doc.blocks.some((block) => block.marks?.length)} />
+            <ViewSwitch hasChanges={doc.blocks.some((block) => block.change)} hasMarks={doc.blocks.some((block) => block.marks?.some((m) => m.k !== "added"))} />
             <Toc doc={doc} />
           </aside>
           <div className="tr-body" data-marks="on" data-view="ko" id="tr-body">
