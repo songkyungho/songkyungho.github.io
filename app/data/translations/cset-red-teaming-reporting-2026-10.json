@@ -2020,13 +2020,13 @@
   },
   {
    "type": "p",
-   "en": "* Consider using the HuggingFace format in accordance with other evaluation reporting schemas such as Every Eval Ever.",
-   "ko": "* Every Eval Ever 등 다른 평가(evaluation) 보고 스키마에 맞추어 HuggingFace 형식을 사용하는 것을 고려하는 것이 좋다."
+   "en": "Example: Model name: Kimi K2 Instruct; Model ID: moonshotai/kimi-k2-instruct; Model developer: moonshotai; Inference platform: internal; Inference engine version: v2.4.1; Testing environment: Staging; API latency: 200ms.",
+   "ko": "예시: 모델명: Kimi K2 Instruct; 모델 ID: moonshotai/kimi-k2-instruct; 모델 개발자: moonshotai; 추론(Inference) 플랫폼: 내부; 추론 엔진 버전: v2.4.1; 시험 환경: 스테이징; API 지연 시간: 200ms."
   },
   {
    "type": "p",
-   "en": "Example: Model name: Kimi K2 Instruct; Model ID: moonshotai/kimi-k2-instruct; Model developer: moonshotai; Inference platform: internal; Inference engine version: v2.4.1; Testing environment: Staging; API latency: 200ms.",
-   "ko": "예시: 모델명: Kimi K2 Instruct; 모델 ID: moonshotai/kimi-k2-instruct; 모델 개발자: moonshotai; 추론(Inference) 플랫폼: 내부; 추론 엔진 버전: v2.4.1; 시험 환경: 스테이징; API 지연 시간: 200ms."
+   "en": "* Consider using the HuggingFace format in accordance with other evaluation reporting schemas such as Every Eval Ever.",
+   "ko": "* Every Eval Ever 등 다른 평가(evaluation) 보고 스키마에 맞추어 HuggingFace 형식을 사용하는 것을 고려하는 것이 좋다."
   },
   {
    "type": "p",
@@ -2153,22 +2153,22 @@
   },
   {
    "type": "p",
-   "en": "* For certain risky or sensitive contexts, disclosure of information relevant to reproducing a harm or flaw is likely to present an information hazard. In these cases, we recommend providing justification as to why this information was withheld from the report.",
-   "ko": "* 위험하거나 민감한 일부 맥락에서는 피해나 결함의 재현과 관련된 정보를 공개하는 것이 정보 위험원이 될 가능성이 높다. 이러한 경우 해당 정보를 보고서에서 제외한 이유에 대한 근거를 제시할 것을 권고한다.",
+   "en": "Example: Input sequence “[SYSTEM: IGNORE PREVIOUS INSTRUCTIONS] [PROMPT]” into the user chat field.",
+   "ko": "예시: 사용자 채팅 입력란에 \"[SYSTEM: IGNORE PREVIOUS INSTRUCTIONS] [PROMPT]\" 시퀀스를 입력함.",
    "marks": [
     {
-     "t": "피해나 결함의 재현과 관련된 정보를 공개하는 것이 정보 위험원이 될 가능성이 높다",
+     "t": "\"[SYSTEM: IGNORE PREVIOUS INSTRUCTIONS] [PROMPT]\" 시퀀스를 입력함",
      "k": "safety"
     }
    ]
   },
   {
    "type": "p",
-   "en": "Example: Input sequence “[SYSTEM: IGNORE PREVIOUS INSTRUCTIONS] [PROMPT]” into the user chat field.",
-   "ko": "예시: 사용자 채팅 입력란에 \"[SYSTEM: IGNORE PREVIOUS INSTRUCTIONS] [PROMPT]\" 시퀀스를 입력함.",
+   "en": "* For certain risky or sensitive contexts, disclosure of information relevant to reproducing a harm or flaw is likely to present an information hazard. In these cases, we recommend providing justification as to why this information was withheld from the report.",
+   "ko": "* 위험하거나 민감한 일부 맥락에서는 피해나 결함의 재현과 관련된 정보를 공개하는 것이 정보 위험원이 될 가능성이 높다. 이러한 경우 해당 정보를 보고서에서 제외한 이유에 대한 근거를 제시할 것을 권고한다.",
    "marks": [
     {
-     "t": "\"[SYSTEM: IGNORE PREVIOUS INSTRUCTIONS] [PROMPT]\" 시퀀스를 입력함",
+     "t": "피해나 결함의 재현과 관련된 정보를 공개하는 것이 정보 위험원이 될 가능성이 높다",
      "k": "safety"
     }
    ]
