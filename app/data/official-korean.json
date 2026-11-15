@@ -1,0 +1,250 @@
+[
+ {
+  "slug": "openai-children-first-declaration",
+  "title": "AI와 아동 안전에 관한 연구 지원",
+  "publisher": "OpenAI",
+  "published": "2026-11-12",
+  "url": "https://openai.com/ko-KR/index/children-first-declaration/",
+  "original_url": "https://openai.com/index/children-first-declaration/"
+ },
+ {
+  "slug": "openai-community-safety-report-and-new-protections-for-teens",
+  "title": "지역 사회 안전 보고서 및 청소년을 위한 새로운 보호 조치",
+  "publisher": "OpenAI",
+  "published": "2026-10-30",
+  "url": "https://openai.com/ko-KR/index/community-safety-report-and-new-protections-for-teens/",
+  "original_url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/"
+ },
+ {
+  "slug": "openai-how-we-detect-frontier-model-misalignment",
+  "title": "프런티어 모델의 비정렬을 탐지하는 방법",
+  "publisher": "OpenAI",
+  "published": "2026-10-29",
+  "url": "https://openai.com/ko-KR/index/how-we-detect-frontier-model-misalignment/",
+  "original_url": "https://openai.com/index/how-we-detect-frontier-model-misalignment/"
+ },
+ {
+  "slug": "openai-control-room",
+  "title": "Control Room: 연구 인프라 전반의 모델 워크로드를 추적하고 중단하는 중앙 시스템",
+  "publisher": "OpenAI",
+  "published": "2026-10-29",
+  "url": "https://openai.com/ko-KR/index/control-room/",
+  "original_url": "https://openai.com/index/control-room/"
+ },
+ {
+  "slug": "openai-updated-model-spec",
+  "title": "더 유능하고 유익한 AI를 위한 모델 사양 개정",
+  "publisher": "OpenAI",
+  "published": "2026-10-29",
+  "url": "https://openai.com/ko-KR/index/updated-model-spec/",
+  "original_url": "https://openai.com/index/updated-model-spec/"
+ },
+ {
+  "slug": "openai-securing-our-frontier-model-training-environment",
+  "title": "프런티어 모델 학습 환경의 보안 강화",
+  "publisher": "OpenAI",
+  "published": "2026-10-23",
+  "url": "https://openai.com/ko-KR/index/securing-our-frontier-model-training-environment/",
+  "original_url": "https://openai.com/index/securing-our-frontier-model-training-environment/"
+ },
+ {
+  "slug": "openai-coordinated-disclosure-of-critical-vulnerabilities",
+  "title": "Patch the Planet: 에이전트가 발견하는 심각한 취약점에 대한 전 세계적 대응 조율",
+  "publisher": "OpenAI",
+  "published": "2026-10-21",
+  "url": "https://openai.com/ko-KR/index/coordinated-disclosure-of-critical-vulnerabilities/",
+  "original_url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+ },
+ {
+  "slug": "openai-empowering-cyber-defenders",
+  "title": "프런티어 AI의 민주적 거버넌스, 2부: 사이버 방어자의 역량 강화",
+  "publisher": "OpenAI",
+  "published": "2026-10-21",
+  "url": "https://openai.com/ko-KR/index/empowering-cyber-defenders/",
+  "original_url": "https://openai.com/index/empowering-cyber-defenders/"
+ },
+ {
+  "slug": "openai-disrupting-ai-enabled-false-front-operations",
+  "title": "AI를 활용한 ‘위장 조직’ 작전 차단",
+  "publisher": "OpenAI",
+  "published": "2026-10-08",
+  "url": "https://openai.com/ko-KR/index/disrupting-ai-enabled-false-front-operations/",
+  "original_url": "https://openai.com/index/disrupting-ai-enabled-false-front-operations/"
+ },
+ {
+  "slug": "openai-eu-text-provenance",
+  "title": "EU 텍스트 출처 규정에 대한 OpenAI의 접근 방식",
+  "publisher": "OpenAI",
+  "published": "2026-10-05",
+  "url": "https://openai.com/ko-KR/index/eu-text-provenance/",
+  "original_url": "https://openai.com/index/eu-text-provenance/"
+ },
+ {
+  "slug": "openai-disrupting-a-coordinated-model-distillation-campaign",
+  "title": "조직적인 모델 증류 활동 차단",
+  "publisher": "OpenAI",
+  "published": "2026-09-30",
+  "url": "https://openai.com/ko-KR/index/disrupting-a-coordinated-model-distillation-campaign/",
+  "original_url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/"
+ },
+ {
+  "slug": "openai-towards-safety-cases-for-frontier-ai-training",
+  "title": "프런티어 AI 학습의 안전성 입증 자료를 향하여",
+  "publisher": "OpenAI",
+  "published": "2026-09-28",
+  "url": "https://openai.com/ko-KR/index/towards-safety-cases-for-frontier-ai-training/",
+  "original_url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training/"
+ },
+ {
+  "slug": "openai-sam-altman-un-security-council-remarks",
+  "title": "유엔 안전보장이사회에서 한 샘 올트먼의 연설",
+  "publisher": "OpenAI",
+  "published": "2026-09-23",
+  "url": "https://openai.com/ko-KR/index/sam-altman-un-security-council-remarks/",
+  "original_url": "https://openai.com/index/sam-altman-un-security-council-remarks/"
+ },
+ {
+  "slug": "openai-priorities-principles-third-party-assessments",
+  "title": "효과적인 제3자 평가를 위한 우선순위와 원칙",
+  "publisher": "OpenAI",
+  "published": "2026-09-22",
+  "url": "https://openai.com/ko-KR/index/priorities-principles-third-party-assessments/",
+  "original_url": "https://openai.com/index/priorities-principles-third-party-assessments/"
+ },
+ {
+  "slug": "openai-model-misalignment-reporting-framework",
+  "title": "모델 정렬 불일치 보고 프레임워크",
+  "publisher": "OpenAI",
+  "published": "2026-09-16",
+  "url": "https://openai.com/ko-KR/index/model-misalignment-reporting-framework/",
+  "original_url": "https://openai.com/index/model-misalignment-reporting-framework/"
+ },
+ {
+  "slug": "openai-ai-policy-window",
+  "title": "AI 정책을 마련할 기회가 열려 있습니다. 지금 행동해야 합니다.",
+  "publisher": "OpenAI",
+  "published": "2026-09-09",
+  "url": "https://openai.com/ko-KR/index/ai-policy-window/",
+  "original_url": "https://openai.com/index/ai-policy-window/"
+ },
+ {
+  "slug": "openai-safety-overview-gpt-6-astra",
+  "title": "안전 개요: GPT-6 Astra",
+  "publisher": "OpenAI",
+  "published": "2026-09-03",
+  "url": "https://openai.com/ko-KR/index/safety-overview-gpt-6-astra/",
+  "original_url": "https://openai.com/index/safety-overview-gpt-6-astra/"
+ },
+ {
+  "slug": "openai-path-to-astra",
+  "title": "Astra로 향하는 길: Critical 역량과 프런티어 보호 조치",
+  "publisher": "OpenAI",
+  "published": "2026-09-01",
+  "url": "https://openai.com/ko-KR/index/path-to-astra/",
+  "original_url": "https://openai.com/index/path-to-astra/"
+ },
+ {
+  "slug": "openai-hugging-face-incident-and-the-road-ahead",
+  "title": "Hugging Face 사고와 앞으로의 방향",
+  "publisher": "OpenAI",
+  "published": "2026-08-26",
+  "url": "https://openai.com/ko-KR/index/hugging-face-incident-and-the-road-ahead/",
+  "original_url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/"
+ },
+ {
+  "slug": "openai-third-party-cyber-evaluations-involving-openai-models",
+  "title": "OpenAI 모델 관련 제3자 사이버 평가",
+  "publisher": "OpenAI",
+  "published": "2026-08-04",
+  "url": "https://openai.com/ko-KR/index/third-party-cyber-evaluations-involving-openai-models/",
+  "original_url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/"
+ },
+ {
+  "slug": "openai-helping-build-shared-standards-for-advanced-ai",
+  "title": "고도화된 AI를 위한 공통 기준을 함께 만들어 갑니다",
+  "publisher": "OpenAI",
+  "published": "2026-06-23",
+  "url": "https://openai.com/ko-KR/index/helping-build-shared-standards-for-advanced-ai/",
+  "original_url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai/"
+ },
+ {
+  "slug": "openai-deployment-simulation",
+  "title": "배포 시뮬레이션을 통한 출시 전 모델 행동 예측",
+  "publisher": "OpenAI",
+  "published": "2026-06-16",
+  "url": "https://openai.com/ko-KR/index/deployment-simulation/",
+  "original_url": "https://openai.com/index/deployment-simulation/"
+ },
+ {
+  "slug": "openai-prc-linked-influence-operations-ai-debates",
+  "title": "중국 연계 영향력 작전, 미국 AI 논쟁 겨냥",
+  "publisher": "OpenAI",
+  "published": "2026-06-10",
+  "url": "https://openai.com/ko-KR/index/prc-linked-influence-operations-ai-debates/",
+  "original_url": "https://openai.com/index/prc-linked-influence-operations-ai-debates/"
+ },
+ {
+  "slug": "openai-industrial-policy-for-the-intelligence-age",
+  "title": "인텔리전스 시대를 위한 산업 정책",
+  "publisher": "OpenAI",
+  "published": "2026-06-09",
+  "url": "https://openai.com/ko-KR/index/industrial-policy-for-the-intelligence-age/",
+  "original_url": "https://openai.com/index/industrial-policy-for-the-intelligence-age/"
+ },
+ {
+  "slug": "openai-public-policy-agenda",
+  "title": "OpenAI의 공공 정책 의제",
+  "publisher": "OpenAI",
+  "published": "2026-06-03",
+  "url": "https://openai.com/ko-KR/index/public-policy-agenda/",
+  "original_url": "https://openai.com/index/public-policy-agenda/"
+ },
+ {
+  "slug": "openai-advancing-youth-safety-and-opportunity-through-global-leadership",
+  "title": "글로벌 리더십을 통한 청소년 안전과 기회 증진",
+  "publisher": "OpenAI",
+  "published": "2026-06-02",
+  "url": "https://openai.com/ko-KR/index/advancing-youth-safety-and-opportunity-through-global-leadership/",
+  "original_url": "https://openai.com/index/advancing-youth-safety-and-opportunity-through-global-leadership/"
+ },
+ {
+  "slug": "openai-trustworthy-third-party-evaluations-foundations",
+  "title": "신뢰할 수 있는 제3자 평가를 위한 공동 플레이북",
+  "publisher": "OpenAI",
+  "published": "2026-05-29",
+  "url": "https://openai.com/ko-KR/index/trustworthy-third-party-evaluations-foundations/",
+  "original_url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations/"
+ },
+ {
+  "slug": "openai-introducing-child-safety-blueprint",
+  "title": "아동 안전 청사진 소개",
+  "publisher": "OpenAI",
+  "published": "2026-04-08",
+  "url": "https://openai.com/ko-KR/index/introducing-child-safety-blueprint/",
+  "original_url": "https://openai.com/index/introducing-child-safety-blueprint/"
+ },
+ {
+  "slug": "openai-designing-agents-to-resist-prompt-injection",
+  "title": "프롬프트 인젝션을 거부하는 AI 에이전트 설계하기",
+  "publisher": "OpenAI",
+  "published": "2026-03-11",
+  "url": "https://openai.com/ko-KR/index/designing-agents-to-resist-prompt-injection/",
+  "original_url": "https://openai.com/index/designing-agents-to-resist-prompt-injection/"
+ },
+ {
+  "slug": "openai-reasoning-models-chain-of-thought-controllability",
+  "title": "추론 모델은 자신의 사고 과정을 완전히 제어하지 못하며, 이는 오히려 바람직한 신호입니다.",
+  "publisher": "OpenAI",
+  "published": "2026-03-05",
+  "url": "https://openai.com/ko-KR/index/reasoning-models-chain-of-thought-controllability/",
+  "original_url": "https://openai.com/index/reasoning-models-chain-of-thought-controllability/"
+ },
+ {
+  "slug": "openai-estimating-worst-case-frontier-risks-of-open-weight-llms",
+  "title": "개방형 가중치 LLM의 최악의 경우 프론티어 위험 추정",
+  "publisher": "OpenAI",
+  "published": "2025-08-05",
+  "url": "https://openai.com/ko-KR/index/estimating-worst-case-frontier-risks-of-open-weight-llms/",
+  "original_url": "https://openai.com/index/estimating-worst-case-frontier-risks-of-open-weight-llms/"
+ }
+]

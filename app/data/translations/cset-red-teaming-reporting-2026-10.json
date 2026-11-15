@@ -1,0 +1,2338 @@
+{
+ "slug": "cset-red-teaming-reporting-2026-10",
+ "title": "AI 레드티밍 보고의 체계화: 시험 결과의 투명성과 활용도를 높이기 위한 권고",
+ "original_title": "Systematizing the Reporting of AI Red-Teaming: Recommendations to Improve the Transparency and Utility of Test Results",
+ "publisher": "조지타운대 안보·신흥기술센터(CSET)",
+ "published": "2026-10-29",
+ "source_url": "https://cset.georgetown.edu/publication/systematizing-the-reporting-of-ai-red-teaming/",
+ "source_note": "CSET 정책 브리프(PDF, 58쪽)의 본문, 부록 C(보고 양식), 미주 전문이다. 부록 A(주제 분석 코드북)와 부록 B(인터뷰 문항), 저자 소개와 감사의 글은 싣지 않았다. 원문은 CC BY-NC 4.0으로 공개됐다(doi: 10.51593/20250017).",
+ "source_label": "원문 보기 (CSET)",
+ "summary": "조지타운대 CSET가 AI 레드티밍 실무자들을 인터뷰해, 레드티밍 결과를 공개할 때 무엇을 보고해야 하는지 정리한 정책 브리프다. 레드티밍은 맥락에 크게 좌우되는 정성적 시험이라 조직마다 방법과 보고 관행이 제각각이고, 그래서 결과를 해석하거나 검증하기 어렵다고 진단한다. 공개 보고에 담을 네 차원으로 시험 범위를 정한 위협 모델, 방법론의 세부, 이끌어 낸 피해·결함·취약점, 완화에 쓸 수 있는 정보를 제시한다. 레드티머에게는 사생활·기밀·안전을 지키면서 네 차원을 보고하라고 권하고, 정책 입안자에게는 정보 공유 경로를 만들고 연방 평가 기관을 지원하며 결과 공개의 유인을 높이라고 권한다.",
+ "doc_kind": "정책 브리프",
+ "image_caption": "원문 첫 대목 (다시 짬)",
+ "image": "/images/translations/cset-red-teaming-reporting-2026-10-cover.webp",
+ "og_image": "/images/translations/cset-red-teaming-reporting-2026-10-cover.jpg",
+ "translated": "2026-11-15",
+ "model": "Claude Opus 5.5 (effort medium)",
+ "glossary": "AI 안전 번역 용어집",
+ "glossary_url": "https://songkyungho.github.io/ai-safety-glossary/",
+ "stats": {
+  "blocks": 200,
+  "sections": 8,
+  "items": 23,
+  "words_en": 11800
+ },
+ "blocks": [
+  {
+   "type": "h2",
+   "en": "Executive Summary",
+   "ko": "요약본",
+   "id": "s0"
+  },
+  {
+   "type": "p",
+   "en": "Red-teaming is a key process in evaluating the safety and security of artificial intelligence systems. However, its qualitative and highly contextualized nature has led to disparate methodologies and reporting practices. Challenges facing AI red-teaming as a practice include a lack of scientific grounding, inconsistent testing practices, and misalignment with external stakeholders. These challenges arise from the variety of contexts and threat models in which red-teaming is performed and from the incentives driving red-teaming exercises.",
+   "ko": "레드티밍은 인공지능 시스템의 안전과 보안을 평가(evaluation)하는 핵심 절차이다. 그러나 레드티밍은 정성적이고 맥락 의존성이 매우 높아 방법론과 보고 관행이 제각각이다. 관행으로서의 AI 레드티밍이 직면한 과제로는 과학적 근거의 부족, 일관되지 않은 시험 관행, 외부 이해관계자와의 오정렬 등이 있다. 이러한 과제는 레드티밍이 수행되는 맥락과 위협 모델(Threat model)이 다양하다는 점, 그리고 레드티밍 활동을 추동하는 유인 구조에서 비롯된다.",
+   "marks": [
+    {
+     "t": "레드티밍은 인공지능 시스템의 안전과 보안을 평가(evaluation)하는 핵심 절차이다.",
+     "k": "safety"
+    },
+    {
+     "t": "과학적 근거의 부족, 일관되지 않은 시험 관행, 외부 이해관계자와의 오정렬",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This leads to a gap between the information that gets reported and the information that could improve the practice of red-teaming, which in turn could help improve the AI evaluations ecosystem and our collective understanding of how AI systems behave. Systematizing the way AI red-teaming results are reported is the first step toward reducing fragmentation across the ecosystem and making results more consistent, transparent, and useful to all stakeholders—from AI red-teamers themselves to decision-makers who rely on red teams to produce meaningful information about AI systems.",
+   "ko": "그 결과 실제로 보고되는 정보와 레드티밍 관행을 개선할 수 있는 정보 사이에 간극이 생긴다. 레드티밍 관행이 개선되면 AI 평가 생태계와 AI 시스템의 작동 방식에 대한 우리의 공동 이해도 나아질 수 있다. AI 레드티밍 결과의 보고 방식을 체계화하는 것은 생태계 전반의 파편화를 줄이고, 결과를 더 일관되고 투명하며 모든 이해관계자에게 유용하게 만들기 위한 첫걸음이다. 여기서 이해관계자란 AI 레드티머 자신부터 AI 시스템에 관한 유의미한 정보를 산출하는 데 레드팀에 의존하는 의사결정자까지를 아우른다.",
+   "marks": [
+    {
+     "t": "실제로 보고되는 정보와 레드티밍 관행을 개선할 수 있는 정보 사이에 간극이 생긴다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In this paper, we conduct interviews with AI red-teaming practitioners to learn about how current testing practices affect reporting, what information different stakeholders find valuable to report, and what challenges might impact efforts to systematize reporting practices. Based on our analysis, we identify four recurring dimensions that are important to report publicly following an AI red-teaming exercise: the threat model used to scope testing; the methodological details; harms, flaws, or vulnerabilities elicited in the testing process; and actionable information for mitigation. Reporting these dimensions can allow testers to clarify contextual information about an AI system’s flaws.",
+   "ko": "본 보고서에서는 AI 레드티밍 실무자를 인터뷰하여 현재의 시험 관행이 보고에 어떤 영향을 미치는지, 각 이해관계자가 어떤 정보를 보고할 가치가 있다고 보는지, 보고 관행을 체계화하려는 노력에 어떤 과제가 영향을 줄 수 있는지를 살펴본다. 분석을 바탕으로, AI 레드티밍 활동 후 공개적으로 보고하는 것이 중요하며 반복적으로 나타나는 네 가지 차원을 도출한다. 시험 범위를 설정하는 데 사용한 위협 모델, 방법론의 세부 사항, 시험 과정에서 이끌어 낸 위해·결함·취약점, 완화를 위한 실행 가능한 정보가 그것이다. 이 차원들을 보고하면 시험자는 AI 시스템의 결함에 관한 맥락 정보를 명확히 밝힐 수 있다.",
+   "marks": [
+    {
+     "t": "시험 범위를 설정하는 데 사용한 위협 모델, 방법론의 세부 사항, 시험 과정에서 이끌어 낸 위해·결함·취약점, 완화를 위한 실행 가능한 정보",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our recommendations are aimed primarily at an audience of AI developers, deployers, and red-teamers who can use the reported information to improve AI safety and security practices. We recommend systematizing the practice of public AI red-teaming by reporting on these four dimensions in ways that respect red-teamers’ needs to preserve privacy, confidentiality, and safety. We also recommend ways policymakers and private-sector stakeholders can support the AI test and evaluation ecosystem by creating information-sharing channels, supporting federal government bodies that conduct evaluations and set internal AI use policies, and improving incentives for AI red-teamers to disclose the outcomes of their evaluations.",
+   "ko": "본 보고서의 권고는 주로 보고된 정보를 활용해 AI 안전 및 보안 실행 방안을 개선할 수 있는 AI 개발자, 배포자, 레드티머를 대상으로 한다. 우리는 프라이버시, 기밀성, 안전을 지켜야 하는 레드티머의 요구를 존중하는 방식으로 이 네 가지 차원을 보고하여 공개 AI 레드티밍 관행을 체계화할 것을 권고한다. 또한 정책결정자와 민간 부문 이해관계자가 AI 시험·평가 생태계를 지원할 수 있는 방안도 권고한다. 정보 공유 채널을 구축하고, 평가를 수행하고 내부 AI 이용 정책을 수립하는 연방정부 기관을 지원하며, AI 레드티머가 평가 결과를 공개할 유인을 개선하는 것이 이에 해당한다.",
+   "marks": [
+    {
+     "t": "보고된 정보를 활용해 AI 안전 및 보안 실행 방안을 개선할 수 있는 AI 개발자, 배포자, 레드티머",
+     "k": "safety"
+    },
+    {
+     "t": "AI 레드티머가 평가 결과를 공개할 유인을 개선하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Introduction",
+   "ko": "서론",
+   "id": "s5"
+  },
+  {
+   "type": "p",
+   "en": "AI red-teaming is a process of probing for flaws and vulnerabilities in an AI model or system. The term is inherited from the cybersecurity context, where it refers to emulating adversarial or malicious behaviors in a computer network. In the AI context, red-teaming describes a variety of qualitative testing processes in which testers attempt to discover weaknesses in AI systems, which may include both the models themselves and other software systems that surround them.[^1] These weaknesses may include traditional security vulnerabilities as well as flaws, or unexpected behaviors that fall outside the scope or intent of an AI system’s design.[^2] Along with benchmarking, red-teaming is currently one of the most prominent and widely used methodologies for evaluating the safety and security of AI systems.[^3]",
+   "ko": "AI 레드티밍은 AI 모델이나 시스템의 결함과 취약점을 탐색하는 절차이다. 이 용어는 사이버 보안 분야에서 유래했으며, 그 분야에서는 컴퓨터 네트워크 안에서 적대적 또는 악의적 행동을 모사하는 것을 뜻한다. AI 맥락에서 레드티밍은 시험자가 AI 시스템의 약점을 찾아내려 하는 다양한 정성적 시험 절차를 가리킨다. 여기서 AI 시스템에는 모델 자체뿐 아니라 이를 둘러싼 다른 소프트웨어 시스템도 포함될 수 있다.[^1] 이러한 약점에는 전통적인 보안 취약점뿐 아니라 결함, 즉 AI 시스템 설계의 범위나 의도를 벗어나는 예상치 못한 행동도 포함될 수 있다.[^2] 레드티밍은 벤치마크 평가와 함께 현재 AI 시스템의 안전과 보안을 평가하는 가장 대표적이고 널리 쓰이는 방법론 중 하나이다.[^3]",
+   "marks": [
+    {
+     "t": "AI 레드티밍은 AI 모델이나 시스템의 결함과 취약점을 탐색하는 절차이다.",
+     "k": "safety"
+    },
+    {
+     "t": "AI 시스템 설계의 범위나 의도를 벗어나는 예상치 못한 행동",
+     "k": "safety"
+    },
+    {
+     "t": "레드티밍은 벤치마크 평가와 함께 현재 AI 시스템의 안전과 보안을 평가하는 가장 대표적이고 널리 쓰이는 방법론 중 하나이다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Despite the popularity of the practice, there remains a good deal of variation in terms of how individual red-teaming exercises are carried out, which organizations are capable of performing effective red-teaming, and for whom the red-teaming exercises are performed. Because of these inconsistencies and imbalances between actors, the results of red-teaming exercises may not be interpretable or verifiable. This undermines the usefulness of red-teaming results for making decisions about an AI model’s safety, security, or utility.",
+   "ko": "이 관행이 널리 쓰이고 있음에도, 개별 레드티밍 활동을 수행하는 방식, 효과적인 레드티밍을 수행할 역량을 갖춘 조직, 레드티밍 활동의 수행 대상 측면에서 여전히 상당한 편차가 존재한다. 이러한 비일관성과 행위자 간 불균형 때문에 레드티밍 활동의 결과는 해석하거나 검증하기 어려울 수 있다. 이는 AI 모델의 안전, 보안, 효용에 관한 의사결정에 레드티밍 결과가 갖는 유용성을 떨어뜨린다.",
+   "marks": [
+    {
+     "t": "이러한 비일관성과 행위자 간 불균형 때문에 레드티밍 활동의 결과는 해석하거나 검증하기 어려울 수 있다.",
+     "k": "key"
+    },
+    {
+     "t": "AI 모델의 안전, 보안, 효용에 관한 의사결정에 레드티밍 결과가 갖는 유용성을 떨어뜨린다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This paper attempts to address these challenges by focusing on two questions: How can we improve the way AI red-teaming results are publicly reported, and how can we make reported information more actionable to both primary stakeholders (AI developers, deployers, and testers) and downstream stakeholders (policymakers and other decision-makers)? To address these questions, we conducted in-depth interviews with AI red-teaming practitioners and identified four key dimensions that are important to report on following an AI red-teaming exercise. We also describe the tensions that prevent the reporting of these dimensions.",
+   "ko": "본 보고서는 두 가지 질문에 초점을 맞추어 이러한 과제를 다루고자 한다. AI 레드티밍 결과를 공개 보고하는 방식을 어떻게 개선할 수 있는가? 그리고 보고된 정보를 1차 이해관계자(AI 개발자, 배포자, 시험자)와 하위 이해관계자(정책결정자 및 기타 의사결정자) 모두에게 어떻게 더 실행 가능한 정보로 만들 수 있는가? 이 질문들을 다루기 위해 우리는 AI 레드티밍 실무자를 대상으로 심층 인터뷰를 실시하고, AI 레드티밍 활동 후 보고하는 것이 중요한 네 가지 핵심 차원을 도출했다. 또한 이 차원들의 보고를 가로막는 긴장 관계도 기술한다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍 결과를 공개 보고하는 방식을 어떻게 개선할 수 있는가?",
+     "k": "key"
+    },
+    {
+     "t": "AI 레드티밍 활동 후 보고하는 것이 중요한 네 가지 핵심 차원",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The first part of this report contextualizes the problem by explaining the importance of AI red-teaming as an evaluation methodology. Part 2 discusses the methodology of our interview study. Part 3 details the results of the study in five subsections: how context shapes AI red-teaming practices; the importance of threat modeling; how stakeholder demands influence reporting; the four key dimensions to report; and the constraints and challenges that affect both reporting and the practice of AI red-teaming as a whole. Finally, Part 4 summarizes our key takeaways from this study, including recommendations for AI red-teamers on how to systematize public reporting and for policymakers and other stakeholders on how to improve incentives to promote better AI red-teaming practices.",
+   "ko": "본 보고서의 제1부는 평가 방법론으로서 AI 레드티밍이 갖는 중요성을 설명하여 문제의 맥락을 제시한다. 제2부는 인터뷰 연구의 방법론을 논의한다. 제3부는 연구 결과를 다섯 개 하위 절로 나누어 상세히 기술한다. 맥락이 AI 레드티밍 관행을 형성하는 방식, 위협 모델링의 중요성, 이해관계자의 요구가 보고에 미치는 영향, 보고해야 할 네 가지 핵심 차원, 그리고 보고와 AI 레드티밍 관행 전반에 영향을 미치는 제약과 과제가 그것이다. 마지막으로 제4부는 본 연구의 주요 시사점을 정리한다. 여기에는 공개 보고를 체계화하는 방법에 관한 AI 레드티머 대상 권고와, 더 나은 AI 레드티밍 실행 방안을 촉진하도록 유인을 개선하는 방법에 관한 정책결정자 및 기타 이해관계자 대상 권고가 포함된다.",
+   "marks": [
+    {
+     "t": "위협 모델링의 중요성",
+     "k": "safety"
+    },
+    {
+     "t": "더 나은 AI 레드티밍 실행 방안을 촉진하도록 유인을 개선하는 방법",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Part 1: Background",
+   "ko": "제1부: 배경",
+   "id": "s10"
+  },
+  {
+   "type": "h3",
+   "en": "Why Is AI Red-Teaming Important?",
+   "ko": "AI 레드티밍은 왜 중요한가?",
+   "id": "s11"
+  },
+  {
+   "type": "p",
+   "en": "AI red-teaming—which we define as an interactive process designed to probe for flaws and vulnerabilities in an AI model or system, typically involving adversarial testing techniques—allows testers to identify safety and security issues in AI systems through dynamic, iterative exercises. AI red-teaming is designed to simulate and adapt to the diverse, unpredictable behaviors and misuse patterns of real-world end users, which provides adaptability and scope that other evaluation methods such as benchmarking lack. Red-teaming’s flexibility allows for customization to each specific AI system and deployment context, enabling AI red-teamers to uncover complex problems that other testing methodologies might not address. Because safety and security flaws can manifest in such a variety of ways for AI systems, this customizable methodology can be essential to identifying niches in attack surfaces. Red-teaming offers no guarantees that an AI system is fully secure but rather identifies flaws and vulnerabilities that can then be remedied.",
+   "ko": "우리는 AI 레드티밍을 AI 모델이나 시스템의 결함과 취약점을 탐색하도록 설계된 상호작용적 절차로서 일반적으로 적대적 시험 기법을 수반하는 것으로 정의한다. AI 레드티밍을 통해 시험자는 동적이고 반복적인 활동으로 AI 시스템의 안전 및 보안 문제를 식별할 수 있다. AI 레드티밍은 실제 최종 사용자의 다양하고 예측 불가능한 행동과 오용 패턴을 모사하고 이에 적응하도록 설계된다. 이러한 특성 덕분에 벤치마크 평가 같은 다른 평가 방법에는 없는 적응성과 범위를 갖춘다. 레드티밍은 유연하여 개별 AI 시스템과 배포 맥락에 맞게 조정할 수 있으므로, AI 레드티머는 다른 시험 방법론으로는 다루지 못할 수 있는 복잡한 문제를 찾아낼 수 있다. AI 시스템의 안전 및 보안 결함은 매우 다양한 방식으로 나타날 수 있으므로, 이처럼 맞춤형으로 조정 가능한 방법론은 공격 표면의 틈새를 식별하는 데 필수적일 수 있다. 레드티밍은 AI 시스템의 보안이 완전하다는 것을 보장하지는 않는다. 그보다는 이후 시정할 수 있는 결함과 취약점을 식별한다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍을 AI 모델이나 시스템의 결함과 취약점을 탐색하도록 설계된 상호작용적 절차",
+     "k": "safety"
+    },
+    {
+     "t": "실제 최종 사용자의 다양하고 예측 불가능한 행동과 오용 패턴을 모사하고 이에 적응하도록 설계된다",
+     "k": "safety"
+    },
+    {
+     "t": "레드티밍은 AI 시스템의 보안이 완전하다는 것을 보장하지는 않는다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI red-teaming is not the only way to evaluate the safety and security of an AI system. For instance, several benchmarks exist to measure how robust a model is to jailbreaks or other attempts at eliciting harm from the model.[^4] Unlike red-teaming, benchmarks are easily reproducible and permit apples-to-apples comparisons of performance between two models. However, benchmarks have a limited scope, rarely extending beyond the behavior of a model and into the interactions between the model and the system it is embedded within.[^5] Furthermore, benchmarks are relatively static and require significant effort to develop and update for novel AI systems and threat models. In contrast, red-teaming provides model testers with an evaluation method that can be adapted as needed.",
+   "ko": "AI 레드티밍만이 AI 시스템의 안전과 보안을 평가하는 유일한 방법은 아니다. 예를 들어 모델이 탈옥(Jailbreak)이나 모델로부터 위해 응답을 이끌어 내려는 기타 시도에 얼마나 견고한지를 측정하는 벤치마크가 여럿 존재한다.[^4] 레드티밍과 달리 벤치마크는 재현이 쉽고 두 모델 간 성능을 동일한 조건에서 비교할 수 있다. 그러나 벤치마크는 범위가 제한적이어서 모델의 행동을 넘어 모델과 모델이 탑재된 시스템 간 상호작용까지 다루는 경우가 드물다.[^5] 또한 벤치마크는 비교적 정적이며, 새로운 AI 시스템과 위협 모델에 맞게 개발하고 갱신하는 데 상당한 노력이 필요하다. 반면 레드티밍은 모델 시험자에게 필요에 따라 조정할 수 있는 평가 방법을 제공한다.",
+   "marks": [
+    {
+     "t": "모델이 탈옥(Jailbreak)이나 모델로부터 위해 응답을 이끌어 내려는 기타 시도에 얼마나 견고한지를 측정하는 벤치마크",
+     "k": "safety"
+    },
+    {
+     "t": "벤치마크는 범위가 제한적이어서 모델의 행동을 넘어 모델과 모델이 탑재된 시스템 간 상호작용까지 다루는 경우가 드물다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "AI red-teaming is sometimes criticized as merely a sophisticated form of model jailbreaking—focusing too narrowly on finding prompts that bypass safety guardrails.[^6] However, this perspective overlooks the broader value of red-teaming. Comprehensive red-teaming extends its focus beyond the model’s immediate responses to address flaws and vulnerabilities in the AI system’s architecture and its deployment environment. Red-teaming is crucial for understanding how AI systems will behave under certain conditions. It can elicit unexpected behaviors or harms that may have been missed by other testing methodologies, test model guardrails, and produce data that ultimately informs decisions regarding whether a model is safe or secure.",
+   "ko": "AI 레드티밍은 때때로 정교한 형태의 모델 탈옥에 불과하다는 비판을 받는다. 안전 가드레일을 우회하는 프롬프트를 찾는 데 지나치게 좁게 초점을 맞춘다는 것이다.[^6] 그러나 이러한 관점은 레드티밍의 더 넓은 가치를 간과한다. 포괄적인 레드티밍은 모델의 즉각적인 응답을 넘어 AI 시스템의 아키텍처와 배포 환경에 존재하는 결함과 취약점까지 다룬다. 레드티밍은 AI 시스템이 특정 조건에서 어떻게 행동할지 이해하는 데 매우 중요하다. 레드티밍은 다른 시험 방법론이 놓쳤을 수 있는 예상치 못한 행동이나 피해를 이끌어 내고, 모델 가드레일을 시험하며, 궁극적으로 모델이 안전한지 또는 보안성을 갖추었는지에 관한 의사결정의 근거가 되는 데이터를 생성할 수 있다.",
+   "marks": [
+    {
+     "t": "안전 가드레일을 우회하는 프롬프트를 찾는 데 지나치게 좁게 초점을 맞춘다는 것이다.",
+     "k": "safety"
+    },
+    {
+     "t": "레드티밍은 다른 시험 방법론이 놓쳤을 수 있는 예상치 못한 행동이나 피해를 이끌어 내고, 모델 가드레일을 시험하며, 궁극적으로 모델이 안전한지 또는 보안성을 갖추었는지에 관한 의사결정의 근거가 되는 데이터를 생성할 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Why Is Public Reporting Important?",
+   "ko": "공개 보고는 왜 중요한가?",
+   "id": "s15"
+  },
+  {
+   "type": "p",
+   "en": "Reporting the outcomes of AI red-teaming exercises is crucial for disseminating information about AI model safety and security. Reports also communicate important information to other players within the AI test and evaluation ecosystem, such as what is being tested, which tools and methods are used, and how test results should be interpreted by external stakeholders. Reports can be either private or publicly disseminated. This paper focuses on ways to improve the quality of publicly reported information generated by AI red-teaming exercises.",
+   "ko": "AI 레드티밍 활동의 결과를 보고하는 것은 AI 모델의 안전 및 보안에 관한 정보를 확산하는 데 매우 중요하다. 보고서는 또한 AI 시험·평가(T&E) 생태계 내 다른 행위자들에게 무엇이 시험되고 있는지, 어떤 도구와 방법이 사용되는지, 외부 이해관계자가 시험 결과를 어떻게 해석해야 하는지 등 중요한 정보를 전달한다. 보고서는 비공개로 유지될 수도 있고 공개적으로 배포될 수도 있다. 본 보고서는 AI 레드티밍 활동에서 생성되어 공개 보고되는 정보의 질을 개선하는 방안에 초점을 맞춘다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍 활동의 결과를 보고하는 것은 AI 모델의 안전 및 보안에 관한 정보를 확산하는 데 매우 중요하다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Four classes of stakeholders serve as the audience and beneficiaries of public AI red-teaming: the general public, policymakers and other decision-makers, AI developers and deployers, and other AI red-teamers. For the public, red-teaming results serve as a transparency mechanism, reporting what harms may be realized via the AI system. For policymakers and other decision-makers (including those from the private sector), red-teaming results help guide choices related to AI adoption, organizational policy, and risk management. For AI developers and deployers, the results are used to guide the mitigation of potential harms. For other AI red-teamers, results serve as a record of the state of the art, allowing other red teams to update their tactics based on what has been reported. Other red-teamers are also positioned to validate or act on red-teaming results.",
+   "ko": "공개 AI 레드티밍의 독자이자 수혜자는 네 부류의 이해관계자, 즉 일반 대중, 정책결정자 및 기타 의사결정자, AI 개발자 및 배포자, 그리고 다른 AI 레드티머이다. 대중에게 레드티밍 결과는 AI 시스템을 통해 어떤 피해가 현실화될 수 있는지 알리는 투명성 메커니즘의 역할을 한다. 정책결정자 및 기타 의사결정자(민간 부문 포함)에게 레드티밍 결과는 AI 도입, 조직 정책, 위험 관리와 관련된 선택을 안내하는 데 도움이 된다. AI 개발자 및 배포자에게 그 결과는 잠재적 피해의 완화를 안내하는 데 활용된다. 다른 AI 레드티머에게 그 결과는 최첨단 수준의 기록으로서, 다른 레드팀이 보고된 내용을 바탕으로 전술을 갱신할 수 있게 한다. 다른 레드티머는 또한 레드티밍 결과를 검증하거나 이에 근거해 조치를 취할 수 있는 위치에 있다.",
+   "marks": [
+    {
+     "t": "대중에게 레드티밍 결과는 AI 시스템을 통해 어떤 피해가 현실화될 수 있는지 알리는 투명성 메커니즘의 역할을 한다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 개발자 및 배포자에게 그 결과는 잠재적 피해의 완화를 안내하는 데 활용된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Each of these uses relies on how the results are reported, and most of them require a high level of transparency in external reporting. Improving red-teaming reporting practices can benefit not only red-teamers and the broader AI development community—what one participant in our interview study referred to as “uplifting the community of practice”—but also stakeholders who rely on evaluation reporting to inform decision-making.",
+   "ko": "이러한 각각의 활용은 결과가 어떻게 보고되는지에 달려 있으며, 대부분은 외부 보고에서 높은 수준의 투명성을 요구한다. 레드티밍 보고 관행을 개선하면 레드티머와 더 넓은 AI 개발 공동체(인터뷰 연구의 한 참여자는 이를 \"실천 공동체를 끌어올리는 일\"이라고 표현했다)뿐 아니라, 의사결정의 근거를 평가(evaluation) 보고에 의존하는 이해관계자에게도 도움이 될 수 있다."
+  },
+  {
+   "type": "p",
+   "en": "AI red-teaming faces a transparency problem because the methodology and results of red-teaming exercises are often not publicly accessible. Unlike other forms of evaluation such as benchmarking, the practice of AI red-teaming can differ significantly from organization to organization, or even exercise to exercise. (Benchmarks, while more immediately comparable, can have significant consistency and reliability problems as well.)[^7] This fragmentation makes interpreting the results of red-teaming reports difficult. Without interpretable reports, stakeholders cannot take effective action to mitigate the potential harms that red-teaming has uncovered, and red-teamers struggle to validate reports or update their methods.",
+   "ko": "AI 레드티밍은 레드티밍 활동의 방법론과 결과가 공개적으로 접근 가능하지 않은 경우가 많다는 점에서 투명성 문제에 직면해 있다. 벤치마크 평가 같은 다른 형태의 평가와 달리, AI 레드티밍 관행은 조직마다, 심지어 활동마다 상당히 다를 수 있다. (벤치마크는 즉각적인 비교가 더 용이하지만, 이 역시 일관성과 신뢰성 측면에서 상당한 문제를 안고 있을 수 있다.)[^7] 이러한 파편화로 인해 레드티밍 보고서의 결과를 해석하기 어렵다. 해석 가능한 보고서가 없으면 이해관계자는 레드티밍이 밝혀낸 잠재적 피해를 완화하기 위한 효과적인 조치를 취할 수 없고, 레드티머는 보고서를 검증하거나 자신의 방법을 갱신하는 데 어려움을 겪는다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍은 레드티밍 활동의 방법론과 결과가 공개적으로 접근 가능하지 않은 경우가 많다는 점에서 투명성 문제에 직면해 있다",
+     "k": "safety"
+    },
+    {
+     "t": "해석 가능한 보고서가 없으면 이해관계자는 레드티밍이 밝혀낸 잠재적 피해를 완화하기 위한 효과적인 조치를 취할 수 없고",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Current public reporting on AI red-teaming exercises is largely limited to model cards and third-party security research, which vary widely in format and depth. Model cards are a form of AI model documentation published by a model’s creators. They contain relevant information such as the model’s characteristics and its performance on various evaluations.[^8] Model cards for large language models sometimes contain information about how they were red-teamed. However, while they may contain some details about AI red-teaming methodology, model cards vary widely in the amount of detail presented. The same is true for AI red-teaming reports published by third-party security researchers who are not directly employed by an AI company. Other forms of public reporting include reports or summary documents produced by bug bounties or public red-teaming competitions, in which participants aim to find as many flaws as possible or complete predefined objectives within a certain period of time.[^9]",
+   "ko": "AI 레드티밍 활동에 관한 현재의 공개 보고는 대체로 모델카드와 제3자 보안 연구에 국한되어 있으며, 이들의 형식과 깊이는 천차만별이다. 모델카드는 모델 제작자가 발행하는 AI 모델 문서의 한 형태이다. 모델카드에는 모델의 특성과 다양한 평가에서의 성능 같은 관련 정보가 담긴다.[^8] 대규모 언어 모델의 모델카드에는 해당 모델이 어떻게 레드티밍되었는지에 관한 정보가 포함되기도 한다. 그러나 모델카드가 AI 레드티밍 방법론에 관한 세부 사항을 일부 담고 있더라도, 제시되는 세부 정보의 양은 모델카드마다 크게 다르다. AI 기업에 직접 고용되지 않은 제3자 보안 연구자가 발행하는 AI 레드티밍 보고서도 마찬가지이다. 그 밖의 공개 보고 형태로는 버그 바운티나 공개 레드티밍 대회에서 작성되는 보고서 또는 요약 문서가 있다. 이러한 대회에서 참여자들은 정해진 기간 내에 최대한 많은 결함을 찾거나 사전에 정의된 목표를 달성하는 것을 목표로 한다.[^9]",
+   "marks": [
+    {
+     "t": "제시되는 세부 정보의 양은 모델카드마다 크게 다르다",
+     "k": "safety"
+    },
+    {
+     "t": "버그 바운티나 공개 레드티밍 대회에서 작성되는 보고서 또는 요약 문서",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Well-structured, public-facing reports are particularly important for understanding current AI red-teaming best practices. However, AI system evaluators are reluctant to share their methodologies for various reasons. Public-facing reports about AI red-teaming activities should provide information to downstream stakeholders about what flaws might be present in a model or system without divulging the exact processes for uncovering those flaws. A report can provide users and deployers with actionable information regarding how to mitigate the impacts of flaws and vulnerabilities and, more generally, provide stakeholders with an understanding of how secure and reliable a system is compared to its peers. Reports may also communicate the limitations of the AI model or system—which are closely tied to flaws—as well as the scope or limitations of the AI red-teaming exercise itself.",
+   "ko": "체계적으로 구성된 대외 공개용 보고서는 현재의 AI 레드티밍 모범 사례를 이해하는 데 특히 중요하다. 그러나 AI 시스템 평가자들은 여러 이유로 자신의 방법론을 공유하기를 꺼린다. AI 레드티밍 활동에 관한 대외 공개용 보고서는 결함을 발견한 정확한 절차를 누설하지 않으면서도, 모델이나 시스템에 어떤 결함이 존재할 수 있는지에 관한 정보를 하위 이해관계자에게 제공해야 한다. 보고서는 사용자와 배포자에게 결함과 취약점의 영향을 완화하는 방법에 관한 실행 가능한 정보를 제공할 수 있으며, 보다 일반적으로는 이해관계자가 해당 시스템이 유사 시스템과 비교하여 얼마나 보안성이 높고 신뢰할 수 있는지 이해하도록 할 수 있다. 보고서는 또한 결함과 밀접하게 연관된 AI 모델 또는 시스템의 한계뿐 아니라, AI 레드티밍 활동 자체의 범위나 한계도 전달할 수 있다.",
+   "marks": [
+    {
+     "t": "AI 시스템 평가자들은 여러 이유로 자신의 방법론을 공유하기를 꺼린다",
+     "k": "safety"
+    },
+    {
+     "t": "결함을 발견한 정확한 절차를 누설하지 않으면서도, 모델이나 시스템에 어떤 결함이 존재할 수 있는지에 관한 정보를 하위 이해관계자에게 제공해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "사용자와 배포자에게 결함과 취약점의 영향을 완화하는 방법에 관한 실행 가능한 정보를 제공할 수 있으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Who Currently Performs AI Red-Teaming?",
+   "ko": "현재 AI 레드티밍은 누가 수행하는가?",
+   "id": "s22"
+  },
+  {
+   "type": "p",
+   "en": "AI red-teaming is not restricted to a single type of organization; rather, it is performed by a broad and diverse set of actors spanning the entire AI life cycle. This contributes to the variety of practices that make up AI red-teaming. Different practitioners will have different purposes and scopes that vary widely, from model-focused safety evaluation to system-level security testing. Consequently, the reports generated from these exercises also show significant variation in scope, risks, and outcomes.",
+   "ko": "AI 레드티밍은 단일 유형의 조직에 국한되지 않으며, AI 수명주기 전반에 걸친 광범위하고 다양한 행위자들이 수행한다. 이는 AI 레드티밍을 구성하는 관행이 다양해지는 데 기여한다. 실무자마다 모델 중심의 안전성 평가부터 시스템 수준의 보안 시험에 이르기까지 목적과 범위가 크게 다르다. 그 결과 이러한 활동에서 생성되는 보고서 역시 범위, 위험, 결과 측면에서 상당한 차이를 보인다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍은 단일 유형의 조직에 국한되지 않으며, AI 수명주기 전반에 걸친 광범위하고 다양한 행위자들이 수행한다.",
+     "k": "key"
+    },
+    {
+     "t": "모델 중심의 안전성 평가부터 시스템 수준의 보안 시험에 이르기까지 목적과 범위가 크게 다르다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Actors in the AI red-teaming space include the following:",
+   "ko": "AI 레드티밍 분야의 행위자는 다음과 같다."
+  },
+  {
+   "type": "li",
+   "en": "AI labs or companies training their own in-house models will often devote resources to internal testing (first-party testing), including red-teaming.[^10]",
+   "ko": "자체 모델을 훈련하는 AI 랩이나 기업은 레드티밍을 포함한 내부 시험(자체 시험(first-party testing))에 자원을 투입하는 경우가 많다.[^10]",
+   "marks": [
+    {
+     "t": "레드티밍을 포함한 내부 시험(자체 시험(first-party testing))에 자원을 투입하는 경우가 많다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Downstream companies who deploy or incorporate AI models into their own products and services may also perform in-house testing, although compared to model providers they have limited control over the AI model itself.[^11]",
+   "ko": "AI 모델을 자사 제품과 서비스에 배포하거나 통합하는 하위 기업도 내부 시험을 수행할 수 있으나, 모델 제공자에 비해 AI 모델 자체에 대한 통제력은 제한적이다.[^11]",
+   "marks": [
+    {
+     "t": "모델 제공자에 비해 AI 모델 자체에 대한 통제력은 제한적이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Third-party testers are contractors, consultancies, or companies who offer AI red-teaming as a service. They are often hired by model developers and downstream companies. The amount of access they have to AI models, systems, related networks, and other testing-relevant resources can vary widely.[^12]",
+   "ko": "제3자 시험자는 AI 레드티밍을 서비스로 제공하는 계약업체, 컨설팅사 또는 기업이다. 이들은 모델 개발자와 하위 기업에 고용되는 경우가 많다. 이들이 AI 모델, 시스템, 관련 네트워크 및 기타 시험 관련 자원에 접근할 수 있는 수준은 크게 다를 수 있다.[^12]",
+   "marks": [
+    {
+     "t": "제3자 시험자는 AI 레드티밍을 서비스로 제공하는 계약업체, 컨설팅사 또는 기업이다",
+     "k": "safety"
+    },
+    {
+     "t": "접근할 수 있는 수준은 크게 다를 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "Third-party testers who are not hired by model developers or deployers will sometimes release reports on red-teaming activities conducted on public versions of AI applications. These include vulnerability disclosure reports from traditional for-profit cybersecurity penetration testing companies.[^13]",
+   "ko": "모델 개발자나 배포자에게 고용되지 않은 제3자 시험자가 공개 버전의 AI 애플리케이션을 대상으로 수행한 레드티밍 활동에 관한 보고서를 발표하기도 한다. 여기에는 전통적인 영리 사이버 보안 침투 테스트 기업의 취약점 공개 보고서가 포함된다.[^13]",
+   "marks": [
+    {
+     "t": "공개 버전의 AI 애플리케이션을 대상으로 수행한 레드티밍 활동에 관한 보고서를 발표하기도 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "li",
+   "en": "AI red-teaming competitions (both public and by invitation), drawing from the established practice of cybersecurity competitions and bug bounties, invite testers to volunteer to red-team an AI system under specified conditions. These are usually held with the explicit permission of AI model providers in order to not violate their terms of service, and may or may not result in public reports summarizing the competitions’ results.[^14]",
+   "ko": "AI 레드티밍 대회(공개 대회 및 초청 대회)는 사이버 보안 대회와 버그 바운티라는 기존 관행을 본떠, 시험자들이 자발적으로 특정 조건에서 AI 시스템을 레드티밍하도록 초청한다. 이러한 대회는 서비스 약관 위반을 피하기 위해 대개 AI 모델 제공자의 명시적 허가를 받아 개최되며, 대회 결과를 요약한 공개 보고서로 이어질 수도 있고 그렇지 않을 수도 있다.[^14]",
+   "marks": [
+    {
+     "t": "시험자들이 자발적으로 특정 조건에서 AI 시스템을 레드티밍하도록 초청한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The range of different actors in the space, combined with the immaturity of AI red-teaming as a field and the subsequent lack of standards, means that reports can vary widely in scope, content, and level of detail.",
+   "ko": "이 분야에 다양한 행위자가 존재한다는 점에 더해 AI 레드티밍이 아직 성숙하지 않은 분야이고 그에 따라 표준이 부재하다는 점은 보고서의 범위, 내용, 세부 수준이 크게 다를 수 있음을 의미한다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍이 아직 성숙하지 않은 분야이고 그에 따라 표준이 부재하다는 점은 보고서의 범위, 내용, 세부 수준이 크게 다를 수 있음을 의미한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Part 2: Methodology",
+   "ko": "제2부: 연구 방법",
+   "id": "s31"
+  },
+  {
+   "type": "p",
+   "en": "The objective of our study was to examine and recommend ways AI red-teaming reporting practices could be systematized, which required investigating how current testing practices influence the information that ultimately gets reported. We conducted a qualitative study featuring semi-structured interviews with AI red-teaming practitioners. Understanding the perspectives of active red-teamers is critical because they produce the evaluation information and intimately understand the varied needs of different stakeholders. Furthermore, red-teamers themselves often serve as the audience for these reports. These practitioners are best positioned to validate other reports, assess exercise quality, and use those insights to improve their own testing processes.",
+   "ko": "본 연구의 목적은 AI 레드티밍 보고 관행을 체계화할 방안을 검토하고 권고하는 것이었다. 이를 위해서는 현재의 시험 관행이 최종적으로 보고되는 정보에 어떤 영향을 미치는지 조사해야 했다. 이에 AI 레드티밍 실무자를 대상으로 반구조화 인터뷰를 중심으로 한 질적 연구를 수행했다. 현역 레드티머의 관점을 이해하는 것이 중요한 이유는, 이들이 평가 정보를 생산하며 여러 이해관계자의 다양한 요구를 깊이 이해하고 있기 때문이다. 나아가 레드티머 자신이 이러한 보고서의 독자인 경우도 많다. 이들 실무자는 다른 보고서를 검증하고, 실습의 품질을 판단하며, 그로부터 얻은 통찰을 활용해 자신의 시험 절차를 개선하기에 가장 적합한 위치에 있다.",
+   "marks": [
+    {
+     "t": "본 연구의 목적은 AI 레드티밍 보고 관행을 체계화할 방안을 검토하고 권고하는 것이었다.",
+     "k": "key"
+    },
+    {
+     "t": "현재의 시험 관행이 최종적으로 보고되는 정보에 어떤 영향을 미치는지 조사해야 했다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 레드티밍 실무자를 대상으로 반구조화 인터뷰를 중심으로 한 질적 연구를 수행했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Sampling and Data Collection",
+   "ko": "표본 추출 및 데이터 수집",
+   "id": "s33"
+  },
+  {
+   "type": "p",
+   "en": "To gain deeper insight into how AI red-teaming is currently happening in practice, we interviewed 17 individuals directly involved in designing, conducting, managing, or interpreting AI red-teaming and related safety evaluations. Participants were recruited through professional networks and targeted outreach. To provide context for the perspectives cited throughout this report, Table A2 summarizes de-identified participant characteristics, including each participant’s anonymous identifier, organizational relationship to the system being evaluated (first-party/internal versus third-party/external), and primary red-teaming context. We use anonymous participant labels throughout the findings to attribute quotations while protecting participant confidentiality. These characteristics provide context for participants’ perspectives and are not intended as a comprehensive taxonomy of AI red-teaming roles.",
+   "ko": "현재 AI 레드티밍이 실제로 어떻게 이루어지고 있는지 보다 깊이 파악하기 위해, AI 레드티밍 및 관련 안전성 평가의 설계, 수행, 관리 또는 해석에 직접 관여하는 17명을 인터뷰했다. 참가자는 전문가 네트워크와 표적 섭외를 통해 모집했다. 본 보고서 전반에서 인용되는 관점의 맥락을 제공하기 위해, 표 A2에 비식별화된 참가자 특성을 요약했다. 여기에는 각 참가자의 익명 식별자, 평가 대상 시스템과의 조직적 관계(자체/내부 대 제3자/외부), 주된 레드티밍 맥락이 포함된다. 연구 결과 전반에서 참가자의 기밀을 보호하면서 인용문의 출처를 밝히기 위해 익명 참가자 라벨을 사용한다. 이러한 특성은 참가자 관점의 맥락을 제공하기 위한 것이며, AI 레드티밍 역할에 대한 포괄적인 분류 체계를 의도한 것은 아니다.",
+   "marks": [
+    {
+     "t": "현재 AI 레드티밍이 실제로 어떻게 이루어지고 있는지 보다 깊이 파악하기 위해",
+     "k": "safety"
+    },
+    {
+     "t": "AI 레드티밍 및 관련 안전성 평가의 설계, 수행, 관리 또는 해석에 직접 관여하는 17명을 인터뷰했다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "All study procedures were approved by Georgetown University’s Institutional Review Board, and informed consent was obtained prior to each interview. Interviews lasted approximately 60 minutes and followed a standardized, semi-structured protocol (see Appendix B for full protocol), allowing participants to describe their experiences in-depth while ensuring comparability across sessions. The protocol featured open-ended questions and follow-up probes focused on five central topics: (a) definitions and conceptual framing of AI red-teaming; (b) objectives of red-teaming exercises; (c) factors involved in designing and conducting exercises (e.g., threat models, tester expertise, methodologies); (d) outputs and outcomes generated by red-teaming activities; and (e) practices and considerations surrounding reporting and disclosure. AI red-teaming methods vary and are often application specific, so the semi-structured interview format allowed for the opportunity to explore unanticipated topics that surfaced during the interviews.",
+   "ko": "모든 연구 절차는 조지타운대학교(Georgetown University) 기관윤리심의위원회(Institutional Review Board)의 승인을 받았으며, 각 인터뷰 전에 사전 동의를 받았다. 인터뷰는 약 60분간 진행되었고 표준화된 반구조화 프로토콜(전체 프로토콜은 부록 B 참조)을 따랐다. 이를 통해 참가자가 자신의 경험을 심층적으로 설명할 수 있도록 하는 동시에 세션 간 비교 가능성을 확보했다. 프로토콜은 다섯 가지 핵심 주제에 초점을 맞춘 개방형 질문과 후속 탐색 질문으로 구성되었다. (a) AI 레드티밍의 정의와 개념적 틀, (b) 레드티밍 실습의 목적, (c) 실습의 설계 및 수행에 관련된 요인(예: 위협 모델, 시험자 전문성, 방법론), (d) 레드티밍 활동이 생성하는 산출물과 성과, (e) 보고 및 공개를 둘러싼 관행과 고려 사항이다. AI 레드티밍 방법은 다양하고 애플리케이션별로 특화된 경우가 많으므로, 반구조화 인터뷰 형식은 인터뷰 중 떠오른 예상치 못한 주제를 탐색할 기회를 제공했다.",
+   "marks": [
+    {
+     "t": "실습의 설계 및 수행에 관련된 요인(예: 위협 모델, 시험자 전문성, 방법론)",
+     "k": "safety"
+    },
+    {
+     "t": "(e) 보고 및 공개를 둘러싼 관행과 고려 사항이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Data Analysis",
+   "ko": "데이터 분석",
+   "id": "s36"
+  },
+  {
+   "type": "p",
+   "en": "Interview transcripts were analyzed using thematic analysis, blending deductive coding based on our protocol with inductive coding to capture emergent themes.[^15] This iterative and collaborative process involved developing an initial codebook and refining it through repeated transcript reviews as new patterns emerged. We utilized MAXQDA to manage the coded data and support pattern identification across transcripts. Code frequencies and co-occurrence patterns served as descriptive analytic aids to highlight recurring points of emphasis, which we then interpreted alongside a close reading of the coded excerpts. This process yielded a final coding scheme that captures recurrent themes related to organizational context, exercise design, threat modeling, reporting practices, and broader field-level challenges (see Table A1 for a complete codebook, including all parent codes, key subcodes, operational definitions, and code frequencies).",
+   "ko": "인터뷰 녹취록은 주제 분석을 활용하여 분석했으며, 프로토콜에 기반한 연역적 코딩과 새로 나타나는 주제를 포착하기 위한 귀납적 코딩을 결합했다.[^15] 이 반복적이고 협업적인 과정에서는 초기 코드북을 개발한 뒤, 새로운 패턴이 나타남에 따라 녹취록을 반복 검토하며 이를 정교화했다. 코딩된 데이터를 관리하고 녹취록 전반의 패턴 식별을 지원하기 위해 MAXQDA를 활용했다. 코드 빈도와 동시 출현 패턴은 반복적으로 강조되는 지점을 부각하는 기술적(descriptive) 분석 보조 도구로 활용했으며, 이를 코딩된 발췌문에 대한 정독과 함께 해석했다. 이 과정을 통해 조직적 맥락, 실습 설계, 위협 모델링, 보고 관행, 보다 광범위한 분야 수준의 과제와 관련된 반복적 주제를 포착하는 최종 코딩 체계가 도출되었다(모든 상위 코드, 주요 하위 코드, 조작적 정의, 코드 빈도를 포함한 전체 코드북은 표 A1 참조).",
+   "marks": [
+    {
+     "t": "인터뷰 녹취록은 주제 분석을 활용하여 분석했으며, 프로토콜에 기반한 연역적 코딩과 새로 나타나는 주제를 포착하기 위한 귀납적 코딩을 결합했다.",
+     "k": "key"
+    },
+    {
+     "t": "실습 설계, 위협 모델링, 보고 관행",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Limitations",
+   "ko": "한계",
+   "id": "s38"
+  },
+  {
+   "type": "p",
+   "en": "As a qualitative study based on a relatively small sample, our findings are not intended to be statistically representative of all actors and organizations conducting AI red-teaming. Rather, the sample captures perspectives from practitioners and experts working across several organizational settings, including AI developers and deployers, third-party evaluators, public-sector actors, and competition-based testing environments. As summarized in Table A2, the sample includes independent evaluators and one participant whose red-teaming context included research. However, the sample does not adequately capture the perspectives of research-motivated independent red-teamers whose primary purpose is to conduct and publicly communicate independent evaluations of AI systems—including research focused on bias, harmful outputs, or broader socio-technical failures—thus limiting our ability to characterize reporting practices and priorities within this segment of the red-teaming ecosystem.",
+   "ko": "비교적 적은 표본에 기반한 질적 연구로서, 본 연구 결과는 AI 레드티밍을 수행하는 모든 행위자와 조직을 통계적으로 대표하려는 것이 아니다. 오히려 표본은 AI 개발자 및 배포자, 제3자 평가자, 공공 부문 행위자, 대회 기반 시험 환경 등 여러 조직 환경에서 일하는 실무자와 전문가의 관점을 담고 있다. 표 A2에 요약된 바와 같이, 표본에는 독립 평가자와 연구를 레드티밍 맥락에 포함한 참가자 1명이 포함되어 있다. 그러나 표본은 편향, 유해한 출력, 보다 광범위한 사회기술적 실패에 초점을 맞춘 연구를 포함하여, AI 시스템에 대한 독립적 평가를 수행하고 이를 공개적으로 알리는 것을 주된 목적으로 하는 연구 동기의 독립 레드티머의 관점은 충분히 담아내지 못한다. 따라서 레드티밍 생태계 중 이 부문의 보고 관행과 우선순위를 규명하는 데에는 한계가 있다.",
+   "marks": [
+    {
+     "t": "본 연구 결과는 AI 레드티밍을 수행하는 모든 행위자와 조직을 통계적으로 대표하려는 것이 아니다",
+     "k": "key"
+    },
+    {
+     "t": "편향, 유해한 출력, 보다 광범위한 사회기술적 실패에 초점을 맞춘 연구",
+     "k": "safety"
+    },
+    {
+     "t": "AI 시스템에 대한 독립적 평가를 수행하고 이를 공개적으로 알리는 것을 주된 목적으로 하는 연구 동기의 독립 레드티머의 관점은 충분히 담아내지 못한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "A second limitation concerns the timing of data collection. Interviews were conducted between August and November 2025, and therefore the findings describe practitioners’ experiences and perceptions of a rapidly evolving field during a specific period of time. Changes in AI systems, evaluation practices, organizational structures, disclosure norms, and approaches to flaw and vulnerability reporting may have occurred since the interviews were conducted. Subsequent developments in the AI safety and security ecosystem, in particular, may have affected how organizations structure red-teaming reports, which actors produce and receive them, and what information organizations consider appropriate to disclose publicly. Findings should therefore be understood as documenting red-teaming reporting practices and perceptions as they existed in late 2025, rather than as a comprehensive account of current reporting practices. This temporal limitation is particularly relevant to our findings concerning what information practitioners currently provide in reports: Practices may have evolved since the interview period, even if the underlying interpretive value of the information in this study remains relevant.",
+   "ko": "두 번째 한계는 데이터 수집 시점과 관련된다. 인터뷰는 2025년 8월부터 11월 사이에 수행되었으므로, 연구 결과는 빠르게 진화하는 분야에 대한 특정 기간 동안의 실무자 경험과 인식을 기술한다. 인터뷰 수행 이후 AI 시스템, 평가 관행, 조직 구조, 공개 규범, 결함 및 취약점 보고 방식에 변화가 있었을 수 있다. 특히 AI 안전 및 보안 생태계의 이후 동향은 조직이 레드티밍 보고서를 구성하는 방식, 보고서를 생산하고 수령하는 행위자, 조직이 공개적으로 밝히기에 적절하다고 여기는 정보에 영향을 미쳤을 수 있다. 따라서 연구 결과는 현재 보고 관행에 대한 포괄적인 설명이라기보다는 2025년 말 시점에 존재했던 레드티밍 보고 관행과 인식을 기록한 것으로 이해해야 한다. 이러한 시간적 한계는 실무자가 현재 보고서에 어떤 정보를 제공하는지에 관한 연구 결과와 특히 관련이 있다. 본 연구에서 다룬 정보의 근본적인 해석적 가치는 여전히 유효하더라도, 관행은 인터뷰 기간 이후 변화했을 수 있다.",
+   "marks": [
+    {
+     "t": "결함 및 취약점 보고 방식에 변화가 있었을 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 안전 및 보안 생태계의 이후 동향은 조직이 레드티밍 보고서를 구성하는 방식",
+     "k": "safety"
+    },
+    {
+     "t": "연구 결과는 현재 보고 관행에 대한 포괄적인 설명이라기보다는 2025년 말 시점에 존재했던 레드티밍 보고 관행과 인식을 기록한 것으로 이해해야 한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Finally, because interviews involved professionals discussing potentially sensitive testing practices, flaws and vulnerabilities, organizational processes, and disclosure decisions, participants may have been constrained in the level of technical or organizational detail they were able to share. The research therefore provides insight into practitioners’ perspectives on reporting and red-teaming practice, but it cannot independently verify all accounts of organizational practice or determine the prevalence of particular reporting practices across the broader ecosystem.",
+   "ko": "마지막으로, 인터뷰는 민감할 수 있는 시험 관행, 결함과 취약점, 조직 절차, 공개 결정에 관해 전문가들이 논의하는 방식으로 진행되었으므로, 참가자가 공유할 수 있었던 기술적 또는 조직적 세부 수준에 제약이 있었을 수 있다. 따라서 본 연구는 보고 및 레드티밍 실무에 대한 실무자의 관점에 관한 통찰을 제공하지만, 조직 관행에 관한 모든 진술을 독립적으로 검증하거나 보다 광범위한 생태계 전반에서 특정 보고 관행이 얼마나 널리 퍼져 있는지 판단할 수는 없다.",
+   "marks": [
+    {
+     "t": "민감할 수 있는 시험 관행, 결함과 취약점, 조직 절차, 공개 결정",
+     "k": "safety"
+    },
+    {
+     "t": "조직 관행에 관한 모든 진술을 독립적으로 검증하거나",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Part 3: Findings",
+   "ko": "제3부: 연구 결과",
+   "id": "s42"
+  },
+  {
+   "type": "p",
+   "en": "Thematic analysis of the 17 semi-structured interviews identified a set of recurring patterns regarding how AI red-teaming is currently designed, conducted, and reported. Although participants described diverse organizational settings, deployment environments, threat models, and reporting practices, clear areas of convergence emerged. The four findings below identify those recurring patterns and collectively inform our recommendations for improving AI red-teaming reporting.",
+   "ko": "17건의 반구조화 인터뷰에 대한 주제 분석을 통해 AI 레드티밍이 현재 어떻게 설계, 수행, 보고되는지에 관한 일련의 반복적 패턴이 확인되었다. 참가자들은 다양한 조직 환경, 배포 환경, 위협 모델, 보고 관행을 설명했지만, 뚜렷하게 수렴되는 영역이 나타났다. 아래 네 가지 연구 결과는 이러한 반복적 패턴을 제시하며, 종합적으로 AI 레드티밍 보고를 개선하기 위한 본 연구의 권고 사항의 근거가 된다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍이 현재 어떻게 설계, 수행, 보고되는지에 관한 일련의 반복적 패턴이 확인되었다",
+     "k": "safety"
+    },
+    {
+     "t": "종합적으로 AI 레드티밍 보고를 개선하기 위한 본 연구의 권고 사항의 근거가 된다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "1. Practitioners emphasized that AI red-teaming is fundamentally shaped by organizational context, with different actors facing distinct objectives, constraints, and reporting requirements.",
+   "ko": "1. 실무자들은 AI 레드티밍이 근본적으로 조직적 맥락에 의해 형성되며, 행위자마다 서로 다른 목적, 제약, 보고 요건에 직면한다고 강조했다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍이 근본적으로 조직적 맥락에 의해 형성되며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "2. Participants consistently described threat models as the organizing framework that structures nearly every aspect of an exercise, including scope, methodology, and interpretation of findings.",
+   "ko": "2. 참가자들은 일관되게 위협 모델을 범위, 방법론, 결과 해석을 포함하여 실습의 거의 모든 측면을 구조화하는 조직 틀로 설명했다.",
+   "marks": [
+    {
+     "t": "위협 모델을 범위, 방법론, 결과 해석을 포함하여 실습의 거의 모든 측면을 구조화하는 조직 틀로 설명했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "3. Reporting requirements vary substantially across stakeholder groups, creating different expectations regarding the level of technical detail, transparency, and actionable information contained within reports.",
+   "ko": "3. 보고 요건은 이해관계자 집단에 따라 크게 달라지며, 이로 인해 보고서에 담기는 기술적 세부 수준, 투명성, 실행 가능한 정보에 대한 기대가 서로 다르다."
+  },
+  {
+   "type": "p",
+   "en": "4. Interviews revealed four recurring categories of information considered essential for producing interpretable and useful AI red-teaming reports: the threat model, methodological context, harms elicited during testing, and actionable information for downstream decision-making.",
+   "ko": "4. 인터뷰 결과, 해석 가능하고 유용한 AI 레드티밍 보고서를 작성하는 데 필수적이라고 여겨지는 네 가지 정보 범주가 반복적으로 나타났다. 위협 모델, 방법론적 맥락, 시험 중 이끌어 낸 피해, 후속 의사결정을 위한 실행 가능한 정보가 그것이다.",
+   "marks": [
+    {
+     "t": "해석 가능하고 유용한 AI 레드티밍 보고서를 작성하는 데 필수적이라고 여겨지는 네 가지 정보 범주가 반복적으로 나타났다",
+     "k": "key"
+    },
+    {
+     "t": "위협 모델, 방법론적 맥락, 시험 중 이끌어 낸 피해, 후속 의사결정을 위한 실행 가능한 정보",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The sections below describe these findings, followed by the reporting and structural constraints that participants identified as limiting greater transparency and standardization.",
+   "ko": "아래 절에서는 이러한 연구 결과를 기술하고, 이어서 참가자들이 투명성과 표준화 확대를 제약하는 요인으로 지목한 보고상 및 구조적 제약을 기술한다.",
+   "marks": [
+    {
+     "t": "투명성과 표준화 확대를 제약하는 요인으로 지목한 보고상 및 구조적 제약",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Organizational Context Shapes AI Red-Teaming Practices",
+   "ko": "조직적 맥락이 AI 레드티밍 관행을 형성한다",
+   "id": "s49"
+  },
+  {
+   "type": "p",
+   "en": "Organizational context shapes nearly every aspect of AI red-teaming, including testers’ system access, objectives, resources, and reporting obligations. Participants described a diverse ecosystem of actors—including frontier AI developers, downstream deployers, third-party security firms, independent researchers, and competition-based testing environments—that perform red-teaming under substantially different objectives and conditions. Accordingly, participants cautioned against treating all activities described as “AI red-teaming” as equivalent. Understanding who performs a red-teaming exercise is essential for interpreting how that exercise is designed, what kinds of flaws and vulnerabilities it identifies, and what information ultimately appears in resulting reports.",
+   "ko": "조직적 맥락은 시험자의 시스템 접근 권한, 목적, 자원, 보고 의무를 포함하여 AI 레드티밍의 거의 모든 측면을 형성한다. 참가자들은 프론티어 AI 개발자, 하위 배포자, 제3자 보안 업체, 독립 연구자, 대회 기반 시험 환경 등 매우 다른 목적과 조건하에서 레드티밍을 수행하는 다양한 행위자로 구성된 생태계를 설명했다. 이에 따라 참가자들은 \"AI 레드티밍\"으로 지칭되는 모든 활동을 동등한 것으로 취급하는 것을 경계했다. 누가 레드티밍 실습을 수행하는지 이해하는 것은 해당 실습이 어떻게 설계되는지, 어떤 종류의 결함과 취약점을 식별하는지, 그리고 최종 보고서에 어떤 정보가 담기는지를 해석하는 데 필수적이다.",
+   "marks": [
+    {
+     "t": "참가자들은 \"AI 레드티밍\"으로 지칭되는 모든 활동을 동등한 것으로 취급하는 것을 경계했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Organizational setting affected the practical conditions under which testing occurred. Participants frequently distinguished between organizations that develop frontier AI models and those that deploy models developed elsewhere. Internal teams at frontier AI developers often possess privileged access to model internals, training infrastructure, and the engineering teams responsible for implementing mitigations. Downstream deployers, by contrast, often have limited visibility into the underlying model architecture and focus more heavily on risks arising from their particular application and operational environment. Several participants noted that these differing positions naturally produce different evaluation priorities and reporting requirements.",
+   "ko": "조직 환경은 시험이 이루어지는 실제 조건에 영향을 미쳤다. 참가자들은 프론티어 AI 모델을 개발하는 조직과 다른 곳에서 개발된 모델을 배포하는 조직을 자주 구분했다. 프론티어 AI 개발자의 내부 팀은 모델 내부, 학습 인프라, 완화 조치 구현을 담당하는 엔지니어링 팀에 대한 특권적 접근 권한을 보유하는 경우가 많다. 반면 하위 배포자는 기반 모델 아키텍처에 대한 가시성이 제한적인 경우가 많으며, 자신의 특정 애플리케이션과 운영 환경에서 비롯되는 위험에 더 중점을 둔다. 여러 참가자는 이처럼 서로 다른 위치가 자연스럽게 서로 다른 평가(evaluation) 우선순위와 보고 요건을 낳는다고 언급했다.",
+   "marks": [
+    {
+     "t": "프론티어 AI 개발자의 내부 팀은 모델 내부, 학습 인프라, 완화 조치 구현을 담당하는 엔지니어링 팀에 대한 특권적 접근 권한을 보유하는 경우가 많다",
+     "k": "safety"
+    },
+    {
+     "t": "하위 배포자는 기반 모델 아키텍처에 대한 가시성이 제한적인 경우가 많으며",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Third-party evaluators occupied a distinct role within this ecosystem. Unlike internal red teams, external firms—such as consultants and security firms—frequently conduct assessments on behalf of clients with varying technical capabilities, commercial objectives, and contractual requirements. As a result, third-party evaluators often balance technical rigor with practical constraints around client communication, access, reproducibility, and disclosure. Independent researchers and participants in public red-teaming competitions represented another organizational context. These actors frequently prioritize methodological innovation, vulnerability discovery, or public transparency, rather than direct product remediation.",
+   "ko": "제3자 평가자는 이 생태계 내에서 독자적인 역할을 차지했다. 내부 레드팀과 달리 컨설턴트나 보안 업체와 같은 외부 업체는 기술 역량, 상업적 목적, 계약 요건이 제각각인 고객을 대신하여 평가(assessment)를 수행하는 경우가 많다. 그 결과 제3자 평가자는 기술적 엄밀성과 고객 소통, 접근 권한, 재현성, 공개를 둘러싼 현실적 제약 사이에서 균형을 맞추는 경우가 많다. 독립 연구자와 공개 레드티밍 대회 참가자는 또 다른 조직적 맥락을 대표했다. 이러한 행위자는 직접적인 제품 개선 조치보다는 방법론적 혁신, 취약점 발견, 또는 공개적 투명성을 우선시하는 경우가 많다.",
+   "marks": [
+    {
+     "t": "기술적 엄밀성과 고객 소통, 접근 권한, 재현성, 공개를 둘러싼 현실적 제약 사이에서 균형을 맞추는 경우가 많다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants viewed these differences as more than incidental features of an exercise. Organizational context influenced which risks were considered relevant, what resources could be dedicated to testing, which methods were feasible, and what outcomes counted as success. Participants described context as determining the resources available for testing—including personnel, time, computational resources, and system access. Organizational priorities also shaped which flaws and vulnerabilities were considered meaningful, how findings were evaluated, and how success was defined. Exercises conducted during model development, prior to deployment, or after a system is publicly available may use similar adversarial techniques while serving substantially different purposes. For example, a model developer conducting internal testing may focus on identifying flaws and vulnerabilities that can be remediated before release. A downstream deployer may instead be concerned with whether a model can expose sensitive organizational data, undermine a particular workflow, or create risks for a certain user population. Similarly, a third-party evaluator may be asked to assess whether a system meets a client’s security, safety, or procurement requirements. These different objectives affect not only what is tested but also the standards against which results are assessed.",
+   "ko": "참가자들은 이러한 차이를 실습의 부수적 특징 이상의 것으로 보았다. 조직적 맥락은 어떤 위험이 관련성 있다고 간주되는지, 시험에 어떤 자원을 투입할 수 있는지, 어떤 방법이 실현 가능한지, 어떤 결과를 성공으로 간주하는지에 영향을 미쳤다. 참가자들은 맥락이 인력, 시간, 컴퓨팅 자원, 시스템 접근 권한 등 시험에 활용 가능한 자원을 결정한다고 설명했다. 조직의 우선순위는 또한 어떤 결함과 취약점이 유의미하다고 간주되는지, 결과가 어떻게 평가되는지, 성공이 어떻게 정의되는지를 형성했다. 모델 개발 중, 배포 전, 또는 시스템이 공개된 이후에 수행되는 실습은 유사한 적대적 기법을 사용하면서도 상당히 다른 목적을 수행할 수 있다. 예를 들어 내부 시험을 수행하는 모델 개발자는 출시 전에 개선할 수 있는 결함과 취약점을 식별하는 데 초점을 맞출 수 있다. 반면 하위 배포자는 모델이 조직의 민감 데이터를 노출하거나, 특정 업무 흐름을 훼손하거나, 특정 사용자 집단에 위험을 초래할 수 있는지에 관심을 둘 수 있다. 마찬가지로 제3자 평가자는 시스템이 고객의 보안, 안전, 또는 조달 요건을 충족하는지 평가하도록 요청받을 수 있다. 이처럼 서로 다른 목적은 무엇을 시험하는지뿐만 아니라 결과를 평가하는 기준에도 영향을 미친다.",
+   "marks": [
+    {
+     "t": "조직적 맥락은 어떤 위험이 관련성 있다고 간주되는지, 시험에 어떤 자원을 투입할 수 있는지, 어떤 방법이 실현 가능한지, 어떤 결과를 성공으로 간주하는지에 영향을 미쳤다",
+     "k": "key"
+    },
+    {
+     "t": "모델이 조직의 민감 데이터를 노출하거나, 특정 업무 흐름을 훼손하거나, 특정 사용자 집단에 위험을 초래할 수 있는지",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants also linked organizational context directly to reporting practices. Reports are rarely written for a generic audience; instead, their structure, level of technical detail, and disclosure decisions are largely determined by the needs of the stakeholders expected to consume them. Internal engineering and product teams often need detailed information that supports reproduction and remediation of identified issues. Leadership audiences often prefer concise summaries that communicate overall risk. Public reporting must further account for confidentiality obligations, information hazards, competitive pressures, and the risks of disclosing unpatched flaws and vulnerabilities. These differing requirements emerged repeatedly throughout our interviews and provide an important foundation for understanding subsequent findings regarding threat models and reporting standards.",
+   "ko": "참가자들은 또한 조직적 맥락을 보고 관행과 직접 연결했다. 보고서가 일반 독자를 대상으로 작성되는 경우는 드물며, 보고서의 구조, 기술적 세부 수준, 공개 결정은 대체로 해당 보고서를 활용할 것으로 예상되는 이해관계자의 필요에 따라 결정된다. 내부 엔지니어링 팀과 제품 팀은 식별된 문제의 재현과 개선을 뒷받침하는 상세한 정보를 필요로 하는 경우가 많다. 경영진 독자는 전반적인 위험을 전달하는 간결한 요약을 선호하는 경우가 많다. 공개 보고는 여기에 더해 기밀 유지 의무, 정보 위험원(information hazard), 경쟁 압력, 패치되지 않은 결함과 취약점을 공개하는 데 따르는 위험까지 고려해야 한다. 이러한 서로 다른 요건은 인터뷰 전반에 걸쳐 반복적으로 나타났으며, 위협 모델과 보고 표준에 관한 이후의 연구 결과를 이해하는 데 중요한 토대가 된다.",
+   "marks": [
+    {
+     "t": "공개 보고는 여기에 더해 기밀 유지 의무, 정보 위험원(information hazard), 경쟁 압력, 패치되지 않은 결함과 취약점을 공개하는 데 따르는 위험까지 고려해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Taken together, these accounts suggest that organizational context is necessary for interpreting AI red-teaming practices. Knowing who conducted an exercise, what access they had, why the exercise was performed, and who was expected to use the findings helps clarify both the strengths and limitations of reported results. Participants therefore treated organizational context as a foundational component of red-teaming practice rather than as background information ancillary to the exercise.",
+   "ko": "종합하면, 이러한 진술은 조직적 맥락이 AI 레드티밍 실행 방안을 해석하는 데 필수적임을 시사한다. 누가 실습을 수행했는지, 어떤 접근 권한을 가졌는지, 왜 실습이 수행되었는지, 누가 결과를 활용할 것으로 예상되었는지를 알면 보고된 결과의 강점과 한계를 모두 명확히 하는 데 도움이 된다. 따라서 참가자들은 조직적 맥락을 실습에 부수되는 배경 정보가 아니라 레드티밍 실무의 기초적 구성 요소로 취급했다.",
+   "marks": [
+    {
+     "t": "조직적 맥락이 AI 레드티밍 실행 방안을 해석하는 데 필수적임을 시사한다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Threat Models Inform Red-Teaming Practices",
+   "ko": "위협 모델이 레드티밍 실행 방안의 근거가 된다",
+   "id": "s56"
+  },
+  {
+   "type": "p",
+   "en": "Threat models emerged as a conceptual foundation upon which AI red-teaming exercises are designed, executed, and ultimately interpreted. In AI red-teaming, creating a threat model is described as:",
+   "ko": "위협 모델은 AI 레드티밍 실습이 설계되고, 수행되고, 궁극적으로 해석되는 개념적 토대로 나타났다. AI 레드티밍에서 위협 모델을 수립하는 것은 다음과 같이 설명된다."
+  },
+  {
+   "type": "p",
+   "en": "The practice of systematically analyzing a system’s attack surface to identify potential ways it could be compromised. Threat modeling for AI systems also includes understanding socio-cultural, regulatory, and ethical contexts above and beyond the technical attack surfaces. This includes identifying how attackers might manipulate model inputs, poison training data, or exploit biases.[^16]",
+   "ko": "시스템이 침해될 수 있는 잠재적 경로를 식별하기 위해 시스템의 공격 표면을 체계적으로 분석하는 실행 방안. AI 시스템에 대한 위협 모델링은 기술적 공격 표면을 넘어 사회문화적, 규제적, 윤리적 맥락을 이해하는 것도 포함한다. 여기에는 공격자가 모델 입력을 조작하거나, 학습 데이터를 오염시키거나, 편향을 악용할 수 있는 방식을 식별하는 것이 포함된다.[^16]",
+   "marks": [
+    {
+     "t": "공격자가 모델 입력을 조작하거나, 학습 데이터를 오염시키거나, 편향을 악용할 수 있는 방식을 식별하는 것",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Based on our interviews, the methodology of AI red-teaming and the threat model used to frame an exercise seem to be closely linked. Across interviews, participants consistently described threat models as the organizing framework that determines which actors, risks, attack surfaces, and system components should be included within an evaluation. Threat modeling—that is, the process of creating a threat model—is not a discrete planning step. Rather, practitioners portrayed it as outlining the assumptions that inform nearly every subsequent design decision, from selecting testers and allocating resources to choosing evaluation methodologies and interpreting results. Consistent with this observation, our thematic analysis revealed a strong co-occurrence between two codes: “Conceptualizing threat model(s)” and “exercise methodology.” This reflects practitioners’ tendency to describe the two as inseparable components of a successful evaluation (see Table A3 for table of thematic co-occurrence patterns). Participants rarely discussed methodological choices independently of the threat model that motivated them.",
+   "ko": "인터뷰 결과에 따르면, AI 레드티밍의 방법론과 실습의 틀을 잡는 데 사용되는 위협 모델은 밀접하게 연결되어 있는 것으로 보인다. 인터뷰 전반에서 참가자들은 위협 모델을 평가(evaluation)에 어떤 행위자, 위험, 공격 표면, 시스템 구성 요소를 포함해야 하는지 결정하는 조직화 틀로 일관되게 설명했다. 위협 모델링, 즉 위협 모델을 수립하는 과정은 별개의 독립된 계획 단계가 아니다. 실무자들은 오히려 위협 모델링을 시험자 선정과 자원 배분부터 평가 방법론 선택과 결과 해석에 이르기까지 이후 거의 모든 설계 결정의 근거가 되는 가정을 정리하는 작업으로 묘사했다. 이러한 관찰과 마찬가지로, 주제 분석 결과 \"위협 모델 개념화(Conceptualizing threat model(s))\"와 \"실습 방법론(exercise methodology)\"이라는 두 코드 사이에 강한 동시 출현이 나타났다. 이는 실무자들이 두 요소를 성공적인 평가의 불가분한 구성 요소로 설명하는 경향을 반영한다(주제별 동시 출현 패턴은 표 A3 참조). 참가자들은 방법론적 선택을 그 선택의 동기가 된 위협 모델과 분리하여 논의하는 경우가 거의 없었다.",
+   "marks": [
+    {
+     "t": "위협 모델을 평가(evaluation)에 어떤 행위자, 위험, 공격 표면, 시스템 구성 요소를 포함해야 하는지 결정하는 조직화 틀로 일관되게 설명했다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Our final coding scheme similarly distinguishes between two related but analytically distinct functions of threat modeling. First, participants discussed the threat model as a conceptual framework for understanding relevant harms, threat actors, deployment contexts, and system boundaries. Second, they described the threat model as a design input that directly informs operational decisions during an evaluation, including tester composition, access levels, resource allocation, and execution methods. Separating these dimensions clarifies that threat models do more than identify potential risks; they also translate abstract security objectives into concrete testing procedures.",
+   "ko": "최종 코딩 체계도 마찬가지로 위협 모델링의 서로 관련되어 있지만 분석적으로는 구별되는 두 가지 기능을 구분한다. 첫째, 참가자들은 위협 모델을 관련 피해, 위협 행위자, 배포 맥락, 시스템 경계를 이해하기 위한 개념적 틀로 논의했다. 둘째, 참가자들은 위협 모델을 시험자 구성, 접근 수준, 자원 배분, 수행 방식 등 평가 중의 운영상 결정에 직접적인 근거를 제공하는 설계 입력으로 설명했다. 이 두 차원을 분리하면 위협 모델이 잠재적 위험을 식별하는 데 그치지 않고 추상적인 보안 목표를 구체적인 시험 절차로 전환하는 역할도 한다는 점이 분명해진다."
+  },
+  {
+   "type": "p",
+   "en": "Participants emphasized that the threat model determines which risks are considered meaningful in the first place. Rather than searching indiscriminately for any possible failure mode, red-teamers described beginning with assumptions regarding anticipated adversaries, deployment environments, organizational priorities, and realistic misuse scenarios. These assumptions constrain the scope of the exercise while making the resulting findings interpretable. As Participant 14 explained, narrowing the threat model “reduces the attack surface” by explicitly specifying which targets fall within scope and which do not. Several participants similarly noted that an overly broad threat model risks producing superficial evaluations that fail to generate actionable findings, whereas overly narrow threat models may overlook important classes of harms, flaws, and vulnerabilities.",
+   "ko": "참가자들은 애초에 어떤 위험을 유의미한 것으로 볼지를 위협 모델이 결정한다고 강조했다. 레드티머들은 가능한 모든 실패 모드를 무차별적으로 탐색하기보다 예상되는 적대자, 배포 환경, 조직의 우선순위, 현실적인 오용 시나리오에 관한 가정에서 출발한다고 설명했다. 이러한 가정은 실습의 범위를 제한하는 동시에 도출된 결과를 해석 가능하게 만든다. 참가자 14가 설명했듯이, 위협 모델을 좁히면 어떤 대상이 범위에 포함되고 어떤 대상이 포함되지 않는지를 명시적으로 규정함으로써 \"공격 표면을 줄인다\". 여러 참가자들도 마찬가지로 위협 모델이 지나치게 광범위하면 실행 가능한 결과를 도출하지 못하는 피상적인 평가로 이어질 위험이 있는 반면, 위협 모델이 지나치게 좁으면 중요한 유형의 피해, 결함, 취약점을 간과할 수 있다고 지적했다.",
+   "marks": [
+    {
+     "t": "위협 모델이 지나치게 광범위하면 실행 가능한 결과를 도출하지 못하는 피상적인 평가로 이어질 위험",
+     "k": "safety"
+    },
+    {
+     "t": "위협 모델이 지나치게 좁으면 중요한 유형의 피해, 결함, 취약점을 간과할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants also stressed that threat models vary substantially across organizational settings. Internal teams developing frontier models often prioritize flaws and vulnerabilities that could undermine model safety, alignment, or deployment readiness before release. By contrast, downstream deployers frequently focus on risks emerging from integration into specific organizational workflows, and third-party evaluators tailor threat models to client priorities or contractual requirements. As Participant 11 observed, many organizations are less interested in generic jailbreak demonstrations than in flaws and vulnerabilities capable of producing realistic operational consequences within their own deployment environment. Consequently, practitioners repeatedly argued that no single threat model is universally appropriate; instead, effective red-teaming depends on selecting a threat model that accurately reflects the intended application of the system being evaluated.",
+   "ko": "참가자들은 또한 위협 모델이 조직 환경에 따라 상당히 다르다는 점을 강조했다. 프론티어 모델을 개발하는 내부 팀은 출시 전에 모델의 안전성, 정렬, 또는 배포 준비 상태를 훼손할 수 있는 결함과 취약점을 우선시하는 경우가 많다. 반면 하위 배포자는 특정 조직의 업무 흐름에 통합되는 과정에서 발생하는 위험에 주로 초점을 맞추며, 제3자 평가자는 고객의 우선순위나 계약 요건에 맞추어 위협 모델을 조정한다. 참가자 11이 관찰했듯이, 많은 조직은 일반적인 탈옥 시연보다는 자사 배포 환경 내에서 현실적인 운영상 결과를 초래할 수 있는 결함과 취약점에 더 관심을 둔다. 따라서 실무자들은 보편적으로 적절한 단일 위협 모델은 존재하지 않으며, 효과적인 레드티밍은 평가 대상 시스템의 의도된 용도를 정확히 반영하는 위협 모델을 선택하는 데 달려 있다고 거듭 주장했다.",
+   "marks": [
+    {
+     "t": "출시 전에 모델의 안전성, 정렬, 또는 배포 준비 상태를 훼손할 수 있는 결함과 취약점을 우선시하는 경우가 많다",
+     "k": "safety"
+    },
+    {
+     "t": "일반적인 탈옥 시연보다는 자사 배포 환경 내에서 현실적인 운영상 결과를 초래할 수 있는 결함과 취약점",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Threat models likewise shaped methodological decisions throughout the evaluation process. Participants described using the threat actors and risks being modeled to select tester expertise, determine the appropriate number and diversity of evaluators, establish levels of system access, allocate computational resources, and decide between manual, automated, or hybrid testing strategies. For example, evaluations concerning sophisticated state-sponsored adversaries may require domain experts, extended testing periods, and privileged system access, whereas assessments focused on ordinary end users may emphasize usability, prompt-based interactions, or edge-case behaviors. Rather than representing independent methodological decisions, these design variables emerged as downstream consequences of the threat model itself.",
+   "ko": "위협 모델은 마찬가지로 평가 과정 전반에 걸쳐 방법론적 결정을 형성했다. 참가자들은 모델링 대상인 위협 행위자와 위험을 근거로 시험자의 전문성을 선정하고, 평가자의 적절한 인원과 다양성을 정하고, 시스템 접근 수준을 설정하고, 컴퓨팅 자원을 배분하고, 수동·자동·혼합 시험 전략 중 하나를 결정한다고 설명했다. 예를 들어 고도화된 국가 지원 적대자를 다루는 평가에는 도메인 전문가, 장기간의 시험 기간, 특권적 시스템 접근이 필요할 수 있는 반면, 일반 최종 사용자에 초점을 맞춘 평가(assessment)는 사용성, 프롬프트 기반 상호작용, 또는 극단적 사례(edge case)에서의 행동을 중점적으로 다룰 수 있다. 이러한 설계 변수는 독립적인 방법론적 결정이라기보다 위협 모델 자체에서 파생된 결과로 나타났다.",
+   "marks": [
+    {
+     "t": "고도화된 국가 지원 적대자를 다루는 평가에는 도메인 전문가, 장기간의 시험 기간, 특권적 시스템 접근이 필요할 수 있는",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants further noted that threat models influence how evaluation outcomes should be interpreted. A vulnerability identified under one threat model cannot necessarily be generalized to another deployment context, just as the absence of observed failures does not imply security against threats lying outside the evaluation’s stated scope. Consequently, interviewees consistently argued that reported findings cannot be meaningfully interpreted without understanding the assumptions that structured the exercise. Methodological transparency therefore depends not only on describing what testing occurred but also on explaining why those particular tests were conducted.",
+   "ko": "참가자들은 나아가 위협 모델이 평가 결과를 어떻게 해석해야 하는지에도 영향을 미친다고 지적했다. 어떤 위협 모델에서 식별된 취약점을 다른 배포 맥락으로 반드시 일반화할 수 있는 것은 아니며, 마찬가지로 관찰된 실패가 없다고 해서 평가의 명시된 범위 밖에 있는 위협에 대한 보안이 보장되는 것도 아니다. 따라서 인터뷰 참가자들은 실습을 구조화한 가정을 이해하지 않고서는 보고된 결과를 의미 있게 해석할 수 없다고 일관되게 주장했다. 그러므로 방법론적 투명성은 어떤 시험이 수행되었는지를 기술하는 것뿐만 아니라 왜 그러한 특정 시험이 수행되었는지를 설명하는 데에도 달려 있다.",
+   "marks": [
+    {
+     "t": "관찰된 실패가 없다고 해서 평가의 명시된 범위 밖에 있는 위협에 대한 보안이 보장되는 것도 아니다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "As a group, participants described threat models as the organizing framework that determines what is tested, how evaluations are conducted, and how findings should be interpreted. Without explicitly communicating the threat model that motivated an exercise, methodological details and reported flaws lose much of their explanatory value.",
+   "ko": "전체적으로 참가자들은 위협 모델을 무엇을 시험할지, 평가를 어떻게 수행할지, 결과를 어떻게 해석해야 할지를 결정하는 조직화 틀로 설명했다. 실습의 동기가 된 위협 모델을 명시적으로 전달하지 않으면 방법론적 세부 사항과 보고된 결함은 설명적 가치의 상당 부분을 잃게 된다.",
+   "marks": [
+    {
+     "t": "실습의 동기가 된 위협 모델을 명시적으로 전달하지 않으면 방법론적 세부 사항과 보고된 결함은 설명적 가치의 상당 부분을 잃게 된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Reporting Requirements Vary by Stakeholder",
+   "ko": "보고 요건은 이해관계자에 따라 다르다",
+   "id": "s66"
+  },
+  {
+   "type": "p",
+   "en": "Participants consistently emphasized that AI red-teaming reports are tailored to their intended audience. Organizational and contractual agreements determine who initially receives a report, while stakeholder responsibilities shape the information that is ultimately communicated. Rather than serving a generic audience, reports are designed around the decisions specific stakeholders are expected to make.",
+   "ko": "참가자들은 AI 레드티밍 보고서가 의도된 독자에 맞추어 작성된다고 일관되게 강조했다. 조직 간 협약과 계약은 누가 보고서를 처음 받는지를 결정하며, 이해관계자의 책임은 최종적으로 전달되는 정보를 형성한다. 보고서는 일반 독자를 대상으로 하기보다 특정 이해관계자가 내릴 것으로 예상되는 결정을 중심으로 설계된다.",
+   "marks": [
+    {
+     "t": "보고서는 일반 독자를 대상으로 하기보다 특정 이해관계자가 내릴 것으로 예상되는 결정을 중심으로 설계된다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The coding analysis strongly reinforced this pattern. Discussions surrounding reporting frequently co-occurred with references to stakeholders, actionable information, mitigation, and reporting content, indicating that practitioners rarely discussed reporting independently of the intended report recipient. Rather than asking what information should always be reported, participants typically first asked whom the report was intended to serve. For product and safety teams, actionable detail was often paramount: Participants described the need for information that could support triage, reproduction, and remediation of identified issues. At the same time, participants noted that senior leadership often preferred more compressed reporting formats that translated complex evaluations into a small number of salient judgments or metrics. This creates a recurrent tension for reporting standards: The granular information most useful for internal remediation is not always the information most available to external interpreters trying to understand what an exercise actually tested.",
+   "ko": "코딩 분석은 이러한 패턴을 강하게 뒷받침했다. 보고에 관한 논의는 이해관계자, 실행 가능한 정보, 완화, 보고 내용에 대한 언급과 빈번하게 동시 출현했으며, 이는 실무자들이 의도된 보고서 수신자와 분리하여 보고를 논의하는 경우가 거의 없음을 보여 준다. 참가자들은 어떤 정보를 항상 보고해야 하는지를 묻기보다 대체로 보고서가 누구를 위한 것인지를 먼저 물었다. 제품 팀과 안전 팀에게는 실행 가능한 세부 정보가 가장 중요한 경우가 많았다. 참가자들은 식별된 문제의 분류(triage), 재현, 개선을 뒷받침할 수 있는 정보가 필요하다고 설명했다. 동시에 참가자들은 고위 경영진이 복잡한 평가를 소수의 핵심 판단이나 지표로 압축한 보다 간결한 보고 형식을 선호하는 경우가 많다고 지적했다. 이는 보고 표준에 반복적인 긴장을 낳는다. 내부 개선에 가장 유용한 세분화된 정보가 실습에서 실제로 무엇을 시험했는지 이해하려는 외부 해석자가 가장 쉽게 접할 수 있는 정보와 항상 일치하는 것은 아니기 때문이다.",
+   "marks": [
+    {
+     "t": "제품 팀과 안전 팀에게는 실행 가능한 세부 정보가 가장 중요한 경우가 많았다.",
+     "k": "safety"
+    },
+    {
+     "t": "내부 개선에 가장 유용한 세분화된 정보가 실습에서 실제로 무엇을 시험했는지 이해하려는 외부 해석자가 가장 쉽게 접할 수 있는 정보와 항상 일치하는 것은 아니기 때문이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Stakeholders have different priorities and interests depending on their role. For instance, many red-teamers within software companies will write reports for the product or development team actually responsible for the behavior of the AI system. In this context, the primary stakeholders are also directly responsible for mitigating risks and harms identified by the red team. Interviewees thus emphasized the importance of providing actionable information that would help with the mitigation process. Various participants defined “actionable” in different ways, but common features included clear instructions for reproducing bugs, flaws, or vulnerabilities; system details; and relevant information that would help with decision-making.",
+   "ko": "이해관계자는 역할에 따라 서로 다른 우선순위와 이해관계를 가진다. 예를 들어 소프트웨어 기업 내 많은 레드티머는 AI 시스템의 행동에 실제로 책임을 지는 제품 팀이나 개발 팀을 위해 보고서를 작성한다. 이 맥락에서 주요 이해관계자는 레드팀이 식별한 위험과 피해를 완화할 직접적인 책임도 진다. 따라서 인터뷰 참가자들은 완화 과정에 도움이 될 실행 가능한 정보를 제공하는 것이 중요하다고 강조했다. 참가자마다 '실행 가능한'을 다르게 정의했지만, 공통 요소로는 버그·결함·취약점을 재현하기 위한 명확한 지침, 시스템 세부 정보, 의사결정에 도움이 될 관련 정보가 있었다.",
+   "marks": [
+    {
+     "t": "주요 이해관계자는 레드팀이 식별한 위험과 피해를 완화할 직접적인 책임도 진다.",
+     "k": "safety"
+    },
+    {
+     "t": "버그·결함·취약점을 재현하기 위한 명확한 지침",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Other red-teamers are responsible for summarizing their findings for organizational leadership. Unlike product or development teams, who are directly responsible for the AI system being tested, leadership teams have different responsibilities and often require higher-level conclusions. As Participant 16 said, “At the end of the day, senior leadership’s gonna wanna know: Is our model risky or not? Does our model have a harm potential or not? So if you can’t convey your metric, you know, your evaluation into one to two key metrics that can be communicated up a leadership chain, it won’t have resonance.”",
+   "ko": "다른 레드티머들은 조직 리더십을 위해 결과를 요약하는 책임을 맡는다. 시험 대상 AI 시스템에 직접 책임을 지는 제품 팀이나 개발 팀과 달리, 리더십 팀은 다른 책임을 지며 보다 상위 수준의 결론을 요구하는 경우가 많다. 참가자 16은 다음과 같이 말했다. \"결국 고위 경영진이 알고 싶은 건 이거예요. 우리 모델이 위험한가, 아닌가? 우리 모델에 피해를 일으킬 가능성이 있나, 없나? 그러니까 지표를, 그러니까 평가를 리더십 라인을 따라 위로 전달할 수 있는 한두 개의 핵심 지표로 압축하지 못하면, 반향을 얻지 못할 거예요.\"",
+   "marks": [
+    {
+     "t": "우리 모델이 위험한가, 아닌가? 우리 모델에 피해를 일으킬 가능성이 있나, 없나?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This finding naturally motivates our next question: If practitioners cannot disclose everything about an evaluation, what information nevertheless constitutes the minimum set of details that should appear in every AI red-teaming report? Across interviews, participants converged strongly on four reporting dimensions that together provide the context necessary to interpret evaluation findings.",
+   "ko": "이 발견은 자연스럽게 다음 질문으로 이어진다. 실무자가 평가에 관한 모든 것을 공개할 수 없다면, 그럼에도 모든 AI 레드티밍 보고서에 담겨야 할 최소한의 세부 정보는 무엇인가? 인터뷰 전반에서 참가자들은 평가 결과를 해석하는 데 필요한 맥락을 함께 제공하는 네 가지 보고 차원에 대해 뚜렷하게 의견이 수렴되었다.",
+   "marks": [
+    {
+     "t": "모든 AI 레드티밍 보고서에 담겨야 할 최소한의 세부 정보는 무엇인가?",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Red-Teamers Converge on Four Essential Reporting Dimensions",
+   "ko": "레드티머들은 네 가지 필수 보고 차원에 의견이 수렴된다",
+   "id": "s72"
+  },
+  {
+   "type": "p",
+   "en": "Despite considerable variation in organizational context, red-teaming objectives, and reporting practices, participants identified a recurring set of information that they regarded as essential for interpreting and communicating the results of AI red-teaming exercises. The degree of emphasis varied across these categories: Methodological context was raised by all participants, while harms elicited, actionable information, and threat model information were each raised by approximately half of the sample. Rather than treating the frequency of mentions as a measure of the relative importance of each dimension, we interpret it as evidence that different aspects of reporting were emphasized to different degrees across participants and contexts. Taken together, these recurring categories provide a useful baseline for understanding what information practitioners believe is needed to interpret an AI red-teaming exercise.",
+   "ko": "조직 맥락, 레드티밍 목표, 보고 관행에 상당한 차이가 있음에도 참가자들은 AI 레드티밍 실습 결과를 해석하고 전달하는 데 필수적이라고 여기는 정보를 반복적으로 제시했다. 강조의 정도는 범주마다 달랐다. 방법론적 맥락은 모든 참가자가 언급한 반면, 이끌어 낸 피해, 실행 가능한 정보, 위협 모델 정보는 각각 표본의 약 절반이 언급했다. 우리는 언급 빈도를 각 차원의 상대적 중요도를 나타내는 척도로 보기보다, 보고의 여러 측면이 참가자와 맥락에 따라 서로 다른 정도로 강조되었음을 보여 주는 증거로 해석한다. 종합하면, 이처럼 반복적으로 나타난 범주들은 실무자가 AI 레드티밍 실습을 해석하는 데 어떤 정보가 필요하다고 보는지 이해하기 위한 유용한 기준선이 된다.",
+   "marks": [
+    {
+     "t": "방법론적 맥락은 모든 참가자가 언급한 반면, 이끌어 낸 피해, 실행 가능한 정보, 위협 모델 정보는 각각 표본의 약 절반이 언급했다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Because our interviews focused on AI red-teaming practitioners, the reporting dimensions identified below reflect the perspectives of those who both produce and routinely interpret AI red-teaming reports. Participants described these perspectives as extending beyond their own preferences as report readers. In their roles, they regularly prepare reports for developers, product teams, organizational leadership, clients, and other decision-makers, while also evaluating reports produced by other organizations to inform and refine their own testing practices. As a result, participants were well positioned to reflect on both the information different stakeholders request and the context practitioners believe is necessary for interpreting AI red-teaming results across organizations.",
+   "ko": "우리의 인터뷰는 AI 레드티밍 실무자에 초점을 맞추었으므로, 아래에서 식별한 보고 차원은 AI 레드티밍 보고서를 작성하는 동시에 일상적으로 해석하는 이들의 관점을 반영한다. 참가자들은 이러한 관점이 보고서 독자로서 자신의 선호를 넘어선다고 설명했다. 참가자들은 업무상 개발자, 제품 팀, 조직 리더십, 고객, 기타 의사결정자를 위해 정기적으로 보고서를 작성하는 한편, 자신의 시험 관행을 정립하고 개선하기 위해 다른 조직이 작성한 보고서도 평가한다. 그 결과 참가자들은 여러 이해관계자가 요청하는 정보와, 조직 전반에 걸쳐 AI 레드티밍 결과를 해석하는 데 실무자가 필요하다고 보는 맥락 모두에 대해 성찰하기에 좋은 위치에 있었다."
+  },
+  {
+   "type": "p",
+   "en": "At the same time, participants observed that red-teaming reports are often designed to satisfy the immediate needs of the organization commissioning the evaluation. Therefore, information that is useful to external evaluators and the broader AI red-teaming community may receive less emphasis. To better understand what information practitioners believe would improve interpretability across the field, we asked participants not only what information they considered most important to report in their own work but also what information they seek when reading others’ reports.",
+   "ko": "동시에 참가자들은 레드티밍 보고서가 흔히 평가를 의뢰한 조직의 당면한 요구를 충족하도록 설계된다는 점을 관찰했다. 따라서 외부 평가자와 더 넓은 AI 레드티밍 커뮤니티에 유용한 정보는 덜 강조될 수 있다. 실무자들이 분야 전반의 해석 가능성을 높이는 데 어떤 정보가 도움이 된다고 보는지 더 잘 이해하기 위해, 우리는 참가자들에게 자신의 업무에서 보고하기에 가장 중요하다고 여기는 정보뿐 아니라 다른 이들의 보고서를 읽을 때 찾는 정보도 질문했다.",
+   "marks": [
+    {
+     "t": "레드티밍 보고서가 흔히 평가를 의뢰한 조직의 당면한 요구를 충족하도록 설계된다는 점을 관찰했다",
+     "k": "safety"
+    },
+    {
+     "t": "외부 평가자와 더 넓은 AI 레드티밍 커뮤니티에 유용한 정보는 덜 강조될 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Across interviews, four recurring dimensions emerged as critical to AI red-teaming reporting: (a) the methodological context; (b) the threat model that framed the evaluation; (c) the harms, flaws, or vulnerabilities elicited during testing; and (d) actionable information for downstream decision-makers. These dimensions represent complementary aspects of an evaluation rather than independent reporting elements. Together, they provide the contextual information practitioners believe is necessary to understand not only what flaws or vulnerabilities were identified but also why they were sought, how they were discovered, and what should happen next. Table 1 synthesizes these four reporting dimensions and illustrates how the recurring themes identified through our thematic analysis collectively define the information practitioners consider essential for interpretable AI red-teaming reports.",
+   "ko": "인터뷰 전반에서 AI 레드티밍 보고에 핵심적인 네 가지 차원이 반복적으로 나타났다. (a) 방법론적 맥락, (b) 평가의 틀을 구성한 위협 모델, (c) 시험 중 이끌어 낸 피해·결함·취약점, (d) 후속 의사결정자를 위한 실행 가능한 정보다. 이 차원들은 서로 독립적인 보고 요소라기보다 평가의 상호 보완적인 측면을 나타낸다. 이들은 함께 어떤 결함이나 취약점이 식별되었는지뿐만 아니라 그것을 왜 찾으려 했는지, 어떻게 발견했는지, 다음에 무엇을 해야 하는지를 이해하는 데 실무자가 필요하다고 보는 맥락 정보를 제공한다. 표 1은 이 네 가지 보고 차원을 종합하고, 주제 분석을 통해 식별된 반복적 주제들이 해석 가능한 AI 레드티밍 보고서에 필수적이라고 실무자가 여기는 정보를 어떻게 함께 규정하는지 보여 준다.",
+   "marks": [
+    {
+     "t": "인터뷰 전반에서 AI 레드티밍 보고에 핵심적인 네 가지 차원이 반복적으로 나타났다.",
+     "k": "key"
+    },
+    {
+     "t": "(c) 시험 중 이끌어 낸 피해·결함·취약점",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Table 1. Qualitative Evidence Matrix for Reporting-Relevant Analytic Categories",
+   "ko": "표 1. 보고 관련 분석 범주에 대한 질적 증거 매트릭스"
+  },
+  {
+   "type": "table",
+   "en": "| Reporting feature | Description | Freq.* | Key subcodes | Illustrative quotes | ⏎ | Methodology | Participants emphasized that methods, access conditions, resources, tester expertise, tools, automation, and system configuration shape how seriously findings should be interpreted. | 100% | Resources used; access conditions; tester expertise; tooling; automation; chat traces; reproducibility | “A report based on two weeks with guardrails removed means something different from one day of testing with no tool access and guardrails intact.” (Participant 5) | ⏎ | Harms, flaws, or vulnerabilities elicited | Participants emphasized that reports should convey what kind of harm, flaw, or vulnerability was elicited, how severe it was, and how it corresponds to the threat model. | 53% | Vulnerabilities; severity or impact; correspondence to threat model; risks of concern | “What people want the most is the big issues that you found—big issues that you might find in deployment.” (Participant 10) | ⏎ | Actionable information | Participants valued reporting that connects findings to mitigation, governance, triage, procurement, or operational decision-making. | 53% | Mitigation recommendations; downstream use; product or safety team handoff; decision support | “I think useful should be actionable.… It should be something that, you know, the team you’re giving it to can then turn around and update their strategy based on that information.” (Participant 7) | ⏎ | Threat model | Participants described the threat model as the frame that defines relevant actors, risks, scope, and attack surface, making reported results interpretable. | 47% | Risks of concern; actors being emulated; in/out of scope; system-level attack surface | “Threat modeling reduces the attack surface by specifying which targets are in scope and which are not.” (Participant 14) |",
+   "ko": "| 보고 특성 | 설명 | 빈도* | 주요 하위 코드 | 예시 인용문 | ⏎ | 방법론 | 참가자들은 방법, 접근 조건, 자원, 시험자 전문성, 도구, 자동화, 시스템 구성이 결과를 얼마나 무게 있게 해석해야 하는지를 좌우한다고 강조함. | 100% | 사용된 자원; 접근 조건; 시험자 전문성; 도구; 자동화; 채팅 기록; 재현성 | \"가드레일을 제거한 상태로 2주 동안 수행한 시험에 근거한 보고서는, 도구 접근 없이 가드레일이 그대로 있는 상태에서 하루 동안 수행한 시험과는 의미가 달라요.\" (참가자 5) | ⏎ | 이끌어 낸 피해·결함·취약점 | 참가자들은 보고서가 어떤 종류의 피해·결함·취약점을 이끌어 냈는지, 그 심각도가 어느 정도인지, 위협 모델과 어떻게 대응되는지를 전달해야 한다고 강조함. | 53% | 취약점; 심각도 또는 영향; 위협 모델과의 대응; 우려 대상 위험 | \"사람들이 가장 원하는 건 발견한 큰 문제들이에요. 배포 단계에서 마주칠 수 있는 큰 문제들이요.\" (참가자 10) | ⏎ | 실행 가능한 정보 | 참가자들은 결과를 완화, 거버넌스, 분류(triage), 조달, 운영상 의사결정과 연결하는 보고를 중시함. | 53% | 완화 권고; 후속 활용; 제품 팀 또는 안전 팀으로의 인계; 의사결정 지원 | \"유용하다는 건 실행 가능해야 한다는 뜻이라고 생각해요.… 그러니까, 그걸 받은 팀이 그 정보를 바탕으로 바로 전략을 수정할 수 있는 것이어야 해요.\" (참가자 7) | ⏎ | 위협 모델 | 참가자들은 위협 모델을 관련 행위자, 위험, 범위, 공격 표면을 규정하여 보고된 결과를 해석 가능하게 만드는 틀로 설명함. | 47% | 우려 대상 위험; 모방 대상 행위자; 범위 내/외; 시스템 수준 공격 표면 | \"위협 모델링은 어떤 대상이 범위에 포함되고 어떤 대상이 포함되지 않는지를 명시함으로써 공격 표면을 줄여요.\" (참가자 14) |"
+  },
+  {
+   "type": "p",
+   "en": "* Frequency represents the proportion of participants who mentioned the theme at least once.",
+   "ko": "* 빈도는 해당 주제를 한 번 이상 언급한 참가자의 비율을 나타낸다."
+  },
+  {
+   "type": "p",
+   "en": "The comparatively lower frequency of actionable information warrants clarification. Although only 53 percent of participants explicitly raised actionable information when discussing useful reporting, this does not necessarily indicate that the remaining participants considered actionability unimportant. In practice, actionable information may be treated as an implicit component of reporting rather than a distinct reporting category. Practitioners may assume that reports produced for internal product, safety, or engineering teams will naturally include information needed for remediation or decision-making. This interpretation is consistent with participants’ broader descriptions of reporting as being shaped by the needs of the intended recipient. Actionability may therefore be more readily assumed within organizational reporting practices than explicitly articulated as a reporting requirement, even though participants recognized its importance when discussing what makes evaluation results useful to downstream decision-makers.",
+   "ko": "실행 가능한 정보의 빈도가 상대적으로 낮다는 점은 설명이 필요하다. 유용한 보고에 대해 논의하면서 실행 가능한 정보를 명시적으로 언급한 참가자는 53%에 불과했지만, 이것이 나머지 참가자들이 실행 가능성을 중요하지 않다고 여겼음을 반드시 의미하지는 않는다. 실제로 실행 가능한 정보는 별도의 보고 범주라기보다 보고의 암묵적 구성 요소로 취급될 수 있다. 실무자들은 내부 제품 팀, 안전 팀, 엔지니어링 팀을 위해 작성되는 보고서라면 개선 조치나 의사결정에 필요한 정보가 자연스럽게 포함될 것이라고 전제할 수 있다. 이러한 해석은 보고가 의도된 수신자의 필요에 따라 형성된다는 참가자들의 전반적인 설명과도 일치한다. 따라서 참가자들이 평가 결과가 후속 의사결정자에게 유용해지는 조건을 논의할 때 실행 가능성의 중요성을 인식했음에도, 실행 가능성은 보고 요건으로 명시적으로 표현되기보다 조직의 보고 관행 안에서 당연한 것으로 전제될 가능성이 더 크다."
+  },
+  {
+   "type": "p",
+   "en": "Importantly, participants did not present these four dimensions as an exhaustive list of reporting requirements. Instead, they described them as a common baseline capable of improving the interpretability of AI red-teaming reports across organizational settings while still allowing flexibility regarding implementation details. This distinction reflects a recurring theme throughout our interviews: Reporting standards should establish a shared foundation for communicating evaluation results rather than prescribe a single methodology for conducting red-teaming exercises.",
+   "ko": "중요한 점은 참가자들이 이 네 가지 차원을 보고 요건의 완전한 목록으로 제시하지 않았다는 것이다. 그 대신 이들은 이 차원들을 세부 이행 방식에 대해서는 유연성을 허용하면서도 다양한 조직 환경 전반에서 AI 레드티밍 보고서의 해석 가능성을 높일 수 있는 공통의 기준선으로 설명했다. 이러한 구분은 인터뷰 전반에서 반복적으로 나타난 주제를 반영한다. 즉, 보고 표준은 레드티밍 활동을 수행하는 단일한 방법론을 규정하기보다 평가 결과를 전달하기 위한 공유된 토대를 마련해야 한다는 것이다.",
+   "marks": [
+    {
+     "t": "보고 표준은 레드티밍 활동을 수행하는 단일한 방법론을 규정하기보다 평가 결과를 전달하기 위한 공유된 토대를 마련해야 한다는 것이다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Red-Teaming Methodology",
+   "ko": "레드티밍 방법론",
+   "id": "s82"
+  },
+  {
+   "type": "p",
+   "en": "Participants consistently emphasized that reports should clearly document the methodology used during an evaluation. Participants described several methodological characteristics that readers require to interpret and reproduce an evaluation. Drawing from the design variables identified in our thematic analysis, practitioners highlighted the importance of reporting information such as tester expertise, team composition, system access, duration of testing, computational resources, execution methods, and the degree of automation employed throughout the exercise. These factors substantially influence what kinds of flaws or vulnerabilities are likely to be discovered and therefore provide critical context for interpreting reported outcomes.",
+   "ko": "참가자들은 보고서가 평가 중 사용된 방법론을 명확히 기록해야 한다고 일관되게 강조했다. 참가자들은 독자가 평가를 해석하고 재현하는 데 필요한 여러 방법론적 특성을 설명했다. 주제 분석에서 식별된 설계 변수를 바탕으로, 실무자들은 시험자 전문성, 팀 구성, 시스템 접근, 시험 기간, 연산 자원, 수행 방법, 활동 전반에 걸쳐 활용된 자동화의 정도와 같은 정보를 보고하는 것이 중요하다고 강조했다. 이러한 요인은 어떤 종류의 결함이나 취약점이 발견될 가능성이 높은지에 상당한 영향을 미치며, 따라서 보고된 결과를 해석하는 데 핵심적인 맥락을 제공한다.",
+   "marks": [
+    {
+     "t": "시험자 전문성, 팀 구성, 시스템 접근, 시험 기간, 연산 자원, 수행 방법, 활동 전반에 걸쳐 활용된 자동화의 정도",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 요인은 어떤 종류의 결함이나 취약점이 발견될 가능성이 높은지에 상당한 영향을 미치며, 따라서 보고된 결과를 해석하는 데 핵심적인 맥락을 제공한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants frequently illustrated this principle by contrasting evaluations conducted under very different conditions. A report documenting numerous flaws or vulnerabilities after weeks of unrestricted testing with privileged system access conveys a fundamentally different level of evidence than a report identifying fewer issues during a brief assessment with limited access and resources. As Participant 5 explained, understanding these methodological differences is necessary before drawing conclusions about the relative security of two systems:",
+   "ko": "참가자들은 매우 다른 조건에서 수행된 평가를 대비함으로써 이 원칙을 자주 설명했다. 특권적 시스템 접근 권한을 가지고 수 주 동안 제한 없이 시험한 끝에 다수의 결함이나 취약점을 기록한 보고서는, 제한된 접근 권한과 자원으로 짧은 평가(assessment)를 수행하며 더 적은 문제를 식별한 보고서와 근본적으로 다른 수준의 증거를 전달한다. 참가자 5가 설명했듯이, 두 시스템의 상대적 보안성에 대해 결론을 내리기 전에 이러한 방법론적 차이를 이해할 필요가 있다.",
+   "marks": [
+    {
+     "t": "두 시스템의 상대적 보안성에 대해 결론을 내리기 전에 이러한 방법론적 차이를 이해할 필요가 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "If you’re reading a red-team report from a firm and it says something like, “We red-teamed a model without any guardrails and we gave people two weeks to do something and they found X number of vulnerabilities,” I’m going to feel very different about that than, “We allowed someone to red-team a model, no tool access, no guardrails removed, one day [of time], and they found 10 vulnerabilities.” I’m going to be so much more concerned about those 10 vulnerabilities than the 100 that you found in the study where you had no guardrails and gave people two weeks.",
+   "ko": "어떤 회사의 레드팀 보고서를 읽는데 \"가드레일이 전혀 없는 모델을 레드티밍했고, 사람들에게 2주를 줬더니 취약점을 X개 찾았다\"라고 되어 있다면, \"누군가에게 모델을 레드티밍하게 했는데, 도구 접근도 없고 가드레일도 제거하지 않고 [시간은] 하루였는데, 취약점을 10개 찾았다\"는 것과는 완전히 다르게 받아들일 거예요. 가드레일도 없고 2주나 준 연구에서 찾은 100개보다 그 10개의 취약점이 훨씬 더 걱정될 거예요.",
+   "marks": [
+    {
+     "t": "가드레일도 없고 2주나 준 연구에서 찾은 100개보다 그 10개의 취약점이 훨씬 더 걱정될 거예요",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Methodological reporting therefore serves less as procedural documentation than as interpretive context that allows readers to evaluate the evidentiary strength of reported findings.",
+   "ko": "따라서 방법론 보고는 절차적 기록이라기보다 독자가 보고된 결과의 증거 강도를 평가할 수 있게 해 주는 해석적 맥락으로서 기능한다.",
+   "marks": [
+    {
+     "t": "따라서 방법론 보고는 절차적 기록이라기보다 독자가 보고된 결과의 증거 강도를 평가할 수 있게 해 주는 해석적 맥락으로서 기능한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Methodological transparency also supports cumulative learning across the AI red-teaming community. Participants consistently described reading reports produced by other organizations to understand emerging testing strategies, compare evaluation approaches, and identify methodological innovations that could improve future exercises. In this sense, methodology functions not only as documentation of a completed evaluation but also as a mechanism for advancing the broader community of practice.",
+   "ko": "방법론적 투명성은 AI 레드티밍 공동체 전반의 누적적 학습도 뒷받침한다. 참가자들은 새로운 시험 전략을 파악하고, 평가 접근법을 비교하며, 향후 활동을 개선할 수 있는 방법론적 혁신을 찾기 위해 다른 조직이 작성한 보고서를 읽는다고 일관되게 설명했다. 이러한 의미에서 방법론은 완료된 평가의 기록일 뿐만 아니라 더 넓은 실천 공동체(community of practice)를 발전시키는 메커니즘으로도 기능한다.",
+   "marks": [
+    {
+     "t": "방법론적 투명성은 AI 레드티밍 공동체 전반의 누적적 학습도 뒷받침한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Harms or Flaws Elicited",
+   "ko": "이끌어 낸 피해 또는 결함",
+   "id": "s88"
+  },
+  {
+   "type": "p",
+   "en": "While methodology explains how an evaluation was conducted, the harms elicited during testing were viewed by participants as the principal evidence of what the evaluation actually discovered. Reports that merely indicate whether attacks succeeded provide limited insight unless they also communicate the nature, severity, and practical significance of the resulting flaws or vulnerabilities. Participants therefore argued that effective reporting should characterize the failures observed during testing rather than simply summarize aggregate performance metrics.",
+   "ko": "방법론이 평가가 어떻게 수행되었는지를 설명한다면, 참가자들은 시험 중 이끌어 낸 피해를 평가가 실제로 발견한 것에 대한 주된 증거로 보았다. 공격의 성공 여부만 표시하는 보고서는 그 결과로 드러난 결함이나 취약점의 성격, 심각도, 실질적 중요성을 함께 전달하지 않는 한 제한된 통찰만 제공한다. 따라서 참가자들은 효과적인 보고라면 단순히 종합 성능 지표를 요약하기보다 시험 중 관찰된 실패의 특성을 기술해야 한다고 주장했다.",
+   "marks": [
+    {
+     "t": "참가자들은 시험 중 이끌어 낸 피해를 평가가 실제로 발견한 것에 대한 주된 증거로 보았다",
+     "k": "safety"
+    },
+    {
+     "t": "참가자들은 효과적인 보고라면 단순히 종합 성능 지표를 요약하기보다 시험 중 관찰된 실패의 특성을 기술해야 한다고 주장했다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Interviewees emphasized that harms should be interpreted relative to the threat model motivating the evaluation. A successful jailbreak, for example, may represent a critical finding for one deployment context but have little operational significance in another. Similarly, identical technical security vulnerabilities may differ substantially in importance, depending on the assets exposed, the users affected, and the organizational environment. Participants therefore cautioned against treating vulnerabilities (or flaws) as context-independent phenomena and instead advocated for reporting that explicitly connects observed harms to the risks the evaluation sought to assess.",
+   "ko": "인터뷰 참가자들은 피해를 평가의 동기가 된 위협 모델에 비추어 해석해야 한다고 강조했다. 예를 들어 탈옥에 성공한 것은 어떤 배포 맥락에서는 중대한 발견일 수 있지만 다른 맥락에서는 운영상 의미가 거의 없을 수 있다. 마찬가지로, 동일한 기술적 보안 취약점이라도 노출되는 자산, 영향을 받는 사용자, 조직 환경에 따라 그 중요성이 상당히 다를 수 있다. 따라서 참가자들은 취약점(또는 결함)을 맥락과 무관한 현상으로 취급하는 것을 경계하고, 관찰된 피해를 평가가 측정하고자 한 위험과 명시적으로 연결하는 보고를 옹호했다.",
+   "marks": [
+    {
+     "t": "피해를 평가의 동기가 된 위협 모델에 비추어 해석해야 한다고 강조했다",
+     "k": "safety"
+    },
+    {
+     "t": "탈옥에 성공한 것은 어떤 배포 맥락에서는 중대한 발견일 수 있지만",
+     "k": "safety"
+    },
+    {
+     "t": "관찰된 피해를 평가가 측정하고자 한 위험과 명시적으로 연결하는 보고를 옹호했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Reporting harms also serves multiple audiences simultaneously. Developers require sufficient information to reproduce and mitigate identified flaws or vulnerabilities, organizational leaders need to understand the magnitude of residual risk, and external evaluators benefit from knowing which classes of flaws or vulnerabilities have already been explored. Participants described this latter function as particularly important for strengthening the broader evaluation ecosystem because it reduces unnecessary duplication of effort while highlighting areas requiring additional investigation.",
+   "ko": "피해 보고는 또한 여러 독자층에게 동시에 기여한다. 개발자는 식별된 결함이나 취약점을 재현하고 완화하는 데 충분한 정보를 필요로 하고, 조직의 리더는 잔여 위험의 규모를 이해해야 하며, 외부 평가자는 어떤 유형의 결함이나 취약점이 이미 탐색되었는지 아는 것이 도움이 된다. 참가자들은 이 마지막 기능이 불필요한 노력의 중복을 줄이는 동시에 추가 조사가 필요한 영역을 부각하기 때문에 더 넓은 평가 생태계를 강화하는 데 특히 중요하다고 설명했다.",
+   "marks": [
+    {
+     "t": "조직의 리더는 잔여 위험의 규모를 이해해야 하며",
+     "k": "safety"
+    },
+    {
+     "t": "외부 평가자는 어떤 유형의 결함이나 취약점이 이미 탐색되었는지 아는 것이 도움이 된다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Rather than simply cataloging failures, participants viewed harm reporting as validating the threat model itself. Demonstrating that an anticipated risk can (or cannot) be realized provides empirical evidence regarding the assumptions that structured the evaluation. Consequently, reporting the harms elicited by red-teaming achieves three ends: informing the system developers of types of harms to fix, informing external stakeholders of what types of harms have already been evaluated for, and informing external red teams of what should be tested for in other systems.",
+   "ko": "참가자들은 피해 보고를 단순히 실패를 목록화하는 것이 아니라 위협 모델 자체를 검증하는 것으로 보았다. 예상된 위험이 실현될 수 있음(또는 없음)을 입증하는 것은 평가의 틀을 구성한 가정에 대한 경험적 증거를 제공한다. 결과적으로 레드티밍으로 이끌어 낸 피해를 보고하는 것은 세 가지 목적을 달성한다. 시스템 개발자에게 수정해야 할 피해 유형을 알리고, 외부 이해관계자에게 어떤 유형의 피해가 이미 평가되었는지 알리며, 외부 레드팀에게 다른 시스템에서 무엇을 시험해야 하는지 알리는 것이다.",
+   "marks": [
+    {
+     "t": "피해 보고를 단순히 실패를 목록화하는 것이 아니라 위협 모델 자체를 검증하는 것으로 보았다",
+     "k": "key"
+    },
+    {
+     "t": "레드티밍으로 이끌어 낸 피해를 보고하는 것은 세 가지 목적을 달성한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Actionable Information",
+   "ko": "실행 가능한 정보",
+   "id": "s93"
+  },
+  {
+   "type": "p",
+   "en": "Participants consistently distinguished between reporting that merely documents vulnerabilities and reporting that enables organizations to respond to them. Across interviews, practitioners described the value of AI red-teaming as extending beyond identifying failures to include informing decisions about mitigation, governance, procurement, and future system development. Consequently, participants repeatedly emphasized that useful reports should provide actionable information. This information is capable of supporting concrete, downstream action by those responsible for managing AI-related risks, such as information that can be used to prevent or mitigate the detected harms or risks from the model. Participants also commonly referenced the context and stakeholders of their work, relating the action to be taken to a client, product development or safety team, or responsible officer.",
+   "ko": "참가자들은 단지 취약점을 기록하는 보고와 조직이 그 취약점에 대응할 수 있게 해 주는 보고를 일관되게 구분했다. 인터뷰 전반에서 실무자들은 AI 레드티밍의 가치가 실패를 식별하는 데 그치지 않고 완화, 거버넌스, 조달, 향후 시스템 개발에 관한 의사결정에 정보를 제공하는 데까지 이른다고 설명했다. 따라서 참가자들은 유용한 보고서라면 실행 가능한 정보를 제공해야 한다고 거듭 강조했다. 이러한 정보는 AI 관련 위험 관리를 책임지는 이들이 구체적인 후속 조치를 취하도록 뒷받침할 수 있는 정보로, 예를 들어 모델에서 탐지된 피해나 위험을 예방하거나 완화하는 데 활용할 수 있는 정보가 이에 해당한다. 참가자들은 또한 자신의 업무가 놓인 맥락과 이해관계자를 흔히 언급하며, 취해야 할 조치를 고객, 제품 개발팀이나 안전팀, 또는 책임자와 연결했다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍의 가치가 실패를 식별하는 데 그치지 않고 완화, 거버넌스, 조달, 향후 시스템 개발에 관한 의사결정에 정보를 제공하는 데까지 이른다",
+     "k": "safety"
+    },
+    {
+     "t": "따라서 참가자들은 유용한 보고서라면 실행 가능한 정보를 제공해야 한다고 거듭 강조했다.",
+     "k": "key"
+    },
+    {
+     "t": "모델에서 탐지된 피해나 위험을 예방하거나 완화하는 데 활용할 수 있는 정보",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Although participants varied somewhat in how they defined “actionable,” they converged around a common principle: Reported findings should enable an informed response rather than simply communicate that a vulnerability exists. For software engineers and product teams, actionability often meant providing sufficient information to reproduce observed behaviors, understand the conditions under which they occurred, and evaluate potential mitigation strategies. This frequently included representative chat traces, descriptions of system configuration, contextual information regarding testing conditions, and recommendations for remediation. Participants emphasized that these details allow developers to validate findings, prioritize engineering effort, and determine whether identified vulnerabilities represent isolated failures or broader systemic weaknesses.",
+   "ko": "참가자들이 \"실행 가능한\"을 정의하는 방식은 다소 달랐지만, 이들은 하나의 공통 원칙으로 수렴했다. 즉, 보고된 결과는 단순히 취약점이 존재한다는 사실을 전달하는 데 그치지 않고 정보에 입각한 대응을 가능하게 해야 한다는 것이다. 소프트웨어 엔지니어와 제품팀에게 실행 가능성이란 대개 관찰된 행동을 재현하고, 그 행동이 발생한 조건을 이해하며, 잠재적 완화 전략을 평가하는 데 충분한 정보를 제공하는 것을 의미했다. 여기에는 대표적인 채팅 기록, 시스템 구성에 대한 설명, 시험 조건에 관한 맥락 정보, 개선 조치 권고가 흔히 포함되었다. 참가자들은 이러한 세부 사항을 통해 개발자가 결과를 검증하고, 엔지니어링 노력의 우선순위를 정하며, 식별된 취약점이 고립된 실패인지 더 광범위한 시스템적 약점인지 판단할 수 있다고 강조했다.",
+   "marks": [
+    {
+     "t": "식별된 취약점이 고립된 실패인지 더 광범위한 시스템적 약점인지 판단할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants also described actionability from the perspective of organizational decision-makers. Leadership teams often rely on red-teaming reports to inform decisions regarding deployment, model release, resource allocation, procurement, and acceptable levels of residual risk. In these contexts, actionable reporting requires translating technically complex findings into information that supports governance rather than engineering. Rather than presenting exhaustive technical documentation, reports intended for leadership frequently synthesize evaluation outcomes into recommendations regarding operational readiness, mitigation priorities, or additional testing requirements. As Participant 7 observed, useful reporting should provide information that allows the receiving team to “update their strategy based on that information.”",
+   "ko": "참가자들은 조직의 의사결정자 관점에서도 실행 가능성을 설명했다. 리더십 팀은 배포, 모델 공개, 자원 배분, 조달, 수용 가능한 잔여 위험 수준에 관한 결정을 내릴 때 레드티밍 보고서에 의존하는 경우가 많다. 이러한 맥락에서 실행 가능한 보고를 하려면 기술적으로 복잡한 결과를 엔지니어링이 아니라 거버넌스를 뒷받침하는 정보로 변환해야 한다. 리더십을 대상으로 한 보고서는 방대한 기술 문서를 제시하기보다는 평가 결과를 운영 준비 상태, 완화 우선순위, 추가 시험 요건에 관한 권고로 종합하는 경우가 많다. 참가자 7이 지적했듯이, 유용한 보고는 보고를 받는 팀이 \"그 정보를 바탕으로 전략을 업데이트\"할 수 있게 해 주는 정보를 제공해야 한다.",
+   "marks": [
+    {
+     "t": "배포, 모델 공개, 자원 배분, 조달, 수용 가능한 잔여 위험 수준에 관한 결정을 내릴 때 레드티밍 보고서에 의존하는 경우가 많다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Importantly, participants viewed actionability as extending beyond individual organizations. Several interviewees argued that AI red-teaming reports can strengthen the broader evaluation ecosystem by communicating mitigation strategies, recurring classes of vulnerabilities, and lessons learned that may apply across multiple AI systems. Sharing this information contributes to what several participants described as “uplifting the community of practice,” enabling other evaluators to refine their own testing strategies while avoiding previously documented weaknesses. In this sense, actionable reporting supports both immediate remediation and longer-term improvement of AI evaluation practices.",
+   "ko": "중요한 점은 참가자들이 실행 가능성을 개별 조직의 범위를 넘어서는 것으로 보았다는 것이다. 여러 인터뷰 참가자는 AI 레드티밍 보고서가 여러 AI 시스템에 걸쳐 적용될 수 있는 완화 전략, 반복적으로 나타나는 취약점 유형, 교훈을 전달함으로써 더 넓은 평가 생태계를 강화할 수 있다고 주장했다. 이러한 정보를 공유하는 것은 여러 참가자가 \"실천 공동체를 끌어올리는 것\"이라고 표현한 일에 기여하며, 다른 평가자들이 이전에 기록된 약점을 피하면서 자신의 시험 전략을 개선할 수 있게 해 준다. 이러한 의미에서 실행 가능한 보고는 즉각적인 개선 조치와 AI 평가 관행의 장기적 개선을 모두 뒷받침한다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍 보고서가 여러 AI 시스템에 걸쳐 적용될 수 있는 완화 전략, 반복적으로 나타나는 취약점 유형, 교훈을 전달함으로써 더 넓은 평가 생태계를 강화할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants nevertheless recognized that actionability introduces important tensions for reporting. Information sufficiently detailed to reproduce vulnerabilities may also reveal attack techniques, expose proprietary system architectures, or create information hazards if disclosed publicly before mitigations have been implemented. Accordingly, practitioners generally advocated reporting enough information to enable informed decision-making while withholding implementation details that could unnecessarily increase security or safety risks. These discussions reinforce the broader finding that effective AI red-teaming reporting requires selective disclosure rather than complete transparency.",
+   "ko": "그럼에도 참가자들은 실행 가능성이 보고에 중요한 긴장을 불러온다는 점을 인식했다. 취약점을 재현할 수 있을 만큼 상세한 정보는 완화 조치가 시행되기 전에 공개될 경우 공격 기법을 드러내거나, 독점적 시스템 아키텍처를 노출하거나, 정보 위험원을 만들어 낼 수도 있다. 따라서 실무자들은 대체로 정보에 입각한 의사결정을 가능하게 할 만큼의 정보는 보고하되, 보안 또는 안전 위험을 불필요하게 높일 수 있는 구현 세부 사항은 공개하지 않는 방식을 옹호했다. 이러한 논의는 효과적인 AI 레드티밍 보고가 완전한 투명성보다는 선택적 공개를 필요로 한다는 더 넓은 연구 결과를 뒷받침한다.",
+   "marks": [
+    {
+     "t": "취약점을 재현할 수 있을 만큼 상세한 정보는 완화 조치가 시행되기 전에 공개될 경우 공격 기법을 드러내거나, 독점적 시스템 아키텍처를 노출하거나, 정보 위험원을 만들어 낼 수도 있다.",
+     "k": "key"
+    },
+    {
+     "t": "보안 또는 안전 위험을 불필요하게 높일 수 있는 구현 세부 사항은 공개하지 않는 방식을 옹호했다",
+     "k": "safety"
+    },
+    {
+     "t": "효과적인 AI 레드티밍 보고가 완전한 투명성보다는 선택적 공개를 필요로 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Threat Model",
+   "ko": "위협 모델",
+   "id": "s99"
+  },
+  {
+   "type": "p",
+   "en": "The final reporting dimension identified by participants was the threat model itself. Whereas methodological reporting explains how an evaluation was conducted, and harm reporting explains what failures were observed, threat model reporting explains why those particular choices were made and clarifies what actors, risks, and attack surfaces the evaluation was designed to address. Participants consistently argued that without understanding the assumptions guiding an exercise, external audiences cannot meaningfully interpret either its methodology or its reported findings.",
+   "ko": "참가자들이 파악한 마지막 보고 차원은 위협 모델 그 자체였다. 방법론 보고가 평가가 어떻게 수행되었는지를 설명하고 피해 보고가 어떤 실패가 관찰되었는지를 설명한다면, 위협 모델 보고는 왜 그러한 특정 선택이 이루어졌는지를 설명하고 평가가 어떤 행위자, 위험, 공격 표면을 다루도록 설계되었는지를 명확히 한다. 참가자들은 활동을 이끈 가정을 이해하지 못하면 외부 독자가 그 방법론도, 보고된 결과도 의미 있게 해석할 수 없다고 일관되게 주장했다.",
+   "marks": [
+    {
+     "t": "평가가 어떤 행위자, 위험, 공격 표면을 다루도록 설계되었는지를 명확히 한다",
+     "k": "safety"
+    },
+    {
+     "t": "활동을 이끈 가정을 이해하지 못하면 외부 독자가 그 방법론도, 보고된 결과도 의미 있게 해석할 수 없다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants described threat models as providing the interpretive context necessary to reconstruct the logic of an evaluation. Effective reporting therefore requires identifying the threat actors being represented, the risks considered relevant, the intended deployment environment, and the components of the AI system that were considered within scope. These elements collectively communicate the assumptions that motivated the evaluation and clarify the kinds of conclusions that may reasonably be drawn from its results. Reports that omit this information risk encouraging inappropriate comparisons between evaluations conducted under fundamentally different assumptions.",
+   "ko": "참가자들은 위협 모델이 평가의 논리를 재구성하는 데 필요한 해석적 맥락을 제공한다고 설명했다. 따라서 효과적인 보고를 위해서는 상정된 위협 행위자, 관련성이 있다고 간주된 위험, 의도된 배포 환경, 범위에 포함된 AI 시스템의 구성 요소를 밝혀야 한다. 이러한 요소들은 함께 평가의 동기가 된 가정을 전달하고, 그 결과로부터 합리적으로 도출할 수 있는 결론의 종류를 명확히 한다. 이 정보를 누락한 보고서는 근본적으로 다른 가정하에 수행된 평가들 간의 부적절한 비교를 조장할 위험이 있다.",
+   "marks": [
+    {
+     "t": "상정된 위협 행위자, 관련성이 있다고 간주된 위험, 의도된 배포 환경, 범위에 포함된 AI 시스템의 구성 요소를 밝혀야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "근본적으로 다른 가정하에 수행된 평가들 간의 부적절한 비교를 조장할 위험",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Threat model reporting also enables readers to distinguish between flaws and vulnerabilities that were intentionally evaluated and those that remained outside the scope of testing. Participants repeatedly emphasized that AI red-teaming cannot realistically evaluate every conceivable failure mode within a single exercise. Instead, each evaluation necessarily reflects deliberate choices regarding which risks deserve attention and which are temporarily deprioritized. Explicitly documenting these choices allows external audiences to understand both the strengths and the limitations of reported findings. As Participant 14 explained, threat modeling narrows the attack surface by specifying which targets are considered in scope and which are intentionally excluded.",
+   "ko": "위협 모델 보고는 또한 독자가 의도적으로 평가한 결함과 취약점을 시험 범위 밖에 남아 있던 것들과 구별할 수 있게 해 준다. 참가자들은 AI 레드티밍이 단일 활동 내에서 생각할 수 있는 모든 실패 모드를 현실적으로 평가할 수는 없다고 거듭 강조했다. 오히려 각 평가는 어떤 위험에 주의를 기울일 가치가 있고 어떤 위험은 일시적으로 우선순위에서 제외할지에 관한 의도적 선택을 필연적으로 반영한다. 이러한 선택을 명시적으로 기록하면 외부 독자가 보고된 결과의 강점과 한계를 모두 이해할 수 있다. 참가자 14가 설명했듯이, 위협 모델링은 어떤 대상이 범위에 포함되고 어떤 대상이 의도적으로 제외되는지를 명시함으로써 공격 표면을 좁힌다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍이 단일 활동 내에서 생각할 수 있는 모든 실패 모드를 현실적으로 평가할 수는 없다",
+     "k": "safety"
+    },
+    {
+     "t": "어떤 위험은 일시적으로 우선순위에서 제외할지에 관한 의도적 선택",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Several participants further noted that reporting the threat model allows external evaluators to assess whether an exercise is appropriate for its intended deployment context. A threat model designed for evaluating an internally deployed enterprise chatbot may differ substantially from one intended to assess an autonomous coding agent or a publicly accessible foundation model. Consequently, the absence of a vulnerability under one threat model should not be interpreted as evidence that the system is robust under another. Participants therefore viewed explicit threat model reporting as essential for preventing overgeneralization of evaluation results.",
+   "ko": "여러 참가자는 나아가 위협 모델을 보고하면 외부 평가자가 해당 활동이 의도된 배포 맥락에 적절한지 판단할 수 있다고 지적했다. 내부에 배포된 기업용 챗봇을 평가하기 위해 설계된 위협 모델은 자율 코딩 에이전트나 공개적으로 접근 가능한 파운데이션 모델을 평가하기 위한 위협 모델과 상당히 다를 수 있다. 따라서 한 위협 모델하에서 취약점이 발견되지 않았다는 사실을 다른 위협 모델하에서도 시스템이 견고하다는 증거로 해석해서는 안 된다. 그러므로 참가자들은 평가 결과의 과도한 일반화를 막기 위해 위협 모델을 명시적으로 보고하는 것이 필수적이라고 보았다.",
+   "marks": [
+    {
+     "t": "자율 코딩 에이전트나 공개적으로 접근 가능한 파운데이션 모델",
+     "k": "safety"
+    },
+    {
+     "t": "한 위협 모델하에서 취약점이 발견되지 않았다는 사실을 다른 위협 모델하에서도 시스템이 견고하다는 증거로 해석해서는 안 된다",
+     "k": "key"
+    },
+    {
+     "t": "평가 결과의 과도한 일반화를 막기 위해 위협 모델을 명시적으로 보고하는 것이 필수적",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Taken together, the four reporting dimensions identified throughout our interviews—the threat model context, reported harms, methodology, and actionable information—provide complementary perspectives on an AI red-teaming exercise. The threat model explains the rationale behind an evaluation’s design, reported harms communicate what the evaluation discovered, methodology explains how it was conducted, and actionable information identifies what should happen next. Participants consistently described these dimensions as the minimum contextual information necessary for making AI red-teaming reports interpretable across organizations and stakeholder groups. Although they stopped short of advocating uniform reporting templates, practitioners demonstrated substantial agreement that reports lacking one or more of these dimensions become significantly more difficult to evaluate, compare, and apply in practice.",
+   "ko": "종합하면, 인터뷰 전반에서 파악된 네 가지 보고 차원인 위협 모델 맥락, 보고된 피해, 방법론, 실행 가능한 정보는 AI 레드티밍 활동에 대해 상호 보완적인 관점을 제공한다. 위협 모델은 평가 설계의 근거를 설명하고, 보고된 피해는 평가가 무엇을 발견했는지를 전달하며, 방법론은 평가가 어떻게 수행되었는지를 설명하고, 실행 가능한 정보는 다음에 무엇을 해야 하는지를 밝힌다. 참가자들은 이러한 차원을 AI 레드티밍 보고서가 여러 조직과 이해관계자 집단 사이에서 해석 가능해지는 데 필요한 최소한의 맥락 정보라고 일관되게 설명했다. 실무자들은 획일적인 보고 템플릿을 옹호하는 데까지 나아가지는 않았지만, 이 차원 중 하나 이상이 빠진 보고서는 평가하고 비교하며 실제로 활용하기가 상당히 어려워진다는 데 대체로 의견을 같이했다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍 보고서가 여러 조직과 이해관계자 집단 사이에서 해석 가능해지는 데 필요한 최소한의 맥락 정보",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Constraints and Challenges Facing AI Red-Teamers",
+   "ko": "AI 레드티머가 직면한 제약과 과제",
+   "id": "s105"
+  },
+  {
+   "type": "p",
+   "en": "Although participants demonstrated substantial agreement regarding the information that would make AI red-teaming reports more interpretable, they were equally clear that producing such reports is often difficult in practice. Throughout the interviews, practitioners described numerous organizational, technical, and structural constraints that limit what information can be disclosed, how evaluations are conducted, and the extent to which results can be compared across organizations. Rather than viewing incomplete reporting as a consequence of negligence or poor practice, participants generally portrayed it as the product of competing objectives—including security, confidentiality, commercial incentives, and the evolving nature of AI evaluation itself.",
+   "ko": "참가자들은 AI 레드티밍 보고서를 더 해석 가능하게 만들 정보에 관해서는 상당한 합의를 보였지만, 그러한 보고서를 작성하는 일이 실제로는 어려운 경우가 많다는 점 역시 분명히 했다. 인터뷰 전반에 걸쳐 실무자들은 공개할 수 있는 정보, 평가 수행 방식, 조직 간 결과 비교의 정도를 제한하는 다양한 조직적·기술적·구조적 제약을 설명했다. 참가자들은 불완전한 보고를 태만이나 부실한 관행의 결과로 보기보다는, 대체로 보안, 기밀 유지, 상업적 유인, 그리고 끊임없이 변화하는 AI 평가 자체의 특성 등 상충하는 목표들이 빚어낸 산물로 묘사했다.",
+   "marks": [
+    {
+     "t": "그러한 보고서를 작성하는 일이 실제로는 어려운 경우가 많다는 점",
+     "k": "safety"
+    },
+    {
+     "t": "공개할 수 있는 정보, 평가 수행 방식, 조직 간 결과 비교의 정도를 제한하는 다양한 조직적·기술적·구조적 제약",
+     "k": "safety"
+    },
+    {
+     "t": "대체로 보안, 기밀 유지, 상업적 유인, 그리고 끊임없이 변화하는 AI 평가 자체의 특성 등 상충하는 목표들이 빚어낸 산물로 묘사했다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "These constraints emerged at two distinct levels. First, practitioners described reporting constraints that directly affect what information can be communicated following an evaluation. Second, they identified broader structural challenges facing AI red-teaming as an emerging field, including inconsistent methodologies, limited standardization, and weak scientific foundations for comparing evaluation results. Together, these findings help explain why AI red-teaming reports remain highly heterogeneous despite widespread agreement regarding what information they should ideally communicate.",
+   "ko": "이러한 제약은 서로 다른 두 수준에서 나타났다. 첫째, 실무자들은 평가 이후 전달할 수 있는 정보에 직접 영향을 미치는 보고 제약을 설명했다. 둘째, 이들은 일관되지 않은 방법론, 제한적인 표준화, 평가 결과를 비교하기 위한 취약한 과학적 기반 등 신흥 분야로서 AI 레드티밍이 직면한 더 광범위한 구조적 과제를 지적했다. 이러한 결과는 보고서가 이상적으로 전달해야 할 정보에 관해 폭넓은 합의가 있음에도 AI 레드티밍 보고서가 여전히 매우 이질적인 이유를 설명하는 데 도움이 된다.",
+   "marks": [
+    {
+     "t": "일관되지 않은 방법론, 제한적인 표준화, 평가 결과를 비교하기 위한 취약한 과학적 기반",
+     "k": "safety"
+    },
+    {
+     "t": "폭넓은 합의가 있음에도 AI 레드티밍 보고서가 여전히 매우 이질적인 이유를 설명하는 데 도움이 된다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Reporting Constraints",
+   "ko": "보고 제약",
+   "id": "s108"
+  },
+  {
+   "type": "p",
+   "en": "Participants emphasized that the central challenge in red-teaming reporting is not determining what information would be useful to report, but rather determining what information can be disclosed responsibly. Based on our interviews, there is some overlap between what individual red-teamers find valuable to report and what actually gets reported. However, the format of red-teaming reports is ultimately determined by the intended audience and organizational priorities. Participants described reporting as an exercise in balancing transparency against competing concerns related to security, safety, confidentiality, and commercial competition. Although participants frequently advocated greater openness across the evaluation ecosystem, they also acknowledged that unrestricted disclosure may create new risks that undermine the very objectives red-teaming seeks to advance.",
+   "ko": "참가자들은 레드티밍 보고의 핵심 과제가 어떤 정보를 보고하면 유용할지를 결정하는 것이 아니라, 어떤 정보를 책임 있게 공개할 수 있는지를 결정하는 것이라고 강조했다. 인터뷰 결과에 따르면, 개별 레드티머가 보고할 가치가 있다고 여기는 것과 실제로 보고되는 것 사이에는 어느 정도 겹치는 부분이 있다. 그러나 레드티밍 보고서의 형식은 궁극적으로 상정된 독자와 조직의 우선순위에 따라 결정된다. 참가자들은 보고를 투명성과 보안, 안전, 기밀 유지, 상업적 경쟁에 관련된 상충하는 우려 사이에서 균형을 잡는 일로 묘사했다. 참가자들은 평가 생태계 전반에서 더 큰 개방성을 자주 옹호했지만, 무제한적인 공개가 레드티밍이 추구하는 바로 그 목표를 훼손하는 새로운 위험을 초래할 수 있다는 점도 인정했다.",
+   "marks": [
+    {
+     "t": "어떤 정보를 책임 있게 공개할 수 있는지를 결정하는 것이라고 강조했다",
+     "k": "key"
+    },
+    {
+     "t": "무제한적인 공개가 레드티밍이 추구하는 바로 그 목표를 훼손하는 새로운 위험을 초래할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The most prominent reporting concern mentioned across our interviews involved information hazards. Participants noted that publicly documenting successful attack strategies, prompt sequences, jailbreak techniques, or other exploit details may inadvertently enable malicious actors to reproduce flaws or vulnerabilities before developers have sufficient opportunity to implement mitigations.",
+   "ko": "인터뷰 전반에서 가장 두드러지게 언급된 보고상의 우려는 정보 위험원이었다. 참가자들은 성공적인 공격 전략, 프롬프트 시퀀스, 탈옥 기법 또는 기타 익스플로잇 세부 사항을 공개적으로 기록하면, 개발자가 완화 조치를 시행할 충분한 기회를 얻기 전에 악의적 행위자가 결함이나 취약점을 재현하도록 의도치 않게 도울 수 있다고 지적했다.",
+   "marks": [
+    {
+     "t": "개발자가 완화 조치를 시행할 충분한 기회를 얻기 전에 악의적 행위자가 결함이나 취약점을 재현하도록 의도치 않게 도울 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "In response to concerns about information hazards, several interviewees described adopting reporting practices similar to coordinated vulnerability disclosure in cybersecurity, where technical details are initially communicated privately to affected organizations before broader public disclosure. However, unlike in cybersecurity, participants identified the absence of mature AI flaw or vulnerability disclosure processes as an additional constraint on reporting.* Several noted that AI red-teamers often lack established mechanisms for responsibly communicating newly discovered flaws or vulnerabilities to affected organizations while avoiding premature public disclosure of issues that remain unpatched. Participants emphasized that such processes remain underdeveloped across the AI ecosystem, particularly among third-party evaluators.[^17] As a result, practitioners frequently confront a trade-off between contributing valuable information to the broader evaluation community and minimizing the risks associated with disclosing potentially exploitable flaws or vulnerabilities.",
+   "ko": "정보 위험원에 대한 우려에 대응하여, 여러 인터뷰 대상자는 사이버 보안 분야의 조율된 취약점 공개(coordinated vulnerability disclosure)와 유사한 보고 관행을 채택하고 있다고 설명했다. 이 방식에서는 더 광범위한 공개에 앞서 기술적 세부 사항을 영향을 받는 조직에 먼저 비공개로 전달한다. 그러나 참가자들은 사이버 보안과 달리 성숙한 AI 결함 또는 취약점 공개 절차가 부재하다는 점을 보고에 대한 추가적인 제약으로 꼽았다.* 여러 참가자는 AI 레드티머가 새로 발견한 결함이나 취약점을 영향을 받는 조직에 책임 있게 전달하는 동시에, 아직 패치되지 않은 문제가 섣불리 공개되는 것을 피할 수 있는 확립된 메커니즘이 부족한 경우가 많다고 지적했다. 참가자들은 이러한 절차가 AI 생태계 전반, 특히 제3자 평가자들 사이에서 여전히 미비하다고 강조했다.[^17] 그 결과, 실무자들은 더 넓은 평가 공동체에 가치 있는 정보를 제공하는 것과 잠재적으로 악용 가능한 결함이나 취약점을 공개하는 데 따르는 위험을 최소화하는 것 사이에서 자주 상충 관계에 직면한다.",
+   "marks": [
+    {
+     "t": "성숙한 AI 결함 또는 취약점 공개 절차가 부재하다는 점",
+     "k": "safety"
+    },
+    {
+     "t": "아직 패치되지 않은 문제가 섣불리 공개되는 것을 피할 수 있는 확립된 메커니즘이 부족한 경우가 많다",
+     "k": "safety"
+    },
+    {
+     "t": "잠재적으로 악용 가능한 결함이나 취약점을 공개하는 데 따르는 위험을 최소화하는 것 사이에서 자주 상충 관계에 직면한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "* While participants used the term “vulnerability” to describe what would be reported through a disclosure process—as well as explicitly referring to cybersecurity vulnerability disclosure processes—we include the term “flaws” here to reflect the fact that AI red-teaming often surfaces unwanted outputs or behaviors that are not captured by the way security or privacy vulnerabilities are usually defined.",
+   "ko": "* 참가자들은 공개 절차를 통해 보고될 대상을 설명할 때 \"취약점\"이라는 용어를 사용했고 사이버 보안 취약점 공개 절차를 명시적으로 언급하기도 했지만, 여기서는 AI 레드티밍이 보안 또는 프라이버시 취약점의 일반적인 정의로는 포착되지 않는 원치 않는 출력이나 행동을 드러내는 경우가 많다는 사실을 반영하기 위해 \"결함\"이라는 용어를 함께 사용한다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍이 보안 또는 프라이버시 취약점의 일반적인 정의로는 포착되지 않는 원치 않는 출력이나 행동을 드러내는 경우가 많다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants also highlighted information sensitivity or confidentiality obligations that limit external reporting. Much AI red-teaming occurs within organizational settings, where evaluators possess privileged access to proprietary models, internal documentation, deployment environments, or customer data. External consultants similarly operate under contractual agreements that frequently prohibit discussion of evaluation methodologies or discovered flaws or vulnerabilities. Even when practitioners believed broader disclosure would benefit the AI evaluation community, they often lacked the authority to release detailed findings beyond the immediate client or development team.",
+   "ko": "참가자들은 또한 외부 보고를 제한하는 정보 민감성이나 기밀 유지 의무를 강조했다. AI 레드티밍의 상당 부분은 조직 내부 환경에서 이루어지며, 이때 평가자는 독점 모델, 내부 문서, 배포 환경 또는 고객 데이터에 대한 특권적 접근 권한을 보유한다. 외부 컨설턴트 역시 평가 방법론이나 발견된 결함 또는 취약점에 대한 논의를 금지하는 경우가 많은 계약 조건하에서 활동한다. 실무자들은 더 광범위한 공개가 AI 평가 공동체에 도움이 될 것이라고 판단하더라도, 직접적인 고객이나 개발팀 이외의 대상에게 상세한 결과를 공개할 권한이 없는 경우가 많았다.",
+   "marks": [
+    {
+     "t": "직접적인 고객이나 개발팀 이외의 대상에게 상세한 결과를 공개할 권한이 없는 경우가 많았다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Finally, participants emphasized that commercial incentives further restrict reporting. Several participants observed that AI developers increasingly view evaluation methodologies, testing infrastructure, and even particular classes of flaws or vulnerabilities as competitively sensitive information. Organizations often invest substantial resources developing specialized red-teaming capabilities, and public disclosure of these capabilities may diminish strategic advantage or reveal proprietary evaluation techniques. Participants therefore described a persistent tension between advancing the broader community of practice through greater transparency and protecting organizational interests within a rapidly evolving and highly competitive AI market.",
+   "ko": "마지막으로, 참가자들은 상업적 유인이 보고를 더욱 제한한다고 강조했다. 여러 참가자는 AI 개발자들이 평가 방법론, 시험 인프라, 심지어 특정 유형의 결함이나 취약점까지도 경쟁상 민감한 정보로 간주하는 경향이 커지고 있다고 지적했다. 조직은 전문화된 레드티밍 역량을 개발하는 데 상당한 자원을 투자하는 경우가 많으며, 이러한 역량을 공개하면 전략적 우위가 약화되거나 독점적 평가 기법이 드러날 수 있다. 따라서 참가자들은 투명성 제고를 통해 더 넓은 실천 공동체를 발전시키는 것과 빠르게 변화하고 경쟁이 매우 치열한 AI 시장에서 조직의 이익을 보호하는 것 사이에 지속적인 긴장이 존재한다고 설명했다.",
+   "marks": [
+    {
+     "t": "AI 개발자들이 평가 방법론, 시험 인프라, 심지어 특정 유형의 결함이나 취약점까지도 경쟁상 민감한 정보로 간주하는 경향이 커지고 있다",
+     "k": "safety"
+    },
+    {
+     "t": "경쟁이 매우 치열한 AI 시장에서 조직의 이익을 보호하는 것 사이에 지속적인 긴장이 존재한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Taken together, information hazards, underdeveloped vulnerability disclosure mechanisms, confidentiality obligations, and commercial incentives all shape the level of detail that practitioners believe can be responsibly disclosed to different audiences. Participants described a hierarchy of reporting artifacts, ranging from highly granular internal records—including prompt logs, chat traces, annotations, and evaluator notes—to summary metrics and executive briefings, to public-facing reports that provide substantially less technical detail. Each reporting format reflects different trade-offs between interpretability and disclosure risk. As a result, information that practitioners themselves consider essential for evaluating an exercise often remains unavailable outside the organization that conducted it.",
+   "ko": "종합하면, 정보 위험원, 미비한 취약점 공개 메커니즘, 기밀 유지 의무, 상업적 유인은 모두 실무자들이 다양한 독자에게 책임 있게 공개할 수 있다고 판단하는 세부 수준을 좌우한다. 참가자들은 프롬프트 로그, 채팅 기록, 주석, 평가자 메모 등을 포함한 매우 세분화된 내부 기록에서부터 요약 지표와 경영진 브리핑, 그리고 기술적 세부 사항을 훨씬 적게 담은 대외 공개용 보고서에 이르기까지 보고 산출물에 위계가 있다고 설명했다. 각 보고 형식은 해석 가능성과 공개 위험 사이의 서로 다른 상충 관계를 반영한다. 그 결과, 실무자 스스로 활동을 평가하는 데 필수적이라고 여기는 정보가 해당 활동을 수행한 조직 밖에서는 이용할 수 없는 경우가 많다.",
+   "marks": [
+    {
+     "t": "실무자 스스로 활동을 평가하는 데 필수적이라고 여기는 정보가 해당 활동을 수행한 조직 밖에서는 이용할 수 없는 경우가 많다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants did not interpret these reporting constraints as arguments against standardization. Rather, they viewed them as evidence that future reporting standards should identify a common baseline of contextual information that improves interpretability without requiring organizations to disclose sensitive operational details. In this sense, participants envisioned reporting standards not as mechanisms for maximizing transparency but as frameworks for communicating the minimum information necessary to interpret evaluation findings responsibly.",
+   "ko": "참가자들은 이러한 보고상의 제약을 표준화에 반대하는 논거로 해석하지 않았다. 오히려 이를 향후 보고 표준이 조직에 민감한 운영상의 세부 사항 공개를 요구하지 않으면서도 해석 가능성을 높이는 맥락 정보의 공통 기준선을 정해야 한다는 근거로 보았다. 이러한 의미에서 참가자들은 보고 표준을 투명성을 극대화하는 메커니즘이 아니라, 평가 결과를 책임 있게 해석하는 데 필요한 최소한의 정보를 전달하기 위한 틀로 구상했다.",
+   "marks": [
+    {
+     "t": "평가 결과를 책임 있게 해석하는 데 필요한 최소한의 정보를 전달하기 위한 틀로 구상했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Structural Challenges in Red-Teaming Practice",
+   "ko": "레드티밍 실무의 구조적 과제",
+   "id": "s117"
+  },
+  {
+   "type": "p",
+   "en": "Beyond challenges associated with reporting individual evaluations, there are broader obstacles facing AI red-teaming as a developing field. Participants raised issues that extended beyond organizational practice to address fundamental questions regarding how AI red-teaming should be conducted, evaluated, and interpreted. Multiple interviewees discussed issues that prevent red-teaming evaluations from effectively informing security and safety concerns around AI. In particular, participants highlighted an absence of consistent evaluation practices, lack of scientific rigor, disagreement regarding foundational concepts and definitions, and misalignment with broader incentive structures.",
+   "ko": "개별 평가의 보고와 관련된 과제 외에도, 발전 중인 분야로서 AI 레드티밍이 직면한 더 광범위한 장애물이 있다. 참가자들은 조직의 관행을 넘어 AI 레드티밍을 어떻게 수행하고 평가하며 해석해야 하는지에 관한 근본적인 질문까지 다루는 문제들을 제기했다. 여러 인터뷰 대상자는 레드티밍 평가가 AI를 둘러싼 보안 및 안전 우려에 효과적으로 정보를 제공하지 못하게 하는 문제들을 논의했다. 특히 참가자들은 일관된 평가 관행의 부재, 과학적 엄밀성의 부족, 기초 개념과 정의에 관한 이견, 그리고 더 광범위한 유인 구조와의 오정렬을 강조했다.",
+   "marks": [
+    {
+     "t": "레드티밍 평가가 AI를 둘러싼 보안 및 안전 우려에 효과적으로 정보를 제공하지 못하게 하는 문제들",
+     "k": "safety"
+    },
+    {
+     "t": "일관된 평가 관행의 부재, 과학적 엄밀성의 부족, 기초 개념과 정의에 관한 이견, 그리고 더 광범위한 유인 구조와의 오정렬을 강조했다",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "One frequently discussed challenge concerned the absence of consistent evaluation practices across organizations. Participants described substantial variation in how threat models are constructed, how harms are defined, which methodologies are employed, and how success is evaluated. While some degree of variation was viewed as appropriate given the diversity of AI systems and deployment contexts, participants expressed concern that methodological inconsistency has reached a point where comparing evaluation results across organizations is often difficult. As Participant 10 remarked, “The way that we do [evaluations] is not standard; I’m sure it’s not standard anywhere.” Meanwhile, Participant 3 contrasted their organization’s systematic evaluation procedures with what they perceived as more ad hoc approaches elsewhere. Such observations suggest that methodological diversity currently reflects not only contextual adaptation but also the absence of commonly accepted evaluation norms.",
+   "ko": "자주 논의된 과제 중 하나는 조직 간 일관된 평가 관행의 부재였다. 참가자들은 위협 모델을 구성하는 방식, 피해를 정의하는 방식, 사용하는 방법론, 성공을 평가하는 방식에 상당한 차이가 있다고 설명했다. AI 시스템과 배포 맥락의 다양성을 고려할 때 어느 정도의 차이는 적절하다고 보았지만, 참가자들은 방법론적 비일관성이 조직 간 평가 결과를 비교하기 어려운 경우가 많을 정도에 이르렀다는 우려를 표했다. 참가자 10이 말했듯이, \"저희가 [평가를] 하는 방식은 표준적이지 않아요. 분명 어디서도 표준적이지 않을 거예요.\" 한편 참가자 3은 자신이 속한 조직의 체계적인 평가 절차를 다른 곳에서 보이는 더 즉흥적인 접근 방식과 대비했다. 이러한 관찰은 현재의 방법론적 다양성이 맥락에 따른 적응뿐 아니라 일반적으로 수용되는 평가 규범의 부재도 반영하고 있음을 시사한다.",
+   "marks": [
+    {
+     "t": "방법론적 비일관성이 조직 간 평가 결과를 비교하기 어려운 경우가 많을 정도에 이르렀다는 우려",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Closely related to this concern was the perceived lack of scientific rigor underpinning many contemporary AI red-teaming exercises. Several participants questioned whether commonly reported evaluation metrics adequately capture uncertainty, coverage, or reproducibility. Others argued that AI red-teaming would benefit from stronger statistical reasoning, clearer conceptual frameworks, and more systematic approaches for comparing findings across independent evaluations. As Participant 16 observed, evaluators frequently place greater confidence in reported metrics than those metrics can reasonably support, while Participant 17 emphasized that current methodologies rarely permit strong claims regarding whether important risks have actually been identified or excluded. Rather than criticizing AI red-teaming itself, participants viewed these limitations as characteristic of a rapidly evolving evaluation methodology still undergoing maturation.",
+   "ko": "이러한 우려와 밀접하게 관련된 것은 오늘날 많은 AI 레드티밍 활동을 뒷받침하는 과학적 엄밀성이 부족하다는 인식이었다. 여러 참가자는 일반적으로 보고되는 평가 지표가 불확실성, 커버리지 또는 재현성을 적절히 포착하는지 의문을 제기했다. 다른 참가자들은 AI 레드티밍이 더 강력한 통계적 추론, 더 명확한 개념적 틀, 그리고 독립적인 평가들 간에 결과를 비교하기 위한 더 체계적인 접근 방식으로부터 도움을 받을 수 있다고 주장했다. 참가자 16은 평가자들이 보고된 지표가 합리적으로 뒷받침할 수 있는 수준보다 그 지표를 더 크게 신뢰하는 경우가 많다고 지적했으며, 참가자 17은 현재의 방법론으로는 중요한 위험이 실제로 식별되었는지 혹은 배제되었는지에 관해 강한 주장을 펴기 어려운 경우가 대부분이라고 강조했다. 참가자들은 AI 레드티밍 자체를 비판하기보다는, 이러한 한계를 아직 성숙 과정에 있는 빠르게 진화하는 평가 방법론의 특징으로 보았다.",
+   "marks": [
+    {
+     "t": "평가자들이 보고된 지표가 합리적으로 뒷받침할 수 있는 수준보다 그 지표를 더 크게 신뢰하는 경우가 많다고 지적했으며",
+     "k": "safety"
+    },
+    {
+     "t": "현재의 방법론으로는 중요한 위험이 실제로 식별되었는지 혹은 배제되었는지에 관해 강한 주장을 펴기 어려운 경우가 대부분이라고 강조했다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Participants likewise highlighted persistent disagreements regarding foundational concepts within AI red-teaming. Definitions of harm, acceptable risk, evaluation success, and even the scope of red-teaming itself varied considerably across organizations. These conceptual differences were often reinforced by organizational incentives, deployment priorities, and differing interpretations of responsible AI governance. Participants therefore argued that methodological disagreements frequently originate not from technical differences alone but from competing assumptions regarding what AI systems ought to be evaluated for in the first place. Participant 5, for instance, remarked that red-teaming customers often want bespoke, proprietary evaluation methodologies out of fear of competitors, but this also hinders red teams’ ability to communicate with each other and produce evaluations that are truly comparable across models.",
+   "ko": "참가자들은 마찬가지로 AI 레드티밍 내 기초 개념을 둘러싼 지속적인 이견을 강조했다. 피해, 수용 가능한 위험, 평가 성공의 정의, 나아가 레드티밍 자체의 범위까지도 조직마다 상당히 달랐다. 이러한 개념적 차이는 조직의 유인, 배포 우선순위, 책임 있는 AI 거버넌스에 대한 서로 다른 해석에 의해 강화되는 경우가 많았다. 따라서 참가자들은 방법론적 이견이 기술적 차이만으로 비롯되는 것이 아니라, 애초에 AI 시스템을 무엇에 대해 평가해야 하는지에 관한 상충하는 가정에서 비롯되는 경우가 많다고 주장했다. 예를 들어 참가자 5는 레드티밍 고객들이 경쟁사를 우려하여 맞춤형 독점 평가 방법론을 원하는 경우가 많지만, 이는 레드팀들이 서로 소통하고 모델 간에 진정으로 비교 가능한 평가를 산출하는 능력도 저해한다고 언급했다.",
+   "marks": [
+    {
+     "t": "애초에 AI 시스템을 무엇에 대해 평가해야 하는지에 관한 상충하는 가정에서 비롯되는 경우가 많다",
+     "k": "safety"
+    },
+    {
+     "t": "레드팀들이 서로 소통하고 모델 간에 진정으로 비교 가능한 평가를 산출하는 능력도 저해한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Finally, several participants described broader ecosystem incentives that discourage collaboration and knowledge sharing. Commercial competition, proprietary evaluation techniques, client confidentiality, and fragmented communities of practice all reduce opportunities for organizations to compare methodologies, validate findings, or collectively improve evaluation practices. Participants worried that these dynamics contribute to duplicated effort, siloed expertise, and limited cumulative learning across the field. Participant 8 explained how organizations may abuse red-teaming results to overstate the effectiveness of their products while “putting out solutions that don’t work.” Such conflicts of interest within the industry degrade the quality of testing, potentially putting AI adopters and consumers at risk. At the same time, many expressed optimism that carefully designed reporting standards could help overcome some of these barriers by establishing common expectations for documenting AI red-teaming exercises while preserving legitimate confidentiality and security requirements.",
+   "ko": "마지막으로, 여러 참가자는 협업과 지식 공유를 저해하는 더 광범위한 생태계 차원의 유인을 설명했다. 상업적 경쟁, 독점적 평가 기법, 고객 기밀 유지, 파편화된 실천 공동체는 모두 조직이 방법론을 비교하고 결과를 검증하거나 평가 관행을 공동으로 개선할 기회를 줄인다. 참가자들은 이러한 역학이 노력의 중복, 고립된 전문성, 분야 전반에 걸친 제한적인 누적 학습으로 이어진다고 우려했다. 참가자 8은 조직들이 레드티밍 결과를 남용하여 자사 제품의 효과를 과장하면서 \"제대로 작동하지 않는 솔루션을 내놓을\" 수 있다고 설명했다. 업계 내의 이러한 이해 상충은 시험의 질을 떨어뜨려 잠재적으로 AI 도입자와 소비자를 위험에 빠뜨릴 수 있다. 동시에 많은 참가자는 신중하게 설계된 보고 표준이 정당한 기밀 유지 및 보안 요건을 지키면서 AI 레드티밍 활동을 문서화하는 데 대한 공통의 기대치를 설정함으로써 이러한 장벽 중 일부를 극복하는 데 도움이 될 수 있다는 낙관적 견해를 밝혔다.",
+   "marks": [
+    {
+     "t": "상업적 경쟁, 독점적 평가 기법, 고객 기밀 유지, 파편화된 실천 공동체",
+     "k": "safety"
+    },
+    {
+     "t": "조직들이 레드티밍 결과를 남용하여 자사 제품의 효과를 과장하면서 \"제대로 작동하지 않는 솔루션을 내놓을\" 수 있다",
+     "k": "safety"
+    },
+    {
+     "t": "업계 내의 이러한 이해 상충은 시험의 질을 떨어뜨려 잠재적으로 AI 도입자와 소비자를 위험에 빠뜨릴 수 있다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Together, these findings suggest that many challenges associated with AI red-teaming reporting originate not from reporting practices alone but from broader characteristics of the AI evaluation ecosystem. Reporting standards therefore cannot by themselves resolve issues of methodological inconsistency, conceptual disagreement, or organizational incentives. They can, however, provide a common foundation for communicating evaluation assumptions, methods, and findings in ways that improve interpretability, facilitate comparison across studies, and support the continued development and maturation of AI red-teaming as a professional practice.",
+   "ko": "종합하면, 이러한 결과는 AI 레드티밍 보고와 관련된 많은 과제가 보고 관행만이 아니라 AI 평가 생태계의 더 광범위한 특성에서 비롯됨을 시사한다. 따라서 보고 표준만으로는 방법론적 비일관성, 개념적 이견, 조직의 유인 문제를 해결할 수 없다. 그러나 보고 표준은 평가의 가정, 방법, 결과를 전달하는 공통의 토대를 제공함으로써 해석 가능성을 높이고, 연구 간 비교를 용이하게 하며, 전문 실무로서 AI 레드티밍의 지속적인 발전과 성숙을 뒷받침할 수 있다.",
+   "marks": [
+    {
+     "t": "보고 표준만으로는 방법론적 비일관성, 개념적 이견, 조직의 유인 문제를 해결할 수 없다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Part 4: Discussion",
+   "ko": "제4부: 논의",
+   "id": "s124"
+  },
+  {
+   "type": "p",
+   "en": "Our research reveals substantial gaps between the information AI red-teamers find most useful and what is currently being reported following the conclusion of a red-teaming exercise. Findings from our qualitative interviews suggest that the central challenge for AI red-teaming reporting is not only identifying what is useful to disclose but also defining a structured form of partial disclosure that improves interpretability without generating unacceptable security, safety, or competitive risks. Across organizational settings, participants described red-teaming as highly context dependent. Threat models and stakeholder needs structure both exercise design and reporting, yet current reporting practices are constrained by confidentiality, information hazards, and weak standardization. To address these challenges, we recommend systematizing the way AI red-teaming results are reported, which can make findings more useful to all stakeholders impacted by these evaluations.",
+   "ko": "본 연구는 AI 레드티머가 가장 유용하다고 여기는 정보와 현재 레드티밍 활동 종료 후 실제로 보고되는 정보 사이에 상당한 격차가 있음을 보여 준다. 질적 인터뷰 결과는 AI 레드티밍 보고의 핵심 과제가 무엇을 공개하는 것이 유용한지를 파악하는 것뿐 아니라, 용납할 수 없는 보안·안전·경쟁상의 위험을 초래하지 않으면서 해석 가능성을 높이는 구조화된 형태의 부분 공개를 정의하는 것임을 시사한다. 조직 환경 전반에 걸쳐 참가자들은 레드티밍을 맥락 의존성이 매우 높은 활동으로 설명했다. 위협 모델과 이해관계자의 요구는 활동 설계와 보고를 모두 구조화하지만, 현재의 보고 관행은 기밀 유지, 정보 위험원, 미흡한 표준화로 인해 제약을 받는다. 이러한 과제를 해결하기 위해 본 연구는 AI 레드티밍 결과의 보고 방식을 체계화할 것을 권고하며, 이를 통해 이러한 평가의 영향을 받는 모든 이해관계자에게 결과를 더 유용하게 만들 수 있다.",
+   "marks": [
+    {
+     "t": "AI 레드티머가 가장 유용하다고 여기는 정보와 현재 레드티밍 활동 종료 후 실제로 보고되는 정보 사이에 상당한 격차가 있음을 보여 준다",
+     "k": "key"
+    },
+    {
+     "t": "용납할 수 없는 보안·안전·경쟁상의 위험을 초래하지 않으면서 해석 가능성을 높이는 구조화된 형태의 부분 공개",
+     "k": "safety"
+    },
+    {
+     "t": "현재의 보고 관행은 기밀 유지, 정보 위험원, 미흡한 표준화로 인해 제약을 받는다",
+     "k": "safety"
+    },
+    {
+     "t": "본 연구는 AI 레드티밍 결과의 보고 방식을 체계화할 것을 권고하며",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Within the AI red-teaming community of practice, systematizing reporting practices can improve the dissemination of new testing techniques, helping testers gradually coalesce around a set of best practices for any given model or group or models. It can help testers evaluate and interpret the results of tests conducted by another group or organization. Furthermore, in an environment where AI companies are both direct competitors with each other and collaborators who share evaluation results and methods, systematizing reporting can improve transparency between red-teaming groups, empowering smaller or less-resourced organizations such as third-party evaluators who do not have direct access to proprietary AI models.",
+   "ko": "AI 레드티밍 실천 공동체 내에서 보고 관행을 체계화하면 새로운 시험 기법의 확산을 개선하여, 시험자들이 특정 모델 또는 모델 그룹에 대한 일련의 모범 사례로 점차 수렴하도록 도울 수 있다. 또한 시험자들이 다른 그룹이나 조직이 수행한 시험의 결과를 평가하고 해석하는 데 도움이 될 수 있다. 나아가 AI 기업들이 서로 직접적인 경쟁자이면서 동시에 평가 결과와 방법을 공유하는 협력자이기도 한 환경에서, 보고의 체계화는 레드티밍 그룹 간의 투명성을 높여 독점 AI 모델에 직접 접근할 수 없는 제3자 평가자와 같이 규모가 작거나 자원이 부족한 조직의 역량을 강화할 수 있다.",
+   "marks": [
+    {
+     "t": "독점 AI 모델에 직접 접근할 수 없는 제3자 평가자",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "The broader stakeholder community—including policymakers, AI developers and deployers, downstream users, and the general public—also relies on AI evaluation and testing results to make sense of model capabilities, impacts, and risks. Systematizing red-teaming reporting can improve public transparency about model testing practices. It can also help build toward improving overall evaluation interpretability, such as the ability to assess whether a given test or evaluation was adequate within a certain context. For example, imagine a case in which a government department is assessing a bid for an AI software contract. Having a baseline for what constitutes a “good” (i.e., adequately detailed and complete) red-teaming report for that AI software product is important to assess whether the product has undergone sufficient testing and to understand how the reported test results can be compared to a competing product. If all red-teaming reports were systematized to the point where they disclosed comparable information, decision-makers would have a common basis to judge the results on. Similarly, if AI red-teaming results were to share the same baseline content, AI developers and deployers could more easily craft effective mitigation techniques to address identified flaws or vulnerabilities. Reporting is crucial for conveying information about AI models and systems to downstream users and stakeholders.",
+   "ko": "정책입안자, AI 개발자 및 배포자, 하류 사용자, 일반 대중을 포함한 더 광범위한 이해관계자 공동체 역시 모델의 역량, 영향, 위험을 이해하기 위해 AI 평가 및 시험 결과에 의존한다. 레드티밍 보고를 체계화하면 모델 시험 관행에 대한 대중적 투명성을 높일 수 있다. 또한 특정 시험이나 평가가 일정한 맥락 내에서 적절했는지를 평가하는 능력 등 전반적인 평가 해석 가능성의 개선을 향해 나아가는 데에도 도움이 될 수 있다. 예를 들어, 어느 정부 부처가 AI 소프트웨어 계약 입찰을 평가하는 경우를 상정해 보자. 해당 AI 소프트웨어 제품에 대해 무엇이 \"좋은\"(즉, 충분히 상세하고 완전한) 레드티밍 보고서인지에 대한 기준선을 갖추는 것은 그 제품이 충분한 시험을 거쳤는지 평가하고, 보고된 시험 결과를 경쟁 제품과 어떻게 비교할 수 있는지 이해하는 데 중요하다. 모든 레드티밍 보고서가 비교 가능한 정보를 공개하는 수준까지 체계화된다면, 의사결정자들은 결과를 판단할 공통의 근거를 갖게 될 것이다. 마찬가지로 AI 레드티밍 결과가 동일한 기준선 내용을 공유한다면, AI 개발자와 배포자는 식별된 결함이나 취약점에 대응하는 효과적인 완화 기법을 더 쉽게 마련할 수 있을 것이다. 보고는 AI 모델과 시스템에 관한 정보를 하류 사용자와 이해관계자에게 전달하는 데 필수적이다.",
+   "marks": [
+    {
+     "t": "모델의 역량, 영향, 위험을 이해하기 위해 AI 평가 및 시험 결과에 의존한다",
+     "k": "safety"
+    },
+    {
+     "t": "식별된 결함이나 취약점에 대응하는 효과적인 완화 기법을 더 쉽게 마련할 수 있을 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Systematized reporting would improve information sharing, but we also recognize other outstanding challenges affecting red-teaming, such as misaligned incentives. On the organizational level, companies have incentives to safeguard their own products but not necessarily to uplift the field as a whole or invest in the AI red-teaming ecosystem. On the team level, AI red-teamers operate under different incentives than the stakeholders they are reporting to, who are often focused on product deployment timelines.",
+   "ko": "체계화된 보고는 정보 공유를 개선하겠지만, 본 연구는 어긋난 유인과 같이 레드티밍에 영향을 미치는 다른 미해결 과제가 있음도 인식한다. 조직 차원에서 기업들은 자사 제품을 보호할 유인은 있지만, 분야 전체를 향상시키거나 AI 레드티밍 생태계에 투자할 유인은 반드시 있는 것은 아니다. 팀 차원에서 AI 레드티머는 그들이 보고하는 이해관계자와는 다른 유인 아래에서 활동하며, 이러한 이해관계자는 제품 배포 일정에 집중하는 경우가 많다.",
+   "marks": [
+    {
+     "t": "어긋난 유인과 같이 레드티밍에 영향을 미치는 다른 미해결 과제가 있음",
+     "k": "safety"
+    },
+    {
+     "t": "분야 전체를 향상시키거나 AI 레드티밍 생태계에 투자할 유인은 반드시 있는 것은 아니다",
+     "k": "safety"
+    },
+    {
+     "t": "이러한 이해관계자는 제품 배포 일정에 집중하는 경우가 많다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Due to intense competition—both economic and geopolitical—and the rapid pace of AI development, we are currently far from a world in which many red-teamers would feel it is safe or appropriate to disclose their full testing methodology publicly. However, we can collectively work toward a middle ground that improves transparency across the ecosystem, uplifts the broader community of practice, and still respects AI red-teamers’ need to preserve safety, security, and privacy.",
+   "ko": "경제적·지정학적 측면 모두에서의 치열한 경쟁과 AI 개발의 빠른 속도로 인해, 현재 우리는 많은 레드티머가 자신의 시험 방법론 전체를 공개하는 것이 안전하거나 적절하다고 느끼는 세상과는 거리가 멀다. 그러나 우리는 생태계 전반의 투명성을 높이고, 더 광범위한 실천 공동체를 향상시키면서도, 안전·보안·프라이버시를 지켜야 하는 AI 레드티머의 필요를 존중하는 절충점을 향해 함께 노력할 수 있다.",
+   "marks": [
+    {
+     "t": "경제적·지정학적 측면 모두에서의 치열한 경쟁과 AI 개발의 빠른 속도로 인해",
+     "k": "safety"
+    },
+    {
+     "t": "많은 레드티머가 자신의 시험 방법론 전체를 공개하는 것이 안전하거나 적절하다고 느끼는 세상과는 거리가 멀다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Recommendations for AI Red-Teamers",
+   "ko": "AI 레드티머를 위한 권고사항",
+   "id": "s130"
+  },
+  {
+   "type": "p",
+   "en": "We recommend that AI red-teamers focus on systematizing reporting by incorporating the four key dimensions identified by our interview participants. One avenue toward better reporting practices is to clarify which features of an AI red-teaming exercise can be reported without exposing too much information, in a similar manner to other AI evaluations that may present information hazards.[^18] For example, disclosing resources used during testing (in terms of compute cost, number of testers, and so on) can help audiences interpret the results but would not benefit malicious actors, especially if the flaws or vulnerabilities identified in the report were already remediated.",
+   "ko": "본 연구는 AI 레드티머가 인터뷰 참가자들이 제시한 네 가지 핵심 차원을 반영하여 보고를 체계화하는 데 주력할 것을 권고한다. 더 나은 보고 실행 방안을 위한 한 가지 방법은, 정보 위험원을 제기할 수 있는 다른 AI 평가와 유사한 방식으로, AI 레드티밍 활동의 어떤 특성을 과도한 정보 노출 없이 보고할 수 있는지를 명확히 하는 것이다.[^18] 예를 들어, 시험 중 사용된 자원(연산 비용, 시험자 수 등)을 공개하면 보고서 수용자가 결과를 해석하는 데 도움이 되지만, 특히 보고서에서 식별된 결함이나 취약점이 이미 해결된 경우라면 악의적 행위자에게 이득이 되지 않을 것이다.",
+   "marks": [
+    {
+     "t": "AI 레드티밍 활동의 어떤 특성을 과도한 정보 노출 없이 보고할 수 있는지를 명확히 하는 것이다",
+     "k": "key"
+    },
+    {
+     "t": "특히 보고서에서 식별된 결함이나 취약점이 이미 해결된 경우라면 악의적 행위자에게 이득이 되지 않을 것이다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Based on our study and the subsequent thematic analysis, we summarize the four key reporting dimensions below in Table 2 and outline the benefits and risks associated with reporting these features.",
+   "ko": "본 연구와 이후의 주제 분석을 바탕으로, 아래 표 2에 네 가지 핵심 보고 차원을 요약하고 이러한 특성을 보고하는 데 따르는 이점과 위험을 개괄한다."
+  },
+  {
+   "type": "p",
+   "en": "Table 2. Useful Information to Include in All AI Red-Teaming Reports",
+   "ko": "표 2. 모든 AI 레드티밍 보고서에 포함해야 할 유용한 정보"
+  },
+  {
+   "type": "table",
+   "en": "| AI red-teaming reporting dimension | Recommended minimum information to report per dimension | Benefits to AI red-teamers | Benefits to other stakeholders | Reporting implications (risks/concerns) | ⏎ | Threat model | ● Actor(s) or scenario(s) being emulated ● Key risks of concern guiding AI red-teamers ● Scope and limitations of the AI red-teaming exercise | Clarifies testing goals and informs other red teams about which flaws or vulnerabilities to test in similar systems. | Makes the exercise understandable by clarifying the actors, risks, and attack surfaces addressed. Allows for more proportional and targeted responses. | Disclosure must be balanced against competitive or strategic risks associated with revealing proprietary security priorities. | ⏎ | Harms, flaws, or vulnerabilities elicited during testing | ● Overview description of all harms, flaws, or vulnerabilities elicited during testing ● For each harm, flaw, or vulnerability elicited: ○ Description of the harm, flaw, or vulnerability ○ Severity ranking and assessment ○ Correspondence to threat model | Validates the threat model and proves the existence of flaws or vulnerabilities in the AI system. | Contextualizes failure modes, allows for external severity assessment, and informs stakeholders of flaws that have already been evaluated. | Harms, flaws, or vulnerabilities should not be publicly disclosed prior to proper patching or safeguarding (flaw or vulnerability disclosure risk). | ⏎ | AI red-teaming methodology | ● Overview description of AI red-teaming methodology ● Specifications of the AI model or system being tested ● System configuration and tester access conditions ● Tester characteristics, expertise, and team composition ● Resources used during testing (e.g., time, tokens or computational resources, personnel hours) ● Frameworks, tools, or automation used during testing | Necessary for interpreting significance. Helps external red-teamers evaluate the validity and rigor of the exercise. | Allows stakeholders to assess testing quality and interpret the significance of reported findings (e.g., severity assessment). | There is a risk of information hazards, such as disclosing specific jailbreaking techniques or prompt sequences. | ⏎ | Actionable information for mitigation | ● For each harm, flaw, or vulnerability elicited: ○ Reproduction steps ○ Mitigation recommendations and status | Connects findings to downstream remediation and governance. Lifts community of practice by sharing effective mitigation strategies. | Supports internal triage, reproduction, and remediation of identified issues. | Mitigation details should not be publicly reported if they contain sensitive information or specific jailbreaks. |",
+   "ko": "| AI 레드티밍 보고 차원 | 차원별 권장 최소 보고 정보 | AI 레드티머에게 주는 이점 | 다른 이해관계자에게 주는 이점 | 보고상 시사점(위험/우려 사항) | ⏎ | 위협 모델 | ● 모사 대상 행위자 또는 시나리오 ● AI 레드티머를 이끄는 주요 우려 위험 ● AI 레드티밍 활동의 범위 및 한계 | 시험 목표를 명확히 하고, 유사 시스템에서 어떤 결함이나 취약점을 시험해야 하는지 다른 레드팀에 알려 줌. | 다루는 행위자, 위험, 공격 표면을 명확히 하여 활동을 이해 가능하게 함. 보다 비례적이고 표적화된 대응이 가능해짐. | 독점적 보안 우선순위를 드러내는 데 따르는 경쟁적·전략적 위험과 공개 간에 균형을 이뤄야 함. | ⏎ | 시험 중 이끌어 낸 피해, 결함 또는 취약점 | ● 시험 중 이끌어 낸 모든 피해, 결함 또는 취약점에 대한 개요 설명 ● 이끌어 낸 각 피해, 결함 또는 취약점에 대해: ○ 피해, 결함 또는 취약점에 대한 설명 ○ 심각도 등급 및 평가 ○ 위협 모델과의 대응 관계 | 위협 모델을 검증하고 AI 시스템 내 결함이나 취약점의 존재를 입증함. | 실패 모드를 맥락화하고, 외부의 심각도 평가를 가능하게 하며, 이미 평가된 결함을 이해관계자에게 알려 줌. | 피해, 결함 또는 취약점은 적절한 패치나 안전장치 적용 전에 공개적으로 밝히지 않아야 함(결함 또는 취약점 공개 위험). | ⏎ | AI 레드티밍 방법론 | ● AI 레드티밍 방법론에 대한 개요 설명 ● 시험 대상 AI 모델 또는 시스템의 명세 ● 시스템 구성 및 시험자 접근 조건 ● 시험자 특성, 전문성 및 팀 구성 ● 시험 중 사용된 자원(예: 시간, 토큰 또는 연산 자원, 인력 투입 시간) ● 시험 중 사용된 프레임워크, 도구 또는 자동화 | 유의성 해석에 필수적임. 외부 레드티머가 활동의 타당성과 엄밀성을 평가하는 데 도움이 됨. | 이해관계자가 시험의 질을 평가하고 보고된 결과의 유의성을 해석할 수 있게 함(예: 심각도 평가). | 특정 탈옥 기법이나 프롬프트 시퀀스 공개 등 정보 위험원의 위험이 있음. | ⏎ | 완화를 위한 실행 가능한 정보 | ● 이끌어 낸 각 피해, 결함 또는 취약점에 대해: ○ 재현 절차 ○ 완화 권고사항 및 조치 현황 | 결과를 하류의 개선 조치 및 거버넌스와 연결함. 효과적인 완화 전략을 공유하여 실천 공동체를 끌어올림. | 식별된 문제의 내부 분류, 재현 및 개선 조치를 지원함. | 완화 세부 내용에 민감한 정보나 특정 탈옥이 포함된 경우 공개적으로 보고하지 않아야 함. |"
+  },
+  {
+   "type": "p",
+   "en": "Note: See Appendix C for the full reporting scheme.",
+   "ko": "주: 전체 보고 체계는 부록 C 참조.",
+   "refs": [
+    {
+     "t": "부록 C",
+     "to": "s146"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "Recommendations for Policymakers and Other Stakeholders",
+   "ko": "정책입안자 및 기타 이해관계자를 위한 권고사항",
+   "id": "s136"
+  },
+  {
+   "type": "p",
+   "en": "While the majority of AI red-teaming—especially publicly reported red-teaming—is performed outside of the public sector, policymakers still have an important role to play in improving the practice of red-teaming, as well as contributing to the improvement of the AI evaluations ecosystem more broadly. Our recommendations center around aligning incentives and evaluation practices, as well as facilitating communication among actors in the red-teaming ecosystem.",
+   "ko": "AI 레드티밍의 대부분, 특히 공개적으로 보고되는 레드티밍은 공공 부문 외부에서 수행되지만, 정책입안자는 여전히 레드티밍 실무를 개선하고 나아가 AI 평가 생태계 전반의 개선에 기여하는 데 중요한 역할을 한다. 본 연구의 권고사항은 유인과 평가 관행을 정렬하고, 레드티밍 생태계 내 행위자 간의 소통을 촉진하는 데 중점을 둔다.",
+   "marks": [
+    {
+     "t": "정책입안자는 여전히 레드티밍 실무를 개선하고 나아가 AI 평가 생태계 전반의 개선에 기여하는 데 중요한 역할을 한다",
+     "k": "key"
+    },
+    {
+     "t": "유인과 평가 관행을 정렬하고, 레드티밍 생태계 내 행위자 간의 소통을 촉진하는 데 중점",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Facilitate information sharing between AI red-teamers, as well as between the public and private sectors. This can be through a body such as the proposed AI Information Sharing and Analysis Center, modeled after existing sectoral cybersecurity ISACs.[^19] Alternatively, government and industry representatives can participate in existing information exchanges held by organizations such as the Partnership on AI or the Frontier Model Forum. Members of these organizations can also expand the focus of information sharing to discuss AI red-teaming outcomes, methodologies, and mitigation strategies. The objective is to strengthen the community of practice by increasing the number of stakeholders who have access to information relevant to AI red-teaming practices.",
+   "ko": "정보 공유를 AI 레드티머 간, 그리고 공공 부문과 민간 부문 간에 촉진해야 한다. 기존 부문별 사이버 보안 정보공유분석센터(ISAC)를 본뜬 AI 정보공유분석센터(AI Information Sharing and Analysis Center) 같은 기구가 제안된 바 있으며, 이러한 기구를 통해 정보를 공유할 수 있다.[^19] 또는 정부와 업계 대표가 Partnership on AI나 Frontier Model Forum 같은 조직이 운영하는 기존 정보 교류에 참여할 수도 있다. 이들 조직의 회원도 정보 공유의 초점을 넓혀 AI 레드티밍 결과, 방법론, 완화 전략을 논의할 수 있다. 목표는 AI 레드티밍 실무 관련 정보에 접근할 수 있는 이해관계자의 수를 늘려 실천 공동체를 강화하는 것이다.",
+   "marks": [
+    {
+     "t": "정보 공유를 AI 레드티머 간, 그리고 공공 부문과 민간 부문 간에 촉진해야 한다.",
+     "k": "safety"
+    },
+    {
+     "t": "AI 레드티밍 결과, 방법론, 완화 전략을 논의할 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Support public-sector AI evaluation bodies such as the National Institute of Standards and Technology and the Center for Advancing Innovation and Standards for Super Intelligence within the Department of Commerce. NIST and CAISSI already perform AI evaluations, including via qualitative methods, and are leaders in publicizing best practices for AI evaluations.[^20] The federal government should ensure that this work continues and that CAISI in particular continues to demonstrate U.S. leadership in the investigation and improvement of AI evaluation practices.",
+   "ko": "국립표준기술연구소(National Institute of Standards and Technology), 그리고 상무부(Department of Commerce) 산하 Center for Advancing Innovation and Standards for Super Intelligence 같은 공공 부문 AI 평가(evaluation) 기관을 지원해야 한다. NIST와 CAISSI는 이미 정성적 방법을 포함하여 AI 평가(evaluation)를 수행하고 있으며, AI 평가(evaluation)의 모범 사례를 알리는 데 앞장서고 있다.[^20] 연방정부는 이러한 작업이 지속되도록 보장하고, 특히 CAISI가 AI 평가(evaluation) 관행의 조사와 개선에서 미국의 리더십을 계속 보여 주도록 해야 한다.",
+   "marks": [
+    {
+     "t": "공공 부문 AI 평가(evaluation) 기관을 지원해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "CAISI가 AI 평가(evaluation) 관행의 조사와 개선에서 미국의 리더십을 계속 보여 주도록 해야 한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Create protected channels for the sharing of AI bugs, flaws, and vulnerabilities. There have been proposals for “safe harbor” reporting channels for AI vulnerabilities similar to those in cybersecurity, where the objective is not to punish security researchers who probe systems for vulnerabilities in good faith.[^21] Policymakers can facilitate similar behavior in AI by creating protections for AI red-teamers, especially independent red-teamers or vulnerability researchers who may lack the legal protections of an employer or an explicit contract with an AI developer. Private-sector actors can establish organizational policies allowing for both first- and third-party AI red-teamers to report flaws or vulnerabilities in their AI systems.",
+   "ko": "AI 버그, 결함, 취약점을 공유할 수 있는 보호된 채널을 마련해야 한다. 사이버 보안 분야와 유사하게 AI 취약점을 위한 \"면책(safe harbor)\" 보고 채널을 마련하자는 제안이 나온 바 있다. 사이버 보안 분야의 이러한 채널은 선의로 시스템의 취약점을 탐색하는 보안 연구자를 처벌하지 않는 것을 목표로 한다.[^21] 정책입안자는 AI 레드티머, 특히 고용주의 법적 보호나 AI 개발자와의 명시적 계약이 없을 수 있는 독립 레드티머나 취약점 연구자를 위한 보호 장치를 마련하여 AI 분야에서도 유사한 행동을 촉진할 수 있다. 민간 부문 행위자는 자사 AI 시스템의 결함이나 취약점을 내부 및 제3자 AI 레드티머 모두가 보고할 수 있도록 허용하는 조직 정책을 수립할 수 있다.",
+   "marks": [
+    {
+     "t": "AI 버그, 결함, 취약점을 공유할 수 있는 보호된 채널을 마련해야 한다.",
+     "k": "key"
+    },
+    {
+     "t": "AI 취약점을 위한 \"면책(safe harbor)\" 보고 채널을 마련하자는 제안",
+     "k": "safety"
+    },
+    {
+     "t": "독립 레드티머나 취약점 연구자를 위한 보호 장치를 마련",
+     "k": "safety"
+    },
+    {
+     "t": "내부 및 제3자 AI 레드티머 모두가 보고할 수 있도록 허용하는 조직 정책",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Incentivize rigorous and systematized testing processes by setting requirements for AI systems used internally by government agencies, especially in high-risk deployment scenarios. For example, a 2025 Office of Management and Budget memorandum uses existing executive branch authorities to set requirements for government AI systems.[^22] Individual agencies already have AI inventories and strategies in place but can also coordinate to systematize their testing practices, including those related to AI red-teaming.",
+   "ko": "정부 기관이 내부적으로 사용하는 AI 시스템, 특히 고위험 배포 시나리오에 쓰이는 AI 시스템에 대한 요건을 설정하여 엄밀하고 체계화된 시험 절차를 장려해야 한다. 예를 들어, 2025년 관리예산처(Office of Management and Budget) 메모는 기존 행정부 권한을 활용하여 정부 AI 시스템에 대한 요건을 설정한다.[^22] 개별 기관은 이미 AI 목록과 전략을 갖추고 있지만, AI 레드티밍 관련 관행을 포함한 시험 관행을 체계화하기 위해 서로 조율할 수도 있다.",
+   "marks": [
+    {
+     "t": "고위험 배포 시나리오에 쓰이는 AI 시스템에 대한 요건을 설정하여 엄밀하고 체계화된 시험 절차를 장려해야 한다",
+     "k": "safety"
+    },
+    {
+     "t": "AI 레드티밍 관련 관행을 포함한 시험 관행을 체계화하기 위해 서로 조율",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Conclusion",
+   "ko": "결론",
+   "id": "s142"
+  },
+  {
+   "type": "p",
+   "en": "Thorough evaluation of the risks of AI systems is essential to the trustworthiness and adoption of AI. However, we have identified several challenges that prevent effective red-teaming evaluations across all contexts: lack of scientific grounding, inconsistent testing practices, and misalignment with external stakeholders. These challenges arise from the variety of contexts and threat models in which red-teaming is performed and the incentives driving red-teaming exercises. In practice, this leads to a gap between what information gets reported and what information could improve the practice of red-teaming.",
+   "ko": "AI 시스템의 위험에 대한 철저한 평가(evaluation)는 AI의 신뢰성과 도입에 필수적이다. 그러나 본 연구는 모든 맥락에서 효과적인 레드티밍 평가(evaluation)를 가로막는 몇 가지 과제를 확인했다. 과학적 근거의 부족, 일관되지 않은 시험 관행, 외부 이해관계자와의 오정렬이 그것이다. 이러한 과제는 레드티밍이 수행되는 맥락과 위협 모델이 다양하다는 점, 그리고 레드티밍 활동을 추동하는 유인에서 비롯된다. 실제로 이는 보고되는 정보와 레드티밍 실무를 개선할 수 있는 정보 사이에 격차를 낳는다.",
+   "marks": [
+    {
+     "t": "본 연구는 모든 맥락에서 효과적인 레드티밍 평가(evaluation)를 가로막는 몇 가지 과제를 확인했다",
+     "k": "key"
+    },
+    {
+     "t": "과학적 근거의 부족, 일관되지 않은 시험 관행, 외부 이해관계자와의 오정렬",
+     "k": "safety"
+    },
+    {
+     "t": "보고되는 정보와 레드티밍 실무를 개선할 수 있는 정보 사이에 격차를 낳는다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "This gap cannot be closed by simply publicizing every aspect of the red-teaming exercise, because some privately reported information may expose the AI system, or the organization using or deploying it, to increased risk. Instead, we identify four features—the exercise’s threat model; the harms, flaws, and vulnerabilities elicited during testing; the methodology used during testing; and the actionable information relevant to mitigation—that help organizations address the flaws discovered by the exercise. Sharing these four dimensions publicly also provides benefits to stakeholders across the ecosystem: Other red teams can improve their practices without unduly threatening the organization that publicizes the information, the public benefits from an improved understanding of what the exercise’s results mean in context, and testers can contribute to a common baseline of contextual information about a specific model or system’s flaws.",
+   "ko": "이 격차는 레드티밍 활동의 모든 측면을 단순히 공개하는 것만으로는 해소될 수 없다. 비공개로 보고되는 일부 정보는 AI 시스템이나 이를 사용·배포하는 조직을 더 큰 위험에 노출시킬 수 있기 때문이다. 대신 본 연구는 조직이 활동에서 발견된 결함을 해결하는 데 도움이 되는 네 가지 요소, 즉 활동의 위협 모델, 시험 중 이끌어 낸 피해·결함·취약점, 시험에 사용된 방법론, 완화와 관련된 실행 가능한 정보를 제시한다. 이 네 가지 차원을 공개적으로 공유하면 생태계 전반의 이해관계자에게도 이점이 있다. 다른 레드팀은 정보를 공개하는 조직을 부당하게 위협하지 않으면서 자신의 관행을 개선할 수 있고, 대중은 활동 결과가 맥락상 무엇을 의미하는지 더 잘 이해하게 되며, 시험자는 특정 모델이나 시스템의 결함에 관한 맥락 정보의 공통 기준선에 기여할 수 있다.",
+   "marks": [
+    {
+     "t": "비공개로 보고되는 일부 정보는 AI 시스템이나 이를 사용·배포하는 조직을 더 큰 위험에 노출시킬 수 있기 때문이다",
+     "k": "safety"
+    },
+    {
+     "t": "활동의 위협 모델, 시험 중 이끌어 낸 피해·결함·취약점, 시험에 사용된 방법론, 완화와 관련된 실행 가능한 정보",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Broadly, we encourage red teams to consider how they can improve the utility of their reports for other red-teaming practitioners and for downstream users and deployers. More specifically, we detail how transparently communicating key features of a red-teaming exercise, such as the threat model and testing methodology, can benefit a wide range of stakeholders, including practitioners, policymakers, AI developers and deployers, and the general public. However, we also acknowledge the risks associated with publicizing information related to flaws in AI systems. To address these systemic challenges, we also recommend policy changes that may help realign incentives to better support the development of robust red-teaming practices. In particular, facilitating the safe collection and distribution of information regarding the features we have identified could provide an avenue for enriching the practice of red-teaming without fully exposing sensitive details. We hope that our recommendations facilitate the improvement of AI red-teaming and public understanding by encouraging red teams to share their findings with a range of stakeholders.",
+   "ko": "넓게 보면, 본 연구는 레드팀이 다른 레드티밍 실무자와 하류 사용자 및 배포자에게 자신의 보고서가 더 유용해지도록 하는 방법을 고려할 것을 권장한다. 보다 구체적으로, 본 연구는 위협 모델과 시험 방법론 같은 레드티밍 활동의 핵심 요소를 투명하게 전달하는 것이 실무자, 정책입안자, AI 개발자 및 배포자, 일반 대중 등 폭넓은 이해관계자에게 어떻게 도움이 될 수 있는지 상세히 설명한다. 그러나 AI 시스템의 결함과 관련된 정보를 공개하는 데 따르는 위험도 인정한다. 이러한 구조적 과제를 해결하기 위해, 본 연구는 견고한 레드티밍 관행의 발전을 더 잘 뒷받침하도록 유인을 재정렬하는 데 도움이 될 수 있는 정책 변화도 권고한다. 특히 본 연구가 제시한 요소에 관한 정보를 안전하게 수집·배포하도록 촉진하면, 민감한 세부 사항을 완전히 노출하지 않고도 레드티밍 실무를 풍부하게 할 수 있는 길이 열릴 수 있다. 본 연구의 권고사항이 레드팀이 다양한 이해관계자와 결과를 공유하도록 장려함으로써 AI 레드티밍의 개선과 대중의 이해 증진에 기여하기를 바란다.",
+   "marks": [
+    {
+     "t": "AI 시스템의 결함과 관련된 정보를 공개하는 데 따르는 위험도 인정한다",
+     "k": "safety"
+    },
+    {
+     "t": "견고한 레드티밍 관행의 발전을 더 잘 뒷받침하도록 유인을 재정렬하는 데 도움이 될 수 있는 정책 변화도 권고한다",
+     "k": "safety"
+    },
+    {
+     "t": "민감한 세부 사항을 완전히 노출하지 않고도 레드티밍 실무를 풍부하게 할 수 있는 길이 열릴 수 있다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h2",
+   "en": "Appendix C: Reporting Scheme",
+   "ko": "부록 C: 보고 체계",
+   "id": "s146"
+  },
+  {
+   "type": "h3",
+   "en": "1. Threat Model",
+   "ko": "1. 위협 모델",
+   "id": "s147"
+  },
+  {
+   "type": "p",
+   "en": "Actor(s) or Scenario(s) Being Emulated",
+   "ko": "모사 대상 행위자 또는 시나리오"
+  },
+  {
+   "type": "p",
+   "en": "Describe the simulated adversarial actors or the specific user intents being emulated during this exercise.",
+   "ko": "이번 활동에서 모사한 적대적 행위자 또는 특정 사용자 의도를 기술한다.",
+   "marks": [
+    {
+     "t": "이번 활동에서 모사한 적대적 행위자 또는 특정 사용자 의도를 기술한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Example: Malicious end users attempting to bypass safety guardrails to generate prohibited hate speech or conduct phishing.",
+   "ko": "예시: 안전 가드레일을 우회하여 금지된 혐오 발언을 생성하거나 피싱을 수행하려는 악의적 최종 사용자.",
+   "marks": [
+    {
+     "t": "안전 가드레일을 우회하여 금지된 혐오 발언을 생성하거나 피싱을 수행하려는 악의적 최종 사용자",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Risks of Concern",
+   "ko": "우려 위험"
+  },
+  {
+   "type": "p",
+   "en": "List the specific vulnerabilities, safety risks, or failure modes this evaluation was designed to identify.",
+   "ko": "이번 평가(evaluation)가 식별하도록 설계된 구체적인 취약점, 안전 위험 또는 실패 모드를 나열한다.",
+   "marks": [
+    {
+     "t": "이번 평가(evaluation)가 식별하도록 설계된 구체적인 취약점, 안전 위험 또는 실패 모드를 나열한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Example: Jailbreaking, data leakage of personally identifiable information (PII), and generation of toxic content.",
+   "ko": "예시: 탈옥, 개인 식별 가능 정보(PII)의 데이터 유출, 독성 콘텐츠 생성.",
+   "marks": [
+    {
+     "t": "탈옥, 개인 식별 가능 정보(PII)의 데이터 유출, 독성 콘텐츠 생성",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Scope and Limitations",
+   "ko": "범위 및 한계"
+  },
+  {
+   "type": "p",
+   "en": "Define the boundaries of the evaluation: Specify which system components and attack surfaces were tested and which were explicitly excluded.",
+   "ko": "평가(evaluation)의 경계를 정의한다. 어떤 시스템 구성 요소와 공격 표면을 시험했고 어떤 것을 명시적으로 제외했는지 명시한다.",
+   "marks": [
+    {
+     "t": "어떤 시스템 구성 요소와 공격 표면을 시험했고 어떤 것을 명시적으로 제외했는지 명시한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Example: In scope: public-facing API endpoints. Out of scope: Model training infrastructure and internal database logs.",
+   "ko": "예시: 범위 내: 외부 공개 애플리케이션 프로그래밍 인터페이스(API) 엔드포인트(Endpoint). 범위 외: 모델 학습 인프라 및 내부 데이터베이스 로그."
+  },
+  {
+   "type": "h3",
+   "en": "2. Harms, Flaws, or Vulnerabilities Elicited",
+   "ko": "2. 이끌어 낸 피해, 결함 또는 취약점",
+   "id": "s157"
+  },
+  {
+   "type": "p",
+   "en": "Harm/Flaw/Vulnerability Overview",
+   "ko": "피해/결함/취약점 개요"
+  },
+  {
+   "type": "p",
+   "en": "Summarize the findings of the exercise.",
+   "ko": "활동의 결과를 요약한다."
+  },
+  {
+   "type": "p",
+   "en": "Example: Twenty-six jailbreaks discovered out of 600 attempts. Four jailbreaks were reliable—successfully eliciting harmful content on over 75 percent of uses. Three high-severity outputs were elicited; 10 medium-severity outputs; 23 low-severity outputs. Toxic content composed 23 incidents (one high, six medium, 16 low). PII was involved in 13 incidents (two high, four medium, seven low).",
+   "ko": "예시: 600회 시도 중 26건의 탈옥을 발견함. 이 중 4건의 탈옥은 신뢰성이 높았음(사용 시 75퍼센트 이상에서 유해 콘텐츠를 이끌어 내는 데 성공). 고심각도 출력 3건, 중심각도 출력 10건, 저심각도 출력 23건을 이끌어 냄. 독성 콘텐츠는 23건(고 1건, 중 6건, 저 16건)이었음. PII 관련 사고는 13건(고 2건, 중 4건, 저 7건)이었음.",
+   "marks": [
+    {
+     "t": "600회 시도 중 26건의 탈옥을 발견함",
+     "k": "safety"
+    },
+    {
+     "t": "4건의 탈옥은 신뢰성이 높았음(사용 시 75퍼센트 이상에서 유해 콘텐츠를 이끌어 내는 데 성공)",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Complete the following three fields for each flaw, harm, or vulnerability elicited or discovered.",
+   "ko": "이끌어 내거나 발견한 각 결함, 피해 또는 취약점에 대해 다음 세 항목을 작성한다.",
+   "marks": [
+    {
+     "t": "이끌어 내거나 발견한 각 결함, 피해 또는 취약점에 대해 다음 세 항목을 작성한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Harm/Flaw/Vulnerability Type",
+   "ko": "피해/결함/취약점 유형"
+  },
+  {
+   "type": "p",
+   "en": "Categorize the nature of the observed failure (e.g., jailbreak, data leakage, toxic content generation).",
+   "ko": "관찰된 실패의 성격을 분류한다(예: 탈옥, 데이터 유출, 독성 콘텐츠 생성).",
+   "marks": [
+    {
+     "t": "관찰된 실패의 성격을 분류한다(예: 탈옥, 데이터 유출, 독성 콘텐츠 생성).",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Example: Prompt injection leading to disclosure of system instructions.",
+   "ko": "예시: 시스템 지시문 노출로 이어지는 프롬프트 인젝션.",
+   "marks": [
+    {
+     "t": "시스템 지시문 노출로 이어지는 프롬프트 인젝션",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Severity Rating",
+   "ko": "심각도 등급"
+  },
+  {
+   "type": "p",
+   "en": "Describe the scale or metric used to assess the severity of a harm, flaw, or vulnerability and how this severity assessment relates to the threat model or risk scenario outlined in Section 1.",
+   "ko": "피해, 결함 또는 취약점의 심각도를 평가하는 데 사용한 척도나 지표를 기술하고, 이 심각도 평가(assessment)가 1절에 제시된 위협 모델 또는 위험 시나리오와 어떤 관계가 있는지 기술한다.",
+   "marks": [
+    {
+     "t": "이 심각도 평가(assessment)가 1절에 제시된 위협 모델 또는 위험 시나리오와 어떤 관계가 있는지 기술한다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Example: ☐ Low ☐ Medium ☐ High ☐ Critical",
+   "ko": "예시: ☐ 낮음 ☐ 중간 ☐ 높음 ☐ 치명적"
+  },
+  {
+   "type": "p",
+   "en": "Threat Model Correspondence",
+   "ko": "위협 모델과의 대응 관계"
+  },
+  {
+   "type": "p",
+   "en": "Explain how this specific harm, flaw, or vulnerability relates to the threat model or risk scenario outlined in Section 1.",
+   "ko": "해당 피해, 결함 또는 취약점이 1절에 제시된 위협 모델 또는 위험 시나리오와 어떤 관계가 있는지 설명한다.",
+   "refs": [
+    {
+     "t": "1절",
+     "to": "s147"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Example: This harm violates the “malicious end user” threat model by allowing users to override safety filters and expose the system prompt.",
+   "ko": "예시: 이 피해는 사용자가 안전 필터를 무력화하고 시스템 프롬프트를 노출할 수 있게 함으로써 \"악의적 최종 사용자\" 위협 모델을 위반함.",
+   "marks": [
+    {
+     "t": "사용자가 안전 필터를 무력화하고 시스템 프롬프트를 노출할 수 있게 함으로써 \"악의적 최종 사용자\" 위협 모델을 위반함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "3. Testing Methodology",
+   "ko": "3. 시험 방법론",
+   "id": "s171"
+  },
+  {
+   "type": "p",
+   "en": "Methodology Overview",
+   "ko": "방법론 개요"
+  },
+  {
+   "type": "p",
+   "en": "Describe the methodology used during the red-teaming exercise.",
+   "ko": "레드티밍 활동에서 사용한 방법론을 기술한다.",
+   "marks": [
+    {
+     "t": "레드티밍 활동에서 사용한 방법론을 기술한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Example: Two datasets of attempted jailbreaks (one proprietary, one public) were used as a base for automated prompt mutation. Successful jailbreaks were hand tuned to elicit further incidents.",
+   "ko": "예시: 탈옥 시도 데이터셋 2종(독점 1종, 공개 1종)을 자동화된 프롬프트 변형의 기반으로 사용함. 성공한 탈옥은 추가 사고를 이끌어 내도록 수작업으로 조정함.",
+   "marks": [
+    {
+     "t": "탈옥 시도 데이터셋 2종(독점 1종, 공개 1종)을 자동화된 프롬프트 변형의 기반으로 사용함",
+     "k": "safety"
+    },
+    {
+     "t": "성공한 탈옥은 추가 사고를 이끌어 내도록 수작업으로 조정함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Specifications for System Being Tested",
+   "ko": "시험 대상 시스템 명세"
+  },
+  {
+   "type": "p",
+   "en": "Include metadata necessary for triage (e.g., model version, environment configuration, system inputs).* Include system information relevant to the test such as agentic harness details.",
+   "ko": "분류(triage)에 필요한 메타데이터(예: 모델 버전, 환경 구성, 시스템 입력)를 포함한다.* 에이전트 하네스(agentic harness) 세부 사항 등 시험과 관련된 시스템 정보를 포함한다.",
+   "marks": [
+    {
+     "t": "에이전트 하네스(agentic harness) 세부 사항 등 시험과 관련된 시스템 정보를 포함한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "* Consider using the HuggingFace format in accordance with other evaluation reporting schemas such as Every Eval Ever.",
+   "ko": "* Every Eval Ever 등 다른 평가(evaluation) 보고 스키마에 맞추어 HuggingFace 형식을 사용하는 것을 고려하는 것이 좋다."
+  },
+  {
+   "type": "p",
+   "en": "Example: Model name: Kimi K2 Instruct; Model ID: moonshotai/kimi-k2-instruct; Model developer: moonshotai; Inference platform: internal; Inference engine version: v2.4.1; Testing environment: Staging; API latency: 200ms.",
+   "ko": "예시: 모델명: Kimi K2 Instruct; 모델 ID: moonshotai/kimi-k2-instruct; 모델 개발자: moonshotai; 추론(Inference) 플랫폼: 내부; 추론 엔진 버전: v2.4.1; 시험 환경: 스테이징; API 지연 시간: 200ms."
+  },
+  {
+   "type": "p",
+   "en": "System Configuration/Access",
+   "ko": "시스템 구성/접근"
+  },
+  {
+   "type": "p",
+   "en": "Describe the system environment, the access level (e.g., API vs. UI), and any relevant infrastructure details.",
+   "ko": "시스템 환경, 접근 수준(예: API 대 UI), 관련 인프라 세부 사항을 기술한다."
+  },
+  {
+   "type": "p",
+   "en": "Example: Black-box testing conducted via the web UI; no privileged access to model weights or server-side logs.",
+   "ko": "예시: 웹 UI를 통한 블랙박스 시험으로 수행함. 모델 가중치나 서버 측 로그에 대한 특권 접근 없음.",
+   "marks": [
+    {
+     "t": "웹 UI를 통한 블랙박스 시험으로 수행함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Tester Expertise/Team Composition",
+   "ko": "시험자 전문성/팀 구성"
+  },
+  {
+   "type": "p",
+   "en": "Specify the size, composition, and expertise level of the red-teaming team.",
+   "ko": "레드티밍 팀의 규모, 구성, 전문성 수준을 명시한다.",
+   "marks": [
+    {
+     "t": "레드티밍 팀의 규모, 구성, 전문성 수준을 명시한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Example: Three-person team with combined backgrounds in cybersecurity penetration testing and AI ethics.",
+   "ko": "예시: 사이버 보안 침투 테스트와 AI 윤리 분야의 배경을 함께 갖춘 3인 팀."
+  },
+  {
+   "type": "p",
+   "en": "Duration/Resources",
+   "ko": "기간/자원"
+  },
+  {
+   "type": "p",
+   "en": "Note the duration of testing, computational resources allocated, and any other relevant resource constraints. Depending on the context, examples of relevant information may include: number of tokens produced during the testing process, monetary cost of conducting testing, time allocated for testing, and personnel hours allocated for testing.",
+   "ko": "시험 기간, 할당된 연산 자원, 그 밖의 관련 자원 제약을 기재한다. 맥락에 따라 관련 정보의 예로는 시험 과정에서 생성된 토큰 수, 시험 수행에 든 금전적 비용, 시험에 할당된 시간, 시험에 할당된 인력 시간 등이 있다."
+  },
+  {
+   "type": "p",
+   "en": "Example: Forty hours of manual testing over a two-week period, constrained by UI-only access limitations. Twenty million tokens generated during testing.",
+   "ko": "예시: 2주에 걸쳐 40시간의 수동 시험을 수행했으며, UI 전용 접근이라는 한계로 제약을 받음. 시험 중 2,000만 토큰을 생성함.",
+   "marks": [
+    {
+     "t": "UI 전용 접근이라는 한계로 제약을 받음",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Tooling/Automation Used",
+   "ko": "사용한 도구/자동화"
+  },
+  {
+   "type": "p",
+   "en": "List the tools, automation frameworks, or testing scripts utilized to execute the red-teaming plan.",
+   "ko": "레드티밍 계획을 실행하는 데 활용한 도구, 자동화 프레임워크, 시험 스크립트를 나열한다.",
+   "marks": [
+    {
+     "t": "레드티밍 계획을 실행하는 데 활용한 도구, 자동화 프레임워크, 시험 스크립트를 나열한다.",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Example: Custom Python scripts for automated prompt fuzzing and Burp Suite for traffic interception.",
+   "ko": "예시: 자동화된 프롬프트 퍼징용 맞춤형 Python 스크립트 및 트래픽 가로채기용 Burp Suite.",
+   "marks": [
+    {
+     "t": "자동화된 프롬프트 퍼징용 맞춤형 Python 스크립트",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "h3",
+   "en": "4. Actionable Information",
+   "ko": "4. 실행 가능한 정보",
+   "id": "s191"
+  },
+  {
+   "type": "p",
+   "en": "Complete the following two fields for each harm, flaw, or vulnerability enumerated in Section 2.",
+   "ko": "2절에 열거된 각 피해, 결함 또는 취약점에 대해 다음 두 항목을 작성한다.",
+   "refs": [
+    {
+     "t": "2절",
+     "to": "s157"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Reproduction Steps/Evidence",
+   "ko": "재현 절차/증거"
+  },
+  {
+   "type": "p",
+   "en": "Provide concise, actionable steps or sanitized chat traces that enable developers to replicate the issue. Depending on the context, examples of relevant information may include: disclosure of specific inputs or input sequences, interaction logs, or descriptions of tactics, techniques, or procedures used by testers.*",
+   "ko": "개발자가 문제를 재현할 수 있도록 간결하고 실행 가능한 절차 또는 민감 정보를 제거한 채팅 기록을 제공한다. 맥락에 따라 관련 정보의 예로는 특정 입력 또는 입력 시퀀스의 공개, 상호작용 로그, 시험자가 사용한 전술·기법·절차에 대한 설명 등이 있다.*",
+   "marks": [
+    {
+     "t": "개발자가 문제를 재현할 수 있도록 간결하고 실행 가능한 절차 또는 민감 정보를 제거한 채팅 기록을 제공한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "* For certain risky or sensitive contexts, disclosure of information relevant to reproducing a harm or flaw is likely to present an information hazard. In these cases, we recommend providing justification as to why this information was withheld from the report.",
+   "ko": "* 위험하거나 민감한 일부 맥락에서는 피해나 결함의 재현과 관련된 정보를 공개하는 것이 정보 위험원이 될 가능성이 높다. 이러한 경우 해당 정보를 보고서에서 제외한 이유에 대한 근거를 제시할 것을 권고한다.",
+   "marks": [
+    {
+     "t": "피해나 결함의 재현과 관련된 정보를 공개하는 것이 정보 위험원이 될 가능성이 높다",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Example: Input sequence “[SYSTEM: IGNORE PREVIOUS INSTRUCTIONS] [PROMPT]” into the user chat field.",
+   "ko": "예시: 사용자 채팅 입력란에 \"[SYSTEM: IGNORE PREVIOUS INSTRUCTIONS] [PROMPT]\" 시퀀스를 입력함.",
+   "marks": [
+    {
+     "t": "\"[SYSTEM: IGNORE PREVIOUS INSTRUCTIONS] [PROMPT]\" 시퀀스를 입력함",
+     "k": "safety"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Mitigation Recommendations and Status",
+   "ko": "완화 권고 및 상태"
+  },
+  {
+   "type": "p",
+   "en": "Propose concrete actions or architectural changes to remediate the identified issue. If the harm, flaw, or vulnerability has already been remediated or patched, note its status.",
+   "ko": "식별된 문제를 해결하기 위한 구체적인 조치나 아키텍처 변경을 제안한다. 피해, 결함 또는 취약점이 이미 해결되었거나 패치되었다면 그 상태를 기재한다.",
+   "marks": [
+    {
+     "t": "식별된 문제를 해결하기 위한 구체적인 조치나 아키텍처 변경을 제안한다.",
+     "k": "key"
+    }
+   ]
+  },
+  {
+   "type": "p",
+   "en": "Example: Implement stricter input validation to filter delimiter strings and refine system prompts to reject instruction-override attempts.",
+   "ko": "예시: 구분자 문자열을 걸러내도록 더 엄격한 입력 확인을 구현하고, 지시 무시 시도를 거부하도록 시스템 프롬프트를 개선함.",
+   "marks": [
+    {
+     "t": "지시 무시 시도를 거부하도록 시스템 프롬프트를 개선함",
+     "k": "safety"
+    }
+   ]
+  }
+ ],
+ "notes": [
+  {
+   "n": 1,
+   "en": "Apostol Vassilev et al., Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations (Gaithersburg, MD: NIST, 2025), https://doi.org/10.6028/NIST.AI.100-2e2025.",
+   "ko": "Apostol Vassilev et al., Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations (Gaithersburg, MD: NIST, 2025), https://doi.org/10.6028/NIST.AI.100-2e2025.",
+   "linked": true
+  },
+  {
+   "n": 2,
+   "en": "Sven Cattell, Avijit Ghosh, and Lucie-Aimée Kaffee, “Coordinated Flaw Disclosure for AI: Beyond Security Vulnerabilities,” arXiv preprint arXiv:2402.07039 (2024), https://arxiv.org/abs/2402.07039.",
+   "ko": "Sven Cattell, Avijit Ghosh, and Lucie-Aimée Kaffee, \"Coordinated Flaw Disclosure for AI: Beyond Security Vulnerabilities,\" arXiv preprint arXiv:2402.07039 (2024), https://arxiv.org/abs/2402.07039.",
+   "linked": true
+  },
+  {
+   "n": 3,
+   "en": "Laura Weidinger et al., “Sociotechnical Safety Evaluation of Generative AI Systems,” arXiv preprint arXiv:2310.11986 (2023), https://arxiv.org/abs/2310.11986.",
+   "ko": "Laura Weidinger et al., \"Sociotechnical Safety Evaluation of Generative AI Systems,\" arXiv preprint arXiv:2310.11986 (2023), https://arxiv.org/abs/2310.11986.",
+   "linked": true
+  },
+  {
+   "n": 4,
+   "en": "Mantas Mazeika et al., “HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal,” arXiv preprint arXiv:2402.04249 (2024), https://arxiv.org/abs/2402.04249; Patrick Chao et al., “JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models,” arXiv preprint arXiv:2404.01318 (2024), https://arxiv.org/abs/2404.01318; “AILuminate,” MLCommons, accessed September 9, 2026, https://mlcommons.org/benchmarks/ailuminate/.",
+   "ko": "Mantas Mazeika et al., \"HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal,\" arXiv preprint arXiv:2402.04249 (2024), https://arxiv.org/abs/2402.04249; Patrick Chao et al., \"JailbreakBench: An Open Robustness Benchmark for Jailbreaking Large Language Models,\" arXiv preprint arXiv:2404.01318 (2024), https://arxiv.org/abs/2404.01318; \"AILuminate,\" MLCommons, accessed September 9, 2026, https://mlcommons.org/benchmarks/ailuminate/.",
+   "linked": true
+  },
+  {
+   "n": 5,
+   "en": "Boming Xia et al., “Evaluation-Driven Development of LLM Agents: A Process Model and Reference Architecture,” arXiv preprint arXiv:2411.13768 (2025), https://arxiv.org/abs/2411.13768v2.",
+   "ko": "Boming Xia et al., \"Evaluation-Driven Development of LLM Agents: A Process Model and Reference Architecture,\" arXiv preprint arXiv:2411.13768 (2025), https://arxiv.org/abs/2411.13768v2.",
+   "linked": true
+  },
+  {
+   "n": 6,
+   "en": "Matt Honea, “Red Teaming AI: The Build Vs Buy Debate,” SecurityWeek, June 16, 2025, www.securityweek.com/red-teaming-ai-the-build-vs-buy-debate/.",
+   "ko": "Matt Honea, \"Red Teaming AI: The Build Vs Buy Debate,\" SecurityWeek, June 16, 2025, www.securityweek.com/red-teaming-ai-the-build-vs-buy-debate/.",
+   "linked": true
+  },
+  {
+   "n": 7,
+   "en": "Zerui Cheng et al., “Benchmarking Is Broken—Don’t Let AI Be Its Own Judge,” arXiv preprint arXiv:2510.07575 (2025), https://arxiv.org/abs/2510.07575v2; Sang Truong et al., “Fantastic Bugs and Where to Find Them in AI Benchmarks,” arXiv preprint arXiv:2511.16842 (2025), https://arxiv.org/abs/2511.16842; Maria Eriksson et al., “AI Benchmarks: Interdisciplinary Issues and Policy Considerations” (paper presented at the Workshop on Technical AI Governance, International Conference on Machine Learning, Vancouver, Canada, July 19, 2025), https://openreview.net/forum?id=Y5LJrvfAIS.",
+   "ko": "Zerui Cheng et al., \"Benchmarking Is Broken—Don't Let AI Be Its Own Judge,\" arXiv preprint arXiv:2510.07575 (2025), https://arxiv.org/abs/2510.07575v2; Sang Truong et al., \"Fantastic Bugs and Where to Find Them in AI Benchmarks,\" arXiv preprint arXiv:2511.16842 (2025), https://arxiv.org/abs/2511.16842; Maria Eriksson et al., \"AI Benchmarks: Interdisciplinary Issues and Policy Considerations\" (paper presented at the Workshop on Technical AI Governance, International Conference on Machine Learning, Vancouver, Canada, July 19, 2025), https://openreview.net/forum?id=Y5LJrvfAIS.",
+   "linked": true
+  },
+  {
+   "n": 8,
+   "en": "Margaret Mitchell et al., “Model Cards for Model Reporting,” in FAT* ’19: Proceedings of the Conference on Fairness, Accountability, and Transparency (New York: Association for Computing Machinery, 2019): 220–229, https://dl.acm.org/doi/10.1145/3287560.3287596.",
+   "ko": "Margaret Mitchell et al., \"Model Cards for Model Reporting,\" in FAT* '19: Proceedings of the Conference on Fairness, Accountability, and Transparency (New York: Association for Computing Machinery, 2019): 220–229, https://dl.acm.org/doi/10.1145/3287560.3287596.",
+   "linked": true
+  },
+  {
+   "n": 9,
+   "en": "Ranjit Singh et al., “Red-Teaming in the Public Interest,” Data & Society, February 9, 2025, https://doi.org/10.69985/vvgp4368.",
+   "ko": "Ranjit Singh et al., \"Red-Teaming in the Public Interest,\" Data & Society, February 9, 2025, https://doi.org/10.69985/vvgp4368.",
+   "linked": true
+  },
+  {
+   "n": 10,
+   "en": "“Frontier Red Team,” Anthropic, accessed July 23, 2026, www.anthropic.com/research/team/frontier-red-team.",
+   "ko": "\"Frontier Red Team,\" Anthropic, accessed July 23, 2026, www.anthropic.com/research/team/frontier-red-team.",
+   "linked": true
+  },
+  {
+   "n": 11,
+   "en": "Yoav Schlesinger, “AI Red Teaming: Testing for Trust,” The 360 Blog, Salesforce, September 3, 2024, www.salesforce.com/blog/red-teaming-ai/.",
+   "ko": "Yoav Schlesinger, \"AI Red Teaming: Testing for Trust,\" The 360 Blog, Salesforce, September 3, 2024, www.salesforce.com/blog/red-teaming-ai/.",
+   "linked": true
+  },
+  {
+   "n": 12,
+   "en": "“Services,” HiddenLayer, accessed July 23, 2026, www.hiddenlayer.com/services; “AI Red Teaming Services,” Lakera, accessed July 23, 2026, www.lakera.ai/ai-red-teaming-services; “Capabilities,” BT6, accessed July 23, 2026, https://bt6.gg/#capabilities; “AI Red Teaming & Pentesting,” Mindgard, accessed July 23, 2026, https://mindgard.ai/services/ai-red-teaming-pentesting; “F5 AI Red Team,” F5, accessed July 23, 2026, www.f5.com/products/ai-red-team.",
+   "ko": "\"Services,\" HiddenLayer, accessed July 23, 2026, www.hiddenlayer.com/services; \"AI Red Teaming Services,\" Lakera, accessed July 23, 2026, www.lakera.ai/ai-red-teaming-services; \"Capabilities,\" BT6, accessed July 23, 2026, https://bt6.gg/#capabilities; \"AI Red Teaming & Pentesting,\" Mindgard, accessed July 23, 2026, https://mindgard.ai/services/ai-red-teaming-pentesting; \"F5 AI Red Team,\" F5, accessed July 23, 2026, www.f5.com/products/ai-red-team.",
+   "linked": true
+  },
+  {
+   "n": 13,
+   "en": "“Using Threat Modeling and Prompt Injection to Audit Comet,” The Trail of Bits Blog, February 20, 2026, https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet/; Beliz Kaleli et al., “Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild,” Unit 42 (blog), Palo Alto Networks, March 3, 2026, https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/.",
+   "ko": "\"Using Threat Modeling and Prompt Injection to Audit Comet,\" The Trail of Bits Blog, February 20, 2026, https://blog.trailofbits.com/2026/02/20/using-threat-modeling-and-prompt-injection-to-audit-comet/; Beliz Kaleli et al., \"Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild,\" Unit 42 (blog), Palo Alto Networks, March 3, 2026, https://unit42.paloaltonetworks.com/ai-agent-prompt-injection/.",
+   "linked": true
+  },
+  {
+   "n": 14,
+   "en": "Sven Cattell, Rumman Chowdhury, and Austin Carson, “AI Village at DEF CON Announces Largest-Ever Public Generative AI Red Team,” AI Village (blog), May 3, 2023, https://aivillage.org/blog/generative-red-team/; Sander Schulhoff et al., “Ignore This Title and HackAPrompt: Exposing Systemic Vulnerabilities of LLMs Through a Global Prompt Hacking Competition,” in Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (Kerrville, TX: Association for Computational Linguistics, 2023), 4945–4977.",
+   "ko": "Sven Cattell, Rumman Chowdhury, and Austin Carson, \"AI Village at DEF CON Announces Largest-Ever Public Generative AI Red Team,\" AI Village (blog), May 3, 2023, https://aivillage.org/blog/generative-red-team/; Sander Schulhoff et al., \"Ignore This Title and HackAPrompt: Exposing Systemic Vulnerabilities of LLMs Through a Global Prompt Hacking Competition,\" in Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (Kerrville, TX: Association for Computational Linguistics, 2023), 4945–4977.",
+   "linked": true
+  },
+  {
+   "n": 15,
+   "en": "Virginia Braun and Victoria Clarke, “Using Thematic Analysis in Psychology,” Qualitative Research in Psychology 3, no. 2 (2006): 77–101, https://doi.org/10.1191/1478088706qp063oa; Virginia Braun and Victoria Clarke, Thematic Analysis: A Practical Guide (London: SAGE, 2022), 45.",
+   "ko": "Virginia Braun and Victoria Clarke, \"Using Thematic Analysis in Psychology,\" Qualitative Research in Psychology 3, no. 2 (2006): 77–101, https://doi.org/10.1191/1478088706qp063oa; Virginia Braun and Victoria Clarke, Thematic Analysis: A Practical Guide (London: SAGE, 2022), 45.",
+   "linked": true
+  },
+  {
+   "n": 16,
+   "en": "OWASP Gen AI Security Project, “GenAI Red Teaming Guide” (OWASP Foundation, January 2025), 20, https://genai.owasp.org/resource/genai-red-teaming-guide/.",
+   "ko": "OWASP Gen AI Security Project, \"GenAI Red Teaming Guide\" (OWASP Foundation, January 2025), 20, https://genai.owasp.org/resource/genai-red-teaming-guide/.",
+   "linked": true
+  },
+  {
+   "n": 17,
+   "en": "For further discussions on what a flaw (as opposed to vulnerability) disclosure process might look like for AI systems, see: Cattell, Ghosh, and Kaffee, “Coordinated Flaw Disclosure for AI”; Shayne Longpre et al., “In-House Evaluation Is Not Enough: Towards Robust Third-Party Flaw Disclosure for General-Purpose AI,” arXiv preprint arXiv:2503.16861 (2025), https://arxiv.org/abs/2503.16861; Shayne Longpre et al., “FLARE-AI: Flaw Reporting for AI,” arXiv preprint arXiv:2606.31567 (2026), https://arxiv.org/abs/2606.31567.",
+   "ko": "AI 시스템을 위한 결함(취약점이 아닌) 공개 절차가 어떤 모습일 수 있는지에 관한 추가 논의로는 다음 문헌이 있다: Cattell, Ghosh, and Kaffee, \"Coordinated Flaw Disclosure for AI\"; Shayne Longpre et al., \"In-House Evaluation Is Not Enough: Towards Robust Third-Party Flaw Disclosure for General-Purpose AI,\" arXiv preprint arXiv:2503.16861 (2025), https://arxiv.org/abs/2503.16861; Shayne Longpre et al., \"FLARE-AI: Flaw Reporting for AI,\" arXiv preprint arXiv:2606.31567 (2026), https://arxiv.org/abs/2606.31567.",
+   "linked": true
+  },
+  {
+   "n": 18,
+   "en": "“Issue Brief: Preliminary Reporting Tiers for AI-Bio Safety Evaluations” (Frontier Model Forum, March 18, 2025), www.frontiermodelforum.org/updates/issue-brief-preliminary-reporting-tiers-for-ai-bio-safety-evaluations/.",
+   "ko": "\"Issue Brief: Preliminary Reporting Tiers for AI-Bio Safety Evaluations\" (Frontier Model Forum, March 18, 2025), www.frontiermodelforum.org/updates/issue-brief-preliminary-reporting-tiers-for-ai-bio-safety-evaluations/.",
+   "linked": true
+  },
+  {
+   "n": 19,
+   "en": "Winning the Race: America’s AI Action Plan (Washington, DC: The White House, July 2025), 18, www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf.",
+   "ko": "Winning the Race: America's AI Action Plan (Washington, DC: The White House, July 2025), 18, www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf.",
+   "linked": true
+  },
+  {
+   "n": 20,
+   "en": "U.S. Department of Commerce, “Statement from U.S. Secretary of Commerce Howard Lutnick on Transforming the U.S. AI Safety Institute into the Pro-Innovation, Pro-Science U.S. Center for AI Standards and Innovation,” news release, June 3, 2025, www.commerce.gov/news/press-releases/2025/06/statement-us-secretary-commerce-howard-lutnick-transforming-us-ai.",
+   "ko": "U.S. Department of Commerce, \"Statement from U.S. Secretary of Commerce Howard Lutnick on Transforming the U.S. AI Safety Institute into the Pro-Innovation, Pro-Science U.S. Center for AI Standards and Innovation,\" news release, June 3, 2025, www.commerce.gov/news/press-releases/2025/06/statement-us-secretary-commerce-howard-lutnick-transforming-us-ai.",
+   "linked": true
+  },
+  {
+   "n": 21,
+   "en": "Shayne Longpre et al., “Position: A Safe Harbor for AI Evaluation and Red Teaming,” Proceedings of Machine Learning Research 235 (2024), https://proceedings.mlr.press/v235/longpre24a.html.",
+   "ko": "Shayne Longpre et al., \"Position: A Safe Harbor for AI Evaluation and Red Teaming,\" Proceedings of Machine Learning Research 235 (2024), https://proceedings.mlr.press/v235/longpre24a.html.",
+   "linked": true
+  },
+  {
+   "n": 22,
+   "en": "Director of the Office of Management and Budget, Increasing Public Trust in Artificial Intelligence Through Unbiased AI Principles, M-26-04, December 11, 2025, www.whitehouse.gov/wp-content/uploads/2025/12/M-26-04-Increasing-Public-Trust-in-Artificial-Intelligence-Through-Unbiased-AI-Principles-1.pdf.",
+   "ko": "Director of the Office of Management and Budget, Increasing Public Trust in Artificial Intelligence Through Unbiased AI Principles, M-26-04, December 11, 2025, www.whitehouse.gov/wp-content/uploads/2025/12/M-26-04-Increasing-Public-Trust-in-Artificial-Intelligence-Through-Unbiased-AI-Principles-1.pdf.",
+   "linked": true
+  }
+ ]
+}

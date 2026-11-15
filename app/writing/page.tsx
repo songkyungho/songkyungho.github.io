@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { PageIntro } from "../components";
 import archive from "../data/writing-archive.json";
-import { listTitle, translations } from "../translations/registry";
+import officialKorean from "../data/official-korean.json";
+import { dotDate, listTitle, translations } from "../translations/registry";
 import WritingArchive from "./WritingArchive";
 import WritingPhotos from "./WritingPhotos";
 
@@ -17,16 +18,28 @@ export default function WritingPage() {
   const translated = translations.map((doc) => {
     const [year, month, day] = doc.translated.split("-");
     return {
+      key: doc.published,
       slug: doc.slug, title: listTitle(doc), publication: doc.publisher, issue: null, year, month: String(Number(month)), day: String(Number(day)),
       section: "번역", kind: "translation", sourceUrl: null, migrationStatus: "상세 페이지 완료", note: null,
       href: `/translations/${doc.slug}`,
     };
   });
+  // 원문 기관이 직접 낸 공식 한국어판: 번역하지 않고 한국어판으로 바로 잇는다(↗). 번역 탭에 발간일 순으로 섞는다.
+  const official = officialKorean.map((item) => {
+    const [year, month, day] = item.published.split("-");
+    return {
+      key: item.published,
+      slug: item.slug, title: `${item.title} (${dotDate(item.published)})`, publication: `${item.publisher} 공식 한국어판`, issue: null,
+      year, month: String(Number(month)), day: String(Number(day)),
+      section: "번역", kind: "official-korean", sourceUrl: item.url, migrationStatus: "공식 한국어판", note: null,
+    };
+  });
+  const translationRows = [...translated, ...official].sort((a, b) => b.key.localeCompare(a.key));
   return (
     <main className="inner-page">
       <PageIntro eyebrow="WRITING" title="글" />
       <WritingPhotos />
-      <WritingArchive archive={[...translated, ...summaries]} />
+      <WritingArchive archive={[...translationRows, ...summaries]} />
     </main>
   );
 }
