@@ -23,21 +23,33 @@ type BlogPost = { intro: string[]; summary: string[]; toc: { id: string; text: s
 const blogPosts = writingBlocks as unknown as Record<string, BlogPost>;
 
 const INLINE_LINK = /\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g;
+// 본문의 근거 번호: '[^3]', '[^3,4]'. 같은 글의 근거 박스 항목(#source-n)으로 이동한다.
+const CITE = /\[\^(\d+(?:,\d+)*)\]/g;
+const INLINE = new RegExp(`${INLINE_LINK.source}|${CITE.source}`, "g");
 
 function Inline({ text }: { text: string }) {
   const parts: React.ReactNode[] = [];
   let last = 0;
-  for (const match of text.matchAll(INLINE_LINK)) {
+  for (const match of text.matchAll(INLINE)) {
     const index = match.index ?? 0;
     if (index > last) parts.push(text.slice(last, index));
-    parts.push(<a href={match[2]} key={index} target="_blank" rel="noopener noreferrer">{match[1]}</a>);
+    if (match[3]) {
+      const ns = match[3].split(",");
+      parts.push(
+        <sup className="cite" key={index}>
+          {ns.map((n, i) => <span key={n}>{i > 0 && ","}<a href={`#source-${n}`} aria-label={`근거 ${n}`}>{n}</a></span>)}
+        </sup>
+      );
+    } else {
+      parts.push(<a href={match[2]} key={index} target="_blank" rel="noopener noreferrer">{match[1]}</a>);
+    }
     last = index + match[0].length;
   }
   if (last < text.length) parts.push(text.slice(last));
   return <>{parts}</>;
 }
 
-const plain = (text: string) => text.replace(INLINE_LINK, "$1");
+const plain = (text: string) => text.replace(INLINE_LINK, "$1").replace(CITE, "");
 
 function SourceBox({ items }: { items: Source[] }) {
   return (
