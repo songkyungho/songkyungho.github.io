@@ -108,7 +108,24 @@ def locate(text: str, needle: str) -> tuple[int, int] | None:
     return (m.start(), m.end()) if m else None
 
 
+def ask_openrouter(blocks: list[dict], seg: list[int]) -> tuple[list[dict], int, int]:
+    """OpenRouter 경로(--model anthropic/claude-opus-5.5 처럼 '/'가 든 이름). Claude API에 직접 닿지 않는 Mac(일일 실행 맥미니)용.
+    구조화 출력 대신 스키마를 지시문에 넣고 JSON을 받아 읽는다."""
+    import importlib
+    sys.path.insert(0, os.path.expanduser(os.environ.get("DOC_TRANSLATOR_DIR", "~/Code/doc-translator")))
+    backend = importlib.import_module("backends").get_backend(MODEL)
+    lines = [f"[{n}] ({blocks[n]['type']}) {blocks[n]['ko']}" for n in seg]
+    prompt = (SYSTEM + "\n\nJSON 하나로만 답한다. 스키마: " + json.dumps(SCHEMA, ensure_ascii=False) + "\n\n" + "\n\n".join(lines))
+    text = backend.chat([{"role": "user", "content": prompt}], temperature=0.2)
+    m = re.search(r"\{.*\}", text, re.S)
+    if not m:
+        raise RuntimeError("JSON 없음")
+    return json.loads(m.group(0))["marks"], 0, 0
+
+
 def ask(client: anthropic.Anthropic, blocks: list[dict], seg: list[int]) -> tuple[list[dict], int, int]:
+    if "/" in MODEL:
+        return ask_openrouter(blocks, seg)
     lines = [f"[{n}] ({blocks[n]['type']}) {blocks[n]['ko']}" for n in seg]
     with client.messages.stream(
         model=MODEL,
@@ -151,12 +168,15 @@ def apply_marks(blocks: list[dict], seg: list[int], marks: list[dict]) -> int:
 
 
 def main() -> None:
+    global MODEL
     ap = argparse.ArgumentParser()
     ap.add_argument("json_path")
     ap.add_argument("--limit", type=int, help="only the first N segments that have body text")
     ap.add_argument("--only", type=int, nargs="+", help="only the segments starting at these block indices")
     ap.add_argument("--workers", type=int, default=6)
+    ap.add_argument("--model", default=MODEL, help="기본 claude-opus-5-5(직접). '/'가 들면 OpenRouter(예: anthropic/claude-opus-5.5)")
     args = ap.parse_args()
+    MODEL = args.model
 
     path = Path(args.json_path)
     doc = json.loads(path.read_text(encoding="utf-8"))
@@ -173,9 +193,9 @@ def main() -> None:
     print(f"{len(segs)} segments, {len(todo)} to ask ({MODEL}, effort {EFFORT})", flush=True)
 
     api_key = load_key()
-    if not api_key:
+    if not api_key and "/" not in MODEL:
         sys.exit("!! SONG_CLAUDE_KEY not found")
-    client = anthropic.Anthropic(api_key=api_key, max_retries=4)
+    client = anthropic.Anthropic(api_key=api_key or "unused", max_retries=4)
     tokens_in = tokens_out = 0
     failed = []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
