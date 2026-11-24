@@ -42,43 +42,23 @@ const talksItems: RecentItem[] = talks.map((item) => ({
   href: "/talks",
 }));
 
-const writingItems: RecentItem[] = writing.map((item) => ({
+const writingItems: RecentItem[] = writing.filter((item) => item.section !== "블로그" && item.section !== "보도").map((item) => ({
   dateKey: dateKey(item.year ?? "0", item.month, item.day),
-  // 블로그 글은 날짜를 월까지만 보여 준다 (모바일 목록에서 제목과 겹치지 않게)
-  date: formatDate(item.year ?? "0", item.month, item.section === "블로그" ? null : item.day),
+  date: formatDate(item.year ?? "0", item.month, item.day),
   type: item.section,
   title: item.title,
   detail: item.publication,
   href: item.migrationStatus === "상세 페이지 완료" ? `/writing/archive/${item.slug}` : (item.sourceUrl ?? "/writing"),
 }));
 
-// 번역 문건: 글 페이지의 '번역' 카테고리, 홈에서는 ARCHIVE와 최근 기록에 나온다.
+// 번역 문건: 글 페이지의 '번역' 카테고리, 홈에서는 ARCHIVE에 나온다.
 const translationEntries = translations.map((doc) => {
   const [year, month, day] = doc.translated.split("-");
   return { doc, year, month: Number(month), day: Number(day), href: `/translations/${doc.slug}` };
 });
 
-const translationItems: RecentItem[] = translationEntries.map(({ doc, year, month, day, href }) => ({
-  dateKey: dateKey(year, month, day),
-  date: formatDate(year, month, null),
-  type: "번역",
-  title: listTitle(doc),
-  detail: "번역",
-  href,
-}));
-
-const mediaItems: RecentItem[] = media
-  .filter((item) => item.year)
-  .map((item) => ({
-    dateKey: dateKey(item.year as string, item.month, item.day),
-    date: formatDate(item.year as string, item.month, item.day),
-    type: item.format,
-    title: item.title,
-    detail: item.outlet,
-    href: item.url,
-  }));
-
-const recent = [...researchItems, ...talksItems, ...writingItems, ...translationItems, ...mediaItems]
+// 최근 기록: 위의 MEDIA(블로그·미디어 출연)와 ARCHIVE(번역)에 나오는 갈래, 미디어 페이지에 있는 언론 보도는 빼고 싣는다.
+const recent = [...researchItems, ...talksItems, ...writingItems]
   .sort((a, b) => b.dateKey - a.dateKey)
   .slice(0, 8);
 
