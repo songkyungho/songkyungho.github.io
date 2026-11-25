@@ -14,6 +14,8 @@ or in ~/.config/ai-safety/env.
 Usage: ~/.venvs/doc-translator/bin/python scripts/emphasize_translation.py app/data/translations/SLUG.json [--limit N] [--workers 6]
 """
 
+from __future__ import annotations
+
 import argparse
 import json
 import os
@@ -22,7 +24,10 @@ import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
-import anthropic
+try:
+    import anthropic
+except ImportError:  # OpenRouter 경로만 쓰는 Mac
+    anthropic = None
 
 MODEL = "claude-opus-5-5"
 EFFORT = "medium"
@@ -195,7 +200,9 @@ def main() -> None:
     api_key = load_key()
     if not api_key and "/" not in MODEL:
         sys.exit("!! SONG_CLAUDE_KEY not found")
-    client = anthropic.Anthropic(api_key=api_key or "unused", max_retries=4)
+    if "/" not in MODEL and anthropic is None:
+        sys.exit("!! anthropic package not installed (pip install -r ~/Code/doc-translator/requirements.txt)")
+    client = None if "/" in MODEL else anthropic.Anthropic(api_key=api_key, max_retries=4)
     tokens_in = tokens_out = 0
     failed = []
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
