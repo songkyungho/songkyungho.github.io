@@ -15,7 +15,7 @@ type Graphic =
   | { type: "graphic"; kind: "criteria"; title: string; items: { q: string; a: string; ref: string }[] }
   | { type: "graphic"; kind: "quadrant"; title: string; x: [string, string]; y: [string, string]; points: { pos: "top-left" | "bottom-right"; name: string; sub: string; note: string; ref: string }[] }
   | { type: "graphic"; kind: "doubling"; title: string; caption: string; wide?: boolean; bars: { label: string; value: number; display?: string }[] }
-  | { type: "graphic"; kind: "table"; title: string; caption: string; header: string[]; rows: string[][] }
+  | { type: "graphic"; kind: "table"; title: string; caption: string; header: string[]; rows: string[][]; widths?: number[] }
   | { type: "graphic"; kind: "statute"; title: string; caption: string; href: string; articles: { head: string; lines: { text: string; indent?: boolean; mark?: boolean }[] }[] };
 type Block = { type: "h2" | "h3" | "p"; id?: string | null; text: string } | { type: "refs"; items: Source[] } | Figure | Graphic;
 type BlogPost = { intro: string[]; summary: string[]; toc: { id: string; text: string }[]; blocks: Block[] };
@@ -169,7 +169,8 @@ function BlogGraphic({ graphic }: { graphic: Graphic }) {
       <figure className="blog-graphic">
         <p className="graphic-title">{graphic.title}</p>
         <div className="graphic-table-wrap">
-          <table className="graphic-table">
+          <table className={graphic.widths ? "graphic-table graphic-table-cols" : "graphic-table"}>
+            {graphic.widths && <colgroup>{graphic.widths.map((width, index) => <col key={index} style={{ width: `${width}%` }} />)}</colgroup>}
             <thead><tr>{graphic.header.map((cell) => <th key={cell} scope="col">{cell}</th>)}</tr></thead>
             <tbody>
               {graphic.rows.map((row) => (

@@ -250,6 +250,9 @@ main { min-height: calc(100vh - 68px); }
 .graphic-table th, .graphic-table td { padding: 8px 10px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
 .graphic-table thead th { color: var(--muted); font-size: .72rem; font-weight: 650; }
 .graphic-table tbody th { color: var(--ink); font-weight: 650; white-space: nowrap; }
+.graphic-table-cols { table-layout: fixed; min-width: 520px; }
+.graphic-table-cols tbody th { white-space: normal; }
+.graphic-table-cols th, .graphic-table-cols td { overflow-wrap: anywhere; word-break: keep-all; }
 .source-box { margin: 1.4em 0 2.6em; padding: 4px 22px; border: 1px solid var(--line); border-left: 3px solid var(--accent); }
 .source-box ol { margin: 0; padding: 0; list-style: none; }
 .source-box li { display: grid; grid-template-columns: 28px minmax(0, 1fr); padding: 11px 0; border-top: 1px solid var(--line); }
